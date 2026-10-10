@@ -1,5 +1,34 @@
 # metaxingtong
 
+## 当前入口：原文件目录
+
+16场现有Draft PR已追加普通原文件。模型/资源按真实版本保留原相对布局，当前入口通过CURRENT索引精确指向；旧ZIP和commit继续保留。所有模型仍为待来源验收候选。
+
+[原文件下载说明](docs/raw-files-download.md) · [最新39阶段账本](docs/raw-archive-status.json) · [独立远端原文件回读](docs/independent-raw-readback.json) · [主模型依赖检查](docs/model-dependencies.json)
+
+| 场景 | 当前入口 | Issue | PR | 普通成员数 |
+|---|---|---|---|---:|
+| 教室 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/classroom-history/scenes/classroom/README.md) | [Issue #1](https://github.com/Shuang-su/metaxingtong/issues/1) | [Draft PR #17](https://github.com/Shuang-su/metaxingtong/pull/17) | 261 |
+| 开放露台 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/terrace-history/scenes/terrace/README.md) | [Issue #2](https://github.com/Shuang-su/metaxingtong/issues/2) | [Draft PR #23](https://github.com/Shuang-su/metaxingtong/pull/23) | 47 |
+| 城堡宴会厅 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/castle-hall-history/scenes/castle-hall/README.md) | [Issue #3](https://github.com/Shuang-su/metaxingtong/issues/3) | [Draft PR #24](https://github.com/Shuang-su/metaxingtong/pull/24) | 152 |
+| 病房 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/hospital-room-history/scenes/hospital-room/README.md) | [Issue #4](https://github.com/Shuang-su/metaxingtong/issues/4) | [Draft PR #27](https://github.com/Shuang-su/metaxingtong/pull/27) | 158 |
+| 列车 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/train-history/scenes/train/README.md) | [Issue #5](https://github.com/Shuang-su/metaxingtong/issues/5) | [Draft PR #28](https://github.com/Shuang-su/metaxingtong/pull/28) | 381 |
+| 霓虹舞房 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/dance-studio-history/scenes/dance-studio/README.md) | [Issue #6](https://github.com/Shuang-su/metaxingtong/issues/6) | [Draft PR #25](https://github.com/Shuang-su/metaxingtong/pull/25) | 99 |
+| 厨房 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/kitchen-history/scenes/kitchen/README.md) | [Issue #7](https://github.com/Shuang-su/metaxingtong/issues/7) | [Draft PR #29](https://github.com/Shuang-su/metaxingtong/pull/29) | 128 |
+| 卧室（7.7深最终版） | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/bedroom-history/scenes/bedroom/README.md) | [Issue #8](https://github.com/Shuang-su/metaxingtong/issues/8) | [Draft PR #30](https://github.com/Shuang-su/metaxingtong/pull/30) | 374 |
+| 深月KTV开放舞台 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/ktv-history/scenes/ktv/README.md) | [Issue #9](https://github.com/Shuang-su/metaxingtong/issues/9) | [Draft PR #21](https://github.com/Shuang-su/metaxingtong/pull/21) | 123 |
+| 海边吧台 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/seaside-bar-history/scenes/seaside-bar/README.md) | [Issue #10](https://github.com/Shuang-su/metaxingtong/issues/10) | [Draft PR #26](https://github.com/Shuang-su/metaxingtong/pull/26) | 93 |
+| 城堡花园 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/castle-garden-history/scenes/castle-garden/README.md) | [Issue #11](https://github.com/Shuang-su/metaxingtong/issues/11) | [Draft PR #31](https://github.com/Shuang-su/metaxingtong/pull/31) | 182 |
+| 海滨开放场景 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/seaside-scene-history/scenes/seaside-scene/README.md) | [Issue #12](https://github.com/Shuang-su/metaxingtong/issues/12) | [Draft PR #22](https://github.com/Shuang-su/metaxingtong/pull/22) | 145 |
+| 星斯卡舞台 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/star-awards-stage-history/scenes/star-awards-stage/README.md) | [Issue #13](https://github.com/Shuang-su/metaxingtong/issues/13) | [Draft PR #32](https://github.com/Shuang-su/metaxingtong/pull/32) | 100 |
+| 钢琴门廊 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/piano-terrace-nook-history/scenes/piano-terrace-nook/README.md) | [Issue #14](https://github.com/Shuang-su/metaxingtong/issues/14) | [Draft PR #18](https://github.com/Shuang-su/metaxingtong/pull/18) | 71 |
+| 红金灯泡拱形舞台 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/red-gold-stage-history/scenes/red-gold-stage/README.md) | [Issue #15](https://github.com/Shuang-su/metaxingtong/issues/15) | [Draft PR #19](https://github.com/Shuang-su/metaxingtong/pull/19) | 69 |
+| 暗色铁栏布景 | [原文件](https://github.com/Shuang-su/metaxingtong/blob/archive/dark-cell-history/scenes/dark-cell/README.md) | [Issue #16](https://github.com/Shuang-su/metaxingtong/issues/16) | [Draft PR #20](https://github.com/Shuang-su/metaxingtong/pull/20) | 85 |
+
+## 先前整包归档记录
+
+以下为此前38阶段/113原件/82ZIP的冻结记录口径，现原文件迁移及卧室HD v2见上方最新账本。
+
 私有直播场景重建档案。模型、来源参考、白模/纹理、真实修改历史与检查证据按场景独立保存。
 
 ## 当前归档结果

@@ -1,0 +1,1545 @@
+{
+  "schema_version": 1,
+  "as_of_utc": "2026-10-10T10:01:51.666159+00:00",
+  "repository": "Shuang-su/metaxingtong",
+  "visibility": "private",
+  "source_acceptance": false,
+  "scene_count": 16,
+  "known_history_stage_count": 39,
+  "raw_migration_commit_count": 35,
+  "raw_file_count": 2468,
+  "raw_file_bytes": 1281184282,
+  "existing_standalone_original_count": 31,
+  "old_zip_baseline": {
+    "stage_count": 38,
+    "original_count": 113,
+    "zip_count": 82,
+    "note": "Historical original-file archive retained. Five new bedroom Library ZIPs are unpacked into ordinary files instead of adding new ZIPs."
+  },
+  "largest_raw_file_bytes": 34076844,
+  "lfs_used": false,
+  "scenes": [
+    {
+      "scene_id": "classroom_fullroom",
+      "name_zh": "教室",
+      "branch": "archive/classroom-history",
+      "head": "253cc172d619cb71267b1e0eda1025a092e9af52",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/classroom-history/scenes/classroom/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/1",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/17",
+      "raw_file_count": 261,
+      "raw_file_bytes": 128847162,
+      "history_stage_count": 7,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "7d7a60162d7829dc15a7e6a33eedc488eb978110",
+          "parent": "2bb5f67550d97dc01741b4429ee44cf235ad8bef",
+          "tree": "c47b2d9824d114f5a75c64d66945121b76e6f024",
+          "raw_member_count": 8
+        },
+        {
+          "stage_key": "retain-v4-1-checkpoint",
+          "sequence": 3,
+          "sha": "893d5f1fbe8a63a86399a92a55c601ec632c2a11",
+          "parent": "7d7a60162d7829dc15a7e6a33eedc488eb978110",
+          "tree": "fb82f93da9c6344f37e452c13f4e3c58fed1bfc4",
+          "raw_member_count": 34
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 4,
+          "sha": "1cbaece1771fb5dcfe17e9a529b02627af7d01d6",
+          "parent": "893d5f1fbe8a63a86399a92a55c601ec632c2a11",
+          "tree": "670e2dbae2d1b8db8d05283eb3f17ccc960591f3",
+          "raw_member_count": 23
+        },
+        {
+          "stage_key": "retain-hd-validation-library-v0",
+          "sequence": 6,
+          "sha": "6a8fcb292dff2573b8192754f35e7c19be251369",
+          "parent": "1cbaece1771fb5dcfe17e9a529b02627af7d01d6",
+          "tree": "5676a32ffdb5e830eec758196d7b246dd2652753",
+          "raw_member_count": 82
+        },
+        {
+          "stage_key": "retain-hd-source-classification-library-v1",
+          "sequence": 7,
+          "sha": "253cc172d619cb71267b1e0eda1025a092e9af52",
+          "parent": "6a8fcb292dff2573b8192754f35e7c19be251369",
+          "tree": "955aadc588112d29dcfc0a46dd4e2f899f9ef4bd",
+          "raw_member_count": 114
+        }
+      ],
+      "excluded": [
+        {
+          "stage_key": "retain-hd-validation-library-v0",
+          "package_sha256": "67905e0e315760ea2fb7a9657af668b4186caa7ba248ae508c99ca6065f4efd0",
+          "member_path": "教室高清来源验证_20261010/scripts/package_library_verification.py",
+          "reason": [
+            "library_helper_named_path",
+            "text_risk_requires_review"
+          ]
+        },
+        {
+          "stage_key": "retain-hd-source-classification-library-v1",
+          "package_sha256": "13a40373fb08cbb74dd8052881ba03163cc3f258fdac81be2f8cfa9d8e480e49",
+          "member_path": "教室高清来源验证_20261010/scripts/package_library_verification.py",
+          "reason": [
+            "library_helper_named_path",
+            "text_risk_requires_review"
+          ]
+        },
+        {
+          "stage_key": "retain-hd-source-classification-library-v1",
+          "package_sha256": "13a40373fb08cbb74dd8052881ba03163cc3f258fdac81be2f8cfa9d8e480e49",
+          "member_path": "教室高清来源验证_20261010/scripts/package_library_verification_r2.py",
+          "reason": [
+            "library_helper_named_path",
+            "text_risk_requires_review"
+          ]
+        }
+      ],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "主模型仍为阶段4完整房间历史基线。阶段5仅修复独立GLB材质可移植性；阶段6/v0为已被更正的高清QA，阶段7/v1为当前来源分类说明和QA，不更改主BLEND。拒绝位移试验和后续未归档研究不能提升为当前模型。当前同几何白模BLEND/GLB未包含在113原件范围内；阶段1白模仅为不同历史几何。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/classroom/04-retain-complete-geometry/files/教室_完整几何房间_审阅--f43e88bbdb3d/fullroom.blend",
+            "bytes": 9957837,
+            "sha256": "77be8336b43f7cf6c413369c6bef2bd46b5e8508f1958b0fb4d8a172e457c908",
+            "git_blob_sha1": "ab582453c37b1d62eb806c7a41f9ee943b97a527",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "f43e88bbdb3d5dae98bf3feab219b94c42ad3d7aa6dcd433244d36073267f7ee",
+            "package_name": "教室_完整几何房间_审阅.zip",
+            "member_path": "fullroom.blend",
+            "member_id": "zip-003:0004",
+            "role": "textured_blend",
+            "library_file_id": "libfile_253ee8229f308191b138de2f3c65f3ae",
+            "library_version": 6,
+            "stage_sequence": 4
+          },
+          "textured_glb": {
+            "path": "scenes/classroom/05-retain-glb-material-portability-fix/assets/Classroom_FullRoom_Interior.glb",
+            "bytes": 13038312,
+            "sha256": "86282085695a0a61b2f9301d9b5dd33f6d1918125386d8aad8a029d9b5249b55",
+            "git_blob_sha1": "6a96349aabb01562e94e3a859d7af92cfe948511",
+            "role": "textured_glb",
+            "library_file_id": "libfile_97d892df55dc81918a93417081dbe827",
+            "library_version": 1,
+            "stage_sequence": 5
+          },
+          "white_blend": null,
+          "white_glb": null
+        }
+      }
+    },
+    {
+      "scene_id": "terrace_complete_candidate_20261010",
+      "name_zh": "开放露台",
+      "branch": "archive/terrace-history",
+      "head": "c1817aad6b6e73decd6c2424957fd252baab55ea",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/terrace-history/scenes/terrace/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/2",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/23",
+      "raw_file_count": 47,
+      "raw_file_bytes": 127336105,
+      "history_stage_count": 5,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "753a88daf98d2f1fe559c32334003ccfd22d1b06",
+          "parent": "b01ae62832b47e01573a78dd841e388acaf90341",
+          "tree": "44b38d31f948976f313598a35197e6b272a0e59a",
+          "raw_member_count": 4
+        },
+        {
+          "stage_key": "retain-v15-checkpoint",
+          "sequence": 3,
+          "sha": "0aecfd85f1cb066043b17e60637ae9aeeb8cd3ed",
+          "parent": "753a88daf98d2f1fe559c32334003ccfd22d1b06",
+          "tree": "7a4b3f548bcaa38235997110480401c4b43f1c4a",
+          "raw_member_count": 17
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 4,
+          "sha": "36c4bd3814977001325be606d6037e60ef9e8804",
+          "parent": "0aecfd85f1cb066043b17e60637ae9aeeb8cd3ed",
+          "tree": "8aebb956200cf255c625f08c4cb756e729f41bf2",
+          "raw_member_count": 18
+        },
+        {
+          "stage_key": "retain-glb-material-portability-fix",
+          "sequence": 5,
+          "sha": "c1817aad6b6e73decd6c2424957fd252baab55ea",
+          "parent": "36c4bd3814977001325be606d6037e60ef9e8804",
+          "tree": "d5d60e901016096fa78257facbbfc064877ed676",
+          "raw_member_count": 8
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "主BLEND选阶段4 V16 CompleteSpace，独立GLB选阶段5修复材质导出。两者范围与资源近似见原说明；WithoutCity GLB不应冒称与含全部上下文的主BLEND逐对象完全一致。V15为前一历史检查点，不是当前主模型。范围内未保存当前白模。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/terrace/04-retain-complete-geometry/files/Green_Terrace_V2_REVIEW_ONLY--9f53dd8fe6b0/Green_Terrace_Working_V16_CompleteSpace_REVIEW.blend",
+            "bytes": 16572008,
+            "sha256": "47e9fb0a00803491b58d6d02bcb0c5cb4a1aa85b550bc906a2eda24888d56851",
+            "git_blob_sha1": "bcfe4bb154d5d4ef54124f566bef67b2d330b8d0",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "9f53dd8fe6b01cd3c6fe76fdaebe2ab0827005207de258ee83070cae00c7c049",
+            "package_name": "Green_Terrace_V2_REVIEW_ONLY.zip",
+            "member_path": "Green_Terrace_Working_V16_CompleteSpace_REVIEW.blend",
+            "member_id": "zip-007:0014",
+            "role": "textured_blend",
+            "library_file_id": "libfile_528edd64a09881918a68c2b15edd49d2",
+            "library_version": 10,
+            "stage_sequence": 4
+          },
+          "textured_glb": {
+            "path": "scenes/terrace/05-retain-glb-material-portability-fix/files/Terrace_CompleteSpace_GLB_LZMA需兼容解压器--d2e5b9128a38/Terrace_CompleteSpace_WithoutCity.glb",
+            "bytes": 34076844,
+            "sha256": "9c4551b99e20b02a8c0a29f2115f2c83bbf28ae18c5628228263d6cd8b12435d",
+            "git_blob_sha1": "b997a27f93b292a98d3a8ccdb97535171ccb4168",
+            "stage_key": "retain-glb-material-portability-fix",
+            "package_sha256": "d2e5b9128a3826b72a639f3bddc8881881bc60df77a8bfb826c0bdea5063c9ec",
+            "package_name": "Terrace_CompleteSpace_GLB_LZMA需兼容解压器.zip",
+            "member_path": "Terrace_CompleteSpace_WithoutCity.glb",
+            "member_id": "zip-009:0000",
+            "role": "textured_glb",
+            "library_file_id": "libfile_ddb71b53ec448191b8c31e47fec0b451",
+            "library_version": 1,
+            "stage_sequence": 5
+          },
+          "white_blend": null,
+          "white_glb": null
+        }
+      }
+    },
+    {
+      "scene_id": "castle_hall_fullroom",
+      "name_zh": "城堡宴会厅",
+      "branch": "archive/castle-hall-history",
+      "head": "c750744c5bf802c98ef9d11ac27d12779548bac0",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/castle-hall-history/scenes/castle-hall/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/3",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/24",
+      "raw_file_count": 152,
+      "raw_file_bytes": 45873019,
+      "history_stage_count": 2,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "af42a39db3d3feb93f6b7bdc4f789d541a6eef01",
+          "parent": "5e9523c95fa6b687cd576d9b993f4a1eb4c9dcc5",
+          "tree": "91a27e8e6bb3dbefce21ac5a0a5d605b9e963157",
+          "raw_member_count": 54
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "c750744c5bf802c98ef9d11ac27d12779548bac0",
+          "parent": "af42a39db3d3feb93f6b7bdc4f789d541a6eef01",
+          "tree": "a012939a1ab4f3debc36515770994150599b8d49",
+          "raw_member_count": 98
+        }
+      ],
+      "excluded": [
+        {
+          "stage_key": "retain-complete-geometry",
+          "package_sha256": "c8854932dc55bb8dc0a47e306a1b06d6af757eb6b7d0745eb96f4f012fdd0158",
+          "member_path": "baseline/03_Castle_Hall_Textured_Blender.zip",
+          "reason": [
+            "nested_zip_preserved_only_in_original_archive",
+            "extension_not_allowlisted"
+          ]
+        }
+      ],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段2 FullRoom替代阶段1可见组件模型；当前原件只含材质BLEND/GLB，不能虚构白模。阶段2包中baseline嵌套ZIP指回阶段1原件，不再复制上传。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/castle-hall/02-retain-complete-geometry/files/03_Castle_Hall_Textured_Blender--c8854932dc55/models/Xingtong_Castle_Hall_FullRoom.blend",
+            "bytes": 3370065,
+            "sha256": "b04ebc7091ce5bc6a2c8419a634effc5e6999f68a8db68701a832e69259a174e",
+            "git_blob_sha1": "4bc5eb3c60f57b75c64834b52698b127b9720e6a",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "c8854932dc55bb8dc0a47e306a1b06d6af757eb6b7d0745eb96f4f012fdd0158",
+            "package_name": "03_Castle_Hall_Textured_Blender.zip",
+            "member_path": "models/Xingtong_Castle_Hall_FullRoom.blend",
+            "member_id": "zip-012:0011",
+            "role": "textured_blend",
+            "library_file_id": "libfile_5a5f16c8078c8191b13d0c0f80e1ada0",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "textured_glb": {
+            "path": "scenes/castle-hall/02-retain-complete-geometry/files/02_Castle_Hall_Textured_GLB--978f459d88ee/models/Xingtong_Castle_Hall_FullRoom.glb",
+            "bytes": 11103828,
+            "sha256": "f5dbb08a1e9f2a7b215638accb98fbd19df9e8becfad56faf5e9e6249e7e70c1",
+            "git_blob_sha1": "090d3b3f54a1c5154fcc7982fc62349e1b446836",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "978f459d88eeba8fbaef36e01176d3dcf2057a7661dfad0a8e7d4f13b4e29f4c",
+            "package_name": "02_Castle_Hall_Textured_GLB.zip",
+            "member_path": "models/Xingtong_Castle_Hall_FullRoom.glb",
+            "member_id": "zip-013:0011",
+            "role": "textured_glb",
+            "library_file_id": "libfile_2712baf8498c81919dd41d2711807206",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_blend": null,
+          "white_glb": null
+        }
+      }
+    },
+    {
+      "scene_id": "hospital_room_fullroom",
+      "name_zh": "病房",
+      "branch": "archive/hospital-room-history",
+      "head": "bbafc7d1159b5018d683f2fec15695f7c0b85570",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/hospital-room-history/scenes/hospital-room/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/4",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/27",
+      "raw_file_count": 158,
+      "raw_file_bytes": 153073411,
+      "history_stage_count": 2,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "449d0b53434a14b452f942559ce5bf4ce99aff49",
+          "parent": "7e86e63302ab099e1c6b57bce4407a89d5e2aad0",
+          "tree": "eb016abdcad72e0dd21ea9bfe39bd29f259c8123",
+          "raw_member_count": 94
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "bbafc7d1159b5018d683f2fec15695f7c0b85570",
+          "parent": "449d0b53434a14b452f942559ce5bf4ce99aff49",
+          "tree": "a1073425b846ec7c796d870c7e0f7c4fac71a22e",
+          "raw_member_count": 64
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段2 hospital_complete模型是当前完整房间；同名xingtong_material_models/white_models/textures_and_review压缩包不可与阶段1误合并。当前QA同样选阶段2。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/hospital-room/02-retain-complete-geometry/files/xingtong_material_models--fa12d5e559de/hospital_complete_materials.blend",
+            "bytes": 6139356,
+            "sha256": "83e2dc238903f8b746ac33ba7afe931303a5ed5ec4b6c2d7c6dee51de83585ff",
+            "git_blob_sha1": "0bc32524e6d44950f23932105a2eb0f4aaebd5f2",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "fa12d5e559deb3128b78b50c7c5acf1ed17be6b501768f65047b982a1c61e65a",
+            "package_name": "xingtong_material_models.zip",
+            "member_path": "hospital_complete_materials.blend",
+            "member_id": "zip-019:0000",
+            "role": "textured_blend",
+            "library_file_id": "libfile_02f2d68f9920819192cae67b41294837",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "textured_glb": {
+            "path": "scenes/hospital-room/02-retain-complete-geometry/files/xingtong_material_models--fa12d5e559de/hospital_complete_interior.glb",
+            "bytes": 9609552,
+            "sha256": "98fda461741cb6eeb0ba743f5bf42b52adcc4917d5f62cd4237ae76db3b6e699",
+            "git_blob_sha1": "94ae6ddc7f02f5cb81f82adc141e8483c7c337fa",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "fa12d5e559deb3128b78b50c7c5acf1ed17be6b501768f65047b982a1c61e65a",
+            "package_name": "xingtong_material_models.zip",
+            "member_path": "hospital_complete_interior.glb",
+            "member_id": "zip-019:0001",
+            "role": "textured_glb",
+            "library_file_id": "libfile_02f2d68f9920819192cae67b41294837",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_blend": {
+            "path": "scenes/hospital-room/02-retain-complete-geometry/files/xingtong_white_models--f807d949bbc1/hospital_complete_white.blend",
+            "bytes": 1151987,
+            "sha256": "5157ccfa7abdb556f5785a81e81108dde170b872c97667b5b1b1c72d7439ce7f",
+            "git_blob_sha1": "5f39034aa75cfe406df48e24d511227d527e785b",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "f807d949bbc1ec61a994aba7aeab79338dde8c42e5e4439c7731620c2e8f0b35",
+            "package_name": "xingtong_white_models.zip",
+            "member_path": "hospital_complete_white.blend",
+            "member_id": "zip-020:0000",
+            "role": "white_blend",
+            "library_file_id": "libfile_2b28537d03a8819188b4881f191886e0",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_glb": {
+            "path": "scenes/hospital-room/02-retain-complete-geometry/files/xingtong_white_models--f807d949bbc1/hospital_complete_white.glb",
+            "bytes": 4087024,
+            "sha256": "6dc798eaebef1d3f1f65588ffbbecc19557ddde19bddde66ab28d2b04ce759df",
+            "git_blob_sha1": "8150e54435eedd4fda40fc1b479fd981fe616810",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "f807d949bbc1ec61a994aba7aeab79338dde8c42e5e4439c7731620c2e8f0b35",
+            "package_name": "xingtong_white_models.zip",
+            "member_path": "hospital_complete_white.glb",
+            "member_id": "zip-020:0001",
+            "role": "white_glb",
+            "library_file_id": "libfile_2b28537d03a8819188b4881f191886e0",
+            "library_version": 1,
+            "stage_sequence": 2
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "xingtong_train",
+      "name_zh": "列车",
+      "branch": "archive/train-history",
+      "head": "bc5431f654ae8cd9fd0132ec01c45e787d42667d",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/train-history/scenes/train/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/5",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/28",
+      "raw_file_count": 381,
+      "raw_file_bytes": 179306497,
+      "history_stage_count": 3,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "7227dcf94c368bf3f511b7a4e288a7eddd3d03ab",
+          "parent": "62487915dd70b4294a24bbfc19e1dad775f78342",
+          "tree": "f027ca348f5f38ecf4f89b9e7c2b01a49060ab9a",
+          "raw_member_count": 68
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "04095ffd03999a96cef82c3bc6e87a58a7a34ca0",
+          "parent": "7227dcf94c368bf3f511b7a4e288a7eddd3d03ab",
+          "tree": "8e435544f52b6c387fad6fe389199333b39e71ec",
+          "raw_member_count": 95
+        },
+        {
+          "stage_key": "retain-hd-r03-library-v2",
+          "sequence": 3,
+          "sha": "bc5431f654ae8cd9fd0132ec01c45e787d42667d",
+          "parent": "04095ffd03999a96cef82c3bc6e87a58a7a34ca0",
+          "tree": "47e61f8f6c65110c766d184b959e85559fe46c80",
+          "raw_member_count": 218
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段3为已归档r03 Library材质/白模/纹理QA版本2，来源审阅包版本0；四种主模型均使用该阶段。阶段2及更旧同名内部模型保留历史，不取本地r04/运动研究。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_material_models--1fee1fec6de5/01_train_material.blend",
+            "bytes": 6809515,
+            "sha256": "f0cd84d2a8abff5e2597fc986b01279889e239c7c589a63991ba68632b0b3a7c",
+            "git_blob_sha1": "2ba168f663f9d8727dc5022b5bf6c28a65562ffe",
+            "stage_key": "retain-hd-r03-library-v2",
+            "package_sha256": "1fee1fec6de5806b778145b28bc19f84a1876e142225245cf2cd6987a2ab7482",
+            "package_name": "train_hd_r03_material_models.zip",
+            "member_path": "01_train_material.blend",
+            "member_id": "zip-079:0000",
+            "role": "textured_blend",
+            "library_file_id": "libfile_e9f001d8d5408191b036812b72bd5888",
+            "library_version": 2,
+            "stage_sequence": 3
+          },
+          "textured_glb": {
+            "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_material_models--1fee1fec6de5/03_train_material.glb",
+            "bytes": 17615288,
+            "sha256": "51ef0a438b2a3be3a342cd3f4b9e6c2dbb91ca2b6947a950c53fff29af66e7ca",
+            "git_blob_sha1": "203f112e7d4e1a399319ead9ea1667c447d1ddd4",
+            "stage_key": "retain-hd-r03-library-v2",
+            "package_sha256": "1fee1fec6de5806b778145b28bc19f84a1876e142225245cf2cd6987a2ab7482",
+            "package_name": "train_hd_r03_material_models.zip",
+            "member_path": "03_train_material.glb",
+            "member_id": "zip-079:0001",
+            "role": "textured_glb",
+            "library_file_id": "libfile_e9f001d8d5408191b036812b72bd5888",
+            "library_version": 2,
+            "stage_sequence": 3
+          },
+          "white_blend": {
+            "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_white_models--3f9c0f418b77/02_train_white.blend",
+            "bytes": 1545415,
+            "sha256": "16170714e32636d455aaa16ae77b86e939577ee2d5135dc61d20b585521e4043",
+            "git_blob_sha1": "ac4be57ae9219a00aeeb903b1f98487d0d9299bb",
+            "stage_key": "retain-hd-r03-library-v2",
+            "package_sha256": "3f9c0f418b77940ecb0884938dac784c2bd437d04fc75a47b57b73003bf1d5e5",
+            "package_name": "train_hd_r03_white_models.zip",
+            "member_path": "02_train_white.blend",
+            "member_id": "zip-080:0000",
+            "role": "white_blend",
+            "library_file_id": "libfile_e44875a45ce88191b9850c446b95bc7b",
+            "library_version": 2,
+            "stage_sequence": 3
+          },
+          "white_glb": {
+            "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_white_models--3f9c0f418b77/04_train_white.glb",
+            "bytes": 11923812,
+            "sha256": "6f8246aadabec3760e9d3094a9e628ef388cd15e36cad09b23b6dd0a6eadd795",
+            "git_blob_sha1": "9e6118f05ebf9c6da4484a943005dc1e776b66ef",
+            "stage_key": "retain-hd-r03-library-v2",
+            "package_sha256": "3f9c0f418b77940ecb0884938dac784c2bd437d04fc75a47b57b73003bf1d5e5",
+            "package_name": "train_hd_r03_white_models.zip",
+            "member_path": "04_train_white.glb",
+            "member_id": "zip-080:0001",
+            "role": "white_glb",
+            "library_file_id": "libfile_e44875a45ce88191b9850c446b95bc7b",
+            "library_version": 2,
+            "stage_sequence": 3
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "dance_studio_fullroom",
+      "name_zh": "霓虹舞房",
+      "branch": "archive/dance-studio-history",
+      "head": "e88b6f2563b8240f24ba6c43e19a4098866f93f9",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/dance-studio-history/scenes/dance-studio/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/6",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/25",
+      "raw_file_count": 99,
+      "raw_file_bytes": 46334040,
+      "history_stage_count": 2,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "6854b123a4c61e9401fb328ff757e9096b23add0",
+          "parent": "7461661c72683184dbeff37626e830662f551e83",
+          "tree": "f797c2a08afd20dc087d5dd36dcdffead9d8e5ca",
+          "raw_member_count": 57
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "e88b6f2563b8240f24ba6c43e19a4098866f93f9",
+          "parent": "6854b123a4c61e9401fb328ff757e9096b23add0",
+          "tree": "04bc186072ac7d1b3b0954114dbc15250b28d0e6",
+          "raw_member_count": 42
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段2 FullRoom材质/白模四模型是当前成套几何，阶段1同名总包仅历史；当前QA为完整房间审阅。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/dance-studio/02-retain-complete-geometry/files/Xingtong_Dance_Studio_Neon_3D--b181ad02d89d/Xingtong_Neon_Stage_FullRoom.blend",
+            "bytes": 1751848,
+            "sha256": "94eb4f5c1fcdcf029a2673c440f0d63376fd393635f5a0eddc1ba85235dd0b1c",
+            "git_blob_sha1": "e52e164b04006533b1a976291a550a7ba0d44e0e",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "b181ad02d89d4ebaa6727f7c1b8b0ca97e1b8f271078404d4d66b7c7311d9135",
+            "package_name": "Xingtong_Dance_Studio_Neon_3D.zip",
+            "member_path": "Xingtong_Neon_Stage_FullRoom.blend",
+            "member_id": "zip-029:0012",
+            "role": "textured_blend",
+            "library_file_id": "libfile_f49150270f8081918d12c2065bc432ad",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "textured_glb": {
+            "path": "scenes/dance-studio/02-retain-complete-geometry/files/Xingtong_Dance_Studio_Neon_3D--b181ad02d89d/Xingtong_Neon_Stage_FullRoom.glb",
+            "bytes": 3581076,
+            "sha256": "4855dba5a002fba10ab4905ae588ee917a297ca9f4439bfbdb4de4607735ff8f",
+            "git_blob_sha1": "6d47b3e123fb03102ff4264aee04bdf959a1b72a",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "b181ad02d89d4ebaa6727f7c1b8b0ca97e1b8f271078404d4d66b7c7311d9135",
+            "package_name": "Xingtong_Dance_Studio_Neon_3D.zip",
+            "member_path": "Xingtong_Neon_Stage_FullRoom.glb",
+            "member_id": "zip-029:0013",
+            "role": "textured_glb",
+            "library_file_id": "libfile_f49150270f8081918d12c2065bc432ad",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_blend": {
+            "path": "scenes/dance-studio/02-retain-complete-geometry/files/Xingtong_Dance_Studio_Neon_3D--b181ad02d89d/Xingtong_Neon_Stage_FullRoom_White.blend",
+            "bytes": 1394718,
+            "sha256": "a3511469405be36f0937d0c5e75473e6a05d89fd83bfb555244c7801943e61ee",
+            "git_blob_sha1": "6e902e4254f1fa35f7caca489690802379bf4396",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "b181ad02d89d4ebaa6727f7c1b8b0ca97e1b8f271078404d4d66b7c7311d9135",
+            "package_name": "Xingtong_Dance_Studio_Neon_3D.zip",
+            "member_path": "Xingtong_Neon_Stage_FullRoom_White.blend",
+            "member_id": "zip-029:0014",
+            "role": "white_blend",
+            "library_file_id": "libfile_f49150270f8081918d12c2065bc432ad",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_glb": {
+            "path": "scenes/dance-studio/02-retain-complete-geometry/files/Xingtong_Dance_Studio_Neon_3D--b181ad02d89d/Xingtong_Neon_Stage_FullRoom_White.glb",
+            "bytes": 3235064,
+            "sha256": "d1235e47a5e151bd7418395c10d18bb9aae0c0503414ad26d22ac74ad2d07296",
+            "git_blob_sha1": "a2c55f90e32dcec1fdf5f2223eccabf9bc3f459e",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "b181ad02d89d4ebaa6727f7c1b8b0ca97e1b8f271078404d4d66b7c7311d9135",
+            "package_name": "Xingtong_Dance_Studio_Neon_3D.zip",
+            "member_path": "Xingtong_Neon_Stage_FullRoom_White.glb",
+            "member_id": "zip-029:0015",
+            "role": "white_glb",
+            "library_file_id": "libfile_f49150270f8081918d12c2065bc432ad",
+            "library_version": 1,
+            "stage_sequence": 2
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "kitchen_fullroom",
+      "name_zh": "厨房",
+      "branch": "archive/kitchen-history",
+      "head": "5fd7ee3f2dae768415c37e9d34a6c3a3b0ea75ab",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/kitchen-history/scenes/kitchen/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/7",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/29",
+      "raw_file_count": 128,
+      "raw_file_bytes": 38313775,
+      "history_stage_count": 2,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "4d1f2e3f2e2ba6faa286c00484d1622b6d79a686",
+          "parent": "f36fb1f6de96ed6b3b78e67838d0eae4e17ae653",
+          "tree": "98d8b2d56d689069f9600c2b3a98e3083fad82b1",
+          "raw_member_count": 47
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "5fd7ee3f2dae768415c37e9d34a6c3a3b0ea75ab",
+          "parent": "4d1f2e3f2e2ba6faa286c00484d1622b6d79a686",
+          "tree": "7c6ed71df537481537f1fc18ce7bfefa74a926e8",
+          "raw_member_count": 81
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段2 FullRoom四模型为当前；Kitchen_Section_DERIVED.blend是派生剖切检查，只归QA。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/kitchen/02-retain-complete-geometry/files/Xingtong_Kitchen_Complete--ba6ac3dccf2f/models/Kitchen_FullRoom_Textured.blend",
+            "bytes": 1670545,
+            "sha256": "f4ab1281a7ebd3b1fa150730cbcf2854935ce6811671a15639e2a56ab9a749a7",
+            "git_blob_sha1": "568644b62d0d49d4d741d70411b0affc42fd85c2",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "ba6ac3dccf2ffe63065e14908f7a2c0ac882f99c57e9eadace1cc2e477cfa5c4",
+            "package_name": "Xingtong_Kitchen_Complete.zip",
+            "member_path": "models/Kitchen_FullRoom_Textured.blend",
+            "member_id": "zip-031:0039",
+            "role": "textured_blend",
+            "library_file_id": "libfile_8e72d787117c819187457555698931b2",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "textured_glb": {
+            "path": "scenes/kitchen/02-retain-complete-geometry/files/Xingtong_Kitchen_Complete--ba6ac3dccf2f/models/Kitchen_FullRoom_Textured.glb",
+            "bytes": 4408700,
+            "sha256": "86c88a3d412069e645812f4a15e27ae0a6933a95937b1076ec4aacadbd74a07d",
+            "git_blob_sha1": "fde7e9580bc7c091bc2c37b4951fde7f4e90b987",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "ba6ac3dccf2ffe63065e14908f7a2c0ac882f99c57e9eadace1cc2e477cfa5c4",
+            "package_name": "Xingtong_Kitchen_Complete.zip",
+            "member_path": "models/Kitchen_FullRoom_Textured.glb",
+            "member_id": "zip-031:0040",
+            "role": "textured_glb",
+            "library_file_id": "libfile_8e72d787117c819187457555698931b2",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_blend": {
+            "path": "scenes/kitchen/02-retain-complete-geometry/files/Xingtong_Kitchen_Complete--ba6ac3dccf2f/models/Kitchen_FullRoom_White.blend",
+            "bytes": 429274,
+            "sha256": "cb2c935e01787b33d0c20a7157c75c73b949f265a53ac0651fa1a635d19e054a",
+            "git_blob_sha1": "de769bb29e0827b0ad1f6d25fb06d7d8b9519268",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "ba6ac3dccf2ffe63065e14908f7a2c0ac882f99c57e9eadace1cc2e477cfa5c4",
+            "package_name": "Xingtong_Kitchen_Complete.zip",
+            "member_path": "models/Kitchen_FullRoom_White.blend",
+            "member_id": "zip-031:0041",
+            "role": "white_blend",
+            "library_file_id": "libfile_8e72d787117c819187457555698931b2",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_glb": {
+            "path": "scenes/kitchen/02-retain-complete-geometry/files/Xingtong_Kitchen_Complete--ba6ac3dccf2f/models/Kitchen_FullRoom_White.glb",
+            "bytes": 2589512,
+            "sha256": "5b7ed400f81daed103a08244286ef2f9544806a6e9c543cde3c2eb8c8086e32a",
+            "git_blob_sha1": "4ea51c0fe82b4ab88461afa3b2f7889c9afbd1ad",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "ba6ac3dccf2ffe63065e14908f7a2c0ac882f99c57e9eadace1cc2e477cfa5c4",
+            "package_name": "Xingtong_Kitchen_Complete.zip",
+            "member_path": "models/Kitchen_FullRoom_White.glb",
+            "member_id": "zip-031:0042",
+            "role": "white_glb",
+            "library_file_id": "libfile_8e72d787117c819187457555698931b2",
+            "library_version": 1,
+            "stage_sequence": 2
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "bedroom_fullroom",
+      "name_zh": "卧室（7.7深最终版）",
+      "branch": "archive/bedroom-history",
+      "head": "746835a0e39534b2c951a0a82a2618d577a98b62",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/bedroom-history/scenes/bedroom/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/8",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/30",
+      "raw_file_count": 374,
+      "raw_file_bytes": 140325289,
+      "history_stage_count": 3,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "949d0497778bbdc02e00fb9a50a1dc55268896bb",
+          "parent": "10cfd56a568f1acd9c6e20b96ab9dac32bed78bb",
+          "tree": "d30ae05e396706e8c154f4f3eb1697c8852f94b1",
+          "raw_member_count": 71
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "2bcae32d4af1050268a13686064edda86e061791",
+          "parent": "949d0497778bbdc02e00fb9a50a1dc55268896bb",
+          "tree": "7be2762c5cc7b913b9b5a8974799f0df82b21950",
+          "raw_member_count": 108
+        },
+        {
+          "stage_key": "retain-hd-candidate-library-v2",
+          "sequence": 3,
+          "sha": "746835a0e39534b2c951a0a82a2618d577a98b62",
+          "parent": "2bcae32d4af1050268a13686064edda86e061791",
+          "tree": "232d715dd9e396da293cc1fa85881b9795bbb7f1",
+          "raw_member_count": 195
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "最新授权扩展为已交付Library的HD候选v2，新阶段3待Git原文件归档；其四模型来自已保存的新包。阶段2冻结7.7模型保留完整历史。clip_start=14的外置DIAG机位只作来源诊断，普通normal_main_hd使用完整房间与clip=0.03；三张高清源属同轴族、独立平移基线为0，来源拟合未通过。legacy_v1_cutaway只作历史剖切诊断。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/bedroom/03-retain-hd-candidate-library-v2/files/01_Bedroom_Material_Models--7eff91d5c1a6/models/01_HD_candidate_material.blend",
+            "bytes": 6557665,
+            "sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+            "git_blob_sha1": "6ca347673df08cfc76047e6957ff8204a75e3523",
+            "stage_key": "retain-hd-candidate-library-v2",
+            "package_sha256": "7eff91d5c1a680846ca2ff6b046e47b3ad2fdef5cc2e7226e6f08becb8f40c12",
+            "package_name": "01_Bedroom_Material_Models.zip",
+            "member_path": "models/01_HD_candidate_material.blend",
+            "member_id": "bedroom-v2-zip-001:0004",
+            "role": "textured_blend",
+            "library_file_id": "libfile_c4839cf40da0819186824a902802a7f1",
+            "library_version": 2,
+            "stage_sequence": 3
+          },
+          "textured_glb": {
+            "path": "scenes/bedroom/03-retain-hd-candidate-library-v2/files/01_Bedroom_Material_Models--7eff91d5c1a6/models/03_HD_candidate_material.glb",
+            "bytes": 10920744,
+            "sha256": "1a39bef4227de76ed326e4ec1f70689f04c8c7000f36149d2f9b49e7a3a07063",
+            "git_blob_sha1": "71db50d17273be1ad77bd35c4decfef6d11d9806",
+            "stage_key": "retain-hd-candidate-library-v2",
+            "package_sha256": "7eff91d5c1a680846ca2ff6b046e47b3ad2fdef5cc2e7226e6f08becb8f40c12",
+            "package_name": "01_Bedroom_Material_Models.zip",
+            "member_path": "models/03_HD_candidate_material.glb",
+            "member_id": "bedroom-v2-zip-001:0005",
+            "role": "textured_glb",
+            "library_file_id": "libfile_c4839cf40da0819186824a902802a7f1",
+            "library_version": 2,
+            "stage_sequence": 3
+          },
+          "white_blend": {
+            "path": "scenes/bedroom/03-retain-hd-candidate-library-v2/files/02_Bedroom_White_Models--adf43b2b4c28/models/02_HD_candidate_white.blend",
+            "bytes": 1627098,
+            "sha256": "a7d1078924e9330fc75a854a6a690b99b0cd2b29fa7b885e39eaa01f28d84c9a",
+            "git_blob_sha1": "53e2926ce49e6f4005907037821848a67b59b813",
+            "stage_key": "retain-hd-candidate-library-v2",
+            "package_sha256": "adf43b2b4c280a2e2b5d2f14668f0489e52a14d63aeca7ff71ef98f233f64391",
+            "package_name": "02_Bedroom_White_Models.zip",
+            "member_path": "models/02_HD_candidate_white.blend",
+            "member_id": "bedroom-v2-zip-002:0004",
+            "role": "white_blend",
+            "library_file_id": "libfile_fa9a5d3cb58c81919c49ccb857254b5d",
+            "library_version": 2,
+            "stage_sequence": 3
+          },
+          "white_glb": {
+            "path": "scenes/bedroom/03-retain-hd-candidate-library-v2/files/02_Bedroom_White_Models--adf43b2b4c28/models/04_HD_candidate_white.glb",
+            "bytes": 5170316,
+            "sha256": "5e99f9e180c391bd692dfb4361a7130182296764e6b55c7c49fe5cc6b0f31ddb",
+            "git_blob_sha1": "4165c24908ffdac503780563d0bb4f8171250dd1",
+            "stage_key": "retain-hd-candidate-library-v2",
+            "package_sha256": "adf43b2b4c280a2e2b5d2f14668f0489e52a14d63aeca7ff71ef98f233f64391",
+            "package_name": "02_Bedroom_White_Models.zip",
+            "member_path": "models/04_HD_candidate_white.glb",
+            "member_id": "bedroom-v2-zip-002:0005",
+            "role": "white_glb",
+            "library_file_id": "libfile_fa9a5d3cb58c81919c49ccb857254b5d",
+            "library_version": 2,
+            "stage_sequence": 3
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "ktv_fullroom",
+      "name_zh": "深月KTV开放舞台",
+      "branch": "archive/ktv-history",
+      "head": "c594bb05bb97e46755be1bc0697a8298706276a3",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/ktv-history/scenes/ktv/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/9",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/21",
+      "raw_file_count": 123,
+      "raw_file_bytes": 52935313,
+      "history_stage_count": 2,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "de7738d04ddf1050fb61be24fbac3f834052f105",
+          "parent": "5f6a4dc43df18727ccc416f97c1d333023067601",
+          "tree": "aaf890d423c8dc1d9a53475117e1dd5094fe5b68",
+          "raw_member_count": 36
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "c594bb05bb97e46755be1bc0697a8298706276a3",
+          "parent": "de7738d04ddf1050fb61be24fbac3f834052f105",
+          "tree": "f05270c8277a3f9e7f576bfef6974de4c51fbbf8",
+          "raw_member_count": 87
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段2为有限完整开放舞台；材质与白模BLEND齐备，独立GLB仅保存材质版。不能补建室内外壳或导出新白模来冒充归档原件。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/ktv/02-retain-complete-geometry/files/03_KTV_Textured_Blender--093f481eac64/models/KTV_Complete_Open_Stage.blend",
+            "bytes": 5841397,
+            "sha256": "abf9a4d970e5a7319d64f2c10eb8c3fa822a2bd60c283bfce946ed14ff33cf94",
+            "git_blob_sha1": "b2a9f592ec41838c31c7204dfea6f38abfdb0da7",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "093f481eac64b16d2560864e9b42c750f268c6997acbf2f2e92327be21104dfc",
+            "package_name": "03_KTV_Textured_Blender.zip",
+            "member_path": "models/KTV_Complete_Open_Stage.blend",
+            "member_id": "zip-040:0000",
+            "role": "textured_blend",
+            "library_file_id": "libfile_42838866a7008191853c7ea203316779",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_blend": {
+            "path": "scenes/ktv/02-retain-complete-geometry/files/03_KTV_Textured_Blender--093f481eac64/models/KTV_Complete_Open_Stage_White.blend",
+            "bytes": 5819579,
+            "sha256": "c94786c4e9b38eeb6861db86fa8532e0aa947f0dfbbd1ace6ca33fb88b983b70",
+            "git_blob_sha1": "e01fe22cba2859958ebce3487b7054026e1baceb",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "093f481eac64b16d2560864e9b42c750f268c6997acbf2f2e92327be21104dfc",
+            "package_name": "03_KTV_Textured_Blender.zip",
+            "member_path": "models/KTV_Complete_Open_Stage_White.blend",
+            "member_id": "zip-040:0001",
+            "role": "white_blend",
+            "library_file_id": "libfile_42838866a7008191853c7ea203316779",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "textured_glb": {
+            "path": "scenes/ktv/02-retain-complete-geometry/files/02_KTV_Textured_GLB--63e9d67ca063/models/KTV_Complete_Open_Stage.glb",
+            "bytes": 9480212,
+            "sha256": "de766c72c4d6f99e9aefdfb580e4e5f83ef2d7c5a3f8584795453b92f30ceb1c",
+            "git_blob_sha1": "659694029c033e72f3fd9dad94bb54c7c929bf80",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "63e9d67ca063f499d14c134681cb7229a7a81bfe1793c5028be4353a7cc888fd",
+            "package_name": "02_KTV_Textured_GLB.zip",
+            "member_path": "models/KTV_Complete_Open_Stage.glb",
+            "member_id": "zip-041:0000",
+            "role": "textured_glb",
+            "library_file_id": "libfile_d397f75c9f4c8191886d61850add8397",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_glb": null
+        }
+      }
+    },
+    {
+      "scene_id": "seaside_bar_fullroom",
+      "name_zh": "海边吧台",
+      "branch": "archive/seaside-bar-history",
+      "head": "c1fd29d5e1e2a6e4ba7df3019329de809bf4ab03",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/seaside-bar-history/scenes/seaside-bar/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/10",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/26",
+      "raw_file_count": 93,
+      "raw_file_bytes": 30593995,
+      "history_stage_count": 2,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "2c93e35ad5c46b694a46bf39f8ee4d1bba06c902",
+          "parent": "3f96288da7ea6d25ec77021532f2c89e1a961601",
+          "tree": "4d28bec9634fee1e7ed2a68e5448a763badcf3df",
+          "raw_member_count": 2
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "c1fd29d5e1e2a6e4ba7df3019329de809bf4ab03",
+          "parent": "2c93e35ad5c46b694a46bf39f8ee4d1bba06c902",
+          "tree": "c15703cfb5f4847ff8f2d16bb716a0f0d2890253",
+          "raw_member_count": 91
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段2冻结完整结构四模型及QA；section_diagnostic_only.blend仅为剖切诊断。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/seaside-bar/02-retain-complete-geometry/files/03_Seaside_Bar_Textured_Blender--cabbb18d0b4c/models/seaside_bar_complete_textured.blend",
+            "bytes": 1367572,
+            "sha256": "4d3ea0bb009f164e6244310a3213bdf62ee114c52199eb7872e6e997d447a46a",
+            "git_blob_sha1": "a4cd9c82a9cd93574e12ba5156025d4149cabce6",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "cabbb18d0b4ca42e3fdb9ed969f4c480aa73789b2809d0d429659b8e2df97c84",
+            "package_name": "03_Seaside_Bar_Textured_Blender.zip",
+            "member_path": "models/seaside_bar_complete_textured.blend",
+            "member_id": "zip-044:0002",
+            "role": "textured_blend",
+            "library_file_id": "libfile_afbe04615f508191858798e8fca64fed",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "textured_glb": {
+            "path": "scenes/seaside-bar/02-retain-complete-geometry/files/02_Seaside_Bar_Textured_GLB--9caa66d0c70f/models/seaside_bar_complete_textured.glb",
+            "bytes": 4428552,
+            "sha256": "546dc6f1e85805ffca95be54471d78d10501e50cbde62d4e12601118e8cd8c02",
+            "git_blob_sha1": "70285f899d3a00a06de15ceb1253499db36e63c7",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "9caa66d0c70fe06e3a75569ef36c6e14ba65c7d9042783c10cb55f02386c513c",
+            "package_name": "02_Seaside_Bar_Textured_GLB.zip",
+            "member_path": "models/seaside_bar_complete_textured.glb",
+            "member_id": "zip-045:0002",
+            "role": "textured_glb",
+            "library_file_id": "libfile_d5a5cbabc5f4819190e69a0b08a8e5b8",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_blend": {
+            "path": "scenes/seaside-bar/02-retain-complete-geometry/files/01_Seaside_Bar_White_Model--895ab4952af6/models/seaside_bar_complete_white.blend",
+            "bytes": 375225,
+            "sha256": "15535d6ec760d7faca5d8b2ad38b57436efe366464966f03bba5a2e58262aba6",
+            "git_blob_sha1": "a96511777217c453ea8187c085f8750518627c8a",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "895ab4952af6206e0bb601f191c8d6e2b6a51a7e7ef82b07d61a6e5a1c02f561",
+            "package_name": "01_Seaside_Bar_White_Model.zip",
+            "member_path": "models/seaside_bar_complete_white.blend",
+            "member_id": "zip-046:0002",
+            "role": "white_blend",
+            "library_file_id": "libfile_d4e377a4d8148191847c799c6d439d72",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_glb": {
+            "path": "scenes/seaside-bar/02-retain-complete-geometry/files/01_Seaside_Bar_White_Model--895ab4952af6/models/seaside_bar_complete_white.glb",
+            "bytes": 2762240,
+            "sha256": "d033a0b1e165cba57713b9f2438865560fe5a60de9f57bddecd4246add0f395a",
+            "git_blob_sha1": "233c03f2eb19cadffe5e0e285375e5d7eef29cf7",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "895ab4952af6206e0bb601f191c8d6e2b6a51a7e7ef82b07d61a6e5a1c02f561",
+            "package_name": "01_Seaside_Bar_White_Model.zip",
+            "member_path": "models/seaside_bar_complete_white.glb",
+            "member_id": "zip-046:0003",
+            "role": "white_glb",
+            "library_file_id": "libfile_d4e377a4d8148191847c799c6d439d72",
+            "library_version": 1,
+            "stage_sequence": 2
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "castle_garden_fullscene",
+      "name_zh": "城堡花园",
+      "branch": "archive/castle-garden-history",
+      "head": "0e877323ad83397db6d2e4d42d3f4654893c85f5",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/castle-garden-history/scenes/castle-garden/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/11",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/31",
+      "raw_file_count": 182,
+      "raw_file_bytes": 109276191,
+      "history_stage_count": 3,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "4f3d643f40f157762fe8527d0c1c498442f7d868",
+          "parent": "33a04549055d30966c69cb37e241bcdc64e79221",
+          "tree": "1533a416b226945eac7958ef8f854fdeb1d295d0",
+          "raw_member_count": 65
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 3,
+          "sha": "0e877323ad83397db6d2e4d42d3f4654893c85f5",
+          "parent": "4f3d643f40f157762fe8527d0c1c498442f7d868",
+          "tree": "79abc66057079c89906f6b7e8f428337b1b58ad3",
+          "raw_member_count": 117
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段3完整几何为当前四模型；阶段2只有开发说明，不存在可恢复模型。Garden_DIAGNOSTIC_CUTAWAY.blend只作QA。包内FINAL_独立核验_通过仅指已声明技术项目，不代表来源精确拟合通过。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/castle-garden/03-retain-complete-geometry/files/03_Garden_Textured_Blender_and_PBR--274507b59c20/models/Garden_Complete_Textured.blend",
+            "bytes": 10500208,
+            "sha256": "34f42eb9e4c7a9d7387b5a49fa11d87a82fb3eb3eb036c274d0571c8f58a2357",
+            "git_blob_sha1": "7db778d492e894e0f0fa1304f14b60fa2d10b13a",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "274507b59c20cd56c87deb1463d471bf26b296aea7a477d92c937215c17ed085",
+            "package_name": "03_Garden_Textured_Blender_and_PBR.zip",
+            "member_path": "models/Garden_Complete_Textured.blend",
+            "member_id": "zip-053:0000",
+            "role": "textured_blend",
+            "library_file_id": "libfile_86f1dfc4ddec8191b4e46edfc507786c",
+            "library_version": 1,
+            "stage_sequence": 3
+          },
+          "textured_glb": {
+            "path": "scenes/castle-garden/03-retain-complete-geometry/files/02_Garden_Textured_GLB--441c0a7ce427/models/Garden_Complete_Textured.glb",
+            "bytes": 14544428,
+            "sha256": "d7b9716be5e1e2d64f12836e3a038240bc155100d54001368515de4596739865",
+            "git_blob_sha1": "dd538b31c6face0ae40d5214cfebb1b266db5233",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "441c0a7ce4278836ca00fa01a0a963f07df4fcc2f7e838993b177f312444923e",
+            "package_name": "02_Garden_Textured_GLB.zip",
+            "member_path": "models/Garden_Complete_Textured.glb",
+            "member_id": "zip-052:0000",
+            "role": "textured_glb",
+            "library_file_id": "libfile_bb7514ac31ec8191ab00017f8cd49a32",
+            "library_version": 1,
+            "stage_sequence": 3
+          },
+          "white_blend": {
+            "path": "scenes/castle-garden/03-retain-complete-geometry/files/01_Garden_White_Model--b71dbf20c2e5/models/Garden_Complete_White.blend",
+            "bytes": 10484046,
+            "sha256": "fcbbcf7b91f926d7ed5b9f70f01e3febf7e94bb99760e0858033fda7cce4a4bf",
+            "git_blob_sha1": "93f69ec2655d4fb343681c72a50e0da1cb3bd2a9",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "b71dbf20c2e54143424fab3eabe5233cc98996aa0ac307fee89a50bc27e95717",
+            "package_name": "01_Garden_White_Model.zip",
+            "member_path": "models/Garden_Complete_White.blend",
+            "member_id": "zip-051:0000",
+            "role": "white_blend",
+            "library_file_id": "libfile_9012fcdaa8bc8191b08448ec77a48965",
+            "library_version": 1,
+            "stage_sequence": 3
+          },
+          "white_glb": {
+            "path": "scenes/castle-garden/03-retain-complete-geometry/files/01_Garden_White_Model--b71dbf20c2e5/models/Garden_Complete_White.glb",
+            "bytes": 8898960,
+            "sha256": "88fc91ba7767bb3e4b6b751389fc26265d1c17c5877c7e349240bf46b9d6ce31",
+            "git_blob_sha1": "6cc618c960b2439bf959fa2cbd40121964f5c380",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "b71dbf20c2e54143424fab3eabe5233cc98996aa0ac307fee89a50bc27e95717",
+            "package_name": "01_Garden_White_Model.zip",
+            "member_path": "models/Garden_Complete_White.glb",
+            "member_id": "zip-051:0001",
+            "role": "white_glb",
+            "library_file_id": "libfile_9012fcdaa8bc8191b08448ec77a48965",
+            "library_version": 1,
+            "stage_sequence": 3
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "seaside_scene_fullscene",
+      "name_zh": "海滨开放场景",
+      "branch": "archive/seaside-scene-history",
+      "head": "fa468bb5f1c23997788ca66b95a233ed3a445f3b",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/seaside-scene-history/scenes/seaside-scene/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/12",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/22",
+      "raw_file_count": 145,
+      "raw_file_bytes": 90937232,
+      "history_stage_count": 2,
+      "migration_commits": [
+        {
+          "stage_key": "retain-earliest-binaries",
+          "sequence": 1,
+          "sha": "af5998e5ea5309bef6d1aba2cee4c6b8f03731d7",
+          "parent": "0d8d9de18fff256baf188548e1a8dcffee00f069",
+          "tree": "fb2fdee9c08921cf7be0e20b5439868ec658f8d9",
+          "raw_member_count": 29
+        },
+        {
+          "stage_key": "retain-complete-geometry",
+          "sequence": 2,
+          "sha": "fa468bb5f1c23997788ca66b95a233ed3a445f3b",
+          "parent": "af5998e5ea5309bef6d1aba2cee4c6b8f03731d7",
+          "tree": "b883477bcf82732f3c515e7c7cf973de71cf65d8",
+          "raw_member_count": 116
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "阶段2冻结四模型为当前；同名Seafront_Textured与阶段1字节不同，不能按文件名合并。剖切模型仅为QA。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/seaside-scene/02-retain-complete-geometry/files/02_Seafront_Textured_Blender--3731925da52a/models/Seafront_Textured.blend",
+            "bytes": 7478712,
+            "sha256": "63f3808f9560e59f677485a3de3b7c58935779de904532be563aad544774f62f",
+            "git_blob_sha1": "82825be6572069d339f317b7fe9002f668c0ce34",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "3731925da52ab2addb8ba0208b070059f16da29287b86fe927535375430263de",
+            "package_name": "02_Seafront_Textured_Blender.zip",
+            "member_path": "models/Seafront_Textured.blend",
+            "member_id": "zip-058:0001",
+            "role": "textured_blend",
+            "library_file_id": "libfile_59abbc70963481919a297d3a43dbdb73",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "textured_glb": {
+            "path": "scenes/seaside-scene/02-retain-complete-geometry/files/03_Seafront_Textured_GLB--37a1989c3d46/models/Seafront_Textured.glb",
+            "bytes": 18308796,
+            "sha256": "35ad65687a092f68cdaa7ff1c826590863e55c1a46ff56362fdccf349ad0a94e",
+            "git_blob_sha1": "4c13cf72cea4be596786425e9dfa130fa3290f77",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "37a1989c3d46c2c80889f918222fe5a283899f17366a5b08cadec94133252d97",
+            "package_name": "03_Seafront_Textured_GLB.zip",
+            "member_path": "models/Seafront_Textured.glb",
+            "member_id": "zip-059:0001",
+            "role": "textured_glb",
+            "library_file_id": "libfile_51408f34beb4819181506bddb63419f2",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_blend": {
+            "path": "scenes/seaside-scene/02-retain-complete-geometry/files/01_Seafront_White_Models--f0c7ccfdfe5d/models/Seafront_White.blend",
+            "bytes": 4455111,
+            "sha256": "dac93a9be85d91165214911e16914d8d39bfc52333675ee012715fd6490f6e00",
+            "git_blob_sha1": "89b0975c8c2579b6aece23fa28f1d04d6a5a2274",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "f0c7ccfdfe5d9c506a11bc76e05bf909cf24d681053b10e462433d0ec1459ec2",
+            "package_name": "01_Seafront_White_Models.zip",
+            "member_path": "models/Seafront_White.blend",
+            "member_id": "zip-057:0001",
+            "role": "white_blend",
+            "library_file_id": "libfile_48907d0ff4148191bec5276af793caa4",
+            "library_version": 1,
+            "stage_sequence": 2
+          },
+          "white_glb": {
+            "path": "scenes/seaside-scene/02-retain-complete-geometry/files/01_Seafront_White_Models--f0c7ccfdfe5d/models/Seafront_White.glb",
+            "bytes": 14946996,
+            "sha256": "2b9335df319ba048555bb89e461b624a75c2901572bf3e38551f5ac799c57965",
+            "git_blob_sha1": "99e22f626465425f47ab7e710b052cedd201d194",
+            "stage_key": "retain-complete-geometry",
+            "package_sha256": "f0c7ccfdfe5d9c506a11bc76e05bf909cf24d681053b10e462433d0ec1459ec2",
+            "package_name": "01_Seafront_White_Models.zip",
+            "member_path": "models/Seafront_White.glb",
+            "member_id": "zip-057:0002",
+            "role": "white_glb",
+            "library_file_id": "libfile_48907d0ff4148191bec5276af793caa4",
+            "library_version": 1,
+            "stage_sequence": 2
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "xingtong_star_awards_stage",
+      "name_zh": "星斯卡舞台",
+      "branch": "archive/star-awards-stage-history",
+      "head": "2109f1b760d36b06e3252f48ddad35da8ce6c6e8",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/star-awards-stage-history/scenes/star-awards-stage/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/13",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/32",
+      "raw_file_count": 100,
+      "raw_file_bytes": 50714045,
+      "history_stage_count": 1,
+      "migration_commits": [
+        {
+          "stage_key": "retain-first-verifiable-release",
+          "sequence": 1,
+          "sha": "2109f1b760d36b06e3252f48ddad35da8ce6c6e8",
+          "parent": "8f15eeb2a1ac9aa9049a2dca62936460d560fbbe",
+          "tree": "08cd6115fc18657f791110700d92fe94c2fb4e74",
+          "raw_member_count": 100
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "只有阶段1首个可核实候选；材质/白模BLEND和GLB均来自该阶段，三源比对和九视角技术QA并列保留。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/star-awards-stage/01-retain-first-verifiable-release/files/01_材质与白模_Blender--47ddeb7e4a74/Star_Awards_Candidate.blend",
+            "bytes": 5369924,
+            "sha256": "8297375382d8a39f901be01bd14b462523a3b809b2f0d79f65319093ebe079cf",
+            "git_blob_sha1": "861986218cb1ba7b19fbff5b9561ac3ac3221137",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "47ddeb7e4a748d996e2365249bc73c2e401ceae88f8ff59bdfc5a599e37916f4",
+            "package_name": "01_材质与白模_Blender.zip",
+            "member_path": "Star_Awards_Candidate.blend",
+            "member_id": "zip-061:0005",
+            "role": "textured_blend",
+            "library_file_id": "libfile_6fdb428152c08191aa48b505d646b3ee",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "textured_glb": {
+            "path": "scenes/star-awards-stage/01-retain-first-verifiable-release/files/02_材质与白模_GLB--dc9b5e6c7f22/Star_Awards_Candidate.glb",
+            "bytes": 2391992,
+            "sha256": "e287e0594c152609326f418f4538f4f22608b472ac9df32f94392f4ae8496a6e",
+            "git_blob_sha1": "0aa59bfc7c3f4e3fb41839c698072947671d77a3",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "dc9b5e6c7f22163145047fddd4808f229851d928e3255126a3f6788068d6851c",
+            "package_name": "02_材质与白模_GLB.zip",
+            "member_path": "Star_Awards_Candidate.glb",
+            "member_id": "zip-062:0005",
+            "role": "textured_glb",
+            "library_file_id": "libfile_755873d60ff481919473a1825dc9b0a6",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "white_blend": {
+            "path": "scenes/star-awards-stage/01-retain-first-verifiable-release/files/01_材质与白模_Blender--47ddeb7e4a74/Star_Awards_White.blend",
+            "bytes": 4793588,
+            "sha256": "2767da780e27953f15924c610d996af4cfee6194b741ca4708336028e2998fe5",
+            "git_blob_sha1": "18fd9e9f72c143bee9206d96a3d2fd57247a296b",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "47ddeb7e4a748d996e2365249bc73c2e401ceae88f8ff59bdfc5a599e37916f4",
+            "package_name": "01_材质与白模_Blender.zip",
+            "member_path": "Star_Awards_White.blend",
+            "member_id": "zip-061:0006",
+            "role": "white_blend",
+            "library_file_id": "libfile_6fdb428152c08191aa48b505d646b3ee",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "white_glb": {
+            "path": "scenes/star-awards-stage/01-retain-first-verifiable-release/files/02_材质与白模_GLB--dc9b5e6c7f22/Star_Awards_White.glb",
+            "bytes": 2233552,
+            "sha256": "40bdea4ee6e0ad076efe9decb99f985a660c2356f9a4338a7e0eb589dc4bfbce",
+            "git_blob_sha1": "e1a2f6e0a1b001687bee1bf1cc6426176452fa79",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "dc9b5e6c7f22163145047fddd4808f229851d928e3255126a3f6788068d6851c",
+            "package_name": "02_材质与白模_GLB.zip",
+            "member_path": "Star_Awards_White.glb",
+            "member_id": "zip-062:0006",
+            "role": "white_glb",
+            "library_file_id": "libfile_755873d60ff481919473a1825dc9b0a6",
+            "library_version": 0,
+            "stage_sequence": 1
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "xingtong_piano_terrace_nook",
+      "name_zh": "钢琴门廊",
+      "branch": "archive/piano-terrace-nook-history",
+      "head": "0c52820f054f7c7e2f803071cf91bb93ed79de03",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/piano-terrace-nook-history/scenes/piano-terrace-nook/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/14",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/18",
+      "raw_file_count": 71,
+      "raw_file_bytes": 33079506,
+      "history_stage_count": 1,
+      "migration_commits": [
+        {
+          "stage_key": "retain-first-verifiable-release",
+          "sequence": 1,
+          "sha": "0c52820f054f7c7e2f803071cf91bb93ed79de03",
+          "parent": "4aafd05e7008f160c4a65148bc277f04c1bfeeaa",
+          "tree": "70b183f43810482537599732e814ebe4cc7b2af6",
+          "raw_member_count": 71
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "只有阶段1首个可核实近似候选；双模型四格式、真实源和QA分包配套。此钢琴门廊不是独立季节露台。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/piano-terrace-nook/01-retain-first-verifiable-release/files/钢琴门廊_01_完整模型_近似候选--7a9ae9c06ca4/models/Piano_Nook_Textured.blend",
+            "bytes": 1208997,
+            "sha256": "43ab0d7e0079e2d22a42862d2d0c28d6d31605eafb6b3e7b06b248b73096afe8",
+            "git_blob_sha1": "a9df2f9d42c44b01069aaa181aa249aefa143b18",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "7a9ae9c06ca4b935492d3945d9faa9df59881c6ded2ac5b3df2e8847fc8e50df",
+            "package_name": "钢琴门廊_01_完整模型_近似候选.zip",
+            "member_path": "models/Piano_Nook_Textured.blend",
+            "member_id": "zip-066:0001",
+            "role": "textured_blend",
+            "library_file_id": "libfile_43edc2c07cdc8191858d9ae0867c1d63",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "textured_glb": {
+            "path": "scenes/piano-terrace-nook/01-retain-first-verifiable-release/files/钢琴门廊_01_完整模型_近似候选--7a9ae9c06ca4/models/Piano_Nook_Textured.glb",
+            "bytes": 6911088,
+            "sha256": "45b915e311c0ef69b2d5847a28f324ec7165452a995c9dabf3370ed096e4152c",
+            "git_blob_sha1": "a98b4e59417e6763a0e2918f44e0cbdcc04934c6",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "7a9ae9c06ca4b935492d3945d9faa9df59881c6ded2ac5b3df2e8847fc8e50df",
+            "package_name": "钢琴门廊_01_完整模型_近似候选.zip",
+            "member_path": "models/Piano_Nook_Textured.glb",
+            "member_id": "zip-066:0003",
+            "role": "textured_glb",
+            "library_file_id": "libfile_43edc2c07cdc8191858d9ae0867c1d63",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "white_blend": {
+            "path": "scenes/piano-terrace-nook/01-retain-first-verifiable-release/files/钢琴门廊_01_完整模型_近似候选--7a9ae9c06ca4/models/Piano_Nook_White.blend",
+            "bytes": 538655,
+            "sha256": "236c3f37d01c9d1fcbca92da63278f75e9150f2efa5867ad32c307642f69688f",
+            "git_blob_sha1": "984368de64c93b304457be3b6b18c9a2debdb6a9",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "7a9ae9c06ca4b935492d3945d9faa9df59881c6ded2ac5b3df2e8847fc8e50df",
+            "package_name": "钢琴门廊_01_完整模型_近似候选.zip",
+            "member_path": "models/Piano_Nook_White.blend",
+            "member_id": "zip-066:0000",
+            "role": "white_blend",
+            "library_file_id": "libfile_43edc2c07cdc8191858d9ae0867c1d63",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "white_glb": {
+            "path": "scenes/piano-terrace-nook/01-retain-first-verifiable-release/files/钢琴门廊_01_完整模型_近似候选--7a9ae9c06ca4/models/Piano_Nook_White.glb",
+            "bytes": 6263144,
+            "sha256": "8c57199fb363b7b37f14682fdedcb541e8c451fcfc4b8f0e99df6e96e9ef9b76",
+            "git_blob_sha1": "9167bfcfabf38025d51d613ac1e016a349a5151e",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "7a9ae9c06ca4b935492d3945d9faa9df59881c6ded2ac5b3df2e8847fc8e50df",
+            "package_name": "钢琴门廊_01_完整模型_近似候选.zip",
+            "member_path": "models/Piano_Nook_White.glb",
+            "member_id": "zip-066:0002",
+            "role": "white_glb",
+            "library_file_id": "libfile_43edc2c07cdc8191858d9ae0867c1d63",
+            "library_version": 0,
+            "stage_sequence": 1
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "red_gold_stage_v1",
+      "name_zh": "红金灯泡拱形舞台",
+      "branch": "archive/red-gold-stage-history",
+      "head": "43d9d9d2fad3ab357cae15c464ac1839948a01ae",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/red-gold-stage-history/scenes/red-gold-stage/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/15",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/19",
+      "raw_file_count": 69,
+      "raw_file_bytes": 37485807,
+      "history_stage_count": 1,
+      "migration_commits": [
+        {
+          "stage_key": "retain-first-verifiable-release",
+          "sequence": 1,
+          "sha": "43d9d9d2fad3ab357cae15c464ac1839948a01ae",
+          "parent": "4b308e13dc51826a4541a765b63dce1a9146e3a4",
+          "tree": "3cbbb7c4bf6709b0ce5315001f1b0474c19ee281",
+          "raw_member_count": 69
+        }
+      ],
+      "excluded": [
+        {
+          "stage_key": "retain-first-verifiable-release",
+          "package_sha256": "510cbd4b6bc7e1c903e537275e0fd365145b6c49a08e2c463944452ed2c03b9d",
+          "member_path": "independent/check.log",
+          "reason": [
+            "log_file_review",
+            "extension_not_allowlisted"
+          ]
+        }
+      ],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "只有阶段1首个可核实红金灯泡舞台。双模型四格式为主模型；QA中的两回导BLEND和剖切BLEND不是当前主模型。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/red-gold-stage/01-retain-first-verifiable-release/files/红金灯泡拱形舞台_v1_双模型--2721a39e7ab4/models/red_gold_stage_textured.blend",
+            "bytes": 3908500,
+            "sha256": "7a3eceeaaff48c2e2bc02c848e0c253906344486ff13c402005a6732ba295cb6",
+            "git_blob_sha1": "2050ea4666695494f53f0fc5560ff17ba89c594d",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "2721a39e7ab4376f4e8b3eb1042d3ce58a8e849dcababeaad5cc6df1bba73f98",
+            "package_name": "红金灯泡拱形舞台_v1_双模型.zip",
+            "member_path": "models/red_gold_stage_textured.blend",
+            "member_id": "zip-069:0002",
+            "role": "textured_blend",
+            "library_file_id": "libfile_f0a1aa3b7494819188c5819ca3dfc928",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "textured_glb": {
+            "path": "scenes/red-gold-stage/01-retain-first-verifiable-release/files/红金灯泡拱形舞台_v1_双模型--2721a39e7ab4/models/red_gold_stage_textured.glb",
+            "bytes": 2698096,
+            "sha256": "0a232bc1fe327a3c9cb7b78eda6e4db737cf90add7414a8cd76f4f6e5e2f0d9a",
+            "git_blob_sha1": "f1229f1205272466c3b12896e4974f3a5ee11b80",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "2721a39e7ab4376f4e8b3eb1042d3ce58a8e849dcababeaad5cc6df1bba73f98",
+            "package_name": "红金灯泡拱形舞台_v1_双模型.zip",
+            "member_path": "models/red_gold_stage_textured.glb",
+            "member_id": "zip-069:0003",
+            "role": "textured_glb",
+            "library_file_id": "libfile_f0a1aa3b7494819188c5819ca3dfc928",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "white_blend": {
+            "path": "scenes/red-gold-stage/01-retain-first-verifiable-release/files/红金灯泡拱形舞台_v1_双模型--2721a39e7ab4/models/red_gold_stage_white.blend",
+            "bytes": 3789356,
+            "sha256": "85b8dc1b80154b7daf14b4ef61c3776846d3ea97b00dd50441fceec8f94a1e1d",
+            "git_blob_sha1": "e3606ad065e28645b436097300a02485d266c8e9",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "2721a39e7ab4376f4e8b3eb1042d3ce58a8e849dcababeaad5cc6df1bba73f98",
+            "package_name": "红金灯泡拱形舞台_v1_双模型.zip",
+            "member_path": "models/red_gold_stage_white.blend",
+            "member_id": "zip-069:0004",
+            "role": "white_blend",
+            "library_file_id": "libfile_f0a1aa3b7494819188c5819ca3dfc928",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "white_glb": {
+            "path": "scenes/red-gold-stage/01-retain-first-verifiable-release/files/红金灯泡拱形舞台_v1_双模型--2721a39e7ab4/models/red_gold_stage_white.glb",
+            "bytes": 2587716,
+            "sha256": "d6df320deb80add44ef3408e679dbedf6c9363a1942e65c1b39f4952c3da781e",
+            "git_blob_sha1": "52adc8720e7904679857619d8937e5d69a9dbfaf",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "2721a39e7ab4376f4e8b3eb1042d3ce58a8e849dcababeaad5cc6df1bba73f98",
+            "package_name": "红金灯泡拱形舞台_v1_双模型.zip",
+            "member_path": "models/red_gold_stage_white.glb",
+            "member_id": "zip-069:0005",
+            "role": "white_glb",
+            "library_file_id": "libfile_f0a1aa3b7494819188c5819ca3dfc928",
+            "library_version": 0,
+            "stage_sequence": 1
+          }
+        }
+      }
+    },
+    {
+      "scene_id": "dark_cell_v1",
+      "name_zh": "暗色铁栏布景",
+      "branch": "archive/dark-cell-history",
+      "head": "8bf040f5874748412c5a59ddabe4da81d2b2b84e",
+      "entry_url": "https://github.com/Shuang-su/metaxingtong/blob/archive/dark-cell-history/scenes/dark-cell/README.md",
+      "issue_url": "https://github.com/Shuang-su/metaxingtong/issues/16",
+      "draft_pr_url": "https://github.com/Shuang-su/metaxingtong/pull/20",
+      "raw_file_count": 85,
+      "raw_file_bytes": 16752895,
+      "history_stage_count": 1,
+      "migration_commits": [
+        {
+          "stage_key": "retain-first-verifiable-release",
+          "sequence": 1,
+          "sha": "8bf040f5874748412c5a59ddabe4da81d2b2b84e",
+          "parent": "4e642f5412f41c8df5ff2d79e2a2ceda81767a4c",
+          "tree": "872047dc7ff9dcc34a0e703faabb5519f9f435fb",
+          "raw_member_count": 85
+        }
+      ],
+      "excluded": [],
+      "current_models": {
+        "status": "重建候选 / 来源忠实度验收未通过",
+        "selection_reason": "只有阶段1首个可核实暗色铁栏候选。双模型四格式为主模型；QA中的回导BLEND和剖切BLEND不能替代主文件。",
+        "models": {
+          "textured_blend": {
+            "path": "scenes/dark-cell/01-retain-first-verifiable-release/files/01_暗色铁栏布景_完整模型首版--6654e2fc89de/models/dark_cell_textured.blend",
+            "bytes": 1066908,
+            "sha256": "dc45c9f7183d51981113ffa51da82e4498c0bb10973310c2321f96ede9712a44",
+            "git_blob_sha1": "253c9ec0e76962599ad6216731a75d9b99c5c8a4",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "6654e2fc89de8ffee856332d47ad3fb02262bf0b65421a33b8ae10517b581fd8",
+            "package_name": "01_暗色铁栏布景_完整模型首版.zip",
+            "member_path": "models/dark_cell_textured.blend",
+            "member_id": "zip-071:0001",
+            "role": "textured_blend",
+            "library_file_id": "libfile_c8aab0c34c80819180f69abbaea8a118",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "textured_glb": {
+            "path": "scenes/dark-cell/01-retain-first-verifiable-release/files/01_暗色铁栏布景_完整模型首版--6654e2fc89de/models/dark_cell_textured.glb",
+            "bytes": 298440,
+            "sha256": "ad2730f510acefa02106d7f74e508794cd155badb2634e8e03fb309ef1fe765e",
+            "git_blob_sha1": "194b78cf1d8e2ff99d0632f6f08e1cd29d5dd852",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "6654e2fc89de8ffee856332d47ad3fb02262bf0b65421a33b8ae10517b581fd8",
+            "package_name": "01_暗色铁栏布景_完整模型首版.zip",
+            "member_path": "models/dark_cell_textured.glb",
+            "member_id": "zip-071:0002",
+            "role": "textured_glb",
+            "library_file_id": "libfile_c8aab0c34c80819180f69abbaea8a118",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "white_blend": {
+            "path": "scenes/dark-cell/01-retain-first-verifiable-release/files/01_暗色铁栏布景_完整模型首版--6654e2fc89de/models/dark_cell_white.blend",
+            "bytes": 967628,
+            "sha256": "437c206db6b63f29c74cce0372ecea824c734e2390866055bfb4df9126e431ec",
+            "git_blob_sha1": "5f3dc4b7f489e08d060bc3ae312e62a229a77a6f",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "6654e2fc89de8ffee856332d47ad3fb02262bf0b65421a33b8ae10517b581fd8",
+            "package_name": "01_暗色铁栏布景_完整模型首版.zip",
+            "member_path": "models/dark_cell_white.blend",
+            "member_id": "zip-071:0003",
+            "role": "white_blend",
+            "library_file_id": "libfile_c8aab0c34c80819180f69abbaea8a118",
+            "library_version": 0,
+            "stage_sequence": 1
+          },
+          "white_glb": {
+            "path": "scenes/dark-cell/01-retain-first-verifiable-release/files/01_暗色铁栏布景_完整模型首版--6654e2fc89de/models/dark_cell_white.glb",
+            "bytes": 251152,
+            "sha256": "582766389a8f0e393c9b9a5444fea621352c69479bcb6fef9736b9d7fcd39aba",
+            "git_blob_sha1": "4c58c4cf4dfe18d289c19da903ffae5e1480ec84",
+            "stage_key": "retain-first-verifiable-release",
+            "package_sha256": "6654e2fc89de8ffee856332d47ad3fb02262bf0b65421a33b8ae10517b581fd8",
+            "package_name": "01_暗色铁栏布景_完整模型首版.zip",
+            "member_path": "models/dark_cell_white.glb",
+            "member_id": "zip-071:0004",
+            "role": "white_glb",
+            "library_file_id": "libfile_c8aab0c34c80819180f69abbaea8a118",
+            "library_version": 0,
+            "stage_sequence": 1
+          }
+        }
+      }
+    }
+  ],
+  "verification_document": "docs/independent-raw-readback.json"
+}
