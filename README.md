@@ -20,3 +20,28 @@
 `scenes/<scene>/spec.md`、`plan.md`、`report.md`：范围、补录计划、结果与限制。
 
 本 main 提交仅初始化档案结构。实际资产与版本历史会随每个场景的 Draft PR 独立提交；不能将此索引视为模型已上传。
+
+## 重建标准
+
+[来源覆盖、几何检查与历史完整性标准](docs/reconstruction-standard.md)。所有场景均为重建候选 / 待来源复核；不声称每场均有新高清与独立多角度来源。
+
+## 16 场归档入口
+
+- [教室](https://github.com/Shuang-su/metaxingtong/issues/1)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [开放露台](https://github.com/Shuang-su/metaxingtong/issues/2)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [城堡宴会厅](https://github.com/Shuang-su/metaxingtong/issues/3)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [病房](https://github.com/Shuang-su/metaxingtong/issues/4)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [列车](https://github.com/Shuang-su/metaxingtong/issues/5)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [霓虹舞房](https://github.com/Shuang-su/metaxingtong/issues/6)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [厨房](https://github.com/Shuang-su/metaxingtong/issues/7)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [卧室（7.7深最终版）](https://github.com/Shuang-su/metaxingtong/issues/8)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [深月KTV开放舞台](https://github.com/Shuang-su/metaxingtong/issues/9)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [海边吧台](https://github.com/Shuang-su/metaxingtong/issues/10)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [城堡花园](https://github.com/Shuang-su/metaxingtong/issues/11)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [海滨开放场景](https://github.com/Shuang-su/metaxingtong/issues/12)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [星斯卡舞台](https://github.com/Shuang-su/metaxingtong/issues/13)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [钢琴门廊](https://github.com/Shuang-su/metaxingtong/issues/14)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [红金灯泡拱形舞台](https://github.com/Shuang-su/metaxingtong/issues/15)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+- [暗色铁栏布景](https://github.com/Shuang-su/metaxingtong/issues/16)：Issue 已建立；实际模型提交 / Draft PR 待核验。
+
+各场景的模型与真实历史保留在各自归档分支/Draft PR；未合并到 main 的资产不冒称已位于 main。汽车副驾目前只有局部来源，不在完整模型归档清单内。
