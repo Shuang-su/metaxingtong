@@ -1,0 +1,104 @@
+{
+  "scene_name": "厨房",
+  "status": "重建候选 / 待来源复核",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1mx4y1z7oY/"
+  ],
+  "residuals": "11旧源图稀疏锚点最大约21px；高清为1080解码视口截图，新增围护门窗无源图依据。",
+  "source_fidelity_acceptance": "待复核，未通过总体来源忠实度验收。",
+  "newly_logged_in_hd_used_for_every_scene": false,
+  "newly_logged_in_hd_for_this_scene": "仅以本文件列出的来源质量证据为准；未明确记录则未知。",
+  "independent_additional_video_baselines": "逐证据判断，重复/同轴/同族不算独立基线。",
+  "source_quality_facts": [
+    {
+      "field": "document_excerpt",
+      "value": "来源：《与星瞳共度的一天》 BV1mx4y1z7oY"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "https://www.bilibili.com/video/BV1mx4y1z7oY/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "原图20:28的L形角度与50:56的正面角度，存在真实观察方向差异，作为两组共享几何约束。70:09和85:33有人画面用于固定电器位置复核，不宣称新增独立基线。视频播放器界面不属于模型；源文件为旧包保留的360p截图，上采样并不增加实际分辨率。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "已补充同视频20:27.557转角和50:57.236正面两张稳定暂停参考。浏览器视频解码尺寸均1920×1080，readyState=4、paused=true。直接viewport截图为1180×757，画面裁切1180×664，未经放大；这些文件是高清播放的viewport截图，不是原生1920×1080视频帧导出。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "《与星瞳共度的一天》，2024-04-19，BV1mx4y1z7oY。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "https://www.bilibili.com/video/BV1mx4y1z7oY/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "参考来自公开 360p 播放画面：20:28 无人 L 角，50:56 无人正面台面，1:10:09 与 1:25:33 同景有人镜头。后三张提供固定电器位置复核。媒体时间按保存截图命名，播放器可能显示下一秒。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "参考叠图是校准记录，不意味着逐像素复刻。参考机位的焦距、相机位置也只是拟合参数，并非原直播相机元数据。墙画轮廓、柜门格条和固定电器用于交叉约束；低清图、部分画面遮挡、未量测尺度使电器与柜端仍有偏差。对齐记录中的台面前缘、L 转折和玻璃柜底线约有 17–20 像素残差（1188×668）；选点误差不能视作全场景精度。播放器标题/头像/进度条不属于模型。"
+    },
+    {
+      "field": ".source_url",
+      "value": "https://www.bilibili.com/video/BV1mx4y1z7oY/"
+    },
+    {
+      "field": ".frames[0].video_time_seconds",
+      "value": 1227.556727
+    },
+    {
+      "field": ".frames[0].paused",
+      "value": true
+    },
+    {
+      "field": ".frames[1].video_time_seconds",
+      "value": 3057.235864
+    },
+    {
+      "field": ".frames[1].paused",
+      "value": true
+    },
+    {
+      "field": ".paused",
+      "value": true
+    },
+    {
+      "field": ".rect.height",
+      "value": 757
+    },
+    {
+      "field": ".rect.width",
+      "value": 1180
+    },
+    {
+      "field": ".time",
+      "value": 3057.235864
+    },
+    {
+      "field": ".paused",
+      "value": true
+    },
+    {
+      "field": ".time",
+      "value": 1227.556727
+    },
+    {
+      "field": ".map_resolution[0]",
+      "value": 512
+    },
+    {
+      "field": ".map_resolution[1]",
+      "value": 512
+    }
+  ],
+  "history_gaps": [
+    "未取得逐次聊天发布的确切时刻；Library创建/修改时间不替代聊天发布日期。",
+    "不能确认所有中间发布版本均已恢复；缺失历史不重建、不补造旧提交。"
+  ],
+  "technical_verification_scope": "随包已有记录，本次归档未重新运行Blender。",
+  "shared_standard": "docs/reconstruction-standard.md"
+}
