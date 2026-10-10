@@ -1,0 +1,2215 @@
+{
+  "stage": "research-motion-source-verification",
+  "title": "正片连续桌身份与六窗格研究",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1LC411V7Nh/"
+  ],
+  "times": "已知窗侧连续链约2104–2108秒；高位F_path_073→080属于已有真实连续帧，精确逐帧时刻以冻结selected_manifest/对应源JSON为准，文件编号不是秒。",
+  "pixels": "已记录解码1920×1080，视口截图1180×757，裁图实际尺寸逐文件读取；不是原生视频导帧。旧回归渲染与新图采样数不同，不能将差分全部归因几何。",
+  "changes": "连续证据证实T1植物旁首窗桌、T2中间桌、T3后来的2123左杯桌是不同桌；不以重复道具认唯一ID。前窗段六原始竖节距计数有证据，旧十格待改。六格试验删除后四格并前移宽墩/后窗2.326492，57个非相机对象改变、1979保持。两可追踪桌约束白模和六格全材质十机位回归仅研究。",
+  "limitations": [
+    "旧20桌/六列只是历史冻结基线，非已证正片拓扑；D是叙事静态CG/图片背景，同模型同布局待关联，不承担桌数量或列数硬约束。",
+    "E→C硬切不能当连续相机；窗侧近似旋转链不能三角化桌高/纵深。六格数量不是每格米制尺寸；强拟合桌高撞界、自由焦距撞界等失败解不能生成正式家具。",
+    "六格候选未被接受；完整房间BLEND/Library/CURRENT未替换。35/71分钟同布局关系仍待固定物和桌链支持。"
+  ],
+  "source_fidelity_passed": false,
+  "current_changed": false,
+  "files": [
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_03.jpg",
+      "bytes": 83682,
+      "sha256": "b7fd8d5d2342b78ff9a20f5be955aaa6ac6457855016b41793c78033116964d9",
+      "git_blob_sha1": "1a773451a27a8768ff78b5de365f60d556a2be75"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_04.jpg",
+      "bytes": 89071,
+      "sha256": "65817c83e6505fbae14eff6eaf6f41fae95ce144d30dbc5c0b4b7007837d3f84",
+      "git_blob_sha1": "79e280a37132f3ef12c59077bf40f13761676107"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_05.jpg",
+      "bytes": 88379,
+      "sha256": "84522a962170d4352c8b4e96053ba4804d2188323fdb18f6744c3acb099ecb79",
+      "git_blob_sha1": "fec415ab0188dffdae8cb6989829aec063f41f38"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_06.jpg",
+      "bytes": 89843,
+      "sha256": "e4e3be7aa042b03c3379b93f0071703ac3e34266f43b3025021ff7f72e4759ee",
+      "git_blob_sha1": "5aaccfae2a06e738e5c3e7b0e1e00024c4dea7bb"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_07.jpg",
+      "bytes": 90992,
+      "sha256": "0ad975bb516eb4581e2244f45ccec0732f0a44aa73f8bec46e02a73ce860386f",
+      "git_blob_sha1": "6a213b0684d6a546efc194eec705829410ccd41d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_08.jpg",
+      "bytes": 88597,
+      "sha256": "4add15a6a2df4c6664997eacc448b5ad24c1ed71938f7e86f9297f81505700ad",
+      "git_blob_sha1": "ffdc14462e82e7f9f06062e07ccc62130ee10706"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_09.jpg",
+      "bytes": 87541,
+      "sha256": "893fffd5928fa0e74a641d05f8c82d68bc71ccc6d3d235833c7019013180c051",
+      "git_blob_sha1": "6da6271bc924fad4a07fba8b363ea32c5b923007"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_10.jpg",
+      "bytes": 87760,
+      "sha256": "06e4070eb661309c6f31d795e9b8c6ab731470da997f6bcfb01302a52ea555d2",
+      "git_blob_sha1": "64df0a370d8790ccef2ea2e13e643ccc9d960cd2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_11.jpg",
+      "bytes": 89722,
+      "sha256": "bc5e2e3cc95d349dd92cd8dbe6ae3ecf55322962cc2d7b038298c2196a486134",
+      "git_blob_sha1": "496ed17b08665af8d62dad45794c977039e49387"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_12.jpg",
+      "bytes": 90168,
+      "sha256": "6fdbe0f9ff58c2596861494c7ec771dd000ea2d929c0a3bdb05ffd9b77f78225",
+      "git_blob_sha1": "500cf30715aad57edcb67b899c2157831b78b671"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_13.jpg",
+      "bytes": 78105,
+      "sha256": "0c75fd398983b9994c7cd979b22ef700fcce96779a51703f24133b252ed8914b",
+      "git_blob_sha1": "098432896d13674d32c8d8a0b5deb560679f0f46"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_14.jpg",
+      "bytes": 69070,
+      "sha256": "d2cec25373e9eb20250c8e2b460c03d45f61f133bae155fff087b6084c5a20c2",
+      "git_blob_sha1": "223691eb3d1909c5618ee04113c82a5425f32a24"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_15.jpg",
+      "bytes": 68616,
+      "sha256": "bc386267d118a177216fe240006978c5cbf929622450f547855dd19ae3454669",
+      "git_blob_sha1": "35db1c3ff6efd30a4c88ea27df0c650d7fd5aea1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_16.jpg",
+      "bytes": 80076,
+      "sha256": "3e8510beafddac4793790688f41bb8651b47c205ad654563257bd1713b75880f",
+      "git_blob_sha1": "93b64a6944aee65531f6cd0b555c95e0304413ff"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_16_upper.jpg",
+      "bytes": 37639,
+      "sha256": "c153d648a4859504aea30b8291529b25363a40c4d51b57c060affd9e88ea6652",
+      "git_blob_sha1": "5320156d4cf0c06de28871ae9b30959f7e029201"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_17.jpg",
+      "bytes": 76574,
+      "sha256": "5641465fd79c6fd6e1b88804429bd77e59d03ae4835384802f5e72b1ee371ce8",
+      "git_blob_sha1": "d5967ef90f3c7fc6851870c4dcc40f512c29101c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_18.jpg",
+      "bytes": 77638,
+      "sha256": "849cd96a1eecf5127708555ddf7fd7393ad18dcfc9c59a51f1df4c56a40f0052",
+      "git_blob_sha1": "fa94fe34f20f92092d1fd72043263fd91273b2b9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_19.jpg",
+      "bytes": 83947,
+      "sha256": "19bb5401b1fd14192bd87feed3fca18274db9f9ac63bfde0974c5ca75257e7d0",
+      "git_blob_sha1": "105de7de2ef45f5dbc4976eef9e761084aeb2d3d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_front_19_upper.jpg",
+      "bytes": 36628,
+      "sha256": "deacd805becb1ee3d6ac81d9d0a82179b4e19ae792088643fe10926a7a0152da",
+      "git_blob_sha1": "e61e9957a135806e0e5f70f29d1a98041d6fd0d0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_13.jpg",
+      "bytes": 81893,
+      "sha256": "0d4865c804964c76ea0984288ff2b6dece8c1eb5d561d2ddb2e032d32ddac2f2",
+      "git_blob_sha1": "c94b15d95aa17a6963caa5f0286d9faf6970d546"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_14.jpg",
+      "bytes": 82312,
+      "sha256": "ca66736a73f92532fdef2733c404f4e25060dfc0f1b35176aed7e258c5db7799",
+      "git_blob_sha1": "3cacf5a0c7ab23096ca284549e93e0461f0d7466"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_15.jpg",
+      "bytes": 84409,
+      "sha256": "5e6800e54247a5e2e208f75d3007e846e45bf8c16e6557e9848dfd8137975b9b",
+      "git_blob_sha1": "5d6b6cb794c0fcfd4e78cab257d79e8eb40d783c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_16.jpg",
+      "bytes": 83957,
+      "sha256": "57f0286a863600ea7b0146565c7db89571c3608c332331adc0e3bf133fdc66c0",
+      "git_blob_sha1": "16675643f5b14142fb0fc0af2d6b0981e29d4c5c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_16_upper.jpg",
+      "bytes": 32815,
+      "sha256": "4e4995671cebbd2ee7d8db5acf143a901c99ade8d2c6a11ed955ac2eba2635c3",
+      "git_blob_sha1": "f6284d38e0209942306fa8a5594c1d7457f47f47"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_17.jpg",
+      "bytes": 89248,
+      "sha256": "1fbc6d99444b275710ea2207e5c94acb91909de935a6600a0aefcdb700157960",
+      "git_blob_sha1": "a46052133bcd6252b76abe43ce486cd848d487d4"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_18.jpg",
+      "bytes": 93920,
+      "sha256": "6f30ee2902aebc79ccff149cdfd18bf4f04fed5370f1ee6c12c4a55b3c7b7ac4",
+      "git_blob_sha1": "d8a3bcca23baaa8485b8e84d963a5d5ef5f09efd"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_19.jpg",
+      "bytes": 96391,
+      "sha256": "f34636682e6ee3e46fc56673a460f6b8851d2ada422edb6af1210eb836be3e26",
+      "git_blob_sha1": "6417f157aa1c6d164e1909f0be21e2d499d37e77"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_20.jpg",
+      "bytes": 95312,
+      "sha256": "58415762ec36fdfe11063384e76057b6e9b936bd216268568dcc6c1a8690df3a",
+      "git_blob_sha1": "eae8fd340b7274ace756d4b1a8162d727fe12bc6"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_21.jpg",
+      "bytes": 97228,
+      "sha256": "65e39420c069d9afbb81eb2657f8cd5e18aab02ae65c9209f0ac23fe7a438f82",
+      "git_blob_sha1": "930eb60da0cca1b08f931ae115c3010ca345041a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_22.jpg",
+      "bytes": 98065,
+      "sha256": "5a624965e653c7bbe966fc978b633627323f44aee5f5e4d26987ae9a193b51db",
+      "git_blob_sha1": "e5ca31e4371fb041c8d3d997e43e594782153ce6"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_23.jpg",
+      "bytes": 98363,
+      "sha256": "052cf1b3385434dad726308fee3b14bcebeb40ef3a183e401b2868583bd7ee33",
+      "git_blob_sha1": "422e1bf35092c56c280195b58bb4292e994c6e04"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_intro_24.jpg",
+      "bytes": 98233,
+      "sha256": "02e1533f3667d4406be3fab22452a52da7793663e9dd6e5c8b9ff5cae5498345",
+      "git_blob_sha1": "e0347c359431fc9e54062c2227bae3a41a3b3172"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_002.jpg",
+      "bytes": 98438,
+      "sha256": "0792c05b64ea13ce366e9e20a202626165af10ae0a0ccd2228b234ef2a61fcee",
+      "git_blob_sha1": "1e7b61d128471d7c8b8c56dc7cf2eeb294ec2619"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_003.jpg",
+      "bytes": 100096,
+      "sha256": "15de3981f8b541a3e032213568e3fd123e744f67a01480b13080ca15a7c7cc15",
+      "git_blob_sha1": "2cbc54d43de8ffea7b856d246c69ce5198dbe7ab"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_004.jpg",
+      "bytes": 99165,
+      "sha256": "60b3ddc80437cc13dbe9b8bfc3be836bd5439b95a07e3226f0a484ee729a40a8",
+      "git_blob_sha1": "da1d1e1ab65d19582a1d3b9ed8ba04870cd3391b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_005.jpg",
+      "bytes": 98439,
+      "sha256": "2d8a331d9e332ff0f9fa51bf991d4c69f52a795d8a059c3d93e8d99139457f9e",
+      "git_blob_sha1": "d2de75c9707e1fea6337d86e7877764f4fb826e9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_006.jpg",
+      "bytes": 96788,
+      "sha256": "add1c3d0a3f1417b2c672f3f51a36d04bef5ebb01210c02dae32ef845134d9e9",
+      "git_blob_sha1": "8c1b1b48ff43fda08185195e062f88dfe319df43"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_007.jpg",
+      "bytes": 99366,
+      "sha256": "5cb7ca3df2265dd3f4d41d9d2329547f1428ae5d47c487988374ff6dfa250b09",
+      "git_blob_sha1": "1fbb64861dd01dd9c251eb9bbaf5ef01aef250b3"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_008.jpg",
+      "bytes": 97922,
+      "sha256": "8d1b7632d05f1e22401513b4e8fbb7c6b9589fa335be7774c6933fa8c552be87",
+      "git_blob_sha1": "1f4c71adf3336488269938acc79ca5f556587228"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_009.jpg",
+      "bytes": 95894,
+      "sha256": "92c2ad4784638f5f4cad3be065377c797c764fdfdbbe5c801e5dacfeed339081",
+      "git_blob_sha1": "85d42f2bc9c9cfb06bf1ed93b2ff921cfc6667b4"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_010.jpg",
+      "bytes": 98648,
+      "sha256": "db35928e033e4f2238259f6dd18831cd9294754f24480c3cbbe1d034a37ae176",
+      "git_blob_sha1": "87c32376510de1fee722e03518587049d6a12323"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_011.jpg",
+      "bytes": 98037,
+      "sha256": "923ff6f97cbaeffb0c0eea83e874bc9f9dd66647f01fca1e747a6cbfed443e20",
+      "git_blob_sha1": "764b65a97c13fbeb2a878720ac40663abee9afca"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_012.jpg",
+      "bytes": 98030,
+      "sha256": "8a2d8881c9f0354e51c7c1fa59079925edfcca0e89e9c11f7fe827ebd97960e7",
+      "git_blob_sha1": "8f5986a832cd0a365361db4888b48ff47fe6f01c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_013.jpg",
+      "bytes": 98275,
+      "sha256": "26856b0a92a9884053d8067bf00e56e8d0917aa5682cfaaf262659d95232e07d",
+      "git_blob_sha1": "2b55d2879323c7641e54e0f0a7cfcf5f4be9af71"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_014.jpg",
+      "bytes": 98407,
+      "sha256": "267307c7ed2ea82f0ecde1efd5e6c15d179ef984dc674c100624199e2ec2a708",
+      "git_blob_sha1": "82b34bf7edb12c992eeb7c2dfa4181f816bcf439"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_015.jpg",
+      "bytes": 99168,
+      "sha256": "a9dcb719b6e2bd7aaef0ef2f21286ed6acc751ae28b8fb7e314752afba8a292b",
+      "git_blob_sha1": "6be17e9af74e001ce0b788211643c8c0195f984f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_016.jpg",
+      "bytes": 99013,
+      "sha256": "dd0a054489c35c05629d1ffa8239d842e519b071c1394fe7169dab630f06e9b2",
+      "git_blob_sha1": "377b4d86b0bb839f43479d6af36f194e12178c2c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_017.jpg",
+      "bytes": 97179,
+      "sha256": "49d3cd49025fb1aa8c2eae0ad58069d5c98e86cadddf49167e07474fd58f675c",
+      "git_blob_sha1": "ea9c3f9077df933de9d9eba5d1c30a1c1c63ab40"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_018.jpg",
+      "bytes": 104755,
+      "sha256": "f5fa1d26d1d249f9016eb77ad9dea6f5611c5a8a8cf9af4165ec7d49feba79d5",
+      "git_blob_sha1": "2e3b71e3658317b84f1370577f043241366add47"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_019.jpg",
+      "bytes": 104646,
+      "sha256": "314bd6d9d7bb48634551083b06437738747bd4fa79c8dc28022f383ef81b3541",
+      "git_blob_sha1": "f291af767a3d689f5dc0f4e05ff0be246dcbaa4a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_020.jpg",
+      "bytes": 102781,
+      "sha256": "96c7396412843e986fce361f85299fdba0d96ee273779c197499bcff5b8c1627",
+      "git_blob_sha1": "5c3c8d2c3e5c79176d0d1b7eb8fa6b616c123fe0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_021.jpg",
+      "bytes": 102292,
+      "sha256": "bc5dea9961973bc12f7d491fd75c93c6f2b12b0ca11508e90bd90e635e3c3ec5",
+      "git_blob_sha1": "5449d6c42da001650579fd0dcacebd238f47ec36"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_022.jpg",
+      "bytes": 101889,
+      "sha256": "94d14a396095b0205de88dab6c39a5ed6a102b9233cfeebecc2e0d9a394350c6",
+      "git_blob_sha1": "131268863618c3d673b9e43d553f92ad4ac78300"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_023.jpg",
+      "bytes": 103165,
+      "sha256": "d8401eeadd472fbccd8904d6d2f0b2ee2e8733621a745e52cddd15a19e89b5d7",
+      "git_blob_sha1": "dca299373274fecc5852514c388cc687efbe5bb0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_024.jpg",
+      "bytes": 102227,
+      "sha256": "bb8f62b973fcac0c7ecd38d5eec95149c9e44109924bdcd4e01ec7135da42e57",
+      "git_blob_sha1": "fb40352ade4af041e958512d9a6901a14f177ead"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_025.jpg",
+      "bytes": 102575,
+      "sha256": "2f989ffea7e3fa8672150c73e1270e0829dbc7118524965d028894ac2b5a03f4",
+      "git_blob_sha1": "1c865629df3c33c75ea9f832d8fa26da53cfd262"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_026.jpg",
+      "bytes": 102710,
+      "sha256": "9ce5b0294a2b29c283a06fbfe40fa3772c4f330dd54241676b5b6d80a0db43f0",
+      "git_blob_sha1": "c233cbc1aca4b0ca44c0a7b951c48bb7047c9968"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_027.jpg",
+      "bytes": 103508,
+      "sha256": "281a9f41eaa25af4abb53285cf0c05e9bf8540fae4560438a005203185f77af6",
+      "git_blob_sha1": "9d2c641920ef632cb1c2dc734e5c32add7b0be8d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_028.jpg",
+      "bytes": 104006,
+      "sha256": "4b009dc57ca2dbc0dcbf2e43efa1bcb7592751967457f2f6a86677c0cceabdce",
+      "git_blob_sha1": "c4afb1ce4f0e85a04ee3dcfa316902086368f410"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_029.jpg",
+      "bytes": 104500,
+      "sha256": "e07d8c2fc2d3f0069cd3c21042b69f740dd17d713e8ee09d8090554390ea55d8",
+      "git_blob_sha1": "72c48e774eae9298cba55bc58469b7b1aca48f61"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_030.jpg",
+      "bytes": 107604,
+      "sha256": "54c35c530689e10740a7286d27e9e8fdac25fd39bdc31a26af90d8b70a0f4c38",
+      "git_blob_sha1": "d89bf6a35512bd169fb66edfc70cb8f9ab671bba"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_031.jpg",
+      "bytes": 106047,
+      "sha256": "ba94010f5223a4a749e73bb310d24498bce8d4cc918e84178ecc864d2bfa12f2",
+      "git_blob_sha1": "ee7718b27a3fe2682ddfedc31cabba0aa3205fd1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_032.jpg",
+      "bytes": 106600,
+      "sha256": "3e27a1d8f9905f9fee6e5f90f037ee58533cf5580a505d27fede7d088814efe6",
+      "git_blob_sha1": "2a97e6a96dd889003a4a616a847e50975907712e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_033.jpg",
+      "bytes": 105227,
+      "sha256": "c62019e32c5ddcf822744e992f843a74cb01d8235ff8fabe3bd2b13bfdae12e0",
+      "git_blob_sha1": "0eb202b68ff235c126ea83f8311c21c077a0e5d9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_034.jpg",
+      "bytes": 104909,
+      "sha256": "69a4b6515f2037b40005d27a59b5064db21fa013e87eb11412aaf545c0eaeae2",
+      "git_blob_sha1": "afdca9471677508d5e4ebac65563d77fd651cf94"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_035.jpg",
+      "bytes": 105007,
+      "sha256": "233ae3dc0703c0d408c701bed362f32966d62afa387100cd534f44447b0d1360",
+      "git_blob_sha1": "7c33e43639cfeeb2693736b9987fb6ccb8c21a38"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_036.jpg",
+      "bytes": 105757,
+      "sha256": "eb15bf427a904927e2c714dd21d857af5c59e84f141c43e568f9bc159954b4ab",
+      "git_blob_sha1": "42d08fac9e0bde1ab486af090558598ab6bc2856"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_037.jpg",
+      "bytes": 105578,
+      "sha256": "23727793267d0db702c522d68c8e85cb083ffe537f145155d554e0d861b36201",
+      "git_blob_sha1": "5e9b7f20450b606fceff30008dc52dfd5a22a5dc"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_038.jpg",
+      "bytes": 104248,
+      "sha256": "0fa1c3b202e9b0dfb65727f9f6fbd52686d6e802321c0f4d5b395edab1fd2104",
+      "git_blob_sha1": "63b252a16a668ce3a2c7c5de06949b82a826ccfb"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_039.jpg",
+      "bytes": 104245,
+      "sha256": "b82488087d40b1ccd634f368598c9777839285476ee30293a79eca6a1a1631d5",
+      "git_blob_sha1": "cd227028a75b58fb9077fd087be5388a5c358037"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_040.jpg",
+      "bytes": 104761,
+      "sha256": "0d726955aea9661f01a3c1e1bb0a972e389731b2fd9897f0f88b005b2a3e79f9",
+      "git_blob_sha1": "c85022aa3894bee5c9dfaebf17375060caa6cea1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_041.jpg",
+      "bytes": 106007,
+      "sha256": "ecf821e1b3479be88231adfd09e9fbdda48f3956d1c7140fe0bdf373b36abc94",
+      "git_blob_sha1": "a55ded951bfa7da863b97153e538d93d2a8883af"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_042.jpg",
+      "bytes": 104803,
+      "sha256": "9c26747af04526f94e0ae51a79dc4c34330318d01d0206ddc52c2fa35b00d231",
+      "git_blob_sha1": "3ac880ec9a4bd85fcfc3cb0646efe9ba41442a1a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_043.jpg",
+      "bytes": 105200,
+      "sha256": "f6500819911585ce9c85b132fbc027a74be2ef161558c450fb61643c4837b763",
+      "git_blob_sha1": "307328d3920628f395a724f1146e53cb7ad802c3"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_044.jpg",
+      "bytes": 104460,
+      "sha256": "0ab7fa17df78064cb679cad2c0bd4629fdb3062ed9c7c2d83aab992efc42f0c0",
+      "git_blob_sha1": "e8eaa56bdbbaf36bb086e184b2dd2c0696692296"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_045.jpg",
+      "bytes": 106179,
+      "sha256": "f1f523305235433f3cc13528449f45cdcc5028c3dc16cf95762275d6a65b59d3",
+      "git_blob_sha1": "2ae4e0fe86dc8c0be2eaba61401c5e73e6f2dc34"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_046.jpg",
+      "bytes": 108099,
+      "sha256": "dcac873c22611ceef33b42e43cad117b825c1f376fcff84970988fcef4a63701",
+      "git_blob_sha1": "5dcfe48608eb325d359e28160ec5c75dbad77e5c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_047.jpg",
+      "bytes": 108706,
+      "sha256": "bd11c6b5adad68082e5b10fafda03bec19b1c84a1938e28327f119b00ab06dad",
+      "git_blob_sha1": "e8e4940eb281cbb1d4341d4f3505e925152a034a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_048.jpg",
+      "bytes": 104249,
+      "sha256": "12120d4f62cbbf4bc8026f8222872e740efb2b5cb3b9af564aa220e987bf625f",
+      "git_blob_sha1": "3da386b1df158cae3f01af848ea4ef4e15dd32f5"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_049.jpg",
+      "bytes": 104027,
+      "sha256": "e09c10e7baa1922b86846249fae187ada48027af9ba51231fbcb5f33b6219ac3",
+      "git_blob_sha1": "03e016e9cdbe812f23e2cc3c4b6d26acec7a47fa"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_050.jpg",
+      "bytes": 106263,
+      "sha256": "957c6ef46b1d7b8a4c248762e9f46d97906f859ae5913d5b8a812d80e0018b2c",
+      "git_blob_sha1": "770685e86f86609c022cd6c289e2bf71a5f02001"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_051.jpg",
+      "bytes": 105757,
+      "sha256": "9e8fa661fab34e35533ee5ef75c0c5a607e8b91ded4eb9366ea72564231a5d82",
+      "git_blob_sha1": "3df77b39ccd6f41edb43991461bb477c10df879d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_052.jpg",
+      "bytes": 106299,
+      "sha256": "b28462d10bf7002be84a29219b0b505a0103c46897f658e4c92da45fb2f8b841",
+      "git_blob_sha1": "08d2ece628f20d240f7affd1af8a025dd350ad88"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_053.jpg",
+      "bytes": 105116,
+      "sha256": "f8651a62614d1f15b9fc28fdcef87d44e2085ee4c1d15fbc38ed8429d69560ab",
+      "git_blob_sha1": "0c0d269bd5f2f5d9669fae6af75440d87b483dbe"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_054.jpg",
+      "bytes": 103792,
+      "sha256": "c56676f41b712ccd791ce293d73a32287e7372bfd58a442c5ccdfda21c5be348",
+      "git_blob_sha1": "3485746c15d19c5925b4bda5f187e13645372e26"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_055.jpg",
+      "bytes": 103745,
+      "sha256": "e5ddcedddcf5ff64da53cbca6fc3fa2b5106e044132bc9c3af9d14e0a47bed9b",
+      "git_blob_sha1": "37dbbf90f42041fd81c9a084e675647e2b12d13a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_056.jpg",
+      "bytes": 103385,
+      "sha256": "14a57a259829ae011145bed359eb868f9fd5ffd37ed26668f8a8d1776e14f424",
+      "git_blob_sha1": "1eb355b55c302d8c53644913fe2b7401a6d4618f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_057.jpg",
+      "bytes": 103821,
+      "sha256": "6f84be2cd6beab958a10453e22f507b51a70ef4ea94249ba182564e02f962270",
+      "git_blob_sha1": "437a479e5e603dc4e6b6cc4bbf336a9aa61926e9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_058.jpg",
+      "bytes": 102656,
+      "sha256": "659e6f29cf1d59d0aa0b7c94e805a1831469439c66188b574676df0028ad1ce1",
+      "git_blob_sha1": "e5b0399927479603ddd4842c05ef1692b3d84aad"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_059.jpg",
+      "bytes": 103955,
+      "sha256": "3dd1da26fd790439dd11850fd5feb0e57e5e419de7235bbb37803809416db411",
+      "git_blob_sha1": "f71bb72d3358a46558745216c653b7b097325aff"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_060.jpg",
+      "bytes": 102408,
+      "sha256": "036bdb6646b661905a834f2a8d5476c13ea0a97c10594042111206929426ca98",
+      "git_blob_sha1": "58a60f53b86c2b7c6e557b6c016f2a81c15b16e7"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_061.jpg",
+      "bytes": 101425,
+      "sha256": "57e4659ca1cef22ac585a36b8a3c1495eaf3be000b54c536c0cf89de0d5cda33",
+      "git_blob_sha1": "c451cb1d49c86b80d56a83fe8f069e5c0036fce3"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B_path_062.jpg",
+      "bytes": 104577,
+      "sha256": "cb0dadb70f228dcae9bb4ecd3473d563496f21358b0c5ed144786eae344a02d2",
+      "git_blob_sha1": "c7fbf4b3784ef6575a9676729cc95ebbe64f1b31"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/B桌身份连续复核.jpg",
+      "bytes": 185762,
+      "sha256": "8a4f01f119c8474febe897474ad0c2da9093c9551f58c6e2c43183e6524b89a6",
+      "git_blob_sha1": "6b492984130a7ff2f9d2ffcff5074fe9e3929f1d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_after_transition.jpg",
+      "bytes": 119584,
+      "sha256": "28a58ba2b29a9b87892959a14b377ba8c99c197621d38e0ef8445e0314d9a77c",
+      "git_blob_sha1": "a328996487ba8d57dafa68ca10aa9922abee8a80"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_before_4281.jpg",
+      "bytes": 105649,
+      "sha256": "7f3d7ac329ccaaaac76c1c8d7f06ee7e949d554399df15ab1f914ce9aa5b48c7",
+      "git_blob_sha1": "73402f3bd125e9a59ad5e0753573b6d8bc0d3ccc"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_20.jpg",
+      "bytes": 106405,
+      "sha256": "2017934827ca451d6b5072791c6d5b13e2d60d97986e84b618fc073690ee485c",
+      "git_blob_sha1": "c120288f6f8354ecb2d60d6b4e9e690821de7046"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_21.jpg",
+      "bytes": 105355,
+      "sha256": "4f5080efff2e3f0066c602e35c71001d81b42c970502135bb3ee67a3c02c55b5",
+      "git_blob_sha1": "832655eae3800d59dc8736948adf927e78d8b06e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_22.jpg",
+      "bytes": 106630,
+      "sha256": "125403b42aedb188121989383807f8786c8e9415ebd0da40c42e6de194d957ae",
+      "git_blob_sha1": "50844d2c1976936eb9fb2855501f4dc64b72af23"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_23.jpg",
+      "bytes": 108616,
+      "sha256": "b976c828bfa0ac92d84e739d3248bae23a9bc92b234843c17fd5c875c6af77b2",
+      "git_blob_sha1": "e006c732d5f9abb04190d1e5d8a705e5fad84f36"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_24.jpg",
+      "bytes": 106950,
+      "sha256": "7e23d7ffed385ab1b2ec4ba4383e3d1d6f5fc6132840be577a86d5c367a8055e",
+      "git_blob_sha1": "5065e2e1a26c281671262b21fbea7f6507691e67"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_25.jpg",
+      "bytes": 122320,
+      "sha256": "4a6abc24e48c868522430acaeff7d024ffd6fce47cb69aebbe94916ec0eafc85",
+      "git_blob_sha1": "ffa85df96860a2d8e889d7d064e482433058dfe9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_26.jpg",
+      "bytes": 122485,
+      "sha256": "c884b70d97bf37628d62a82fca6708035e2471138f89258b9359d71352a1b8ee",
+      "git_blob_sha1": "2383e479336599d9ca6aaa18c2f809e221863cfe"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_27.jpg",
+      "bytes": 120058,
+      "sha256": "74ebf0fc4cac0e5446bfe99d6de8c373dbf9077759d4bdc7b7f053591b099670",
+      "git_blob_sha1": "571bd6a78e643943134f874ce30d641c04346761"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_28.jpg",
+      "bytes": 119607,
+      "sha256": "6f88ebde9c8c733e37a49c1dbf038c08c891c215963b7b5ca615128aae7c720c",
+      "git_blob_sha1": "6e6936dc4c6d2bbf8cab503b28a370753ff752a1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_cut_29.jpg",
+      "bytes": 119864,
+      "sha256": "757535ea5b462b1d2ce0488ec96f3077c63f1d09ff6124c9bd1e50dc0b89305c",
+      "git_blob_sha1": "5ca28765af7ab2b4fa488671a2a0c0e96811bbb1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_dolly_4297.jpg",
+      "bytes": 92751,
+      "sha256": "8b2c60209618ae0288485fd3f861515a9c884d6bdb4ded364db72791111069ed",
+      "git_blob_sha1": "2e6629a46faa5da74540640555d49791fa075d7d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_exact_pre.jpg",
+      "bytes": 120846,
+      "sha256": "3f257d5ab2cb5dc21cf8fa150da4608bb1f85902dcf9a5052901c538f0a31001",
+      "git_blob_sha1": "7b11f8740ec0ea173c8b1cc214fab2784955d370"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C_transition_check1.jpg",
+      "bytes": 122625,
+      "sha256": "9ec55a5d014a5aa71b58f49556a0e5dc8b8f88e491e70cbae08baa83d6ed09a0",
+      "git_blob_sha1": "3c748a16c4b27461c55df2edabfd804b42ce6083"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/C切点连续慢播核查.jpg",
+      "bytes": 358283,
+      "sha256": "bc325802a75d8773e1c717f37d7549c7b13c4a119f620c08eb5331db4e63f118",
+      "git_blob_sha1": "a4fb42f24de72ff9c9e6893dccc01d8f4728e30e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/D_clean_5446.jpg",
+      "bytes": 140967,
+      "sha256": "a86d9fca5a69e1132a7a3bc54d86ed938c9221a8f1c1836fe1e8a6fcd77ea731",
+      "git_blob_sha1": "7cd8ed7c2006b81de866a0c39ad3aca3994a4c2d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/D_context_5447.jpg",
+      "bytes": 149480,
+      "sha256": "b9abe98ca7db3f10fbd6bda1ed1c04441fe28e996f71b8ffd184d81e27d158af",
+      "git_blob_sha1": "d7c61e20f81e50c8b91f39fcd27e20dc6db48c77"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/D_cut_after.jpg",
+      "bytes": 138376,
+      "sha256": "c0af00824c314fb0a06e2004cd5b6ac208de28bbb471d4303339f5d952917b35",
+      "git_blob_sha1": "17e782718ff753f41bbd3bc3a1bbc43c56c0abd2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/D_cut_probe.jpg",
+      "bytes": 35148,
+      "sha256": "0816b8d7355a014679dd0160ad346c3c84a446a1d9b1b646eec4bab12eea7f5f",
+      "git_blob_sha1": "38904fdaa3f7be04ac9db5a76b2d9df6c60f2d89"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/D_fade_context.jpg",
+      "bytes": 50721,
+      "sha256": "d0d8a555ff9b0ad1fc7a80b2f3ab631f6462e85fd4be05b0977bd664a34b1652",
+      "git_blob_sha1": "09ae9b3bb03f8ee4204afa3a408561fe12338dad"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/D_intro_text.jpg",
+      "bytes": 48808,
+      "sha256": "ad18ec36b55593a88009ea2fbe05f80eda6a0ae60cbb3da852f81cdb72ffc1c8",
+      "git_blob_sha1": "e03202f64d7af49c85437e40eb1da60d6c4dacdf"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/D_letter_overlay_5465.jpg",
+      "bytes": 63711,
+      "sha256": "af00196c7e2f0b96cc7302977c20fa2466d11d0d662bebf1419b940fccf312f5",
+      "git_blob_sha1": "5dcc8a13bb453d13838ed80615380aa045a1d005"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/D_sequence_following.jpg",
+      "bytes": 134443,
+      "sha256": "d811e1b05faf05341c5b8278b6e78a1f75c41b5b180c8ff9f637810552754228",
+      "git_blob_sha1": "29bbd5f1e29cdc538b45c6ec2d080350d9349348"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_high_angle_4310.jpg",
+      "bytes": 94964,
+      "sha256": "8fd51fd5a2fbeeb4ffc3fc4c34e3540c638cf3c47e10742330cb3d4453d071f8",
+      "git_blob_sha1": "d01f2604c6909e3a6bb468aa732821282dd829ed"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_002.jpg",
+      "bytes": 118110,
+      "sha256": "50b06daf5d4cb0e00531e4e987a7cddfbf09463d5864410271e807a48643fa58",
+      "git_blob_sha1": "98e2564615e8fa51f769b95ffe1080519fac820d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_003.jpg",
+      "bytes": 119006,
+      "sha256": "835d6b57288098e515d75d7f97a14ba9e957e2ff1f478ff9a13b323ccddd403b",
+      "git_blob_sha1": "6979606969c72c65193a12b771da958f1b05654b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_004.jpg",
+      "bytes": 119364,
+      "sha256": "f01f0167536fdc99b3993a439fe805823f65dd35f6bdacda946c9a576b54063e",
+      "git_blob_sha1": "14088b5f85752a98cab8202aaf8720314cbe2d32"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_005.jpg",
+      "bytes": 120725,
+      "sha256": "d83880da52354572f03623a2305ed4f255eeef08b5b719f5b0d77a99a7252954",
+      "git_blob_sha1": "2469aa6e18c6e92fd33b98c35c87c3d08e6e74c3"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_006.jpg",
+      "bytes": 123598,
+      "sha256": "c3b3efeb16503aca8528f932c0b148980010059f76579c332571b92de5d89d0d",
+      "git_blob_sha1": "782c7c116bd828b227cb54efc4a8e575cd7e5954"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_007.jpg",
+      "bytes": 123355,
+      "sha256": "5a063511ec9066f5b311414bce6c5322123a37996b90e15994d92407a5fa401a",
+      "git_blob_sha1": "d5f117d2818e3f6e90110c9c1118456a1e77c737"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_008.jpg",
+      "bytes": 123555,
+      "sha256": "e57679464c4ffc4356ed58f1113487adf1574c03d736a2be5829a804e6474008",
+      "git_blob_sha1": "bf0e6f6d88d172152427b05f547eeef6689240ba"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_009.jpg",
+      "bytes": 123997,
+      "sha256": "dece428fedd09fc77d17b4641470a9b78a26bc4f580b2b9105e61b737f731d35",
+      "git_blob_sha1": "df832fc928a45928f5883f4713f6906516f9747b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_010.jpg",
+      "bytes": 123755,
+      "sha256": "e63ebcda5a5210cb89f4ccf88b56e760d1ac539b775b661c24427f523e7799b2",
+      "git_blob_sha1": "e79f5857a04901c9f15fedb7736dbcc8e9160b5f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_011.jpg",
+      "bytes": 123865,
+      "sha256": "81ed20b6b6d95ba651e8991f6a91251d7e4502fa28fa90fef0af601d862148b0",
+      "git_blob_sha1": "37e56084828d02a73b4275916ef857cee5918998"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_012.jpg",
+      "bytes": 122912,
+      "sha256": "d4c7a4465f4fab01e59e2412ea438b80dafbbcfa61311a7c17c8bada38514e2d",
+      "git_blob_sha1": "527f9ec5e14e5380a9e2029bd9f70a7aaa866002"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_013.jpg",
+      "bytes": 120013,
+      "sha256": "d2036039b2207fb980e89f20df91b4b6a4d89093c43b6b84890a9bd9dd9da10f",
+      "git_blob_sha1": "dccdd681fbf191d33dd825dba33b1b8d141c0b89"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_014.jpg",
+      "bytes": 118502,
+      "sha256": "171b34d10d0c7c24dcfa4934b25629d51230bf391aa076e1b18425cfce7188c5",
+      "git_blob_sha1": "65b810812ac2b0816941dbd49cb24acc26111c03"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_015.jpg",
+      "bytes": 113640,
+      "sha256": "1c2230a024972a68d76dfb4b0be1ac94ea69e7c92f8ff9e0b3ce8ca9f763c17e",
+      "git_blob_sha1": "fbfaf7765fb9ee7b5d878a24e373f6eb89c1a456"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_016.jpg",
+      "bytes": 115228,
+      "sha256": "215059224fbaa594016fd5b91c4c6ac56ca63f9854d9e9a44a80ef49dbf51fe2",
+      "git_blob_sha1": "68b188adcd83d3e1668d1442f7eba9987dc2959b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_017.jpg",
+      "bytes": 111250,
+      "sha256": "69d41bcf9339fd266bfdef6253740b1eca0e16e265b895ce33f68e1ebd037645",
+      "git_blob_sha1": "26fa25ac20448124682766b561aaaa3e22d75b0b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_018.jpg",
+      "bytes": 113691,
+      "sha256": "c9ef21ace234e3aab36d7721511bd1ba59f097a956b4a6585ba7c179bd9b1b7f",
+      "git_blob_sha1": "d7e7198a2fa42b86ececc92f7b8d1723a3fcad8e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_019.jpg",
+      "bytes": 111299,
+      "sha256": "468e5345f12ed52c5e84b22fb3916f8d53573cd69315f37009ce1d5560bfad10",
+      "git_blob_sha1": "a60dd27d2cc0e063d1e910c9d45a6eb3b39a629f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_020.jpg",
+      "bytes": 111186,
+      "sha256": "f46794f87a0a66d06e7a996780fbbd59b2064ccbfb2adfb43c881f348e09a5bf",
+      "git_blob_sha1": "4801f33e0191f98becd04e61ef766f2738804e00"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_021.jpg",
+      "bytes": 109842,
+      "sha256": "1adcc33858221af12ff25a3a2fd6593baffa6db821fe7c616579b70c7a2b45f7",
+      "git_blob_sha1": "6f5e24df6047cc7f65377d0ca4f41de5543eb541"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_022.jpg",
+      "bytes": 108741,
+      "sha256": "b96162d41136faa217cfd90241538473f248a22329b5a04499e5b8ad01361fc1",
+      "git_blob_sha1": "ea1b9c3ac061eba1dfe2a8a9ab227b10d28e18a6"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_023.jpg",
+      "bytes": 106747,
+      "sha256": "6619c8c38cdd4d70a6a10acf451e5bbd287a4e8982cc228aa932a873af147b55",
+      "git_blob_sha1": "865f6c80d09c3e1a709ed1c34473f843288898a2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_024.jpg",
+      "bytes": 107187,
+      "sha256": "6a49738a0bab2cf2770e7785610433399c95a6360b1d8f712deb6ce5b11360bf",
+      "git_blob_sha1": "fcc6ead3b7bd8d3ab66308986134aecf03646e3f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_025.jpg",
+      "bytes": 76430,
+      "sha256": "ccdecf5bd45eeb4a4a5a77eaf3ec56a6fe85767cb39a9c41d0cd71a2b1dda667",
+      "git_blob_sha1": "32620df8d3ee5ee3be08f44de0d923e0dbe21f96"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_026.jpg",
+      "bytes": 76135,
+      "sha256": "0364bf1d5750e6d3ee792d5a8a5d727e101daa5ebae598a80dc61a3e34c9ddef",
+      "git_blob_sha1": "c676b250fbdedcf28a5646102645911cbea60d51"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_027.jpg",
+      "bytes": 75309,
+      "sha256": "22a338eb31396ed9e481810c372f264f362908dcbb332ddc3177334e8b9468bf",
+      "git_blob_sha1": "d8280b00fc0c00735bbafd5a66fbc031273c5b13"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_028.jpg",
+      "bytes": 74095,
+      "sha256": "04350067f07335863995841a56cc8eb0c1afd3380cc8770cff992b2add3aee24",
+      "git_blob_sha1": "1a3f8cc62933addb948c0afd19d1c082310c3215"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_029.jpg",
+      "bytes": 73119,
+      "sha256": "43d04ec1cbcb7f055b0697c0ad820af783146ceea78b501d2445921fea0638c6",
+      "git_blob_sha1": "5ed21f1f820f5794fc84f29607c2284468154975"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_030.jpg",
+      "bytes": 77984,
+      "sha256": "f55e790e78b7733ea9dbba742b390889e4b65f0d1163c42e2f41557b505f7ca3",
+      "git_blob_sha1": "2c62c220969335edfa5abadeeb335722d85f7481"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_031.jpg",
+      "bytes": 78507,
+      "sha256": "75410e0872ec2596a378d15e3192c0c6491f9702a942918d672c9ceb45f0bb34",
+      "git_blob_sha1": "ee245c4b2a6fa37d6a1c55c82846e8b7add10aee"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_032.jpg",
+      "bytes": 76733,
+      "sha256": "c96dfc155fea4c45a1bb45326eeed3e0df8ee8c2b99a48f38e97a805efbbaf8f",
+      "git_blob_sha1": "2723d23207a7acb93b5eaeda1eb7b5cf5151e418"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_033.jpg",
+      "bytes": 74897,
+      "sha256": "cf983c527150caa86fdef203154d240e4848f3e7e45cb892926da70b260673bc",
+      "git_blob_sha1": "cf60463f7d8c1490d90455acbdfaec50352f65e8"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_034.jpg",
+      "bytes": 80402,
+      "sha256": "32ab82a12b097b998166cf39d549694795270ec3325fb71ad6f96aff1d591786",
+      "git_blob_sha1": "184fd60abce75087b11a23e8022ddc9c8b0df4d1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_035.jpg",
+      "bytes": 81053,
+      "sha256": "d7a4eabccdfc839a25d93c1c5defbf502228f0195c3648019d4228746f5cf882",
+      "git_blob_sha1": "f3d479d24533ed32a9b117ef89c8d973c6659ba5"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_036.jpg",
+      "bytes": 79040,
+      "sha256": "a6e68d01d241ae1585a702c13262a358633433e8631561f29518a3e07e903dc2",
+      "git_blob_sha1": "65f15616c27012659c505520c843eb4b42fb01d7"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_037.jpg",
+      "bytes": 80932,
+      "sha256": "e291fbea96f007dfe60545c7491925a9a499d6d5effbe00b3e0062a697ac0322",
+      "git_blob_sha1": "4ab8cf123c58298105da55272d5f49e2eed639bb"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_038.jpg",
+      "bytes": 81524,
+      "sha256": "3560f92017f38d519f0f0f7dc1a9d00df3236aaf43b39274efe30a47cdc8003a",
+      "git_blob_sha1": "85137ae804fa2619dd3eab78bc20a699f198bdc6"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_039.jpg",
+      "bytes": 81945,
+      "sha256": "16cbefe656c6e3835de59209d1ad20dba2f4f6efda5bf2ae929bf83703e2ca05",
+      "git_blob_sha1": "ae0d653e89f4550b97af091b419543c17f88e8f8"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_040.jpg",
+      "bytes": 72235,
+      "sha256": "18d5caeb8889b5ec013b45840043c467489f54dcc0b4cd9f05fe5eca9286ef58",
+      "git_blob_sha1": "7dd27d1a3d69919722375fd9001f114214b49547"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_041.jpg",
+      "bytes": 92305,
+      "sha256": "0226ea7e8ce5f580f3f54d252fae165af1dc604169f22c3d0c59ce2c3ce36e40",
+      "git_blob_sha1": "d6f1ede33d9252af8b6dd5e3b475640898b71ee1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_042.jpg",
+      "bytes": 111113,
+      "sha256": "6d9523a130e3e900200c2a61c3eb60ba9781257d659cb667b218fcd806fbf949",
+      "git_blob_sha1": "075e4586b8a8f2580221067981a4065a6d15bffb"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_043.jpg",
+      "bytes": 107396,
+      "sha256": "4fbbdc08dd0d8a83d56aef07515c5b9b3083c1012b3da3b43df29d5e8e2784f2",
+      "git_blob_sha1": "570f5854cc30663057308f8b12270d7c52f3ad74"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_044.jpg",
+      "bytes": 99963,
+      "sha256": "8f30ef8a94a261bb5b1d0ea0483305fbf56d60ed9fb617c99c651955ba4ed489",
+      "git_blob_sha1": "a870230c5ce7fc33be51c7e8f913f401f3692446"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_045.jpg",
+      "bytes": 95120,
+      "sha256": "8a4d47ef1fe424acf09bd1a630c7ec975c5df8ebe8af860c9f4126e9bcc9edf2",
+      "git_blob_sha1": "48234fcd20b10ac64ff4bb9fe27c244622e22230"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_046.jpg",
+      "bytes": 89792,
+      "sha256": "88234331409143785ca4315d3364d88f10cf05328a4c5a7379ecddb753af0116",
+      "git_blob_sha1": "576fd399ed5592cfe36a8d9fb09ccfa7611386e3"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_047.jpg",
+      "bytes": 92843,
+      "sha256": "546b12d24008f666b2eff18d9e106b92f634b95a2fba76dc8d8ded5627c1462f",
+      "git_blob_sha1": "e96fd5e6d3c73de8a5eb69421a6e2bfb00f14986"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_048.jpg",
+      "bytes": 75483,
+      "sha256": "2783404ac44433fc85eaee3e85ad7e6af1693e4a9518bdd16b15dcb92f00ba00",
+      "git_blob_sha1": "1bc15e2dec5cbb69395100eb646429ed582df00e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_049.jpg",
+      "bytes": 69922,
+      "sha256": "2fc57e01fb9c5cf45d14b55a333edbdb49a3a7fff2cd42adbff48e41da521957",
+      "git_blob_sha1": "83dccf0a62fd13d0e58b0b62e1128a842ae8b79f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_050.jpg",
+      "bytes": 78348,
+      "sha256": "3d47385208fb0acce20d5ab1f6fee0d3159fc1662a4b0d064d8ae7e8cffee0a9",
+      "git_blob_sha1": "24630963a4fdb8909052426f6ad0e5e1d88e757c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_051.jpg",
+      "bytes": 79911,
+      "sha256": "9d37d2a2cea5ba0286db23be0c94334b0226c29689f9de9dfad28d41fbe96f55",
+      "git_blob_sha1": "7bc579bdb13993c794863c76c4e19ee3321cf076"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_052.jpg",
+      "bytes": 91743,
+      "sha256": "fe032b7e341f332d9d704cf4cd144a7c8665e0e512cbbee993fad8fd2bc8d5ad",
+      "git_blob_sha1": "6894eb3e645641e522ba4494b5f92d5d5f248e4b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_053.jpg",
+      "bytes": 74311,
+      "sha256": "31e1d5511ff3ac00aaa034dc102eed594073812923e703b2a1826c02b4c1b132",
+      "git_blob_sha1": "88c172224f2e73ad2373cb82dcd628a5914a1019"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_054.jpg",
+      "bytes": 71255,
+      "sha256": "0154c349139e66b35c6a25e30642a6a3ff549b4c05f127866005ec99d8226b6b",
+      "git_blob_sha1": "02123e321e091f7cb2053eb73320860ca7c6f0fa"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_055.jpg",
+      "bytes": 75633,
+      "sha256": "04b8321dbd53b57076307d1cad5bc026b4fdb6f39668af2893421803be45d92b",
+      "git_blob_sha1": "99732143e15bbd79e5b82134c2a8172a2baa4c38"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_056.jpg",
+      "bytes": 82323,
+      "sha256": "e5ea83f020d1e62448f93848f919e88b9f135b09b58d22bcd2576193e3dbcdde",
+      "git_blob_sha1": "4806540d303ec697a02bcde867ac9b7dc004fab9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_057.jpg",
+      "bytes": 83044,
+      "sha256": "5f0f206cefb9e6ef910d8a406c9a1a1e7779e890a7462352ca76f3f1b088f1bb",
+      "git_blob_sha1": "a5d4bbcde347004c8f949408a49e0a865dd21dfc"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_058.jpg",
+      "bytes": 82449,
+      "sha256": "5b9932b11808c546c418a564d60df447487c76cffbf38f2043f21572dfcff28b",
+      "git_blob_sha1": "7a4667baba1713b97fc07293f7b7f11842a7b2e7"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_059.jpg",
+      "bytes": 92846,
+      "sha256": "679c0be9412faecaecf340e5c0706614caac37f9da874e12285e19fb52e7f3e1",
+      "git_blob_sha1": "7b5ecb1f72789828ac322e0edc4d03f60b6ea132"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_060.jpg",
+      "bytes": 94165,
+      "sha256": "79620d26a0bc2005cc840716881265c60410c0ace8dc6e2deff4871bbfafebcf",
+      "git_blob_sha1": "2d473dc480a128564d65917986d647a28e4ff064"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_061.jpg",
+      "bytes": 94163,
+      "sha256": "e8b53e33310cb08bd0ba4ede3b17c73cd0f09ddf9a3267064a88b477a26d24a1",
+      "git_blob_sha1": "9a1f94286822e81da29c792756a777c927497b56"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_062.jpg",
+      "bytes": 90695,
+      "sha256": "a821d575758168e64b9d4a93eecb17431320ca33a04946487773fad728474a15",
+      "git_blob_sha1": "02b2eb1dc6f2fa435e1247cb9d716812cc207796"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_063.jpg",
+      "bytes": 96428,
+      "sha256": "19ef39d046ef84467314c38611aeba8a2676077a92fdcd862ed503390521ba60",
+      "git_blob_sha1": "8adf0ecf66c1297edac9a95688d5034e64d9ff37"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_064.jpg",
+      "bytes": 99222,
+      "sha256": "e4fccadf77af0527a7e2a2ff22e19ef87301251aa18aab1f5d594d03aa9b7537",
+      "git_blob_sha1": "829b0be856cc1e644a80ee364986754dc20c0e27"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_065.jpg",
+      "bytes": 96121,
+      "sha256": "335eb916918ede10f5f257b4a41c3b67da53abe3c857feaa7ce5a90e3e4794dd",
+      "git_blob_sha1": "2860660f3d1db7c909104419fed14e6ca213e6dd"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_066.jpg",
+      "bytes": 100033,
+      "sha256": "934e2df8719c8cb536ca2a9b18f36277dd6a9e82344076b21a5a96c4448d21e8",
+      "git_blob_sha1": "20465a8e79d65fdb344f613c6b4d2f921e545580"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_067.jpg",
+      "bytes": 96951,
+      "sha256": "8efaa28ec449a32a623e807f6efb1713f4471d2cb1919e92afeca8e3b72ec638",
+      "git_blob_sha1": "bbfe92b6a81519548cbd6670293b5b62c6c8c8c6"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_068.jpg",
+      "bytes": 99847,
+      "sha256": "218665dbf71c44870a7b8d2614c5dfb811569fa0ae6b0d7eb1bd6fbba2815021",
+      "git_blob_sha1": "fde480eb6e4711115dcda6b514abc0f6bdd153a5"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_069.jpg",
+      "bytes": 95978,
+      "sha256": "11f1c731238da952449b7f8bd4b20eff396e061f8a84d30fd409c71aa66604b6",
+      "git_blob_sha1": "de1ce13b345fa18f3bea0057457f38b01ef42965"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_070.jpg",
+      "bytes": 95461,
+      "sha256": "783c318c3f5c6c3e3dfd9afbb21fed5253b596affd9eee237bf747b35b234dc7",
+      "git_blob_sha1": "a71aac0a1e54f7bc39ffdc56f36136bcd65b2860"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_071.jpg",
+      "bytes": 96858,
+      "sha256": "c66175646a446f3fd2d1289afa6b15512865e54455b9e4b29879daac5db49039",
+      "git_blob_sha1": "286cde2f054720566aa925387cc428c7da1cdecb"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_072.jpg",
+      "bytes": 110235,
+      "sha256": "d7df2fd9e0e4dd4236d86c34b474557d739fdeb13d3a623587ea7b6c43d44066",
+      "git_blob_sha1": "56e84cdc418cf345085911a67618beebc2f6bf1c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_073.jpg",
+      "bytes": 109645,
+      "sha256": "200176165b2fce4f73440bed1731ecc83fb8f46c8eb87b467e073cb6ff329485",
+      "git_blob_sha1": "ed4d57143295af1204a76279e53511bb8aec1a7d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_074.jpg",
+      "bytes": 108730,
+      "sha256": "07be22b42f06d7e31b4f01e568580383b87113bc1210b9323be0fd995e13fbc5",
+      "git_blob_sha1": "6863054f853c57ea7e5339365340c990b4ee9eeb"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_075.jpg",
+      "bytes": 108429,
+      "sha256": "074cda270f89a7f07d528ad5e6cbc3daa39b1969d72d5acccb46fd5eb92c8eed",
+      "git_blob_sha1": "583b5d2fe41c16336e856bda3360e18da846c38d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_076.jpg",
+      "bytes": 102393,
+      "sha256": "ddc602b7231a4a5e4579a1d489ab9df286623400ceb5889d7bc5787e012690e9",
+      "git_blob_sha1": "e6a445afd63eb03641435aa77bd5e9a2cbae4574"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_077.jpg",
+      "bytes": 98718,
+      "sha256": "7ef50bd066fcef44e97d29b9816076ce0932924a6adddb4138f7a693b928622e",
+      "git_blob_sha1": "dcfe419452a565b4ae011d3df335cab3bff7ecd5"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_078.jpg",
+      "bytes": 99813,
+      "sha256": "fc65efb9928adf2890488de778c891b47e565a4653671f6d8de8f756d8a7245a",
+      "git_blob_sha1": "736cd1a88ee10a38cee0c7fcd2cb27ef8d9be3b9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_079.jpg",
+      "bytes": 98964,
+      "sha256": "87a4ddf9c2e1b8491a7a3543c29d6a198785c757f43fcc9f4361d94624d1f32f",
+      "git_blob_sha1": "699589d5557faae42c53405efe65ff93f257a19e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_080.jpg",
+      "bytes": 101674,
+      "sha256": "9e798497f67d15b8ee3cf3fc5c7bf2a05b93be6adf4aba45ff8a97a1c17f0ea2",
+      "git_blob_sha1": "1f1c8f0e4b72f7e0a9009053bb358ed4db5d7972"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_081.jpg",
+      "bytes": 109139,
+      "sha256": "a0ec10079be9257411a606df6f98b9558a761c02f8bf0d557f6e9fa37cab34d5",
+      "git_blob_sha1": "31ee7db120d1a718e9cfc2a612eddcce8f818536"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_082.jpg",
+      "bytes": 96844,
+      "sha256": "d612f850af53ae30b56e70cbe2ff56479b79dbea81783f30bb63a572716bc9cc",
+      "git_blob_sha1": "7dd560c0d0220615d54527957f6342025e42a85f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/F_path_current.jpg",
+      "bytes": 95102,
+      "sha256": "56247ff3bb75a10b3b51673282f14554dd9b92ebbeaf30dc29479189d105d017",
+      "git_blob_sha1": "173b2e904196a9e0af1e5f5f79b37c09b72f04e1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/G_later_wide.jpg",
+      "bytes": 59769,
+      "sha256": "5c08bf8463e4c7f87fbee95f2dc4814bd963378b6a125d3e5772c6ebd8d9a3ca",
+      "git_blob_sha1": "9b01c72a634a235e8dc69ac0b9104bc569fa8a88"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/H_front_unoccluded.jpg",
+      "bytes": 98244,
+      "sha256": "4cebccc3fe876aada7af168b008ca88065bb303eaf22cf60726195f19f65876d",
+      "git_blob_sha1": "fa89d61b5c4b0b15d1e26e71e6a9255b016b564f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/manifest.json",
+      "bytes": 78545,
+      "sha256": "b1596a666baac249b5eb41a791067d43ded4c305fadd06f2bef4b1d95f1554b2",
+      "git_blob_sha1": "f4410b51694d64558aba52cdb7d4a172c3b84fa7"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/manifest_B_frozen.json",
+      "bytes": 33776,
+      "sha256": "3d26ebdfe5e91deb5893f568f6c5423977ad628c020203585e6ede4a764e661a",
+      "git_blob_sha1": "e02fb0ce99dbebee7fa5a24318d126d23086bd54"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/manifest_DC_frozen.json",
+      "bytes": 12096,
+      "sha256": "653a6c4f4872e1300cc48e748a354e81306b0355cb9d5baeaaf646822d878cb5",
+      "git_blob_sha1": "ec1f1c246dfee0035542141f10516bf3c47b41c2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/manifest_Fpath_frozen.json",
+      "bytes": 29945,
+      "sha256": "0ed12cc11d47a3a24c85910645b3bbe0d43605fb465390b70629262641774dc8",
+      "git_blob_sha1": "7fd87a27b6422e831c85c4405ca0f84956e5633c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/前墙窗侧连接核查.jpg",
+      "bytes": 365936,
+      "sha256": "8ddc485051d53563c8f2faeae63271e634884284e0acf4040926252c346d53d2",
+      "git_blob_sha1": "3dcbd449874eba71cbc96d4a23e871e1cf129f63"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/前墙窗侧连接精选/B桌身份连续判读.md",
+      "bytes": 1656,
+      "sha256": "24725d9a4c0560d351df86e3486ff9eaf11e0ad35ab8c8393f0568d6ece1c3e4",
+      "git_blob_sha1": "b98949d1198566e4302b3f849ba778448e06ea7a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/前墙窗侧连接精选/selected_manifest.json",
+      "bytes": 2713,
+      "sha256": "4c310b97b1c83c26013c7434318b91376d1e5f82185b4f9fb850a8a37245ad53",
+      "git_blob_sha1": "50d711cf4f8af2835de9f673581a48f9090b330d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/前墙窗侧连接精选/前墙与窗段身份连接.md",
+      "bytes": 2732,
+      "sha256": "001831f010e6721c0fbae820b39c4a7687848e8f27d8a677f6fb8380a91acf04",
+      "git_blob_sha1": "5766ce539b07e5e519982ea48a94c31b01861f6a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/前墙窗侧连接精选/前墙窗侧连续连接精选.jpg",
+      "bytes": 170959,
+      "sha256": "4aad925e0222f2da03c17cd94d924c67fd112053f56d175603bf6a03ed206a3e",
+      "git_blob_sha1": "4d0c6c5de18a4653cca3791696288df881dc2638"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/20250830_clip_classroom_46.jpg",
+      "bytes": 69439,
+      "sha256": "6d591bd2e8770bd352379457f8d68feff7694c57b0c1cc95d541c4110dac1e7f",
+      "git_blob_sha1": "c6c69050d48f779b303c87b8f8b65f30cdabaf35"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/manifest.json",
+      "bytes": 3922,
+      "sha256": "704640d0b5e05e781fcf854214fd126de044e426774d8d32e1acf82f2dcf383e",
+      "git_blob_sha1": "f38077602f7b2c3d6555babbda9e67430b5d6c6f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/replay_20250829_classroom_5108.jpg",
+      "bytes": 72970,
+      "sha256": "c41bd865a8c122a797b4093c45cdb7244fc6ba918e0818bb018f9e67a09cb0e4",
+      "git_blob_sha1": "ddf5ee74971e35fdc18b510205cebdad619b1ad0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/replay_20250829_corner_oblique.jpg",
+      "bytes": 85306,
+      "sha256": "4ae1ed8e868b80aa7e6ef8efcfa572c3d9e0d677027eb87a73a357e417550b63",
+      "git_blob_sha1": "8a58d8083c0f76ce48dfedff67795016bcda849e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/replay_20250829_corner_verified.jpg",
+      "bytes": 71187,
+      "sha256": "f119c4f5f070ce73ff70284328e6e536f523fa5a2bda6b93b875fe3463faecdd",
+      "git_blob_sha1": "7d0bb7e02ef85d7eaccff76620fcba634d809d49"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/replay_20250829_door_corner_verified.jpg",
+      "bytes": 76427,
+      "sha256": "91d632f99e0df414a8e9aef9b18b800f9ff4b742734fda3d6ce279f6ca2a3571",
+      "git_blob_sha1": "70f22d0ecfbd2b798409872745ac03ebfe02e986"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/replay_20250829_front_door_corner.jpg",
+      "bytes": 82420,
+      "sha256": "17c65d08880876e06a27d38ba33bd896247889dc6a4e0ab058b5dc4829e20f3e",
+      "git_blob_sha1": "ca01ec98e17ac71bbf39bdd94df9b61110b52d3c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/replay_20250829_front_stage.jpg",
+      "bytes": 75337,
+      "sha256": "0a599bedf3d57c0cb86c8d7a9f0a254442edfb16431f41880c432bfcfc700eb2",
+      "git_blob_sha1": "8e50fdd8122f2b3e26b7bb2c3f15bf9fe6c5f666"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/replay_20250829_window_close.jpg",
+      "bytes": 77620,
+      "sha256": "0ae9ab25fdcd37d5e78c4b219b11d3c26a91a19d9b4dd598317bfb98a6d6860b",
+      "git_blob_sha1": "b02868372e84f53dcbfbbfbf68c43ff827b5ff4f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/检索与来源链.json",
+      "bytes": 1474,
+      "sha256": "d055ed41aefd294e83cf4825e4b844ea8a225fc2417797c3c0f658af5b8d2cf4",
+      "git_blob_sha1": "7eedbc5fd57877bc368f993bd3c93481576f612a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/精选manifest_SHA256.json",
+      "bytes": 2297,
+      "sha256": "ddcbd86930566dbc2238303af4d8dca0f75af534aca0823af88170a3cb605c60",
+      "git_blob_sha1": "300bdb81689aa1e51376534aa161164699cbf6e4"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/跨日期室内结构精选.jpg",
+      "bytes": 108393,
+      "sha256": "aa7d255780d7979c8f6876eb4c7483f64563a89d786099e3c2fb430eac616e0b",
+      "git_blob_sha1": "551c87496f24a9a81828d540e0916b760b87243e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/后续回放核查/跨日期来源判读.md",
+      "bytes": 2586,
+      "sha256": "9294385fed114b9c3c8801b176e9ef09c5719d54e2d72db2732cd652221206b2",
+      "git_blob_sha1": "6491aee166cebb79e64573162e84cc1d14002067"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/来源性质与切点复核.md",
+      "bytes": 3187,
+      "sha256": "3b16d51907c629ced4136d608820322bddda227f273f171de42128725827e3c4",
+      "git_blob_sha1": "b27c494df2efc48a6ae944c8b62db7e646b55f3d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/来源文件SHA256.json",
+      "bytes": 2167,
+      "sha256": "0b8d5ef62af67142162b6c4ad76e12a3354f14efc88ea4a0f6b75914fffc15ee",
+      "git_blob_sha1": "8edfb8fd4334f856f8adcd2294b196263a03cfd6"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/检视区间台账.json",
+      "bytes": 1620,
+      "sha256": "47c3b08a3333236a27fdc7bedae5f382b83a9ad8eae019fceb8d55f70e935fa1",
+      "git_blob_sha1": "068d9c5db740011dcdc8207d7206208c5186c9b0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/正片运镜精选/selected_manifest.json",
+      "bytes": 3107,
+      "sha256": "ee713c11cda1dec182b8ef6fc4d5ac3dddd79307c9adba29a639528e65720c5b",
+      "git_blob_sha1": "573fe41067dab74a9408bb18c4f93617e3a0e45e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/正片运镜精选/精选正片真实运镜.jpg",
+      "bytes": 203517,
+      "sha256": "0e60c67e6b79118a2bd50895dd6350ae424a4adb230ca6225ec72ede490a5a91",
+      "git_blob_sha1": "8e883449e11b7b7fd47e20b9ef507f89502c2ac8"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/正片运镜精选/运镜关系与桌列判读.md",
+      "bytes": 2954,
+      "sha256": "212688650d0cd13072b88fc9e9d7b3a3490d2c9dd86960c374a9711fd4241fa9",
+      "git_blob_sha1": "81b368e1177a2b4cd122eda4a0c8a3e0b6d24467"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/正片运镜路径初筛.jpg",
+      "bytes": 519940,
+      "sha256": "e12bf323d08b2eecbc596cbac059b72e5d5c9c2d70e379658dff89b321e22dc9",
+      "git_blob_sha1": "e04fa229ae5a7989f903f5285df36783f10333c1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/窗侧过渡细查.jpg",
+      "bytes": 287460,
+      "sha256": "c75b73eae3572a62a81d9ced5708880d047512a48dd71ac188572bb92309d098",
+      "git_blob_sha1": "e606239532d9c1bf76a4bfa93117ec16ec001bcc"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/窗侧连续播放初筛.jpg",
+      "bytes": 422050,
+      "sha256": "a9c1ed39b03dfdee472b5bfe5eae405de439fd9e4591cf3174cc66663c2305ed",
+      "git_blob_sha1": "7746e435411bd8879bdecfeda475ac7197572f49"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/运镜局部细查_0.jpg",
+      "bytes": 345022,
+      "sha256": "d2eee103e90393bb0d8381ce691cb8ddc13ad61d72e3952349dbfdbdff364795",
+      "git_blob_sha1": "a5311f07e645b67fbd101c2381038d6c93a3ca22"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_sources_20261010/运镜局部细查_1.jpg",
+      "bytes": 357463,
+      "sha256": "a30d8403e7e0c8e9c0d91b2fffcbcc49c1fb4023f5a86dacf3e4359efbad52d5",
+      "git_blob_sha1": "ee5542df2d436042650f5bf0a97cf83457c324c7"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/B连续连接_前段六格计数证据.jpg",
+      "bytes": 382649,
+      "sha256": "d9de5ef5d1cb7c068200942eb83660b37b3841051de5947541e4b4a28961fbd0",
+      "git_blob_sha1": "707f6bd1f08b47257e5394b1d0cb0a2fa406d323"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/desk_identity_highview/camera_static_point_diagnostics.json",
+      "bytes": 33234,
+      "sha256": "165405a65f8ed34e216a5775488b5061d5facc7f8e70d442242d1e4a894d84e6",
+      "git_blob_sha1": "d269fb93763ac6594107baffc11e728a7cbaa9f2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/desk_identity_highview/diagnose_joint_cameras.py",
+      "bytes": 10023,
+      "sha256": "59b1d09e235e89f38d2daa77bfdda7800999c6929d157a02897cb01b8316259e",
+      "git_blob_sha1": "e89edd67532b0e22d92952017158419c8aaf0748"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/desk_identity_highview/source_desk_identity_annotations.json",
+      "bytes": 19645,
+      "sha256": "45d593e4d6267f427b540341801205eae26db7e217f70b7d6892683ff24b4050",
+      "git_blob_sha1": "7f0728705c5c2a3a39663ee4d48a6e379718e9aa"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/desk_identity_highview/高位连续桌身份与联合相机诊断.md",
+      "bytes": 7836,
+      "sha256": "3347bf5dd44da14042b45303ca9aa5385abefa7d467b9d8b5bd0a49f93a4b293",
+      "git_blob_sha1": "890237169113fd160fc4902cdae0e63c1544b730"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/overlays/F_path_059_50percent.png",
+      "bytes": 1660981,
+      "sha256": "0a8fd1686ced5e1282072c208996a4f1c7b240e532ace953d74e21856e661a06",
+      "git_blob_sha1": "0aedf561fd2afc08cfe0d7b90937cca73a8c7369"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/overlays/F_path_073_50percent.png",
+      "bytes": 1671164,
+      "sha256": "a733787f78e11db31da159f3f47cbabb35f5ece5e6ddd7188b0e7da3b948d1f3",
+      "git_blob_sha1": "fd3b45d78b847a75285fbf9141eb4d6d96170fd8"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/overlays/F_path_076_50percent.png",
+      "bytes": 1651024,
+      "sha256": "3b1a5d9edd8ee2427587eb62ea42344c4d319235cd56a0e6621f1ff6c7f48ad0",
+      "git_blob_sha1": "40c3ec897bc20c447ba36f7334c34e6b4a8d38da"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/overlays/F_path_080_50percent.png",
+      "bytes": 1654502,
+      "sha256": "407c98671833d5523c17de73b241487101eb48ba1d081ae4051876ddc413007f",
+      "git_blob_sha1": "64a84e0fbbdd3cdb7710ffd0b59bb41ef51f370d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/059_teacher_crop.png",
+      "bytes": 269981,
+      "sha256": "336750b11c3e3e54589c75f47bf36f003c82d3e3923993f7668cf762653f2f6a",
+      "git_blob_sha1": "cde7f4d55c3f7d66fc74d678c97e6493ee0b1317"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/073_platform_crop.png",
+      "bytes": 228500,
+      "sha256": "c72cf5fa648374363a7322d69e6a42e2cb1d9b252177bc2b56956d304927d8cd",
+      "git_blob_sha1": "290eaeb357f6c3685cde66f95e815ccd44915797"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/073_teacher_crop.png",
+      "bytes": 200506,
+      "sha256": "26e650b455f6daadb2a46f7ec4986e04a7cb819a7d05386ed28ccd0fd28dd47e",
+      "git_blob_sha1": "268d381946218762d7734d094d07551c91e244ff"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/076_teacher_crop.png",
+      "bytes": 203394,
+      "sha256": "604f42ea432744b9da85bde47dae428e62a2ddec23e8eb63f6a6bc7f00ad1e5f",
+      "git_blob_sha1": "faf0268267724db1faf3d986f85c574abfb8192d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/080_teacher_crop.png",
+      "bytes": 187563,
+      "sha256": "4039c2a4a70fb9811fcbbed0a74ff0e6536707e14f09e85545f64d708cf57b27",
+      "git_blob_sha1": "0d9733385e131ae560b36307fc5d4ab1ede1e456"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/B_camera_identity_exploration.json",
+      "bytes": 5755,
+      "sha256": "38c8c566c52ccec0f88df2fe3594cea432b8733834b5417474a72c26c02a9b16",
+      "git_blob_sha1": "aba84e0555d41af976249307542da1a4dab82f34"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/B_intro14_three_desk_constraints.json",
+      "bytes": 3213,
+      "sha256": "449fe3b0049e0395fba2b6fb641fec277db7b522abea0ca2fd47facd7d1a93f7",
+      "git_blob_sha1": "e44a29a291f15e0511b498d388faf88478439eda"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/B_joint_pitch_fit.json",
+      "bytes": 6125,
+      "sha256": "f99e75f013110550d7bd55bd2df719b300ee6cd9f73f787a417ab175f5c125d0",
+      "git_blob_sha1": "0a9d24a499dac9e36696cf21fb5fac84f503bac1"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/B_linked_bundle.json",
+      "bytes": 7865,
+      "sha256": "373466c92321efb17a2dd4fcd51c2e11f79e3d505c83748ec9bd4a2eadcc8a87",
+      "git_blob_sha1": "23022d23e7c8bbdca342f622e67183d35cff9ce2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/B_window_identity_six_bay_evidence.json",
+      "bytes": 1681,
+      "sha256": "dfb37787e61a579273cc2da066382a622ed5b42d19234764f73ae0d6b704372d",
+      "git_blob_sha1": "05d81207ac4177d5eea0ef02f1242ae2890328ce"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/C重复桌上道具_待关联.jpg",
+      "bytes": 240272,
+      "sha256": "3aafa13d492ebeb5969eac26a74ec5ee08b954d47943782e56d21a96b351d115",
+      "git_blob_sha1": "c07da4771efcc8c12851d850dcba904ca2c42892"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/F_path_059_anchors.png",
+      "bytes": 764902,
+      "sha256": "4d7fd03a2dc5becb43fd5ca64606e092492e47c028859d87969c2ebd2aac3258",
+      "git_blob_sha1": "7db2ab8915dc67aff36ce503b4c0777a6ea28689"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/F_path_073_anchors.png",
+      "bytes": 901558,
+      "sha256": "357fe49697aedf920b26024ff5fa38254374bc27d1c210e5d7d8bb52a92b4b4e",
+      "git_blob_sha1": "47c7e545de566983d218756b46ee9bc5e469dda0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/F_path_076_anchors.png",
+      "bytes": 873215,
+      "sha256": "65bf8c756966bfad6f6afc97553206e82abd45a982045604c78b659cb0aad014",
+      "git_blob_sha1": "e27c55ba17b46dba1839db085ae986e7cc237a10"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/F_path_080_anchors.png",
+      "bytes": 866423,
+      "sha256": "5609a54e8dedb090f07eb466a5ed68ccd246dbb66cc42f4bb352a02c6cbfc586",
+      "git_blob_sha1": "b0e31e2502a262db2b364ee2d7e6d98d3e5694e2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/camera_only_fits.json",
+      "bytes": 19763,
+      "sha256": "3a3084872c5fbaeb529828322bd7721da6977f9a2ccabe1fbb45123afb003c9e",
+      "git_blob_sha1": "9d7f75f78f55d8944dca4ac9f019581b0ae6b95d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/manual_source_anchors.json",
+      "bytes": 4712,
+      "sha256": "daf189b7ec4f36f928cf69d7a85cba5890b6f8bd756f0d7b7bfb38c68d39bfba",
+      "git_blob_sha1": "c3f2284193c9514ab4ec104efbfe488b502aebda"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/overlay_provenance.json",
+      "bytes": 2178,
+      "sha256": "e4430ecfc5c11bde481760335275c2a847d7e26b3f0a1fac45cb26958cc421ec",
+      "git_blob_sha1": "9d51ae1f5979f21a6a0a0ca8f998059401cbfa42"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/render_camera_manifest.json",
+      "bytes": 2585,
+      "sha256": "df803f546e2a6f8d837f5488792cf60bbef9182457d3d27a6b19c2c9a049a8d2",
+      "git_blob_sha1": "7dec327e7dd2f5f73f8e487c3ac1d1604aceb69a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/qa/shared_state_verification.json",
+      "bytes": 319,
+      "sha256": "a2b64d28f986384d1f1d57dc6d76da48d568832120ac09bb038c66e113b36ee6",
+      "git_blob_sha1": "be84b22ee12333538c5924e96321508a9d9d682d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/renders/F_path_059.png",
+      "bytes": 2201613,
+      "sha256": "af80228ccde414bc244c0a92a2e53cedc599eaf8dbf2278bfe57af8e7e48c550",
+      "git_blob_sha1": "1b08361076b714f1e5cad13976f0eb8cbfe76df5"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/renders/F_path_059_denoised.png",
+      "bytes": 724915,
+      "sha256": "77457cbc64d2007a2d7eb56fec53aad7d344aec4c3244f57f136f51720f55b88",
+      "git_blob_sha1": "53c9824a4a80344f407b0c88bdb7343fab8021aa"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/renders/F_path_073.png",
+      "bytes": 2199801,
+      "sha256": "8e94d2669efc162c44f94a965f9e451257d089fbbca56108f7c5c67cfebd477f",
+      "git_blob_sha1": "bf013218e38e38142d1d267825b0ad2340d57100"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/renders/F_path_073_denoised.png",
+      "bytes": 849165,
+      "sha256": "6824e307c49c005e2c709aba8d9cea72a234fb4d7aa5069c928443804581ac52",
+      "git_blob_sha1": "2448ec6b51ccf5b828606618ff88af47e014e321"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/renders/F_path_076.png",
+      "bytes": 2181731,
+      "sha256": "61c76b20c18800eb4049fc83246e553a272d624503aae3c9e659a0a2f0e108da",
+      "git_blob_sha1": "4cf4a2c3ea46cb2e43c81faf1329e8075acfc411"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/renders/F_path_076_denoised.png",
+      "bytes": 801974,
+      "sha256": "e9a4301cbfdadf5439b5edfe540d771f5562f3a0b049b7e2b79142c60d9dee79",
+      "git_blob_sha1": "084089ce6883e3993c3a6278f9a5a6a8dc149539"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/renders/F_path_080.png",
+      "bytes": 2201635,
+      "sha256": "4c373b64cc18dd5fdda3e2a247f2823538186d7cce52b6a04d3c7df0212efd7c",
+      "git_blob_sha1": "572d397e931b18b703d778cc48f2fdc61e492512"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/renders/F_path_080_denoised.png",
+      "bytes": 776350,
+      "sha256": "1eac1a27681a48b81ae50cf51af964e2133fb1ec8fedbea1cf7d5539b575cfab",
+      "git_blob_sha1": "019fc07e4041fe672d3622b73fe8a70e95f9bf1b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/audit_six_bay_unchanged.py",
+      "bytes": 1642,
+      "sha256": "c6aa313aa04d7d8be4bf3e1482ee71f5deec4255f05eac026b8fd62f8b27f08d",
+      "git_blob_sha1": "5bb19e6c3b054897e7182987e8399a023ab2e478"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/build_render_tracked_white.py",
+      "bytes": 3622,
+      "sha256": "38e6abbbfd9757ac3caf69533b3f7252f9644e9e9ded16cd516077935d7c878e",
+      "git_blob_sha1": "21602cf323297784cd6cd0db32c699542e6eb7e9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/build_six_bay.py",
+      "bytes": 3059,
+      "sha256": "bea41aa93bcff8c9fb75f5aec06fbeee720297f6368f8f064cbf49655fbda2fb",
+      "git_blob_sha1": "84983d5f229b4ca0d1af6161d7d7fe4a97cf3c4b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/document_six_bays.py",
+      "bytes": 2797,
+      "sha256": "3ba69824a42308417b6c441cc884fa9587efb700ba8b26ca0185e979a8e3b79c",
+      "git_blob_sha1": "b93b900bea8754344a57217881285f8ca5a42c2b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/draw_tracked_corners.py",
+      "bytes": 1599,
+      "sha256": "c3a3435b9adc6196ded7488db5eab156af2861033aff392413d88279c30c6a24",
+      "git_blob_sha1": "3113694fb8fede969e17398819d8ca8d67724ca0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/fit_B_identity.py",
+      "bytes": 3197,
+      "sha256": "a71dcb87a51b6b96012e9e1cc1de86a76cd909cb148475d570104fee15ed65de",
+      "git_blob_sha1": "50de3088985e59cbf9b5382ce8f8a3f1c4a69e24"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/fit_B_joint_pitch.py",
+      "bytes": 2583,
+      "sha256": "5cdc1ab899eebc63d86dfb42cb5b36f47da7e05be7640893cac8d9e8b4e3ecec",
+      "git_blob_sha1": "be4cefdf4f6f2829fd9d554f3d7da0fe8e3c9c4a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/fit_B_linked_bundle.py",
+      "bytes": 4347,
+      "sha256": "1fb10493d62f26b22ddf42f71236a3481d1e7864b117adf8c16813c2d610b934",
+      "git_blob_sha1": "60e26f04a791028941c6d75ab8cd3649ad2f3b13"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/fit_B_three_desks.py",
+      "bytes": 1895,
+      "sha256": "fe834f4c7554cf4c3eac8319eab8eb2f94ccc4214131e194fca014e7997f9b6b",
+      "git_blob_sha1": "a1bd83c5666c621bb241b362ea4089103aa290a0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/fit_camera_only.py",
+      "bytes": 3739,
+      "sha256": "e1d9f76f54efe5580a1a711534deaadbe57b0f26b04ff6497a1cff3cac5d40c0",
+      "git_blob_sha1": "d11a2cceb00934632993250e6314c1889984cf96"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/fit_tracked_desks.py",
+      "bytes": 4534,
+      "sha256": "0efa3f89e0acbf9c4096bfae7b646cfc0e150e4cd0c69a42454a40ef46e00d07",
+      "git_blob_sha1": "da0069c0594cfbccc5e162816e925cd9f3172bef"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/make_review.py",
+      "bytes": 1979,
+      "sha256": "e7179793be7e2a994de5623ca062ad0f517d7054a1972202b0bcdd344c5199c9",
+      "git_blob_sha1": "d8f7c71079f6eaf71f1d4c33e8bc07b295ceeb68"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/make_six_bay_review.py",
+      "bytes": 2246,
+      "sha256": "20efb034809d3062b3e9377945b7c62d4557bb80c000e6e4b5ce3be5efa46d41",
+      "git_blob_sha1": "73c06efce90449932db7d80a4c00d8e779fccfbb"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/make_white_review.py",
+      "bytes": 2551,
+      "sha256": "30775f470be47d3f4a438946709ef887dd1ddd7bb63776d0b6d18547d48f7f57",
+      "git_blob_sha1": "89660a8a3ae26a3ae6892d78ff2f731c7d0d4615"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/render_B_identity.py",
+      "bytes": 994,
+      "sha256": "528d0ab8274b6d1abab113a3f8ce52263ba94c54b63930b7b3272e91ccf179f1",
+      "git_blob_sha1": "3f79ccad6c08532164e8dc976d131c5f6107edb5"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/render_baseline_old_views.py",
+      "bytes": 628,
+      "sha256": "3635ce230e89d9b818267b6d556198a9b51db0136084739e98b8e96fbd09c7c4",
+      "git_blob_sha1": "3d3e78e4832af0a51c9b9b7a0d44b18e69e1a489"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/render_camera_only.py",
+      "bytes": 1883,
+      "sha256": "e2f383689558c70f76632052183a3accbf2b9cf5bfdb10c4eb93fad3c6965c2b",
+      "git_blob_sha1": "7bdb1fde118ff9e482ed0e4c92ee73b5036ca5cd"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/render_six_bay_regression.py",
+      "bytes": 1052,
+      "sha256": "4f458649e913c92d53bbec5f7e27b129ea81ff35b8c45b95346f9333d49a4a47",
+      "git_blob_sha1": "f6fb7871179c245f3d1083fd2da7030dd4770e86"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/render_white_080.py",
+      "bytes": 549,
+      "sha256": "83c9f177c24bbc6e7444ce358d347c9bf6d55c8522a8e943db868afca364f6f8",
+      "git_blob_sha1": "84d2265b074904c33265597f8977c190ce2a6f6a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/validate_six_bay_shell.py",
+      "bytes": 3143,
+      "sha256": "96251df4f3916ae6ade143ac9f1ff1a1183e5e5a85ff2582245e17bb44e874ef",
+      "git_blob_sha1": "24b5416d30430deaf9c3b7be230d7810257b31ba"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/validate_six_bay_windows.py",
+      "bytes": 4360,
+      "sha256": "91c1b12683f8fc1a311fde3e1bfbaf3afd5099d8e3f831c70d8d34940a20f118",
+      "git_blob_sha1": "7af388c9ab2df8b3efa2c8a9224a63f31cd58d62"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/scripts/verify_white_saved.py",
+      "bytes": 1117,
+      "sha256": "2ad300acf7104feff5d2e7d71cd7b0d777cdc6cd3792ed319cdcf5648772d8a0",
+      "git_blob_sha1": "2ff4078df3d01032db05e70724a81548e29a31c4"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/B_front16_video.png",
+      "bytes": 575849,
+      "sha256": "a3eb0eaf45a57f15ad86ec1e25cc2f10bf2b09a39848f05f9501b0269c6660ca",
+      "git_blob_sha1": "16e6a725da66b1d5055e7dcc61a3a846d6d8e417"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/B真实桌链_相机探索对照.jpg",
+      "bytes": 466342,
+      "sha256": "47d7dcae32be1b985a6b6efc1805446380e05a688b36920f4f477b1721ce5272",
+      "git_blob_sha1": "d272046a2d96ef0ef1d883b034e29293357ab948"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/baseline_renders/SOURCE_4298.png",
+      "bytes": 2355277,
+      "sha256": "2a0cb937a70588ee662787e39be2b1ddbb9b487ade70f317bef35176cd2cf166",
+      "git_blob_sha1": "6eb6d0a4719774ba8ad6aa41c94ec2065f2ae876"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/baseline_renders/SOURCE_4300.png",
+      "bytes": 2377102,
+      "sha256": "2540d5bf3c556ea46e2411f5668b2c525191456c696e906e206dbb97ace70fdd",
+      "git_blob_sha1": "568f267a3bda1bb79f723cc629ac6db94c001d08"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/baseline_renders/SOURCE_4310.png",
+      "bytes": 2296674,
+      "sha256": "d1e7d49fb620f186d230b19656314d68b49824d5f2f8343c609f400e311ed949",
+      "git_blob_sha1": "d2325be811ae957c7c685229a2883094215abd4e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/B前墙连接直接50.png",
+      "bytes": 1662349,
+      "sha256": "26dd3796fdf73ce638fcf1a29a6fcf0f28b766564e1f1daf0b5d686dad62d95c",
+      "git_blob_sha1": "05620c9da1d227f9b86f129df8cd09c8d71a3e95"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/B自由焦距直接50.png",
+      "bytes": 1586447,
+      "sha256": "3cf7b7817dcdc3c7d03e0156854ba1658eda88f37c120fff0c30736821c1e829",
+      "git_blob_sha1": "78a65432ab42e949779ceffdc112e95ebf3fa797"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/MOTION_F_path_059_sixbay_direct50.png",
+      "bytes": 1804972,
+      "sha256": "740064524379a404bf6ca2ad040611a639690da594cfb3616448a16f72c2ce0f",
+      "git_blob_sha1": "34e6e329f7221e687602ca252d1b90001b579476"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/MOTION_F_path_073_sixbay_direct50.png",
+      "bytes": 1787756,
+      "sha256": "82d4e86dd11abd000c34dbc7d12314838e454c6ce6281cd711d60d94d362b42b",
+      "git_blob_sha1": "4b86b1da8b719fd71d4f6d63b4ad6a55a57d8343"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/MOTION_F_path_076_sixbay_direct50.png",
+      "bytes": 1766699,
+      "sha256": "ae059f909c2e0beef9dc1f46b6be43c3d3a820537c99e49c6500dc60064f8746",
+      "git_blob_sha1": "aa66fd9935bb76d3a6feb3f832c5b0bb92d0536e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/MOTION_F_path_080_sixbay_direct50.png",
+      "bytes": 1763318,
+      "sha256": "d16a40e708a912923218b85da22495bb3b6e6f3e7ebafe0e46f53e5b6d719c87",
+      "git_blob_sha1": "fda6c75f9f74d91446e8eaadb0eeb788ccea8c41"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/SOURCE_A_sixbay_direct50.png",
+      "bytes": 1878412,
+      "sha256": "43968909573c7e751e7363d042701e30f3d74d58a077239d24fd60fde4480e79",
+      "git_blob_sha1": "c4f54921aeb546dd849db4e661d3d0c902847de9"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/SOURCE_B_sixbay_direct50.png",
+      "bytes": 1694032,
+      "sha256": "1da6f3a8fef8c0c1fb161fcbd5f235c7279b4d694428efd4acde3d3bc5a6e83b",
+      "git_blob_sha1": "38f808dab9ab70f90994e5ad2e1c09d18ddef72a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/overlays/SOURCE_C_sixbay_direct50.png",
+      "bytes": 1826936,
+      "sha256": "96d70aae455cd513c86deb5b5ba869a1ed6bafb69fe2c04b365302c8bb1b5201",
+      "git_blob_sha1": "8d6f0a291a7022d5eba6a1deb6d1f6293aa333f6"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/qa/fullroom_validation.json",
+      "bytes": 24276,
+      "sha256": "73bcae9d0751eb927f1469188c34684572fb3a582d7b94be076bd06ab089127d",
+      "git_blob_sha1": "42c30c7138e86b94c358e736fb0269d8eecbcb4d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/qa/object_change_audit.json",
+      "bytes": 4137,
+      "sha256": "45831fdeecddac16687c8ce2f24ed313b57654dade87e37b4b6503c6bc67b8bd",
+      "git_blob_sha1": "3cb11429515049c724548e106c08fc1edacc951b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/qa/regression_manifest.json",
+      "bytes": 6814,
+      "sha256": "88eb3e8d43a859028c5f45aead2f50f8cf971cf71f497dc23e158139398aa2e9",
+      "git_blob_sha1": "b178e51604e41032b2f063d589c7f3eb2e3ce6ee"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/qa/shared_changes.json",
+      "bytes": 30972,
+      "sha256": "609d4a0f06ceacf3d76daabbeaf113f59139c84d697bbe7d6ab0b1553fa729b3",
+      "git_blob_sha1": "08025dc9168fcc0dde6d7e78147fe37ff035c6e7"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/qa/window_aperture_sash_normal_checks.json",
+      "bytes": 12118,
+      "sha256": "d3e5f8169f6014becdc36e8bbac542f08a03533ba0b078b7cbd235bc945bb0d9",
+      "git_blob_sha1": "b5c055972d7586161f52e62b319b4003019b0394"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/B_free_lens.png",
+      "bytes": 2125390,
+      "sha256": "6b94325d0b6bfa711793e69849fde05f6d2183ee10ba99f8820d8c817b273e6a",
+      "git_blob_sha1": "e89b899d0ca167c5eebb2779807d1b5a045c252f"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/B_free_lens_denoised.png",
+      "bytes": 636615,
+      "sha256": "5ae7cf9f4025de23b8dc7a6437c9584ba4040992f15fc71cab0d9407caf13bb7",
+      "git_blob_sha1": "cd96f99e6d138357f63447cb5d1116d4f9451be3"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/B_front16_link.png",
+      "bytes": 2238763,
+      "sha256": "a9a0919c4b165848bbfc95fea663b9b1faf1a378f1606ecc28f2a27f604279de",
+      "git_blob_sha1": "a3d3e14794dbab0037c601f0d25864d0b84ca14a"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/B_front16_link_denoised.png",
+      "bytes": 725301,
+      "sha256": "62f8bffb984b110eef762e8733efb7bfaa5de84a2b3120e386dceb16a83853d8",
+      "git_blob_sha1": "1cb15a29b21bf46fb5deb2b3ad2559259db48465"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/MOTION_F_path_059.png",
+      "bytes": 2354583,
+      "sha256": "a3c2f35c7fd21bb1c90ea2b4e344a2543872f9587073c5a1283a2e4f42a87667",
+      "git_blob_sha1": "4c61c8f570cd1d6bcb84e1876e3258cb1a9144e4"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/MOTION_F_path_073.png",
+      "bytes": 2326352,
+      "sha256": "83ee57388c03c9ccc95d7dabb1a426904d6afb1fc3152095b2e8f58e2e534c28",
+      "git_blob_sha1": "16b083dd2f15e1d2c70b2bd82e6562970baae3a2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/MOTION_F_path_076.png",
+      "bytes": 2301463,
+      "sha256": "2510469398d98ce923ba5eb63874bf111f972a78bdbd767f922d7dd1d0aa5a74",
+      "git_blob_sha1": "3f228883f44aaa608f75e46461a14f8fb2b4acac"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/MOTION_F_path_080.png",
+      "bytes": 2310869,
+      "sha256": "acba52ecb379f1f936015976ba0510e63df3ddad4ea58c7c95ddd184055ab283",
+      "git_blob_sha1": "db6ca7a5e0fd2f666bf05fb6276be846c3ea9168"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/SOURCE_4298.png",
+      "bytes": 2368723,
+      "sha256": "8cb826cef3c55e9994d986a2bb8e18c823846d4314690741b4406fa2eb92c9a5",
+      "git_blob_sha1": "e42e46c02adf97f46bb4f40b38cc59a683569966"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/SOURCE_4300.png",
+      "bytes": 2389927,
+      "sha256": "63cba4327c390903806ee4aadeca14016e57f5ff616954652351865da7adeec9",
+      "git_blob_sha1": "4ae9955f5cb1dda7931e593ccca48b1decb0ddaa"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/SOURCE_4310.png",
+      "bytes": 2289854,
+      "sha256": "86d16db2d4514b3de0399be11208df8ba1e16d66fdb84a7871de8a9664871755",
+      "git_blob_sha1": "b29280d034e1ea93eeb077b41eecf07a2a14dd0d"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/SOURCE_A.png",
+      "bytes": 2442520,
+      "sha256": "cde7428b1e81ef9105450c2c709b6c3e68eb9cf232dba38cf2bc8dba895cf312",
+      "git_blob_sha1": "73721d6d27706dbcde57c8ba47c120e948eb95ba"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/SOURCE_B.png",
+      "bytes": 2232270,
+      "sha256": "c693baf66808887779f8689d3dde782c97ae7a0a1a0a27b8661ae2d6aef14619",
+      "git_blob_sha1": "1decbb971e336d9275cc8a209121d98ed306dca8"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/SOURCE_C.png",
+      "bytes": 2364442,
+      "sha256": "2c3244294d4460d84395efe4ef649b2f3d6555c51bf17eeb4939f2531a333987",
+      "git_blob_sha1": "200c3fdf42e2c035a06c59a96314f4f5541d8dfa"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/renders/SOURCE_C_denoised.png",
+      "bytes": 765662,
+      "sha256": "da57292dffb8f959f95423952d29ada34bf4b5dd0f6460e6b51c1f82876461c0",
+      "git_blob_sha1": "ec2774c84adcd009b97399fc156a3090c26e7227"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/六格候选_BC初步对比.jpg",
+      "bytes": 576623,
+      "sha256": "d1a26aa9134f502bc83e209c54584aae238a07f42bdc80e432a9d251f9f27fd6",
+      "git_blob_sha1": "fa002be0c35d387e8c13e982d79a0529bf4de659"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/六格候选初步结果.md",
+      "bytes": 3612,
+      "sha256": "5265667b113869501a6733b1821a472182e24f7ff92716df5505afaed297865f",
+      "git_blob_sha1": "bcc04bc9fcd99b7ed5dc81cb18c61688653ebcb3"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/six_bay_candidate/六格共享候选_十机位新旧对照.jpg",
+      "bytes": 2500425,
+      "sha256": "5dd834e56c7301bff477a6a9051b1ffb8322d3d12068a47978647f3cc34b065a",
+      "git_blob_sha1": "2e0606c12971d1271fc61d865bb4358613c44dab"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/source/B_connection/前墙与窗段身份连接.md",
+      "bytes": 2000,
+      "sha256": "bb9f95ff2e338843acac57541819f8e5772bd04a1863016a9732e8880779bdd3",
+      "git_blob_sha1": "6cee0834e41d942cee6b6a53b787eb8f66f4eac2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/source/F_path_043_video.png",
+      "bytes": 767607,
+      "sha256": "a3fcfed7a4a0148a9509e52d4e6845c9ccd12c5625090651acd27a250cefb467",
+      "git_blob_sha1": "55105936e38c54a3152c24917597e5e52143955c"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/source/F_path_045_video.png",
+      "bytes": 702064,
+      "sha256": "e631e5487e35d41bd26db3904b6cd92bda8a9bcfc1d8e6f81a6d5b3e75efd45c",
+      "git_blob_sha1": "ed4e579f85353f07ac8146a96d38a3f4dfc4d521"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/source/F_path_059_video.png",
+      "bytes": 751499,
+      "sha256": "5aedafe3ff2bbc984ca217e96a3549d6d361410c4a438a9a15cf81a98bb9fe94",
+      "git_blob_sha1": "460f79b0dbef532749c320e8077336ddd8cdcda6"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/source/F_path_073_video.png",
+      "bytes": 890367,
+      "sha256": "bf5f2fd611bd1b92fa977e37c67d4db25e484b8f018e90d67218c5ca654ac61d",
+      "git_blob_sha1": "f4295559ea7cfa456b95967bfc4beb7c8adc847e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/source/F_path_076_video.png",
+      "bytes": 860800,
+      "sha256": "5aaec3c665787f21123f084ab7c77d9cb4c7425bffbc00f3769f07d6f9848861",
+      "git_blob_sha1": "743ed3eeb29a61d21f32d03a1a1420d61dab4cfc"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/source/F_path_080_video.png",
+      "bytes": 855797,
+      "sha256": "28713361f207868651de49c325085c5cf732f6e7311ffab0ef16774703176539",
+      "git_blob_sha1": "b9724b15824156ac5dc7077d7fc112341cb6bf44"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/source/selected_manifest.json",
+      "bytes": 3629,
+      "sha256": "a8a0cfb33da7ae0c7eee2874e19bcd2cedd6738a2657a26b3a513f9bbb1e3aa0",
+      "git_blob_sha1": "2c9e61dd89f9860f6f6c8759e4d5904766666150"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/overlays/F_path_073_direct50.png",
+      "bytes": 1648630,
+      "sha256": "9c6ab6df7ee46e55d2433b0dc5f82e7a2f063ed22a93d61455900395159000ee",
+      "git_blob_sha1": "2c494d11cea529a357f4174ce837c1cfa1166e16"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/overlays/F_path_080_direct50.png",
+      "bytes": 1624357,
+      "sha256": "b8b0205f9b52e84d1886495f1431261836710e958c8db0dc56f5fe04bdfd73e4",
+      "git_blob_sha1": "528065c5c91fdebfa75fef420bdb96f5fbc31ffe"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/F_path_073_corner_projection.png",
+      "bytes": 907104,
+      "sha256": "281a2f65e6c6ffd13721549e4032f3cf4b2b7368acb68a2bbbce875c6540370f",
+      "git_blob_sha1": "f6124f607115d9872bb93e26785cc6d74a43fa65"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/F_path_076_corner_projection.png",
+      "bytes": 882192,
+      "sha256": "1d5bbedcab6d9fe3768b37accace904c8f5d47928a4843a17824725ff1763fe9",
+      "git_blob_sha1": "af3477509af1726c69e11598b9b2a2ba24b662c0"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/F_path_080_corner_projection.png",
+      "bytes": 872511,
+      "sha256": "9e27704611ff62d935880e689c891a9367be51c0bd2df96abf5403fbaee44e0c",
+      "git_blob_sha1": "e836f8c5ccb53a7403c8e6888ed3b5b00720c1aa"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/overlay_provenance.json",
+      "bytes": 1416,
+      "sha256": "6c15448af06d29d0940f47177f6d7ca4849b230f7d1d5f3f8777aac4f65c1685",
+      "git_blob_sha1": "20459455b267c7eaa4d924ebab80437750224d64"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/rejected_detached_fittings/F_path_073.png",
+      "bytes": 1924748,
+      "sha256": "ab4e398d9538600e9717f75fb744fa08aac03fa03b0e603032ef47a1d0a51b14",
+      "git_blob_sha1": "1f7f5cd39a6a1ab9157657308df072bcb6d2d856"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/rejected_detached_fittings/F_path_080.png",
+      "bytes": 1884695,
+      "sha256": "4ff577a37d85ffe6f0c10a23a4fafa78fe7a6394d6e0bb2cc47e17249d398b98",
+      "git_blob_sha1": "4ad9ae8230a9988072d66045db27f41e9981022b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/rejected_detached_fittings/拒绝原因.txt",
+      "bytes": 344,
+      "sha256": "956256ba267a10d2c6b2421e3ba3ef6a7f1f09b7667239e16a45e92b1095b12b",
+      "git_blob_sha1": "fedc1b49e4a092271e204e8b6ec883dddf8ecb3e"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/saved_white_model_verification.json",
+      "bytes": 907,
+      "sha256": "4ff9935e8af39a5166a1f4d1389d2b6ca4b5f1c648c07b6097210ae099084413",
+      "git_blob_sha1": "50b5844086bfd0ccf71be5084ccea4fd3ed114e8"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/stage_manifest.json",
+      "bytes": 777,
+      "sha256": "76031ba57ee4588dad97d0080efe4dbb17cd44bc157a48f570a26b32dffc5547",
+      "git_blob_sha1": "4932d2039099ee47d5883d4a1704c4664371d337"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/two_rectangle_fits.json",
+      "bytes": 15555,
+      "sha256": "bb9807313131113b793c4b2296acd2943de65f8339a7b5a710f03df2e8b2df36",
+      "git_blob_sha1": "52bb82466f20cbd84b373ab0b4fbb862eeb98894"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/white_model_scope.json",
+      "bytes": 41164,
+      "sha256": "53544c334408346d6b8c11d32f471c7c6579d83588de8dc061dec2aa6e4c8dba",
+      "git_blob_sha1": "5871038342113bd883e625591a8da291f3d8cb44"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/qa/拟合与留出点残差.csv",
+      "bytes": 846,
+      "sha256": "c6106f5e703f083eb757fa6627d96ae33f1a5ccb4accf63902a952168730363b",
+      "git_blob_sha1": "068516e2f194243cabce624d1490aea0fbd2bc24"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/renders/F_path_073.png",
+      "bytes": 1917142,
+      "sha256": "9d3b046f8b36632ae7d0ea2dad0d9aec5391aba429fbff72ea710b5ec58ad43b",
+      "git_blob_sha1": "80915fc2206b9d8c1bb1b730b319e72784a0063b"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/renders/F_path_073_denoised.png",
+      "bytes": 428433,
+      "sha256": "4683610998fe3495fb15370837332f6c7b53f0d3950ef53e1dbe0568db0eb36a",
+      "git_blob_sha1": "275fa122c55e8fa966839f3434c74e46cb8587b3"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/renders/F_path_080.png",
+      "bytes": 1877377,
+      "sha256": "0dfb1c8954dc9e877b14d3c75c92d09ab84af217ace5e13820dfabda4caa0a94",
+      "git_blob_sha1": "4a7639a755c63ca1b4102d7fa9fc980a2d49ec83"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/renders/F_path_080_denoised.png",
+      "bytes": 443576,
+      "sha256": "769c58b7d3d13e04d0ac818aba8898012d8a274f01bf1ca52cedd84e21ead091",
+      "git_blob_sha1": "bf3617171a53bd692aa3f3e49e6c15fe7076f756"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/三帧同桌角点_共享投影验证.jpg",
+      "bytes": 665672,
+      "sha256": "f24b0d80226c81da707ff1c96455bc03f4ca77ca91768b4da12a3439a803cd01",
+      "git_blob_sha1": "0e3803f4b68ca2d484a00ad6f0d48f94e5aa0a31"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/两张可追踪桌_共享白模直接对照.jpg",
+      "bytes": 518024,
+      "sha256": "667039c67e7f5c64a4a9a1f54016cec4364dc1be19b96492537d0b9770a62439",
+      "git_blob_sha1": "57dc250ac545a361658430184a6bb6b66717f555"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/tracked_desks_white/两张可追踪桌_约束白模说明.md",
+      "bytes": 4226,
+      "sha256": "c67a0909e4e71eec2e55e77c64aa816df369236b4f1834f3b080e33de5f477cf",
+      "git_blob_sha1": "d8e91af7cf52f61a6f8c5379cbe460f87f922402"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/下一轮最小补证方向.md",
+      "bytes": 1211,
+      "sha256": "3b5a78009555311a2bafca961443428307ed36f5fc29cd98a5c9cf02f5824973",
+      "git_blob_sha1": "ab94a19459386d7470ec91c91db59dc7cad89201"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/正片连续来源追加验证_四帧直接叠图.jpg",
+      "bytes": 1014015,
+      "sha256": "186c741f880b4d6d51863d487b8173f3bed6c41c54e9a71770be43e9b065bf33",
+      "git_blob_sha1": "de4862fe63f8ae43742cc273ecae75539d45a065"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/研究阶段交接_manifest.json",
+      "bytes": 7186,
+      "sha256": "a6daafbb0bc80f98a182bcfe1496cced70b1aaf9e11124ee2b954a0b2738e8d4",
+      "git_blob_sha1": "bc856406f2e3b404e3c4471642011969583c6cef"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/研究阶段复现与入口.md",
+      "bytes": 2585,
+      "sha256": "524246ffe0f223de93d0a268a5a6735c64e235fd2cc47867e5ea20fba795b876",
+      "git_blob_sha1": "dbb8cda3dcad251a930b45b1ad80f401bd10acb2"
+    },
+    {
+      "repo_path": "scenes/classroom/research/08-motion-source-verification/files/classroom_motion_validation_20261010/课桌拓扑证据链更正.md",
+      "bytes": 1632,
+      "sha256": "549e676d8ef348fb6deb9524aa3f2f24d4e5eec0b1ea4805415e2ca92d4ad1e0",
+      "git_blob_sha1": "8bed25acb63148f32c4b4c649aeb3806dbed759d"
+    }
+  ]
+}

@@ -1,0 +1,603 @@
+{
+  "camera_solution": "shared_focal_joint_bundle.regularized",
+  "cameras": [
+    {
+      "name": "F_path_073",
+      "location": [
+        2.708186935862228,
+        7.846148755625077,
+        2.560609057018214
+      ],
+      "rotation_xyz": [
+        1.212535547429367,
+        0.00685766090502833,
+        -3.7596224475706728
+      ],
+      "lens_mm": 30.64564754135351,
+      "delta_location_norm": 1.1403870913485403,
+      "delta_rotation_degrees": [
+        -1.3289575636162143,
+        0.2499119518419674,
+        0.03667954771242707
+      ],
+      "lens_change_percent": -13.639538699005605,
+      "original_fit_rms_px": 3.9436071854848045,
+      "new_fit_anchor_rms_px": 5.686679307120573,
+      "original_holdout_rms_px": 18.621239298896345,
+      "new_holdout_rms_px": 11.646003329357052,
+      "static_feature_rms_px": 4.039309025516505,
+      "static_feature_residuals_px": {
+        "A_cup_base_contact": [
+          0.21545707375969414,
+          -4.339074227668107
+        ],
+        "B_pencilcase_base_midpoint": [
+          -1.061543311604055,
+          4.503073341300819
+        ],
+        "A_cup_rim_center": [
+          -0.2448910503087518,
+          -3.1903965656116497
+        ],
+        "B_cup_rim_center": [
+          0.06983800801799589,
+          3.839539005054178
+        ]
+      }
+    },
+    {
+      "name": "F_path_076",
+      "location": [
+        1.40274437419779,
+        7.814294906348285,
+        2.6432111704384935
+      ],
+      "rotation_xyz": [
+        1.1480310784205845,
+        0.013442460841509534,
+        2.776047979622185
+      ],
+      "lens_mm": 30.64564754135351,
+      "delta_location_norm": 0.3638841632609522,
+      "delta_rotation_degrees": [
+        -0.48031139129979156,
+        -0.16809018954773303,
+        -0.32041969923632946
+      ],
+      "lens_change_percent": 4.8613703962447685,
+      "original_fit_rms_px": 3.059034189698906,
+      "new_fit_anchor_rms_px": 3.5820860343701977,
+      "original_holdout_rms_px": 10.939365576829738,
+      "new_holdout_rms_px": 13.714292960653836,
+      "static_feature_rms_px": 1.6225035277440951,
+      "static_feature_residuals_px": {
+        "A_cup_base_contact": [
+          -0.6876983553745504,
+          -1.5083941787361255
+        ],
+        "B_pencilcase_base_midpoint": [
+          0.9165183296622672,
+          1.3633419090523375
+        ],
+        "A_cup_rim_center": [
+          -1.3602064073747897,
+          -0.6312264177544193
+        ],
+        "B_cup_rim_center": [
+          1.6225109974780025,
+          0.4494792053936294
+        ]
+      }
+    },
+    {
+      "name": "F_path_080",
+      "location": [
+        -1.1635453478908016,
+        7.9755030766207025,
+        2.7694696466281616
+      ],
+      "rotation_xyz": [
+        1.128173445712795,
+        -0.007914874760645438,
+        3.430154573905029
+      ],
+      "lens_mm": 30.64564754135351,
+      "delta_location_norm": 0.7453361883028309,
+      "delta_rotation_degrees": [
+        1.666557146080978,
+        -0.9505230216243034,
+        0.03612965389022063
+      ],
+      "lens_change_percent": 10.667496938549824,
+      "original_fit_rms_px": 7.942417645806181,
+      "new_fit_anchor_rms_px": 8.730799098337531,
+      "original_holdout_rms_px": 8.464248603290816,
+      "new_holdout_rms_px": 11.315633283380654,
+      "static_feature_rms_px": 3.47169728645278,
+      "static_feature_residuals_px": {
+        "A_cup_base_contact": [
+          -2.0457367618832336,
+          3.202595053247819
+        ],
+        "B_pencilcase_base_midpoint": [
+          1.5766731021325313,
+          -2.2066931425106304
+        ],
+        "A_cup_rim_center": [
+          -0.2635487803701153,
+          3.9613380800755067
+        ],
+        "B_cup_rim_center": [
+          0.2535475414912298,
+          -3.253880425702164
+        ]
+      }
+    }
+  ],
+  "desks": [
+    {
+      "source_id": "HV_A_book_stack",
+      "rectangle_parameters_cx_cy_width_depth_angle": [
+        0.7547055378206541,
+        5.851532593277441,
+        0.6018610402561864,
+        0.389470587872586,
+        0.007670894155701582
+      ],
+      "tabletop_z": 0.6573762859146027,
+      "world_corners_Q0_to_Q3": [
+        [
+          1.0571209834008881,
+          5.65911141220964,
+          0.6573762859146027
+        ],
+        [
+          0.4552776505972562,
+          5.654494645150814,
+          0.6573762859146027
+        ],
+        [
+          0.45229009224041994,
+          6.043953774345242,
+          0.6573762859146027
+        ],
+        [
+          1.054133425044052,
+          6.048570541404068,
+          0.6573762859146027
+        ]
+      ],
+      "visible_corner_rms_px": 3.3900528580317273,
+      "points": [
+        {
+          "frame": "F_path_073",
+          "corner": "Q0",
+          "source_px": [
+            621,
+            589
+          ],
+          "projected_px": [
+            618.4244627455197,
+            587.2481179811487
+          ],
+          "error_px": 3.1148808576237137,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_073",
+          "corner": "Q2",
+          "source_px": [
+            834,
+            582
+          ],
+          "projected_px": [
+            838.387296202188,
+            579.3038357475716
+          ],
+          "error_px": 5.149531011830733,
+          "uncertainty_px": 7
+        },
+        {
+          "frame": "F_path_073",
+          "corner": "Q3",
+          "source_px": [
+            700,
+            650
+          ],
+          "projected_px": [
+            699.3241951073632,
+            650.3644003840127
+          ],
+          "error_px": 0.7677889637006394,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_080",
+          "corner": "Q2",
+          "source_px": [
+            248,
+            640
+          ],
+          "projected_px": [
+            248.65476695105968,
+            638.1559740207508
+          ],
+          "error_px": 1.956821803932565,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_080",
+          "corner": "Q3",
+          "source_px": [
+            82,
+            596
+          ],
+          "projected_px": [
+            79.77950229707119,
+            599.4486052236244
+          ],
+          "error_px": 4.101644552752213,
+          "uncertainty_px": 7
+        }
+      ],
+      "scope": "Fits visible rounded corners only. Camera is static-feature/building joint shared-focal diagnostic. No old model deskID imposed; no frame-specific desk movement. Height conditional."
+    },
+    {
+      "source_id": "HV_B_paper_case",
+      "rectangle_parameters_cx_cy_width_depth_angle": [
+        -0.5940725644626812,
+        5.8258285429526,
+        0.6018610402561864,
+        0.389470587872586,
+        0.007670894155701582
+      ],
+      "tabletop_z": 0.6573762859146027,
+      "world_corners_Q0_to_Q3": [
+        [
+          -0.29165711888244705,
+          5.633407361884799,
+          0.6573762859146027
+        ],
+        [
+          -0.8935004516860791,
+          5.628790594825973,
+          0.6573762859146027
+        ],
+        [
+          -0.8964880100429153,
+          6.018249724020401,
+          0.6573762859146027
+        ],
+        [
+          -0.29464467723928334,
+          6.022866491079227,
+          0.6573762859146027
+        ]
+      ],
+      "visible_corner_rms_px": 4.031998449042541,
+      "points": [
+        {
+          "frame": "F_path_073",
+          "corner": "Q0",
+          "source_px": [
+            888,
+            466
+          ],
+          "projected_px": [
+            886.6653667481567,
+            466.48320617707685
+          ],
+          "error_px": 1.4194133036191965,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_073",
+          "corner": "Q2",
+          "source_px": [
+            1065,
+            453
+          ],
+          "projected_px": [
+            1063.4009748406008,
+            461.00624148232913
+          ],
+          "error_px": 8.16436060777323,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_073",
+          "corner": "Q3",
+          "source_px": [
+            974,
+            509
+          ],
+          "projected_px": [
+            972.6839703189212,
+            507.06613671113473
+          ],
+          "error_px": 2.3391796300201495,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_076",
+          "corner": "Q0",
+          "source_px": [
+            845,
+            554
+          ],
+          "projected_px": [
+            848.7596132193203,
+            555.6131244397241
+          ],
+          "error_px": 4.091071010985119,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_076",
+          "corner": "Q2",
+          "source_px": [
+            1090,
+            583
+          ],
+          "projected_px": [
+            1088.689235630714,
+            581.6839856267701
+          ],
+          "error_px": 1.857416771308364,
+          "uncertainty_px": 7
+        },
+        {
+          "frame": "F_path_076",
+          "corner": "Q3",
+          "source_px": [
+            927,
+            634
+          ],
+          "projected_px": [
+            927.8346356182954,
+            632.4140259579207
+          ],
+          "error_px": 1.7921858936719448,
+          "uncertainty_px": 6
+        }
+      ],
+      "scope": "Fits visible rounded corners only. Camera is static-feature/building joint shared-focal diagnostic. No old model deskID imposed; no frame-specific desk movement. Height conditional."
+    }
+  ],
+  "independent_sizes_diagnostic": [
+    {
+      "source_id": "HV_A_book_stack",
+      "rectangle_parameters_cx_cy_width_depth_angle": [
+        0.756243242868489,
+        5.856278272072524,
+        0.592262441799401,
+        0.3743193845588501,
+        0.0022631275567669656
+      ],
+      "tabletop_z": 0.6573762859146027,
+      "world_corners_Q0_to_Q3": [
+        [
+          1.0527972713095624,
+          5.6697892412394815,
+          0.6573762859146027
+        ],
+        [
+          0.46053634621851014,
+          5.668448876930776,
+          0.6573762859146027
+        ],
+        [
+          0.4596892144274157,
+          6.042767302905567,
+          0.6573762859146027
+        ],
+        [
+          1.0519501395184678,
+          6.044107667214273,
+          0.6573762859146027
+        ]
+      ],
+      "visible_corner_rms_px": 2.423105154965901,
+      "points": [
+        {
+          "frame": "F_path_073",
+          "corner": "Q0",
+          "source_px": [
+            621,
+            589
+          ],
+          "projected_px": [
+            621.4989446910139,
+            588.3662071547583
+          ],
+          "error_px": 0.8066220771653436,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_073",
+          "corner": "Q2",
+          "source_px": [
+            834,
+            582
+          ],
+          "projected_px": [
+            836.5542089753762,
+            579.9101416383563
+          ],
+          "error_px": 3.3002259712971997,
+          "uncertainty_px": 7
+        },
+        {
+          "frame": "F_path_073",
+          "corner": "Q3",
+          "source_px": [
+            700,
+            650
+          ],
+          "projected_px": [
+            698.8779762898541,
+            649.2817694235814
+          ],
+          "error_px": 1.3322133339041764,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_080",
+          "corner": "Q2",
+          "source_px": [
+            248,
+            640
+          ],
+          "projected_px": [
+            246.71909548078253,
+            637.3761323659542
+          ],
+          "error_px": 2.9198283765223327,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_080",
+          "corner": "Q3",
+          "source_px": [
+            82,
+            596
+          ],
+          "projected_px": [
+            81.39306134700809,
+            598.6732934143569
+          ],
+          "error_px": 2.741326724004166,
+          "uncertainty_px": 7
+        }
+      ],
+      "scope": "Fits visible rounded corners only. Camera is static-feature/building joint shared-focal diagnostic. No old model deskID imposed; no frame-specific desk movement. Height conditional."
+    },
+    {
+      "source_id": "HV_B_paper_case",
+      "rectangle_parameters_cx_cy_width_depth_angle": [
+        -0.5988989179184133,
+        5.821809685678462,
+        0.6214674306626298,
+        0.3952539139506797,
+        0.022727698977796366
+      ],
+      "tabletop_z": 0.6573762859146027,
+      "world_corners_Q0_to_Q3": [
+        [
+          -0.2837542343094328,
+          5.631295422800505,
+          0.6573762859146027
+        ],
+        [
+          -0.9050611629084999,
+          5.617172114080366,
+          0.6573762859146027
+        ],
+        [
+          -0.9140436015273938,
+          6.012323948556418,
+          0.6573762859146027
+        ],
+        [
+          -0.2927366729283267,
+          6.0264472572765575,
+          0.6573762859146027
+        ]
+      ],
+      "visible_corner_rms_px": 3.5407957185248096,
+      "points": [
+        {
+          "frame": "F_path_073",
+          "corner": "Q0",
+          "source_px": [
+            888,
+            466
+          ],
+          "projected_px": [
+            884.9284789413462,
+            466.83848151240386
+          ],
+          "error_px": 3.1839115660453086,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_073",
+          "corner": "Q2",
+          "source_px": [
+            1065,
+            453
+          ],
+          "projected_px": [
+            1064.46466564237,
+            459.2279179477222
+          ],
+          "error_px": 6.250883524592279,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_073",
+          "corner": "Q3",
+          "source_px": [
+            974,
+            509
+          ],
+          "projected_px": [
+            973.2176529931719,
+            507.6294959276833
+          ],
+          "error_px": 1.5780837276043147,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_076",
+          "corner": "Q0",
+          "source_px": [
+            845,
+            554
+          ],
+          "projected_px": [
+            846.2802475230342,
+            555.8042697890361
+          ],
+          "error_px": 2.2123343309417454,
+          "uncertainty_px": 6
+        },
+        {
+          "frame": "F_path_076",
+          "corner": "Q2",
+          "source_px": [
+            1090,
+            583
+          ],
+          "projected_px": [
+            1091.5987819460943,
+            579.1931627992394
+          ],
+          "error_px": 4.128936083817679,
+          "uncertainty_px": 7
+        },
+        {
+          "frame": "F_path_076",
+          "corner": "Q3",
+          "source_px": [
+            927,
+            634
+          ],
+          "projected_px": [
+            928.0895239118643,
+            633.3734050418677
+          ],
+          "error_px": 1.2568546439747077,
+          "uncertainty_px": 6
+        }
+      ],
+      "scope": "Fits visible rounded corners only. Camera is static-feature/building joint shared-focal diagnostic. No old model deskID imposed; no frame-specific desk movement. Height conditional."
+    }
+  ],
+  "shared_template": {
+    "width": 0.6018610402561864,
+    "depth": 0.389470587872586,
+    "angle": 0.007670894155701582
+  },
+  "limitations": "Two observed tables only, not room total. Other source tables remain unmodelled. Generic leg supports inferred. Shared size/orientation preferred over unexplained5% table size difference."
+}

@@ -1,0 +1,766 @@
+{
+  "schema_version": 1,
+  "scope": "仅真实高位连续镜头072–081的静态桌身份；073/076/080是主要测量帧。没有使用D叙事背景计数，没有修改白模。",
+  "pixel_system": {
+    "size": [
+      1180,
+      664
+    ],
+    "origin": "左上角",
+    "x": "向右",
+    "y": "向下",
+    "to_original_1180x757_screenshot": [
+      0,
+      47
+    ],
+    "source_png_template": "classroom_motion_validation_20261010/source/F_path_NNN_video.png",
+    "picking_method": "原图人工查看与局部放大；没有独立全局标定；圆角/模糊边界误差单独列出"
+  },
+  "cut_boundaries": {
+    "same_shot": [
+      "F_path_072",
+      "F_path_073",
+      "F_path_074",
+      "F_path_075",
+      "F_path_076",
+      "F_path_077",
+      "F_path_078",
+      "F_path_079",
+      "F_path_080",
+      "F_path_081"
+    ],
+    "hard_cuts": [
+      "F_path_071→F_path_072",
+      "F_path_081→F_path_082"
+    ],
+    "F_path_059": "另一剪辑段。书杯桌的外观与高位A相似，不能以连续追踪声称同一物理桌。"
+  },
+  "corner_convention": "各桌Q0→Q1→Q2→Q3为同一物理桌面顺序，不按每帧屏幕左右改号。Q0-Q1为较靠黑板侧边，Q3-Q2为黑色桌腹前沿一侧。Q0在073是屏幕左尖角；在080 A是书叠附近后角，Q3变为屏幕左近角。这是连续视觉与边沿/道具相对位置对应，非旧deskID。",
+  "tracks": {
+    "HV_A_book_stack": {
+      "identity_confidence": "高",
+      "description": "黑/浅绿/白书叠、灰杯、剪刀状小物组合；072→081持续同一轨迹，076–078大部桌面出画但杯/书碎片与邻桌关系连续。",
+      "old_model_object_mapping": null,
+      "frames": {
+        "F_path_073": {
+          "corners": {
+            "Q0": {
+              "pixel": [
+                621,
+                589
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 6,
+              "note": ""
+            },
+            "Q1": {
+              "pixel": [
+                750,
+                533
+              ],
+              "status": "inferred_near_cup_occlusion",
+              "uncertainty_px": 12,
+              "note": "勿作为硬角点；后缘与杯底及影子混合"
+            },
+            "Q2": {
+              "pixel": [
+                834,
+                582
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 7,
+              "note": ""
+            },
+            "Q3": {
+              "pixel": [
+                700,
+                650
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 6,
+              "note": ""
+            }
+          },
+          "book_stack_center": [
+            675,
+            579
+          ],
+          "cup_rim_center": [
+            756,
+            523
+          ],
+          "cup_base_contact": [
+            756,
+            550
+          ],
+          "tabletop_center_estimate": [
+            728,
+            590
+          ],
+          "center_is_approximate": true
+        },
+        "F_path_076": {
+          "corners": {
+            "Q0": {
+              "pixel": null,
+              "status": "out_of_frame",
+              "uncertainty_px": null,
+              "note": ""
+            },
+            "Q1": {
+              "pixel": [
+                642,
+                613
+              ],
+              "status": "occluded_or_shadow_ambiguous",
+              "uncertainty_px": 14,
+              "note": "杯与阴影附近后角只给搜索区，不进拟合"
+            },
+            "Q2": {
+              "pixel": null,
+              "status": "out_of_frame",
+              "uncertainty_px": null,
+              "note": ""
+            },
+            "Q3": {
+              "pixel": null,
+              "status": "out_of_frame",
+              "uncertainty_px": null,
+              "note": ""
+            }
+          },
+          "book_stack_visible_fragment": [
+            490,
+            657
+          ],
+          "cup_rim_center": [
+            626,
+            615
+          ],
+          "cup_base_contact": [
+            627,
+            645
+          ],
+          "tabletop_center_estimate": null
+        },
+        "F_path_080": {
+          "corners": {
+            "Q0": {
+              "pixel": [
+                154,
+                518
+              ],
+              "status": "book_occluded_edge_intersection",
+              "uncertainty_px": 10,
+              "note": "书叠遮近角，位置为两边延长估计"
+            },
+            "Q1": {
+              "pixel": null,
+              "status": "edge_blends_with_floor_and_cup_shadow",
+              "uncertainty_px": null,
+              "note": "禁止将杯右侧阴影末端当桌角"
+            },
+            "Q2": {
+              "pixel": [
+                248,
+                640
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 6,
+              "note": ""
+            },
+            "Q3": {
+              "pixel": [
+                82,
+                596
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 7,
+              "note": ""
+            }
+          },
+          "book_stack_center": [
+            172,
+            539
+          ],
+          "cup_rim_center": [
+            279,
+            541
+          ],
+          "cup_base_contact": [
+            284,
+            568
+          ],
+          "tabletop_center_estimate": [
+            204,
+            576
+          ],
+          "center_is_approximate": true
+        }
+      }
+    },
+    "HV_B_paper_case": {
+      "identity_confidence": "高",
+      "description": "A旁边的浅色纸、蓝杯、深色笔袋及散落文具；073→076完整，080只留后缘、笔袋、杯口与纸张一角。",
+      "old_model_object_mapping": null,
+      "frames": {
+        "F_path_073": {
+          "corners": {
+            "Q0": {
+              "pixel": [
+                888,
+                466
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 6,
+              "note": ""
+            },
+            "Q1": {
+              "pixel": [
+                975,
+                420
+              ],
+              "status": "cup_occluded_edge_intersection",
+              "uncertainty_px": 10,
+              "note": ""
+            },
+            "Q2": {
+              "pixel": [
+                1065,
+                453
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 6,
+              "note": ""
+            },
+            "Q3": {
+              "pixel": [
+                974,
+                509
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 6,
+              "note": ""
+            }
+          },
+          "paper_center": [
+            992,
+            470
+          ],
+          "cup_rim_center": [
+            982,
+            417
+          ],
+          "cup_base_contact": [
+            982,
+            439
+          ],
+          "pencilcase_base_midpoint": [
+            915,
+            459
+          ],
+          "tabletop_center_estimate": [
+            976,
+            461
+          ],
+          "visible_desk_feet_unordered": [
+            [
+              887,
+              569
+            ],
+            [
+              954,
+              628
+            ]
+          ],
+          "feet_warning": "两点均可沿桌管向上辨认；跨076/080脚端出画，未给虚假逐脚对应。与右侧椅脚重叠的候选排除。",
+          "paper_center_uncertainty_px": 6
+        },
+        "F_path_076": {
+          "corners": {
+            "Q0": {
+              "pixel": [
+                845,
+                554
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 6,
+              "note": ""
+            },
+            "Q1": {
+              "pixel": [
+                994,
+                504
+              ],
+              "status": "cup_occluded_edge_intersection",
+              "uncertainty_px": 10,
+              "note": ""
+            },
+            "Q2": {
+              "pixel": [
+                1090,
+                583
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 7,
+              "note": ""
+            },
+            "Q3": {
+              "pixel": [
+                927,
+                634
+              ],
+              "status": "visible_rounded_corner",
+              "uncertainty_px": 6,
+              "note": ""
+            }
+          },
+          "paper_center": [
+            984,
+            580
+          ],
+          "cup_rim_center": [
+            996,
+            510
+          ],
+          "cup_base_contact": [
+            994,
+            535
+          ],
+          "pencilcase_base_midpoint": [
+            885,
+            555
+          ],
+          "tabletop_center_estimate": [
+            964,
+            568
+          ],
+          "visible_desk_feet_unordered": [],
+          "feet_warning": "桌脚延伸出下边，不能补猜地面接触点",
+          "paper_center_uncertainty_px": 6
+        },
+        "F_path_080": {
+          "corners": {
+            "Q0": {
+              "pixel": [
+                529,
+                601
+              ],
+              "status": "rounded_corner_partly_case_occluded",
+              "uncertainty_px": 8,
+              "note": ""
+            },
+            "Q1": {
+              "pixel": [
+                738,
+                633
+              ],
+              "status": "blurred_boundary_near_cup_shadow",
+              "uncertainty_px": 10,
+              "note": ""
+            },
+            "Q2": {
+              "pixel": null,
+              "status": "out_of_frame",
+              "uncertainty_px": null,
+              "note": ""
+            },
+            "Q3": {
+              "pixel": null,
+              "status": "out_of_frame",
+              "uncertainty_px": null,
+              "note": ""
+            }
+          },
+          "paper_visible_fragment": [
+            [
+              585,
+              658
+            ],
+            [
+              624,
+              664
+            ]
+          ],
+          "paper_center": null,
+          "cup_rim_center": [
+            696,
+            631
+          ],
+          "cup_base_contact": null,
+          "cup_base_censoring": "底部贴裁切边，完整接触点未观测；不可把(696,661)当精确桌面点",
+          "pencilcase_base_midpoint": [
+            557,
+            618
+          ],
+          "tabletop_center_estimate": null,
+          "paper_center_uncertainty_px": 6
+        }
+      }
+    },
+    "HV_C_outer_paper": {
+      "identity_confidence": "073→078中高；080已出右/下边，不与B合并",
+      "description": "073 B画面右后方那张纸杯笔袋桌。物件模板重复，依靠逐帧连续位置而非单凭纸杯外观。",
+      "frames": {
+        "F_path_073": {
+          "tabletop_visible_polygon_px": [
+            [
+              1035,
+              391
+            ],
+            [
+              1107,
+              357
+            ],
+            [
+              1179,
+              375
+            ],
+            [
+              1179,
+              393
+            ],
+            [
+              1117,
+              420
+            ]
+          ],
+          "polygon_has_image_border_vertices": true,
+          "paper_center": [
+            1130,
+            393
+          ],
+          "cup_rim_center": [
+            1111,
+            357
+          ],
+          "pencilcase_base_midpoint": [
+            1058,
+            391
+          ]
+        },
+        "F_path_076": {
+          "tabletop_fragment_px": [
+            [
+              1103,
+              486
+            ],
+            [
+              1179,
+              454
+            ],
+            [
+              1179,
+              534
+            ]
+          ],
+          "pencilcase_base_midpoint": [
+            1142,
+            486
+          ],
+          "note": "部分桌面出右边；不能给完整中心或矩形"
+        },
+        "F_path_080": {
+          "visibility": "out_of_frame"
+        }
+      }
+    },
+    "HV_D_far_edge_fragment": {
+      "identity_confidence": "仅局部",
+      "description": "073最右上边另一个桌面/笔袋碎片，与C分离；078以后无法继续。不能用片段补全整列。",
+      "frames": {
+        "F_path_073": {
+          "visible_fragment_px": [
+            [
+              1144,
+              342
+            ],
+            [
+              1179,
+              326
+            ],
+            [
+              1179,
+              366
+            ]
+          ],
+          "pencilcase_center": [
+            1167,
+            337
+          ],
+          "no_full_center": true
+        }
+      }
+    },
+    "HV_E_left_entry_unlinked": {
+      "identity_confidence": "未跨出画间隔绑定",
+      "description": "080左边杯桌碎片；073底边另有杯碎片。中间出画，不强行认定两者是同一桌，不计为两张已知不同桌，也不补行列。",
+      "frames": {
+        "F_path_073": {
+          "cup_fragment_px": [
+            476,
+            659
+          ]
+        },
+        "F_path_080": {
+          "cup_fragment_px": [
+            8,
+            490
+          ],
+          "tabletop_fragment_px": [
+            [
+              0,
+              473
+            ],
+            [
+              54,
+              492
+            ],
+            [
+              0,
+              532
+            ]
+          ]
+        }
+      }
+    },
+    "HV_T_front_side_single": {
+      "identity_confidence": "高",
+      "description": "讲台右侧、灭火器旁的独立小桌，后有椅背。和前景桌阵分开记录。",
+      "frames": {
+        "F_path_073": {
+          "tabletop_center_px": [
+            618,
+            207
+          ],
+          "visible_desk_feet_unordered_px": [
+            [
+              589,
+              273
+            ],
+            [
+              615,
+              284
+            ],
+            [
+              648,
+              275
+            ]
+          ],
+          "note": "四腿与椅腿重叠，不给不可验证的一一脚号"
+        },
+        "F_path_076": {
+          "tabletop_center_px": [
+            732,
+            177
+          ],
+          "visible_desk_feet_unordered_px": [
+            [
+              681,
+              243
+            ],
+            [
+              719,
+              260
+            ],
+            [
+              761,
+              253
+            ]
+          ]
+        },
+        "F_path_080": {
+          "tabletop_center_px": [
+            1044,
+            238
+          ],
+          "visible_desk_feet_unordered_px": [
+            [
+              974,
+              302
+            ],
+            [
+              995,
+              331
+            ],
+            [
+              1056,
+              339
+            ],
+            [
+              1067,
+              315
+            ]
+          ]
+        }
+      },
+      "leg_tracks": {
+        "near_apron_leg_1": {
+          "confidence": "中高",
+          "pixels": {
+            "F_path_073": [
+              615,
+              284
+            ],
+            "F_path_076": [
+              719,
+              260
+            ],
+            "F_path_080": [
+              995,
+              331
+            ]
+          },
+          "uncertainty_px": 5
+        },
+        "near_apron_leg_2": {
+          "confidence": "中高",
+          "pixels": {
+            "F_path_073": [
+              648,
+              275
+            ],
+            "F_path_076": [
+              761,
+              253
+            ],
+            "F_path_080": [
+              1056,
+              339
+            ]
+          },
+          "uncertainty_px": 5
+        },
+        "caveat": "按同一近侧桌框的两根立管追踪，绝非旧模型脚ID；其余小桌/椅脚重叠处只列无序可见候选。"
+      }
+    }
+  },
+  "negative_findings": [
+    "073右缘约(1140,460)的灰木面是C关联椅座，不能额外数成桌面。",
+    "080蓝杯底裁切，不可强设桌面接触像素。",
+    "桌型和道具重复，不能按外观跨硬切059认ID。",
+    "这些帧没有覆盖全教室，不能推出20张、六列、总行数、每排数量或对称补齐。"
+  ],
+  "model_constraints_without_metric_scale": [
+    "A/B为不同的相邻桌，桌面主方向近似一致；可联合拟合一个静态相对布置。",
+    "A/B桌宽深比大致相近，当前证据不支持每帧分别缩放/移桌。",
+    "角点status为visible开头者优先；occluded/inferred/ambiguous只作搜索区。",
+    "必要桌脚先继承单桌结构与源图可见管线关系；不可按旧模型脚号硬匹配像素。"
+  ],
+  "numerical_diagnostics": "camera_static_point_diagnostics.json",
+  "source_sha256": {
+    "F_path_073_video.png": "bf5f2fd611bd1b92fa977e37c67d4db25e484b8f018e90d67218c5ca654ac61d",
+    "F_path_076_video.png": "5aaec3c665787f21123f084ab7c77d9cb4c7425bffbc00f3769f07d6f9848861",
+    "F_path_080_video.png": "28713361f207868651de49c325085c5cf732f6e7311ffab0ef16774703176539"
+  },
+  "selected_source_manifest": [
+    {
+      "label": "F_path_059",
+      "before": {
+        "height": 1080,
+        "paused": false,
+        "readyState": 4,
+        "t": 4303.773138,
+        "width": 1920
+      },
+      "after": {
+        "paused": false,
+        "readyState": 4,
+        "t": 4304.114563
+      },
+      "viewport": [
+        1180,
+        757
+      ],
+      "crop": [
+        0,
+        47,
+        1180,
+        664
+      ],
+      "sha256": "679c0be9412faecaecf340e5c0706614caac37f9da874e12285e19fb52e7f3e1",
+      "source_url": "https://www.bilibili.com/video/BV1LC411V7Nh/"
+    },
+    {
+      "label": "F_path_073",
+      "before": {
+        "height": 1080,
+        "paused": false,
+        "readyState": 4,
+        "t": 4308.729699,
+        "width": 1920
+      },
+      "after": {
+        "paused": false,
+        "readyState": 4,
+        "t": 4309.054332
+      },
+      "viewport": [
+        1180,
+        757
+      ],
+      "crop": [
+        0,
+        47,
+        1180,
+        664
+      ],
+      "sha256": "200176165b2fce4f73440bed1731ecc83fb8f46c8eb87b467e073cb6ff329485",
+      "source_url": "https://www.bilibili.com/video/BV1LC411V7Nh/"
+    },
+    {
+      "label": "F_path_076",
+      "before": {
+        "height": 1080,
+        "paused": false,
+        "readyState": 4,
+        "t": 4309.748085,
+        "width": 1920
+      },
+      "after": {
+        "paused": false,
+        "readyState": 4,
+        "t": 4310.074375
+      },
+      "viewport": [
+        1180,
+        757
+      ],
+      "crop": [
+        0,
+        47,
+        1180,
+        664
+      ],
+      "sha256": "ddc602b7231a4a5e4579a1d489ab9df286623400ceb5889d7bc5787e012690e9",
+      "source_url": "https://www.bilibili.com/video/BV1LC411V7Nh/"
+    },
+    {
+      "label": "F_path_080",
+      "before": {
+        "height": 1080,
+        "paused": false,
+        "readyState": 4,
+        "t": 4311.127786,
+        "width": 1920
+      },
+      "after": {
+        "paused": false,
+        "readyState": 4,
+        "t": 4311.467068
+      },
+      "viewport": [
+        1180,
+        757
+      ],
+      "crop": [
+        0,
+        47,
+        1180,
+        664
+      ],
+      "sha256": "9e798497f67d15b8ee3cf3fc5c7bf2a05b93be6adf4aba45ff8a97a1c17f0ea2",
+      "source_url": "https://www.bilibili.com/video/BV1LC411V7Nh/"
+    }
+  ]
+}
