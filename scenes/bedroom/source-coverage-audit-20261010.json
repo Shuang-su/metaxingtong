@@ -1,0 +1,32 @@
+{
+  "scene_id": "bedroom_fullroom",
+  "name_zh": "卧室（7.7深最终版）",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1mx4y1z7oY/"
+  ],
+  "source_time": "约50:41全景、50:11同轴近景",
+  "decoded_and_actual_pixels": "旧360p；实际文件1188×761（README误写768），裁图1188×668",
+  "login_after_capture_status": "未知：未找到可关联该场有效帧的登录状态日志",
+  "independent_view_coverage": "1轴向族，无独立侧/反面基线",
+  "cross_BV_later_video_check": "未证实：已检查记录只有单个BV；同BV更晚时间不等于后续其他回放",
+  "new_evidence_usage": "旧2帧用于室内相机拟合和最终直接overlay；未见高清重采。",
+  "remaining_gaps": "最终采用7.7深房间；七点稀疏RMSE约30.12px，画框/床/柜错位及地板视觉接缝保留。",
+  "status": "重建候选 / 待来源复核",
+  "audit_date": "2026-10-10",
+  "audit_scope": "只读核对现存16场交付索引、QA、源元数据与部分实际图片尺寸；没有新采集、修改模型或外部写入",
+  "audit_evidence_filenames": [
+    "README_中文.txt",
+    "独立核验结论_中文.txt"
+  ],
+  "archived_packages_and_qa": [
+    "scenes/bedroom/01-retain-earliest-binaries/assets/01_Bedroom_Material_Models.zip",
+    "scenes/bedroom/01-retain-earliest-binaries/assets/02_Bedroom_White_Models.zip",
+    "scenes/bedroom/01-retain-earliest-binaries/assets/03_Bedroom_Textures_Review.zip",
+    "scenes/bedroom/02-retain-complete-geometry/assets/01_Bedroom_Material_Models.zip",
+    "scenes/bedroom/02-retain-complete-geometry/assets/02_Bedroom_White_Models.zip",
+    "scenes/bedroom/02-retain-complete-geometry/assets/03_Bedroom_Textures_Review.zip",
+    "scenes/bedroom/02-retain-complete-geometry/assets/卧室_完成预览_中文.jpg"
+  ],
+  "evidence_note": "本逐场摘要来自现存说明、QA、来源元数据与实际尺寸的只读核验；原始证据文件名仅作身份说明，不声称每个证据均单独成仓库文件。",
+  "native_1080_frame_export": "未实现，1080解码视口截图不能写成原生1080导帧。"
+}
