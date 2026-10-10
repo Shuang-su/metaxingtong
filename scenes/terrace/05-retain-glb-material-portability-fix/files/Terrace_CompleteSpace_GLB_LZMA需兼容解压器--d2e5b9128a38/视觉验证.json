@@ -1,0 +1,24 @@
+{
+  "scene": "terrace_complete_candidate_20261010",
+  "isolated_basecolor": {
+    "old_mae_8bit": 3.2192388268156424,
+    "new_mae_8bit": 0.009962756052141527,
+    "error_reduction_percent": 99.69052448146581,
+    "image_paths": [
+      "material_portability_audit_20261010/terrace_complete_candidate_20261010_source.png",
+      "material_portability_audit_20261010/terrace_complete_candidate_20261010_glb_color_only.png",
+      "material_portability_repair_20261010/terrace_complete_candidate_20261010_repaired_color_only.png"
+    ]
+  },
+  "all_imported_materials": {
+    "old_mae_8bit": 3.509473929236499,
+    "new_mae_8bit": 0.34549581005586594,
+    "error_reduction_percent": 90.15533903307752,
+    "image_paths": [
+      "material_portability_audit_20261010/terrace_complete_candidate_20261010_source.png",
+      "material_portability_audit_20261010/terrace_complete_candidate_20261010_glb_materials.png",
+      "material_portability_repair_20261010/terrace_complete_candidate_20261010_repaired_all_materials.png"
+    ]
+  },
+  "note": "Same source geometry, UV, lights, world and camera; material nodes come from actual GLB import. Cycles CPU 8 samples, seed17, no denoising or compositing. Isolated control changes only seven targeted materials; all-material control includes other pre-existing GLB approximations. No source BLEND saved."
+}
