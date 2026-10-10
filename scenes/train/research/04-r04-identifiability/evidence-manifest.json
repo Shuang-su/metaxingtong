@@ -1,0 +1,265 @@
+{
+  "stage": "research-r04-identifiability",
+  "title": "r04相机与共享纵深可辨识性诊断",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1fMP4ziEUd/"
+  ],
+  "times": "继承HD A2=843.364245、B2=925.449861、D2=2716.397081、F=750.476792、H=2156.472377、I=3631.204576、J=6011.414689秒。",
+  "pixels": "HD解码1920×1080；视口1180×757；固定无插值裁切(0,27,1180,691)成1180×664；投影标注和细节裁片按文件实际尺寸。",
+  "changes": "不改几何；比较相机-only、共享纵深、纵深+顶棚和更正货架前沿后的联合解。撤回J伪窗角，对A/B/D货架前沿/后沿误选作更正，fit/check分别保留。",
+  "limitations": [
+    "所有参数解都未同时通过未拟合座背、门窗和多机位检查，未写入BLEND。",
+    "共线灯/门端共面约束不足：焦距14–45mm可有近似低训练误差；边界解、共享纵深拉伸等均不能据低RMS实施。",
+    "F表演光影不作为结构；J玻璃可见区、帘边和人物遮挡不是实窗洞角。r03冻结模型未改，来源验收false。"
+  ],
+  "source_fidelity_passed": false,
+  "current_changed": false,
+  "files": [
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/camera_only_results.json",
+      "bytes": 51025,
+      "sha256": "929a7c1e46889bffd2c78e7949d822f4276ed370e1138466c1b4dc370dc4bc67",
+      "git_blob_sha1": "74592213caf7d3f679802db7d381f8f3a3953d2b"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/constraints.json",
+      "bytes": 29690,
+      "sha256": "2a23e1435adee5520aadbf5087717289b8510b07edc0e26fc7b323eba881e976",
+      "git_blob_sha1": "7062309f0f75f6efd22a518feab4ff1c02582b5c"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/front_edge_fit_results.json",
+      "bytes": 45138,
+      "sha256": "7dee208549fb888ef1eea35d92454656def65f8fe9bc31b17b469419c3bc8f64",
+      "git_blob_sha1": "3689096dca10b6c5374d55f2f82ceeaea96775aa"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/holdout_by_feature_family.json",
+      "bytes": 7446,
+      "sha256": "46144bffa9d12495652e34e145fae4f005e9e7e6e8e089a946939ab690487f2a",
+      "git_blob_sha1": "a0058332eb987e13727f7597deff9b9230a4aefb"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/joint_constraints.json",
+      "bytes": 32337,
+      "sha256": "c4cb5b9e035fdca74b540d9399ecfe9e751cdf936e6725ff3b246ee1e54de545",
+      "git_blob_sha1": "25f19d9ef8f2ade44333725e9d0c5dee3744e237"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/joint_roof_diagnostic.json",
+      "bytes": 13494,
+      "sha256": "d09e1820bf28a1da03cd0e753c3213994faee5c12a1f7b6c6361c8b6cc6ca4e6",
+      "git_blob_sha1": "71048f6b11d3a60a50f1271f61cad55e2d9f8fb2"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/joint_space_results.json",
+      "bytes": 127429,
+      "sha256": "0920460c5f523e2ade4156f286cf1963cf800e3062840e8a6240f147b3a9d233",
+      "git_blob_sha1": "453af4647c10bfebc86e1cf703392e907c453229"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/r03_unchanged.json",
+      "bytes": 303,
+      "sha256": "6721edb72c649cd24acac0a0871dacbe166eadac6f1817582fe116ad3ebdda1f",
+      "git_blob_sha1": "5b69d7426e9c0da6f199f1c6bfa361158b4ea8c6"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/analysis/rack_identity_alternatives.json",
+      "bytes": 2694,
+      "sha256": "f2e865c8c9213b0f920e3d83bda80fc6004359eec7a99088bc3f52a15bb04e76",
+      "git_blob_sha1": "88da7cf92903a80d0e0f49cdaedc561a4e5cf2b8"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/A2_left_lights.png",
+      "bytes": 95973,
+      "sha256": "c8f18ffe0e442225bcc45aff177b3ebb6cbfbf61eb5c867c4fffe88b7e29f171",
+      "git_blob_sha1": "36bede7156c74c04169df21408c8c46d605834f2"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/A2_right_lights.png",
+      "bytes": 62623,
+      "sha256": "b7b6de047e61e7b9cb90c97bae27786791791460de06bac938dbbf50f7692a90",
+      "git_blob_sha1": "1870e39839d46c779d68c120174ac2f0c3914a1b"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/A_annotation.png",
+      "bytes": 487585,
+      "sha256": "2623725f1b9e3f213c0196f9960bbd90f201374a33b29bd8d58078e2ecec7169",
+      "git_blob_sha1": "7fbdc87f4f575e3aa4e14a4843b5719112ec8772"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/A_projection_diagnostic.jpg",
+      "bytes": 340139,
+      "sha256": "54f95b1e7c136b203c27d10cc68f48e541e70365d8efc380526ede84c1dcb0d3",
+      "git_blob_sha1": "515280c76ea6bb1e53f97beb40f4a58fce83efbc"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/A_rack_detail.png",
+      "bytes": 84742,
+      "sha256": "1d32b92798f3f300dba04876b7f495cc43b703c9dd2dd8b6ed4e993de776226f",
+      "git_blob_sha1": "1352c315d3583091d392b7ca736935c21f1056ab"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/A_right_rack_detail.png",
+      "bytes": 112820,
+      "sha256": "7b4833506b232a5059a374765fce56a94046390a392f9b50bc75da6180b00a3d",
+      "git_blob_sha1": "c7e4b96930859129f14755bc2dcc459be9b04b51"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/B2_left_lights.png",
+      "bytes": 87849,
+      "sha256": "101f46ff1b1767645f201a043644900a82b26f2680794a2d54ac2d63a6be476c",
+      "git_blob_sha1": "e2c93b473752c3a45555142131fcea6445b1bb78"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/B2_right_lights.png",
+      "bytes": 49060,
+      "sha256": "9285cae897eaefb36b6460fa353514f2a88f8fc8acfb47df5c34bc40ddcef2d3",
+      "git_blob_sha1": "f4637ab330372ac57726995c66663729f64110de"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/B_annotation.png",
+      "bytes": 433012,
+      "sha256": "c72a5f2e89873d48ad250da411a652514d486d708369b22a82b294fc4a6f4b20",
+      "git_blob_sha1": "1e63d087da12708f7504df7ba53eb5aa68b5332d"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/B_projection_diagnostic.jpg",
+      "bytes": 314509,
+      "sha256": "43556f6df78765927621cce88cd1960d75df7dcdae3641a7a024680432684061",
+      "git_blob_sha1": "33913ae93468f52ebb266aa03e590747efe3edc3"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/B_right_rack_detail.png",
+      "bytes": 120020,
+      "sha256": "16b12a3464526dbbab075b5dd9fdead28aae4dfb51e9b16a5aa574fc815eea39",
+      "git_blob_sha1": "c7bf737ec54a22cfb309ced3ee83e602c5c3f16c"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/D2_left_lights.png",
+      "bytes": 88375,
+      "sha256": "f7b4cd637e88b3381f681b3ba7a5913150235692581f7b75783ecb7d3a72b855",
+      "git_blob_sha1": "9c4062611c87f848ffce4b81536085769b02bcef"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/D2_right_lights.png",
+      "bytes": 79385,
+      "sha256": "99990001bd0c182892b0a7db64db9bf862cbd6da6bf6c699ca46866ecc73f0eb",
+      "git_blob_sha1": "d00244fc9b32c4e5aababdcd962662cfb3b06fcb"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/D_annotation.png",
+      "bytes": 525358,
+      "sha256": "09396db37ae9413803e8ddf42d106b518c886cb7fdf0e9d743f76f2ad4d9bcab",
+      "git_blob_sha1": "ca292f4c3b087344b41aab4303b16fb1bdc1b9b1"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/D_projection_diagnostic.jpg",
+      "bytes": 372608,
+      "sha256": "ed15912e995948e8b52c89ecf9115c72de306f2906d13dc16fc34099abefa210",
+      "git_blob_sha1": "b8500126473551bfccdba71b12919d8b5f0a0fbf"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/D_right_rack_detail.png",
+      "bytes": 108825,
+      "sha256": "019f4613e57a176f66dbdeceedba93f924b6f03d60bb045483b54f0b1afc5c60",
+      "git_blob_sha1": "b2fb1bcf71fc3869850f8329502384595ee58f6f"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/F_annotation.png",
+      "bytes": 735389,
+      "sha256": "28ed516ef7a6ad3b78f9eb2120b2f4764bf7b6ec6a4fa5bf59854c7233cd5f37",
+      "git_blob_sha1": "ff7ef5f23c2e7f951bbf66fb7369928f738ff247"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/F_door_detail.png",
+      "bytes": 150528,
+      "sha256": "b635e757656c4ac9222196fcc437370dcdc500c1c900570de6c945d76dea0982",
+      "git_blob_sha1": "79bd620c9b2e09a61409c5df2f3d05617f252817"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/F_projection_diagnostic.jpg",
+      "bytes": 398121,
+      "sha256": "1051ac95dc5a8b09270d0b9264b45d18e05b078618fac3fcb2a37043ca50b6f4",
+      "git_blob_sha1": "efe6ca2c182438e3f9466cbea9f48df1abe710c4"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/H_annotation.png",
+      "bytes": 502844,
+      "sha256": "cc3d0e0afc0ee5bdf04172489173d7fa790edc237de21ca6925f18f963bb9272",
+      "git_blob_sha1": "31dca60ea16159545b2918810e6c84ebc19d5d49"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/H_projection_diagnostic.jpg",
+      "bytes": 323845,
+      "sha256": "3bcd6f30a271fa12e2961fa03e47ac638e34b1ecad9f7450e614cc2726d90d08",
+      "git_blob_sha1": "da411ef4dbfaca0d443f74cc0067ea005dea201f"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/I_annotation.png",
+      "bytes": 496332,
+      "sha256": "98ed7af1d7ea017e590bb2ef69191045251477c512f00971c027c8dd035a292b",
+      "git_blob_sha1": "ebd9bf1e74bf031bd574e3995c62ed3a27b6b401"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/I_projection_diagnostic.jpg",
+      "bytes": 321974,
+      "sha256": "8be9f15d3ba2292578d713df47afb0891faff150f3cbbcfd54ed6ae4d362906a",
+      "git_blob_sha1": "64abdc20de97b1cee642cfb56c041d3fb83b4684"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/review/J_annotation.png",
+      "bytes": 371756,
+      "sha256": "68ce6756d08be040e031406343eee56d4942e7bd8317046792a08b5073cabd05",
+      "git_blob_sha1": "0f33e2e071451ae5f5a2fa6f735957507c17c6a1"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/scripts/constraints.py",
+      "bytes": 4715,
+      "sha256": "e6fea26162d75b7bee5967d6aa2165b9a5a050d820f242b0db3057d95b28e68f",
+      "git_blob_sha1": "48698554a53bd87216bd8e9a3f7c690f7ad9375e"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/scripts/draw_constraints.py",
+      "bytes": 689,
+      "sha256": "389f9552c8589d720b674536e92d20e0de85d653437449b86ce1aeafbe5f5188",
+      "git_blob_sha1": "5407966016388717f5b54b841dae254b4902e9c8"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/scripts/fit_diagnostic.py",
+      "bytes": 4032,
+      "sha256": "6018ff090fb012eba9bb1ccca88a7242d0c654f7892c5555d5c91d45b05d8905",
+      "git_blob_sha1": "be66e201771749d3ba0ee2f313080b0ae90a659d"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/scripts/fit_verified_front_edges.py",
+      "bytes": 2688,
+      "sha256": "4979210352491943b1d65b0729f46459519c62ec5304da2220d660554202a3c7",
+      "git_blob_sha1": "ede63f14c701020f8e63a6bda95a1788789e2149"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/scripts/joint_space.py",
+      "bytes": 3198,
+      "sha256": "81f863fd5c475876e57ffd35b437de8c0a8da00fb6984472cba686f8a1fd4f66",
+      "git_blob_sha1": "a2505eff0d68920b29edef43d30c858f143c2526"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/scripts/refine_line_identity.py",
+      "bytes": 2281,
+      "sha256": "58db538914abed0dbcfe363789449c85046283dc3952c1ec50e345d5ac2b6aa6",
+      "git_blob_sha1": "c2cd9626fa3cf686c628fd0e7a633d6fabdf11bf"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/scripts/report_diagnostics.py",
+      "bytes": 3550,
+      "sha256": "c8950317965d6357ddc5353273b25676b1863cf3f58be86407548cfba288c054",
+      "git_blob_sha1": "4f6094d56fc9be38ccfd4a478f4d970e6ae25d84"
+    },
+    {
+      "repo_path": "scenes/train/research/04-r04-identifiability/files/diagnostic_r04/根因与约束可辨识性_中文.md",
+      "bytes": 8099,
+      "sha256": "2b97c7ad4816ea307db9737b038f6f64fd6d02ece3833322c2050bba49720911",
+      "git_blob_sha1": "3cc283267304231ca86c5f29ad8b44d09ab01ea0"
+    }
+  ]
+}
