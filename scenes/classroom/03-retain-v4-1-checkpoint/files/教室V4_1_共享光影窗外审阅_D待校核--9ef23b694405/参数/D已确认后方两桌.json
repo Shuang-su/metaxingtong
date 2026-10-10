@@ -1,0 +1,370 @@
+{
+  "status": "DIAGNOSTIC_ONLY_TWO_OBSERVED_UNITS_NOT_ROW",
+  "camera_file": "joint_room_desks_room_candidate.json",
+  "same_dimensions_as": "six_column_desk_geometry_trial.json",
+  "source_classification": "D04 roundedwoodcorner andvisiblewooddepthedge;D08 exposedwooddepthedge+rearwidthedge segments. D08bagboundary notusedasexactcorner; lineintersection inferred. No shadows orpropsusedasidentity.",
+  "source_constraints": {
+    "D04_corner": [
+      298,
+      666
+    ],
+    "D04_depth_segment": [
+      [
+        150,
+        706
+      ],
+      [
+        15,
+        744
+      ]
+    ],
+    "D08_depth_segment": [
+      [
+        560,
+        756
+      ],
+      [
+        670,
+        727
+      ]
+    ],
+    "D08_rear_width_segment": [
+      [
+        1030,
+        727
+      ],
+      [
+        1190,
+        738
+      ]
+    ],
+    "uncertainty_px": 8
+  },
+  "units": [
+    {
+      "source_unit": "D04",
+      "center_x": -1.346075764320785,
+      "center_y": 7.928769985195826,
+      "width": 0.4441655856619625,
+      "depth": 0.27425527539761574,
+      "tabletop_top_z": 0.6954849807877715,
+      "residual_px": [
+        -0.1955433868025125,
+        -0.7076425670652498,
+        0.49200496795574644,
+        0.1525815661953155
+      ],
+      "rms_px": 0.44842648273731667,
+      "view_checks": {
+        "C": {
+          "top_corners_px": [
+            [
+              4332.039877557154,
+              1069.2047798299118
+            ],
+            [
+              5776.59073491148,
+              1069.2047798299118
+            ],
+            [
+              -17860.291845848456,
+              -2224.7052529116177
+            ],
+            [
+              -12609.92671602419,
+              -2224.7052529116177
+            ]
+          ],
+          "camera_depth_min": -0.059147601204085985,
+          "camera_depth_max": 0.21497789523551045,
+          "all_top_vertices_behind_camera": false,
+          "bbox_outside_image": false,
+          "near_plane_clipped_bounds": [
+            4332.039877557154,
+            1069.2047798299118,
+            110317.17717013965,
+            15637.423973336201
+          ],
+          "clipped_tabletop_visible_pixel_count": 0
+        },
+        "D": {
+          "top_corners_px": [
+            [
+              -181.6939054952221,
+              617.8088768048057
+            ],
+            [
+              297.8044566131975,
+              665.2923574329348
+            ],
+            [
+              -4.959773368418496,
+              749.7246114892498
+            ],
+            [
+              -530.966646357271,
+              680.6951576842896
+            ]
+          ],
+          "camera_depth_min": 1.104678375037266,
+          "camera_depth_max": 1.5436572315385944,
+          "all_top_vertices_behind_camera": false,
+          "bbox_outside_image": false,
+          "near_plane_clipped_bounds": [
+            -530.966646357271,
+            617.8088768048057,
+            297.8044566131975,
+            749.7246114892498
+          ],
+          "clipped_tabletop_visible_pixel_count": 16846
+        },
+        "E": {
+          "top_corners_px": [
+            [
+              1238.0767878638321,
+              355.9128520687234
+            ],
+            [
+              1034.7970834206283,
+              366.65659833448564
+            ],
+            [
+              1058.5305014205528,
+              374.51247915404497
+            ],
+            [
+              1245.3383562942327,
+              365.4984743630137
+            ]
+          ],
+          "camera_depth_min": -2.7462655486014707,
+          "camera_depth_max": -2.278604795368113,
+          "all_top_vertices_behind_camera": true,
+          "bbox_outside_image": false,
+          "near_plane_clipped_bounds": null,
+          "clipped_tabletop_visible_pixel_count": 0
+        },
+        "F": {
+          "top_corners_px": [
+            [
+              3554.883172134665,
+              2072.306424281887
+            ],
+            [
+              3515.7488674366396,
+              1711.1388784515232
+            ],
+            [
+              4836.666880332512,
+              2424.062463059578
+            ],
+            [
+              5297.327039735892,
+              3191.451635057217
+            ]
+          ],
+          "camera_depth_min": 0.4492163887313238,
+          "camera_depth_max": 0.8216664031976362,
+          "all_top_vertices_behind_camera": false,
+          "bbox_outside_image": true,
+          "near_plane_clipped_bounds": [
+            3515.7488674366396,
+            1711.1388784515232,
+            5297.327039735892,
+            3191.451635057217
+          ],
+          "clipped_tabletop_visible_pixel_count": 0
+        },
+        "G": {
+          "top_corners_px": [
+            [
+              93.35600445583316,
+              164.7042343067414
+            ],
+            [
+              -96.80901194757621,
+              168.23213277420635
+            ],
+            [
+              11.698075402210407,
+              191.92994965130754
+            ],
+            [
+              175.61017709278264,
+              189.37572613833152
+            ]
+          ],
+          "camera_depth_min": -1.871567801296636,
+          "camera_depth_max": -1.5633882784359794,
+          "all_top_vertices_behind_camera": true,
+          "bbox_outside_image": false,
+          "near_plane_clipped_bounds": null,
+          "clipped_tabletop_visible_pixel_count": 0
+        }
+      }
+    },
+    {
+      "source_unit": "D08",
+      "center_x": -2.0825638031938283,
+      "center_y": 7.895672148955112,
+      "width": 0.4441655856619625,
+      "depth": 0.27425527539761574,
+      "tabletop_top_z": 0.6954849807877715,
+      "residual_px": [
+        7.034253599479815,
+        -10.339390906504422,
+        2.2292001772396435,
+        -2.140251948740599
+      ],
+      "rms_px": 6.440763538851474,
+      "view_checks": {
+        "C": {
+          "top_corners_px": [
+            [
+              5920.348278367974,
+              974.4204331699515
+            ],
+            [
+              7172.248689450124,
+              974.4204331699515
+            ],
+            [
+              -61142.39402158132,
+              -5503.281650191431
+            ],
+            [
+              -49228.27872276226,
+              -5503.281650191431
+            ]
+          ],
+          "camera_depth_min": -0.026065427023814904,
+          "camera_depth_max": 0.2480600694157824,
+          "all_top_vertices_behind_camera": false,
+          "bbox_outside_image": false,
+          "near_plane_clipped_bounds": [
+            5920.348278367974,
+            974.4204331699515,
+            161810.0870812474,
+            15637.423973336205
+          ],
+          "clipped_tabletop_visible_pixel_count": 0
+        },
+        "D": {
+          "top_corners_px": [
+            [
+              718.0851266173715,
+              694.7589450555586
+            ],
+            [
+              1490.2037515979669,
+              769.0252606594804
+            ],
+            [
+              1441.2623423505602,
+              914.6998208191164
+            ],
+            [
+              489.2948657337993,
+              794.4963427676043
+            ]
+          ],
+          "camera_depth_min": 0.8161462110137512,
+          "camera_depth_max": 1.2551250675150805,
+          "all_top_vertices_behind_camera": false,
+          "bbox_outside_image": false,
+          "near_plane_clipped_bounds": [
+            489.2948657337993,
+            694.7589450555586,
+            1490.2037515979669,
+            914.6998208191164
+          ],
+          "clipped_tabletop_visible_pixel_count": 26979
+        },
+        "E": {
+          "top_corners_px": [
+            [
+              916.4876766579022,
+              371.76716009309536
+            ],
+            [
+              765.3707274962801,
+              379.84787908105574
+            ],
+            [
+              806.3282598143711,
+              385.80363364984385
+            ],
+            [
+              948.6731586415758,
+              378.86276605370927
+            ]
+          ],
+          "camera_depth_min": -3.110829602039795,
+          "camera_depth_max": -2.6431688488064364,
+          "all_top_vertices_behind_camera": true,
+          "bbox_outside_image": false,
+          "near_plane_clipped_bounds": null,
+          "clipped_tabletop_visible_pixel_count": 0
+        },
+        "F": {
+          "top_corners_px": [
+            [
+              3397.6533602109225,
+              1484.223398614739
+            ],
+            [
+              3387.696745448027,
+              1282.998689799363
+            ],
+            [
+              4272.359071852916,
+              1659.5776307224555
+            ],
+            [
+              4457.052185835557,
+              2001.2624882348698
+            ]
+          ],
+          "camera_depth_min": 0.7038081723724878,
+          "camera_depth_max": 1.076258186838801,
+          "all_top_vertices_behind_camera": false,
+          "bbox_outside_image": true,
+          "near_plane_clipped_bounds": [
+            3387.696745448027,
+            1282.998689799363,
+            4457.052185835557,
+            2001.2624882348698
+          ],
+          "clipped_tabletop_visible_pixel_count": 0
+        },
+        "G": {
+          "top_corners_px": [
+            [
+              -235.45411203219294,
+              167.14741315701448
+            ],
+            [
+              -415.6863723936568,
+              170.5693826051751
+            ],
+            [
+              -262.61122579758705,
+              193.622130983059
+            ],
+            [
+              -105.99290207823492,
+              191.13333588153753
+            ]
+          ],
+          "camera_depth_min": -1.896217925481772,
+          "camera_depth_max": -1.5880384026211147,
+          "all_top_vertices_behind_camera": true,
+          "bbox_outside_image": true,
+          "near_plane_clipped_bounds": null,
+          "clipped_tabletop_visible_pixel_count": 0
+        }
+      }
+    }
+  ],
+  "caveat": "Only these2positivevisible fragments supported. No entirehiddenrow or symmetricduplicates inferred. Re-rendercompleteassemblies toverifyactualocclusion/floormasks; do notcreateper-viewvisibility."
+}
