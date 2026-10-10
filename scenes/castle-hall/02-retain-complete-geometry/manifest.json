@@ -1,7 +1,7 @@
 {
-  "status": "partial_archive",
+  "status": "whole_originals_archived",
   "source_acceptance": "重建候选 / 待来源复核",
-  "kind": "whole_original_files_only",
+  "transport": "standard_git_whole_files",
   "original_dates": {
     "chat_publication_at": null,
     "model_creation_at": null,
@@ -66,28 +66,51 @@
       "bytes": 8279321,
       "sha256": "c8854932dc55bb8dc0a47e306a1b06d6af757eb6b7d0745eb96f4f012fdd0158",
       "git_blob_sha1": "6682184f0826b1d6ce823bddf80a8f5dadf54f63",
-      "archive_state": "committed_whole_original"
+      "generated_document": false
     },
     {
       "path": "scenes/castle-hall/02-retain-complete-geometry/assets/02_Castle_Hall_Textured_GLB.zip",
       "bytes": 3826367,
       "sha256": "978f459d88eeba8fbaef36e01176d3dcf2057a7661dfad0a8e7d4f13b4e29f4c",
       "git_blob_sha1": "c43053a79ada160649e7bf1bbc2283a2d44ce9c8",
-      "archive_state": "committed_whole_original"
+      "generated_document": false
     },
     {
       "path": "scenes/castle-hall/02-retain-complete-geometry/assets/04_Castle_Hall_Views_and_QA.zip",
       "bytes": 13121061,
       "sha256": "1a5ab52ac4df2ddea1d565f14e281d050df207dd89132bd1ed159cc3a8bed12e",
       "git_blob_sha1": "472eb610d8c8126ced2de1c1b633094ff659ceb1",
-      "archive_state": "pending_whole_file_transport"
+      "generated_document": false
     },
     {
       "path": "scenes/castle-hall/02-retain-complete-geometry/assets/Castle_Hall_FullRoom_Inspection.jpg",
       "bytes": 548478,
       "sha256": "44bdabd6b1ee11aa5f3130fb558b240f9ed49a20d302b27b38c358f1e1e69055",
       "git_blob_sha1": "5101389cf803ab4ad9c8771474de291e4d1d0ba1",
-      "archive_state": "committed_whole_original"
+      "generated_document": false
+    },
+    {
+      "path": "scenes/castle-hall/source-scope.json",
+      "bytes": 2108,
+      "sha256": "d37959cd0d0f3d957e6b1e376558fba002923c39ba3b51f710d5bd779f3025b2",
+      "git_blob_sha1": "c1552d5f0d340cdc4add40538d55cca8849800e2",
+      "generated_document": true
+    },
+    {
+      "path": "scenes/castle-hall/source-coverage-audit-20261010.json",
+      "bytes": 2079,
+      "sha256": "0455157c7894ffa3dd8edfe5223053996ff011f9c098b339bf76d8efacbf6f8d",
+      "git_blob_sha1": "cfaff912e2cdef3957dd784387e1728cb8591e91",
+      "generated_document": true
+    },
+    {
+      "path": "scenes/castle-hall/02-retain-complete-geometry/README.md",
+      "bytes": 11068,
+      "sha256": "9d5bdf7a114bcbb2b5c5a3b82f4f9ace79de45f65312d381884e504ba53b1b62",
+      "git_blob_sha1": "66496072b5a16c16835a20227c4ac9a79894672e",
+      "generated_document": true
     }
-  ]
+  ],
+  "no_fragments": true,
+  "commit_dates": "Actual current execution time; historical dates are separate."
 }

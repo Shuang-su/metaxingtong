@@ -1,15 +1,3 @@
-## 本次实际入库状态：阶段尚未归档齐
-
-以下整包/文件已提交，保持冻结原字节：
-- scenes/castle-hall/02-retain-complete-geometry/assets/03_Castle_Hall_Textured_Blender.zip（8279321 bytes）
-- scenes/castle-hall/02-retain-complete-geometry/assets/02_Castle_Hall_Textured_GLB.zip（3826367 bytes）
-- scenes/castle-hall/02-retain-complete-geometry/assets/Castle_Hall_FullRoom_Inspection.jpg（548478 bytes）
-
-以下完整原包仍待 Git 完整文件传输；仅列元数据，不是已上传文件：
-- scenes/castle-hall/02-retain-complete-geometry/assets/04_Castle_Hall_Views_and_QA.zip（13121061 bytes，SHA256 1a5ab52ac4df2ddea1d565f14e281d050df207dd89132bd1ed159cc3a8bed12e）
-
-没有分片，也没有把缺少QA/模型的阶段算作归档完成。历史日期与本次commit创建日期分开；模型仍为候选，来源忠实度未通过。
-
 # 城堡宴会厅 · 记录完整有限空间几何升级
 
 状态：重建候选 / 待来源复核。来源忠实度与几何技术检查分别记录。
@@ -101,7 +89,7 @@ scripts/ 记录本次建模与检查步骤。若要从前版重跑，将 baselin
 - 跨视频后续回放：未证实：已检查记录只有单个BV；同BV更晚时间不等于后续其他回放。
 - 原生1080导帧未实现。总体来源验收仍待复核。详见 `scenes/castle-hall/source-coverage-audit-20261010.json`。
 
-#### 本阶段计划路径（已传/待传见上方状态及 manifest）
+#### 本阶段实际归档路径
 - `scenes/castle-hall/02-retain-complete-geometry/assets/03_Castle_Hall_Textured_Blender.zip`；8279321字节；SHA256 `c8854932dc55bb8dc0a47e306a1b06d6af757eb6b7d0745eb96f4f012fdd0158`；Git blob SHA1 `6682184f0826b1d6ce823bddf80a8f5dadf54f63`。
 - `scenes/castle-hall/02-retain-complete-geometry/assets/02_Castle_Hall_Textured_GLB.zip`；3826367字节；SHA256 `978f459d88eeba8fbaef36e01176d3dcf2057a7661dfad0a8e7d4f13b4e29f4c`；Git blob SHA1 `c43053a79ada160649e7bf1bbc2283a2d44ce9c8`。
 - `scenes/castle-hall/02-retain-complete-geometry/assets/04_Castle_Hall_Views_and_QA.zip`；13121061字节；SHA256 `1a5ab52ac4df2ddea1d565f14e281d050df207dd89132bd1ed159cc3a8bed12e`；Git blob SHA1 `472eb610d8c8126ced2de1c1b633094ff659ceb1`。
