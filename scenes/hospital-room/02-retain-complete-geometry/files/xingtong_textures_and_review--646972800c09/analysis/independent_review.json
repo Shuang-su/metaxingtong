@@ -1,0 +1,391 @@
+{
+  "candidate": "/workspace/scratch/fa58bfcf0425/hospital_room_fullroom/deliverables/hospital_complete_materials.blend",
+  "geometry_hash": "0d58450fb2e789edda897d1a7fb5a7a36fcfd9f4cc583b0c364d86f091259871",
+  "reviewer": "Independent read-only geometry inspection",
+  "scope": "PASS for complete-room geometry and export portability, with source-reconstruction limitations below. Actual source-overlay and arbitrary-view visual inspection completed.",
+  "units": "Model units with inferred scale, not measured metres",
+  "method": "Evaluated actual saved Blender meshes. BVH used all architectural shell, windows, doors and skirtings. Grid included uniform samples, 0.0001/0.001/0.005-unit inward perimeter bands, and mesh-bounds seam coordinates with ±0.0001/0.001/0.005 offsets. Cast near-surface rays toward each room face, independent of furniture masking.",
+  "dense_rays": {
+    "x-": {
+      "count": 38304,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "x+": {
+      "count": 38304,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "y-": {
+      "count": 92960,
+      "missing_n": 0,
+      "expected_open_door_n": 13308
+    },
+    "y+": {
+      "count": 92960,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "z-": {
+      "count": 70965,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "z+": {
+      "count": 70965,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    }
+  },
+  "mesh_audit": {
+    "interior_meshes": 267,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "zero_area_faces": 0,
+    "nonpositive_volumes": [],
+    "hidden": [],
+    "hidden_collections": []
+  },
+  "source_camera_comparison": [
+    {
+      "name": "MATCH_H",
+      "max_matrix_error": 1.1920928955078125e-07,
+      "oldprops": {
+        "lens": 43.01101303100586,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      },
+      "newprops": {
+        "lens": 43.01101303100586,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      }
+    },
+    {
+      "name": "MATCH_F_Turning_Right",
+      "max_matrix_error": 1.7881393432617188e-07,
+      "oldprops": {
+        "lens": 35.22994613647461,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      },
+      "newprops": {
+        "lens": 35.22994613647461,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      }
+    },
+    {
+      "name": "MATCH_G_Sofa_And_Bed",
+      "max_matrix_error": 2.1606683731079102e-07,
+      "oldprops": {
+        "lens": 30.776639938354492,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      },
+      "newprops": {
+        "lens": 30.776639938354492,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": 0.0
+      }
+    }
+  ],
+  "source_camera_similarity_transform": [
+    [
+      1.25,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.25,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.25,
+      -0.4937500059604645
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ground_contact": [
+    {
+      "name": "Sofa • inferred short foot",
+      "lo": [
+        -0.8444826006889343,
+        -0.9574282765388489,
+        -5.21540641784668e-08
+      ],
+      "hi": [
+        -0.7888728976249695,
+        -0.9074646830558777,
+        0.19755983352661133
+      ]
+    },
+    {
+      "name": "Sofa • inferred short foot.001",
+      "lo": [
+        -0.6418963670730591,
+        -0.26948973536491394,
+        -5.21540641784668e-08
+      ],
+      "hi": [
+        -0.5862866640090942,
+        -0.21952612698078156,
+        0.19755983352661133
+      ]
+    },
+    {
+      "name": "Sofa • inferred short foot.002",
+      "lo": [
+        0.5564299821853638,
+        -1.3699733018875122,
+        -5.21540641784668e-08
+      ],
+      "hi": [
+        0.6120396852493286,
+        -1.3200095891952515,
+        0.19755983352661133
+      ]
+    },
+    {
+      "name": "Sofa • inferred short foot.003",
+      "lo": [
+        0.7590162754058838,
+        -0.6820346713066101,
+        -5.21540641784668e-08
+      ],
+      "hi": [
+        0.8146259784698486,
+        -0.6320710778236389,
+        0.19755983352661133
+      ]
+    },
+    {
+      "name": "Chair • inferred slim leg",
+      "lo": [
+        -1.6005240678787231,
+        -1.3625000715255737,
+        0.0
+      ],
+      "hi": [
+        -1.5755239725112915,
+        -1.337499976158142,
+        0.31874996423721313
+      ]
+    },
+    {
+      "name": "Chair • inferred slim leg.001",
+      "lo": [
+        -1.6005240678787231,
+        -1.7125000953674316,
+        0.0
+      ],
+      "hi": [
+        -1.5755239725112915,
+        -1.6875,
+        0.31874996423721313
+      ]
+    },
+    {
+      "name": "Chair • inferred slim leg.002",
+      "lo": [
+        -1.2255241870880127,
+        -1.3625000715255737,
+        0.0
+      ],
+      "hi": [
+        -1.200524091720581,
+        -1.337499976158142,
+        0.31874996423721313
+      ]
+    },
+    {
+      "name": "Chair • inferred slim leg.003",
+      "lo": [
+        -1.2255241870880127,
+        -1.7125000953674316,
+        0.0
+      ],
+      "hi": [
+        -1.200524091720581,
+        -1.6875,
+        0.31874996423721313
+      ]
+    },
+    {
+      "name": "Bed • rolling caster, floor contact",
+      "lo": [
+        1.247499942779541,
+        -2.636030912399292,
+        -4.6826862387661095e-08
+      ],
+      "hi": [
+        1.4024999141693115,
+        -2.5797808170318604,
+        0.15499995648860931
+      ]
+    },
+    {
+      "name": "Bed • rolling caster, floor contact.001",
+      "lo": [
+        1.247499942779541,
+        -0.8860307931900024,
+        -4.6826862387661095e-08
+      ],
+      "hi": [
+        1.4024999141693115,
+        -0.8297808170318604,
+        0.15499995648860931
+      ]
+    },
+    {
+      "name": "Bed • rolling caster, floor contact.002",
+      "lo": [
+        3.440188407897949,
+        -2.636030912399292,
+        -4.6826862387661095e-08
+      ],
+      "hi": [
+        3.595188617706299,
+        -2.5797808170318604,
+        0.15499995648860931
+      ]
+    },
+    {
+      "name": "Bed • rolling caster, floor contact.003",
+      "lo": [
+        3.440188407897949,
+        -0.8860307931900024,
+        -4.6826862387661095e-08
+      ],
+      "hi": [
+        3.595188617706299,
+        -0.8297808170318604,
+        0.15499995648860931
+      ]
+    },
+    {
+      "name": "IV stand • completion caster",
+      "lo": [
+        -1.5975000858306885,
+        -0.6112499833106995,
+        8.463874046071851e-09
+      ],
+      "hi": [
+        -1.5525000095367432,
+        -0.5887499451637268,
+        0.04500000923871994
+      ]
+    },
+    {
+      "name": "IV stand • completion caster.001",
+      "lo": [
+        -1.972414493560791,
+        -0.3946942687034607,
+        8.463874046071851e-09
+      ],
+      "hi": [
+        -1.9274144172668457,
+        -0.3721942901611328,
+        0.04500000923871994
+      ]
+    },
+    {
+      "name": "IV stand • completion caster.002",
+      "lo": [
+        -1.9724546670913696,
+        -0.8277826309204102,
+        8.463874046071851e-09
+      ],
+      "hi": [
+        -1.9274545907974243,
+        -0.8052825927734375,
+        0.04500000923871994
+      ]
+    }
+  ],
+  "fixed_issues": [
+    "Four 0.0025 model-unit gaps between window glass and head lintels, now zero escaping dense rays.",
+    "Six over-beveled IV divider stripes with 18 zero-area faces each, now zero-area count 0."
+  ],
+  "interpretation": "No requirement for the separate furniture/architectural components to form a single watertight assembly. Deliberately open entry allowed. Positive per-mesh signed volume does not itself prove source-image fidelity. Near-surface rays starting inside solid skirting/trim can encounter outward normals; these are not evidence of reversed mesh faces.",
+  "glb_independent_reimport": {
+    "blend": "hospital_room_fullroom/deliverables/hospital_complete_materials.blend",
+    "glb": "hospital_room_fullroom/deliverables/hospital_complete_interior.glb",
+    "source_mesh_count": 267,
+    "imported_mesh_count": 267,
+    "missing": [],
+    "extra": [],
+    "maximum_bidirectional_vertex_error": 5.331201577973843e-07,
+    "maximum_relative_area_error": 1.62801463326182e-07,
+    "triangle_count_changes": [],
+    "without_uv": []
+  },
+  "semantic_aperture_checks": {
+    "aperture_checks": [
+      {
+        "window": 1,
+        "count": 2601,
+        "plaster_obstructions": []
+      },
+      {
+        "window": 2,
+        "count": 2601,
+        "plaster_obstructions": []
+      },
+      {
+        "window": 3,
+        "count": 2601,
+        "plaster_obstructions": []
+      },
+      {
+        "window": 4,
+        "count": 2601,
+        "plaster_obstructions": []
+      }
+    ],
+    "inconsistent_face_winding": []
+  },
+  "visual_review": {
+    "result": "No remaining geometry blocker found in inspected views.",
+    "inspected": [
+      "H/F/G source-render-50% overlay sheet",
+      "Entrance wide view",
+      "Rear-right ordinary view",
+      "Window-left reverse view",
+      "Bed-support low view",
+      "Exterior closed-envelope view",
+      "Clearly labeled cutaway view"
+    ],
+    "overlay_sheet": "deliverables/QA/HFG_source_render_overlay.jpg",
+    "observations": [
+      "Room enclosure, ceiling, rear entrance and floor are present from arbitrary and exterior views.",
+      "Bed tray, endboard, mattress and casters are a consistent assembly; visible support contact is present.",
+      "The F/G source bed endboard remains a meaningful height/silhouette mismatch. Geometry completion is not full image alignment.",
+      "The 2.092px residual belongs only to five F structural landmarks, not bed, sofa, complete image, or all cameras.",
+      "Source material appearance, skyline, and TV content are approximate/replacement content, as labeled."
+    ],
+    "interpretation": "Synthetic reverse/exterior/cutaway images verify the constructed model; they are not independent original-source observations."
+  }
+}
