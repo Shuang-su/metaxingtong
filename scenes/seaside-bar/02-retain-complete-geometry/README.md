@@ -1,16 +1,3 @@
-## 本次实际入库状态：阶段尚未归档齐
-
-以下整包/文件已提交，保持冻结原字节：
-- scenes/seaside-bar/02-retain-complete-geometry/assets/03_Seaside_Bar_Textured_Blender.zip（4096038 bytes）
-- scenes/seaside-bar/02-retain-complete-geometry/assets/02_Seaside_Bar_Textured_GLB.zip（2021558 bytes）
-- scenes/seaside-bar/02-retain-complete-geometry/assets/01_Seaside_Bar_White_Model.zip（3212942 bytes）
-- scenes/seaside-bar/02-retain-complete-geometry/assets/海边吧台_完整结构_检查总览.jpg（245754 bytes）
-
-以下完整原包仍待 Git 完整文件传输；仅列元数据，不是已上传文件：
-- scenes/seaside-bar/02-retain-complete-geometry/assets/04_Seaside_Bar_PBR_and_QA.zip（14835347 bytes，SHA256 9aeb9f449ce01e0817687da5562893ccb39d140b780a03c16aa4e3c5f099eede）
-
-没有分片，也没有把缺少QA/模型的阶段算作归档完成。历史日期与本次commit创建日期分开；模型仍为候选，来源忠实度未通过。
-
 # 海边吧台 · 记录完整有限空间几何升级
 
 状态：重建候选 / 待来源复核。来源忠实度与几何技术检查分别记录。
@@ -89,7 +76,7 @@ qa/section_diagnostic_only.blend：只用于展示截面的诊断副本。x=0剖
 - 跨视频后续回放：未证实：已检查记录只有单个BV；同BV更晚时间不等于后续其他回放。
 - 原生1080导帧未实现。总体来源验收仍待复核。详见 `scenes/seaside-bar/source-coverage-audit-20261010.json`。
 
-#### 本阶段计划路径（已传/待传见上方状态及 manifest）
+#### 本阶段实际归档路径
 - `scenes/seaside-bar/02-retain-complete-geometry/assets/03_Seaside_Bar_Textured_Blender.zip`；4096038字节；SHA256 `cabbb18d0b4ca42e3fdb9ed969f4c480aa73789b2809d0d429659b8e2df97c84`；Git blob SHA1 `1f01855f849ee2fd82f62849f948abd9bb08eb5e`。
 - `scenes/seaside-bar/02-retain-complete-geometry/assets/02_Seaside_Bar_Textured_GLB.zip`；2021558字节；SHA256 `9caa66d0c70fe06e3a75569ef36c6e14ba65c7d9042783c10cb55f02386c513c`；Git blob SHA1 `834cb94d180d7c1fb7339e86c0c628df9b74f096`。
 - `scenes/seaside-bar/02-retain-complete-geometry/assets/01_Seaside_Bar_White_Model.zip`；3212942字节；SHA256 `895ab4952af6206e0bb601f191c8d6e2b6a51a7e7ef82b07d61a6e5a1c02f561`；Git blob SHA1 `e83e1159a6428ff77d903f0ec280752446019b2d`。
