@@ -1,0 +1,157 @@
+{
+  "scope": "Independent read-only geometric validation and visual review of the completed train-car interior.",
+  "result": "Geometry-completion checks: PASS. Precise source fitting: NOT ACHIEVED.",
+  "unit_convention": "Inferred model units, not measured metres.",
+  "files": {
+    "01_train_material.blend": {
+      "sha256": "3945b62e924b0aad44a2ee5c35cda26bc9afe0382f6f470093dff68aed4ddd18"
+    },
+    "02_train_white.blend": {
+      "sha256": "1c1b6ac2bc8c6213f56bd31dc64a1861e2580eb0822d019030f41f7b670136ea"
+    },
+    "03_train_material.glb": {
+      "sha256": "295c5d267ddfb966c1b6061c70dd634543cfdbc782624ebb1af979029d37c815"
+    },
+    "04_train_white.glb": {
+      "sha256": "6bd253ba82490a63925dcf301f4a16d095159d02c4c9e8700b918d54db929115"
+    }
+  },
+  "blend_topology": {
+    "mesh_objects": 1932,
+    "vertices": 174680,
+    "faces": 174236,
+    "nonmanifold_objects": [],
+    "degenerate_objects": [],
+    "inconsistent_normal_objects": [],
+    "negative_volume_objects": []
+  },
+  "source_cameras_identical_to_restored_original": true,
+  "side_windows": {
+    "count": 12,
+    "core_samples_each": 441,
+    "opaque_backing_hits": 0,
+    "missing_glass_hits": 0
+  },
+  "end_door_lights": {
+    "count": 2,
+    "core_samples_each": 672,
+    "opaque_backing_hits": 0,
+    "missing_glass_hits": 0,
+    "intentional_mullions_excluded_from_backing_test": true
+  },
+  "enclosure_junctions": {
+    "end_plane_samples": 161200,
+    "side_plane_samples": 330372,
+    "misses": 0,
+    "includes": "Dense floor/sidewall and roof/sidewall seams, sloped-roof end-wall corners, and side-window edges. Furniture and curtains do not mask this enclosure test."
+  },
+  "structural_roof": {
+    "samples": 2943,
+    "misses": [],
+    "bad_normals": [],
+    "thickness_min": 0.12000012397766113,
+    "thickness_max": 0.1211557388305664
+  },
+  "furniture_supports": {
+    "tables": 12,
+    "seats": 24,
+    "all_contact_chains_pass": true,
+    "method": "Cross-sectional support rays plus common-axis, non-positive-gap bounds from floor plates/feet through pedestal/plinth to furniture."
+  },
+  "glass_material": [
+    {
+      "name": "Dark night window glazing",
+      "shaders": [
+        {
+          "Base Color": [
+            0.2199999988079071,
+            0.28999999165534973,
+            0.27000001072883606,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.09000000357627869,
+          "Alpha": 1.0,
+          "Transmission Weight": 0.8799999952316284,
+          "IOR": 1.4500000476837158
+        }
+      ]
+    }
+  ],
+  "glb_reimports": {
+    "material_success": true,
+    "white_success": true,
+    "mesh_objects_each": 1932,
+    "raw_triangles_each": 341712,
+    "raw_degenerate_triangles_each": 0,
+    "all_aperture_junction_roof_support_checks_pass_in_both": true,
+    "object_name_sets_match_blend": true,
+    "maximum_object_bbox_coordinate_error_vs_blend": 4.76837158203125e-07,
+    "material_white_named_position_index_transform_buffers_identical": true,
+    "named_position_index_transform_sha256": "c1ff4046c0081f8c102918713f592c583ac8d4ada9e0b4b9b57de3a9585e44a6",
+    "glass_extension": "KHR_materials_transmission 0.88; IOR 1.45; doubleSided true",
+    "topology_note": "GLB preserves split UV/normal vertices. Split-vertex boundary counts and artifacts from diagnostic welding are not enclosed-shell defects. Raw imported triangles are nondegenerate; saved BLEND component topology is manifold."
+  },
+  "evidence_limits": [
+    "The sixth repeated module and reverse end are inferred, not source-confirmed.",
+    "A/B/D camera preservation is not proof of whole-image or source-geometry accuracy.",
+    "Intentional glazed apertures and reasonable overlap among separate closed components are allowed; the complete assembly is not required to be one Boolean-unioned watertight object.",
+    "Dense sampled geometric tests are not a proof of all possible intersections or production-ready mechanical construction."
+  ],
+  "source_fidelity_status": {
+    "status": "NOT ACHIEVED",
+    "A": "Significant foreground flower and near-occlusion residuals remain.",
+    "B": "Significant window-column and ceiling alignment residuals remain.",
+    "D": "Significant seat-back-top, near-occlusion and overall-depth residuals remain; these are broader than a minor camera approximation.",
+    "interpretation": "A/B/D preserved camera parameters and transparent overlay presentation do not prove source-geometry accuracy. This deliverable is a completed-space geometry version, not a precise reconstruction or the original asset."
+  },
+  "comparison_presentation": {
+    "reviewed": [
+      "comparison_A.jpg",
+      "comparison_B.jpg",
+      "comparison_D.jpg"
+    ],
+    "source_crop_and_render_size": [
+      1188,
+      668
+    ],
+    "overlay": "50% direct overlay, no perspective warp or local stretch",
+    "inferred_sixth_module_and_reverse_end_labeled": true,
+    "result": "Honest comparison presentation; visible source-fit differences remain."
+  },
+  "final_metadata_revision_rechecked": true,
+  "visual_review": {
+    "status": "Geometry-completion visual review: PASS. Precise source fitting: NOT ACHIEVED.",
+    "interior_material_views": [
+      "01 forward aisle",
+      "02 reverse aisle",
+      "03 right booth",
+      "04 left booth",
+      "05 ceiling",
+      "06 low floor/supports",
+      "07 forward door",
+      "08 inferred reverse door"
+    ],
+    "white_geometry_views": [
+      "forward aisle",
+      "side window/returns",
+      "ceiling",
+      "forward door/reveal",
+      "reverse door/reveal",
+      "low cross-booth table and seat floor supports"
+    ],
+    "exterior_views": [
+      "forward envelope",
+      "reverse envelope"
+    ],
+    "cutaway": "Independent diagnostic x=0.08 half-section, with actual mesh sectioning; not used in saved complete model or source views.",
+    "findings": [
+      "No visible open backfaces, unintended shell leaks or detached structural panels in these views.",
+      "Side-window and end-door glazing has modeled depth and actual geometric apertures, corroborated by aperture-specific rays.",
+      "White close-ups show continuous roof/wall returns and real floor-contact table/seat supports.",
+      "Exterior views show a finite thickness shell and both end closures, not a modeled bogie, adjacent carriage or source-confirmed exterior.",
+      "A/B/D direct overlays honestly expose substantial remaining source-fit residuals."
+    ],
+    "presentation_limit": "Denoised review images can smooth fine details; numeric tests use the actual mesh. Geometry tests do not establish pixel-level or measured real-world fidelity."
+  }
+}
