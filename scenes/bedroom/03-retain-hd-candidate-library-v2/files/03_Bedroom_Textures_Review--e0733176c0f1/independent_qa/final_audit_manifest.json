@@ -1,0 +1,370 @@
+{
+  "assets": [
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/frozen/bedroom_material_v1.blend",
+      "sha256": "0f2cf9f9c91ed63686309aa93daebe27d12b19b7053cba8d8b7982c61fcd75a6",
+      "actual_sha256": "0f2cf9f9c91ed63686309aa93daebe27d12b19b7053cba8d8b7982c61fcd75a6",
+      "matches": true
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/02_HD_candidate_white.blend",
+      "sha256": "a7d1078924e9330fc75a854a6a690b99b0cd2b29fa7b885e39eaa01f28d84c9a",
+      "actual_sha256": "a7d1078924e9330fc75a854a6a690b99b0cd2b29fa7b885e39eaa01f28d84c9a",
+      "matches": true
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "actual_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "matches": true
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/03_HD_candidate_material.glb",
+      "sha256": "1a39bef4227de76ed326e4ec1f70689f04c8c7000f36149d2f9b49e7a3a07063",
+      "actual_sha256": "1a39bef4227de76ed326e4ec1f70689f04c8c7000f36149d2f9b49e7a3a07063",
+      "matches": true
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/04_HD_candidate_white.glb",
+      "sha256": "5e99f9e180c391bd692dfb4361a7130182296764e6b55c7c49fe5cc6b0f31ddb",
+      "actual_sha256": "5e99f9e180c391bd692dfb4361a7130182296764e6b55c7c49fe5cc6b0f31ddb",
+      "matches": true
+    }
+  ],
+  "old_original_still_frozen": true,
+  "expected_render_count": 15,
+  "renders": [
+    {
+      "name": "candidate_hd_front_material_v2",
+      "complete": true,
+      "sidecar_sha256": "408061ff3043678320dbb18cbeb001dd6803e7d99557db09a360e1b72f14a94f",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "d34bfa75549e56cd1c7c483e9bbe6e9afcfc4b42dbb95490cb34725e2ae431e2",
+      "output_matches": true,
+      "denoised_sha256": "4d621c9d6281499763155ce254f5a7e543a6dd59625efd2ed66efc1738d17c77",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        14.0,
+        100.0
+      ],
+      "camera": "DIAG_HD_front_clip14"
+    },
+    {
+      "name": "candidate_hd_front_white",
+      "complete": true,
+      "sidecar_sha256": "307299881372457aa5d541e96e16bd527eed1ee8082818e5ff57242c01c035fc",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/02_HD_candidate_white.blend",
+      "input_sha256": "a7d1078924e9330fc75a854a6a690b99b0cd2b29fa7b885e39eaa01f28d84c9a",
+      "final_v2_input": true,
+      "output_sha256": "c55a9b08ed2830df3ef066d2e8b7d7ebb774606a07d175c18bf8054e17bf9100",
+      "output_matches": true,
+      "denoised_sha256": "bfc9d9e4b935884d2943b64f1a086c8f665e9014a7679120f9235062cb423888",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        14.0,
+        100.0
+      ],
+      "camera": "DIAG_HD_front_clip14"
+    },
+    {
+      "name": "candidate_hd_near_material",
+      "complete": true,
+      "sidecar_sha256": "ca89a64df9ef2d7bf18ffb9ca83d5f353a76824c87271b273a667c18120c6151",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "df133502cae3ac9580ab1fc8125d08985ff7547dbe294480b02f503af9e54b66",
+      "output_matches": true,
+      "denoised_sha256": "ca3dd86c29e3a007c68f5739b6124a877e7d86dacabfb70cd709ac3b09582723",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        14.0,
+        100.0
+      ],
+      "camera": "DIAG_HD_near_clip14"
+    },
+    {
+      "name": "candidate_hd_near_white",
+      "complete": true,
+      "sidecar_sha256": "48398052971042b15fee5d2876075eb5e806744a0872dc7cb5f3ddd8658bbbe4",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/02_HD_candidate_white.blend",
+      "input_sha256": "a7d1078924e9330fc75a854a6a690b99b0cd2b29fa7b885e39eaa01f28d84c9a",
+      "final_v2_input": true,
+      "output_sha256": "c97398b8539de96359b6de8ba89e364d6d0aa442623809d413d49ab16bc4b658",
+      "output_matches": true,
+      "denoised_sha256": "c208bbdab86dbd8c7b344cb7ba9d5c37b7945c072583139e094fa5d2b0f79f40",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        14.0,
+        100.0
+      ],
+      "camera": "DIAG_HD_near_clip14"
+    },
+    {
+      "name": "candidate_old_internal_front",
+      "complete": true,
+      "sidecar_sha256": "da1b7044b2d1c7589055cfc31c827cc50cb437035ae8bcb80adf23964036d02e",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "c2ca759edb65e2938a67a72cf10355b63f59c814059f09ec6137821958de6b72",
+      "output_matches": true,
+      "denoised_sha256": "6e561cf6e1a766b9a1aa77a6b8631d095048410ba7afc27507cb53c4adb1eee9",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        100.0
+      ],
+      "camera": "MATCH_front_50m07_same_axis"
+    },
+    {
+      "name": "normal_01_入口看床",
+      "complete": true,
+      "sidecar_sha256": "a448cb36d0d31bcfbe48a94e8e8f6503dcb9bce22d94f241857c39219bfc3559",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "bd5683a23f473d000ff3c7757423dae7dcba867bca1c8b037afb9f858e6a9e25",
+      "output_matches": true,
+      "denoised_sha256": "ebc6f753f4d8744f0c34487109274635858f2e39702d5facfea254c2a312c021",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "01_入口看床"
+    },
+    {
+      "name": "normal_02_右前看床",
+      "complete": true,
+      "sidecar_sha256": "9862e1f752001bc0b28235ce379159077480c503c312fb94a30d3437d4d7db0c",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "5f5509d1770ef30b9c270de1305b121fea7e2da49e28b724dba50cb57a56ef9f",
+      "output_matches": true,
+      "denoised_sha256": "9102d07703432abc7540c305e7093111cd39cc9f7866cdedcfc26c19fbf91ebd",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "02_右前看床"
+    },
+    {
+      "name": "normal_03_左侧沿墙",
+      "complete": true,
+      "sidecar_sha256": "93019ccbfff327305794e52f1429d79928b429d695ebcec5f78d49461e73d09f",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "b25a1223e718d7349ca029b7f2efd5dec790be0818338fc803dbc6b24abfb23e",
+      "output_matches": true,
+      "denoised_sha256": "720e924aae9bb52ffec4a435ca704a801c26eab726474996ff051daea7b377d3",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "03_左侧沿墙"
+    },
+    {
+      "name": "normal_04_床尾正向",
+      "complete": true,
+      "sidecar_sha256": "17eee9c408152db0405dae7728647a083abdf23b0fe5e52d0a97c4f45fd45095",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "4bb9349cd55bec7713cbce4ac40b1332bc714f4a415a425d3ceb94e96b1c4c74",
+      "output_matches": true,
+      "denoised_sha256": "0c2451fdf2fac6bc6df35e779c5349fed49b933272b9f1cce171cc1f435deea1",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "04_床尾正向"
+    },
+    {
+      "name": "normal_06_反向门窗",
+      "complete": true,
+      "sidecar_sha256": "06de7e6c6b36c5227555faa4b66c404a62915992fcd5d813c8dbd81fdbfd1266",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "15027cab1b96d263c022564638b813160ce66279c7b557739561e290f64d81f9",
+      "output_matches": true,
+      "denoised_sha256": "297ee3e3cb89213408d4ef3ad1c7d2fb6a61d0580818f13269d2892b5dc5848b",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "06_反向门窗"
+    },
+    {
+      "name": "normal_07_反向入口",
+      "complete": true,
+      "sidecar_sha256": "a12998b38e33dcd926939384d0f14627f70e479922586b94a4b72d00650aaddb",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "5fef5b0a9771a3451862416e8a87f99737bc031ce992e0f52be986d046e64a7b",
+      "output_matches": true,
+      "denoised_sha256": "3af8c14fe8e8a0b655388de071fe779219e7539b906d7c516d7a3f105fb173d2",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "07_反向入口"
+    },
+    {
+      "name": "normal_09_门洞近看",
+      "complete": true,
+      "sidecar_sha256": "8eccb12c75139db64427e1c036913d0bfa3d3a745da87a8e08587a09c377c9cf",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "5106fae208f63fbb3553a13a211d6525becd866ea26d6fb4389ef3bab9369109",
+      "output_matches": true,
+      "denoised_sha256": "e21750c8aee6e676f36fa3744fbb83369994a60b55ebfafb80adc2750eb9a7b2",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "09_门洞近看"
+    },
+    {
+      "name": "normal_10_窗洞近看",
+      "complete": true,
+      "sidecar_sha256": "4a589e8b94dfca39576db904948d0439cba89ce02fcbb12bf941e76ec2fe8e4b",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "af25833daa46a91c646c80c0239981368e027a86dfab60b1bd2b25e9e58a26de",
+      "output_matches": true,
+      "denoised_sha256": "bce88c7cab46ffb76a757ba850d617377d35cfab33ab31665386dd50b1ed2e7c",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "10_窗洞近看"
+    },
+    {
+      "name": "normal_white_01",
+      "complete": true,
+      "sidecar_sha256": "b8771703c7d96969fa415d92c2500a5efdba690a22ee32b8b0732f08375fdb8d",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/02_HD_candidate_white.blend",
+      "input_sha256": "a7d1078924e9330fc75a854a6a690b99b0cd2b29fa7b885e39eaa01f28d84c9a",
+      "final_v2_input": true,
+      "output_sha256": "5e40bbe03ebfb663fba1d55b073a0cc4b613098ea6fcac4c2e119f263be6c50f",
+      "output_matches": true,
+      "denoised_sha256": "af24e273a14eeefc8949ae5c9ee30339913b6f0484bfc66e08b22395ad2d9593",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "01_入口看床"
+    },
+    {
+      "name": "normal_main_hd",
+      "complete": true,
+      "sidecar_sha256": "17f491afcdad6674357f50b81582f00fcc554b20cf14c66000c907f18587ed61",
+      "input_file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/models/hd_v2/01_HD_candidate_material.blend",
+      "input_sha256": "a14b9da343a1a2a2d7dcd2a2223d5fe776d8615056ea2830c419301c5c341aaf",
+      "final_v2_input": true,
+      "output_sha256": "78f03e8c60f4e3a52c2a361f1dbba8911111393427b1b6ddc7bbc1bafe391eb7",
+      "output_matches": true,
+      "denoised_sha256": "24851eba19555011beb106787f35edd335e2d4dbe8ef092ab75cd0f64ed3c797",
+      "denoise_input_matches": true,
+      "denoise_output_matches": true,
+      "clip": [
+        0.029999999329447746,
+        150.0
+      ],
+      "camera": "01_入口看床"
+    }
+  ],
+  "overlays": [
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/review/01_高清正面_来源诊断对照_direct50.png",
+      "sha256": "f8465fe766b1e18956e1766abbc124aab682fa3910cddfb6e008f17c6787d62c",
+      "equal_direct_50_percent": true,
+      "source_hash_matches": true,
+      "render_hash_matches": true,
+      "output_hash_matches": true
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/review/01_高清正面_来源诊断对照_white_direct50.png",
+      "sha256": "7566b45a6349f256fdb8423188b9ebb32c4edd47f467198a498cd6974195380b",
+      "equal_direct_50_percent": true,
+      "source_hash_matches": true,
+      "render_hash_matches": true,
+      "output_hash_matches": true
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/review/02_高清近景_同轴回归对照_direct50.png",
+      "sha256": "e02faa634ef7696e9a3df748ae3f76e6c81b76bdfe4ffc94d4f7d4591b16e613",
+      "equal_direct_50_percent": true,
+      "source_hash_matches": true,
+      "render_hash_matches": true,
+      "output_hash_matches": true
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/review/02_高清近景_同轴回归对照_white_direct50.png",
+      "sha256": "2c3b669bc002ffd629e44f9dd9ed1456bbe4f6f2f65f2e0d0f632bb3fa83a45c",
+      "equal_direct_50_percent": true,
+      "source_hash_matches": true,
+      "render_hash_matches": true,
+      "output_hash_matches": true
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/review/04_旧室内相机回归_direct50.png",
+      "sha256": "78f43792653fb69f4c6fe6652e53491cff81320f9cda407b71e2d7acda031e2a",
+      "equal_direct_50_percent": true,
+      "source_hash_matches": true,
+      "render_hash_matches": true,
+      "output_hash_matches": true
+    }
+  ],
+  "review_files": [
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/review/01_高清正面_来源诊断对照.jpg",
+      "sha256": "445adbbb359d00c902775f0ce2e8872f08e08d3cb8c18e54738cf688660c3592"
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/review/02_高清近景_同轴回归对照.jpg",
+      "sha256": "cf6930bb529fa35379ef299fe20f9499b272885397d3d54cc9651c531004137d"
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/bedroom_hd_revision_20261010/review/03_完整房间_八个正常视角.jpg",
+      "sha256": "cbae8d6e31dd3e690d216a9e01e6ef12e245dba5227bf06f969b7b1a5108e9f5"
+    }
+  ],
+  "all_expected_complete": true,
+  "stage1_excluded": [
+    "models root four stage1 assets",
+    "renders/candidate_hd_front_material.png"
+  ],
+  "note": "Checks bind independent QA to actual v2 assets and completed render sidecars. SHA chaining verifies artifact identity, not source reconstruction quality."
+}

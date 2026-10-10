@@ -1,0 +1,65 @@
+{
+  "duration_seconds": 7428,
+  "complete_watch": false,
+  "method": "Sparse browser screenshots plus dense UI-screenshot transition sample; not every-frame viewing",
+  "valid_paused_bedroom_times": [
+    3018.454654,
+    3039.93198,
+    3051.145352
+  ],
+  "sparse_observed_segments": [
+    {
+      "range": [
+        676.94633,
+        686
+      ],
+      "identity": "same bedroom near view",
+      "continuous_observation": false
+    },
+    {
+      "range": [
+        3018.454654,
+        3063.502041
+      ],
+      "identity": "bedroom near/wide/empty then kitchen",
+      "continuous_observation": false
+    },
+    {
+      "range": [
+        1234.064751,
+        1274.152394
+      ],
+      "identity": "kitchen hard-cut to sofa/piano candidate",
+      "continuous_observation": false
+    },
+    {
+      "time": 1863.381002,
+      "identity": "purple dance studio"
+    },
+    {
+      "time": 2710.97874,
+      "identity": "sofa/piano, different light/clothes state"
+    },
+    {
+      "time": 6188.378909,
+      "identity": "seaside road, resume point"
+    }
+  ],
+  "dense_samples": [
+    {
+      "folder": "transition_cut",
+      "samples": 180,
+      "first": 1227.766961,
+      "last": 1256.020987,
+      "exclude_ready_1": true,
+      "note": "~1228–1256 decoded screenshots at subsecond spacing; screenshot timestamp is pre-capture, not native presentation timestamp"
+    },
+    {
+      "folder": "transition_sofa",
+      "samples": 25,
+      "first": 1258.756661,
+      "last": 1262.617604
+    }
+  ],
+  "unreviewed": "All time outside the specifically listed observations; intervals between sparse samples may contain unseen cuts. No claim that the complete 0–7428 main video has been watched. 40:29.379 seek failed ready1 and excluded."
+}
