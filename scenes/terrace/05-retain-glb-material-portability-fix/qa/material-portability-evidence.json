@@ -1,0 +1,144 @@
+{
+  "status": "重建候选 / 待来源复核",
+  "verification_scope": "原有修复/Blender回导记录，本次只重新核验文件字节与ZIP CRC。",
+  "repair": {
+    "scene": "terrace_complete_candidate_20261010",
+    "source_blend": {
+      "path": "scenes/terrace/04-retain-complete-geometry/assets/Green_Terrace_V2_REVIEW_ONLY.zip::Green_Terrace_Working_V16_CompleteSpace_REVIEW.blend",
+      "sha256": "47e9fb0a00803491b58d6d02bcb0c5cb4a1aa85b550bc906a2eda24888d56851",
+      "bytes": 16572008
+    },
+    "original_glb": {
+      "path": "scenes/terrace/04-retain-complete-geometry/assets/terrace-v16-glb-lzma.zip::Terrace_CompleteSpace_WithoutCity.glb",
+      "bytes": 33658432,
+      "sha256": "d303270a27552ce33b932da59e959920fd1bcf0ffa0592b18e2c9702776ffade"
+    },
+    "repaired_glb": {
+      "path": "scenes/terrace/05-retain-glb-material-portability-fix/assets/Terrace_CompleteSpace_GLB_LZMA需兼容解压器.zip::Terrace_CompleteSpace_WithoutCity.glb",
+      "bytes": 34076844,
+      "sha256": "9c4551b99e20b02a8c0a29f2115f2c83bbf28ae18c5628228263d6cd8b12435d"
+    },
+    "changes": [
+      {
+        "material": "RearRail_PaleFinish_HYPOTHESIS",
+        "operation": {
+          "name": "Shared pale finish hypothesis",
+          "type": "MIX_RGB",
+          "inputs": {
+            "Fac": 0.44999998807907104,
+            "Color1": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ],
+            "Color2": [
+              0.5799999833106995,
+              0.46000000834465027,
+              0.3499999940395355,
+              1.0
+            ]
+          },
+          "blend_type": "MIX"
+        },
+        "old_png_sha256": "ad70862745047fc7f05b97ef3ab2851b273b47f21ed7f50908f3bfbd910b31a0",
+        "new_png_sha256": "7b1db66786bd11adcd84589d3e4e09048cf969f306d293761a508774ee5258f4",
+        "dimensions": [
+          512,
+          512
+        ],
+        "original_alpha_unchanged": true,
+        "old_texture_index": 9,
+        "new_texture_index": 31,
+        "original_image_shared_by_basecolor_materials": [
+          "RearRail_PaleFinish_HYPOTHESIS",
+          "wall_cedar"
+        ]
+      },
+      {
+        "material": "V4_Inferred_Tree_Leaf_Tone",
+        "operation": {
+          "name": "Gamma",
+          "type": "GAMMA",
+          "inputs": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Gamma": 0.699999988079071
+          }
+        },
+        "old_png_sha256": "26ed773767a25531785a9afedef2338b83140095fd152f967b24d94e81462744",
+        "new_png_sha256": "3c340985bd16be75e72aae3b48e5ffed62cc6f45cf79966e87682b15453bb3c2",
+        "dimensions": [
+          512,
+          512
+        ],
+        "original_alpha_unchanged": true,
+        "old_texture_index": 13,
+        "new_texture_index": 32,
+        "original_image_shared_by_basecolor_materials": [
+          "V4_Inferred_Tree_Leaf_Tone",
+          "green_leaf"
+        ]
+      }
+    ],
+    "validation": {
+      "entire_original_binary_buffer_preserved_byte_for_byte": true,
+      "all_original_bufferViews_unchanged": true,
+      "all_geometry_uv_normals_tangents_indices_draco_payloads_and_node_transforms_unchanged": true,
+      "all_non_basecolor_material_parameters_unchanged": true,
+      "json_equal_after_removing_appended_png_resources_and_restoring_seven_texture_references": true,
+      "original_source_blend_unmodified": true
+    }
+  },
+  "actual_roundtrip": {
+    "scene": "terrace_complete_candidate_20261010",
+    "original": {
+      "meshes": 1416,
+      "vertices": 795397,
+      "polygons": 805950,
+      "geometry_uv_transforms_material_slots_sha256": "2b591142ab37557a6ea38d8e2e40a37213e2af32eaccc05ad87851fbb9969793",
+      "materials": 40,
+      "images": 26,
+      "missing_images": []
+    },
+    "repaired": {
+      "meshes": 1416,
+      "vertices": 795397,
+      "polygons": 805950,
+      "geometry_uv_transforms_material_slots_sha256": "2b591142ab37557a6ea38d8e2e40a37213e2af32eaccc05ad87851fbb9969793",
+      "materials": 40,
+      "images": 28,
+      "missing_images": []
+    },
+    "exact_imported_geometry_match": true
+  },
+  "visual_control": {
+    "scene": "terrace_complete_candidate_20261010",
+    "isolated_basecolor": {
+      "old_mae_8bit": 3.2192388268156424,
+      "new_mae_8bit": 0.009962756052141527,
+      "error_reduction_percent": 99.69052448146581,
+      "image_paths": [
+        "scenes/terrace/05-retain-glb-material-portability-fix/qa/terrace_complete_candidate_20261010_source.png",
+        "scenes/terrace/05-retain-glb-material-portability-fix/qa/terrace_complete_candidate_20261010_glb_color_only.png",
+        "scenes/terrace/05-retain-glb-material-portability-fix/qa/terrace_complete_candidate_20261010_repaired_color_only.png"
+      ]
+    },
+    "all_imported_materials": {
+      "old_mae_8bit": 3.509473929236499,
+      "new_mae_8bit": 0.34549581005586594,
+      "error_reduction_percent": 90.15533903307752,
+      "image_paths": [
+        "scenes/terrace/05-retain-glb-material-portability-fix/qa/terrace_complete_candidate_20261010_source.png",
+        "scenes/terrace/05-retain-glb-material-portability-fix/qa/terrace_complete_candidate_20261010_glb_materials.png",
+        "scenes/terrace/05-retain-glb-material-portability-fix/qa/terrace_complete_candidate_20261010_repaired_all_materials.png"
+      ]
+    },
+    "note": "Same source geometry, UV, lights, world and camera; material nodes come from actual GLB import. Cycles CPU 8 samples, seed17, no denoising or compositing. Isolated control changes only seven targeted materials; all-material control includes other pre-existing GLB approximations. No source BLEND saved."
+  },
+  "limitations": "GLB材质可移植性改善不代表来源画面精确复原。"
+}
