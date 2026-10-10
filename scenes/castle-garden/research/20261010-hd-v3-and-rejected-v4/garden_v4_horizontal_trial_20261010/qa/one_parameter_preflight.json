@@ -1,0 +1,184 @@
+{
+  "single_shared_half_spacing": 3.0299904852389883,
+  "baseline_half_spacing": 5,
+  "locked_y": -1.475,
+  "locked_cap_z": 1.73,
+  "train": [
+    "HD668",
+    "HD1326"
+  ],
+  "held_out": [
+    "HD600",
+    "HD1519"
+  ],
+  "camera_policy": "All existing v3 camera poses/intrinsics frozen. HD600 uses the one previously recorded window-scale diagnostic. No per-frame geometry or new camera fitting.",
+  "rows": [
+    {
+      "tag": "HD668",
+      "split": "train",
+      "source_mid_urn_centers_x": [
+        356,
+        993
+      ],
+      "marking_uncertainty_px": [
+        5,
+        10
+      ],
+      "baseline_projected_xy": [
+        [
+          161.0115281464487,
+          192.26832463425524
+        ],
+        [
+          1198.3947984541799,
+          206.57832457596155
+        ]
+      ],
+      "trial_projected_xy": [
+        [
+          356.1570803751014,
+          194.9602254205364
+        ],
+        [
+          984.4843940301963,
+          203.62757535679447
+        ]
+      ],
+      "baseline_horizontal_residual_px": [
+        -194.9884718535513,
+        205.39479845417986
+      ],
+      "trial_horizontal_residual_px": [
+        0.15708037510137274,
+        -8.515605969803687
+      ],
+      "trial_horizontal_rms_px": 6.02246707243793
+    },
+    {
+      "tag": "HD1326",
+      "split": "train",
+      "source_mid_urn_centers_x": [
+        276,
+        894
+      ],
+      "marking_uncertainty_px": [
+        5,
+        8
+      ],
+      "baseline_projected_xy": [
+        [
+          70.99833990254035,
+          216.55322006545867
+        ],
+        [
+          1097.8308701909311,
+          222.2395450950326
+        ]
+      ],
+      "trial_projected_xy": [
+        [
+          274.8206441229357,
+          217.6819336929363
+        ],
+        [
+          897.0704595692737,
+          221.1277874186909
+        ]
+      ],
+      "baseline_horizontal_residual_px": [
+        -205.00166009745965,
+        203.83087019093114
+      ],
+      "trial_horizontal_residual_px": [
+        -1.1793558770643244,
+        3.0704595692736802
+      ],
+      "trial_horizontal_rms_px": 2.325790430295739
+    },
+    {
+      "tag": "HD600",
+      "split": "held_out",
+      "source_mid_urn_centers_x": [
+        171,
+        1037
+      ],
+      "marking_uncertainty_px": [
+        5,
+        5
+      ],
+      "baseline_projected_xy": [
+        [
+          -19.179029166933674,
+          219.54380141099392
+        ],
+        [
+          1193.8957714249905,
+          226.26148652310658
+        ]
+      ],
+      "trial_projected_xy": [
+        [
+          221.61164872374496,
+          220.87723604438372
+        ],
+        [
+          956.7223396354644,
+          224.94808323507868
+        ]
+      ],
+      "baseline_horizontal_residual_px": [
+        -190.17902916693367,
+        156.89577142499047
+      ],
+      "trial_horizontal_residual_px": [
+        50.61164872374496,
+        -80.27766036453556
+      ],
+      "trial_horizontal_rms_px": 67.10455178353953
+    },
+    {
+      "tag": "HD1519",
+      "split": "held_out",
+      "source_mid_urn_centers_x": [
+        362,
+        1162
+      ],
+      "marking_uncertainty_px": [
+        5,
+        15
+      ],
+      "baseline_projected_xy": [
+        [
+          118.31463296187843,
+          250.90529960557956
+        ],
+        [
+          1621.3577811333862,
+          291.6051683185007
+        ]
+      ],
+      "trial_projected_xy": [
+        [
+          371.01177014921984,
+          257.7479110902648
+        ],
+        [
+          1276.4544002608422,
+          282.26576755862754
+        ]
+      ],
+      "baseline_horizontal_residual_px": [
+        -243.68536703812157,
+        459.3577811333862
+      ],
+      "trial_horizontal_residual_px": [
+        9.011770149219842,
+        114.45440026084225
+      ],
+      "trial_horizontal_rms_px": 81.18196148249763
+    }
+  ],
+  "identification": "Cross-frame source middle urn pair identity independently reviewed; left/right exact same physical depth remains an assumption.",
+  "retracted_metric": "Earlier 600 report compared source middle urns to nearest-facade model row y=-.025. Its 160-180px figures are not accepted matched-entity residuals. Replaced by explicit middle-row mapping at y=-1.475 here.",
+  "acceptance": "Unvalidated single-parameter diagnostic; camera/depth coupling unresolved. Do not adopt as proven reconstruction."
+}
