@@ -1,0 +1,186 @@
+{
+  "source": "xingtong_classroom_browser/hd_recapture/crops/classroom_motion_4282_video.png",
+  "camera_location": [
+    -0.04743012280783563,
+    4.767738355003076,
+    1.3032724113582634
+  ],
+  "camera_rotation_xyz": [
+    1.4943009150673559,
+    -0.007193547790642061,
+    3.174434636796416
+  ],
+  "lens_mm": 25.95330488909259,
+  "sensor_width_mm": 36,
+  "render_resolution": [
+    1180,
+    664
+  ],
+  "fit_rms_px": 6.259553376618513,
+  "holdout_rms_px": 15.49803714737396,
+  "points": [
+    {
+      "label": "board_TL",
+      "world": [
+        1.9,
+        0.084,
+        2.060728
+      ],
+      "source_px": [
+        274,
+        123
+      ],
+      "projected_px": [
+        264.6302225965683,
+        126.13566385504882
+      ],
+      "error_px": 9.880542313138454,
+      "role": "fit"
+    },
+    {
+      "label": "board_TR",
+      "world": [
+        -1.9,
+        0.084,
+        2.060728
+      ],
+      "source_px": [
+        961,
+        127
+      ],
+      "projected_px": [
+        965.9354636276229,
+        127.4769494010942
+      ],
+      "error_px": 4.958455601373529,
+      "role": "fit"
+    },
+    {
+      "label": "board_BL",
+      "world": [
+        1.9,
+        0.084,
+        0.593477
+      ],
+      "source_px": [
+        274,
+        397
+      ],
+      "projected_px": [
+        270.3786438106842,
+        391.06791770310184
+      ],
+      "error_px": 6.9500950372688015,
+      "role": "fit"
+    },
+    {
+      "label": "board_BR",
+      "world": [
+        -1.9,
+        0.084,
+        0.593477
+      ],
+      "source_px": [
+        958,
+        400
+      ],
+      "projected_px": [
+        954.9684090759561,
+        399.32807786165637
+      ],
+      "error_px": 3.1051606867828703,
+      "role": "fit"
+    },
+    {
+      "label": "bookshelf_TR",
+      "world": [
+        2.287747,
+        0.458706,
+        1.783019
+      ],
+      "source_px": [
+        152,
+        165
+      ],
+      "projected_px": [
+        160.22317512372933,
+        169.22486335719404
+      ],
+      "error_px": 9.245002947672967,
+      "role": "fit"
+    },
+    {
+      "label": "bookshelf_BR",
+      "world": [
+        2.287747,
+        0.458706,
+        0.004225
+      ],
+      "source_px": [
+        156,
+        520
+      ],
+      "projected_px": [
+        170.86083232862165,
+        511.80547870695483
+      ],
+      "error_px": 16.970401195068348,
+      "role": "holdout"
+    },
+    {
+      "label": "teacher_front_left",
+      "world": [
+        -0.363664,
+        2.074549,
+        0.846306
+      ],
+      "source_px": [
+        716,
+        414
+      ],
+      "projected_px": [
+        716.00239982984,
+        411.6492889640496
+      ],
+      "error_px": 2.3507122609375615,
+      "role": "fit"
+    },
+    {
+      "label": "teacher_front_right",
+      "world": [
+        -1.279898,
+        2.074549,
+        0.846306
+      ],
+      "source_px": [
+        1007,
+        414
+      ],
+      "projected_px": [
+        1008.149262029403,
+        415.34167291259826
+      ],
+      "error_px": 1.7666039218306127,
+      "role": "fit"
+    },
+    {
+      "label": "clock_center",
+      "world": [
+        -1.82,
+        0.1065,
+        2.340059
+      ],
+      "source_px": [
+        948,
+        61
+      ],
+      "projected_px": [
+        954.5246980513184,
+        73.23977571119303
+      ],
+      "error_px": 13.870248524132117,
+      "role": "holdout"
+    }
+  ],
+  "limitations": "Manual landmarks ~2-4px uncertainty. Camera-only fit to fixed approximate geometry. Focal-distance coupling; no calibrated ground truth."
+}
