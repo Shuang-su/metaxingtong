@@ -21,4 +21,10 @@
 
 ## GitHub 归档状态
 
-截至本记录，这批新增 QA v0/v1 包及主视角 PNG 尚未进入可达 Git commit；此文档只记录已核实的变更关系，不能视为附件已上传。完整原包上传进度以[归档状态清单](../archive-status.json)为准。教室[Issue #1](https://github.com/Shuang-su/metaxingtong/issues/1)及[Draft PR #17](https://github.com/Shuang-su/metaxingtong/pull/17)继续保留来源复核缺口。
+历史 QA v0 已归档为教室第6阶段，提交 [6b43facaea14c694e571910605436d459c2740cf](https://github.com/Shuang-su/metaxingtong/commit/6b43facaea14c694e571910605436d459c2740cf)。分类修订 QA v1 三包及两张未变主图已归档为第7阶段，提交 [2bb5f67550d97dc01741b4429ee44cf235ad8bef](https://github.com/Shuang-su/metaxingtong/commit/2bb5f67550d97dc01741b4429ee44cf235ad8bef)。均保留完整冻结原文件，没有分片；独立远端完整下载的 SHA256、大小、ZIP CRC 已复核。
+
+参见[归档状态清单](../archive-status.json)、教室[Issue #1](https://github.com/Shuang-su/metaxingtong/issues/1)及[Draft PR #17](https://github.com/Shuang-su/metaxingtong/pull/17)。QA入库不代表来源验收。
+
+## 后续课桌证据更正
+
+旧20学生桌／六列仅为历史冻结基线，未获正片拓扑验证；12是旧D相机中的可见数量，不能当模型总数。T1/T2/T3需按连续画面分别追踪，不能固定20填满房间或借D补数量。详见[课桌拓扑更正](2026-10-10-classroom-topology-correction.md)。新几何试验尚未成为本阶段保存模型，不覆盖这些历史原件。
