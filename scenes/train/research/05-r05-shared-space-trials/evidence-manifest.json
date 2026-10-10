@@ -1,0 +1,1904 @@
+{
+  "stage": "research-r05-shared-space-trials",
+  "title": "r05共享窗口与灯条诊断试验",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1fMP4ziEUd/"
+  ],
+  "times": "继承A2/B2/D2及新增J_empty_window_clean_paused、Dseq_03_clean_paused、Door_wide_59m53_paused，精确新增时刻以相邻JSON/manifest为准；59m53文件名不替代暂停实际值。",
+  "pixels": "paused/readyState4、1920×1080解码，1180×757视口，内容约1180×663.75；固定整数裁图1180×664；源/渲染常统一590×332直接50%叠加，正常主图1180×664。",
+  "changes": "A/B共享窗带、洞、玻璃、框、墙板、帘/钩一致映射，灯高和货架横截面共享调整；家具数量/位置与车厢长宽/bay未改。B与A几何相同，仅新拟合相机。C与B相机一致，恰36个横档/灯壳/亮芯网格改变；J亮芯长度与横档为拟合数据，A/D提供留出方向支持。独立checkpoint已导出，4个新Library身份均已保存（材质/白模/诊断纹理证据/普通主图），仍是未整体验收独立候选，不替换r03/CURRENT；本次Git仅归档图证报告。",
+  "limitations": [
+    "review_b/*_r03_r05_same_camera.jpg命名错误：实际旧相机vs新拟合相机，不能当同机位几何归因。review_c/*_B_C_same_camera.jpg才严格同机位；归因由B_C_scene_state_check与B_C_attribution_check支持。",
+    "J灰面/提手前景实体身份未定，非已证缺固定桌，不加/抬桌；J侧别与绝对bay未解。",
+    "A/B/D靠背厚顶、斜率、排间可见层数、桌花遮挡仍不匹配；C不能因为局部灯条好转而称全图通过。",
+    "独立checkpoint保留端门框回导零角法线例外；技术回导不是来源验收。模型/GLB/纹理/大ZIP均不在此次图证白名单。"
+  ],
+  "source_fidelity_passed": false,
+  "current_changed": false,
+  "files": [
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/B_C_attribution_check.json",
+      "bytes": 950,
+      "sha256": "7046c525e6ba618b777de46dc332c21b2f601a9dc5cad5baa1edde220f387f03",
+      "git_blob_sha1": "969fbf317c0b09481b507f9e375834d9e9e83e5d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/B_C_scene_state_check.json",
+      "bytes": 1818,
+      "sha256": "328ee5c3faa5669da2335eda8cf312a3a499cace9ab8adc11eb20d4b7d3ef626",
+      "git_blob_sha1": "2b0a582ee502e5955318a5f4edff709d57187e68"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/C_all_render_integrity.json",
+      "bytes": 1801,
+      "sha256": "188f7006e73320c04d29cd7c772efb0b87b106ebebfd8e99226b06876b70e730",
+      "git_blob_sha1": "d569b649d30f34bb5d02e82d8197ef6f658b4743"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/Dseq3_rotation_holdout.json",
+      "bytes": 1610,
+      "sha256": "b330f93f5dffa7db602559b3b7cbfd907c152fb24127d31128f93e763a31f1e7",
+      "git_blob_sha1": "4d948f9f160e4e2da92e667e206e463a62477b06"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/J_empty_plane_fit.json",
+      "bytes": 6037,
+      "sha256": "87ce08f0e7fdc08915d8e3ac78f5273893bd2aec05817593f5dc81b2b6af8311",
+      "git_blob_sha1": "e2ccdc9658524599927e2c7a641618dae013935d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/J_focal_sensitivity.json",
+      "bytes": 1792,
+      "sha256": "65b17cc4a46bd10d283637bb8b3be0654f801939d57f6fbdddc4f064f9bf761f",
+      "git_blob_sha1": "cea2da0f4fd92550833501bcc85e77ae03b05211"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/base_constraints.json",
+      "bytes": 32337,
+      "sha256": "c4cb5b9e035fdca74b540d9399ecfe9e751cdf936e6725ff3b246ee1e54de545",
+      "git_blob_sha1": "25f19d9ef8f2ade44333725e9d0c5dee3744e237"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/bay_corrected_constraints.json",
+      "bytes": 37146,
+      "sha256": "23d2c04110b9d75f3865ff4d2b327184692ab639bebdfaa689d1cde9cfbfcbe5",
+      "git_blob_sha1": "53a6587c25221113c58b9dbacb6de94d10b66fc8"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/bay_corrected_fit.json",
+      "bytes": 26817,
+      "sha256": "debcf524552e5d22069b2bc578579d958a7d10cf132cbd9148698f1a096692bf",
+      "git_blob_sha1": "2463b0dd5c4271ace6531cb69b9e52661123a4f9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/rackfit_constraints.json",
+      "bytes": 37146,
+      "sha256": "8404930c667cc0eb320e174939d6aaf53a5c83dd108ecc336c05a93a3ff5ffbc",
+      "git_blob_sha1": "0b9f569d9384e140608b3890a5f2be64b6dcd8f3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/bilateral_fit_results.json",
+      "bytes": 51412,
+      "sha256": "4a440826472391e6d9de3c32719e090ee7b44c0811fa60fb0c7cc6178ee65023",
+      "git_blob_sha1": "4ccf4475e5e3e43ff8461dc6bc4e60f4e5978d60"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/headlight_constraints.json",
+      "bytes": 37148,
+      "sha256": "b06f9a039fb87891c905492c9758fd5ac38045d7dbb7c7812b4603a567f04744",
+      "git_blob_sha1": "77550ff80e74da907cb435a2fb91f42e82efc834"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/headlight_fit_results.json",
+      "bytes": 52024,
+      "sha256": "3483711dbd2a93c90be185738b70808ad291f214144a1cb19b1b03dc494aa16e",
+      "git_blob_sha1": "be6e8ca283d6cfc340651fe8ff0ba4b5f834136e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/lossless_resource_compression_not_adopted.json",
+      "bytes": 6815,
+      "sha256": "e90a44f5663b580b456321d0f4b321101d1ac8a7f4b1556c35c601e0612d53e1",
+      "git_blob_sha1": "e4723065912568e1eb1d1ec9a09fd309df7e4403"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/qa/trial_b_shared_a759380776ac_qa.json",
+      "bytes": 1420765,
+      "sha256": "ece96288169687193e4643b19c070647715d89dd866f6fa0f0cebf7629136839",
+      "git_blob_sha1": "2a63c115b18a7724acf0c3f1b019e296c75a4c99"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/qa/trial_c_shared_59f2cdfeb41d_qa.json",
+      "bytes": 1420768,
+      "sha256": "6b061cbfcb918e37d403c3b3afd708deb2d9b0025d66666897209cc014ba28be",
+      "git_blob_sha1": "cf9130a0465db785794748d1edfba5d8f6549e39"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/r03_protection_check.json",
+      "bytes": 581,
+      "sha256": "e3ac803a1efc3e906718c2dacc5219243fa65579d7b7199201909090724eb605",
+      "git_blob_sha1": "4d75e7849d1035cb0b17a994a72b338ef8a78693"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/rack_cross_section_fit.json",
+      "bytes": 26834,
+      "sha256": "da94246fc63c40bbd90551c182ab0c7a3acc286660f88611c92da76804a8ff61",
+      "git_blob_sha1": "ef017cbd9fa757d1e60e3688521e7032120f31bd"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/rackfit_results.json",
+      "bytes": 26800,
+      "sha256": "cfca2689fbfe5c8bdb3eb894f119d80d716e2d1e16589bf03e772fc4a11cdefe",
+      "git_blob_sha1": "438eeb7b3c0a7a779ceeba98031b69f09ea9aaad"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/seat_contour_refined_constraints.json",
+      "bytes": 37291,
+      "sha256": "84a94e8b27af30e2b73f2d0084c21258b187344e2cc1b311ee2011eeef3017cd",
+      "git_blob_sha1": "292acff06fb37373459bc921b63b10e52f30ee90"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/seat_contour_refined_fit.json",
+      "bytes": 26824,
+      "sha256": "7ff75729d8477445a31abc89644b179173eabcf79115547db002516dc51de020",
+      "git_blob_sha1": "1cf50fce68c0ce59840107900f70e5be6a7c4ee2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/table_entity_visibility.json",
+      "bytes": 5944,
+      "sha256": "59d3520b06b9c57ff0ecc3959b1da14e14fa8f9f97581c0f6a6acc9162fef51f",
+      "git_blob_sha1": "c5eed518ae7979a6a6804f26dd385734016d27c6"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/trial_b_manifest.json",
+      "bytes": 16514,
+      "sha256": "3885d4d60e87f35a9368af28587d0d7a849764075ca51febd6354ba22ff8a974",
+      "git_blob_sha1": "540f30e7d2ce3aac7d71dc7d8f9583abd00f6cba"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/trial_c_manifest.json",
+      "bytes": 19745,
+      "sha256": "8a09a622597181a20cbac341c89faf23cafbc5144f05198b528f6ee6b48b50fd",
+      "git_blob_sha1": "8ccbe48ecd41345e7b481bdf1755ca0973d0bd04"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/analysis/trial_manifest.json",
+      "bytes": 16073,
+      "sha256": "89094219836820c8dd861f451cce2a1cf50948a3e1ed805529e37353da16e440",
+      "git_blob_sha1": "1c6a529761650b18d9bb5dd9f03510a24d712a75"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/checkpoint_manifest.json",
+      "bytes": 2039,
+      "sha256": "5d5782faa4e2b5ab84173037d21fe8ec5f609445ce6dbd334a823ab2877f8999",
+      "git_blob_sha1": "851b1a1561f148092a4adbb16b0c1768d25aed3d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/material_GLB_reimport_50.input.json",
+      "bytes": 471,
+      "sha256": "8425c69d17284f6c7bc0e85f5a23743350322f941c7997d3c57a95b1ffd17a11",
+      "git_blob_sha1": "3b328e43346e0976d69e1ebf75cbca745e1b80ee"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/material_GLB_reimport_50.json",
+      "bytes": 558,
+      "sha256": "bbc3898702d170bcad563264dff821ff9f93f14d93e460a0a2af2cfdfb9b8ae3",
+      "git_blob_sha1": "d693351beb60294f3a4d781ef7fbf109df725984"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/material_GLB_reimport_50.png",
+      "bytes": 436010,
+      "sha256": "f38160ddcea74dd28be33ac53d8c31ef780626a95e279ed1c120fd39d3a947f9",
+      "git_blob_sha1": "751f1b29654f38eaecfadb978487de479224cfcd"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/material_roundtrip_detail.json",
+      "bytes": 531678,
+      "sha256": "7b2ccd61eeee3f0de77dac7b7b62a87620b9ee8559b25b9efd5dc883352e9fda",
+      "git_blob_sha1": "571daef2ec840171aa24d7b1356d0ae52f809f26"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/normal_angle_roundtrip.json",
+      "bytes": 401205,
+      "sha256": "bf116e85dbd108c37a8f35f80cbc998918b59f2021067d44f4f4ac4447c5d888",
+      "git_blob_sha1": "345a55daf70916923d2ff31a92b07f8370601c37"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/normal_exception_detail.json",
+      "bytes": 4698,
+      "sha256": "3d692eabf60720b6a504c398afe6ea6c231a8079d5962caf72fd19bd452ed5a3",
+      "git_blob_sha1": "818725b5314d2713919fd55f1afdfdc7670fb220"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/preview_denoised/material_GLB_reimport_50.json",
+      "bytes": 438,
+      "sha256": "dd5db3ed07d595037868c8b9cf88114203197b7274d846fe9d12b201ea8f35df",
+      "git_blob_sha1": "c21047826566357853ddebbc4f5c8adbe18b75c0"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/preview_denoised/material_GLB_reimport_50.png",
+      "bytes": 166280,
+      "sha256": "d71b115b65886da37dba19f7ba4fa3b31a62c0a0fdebfd7076a460460ce1dd6a",
+      "git_blob_sha1": "67029cb0a81a6deb63e5ed2342be89d485374d59"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/preview_denoised/white_main_50.json",
+      "bytes": 427,
+      "sha256": "0d58c94735b55b78ffdf34b89ed6168616040a0e1d842f3726117cc26f9e2c9f",
+      "git_blob_sha1": "d481197b2b0af922854d6c7027e3ef7edfd0ed67"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/preview_denoised/white_main_50.png",
+      "bytes": 141589,
+      "sha256": "14312b995c91c83b346af81edc846b7d9440346fe63279a118471c880ee65b79",
+      "git_blob_sha1": "17b635196813e44ed7683b9c0367b73662e04474"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/texture_glb_resource_check.json",
+      "bytes": 21076,
+      "sha256": "53374e486e476aa54831b7e434e57a60c5e2f41e68c9f6ee1545c2e8ee5cac1a",
+      "git_blob_sha1": "c1fed9b0b88a94fdaf497f792dd523aaa0b3f82a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/texture_reference_manifest.json",
+      "bytes": 12232,
+      "sha256": "7533e2d944e3eeca764d17112662eeab383df0a72fb810dac69a965d63f1696a",
+      "git_blob_sha1": "fb93a73dc405d2f29dcfb0987371a8ba5520c7fb"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/uv_normal_roundtrip.json",
+      "bytes": 174730,
+      "sha256": "8e1b5e11693e476adebd6f5920f153f980b4a8e50af77698dd952bd83bfbe475",
+      "git_blob_sha1": "1a95f01cd3f669b54c42b85bdbe60fd7182f4b92"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/white_main_50.input.json",
+      "bytes": 621,
+      "sha256": "4b2ea3d51b05c0b4ea5bc8301e8602485598dfcc651fa7d84bca6e4410d0b2fc",
+      "git_blob_sha1": "396acc5082d50fd6edf4f426029af7786abe93f4"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/white_main_50.json",
+      "bytes": 795,
+      "sha256": "02da25377c872b1be075107fb7e0d4a9672323ac25d64beecd7d530ff0397bea",
+      "git_blob_sha1": "cca81c8601a0245ee8e18724e05d99aba1c6c64d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/white_main_50.png",
+      "bytes": 280432,
+      "sha256": "66fc9d08debcb7b42765b01733dca86fb39adaea9c483bd377092dbeb6d8e1d5",
+      "git_blob_sha1": "6fd5b4b683ca95ac41f49b0b93be353493c8b59c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/white_roundtrip_detail.json",
+      "bytes": 519546,
+      "sha256": "74a6a42e512777f4c0328e8acfbf95d7d2aa5a7459a557d90264b7e6198f1029",
+      "git_blob_sha1": "b931828cab14b690772973aefc7f4ec4167ca3b9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/检查点说明_中文.md",
+      "bytes": 2789,
+      "sha256": "d2c089c4b5e15b0b7721e29732777cd8e396e8a720bdfab63a7d9721119e2fb8",
+      "git_blob_sha1": "73fe86e8fc436c3f0f59f119281a0b577557d9ba"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/A_detail.png",
+      "bytes": 196631,
+      "sha256": "0873bc05f560d7cd738ef1e09cf29bad11ed4f4172d40fe61ded7f7589fa053d",
+      "git_blob_sha1": "55b1252d9d32c3537f3ba52ae953d08319a4a160"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/B_detail.png",
+      "bytes": 260451,
+      "sha256": "a58263be6b3f9a63bb2eb40d4b547a1145370195a4c8faf478818265753c1887",
+      "git_blob_sha1": "7bb22902f4b0f28e6907ee99ef8f13eed2315e04"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/D_detail.png",
+      "bytes": 111567,
+      "sha256": "1a8a0d53e37a2d59f79f4d08322ec0a635ac92ad855c847db505956312dc193d",
+      "git_blob_sha1": "a91818f2b2451df10cd20eb7b081e196f7cc8164"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/D_source_coordinate_grid.png",
+      "bytes": 280446,
+      "sha256": "41207e01914fd22f1593f66d300ba39775543f34bdd7f75dc9fdd538b9d46b17",
+      "git_blob_sha1": "a573167a0d84e5bd05aba754c51117fa7dac8977"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/D_trial_coordinate_grid.png",
+      "bytes": 277057,
+      "sha256": "a18d7adacd00d269ae2412b111f42af949512d11c897a74dedf198a45ef3760d",
+      "git_blob_sha1": "b2da6956d65259d79c698200028fdf38d6935ecb"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/Dleft_detail.png",
+      "bytes": 63645,
+      "sha256": "8974d8285f0bcddbb6d35092bae9f9ad9b70ea2110cb97b9d2bf188cdf8904df",
+      "git_blob_sha1": "4cc0a35b22637d7e20cb288a4d98e2fa59a3758f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/J_detail.png",
+      "bytes": 297455,
+      "sha256": "0119f67dbc5104e38358683064684e879b656e0b9a420cb81efe6bf2e66f3fea",
+      "git_blob_sha1": "0e0d70d2b7088e4990cc0fa53f07526e3f5370d3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/J_raw_lamp_sash_crop.png",
+      "bytes": 87858,
+      "sha256": "de5bb56f99c4a57504b15efcfa4c10e0e84c32c517a2453d688de8d54d4c2427",
+      "git_blob_sha1": "229666da8d70b9e418c9847e6e5e026af2c3470d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/J_source_B_C_lamp_sash_detail.png",
+      "bytes": 52149,
+      "sha256": "ba9d415ae4ee3096cd39e607c97ce749ff66917d6e6920ead581cbce5cb1dd4c",
+      "git_blob_sha1": "bbc15a7fccf89ede2232793a6671ef6d83d07175"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/J_source_coordinate_grid.png",
+      "bytes": 178788,
+      "sha256": "9244d0f3487c2044c4970f32ed3aa5359b684cc452e8a887c05a645cffd94067",
+      "git_blob_sha1": "354e9a2f16d57ee3efbda63256e3c21d9283e67c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/J_trial_coordinate_grid.png",
+      "bytes": 216390,
+      "sha256": "aafddcc95955fb28a6038ab79ae04db6a2edf49836e8502a9b778fd0f2bb7d95",
+      "git_blob_sha1": "71124e62873ced2406eafd3e7823dac6ecccc9c2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/foreground_entity_correction.md",
+      "bytes": 911,
+      "sha256": "018e31d682e627ec1ca8ad7e9ad2e4aa686f1a82918cc4a0412ede389290a27a",
+      "git_blob_sha1": "aa32b9ccb28fc2fcb31435d502596684649fb6da"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/independent_r05b_source_review.md",
+      "bytes": 8464,
+      "sha256": "d00b089e86a26b1e147515e585f3c0ea075a76fcc0d66ac59183e9eb4d2f1714",
+      "git_blob_sha1": "6ddd8171c0c62c9ed28b95132b7454d3013acfd1"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/independent_r05c_source_review.md",
+      "bytes": 6688,
+      "sha256": "46c48028b8a24a26b290a9acf8cfc902c96dcd8aab2faad5315e59ceec927256",
+      "git_blob_sha1": "2ace0df5b310af7ae296979abb0e29852606a298"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/integrity_check.json",
+      "bytes": 5278,
+      "sha256": "77f24e3f4620ed158c3fce903fbe1d72a4f545e57c1b77e27ad8a9a03c0ee609",
+      "git_blob_sha1": "57aa46db43acadf61338cf96649b286e104df1ad"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/integrity_check_c.json",
+      "bytes": 4711,
+      "sha256": "73aefbfd3702645cd2e42de4a1c7db62b514c2094b08be0a4d5ec56280a6152a",
+      "git_blob_sha1": "a16581387b953ad2f37648be6aa89f14a8e5b1bc"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/independent_qa/lamp_measurements_c.json",
+      "bytes": 8864,
+      "sha256": "810ec991f811181420c6cecb25c9e15e2668fb8292d2ead5630de40b793ac80d",
+      "git_blob_sha1": "e611afa4e30f5760b425396122bf5a2895647081"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_A.input.json",
+      "bytes": 863,
+      "sha256": "bbf5acde988816ba03bd37146e0c8b5246431f5af3d68c0a3f5e8a6e70a66b0d",
+      "git_blob_sha1": "413073e10c53358e509c80dc9d5aae2d6a6b12d3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_A.json",
+      "bytes": 1037,
+      "sha256": "26e6e17428e068d63305d55e3a6df89ee1c38459b00fa924e1379e95bd808d77",
+      "git_blob_sha1": "b65cbb1d5874f1e424dbfe232b5f8a859be35ecd"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_A.png",
+      "bytes": 474957,
+      "sha256": "90c0443308da0fa93bf0c2fd7d73ebf38151930ba667202aed9a7919da74e443",
+      "git_blob_sha1": "090fcbb3eedf165194de2a517a9b514a672d98f8"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_B.input.json",
+      "bytes": 868,
+      "sha256": "5195d3eecfd9743b39412496d526f64acce2b368bdac10a33a30b1d1dcaf3ef1",
+      "git_blob_sha1": "77e16671c086e4a2b56cd869473e4c1461619e10"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_B.json",
+      "bytes": 1042,
+      "sha256": "93f5870b3b1942c84e4d95b7425a7f5952d08dd270b30248c1ece3526470ae15",
+      "git_blob_sha1": "8ebf7678d3836f02afedd6968befef0b20e2a20e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_B.png",
+      "bytes": 449502,
+      "sha256": "3071c186686ef50f726e56d7758403e1b2d2e808804d2ec325ce18ecc283ac72",
+      "git_blob_sha1": "91e55d62d77313f52492460f2e3fa6bc8e7e573f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_D.input.json",
+      "bytes": 865,
+      "sha256": "cde1a2fe6b0cb6674608b0c147a06af4b813fcab187b05bec4c5ca9e993a6db5",
+      "git_blob_sha1": "789d64294606add8f76daf1e3eeaaf4f7a82a50b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_D.json",
+      "bytes": 1039,
+      "sha256": "e20e4103f721fe856763d53936007e0c2e18eacc9293092ca6c2f6c8fd6f8325",
+      "git_blob_sha1": "dd1c8974a6723029d32e643174278f51f37780b6"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/HD_D.png",
+      "bytes": 468016,
+      "sha256": "0126f34f2131a74f14d07f5c91138f1a8d280197ffbef8e86544be27eb71dfb6",
+      "git_blob_sha1": "0027a871f81adb9f9b2a1d4eca74d0ad8be7c83a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/R05_HD_A.input.json",
+      "bytes": 896,
+      "sha256": "26b4d3ba63f94bb87a01161f56cf1a8cae88b7e3a85465ebb8448531b44bafb2",
+      "git_blob_sha1": "7902caa422fb2c8fe11b3ef2621fb8c86a98ad4e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/R05_J_LOCAL_UNRESOLVED_BAY.input.json",
+      "bytes": 901,
+      "sha256": "dac827e7799bf0c71b140e90429395831eddd7880544d5f3ec6063ccd99bc015",
+      "git_blob_sha1": "7d4dbcdcac37364c61d50e052d5da4cc2fb3ffae"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/R05_J_LOCAL_UNRESOLVED_BAY.json",
+      "bytes": 1075,
+      "sha256": "dff4d7ab2cc7ee09db7927563dc9c83c5e21cd59413af62ad0e58c75c5e29fed",
+      "git_blob_sha1": "8257a874e1f030c0d16ec3fb7e62e731ddd2eebb"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "bytes": 418226,
+      "sha256": "b415b6176ec31541a3d88d7b879cd8c8ef93515d5b70329fd1e7c3fe1efb2588",
+      "git_blob_sha1": "ce2dd2cae37dada2fe3b3a458386a307f2930655"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/INSPECT_01_forward_aisle.input.json",
+      "bytes": 780,
+      "sha256": "ddf8bd443885e197bc1e0b277f9fb886571819aae8c99947670deebe06f78cd5",
+      "git_blob_sha1": "7311db4f29c51090cfd7acf5584910ea3453fb13"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/INSPECT_01_forward_aisle.json",
+      "bytes": 954,
+      "sha256": "f38ddedf8acadc51c6fbad2d92b8eace5bd5a52d354749997f06f2172333e4dd",
+      "git_blob_sha1": "7b7210ebdee7ab8828ecf9ccc2af411a721fe833"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/INSPECT_01_forward_aisle.png",
+      "bytes": 1622517,
+      "sha256": "8a9956cfbb11e7171fc0ee7e0625e82aad228316fd44725a388eb395403e207d",
+      "git_blob_sha1": "e175f11cee7627d6146cefead8d5b58619b40675"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_A.input.json",
+      "bytes": 893,
+      "sha256": "9a1657b42a1216e79352bcfbc22589da280ff41ac9331b7b6fd1d82026b11aa3",
+      "git_blob_sha1": "25601227366929e6cb6a580c5150550116e45448"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_A.json",
+      "bytes": 1067,
+      "sha256": "aa9b5d76f2a82274ab9c5f511bf3eda4c565e3525a717d5cffda283ac2dbdb2e",
+      "git_blob_sha1": "140be9a1a8e84f2894e4b910ff229676348d34ee"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_A.png",
+      "bytes": 472893,
+      "sha256": "9b3980782ec0ca5bbb637b0c5794b23756fbc85a79743ff162cdf9ff529776a0",
+      "git_blob_sha1": "7867d94f17a60cedb4a8cf419ab835bd81444f55"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_B.input.json",
+      "bytes": 901,
+      "sha256": "b47d687dbdf1deee6ef683f1a65371491b8b05bec9361974be78150d18312d07",
+      "git_blob_sha1": "dd7f31b0013dd6b915a6cc05c2cb03de20c0d3d2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_B.json",
+      "bytes": 1075,
+      "sha256": "648126a0b4be197db05b0207af06460b6a5bd65db8e1f6af47bf58da56d3d017",
+      "git_blob_sha1": "f52ca290c87cc5a234f928eef3a61d7a685d176d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_B.png",
+      "bytes": 431489,
+      "sha256": "33674d1843a2e0505ebe0aa571cc16ef072310169b870b3d10e7fa822db2cb22",
+      "git_blob_sha1": "f96c28448465c3c64d77bc6f3ee61a29dcdcf90b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_D.input.json",
+      "bytes": 897,
+      "sha256": "ede9304bb40164a8755947fc4d35f9d24f53ee9da442ba24c302c025179bbb35",
+      "git_blob_sha1": "1840a091b42be4f61541a806b088c50626a6af0c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_D.json",
+      "bytes": 1071,
+      "sha256": "64ae12ff2775a1adf068aa2937e6f21341ea8c9a7bb938db84be9ea842321290",
+      "git_blob_sha1": "b46d36fc5afc4b4e4ceda8457a607c463c7f0f96"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_HD_D.png",
+      "bytes": 464520,
+      "sha256": "07019dd90fb994321cc927b2d8291465609a7a447f1f07a3c008781a6499e0fd",
+      "git_blob_sha1": "feb84b061b29f4bf9d4b83449c2b2bc89c02cf95"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_J_LOCAL_UNRESOLVED_BAY.input.json",
+      "bytes": 899,
+      "sha256": "bf73f0b85eaef99b4b2f2571749db68a7a24c2fc6364a3285766cadbeae7cc41",
+      "git_blob_sha1": "24fb403914ca4df45b0b09f300f4b38761d92408"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_J_LOCAL_UNRESOLVED_BAY.json",
+      "bytes": 1073,
+      "sha256": "a3612f6556938602e41e6cbff74c3ef6523d28d1eb08804402620ba771086f7d",
+      "git_blob_sha1": "fd8ef5f092c8c2341832fc308cc2475056c1b78f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_b/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "bytes": 418224,
+      "sha256": "08d8dd6f700e6fa8f1bf5a2d3a51ce74d0e2d959ef0c2568701c4c9d07bd51c1",
+      "git_blob_sha1": "8fae547af651b42d933f607398651516d37ab3bb"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/INSPECT_01_forward_aisle.input.json",
+      "bytes": 780,
+      "sha256": "94f1e5bd7b355a5fd65419d5fcd420805ef0ead7528f7f0584e9e553455e6f93",
+      "git_blob_sha1": "2828b46cd3cf10caadc09865144a8af5c1295fdd"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/INSPECT_01_forward_aisle.json",
+      "bytes": 954,
+      "sha256": "a611b9fe69f9a240635a6e2c2849ea27b2b45db5cb2c867c5b397b389f8c67f1",
+      "git_blob_sha1": "b2d93e697f3b7b7eeb7157e89d73fe1cb2866233"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/INSPECT_01_forward_aisle.png",
+      "bytes": 1618244,
+      "sha256": "5e9115490b361442eba25d26918ed79a376902260f5ef4d52460ceca1b4eec79",
+      "git_blob_sha1": "b9a6ee101b6eeff7513d064967e9888962cc4595"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_A.input.json",
+      "bytes": 893,
+      "sha256": "acd365c1764031285703a4b886dbd3481fdf82c97e34713758e0558aea8b9679",
+      "git_blob_sha1": "b28736e998c06912e685bf658b2d2578b1d3f6a7"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_A.json",
+      "bytes": 1067,
+      "sha256": "5dd4c83f0ea8564aa52af15dcb6ffde3b524b76aeda7a308c4a3dcda75d372db",
+      "git_blob_sha1": "9a639b1302cd11312db58b606976d0b8bbcaeeff"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_A.png",
+      "bytes": 471750,
+      "sha256": "be8f08f70dbcccd731cd722093514686437313fb95ea313c55aa6f7629c79fb2",
+      "git_blob_sha1": "0884938e398cdf6eade4eaaa384938cb38f6639a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_B.input.json",
+      "bytes": 901,
+      "sha256": "dea6d846abd581762f71ab699e92a75d1fa590698a4c5e6a77b7054978ad45a0",
+      "git_blob_sha1": "4657d26c8dc129cc1afa71e9196abef89bc408ce"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_B.json",
+      "bytes": 1075,
+      "sha256": "cd18f9e25cf1dbfee0c128f7034bfb38c4525cd42ea8320c85bc0b6c9f86b864",
+      "git_blob_sha1": "55e6d955d986f8a98b41df25bad54ab2475fda81"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_B.png",
+      "bytes": 431004,
+      "sha256": "41d42502e7d33ea6e4cac6b45b614c8a8978aefbd9e2f215b092c41dc41feb93",
+      "git_blob_sha1": "1fa248463b85a06818133b75fa8bfa5d60205dcf"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_D.input.json",
+      "bytes": 897,
+      "sha256": "ea5f87b30e1733bac7cad46e7f646790489f72cba74c152b0292c9bb2f4df40c",
+      "git_blob_sha1": "11b3b9db214b88c0a76c0958d5f77a8b0d13ce11"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_D.json",
+      "bytes": 1071,
+      "sha256": "0b5c95712e753cab7d7eefc3e4ec8a07d2ca9fda743d950c4a3ba752688b57c6",
+      "git_blob_sha1": "0bcf77e192a7985cf62444e88313a0cd4bfc43e0"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_HD_D.png",
+      "bytes": 463780,
+      "sha256": "c34d4c55e534519cce2e9c448d405681d7fa59cfb75aab2395ccf7ece1464bde",
+      "git_blob_sha1": "2cd197812fb5f55948a242a4742860cdf75f3553"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_J_LOCAL_UNRESOLVED_BAY.input.json",
+      "bytes": 899,
+      "sha256": "fd74af692689b6848020b72c3e1a7090632cdb2f5092f17b64f256705c323191",
+      "git_blob_sha1": "443f59d99c6291ec4e6ed5df54d402512d107a72"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_J_LOCAL_UNRESOLVED_BAY.json",
+      "bytes": 1073,
+      "sha256": "33c15e2271dd06361cce15141f897358fb8721967bd922727146b2ebb439ba36",
+      "git_blob_sha1": "206f8fd4f9c91dc7c3002378f931e2f40ae00c81"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/renders_c/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "bytes": 418448,
+      "sha256": "2fb96b2fbf6eecb05bd3bf2b52fea42f713572027de15f202db2620e5d42fc92",
+      "git_blob_sha1": "f7e1f8c3c7e04f0111f3acc5bc6e58811461c9a8"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/A2_seat_corner.png",
+      "bytes": 19406,
+      "sha256": "dc5c938b2012a399f264218ea1e160ccba5dfae21d7e42aca1534e32c129bf5b",
+      "git_blob_sha1": "28d0dcd9f89701521a6c3921eea3e337a057e53e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/A_comparison.jpg",
+      "bytes": 120466,
+      "sha256": "212dbc5dbdfba17649fdd5422057b8826c1b2cc3045e9752b16396e1f6f6d408",
+      "git_blob_sha1": "aa30847029bc909f5ef20564784726081177aff2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/A_direct_50percent_overlay.png",
+      "bytes": 201596,
+      "sha256": "ef6109f0c50040f62eb9eb37be7c31616d11dfcd6fa70a4ffd2e5235889fd613",
+      "git_blob_sha1": "0003743a3e6b8bbc7d64bb955e01a27406353438"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/A_r03_r05_same_camera.jpg",
+      "bytes": 84230,
+      "sha256": "2039af92f0b2bad44db11aa8daaa0158f9d59ef0e6919d09b9a9b49156890680",
+      "git_blob_sha1": "47ca811d0f53ac98fe62264f9d5442c709526573"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/A_source_half.png",
+      "bytes": 174119,
+      "sha256": "33b3a666a2f8891dc1f60f98532147348e33fcff83eaa7518bd0ab3339069228",
+      "git_blob_sha1": "a1f1d996f908ecd6b7c598428605fb5a2b68534c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/B_comparison.jpg",
+      "bytes": 110511,
+      "sha256": "29baca1adb38edef6fd70484b9714bf5996a0a924e71ec55ee2770d09dea9f2a",
+      "git_blob_sha1": "27b94daf97a9b37df4c362f68da4fb8473901fa3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/B_direct_50percent_overlay.png",
+      "bytes": 189393,
+      "sha256": "66b0d501db09dc9f402ac6c5b9b8b38802abfcc2cbfb42309e0abd5ae5d46d4d",
+      "git_blob_sha1": "ba6aed9fb0a0fb58295f9a63cd2870d45ab707df"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/B_r03_r05_same_camera.jpg",
+      "bytes": 69944,
+      "sha256": "1b7dbfe3b998a2c7a71c1d84776f271e13a46e8719ee9f5ad0bf9ab8954d97ff",
+      "git_blob_sha1": "eb1ac5563bcf9c734408d07e1abc5f5ba0a6da41"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/B_source_half.png",
+      "bytes": 159780,
+      "sha256": "5c028d9fcdeb6f5953732bb4e519e93b8c2d8b171839e9ba36f8650fbb6aec4a",
+      "git_blob_sha1": "e1c3b60b1b5ef69c9e28f002155e20ddad918911"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/D2_seat_corner.png",
+      "bytes": 22926,
+      "sha256": "18acf9092bb5c3b32b9c5ba242ab89b92d46217579ff2045f8eb64d778464d57",
+      "git_blob_sha1": "2c7894483705d2178ed1c1ff8301cad3a5e498ea"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/D_comparison.jpg",
+      "bytes": 122886,
+      "sha256": "9dd89ceadec27e0548ef0e0bf74ba75dae0631e2afdb3e168635d8aaed9ed75e",
+      "git_blob_sha1": "cf168883b2fad61b400614b262948f5354472022"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/D_direct_50percent_overlay.png",
+      "bytes": 205105,
+      "sha256": "09f57b97cd60fb16596da3cd88f76d879a3333805d5692bdb701b034a29524ca",
+      "git_blob_sha1": "761de000ccb471ecb88208aea2343abe91a2c965"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/D_r03_r05_same_camera.jpg",
+      "bytes": 80705,
+      "sha256": "8f48f0e4106aadeccc9b90dc31c6a89b84dc0ad42c8dafc98cef2b38c997cc2f",
+      "git_blob_sha1": "7b9d8d4292cb0cd0665cb53da18071d89b71cc95"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/D_source_half.png",
+      "bytes": 187023,
+      "sha256": "253677c299bc74373d5d0ba9c840ca270c56d3dfc3b4234fc243560dfacd7d58",
+      "git_blob_sha1": "4b704d3d3c3485779acbe1bee95b0aa12a5ef0e0"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/J_comparison.jpg",
+      "bytes": 85745,
+      "sha256": "fa086af58dbbe44111cfbea332a54e35154ffa64847c610598d58567712dd523",
+      "git_blob_sha1": "5fe8c4207effa0a6d8838d1e51181f123df95897"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/J_direct_50percent_overlay.png",
+      "bytes": 143283,
+      "sha256": "a39481c2be0b4c856ad0fe93762076e2a3a23a6c68ad6fc5e72192104913a75d",
+      "git_blob_sha1": "457894ffad49d7bf19c13af79573aac1930a6cee"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/J_foreground_surface_detail.png",
+      "bytes": 22418,
+      "sha256": "19275e2b01b68f7ad604de88ac4e09edfd12c35275ff837633a2c8911b80aea0",
+      "git_blob_sha1": "0ba4fc818e31837ecdd2aa59ae6de773771f4a14"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/J_frame_crop.png",
+      "bytes": 126442,
+      "sha256": "820d9e4279e99b25e143d30d38a8385dfd16cadb9b602bb8832212f91eeae99a",
+      "git_blob_sha1": "f85485ab61a348939cd00928a135e0644c23bacc"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/J_source_half.png",
+      "bytes": 112667,
+      "sha256": "5e6fb9ebb4ede6277143b6fa0c986e471e7fada1ea29fd59407822f39f04df52",
+      "git_blob_sha1": "28f58e91eaba41a27180a209dc07233daa6680e2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/comparison_manifest.json",
+      "bytes": 3087,
+      "sha256": "c18e16f00a70cf13d56bea5a265ed35621dedfef33584aaf206be9ac875599df",
+      "git_blob_sha1": "1f6755aeddb1554b851ba9b76d1b4b25461d53f4"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/denoised/HD_A.json",
+      "bytes": 410,
+      "sha256": "534cead913ab73bffc489d1e66f70aef52ec9fbda9fc0a1603599fe2d7671ab0",
+      "git_blob_sha1": "f0f14212e6fa07fa576f5017a1ff108d1da67e4b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/denoised/HD_A.png",
+      "bytes": 192457,
+      "sha256": "d0ae6bba62e6794e96df51197b5e81800bd8745fc407f73e8ccd0251c726f1e7",
+      "git_blob_sha1": "68c6d9e157955a9b26e9156aa8e145aeb64edade"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/denoised/HD_B.json",
+      "bytes": 410,
+      "sha256": "cd9a997ba94d5c0979789fa029331af75f158bc63446d2f24c2f82b842bd8d19",
+      "git_blob_sha1": "ac70b5f3d3890b54a6372a89d8a3723bffc025c6"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/denoised/HD_B.png",
+      "bytes": 164359,
+      "sha256": "759a20aa14f379a4b986a847e56a71e5e93139230170b2237ae92e4fabaf5202",
+      "git_blob_sha1": "13b2f087731a3d462b8ecd1768e336ffa8b42a31"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/denoised/HD_D.json",
+      "bytes": 410,
+      "sha256": "0bbdec024cec2fa4650408ada94282cbbeefd5c6407b44ba2dcad45a4e80dbb5",
+      "git_blob_sha1": "280534b8f85bea5bef04932040ee081b2795bba2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/denoised/HD_D.png",
+      "bytes": 179605,
+      "sha256": "7006f6a2998896fe6d9f069b45ad42351e17615406c674b3c58f60a3d7c15891",
+      "git_blob_sha1": "060b36c5a3d5721f1e38006780a4d4f824338b75"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/denoised/R05_J_LOCAL_UNRESOLVED_BAY.json",
+      "bytes": 432,
+      "sha256": "c354057d103ce682f498366fea2f5f02a52785d99404447a685215a1fb7c89c2",
+      "git_blob_sha1": "1d2a76669d1ea5f3cb03afa99983e40bd43bfa2f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "bytes": 135271,
+      "sha256": "5d5ce470a726187c318b6e2ecffbbda6f82f46c9823eca0ad3e6c4e2fd5f4e44",
+      "git_blob_sha1": "f9da03f60ff58e67ce98ca5fe48b47210ff5f202"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/A_comparison.jpg",
+      "bytes": 119478,
+      "sha256": "783e4e7a780640616630e19c824b553d5d16b68cc2def878ba4bb5fe8fd54d55",
+      "git_blob_sha1": "e9b0971c2b02b0455067c3b7cd035c8b5c22698d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/A_direct_50percent_overlay.png",
+      "bytes": 197762,
+      "sha256": "07ed1990980f4a2beebc4e7daeb50e437ec177ad00d3b1837b3f9de4b20630b2",
+      "git_blob_sha1": "3350b8b4ab58d491e3d9ff91ae7bca848561ed96"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/A_r03_r05_same_camera.jpg",
+      "bytes": 84402,
+      "sha256": "da5a99f72033fc0c06b347496189378bfb99a25c1f148e4035d9ba767db88bc6",
+      "git_blob_sha1": "78ce2b2adc4a555c8a984a49bc44343912e7597b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/B_comparison.jpg",
+      "bytes": 103503,
+      "sha256": "8bc1ecaa3f790184b177c86173925963ed5b9d8414586f7a909680ddd2b9f153",
+      "git_blob_sha1": "8cf756ee9729c0094349efbaf8d853d8a002383b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/B_direct_50percent_overlay.png",
+      "bytes": 176346,
+      "sha256": "f4e4d0f991255b4e47b109b8e1e6b5f58eb11f6e4e7fc89a80a9554af3a24f76",
+      "git_blob_sha1": "8b10dd94899055630ab72f258d8ef60d57efa1ff"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/B_r03_r05_same_camera.jpg",
+      "bytes": 65591,
+      "sha256": "71fa54a06302f99a3f559e48f17a48b2caacc776ca5bbaa93624035e1941d845",
+      "git_blob_sha1": "7440aaa50b7de378e76e8bed29ce643b284b4ce6"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/D_comparison.jpg",
+      "bytes": 122488,
+      "sha256": "75924c3ac2c0d60606d3ff6d79106514463b6178cd3e465f9957658d9622cb65",
+      "git_blob_sha1": "b9fd3f359718453b2d57a242402b3dea769e5a20"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/D_direct_50percent_overlay.png",
+      "bytes": 202891,
+      "sha256": "80c267f9ad8c70d3f762d6e1f84717f0236350aa4afcc2348f20432c3deb71f0",
+      "git_blob_sha1": "911bc9c8f5f54f0ac4b59a1eae3ebb686ad11ce9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/D_r03_r05_same_camera.jpg",
+      "bytes": 80657,
+      "sha256": "dad1f6571347034e52801a03e24f671ff1970f17d87f59c82a19a1739ea95c76",
+      "git_blob_sha1": "61153854bfc59f54f9a620f84f620f63bdd6afca"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/J_comparison.jpg",
+      "bytes": 85491,
+      "sha256": "b4f0792fbf4769ea9928db532d22f9e7ee762bc70a0b76d5ca0c879803aae636",
+      "git_blob_sha1": "484f55592920fdd03184596a7976fb3e085e3708"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/comparison_manifest.json",
+      "bytes": 3197,
+      "sha256": "63d2448a2db88f78d969e7dfda7302aaa6e2889aa5dacbfb7a350b98c530d232",
+      "git_blob_sha1": "3fd20fb26b6c53f5f6c7acbcbcf539c4b554468a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/INSPECT_01_forward_aisle.json",
+      "bytes": 432,
+      "sha256": "b974864c0432c07d378e4c4e7f05f6bf16ed3828b98d749a8f9eb1091e2c73c0",
+      "git_blob_sha1": "fb99cf87af460d7acd977bb9f81d0b446d9d438c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/INSPECT_01_forward_aisle.png",
+      "bytes": 549649,
+      "sha256": "35ff727b2a5f640117928892d69c22c6ec8da513a7f1dff3bfa6cb7eb7bfdb79",
+      "git_blob_sha1": "f86c56d10cbf03599afc8ecf17b52ae16b1a62c2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/R05_HD_A.json",
+      "bytes": 416,
+      "sha256": "2323ecc41c070f1adf2cf45925eb78709e30539d1257c77090c5b103ea7730ba",
+      "git_blob_sha1": "23ef77d7b89f110f5bdf851c7d059e78467feab3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/R05_HD_A.png",
+      "bytes": 191161,
+      "sha256": "bd3951b59e8ea4b4a4dde1b2377fe893ae283d11dd72bc3291b70f4f3c2adf6f",
+      "git_blob_sha1": "a9c3735abcd92218a5c49eaffbe92ca0eacdb657"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/R05_HD_B.json",
+      "bytes": 416,
+      "sha256": "39d12bc00233b1f9ce0e38bde8382308d25c0cc14797cdb1615d5d58844ddffb",
+      "git_blob_sha1": "e589c8f229746a093e4f4ee8e12cf6c8f458c37c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/R05_HD_B.png",
+      "bytes": 143005,
+      "sha256": "f13e7f78805e3f257e29f7e2923418c80acfc425415996ca2b0dcce9a5366179",
+      "git_blob_sha1": "3a2a15c0ffbb5c3d28677047cb4f22f8562b87c5"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/R05_HD_D.json",
+      "bytes": 416,
+      "sha256": "f22248eec2bd880ebcd57859cbc4172ab61a692d9a77ae2ed309342b3a29e6c4",
+      "git_blob_sha1": "d7ed2f2a1092696097f1117d3b7a0ff122e06966"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/R05_HD_D.png",
+      "bytes": 179963,
+      "sha256": "04ee1d22b81f88d1c5b03ffce27d69800e002dc541f0a9932c625390d719b46e",
+      "git_blob_sha1": "b4148fa935d2eb88df3a106ab8b9a95d5a26dc9a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_b/denoised/R05_J_LOCAL_UNRESOLVED_BAY.json",
+      "bytes": 434,
+      "sha256": "73042bff180e02ceae280e366fcb90f18f768bff40c011e096733960b1e3fe39",
+      "git_blob_sha1": "9923b89759236e5da7f47ac3e327f8a0336ce79b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/A_B_C_same_camera.jpg",
+      "bytes": 97431,
+      "sha256": "bf18e8397ee3ce8e1022f2be4210f965c730174ae074d1c6093d6d6c69cb4489",
+      "git_blob_sha1": "4b476a922a94a2ce2a226321d55633746760e1ad"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/A_comparison.jpg",
+      "bytes": 119632,
+      "sha256": "848d6acf8aea032fc3e3fad9f92a6b6710d1173c99f4baab97d177ccfb34e135",
+      "git_blob_sha1": "a41165756be86ceadc30f0f4abcd155c4b934caa"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/A_direct_50percent_overlay.png",
+      "bytes": 197977,
+      "sha256": "dcfe838d46b65fa00e745a3b3afaf651b8d56fbd6c008dc38bcb0b6a484c3bd5",
+      "git_blob_sha1": "734519609ec4ee74cf466e3ccfabb5bf9062254d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/A_r03_r05_refit_camera.jpg",
+      "bytes": 84494,
+      "sha256": "a0453d03bf3793b93e31a75892382eacc56dc937d2251ef9d9a38515d6136eca",
+      "git_blob_sha1": "2bf536e167bc6fb36bfba53a42a31b1f8a5ffb70"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/B_B_C_same_camera.jpg",
+      "bytes": 70534,
+      "sha256": "ee02a24444f262f6a56c2bba8966bc49ccc1878a18e190369edce3ccb30b7a11",
+      "git_blob_sha1": "90dab72d3e2f206c15d9063da7a0ab0d843f2b18"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/B_comparison.jpg",
+      "bytes": 103600,
+      "sha256": "966e9904debb4d6f3316b98005261845517339a3666b7e8770e20e9fc4eb9b15",
+      "git_blob_sha1": "6cab1d744933a1de36a38d7d7544e9ef2a10a109"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/B_direct_50percent_overlay.png",
+      "bytes": 176351,
+      "sha256": "e75ca767d02df8c7ab6a2cb34f22798f8058e34186e60607364deb5af8f8a2a4",
+      "git_blob_sha1": "c432718da683cd7636795eb5fcf0d006b8d92dbd"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/B_r03_r05_refit_camera.jpg",
+      "bytes": 65653,
+      "sha256": "8f78331e13c582f1a8258f917684de70b7764c066572b755fdc4108c14e3e4eb",
+      "git_blob_sha1": "ce405f9652ff58a0208e6b340d025c7837cd0761"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/D_B_C_same_camera.jpg",
+      "bytes": 89783,
+      "sha256": "979406add7d2f8fcce629a97ee01382b7d0653d38cc6f53b8f96871024be3bf9",
+      "git_blob_sha1": "5c7fb49532635ff34c1944318a59d47e5e15321c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/D_comparison.jpg",
+      "bytes": 122462,
+      "sha256": "8808c33f165033bcc3d80cd7a2e84f20f8e0bd561a7782fbe44e79cb6f448cc2",
+      "git_blob_sha1": "b056af7cb6ec0e72e24c68f0bb4b940ac722fe35"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/D_direct_50percent_overlay.png",
+      "bytes": 202794,
+      "sha256": "d6d3fcf8dd3d86fbcc77d0e24561fa48965a43e243abd335e9a947a6e06d783d",
+      "git_blob_sha1": "46e372c61960bb680994fc7f74be064186802f0c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/D_r03_r05_refit_camera.jpg",
+      "bytes": 80617,
+      "sha256": "0def674c836ee6ec39491239549fe7a8d328f6ab3730d7f1263b417e82b35108",
+      "git_blob_sha1": "13982cf2e6f1b2389f0b3b62e956b1a1f274832b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/J_B_C_same_camera.jpg",
+      "bytes": 65201,
+      "sha256": "e1351c12c1f9cb7d39fac6250e06bd22bdb3aa03e751534cefd1885865920275",
+      "git_blob_sha1": "9b6e95b71732393b18708edc3f9330a2c2a5dab2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/J_comparison.jpg",
+      "bytes": 85446,
+      "sha256": "c127d03f4d4a86ebab699d97ca27986da93c364fefba71d5d499c476fab6b06c",
+      "git_blob_sha1": "b25a0b555eaf33e4bc6054e97e321bfbfe5f8eb9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/J_direct_50percent_overlay.png",
+      "bytes": 143504,
+      "sha256": "5f8fa7599ee8d17b9fccb989c12923cb585e1cd54fb3d144b63020e1e365485e",
+      "git_blob_sha1": "038d9f0bcd95237e94320224288210d013b41f56"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/comparison_manifest.json",
+      "bytes": 3197,
+      "sha256": "a519de2d0b9527ea93379b3869fb7c46a3139096211c5cf747a3dd304ffe3f8f",
+      "git_blob_sha1": "5e19bbbb363d5f72221725dc4eae631dadd1b9ee"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/INSPECT_01_forward_aisle.json",
+      "bytes": 432,
+      "sha256": "ed73dbc3e785bfd68f77529af1ec3bd1836613ca59927e929dae7547adac203a",
+      "git_blob_sha1": "2fb4e63ee30f6e4c70db182b385322d08194eb01"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/INSPECT_01_forward_aisle.png",
+      "bytes": 551432,
+      "sha256": "cd4f6f3ed07922def79e6acdee40d392149b7c2dc1264a3945072b4b195de39a",
+      "git_blob_sha1": "74902dcd74633b8760f7e0a2c00b986f5195a098"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/R05_HD_A.json",
+      "bytes": 416,
+      "sha256": "284dc41c3b7111620bf9ffaf14241ba8c8227f90c1ce61f76e7b9b31d3acca08",
+      "git_blob_sha1": "35d055fd2e037fcb9a9dd8cbf55872135e180aea"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/R05_HD_A.png",
+      "bytes": 191288,
+      "sha256": "5612533d740783968575cd28c06212d2829d665911eda3c3c63ce56b1e1b156c",
+      "git_blob_sha1": "fe3f429012708b64afb96594f302aee412dd7424"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/R05_HD_B.json",
+      "bytes": 416,
+      "sha256": "95783a73dd371414f7af2b774e7f4bbd1ad46210b68b21c2b2fb8494f51e3e6d",
+      "git_blob_sha1": "3d4eedff4a8878311b829af5406beed2d4dafefd"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/R05_HD_B.png",
+      "bytes": 143137,
+      "sha256": "bcef655a4e00d1275200581728763488c69e11c7309317c46ddf838f66376966",
+      "git_blob_sha1": "878c9c0545f85aff4215824f1a6af298f81e2bc2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/R05_HD_D.json",
+      "bytes": 416,
+      "sha256": "31172e604b1429e0415b8d2c7a4072e73556a9f1a021115eae1b5f109420e021",
+      "git_blob_sha1": "8e0218a5e2d3a417aaedcdcc86cda3e337300813"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/R05_HD_D.png",
+      "bytes": 180157,
+      "sha256": "45d01ebcb211b1d9fcdf9f58aa2e0ccd278cd722e4cde3627b6ea31674a4b661",
+      "git_blob_sha1": "9167f94a1911c951e669166a1e221bd2a4f5bdaf"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/R05_J_LOCAL_UNRESOLVED_BAY.json",
+      "bytes": 434,
+      "sha256": "b762d65f6d01fcae222d50b042f0507c950d90ccba3a5d70233b1c83148bd94a",
+      "git_blob_sha1": "ab67bde933eaeb5dd32961fbb7b756521ff4f186"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "bytes": 135455,
+      "sha256": "1f70888ad6caa279fcd23705e332dec896c388a6c18e3094be39ea1cc83b73bb",
+      "git_blob_sha1": "a3ad5dcf7ebc6240afd68430eee666a0b62449cb"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/review_index.json",
+      "bytes": 598,
+      "sha256": "48df84ac3fbb877bff06d7bed63742f74f124bcc135d724feb78b17415407499",
+      "git_blob_sha1": "4ba93e00d0bcc1960729af75b5df048aa5e36fd9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/build_trial.py",
+      "bytes": 4356,
+      "sha256": "bf65f1696258de92ac0c5ef075fa4bc647ebcfed795e51f461f649ba7d8ec40f",
+      "git_blob_sha1": "95ed7ee4f4b5892a2a61da6556d7d20de5849b51"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/build_trial_c.py",
+      "bytes": 3983,
+      "sha256": "64c3838831df2dd3eeb7ac9c74e2305b3d2f6b1aab41b103a58adb449251d405",
+      "git_blob_sha1": "81199fa7ea96d02ae8de399d5d24aafc1c09fe7b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/check_bc_state.py",
+      "bytes": 1973,
+      "sha256": "6ccc2488731d912b2b0c665a4edf4072a746a3619b7b024baf873d4bd119d3d9",
+      "git_blob_sha1": "0a2b083660c6088cc29a80afa004ff985cea8bbb"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/check_d_sequence.py",
+      "bytes": 1708,
+      "sha256": "9fc7d93d292ff0b5531dbd1398d5ecaae8317a013a03279c447615ae5d3dd219",
+      "git_blob_sha1": "7f8052d1d51db4b3687f6b99d76690f3154e0e5a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/check_j_focal_range.py",
+      "bytes": 756,
+      "sha256": "ff041006166d2aca00328652e42408ee66797f68e93efea5d8b2f04de7366da1",
+      "git_blob_sha1": "9571104242f75b08784e23a04bdef337310dc353"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/check_texture_resources.py",
+      "bytes": 2132,
+      "sha256": "eda165a167dbcac751e9407274d2c1811e76eec2e87773cc15c7889ab16c6e42",
+      "git_blob_sha1": "20560e6314b6e91f2965983df99c8ca74675b748"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/denoise_checkpoint_previews.py",
+      "bytes": 1682,
+      "sha256": "caec4546f91ed181ca13c2581c9afb806a5983a706e5ac9c1c9d26779665628d",
+      "git_blob_sha1": "c7ac1cc3b214b3a763c38f60c6326c3aea22b4a4"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/denoise_trial.py",
+      "bytes": 1617,
+      "sha256": "6b0e3e49b9ba035256c78a7d412fa02df68e7b65b059eeda588d0b24721e310b",
+      "git_blob_sha1": "6a59ba27ad7e41ec3966122aba917a9af4d50e9e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/denoise_trial_b.py",
+      "bytes": 1621,
+      "sha256": "91d23363d5ddd2a7eb2b78d3ab98fe648893401a45567b9f59a6ea775ff5c59f",
+      "git_blob_sha1": "428a4f6ad270ec5747b45ba1773f5de05e1d10ab"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/denoise_trial_c.py",
+      "bytes": 1621,
+      "sha256": "ab77e214b78aaa28cde134c95880de8d070bb920894cb888b13ce649fd3bdf33",
+      "git_blob_sha1": "fc3f0cfcd423465d6ce0c6460b0f96c087f4e0a9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/export_checkpoint.py",
+      "bytes": 4901,
+      "sha256": "24f38eb1573c9fd3047c16e93b8f6c13ecade05b08cbbeff385581a9da2eab1f",
+      "git_blob_sha1": "040e495985b76583ea14822b41a524c41124a8df"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/finish_checkpoint.py",
+      "bytes": 2036,
+      "sha256": "3a5c28b70cde9fd806e3a3800d096973a2738c794c983c0dc0f2f85933656646",
+      "git_blob_sha1": "6e984c417241ee51ee557998b1cc9eac2fab8638"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/fit_bay_hypothesis.py",
+      "bytes": 3621,
+      "sha256": "a9a4ff074328ef5408fb6d025a9004bff5f5ee1e3289ea36b9bc0af2b0c41079",
+      "git_blob_sha1": "f9d981adc074542c8ba1be88a2afe423de2928d5"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/fit_head_and_rack.py",
+      "bytes": 3358,
+      "sha256": "935cf19f63fa8c4f0c540c213369774675ef101736edc75e9d1433bcdbfc5b18",
+      "git_blob_sha1": "b11a051e2437f582bfcebb8b3738bcce4e5bca14"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/fit_j_empty.py",
+      "bytes": 2749,
+      "sha256": "02ce19f874d3c9959b0449164f3e5cf6207ebab3f6718d43c01bdd076d8d2882",
+      "git_blob_sha1": "36a35cad503928e7b490309b70aca9a80a71fe4a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/fit_rack_cross_section.py",
+      "bytes": 3483,
+      "sha256": "92403932d5138290d4ad4058aae364adb729494afbbf12052e3d05a57d96521a",
+      "git_blob_sha1": "ec81bd10b031191b3a6bb43ffa0d58c7953e2f7e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/fit_seat_contour_refined.py",
+      "bytes": 3917,
+      "sha256": "877a07f225948cca268c823fff603771a25826c3c9a6889624930f1763cd0963",
+      "git_blob_sha1": "4ad15c6bcb47b5d5fe71686ac0c85f5ee04e5c42"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/fit_wall_headlights.py",
+      "bytes": 3232,
+      "sha256": "d1fddfc24cfb66df3f715de0abb962e6ec0e30866a2bc3e64dde768d8b1b9859",
+      "git_blob_sha1": "a29383dfd4a2883b92262ba166fc7ec35a101a61"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/fit_wall_headlights_bilateral.py",
+      "bytes": 3230,
+      "sha256": "2b07a0d4d6a0a3d75ccf1159c7efe06f8a5005c9d423217624c958a68e5b44cd",
+      "git_blob_sha1": "6d1ff297058965643b85958975d7df0424cc9d84"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/freeze_camera_trial_b.py",
+      "bytes": 1620,
+      "sha256": "917c0e88c7a692d49f3dea5a94537d64828cf55272527617135939dc02914497",
+      "git_blob_sha1": "87904a097b5f7c270db93e0c92da206bdaa4e7a9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/inspect_checkpoint_normal_exceptions.py",
+      "bytes": 1157,
+      "sha256": "a659e86a1f1e3a08160b60141db11e23768936fee17e816a20bcac5aca655d2e",
+      "git_blob_sha1": "a7c7dcc8ae2518c7ea16aeb27b8cedf03ce8c047"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/lossless_glb_png.py",
+      "bytes": 2324,
+      "sha256": "bcfb87f012654f7fa71da6d4f2be38d37528dea1efdd0635cb0c4740bbe0a2cb",
+      "git_blob_sha1": "21930ad0ce84d2a3401d282d8e75cf77c5bc9791"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/make_review.py",
+      "bytes": 2295,
+      "sha256": "5cc3c8fd4bd80576d74cac93b79a180a381defc9b40345ee21c9bd114f2f9bbb",
+      "git_blob_sha1": "c82c4d8ee05a37d68b6bfa52d5dfa25a812235f7"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/make_review_b.py",
+      "bytes": 2349,
+      "sha256": "39f3ef591a57c4e96f799a82385cb7f4bb629ebae738a49fb5d19f614c1061db",
+      "git_blob_sha1": "99f6c3e717d40699ad4fd9d88e7b228a2aa3ca59"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/make_review_c.py",
+      "bytes": 2350,
+      "sha256": "94c9f5f1ab2693579501f16259da16ce79d02a60763af5f63d18f39251aa516d",
+      "git_blob_sha1": "9f9da516e5b42f062896a229f88182345b302832"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/package_checkpoint.py",
+      "bytes": 3558,
+      "sha256": "3c698fabc8e2133eacafb24d7a531ffd2ad4206e39045c7242a1b6872ee0961d",
+      "git_blob_sha1": "8046b78fbecac88ea83b3bc8f3873f96dcd7cbe2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/qa_shared_trial.py",
+      "bytes": 11566,
+      "sha256": "b0e719c15f27875ca90bb7b37aae4eb5b98049d333a425665a3b05d3d4ea41f1",
+      "git_blob_sha1": "e244066a79155a9d1c7ddb21ca680cbbf846de93"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/render_glb_checkpoint.py",
+      "bytes": 1959,
+      "sha256": "45b84f49ecb8176e47ca19f57e70398e393af026541cfc792f0d2e307d316c37",
+      "git_blob_sha1": "5337fec09235a275ab5f684b0e124f45809d3d26"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/render_trial.py",
+      "bytes": 1277,
+      "sha256": "5ec05dbb98b58f9a8dbce2e55e80858dd9d36a0b102241bc2b7106a610290016",
+      "git_blob_sha1": "ba4d6f78aa548bec63ca9dc0bed72022f7c0d162"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/render_trial_b.py",
+      "bytes": 1482,
+      "sha256": "67bc03c86462d7cf9c5f1e28c96fec9120cae235d2968b9e5d9a72a8a3d29f26",
+      "git_blob_sha1": "743d22b826cda59e3b8eec7233756133156523f6"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/render_trial_c.py",
+      "bytes": 1482,
+      "sha256": "981159eff350b0399dbebeeaafdf2a59e21c91f50734156318054065ce59acaf",
+      "git_blob_sha1": "0e3d14661d21298c32aabbdc44d4fc56af251d4b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/render_white_checkpoint.py",
+      "bytes": 1288,
+      "sha256": "3d9257c761e2747fa34174d6b6b285fe5f6645ac287f49b0bfb26589f16d07cb",
+      "git_blob_sha1": "33f6f7b5c2d281996e3ab2378ce1cd6a1c8ab17d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/validate_checkpoint_material.py",
+      "bytes": 3515,
+      "sha256": "c6c33a8c0b610a388401ffa3d06cf6858522b3fa2a5503d0ce81bfb46b7519b9",
+      "git_blob_sha1": "fe5d0569730764cbfb001283315ffd1d6d6cfc6e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/validate_checkpoint_white.py",
+      "bytes": 3500,
+      "sha256": "a3b2aebf0217b3c1da0d744bb6aa1815fbaf0891996730b3c9f7771f10385dcc",
+      "git_blob_sha1": "8869315d58e1e28e2dd7f6ce1f52ac2df9edc17c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/validate_normal_angles_checkpoint.py",
+      "bytes": 2143,
+      "sha256": "be0132bccb8db943af157270ce59110fe21a4bde1b1d90536c72377948771980",
+      "git_blob_sha1": "e2234e3b16c85122b6cf59561bbefd0753a808db"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/scripts/validate_uv_normals_checkpoint.py",
+      "bytes": 2180,
+      "sha256": "c1caee86dc5aca3fc6e6b1e15bd63cc5aaab35b36fbaf7931dd1fa1a2325cd5b",
+      "git_blob_sha1": "8d66b50d3a2356f5cd94fa85aec5d9284a7ee6d9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/共享空间诊断与试验_中文.md",
+      "bytes": 8528,
+      "sha256": "e355592082a667b72dfb92ab53fad61b8edd415a38c48839f879962b1d84785f",
+      "git_blob_sha1": "be8649cc10565b06d3d95646b54f8379dd9e54c4"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Door_wide_59m53_paused.jpg",
+      "bytes": 48541,
+      "sha256": "f0baa2930a2b6947c3da199609b8bc45896a138d16456feefa203b52f46ad5a8",
+      "git_blob_sha1": "21b3992b738e60b72f24d2e7b66fe26e2bded4f0"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorseq_01.jpg",
+      "bytes": 57195,
+      "sha256": "d2cd2ad35b909579a9b505d41882380d4bd265b74db089d01b363dd5816cf982",
+      "git_blob_sha1": "61ccbf9161aac2bd47f3e6a68b408fe25c1388d4"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorseq_02_paused.jpg",
+      "bytes": 82235,
+      "sha256": "2cd12bc7ae6fcc0968f836ac4fb2962983b2f0a33aeb01287c39cf171419a1fc",
+      "git_blob_sha1": "5aad90f48c99fd19aaed4d74d84a5ec601d1d056"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorstep_55.jpg",
+      "bytes": 47411,
+      "sha256": "e55261e5805ed3d7b311a0ee039a44fceded09106a61c800fa89c4c33315e1c6",
+      "git_blob_sha1": "ab4e7cf9f219ce5d36594467cbd32b718f6f7f30"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorstep_56.jpg",
+      "bytes": 47366,
+      "sha256": "7d8930dd8507e695663011f6e1b8153c9d605a0236f6e5579066be508effb6fe",
+      "git_blob_sha1": "dacfe037e1bf707d7405379790acb71f5ccc4905"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorstep_57.jpg",
+      "bytes": 46889,
+      "sha256": "4eedfe4aa004648c871e272ee2895c5a4a712963833314746e4993475fce9d32",
+      "git_blob_sha1": "16b7fcb3ea92ce8538214fbef99cc465c4be1937"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorstep_58.jpg",
+      "bytes": 48677,
+      "sha256": "7744e624ea1d206cb6e0ebb09205a8a0a90709c939b434e7e07f9f9d8a8f7402",
+      "git_blob_sha1": "1e136be6f0cd091081dcbad30ee87e024854b1db"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorstep_59.jpg",
+      "bytes": 53603,
+      "sha256": "7b970775a9ad9917fe206713d165cb0c373521d6660ec084a967c2a3162d29c0",
+      "git_blob_sha1": "d76d4dab14a9e34830b24d5307940fe996a1c50d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorstep_60.jpg",
+      "bytes": 75756,
+      "sha256": "28e017338a5c1da0dfda748ef3ad346b12bf577386d897494251db729bd3410a",
+      "git_blob_sha1": "0405ccecffdce576f3e2298b90d78f58d644923f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Doorstep_61.jpg",
+      "bytes": 77967,
+      "sha256": "aea316901a2823cb04c9ef82f70301748c5cfce06017e48fa6c71b56476e9921",
+      "git_blob_sha1": "d57ccf0dfad0fea2bb04ebbb6682e2cf93f7a3a1"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_01.jpg",
+      "bytes": 66749,
+      "sha256": "8bd743efc65fc2785a2e5a99fd493471bdad795bc4f7bbffce855eeebbaab3a6",
+      "git_blob_sha1": "562e57a81ada0bb0078eef47daba83d5130004a5"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_02_paused.jpg",
+      "bytes": 70063,
+      "sha256": "8e1b2350b3402848bdabeca1e1d1bad97f42dd63c59f5d53814d3780771cd779",
+      "git_blob_sha1": "0dc0b8037884aff8f4ed8f1521bb15145d7863ce"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_03_clean_paused.jpg",
+      "bytes": 60419,
+      "sha256": "aba73a6dabc8a3f1ebaa5ce38fddd281782bcd120084fc1c4d5f76649c5ab584",
+      "git_blob_sha1": "5783b29e8b4bc87040ef3e6286d8d6e25ad65627"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_04.jpg",
+      "bytes": 59160,
+      "sha256": "08f4100d8627ab02b6f3c45b56cac0d9ac3e3a4a0833a79ebad8c3abf9e5e914",
+      "git_blob_sha1": "6b0f9f3eec600245d36b998c043b7824e936bba6"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_05.jpg",
+      "bytes": 57592,
+      "sha256": "b43f701b9258f9624f1b7a985e7a52d2ac9c1d58eb8547252b1e9b4605170bcb",
+      "git_blob_sha1": "cdfb2f53e02ad6e5318a6b59e2143d6149abe1e3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_06.jpg",
+      "bytes": 59890,
+      "sha256": "c717143e94b7f85ba32da8a3670e0cfe6c548ccfad082db0240dab70ba55fc49",
+      "git_blob_sha1": "0ea99111bc191b54c202f55e26798b9e27196cfa"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_07.jpg",
+      "bytes": 61008,
+      "sha256": "80d443010de6b624543b9746cdd37633592524ef7ea6e4fc0549248f0ff63371",
+      "git_blob_sha1": "b71603066e9dbd8e1c0c75fdc589d23d3c87933a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_08_paused.jpg",
+      "bytes": 59000,
+      "sha256": "7249dcaeec5ff11bf19f031e11c0d3f6096097f4a77d556e990866c8789d10fc",
+      "git_blob_sha1": "45472d85964b15ee9e8a5f9a9a02522785f37160"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_09.jpg",
+      "bytes": 61173,
+      "sha256": "28615959c17b66f072e1954308fe4d7ffb32819800034d8ab8fa59ece486d03b",
+      "git_blob_sha1": "4d7acef32970f19f70e8a67a5104b8b8a6ef5ad2"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_10.jpg",
+      "bytes": 64158,
+      "sha256": "af6262ae8404914d4503255af3383757a7057139fc9702098552b42387175a8d",
+      "git_blob_sha1": "6f14e77b641fda7fe50749a9caeedc74464d282f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_11.jpg",
+      "bytes": 62628,
+      "sha256": "50fad7791ea206eba4da9740aeadbe9c85ee850985d5f0d687b3cd256ae058f7",
+      "git_blob_sha1": "a0734dfcf44796d0012a0f54e06471a8b320ddfa"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_12.jpg",
+      "bytes": 56309,
+      "sha256": "abe7377f92bdc496f9d7b61586c5cebc3193c09374da4f78038e7519b4181987",
+      "git_blob_sha1": "9b9580484fdddbb278d6a80fa5db092598f8b678"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_13_paused.jpg",
+      "bytes": 57371,
+      "sha256": "fa2ad4c6e10133ead340dea2167e01782301bf7c4a4f6d2f57d59a5f17f45832",
+      "git_blob_sha1": "e94c3227b4a24b2ba9f950c58ca50037e4b7ff72"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_14.jpg",
+      "bytes": 58170,
+      "sha256": "404dd7ddeca32550bdf97e8505f4966469f1c8f926ca4aae180b70293e7d1ee2",
+      "git_blob_sha1": "277d574e24c324ace769e7687cafc4fdc09b4a6f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_15.jpg",
+      "bytes": 55193,
+      "sha256": "00c1f71ea3be06c9cdfdf2a7309e802a614ebbaffa263de13c54d32dbe5d5858",
+      "git_blob_sha1": "b2fa2f63b4a7caed830957867121f0e17e50c9a7"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_16.jpg",
+      "bytes": 54989,
+      "sha256": "4179f1b5e7b5225d1a84cac7943ba035351a07d7cd6db1ecc0f36f925f684148",
+      "git_blob_sha1": "3ba5bade2188f487209ca82cbac19daed747938a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Dseq_17_paused.jpg",
+      "bytes": 62593,
+      "sha256": "68a55179ac5a811bf0e8f2e06efded20d7b4a84c4b625d85e23eb6bc3b74b85c",
+      "git_blob_sha1": "f172f33b1f6be83c3aedbcd31cc8ac3b0e838a34"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/D顺序观察索引.jpg",
+      "bytes": 234058,
+      "sha256": "1080eb3a2e2e6f46e4eef55c310d1afc37977fb63a2ade55e47225c05e1373ef",
+      "git_blob_sha1": "bb54349b54022276ec33bfcc4ed5dc4c3b390ce8"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/J_empty_window_clean_paused.jpg",
+      "bytes": 42212,
+      "sha256": "265cc7fc402ae56f025cc6696aa0900e31c89675a23647c25b4d9d2ea5724762",
+      "git_blob_sha1": "99d076e0db9762882d408d96ce02932ef6d18641"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/J_empty_window_paused.jpg",
+      "bytes": 51760,
+      "sha256": "aca9a0dfd04b9a2bf6cf89adc8dfd7fef4ee850791beb9cfa8565e849b240033",
+      "git_blob_sha1": "1469672372e69013d3aadb1debf742db9e944201"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jend_01.jpg",
+      "bytes": 56325,
+      "sha256": "d668c293ea0216faf1107e20385efbe4ed0ae6e8f72626510bde342c935bbd10",
+      "git_blob_sha1": "d2b121d9bf781fbc8934b2f88b78aae82fe657fa"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jend_19.jpg",
+      "bytes": 62829,
+      "sha256": "2ba7c96a40e0123054627cf801a784386b9ce3d279437392d20789d314aa240d",
+      "git_blob_sha1": "b12dfa6badb795f0fffd8c43327b138d149aceee"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jend_20.jpg",
+      "bytes": 59533,
+      "sha256": "916e81008bfa085125095218e196146e33c8f88dbcc4c069daa1f1336bb2f397",
+      "git_blob_sha1": "f7a06ea68b96b1ada88a5164528ec3d3fcd17b69"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jend_21.jpg",
+      "bytes": 57637,
+      "sha256": "a29e45673138a205ff48818ab66f9f63ca88144b6473aab92a0297bc466ebdc7",
+      "git_blob_sha1": "416315165bc08d81eee963b2237678b5e958600b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jend_22.jpg",
+      "bytes": 50326,
+      "sha256": "6aa307cbeecf05dd45801b15d5228d034599d2d35b7b3b1901b7ea25af6e5377",
+      "git_blob_sha1": "931d5bbba4c5124d35c6f8ca515b0001fe0cbd28"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jend_23.jpg",
+      "bytes": 50894,
+      "sha256": "8c3d86cc6a87839d7acdd043df98564c60091722d6d37f5b108d51c4570ffc15",
+      "git_blob_sha1": "0f47528d6bf9149e1f1cb6b8f495f03590beedba"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_01_paused.jpg",
+      "bytes": 68592,
+      "sha256": "4f8c0776132dec524a41dffbb8b0423d6bfcf56e442da46cb861fbbdd2ba7444",
+      "git_blob_sha1": "54a71e6d1e50ac9709373edba66a24bc0a2e9844"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_03.jpg",
+      "bytes": 53565,
+      "sha256": "7a47feacf3cd4d2dad09911560adba387af5d170f2ce68c435dea7da6b215b22",
+      "git_blob_sha1": "eaff15ded390142171f4a65e7cf4c85e1db670de"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_04.jpg",
+      "bytes": 52671,
+      "sha256": "1890ceae98fda53c2dc8b41b17ad3acfbeae1f3c3a1eb711102a1d39b5e3282d",
+      "git_blob_sha1": "d8949ed832ca68fbced9ea79df87d228297431b9"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_05.jpg",
+      "bytes": 49787,
+      "sha256": "0570c0ac0cf1d6523db8ac5b68c4fb83699d26a71d84be84e468f07f03d18f94",
+      "git_blob_sha1": "e50d2388ad716c897a232db5f74c89d4d4ec4c13"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_06.jpg",
+      "bytes": 49834,
+      "sha256": "c9d8b307692ffe0fc79eb690020cb313e14174f06c5fcf168afe5f7907f4ac94",
+      "git_blob_sha1": "ff9d27f94a7cb8fb4647374874ba77630e5f3cef"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_07_paused.jpg",
+      "bytes": 66627,
+      "sha256": "83494c99e024f970ce94e1a325c2e894f03063f3e2fe754c4b87d1c5d7fde64f",
+      "git_blob_sha1": "556a041df1e85074765b6a773553b22aaa154d20"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_08_clean_paused.jpg",
+      "bytes": 57668,
+      "sha256": "6a3453ed2a63f104382b41360eeea908d4be1a6369895678107a38856b90c4d6",
+      "git_blob_sha1": "def32dd0b4d2fa28d999e0c4ec9786998ec82bf3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_09.jpg",
+      "bytes": 51632,
+      "sha256": "2cef6fa5303646503a5cb52be5d0551f1dcc281ad781f2192e7db34900005ec3",
+      "git_blob_sha1": "b913474915417b7f6d071b92befcc20ce99a13e3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/Jseq_10.jpg",
+      "bytes": 135261,
+      "sha256": "b7e0432bb149a0fede5fef1f07dad7196c5eb66d437a6c2a602f8c12599df8f0",
+      "git_blob_sha1": "27388420f523ece69002473d9a1607b7215ba296"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/J片尾前逐秒索引.jpg",
+      "bytes": 73307,
+      "sha256": "7428c92425917bc53dcda2b6c9e2d7ee38bb63d188eeb9cd26a2487fad13dcc7",
+      "git_blob_sha1": "02b5c8a114901fd14db9dd642e8fc72d8e967644"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/SHA256.json",
+      "bytes": 8944,
+      "sha256": "8b59b677f66805083abb50dc1836d9ec8a82d8c48653e1e036c78e69d4770970",
+      "git_blob_sha1": "ecf247acd517b8b9170b42e99fa850f369e8bb4b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/browser_release_state.json",
+      "bytes": 207,
+      "sha256": "c8faf9eb77f416104a068238407262aba77bb15fff191d778f78d7b77d4e7e76",
+      "git_blob_sha1": "7a77407e72c96dc9e80485892df19f314328683a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/capture_states.json",
+      "bytes": 26250,
+      "sha256": "b59e6832fa3662a2e4902f7532fcddf56d98f15bbf78155cb10059d345d027e4",
+      "git_blob_sha1": "752ece97e91bd974f8a84baf1e4b0a61f1069bb4"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Door_wide_59m53_paused.png",
+      "bytes": 380380,
+      "sha256": "ff48b3891dc108684e1ab4ab84bef271bc2cff0c690fbcca737dc9be68f81ff8",
+      "git_blob_sha1": "0a9cff74fa4a7d946a646f7d72e942a09d9fb20a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorseq_01.png",
+      "bytes": 380746,
+      "sha256": "08120682e17455d938e260ac54ccde0ed5a738ba5b2900db14fc84245010d204",
+      "git_blob_sha1": "8eefa86b1551d07893d5cb489873ff9aa8535e66"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorseq_02_paused.png",
+      "bytes": 579854,
+      "sha256": "aadc8c0a36339b3d0f66ace9006a2f5e47038df88e6b095c5f7e95d47d267fda",
+      "git_blob_sha1": "7d0983153f505be331aa849878c03a4d69bad821"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorstep_55.png",
+      "bytes": 375852,
+      "sha256": "137b47d90121d4d198ff33ad205b45010e54bb57bae7801ed72e9bdf2544f16d",
+      "git_blob_sha1": "ec32684586d3343601aa7ca01dbbfb1030311cb1"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorstep_56.png",
+      "bytes": 376740,
+      "sha256": "f0737eb58025b190c27972fb53fc0a9663ab24f335d9c7313fc6b1b0127554fb",
+      "git_blob_sha1": "dff75d22c1e756fb12df253e83362316646a5f7e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorstep_57.png",
+      "bytes": 372436,
+      "sha256": "86c5baf43c6858a7ea42749fe79bd309fbb487bc7cf55883e8c7d5ca70e8c281",
+      "git_blob_sha1": "d708009dcf4b42d102f6f02d313a86ac15787cea"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorstep_58.png",
+      "bytes": 392290,
+      "sha256": "d39e30f71f0301945892515a49f776c7a2b9daebbc5bca1d4eb2e767969ee2f1",
+      "git_blob_sha1": "6daa94c5736e2b3cae86a64ae29ae4287ff88ba1"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorstep_59.png",
+      "bytes": 440681,
+      "sha256": "f8c487e3393d7033d2c61072148a63980cc986aac0a27a8a6b968ff719d636c6",
+      "git_blob_sha1": "0fc96b69831b953fb89183c61513020ead7c969f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorstep_60.png",
+      "bytes": 587166,
+      "sha256": "42c9f2439c3497cb0ac52f6a5ee19ad69b59faf5040f1dbc598bc4eb497d5bb4",
+      "git_blob_sha1": "614862458b2ad0eec31fbf5d583dd543a72aa8ce"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Doorstep_61.png",
+      "bytes": 602435,
+      "sha256": "194afed7cd18329ff21f6acef661ead4a20b16b80fef83b34ef25b8452cda26f",
+      "git_blob_sha1": "040ca5282918060e1805107c877ce6585ad5e849"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_01.png",
+      "bytes": 452686,
+      "sha256": "d375bcc21fec6cdd75073245cd7cc34d24d14982d8f5669b70cf437304d15cf9",
+      "git_blob_sha1": "2f07945b447f42fc5aa0501609d0cdcf7e3684f4"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_02_paused.png",
+      "bytes": 475857,
+      "sha256": "d2e1b991698247c8e7e23415d978143cf258850ed5fba796cf4cda83445700b9",
+      "git_blob_sha1": "6652060984e99672845941c2e9bdf319a3c99265"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_03_clean_paused.png",
+      "bytes": 473654,
+      "sha256": "cdffd67b16f72b06208a796a3625d42187be4fe872aa0ee4a7a0a77e6b829a54",
+      "git_blob_sha1": "495e59ae889b5da295ba97ee6736b03fc32e6367"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_04.png",
+      "bytes": 463146,
+      "sha256": "533bcb00fbffcff6eb47904157e7693dc35c0703a2a41f9eebfc6babaad6709b",
+      "git_blob_sha1": "0e7d2cc47abf57e39a73c90b8848d7b12b284125"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_05.png",
+      "bytes": 452003,
+      "sha256": "7b27a48a7ca73193797562376b60c1ccf5e70c163cc3d870a1ebf135e80dc166",
+      "git_blob_sha1": "e3ee61f0d3b57143ae84932f81fa4f576805dce3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_06.png",
+      "bytes": 469486,
+      "sha256": "a15d57571ff2f5903e607b8f7c492e752136491a80299e3f66c94540cdbea583",
+      "git_blob_sha1": "6474a3b6e8b543b07064e329c71d69ed0220645e"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_07.png",
+      "bytes": 482192,
+      "sha256": "6ecb0d94bcfa403502f09d7b495afae33441035d31dccfa359d2d884c19e8ae4",
+      "git_blob_sha1": "41f11b2878cb8cf96c690a0fa4d516e057a70126"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_08_paused.png",
+      "bytes": 469170,
+      "sha256": "fbe82b1d0b4a3ffef956227b10214df8b496f172a1aebcbc62eb79608fd51d61",
+      "git_blob_sha1": "247b9f0b2d5de360114455579de839637260402a"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_09.png",
+      "bytes": 485189,
+      "sha256": "1248f04b9b1d0c64ae3ce08538d86264bf0f2e6ffdfe04dbdd226e7dad304885",
+      "git_blob_sha1": "8cc6d3d11e9782d47e319584c1510ae85be47286"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_10.png",
+      "bytes": 496516,
+      "sha256": "c7a47961c72e2dee2bdb19880699bce41816278c14e1b5a136188ed6d0150dd5",
+      "git_blob_sha1": "9a1f9ffe0e64d2d6dbe9ee81352a94ee7766082b"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_11.png",
+      "bytes": 484977,
+      "sha256": "7295edd7a317ec0083a74330e7f1684c8e3fcf4d38c52b09b3d8ad86efb13d63",
+      "git_blob_sha1": "027126d2a447de39bba39c183fa205617174287d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_12.png",
+      "bytes": 430152,
+      "sha256": "e52f1b21e04506e33a660e9c0e5e73ff203cbcbbf6372e9f77d65eefe31118dd",
+      "git_blob_sha1": "c29a4073a14311a1711580dbd25b644d6de758b7"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_13_paused.png",
+      "bytes": 435124,
+      "sha256": "ee423741c92b382b6c87b7829d0925b7a34977d0fa95de61b5ebf4a165e2109d",
+      "git_blob_sha1": "ebb62ba76a9df3a235cc4dde42c8350ce11f10df"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_14.png",
+      "bytes": 446495,
+      "sha256": "d6f9fa5ec599bff4a76fd6ad00725519ff132e728a6835753383eaf8d5492736",
+      "git_blob_sha1": "4efa613fb1c6600eebba0d8c44b76d2cbcc43d31"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_15.png",
+      "bytes": 420868,
+      "sha256": "63fb7fb335d601526d7daf29165da0ad1556e7baa9bfde44936d024c2590b105",
+      "git_blob_sha1": "cc1b58a0ee266b89fdd72516fe6e5202b11c276f"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_16.png",
+      "bytes": 427707,
+      "sha256": "6402fe269ef077a33a02643da10b6604e36c228dd24a03ddff25b21cd729e561",
+      "git_blob_sha1": "07e42373c617cb6323cce463b8d2627d6b34333c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Dseq_17_paused.png",
+      "bytes": 488251,
+      "sha256": "077413f401167f61b7975014cce566b36b4572715140983b92babb4dac1c0aa8",
+      "git_blob_sha1": "787e6ec3f3e19f5240a501d8e13c60b585915626"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/J_empty_window_clean_paused.png",
+      "bytes": 262462,
+      "sha256": "3adedbad59231015dc320de104a0570e31aa67ef072d68327ca60d5e4ef24f94",
+      "git_blob_sha1": "e76bb2e95e99e8aba8544e74bb80bef6040c3749"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/J_empty_window_paused.png",
+      "bytes": 272962,
+      "sha256": "77f43a30d7eea3dfb34632256c868df852eff9ac2930c6df859fcfa8d9132d37",
+      "git_blob_sha1": "87e817632682e75661de8a0a83da1a40628c0e91"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jend_01.png",
+      "bytes": 332063,
+      "sha256": "0795bf247ef54be7717efffbb4c23724896b33342c33b1d5a5140121cbd6d310",
+      "git_blob_sha1": "e9c6454724c5300b06ac88e2a61c5188723a6204"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jend_19.png",
+      "bytes": 384311,
+      "sha256": "6b8c44e0bf5eea1120e47e03fd7b450dc7b5d42e38e8b3a7605e3ed41b3380b6",
+      "git_blob_sha1": "e995d92663ebe69d8157c7ca50efd32a13f1e4cd"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jend_20.png",
+      "bytes": 357589,
+      "sha256": "4489a2789599318f5b69f6bbc7c717b1e523bb2ab7128568f4ecbfb367f3e4d6",
+      "git_blob_sha1": "f5dfbfef09fad6fc0bb9cdc3c6dff339757934a3"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jend_21.png",
+      "bytes": 336276,
+      "sha256": "40cd76cd2f9672d252bdf3d3f86142166eb2141e10370acc8930b6b2b449dad0",
+      "git_blob_sha1": "a1cba0ce8297f1c8065ddb4c77ecdbc9560ce4b4"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jend_22.png",
+      "bytes": 261223,
+      "sha256": "c5c08df352ab62a3b8a90e35beb33cb2efe5a9ff5d452e551ed93bdca2cb5585",
+      "git_blob_sha1": "ba42daa4f73c4d5d372b361d3d19fbc9e9c6ee89"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jend_23.png",
+      "bytes": 267245,
+      "sha256": "64524553ccbce09433a5b9313e1b6a173137e025d73cf38bd93fb982ddd4c8c2",
+      "git_blob_sha1": "5d422721b0b4f4c4f12da44560d4440161f193ae"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jseq_03.png",
+      "bytes": 371767,
+      "sha256": "f93c8ca872068f5439adf315bf5f3b68467b0c8b2671485642fc7b96d5df8b65",
+      "git_blob_sha1": "d5220afe08849d671991990cf6e18899da9a142d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jseq_04.png",
+      "bytes": 365338,
+      "sha256": "83bcde116303a7bee6b7fdd273083ce477fcecebb4a50d0d961f5f424b366da4",
+      "git_blob_sha1": "6f67c9c640cd301ea61796d82d25410e3d0d9bd5"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jseq_05.png",
+      "bytes": 341673,
+      "sha256": "6b6b56f376bce0b75073d963a631f510b10f340da839eceffa04641b66ec1670",
+      "git_blob_sha1": "26d14c5e63a1219f698cc457eda84eaa3982233c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jseq_06.png",
+      "bytes": 339520,
+      "sha256": "995ee5d84372f6426ce9ca94ac8c4217b7d983b47a101c2972c67c40a7c57f7d",
+      "git_blob_sha1": "82a3aaa79f773e13084d4c546e32ae0d4664cfc0"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jseq_07_paused.png",
+      "bytes": 411067,
+      "sha256": "3e8226f6ae8cf63aacfd1a19b5e4e4e6940dc304c0d8f8e07f4c5bf8da0c65fc",
+      "git_blob_sha1": "e3e1f61246fe18bc41b915f3c538f75d2ab61fcb"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jseq_08_clean_paused.png",
+      "bytes": 405449,
+      "sha256": "248dc156f4ea3de7be03ce272143d666e353b76abac036c3a7a9ca4e5cad53de",
+      "git_blob_sha1": "1fe39101a0a4c6ef8b26c9eeee46916ef9dc6d5c"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jseq_09.png",
+      "bytes": 361290,
+      "sha256": "ed72b2dec89c8102b981fb5ab8c80e3bc77a76241906f09e236074202e3cf9eb",
+      "git_blob_sha1": "c0e44c2a136d9b5ef8214550e6bcfdc2393bdf01"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/cores/Jseq_10.png",
+      "bytes": 902430,
+      "sha256": "3f109deace13e6f38894137a8653f059c05bfb4672bf87304a4a5b00e0602acd",
+      "git_blob_sha1": "f0600112536cbd7f692627bf442a8a28751a9611"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/login_hd_ui.jpg",
+      "bytes": 94924,
+      "sha256": "6115fb9c95e150bd3a88598ea411a608b6dcd7c3e65ef8ed9b003fda18eeb5f0",
+      "git_blob_sha1": "9df93c2dc901c08269b432784ecd7d5aa9f866a5"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/manifest.json",
+      "bytes": 58609,
+      "sha256": "47b806ffb8feabca27532c1732131b459936f8efeb5db9b7554ba01f57b58d1c",
+      "git_blob_sha1": "67f388532b683b4335402f8291c5b0edefe702f5"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/定向补证台账_中文.md",
+      "bytes": 7312,
+      "sha256": "103eceada60f6d09799220e41a3b40a4b9f4f12e37d69ceef613a58e77d800f2",
+      "git_blob_sha1": "8bb101273c060ad261d7ac6c56d424dac73d826d"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/未完成_跨BV16条队列.json",
+      "bytes": 15915,
+      "sha256": "c3c56f841d0b088d0f6c0d6cfc3f2f786582901250b238bdbff71cc88587ba0c",
+      "git_blob_sha1": "381490c273f3f3eceec4dd146258bbb4b1482971"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/未完成_跨BV16条队列_中文.txt",
+      "bytes": 6904,
+      "sha256": "6e4e9c2345dcd71aa6fe2b9a87293710e71ed42af54c5b596f4741a20d18cf2a",
+      "git_blob_sha1": "ce946e0847e294c7b1df12ae9ef4a08fa26dd042"
+    },
+    {
+      "repo_path": "scenes/train/research/05-r05-shared-space-trials/files/train_motion_sources_20261010/门端逐秒索引.jpg",
+      "bytes": 88966,
+      "sha256": "b639271d2d68c0d82fb16ffd652563f2ce5875adcadd2ff549b4c2f4042465f3",
+      "git_blob_sha1": "f9ba0762cdef91431d2fefa634e2c4d22d68a51c"
+    }
+  ]
+}
