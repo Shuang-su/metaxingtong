@@ -1,0 +1,219 @@
+{
+  "status": "重建候选 / 待来源复核",
+  "verification_scope": "原有修复/Blender回导记录，本次只重新核验文件字节与ZIP CRC。",
+  "repair": {
+    "scene": "classroom_fullroom",
+    "source_blend": {
+      "path": "scenes/classroom/04-retain-complete-geometry/assets/教室_完整几何房间_审阅.zip::fullroom.blend",
+      "sha256": "77be8336b43f7cf6c413369c6bef2bd46b5e8508f1958b0fb4d8a172e457c908",
+      "bytes": 9957837
+    },
+    "original_glb": {
+      "path": "scenes/classroom/04-retain-complete-geometry/assets/classroom-complete-room.glb",
+      "bytes": 10027752,
+      "sha256": "d2d1a27feb3c2ab25bb05b8dff54af74a8978a81fc8c560ab879b77040c514f7"
+    },
+    "repaired_glb": {
+      "path": "scenes/classroom/05-retain-glb-material-portability-fix/assets/Classroom_FullRoom_Interior.glb",
+      "bytes": 13038312,
+      "sha256": "86282085695a0a61b2f9301d9b5dd33f6d1918125386d8aad8a029d9b5249b55"
+    },
+    "changes": [
+      {
+        "material": "REVIEW lighter albedo - FloorOak",
+        "operation": {
+          "name": "Inferred material albedo response",
+          "type": "GAMMA",
+          "inputs": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Gamma": 0.699999988079071
+          }
+        },
+        "old_png_sha256": "99019f44ad759256655f2d5fcbbd4c1e677046dbdc6fded56ac03e89010e3aa2",
+        "new_png_sha256": "3b6f8da0dc92c7cb62a3fd0616bfc5b849938ab1000b901fcdda1363440159c9",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "original_alpha_unchanged": true,
+        "old_texture_index": 1,
+        "new_texture_index": 18,
+        "original_image_shared_by_basecolor_materials": [
+          "REVIEW lighter albedo - FloorOak"
+        ]
+      },
+      {
+        "material": "REVIEW lighter albedo - Plaster",
+        "operation": {
+          "name": "Inferred material albedo response",
+          "type": "GAMMA",
+          "inputs": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Gamma": 0.699999988079071
+          }
+        },
+        "old_png_sha256": "aa513b3c09a2943b78f8247222ec5a58af515ccbb0ef5ea37295c760e1368ce7",
+        "new_png_sha256": "871f7f5351a1b528596bd78bd1b520a300314d5fe4a701ce40e40f22c047448e",
+        "dimensions": [
+          512,
+          512
+        ],
+        "original_alpha_unchanged": true,
+        "old_texture_index": 4,
+        "new_texture_index": 19,
+        "original_image_shared_by_basecolor_materials": [
+          "REVIEW lighter albedo - Plaster"
+        ]
+      },
+      {
+        "material": "REVIEW lighter albedo - Ceiling",
+        "operation": {
+          "name": "Inferred material albedo response",
+          "type": "GAMMA",
+          "inputs": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Gamma": 0.699999988079071
+          }
+        },
+        "old_png_sha256": "b5a2faa77c1bc6a61cc0cf027f16831479fc551c6c249408d28ee1a3f7313b3e",
+        "new_png_sha256": "ba1cfcfbbef597082a6324f61149c5989b98be483cf50589c32df405dbeae631",
+        "dimensions": [
+          512,
+          512
+        ],
+        "original_alpha_unchanged": true,
+        "old_texture_index": 7,
+        "new_texture_index": 20,
+        "original_image_shared_by_basecolor_materials": [
+          "REVIEW lighter albedo - Ceiling"
+        ]
+      },
+      {
+        "material": "REVIEW lighter albedo - Chalkboard",
+        "operation": {
+          "name": "Inferred material albedo response",
+          "type": "GAMMA",
+          "inputs": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Gamma": 0.699999988079071
+          }
+        },
+        "old_png_sha256": "837a8c8adb33d0c485e6145444d931d1fc21554650a60384137a91c487fda2d8",
+        "new_png_sha256": "2564b17a1f32582d860f696c984dedf7f11c1a37d7df693b5760f7c9d86229fc",
+        "dimensions": [
+          512,
+          512
+        ],
+        "original_alpha_unchanged": true,
+        "old_texture_index": 10,
+        "new_texture_index": 21,
+        "original_image_shared_by_basecolor_materials": [
+          "REVIEW lighter albedo - Chalkboard"
+        ]
+      },
+      {
+        "material": "REVIEW lighter albedo - DeskOak",
+        "operation": {
+          "name": "Inferred material albedo response",
+          "type": "GAMMA",
+          "inputs": {
+            "Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Gamma": 0.699999988079071
+          }
+        },
+        "old_png_sha256": "a66569e50256ccd31920b560517d66c5539dc8cebc00b6a15393ffa0213269ac",
+        "new_png_sha256": "ff8c5f1fd702528de066d4508655cdd8e2526e94c233d9d3cdd8fe24a9262630",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "original_alpha_unchanged": true,
+        "old_texture_index": 13,
+        "new_texture_index": 22,
+        "original_image_shared_by_basecolor_materials": [
+          "REVIEW lighter albedo - DeskOak"
+        ]
+      }
+    ],
+    "validation": {
+      "entire_original_binary_buffer_preserved_byte_for_byte": true,
+      "all_original_bufferViews_unchanged": true,
+      "all_geometry_uv_normals_tangents_indices_draco_payloads_and_node_transforms_unchanged": true,
+      "all_non_basecolor_material_parameters_unchanged": true,
+      "json_equal_after_removing_appended_png_resources_and_restoring_seven_texture_references": true,
+      "original_source_blend_unmodified": true
+    }
+  },
+  "actual_roundtrip": {
+    "scene": "classroom_fullroom",
+    "original": {
+      "meshes": 1260,
+      "vertices": 170095,
+      "polygons": 193828,
+      "geometry_uv_transforms_material_slots_sha256": "0ac0341fe4b470d4a32188751e69fe12b0d8ca84eb781fbadcd748d38d47fdd7",
+      "materials": 37,
+      "images": 18,
+      "missing_images": []
+    },
+    "repaired": {
+      "meshes": 1260,
+      "vertices": 170095,
+      "polygons": 193828,
+      "geometry_uv_transforms_material_slots_sha256": "0ac0341fe4b470d4a32188751e69fe12b0d8ca84eb781fbadcd748d38d47fdd7",
+      "materials": 37,
+      "images": 18,
+      "missing_images": []
+    },
+    "exact_imported_geometry_match": true
+  },
+  "visual_control": {
+    "scene": "classroom_fullroom",
+    "isolated_basecolor": {
+      "old_mae_8bit": 22.381255787037038,
+      "new_mae_8bit": 0.11931134259259259,
+      "error_reduction_percent": 99.46691399388905,
+      "image_paths": [
+        "scenes/classroom/05-retain-glb-material-portability-fix/qa/classroom_fullroom_source.png",
+        "scenes/classroom/05-retain-glb-material-portability-fix/qa/classroom_fullroom_glb_color_only.png",
+        "scenes/classroom/05-retain-glb-material-portability-fix/qa/classroom_fullroom_repaired_color_only.png"
+      ]
+    },
+    "all_imported_materials": {
+      "old_mae_8bit": 26.166707175925925,
+      "new_mae_8bit": 4.682118055555556,
+      "error_reduction_percent": 82.10658290293694,
+      "image_paths": [
+        "scenes/classroom/05-retain-glb-material-portability-fix/qa/classroom_fullroom_source.png",
+        "scenes/classroom/05-retain-glb-material-portability-fix/qa/classroom_fullroom_glb_materials.png",
+        "scenes/classroom/05-retain-glb-material-portability-fix/qa/classroom_fullroom_repaired_all_materials.png"
+      ]
+    },
+    "note": "Same source geometry, UV, lights, world and camera; material nodes come from actual GLB import. Cycles CPU 8 samples, seed17, no denoising or compositing. Isolated control changes only seven targeted materials; all-material control includes other pre-existing GLB approximations. No source BLEND saved."
+  },
+  "limitations": "GLB材质可移植性改善不代表来源画面精确复原。"
+}
