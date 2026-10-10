@@ -1,0 +1,82 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV1aw411T7ws/",
+  "source_title": "2023-11-10 回城堡咯！",
+  "decoded": [
+    1920,
+    1080
+  ],
+  "core": [
+    1180,
+    664
+  ],
+  "crop": [
+    0,
+    27,
+    1180,
+    691
+  ],
+  "not_native_1920_export": true,
+  "records": [
+    {
+      "view": "fit_4528",
+      "time_seconds": 4528.936245,
+      "role": "fit",
+      "source_core": "inputs/hall_right_arch_4528_paused_core.png",
+      "original_screenshot": "inputs/hall_right_arch_4528_paused.jpg",
+      "capture_metadata": "inputs/hall_right_arch_4528_paused.json",
+      "analysis_mask": "qa/masks/fit_4528_conservative_validity.png",
+      "mask_note": "Conservative UI/watermark/performer exclusions; not a complete static-scene segmentation. Raw reference and overlay remain unaltered.",
+      "camera_json": "renders/fit_4528_raw.json",
+      "overlay": "qa/overlay50_fit_4528_raw.png"
+    },
+    {
+      "view": "fit_4529",
+      "time_seconds": 4529.796014,
+      "role": "fit",
+      "source_core": "inputs/hall_right_arch_4529_natural_ui_clear_core.png",
+      "original_screenshot": "inputs/hall_right_arch_4529_natural_ui_clear.jpg",
+      "capture_metadata": "inputs/hall_right_arch_4529_natural_ui_clear.json",
+      "analysis_mask": "qa/masks/fit_4529_conservative_validity.png",
+      "mask_note": "Conservative UI/watermark/performer exclusions; not a complete static-scene segmentation. Raw reference and overlay remain unaltered.",
+      "camera_json": "renders/fit_4529_raw.json",
+      "overlay": "qa/overlay50_fit_4529_raw.png"
+    },
+    {
+      "view": "holdout_4527",
+      "time_seconds": 4527.768968,
+      "role": "held-out structure; camera calibration only",
+      "source_core": "inputs/holdout_arch_4527_paused_core.png",
+      "original_screenshot": "inputs/holdout_arch_4527_paused.jpg",
+      "capture_metadata": "inputs/holdout_arch_4527_paused.json",
+      "analysis_mask": "qa/masks/holdout_4527_conservative_validity.png",
+      "mask_note": "Conservative UI/watermark/performer exclusions; not a complete static-scene segmentation. Raw reference and overlay remain unaltered.",
+      "camera_json": "renders/holdout_4527_raw.json",
+      "overlay": "qa/overlay50_holdout_4527_raw.png"
+    },
+    {
+      "view": "holdout_4509",
+      "time_seconds": 4509.25218,
+      "role": "held-out structure; camera calibration only",
+      "source_core": "inputs/hall_B_4509_paused_core.png",
+      "original_screenshot": "inputs/hall_B_4509_paused.jpg",
+      "capture_metadata": "inputs/hall_B_4509_paused.json",
+      "analysis_mask": "qa/masks/holdout_4509_conservative_validity.png",
+      "mask_note": "Conservative UI/watermark/performer exclusions; not a complete static-scene segmentation. Raw reference and overlay remain unaltered.",
+      "camera_json": "renders/holdout_4509_raw.json",
+      "overlay": "qa/overlay50_holdout_4509_raw.png"
+    }
+  ],
+  "acceptance": "structural technical candidate, source acceptance false",
+  "supplemental_captures_not_used": [
+    {
+      "core": "inputs/holdout_arch_4525_paused_core.png",
+      "time_seconds": 4525.710976,
+      "reason": "Front orientation, no useful arch evidence; not used for fit or acceptance"
+    },
+    {
+      "core": "inputs/holdout_arch_4526_paused_core.png",
+      "time_seconds": 4526.786114,
+      "reason": "Arch partly visible but source motion blur; excluded from precision fit/validation"
+    }
+  ]
+}

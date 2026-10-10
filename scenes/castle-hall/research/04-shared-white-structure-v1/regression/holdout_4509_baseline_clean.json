@@ -1,0 +1,62 @@
+{
+  "image": "holdout_4509_baseline_clean.png",
+  "sha256": "8126186a51db710cfe791b6e69ae8f7708035ef0e318cd58a3955ec8a88dbe40",
+  "geometry_baseline_sha256": "b04ebc7091ce5bc6a2c8419a634effc5e6999f68a8db68701a832e69259a174e",
+  "render_template_candidate_sha256": "4340c968751af0b439b1daed3b29ba3cfd7da246b2356670ed36ef3c4b348474",
+  "regression_scene_sha256": "46e909c1ece8443f2bf386d0c2a1fda40529c17524fd5f441c3df0b78592c503",
+  "camera": {
+    "name": "HOLDOUT_HD_4509_FRONT",
+    "matrix": [
+      [
+        0.9999300241470337,
+        -0.000725699937902391,
+        -0.01180805079638958,
+        -0.38576972484588623
+      ],
+      [
+        -0.011827439069747925,
+        -0.03926261514425278,
+        -0.9991589188575745,
+        -3.8426265716552734
+      ],
+      [
+        0.00026147463358938694,
+        0.9992286562919617,
+        -0.03926844894886017,
+        0.6419192552566528
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 27.74138832092285,
+    "shift_x": 0.0,
+    "shift_y": 0.0
+  },
+  "resolution": [
+    1180,
+    664
+  ],
+  "samples": 24,
+  "threads": 2,
+  "engine": "Blender 4.3.2 Cycles CPU",
+  "white_material": {
+    "base_color": [
+      0.550000011920929,
+      0.550000011920929,
+      0.550000011920929,
+      1.0
+    ],
+    "roughness": 0.75
+  },
+  "conditions": "same_condition_setup.json",
+  "corresponding_candidate_image": "../renders/holdout_4509_raw.png",
+  "corresponding_candidate_image_sha256": "bea950a1bcefce2dc142f2358e9dba048376873e316268a384ac13ddf99fba67",
+  "no_hidden_objects": true,
+  "reference_warp": false,
+  "denoiser": "OIDN2.5.1 LDR sRGB color only, threads2",
+  "raw_sha256": "33edcd0572d78eae3431d745d5af5c388826cb8793ee9ccdef4775dc1d1615fe"
+}
