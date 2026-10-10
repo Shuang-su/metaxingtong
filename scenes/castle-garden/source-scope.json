@@ -1,0 +1,456 @@
+{
+  "scene_name": "城堡花园",
+  "status": "重建候选 / 待来源复核",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1aw411T7ws/"
+  ],
+  "residuals": "开放花园与有限立面；花叶、盆体、雕花、门板和夜色有明显简化，不证明城堡室内连接。",
+  "source_fidelity_acceptance": "待复核，未通过总体来源忠实度验收。",
+  "newly_logged_in_hd_used_for_every_scene": false,
+  "newly_logged_in_hd_for_this_scene": "仅以本文件列出的来源质量证据为准；未明确记录则未知。",
+  "independent_additional_video_baselines": "逐证据判断，重复/同轴/同族不算独立基线。",
+  "source_quality_facts": [
+    {
+      "field": "document_excerpt",
+      "value": "来源：https://www.bilibili.com/video/BV1aw411T7ws/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "原始两幅匹配参考来自直播回放截图，播放器标示 360P。另补采播放器1080P档位、实际解码1920×1080的稳定暂停帧；保存结果为1180×757浏览器视口截图（实际视频内容高度约664），不是原生1920×1080帧导出。新帧均核验实际时间、paused=true、readyState=4；详细参数见 references 的JSON。截图画布大小不等于原生视频清晰度。21:59 和 25:11 保留为两个源参考构图；这两帧相近且包含镜头缩放/微移，不作为独立双目基线，也不支持实测深度。11:06 略偏斜构图提供栏杆和花床关系辅助。人物及播放器界面不建模。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "来源残差仍包括：真实花叶的方向和密度、花柱缠绕细节、花盆轮廓、门板装饰、源图砖块尺寸、窗玻璃纹理和夜景颜色。主体压缩和遮挡使精确深度未确定；模型较浅。门/窗/花架轮廓仍是近似，不能把白模完整说成像素级复刻。补采高画质帧进一步确认窗顶部小雕花、栏杆金饰、门板复杂浮雕和多层叶簇并未完整复刻。此版是几何完整升级，细节精度仍需后续完善。源匹配A中，模型花架与花盆偏规整，浅阶更明亮，门板三排菱形简化明显；前景边缘和两侧窗在叠图中仍有偏差。统一检视光比原直播夜景亮，不能以颜色接近程度评价几何正确性。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "源与模型直接叠图使用原图矩形裁切、模型等尺寸渲染后 50% 混合；不透视扭曲、不局部变形、不抹除人物来伪装吻合。保留未经变形的原始截图及裁切坐标。叠图中的双边缘就是残差，不以不透明遮罩隐藏。"
+    },
+    {
+      "field": "[0].paused",
+      "value": true
+    },
+    {
+      "field": "[0].time",
+      "value": 668.249542
+    },
+    {
+      "field": "[0].videoRect.height",
+      "value": 757
+    },
+    {
+      "field": "[0].videoRect.width",
+      "value": 1180
+    },
+    {
+      "field": ".source_url",
+      "value": "https://www.bilibili.com/video/BV1aw411T7ws/"
+    },
+    {
+      "field": ".frames[0].paused",
+      "value": true
+    },
+    {
+      "field": ".frames[0].time",
+      "value": 668.249542
+    },
+    {
+      "field": ".frames[0].videoRect.height",
+      "value": 757
+    },
+    {
+      "field": ".frames[0].videoRect.width",
+      "value": 1180
+    },
+    {
+      "field": ".frames[1].paused",
+      "value": true
+    },
+    {
+      "field": ".frames[1].time",
+      "value": 1326.261301
+    },
+    {
+      "field": ".frames[2].paused",
+      "value": true
+    },
+    {
+      "field": ".frames[2].time",
+      "value": 1519.289456
+    },
+    {
+      "field": "[0].paused",
+      "value": true
+    },
+    {
+      "field": "[0].time",
+      "value": 1519.289456
+    },
+    {
+      "field": "[0].paused",
+      "value": true
+    },
+    {
+      "field": "[0].time",
+      "value": 1326.261301
+    },
+    {
+      "field": ".source_url",
+      "value": "https://www.bilibili.com/video/BV1aw411T7ws/"
+    },
+    {
+      "field": ".duration_seconds",
+      "value": 7502
+    },
+    {
+      "field": ".verified_new_samples_seconds[0]",
+      "value": 666
+    },
+    {
+      "field": ".verified_new_samples_seconds[1]",
+      "value": 1319
+    },
+    {
+      "field": ".verified_new_samples_seconds[2]",
+      "value": 1506
+    },
+    {
+      "field": ".verified_new_samples_seconds[3]",
+      "value": 1552
+    },
+    {
+      "field": ".verified_new_samples_seconds[4]",
+      "value": 1757
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[0]",
+      "value": 905
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[1]",
+      "value": 1209
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[2]",
+      "value": 1510
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[3]",
+      "value": 1599
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[4]",
+      "value": 1663
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[5]",
+      "value": 1720
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[0]",
+      "value": 1804
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[1]",
+      "value": 2109
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[2]",
+      "value": 2409
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[3]",
+      "value": 2715
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[4]",
+      "value": 3008
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[5]",
+      "value": 3320
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[6]",
+      "value": 4392
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[7]",
+      "value": 4424
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[8]",
+      "value": 4446
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[9]",
+      "value": 4460
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[10]",
+      "value": 4480
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[11]",
+      "value": 4507
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[12]",
+      "value": 4540
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[13]",
+      "value": 4579
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[14]",
+      "value": 4603
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[15]",
+      "value": 6909
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall_with_overlays[0]",
+      "value": 3623
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall_with_overlays[1]",
+      "value": 5406
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall_with_overlays[2]",
+      "value": 6320
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.unrelated_performance_or_CG[0]",
+      "value": 7148
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.outro[0]",
+      "value": 7479
+    },
+    {
+      "field": "document_excerpt",
+      "value": "Source: https://www.bilibili.com/video/BV1aw411T7ws/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "Primary garden frames: 00:21:59 and 00:25:11. Secondary frames: 00:11:06, 00:15:06, 00:20:09, 00:26:39, 00:27:43, 00:28:41. The supplied evidence manifest records the capture history; excluded_stale images were never used."
+    },
+    {
+      "field": "[0].paused",
+      "value": true
+    },
+    {
+      "field": "[0].time",
+      "value": 668.249542
+    },
+    {
+      "field": "[0].videoRect.height",
+      "value": 757
+    },
+    {
+      "field": "[0].videoRect.width",
+      "value": 1180
+    },
+    {
+      "field": ".source_url",
+      "value": "https://www.bilibili.com/video/BV1aw411T7ws/"
+    },
+    {
+      "field": ".frames[0].paused",
+      "value": true
+    },
+    {
+      "field": ".frames[0].time",
+      "value": 668.249542
+    },
+    {
+      "field": ".frames[0].videoRect.height",
+      "value": 757
+    },
+    {
+      "field": ".frames[0].videoRect.width",
+      "value": 1180
+    },
+    {
+      "field": ".frames[1].paused",
+      "value": true
+    },
+    {
+      "field": ".frames[1].time",
+      "value": 1326.261301
+    },
+    {
+      "field": ".frames[2].paused",
+      "value": true
+    },
+    {
+      "field": ".frames[2].time",
+      "value": 1519.289456
+    },
+    {
+      "field": "[0].paused",
+      "value": true
+    },
+    {
+      "field": "[0].time",
+      "value": 1519.289456
+    },
+    {
+      "field": "[0].paused",
+      "value": true
+    },
+    {
+      "field": "[0].time",
+      "value": 1326.261301
+    },
+    {
+      "field": ".source_url",
+      "value": "https://www.bilibili.com/video/BV1aw411T7ws/"
+    },
+    {
+      "field": ".source_url",
+      "value": "https://www.bilibili.com/video/BV1aw411T7ws/"
+    },
+    {
+      "field": ".duration_seconds",
+      "value": 7502
+    },
+    {
+      "field": ".verified_new_samples_seconds[0]",
+      "value": 666
+    },
+    {
+      "field": ".verified_new_samples_seconds[1]",
+      "value": 1319
+    },
+    {
+      "field": ".verified_new_samples_seconds[2]",
+      "value": 1506
+    },
+    {
+      "field": ".verified_new_samples_seconds[3]",
+      "value": 1552
+    },
+    {
+      "field": ".verified_new_samples_seconds[4]",
+      "value": 1757
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[0]",
+      "value": 905
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[1]",
+      "value": 1209
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[2]",
+      "value": 1510
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[3]",
+      "value": 1599
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[4]",
+      "value": 1663
+    },
+    {
+      "field": ".recovered_garden_samples_seconds[5]",
+      "value": 1720
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[0]",
+      "value": 1804
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[1]",
+      "value": 2109
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[2]",
+      "value": 2409
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[3]",
+      "value": 2715
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[4]",
+      "value": 3008
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[5]",
+      "value": 3320
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[6]",
+      "value": 4392
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[7]",
+      "value": 4424
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[8]",
+      "value": 4446
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[9]",
+      "value": 4460
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[10]",
+      "value": 4480
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[11]",
+      "value": 4507
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[12]",
+      "value": 4540
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[13]",
+      "value": 4579
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[14]",
+      "value": 4603
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall[15]",
+      "value": 6909
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall_with_overlays[0]",
+      "value": 3623
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall_with_overlays[1]",
+      "value": 5406
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.hall_with_overlays[2]",
+      "value": 6320
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.unrelated_performance_or_CG[0]",
+      "value": 7148
+    },
+    {
+      "field": ".rest_of_runtime_recovered_samples.outro[0]",
+      "value": 7479
+    }
+  ],
+  "history_gaps": [
+    "未取得逐次聊天发布的确切时刻；Library创建/修改时间不替代聊天发布日期。",
+    "不能确认所有中间发布版本均已恢复；缺失历史不重建、不补造旧提交。"
+  ],
+  "technical_verification_scope": "随包已有记录，本次归档未重新运行Blender。",
+  "shared_standard": "docs/reconstruction-standard.md"
+}
