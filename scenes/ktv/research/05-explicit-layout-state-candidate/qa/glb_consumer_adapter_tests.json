@@ -1,0 +1,614 @@
+{
+  "passed": true,
+  "verification": "Exact actual GLB bytes hashed with Web Crypto; actual JSON parsed by mock loader receiving those same bytes. Not a real browser/GLTFLoader render test.",
+  "verifiedGlbSha256": "de766c72c4d6f99e9aefdfb580e4e5f83ef2d7c5a3f8584795453b92f30ceb1c",
+  "nodeCount": 372,
+  "targetCount": 26,
+  "runtimeRenamingSafe": true,
+  "furnishedStateRoundtripRestored": true,
+  "mixedNonTargetVisibilityPreserved": true,
+  "geometryMaterialsTransformsUnchanged": true,
+  "failureTests": [
+    "replaced_or_modified_glb_bytes",
+    "incorrect_expected_node_count",
+    "original_node_name_mismatch",
+    "binding_manifest_SHA_mismatch",
+    "unverified_forged_binding",
+    "asset_changed_after_binding",
+    "loaded_parser_name_changed",
+    "missing_node_association",
+    "duplicate_target_association",
+    "loaded_parser_node_count_changed"
+  ],
+  "failuresAreNonmutating": true,
+  "switches": [
+    {
+      "state": "furnished",
+      "selection": {
+        "mode": "explicit_manual",
+        "timelineResult": "unknown",
+        "manualOverride": false
+      },
+      "verifiedGlbSha256": "de766c72c4d6f99e9aefdfb580e4e5f83ef2d7c5a3f8584795453b92f30ceb1c",
+      "targetCount": 26,
+      "changes": [
+        {
+          "name": "Left_covered_front_button",
+          "gltfNodeIndex": 81,
+          "runtimeName": "runtime_renamed_81",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_covered_front_button.001",
+          "gltfNodeIndex": 82,
+          "runtimeName": "runtime_renamed_82",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Left_gathered_back_bolster",
+          "gltfNodeIndex": 76,
+          "runtimeName": "runtime_renamed_76",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Left_lower_upholstery_seam",
+          "gltfNodeIndex": 83,
+          "runtimeName": "runtime_renamed_83",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Left_short_dark_foot",
+          "gltfNodeIndex": 77,
+          "runtimeName": "runtime_renamed_77",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Left_short_dark_foot.001",
+          "gltfNodeIndex": 78,
+          "runtimeName": "runtime_renamed_78",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_short_dark_foot.002",
+          "gltfNodeIndex": 79,
+          "runtimeName": "runtime_renamed_79",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Left_short_dark_foot.003",
+          "gltfNodeIndex": 80,
+          "runtimeName": "runtime_renamed_80",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Left_single_seat_inflated_base",
+          "gltfNodeIndex": 75,
+          "runtimeName": "runtime_renamed_75",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_covered_front_button",
+          "gltfNodeIndex": 90,
+          "runtimeName": "runtime_renamed_90",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_covered_front_button.001",
+          "gltfNodeIndex": 91,
+          "runtimeName": "runtime_renamed_91",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Right_gathered_back_bolster",
+          "gltfNodeIndex": 85,
+          "runtimeName": "runtime_renamed_85",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Right_lower_upholstery_seam",
+          "gltfNodeIndex": 92,
+          "runtimeName": "runtime_renamed_92",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Right_short_dark_foot",
+          "gltfNodeIndex": 86,
+          "runtimeName": "runtime_renamed_86",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Right_short_dark_foot.001",
+          "gltfNodeIndex": 87,
+          "runtimeName": "runtime_renamed_87",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_short_dark_foot.002",
+          "gltfNodeIndex": 88,
+          "runtimeName": "runtime_renamed_88",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Right_short_dark_foot.003",
+          "gltfNodeIndex": 89,
+          "runtimeName": "runtime_renamed_89",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "Right_single_seat_inflated_base",
+          "gltfNodeIndex": 84,
+          "runtimeName": "runtime_renamed_84",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad",
+          "gltfNodeIndex": 348,
+          "runtimeName": "runtime_renamed_348",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.001",
+          "gltfNodeIndex": 349,
+          "runtimeName": "runtime_renamed_349",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.002",
+          "gltfNodeIndex": 350,
+          "runtimeName": "runtime_renamed_350",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.003",
+          "gltfNodeIndex": 351,
+          "runtimeName": "runtime_renamed_351",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.004",
+          "gltfNodeIndex": 352,
+          "runtimeName": "runtime_renamed_352",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.005",
+          "gltfNodeIndex": 353,
+          "runtimeName": "runtime_renamed_353",
+          "before": true,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.006",
+          "gltfNodeIndex": 354,
+          "runtimeName": "runtime_renamed_354",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.007",
+          "gltfNodeIndex": 355,
+          "runtimeName": "runtime_renamed_355",
+          "before": true,
+          "after": true
+        }
+      ],
+      "dynamicObjectsModified": false,
+      "assetDuplicated": false
+    },
+    {
+      "state": "unfurnished",
+      "selection": {
+        "mode": "explicit_manual",
+        "timelineResult": "unknown",
+        "manualOverride": false
+      },
+      "verifiedGlbSha256": "de766c72c4d6f99e9aefdfb580e4e5f83ef2d7c5a3f8584795453b92f30ceb1c",
+      "targetCount": 26,
+      "changes": [
+        {
+          "name": "Left_covered_front_button",
+          "gltfNodeIndex": 81,
+          "runtimeName": "runtime_renamed_81",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Left_covered_front_button.001",
+          "gltfNodeIndex": 82,
+          "runtimeName": "runtime_renamed_82",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Left_gathered_back_bolster",
+          "gltfNodeIndex": 76,
+          "runtimeName": "runtime_renamed_76",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Left_lower_upholstery_seam",
+          "gltfNodeIndex": 83,
+          "runtimeName": "runtime_renamed_83",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Left_short_dark_foot",
+          "gltfNodeIndex": 77,
+          "runtimeName": "runtime_renamed_77",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Left_short_dark_foot.001",
+          "gltfNodeIndex": 78,
+          "runtimeName": "runtime_renamed_78",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Left_short_dark_foot.002",
+          "gltfNodeIndex": 79,
+          "runtimeName": "runtime_renamed_79",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Left_short_dark_foot.003",
+          "gltfNodeIndex": 80,
+          "runtimeName": "runtime_renamed_80",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Left_single_seat_inflated_base",
+          "gltfNodeIndex": 75,
+          "runtimeName": "runtime_renamed_75",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_covered_front_button",
+          "gltfNodeIndex": 90,
+          "runtimeName": "runtime_renamed_90",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_covered_front_button.001",
+          "gltfNodeIndex": 91,
+          "runtimeName": "runtime_renamed_91",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_gathered_back_bolster",
+          "gltfNodeIndex": 85,
+          "runtimeName": "runtime_renamed_85",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_lower_upholstery_seam",
+          "gltfNodeIndex": 92,
+          "runtimeName": "runtime_renamed_92",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_short_dark_foot",
+          "gltfNodeIndex": 86,
+          "runtimeName": "runtime_renamed_86",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_short_dark_foot.001",
+          "gltfNodeIndex": 87,
+          "runtimeName": "runtime_renamed_87",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_short_dark_foot.002",
+          "gltfNodeIndex": 88,
+          "runtimeName": "runtime_renamed_88",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_short_dark_foot.003",
+          "gltfNodeIndex": 89,
+          "runtimeName": "runtime_renamed_89",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "Right_single_seat_inflated_base",
+          "gltfNodeIndex": 84,
+          "runtimeName": "runtime_renamed_84",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad",
+          "gltfNodeIndex": 348,
+          "runtimeName": "runtime_renamed_348",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.001",
+          "gltfNodeIndex": 349,
+          "runtimeName": "runtime_renamed_349",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.002",
+          "gltfNodeIndex": 350,
+          "runtimeName": "runtime_renamed_350",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.003",
+          "gltfNodeIndex": 351,
+          "runtimeName": "runtime_renamed_351",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.004",
+          "gltfNodeIndex": 352,
+          "runtimeName": "runtime_renamed_352",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.005",
+          "gltfNodeIndex": 353,
+          "runtimeName": "runtime_renamed_353",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.006",
+          "gltfNodeIndex": 354,
+          "runtimeName": "runtime_renamed_354",
+          "before": true,
+          "after": false
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.007",
+          "gltfNodeIndex": 355,
+          "runtimeName": "runtime_renamed_355",
+          "before": true,
+          "after": false
+        }
+      ],
+      "dynamicObjectsModified": false,
+      "assetDuplicated": false
+    },
+    {
+      "state": "furnished",
+      "selection": {
+        "mode": "explicit_manual",
+        "timelineResult": "unknown",
+        "manualOverride": false
+      },
+      "verifiedGlbSha256": "de766c72c4d6f99e9aefdfb580e4e5f83ef2d7c5a3f8584795453b92f30ceb1c",
+      "targetCount": 26,
+      "changes": [
+        {
+          "name": "Left_covered_front_button",
+          "gltfNodeIndex": 81,
+          "runtimeName": "runtime_renamed_81",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_covered_front_button.001",
+          "gltfNodeIndex": 82,
+          "runtimeName": "runtime_renamed_82",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_gathered_back_bolster",
+          "gltfNodeIndex": 76,
+          "runtimeName": "runtime_renamed_76",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_lower_upholstery_seam",
+          "gltfNodeIndex": 83,
+          "runtimeName": "runtime_renamed_83",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_short_dark_foot",
+          "gltfNodeIndex": 77,
+          "runtimeName": "runtime_renamed_77",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_short_dark_foot.001",
+          "gltfNodeIndex": 78,
+          "runtimeName": "runtime_renamed_78",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_short_dark_foot.002",
+          "gltfNodeIndex": 79,
+          "runtimeName": "runtime_renamed_79",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_short_dark_foot.003",
+          "gltfNodeIndex": 80,
+          "runtimeName": "runtime_renamed_80",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Left_single_seat_inflated_base",
+          "gltfNodeIndex": 75,
+          "runtimeName": "runtime_renamed_75",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_covered_front_button",
+          "gltfNodeIndex": 90,
+          "runtimeName": "runtime_renamed_90",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_covered_front_button.001",
+          "gltfNodeIndex": 91,
+          "runtimeName": "runtime_renamed_91",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_gathered_back_bolster",
+          "gltfNodeIndex": 85,
+          "runtimeName": "runtime_renamed_85",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_lower_upholstery_seam",
+          "gltfNodeIndex": 92,
+          "runtimeName": "runtime_renamed_92",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_short_dark_foot",
+          "gltfNodeIndex": 86,
+          "runtimeName": "runtime_renamed_86",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_short_dark_foot.001",
+          "gltfNodeIndex": 87,
+          "runtimeName": "runtime_renamed_87",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_short_dark_foot.002",
+          "gltfNodeIndex": 88,
+          "runtimeName": "runtime_renamed_88",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_short_dark_foot.003",
+          "gltfNodeIndex": 89,
+          "runtimeName": "runtime_renamed_89",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "Right_single_seat_inflated_base",
+          "gltfNodeIndex": 84,
+          "runtimeName": "runtime_renamed_84",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad",
+          "gltfNodeIndex": 348,
+          "runtimeName": "runtime_renamed_348",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.001",
+          "gltfNodeIndex": 349,
+          "runtimeName": "runtime_renamed_349",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.002",
+          "gltfNodeIndex": 350,
+          "runtimeName": "runtime_renamed_350",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.003",
+          "gltfNodeIndex": 351,
+          "runtimeName": "runtime_renamed_351",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.004",
+          "gltfNodeIndex": 352,
+          "runtimeName": "runtime_renamed_352",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.005",
+          "gltfNodeIndex": 353,
+          "runtimeName": "runtime_renamed_353",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.006",
+          "gltfNodeIndex": 354,
+          "runtimeName": "runtime_renamed_354",
+          "before": false,
+          "after": true
+        },
+        {
+          "name": "INFERRED_furniture_contact_pad.007",
+          "gltfNodeIndex": 355,
+          "runtimeName": "runtime_renamed_355",
+          "before": false,
+          "after": true
+        }
+      ],
+      "dynamicObjectsModified": false,
+      "assetDuplicated": false
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "candidate_kind": "external explicit layout-state recipe; no geometry or model duplication",
+  "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+  "base_blend": {
+    "workspace_relative_path": "ktv_fullroom/delivery/models/KTV_Complete_Open_Stage.blend",
+    "sha256": "abf9a4d970e5a7319d64f2c10eb8c3fa822a2bd60c283bfce946ed14ff33cf94"
+  },
+  "shared_glb": {
+    "workspace_relative_path": "ktv_fullroom/delivery/models/KTV_Complete_Open_Stage.glb",
+    "sha256": "de766c72c4d6f99e9aefdfb580e4e5f83ef2d7c5a3f8584795453b92f30ceb1c",
+    "reuse_existing_asset": true,
+    "two_static_glb_exports_required": false,
+    "consumer_contract": "Load one shared GLB once. Use original glTF node-index associations to change visibility only on 18 furniture nodes plus 8 explicitly listed inferred furniture attachments. Other static and dynamic nodes remain unchanged. glTF itself has no portable visibility switch; adapter required. No node removal or mesh duplication."
+  },
+  "furnishing_group": {
+    "id": "sofas",
+    "collection": "02_Inflated_Armchairs",
+    "objects": [
+      "Left_covered_front_button",
+      "Left_covered_front_button.001",
+      "Left_gathered_back_bolster",
+      "Left_lower_upholstery_seam",
+      "Left_short_dark_foot",
+      "Left_short_dark_foot.001",
+      "Left_short_dark_foot.002",
+      "Left_short_dark_foot.003",
+      "Left_single_seat_inflated_base",
+      "Right_covered_front_button",
+      "Right_covered_front_button.001",
+      "Right_gathered_back_bolster",
+      "Right_lower_upholstery_seam",
+      "Right_short_dark_foot",
+      "Right_short_dark_foot.001",
+      "Right_short_dark_foot.002",
+      "Right_short_dark_foot.003",
+      "Right_single_seat_inflated_base"
+    ],
+    "expected_count": 18,
+    "allowed_mutations": [
+      "object.hide_render",
+      "object.hide_viewport"
+    ]
+  },
+  "states": {
+    "furnished": {
+      "sofas_visible": true
+    },
+    "unfurnished": {
+      "sofas_visible": false
+    }
+  },
+  "timeline": {
+    "units": "source_video_seconds",
+    "out_of_observed_ranges": "unknown",
+    "ambiguous_transition_interval": [
+      6626.597822,
+      6627.396357
+    ],
+    "sample_label_boundary": [
+      6626.598,
+      6627.319
+    ],
+    "precision_note": "Screenshot before/after reads, not video frame PTS; no exact switch instant known. Supported intervals are discrete-sampled natural-play observations, not every frame.",
+    "observed_intervals": [
+      {
+        "start": 6613.625823,
+        "end": 6626.597822,
+        "state": "furnished",
+        "evidence": "Sofa_boundary_playback_log.json"
+      },
+      {
+        "start": 6627.396357,
+        "end": 6637.312808,
+        "state": "unfurnished",
+        "evidence": "Sofa_boundary_playback_log.json"
+      },
+      {
+        "start": 7105.257433,
+        "end": 7134.185133,
+        "state": "unfurnished",
+        "evidence": "D_natural_playback_log.json"
+      }
+    ],
+    "ambiguous_interval_endpoints": "closed; both endpoints return unknown"
+  },
+  "dynamic_groups": [
+    {
+      "id": "yellow_companion",
+      "objects": [
+        "Optional_yellow_plush_star",
+        "Star_double_curve_smile",
+        "Star_embroidered_eye",
+        "Star_embroidered_eye.001",
+        "Star_pink_cheek",
+        "Star_pink_cheek.001",
+        "Star_top_wisp"
+      ],
+      "expected_count": 7,
+      "layout_state_controlled": false,
+      "policy": "preserve stored base visibility and transforms; no animation or inferred motion added",
+      "glb_nodes_present": [
+        "Optional_yellow_plush_star",
+        "Star_double_curve_smile",
+        "Star_embroidered_eye",
+        "Star_embroidered_eye.001",
+        "Star_pink_cheek",
+        "Star_pink_cheek.001",
+        "Star_top_wisp"
+      ],
+      "glb_nodes_absent": []
+    },
+    {
+      "id": "balloon_dog",
+      "objects": [
+        "Moving_balloon_dog_body",
+        "Moving_balloon_dog_ear_a",
+        "Moving_balloon_dog_ear_b",
+        "Moving_balloon_dog_front_leg_a",
+        "Moving_balloon_dog_front_leg_b",
+        "Moving_balloon_dog_head",
+        "Moving_balloon_dog_neck",
+        "Moving_balloon_dog_rear_leg_a",
+        "Moving_balloon_dog_rear_leg_b",
+        "Moving_balloon_dog_tail"
+      ],
+      "expected_count": 10,
+      "layout_state_controlled": false,
+      "policy": "preserve stored base visibility and transforms; no animation or inferred motion added",
+      "glb_nodes_present": [],
+      "glb_nodes_absent": [
+        "Moving_balloon_dog_body",
+        "Moving_balloon_dog_ear_a",
+        "Moving_balloon_dog_ear_b",
+        "Moving_balloon_dog_front_leg_a",
+        "Moving_balloon_dog_front_leg_b",
+        "Moving_balloon_dog_head",
+        "Moving_balloon_dog_neck",
+        "Moving_balloon_dog_rear_leg_a",
+        "Moving_balloon_dog_rear_leg_b",
+        "Moving_balloon_dog_tail"
+      ]
+    }
+  ],
+  "characters": {
+    "human_avatar": "not modelled or added"
+  },
+  "glb_node_indices": {
+    "Left_covered_front_button": 81,
+    "Left_covered_front_button.001": 82,
+    "Left_gathered_back_bolster": 76,
+    "Left_lower_upholstery_seam": 83,
+    "Left_short_dark_foot": 77,
+    "Left_short_dark_foot.001": 78,
+    "Left_short_dark_foot.002": 79,
+    "Left_short_dark_foot.003": 80,
+    "Left_single_seat_inflated_base": 75,
+    "Right_covered_front_button": 90,
+    "Right_covered_front_button.001": 91,
+    "Right_gathered_back_bolster": 85,
+    "Right_lower_upholstery_seam": 92,
+    "Right_short_dark_foot": 86,
+    "Right_short_dark_foot.001": 87,
+    "Right_short_dark_foot.002": 88,
+    "Right_short_dark_foot.003": 89,
+    "Right_single_seat_inflated_base": 84,
+    "INFERRED_furniture_contact_pad": 348,
+    "INFERRED_furniture_contact_pad.001": 349,
+    "INFERRED_furniture_contact_pad.002": 350,
+    "INFERRED_furniture_contact_pad.003": 351,
+    "INFERRED_furniture_contact_pad.004": 352,
+    "INFERRED_furniture_contact_pad.005": 353,
+    "INFERRED_furniture_contact_pad.006": 354,
+    "INFERRED_furniture_contact_pad.007": 355
+  },
+  "camera_policy": "Camera selection is independent. State application accepts no camera name and never reads active camera.",
+  "acceptance": {
+    "state_rule_only": true,
+    "geometry_source_fidelity": false,
+    "camera_calibration": false,
+    "user_acceptance": false
+  },
+  "diagnostic_render": {
+    "camera": "01_front",
+    "camera_calibration": "unresolved for boundary sources; existing fixed diagnostic camera, not a source match",
+    "camera_unchanged_between_states": true,
+    "resolution": [
+      1180,
+      664
+    ],
+    "source_screenshot_canvas": [
+      1180,
+      757
+    ],
+    "render_canvas_offset_pixels": [
+      0,
+      27
+    ],
+    "offset_reason": "Nearest integer placement from observed picture top y26.625, no fitted alignment",
+    "source_reference_state_labels": {
+      "furnished": "Sofa_boundary_playback_6626p598.jpg",
+      "unfurnished": "Sofa_boundary_playback_6627p319.jpg"
+    },
+    "state_selection": "explicit manual state labels from observed image content; ambiguous timeline not auto-resolved"
+  },
+  "inferred_attachment_groups": [
+    {
+      "id": "inferred_sofa_contact_pads",
+      "collection": "11_INFERRED_Complete_Stage_Structure",
+      "objects": [
+        "INFERRED_furniture_contact_pad",
+        "INFERRED_furniture_contact_pad.001",
+        "INFERRED_furniture_contact_pad.002",
+        "INFERRED_furniture_contact_pad.003",
+        "INFERRED_furniture_contact_pad.004",
+        "INFERRED_furniture_contact_pad.005",
+        "INFERRED_furniture_contact_pad.006",
+        "INFERRED_furniture_contact_pad.007"
+      ],
+      "expected_count": 8,
+      "follows_group": "sofas",
+      "source_confirmed": false,
+      "reason": "Existing inferred pads are uniquely co-located horizontally with eight sofa feet. Furniture-dependent inferred accessories, not source-confirmed stationary stage objects.",
+      "support_pairs": [
+        {
+          "pad": "INFERRED_furniture_contact_pad",
+          "pad_glb_node": 348,
+          "pad_gltf_y_up_translation": [
+            -1.399999976158142,
+            0.007500000298023224,
+            0.4699999988079071
+          ],
+          "sofa_foot": "Left_short_dark_foot",
+          "foot_glb_node": 77,
+          "foot_gltf_y_up_translation": [
+            -1.399999976158142,
+            0.06399999558925629,
+            0.4699999988079071
+          ],
+          "horizontal_glTF_XZ_exactly_equal": true,
+          "equivalent_Blender_XY_equal": true
+        },
+        {
+          "pad": "INFERRED_furniture_contact_pad.001",
+          "pad_glb_node": 349,
+          "pad_gltf_y_up_translation": [
+            -1.399999976158142,
+            0.007500000298023224,
+            -0.4300000071525574
+          ],
+          "sofa_foot": "Left_short_dark_foot.001",
+          "foot_glb_node": 78,
+          "foot_gltf_y_up_translation": [
+            -1.399999976158142,
+            0.06399999558925629,
+            -0.4300000071525574
+          ],
+          "horizontal_glTF_XZ_exactly_equal": true,
+          "equivalent_Blender_XY_equal": true
+        },
+        {
+          "pad": "INFERRED_furniture_contact_pad.002",
+          "pad_glb_node": 350,
+          "pad_gltf_y_up_translation": [
+            -0.2199999988079071,
+            0.007500000298023224,
+            0.4699999988079071
+          ],
+          "sofa_foot": "Left_short_dark_foot.002",
+          "foot_glb_node": 79,
+          "foot_gltf_y_up_translation": [
+            -0.2199999988079071,
+            0.06399999558925629,
+            0.4699999988079071
+          ],
+          "horizontal_glTF_XZ_exactly_equal": true,
+          "equivalent_Blender_XY_equal": true
+        },
+        {
+          "pad": "INFERRED_furniture_contact_pad.003",
+          "pad_glb_node": 351,
+          "pad_gltf_y_up_translation": [
+            -0.2199999988079071,
+            0.007500000298023224,
+            -0.4300000071525574
+          ],
+          "sofa_foot": "Left_short_dark_foot.003",
+          "foot_glb_node": 80,
+          "foot_gltf_y_up_translation": [
+            -0.2199999988079071,
+            0.06399999558925629,
+            -0.4300000071525574
+          ],
+          "horizontal_glTF_XZ_exactly_equal": true,
+          "equivalent_Blender_XY_equal": true
+        },
+        {
+          "pad": "INFERRED_furniture_contact_pad.004",
+          "pad_glb_node": 352,
+          "pad_gltf_y_up_translation": [
+            0.3400000035762787,
+            0.007500000298023224,
+            0.4699999988079071
+          ],
+          "sofa_foot": "Right_short_dark_foot",
+          "foot_glb_node": 86,
+          "foot_gltf_y_up_translation": [
+            0.3400000035762787,
+            0.06399999558925629,
+            0.4699999988079071
+          ],
+          "horizontal_glTF_XZ_exactly_equal": true,
+          "equivalent_Blender_XY_equal": true
+        },
+        {
+          "pad": "INFERRED_furniture_contact_pad.005",
+          "pad_glb_node": 353,
+          "pad_gltf_y_up_translation": [
+            0.3400000035762787,
+            0.007500000298023224,
+            -0.4300000071525574
+          ],
+          "sofa_foot": "Right_short_dark_foot.001",
+          "foot_glb_node": 87,
+          "foot_gltf_y_up_translation": [
+            0.3400000035762787,
+            0.06399999558925629,
+            -0.4300000071525574
+          ],
+          "horizontal_glTF_XZ_exactly_equal": true,
+          "equivalent_Blender_XY_equal": true
+        },
+        {
+          "pad": "INFERRED_furniture_contact_pad.006",
+          "pad_glb_node": 354,
+          "pad_gltf_y_up_translation": [
+            1.5199999809265137,
+            0.007500000298023224,
+            0.4699999988079071
+          ],
+          "sofa_foot": "Right_short_dark_foot.002",
+          "foot_glb_node": 88,
+          "foot_gltf_y_up_translation": [
+            1.5199999809265137,
+            0.06399999558925629,
+            0.4699999988079071
+          ],
+          "horizontal_glTF_XZ_exactly_equal": true,
+          "equivalent_Blender_XY_equal": true
+        },
+        {
+          "pad": "INFERRED_furniture_contact_pad.007",
+          "pad_glb_node": 355,
+          "pad_gltf_y_up_translation": [
+            1.5199999809265137,
+            0.007500000298023224,
+            -0.4300000071525574
+          ],
+          "sofa_foot": "Right_short_dark_foot.003",
+          "foot_glb_node": 89,
+          "foot_gltf_y_up_translation": [
+            1.5199999809265137,
+            0.06399999558925629,
+            -0.4300000071525574
+          ],
+          "horizontal_glTF_XZ_exactly_equal": true,
+          "equivalent_Blender_XY_equal": true
+        }
+      ],
+      "excluded_static_tripod_contact_pads": [
+        "INFERRED_furniture_contact_pad.008",
+        "INFERRED_furniture_contact_pad.009",
+        "INFERRED_furniture_contact_pad.010"
+      ]
+    }
+  ],
+  "scope_revision": {
+    "prior_targets": 18,
+    "current_targets": 26,
+    "split": {
+      "furniture": 18,
+      "inferred_furniture_attachments": 8
+    },
+    "trigger": "Initial unfurnished fixed-camera diagnostic exposed eight residual inferred pads. Scope explicitly reviewed and expanded, not silently changed.",
+    "historical_evidence": "historical_18_target_diagnostic",
+    "geometry_material_transform_edits": false
+  }
+}

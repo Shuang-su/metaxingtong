@@ -1,0 +1,11 @@
+{
+  "source_path": "ktv_fullroom/delivery/scripts/complete_stage.py",
+  "source_sha256": "1428815df85d3fbf16969b4b83d28767c2ea5f3577be028f9f302b970e773291",
+  "lines_54_to_57": [
+    "# Add tiny contact pads under old foot endpoints rather than move evidence-based furnishings.",
+    "for o in list(sc.objects):",
+    " if o.type=='MESH' and ('short_dark_foot' in o.name or 'Tripod_silver_foot' in o.name):",
+    "  p=o.matrix_world.translation;beam('furniture_contact_pad',(p.x,p.y,-.01),(p.x,p.y,.025),.054 if 'short' in o.name else .027, dark)"
+  ],
+  "interpretation": "Pads generated separately under existing sofa and tripod foot endpoints; only the eight sofa-linked inferred pads follow layout."
+}
