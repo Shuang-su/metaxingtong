@@ -45,3 +45,7 @@
 - [暗色铁栏布景](https://github.com/Shuang-su/metaxingtong/issues/16)：Issue 已建立；实际模型提交 / Draft PR 待核验。
 
 各场景的模型与真实历史保留在各自归档分支/Draft PR；未合并到 main 的资产不冒称已位于 main。汽车副驾目前只有局部来源，不在完整模型归档清单内。
+
+## 完整需求与当前门槛
+
+已将用户完整直播场景重建要求写入[重建规则](docs/reconstruction-standard.md)，包括登录后高清补采、后续回放同场新增角度、白模/纹理、同机位叠图改进与主视角确认。当前16场均为候选，[逐场来源覆盖审计](docs/source-coverage/2026-10-10.json)列明尚未满足的门槛；不把几何检查当作来源验收。
