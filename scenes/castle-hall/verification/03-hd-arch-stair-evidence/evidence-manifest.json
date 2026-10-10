@@ -1,0 +1,697 @@
+{
+  "stage": "verification-hd-arch-stair-evidence",
+  "title": "高清右拱口台阶来源核验",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1aw411T7ws/"
+  ],
+  "times": "A附近2712.991552秒；右墙拱口/台阶4528.936245、4529.796014秒。4530.474–4535.494含45张真实播放采样，另4547.492之后第二段，中间空隙与重复不得拼成连续标定轨迹。",
+  "pixels": "解码1920×1080，浏览器1180×757；固定裁切(0,27)-(1180,691)为1180×664。并非原生1920帧；原截图UI保留，单独validity mask只排进度条/角水印且不覆盖所有人物。",
+  "changes": "新高清右墙拱口与上升台阶证据指出旧模型仅矩形侧窗而漏该空间；同一旧几何A附近原始重渲与50%直接叠图，未warp。旧BLEND SHA b04ebc7091ce5bc6a2c8419a634effc5e6999f68a8db68701a832e69259a174e未改；没有新白模、未来源验收。",
+  "limitations": [
+    "新增源尚非全片观看或跨日取证，旧模型未改，新右拱阶证据不能被旧闭合性QA覆盖。",
+    "旧A近似匹配相机重渲并非经本次完整高清相机标定。",
+    "两个资料ZIP冻结但不在本次普通文件白名单；当前仅来源/核验研究，不进CURRENT。"
+  ],
+  "source_fidelity_passed": false,
+  "current_changed": false,
+  "files": [
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/README_城堡厅高清核验.md",
+      "bytes": 1947,
+      "sha256": "af8bf5ddabc50b297249ec55ad1428526a4eb2727765a490ea58a1a12a56a1ef",
+      "git_blob_sha1": "3f5e49a8061455dc6bc7b81a5f61fac16f2cd2d7"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/SHA256.json",
+      "bytes": 23588,
+      "sha256": "8a286ae894dbb83a9c2b635412a402fb718823dfbd82e621ccebbee55df443ad",
+      "git_blob_sha1": "cddc1374b92b337e91d008fb23588a641fb160cf"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/HD_A_source_baseline_overlay.jpg",
+      "bytes": 797898,
+      "sha256": "ee958bd2e01417df8228aef1b473760c1d49701579fa6eb83e09302dbcf9e7d7",
+      "git_blob_sha1": "b69ff084b8dc9ae4b0c367641f4c7b75d7ec79b1"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/HD_right_arch_stair_evidence.jpg",
+      "bytes": 368010,
+      "sha256": "ba7bccfc69a00fac3febd82676590a87c8766c566f4a05a3a4ae241e4774dad0",
+      "git_blob_sha1": "2fad9e67a0b479535a17df954ca0e528f35056e4"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/baseline_A_provenance.json",
+      "bytes": 675,
+      "sha256": "b73d889b45db3f9b3bb320f042e177533a9a8c4eb94b5b4901a27fcac4598f63",
+      "git_blob_sha1": "d174520166859e585a0538e18ebc8fe8d43bcad7"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/baseline_inventory.json",
+      "bytes": 607105,
+      "sha256": "b61a6402b0df32e638c23a8856ad29587fbbfd926a8cff309597f68736108adb",
+      "git_blob_sha1": "c594b688625dbc36acbd0f130348cda39bcf8ec0"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/current_glb_reimport_check.json",
+      "bytes": 513,
+      "sha256": "9f7557e67211e1ca27606e5d70750145205660a74e9141b6c5afd5ffd85bb801",
+      "git_blob_sha1": "e53f0cc1ab588cdbef8fc6db6ccc29a8be321e25"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/frozen_inputs.json",
+      "bytes": 699,
+      "sha256": "b59ab8ae7b1278344291ad2efa92ad128b3b2867b65bc3802f90c6f3bec3b07e",
+      "git_blob_sha1": "1ef164101e80f8388a5d37a4e7aa3c052c29dde3"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/initial_coverage_contact.jpg",
+      "bytes": 696855,
+      "sha256": "96fc9b78948b5563c8615562b506526f719d93bf5b0aceac048d7e41cedf4e96",
+      "git_blob_sha1": "b1f1b3ba7e16188fe7adfbca0c936119111e3245"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/initial_findings.md",
+      "bytes": 3437,
+      "sha256": "c3c096d6a0fa08a203f2347c7a2d6f295a3b79f68d485b223c7d7147f8ff83a3",
+      "git_blob_sha1": "6aebf3cba7406a24f4edae6a43114aed80ee1bc2"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/masks/UI_only_validity_mask.png",
+      "bytes": 2180,
+      "sha256": "ce36f02c20e15af3f87061096b769422c27505dac8c6dd32674354650aa6cdaa",
+      "git_blob_sha1": "4ac73ee37c34eb526914c40ce092539a09a8d9ed"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/qa/overlay50_baseline_A_HD2712.png",
+      "bytes": 1379142,
+      "sha256": "71e61a8a418c1cd2dc9ba44a86c9729d80e314ef398f21094e5b7c927c75b2c5",
+      "git_blob_sha1": "946267257d91e5b840dd6c9510f2fc5dc8ec020e"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_A_2712_paused.jpg",
+      "bytes": 118861,
+      "sha256": "5d072c78aff58d298741c8c02b90e5c878e38ba33df1a1d5fbfa17890ce71d57",
+      "git_blob_sha1": "1d69880c219a27dcf11cff7be2abf455952e13c7"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_A_2712_paused.json",
+      "bytes": 571,
+      "sha256": "e6ef0a719aef1a77baa0e73133f2dcd1f022a369f19cb8fb320a51579c5993fb",
+      "git_blob_sha1": "c2d8159c64ee1e58de84841f9030c85523467478"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_A_2712_paused_core.png",
+      "bytes": 757593,
+      "sha256": "42686998669239e964a4cb70a32eff4d65f5230a86228e53341465c7957d3bf5",
+      "git_blob_sha1": "7930c2b5c1342bee0d3c19d6f407759c82ac022d"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_A_2721_playing_cart.jpg",
+      "bytes": 115921,
+      "sha256": "098d30075d70c322d127a5239c2de8d05b11d91aa4b0d7a50cd03951f8e7eb38",
+      "git_blob_sha1": "316a64f6b20065d550766684e93e86133fc8a134"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_A_2721_playing_cart.json",
+      "bytes": 573,
+      "sha256": "fe74db8b9574fabcef21bfd1a2a34f9d94f220544bed247465f582d39334a581",
+      "git_blob_sha1": "f0227408db9bf35121a896cb15b8d4e454439068"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_A_2721_playing_cart_core.png",
+      "bytes": 791598,
+      "sha256": "729f9db269ce44abd72606a3b93be0956265e170c1bda82082ccb72251d37f5d",
+      "git_blob_sha1": "93e2525659edbee844bf7b788f9b08b1848a95d7"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_B_4509_paused.jpg",
+      "bytes": 122431,
+      "sha256": "0354e16a5bfa458aafb56dc951fc3510effe98c92f70f8cb32346b056c32c201",
+      "git_blob_sha1": "cc8ad7ba8948a18d7e383246642dc82eacd90fc3"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_B_4509_paused.json",
+      "bytes": 569,
+      "sha256": "a1762427e57d8318f2da46625c9bba1e2c60cf7f991eb2a6baadd64aec90cabb",
+      "git_blob_sha1": "800de643cff7eec2ce2aed88fa395e8763a2d417"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_B_4509_paused_core.png",
+      "bytes": 833795,
+      "sha256": "3d1e97cf50f232f433fe44c3ce2c84c0dfb6684ebb5916b89a7fda0bf691b474",
+      "git_blob_sha1": "c07df432a215dc36534b3c52c5c58f3e90d59a99"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_B_oblique_loaded_paused.jpg",
+      "bytes": 102494,
+      "sha256": "fe00b7e4e4ae19c4c54503d6f294ca881ce0fadf6f29929c2ea0dda46d647806",
+      "git_blob_sha1": "4d286d779f33cfdd1ae4d29b139af42196b47719"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_B_oblique_loaded_paused.json",
+      "bytes": 571,
+      "sha256": "476df5f9b7fa2d8eeb1e2c1737116365af349d2e74710aca69d5cadacdefca30",
+      "git_blob_sha1": "c50326de7a3f5138ea9e69480912ba13723b0193"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_B_oblique_loaded_paused_core.png",
+      "bytes": 722888,
+      "sha256": "9bdc9cad1cddd765d900147e9cbc1fdce5de70f90d2849b8d9cca6a0682c4fca",
+      "git_blob_sha1": "71dfe8bc07787ea679f488352cee40b6f4d56f50"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_C_4426_paused.jpg",
+      "bytes": 111481,
+      "sha256": "7fd7e7ebbeab1c2f98f2067bee109cbaf23d3d795c81c5cb47d765dc537ca2d4",
+      "git_blob_sha1": "8f7152b20907d2538dd6c43638be2edc58879840"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_C_4426_paused.json",
+      "bytes": 571,
+      "sha256": "b4f92f8dfd5faf8a28c2fc0a2482b56c84f63ff7be7721af1b1871a2335fc2d1",
+      "git_blob_sha1": "ced7381afbccd8d221c7f57de35857de0d0b20e6"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_C_4426_paused_core.png",
+      "bytes": 788845,
+      "sha256": "f8637037249e7ce999fdcf552d653f0e39750ace2ed48f0a451cd764be4d595e",
+      "git_blob_sha1": "8c68a8f9d5cad2a5e275c54a1f32c330c44ebf97"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_empty_boundary_1729.json",
+      "bytes": 527,
+      "sha256": "40f853cb33632370fbf4281e0dda402fc99fa8ab6b5e1e5b1bc20836aec1b9cc",
+      "git_blob_sha1": "a7ffc2979379ca3dfc9e2b9961a74033e516749d"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_empty_boundary_1729_core.png",
+      "bytes": 778084,
+      "sha256": "844d73ef3ada56ff69de85a1418243f5dbfd6a463d0f7a344e88f5063c31c6a3",
+      "git_blob_sha1": "30df3de234433f651df14b579482ab60331a0399"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_front_4436_paused.jpg",
+      "bytes": 118261,
+      "sha256": "841d35514fc15323c4f79496d1c2164df903203f3c1e8aebc08c3b86834e9d8f",
+      "git_blob_sha1": "a8861bf8cfa3d1960917d923466d6eddb6308278"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_front_4436_paused.json",
+      "bytes": 571,
+      "sha256": "6fe5835ad067a5b9815fcf60241f1287a1c45ecf17c741648e7432d73fd8aa3e",
+      "git_blob_sha1": "5ecd43b3f1343026fc632f4389f276d7086430fc"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_front_4436_paused_core.png",
+      "bytes": 779648,
+      "sha256": "692689ef26e3498126be4709f1bd4806dd85377098831b0640a4db7fb79aad53",
+      "git_blob_sha1": "6522ee7cab1e34244308cd50b57760077512d442"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4528_paused.jpg",
+      "bytes": 110076,
+      "sha256": "ecbc88e8731da88c9fbb05463e8b1393fc95efb484bdc9848eddb72d4ea02037",
+      "git_blob_sha1": "c920c31cfd8ef8129b6fc84863c3f238b143db63"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4528_paused.json",
+      "bytes": 571,
+      "sha256": "cee186e9c6e664414b00e328fe8f7f33f06ba206798c45c7273c408dd4078b75",
+      "git_blob_sha1": "016260c252d6b6264e3eb6043672e12aff06ea5c"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4528_paused_core.png",
+      "bytes": 754396,
+      "sha256": "706f8a658b0aca1426cf07571ad55de9b4b2162215446676a5e4670dcd86e307",
+      "git_blob_sha1": "4c17d0a7ef4d4a7c710367282f0c73c825accdb1"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4529_clean.jpg",
+      "bytes": 106984,
+      "sha256": "88c2c41dce97fd30dc8109e10c7b0b4732c2ffc251e1a65e1250e864a818272e",
+      "git_blob_sha1": "4051f9617d236c3b41dbb9ee09bbc63e30b8b070"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4529_clean.json",
+      "bytes": 571,
+      "sha256": "729376cefcd3b5c581b1547d313eced77f8fd6c263962101336879fa0b0f117d",
+      "git_blob_sha1": "cd296d79138e666576699b1f9a2862472c1df426"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4529_clean_core.png",
+      "bytes": 751366,
+      "sha256": "2c67612f6afe84ffccc33cbb88470004ab0fd72de546a4e4e340b01541985e83",
+      "git_blob_sha1": "8198699fb8441a2d0b14abb6ee51454bb8989504"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4529_natural_ui_clear.jpg",
+      "bytes": 97746,
+      "sha256": "b1a82a3c035ecb07664e971e38031c8ec0e45c0c4efe21fa488ec19a4037e04c",
+      "git_blob_sha1": "52beda207419212f4575dd886a1b2e24eb1068ea"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4529_natural_ui_clear.json",
+      "bytes": 571,
+      "sha256": "8eb8b5bfb8af845c46d439adfdd368bba77695e0913fec9f6a01cdba8668acdf",
+      "git_blob_sha1": "f44d8f06a2ac57f65c617bb0a27813db97ec4d58"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4529_natural_ui_clear_core.png",
+      "bytes": 734335,
+      "sha256": "ee060469fc3897fbf26d5fa46bb694d1d224f14ebaae4e966c988c3987b9e9bc",
+      "git_blob_sha1": "79f802e8d5ad27e5733ba43f4ad8e8d81b83a36e"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4529_paused.jpg",
+      "bytes": 107074,
+      "sha256": "c386bb388d7ab1c515262f06ed881db37a03d95fac33b6a9eeaf324bf6419dbe",
+      "git_blob_sha1": "c7e969c6720478f73e2d5c535cb02ad50eaf50d5"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/hall_right_arch_4529_paused_core.png",
+      "bytes": 752815,
+      "sha256": "e75e3145692bcd41b07692c1c524cad3e156375919fb678672aa4dab2cac9488",
+      "git_blob_sha1": "b9c5858425774a2f343aa051fd7306a83b32578c"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/000.jpg",
+      "bytes": 108329,
+      "sha256": "fdf8f687d19c78aea55e0b41b2476b1bee0b244c0efce9a40661956661f00dbb",
+      "git_blob_sha1": "dadb3e815011d5de47cbf534ab2a7f884b4047ba"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/001.jpg",
+      "bytes": 106396,
+      "sha256": "f5fecd0a8b3fc17fdad7790eb738bdbcaee4745aea1f8e27976d49168d9a4646",
+      "git_blob_sha1": "01a27912d0680b73fe4c0c0296d80014614f45d7"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/002.jpg",
+      "bytes": 107181,
+      "sha256": "d4327df9d649e440575becb9f76e29f0fdef8f62225bb75928406e8f73eb9b73",
+      "git_blob_sha1": "9d6867cd0ef85de8f4425f33daf0b056034645ca"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/003.jpg",
+      "bytes": 103932,
+      "sha256": "42224ceed144c82237390c1234836329afa7feba0c65545b467d6458bb737874",
+      "git_blob_sha1": "c6fbfa93e33bc6b8e9fe3a3a304cc975fc15d32d"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/004.jpg",
+      "bytes": 102656,
+      "sha256": "b5a53234fe5dfa61a3c5032ed179bef652843239dc428d188a2b7afa8b01575c",
+      "git_blob_sha1": "24ca25b56065cef1f1f01816a45c7f4b24ca7c71"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/005.jpg",
+      "bytes": 104514,
+      "sha256": "db4206f11fe14858fa700ef1d9be630a00e8c4e91c88cbbb221a5df8d78627c9",
+      "git_blob_sha1": "a20bd651224a26f279c26f8b267caa9b9ee32fc9"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/006.jpg",
+      "bytes": 108053,
+      "sha256": "3876aea77bc98be64c259bbc6ec96d99d0937754b37dc110b62a660b347c0d0c",
+      "git_blob_sha1": "1c7d9295d3d800a8a901a17cf2238afb92587f22"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/007.jpg",
+      "bytes": 109705,
+      "sha256": "ee33bd45a074e67ec05ed0c13312d8c9edf57a715d642cebfb0f99982cc4f769",
+      "git_blob_sha1": "67d5969ddee041d3ad18ecbe5e2a93c34052f9d9"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/008.jpg",
+      "bytes": 112226,
+      "sha256": "810364aba72c5981af20166b9c1becac035b7fff2d89865e4f82693b66909327",
+      "git_blob_sha1": "216164107839d5fe591f994a43c97891042d6eb7"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/009.jpg",
+      "bytes": 113471,
+      "sha256": "a8903ff5ba325f30beb11d2c6d5f7141ede10737665ad604bd875038f7cde3bd",
+      "git_blob_sha1": "9b4251a957d87f1e2c7200418d87c78432877a24"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/010.jpg",
+      "bytes": 110327,
+      "sha256": "72327221cd17914c579aad8a5e6a31c973c113d2e7cbf66d8d0448f6a3df2879",
+      "git_blob_sha1": "a6aede8ffbf57e6596d3fd092da766a35872de7b"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/011.jpg",
+      "bytes": 106236,
+      "sha256": "a83847ff3a0785b31a768d24d07c9528136ff8b49ef5082a3f4aefaf5db300e2",
+      "git_blob_sha1": "dd45e235a43c4c303a57db36adf27926b25657de"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/012.jpg",
+      "bytes": 103837,
+      "sha256": "fef17e535a1dea6137e33a765f58ab5eec73ebc03e35614bb9616158ad8be2e5",
+      "git_blob_sha1": "3a0cd24c7bfd94276b07fe0dcef76b4af27c8cc9"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/013.jpg",
+      "bytes": 106649,
+      "sha256": "0f81c837c3109a80ad12ca4792dac512cd8d0f0bffdd755d019157321210c547",
+      "git_blob_sha1": "ca4cdb554f0bcc2cb2df53db68328700b0de45fb"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/014.jpg",
+      "bytes": 105996,
+      "sha256": "a4a0c64e10593f5c4edfd96c7173365142328876ab009a14d5623d2424054acf",
+      "git_blob_sha1": "f1df102071e995f04e865a27ec8d8071eb7b619e"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/015.jpg",
+      "bytes": 96127,
+      "sha256": "699b34efb02ef03bb7e5f1c1095cb7132a25a3b7957061e8e9b277a21cf45353",
+      "git_blob_sha1": "17f2408e94cb22a28e3530a8dc82fc2c6c7398b2"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/016.jpg",
+      "bytes": 95497,
+      "sha256": "4f72d86350df1f8aa355fd62be55c7d7c1db815a243ce2edc691b2c24a99f133",
+      "git_blob_sha1": "22bc81f0227dc857748d1256929e843d46168cff"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/017.jpg",
+      "bytes": 102178,
+      "sha256": "b7823d4e3ecfb94206fe7f08096afdaef6c67d7f629cc557b614069bddb95b90",
+      "git_blob_sha1": "af898b958df8e2422aee853857c99630a1003265"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/018.jpg",
+      "bytes": 111962,
+      "sha256": "56eebffa778adea94569b814ec3162c7f3e58b87132bfae152f1d2267b241fc1",
+      "git_blob_sha1": "b4bb5aecd780b7f9451a00876d6b733be2d9036b"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/019.jpg",
+      "bytes": 108577,
+      "sha256": "7f6bbc4391510c22f8809e8fdd79614c3caa72ad4567a1bd2287140df0fc81eb",
+      "git_blob_sha1": "7f5441cb82d0c842c1f6e67b85b983e1e152ed78"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/020.jpg",
+      "bytes": 109318,
+      "sha256": "ef617f643c97e0d3ecfcaa053a24db32ac822d547c3a8cb299f10e533220415e",
+      "git_blob_sha1": "6604f2d524025b6d67fc0b60edd0b660ae74226c"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/021.jpg",
+      "bytes": 110228,
+      "sha256": "23b1a8d7c90b155f03a2e81248ff54833728b2bf4f7926aecf092b74430f5423",
+      "git_blob_sha1": "a232af953f81556400769d6f91f93f43cdc8f21a"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/022.jpg",
+      "bytes": 108863,
+      "sha256": "f80ff0a8cce6aef6a343ce24733f7c11c027b7a2e43a026351c7c27600ed2cd0",
+      "git_blob_sha1": "c03e6d252efc7c1026dbfdbedd4cd12cbdc547ae"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/023.jpg",
+      "bytes": 109654,
+      "sha256": "0efce67bcb924d42438220fb91b7f2ec9d5bc2068966d10d99b7107cd03feb44",
+      "git_blob_sha1": "f360c41c6ec4e474f63a5661d3544612144e17c1"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/024.jpg",
+      "bytes": 112903,
+      "sha256": "15fa33a0f34063182514bc96a359039be0d8123d893e756068fdbfe5241fb59d",
+      "git_blob_sha1": "d8e41844318f0d30e98206332f7145d2a30dd448"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/025.jpg",
+      "bytes": 113516,
+      "sha256": "3e5ebf2cfc45fbce7c1de5741cf4ff0fcf7f7bc713ef3a633146d875c41a6cf4",
+      "git_blob_sha1": "6ad2e2d6eb52146038257ba89f73a8b2ef7dcc5e"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/026.jpg",
+      "bytes": 110719,
+      "sha256": "b6fcf1000ede5da7de6556079f8c7d4efa7b6b688fc1b6f1799be928c7aee31d",
+      "git_blob_sha1": "0c31511d84f8ea4e6c41a6f87dd07efd365e4efd"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/027.jpg",
+      "bytes": 113143,
+      "sha256": "2220208732726d53d1dd265a7288940e24eed84511925bd3ce734bb6dd45901f",
+      "git_blob_sha1": "0de83f2e30018fa655328383f68b00bd9ad67c12"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/028.jpg",
+      "bytes": 113983,
+      "sha256": "b881d97de1bb8c76f25315fe38b332c3e624f79942337c98ecd44dcac8885cf7",
+      "git_blob_sha1": "eb6ce7ece088b90cb544ca3f8172459502134fd7"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/029.jpg",
+      "bytes": 113555,
+      "sha256": "22330155eb8df1dd0a72d9bfac537af9a4412566a19682992681137142722ca8",
+      "git_blob_sha1": "8392aea5e50a16713a51eedab0d59df21ada7706"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/030.jpg",
+      "bytes": 111131,
+      "sha256": "f148d114b3f23df81e57e011681171b36ea4842fc90eb67e7dc079807ac7edad",
+      "git_blob_sha1": "250926070b6d25027bcfe07cd2e155c6c62f98e2"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/031.jpg",
+      "bytes": 113957,
+      "sha256": "5d746b50114d484a6e8ee2151771b994168a5b5f9ef2de36eb100efe510fca1c",
+      "git_blob_sha1": "125e7bfd55e0324de594a773a4f96035afdbc9a0"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/032.jpg",
+      "bytes": 112016,
+      "sha256": "9bd0551210e82d5f8000b4b80f27572fc87a7833d92ca3cd4b495fca41551886",
+      "git_blob_sha1": "fa9b9c8021914fd1af4c6ca627ecc02188460f73"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/033.jpg",
+      "bytes": 112635,
+      "sha256": "84bb5e342bf9a16fb7fb37ae859a5aec3f7ecde8e19947d3769efade107be3d4",
+      "git_blob_sha1": "b478cb1904acd962aed5e73ff90e360ca0960c40"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/034.jpg",
+      "bytes": 111693,
+      "sha256": "46245cd9761aa11bfa14216755c2dabc511901b94aa5dad1b03eb1a580d2eee5",
+      "git_blob_sha1": "0065aa8081cce22b598f5f838e9b27cf31d045e1"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/035.jpg",
+      "bytes": 111356,
+      "sha256": "84a461576ca2c98588f8c073566480ec05d1e54de396dd65172c7705b16eb3c2",
+      "git_blob_sha1": "00d7d525d6f9d794e4d3fd95b76df77d3b1669cf"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/036.jpg",
+      "bytes": 111548,
+      "sha256": "12d23cba736e3e59d75a3fb8692fb0b84465848ab9a454bf60f4ac4a1497eb33",
+      "git_blob_sha1": "4f380c11d16e374b0cd404af6d483ca169374fa1"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/037.jpg",
+      "bytes": 112900,
+      "sha256": "2020b37360344a07d4aedb260d4749751cae7a76c3e2c42719641af6e9dcf663",
+      "git_blob_sha1": "91267d0d838868677495bd5c096523cf70923e42"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/038.jpg",
+      "bytes": 114877,
+      "sha256": "8f1b5c83eb7334b8c28c91ac3b5b58f4150aa9939b0452b7e06a724800e4d50e",
+      "git_blob_sha1": "b4322221339f6ad97cd8dd79bc2244afbf8eccea"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/039.jpg",
+      "bytes": 113721,
+      "sha256": "05f42efe2464f4c541238ab5f17b1652332a9995057bca1d149232c1cc9e842d",
+      "git_blob_sha1": "2cdbc7dba4712d807248c4f629a1c7abe71e58c3"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/040.jpg",
+      "bytes": 113991,
+      "sha256": "c56e91a7890e721689f498a0507b6f4460e4fbef890f5d0abdab689ca43e56c4",
+      "git_blob_sha1": "71a6d236762e81d1d5c7b276010c274f6af1235b"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/041.jpg",
+      "bytes": 115347,
+      "sha256": "b54018873ac0a31ae3ded8da3795ba17794d29a0319c52f57d374642ac6b6e50",
+      "git_blob_sha1": "35e52b2f680eb48a589249ae5694adc98e214b8d"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/042.jpg",
+      "bytes": 115491,
+      "sha256": "4b2618b52f6768dae86530330928329c3ee97c6678d5a36182e05626ef73a638",
+      "git_blob_sha1": "46c8782fc0c0339944d2007e39d662cb451e6cc5"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/043.jpg",
+      "bytes": 113575,
+      "sha256": "ce528ccd66bb03eef9a9451f2ad3eb59325f756608da1a7a0b7db6c90ec94324",
+      "git_blob_sha1": "27dc92ed7aeece90247dfd541a20d62a45522aca"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/044.jpg",
+      "bytes": 113181,
+      "sha256": "bb58b6e61f8bddb40d1139b9ae22bf40445c664d8899d7116ef263fc416fced7",
+      "git_blob_sha1": "b1510e52bb90208a7bc2deb68db95622a6bbf1fd"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/045.jpg",
+      "bytes": 117482,
+      "sha256": "76189ae00f43923de0e1e555c7e2475118f5ecd17b10d2b3458d18580015106e",
+      "git_blob_sha1": "87513179669309218cc92e7f04040c59da0653f7"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/046.jpg",
+      "bytes": 117465,
+      "sha256": "f26cfb095ca2fa8994a91948ddddd489d58ad8baad0ff8afefa006feed590c03",
+      "git_blob_sha1": "956ce912e24b96155bd108ff47a7ee3d50775aad"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/051.jpg",
+      "bytes": 117491,
+      "sha256": "1dcd026402574db6ffcf9e812d1415309085842f2a6674b188d16ce536225504",
+      "git_blob_sha1": "77d5739d9920acb7dd1dce73cddc1d736b97c628"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/054.jpg",
+      "bytes": 117497,
+      "sha256": "62c45446647c9ff1316bc235d4869b375f0ca020eed0553bdeecca2abb9b3166",
+      "git_blob_sha1": "73bb983b59cd692f044f77e3f760c424be91c77d"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/063.jpg",
+      "bytes": 117495,
+      "sha256": "00d2f6f8e64cb4b20976e818f4a612fd131b5770dc8665ac3a8206b4c87440b0",
+      "git_blob_sha1": "63030ab670cfa26b9a7aa31331d2870fac21a658"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/080.jpg",
+      "bytes": 117902,
+      "sha256": "127ff799a59df10e2787bc60aec01e2b60f705076f12357f0766d234799e1e2e",
+      "git_blob_sha1": "cdf69dbc19bbf92fad68bdd0791ebbe1a56535ff"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/081.jpg",
+      "bytes": 117903,
+      "sha256": "056bc79019fbcd54996401cd74f3f5cc718a94dea0cd668f1044ae4164dcdc22",
+      "git_blob_sha1": "5bd79341ff122144ef8db5fcecfb1b1d70af2528"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/082.jpg",
+      "bytes": 117903,
+      "sha256": "558297e6fb36e0f937462a130ac079d77eb0aab479413ec05a898a78c3515a34",
+      "git_blob_sha1": "31fe08ed1328db19d22f7532fa6d43d64c956571"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/083.jpg",
+      "bytes": 117897,
+      "sha256": "da1bc97924169398af9261d4d225306f92e8629a912df647c8e0a8b1d45baf76",
+      "git_blob_sha1": "cfe820b4f3c55c479491b4b1a22bbaeb2c0e2d58"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/084.jpg",
+      "bytes": 117883,
+      "sha256": "7d06394b7db6dfdc02a5f92cc8a865d10bb8f82f7129e3bf4f6831ccc39713c9",
+      "git_blob_sha1": "04c4b1eeb6b32bafa1b284fb6063b003856b3287"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/085.jpg",
+      "bytes": 117889,
+      "sha256": "a4e10b4f0ce36270c462cd2ad3422a013854b9386f60153b6cb32e72807ba12a",
+      "git_blob_sha1": "3e8b077d5b1be577e8496b2a3e521d148a3bcf12"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/086.jpg",
+      "bytes": 117826,
+      "sha256": "0b0a4b2f0cf90ff1cf1370d2963666b7ad79addf0b60675dfb3b1d10844d39f3",
+      "git_blob_sha1": "94fe01427cd4aebe8a38e10d39ff4ac8e9672b8c"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/087.jpg",
+      "bytes": 117823,
+      "sha256": "f5afc6b013911e908095f01b9c40b0f776451b08a7794db4b8506078a16ae1ff",
+      "git_blob_sha1": "10a44fb05138f67e740dfb5f85e2c31070ac3fc6"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/088.jpg",
+      "bytes": 117821,
+      "sha256": "c19762b8c28cc408539337d26784d8c465bb1c8bc1c09382165e533f4e3149fb",
+      "git_blob_sha1": "a2a6c249ad4270130abf2ee7aa90b2d19b95247e"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/089.jpg",
+      "bytes": 117823,
+      "sha256": "f2efa04ec2a5b04a2e3e2b16483826944af28d288aa87d59def21b5f69d750ea",
+      "git_blob_sha1": "d83770ca71d870fd244e63c450afa060b9d59b41"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/contact_sheet.jpg",
+      "bytes": 736619,
+      "sha256": "70d45e1d50a55705990f725734e86791de30eb0ca8cfc7ff6b0bb5a46d317475",
+      "git_blob_sha1": "8b6d5d82511e3562bc5afe28e6e4876c598636bd"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/references/motion_right_4529/metadata.json",
+      "bytes": 61363,
+      "sha256": "99e6de8b10398bab03081c60fb9462348f1953201f37cb9a0099bbc041440ee1",
+      "git_blob_sha1": "720bbee2b3a054be93f4f51c6bed3fad033e0aeb"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/renders/baseline_A_1180_raw.png",
+      "bytes": 1880549,
+      "sha256": "854bb6399dc5f8033e46da7d1481655da94c8d322a7dd76b04f18a40da572f89",
+      "git_blob_sha1": "904b9210baae180d51b7fdd300490d4b8ab94155"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/scripts/audit_baseline.py",
+      "bytes": 1066,
+      "sha256": "892df206cc44a84efffebfbf2de5bf8d0e298ed983e5137310ac5723615eabd7",
+      "git_blob_sha1": "509fe74980f8aeb69a4ccc69aff8823f72838736"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/scripts/finalize_evidence.py",
+      "bytes": 4945,
+      "sha256": "49f36fc535ad381ced45f1a728fd8e22b4c7864024368921cf0bd967846ee2f6",
+      "git_blob_sha1": "2c04656a478423dae8cac30063f478b7b67ff1a5"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/scripts/initial_review.py",
+      "bytes": 1310,
+      "sha256": "f11fa13e05db8621db35e245f619259c58359955dedbe6d10a7a40f61c4428f5",
+      "git_blob_sha1": "36f11befe1356327aea8b5fa5e60b20b7328213b"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/scripts/recheck_glb.py",
+      "bytes": 1752,
+      "sha256": "c09bb6cbce92fde166d153d84518256ff13fc411100459b45cadef5ebc4de427",
+      "git_blob_sha1": "6d387cc44225e5912eb7048677f28f6316366486"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/scripts/render_baseline_hd.py",
+      "bytes": 1163,
+      "sha256": "1ecd7d2e14ebb33f8d3b270476008bdae5693ca19d41ca4ecea116370eab9a67",
+      "git_blob_sha1": "93ca182a54c6f67f3bed54a7e7b9cbed6d2c7fa0"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/shared_white_model_plan.md",
+      "bytes": 2468,
+      "sha256": "8a0f6dd8333ee929ca6468966275b9c86f4a25c705dc7e9694284271179b803a",
+      "git_blob_sha1": "2b096edcf12dfe5b1a202912d62655d0b8c5e013"
+    },
+    {
+      "repo_path": "scenes/castle-hall/verification/03-hd-arch-stair-evidence/files/castlehall_hd_verification_20261010/source_ledger.json",
+      "bytes": 7572,
+      "sha256": "a46477f730e1c9640b94c62c96af707ecbc769bbbdc7931b908c87e860797d57",
+      "git_blob_sha1": "6642ea33fdf8909a8cc90a02a8cb86637b20ea5b"
+    }
+  ]
+}
