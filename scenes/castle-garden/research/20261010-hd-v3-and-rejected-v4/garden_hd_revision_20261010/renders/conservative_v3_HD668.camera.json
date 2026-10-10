@@ -1,0 +1,464 @@
+{
+  "input_blend": "/workspace/scratch/fa58bfcf0425/garden_hd_revision_20261010/models/Garden_HD_Conservative_v3_Frozen.blend",
+  "input_sha256": "b30c6591f4d8d80dc4628cf504ae418319daeb6e2bc8e0c359cce7957b4ef886",
+  "post_input_sha256": "b30c6591f4d8d80dc4628cf504ae418319daeb6e2bc8e0c359cce7957b4ef886",
+  "output_sha256": "e4bac8776addde2e9e2bfd7fe8ed537b3e238fbc81525c98ee4c64939310900c",
+  "camera": "HD668",
+  "matrix_world": [
+    [
+      0.9980812668800354,
+      -0.0011575045064091682,
+      0.06190645322203636,
+      -0.054668888449668884
+    ],
+    [
+      0.06191118061542511,
+      0.032683081924915314,
+      -0.997546374797821,
+      -12.25193977355957
+    ],
+    [
+      -0.0008686291403137147,
+      0.9994651079177856,
+      0.03269203379750252,
+      4.299823760986328
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lens_mm": 34.17556381225586,
+  "sensor_width": 36.0,
+  "shift_y": -0.30677857995033264,
+  "camera_identification": "HD principal point unknown, diagnostic feasible camera; not recovered original",
+  "resolution": [
+    1180,
+    664
+  ],
+  "shared_geometry_materials_lights": true,
+  "fit_snapshot": {
+    "tag": "HD668",
+    "file": "garden_668.249_1080decoded_viewport1180.jpg",
+    "time": 668.249542,
+    "y0": 47,
+    "obs": {
+      "door_l": [
+        579,
+        341
+      ],
+      "door_r": [
+        744,
+        341
+      ],
+      "sill_l": [
+        374,
+        322
+      ],
+      "sill_r": [
+        968,
+        323
+      ],
+      "front_l": [
+        437,
+        584
+      ],
+      "front_r": [
+        901,
+        584
+      ],
+      "arch_l": [
+        457,
+        381
+      ],
+      "arch_r": [
+        876,
+        389
+      ],
+      "arch_top": [
+        664,
+        94
+      ],
+      "window_l_left": [
+        332,
+        252
+      ],
+      "window_l_right": [
+        413,
+        252
+      ],
+      "window_r_left": [
+        929,
+        252
+      ],
+      "window_r_right": [
+        1007,
+        252
+      ]
+    },
+    "crop": [
+      0,
+      47,
+      1180,
+      711
+    ],
+    "native_decoded": [
+      1920,
+      1080
+    ],
+    "screenshot": [
+      1180,
+      757
+    ],
+    "actual_crop": [
+      1180,
+      664
+    ],
+    "native_export": false,
+    "parameter_names": [
+      "x",
+      "y",
+      "z",
+      "yaw",
+      "pitch",
+      "roll",
+      "f_px"
+    ],
+    "parameters": [
+      -0.054668889422797684,
+      -12.251940077344393,
+      4.299823847201854,
+      -0.06197923239826041,
+      -0.03269787197839887,
+      0.0008690937952706799,
+      1120.1990528688134
+    ],
+    "camera_basis_cv": [
+      [
+        0.9980812850709067,
+        0.06191117729974276,
+        -0.0008686291311362889
+      ],
+      [
+        0.0011575051803143052,
+        -0.03268309282671475,
+        -0.9994650947507061
+      ],
+      [
+        -0.061906450172540074,
+        0.9975464007095811,
+        -0.032692045797023
+      ]
+    ],
+    "lens_mm": 34.175564324811255,
+    "fit_rms_px": 14.196333689692109,
+    "landmarks": [
+      {
+        "name": "door_l",
+        "world": [
+          -0.944,
+          0.425,
+          0.25
+        ],
+        "observed": [
+          579,
+          294
+        ],
+        "projected": [
+          581.3355070957107,
+          287.06001563391123
+        ],
+        "residual_px": 7.322429678438122,
+        "split": "held_out"
+      },
+      {
+        "name": "door_r",
+        "world": [
+          0.944,
+          0.425,
+          0.25
+        ],
+        "observed": [
+          744,
+          294
+        ],
+        "projected": [
+          747.2522501377316,
+          290.16668505898804
+        ],
+        "residual_px": 5.02707016017887,
+        "split": "fit"
+      },
+      {
+        "name": "front_l",
+        "world": [
+          -1.595,
+          -4.752,
+          0.197
+        ],
+        "observed": [
+          437,
+          537
+        ],
+        "projected": [
+          434.6338212801542,
+          529.84116881952
+        ],
+        "residual_px": 7.539739093951685,
+        "split": "fit"
+      },
+      {
+        "name": "front_r",
+        "world": [
+          1.595,
+          -4.752,
+          0.197
+        ],
+        "observed": [
+          901,
+          537
+        ],
+        "projected": [
+          905.2369331071504,
+          545.1061828665657
+        ],
+        "residual_px": 9.14668261287509,
+        "split": "fit"
+      },
+      {
+        "name": "arch_l",
+        "world": [
+          -2.145,
+          -0.625,
+          0.25
+        ],
+        "observed": [
+          457,
+          334
+        ],
+        "projected": [
+          461.2677450846404,
+          316.1831438035505
+        ],
+        "residual_px": 18.32086277532895,
+        "split": "fit"
+      },
+      {
+        "name": "arch_r",
+        "world": [
+          2.145,
+          -0.625,
+          0.25
+        ],
+        "observed": [
+          876,
+          342
+        ],
+        "projected": [
+          871.9960246555884,
+          324.5922992668852
+        ],
+        "residual_px": 17.862246873569436,
+        "split": "held_out"
+      },
+      {
+        "name": "arch_top",
+        "world": [
+          0.0,
+          -0.625,
+          2.791
+        ],
+        "observed": [
+          664,
+          92
+        ],
+        "projected": [
+          664.624319046511,
+          78.52332306547748
+        ],
+        "residual_px": 13.49113025173679,
+        "split": "fit"
+      },
+      {
+        "name": "window_l_left",
+        "world": [
+          -3.8556,
+          0.405,
+          1.15
+        ],
+        "observed": [
+          332,
+          205
+        ],
+        "projected": [
+          330.1474596121118,
+          205.8995503210034
+        ],
+        "residual_px": 2.059392305699507,
+        "split": "fit"
+      },
+      {
+        "name": "window_l_right",
+        "world": [
+          -2.9444,
+          0.405,
+          1.15
+        ],
+        "observed": [
+          413,
+          205
+        ],
+        "projected": [
+          407.9386054020685,
+          207.02200125196964
+        ],
+        "residual_px": 5.450339837013554,
+        "split": "fit"
+      },
+      {
+        "name": "window_r_left",
+        "world": [
+          2.9444,
+          0.405,
+          1.15
+        ],
+        "observed": [
+          929,
+          205
+        ],
+        "projected": [
+          927.5509130658586,
+          214.51950386047326
+        ],
+        "residual_px": 9.629164381827986,
+        "split": "fit"
+      },
+      {
+        "name": "window_r_right",
+        "world": [
+          3.8556,
+          0.405,
+          1.15
+        ],
+        "observed": [
+          1007,
+          205
+        ],
+        "projected": [
+          1010.6633860647541,
+          215.7187363919544
+        ],
+        "residual_px": 11.327475769104183,
+        "split": "held_out"
+      },
+      {
+        "name": "arch_shoulder_l",
+        "world": [
+          -1.1,
+          -0.625,
+          3.205352859116738
+        ],
+        "observed": [
+          527,
+          42
+        ],
+        "projected": [
+          559.116269463535,
+          38.241290360520566
+        ],
+        "residual_px": 32.335470653885736,
+        "split": "fit"
+      },
+      {
+        "name": "arch_shoulder_r",
+        "world": [
+          1.1,
+          -0.625,
+          3.205352859116738
+        ],
+        "observed": [
+          784,
+          41
+        ],
+        "projected": [
+          771.4802315727227,
+          39.29177882366389
+        ],
+        "residual_px": 12.6357675295145,
+        "split": "fit"
+      }
+    ],
+    "held_out_rms_euclidean_px": 12.922713170585283,
+    "source_sha256": "a6dfd33ec87eed561423175be78d0f139747992f79975a869ebb0e86322419ba",
+    "principal_point": [
+      590,
+      -29.998735958993077
+    ],
+    "shift_y": -0.30677858979575684,
+    "vertical_lines": [
+      {
+        "source": [
+          [
+            331,
+            60
+          ],
+          [
+            332,
+            252
+          ]
+        ],
+        "predicted_x": [
+          328.5048464521651,
+          330.13979959842663
+        ],
+        "source_dx": 1,
+        "predicted_dx": 1.6349531462615232,
+        "direction_error_px": 0.6349531462615232
+      },
+      {
+        "source": [
+          [
+            412,
+            60
+          ],
+          [
+            413,
+            252
+          ]
+        ],
+        "predicted_x": [
+          406.73016867833127,
+          407.9260116727359
+        ],
+        "source_dx": 1,
+        "predicted_dx": 1.195842994404643,
+        "direction_error_px": 0.19584299440464292
+      },
+      {
+        "source": [
+          [
+            931,
+            60
+          ],
+          [
+            929,
+            252
+          ]
+        ],
+        "predicted_x": [
+          929.3750557232858,
+          927.6370830530648
+        ],
+        "source_dx": -2,
+        "predicted_dx": -1.7379726702209837,
+        "direction_error_px": 0.2620273297790163
+      }
+    ],
+    "status": "Camera principal point unknown: feasible diagnostic only, not recovered original camera"
+  },
+  "geometry_changes": true,
+  "threads": 3,
+  "samples": 16
+}
