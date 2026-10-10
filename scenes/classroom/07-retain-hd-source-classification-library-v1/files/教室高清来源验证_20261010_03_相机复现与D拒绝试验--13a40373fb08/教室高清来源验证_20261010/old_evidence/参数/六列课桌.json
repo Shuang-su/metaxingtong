@@ -1,0 +1,102 @@
+{
+  "width": 0.4441655856619625,
+  "depth": 0.27425527539761574,
+  "tabletop_top_z": 0.6954849807877715,
+  "inner_col_abs_x": 0.4936922189376836,
+  "outer_col_abs_x": 1.312790080795741,
+  "row_y": [
+    5.678729469582128,
+    6.419133058587049,
+    7.095177455299676
+  ],
+  "parameter_vector": [
+    0.4441655856619625,
+    0.27425527539761574,
+    0.4936922189376836,
+    1.312790080795741,
+    5.678729469582128,
+    6.419133058587049,
+    7.095177455299676,
+    0.6954849807877715
+  ],
+  "camera_file": "classroom_resume/v4_ground_control/joint_room_desks_room_candidate.json",
+  "status": "REVIEW_ONLY_six_column_topology_trial",
+  "retained_model_rows": [
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "unsupported_hidden_model_rows": [
+    "R1"
+  ],
+  "vertical_scale_about_floor": 0.8842784243964038,
+  "caveat": "Sixcolumns directlysupported by Cwood/apronbreaks and Dtablecount; hidden rowcorrespondence remainsuncertain. Fdoesnot independentlyprove6columns. Dfarbandsstillneedrenderreview; no perview hiding orgeometry.",
+  "outermost_col_abs_x": 2.0901750464065287,
+  "column_x_positions": [
+    2.0901750464065287,
+    1.312790080795741,
+    0.4936922189376836,
+    -0.4936922189376836,
+    -1.312790080795741,
+    -2.0901750464065287
+  ],
+  "regular_desk_count": 18,
+  "existing_four_column_ids": "Preserve existing R2/R3/R4C1-C4 as middle/inner pairs; add outermostpair perrow with new IDs. Preserve originalfourcolumncheckpoint.",
+  "topology_evidence": [
+    "C_column_count_source_audit.jpg",
+    "D_visible_table_count_audit.png",
+    "F_visible_table_count_audit.png",
+    "table_count_audit.json"
+  ],
+  "additional_constraint": {
+    "D_round_front_left_corner": [
+      983,
+      579
+    ],
+    "tolerance_px": 8,
+    "projected": [
+      982.685792084053,
+      583.7478103282189
+    ],
+    "residual_px": 4.758196037069664,
+    "note": "Soft silhouette relation to new outermostnear-right table; no propidentity. Cropped/occludedCcorners not used as exacttargets."
+  },
+  "C_outer_cropped_patch_check": {
+    "pixels": [
+      [
+        10,
+        424
+      ],
+      [
+        65,
+        424
+      ],
+      [
+        90,
+        424
+      ],
+      [
+        1260,
+        424
+      ],
+      [
+        1300,
+        424
+      ],
+      [
+        1330,
+        424
+      ]
+    ],
+    "distance_to_projected_extra_top_px": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "F_six_column_clear_overlap_px": 0,
+  "G_six_column_clear_overlap_px": 0
+}

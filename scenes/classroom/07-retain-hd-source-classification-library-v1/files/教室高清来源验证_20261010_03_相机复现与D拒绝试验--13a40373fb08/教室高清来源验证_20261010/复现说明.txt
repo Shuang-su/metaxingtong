@@ -1,0 +1,31 @@
+教室高清来源验证，2026-10-10
+阶段结论：几何未变，D为待关联辅助静态参考；正片来源仍有残差，未作整体通过判断。此为独立验证资料，不替换原完整模型或历史归档。
+
+三个ZIP解压到同一目录，合并其中“教室高清来源验证_20261010”文件夹。
+01包含5张原尺寸高清来源裁图和5张对应原始渲染。
+02包含5张直接50%叠图、中文总览及逐图误差/来源说明。
+03包含相机参数、来源/状态哈希、可复现脚本和明确拒绝的D凑数量试验。
+资料包没有重复放入完整BLEND，也没有包含拒绝试验BLEND。
+
+复现依赖：Blender4.3.2，Python3和Pillow。数值诊断脚本另需numpy/scipy。
+请使用你已经保存的原教室完整房间BLEND，SHA256必须为：
+77be8336b43f7cf6c413369c6bef2bd46b5e8508f1958b0fb4d8a172e457c908
+
+跨目录复现主模型5机位：
+python scripts/reproduce_validation.py --baseline /绝对路径/fullroom.blend --blender /usr/bin/blender --outdir /输出目录/主模型验证
+
+复现明确拒绝的两组完整桌椅前移试验（不覆盖主模型）：
+python scripts/reproduce_validation.py --baseline /绝对路径/fullroom.blend --blender /usr/bin/blender --outdir /输出目录/拒绝试验 --rejected-trial
+
+相机参数位于qa/camera_reference_manifest.json与qa/motion_camera_fit.json。
+该复现脚本先校验原模型和5张来源SHA256，再单进程3线程渲染；不写回原BLEND、不移动主状态任何物体。
+拒绝试验只统一移动R2C1整组−0.3、R3C2整组−0.2，随后同一几何渲染C/D；它不是被采纳的修复。
+原始开发脚本一并保留，绝对路径表示本次实际运行现场；跨目录请使用reproduce_validation.py。
+主图独立PNG使用原材质64采样+本机已有OIDN2.5.1去噪，只帮助审阅。5张QA直接叠图使用未去噪原始渲染。
+不同平台Monte Carlo渲染输出字节可能不同；比较相机/几何/来源坐标，不要求跨平台渲染PNG哈希相同。
+
+每个包的内部SHA256清单记录实际归档文件；原来源截图SHA256另在source/capture_manifest.json。
+1920×1080解码不等于原生1080导帧：实际参考为1180×664的视口截图裁图。
+没有证实跨BV后续视频验证，也没有与本批截图绑定的登录状态证据。
+
+来源性质修订：D处于叙事剪辑静态背景，同正片模型/布局关系未知；D相机只用于辅助对照，不是硬验收机位。E→C已实播确认切镜，不可拟合连续轨迹。冻结证据在第03包source_context_revision目录。原5源、对应渲染、直接叠图和两个主图像素全部未改；只更新解释与证据分类。

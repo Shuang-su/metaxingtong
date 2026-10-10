@@ -1,0 +1,33 @@
+{
+  "status": "重建候选 / 来源忠实度验收未通过",
+  "selection_reason": "主模型仍为阶段4完整房间历史基线。阶段5仅修复独立GLB材质可移植性；阶段6/v0为已被更正的高清QA，阶段7/v1为当前来源分类说明和QA，不更改主BLEND。拒绝位移试验和后续未归档研究不能提升为当前模型。当前同几何白模BLEND/GLB未包含在113原件范围内；阶段1白模仅为不同历史几何。",
+  "models": {
+    "textured_blend": {
+      "path": "scenes/classroom/04-retain-complete-geometry/files/教室_完整几何房间_审阅--f43e88bbdb3d/fullroom.blend",
+      "bytes": 9957837,
+      "sha256": "77be8336b43f7cf6c413369c6bef2bd46b5e8508f1958b0fb4d8a172e457c908",
+      "git_blob_sha1": "ab582453c37b1d62eb806c7a41f9ee943b97a527",
+      "stage_key": "retain-complete-geometry",
+      "package_sha256": "f43e88bbdb3d5dae98bf3feab219b94c42ad3d7aa6dcd433244d36073267f7ee",
+      "package_name": "教室_完整几何房间_审阅.zip",
+      "member_path": "fullroom.blend",
+      "member_id": "zip-003:0004",
+      "role": "textured_blend",
+      "library_file_id": "libfile_253ee8229f308191b138de2f3c65f3ae",
+      "library_version": 6,
+      "stage_sequence": 4
+    },
+    "textured_glb": {
+      "path": "scenes/classroom/05-retain-glb-material-portability-fix/assets/Classroom_FullRoom_Interior.glb",
+      "bytes": 13038312,
+      "sha256": "86282085695a0a61b2f9301d9b5dd33f6d1918125386d8aad8a029d9b5249b55",
+      "git_blob_sha1": "6a96349aabb01562e94e3a859d7af92cfe948511",
+      "role": "textured_glb",
+      "library_file_id": "libfile_97d892df55dc81918a93417081dbe827",
+      "library_version": 1,
+      "stage_sequence": 5
+    },
+    "white_blend": null,
+    "white_glb": null
+  }
+}
