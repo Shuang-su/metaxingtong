@@ -1,0 +1,90 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+  "new_browser_capture": false,
+  "decode_resolution": "unknown",
+  "login_state": "unverified for historical captures",
+  "source_dimensions": [
+    1188,
+    668
+  ],
+  "independent_camera_baselines": "not established; A/B/D are three compositions only",
+  "camera_correspondence": {
+    "Empty_Stage": {
+      "camera": "MATCH_D_01h58m39s_empty",
+      "reference": "frame_7119_crop.png",
+      "time": "01:58:39",
+      "fit": "approximate and known residuals; not accepted"
+    },
+    "Telescope_Detail": {
+      "camera": "DETAIL_Telescope_Lamp",
+      "reference": null,
+      "time": null,
+      "fit": "synthetic inspection camera; no matching source frame has been retained"
+    }
+  },
+  "observations": [
+    {
+      "component": "performer",
+      "category": "dynamic occluder",
+      "evidence": "A shows standing performer; B shows seated performer; D shows no performer. Upholstery hidden by the performer in A/B is occluded geometry, not evidence of missing furniture.",
+      "confidence": "direct image observation"
+    },
+    {
+      "component": "yellow star companion",
+      "category": "dynamic / movable prop",
+      "evidence": "A and B show different apparent orientations; historical source manifest names it nonfixed. D does not show it.",
+      "confidence": "direct image observation plus historical manifest; exact animation unobserved"
+    },
+    {
+      "component": "red balloon dog",
+      "category": "dynamic / movable prop",
+      "evidence": "B upper-right and D lower-right show different screen placement; historical manifest explicitly names it nonfixed. It is absent from the fixed core model in every camera, and that state is not a match to all source frames.",
+      "confidence": "appearance/placement observed; motion itself recorded in historical README, not newly watched"
+    },
+    {
+      "component": "two armchairs",
+      "category": "furniture; layout-state uncertainty across time",
+      "evidence": "A and B both contain two armchairs. D has none visible. Three isolated frames plus an uncalibrated D camera cannot conclusively prove removal, relocation, or whether changed camera/framing fully explains absence. Treat D as a distinct empty-stage candidate state for source testing; do not force A/B/D to validate one static furniture layout.",
+      "confidence": "presence/absence observed; reason unresolved"
+    },
+    {
+      "component": "lamp / telescope / suspended silver stars / blue border / checker / city",
+      "category": "static-structure candidate anchors",
+      "evidence": "They recur across the retained frames, but perspective/calibration and actual rigidity need temporal evidence. City is simplified geometry; its nature as distant scenery versus screen is unknown.",
+      "confidence": "appearance observed; geometric equivalence not verified"
+    }
+  ],
+  "historical_violation": {
+    "file": "historical_finalize.py",
+    "assignment_line": 34,
+    "affected_mesh_collections": {
+      "02_Inflated_Armchairs": 18,
+      "08_Optional_Star_Companion": 7
+    },
+    "mesh_objects_hidden": 25,
+    "render_call_lines": [
+      45,
+      60
+    ],
+    "textured_affected": [
+      "Final_Textured_Empty_Stage",
+      "Final_Textured_Telescope_Detail"
+    ],
+    "white_affected": [
+      "Final_White_Empty_Stage"
+    ],
+    "unaffected": [
+      "Final_Textured_Panorama",
+      "Final_Textured_Match_A",
+      "Final_Textured_Match_B",
+      "Final_White_Panorama",
+      "Final_White_Match_A",
+      "Final_White_Match_B"
+    ],
+    "secondary_file": "historical_build_ktv.py",
+    "secondary_assignment_line": 304
+  },
+  "current_status": "The current model and render scripts already keep armchairs and yellow companion visible for all cameras. No current model or script is edited by this regression.",
+  "source_acceptance": false,
+  "required_next_source_work": "If continuing source fidelity, acquire logged-in, decoded-resolution-verified continuous footage around the stage-state transition and existing A/B/D time ranges; distinguish furnished versus empty temporal state before fitting cameras. A real alternate telescope view is needed before source-testing the synthetic Detail camera."
+}

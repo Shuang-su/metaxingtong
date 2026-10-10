@@ -1,0 +1,419 @@
+{
+  "stage": "fixed-visibility-regression",
+  "prepared_at_utc": "2026-10-10T11:37:05.274752+00:00",
+  "source_accepted": false,
+  "new_model_version": false,
+  "current_changed": false,
+  "new_source_capture": false,
+  "verification_scope": "Original file hashes/dimensions and all8 literal50percent overlays independently checked during archive; Blender model QA supplied by frozen reports, not rerun during archive.",
+  "metadata_corrections": "Before final freeze, three-source temporal collage now carries BV and all3 times with decoded resolution unknown. Detail comparison is render-only, no matching source frame. Image and model bytes unchanged.",
+  "limitations": [
+    "Historical Empty/Detail per-camera hiding of25 sofa/star meshes was reproduced and is not source acceptance evidence.",
+    "Current18 camera states/material-white geometry and visibility fixed;10 dynamic balloon-dog meshes consistently hidden. Source D temporal furniture state unresolved.",
+    "No new logged-in HD capture, viewing interval or cross-BV validation; Detail has no matching real source image."
+  ],
+  "files": [
+    {
+      "path": "README_中文.md",
+      "bytes": 6953,
+      "sha256": "a801a54afc6f68a26bdfa1854f1da8b039601349de7779afedf92bd018f2d9a1",
+      "git_blob_sha1": "1604652d869acf51385732d95d59f22d33704dd5"
+    },
+    {
+      "path": "audit/blender_visibility_audit.json",
+      "bytes": 377190,
+      "sha256": "b20ffb6ac8eb74f84d8a9f5f2c8d6472676628ccb47d464c6868830cbe1baf6a",
+      "git_blob_sha1": "3dd3b0896055f3b2d318c83854c0537f24ee2444"
+    },
+    {
+      "path": "audit/current_complete_stage.py",
+      "bytes": 7988,
+      "sha256": "1428815df85d3fbf16969b4b83d28767c2ea5f3577be028f9f302b970e773291",
+      "git_blob_sha1": "a69c6538f3700e934d090872c592622fc8289ec5"
+    },
+    {
+      "path": "audit/current_exact_aspect_matches.py",
+      "bytes": 523,
+      "sha256": "d26ce6bd8b84a85f1a65f111248130fa66131fcfd3bc30e8c09fd1a09cfa3bfc",
+      "git_blob_sha1": "064e52dec8776f23f93801fbbae5c11ee2ca8cac"
+    },
+    {
+      "path": "audit/current_render_export.py",
+      "bytes": 4275,
+      "sha256": "27d94879cd61a1276793ee029ffab7b25aed5d74f744133fcccdea6e9e0e0e09",
+      "git_blob_sha1": "3250e5b142ee606cec422a8056e70b80091393fc"
+    },
+    {
+      "path": "audit/frozen_inputs_sha256.json",
+      "bytes": 5022,
+      "sha256": "7441bfdbdf46f8d9514bfd3920d45a3c19be34064a24b353b0dce35f283b4e5f",
+      "git_blob_sha1": "a192b39b7de67fc05f1cfc2775e7ff482f16d8c6"
+    },
+    {
+      "path": "audit/historical_build_ktv.py",
+      "bytes": 22375,
+      "sha256": "40a7370a1b1d17bf5d0e8d3c1b4a3632afa5b771e37d1f41091c8b63dce4293b",
+      "git_blob_sha1": "68e06937175d54661467b3276f182ab8c0dff825"
+    },
+    {
+      "path": "audit/historical_finalize.py",
+      "bytes": 5402,
+      "sha256": "828a7fd577caee5ba01a6198e1aa42f282876faa2a037a5e9e6b11b141fb293b",
+      "git_blob_sha1": "486d45c594ea871f9af622114246a2c89b67a7ab"
+    },
+    {
+      "path": "audit/inputs_unchanged_after_regression.json",
+      "bytes": 7759,
+      "sha256": "05ca055277597b3c3c1b08ce5e75126502b75b1def05b0cabe48839517b122d1",
+      "git_blob_sha1": "96e629f5e54e009e54efda7bff440958819baa9b"
+    },
+    {
+      "path": "audit/issue9_snapshot.json",
+      "bytes": 104802,
+      "sha256": "a820465e0654e5a3cd5ce9d78aebfed4a3f622947799010ff9542906d58075b6",
+      "git_blob_sha1": "ec6826c079672d141eb55d3a5f7c529804c92556"
+    },
+    {
+      "path": "audit/source_and_state_audit.json",
+      "bytes": 4256,
+      "sha256": "dde68719da397e29fda3fbaaf5456d23fe6d2dfd7a3718086bf4ca7d09b53be1",
+      "git_blob_sha1": "edf8f44d3d600fc6b388d87758f17d55cf0e15a6"
+    },
+    {
+      "path": "comparisons/Empty_Stage_legacy_current_render_only_50pct.png",
+      "bytes": 586540,
+      "sha256": "c5913dbf3e5600e104a88ed71fb9385001e58e2b7830625442eb2028803fb727",
+      "git_blob_sha1": "1c422854aa492ee909e071be5ac49a262ff6aa73"
+    },
+    {
+      "path": "comparisons/Empty_Stage_legacy_hidden_fixed_render_only_50pct.png",
+      "bytes": 591745,
+      "sha256": "18d0d2b8b0d085f388b87eea78e79159f4adf0e90aaaa785c328a5b4fe58a0bf",
+      "git_blob_sha1": "ee32d2de8cfb2054d3168f85df0c13bed899bbc6"
+    },
+    {
+      "path": "comparisons/Empty_Stage_source_and_visibility_regression.jpg",
+      "bytes": 786130,
+      "sha256": "736fe6d9909024e15283f33640592dd2341a56168b5953c400e41617728b8da3",
+      "git_blob_sha1": "292134da885d8a7e5a911a969d7fac61d9f6d913"
+    },
+    {
+      "path": "comparisons/Empty_Stage_source_current_fixed_direct_50pct.png",
+      "bytes": 758191,
+      "sha256": "c4780f8c172bc968aab617d8c8702ea87b132d36dad1a59a96e7675a9ceebac6",
+      "git_blob_sha1": "9929c594a6b7e04aec77187317e96dd1e762d8b7"
+    },
+    {
+      "path": "comparisons/Empty_Stage_source_current_white_fixed_direct_50pct.png",
+      "bytes": 672532,
+      "sha256": "3c0dc7b675bb5e5a3d7a46dc0739a1ec2c5d317ba50041e7a4cfbd0feae1f584",
+      "git_blob_sha1": "3db555553f97f34dfd72d5ce85e67aacc8b26fc1"
+    },
+    {
+      "path": "comparisons/Empty_Stage_source_legacy_fixed_direct_50pct.png",
+      "bytes": 756143,
+      "sha256": "6e4e72c07505050864fd31256bcf6f73807065c13cc07e39b5ae6a343e81ad07",
+      "git_blob_sha1": "821f87b0f720729b5ba3666fd4b2d38e33fd47a9"
+    },
+    {
+      "path": "comparisons/Empty_Stage_source_legacy_historical_hidden_direct_50pct.png",
+      "bytes": 755614,
+      "sha256": "126ccb6e0671fbd983258c6a1aa2c27a5bc9a902aca0e80f491d765bf55b8fd2",
+      "git_blob_sha1": "3a12d8d19c3e8a39278c1639532eff871b506f48"
+    },
+    {
+      "path": "comparisons/Source_temporal_state_review.jpg",
+      "bytes": 463600,
+      "sha256": "da9c1289a8a47bbbf5b1ebf5b70db6becdfaa0954e7d5ce81ccea3cd632ecfb0",
+      "git_blob_sha1": "b156f50ed7da784001e3f2d8f0b4c8649d69e66d"
+    },
+    {
+      "path": "comparisons/Telescope_Detail_fixed_visibility_regression.jpg",
+      "bytes": 414346,
+      "sha256": "618a05d1e90dba4630cc83aab20b50839ea0407f68352c39bf533ea2000ccf76",
+      "git_blob_sha1": "b23868e204e6f6937908e5994f582376e0571cf8"
+    },
+    {
+      "path": "comparisons/Telescope_Detail_legacy_current_render_only_50pct.png",
+      "bytes": 500599,
+      "sha256": "b6d995115610b89c2006aeb985a9caf2eba31a4914cd9be7ee9774b2c852408f",
+      "git_blob_sha1": "b64bb9fa28c133b4a2e1872134a2441a8fa5e6ad"
+    },
+    {
+      "path": "comparisons/Telescope_Detail_legacy_hidden_fixed_render_only_50pct.png",
+      "bytes": 505483,
+      "sha256": "f99cadae70ec75ddcdad5ca04dff1464d1a7ced01c0e30ca05525e869516ed9b",
+      "git_blob_sha1": "0f7182fdc47ebdca355390083703a4d372f8bd45"
+    },
+    {
+      "path": "historical/Final_Textured_Empty_Stage_clean.png",
+      "bytes": 574897,
+      "sha256": "2acfa391f99ae165290e2c15b3d62c340172716f692a76902c6bf322a44acc18",
+      "git_blob_sha1": "73685c0df4a067fdf168bcace75c25cededa5a9e"
+    },
+    {
+      "path": "historical/Final_Textured_Telescope_Detail_clean.png",
+      "bytes": 496116,
+      "sha256": "605f26d529400df80c9961fa1c817bc2135d9ed8c1ece7e39d104faf47ee4c1f",
+      "git_blob_sha1": "788ec771507d5c8472a5a5501e74ebb2d73fa602"
+    },
+    {
+      "path": "image_evidence_manifest.json",
+      "bytes": 19601,
+      "sha256": "2b2d29f482789b11fb15677e89e74e8f25b3b985e3198771289a8ec632785fdc",
+      "git_blob_sha1": "19823a5aa1b28d718c2ee1c7842442bf9db920b1"
+    },
+    {
+      "path": "qa/current_Empty_Stage_fixed.json",
+      "bytes": 42208,
+      "sha256": "47c8488bbd8bff9b06fb3d3bbf0c9d72067fe3b8b3c2986bc6ddb754847351a3",
+      "git_blob_sha1": "8e6021669208cb56b57a8aa0634e77d8f509e3d5"
+    },
+    {
+      "path": "qa/current_Telescope_Detail_fixed.json",
+      "bytes": 42258,
+      "sha256": "9e6c613ff50b1d6919c01d5de214018096af81d89090ab1daa9de02bea967590",
+      "git_blob_sha1": "978a0363b6d9fd0f5d4679d1d3f93f3edc03bf29"
+    },
+    {
+      "path": "qa/current_actual_glb_roundtrip.json",
+      "bytes": 652,
+      "sha256": "458f253e8e8e8fde3654fac3611a6f595d5a7158900770b9556714e43b010a7d",
+      "git_blob_sha1": "f28d44a6627dbf5d6a00b42efe366f1e67354284"
+    },
+    {
+      "path": "qa/current_white_Empty_Stage_fixed.json",
+      "bytes": 42219,
+      "sha256": "422cbe8805c1aa7b3b3b21af422b43ad2022059b9498507e39938adeabdb854c",
+      "git_blob_sha1": "ffb43b0fa9764ff14f59d134076bb5f639673a32"
+    },
+    {
+      "path": "qa/current_white_Telescope_Detail_fixed.json",
+      "bytes": 42270,
+      "sha256": "c99c6a546f8084372caa409004bba9d267c1f68a938fc0c05f343456c41a388b",
+      "git_blob_sha1": "db0c9179bccd71aeffc37f05d252aa1dc3c1a924"
+    },
+    {
+      "path": "qa/denoise_log.json",
+      "bytes": 3434,
+      "sha256": "60250e4b1562a8c9d1e4daf3f647e98020a7215c887ff01e1c7921881ae3d335",
+      "git_blob_sha1": "d61fdb83fc1368a9a0482ef0319b3346bae2187d"
+    },
+    {
+      "path": "qa/furniture_camera_projection.json",
+      "bytes": 2054,
+      "sha256": "73f33ebc67a12e820ecad46b91672840f912899917d6611110163d8526478067",
+      "git_blob_sha1": "29d7caf024b476fe1db6d5d8a56f2336610f4eb5"
+    },
+    {
+      "path": "qa/legacy_Empty_Stage_fixed.json",
+      "bytes": 35824,
+      "sha256": "68bf6c21fda2e8c6f8ed8d09d8f6e995d71898617177ff55b3c946162e2b0cfe",
+      "git_blob_sha1": "1535e60372c42a6404edbb2e523f96e48fce94ac"
+    },
+    {
+      "path": "qa/legacy_Empty_Stage_historical_hidden.json",
+      "bytes": 35833,
+      "sha256": "e1eb096867cb218f5a83346f8b1e2ae8cd0a87ec424e107b42ea5bdcebde5234",
+      "git_blob_sha1": "cbb509ccec29ed4c33e3e6bf740c8217e2db1854"
+    },
+    {
+      "path": "qa/legacy_Telescope_Detail_fixed.json",
+      "bytes": 35874,
+      "sha256": "d8b67e54824e96812d3883b07ed99bd0d5140479a697e66275d12e732b452102",
+      "git_blob_sha1": "aaf3857ef93584f70efd079648167e306c79af47"
+    },
+    {
+      "path": "qa/legacy_Telescope_Detail_historical_hidden.json",
+      "bytes": 35883,
+      "sha256": "4f57915e39b9288a8b0cc0703f68a4d8217ab19e1379537a3c459669bbbd30cd",
+      "git_blob_sha1": "0c0f91a0d5de4343bc28657ac2957daece4fe545"
+    },
+    {
+      "path": "qa/overlay_pixel_verification.json",
+      "bytes": 4728,
+      "sha256": "7f4ec2d2e178db725bfa9bea193deec0976bd9fc06dc923d65c96f9164d5ad72",
+      "git_blob_sha1": "9a7cb2d1576652e21f5b5792ab52a30e4e59da06"
+    },
+    {
+      "path": "qa/render_file_integrity.json",
+      "bytes": 2534,
+      "sha256": "954c59dde8f580271df575483bad0b4dee328cea0fe4c029f4bf1f211423bd95",
+      "git_blob_sha1": "c9203f8517776c1245ad0c6be3ec50a6c3004cb2"
+    },
+    {
+      "path": "qa/visibility_image_delta.json",
+      "bytes": 760,
+      "sha256": "87b4c2ced3be987606c013b5266ad770b01a9ef6d9edc65a1267f2041a482e61",
+      "git_blob_sha1": "b15aaa727a3765703d294880d0d78043594d6110"
+    },
+    {
+      "path": "references/frame_2117_crop.png",
+      "bytes": 735718,
+      "sha256": "88ac46b3374d3e57bca95c3b6fedcce7d9e75fbddfecac9c3a474a9992343ff1",
+      "git_blob_sha1": "3f6ba7428bab549c4c2eee14add7e7d7a9a45f26"
+    },
+    {
+      "path": "references/frame_4529_crop.png",
+      "bytes": 747798,
+      "sha256": "c30cbe76a25ffc660ced70dc4b22381e9f24e3481291e63b31d26d96cd3495a3",
+      "git_blob_sha1": "89f338858e794218c27ac0afb0d3305d7f722957"
+    },
+    {
+      "path": "references/frame_7119_crop.png",
+      "bytes": 728527,
+      "sha256": "17a99512e898ca135abc6edb8ae169da0ca7d09af6524ed30d2ff79ace38592e",
+      "git_blob_sha1": "7acdb0a8238470999926a7783cf15ebb9b01f635"
+    },
+    {
+      "path": "renders/current_Empty_Stage_fixed.png",
+      "bytes": 1250171,
+      "sha256": "d81709597c08c313e9364a65ed2113068629c7118805aa4d5f1efe947850345a",
+      "git_blob_sha1": "afe5b52656fe8a042023af7e3a0dc9cd621e37da"
+    },
+    {
+      "path": "renders/current_Empty_Stage_fixed_denoised.png",
+      "bytes": 572001,
+      "sha256": "836341f853aa563374904b2c31873f565ff059ce882d237ea125e9555203426e",
+      "git_blob_sha1": "035b2c38713eea61063fa4d42f05db3fa6254384"
+    },
+    {
+      "path": "renders/current_Telescope_Detail_fixed.png",
+      "bytes": 1195159,
+      "sha256": "da6946862928dcb801706734b9e9007d3fb075679f5f7bb926709220c00d3d67",
+      "git_blob_sha1": "55e144432a0c410ca201578885f10240b29cbe94"
+    },
+    {
+      "path": "renders/current_Telescope_Detail_fixed_denoised.png",
+      "bytes": 506731,
+      "sha256": "1af522cbbe56dd6bcd6bf538675ac9b441aa746740c0e7229e02ff6695adb94f",
+      "git_blob_sha1": "a6f42d5f3e957f898d4abb63ca8e983016c6630f"
+    },
+    {
+      "path": "renders/current_white_Empty_Stage_fixed.png",
+      "bytes": 987452,
+      "sha256": "3d17346a85229b9dccee26d86fed2db5397112defb762cbf752a3a547aef521e",
+      "git_blob_sha1": "191ff5a5514bb67215adeb3b02900fd31a8844a2"
+    },
+    {
+      "path": "renders/current_white_Empty_Stage_fixed_denoised.png",
+      "bytes": 310368,
+      "sha256": "86697c91ec4d458d3c7ab525ae540df5b151ff0037ac413680d6f2b4186c3aad",
+      "git_blob_sha1": "97d851cb8629ae3bbc2223981aef1259b7d2aa24"
+    },
+    {
+      "path": "renders/current_white_Telescope_Detail_fixed.png",
+      "bytes": 1016150,
+      "sha256": "5c28db68a39319db5b8a86f6108303cd59278d10e9d035ed29c2105ccf851cfa",
+      "git_blob_sha1": "1a932bb626f6d29ea9ca12d9a14189bf22370c6b"
+    },
+    {
+      "path": "renders/current_white_Telescope_Detail_fixed_denoised.png",
+      "bytes": 306816,
+      "sha256": "d4f257309dd17f8f75ae042b46970eb5767385e9b8e8eda3765b79b4c2bfad77",
+      "git_blob_sha1": "979a701e05ec82a0569176a112a33bc8ee50d8a6"
+    },
+    {
+      "path": "renders/legacy_Empty_Stage_fixed.png",
+      "bytes": 1260211,
+      "sha256": "71b156c374ac4d3228c0f0c09992d07f9f43b14f98826fd256f9f1605fe91f49",
+      "git_blob_sha1": "ef4e011c42b06b4bbe7c5aa5f91b779d75f5f4eb"
+    },
+    {
+      "path": "renders/legacy_Empty_Stage_fixed_denoised.png",
+      "bytes": 570364,
+      "sha256": "589d20e2347771a9c8c095335400e1c4d0d473ec77b321260e4cf703ccfc5aea",
+      "git_blob_sha1": "1efcd3c0a00215df1911371fcd3b59e6eccdce3a"
+    },
+    {
+      "path": "renders/legacy_Empty_Stage_historical_hidden.png",
+      "bytes": 1211644,
+      "sha256": "33285ea2fa9471e1c3a9bbe66b98444fc64cfdd82f41184ef06c8573f264a300",
+      "git_blob_sha1": "cd32bf44472f1da02eeeee23210b3a17960018b2"
+    },
+    {
+      "path": "renders/legacy_Empty_Stage_historical_hidden_denoised.png",
+      "bytes": 577795,
+      "sha256": "c668f203aa0b9475d80674697aa2f2276e10ba86c47a0f6ed4c2fc82a202f84a",
+      "git_blob_sha1": "f43e5f7132dae277131b43e61c0e27d76ddb8cc4"
+    },
+    {
+      "path": "renders/legacy_Telescope_Detail_fixed.png",
+      "bytes": 1217571,
+      "sha256": "749d13a0e8918e6f63f4f6d256c50f7e145a0f266400916c8c9ad4a2f173464c",
+      "git_blob_sha1": "8ecc60aaaf6297919d85faadb8db9599505bd936"
+    },
+    {
+      "path": "renders/legacy_Telescope_Detail_fixed_denoised.png",
+      "bytes": 505938,
+      "sha256": "bc091d5c96a25d22978ccaa1ecca75ae447ef713f3efa76bf3afca5625ccdea0",
+      "git_blob_sha1": "88747fef359aa065e6fba3afdf13668a53e9d17b"
+    },
+    {
+      "path": "renders/legacy_Telescope_Detail_historical_hidden.png",
+      "bytes": 1193916,
+      "sha256": "e1e27a827c0e9955b21c8e4d5482024c68c5f8898c9f6a2e63de465e62c7dad6",
+      "git_blob_sha1": "8e8a28ee44c10b8b2ea8d1cab1ad5f53a72ab68a"
+    },
+    {
+      "path": "renders/legacy_Telescope_Detail_historical_hidden_denoised.png",
+      "bytes": 496079,
+      "sha256": "950054365387847f2dfec5f319da8a66ea9dc30ac30ac342fa3a9febf9d29a15",
+      "git_blob_sha1": "c79eca006371f653c6ca165a6fbd4bc834d6a8fb"
+    },
+    {
+      "path": "scripts/audit_blender.py",
+      "bytes": 5051,
+      "sha256": "ef00d9a1d128b5ad9e0a661a563c3fd2c1b8b084798428efd8ed4f8cf97e887b",
+      "git_blob_sha1": "c37bf715c1f9056e315cdd274234de3415b75841"
+    },
+    {
+      "path": "scripts/denoise_regression.py",
+      "bytes": 1429,
+      "sha256": "6e54bf8a88077272778ed5219803b8b34a707e426e6e3f3e62b065941316da13",
+      "git_blob_sha1": "3c9b96aebfcba9bee681eef8fd68c740211397cf"
+    },
+    {
+      "path": "scripts/package_evidence.py",
+      "bytes": 7899,
+      "sha256": "d2430731af6836e5c257751a0e6913fff040118942444e074cf066b880e58727",
+      "git_blob_sha1": "edee51604da50063f6a399704e9edd70167bca03"
+    },
+    {
+      "path": "scripts/postprocess.py",
+      "bytes": 5606,
+      "sha256": "7286cb4b556c51954ab3b1163a3c9de02d0c6a4d65036afcfb0d297eab5dec80",
+      "git_blob_sha1": "0941551c0f8fdab744a8eef3ae90b5c34f99ad11"
+    },
+    {
+      "path": "scripts/project_furniture.py",
+      "bytes": 1197,
+      "sha256": "04119f1c509b811dd6f998b199d1cc296d4edaac36768bd1c6d3452bebeb6d2d",
+      "git_blob_sha1": "a3109f078f8a6ef3aedc9692d930073ea9f22999"
+    },
+    {
+      "path": "scripts/render_regression.py",
+      "bytes": 3336,
+      "sha256": "66635b948fedb13ea5fb9134b82abfa24e95f61bdecc3375b4394345d96ea2cf",
+      "git_blob_sha1": "578574f37db1443c643f79fbf22868868b4c0dfa"
+    },
+    {
+      "path": "scripts/run_renders.sh",
+      "bytes": 520,
+      "sha256": "ad334cc19ba89eafd3097c81ccc7e7d87886d8dfa0a4606c5b51d027a00b3a42",
+      "git_blob_sha1": "36e60fb2af91b6fbae775c56aabe9754648d76c6"
+    },
+    {
+      "path": "validation_summary.json",
+      "bytes": 808,
+      "sha256": "f67b77ccdfe25e002b993a5efe0492e629fde477ed40acf6866debb84d1807d0",
+      "git_blob_sha1": "142e18c08b45717522784b879573e8536dc53708"
+    },
+    {
+      "path": "file_manifest.json",
+      "bytes": 11637,
+      "sha256": "85482961da6b42b0c7cfd1fcab350bee2dda6ff062acf26e4830be1b2ddc8943",
+      "git_blob_sha1": "7989681890505de3893175bb325b838a797cd96d"
+    }
+  ]
+}
