@@ -1,0 +1,73 @@
+{
+  "scene": "castle-hall",
+  "historical_stage": "earliest-v1",
+  "backfill_date_utc": "2026-10-11",
+  "source_url": "https://www.bilibili.com/video/BV1aw411T7ws/",
+  "historical_publication_at": "2026-10-07T23:17:56.619579+00:00",
+  "historical_publication_time_is_not_commit_time": true,
+  "user_acceptance": false,
+  "model_change": false,
+  "sources": [
+    {
+      "package": "01_Castle_Hall_White_Model.zip",
+      "library_file_id": "libfile_311eed9276748191bc3dbe0624dc52cf",
+      "package_sha256": "8920d455539c33f46b4954b4587ff17adbe94cc9104df46850a7a686539395f9",
+      "created_at": "2026-10-07T23:17:38.943475Z",
+      "modified_at": "2026-10-07T23:17:38.943475Z",
+      "chat_publication_at": "2026-10-07T23:17:56.619579+00:00",
+      "identity_basis": "Unmodified Library item created immediately before this publication; source README identifies same scene/season; no historical version guessed from latest replacement."
+    }
+  ],
+  "files_in_this_supplement": [
+    {
+      "bytes": 2983838,
+      "sha256": "fbc16b7124260df1ff47b2ecc42ad6bd38f60425bc0978ccde85984101d9f965",
+      "git_blob_sha1": "73ddd16238e00512b0d2fc48b74f629c3d2e8c82",
+      "role": "model",
+      "path": "scenes/castle-hall/historical-supplements/earliest-v1/models/Xingtong_Castle_Hall_White.blend",
+      "original_package": "01_Castle_Hall_White_Model.zip",
+      "original_member": "models/Xingtong_Castle_Hall_White.blend"
+    },
+    {
+      "bytes": 8168548,
+      "sha256": "f492c0c7cd58562dc6eabb1fa74caad94fd2015d3e5d2bcd9f79ee8e1c420d07",
+      "git_blob_sha1": "36bab37d2aa0750bef3afb1b24599a5028c09cc5",
+      "role": "model",
+      "path": "scenes/castle-hall/historical-supplements/earliest-v1/models/Xingtong_Castle_Hall_White.glb",
+      "original_package": "01_Castle_Hall_White_Model.zip",
+      "original_member": "models/Xingtong_Castle_Hall_White.glb"
+    }
+  ],
+  "reused_existing_originals": [
+    {
+      "original_member": "README_城堡宴会厅.txt",
+      "sha256": "c22119db237cdbbe13e4982e4674bc6b2f3e36ecea3869f9e3b553ecb39746ff",
+      "bytes": 2820,
+      "existing_paths": [
+        "scenes/castle-hall/01-retain-earliest-binaries/files/03_Castle_Hall_Textured_Blender--6a5b789ce1b6/README_城堡宴会厅.txt",
+        "scenes/castle-hall/01-retain-earliest-binaries/files/04_Castle_Hall_Views_and_QA--0387d222ca81/README_城堡宴会厅.txt"
+      ],
+      "existing_ref": "731cb270d6ae60e22a65a7125c749a86f4fdc9b3"
+    },
+    {
+      "original_member": "qa/roundtrip_validation.json",
+      "sha256": "292bfd9f713f4b0c087416e3552b90c74b1ab8f6300bb3a68b42e5ad2fb58f8d",
+      "bytes": 2200,
+      "existing_paths": [
+        "scenes/castle-hall/01-retain-earliest-binaries/files/03_Castle_Hall_Textured_Blender--6a5b789ce1b6/qa/roundtrip_validation.json",
+        "scenes/castle-hall/01-retain-earliest-binaries/files/04_Castle_Hall_Views_and_QA--0387d222ca81/qa/roundtrip_validation.json"
+      ],
+      "existing_ref": "731cb270d6ae60e22a65a7125c749a86f4fdc9b3"
+    }
+  ],
+  "recovered_but_upload_blocked": [],
+  "checks": {
+    "zip_crc": true,
+    "member_sha256": true,
+    "zip_slip_and_symlink_rejected": true,
+    "missing_blend_opened_with_autoexec_disabled": true,
+    "glb_structure_and_embedded_dependencies_checked": true,
+    "new_visual_acceptance": false,
+    "new_glb_roundtrip_geometry_validation": false
+  }
+}
