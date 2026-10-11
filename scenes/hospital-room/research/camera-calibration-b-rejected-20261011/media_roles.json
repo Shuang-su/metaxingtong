@@ -1,0 +1,2621 @@
+{
+  "schema_version": 1,
+  "frozen_file_count": 56,
+  "media_count": 35,
+  "scope": "Every PNG in original frozen 56-file delivery. No original artifact modified. Pure render video timestamps are null/not applicable. Associated reference timestamps describe comparison input only.",
+  "decision": "ALL_NEW_CAMERAS_REJECTED_KEEP_CURRENT",
+  "diagnostic_split_note": "m4/F TV BR/G m2 were held out before first fit. Shell corner and rail were added after first numerical result and never fitted; not blind validation.",
+  "renderer": {
+    "blender": "4.3.2",
+    "engine": "CYCLES",
+    "new_renders_samples": 24,
+    "color": "AgX Medium High Contrast; exposure0.1 gamma1",
+    "denoise_display_only": "OIDN2.5.1 LDR sRGB high, no lattice resampling"
+  },
+  "media": [
+    {
+      "relative_path": "F_fullframe_review_panel.png",
+      "bytes": 1131034,
+      "sha256": "2650fc3d3d1db2523d815adac82673a4b7ab3888bc8f38612a3633e4c4c6b1a5",
+      "view": "F",
+      "size": [
+        960,
+        1710
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1823.678156,
+      "source_video_seconds_applicability": "source_panel_actual_time_other_panels_synthetic_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "downscaled_fullframe_review_contact_sheet",
+      "camera": "multiple_see_panels",
+      "panels": [
+        {
+          "role": "native_source",
+          "source": {
+            "video_id": "BV1GqXMByE1s",
+            "video_seconds": 1823.678156,
+            "native_size": [
+              1920,
+              1080
+            ],
+            "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+            "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+            "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+            "new_capture": false
+          },
+          "raw_or_denoised": "native_source",
+          "camera": null,
+          "panel_order_zero_based": 0,
+          "display_box_xyxy": [
+            0,
+            30,
+            960,
+            570
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "file_name": "F_B_legacy_camera_1920.png",
+          "sha256": "836aa84085d8fae482dec0f2d20c0e2e055089313474677e095245c00368a93f",
+          "in_this_frozen_56": false,
+          "raw_or_denoised": "raw_cycles_render",
+          "cycles_samples": 24,
+          "camera": {
+            "state": "original_legacy_uncalibrated",
+            "pose": "original",
+            "focal": "original",
+            "principal_point": "original_center",
+            "adoption": "baseline_not_a_new_candidate"
+          },
+          "video_seconds": null,
+          "video_seconds_applicability": "not_applicable_synthetic_render",
+          "display_processing": "OIDN_LDR_sRGB_high_no_warp",
+          "display_role": "original",
+          "panel_order_zero_based": 1,
+          "display_box_xyxy": [
+            0,
+            600,
+            960,
+            1140
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "file_name": "F_candidate_camera_raw.png",
+          "sha256": "59ed00f024419ff16ee2d6ce265bf341b9b826b641ba2056f15532e4d21cb301",
+          "in_this_frozen_56": true,
+          "raw_or_denoised": "raw_cycles_render",
+          "cycles_samples": 24,
+          "camera": {
+            "state": "failed_not_adopted",
+            "pose": "fitted",
+            "focal": "original_fixed_6_dof",
+            "principal_point": "center_fixed",
+            "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+          },
+          "video_seconds": null,
+          "video_seconds_applicability": "not_applicable_synthetic_render",
+          "display_processing": "OIDN_LDR_sRGB_high_no_warp",
+          "display_role": "candidate",
+          "panel_order_zero_based": 2,
+          "display_box_xyxy": [
+            0,
+            1170,
+            960,
+            1710
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        }
+      ],
+      "raw_or_denoised": "mixed_see_panels",
+      "resized": true,
+      "resize_purpose": "presentation_only_do_not_use_for_pixel_metrics",
+      "crop_xyxy": null,
+      "warp": false
+    },
+    {
+      "relative_path": "G_fullframe_review_panel.png",
+      "bytes": 1707345,
+      "sha256": "405b0f69c1c065048141161476fb2e722eb2e7dfa9d7e9bc9f89895996333b38",
+      "view": "G",
+      "size": [
+        960,
+        2280
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "source_panel_actual_time_other_panels_synthetic_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "downscaled_fullframe_review_contact_sheet",
+      "camera": "multiple_see_panels",
+      "panels": [
+        {
+          "role": "native_source",
+          "source": {
+            "video_id": "BV1GqXMByE1s",
+            "video_seconds": 1116.180816,
+            "native_size": [
+              1920,
+              1080
+            ],
+            "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+            "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+            "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+            "new_capture": false
+          },
+          "raw_or_denoised": "native_source",
+          "camera": null,
+          "panel_order_zero_based": 0,
+          "display_box_xyxy": [
+            0,
+            30,
+            960,
+            570
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "file_name": "G_B_legacy_camera_1920.png",
+          "sha256": "62ef02ac778dab6284d643ffeb7ebe30a5c09caf7b93c9e392dbf6d48ba30845",
+          "in_this_frozen_56": false,
+          "raw_or_denoised": "raw_cycles_render",
+          "cycles_samples": 24,
+          "camera": {
+            "state": "original_legacy_uncalibrated",
+            "pose": "original",
+            "focal": "original",
+            "principal_point": "original_center",
+            "adoption": "baseline_not_a_new_candidate"
+          },
+          "video_seconds": null,
+          "video_seconds_applicability": "not_applicable_synthetic_render",
+          "display_processing": "OIDN_LDR_sRGB_high_no_warp",
+          "display_role": "original",
+          "panel_order_zero_based": 1,
+          "display_box_xyxy": [
+            0,
+            600,
+            960,
+            1140
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "file_name": "G_candidate_camera_raw.png",
+          "sha256": "eb1c2dade42ff3cc862843c7ab317ea06a8f7870f787128aa8336ee7bbcbc913",
+          "in_this_frozen_56": true,
+          "raw_or_denoised": "raw_cycles_render",
+          "cycles_samples": 24,
+          "camera": {
+            "state": "failed_not_adopted",
+            "pose": "fitted",
+            "focal": "fitted_7_dof",
+            "principal_point": "center_fixed",
+            "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+          },
+          "video_seconds": null,
+          "video_seconds_applicability": "not_applicable_synthetic_render",
+          "display_processing": "OIDN_LDR_sRGB_high_no_warp",
+          "display_role": "candidate",
+          "panel_order_zero_based": 2,
+          "display_box_xyxy": [
+            0,
+            1170,
+            960,
+            1710
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "file_name": "G_fixed_focal_alternative_raw.png",
+          "sha256": "9fe9c41140f4fd030bcf037ef4be3fc7d7c41c7cdfb135f28e806c12609ba860",
+          "in_this_frozen_56": true,
+          "raw_or_denoised": "raw_cycles_render",
+          "cycles_samples": 24,
+          "camera": {
+            "state": "failed_not_adopted",
+            "pose": "fitted",
+            "focal": "original_fixed_6_dof",
+            "principal_point": "center_fixed",
+            "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+          },
+          "video_seconds": null,
+          "video_seconds_applicability": "not_applicable_synthetic_render",
+          "display_processing": "OIDN_LDR_sRGB_high_no_warp",
+          "display_role": "fixed_focal",
+          "panel_order_zero_based": 3,
+          "display_box_xyxy": [
+            0,
+            1740,
+            960,
+            2280
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        }
+      ],
+      "raw_or_denoised": "mixed_see_panels",
+      "resized": true,
+      "resize_purpose": "presentation_only_do_not_use_for_pixel_metrics",
+      "crop_xyxy": null,
+      "warp": false
+    },
+    {
+      "relative_path": "H_fullframe_review_panel.png",
+      "bytes": 1843035,
+      "sha256": "3b20256c7d1407dc4a89ff74820266f1462e5f2e9911a7b6f8f02141ff86ca42",
+      "view": "H",
+      "size": [
+        960,
+        1710
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1101.728114,
+      "source_video_seconds_applicability": "source_panel_actual_time_other_panels_synthetic_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "downscaled_fullframe_review_contact_sheet",
+      "camera": "multiple_see_panels",
+      "panels": [
+        {
+          "role": "native_source",
+          "source": {
+            "video_id": "BV1GqXMByE1s",
+            "video_seconds": 1101.728114,
+            "native_size": [
+              1920,
+              1080
+            ],
+            "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+            "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+            "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+            "new_capture": false
+          },
+          "raw_or_denoised": "native_source",
+          "camera": null,
+          "panel_order_zero_based": 0,
+          "display_box_xyxy": [
+            0,
+            30,
+            960,
+            570
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "file_name": "H_B_legacy_camera_1920.png",
+          "sha256": "80ecfe1a9fdbd2b9b0d95fe519157f9cbbcfd0208ba8cfdf1492ad1a76c6bbd6",
+          "in_this_frozen_56": false,
+          "raw_or_denoised": "raw_cycles_render",
+          "cycles_samples": 12,
+          "camera": {
+            "state": "original_legacy_uncalibrated",
+            "pose": "original",
+            "focal": "original",
+            "principal_point": "original_center",
+            "adoption": "baseline_not_a_new_candidate"
+          },
+          "video_seconds": null,
+          "video_seconds_applicability": "not_applicable_synthetic_render",
+          "display_processing": "raw_no_denoise",
+          "display_role": "original",
+          "panel_order_zero_based": 1,
+          "display_box_xyxy": [
+            0,
+            600,
+            960,
+            1140
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "file_name": "H_candidate_camera_raw.png",
+          "sha256": "cd84263c0e02aacc9fd87dca02adcb36a8d85d617b51180096b087e7782b4fc7",
+          "in_this_frozen_56": true,
+          "raw_or_denoised": "raw_cycles_render",
+          "cycles_samples": 24,
+          "camera": {
+            "state": "original_camera_unchanged",
+            "pose": "original",
+            "focal": "original",
+            "principal_point": "original_center",
+            "adoption": "not_solved_insufficient_identifiable_points"
+          },
+          "video_seconds": null,
+          "video_seconds_applicability": "not_applicable_synthetic_render",
+          "display_processing": "OIDN_LDR_sRGB_high_no_warp",
+          "display_role": "candidate",
+          "panel_order_zero_based": 2,
+          "display_box_xyxy": [
+            0,
+            1170,
+            960,
+            1710
+          ],
+          "native_input_size": [
+            1920,
+            1080
+          ],
+          "display_size": [
+            960,
+            540
+          ]
+        }
+      ],
+      "raw_or_denoised": "mixed_see_panels",
+      "resized": true,
+      "resize_purpose": "presentation_only_do_not_use_for_pixel_metrics",
+      "crop_xyxy": null,
+      "warp": false
+    },
+    {
+      "relative_path": "F_candidate_camera_denoised.png",
+      "bytes": 1168989,
+      "sha256": "26da42e5f662babafc3be9a93b1f5cbcde59161fc47eee390c2e7622a18cff4a",
+      "view": "F",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": null,
+      "source_video_seconds_applicability": "not_applicable_synthetic_render",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "normal_render_view_denoised",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "OIDN_LDR_sRGB_high",
+      "render_input": {
+        "file_name": "F_candidate_camera_raw.png",
+        "sha256": "59ed00f024419ff16ee2d6ce265bf341b9b826b641ba2056f15532e4d21cb301",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "cycles_samples": 24,
+      "render_resolution": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false
+    },
+    {
+      "relative_path": "G_candidate_camera_denoised.png",
+      "bytes": 1197818,
+      "sha256": "19b21b2c98206f69b5483fe2337c6d53504534f3c474504ffc93ba9f97c97c93",
+      "view": "G",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": null,
+      "source_video_seconds_applicability": "not_applicable_synthetic_render",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "normal_render_view_denoised",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "fitted_7_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "OIDN_LDR_sRGB_high",
+      "render_input": {
+        "file_name": "G_candidate_camera_raw.png",
+        "sha256": "eb1c2dade42ff3cc862843c7ab317ea06a8f7870f787128aa8336ee7bbcbc913",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "fitted_7_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "cycles_samples": 24,
+      "render_resolution": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false
+    },
+    {
+      "relative_path": "H_candidate_camera_denoised.png",
+      "bytes": 1264315,
+      "sha256": "69121b35e5ca6c1522d19cd7d0196ba9d718a9124a7ae6f44981a32ffa11ab07",
+      "view": "H",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": null,
+      "source_video_seconds_applicability": "not_applicable_synthetic_render",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "normal_render_view_denoised",
+      "camera": {
+        "state": "original_camera_unchanged",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "not_solved_insufficient_identifiable_points"
+      },
+      "raw_or_denoised": "OIDN_LDR_sRGB_high",
+      "render_input": {
+        "file_name": "H_candidate_camera_raw.png",
+        "sha256": "cd84263c0e02aacc9fd87dca02adcb36a8d85d617b51180096b087e7782b4fc7",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_camera_unchanged",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "not_solved_insufficient_identifiable_points"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "cycles_samples": 24,
+      "render_resolution": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false
+    },
+    {
+      "relative_path": "G_fixed_focal_alternative_denoised.png",
+      "bytes": 1295717,
+      "sha256": "1f42049445cb90ede07e04abeb2883d1a4f1b7c9e27643658eac1b448ce56099",
+      "view": "G",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": null,
+      "source_video_seconds_applicability": "not_applicable_synthetic_render",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "normal_render_view_denoised",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "OIDN_LDR_sRGB_high",
+      "render_input": {
+        "file_name": "G_fixed_focal_alternative_raw.png",
+        "sha256": "9fe9c41140f4fd030bcf037ef4be3fc7d7c41c7cdfb135f28e806c12609ba860",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "cycles_samples": 24,
+      "render_resolution": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false
+    },
+    {
+      "relative_path": "F_candidate_camera_raw.png",
+      "bytes": 4748525,
+      "sha256": "59ed00f024419ff16ee2d6ce265bf341b9b826b641ba2056f15532e4d21cb301",
+      "view": "F",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": null,
+      "source_video_seconds_applicability": "not_applicable_synthetic_render",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "raw_blender_render",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "raw_cycles_no_denoise",
+      "render_input": {
+        "file_name": "F_candidate_camera_raw.png",
+        "sha256": "59ed00f024419ff16ee2d6ce265bf341b9b826b641ba2056f15532e4d21cb301",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "cycles_samples": 24,
+      "render_resolution": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false
+    },
+    {
+      "relative_path": "G_candidate_camera_raw.png",
+      "bytes": 4572892,
+      "sha256": "eb1c2dade42ff3cc862843c7ab317ea06a8f7870f787128aa8336ee7bbcbc913",
+      "view": "G",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": null,
+      "source_video_seconds_applicability": "not_applicable_synthetic_render",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "raw_blender_render",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "fitted_7_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "raw_cycles_no_denoise",
+      "render_input": {
+        "file_name": "G_candidate_camera_raw.png",
+        "sha256": "eb1c2dade42ff3cc862843c7ab317ea06a8f7870f787128aa8336ee7bbcbc913",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "fitted_7_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "cycles_samples": 24,
+      "render_resolution": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false
+    },
+    {
+      "relative_path": "G_fixed_focal_alternative_raw.png",
+      "bytes": 4508306,
+      "sha256": "9fe9c41140f4fd030bcf037ef4be3fc7d7c41c7cdfb135f28e806c12609ba860",
+      "view": "G",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": null,
+      "source_video_seconds_applicability": "not_applicable_synthetic_render",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "raw_blender_render",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "raw_cycles_no_denoise",
+      "render_input": {
+        "file_name": "G_fixed_focal_alternative_raw.png",
+        "sha256": "9fe9c41140f4fd030bcf037ef4be3fc7d7c41c7cdfb135f28e806c12609ba860",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "cycles_samples": 24,
+      "render_resolution": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false
+    },
+    {
+      "relative_path": "H_candidate_camera_raw.png",
+      "bytes": 4294429,
+      "sha256": "cd84263c0e02aacc9fd87dca02adcb36a8d85d617b51180096b087e7782b4fc7",
+      "view": "H",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": null,
+      "source_video_seconds_applicability": "not_applicable_synthetic_render",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "raw_blender_render",
+      "camera": {
+        "state": "original_camera_unchanged",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "not_solved_insufficient_identifiable_points"
+      },
+      "raw_or_denoised": "raw_cycles_no_denoise",
+      "render_input": {
+        "file_name": "H_candidate_camera_raw.png",
+        "sha256": "cd84263c0e02aacc9fd87dca02adcb36a8d85d617b51180096b087e7782b4fc7",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_camera_unchanged",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "not_solved_insufficient_identifiable_points"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "cycles_samples": 24,
+      "render_resolution": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false
+    },
+    {
+      "relative_path": "F_candidate_direct50.png",
+      "bytes": 4222706,
+      "sha256": "9f50c0525dc4f67583424152ff4e3e64e2bbef185204b419be0c3eda7bf7ae9b",
+      "view": "F",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1823.678156,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_fullframe",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "F_candidate_camera_raw.png",
+        "sha256": "59ed00f024419ff16ee2d6ce265bf341b9b826b641ba2056f15532e4d21cb301",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": null
+    },
+    {
+      "relative_path": "F_original_direct50.png",
+      "bytes": 4476396,
+      "sha256": "a51643d26b3838511394b9444a9a8c2829105c53366a72b454acc8c02c90125a",
+      "view": "F",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1823.678156,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_fullframe",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "F_B_legacy_camera_1920.png",
+        "sha256": "836aa84085d8fae482dec0f2d20c0e2e055089313474677e095245c00368a93f",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": null
+    },
+    {
+      "relative_path": "G_candidate_direct50.png",
+      "bytes": 4026118,
+      "sha256": "c943d1b9e678fb0fecee5220fcda0de21ca32ec31ad1474d6e340a3672b91949",
+      "view": "G",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_fullframe",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "fitted_7_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_candidate_camera_raw.png",
+        "sha256": "eb1c2dade42ff3cc862843c7ab317ea06a8f7870f787128aa8336ee7bbcbc913",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "fitted_7_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": null
+    },
+    {
+      "relative_path": "G_fixed_focal_direct50.png",
+      "bytes": 3959002,
+      "sha256": "c60d8e8daa5d07bed8c55eb1748fb2ccbbdae3309aeaa00198ac36b54c8eda38",
+      "view": "G",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_fullframe",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_fixed_focal_alternative_raw.png",
+        "sha256": "9fe9c41140f4fd030bcf037ef4be3fc7d7c41c7cdfb135f28e806c12609ba860",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": null
+    },
+    {
+      "relative_path": "G_original_direct50.png",
+      "bytes": 4235514,
+      "sha256": "bd369b1fa829d4b2fe14d34751f62ffe20ef389592558a4f31f85f03d05e55b7",
+      "view": "G",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_fullframe",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_B_legacy_camera_1920.png",
+        "sha256": "62ef02ac778dab6284d643ffeb7ebe30a5c09caf7b93c9e392dbf6d48ba30845",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": null
+    },
+    {
+      "relative_path": "H_candidate_direct50.png",
+      "bytes": 3704896,
+      "sha256": "2d0ed8a9844edeeabfc886fef0432608cf88970dac89d8be67635e756178f24d",
+      "view": "H",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1101.728114,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_fullframe",
+      "camera": {
+        "state": "original_camera_unchanged",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "not_solved_insufficient_identifiable_points"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "H_candidate_camera_raw.png",
+        "sha256": "cd84263c0e02aacc9fd87dca02adcb36a8d85d617b51180096b087e7782b4fc7",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_camera_unchanged",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "not_solved_insufficient_identifiable_points"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": null
+    },
+    {
+      "relative_path": "H_original_direct50.png",
+      "bytes": 4101321,
+      "sha256": "0aaec243f8e89db59d277c951b882481faa60bd75514aa647781787df4791c33",
+      "view": "H",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1101.728114,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_fullframe",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "H_B_legacy_camera_1920.png",
+        "sha256": "80ecfe1a9fdbd2b9b0d95fe519157f9cbbcfd0208ba8cfdf1492ad1a76c6bbd6",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 12,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": null
+    },
+    {
+      "relative_path": "F_candidate_architecture_direct50_crop.png",
+      "bytes": 1441347,
+      "sha256": "3c1d50ad4b900a0fdfda2470fee2833c9bc8aace65d68edd4305425f09c5dbb7",
+      "view": "F",
+      "size": [
+        1120,
+        600
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1823.678156,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "F_candidate_camera_raw.png",
+        "sha256": "59ed00f024419ff16ee2d6ce265bf341b9b826b641ba2056f15532e4d21cb301",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        800,
+        0,
+        1920,
+        600
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "F_candidate_foreground_direct50_crop.png",
+      "bytes": 1589553,
+      "sha256": "93279f3dd86329bbc945744abbe4c261789f9fc22ea727741e96883ecd6188d1",
+      "view": "F",
+      "size": [
+        1920,
+        430
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1823.678156,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "F_candidate_camera_raw.png",
+        "sha256": "59ed00f024419ff16ee2d6ce265bf341b9b826b641ba2056f15532e4d21cb301",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        0,
+        650,
+        1920,
+        1080
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "F_original_architecture_direct50_crop.png",
+      "bytes": 1525911,
+      "sha256": "cea91c25dc08366ab24059849983b62787b26a6e7212d337c2b302988e1ce259",
+      "view": "F",
+      "size": [
+        1120,
+        600
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1823.678156,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "F_B_legacy_camera_1920.png",
+        "sha256": "836aa84085d8fae482dec0f2d20c0e2e055089313474677e095245c00368a93f",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        800,
+        0,
+        1920,
+        600
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "F_original_foreground_direct50_crop.png",
+      "bytes": 1704512,
+      "sha256": "2f9d9b9dcb977737aeda87678a2c35ae916851280dfd71ff6e1e8144be444576",
+      "view": "F",
+      "size": [
+        1920,
+        430
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1823.678156,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "F_B_legacy_camera_1920.png",
+        "sha256": "836aa84085d8fae482dec0f2d20c0e2e055089313474677e095245c00368a93f",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        0,
+        650,
+        1920,
+        1080
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "G_candidate_architecture_direct50_crop.png",
+      "bytes": 1397350,
+      "sha256": "32236758a1d985561636f33ee5403ee443d93578076ce855dff9860f2b71bf04",
+      "view": "G",
+      "size": [
+        1120,
+        600
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "fitted_7_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_candidate_camera_raw.png",
+        "sha256": "eb1c2dade42ff3cc862843c7ab317ea06a8f7870f787128aa8336ee7bbcbc913",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "fitted_7_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        800,
+        0,
+        1920,
+        600
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "G_candidate_foreground_direct50_crop.png",
+      "bytes": 1595551,
+      "sha256": "42be16c86e8dd3fe24e92da00560feb12e4f75b13eedac83f70e81d10e6f8af3",
+      "view": "G",
+      "size": [
+        1920,
+        430
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "fitted_7_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_candidate_camera_raw.png",
+        "sha256": "eb1c2dade42ff3cc862843c7ab317ea06a8f7870f787128aa8336ee7bbcbc913",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "fitted_7_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        0,
+        650,
+        1920,
+        1080
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "G_fixed_focal_architecture_direct50_crop.png",
+      "bytes": 1391289,
+      "sha256": "279635198a3bf3ccae77eca06f3f14417403af2dc8fb22df4aaf873f8f6d7c87",
+      "view": "G",
+      "size": [
+        1120,
+        600
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_fixed_focal_alternative_raw.png",
+        "sha256": "9fe9c41140f4fd030bcf037ef4be3fc7d7c41c7cdfb135f28e806c12609ba860",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        800,
+        0,
+        1920,
+        600
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "G_fixed_focal_foreground_direct50_crop.png",
+      "bytes": 1574374,
+      "sha256": "0d14d38e9e321677dc90a4a19ce6f7be5a988994c043cfe10c5ee2107504844a",
+      "view": "G",
+      "size": [
+        1920,
+        430
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "failed_not_adopted",
+        "pose": "fitted",
+        "focal": "original_fixed_6_dof",
+        "principal_point": "center_fixed",
+        "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_fixed_focal_alternative_raw.png",
+        "sha256": "9fe9c41140f4fd030bcf037ef4be3fc7d7c41c7cdfb135f28e806c12609ba860",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "failed_not_adopted",
+          "pose": "fitted",
+          "focal": "original_fixed_6_dof",
+          "principal_point": "center_fixed",
+          "adoption": "rejected_whole_frame_or_inconsistent_improvement"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        0,
+        650,
+        1920,
+        1080
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "G_original_architecture_direct50_crop.png",
+      "bytes": 1489195,
+      "sha256": "be5136ebe85a81e43912d4c2b8db4e33f754355672b0d8f6cfa20433b2d26720",
+      "view": "G",
+      "size": [
+        1120,
+        600
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_B_legacy_camera_1920.png",
+        "sha256": "62ef02ac778dab6284d643ffeb7ebe30a5c09caf7b93c9e392dbf6d48ba30845",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        800,
+        0,
+        1920,
+        600
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "G_original_foreground_direct50_crop.png",
+      "bytes": 1630317,
+      "sha256": "931e5e61557e9d54e57d13b266f4d87dfaaf0ceb1a50515dafb19ee9aafc212c",
+      "view": "G",
+      "size": [
+        1920,
+        430
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "G_B_legacy_camera_1920.png",
+        "sha256": "62ef02ac778dab6284d643ffeb7ebe30a5c09caf7b93c9e392dbf6d48ba30845",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        0,
+        650,
+        1920,
+        1080
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "H_candidate_architecture_direct50_crop.png",
+      "bytes": 1271752,
+      "sha256": "3cbd505632dc15b26750c8acd1258f77e4ea3fc711810b0a15c944993c4e3962",
+      "view": "H",
+      "size": [
+        1120,
+        600
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1101.728114,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "original_camera_unchanged",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "not_solved_insufficient_identifiable_points"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "H_candidate_camera_raw.png",
+        "sha256": "cd84263c0e02aacc9fd87dca02adcb36a8d85d617b51180096b087e7782b4fc7",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_camera_unchanged",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "not_solved_insufficient_identifiable_points"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        800,
+        0,
+        1920,
+        600
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "H_candidate_foreground_direct50_crop.png",
+      "bytes": 1494746,
+      "sha256": "abcf31065a94afd3ee488ddf9a4bc403a69c4232800eef3e6a63afab06e44bbf",
+      "view": "H",
+      "size": [
+        1920,
+        430
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1101.728114,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "original_camera_unchanged",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "not_solved_insufficient_identifiable_points"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "H_candidate_camera_raw.png",
+        "sha256": "cd84263c0e02aacc9fd87dca02adcb36a8d85d617b51180096b087e7782b4fc7",
+        "in_this_frozen_56": true,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 24,
+        "camera": {
+          "state": "original_camera_unchanged",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "not_solved_insufficient_identifiable_points"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        0,
+        650,
+        1920,
+        1080
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "H_original_architecture_direct50_crop.png",
+      "bytes": 1406896,
+      "sha256": "a0e9b7fe26cde8d9449e14e10ddc6e719d89ba544d5c6f6b449664a741ff7c06",
+      "view": "H",
+      "size": [
+        1120,
+        600
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1101.728114,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "H_B_legacy_camera_1920.png",
+        "sha256": "80ecfe1a9fdbd2b9b0d95fe519157f9cbbcfd0208ba8cfdf1492ad1a76c6bbd6",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 12,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        800,
+        0,
+        1920,
+        600
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "H_original_foreground_direct50_crop.png",
+      "bytes": 1657932,
+      "sha256": "c6160947e16a558c1bf7371ffc0e9fd0c0a68069900f17ccdcaffe9b3490a412",
+      "view": "H",
+      "size": [
+        1920,
+        430
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1101.728114,
+      "source_video_seconds_applicability": "actual_native_source_component_time_render_component_not_applicable",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "pixel_exact_50_percent_overlay_local_crop",
+      "camera": {
+        "state": "original_legacy_uncalibrated",
+        "pose": "original",
+        "focal": "original",
+        "principal_point": "original_center",
+        "adoption": "baseline_not_a_new_candidate"
+      },
+      "raw_or_denoised": "native_source_plus_raw_render_no_denoise",
+      "render_input": {
+        "file_name": "H_B_legacy_camera_1920.png",
+        "sha256": "80ecfe1a9fdbd2b9b0d95fe519157f9cbbcfd0208ba8cfdf1492ad1a76c6bbd6",
+        "in_this_frozen_56": false,
+        "raw_or_denoised": "raw_cycles_render",
+        "cycles_samples": 12,
+        "camera": {
+          "state": "original_legacy_uncalibrated",
+          "pose": "original",
+          "focal": "original",
+          "principal_point": "original_center",
+          "adoption": "baseline_not_a_new_candidate"
+        },
+        "video_seconds": null,
+        "video_seconds_applicability": "not_applicable_synthetic_render"
+      },
+      "overlay_formula": "floor((source_uint16 + raw_render_uint16)/2)",
+      "overlay_weights": [
+        0.5,
+        0.5
+      ],
+      "overlay_native_size": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        0,
+        650,
+        1920,
+        1080
+      ],
+      "resized": false,
+      "warp": false,
+      "registration": false,
+      "pixel_verification": {
+        "file": "direct50_pixel_checks.json",
+        "maximum_integer_error_fullframe": 0,
+        "different_pixels_fullframe": 0
+      },
+      "crop_verification": "direct unresampled crop of verified fullframe overlay"
+    },
+    {
+      "relative_path": "F_source_annotated.png",
+      "bytes": 957332,
+      "sha256": "3a35d066673ecf3e26c3d9048ea0d7e3f75ca992c6baac986accaa371f24d8ab",
+      "view": "F",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1823.678156,
+      "source_video_seconds_applicability": "actual_native_source_frame_time",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1823.678156,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "native_source_annotation",
+      "camera": null,
+      "raw_or_denoised": "native_source_with_labels_not_raw_render",
+      "annotation": {
+        "train": "green",
+        "holdout": "magenta",
+        "direction_only": "amber",
+        "modified_original_source_bytes": false,
+        "output_adds_labels": true
+      },
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false
+    },
+    {
+      "relative_path": "G_source_annotated.png",
+      "bytes": 1198154,
+      "sha256": "c4842295c82544fc3420d387c65e7902707384593f5329d356e5f1c9921488e5",
+      "view": "G",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1116.180816,
+      "source_video_seconds_applicability": "actual_native_source_frame_time",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1116.180816,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "native_source_annotation",
+      "camera": null,
+      "raw_or_denoised": "native_source_with_labels_not_raw_render",
+      "annotation": {
+        "train": "green",
+        "holdout": "magenta",
+        "direction_only": "amber",
+        "modified_original_source_bytes": false,
+        "output_adds_labels": true
+      },
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false
+    },
+    {
+      "relative_path": "H_source_annotated.png",
+      "bytes": 1274375,
+      "sha256": "9c0cf6b2bb49aca09f078f388c3f10538530402be7e68a5c87192b860431999c",
+      "view": "H",
+      "size": [
+        1920,
+        1080
+      ],
+      "stage_status": "failed_camera_research_not_adopted",
+      "shared_model": "PR37_B_frozen",
+      "source_video_seconds": 1101.728114,
+      "source_video_seconds_applicability": "actual_native_source_frame_time",
+      "associated_reference_source": {
+        "video_id": "BV1GqXMByE1s",
+        "video_seconds": 1101.728114,
+        "native_size": [
+          1920,
+          1080
+        ],
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "fixed_commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24",
+        "fixed_repo_path": "scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "new_capture": false
+      },
+      "geometry_material_light_visibility_changes": false,
+      "role": "native_source_annotation",
+      "camera": null,
+      "raw_or_denoised": "native_source_with_labels_not_raw_render",
+      "annotation": {
+        "train": "green",
+        "holdout": "magenta",
+        "direction_only": "amber",
+        "modified_original_source_bytes": false,
+        "output_adds_labels": true
+      },
+      "crop_xyxy": null,
+      "resized": false,
+      "warp": false
+    }
+  ]
+}
