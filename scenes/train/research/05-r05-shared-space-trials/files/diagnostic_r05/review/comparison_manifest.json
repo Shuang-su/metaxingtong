@@ -1,0 +1,82 @@
+[
+  {
+    "view": "A",
+    "source": "/workspace/scratch/fa58bfcf0425/train_hd_recapture_20261010/A2_clean_HD_viewport.jpg",
+    "source_sha256": "1f32a2e580f0b7caf181c82eb61f872d35e50a78c715a4087b55935869663acc",
+    "crop": [
+      0,
+      27,
+      1180,
+      691
+    ],
+    "uniform_comparison_resize": [
+      590,
+      332
+    ],
+    "render": "/workspace/scratch/fa58bfcf0425/train_hd_revision_20261010/diagnostic_r05/review/denoised/HD_A.png",
+    "render_sha256": "d0ae6bba62e6794e96df51197b5e81800bd8745fc407f73e8ccd0251c726f1e7",
+    "overlay_sha256": "ef6109f0c50040f62eb9eb37be7c31616d11dfcd6fa70a4ffd2e5235889fd613",
+    "operation": "Image.blend(source_half, denoised_render,0.5), no warp",
+    "camera_scope": "r03 identical transform"
+  },
+  {
+    "view": "B",
+    "source": "/workspace/scratch/fa58bfcf0425/train_hd_recapture_20261010/B2_clean_HD_viewport.jpg",
+    "source_sha256": "7168a0cdcc5e9e3e39ced84aae27b6be1fdd096a23a6a39dc173a05bc7a4ecf3",
+    "crop": [
+      0,
+      27,
+      1180,
+      691
+    ],
+    "uniform_comparison_resize": [
+      590,
+      332
+    ],
+    "render": "/workspace/scratch/fa58bfcf0425/train_hd_revision_20261010/diagnostic_r05/review/denoised/HD_B.png",
+    "render_sha256": "759a20aa14f379a4b986a847e56a71e5e93139230170b2237ae92e4fabaf5202",
+    "overlay_sha256": "66b0d501db09dc9f402ac6c5b9b8b38802abfcc2cbfb42309e0abd5ae5d46d4d",
+    "operation": "Image.blend(source_half, denoised_render,0.5), no warp",
+    "camera_scope": "r03 identical transform"
+  },
+  {
+    "view": "D",
+    "source": "/workspace/scratch/fa58bfcf0425/train_hd_recapture_20261010/D2_clean_HD_viewport.jpg",
+    "source_sha256": "551d756cd3a3fba99f204e16732087c29593df6d1fa9484880e013ca724ab50f",
+    "crop": [
+      0,
+      27,
+      1180,
+      691
+    ],
+    "uniform_comparison_resize": [
+      590,
+      332
+    ],
+    "render": "/workspace/scratch/fa58bfcf0425/train_hd_revision_20261010/diagnostic_r05/review/denoised/HD_D.png",
+    "render_sha256": "7006f6a2998896fe6d9f069b45ad42351e17615406c674b3c58f60a3d7c15891",
+    "overlay_sha256": "09f57b97cd60fb16596da3cd88f76d879a3333805d5692bdb701b034a29524ca",
+    "operation": "Image.blend(source_half, denoised_render,0.5), no warp",
+    "camera_scope": "r03 identical transform"
+  },
+  {
+    "view": "J",
+    "source": "/workspace/scratch/fa58bfcf0425/train_motion_sources_20261010/J_empty_window_clean_paused.jpg",
+    "source_sha256": "265cc7fc402ae56f025cc6696aa0900e31c89675a23647c25b4d9d2ea5724762",
+    "crop": [
+      0,
+      27,
+      1180,
+      691
+    ],
+    "uniform_comparison_resize": [
+      590,
+      332
+    ],
+    "render": "/workspace/scratch/fa58bfcf0425/train_hd_revision_20261010/diagnostic_r05/review/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+    "render_sha256": "5d5ce470a726187c318b6e2ecffbbda6f82f46c9823eca0ad3e6c4e2fd5f4e44",
+    "overlay_sha256": "a39481c2be0b4c856ad0fe93762076e2a3a23a6c68ad6fc5e72192104913a75d",
+    "operation": "Image.blend(source_half, denoised_render,0.5), no warp",
+    "camera_scope": "local plane, side and absolute bay unresolved"
+  }
+]

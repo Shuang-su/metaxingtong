@@ -1,0 +1,132 @@
+[
+  {
+    "view": "HD_A",
+    "source": "references/A_content.png",
+    "render": "review_r03/denoised/material_HD_A_100.png",
+    "source_uniform_scale": 1,
+    "render_pixels": [
+      1180,
+      664
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "来源匹配候选，仍有残差",
+    "overlay_sha256": "ecb70464f252a5d9c558f0f35f9c9ea8d3bdd6debde193af2694d5a64b627a10"
+  },
+  {
+    "view": "HD_B",
+    "source": "references/B_content.png",
+    "render": "review_r03/denoised/material_HD_B_100.png",
+    "source_uniform_scale": 1,
+    "render_pixels": [
+      1180,
+      664
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "来源匹配候选，仍有残差",
+    "overlay_sha256": "af869f0508f900c055d32a136ee2fa332a210f0f927212b798bb0b7cc652db03"
+  },
+  {
+    "view": "HD_D",
+    "source": "references/D_content.png",
+    "render": "review_r03/denoised/material_HD_D_100.png",
+    "source_uniform_scale": 1,
+    "render_pixels": [
+      1180,
+      664
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "来源匹配候选，仍有残差",
+    "overlay_sha256": "a45d5cc3c17f4f8e3a1283a84921c3ffb6cefa86f5203cb85b44ea9712880296"
+  },
+  {
+    "view": "HD_F",
+    "source": "references/F_content.png",
+    "render": "review_r03/denoised/material_HD_F_50.png",
+    "source_uniform_scale": 0.5,
+    "render_pixels": [
+      590,
+      332
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "结构诊断，相机/全场残差未解；来源为表演灯态，本模型固定暖光",
+    "overlay_sha256": "349950646bd0b4f6a6ea0854eb805a7e39bed2ffa4ba3a6a04e919680fb45321"
+  },
+  {
+    "view": "HD_H",
+    "source": "references/H_content.png",
+    "render": "review_r03/denoised/material_HD_H_50.png",
+    "source_uniform_scale": 0.5,
+    "render_pixels": [
+      590,
+      332
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "结构诊断，相机/全场残差未解",
+    "overlay_sha256": "ba94e2b860a8ebb0951474ca6db0d3dd3f450cf0fad8ed1849942fd58fb3daf0"
+  },
+  {
+    "view": "HD_I",
+    "source": "references/I_content.png",
+    "render": "review_r03/denoised/material_HD_I_50.png",
+    "source_uniform_scale": 0.5,
+    "render_pixels": [
+      590,
+      332
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "结构诊断，相机/全场残差未解",
+    "overlay_sha256": "a946aca80ed25aba5750e1ad3b1d314f891272689c96137a82c873a33c12d9a3"
+  },
+  {
+    "view": "HD_J",
+    "source": "references/J_content.png",
+    "render": "review_r03/denoised/material_HD_J_50.png",
+    "source_uniform_scale": 0.5,
+    "render_pixels": [
+      590,
+      332
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "结构诊断，相机/全场残差未解",
+    "overlay_sha256": "6b121aa6b11298ad944be8bd534b6011e55c53f833d4f4a0d34ac34aef16fd82"
+  },
+  {
+    "view": "legacy_A",
+    "source": "references/legacy_A_content.png",
+    "render": "review_r03/denoised/material_MATCH_A_15m19_right_booth_50.png",
+    "source_uniform_scale": 0.5,
+    "render_pixels": [
+      594,
+      334
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "旧来源/原相机回归；共享几何、材质及固定暖光已改变",
+    "overlay_sha256": "7ff429461351cbbdde21f74faa51ca92164fc9f786e6beba57f7d7db1b870154"
+  },
+  {
+    "view": "legacy_B",
+    "source": "references/legacy_B_content.png",
+    "render": "review_r03/denoised/material_MATCH_B_45m12_left_booth_50.png",
+    "source_uniform_scale": 0.5,
+    "render_pixels": [
+      594,
+      334
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "旧来源/原相机回归；共享几何、材质及固定暖光已改变",
+    "overlay_sha256": "ba3540785277380c87a96cbce507fd36208b91452852c32a35b0be14adfdd188"
+  },
+  {
+    "view": "legacy_D",
+    "source": "references/legacy_D_content.png",
+    "render": "review_r03/denoised/material_MATCH_D_13m59_wide_50.png",
+    "source_uniform_scale": 0.5,
+    "render_pixels": [
+      594,
+      334
+    ],
+    "operation": "direct 0.5 RGB blend on same-sized images; no warp",
+    "status": "旧来源/原相机回归；共享几何、材质及固定暖光已改变",
+    "overlay_sha256": "a45ea704a466fb8c50cf9facb86568db9ae2f417bab2b4ea0bc0283b4d02356e"
+  }
+]

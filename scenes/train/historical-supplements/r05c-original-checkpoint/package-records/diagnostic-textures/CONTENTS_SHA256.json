@@ -1,0 +1,871 @@
+{
+  "status": "r05C shared proportion improvement checkpoint; source fit NOT accepted; r03 Library and CURRENT unchanged",
+  "purpose": "Source comparisons, actual current texture resources, raw render provenance, structural/roundtrip and independent QA; NOT a replacement model package",
+  "files": [
+    {
+      "file": "analysis/B_C_attribution_check.json",
+      "bytes": 950,
+      "sha256": "7046c525e6ba618b777de46dc332c21b2f601a9dc5cad5baa1edde220f387f03"
+    },
+    {
+      "file": "analysis/B_C_scene_state_check.json",
+      "bytes": 1818,
+      "sha256": "328ee5c3faa5669da2335eda8cf312a3a499cace9ab8adc11eb20d4b7d3ef626"
+    },
+    {
+      "file": "analysis/C_all_render_integrity.json",
+      "bytes": 1801,
+      "sha256": "188f7006e73320c04d29cd7c772efb0b87b106ebebfd8e99226b06876b70e730"
+    },
+    {
+      "file": "analysis/Dseq3_rotation_holdout.json",
+      "bytes": 1610,
+      "sha256": "b330f93f5dffa7db602559b3b7cbfd907c152fb24127d31128f93e763a31f1e7"
+    },
+    {
+      "file": "analysis/J_empty_plane_fit.json",
+      "bytes": 6037,
+      "sha256": "87ce08f0e7fdc08915d8e3ac78f5273893bd2aec05817593f5dc81b2b6af8311"
+    },
+    {
+      "file": "analysis/J_focal_sensitivity.json",
+      "bytes": 1792,
+      "sha256": "65b17cc4a46bd10d283637bb8b3be0654f801939d57f6fbdddc4f064f9bf761f"
+    },
+    {
+      "file": "analysis/base_constraints.json",
+      "bytes": 32337,
+      "sha256": "c4cb5b9e035fdca74b540d9399ecfe9e751cdf936e6725ff3b246ee1e54de545"
+    },
+    {
+      "file": "analysis/bay_corrected_constraints.json",
+      "bytes": 37146,
+      "sha256": "23d2c04110b9d75f3865ff4d2b327184692ab639bebdfaa689d1cde9cfbfcbe5"
+    },
+    {
+      "file": "analysis/bay_corrected_fit.json",
+      "bytes": 26817,
+      "sha256": "debcf524552e5d22069b2bc578579d958a7d10cf132cbd9148698f1a096692bf"
+    },
+    {
+      "file": "analysis/bilateral_constraints.json",
+      "bytes": 37146,
+      "sha256": "8404930c667cc0eb320e174939d6aaf53a5c83dd108ecc336c05a93a3ff5ffbc"
+    },
+    {
+      "file": "analysis/bilateral_fit_results.json",
+      "bytes": 51412,
+      "sha256": "4a440826472391e6d9de3c32719e090ee7b44c0811fa60fb0c7cc6178ee65023"
+    },
+    {
+      "file": "analysis/headlight_constraints.json",
+      "bytes": 37148,
+      "sha256": "b06f9a039fb87891c905492c9758fd5ac38045d7dbb7c7812b4603a567f04744"
+    },
+    {
+      "file": "analysis/headlight_fit_results.json",
+      "bytes": 52024,
+      "sha256": "3483711dbd2a93c90be185738b70808ad291f214144a1cb19b1b03dc494aa16e"
+    },
+    {
+      "file": "analysis/lossless_resource_compression_not_adopted.json",
+      "bytes": 6815,
+      "sha256": "e90a44f5663b580b456321d0f4b321101d1ac8a7f4b1556c35c601e0612d53e1"
+    },
+    {
+      "file": "analysis/qa/trial_b_shared_a759380776ac_qa.json",
+      "bytes": 1420765,
+      "sha256": "ece96288169687193e4643b19c070647715d89dd866f6fa0f0cebf7629136839"
+    },
+    {
+      "file": "analysis/qa/trial_c_shared_59f2cdfeb41d_qa.json",
+      "bytes": 1420768,
+      "sha256": "6b061cbfcb918e37d403c3b3afd708deb2d9b0025d66666897209cc014ba28be"
+    },
+    {
+      "file": "analysis/r03_protection_check.json",
+      "bytes": 581,
+      "sha256": "e3ac803a1efc3e906718c2dacc5219243fa65579d7b7199201909090724eb605"
+    },
+    {
+      "file": "analysis/rack_cross_section_constraints.json",
+      "bytes": 37146,
+      "sha256": "8404930c667cc0eb320e174939d6aaf53a5c83dd108ecc336c05a93a3ff5ffbc"
+    },
+    {
+      "file": "analysis/rack_cross_section_fit.json",
+      "bytes": 26834,
+      "sha256": "da94246fc63c40bbd90551c182ab0c7a3acc286660f88611c92da76804a8ff61"
+    },
+    {
+      "file": "analysis/rackfit_constraints.json",
+      "bytes": 37146,
+      "sha256": "8404930c667cc0eb320e174939d6aaf53a5c83dd108ecc336c05a93a3ff5ffbc"
+    },
+    {
+      "file": "analysis/rackfit_results.json",
+      "bytes": 26800,
+      "sha256": "cfca2689fbfe5c8bdb3eb894f119d80d716e2d1e16589bf03e772fc4a11cdefe"
+    },
+    {
+      "file": "analysis/seat_contour_refined_constraints.json",
+      "bytes": 37291,
+      "sha256": "84a94e8b27af30e2b73f2d0084c21258b187344e2cc1b311ee2011eeef3017cd"
+    },
+    {
+      "file": "analysis/seat_contour_refined_fit.json",
+      "bytes": 26824,
+      "sha256": "7ff75729d8477445a31abc89644b179173eabcf79115547db002516dc51de020"
+    },
+    {
+      "file": "analysis/table_entity_visibility.json",
+      "bytes": 5944,
+      "sha256": "59d3520b06b9c57ff0ecc3959b1da14e14fa8f9f97581c0f6a6acc9162fef51f"
+    },
+    {
+      "file": "analysis/trial_b_manifest.json",
+      "bytes": 16514,
+      "sha256": "3885d4d60e87f35a9368af28587d0d7a849764075ca51febd6354ba22ff8a974"
+    },
+    {
+      "file": "analysis/trial_c_manifest.json",
+      "bytes": 19745,
+      "sha256": "8a09a622597181a20cbac341c89faf23cafbc5144f05198b528f6ee6b48b50fd"
+    },
+    {
+      "file": "analysis/trial_manifest.json",
+      "bytes": 16073,
+      "sha256": "89094219836820c8dd861f451cce2a1cf50948a3e1ed805529e37353da16e440"
+    },
+    {
+      "file": "checkpoint/checkpoint_manifest.json",
+      "bytes": 2039,
+      "sha256": "5d5782faa4e2b5ab84173037d21fe8ec5f609445ce6dbd334a823ab2877f8999"
+    },
+    {
+      "file": "checkpoint/material_GLB_reimport_50.input.json",
+      "bytes": 471,
+      "sha256": "8425c69d17284f6c7bc0e85f5a23743350322f941c7997d3c57a95b1ffd17a11"
+    },
+    {
+      "file": "checkpoint/material_GLB_reimport_50.json",
+      "bytes": 558,
+      "sha256": "bbc3898702d170bcad563264dff821ff9f93f14d93e460a0a2af2cfdfb9b8ae3"
+    },
+    {
+      "file": "checkpoint/material_roundtrip_detail.json",
+      "bytes": 531678,
+      "sha256": "7b2ccd61eeee3f0de77dac7b7b62a87620b9ee8559b25b9efd5dc883352e9fda"
+    },
+    {
+      "file": "checkpoint/normal_angle_roundtrip.json",
+      "bytes": 401205,
+      "sha256": "bf116e85dbd108c37a8f35f80cbc998918b59f2021067d44f4f4ac4447c5d888"
+    },
+    {
+      "file": "checkpoint/normal_exception_detail.json",
+      "bytes": 4698,
+      "sha256": "3d692eabf60720b6a504c398afe6ea6c231a8079d5962caf72fd19bd452ed5a3"
+    },
+    {
+      "file": "checkpoint/texture_glb_resource_check.json",
+      "bytes": 21076,
+      "sha256": "53374e486e476aa54831b7e434e57a60c5e2f41e68c9f6ee1545c2e8ee5cac1a"
+    },
+    {
+      "file": "checkpoint/texture_reference_manifest.json",
+      "bytes": 12232,
+      "sha256": "7533e2d944e3eeca764d17112662eeab383df0a72fb810dac69a965d63f1696a"
+    },
+    {
+      "file": "checkpoint/uv_normal_roundtrip.json",
+      "bytes": 174730,
+      "sha256": "8e1b5e11693e476adebd6f5920f153f980b4a8e50af77698dd952bd83bfbe475"
+    },
+    {
+      "file": "checkpoint/white_main_50.input.json",
+      "bytes": 621,
+      "sha256": "4b2ea3d51b05c0b4ea5bc8301e8602485598dfcc651fa7d84bca6e4410d0b2fc"
+    },
+    {
+      "file": "checkpoint/white_main_50.json",
+      "bytes": 795,
+      "sha256": "02da25377c872b1be075107fb7e0d4a9672323ac25d64beecd7d530ff0397bea"
+    },
+    {
+      "file": "checkpoint/white_roundtrip_detail.json",
+      "bytes": 519546,
+      "sha256": "74a6a42e512777f4c0328e8acfbf95d7d2aa5a7459a557d90264b7e6198f1029"
+    },
+    {
+      "file": "checkpoint/检查点说明_中文.md",
+      "bytes": 2789,
+      "sha256": "d2c089c4b5e15b0b7721e29732777cd8e396e8a720bdfab63a7d9721119e2fb8"
+    },
+    {
+      "file": "current_textures/HD_leather_restrained_roughness.png",
+      "bytes": 110805,
+      "sha256": "5a1c1b7c0d1fb1168242f3125fdd3104a814c35a13a6052314cfc5dd22ec17ec"
+    },
+    {
+      "file": "current_textures/burgundy_velvet_basecolor.png",
+      "bytes": 292230,
+      "sha256": "01171142778286df2ba9a31ca822355478f679a871011cbe1d909a6488f689da"
+    },
+    {
+      "file": "current_textures/burgundy_velvet_normal.png",
+      "bytes": 452755,
+      "sha256": "ae750d242c99d9ef180b80c053103aeb7c2156b2bcd6eefc766ec943e6c899c8"
+    },
+    {
+      "file": "current_textures/burgundy_velvet_roughness.png",
+      "bytes": 107027,
+      "sha256": "2c167e1bd6f88a8f51c66051cdd6160bbbe136634bd9551bd13d96ff58e2dbcb"
+    },
+    {
+      "file": "current_textures/ceiling_cream_basecolor.png",
+      "bytes": 251264,
+      "sha256": "8de59ec2dab8b50e609f510d4be16bd3556c2b45c1733cede0c67c6a0219f937"
+    },
+    {
+      "file": "current_textures/ceiling_cream_normal.png",
+      "bytes": 394065,
+      "sha256": "d9c8399c34bada422d77506417e6e8d5fd2fd520a899434be9adf12cf8459a20"
+    },
+    {
+      "file": "current_textures/ceiling_cream_roughness.png",
+      "bytes": 135549,
+      "sha256": "7078fdb7ebed10dcf2ac8613ea8ff834ccb770612d57e1487bf7b01ed376574c"
+    },
+    {
+      "file": "current_textures/destination_sign_basecolor.png",
+      "bytes": 16177,
+      "sha256": "944b4b517b9bc72e44193800cbfa29315768c17d7b838b9dbca9bc61d7cba9eb"
+    },
+    {
+      "file": "current_textures/floor_wood_basecolor.png",
+      "bytes": 216633,
+      "sha256": "23359e03d1b8565d84470e9cd8dc8ee1d4de5ad5d1d9db22b43edaceef4b2793"
+    },
+    {
+      "file": "current_textures/floor_wood_normal.png",
+      "bytes": 247785,
+      "sha256": "bf792d3ac5d286daffe9f34f7001602ff4519c0eeec75118172a43eaa276f3b2"
+    },
+    {
+      "file": "current_textures/floor_wood_roughness.png",
+      "bytes": 97910,
+      "sha256": "565cf443e01e175b78c029b51f38dadc1689a612f6cd3a8bbadde5908af6237d"
+    },
+    {
+      "file": "current_textures/forest_leather_basecolor.png",
+      "bytes": 253158,
+      "sha256": "f17b34601ed7f427ba2e6c482175d4451fd5c0a25f9ddff514a06e0cd5db1d78"
+    },
+    {
+      "file": "current_textures/forest_leather_normal.png",
+      "bytes": 714202,
+      "sha256": "3072a675d9917b0467e57e3457a05dd9b606963d86883e6a7136ff950696f711"
+    },
+    {
+      "file": "current_textures/rosewood_basecolor.png",
+      "bytes": 308274,
+      "sha256": "3e8746ff7bdd5fed6f595ec9cf5ec5b9a84072e268bc36630b728a36e7ff6a37"
+    },
+    {
+      "file": "current_textures/rosewood_normal.png",
+      "bytes": 544394,
+      "sha256": "ff6f9849fc1622ae28e69c94000efd7b0b9141fe6d3cdb5033b2c968e2689c37"
+    },
+    {
+      "file": "current_textures/rosewood_roughness.png",
+      "bytes": 126478,
+      "sha256": "1d6863b65246a69bd8b60d74e1ac1cd090f29d53982eef0315968fcf08322008"
+    },
+    {
+      "file": "current_textures/walnut_basecolor.png",
+      "bytes": 328330,
+      "sha256": "6bed832d90e9662bc042a6822c6c5dfb9da41ac2a6c15507e48ed56d600007cb"
+    },
+    {
+      "file": "current_textures/walnut_normal.png",
+      "bytes": 509190,
+      "sha256": "f3059288547be435de05fe3e0eb4f47ec41e25d4a040a1143266ae777afdf4b5"
+    },
+    {
+      "file": "current_textures/walnut_roughness.png",
+      "bytes": 134661,
+      "sha256": "be4eed7aaca20ff0fdc6827597efdcee36c89b47c72e9036a86a8ff7a8db21e0"
+    },
+    {
+      "file": "independent_qa/A_detail.png",
+      "bytes": 196631,
+      "sha256": "0873bc05f560d7cd738ef1e09cf29bad11ed4f4172d40fe61ded7f7589fa053d"
+    },
+    {
+      "file": "independent_qa/B_detail.png",
+      "bytes": 260451,
+      "sha256": "a58263be6b3f9a63bb2eb40d4b547a1145370195a4c8faf478818265753c1887"
+    },
+    {
+      "file": "independent_qa/D_detail.png",
+      "bytes": 111567,
+      "sha256": "1a8a0d53e37a2d59f79f4d08322ec0a635ac92ad855c847db505956312dc193d"
+    },
+    {
+      "file": "independent_qa/D_source_coordinate_grid.png",
+      "bytes": 280446,
+      "sha256": "41207e01914fd22f1593f66d300ba39775543f34bdd7f75dc9fdd538b9d46b17"
+    },
+    {
+      "file": "independent_qa/D_trial_coordinate_grid.png",
+      "bytes": 277057,
+      "sha256": "a18d7adacd00d269ae2412b111f42af949512d11c897a74dedf198a45ef3760d"
+    },
+    {
+      "file": "independent_qa/Dleft_detail.png",
+      "bytes": 63645,
+      "sha256": "8974d8285f0bcddbb6d35092bae9f9ad9b70ea2110cb97b9d2bf188cdf8904df"
+    },
+    {
+      "file": "independent_qa/J_detail.png",
+      "bytes": 297455,
+      "sha256": "0119f67dbc5104e38358683064684e879b656e0b9a420cb81efe6bf2e66f3fea"
+    },
+    {
+      "file": "independent_qa/J_raw_lamp_sash_crop.png",
+      "bytes": 87858,
+      "sha256": "de5bb56f99c4a57504b15efcfa4c10e0e84c32c517a2453d688de8d54d4c2427"
+    },
+    {
+      "file": "independent_qa/J_source_B_C_lamp_sash_detail.png",
+      "bytes": 52149,
+      "sha256": "ba9d415ae4ee3096cd39e607c97ce749ff66917d6e6920ead581cbce5cb1dd4c"
+    },
+    {
+      "file": "independent_qa/J_source_coordinate_grid.png",
+      "bytes": 178788,
+      "sha256": "9244d0f3487c2044c4970f32ed3aa5359b684cc452e8a887c05a645cffd94067"
+    },
+    {
+      "file": "independent_qa/J_trial_coordinate_grid.png",
+      "bytes": 216390,
+      "sha256": "aafddcc95955fb28a6038ab79ae04db6a2edf49836e8502a9b778fd0f2bb7d95"
+    },
+    {
+      "file": "independent_qa/foreground_entity_correction.md",
+      "bytes": 911,
+      "sha256": "018e31d682e627ec1ca8ad7e9ad2e4aa686f1a82918cc4a0412ede389290a27a"
+    },
+    {
+      "file": "independent_qa/independent_r05b_source_review.md",
+      "bytes": 8464,
+      "sha256": "d00b089e86a26b1e147515e585f3c0ea075a76fcc0d66ac59183e9eb4d2f1714"
+    },
+    {
+      "file": "independent_qa/independent_r05c_source_review.md",
+      "bytes": 6688,
+      "sha256": "46c48028b8a24a26b290a9acf8cfc902c96dcd8aab2faad5315e59ceec927256"
+    },
+    {
+      "file": "independent_qa/integrity_check.json",
+      "bytes": 5278,
+      "sha256": "77f24e3f4620ed158c3fce903fbe1d72a4f545e57c1b77e27ad8a9a03c0ee609"
+    },
+    {
+      "file": "independent_qa/integrity_check_c.json",
+      "bytes": 4711,
+      "sha256": "73aefbfd3702645cd2e42de4a1c7db62b514c2094b08be0a4d5ec56280a6152a"
+    },
+    {
+      "file": "independent_qa/lamp_measurements_c.json",
+      "bytes": 8864,
+      "sha256": "810ec991f811181420c6cecb25c9e15e2668fb8292d2ead5630de40b793ac80d"
+    },
+    {
+      "file": "inspection_previews/material_GLB_reimport_50.json",
+      "bytes": 438,
+      "sha256": "dd5db3ed07d595037868c8b9cf88114203197b7274d846fe9d12b201ea8f35df"
+    },
+    {
+      "file": "inspection_previews/material_GLB_reimport_50.png",
+      "bytes": 166280,
+      "sha256": "d71b115b65886da37dba19f7ba4fa3b31a62c0a0fdebfd7076a460460ce1dd6a"
+    },
+    {
+      "file": "inspection_previews/white_main_50.json",
+      "bytes": 427,
+      "sha256": "0d58c94735b55b78ffdf34b89ed6168616040a0e1d842f3726117cc26f9e2c9f"
+    },
+    {
+      "file": "inspection_previews/white_main_50.png",
+      "bytes": 141589,
+      "sha256": "14312b995c91c83b346af81edc846b7d9440346fe63279a118471c880ee65b79"
+    },
+    {
+      "file": "inspection_raw/material_GLB_reimport_50.png",
+      "bytes": 436010,
+      "sha256": "f38160ddcea74dd28be33ac53d8c31ef780626a95e279ed1c120fd39d3a947f9"
+    },
+    {
+      "file": "inspection_raw/white_main_50.png",
+      "bytes": 280432,
+      "sha256": "66fc9d08debcb7b42765b01733dca86fb39adaea9c483bd377092dbeb6d8e1d5"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/INSPECT_01_forward_aisle.input.json",
+      "bytes": 780,
+      "sha256": "94f1e5bd7b355a5fd65419d5fcd420805ef0ead7528f7f0584e9e553455e6f93"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/INSPECT_01_forward_aisle.json",
+      "bytes": 954,
+      "sha256": "a611b9fe69f9a240635a6e2c2849ea27b2b45db5cb2c867c5b397b389f8c67f1"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/INSPECT_01_forward_aisle.png",
+      "bytes": 1618244,
+      "sha256": "5e9115490b361442eba25d26918ed79a376902260f5ef4d52460ceca1b4eec79"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_A.input.json",
+      "bytes": 893,
+      "sha256": "acd365c1764031285703a4b886dbd3481fdf82c97e34713758e0558aea8b9679"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_A.json",
+      "bytes": 1067,
+      "sha256": "5dd4c83f0ea8564aa52af15dcb6ffde3b524b76aeda7a308c4a3dcda75d372db"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_A.png",
+      "bytes": 471750,
+      "sha256": "be8f08f70dbcccd731cd722093514686437313fb95ea313c55aa6f7629c79fb2"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_B.input.json",
+      "bytes": 901,
+      "sha256": "dea6d846abd581762f71ab699e92a75d1fa590698a4c5e6a77b7054978ad45a0"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_B.json",
+      "bytes": 1075,
+      "sha256": "cd18f9e25cf1dbfee0c128f7034bfb38c4525cd42ea8320c85bc0b6c9f86b864"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_B.png",
+      "bytes": 431004,
+      "sha256": "41d42502e7d33ea6e4cac6b45b614c8a8978aefbd9e2f215b092c41dc41feb93"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_D.input.json",
+      "bytes": 897,
+      "sha256": "ea5f87b30e1733bac7cad46e7f646790489f72cba74c152b0292c9bb2f4df40c"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_D.json",
+      "bytes": 1071,
+      "sha256": "0b5c95712e753cab7d7eefc3e4ec8a07d2ca9fda743d950c4a3ba752688b57c6"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_HD_D.png",
+      "bytes": 463780,
+      "sha256": "c34d4c55e534519cce2e9c448d405681d7fa59cfb75aab2395ccf7ece1464bde"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_J_LOCAL_UNRESOLVED_BAY.input.json",
+      "bytes": 899,
+      "sha256": "fd74af692689b6848020b72c3e1a7090632cdb2f5092f17b64f256705c323191"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_J_LOCAL_UNRESOLVED_BAY.json",
+      "bytes": 1073,
+      "sha256": "33c15e2271dd06361cce15141f897358fb8721967bd922727146b2ebb439ba36"
+    },
+    {
+      "file": "raw_renders_and_input_sidecars/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "bytes": 418448,
+      "sha256": "2fb96b2fbf6eecb05bd3bf2b52fea42f713572027de15f202db2620e5d42fc92"
+    },
+    {
+      "file": "scripts/build_trial.py",
+      "bytes": 4356,
+      "sha256": "bf65f1696258de92ac0c5ef075fa4bc647ebcfed795e51f461f649ba7d8ec40f"
+    },
+    {
+      "file": "scripts/build_trial_c.py",
+      "bytes": 3983,
+      "sha256": "64c3838831df2dd3eeb7ac9c74e2305b3d2f6b1aab41b103a58adb449251d405"
+    },
+    {
+      "file": "scripts/check_bc_state.py",
+      "bytes": 1973,
+      "sha256": "6ccc2488731d912b2b0c665a4edf4072a746a3619b7b024baf873d4bd119d3d9"
+    },
+    {
+      "file": "scripts/check_d_sequence.py",
+      "bytes": 1708,
+      "sha256": "9fc7d93d292ff0b5531dbd1398d5ecaae8317a013a03279c447615ae5d3dd219"
+    },
+    {
+      "file": "scripts/check_j_focal_range.py",
+      "bytes": 756,
+      "sha256": "ff041006166d2aca00328652e42408ee66797f68e93efea5d8b2f04de7366da1"
+    },
+    {
+      "file": "scripts/check_texture_resources.py",
+      "bytes": 2132,
+      "sha256": "eda165a167dbcac751e9407274d2c1811e76eec2e87773cc15c7889ab16c6e42"
+    },
+    {
+      "file": "scripts/denoise_checkpoint_previews.py",
+      "bytes": 1682,
+      "sha256": "caec4546f91ed181ca13c2581c9afb806a5983a706e5ac9c1c9d26779665628d"
+    },
+    {
+      "file": "scripts/denoise_trial.py",
+      "bytes": 1617,
+      "sha256": "6b0e3e49b9ba035256c78a7d412fa02df68e7b65b059eeda588d0b24721e310b"
+    },
+    {
+      "file": "scripts/denoise_trial_b.py",
+      "bytes": 1621,
+      "sha256": "91d23363d5ddd2a7eb2b78d3ab98fe648893401a45567b9f59a6ea775ff5c59f"
+    },
+    {
+      "file": "scripts/denoise_trial_c.py",
+      "bytes": 1621,
+      "sha256": "ab77e214b78aaa28cde134c95880de8d070bb920894cb888b13ce649fd3bdf33"
+    },
+    {
+      "file": "scripts/export_checkpoint.py",
+      "bytes": 4901,
+      "sha256": "24f38eb1573c9fd3047c16e93b8f6c13ecade05b08cbbeff385581a9da2eab1f"
+    },
+    {
+      "file": "scripts/finish_checkpoint.py",
+      "bytes": 2036,
+      "sha256": "3a5c28b70cde9fd806e3a3800d096973a2738c794c983c0dc0f2f85933656646"
+    },
+    {
+      "file": "scripts/fit_bay_hypothesis.py",
+      "bytes": 3621,
+      "sha256": "a9a4ff074328ef5408fb6d025a9004bff5f5ee1e3289ea36b9bc0af2b0c41079"
+    },
+    {
+      "file": "scripts/fit_head_and_rack.py",
+      "bytes": 3358,
+      "sha256": "935cf19f63fa8c4f0c540c213369774675ef101736edc75e9d1433bcdbfc5b18"
+    },
+    {
+      "file": "scripts/fit_j_empty.py",
+      "bytes": 2749,
+      "sha256": "02ce19f874d3c9959b0449164f3e5cf6207ebab3f6718d43c01bdd076d8d2882"
+    },
+    {
+      "file": "scripts/fit_rack_cross_section.py",
+      "bytes": 3483,
+      "sha256": "92403932d5138290d4ad4058aae364adb729494afbbf12052e3d05a57d96521a"
+    },
+    {
+      "file": "scripts/fit_seat_contour_refined.py",
+      "bytes": 3917,
+      "sha256": "877a07f225948cca268c823fff603771a25826c3c9a6889624930f1763cd0963"
+    },
+    {
+      "file": "scripts/fit_wall_headlights.py",
+      "bytes": 3232,
+      "sha256": "d1fddfc24cfb66df3f715de0abb962e6ec0e30866a2bc3e64dde768d8b1b9859"
+    },
+    {
+      "file": "scripts/fit_wall_headlights_bilateral.py",
+      "bytes": 3230,
+      "sha256": "2b07a0d4d6a0a3d75ccf1159c7efe06f8a5005c9d423217624c958a68e5b44cd"
+    },
+    {
+      "file": "scripts/freeze_camera_trial_b.py",
+      "bytes": 1620,
+      "sha256": "917c0e88c7a692d49f3dea5a94537d64828cf55272527617135939dc02914497"
+    },
+    {
+      "file": "scripts/inspect_checkpoint_normal_exceptions.py",
+      "bytes": 1157,
+      "sha256": "a659e86a1f1e3a08160b60141db11e23768936fee17e816a20bcac5aca655d2e"
+    },
+    {
+      "file": "scripts/lossless_glb_png.py",
+      "bytes": 2324,
+      "sha256": "bcfb87f012654f7fa71da6d4f2be38d37528dea1efdd0635cb0c4740bbe0a2cb"
+    },
+    {
+      "file": "scripts/make_review.py",
+      "bytes": 2295,
+      "sha256": "5cc3c8fd4bd80576d74cac93b79a180a381defc9b40345ee21c9bd114f2f9bbb"
+    },
+    {
+      "file": "scripts/make_review_b.py",
+      "bytes": 2349,
+      "sha256": "39f3ef591a57c4e96f799a82385cb7f4bb629ebae738a49fb5d19f614c1061db"
+    },
+    {
+      "file": "scripts/make_review_c.py",
+      "bytes": 2350,
+      "sha256": "94c9f5f1ab2693579501f16259da16ce79d02a60763af5f63d18f39251aa516d"
+    },
+    {
+      "file": "scripts/package_checkpoint.py",
+      "bytes": 3558,
+      "sha256": "3c698fabc8e2133eacafb24d7a531ffd2ad4206e39045c7242a1b6872ee0961d"
+    },
+    {
+      "file": "scripts/qa_shared_trial.py",
+      "bytes": 11566,
+      "sha256": "b0e719c15f27875ca90bb7b37aae4eb5b98049d333a425665a3b05d3d4ea41f1"
+    },
+    {
+      "file": "scripts/render_glb_checkpoint.py",
+      "bytes": 1959,
+      "sha256": "45b84f49ecb8176e47ca19f57e70398e393af026541cfc792f0d2e307d316c37"
+    },
+    {
+      "file": "scripts/render_trial.py",
+      "bytes": 1277,
+      "sha256": "5ec05dbb98b58f9a8dbce2e55e80858dd9d36a0b102241bc2b7106a610290016"
+    },
+    {
+      "file": "scripts/render_trial_b.py",
+      "bytes": 1482,
+      "sha256": "67bc03c86462d7cf9c5f1e28c96fec9120cae235d2968b9e5d9a72a8a3d29f26"
+    },
+    {
+      "file": "scripts/render_trial_c.py",
+      "bytes": 1482,
+      "sha256": "981159eff350b0399dbebeeaafdf2a59e21c91f50734156318054065ce59acaf"
+    },
+    {
+      "file": "scripts/render_white_checkpoint.py",
+      "bytes": 1288,
+      "sha256": "3d9257c761e2747fa34174d6b6b285fe5f6645ac287f49b0bfb26589f16d07cb"
+    },
+    {
+      "file": "scripts/validate_checkpoint_material.py",
+      "bytes": 3515,
+      "sha256": "c6c33a8c0b610a388401ffa3d06cf6858522b3fa2a5503d0ce81bfb46b7519b9"
+    },
+    {
+      "file": "scripts/validate_checkpoint_white.py",
+      "bytes": 3500,
+      "sha256": "a3b2aebf0217b3c1da0d744bb6aa1815fbaf0891996730b3c9f7771f10385dcc"
+    },
+    {
+      "file": "scripts/validate_normal_angles_checkpoint.py",
+      "bytes": 2143,
+      "sha256": "be0132bccb8db943af157270ce59110fe21a4bde1b1d90536c72377948771980"
+    },
+    {
+      "file": "scripts/validate_uv_normals_checkpoint.py",
+      "bytes": 2180,
+      "sha256": "c1caee86dc5aca3fc6e6b1e15bd63cc5aaab35b36fbaf7931dd1fa1a2325cd5b"
+    },
+    {
+      "file": "source_comparisons/A_B_C_same_camera.jpg",
+      "bytes": 97431,
+      "sha256": "bf18e8397ee3ce8e1022f2be4210f965c730174ae074d1c6093d6d6c69cb4489"
+    },
+    {
+      "file": "source_comparisons/A_comparison.jpg",
+      "bytes": 119632,
+      "sha256": "848d6acf8aea032fc3e3fad9f92a6b6710d1173c99f4baab97d177ccfb34e135"
+    },
+    {
+      "file": "source_comparisons/A_direct_50percent_overlay.png",
+      "bytes": 197977,
+      "sha256": "dcfe838d46b65fa00e745a3b3afaf651b8d56fbd6c008dc38bcb0b6a484c3bd5"
+    },
+    {
+      "file": "source_comparisons/A_r03_r05_refit_camera.jpg",
+      "bytes": 84494,
+      "sha256": "a0453d03bf3793b93e31a75892382eacc56dc937d2251ef9d9a38515d6136eca"
+    },
+    {
+      "file": "source_comparisons/A_source_half.png",
+      "bytes": 174119,
+      "sha256": "33b3a666a2f8891dc1f60f98532147348e33fcff83eaa7518bd0ab3339069228"
+    },
+    {
+      "file": "source_comparisons/B_B_C_same_camera.jpg",
+      "bytes": 70534,
+      "sha256": "ee02a24444f262f6a56c2bba8966bc49ccc1878a18e190369edce3ccb30b7a11"
+    },
+    {
+      "file": "source_comparisons/B_comparison.jpg",
+      "bytes": 103600,
+      "sha256": "966e9904debb4d6f3316b98005261845517339a3666b7e8770e20e9fc4eb9b15"
+    },
+    {
+      "file": "source_comparisons/B_direct_50percent_overlay.png",
+      "bytes": 176351,
+      "sha256": "e75ca767d02df8c7ab6a2cb34f22798f8058e34186e60607364deb5af8f8a2a4"
+    },
+    {
+      "file": "source_comparisons/B_r03_r05_refit_camera.jpg",
+      "bytes": 65653,
+      "sha256": "8f78331e13c582f1a8258f917684de70b7764c066572b755fdc4108c14e3e4eb"
+    },
+    {
+      "file": "source_comparisons/B_source_half.png",
+      "bytes": 159780,
+      "sha256": "5c028d9fcdeb6f5953732bb4e519e93b8c2d8b171839e9ba36f8650fbb6aec4a"
+    },
+    {
+      "file": "source_comparisons/D_B_C_same_camera.jpg",
+      "bytes": 89783,
+      "sha256": "979406add7d2f8fcce629a97ee01382b7d0653d38cc6f53b8f96871024be3bf9"
+    },
+    {
+      "file": "source_comparisons/D_comparison.jpg",
+      "bytes": 122462,
+      "sha256": "8808c33f165033bcc3d80cd7a2e84f20f8e0bd561a7782fbe44e79cb6f448cc2"
+    },
+    {
+      "file": "source_comparisons/D_direct_50percent_overlay.png",
+      "bytes": 202794,
+      "sha256": "d6d3fcf8dd3d86fbcc77d0e24561fa48965a43e243abd335e9a947a6e06d783d"
+    },
+    {
+      "file": "source_comparisons/D_r03_r05_refit_camera.jpg",
+      "bytes": 80617,
+      "sha256": "0def674c836ee6ec39491239549fe7a8d328f6ab3730d7f1263b417e82b35108"
+    },
+    {
+      "file": "source_comparisons/D_source_half.png",
+      "bytes": 187023,
+      "sha256": "253677c299bc74373d5d0ba9c840ca270c56d3dfc3b4234fc243560dfacd7d58"
+    },
+    {
+      "file": "source_comparisons/J_B_C_same_camera.jpg",
+      "bytes": 65201,
+      "sha256": "e1351c12c1f9cb7d39fac6250e06bd22bdb3aa03e751534cefd1885865920275"
+    },
+    {
+      "file": "source_comparisons/J_comparison.jpg",
+      "bytes": 85446,
+      "sha256": "c127d03f4d4a86ebab699d97ca27986da93c364fefba71d5d499c476fab6b06c"
+    },
+    {
+      "file": "source_comparisons/J_direct_50percent_overlay.png",
+      "bytes": 143504,
+      "sha256": "5f8fa7599ee8d17b9fccb989c12923cb585e1cd54fb3d144b63020e1e365485e"
+    },
+    {
+      "file": "source_comparisons/J_source_half.png",
+      "bytes": 112667,
+      "sha256": "5e6fb9ebb4ede6277143b6fa0c986e471e7fada1ea29fd59407822f39f04df52"
+    },
+    {
+      "file": "source_comparisons/comparison_manifest.json",
+      "bytes": 3197,
+      "sha256": "a519de2d0b9527ea93379b3869fb7c46a3139096211c5cf747a3dd304ffe3f8f"
+    },
+    {
+      "file": "source_comparisons/denoised/INSPECT_01_forward_aisle.json",
+      "bytes": 432,
+      "sha256": "ed73dbc3e785bfd68f77529af1ec3bd1836613ca59927e929dae7547adac203a"
+    },
+    {
+      "file": "source_comparisons/denoised/INSPECT_01_forward_aisle.png",
+      "bytes": 551432,
+      "sha256": "cd4f6f3ed07922def79e6acdee40d392149b7c2dc1264a3945072b4b195de39a"
+    },
+    {
+      "file": "source_comparisons/denoised/R05_HD_A.json",
+      "bytes": 416,
+      "sha256": "284dc41c3b7111620bf9ffaf14241ba8c8227f90c1ce61f76e7b9b31d3acca08"
+    },
+    {
+      "file": "source_comparisons/denoised/R05_HD_A.png",
+      "bytes": 191288,
+      "sha256": "5612533d740783968575cd28c06212d2829d665911eda3c3c63ce56b1e1b156c"
+    },
+    {
+      "file": "source_comparisons/denoised/R05_HD_B.json",
+      "bytes": 416,
+      "sha256": "95783a73dd371414f7af2b774e7f4bbd1ad46210b68b21c2b2fb8494f51e3e6d"
+    },
+    {
+      "file": "source_comparisons/denoised/R05_HD_B.png",
+      "bytes": 143137,
+      "sha256": "bcef655a4e00d1275200581728763488c69e11c7309317c46ddf838f66376966"
+    },
+    {
+      "file": "source_comparisons/denoised/R05_HD_D.json",
+      "bytes": 416,
+      "sha256": "31172e604b1429e0415b8d2c7a4072e73556a9f1a021115eae1b5f109420e021"
+    },
+    {
+      "file": "source_comparisons/denoised/R05_HD_D.png",
+      "bytes": 180157,
+      "sha256": "45d01ebcb211b1d9fcdf9f58aa2e0ccd278cd722e4cde3627b6ea31674a4b661"
+    },
+    {
+      "file": "source_comparisons/denoised/R05_J_LOCAL_UNRESOLVED_BAY.json",
+      "bytes": 434,
+      "sha256": "b762d65f6d01fcae222d50b042f0507c950d90ccba3a5d70233b1c83148bd94a"
+    },
+    {
+      "file": "source_comparisons/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "bytes": 135455,
+      "sha256": "1f70888ad6caa279fcd23705e332dec896c388a6c18e3094be39ea1cc83b73bb"
+    },
+    {
+      "file": "source_comparisons/review_index.json",
+      "bytes": 598,
+      "sha256": "48df84ac3fbb877bff06d7bed63742f74f124bcc135d724feb78b17415407499"
+    },
+    {
+      "file": "source_evidence/train_hd_recapture_20261010/A2_clean_HD_viewport.jpg",
+      "bytes": 56632,
+      "sha256": "1f32a2e580f0b7caf181c82eb61f872d35e50a78c715a4087b55935869663acc"
+    },
+    {
+      "file": "source_evidence/train_hd_recapture_20261010/B2_clean_HD_viewport.jpg",
+      "bytes": 55285,
+      "sha256": "7168a0cdcc5e9e3e39ced84aae27b6be1fdd096a23a6a39dc173a05bc7a4ecf3"
+    },
+    {
+      "file": "source_evidence/train_hd_recapture_20261010/D2_clean_HD_viewport.jpg",
+      "bytes": 64113,
+      "sha256": "551d756cd3a3fba99f204e16732087c29593df6d1fa9484880e013ca724ab50f"
+    },
+    {
+      "file": "source_evidence/train_hd_recapture_20261010/manifest.json",
+      "bytes": 6786,
+      "sha256": "4ba737fe12515b1c87361e81526e81fc8acd1758a0464f9e809fbc6177a26192"
+    },
+    {
+      "file": "source_evidence/train_motion_sources_20261010/Door_wide_59m53_paused.jpg",
+      "bytes": 48541,
+      "sha256": "f0baa2930a2b6947c3da199609b8bc45896a138d16456feefa203b52f46ad5a8"
+    },
+    {
+      "file": "source_evidence/train_motion_sources_20261010/Dseq_03_clean_paused.jpg",
+      "bytes": 60419,
+      "sha256": "aba73a6dabc8a3f1ebaa5ce38fddd281782bcd120084fc1c4d5f76649c5ab584"
+    },
+    {
+      "file": "source_evidence/train_motion_sources_20261010/J_empty_window_clean_paused.jpg",
+      "bytes": 42212,
+      "sha256": "265cc7fc402ae56f025cc6696aa0900e31c89675a23647c25b4d9d2ea5724762"
+    },
+    {
+      "file": "source_evidence/train_motion_sources_20261010/manifest.json",
+      "bytes": 58609,
+      "sha256": "47b806ffb8feabca27532c1732131b459936f8efeb5db9b7554ba01f57b58d1c"
+    },
+    {
+      "file": "共享空间诊断与试验_中文.md",
+      "bytes": 8528,
+      "sha256": "e355592082a667b72dfb92ab53fad61b8edd415a38c48839f879962b1d84785f"
+    }
+  ]
+}

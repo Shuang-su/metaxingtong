@@ -1,0 +1,220 @@
+{
+  "stage": "HD r03 reconstruction candidate",
+  "source_fidelity_pass": false,
+  "status": "Awaiting parent source review; do not replace prior delivery as accepted source reconstruction.",
+  "material_blend_sha256": "f0cd84d2a8abff5e2597fc986b01279889e239c7c589a63991ba68632b0b3a7c",
+  "white_blend_sha256": "16170714e32636d455aaa16ae77b86e939577ee2d5135dc61d20b585521e4043",
+  "shared_changes": {
+    "geometry": "24 backrest edge radii reduced to .035 work units; 5 independent round ceiling fittings added. Shell, aperture sizes, furniture placement and counts retained.",
+    "camera": "Separate HD A/B/D estimates; original cameras preserved. H/J remain unresolved; I/F initialized from door plane only.",
+    "material": "Shared leather normal .08, new backrest UV frequency3x, specular .35; less gray reflective glazing; inferred olive/ochre luggage categories.",
+    "lighting": "One fixed warm end-bay ceiling light, same in all material views; performance source F lighting intentionally not fitted."
+  },
+  "inference_limits": [
+    "Work units, not measured metres.",
+    "Six bay count and unseen reverse end inferred.",
+    "No camera-specific hidden/moved geometry, materials or lighting.",
+    "Night city, performer and animated cart not modeled."
+  ],
+  "unresolved_source_residuals": [
+    "A nearest round fitting size/position, left seat row and rack alignment, door/window double edges.",
+    "B broad bright back-top band and foreground flower/occlusion mismatch.",
+    "D near seat-back height/occlusion order and longitudinal depth remain materially different.",
+    "J apparent window proportions and bay/camera identity unresolved; no window size change made.",
+    "Fine leather wrinkles/highlights remain approximate."
+  ],
+  "structural_qa": {
+    "source_bound": true,
+    "mesh_objects": 1937,
+    "triangles": 342332,
+    "closed_meshes": true,
+    "zero_area_threshold": 1e-12,
+    "enclosure_rays": 132780,
+    "enclosure_misses": 0,
+    "windows": [
+      {
+        "side": -1,
+        "y": -4.5,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": -1,
+        "y": -2.7,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": -1,
+        "y": -0.9,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": -1,
+        "y": 0.9,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": -1,
+        "y": 2.7,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": -1,
+        "y": 4.5,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": 1,
+        "y": -4.5,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": 1,
+        "y": -2.7,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": 1,
+        "y": -0.9,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": 1,
+        "y": 0.9,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": 1,
+        "y": 2.7,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": 1,
+        "y": 4.5,
+        "rays": 441,
+        "opaque_backing_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      }
+    ],
+    "door_lights": [
+      {
+        "side": -1,
+        "rays": 672,
+        "opaque_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      },
+      {
+        "side": 1,
+        "rays": 672,
+        "opaque_count": 0,
+        "opaque_examples": [],
+        "missing_glass_count": 0,
+        "missing_glass_examples": []
+      }
+    ],
+    "end_closure": [
+      {
+        "side": -1,
+        "rays": 80600,
+        "misses": 0,
+        "examples": []
+      },
+      {
+        "side": 1,
+        "rays": 80600,
+        "misses": 0,
+        "examples": []
+      }
+    ],
+    "side_closure": [
+      {
+        "side": -1,
+        "rays": 165186,
+        "misses": 0,
+        "examples": []
+      },
+      {
+        "side": 1,
+        "rays": 165186,
+        "misses": 0,
+        "examples": []
+      }
+    ],
+    "roof_test": {
+      "samples": 2943,
+      "misses": [],
+      "bad_normals": [],
+      "thickness_min": 0.12000012397766113,
+      "thickness_max": 0.1211557388305664
+    },
+    "support_chains": 36,
+    "support_chains_pass": true,
+    "all_model_meshes_visible": true
+  },
+  "roundtrip": {
+    "actual_glb_reimport": true,
+    "white_material_canonical_geometry_identical": true,
+    "objects_match": true,
+    "max_bidirectional_vertex_error": 8.259061701210157e-07,
+    "max_surface_area_difference": 4.747783895808766e-06,
+    "all_uv_corner_sets_equal_at_1e4": true,
+    "all_untextured_basecolor_factors_preserved": true,
+    "textures_embedded": 19,
+    "external_resources": [],
+    "normal_exception": "Blender reimport: eight zero corner normals on four numerically tiny frame triangles (7.91e-10 square units). Stored glTF normals unit length; other object angular differences <=.0872 degrees. Strict normal roundtrip is qualified, not an unconditional pass."
+  },
+  "render_provenance": "Every final raw raster in renders_r03 has load-time input hash, actual camera matrix/lens/resolution and output hash. Standard OIDN derivative sidecars link raw hashes. No warp.",
+  "delivery": "All model GLBs and ZIP bundles below18,000,000 bytes; ZIP CRC and SHA manifest required before handoff.",
+  "independent_legacy_regression": {
+    "significant_projection_or_major_occlusion_regression_detected": false,
+    "material_tradeoff": "r03 darker/smoother seats lose some old fine-grain and narrow-edge readability; darker glazing and brighter end wall are shared shading changes, not geometric improvement",
+    "report": "independent_qa/独立QA_r03最终.md"
+  }
+}

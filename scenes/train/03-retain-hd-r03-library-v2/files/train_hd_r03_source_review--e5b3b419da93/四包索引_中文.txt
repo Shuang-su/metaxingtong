@@ -1,0 +1,10 @@
+列车高清r03：四包内容与身份
+
+本轮仍为共享改进候选，未通过高清来源精确匹配。
+1. train_hd_r03_material_models.zip：材质BLEND+材质GLB、冻结及技术报告。替换原材质模型Library身份。
+2. train_hd_r03_white_models.zip：同几何白模BLEND+GLB及报告。只替换原白模Library身份，不能用于QA或来源包。
+3. train_hd_r03_source_review.zip：新增高清浏览器原图、无插值画芯、三个主来源/四个新增结构角/三个旧来源回归的直接50%叠图与对照、正常材质/白模主图、真实GLB回导对照及报告。这是新增来源证据包，可新建。
+4. train_hd_r03_review_textures_QA.zip：本轮全部原始渲染和载入/输出SHA sidecar、19张独立贴图（皮革粗糙度从实际r03冻结图像导出）、结构/洞口/支撑/UV/法线回导报告、独立来源QA与脚本。替换原review_textures Library身份；第3包承担单独的高清来源/展示图片，不借用白模身份。
+
+旧版三个完整ZIP均仍保留在原历史冻结目录，未改写；本次替换应保留相同Library身份和版本历史。
+正常主图不是来源验收图。候选残差与GLB微小面法线数值例外见README及独立报告。
