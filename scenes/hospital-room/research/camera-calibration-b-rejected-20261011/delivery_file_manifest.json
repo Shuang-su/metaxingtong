@@ -5,8 +5,8 @@
     {
       "file": "相机校准复核报告_未采用.md",
       "relative_path": "相机校准复核报告_未采用.md",
-      "bytes": 8835,
-      "sha256": "42870127353a1a5b32285dd807f0daaae8b050153ef5fbec35c0373d066ad451"
+      "bytes": 8900,
+      "sha256": "aa2dbe2c000f89d9bbd055e411572aba7ec47c64b6cdfd3c2f50b6ef05dd190b"
     },
     {
       "file": "hospital_B_camera_candidate_NOT_ADOPTED.blend",
@@ -332,5 +332,22 @@
       "bytes": 4754,
       "sha256": "19f0b4604ed10a02c6a347adb87af5a53e343d63cd29ecce5694403ef1d3a875"
     }
-  ]
+  ],
+  "metadata_revision": 2,
+  "supersedes_manifest_sha256": "8c9225f1fcec3dea606ef0549b947abdb49cf34fe57fe8e43388f074ccfe1530",
+  "sampling_metadata_erratum": {
+    "revision": 2,
+    "reason": "Metadata-only correction: original PR37 B F/G renders are 16 samples, not 24. New camera renders remain24; originalH12/newH24 unchanged.",
+    "evidence": [
+      "make_candidate_b.py line20 sets cycles.samples=16; line22 writes F_B and G_B",
+      "render_pair.py 24 samples belongs to original/A, not B",
+      "render_h_b.py line3 sets12"
+    ],
+    "corrected_FG_input_occurrences": 8,
+    "bound_original_raw_sha256": {
+      "F_B_legacy_camera_1920.png": "836aa84085d8fae482dec0f2d20c0e2e055089313474677e095245c00368a93f",
+      "G_B_legacy_camera_1920.png": "62ef02ac778dab6284d643ffeb7ebe30a5c09caf7b93c9e392dbf6d48ba30845"
+    },
+    "models_and_all_35_PNG_unchanged": true
+  }
 }
