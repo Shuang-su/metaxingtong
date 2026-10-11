@@ -1,0 +1,275 @@
+{
+  "source": "garden_motion_sources_20261010/empty_garden_paused_core.png",
+  "source_sha256": "32a85a2d94357d95b65b99293d91ae1b406970a76a882a1217ad42b893ae498a",
+  "time": 600.38521,
+  "paused_before_after_same": true,
+  "source_pixels": [
+    1180,
+    664
+  ],
+  "method": "Single fit of uniform facade scale and translation from two window-base centers. Original v3 HD1326 camera pose fixed. Implemented as Blender lens and principal-point camera changes, no source-image warp. All remaining points held out.",
+  "scale": 1.181375506530969,
+  "translation": [
+    -103.0547289321554,
+    -36.28686863474968
+  ],
+  "principal_point": [
+    593.9568199211163,
+    -31.01127426184784
+  ],
+  "lens_mm": 38.96053780713697,
+  "shift_x": -0.003353237221285029,
+  "shift_y": -0.30763667310326087,
+  "base_camera": "HD1326",
+  "input_blend_sha256": "b30c6591f4d8d80dc4628cf504ae418319daeb6e2bc8e0c359cce7957b4ef886",
+  "rows": [
+    {
+      "name": "left_window_outer_base",
+      "world": [
+        -3.8556,
+        0.405,
+        1.15
+      ],
+      "observed": [
+        194,
+        238
+      ],
+      "predicted": [
+        190.9064407957424,
+        235.85028738072475
+      ],
+      "residual_px": 3.76714386448382,
+      "uncertainty_px": 5,
+      "identity": "visible architectural edge or approximate foliage base"
+    },
+    {
+      "name": "left_window_inner_base",
+      "world": [
+        -2.9444,
+        0.405,
+        1.15
+      ],
+      "observed": [
+        282,
+        238
+      ],
+      "predicted": [
+        285.07973754786076,
+        236.3607483292913
+      ],
+      "residual_px": 3.4888292310780455,
+      "uncertainty_px": 5,
+      "identity": "visible architectural edge or approximate foliage base"
+    },
+    {
+      "name": "right_window_inner_base",
+      "world": [
+        2.9444,
+        0.405,
+        1.15
+      ],
+      "observed": [
+        893,
+        238
+      ],
+      "predicted": [
+        890.394836686962,
+        239.64182407310346
+      ],
+      "residual_px": 3.07936067628027,
+      "uncertainty_px": 5,
+      "identity": "visible architectural edge or approximate foliage base"
+    },
+    {
+      "name": "right_window_outer_base",
+      "world": [
+        3.8556,
+        0.405,
+        1.15
+      ],
+      "observed": [
+        981,
+        238
+      ],
+      "predicted": [
+        983.5508231809946,
+        240.14677074981972
+      ],
+      "residual_px": 3.3339651397369074,
+      "uncertainty_px": 5,
+      "identity": "visible architectural edge or approximate foliage base"
+    },
+    {
+      "name": "door_left_base",
+      "world": [
+        -0.944,
+        0.425,
+        0.25
+      ],
+      "observed": [
+        495,
+        347
+      ],
+      "predicted": [
+        490.9866564385312,
+        328.6060124212508
+      ],
+      "residual_px": 18.826728488762008,
+      "uncertainty_px": 5,
+      "identity": "visible architectural edge or approximate foliage base"
+    },
+    {
+      "name": "door_right_base",
+      "world": [
+        0.944,
+        0.425,
+        0.25
+      ],
+      "observed": [
+        681,
+        347
+      ],
+      "predicted": [
+        684.3294862459708,
+        329.5172286426466
+      ],
+      "residual_px": 17.7969877506168,
+      "uncertainty_px": 5,
+      "identity": "visible architectural edge or approximate foliage base"
+    },
+    {
+      "name": "arch_left_foot",
+      "world": [
+        -2.145,
+        -0.625,
+        0.25
+      ],
+      "observed": [
+        322,
+        440
+      ],
+      "predicted": [
+        348.0031661951073,
+        364.5777434913058
+      ],
+      "residual_px": 79.77895354686997,
+      "uncertainty_px": 10,
+      "identity": "visible architectural edge or approximate foliage base"
+    },
+    {
+      "name": "arch_right_foot",
+      "world": [
+        2.145,
+        -0.625,
+        0.25
+      ],
+      "observed": [
+        861,
+        441
+      ],
+      "predicted": [
+        827.6963922700857,
+        366.702194907673
+      ],
+      "residual_px": 81.42047733442381,
+      "uncertainty_px": 10,
+      "identity": "visible architectural edge or approximate foliage base"
+    },
+    {
+      "name": "far_left_pedestal_cap",
+      "world": [
+        -5,
+        -0.025,
+        1.73
+      ],
+      "observed": [
+        171,
+        323
+      ],
+      "predicted": [
+        53.8219752441081,
+        184.48085293118154
+      ],
+      "residual_px": 181.43385458718933,
+      "uncertainty_px": 5,
+      "identity": "nearest-to-facade urn pair predicted; source pair identity inferred from continuity and occlusion"
+    },
+    {
+      "name": "far_right_pedestal_cap",
+      "world": [
+        5,
+        -0.025,
+        1.73
+      ],
+      "observed": [
+        1037,
+        331
+      ],
+      "predicted": [
+        1120.1021108140808,
+        190.678237368726
+      ],
+      "residual_px": 163.08328513279147,
+      "uncertainty_px": 5,
+      "identity": "nearest-to-facade urn pair predicted; source pair identity inferred from continuity and occlusion"
+    }
+  ],
+  "source_ratio": {
+    "window_width_to_window_centers_distance": 0.12589413447782546,
+    "door_width_to_window_centers_distance": 0.26609442060085836,
+    "visible_pedestal_centers_distance_to_window_centers_distance": 1.2389127324749643,
+    "window_bottom_to_door_bottom_vertical_gap_over_window_center_spacing": 0.15593705293276108
+  },
+  "model_ratio": {
+    "window_width_to_window_centers_distance": 0.134,
+    "door_width_to_window_centers_distance": 0.2776470588235294,
+    "pedestal_world_x_spacing_to_window_centers_distance": 1.4705882352941178,
+    "window_bottom_to_door_bottom_vertical_gap_over_window_center_spacing": 0.1323529411764706
+  },
+  "limits": [
+    "Two window centers establish a comparison normalization, not a recovered camera. Unknown true principal point remains unresolved.",
+    "Urn pair matching is supported by visible occlusion/order; exact source asset coordinates remain unknown.",
+    "Molded facade base and cast shadows do not establish exact number of steps."
+  ],
+  "all_model_urn_row_projection": [
+    {
+      "row_world_y": -0.025,
+      "projected_cap_centers": [
+        [
+          53.82197524410802,
+          184.48085293118157
+        ],
+        [
+          1120.1021108140808,
+          190.678237368726
+        ]
+      ]
+    },
+    {
+      "row_world_y": -1.475,
+      "projected_cap_centers": [
+        [
+          -19.179029166933887,
+          219.54380141099395
+        ],
+        [
+          1193.8957714249905,
+          226.2614865231066
+        ]
+      ]
+    },
+    {
+      "row_world_y": -4.575,
+      "projected_cap_centers": [
+        [
+          -271.4397236630363,
+          340.7065690462934
+        ],
+        [
+          1447.6055108045875,
+          348.60013722154486
+        ]
+      ]
+    }
+  ]
+}

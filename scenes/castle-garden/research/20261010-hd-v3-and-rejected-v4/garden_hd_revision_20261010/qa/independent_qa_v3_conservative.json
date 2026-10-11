@@ -1,0 +1,254 @@
+{
+  "verdict": "保守v3有限几何完整性通过、六图冻结来源通过；来源画面全场对齐/高保真不通过。停止继续拟合，以近似重建与诊断相机交付。",
+  "sha256": "b30c6591f4d8d80dc4628cf504ae418319daeb6e2bc8e0c359cce7957b4ef886",
+  "current_file_unchanged": true,
+  "geometry": {
+    "nonplant_topology_failures": [],
+    "dense_facade_sample_count": 142233,
+    "unexpected_holes": 0,
+    "epsilon_1e5_boundary_double_hits": 5,
+    "boundary_retest": "Five edge double-hits all disappear at epsilon=0. All ±0.001/0.005 probes show complementary wall/leaf, no leaked rays.",
+    "backings": [
+      {
+        "name": "Pointed_double_door",
+        "front_hit": [
+          -5.075305201071704e-18,
+          0.4250001907348633,
+          2.6500000953674316
+        ],
+        "back_hit": [
+          -5.075305201071704e-18,
+          0.625,
+          2.6500000953674316
+        ],
+        "thickness": 0.19999980926513672
+      },
+      {
+        "name": "Tall_cyan_leaded_window",
+        "front_hit": [
+          -3.4000000953674316,
+          0.4049997329711914,
+          3.450000047683716
+        ],
+        "back_hit": [
+          -3.4000000953674316,
+          0.6050000190734863,
+          3.450000047683716
+        ],
+        "thickness": 0.20000028610229492
+      },
+      {
+        "name": "Tall_cyan_leaded_window.001",
+        "front_hit": [
+          3.4000000953674316,
+          0.4050002098083496,
+          3.450000047683716
+        ],
+        "back_hit": [
+          3.4000000953674316,
+          0.6050000190734863,
+          3.450000047683716
+        ],
+        "thickness": 0.19999980926513672
+      }
+    ],
+    "bottom_preservation": [
+      {
+        "name": "Far_floral_arch_support",
+        "count": 36,
+        "max_dz": 0.0,
+        "dy_range": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "推定_花架埋入式柱脚",
+        "count": 8,
+        "max_dz": 0.0,
+        "dy_range": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "推定_花架埋入式柱脚.001",
+        "count": 8,
+        "max_dz": 0.0,
+        "dy_range": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "推定_花架埋入式柱脚.002",
+        "count": 8,
+        "max_dz": 0.0,
+        "dy_range": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "推定_花架埋入式柱脚.003",
+        "count": 8,
+        "max_dz": 0.0,
+        "dy_range": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "support_intersections": {
+      "推定_有限基础板_闭合底面": 11,
+      "推定_花架埋入式柱脚": 0,
+      "推定_花架埋入式柱脚.001": 0,
+      "推定_花架埋入式柱脚.002": 6,
+      "推定_花架埋入式柱脚.003": 6
+    },
+    "arch_translation_removed": true,
+    "units": "工作模型单位，非实测米",
+    "limits": "拓扑和采样射线/BVH接界不是力学认证或穷尽自相交检测；本报告不验证新GLB或白模。"
+  },
+  "render_provenance": [
+    {
+      "tag": "HD668",
+      "same_frozen_sha": true,
+      "output_sha_matches": true,
+      "actual_input": "/workspace/scratch/fa58bfcf0425/garden_hd_revision_20261010/models/Garden_HD_Conservative_v3_Frozen.blend",
+      "output_sha256": "e4bac8776addde2e9e2bfd7fe8ed537b3e238fbc81525c98ee4c64939310900c",
+      "size": [
+        1180,
+        664
+      ],
+      "shift_y": -0.30677857995033264
+    },
+    {
+      "tag": "HD1326",
+      "same_frozen_sha": true,
+      "output_sha_matches": true,
+      "actual_input": "/workspace/scratch/fa58bfcf0425/garden_hd_revision_20261010/models/Garden_HD_Conservative_v3_Frozen.blend",
+      "output_sha256": "ada5fa89cec3c617ac910bcda00fdaba3158c51870341d4ba44f3cf31a7a2282",
+      "size": [
+        1180,
+        664
+      ],
+      "shift_y": -0.27757149934768677
+    },
+    {
+      "tag": "HD1519",
+      "same_frozen_sha": true,
+      "output_sha_matches": true,
+      "actual_input": "/workspace/scratch/fa58bfcf0425/garden_hd_revision_20261010/models/Garden_HD_Conservative_v3_Frozen.blend",
+      "output_sha256": "0715f4e7801a23ee37d1bea15234682c5483b2475be8bdbb7633da3934fb15ca",
+      "size": [
+        1180,
+        664
+      ],
+      "shift_y": -0.1670069843530655
+    },
+    {
+      "tag": "MAIN_Level_Normal",
+      "same_frozen_sha": true,
+      "output_sha_matches": true,
+      "actual_input": "/workspace/scratch/fa58bfcf0425/garden_hd_revision_20261010/models/Garden_HD_Conservative_v3_Frozen.blend",
+      "output_sha256": "69ddd11a33f35b5eeb0cb670a5dce2f4dd60102c836dca92204c2918d4a41228",
+      "size": [
+        1180,
+        664
+      ],
+      "shift_y": 0.0
+    },
+    {
+      "tag": "MATCH_A_00h25m11s",
+      "same_frozen_sha": true,
+      "output_sha_matches": true,
+      "actual_input": "/workspace/scratch/fa58bfcf0425/garden_hd_revision_20261010/models/Garden_HD_Conservative_v3_Frozen.blend",
+      "output_sha256": "b206adfa69c572a73293ab892755c835d436aa79ee5ed52cf6e74edc567c71bd",
+      "size": [
+        1180,
+        664
+      ],
+      "shift_y": 0.0
+    },
+    {
+      "tag": "MATCH_B_00h21m59s",
+      "same_frozen_sha": true,
+      "output_sha_matches": true,
+      "actual_input": "/workspace/scratch/fa58bfcf0425/garden_hd_revision_20261010/models/Garden_HD_Conservative_v3_Frozen.blend",
+      "output_sha256": "661ae38fddfb802965971a294efd20141573daaa52898b553283d0d35f9c1b94",
+      "size": [
+        1180,
+        664
+      ],
+      "shift_y": 0.0
+    }
+  ],
+  "overlays": [
+    {
+      "tag": "HD668",
+      "exact_direct_50_percent": true,
+      "visually_reviewed": true
+    },
+    {
+      "tag": "HD1326",
+      "exact_direct_50_percent": true,
+      "visually_reviewed": true
+    },
+    {
+      "tag": "HD1519",
+      "exact_direct_50_percent": true,
+      "visually_reviewed": true
+    }
+  ],
+  "views_reviewed": [
+    "MAIN_Level_Normal",
+    "HD668",
+    "HD1326",
+    "HD1519",
+    "MATCH_A_00h25m11s",
+    "MATCH_B_00h21m59s"
+  ],
+  "camera_caveat": "HD三视使用Blender真实shift_y，不是后处理warp；未知源主点，不能推定已恢复原机位。analytic/Blender一致仅证明实现一致，不能证明来源正确。正常主图为零shift水平机位。",
+  "camera_diagnostics": [
+    {
+      "tag": "HD668",
+      "lens_mm": 34.175564324811255,
+      "shift_y": -0.30677858979575684,
+      "principal_y_px": -29.998735958993052,
+      "fit_rms_px": 14.196333689692109,
+      "held_out_rms_px": 12.922713170585283,
+      "max_residual_px": 32.335470653885736
+    },
+    {
+      "tag": "HD1326",
+      "lens_mm": 32.97896188955366,
+      "shift_y": -0.2775714939242958,
+      "principal_y_px": 4.4656371693309325,
+      "fit_rms_px": 14.556833081967456,
+      "held_out_rms_px": 15.356508450319273,
+      "max_residual_px": 32.46335235069734
+    },
+    {
+      "tag": "HD1519",
+      "lens_mm": 17.312212744267647,
+      "shift_y": -0.1670069826713918,
+      "principal_y_px": 134.93176044775768,
+      "fit_rms_px": 23.604637312413562,
+      "held_out_rms_px": 27.660797972299473,
+      "max_residual_px": 54.93901839223619
+    }
+  ],
+  "visual_findings": [
+    "正常水平主图无明显门窗露底、开缝或花架脱脚；有限开放花园范围保留。",
+    "v3三HD竖边较v2显著倾斜问题得到缓解，门窗窄化可作为同立面比例的保守近似。",
+    "三HD仍有花架花串形状/宽度/位置、近花柱粗细与遮挡、门前台阶、盆体与栏杆双影。HD1519门阶与窗位置仍明显不能紧密重合。",
+    "源门复杂雕饰未恢复，候选金色菱形、窗顶纹样和分隔、植被花色密度、明暗材质仍显著简化。",
+    "旧A/B为遗留360p截图固定相机交叉诊断，无新的独立相机标定；不能作为本v3全景来源通过证明。",
+    "人物和播放器UI在参考中保留，直接混合无遮罩/非线性图像变形。"
+  ],
+  "recommendations": [
+    "不继续拟合或改冻结模型；保留v1/v2/v3证据并将v3标为保守近似。",
+    "分开陈述几何完整性、冻结来源一致性与视觉相似度。主点未知、显著位置/装饰残差必须随交付说明。"
+  ]
+}
