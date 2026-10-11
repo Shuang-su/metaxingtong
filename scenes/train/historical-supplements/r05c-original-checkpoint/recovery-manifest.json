@@ -1,0 +1,776 @@
+{
+  "schema": "historical-original-recovery-v1",
+  "recovered_at_utc": "2026-10-11T15:15:00Z",
+  "scene": "train",
+  "candidate": "r05C",
+  "status": "Historical candidate; source fidelity NOT accepted; r03 CURRENT preserved",
+  "purpose": "Restore four omitted historical original model binaries without modifying, exporting, optimizing or promoting the model. Reuse byte-identical existing textures, images and reports.",
+  "source_packages": [
+    {
+      "package_role": "material",
+      "name": "列车_r05C候选_未整体验收_材质模型.zip",
+      "library_file_id": "libfile_a7f612f847fc819198496600bb6859f0",
+      "file_id": "file_000000000ce08230b9ba57e04e8a3411",
+      "library_version": 0,
+      "bytes": 15307715,
+      "sha256": "e0c7ed6d4c0156c802dbb51a45a733eedf09c86882d0c881dd5a56fad85ac48b",
+      "git_blob_sha1": "e6a7caa4a7d9109bb9a66b4e905aac2b78761f83"
+    },
+    {
+      "package_role": "white",
+      "name": "列车_r05C候选_未整体验收_白模.zip",
+      "library_file_id": "libfile_9ea1cfae4d908191a3b33cd65623a54b",
+      "file_id": "file_00000000a8b881fb8daab516a0051cb4",
+      "library_version": 0,
+      "bytes": 4365707,
+      "sha256": "01b27758a16f0d29cff7d1c2ced15c66f6fe6a241c0b01f211e282953702f0d4",
+      "git_blob_sha1": "cf9281a6d30e2e12048472248df9f10530bae768"
+    },
+    {
+      "package_role": "diagnostic-textures",
+      "name": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "library_file_id": "libfile_664876111700819180469dab4d7ee22e",
+      "file_id": "file_00000000bb388230bed6e13f949be29b",
+      "library_version": 0,
+      "bytes": 15885630,
+      "sha256": "1df2aeec6ef1b7880cf2bdd7f1332209f5a578c42784cef676be7a445dd09086",
+      "git_blob_sha1": "336bb3ba6ea89f5f95ccf1a866ce0132dccd3081"
+    },
+    {
+      "package_role": "preview",
+      "name": "列车_r05C候选_未整体验收_正常主图.png",
+      "library_file_id": "libfile_631a0ae5c7e081918b3a0f70c39ab61a",
+      "file_id": "file_0000000095a881fbb8d263f11e2044ce",
+      "library_version": 0,
+      "bytes": 551432,
+      "sha256": "cd4f6f3ed07922def79e6acdee40d392149b7c2dc1264a3945072b4b195de39a",
+      "git_blob_sha1": "74902dcd74633b8760f7e0a2c00b986f5195a098"
+    }
+  ],
+  "provenance": {
+    "all_library_versions": 0,
+    "initial_save_date_utc": "2026-10-10",
+    "checkpoint_manifest_sha256": "5d5782faa4e2b5ab84173037d21fe8ec5f609445ce6dbd334a823ab2877f8999",
+    "checkpoint_manifest_existing_path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/checkpoint_r05c/checkpoint_manifest.json",
+    "existing_research_commit": "ff6ba316313b04cdfd0addd13874fe5f71c6579a",
+    "original_models_match_checkpoint_manifest": true,
+    "models_reexported": false
+  },
+  "deduplication": {
+    "observed_at_utc": "2026-10-11T15:13:00Z",
+    "method": "Git SHA-1 of original blob bytes compared against every file in all live branch tip trees",
+    "branch_count": 19,
+    "branch_tips": [
+      {
+        "branch": "archive/bedroom-history",
+        "commit": "c34616238a0a9d1846ab07b8025ba07bdd4cd503"
+      },
+      {
+        "branch": "archive/castle-garden-history",
+        "commit": "028405c1468d342f14497e1b2b130943b0967a44"
+      },
+      {
+        "branch": "archive/castle-hall-history",
+        "commit": "e4c0f9cf2b2e0ffaa3089aa11c4121e8d142e96c"
+      },
+      {
+        "branch": "archive/classroom-history",
+        "commit": "6fa0ca9755b8c96b74c83a560d79556a6bba086c"
+      },
+      {
+        "branch": "archive/dance-studio-history",
+        "commit": "1de42e167b6d3247f5f6114fc65fdadda4ee3b82"
+      },
+      {
+        "branch": "archive/dark-cell-history",
+        "commit": "c4c537f822fa410aa7f7103f0827df5ea1067c68"
+      },
+      {
+        "branch": "archive/hospital-room-history",
+        "commit": "920f8240b957933cdb604e01c8db58fe3a8e9c24"
+      },
+      {
+        "branch": "archive/kitchen-history",
+        "commit": "014024b16c8e96385d61cacfd2329ba90dde5ac2"
+      },
+      {
+        "branch": "archive/ktv-history",
+        "commit": "3b20660eaa00c49ffd7a546c5e0725ea2fed49ab"
+      },
+      {
+        "branch": "archive/piano-terrace-nook-history",
+        "commit": "4c43c9ddeca92395911e6b8cbc815d750de371f9"
+      },
+      {
+        "branch": "archive/red-gold-stage-history",
+        "commit": "ea7bca173f19ad29c7d0a024b676029ab6f39d8b"
+      },
+      {
+        "branch": "archive/seaside-bar-history",
+        "commit": "f76123caaf8364b29bfd2a631125ce35aca35df2"
+      },
+      {
+        "branch": "archive/seaside-scene-history",
+        "commit": "ee210cfe49298a1d8c25fdfd0ded36b61552c92a"
+      },
+      {
+        "branch": "archive/star-awards-stage-history",
+        "commit": "070b51aed901fb390176a0848c167091681415d6"
+      },
+      {
+        "branch": "archive/terrace-history",
+        "commit": "57d6bcc0e6fee13d4fbac07a943a66f02653575c"
+      },
+      {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148"
+      },
+      {
+        "branch": "docs/native-frame-workflow-20261011",
+        "commit": "b9ec2713e20dd8fd6cc5113c66429aa6f3058dc0"
+      },
+      {
+        "branch": "docs/object-level-verification-20261011",
+        "commit": "db82c153fe1151ebb0650ea679bea20fb241118c"
+      },
+      {
+        "branch": "main",
+        "commit": "4080dd12e14f0afb83a2c8461ceb656f175ccbb7"
+      }
+    ],
+    "missing_original_model_count": 4,
+    "missing_original_model_bytes": 38824401,
+    "missing_texture_count": 0,
+    "reused_texture_count": 19,
+    "reused_preview_count": 1,
+    "missing_original_package_manifest_count": 3,
+    "unresolved_original_models_in_this_r05c_checkpoint": 0
+  },
+  "restored_original_files": [
+    {
+      "package": "列车_r05C候选_未整体验收_材质模型.zip",
+      "member": "train_r05c_material_candidate.glb",
+      "bytes": 18064800,
+      "sha256": "0d45a961431c474242959171116d16fe401ee1deb595a437b6174b3e4ce1751e",
+      "git_blob_sha1": "200a3b2b059d8b828e1f693a080f99eaddeff20a",
+      "role": "original_model",
+      "current_git_match_count": 0,
+      "recovery_path": "models/train_r05c_material_candidate.glb"
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_材质模型.zip",
+      "member": "train_r05c_material_candidate_59f2cdfeb41d.blend",
+      "bytes": 6821377,
+      "sha256": "59f2cdfeb41d0aa7fd6c580b4233937a89f7a4b74e2a8fa85343acfc84f3a7ac",
+      "git_blob_sha1": "0742ae7defeae1661c19a09a04195fca20601eb0",
+      "role": "original_model",
+      "current_git_match_count": 0,
+      "recovery_path": "models/train_r05c_material_candidate_59f2cdfeb41d.blend"
+    },
+    {
+      "recovery_path": "package-records/material/CONTENTS_SHA256.json",
+      "role": "original_package_version_record",
+      "package": "列车_r05C候选_未整体验收_材质模型.zip",
+      "member": "CONTENTS_SHA256.json",
+      "bytes": 1437,
+      "sha256": "8a27a4c8c5890adb06d66e53da1c05484725b9f0ff5d390ab1d57ff0cd642398",
+      "git_blob_sha1": "da9b12369d864982a8bf133147e81018dc1826fe"
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_白模.zip",
+      "member": "train_r05c_white_candidate.glb",
+      "bytes": 12373640,
+      "sha256": "56a29d0acafe01fe47e16b348cc130e2c33789bd76e6351b6b78618d3643894e",
+      "git_blob_sha1": "07dfc8349f339c5179db06eaa40f6f5e50ab6c08",
+      "role": "original_model",
+      "current_git_match_count": 0,
+      "recovery_path": "models/train_r05c_white_candidate.glb"
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_白模.zip",
+      "member": "train_r05c_white_candidate_8f2e42b81cfa.blend",
+      "bytes": 1564584,
+      "sha256": "8f2e42b81cfaaba46f2c196f1c838b2df2514cc36b4de90edae76eb06549bb02",
+      "git_blob_sha1": "d3f4d4131a87b7f87975e26a7bab46f7801151ec",
+      "role": "original_model",
+      "current_git_match_count": 0,
+      "recovery_path": "models/train_r05c_white_candidate_8f2e42b81cfa.blend"
+    },
+    {
+      "recovery_path": "package-records/white/CONTENTS_SHA256.json",
+      "role": "original_package_version_record",
+      "package": "列车_r05C候选_未整体验收_白模.zip",
+      "member": "CONTENTS_SHA256.json",
+      "bytes": 1425,
+      "sha256": "81d0b30d4e9dca83d70b7f4b690713638a7f8977166ce50479515232364e37d0",
+      "git_blob_sha1": "d43d8d82602671490e1e115df5aa88e24cb1f5bd"
+    },
+    {
+      "recovery_path": "package-records/diagnostic-textures/CONTENTS_SHA256.json",
+      "role": "original_package_version_record",
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "CONTENTS_SHA256.json",
+      "bytes": 30726,
+      "sha256": "3e0151d6ca3fe39ea6a562b51b887b38cefaa109add734efb99ad4fa6077ff1b",
+      "git_blob_sha1": "b81cdfd1f831d3c720a1b37f0320d4af57fcfda5"
+    }
+  ],
+  "referenced_original_assets": [
+    {
+      "package": "列车_r05C候选_未整体验收_材质模型.zip",
+      "member": "train_r05c_material_candidate.glb",
+      "bytes": 18064800,
+      "sha256": "0d45a961431c474242959171116d16fe401ee1deb595a437b6174b3e4ce1751e",
+      "git_blob_sha1": "200a3b2b059d8b828e1f693a080f99eaddeff20a",
+      "role": "original_model",
+      "current_git_match_count": 0,
+      "recovery_path": "models/train_r05c_material_candidate.glb"
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_材质模型.zip",
+      "member": "train_r05c_material_candidate_59f2cdfeb41d.blend",
+      "bytes": 6821377,
+      "sha256": "59f2cdfeb41d0aa7fd6c580b4233937a89f7a4b74e2a8fa85343acfc84f3a7ac",
+      "git_blob_sha1": "0742ae7defeae1661c19a09a04195fca20601eb0",
+      "role": "original_model",
+      "current_git_match_count": 0,
+      "recovery_path": "models/train_r05c_material_candidate_59f2cdfeb41d.blend"
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_白模.zip",
+      "member": "train_r05c_white_candidate.glb",
+      "bytes": 12373640,
+      "sha256": "56a29d0acafe01fe47e16b348cc130e2c33789bd76e6351b6b78618d3643894e",
+      "git_blob_sha1": "07dfc8349f339c5179db06eaa40f6f5e50ab6c08",
+      "role": "original_model",
+      "current_git_match_count": 0,
+      "recovery_path": "models/train_r05c_white_candidate.glb"
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_白模.zip",
+      "member": "train_r05c_white_candidate_8f2e42b81cfa.blend",
+      "bytes": 1564584,
+      "sha256": "8f2e42b81cfaaba46f2c196f1c838b2df2514cc36b4de90edae76eb06549bb02",
+      "git_blob_sha1": "d3f4d4131a87b7f87975e26a7bab46f7801151ec",
+      "role": "original_model",
+      "current_git_match_count": 0,
+      "recovery_path": "models/train_r05c_white_candidate_8f2e42b81cfa.blend"
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/HD_leather_restrained_roughness.png",
+      "bytes": 110805,
+      "sha256": "5a1c1b7c0d1fb1168242f3125fdd3104a814c35a13a6052314cfc5dd22ec17ec",
+      "git_blob_sha1": "a0ae212ab3f25e3c3e581f458fa3df5b161a93b0",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 1,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/forest_leather_roughness.png",
+        "git_blob_sha1": "a0ae212ab3f25e3c3e581f458fa3df5b161a93b0"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/burgundy_velvet_basecolor.png",
+      "bytes": 292230,
+      "sha256": "01171142778286df2ba9a31ca822355478f679a871011cbe1d909a6488f689da",
+      "git_blob_sha1": "5a9e1f7c52a6043abc73a63dde13fd7d912e1b5d",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/burgundy_velvet_basecolor.png",
+        "git_blob_sha1": "5a9e1f7c52a6043abc73a63dde13fd7d912e1b5d"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/burgundy_velvet_normal.png",
+      "bytes": 452755,
+      "sha256": "ae750d242c99d9ef180b80c053103aeb7c2156b2bcd6eefc766ec943e6c899c8",
+      "git_blob_sha1": "4943b10bbdfc20d2508e3650a1c39faae98a3521",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/burgundy_velvet_normal.png",
+        "git_blob_sha1": "4943b10bbdfc20d2508e3650a1c39faae98a3521"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/burgundy_velvet_roughness.png",
+      "bytes": 107027,
+      "sha256": "2c167e1bd6f88a8f51c66051cdd6160bbbe136634bd9551bd13d96ff58e2dbcb",
+      "git_blob_sha1": "1b85137e35ab7914cef3c2ffc130d5569c932725",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/burgundy_velvet_roughness.png",
+        "git_blob_sha1": "1b85137e35ab7914cef3c2ffc130d5569c932725"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/ceiling_cream_basecolor.png",
+      "bytes": 251264,
+      "sha256": "8de59ec2dab8b50e609f510d4be16bd3556c2b45c1733cede0c67c6a0219f937",
+      "git_blob_sha1": "7b2221ec200a3711df3f80ced778c2b181ce08cb",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/ceiling_cream_basecolor.png",
+        "git_blob_sha1": "7b2221ec200a3711df3f80ced778c2b181ce08cb"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/ceiling_cream_normal.png",
+      "bytes": 394065,
+      "sha256": "d9c8399c34bada422d77506417e6e8d5fd2fd520a899434be9adf12cf8459a20",
+      "git_blob_sha1": "229181198d370a6748f550b21bcfa4e967879f9f",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/ceiling_cream_normal.png",
+        "git_blob_sha1": "229181198d370a6748f550b21bcfa4e967879f9f"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/ceiling_cream_roughness.png",
+      "bytes": 135549,
+      "sha256": "7078fdb7ebed10dcf2ac8613ea8ff834ccb770612d57e1487bf7b01ed376574c",
+      "git_blob_sha1": "6eacd91bf9e233c596dd3cd1464e672a8a9bce86",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/ceiling_cream_roughness.png",
+        "git_blob_sha1": "6eacd91bf9e233c596dd3cd1464e672a8a9bce86"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/destination_sign_basecolor.png",
+      "bytes": 16177,
+      "sha256": "944b4b517b9bc72e44193800cbfa29315768c17d7b838b9dbca9bc61d7cba9eb",
+      "git_blob_sha1": "1b91fb4c021bd33ac2860ca5a6f37c12cf3d1bca",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/destination_sign_basecolor.png",
+        "git_blob_sha1": "1b91fb4c021bd33ac2860ca5a6f37c12cf3d1bca"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/floor_wood_basecolor.png",
+      "bytes": 216633,
+      "sha256": "23359e03d1b8565d84470e9cd8dc8ee1d4de5ad5d1d9db22b43edaceef4b2793",
+      "git_blob_sha1": "57987ae5755cc888b46f2050f963dd49b2a072b3",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/floor_wood_basecolor.png",
+        "git_blob_sha1": "57987ae5755cc888b46f2050f963dd49b2a072b3"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/floor_wood_normal.png",
+      "bytes": 247785,
+      "sha256": "bf792d3ac5d286daffe9f34f7001602ff4519c0eeec75118172a43eaa276f3b2",
+      "git_blob_sha1": "69d259d3126efe5f7f613c7f8ff230db89fa55cc",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/floor_wood_normal.png",
+        "git_blob_sha1": "69d259d3126efe5f7f613c7f8ff230db89fa55cc"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/floor_wood_roughness.png",
+      "bytes": 97910,
+      "sha256": "565cf443e01e175b78c029b51f38dadc1689a612f6cd3a8bbadde5908af6237d",
+      "git_blob_sha1": "a2ceb783b4ffa48ac5425c3b13382e5bc3f7586b",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/floor_wood_roughness.png",
+        "git_blob_sha1": "a2ceb783b4ffa48ac5425c3b13382e5bc3f7586b"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/forest_leather_basecolor.png",
+      "bytes": 253158,
+      "sha256": "f17b34601ed7f427ba2e6c482175d4451fd5c0a25f9ddff514a06e0cd5db1d78",
+      "git_blob_sha1": "3f94f40076aa5a6bb76ae00b33185be33122e164",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/forest_leather_basecolor.png",
+        "git_blob_sha1": "3f94f40076aa5a6bb76ae00b33185be33122e164"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/forest_leather_normal.png",
+      "bytes": 714202,
+      "sha256": "3072a675d9917b0467e57e3457a05dd9b606963d86883e6a7136ff950696f711",
+      "git_blob_sha1": "143ba517a36955a1c71b6b39f53d3e779a2f6d4e",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/forest_leather_normal.png",
+        "git_blob_sha1": "143ba517a36955a1c71b6b39f53d3e779a2f6d4e"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/rosewood_basecolor.png",
+      "bytes": 308274,
+      "sha256": "3e8746ff7bdd5fed6f595ec9cf5ec5b9a84072e268bc36630b728a36e7ff6a37",
+      "git_blob_sha1": "0300dbc43bd393e2dca3620784bf122ebc21ded8",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/rosewood_basecolor.png",
+        "git_blob_sha1": "0300dbc43bd393e2dca3620784bf122ebc21ded8"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/rosewood_normal.png",
+      "bytes": 544394,
+      "sha256": "ff6f9849fc1622ae28e69c94000efd7b0b9141fe6d3cdb5033b2c968e2689c37",
+      "git_blob_sha1": "4d21ec51f6b42c3a2d569b106cb9a112cf401412",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/rosewood_normal.png",
+        "git_blob_sha1": "4d21ec51f6b42c3a2d569b106cb9a112cf401412"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/rosewood_roughness.png",
+      "bytes": 126478,
+      "sha256": "1d6863b65246a69bd8b60d74e1ac1cd090f29d53982eef0315968fcf08322008",
+      "git_blob_sha1": "757ec93e2bda8ad3773822c872926d2e8d8361c9",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/rosewood_roughness.png",
+        "git_blob_sha1": "757ec93e2bda8ad3773822c872926d2e8d8361c9"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/walnut_basecolor.png",
+      "bytes": 328330,
+      "sha256": "6bed832d90e9662bc042a6822c6c5dfb9da41ac2a6c15507e48ed56d600007cb",
+      "git_blob_sha1": "e6eb6842be19cb5ea93f083eb6664211547123e6",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/walnut_basecolor.png",
+        "git_blob_sha1": "e6eb6842be19cb5ea93f083eb6664211547123e6"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/walnut_normal.png",
+      "bytes": 509190,
+      "sha256": "f3059288547be435de05fe3e0eb4f47ec41e25d4a040a1143266ae777afdf4b5",
+      "git_blob_sha1": "8e4005110d8cd76cd55aa6a3a008e609979459dc",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/walnut_normal.png",
+        "git_blob_sha1": "8e4005110d8cd76cd55aa6a3a008e609979459dc"
+      }
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "member": "current_textures/walnut_roughness.png",
+      "bytes": 134661,
+      "sha256": "be4eed7aaca20ff0fdc6827597efdcee36c89b47c72e9036a86a8ff7a8db21e0",
+      "git_blob_sha1": "1880a04026358a564beedccf93aafd9bef24d60c",
+      "role": "exact_packed_texture",
+      "current_git_match_count": 3,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/03-retain-hd-r03-library-v2/files/train_hd_r03_review_textures_QA--fc8ae344d47b/textures/walnut_roughness.png",
+        "git_blob_sha1": "1880a04026358a564beedccf93aafd9bef24d60c"
+      }
+    },
+    {
+      "role": "historical_inspection_preview",
+      "package": "列车_r05C候选_未整体验收_正常主图.png",
+      "member": "列车_r05C候选_未整体验收_正常主图.png",
+      "bytes": 551432,
+      "sha256": "cd4f6f3ed07922def79e6acdee40d392149b7c2dc1264a3945072b4b195de39a",
+      "git_blob_sha1": "74902dcd74633b8760f7e0a2c00b986f5195a098",
+      "current_git_match_count": 1,
+      "existing_git": {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/research/05-r05-shared-space-trials/files/diagnostic_r05/review_c/denoised/INSPECT_01_forward_aisle.png",
+        "git_blob_sha1": "74902dcd74633b8760f7e0a2c00b986f5195a098"
+      }
+    }
+  ],
+  "zip_validation": [
+    {
+      "package": "列车_r05C候选_未整体验收_材质模型.zip",
+      "crc_ok": true,
+      "safe_paths": true,
+      "duplicate_members": false,
+      "symbolic_links": false,
+      "entry_count": 8,
+      "sha256_manifest_entries_checked": 7,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_白模.zip",
+      "crc_ok": true,
+      "safe_paths": true,
+      "duplicate_members": false,
+      "symbolic_links": false,
+      "entry_count": 8,
+      "sha256_manifest_entries_checked": 7,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "package": "列车_r05C候选_未整体验收_诊断纹理证据.zip",
+      "crc_ok": true,
+      "safe_paths": true,
+      "duplicate_members": false,
+      "symbolic_links": false,
+      "entry_count": 174,
+      "sha256_manifest_entries_checked": 173,
+      "all_manifest_hashes_match": true
+    }
+  ],
+  "glb_static_validation": [
+    {
+      "file": "train_r05c_material_candidate.glb",
+      "format": "glTF 2.0 binary",
+      "declared_length_matches": true,
+      "meshes": 1937,
+      "nodes": 1967,
+      "embedded_images": 19,
+      "external_image_uris": 0,
+      "read_only_parse": true
+    },
+    {
+      "file": "train_r05c_white_candidate.glb",
+      "format": "glTF 2.0 binary",
+      "declared_length_matches": true,
+      "meshes": 1937,
+      "nodes": 1967,
+      "embedded_images": 0,
+      "external_image_uris": 0,
+      "read_only_parse": true
+    }
+  ],
+  "historical_frame_pairs": [
+    {
+      "view": "A",
+      "source_member": "source_evidence/train_hd_recapture_20261010/A2_clean_HD_viewport.jpg",
+      "source_sha256": "1f32a2e580f0b7caf181c82eb61f872d35e50a78c715a4087b55935869663acc",
+      "source_pixels": [
+        1180,
+        757
+      ],
+      "source_crop_box": [
+        0,
+        27,
+        1180,
+        691
+      ],
+      "comparison_pixels": [
+        590,
+        332
+      ],
+      "render_member": "source_comparisons/denoised/R05_HD_A.png",
+      "render_sha256": "5612533d740783968575cd28c06212d2829d665911eda3c3c63ce56b1e1b156c",
+      "overlay_member": "source_comparisons/A_direct_50percent_overlay.png",
+      "overlay_sha256": "dcfe838d46b65fa00e745a3b3afaf651b8d56fbd6c008dc38bcb0b6a484c3bd5",
+      "historical_camera_scope": "r05 refit camera; separate from old-camera regression",
+      "source_render_hash_pairs_verified": true,
+      "acceptance": "not accepted"
+    },
+    {
+      "view": "B",
+      "source_member": "source_evidence/train_hd_recapture_20261010/B2_clean_HD_viewport.jpg",
+      "source_sha256": "7168a0cdcc5e9e3e39ced84aae27b6be1fdd096a23a6a39dc173a05bc7a4ecf3",
+      "source_pixels": [
+        1180,
+        757
+      ],
+      "source_crop_box": [
+        0,
+        27,
+        1180,
+        691
+      ],
+      "comparison_pixels": [
+        590,
+        332
+      ],
+      "render_member": "source_comparisons/denoised/R05_HD_B.png",
+      "render_sha256": "bcef655a4e00d1275200581728763488c69e11c7309317c46ddf838f66376966",
+      "overlay_member": "source_comparisons/B_direct_50percent_overlay.png",
+      "overlay_sha256": "e75ca767d02df8c7ab6a2cb34f22798f8058e34186e60607364deb5af8f8a2a4",
+      "historical_camera_scope": "r05 refit camera; separate from old-camera regression",
+      "source_render_hash_pairs_verified": true,
+      "acceptance": "not accepted"
+    },
+    {
+      "view": "D",
+      "source_member": "source_evidence/train_hd_recapture_20261010/D2_clean_HD_viewport.jpg",
+      "source_sha256": "551d756cd3a3fba99f204e16732087c29593df6d1fa9484880e013ca724ab50f",
+      "source_pixels": [
+        1180,
+        757
+      ],
+      "source_crop_box": [
+        0,
+        27,
+        1180,
+        691
+      ],
+      "comparison_pixels": [
+        590,
+        332
+      ],
+      "render_member": "source_comparisons/denoised/R05_HD_D.png",
+      "render_sha256": "45d01ebcb211b1d9fcdf9f58aa2e0ccd278cd722e4cde3627b6ea31674a4b661",
+      "overlay_member": "source_comparisons/D_direct_50percent_overlay.png",
+      "overlay_sha256": "d6d3fcf8dd3d86fbcc77d0e24561fa48965a43e243abd335e9a947a6e06d783d",
+      "historical_camera_scope": "r05 refit camera; separate from old-camera regression",
+      "source_render_hash_pairs_verified": true,
+      "acceptance": "not accepted"
+    },
+    {
+      "view": "J",
+      "source_member": "source_evidence/train_motion_sources_20261010/J_empty_window_clean_paused.jpg",
+      "source_sha256": "265cc7fc402ae56f025cc6696aa0900e31c89675a23647c25b4d9d2ea5724762",
+      "source_pixels": [
+        1180,
+        757
+      ],
+      "source_crop_box": [
+        0,
+        27,
+        1180,
+        691
+      ],
+      "comparison_pixels": [
+        590,
+        332
+      ],
+      "render_member": "source_comparisons/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "render_sha256": "1f70888ad6caa279fcd23705e332dec896c388a6c18e3094be39ea1cc83b73bb",
+      "overlay_member": "source_comparisons/J_direct_50percent_overlay.png",
+      "overlay_sha256": "5f8fa7599ee8d17b9fccb989c12923cb585e1cd54fb3d144b63020e1e365485e",
+      "historical_camera_scope": "local plane, side and absolute bay unresolved",
+      "source_render_hash_pairs_verified": true,
+      "acceptance": "not accepted"
+    }
+  ],
+  "frame_pairing_limits": [
+    "The normal preview is an inspection camera, not a source-matched frame.",
+    "Historical A/B/D/J comparisons use the saved 1180x757 screenshots, crop [0,27,1180,691], and uniform 590x332 comparison images. They are not native 1920x1080 evidence.",
+    "A/B/D camera fits are separate from old-camera regression. J side, absolute bay and real focal length/distance remain unresolved.",
+    "Later native-resolution captures must not be retroactively substituted into these historical pairs without a separately recorded match.",
+    "Byte recovery and format checks do not establish source fidelity, geometric acceptance, or complete normal equivalence."
+  ],
+  "preservation": {
+    "current_models_selection": "r03 Library version 2, as verified in scenes/train/models/CURRENT.json at train branch commit 9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+    "no_current_changes": true,
+    "current_pointer_blobs_to_preserve": [
+      {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/docs/CURRENT.json",
+        "git_blob_sha1": "03a27e455e02fa114f40e259825fa78b190ddd50"
+      },
+      {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/models/CURRENT.json",
+        "git_blob_sha1": "a892fb9f4ad22ddf9af6a00d7f24680354a680c3"
+      },
+      {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/qa/CURRENT.json",
+        "git_blob_sha1": "20a273f3019d3cf46c1c7c78ea46ffc417ad1c92"
+      },
+      {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/scripts/CURRENT.json",
+        "git_blob_sha1": "0c1b89565661cd3fc25437342eabe89de4b8b763"
+      },
+      {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/sources/CURRENT.json",
+        "git_blob_sha1": "e12471cce92d95fc185e41489b3502d27a0fe70b"
+      },
+      {
+        "branch": "archive/train-history",
+        "commit": "9098d8a11b0f16e1388ce6b5d6084d616ca6a148",
+        "path": "scenes/train/textures/CURRENT.json",
+        "git_blob_sha1": "8c0cb30689bb87b57bcf0b61f26745ded63cb72f"
+      }
+    ],
+    "no_library_writes": true,
+    "no_git_issue_or_pr_writes_by_recovery": true
+  },
+  "exclusions": [
+    "analysis/material_lossless_resource_trial_not_delivery.glb is unadopted and is excluded; it is absent from all three recovered ZIPs.",
+    "No helper scripts, execution logs, transfer receipts, signed URLs, or local absolute paths are included in this clean recovery package.",
+    "Existing byte-identical textures, preview, source frames, renders, QA and checkpoint records are referenced rather than copied again."
+  ]
+}
