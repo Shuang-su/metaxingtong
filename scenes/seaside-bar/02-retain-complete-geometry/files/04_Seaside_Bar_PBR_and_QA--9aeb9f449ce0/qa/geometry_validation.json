@@ -1,0 +1,173 @@
+{
+  "rays": [
+    {
+      "test": "main_opening",
+      "hit": false,
+      "object": null,
+      "point": null
+    },
+    {
+      "test": "left_opening",
+      "hit": false,
+      "object": null,
+      "point": null
+    },
+    {
+      "test": "solid_wall",
+      "hit": true,
+      "object": "Left_visible_wall_strip",
+      "point": [
+        -3.200000047683716,
+        0.9599999189376831,
+        2.799999952316284
+      ]
+    },
+    {
+      "test": "floor",
+      "hit": true,
+      "object": "推断_连续地面平台",
+      "point": [
+        0.0,
+        -1.0,
+        -0.43999993801116943
+      ]
+    },
+    {
+      "test": "left_service_entry",
+      "hit": false,
+      "object": null,
+      "point": null
+    },
+    {
+      "test": "right_service_entry",
+      "hit": false,
+      "object": null,
+      "point": null
+    }
+  ],
+  "brace_endpoints": [
+    {
+      "side": "left",
+      "lower_inside_mount": true,
+      "upper_inside_lifted_panel": true
+    },
+    {
+      "side": "right",
+      "lower_inside_mount": true,
+      "upper_inside_lifted_panel": true
+    }
+  ],
+  "brace_test_note": "端点变换到安装座/掀板局部包围盒内检查；安装座与窗框有正体积交叠。非结构承载分析。",
+  "lamp_bounds": {
+    "min": [
+      -1.996999979019165,
+      0.37300002574920654,
+      1.7410002946853638
+    ],
+    "max": [
+      -1.503000020980835,
+      0.8669999837875366,
+      2.2910003662109375
+    ],
+    "hatch_min_z": 4.1,
+    "main_opening_x": [
+      -2.64,
+      3.62
+    ],
+    "wall_front_y": 0.91,
+    "assessment": "发光圆柱整体位于开口前方，低于掀板；不穿墙/掀板。"
+  },
+  "textured": {
+    "source": {
+      "mesh_objects": 276,
+      "vertices": 27043,
+      "triangles": 53130,
+      "degenerate_triangles": 0,
+      "invalid_normals": 0,
+      "nonfinite_uv": 0,
+      "missing_uv": [],
+      "open_components": [],
+      "closed_components": 276,
+      "bounds_min": [
+        -4.75,
+        -2.9749999046325684,
+        -0.699999988079071
+      ],
+      "bounds_max": [
+        4.760000228881836,
+        2.0908279418945312,
+        5.150000095367432
+      ]
+    },
+    "true_glb_reimport": {
+      "mesh_objects": 276,
+      "vertices": 78004,
+      "triangles": 53130,
+      "degenerate_triangles": 0,
+      "invalid_normals": 0,
+      "nonfinite_uv": 0,
+      "missing_uv": [],
+      "open_components": [],
+      "closed_components": 276,
+      "bounds_min": [
+        -4.75,
+        -2.9749999046325684,
+        -0.699999988079071
+      ],
+      "bounds_max": [
+        4.760000228881836,
+        2.0908279418945312,
+        5.150000095367432
+      ]
+    },
+    "symmetric_vertex_distance_units": 5.462856051963172e-07,
+    "triangle_count_match": true
+  },
+  "white": {
+    "source": {
+      "mesh_objects": 276,
+      "vertices": 27043,
+      "triangles": 53130,
+      "degenerate_triangles": 0,
+      "invalid_normals": 0,
+      "nonfinite_uv": 0,
+      "missing_uv": [],
+      "open_components": [],
+      "closed_components": 276,
+      "bounds_min": [
+        -4.75,
+        -2.9749999046325684,
+        -0.699999988079071
+      ],
+      "bounds_max": [
+        4.760000228881836,
+        2.0908279418945312,
+        5.150000095367432
+      ]
+    },
+    "true_glb_reimport": {
+      "mesh_objects": 276,
+      "vertices": 78004,
+      "triangles": 53130,
+      "degenerate_triangles": 0,
+      "invalid_normals": 0,
+      "nonfinite_uv": 0,
+      "missing_uv": [],
+      "open_components": [],
+      "closed_components": 276,
+      "bounds_min": [
+        -4.75,
+        -2.9749999046325684,
+        -0.699999988079071
+      ],
+      "bounds_max": [
+        4.760000228881836,
+        2.0908279418945312,
+        5.150000095367432
+      ]
+    },
+    "symmetric_vertex_distance_units": 5.462856051963172e-07,
+    "triangle_count_match": true
+  },
+  "white_textured_identical_vertex_coordinates": true
+}

@@ -1,0 +1,163 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV1CY411k7Co/",
+  "purpose": "Find genuinely new translated/rotated bar room views; no model edits.",
+  "recovered_package": "04_Seaside_Bar_PBR_and_QA.zip",
+  "recovered_reference_directory": "recovered/references",
+  "new_observations": [
+    {
+      "time_observed": "04:07",
+      "status": "Decoded playback, observed only",
+      "content": "Unrelated dance montage"
+    },
+    {
+      "target_time": "08:00",
+      "status": "Seek buffered; timestamp not decoded-frame proof"
+    },
+    {
+      "time_observed": "31:57",
+      "status": "Decoded playback, observed only",
+      "content": "Frontal bar family, comments overlay on right; no enclosure"
+    },
+    {
+      "time_observed": "36:15",
+      "status": "Decoded playback observed at readyState 4",
+      "content": "Same frontal bar family, no room floor/side/rear enclosure"
+    },
+    {
+      "time_observed": "36:21",
+      "status": "Paused source saved but readyState dropped to 1; exclude strict stable QA",
+      "file": "captures/scout_36min_valid.jpg"
+    },
+    {
+      "time_observed": "45:26",
+      "status": "Decoded playback, observed only",
+      "content": "Separate exterior piano scene, does not establish bar connection"
+    },
+    {
+      "target_time": "55:03",
+      "status": "Seek stalled with stale preceding piano image and visible buffering; exclude"
+    },
+    {
+      "time_observed": "70:13.494927",
+      "status": "Stable paused readyState 4 before/after screenshot",
+      "file": "captures/bar_70min_1080.jpg",
+      "crop": "captures/bar_70min_1080_exact_crop.png",
+      "content": "Same frontal bar family; clearer props and awning, no enclosure"
+    },
+    {
+      "time_observed": "84:58.801987",
+      "status": "Decoded playback observed readyState 4; paused capture at85:04.434574 subsequently readyState1, so exclude strict timestamp QA",
+      "file": "captures/bar_85min_1080.jpg",
+      "content": "Same frontal bar family, no enclosure"
+    },
+    {
+      "time_observed": "105:00.916514",
+      "status": "Stable paused readyState4 before/after",
+      "file": "captures/sample_105min.jpg",
+      "content": "Separate piano exterior; no bar connection proven"
+    },
+    {
+      "time_observed": "117:04.993156",
+      "status": "Stable paused readyState2 before/after",
+      "file": "captures/sample_117min.jpg",
+      "content": "Ending-card close composition of bar props, giant lemon cans left, dessert bowls and drinks right, pancakes on platter; heavy text and possibly changed arrangement. No room enclosure."
+    },
+    {
+      "time_observed": "22:18.578219",
+      "status": "Stable paused readyState4 before/after",
+      "file": "bar_22min_before.jpg",
+      "content": "Empty early close family"
+    },
+    {
+      "time_observed": "22:33.015559",
+      "status": "Stable paused readyState4 before/after",
+      "file": "bar_22min_later_static.jpg",
+      "content": "Empty later frontal family"
+    }
+  ],
+  "constraint_status": "No new depth/enclosure constraint established so far. Saved scout files with readyState 1 must not be used as timestamp-accurate overlays.",
+  "method": "Ordinary supported browser UI timeline seeks; no media download, backend API or injected playback mutation.",
+  "collection_complete": true,
+  "stopping_condition": "Bounded gap review completed plus clean early/later static captures; no genuinely translated/rotated room-enclosing view found. Unsuccessful buffered seeks are explicitly excluded, so this is not exhaustive timeline coverage.",
+  "verified_artifacts": [
+    {
+      "raw": "bar_22min_before.jpg",
+      "crop": "bar_22min_before_exact_crop.png",
+      "metadata": "bar_22min_before.json",
+      "family": "A: early close, empty",
+      "time_seconds": 1338.578219,
+      "paused_ready_state": 4,
+      "description": "Giant foreground-left can. Cabinet and worktop detail.",
+      "limitation": "Bar aperture; no floor/ceiling."
+    },
+    {
+      "raw": "bar_22min_later_static.jpg",
+      "crop": "bar_22min_later_static_exact_crop.png",
+      "metadata": "bar_22min_later_static.json",
+      "family": "B: later frontal, empty",
+      "time_seconds": 1353.015559,
+      "paused_ready_state": 4,
+      "description": "Raised awning hatch, two worktops, serving counter.",
+      "limitation": "Changed arrangement; no fixed-prop triangulation."
+    },
+    {
+      "raw": "bar_70min_1080.jpg",
+      "crop": "bar_70min_1080_exact_crop.png",
+      "metadata": "bar_70min_1080.json",
+      "family": "B: later frontal, presenter",
+      "time_seconds": 4213.494927,
+      "paused_ready_state": 4,
+      "description": "Clearer material/prop details. Same frontal family.",
+      "limitation": "No new room-enclosure constraint."
+    },
+    {
+      "raw": "sample_117min.jpg",
+      "crop": "sample_117min_exact_crop.png",
+      "metadata": "sample_117min.json",
+      "family": "D: composed ending card",
+      "time_seconds": 7024.993156,
+      "paused_ready_state": 2,
+      "description": "Stacked cans, platter, pancakes and dessert bowls.",
+      "limitation": "Text overlay and changed prop arrangement."
+    },
+    {
+      "raw": "sample_105min.jpg",
+      "crop": "sample_105min_exact_crop.png",
+      "metadata": "sample_105min.json",
+      "family": "C: separate piano exterior",
+      "time_seconds": 6300.916514,
+      "paused_ready_state": 4,
+      "description": "Ocean, sky, deck, white piano and seat.",
+      "limitation": "Connection to bar is unproven."
+    }
+  ],
+  "classification": {
+    "supported": "Semi-open seaside bar structure with finite beige wall, large raised-awning aperture, left adjacent rectangular opening, service counter and rear worktops.",
+    "observed": [
+      "Sea, horizon, rocks and sky are visible beyond openings.",
+      "Raised dark/wood panel has two side support struts.",
+      "Beige wall/header/vertical frame members bound the openings.",
+      "Rear worktops have visible thickness and cabinet recesses."
+    ],
+    "inferred_with_caution": "The main aperture appears open, with a raised awning hatch; no glazing reflections or panes are visibly established.",
+    "not_established": [
+      "Sealed indoor room",
+      "Freestanding pavilion and overall canopy extent",
+      "Ceiling or room roof geometry",
+      "Floor, floor-wall junctions, stools, door",
+      "Side and rear enclosure or working aisle width",
+      "Absolute scale",
+      "Connection to piano deck"
+    ]
+  },
+  "clean_pair_times_seconds": [
+    1338.578219,
+    1353.015559
+  ],
+  "notes": [
+    "Early and later layouts are distinct; previous task established a cross-dissolve, not continuous camera travel.",
+    "No fixed identity of frontal-left yellow prop is established from these captures.",
+    "Foreground-left early giant yellow object is a beverage can, not the rear lamp.",
+    "New captures provide better visual detail but do not solve full room geometry."
+  ]
+}
