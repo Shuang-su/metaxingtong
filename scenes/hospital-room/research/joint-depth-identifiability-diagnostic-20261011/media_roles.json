@@ -1,0 +1,123 @@
+{
+  "status": "diagnostic_only_no_scene_update",
+  "png_count": 6,
+  "media": [
+    {
+      "relative_path": "sweepB_03_1820.856_annotated.png",
+      "role": "annotated_viewport_screenshot",
+      "input_file": "sweepB_03_1820.856.png",
+      "input_sha256": "9d215894e41d3ccfd15a11b6f3d1baa62aaf18e21023eedf31ac6300ef068b04",
+      "observed_currentTime": 1820.856452,
+      "timestamp_is_encoded_PTS": false,
+      "size": [
+        1180,
+        757
+      ],
+      "coordinate_system": "viewport_px",
+      "crop": null,
+      "resize": false,
+      "warp": false,
+      "not_native_frame": true
+    },
+    {
+      "relative_path": "sweepB_06_1823.905_annotated.png",
+      "role": "annotated_viewport_screenshot",
+      "input_file": "sweepB_06_1823.905.png",
+      "input_sha256": "b743e30d85322d21b9a19985f214afebc121340d7632a38f8cab47404d1eb41c",
+      "observed_currentTime": 1823.904874,
+      "timestamp_is_encoded_PTS": false,
+      "size": [
+        1180,
+        757
+      ],
+      "coordinate_system": "viewport_px",
+      "crop": null,
+      "resize": false,
+      "warp": false,
+      "not_native_frame": true
+    },
+    {
+      "relative_path": "sweepB_09_1826.963_annotated.png",
+      "role": "annotated_viewport_screenshot",
+      "input_file": "sweepB_09_1826.963.png",
+      "input_sha256": "83512c1fa2b0bb56ea93eb9e50ac5b5a051e72be28d80f9d7a0b42681dc2386a",
+      "observed_currentTime": 1826.963061,
+      "timestamp_is_encoded_PTS": false,
+      "size": [
+        1180,
+        757
+      ],
+      "coordinate_system": "viewport_px",
+      "crop": null,
+      "resize": false,
+      "warp": false,
+      "not_native_frame": true
+    },
+    {
+      "relative_path": "F_native_identity_diagnostic.png",
+      "role": "annotated_native_F_source",
+      "source_video_seconds": 1823.678156,
+      "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+      "size": [
+        1920,
+        1080
+      ],
+      "coordinate_system": "native_frame_px",
+      "crop": null,
+      "resize": false,
+      "warp": false
+    },
+    {
+      "relative_path": "F_recess_same_coordinate_comparison.png",
+      "role": "native_1_to_1_same_coordinate_crop_contact_sheet",
+      "crop_xyxy": [
+        750,
+        900,
+        1920,
+        1080
+      ],
+      "each_panel_size": [
+        1170,
+        180
+      ],
+      "output_size": [
+        1170,
+        630
+      ],
+      "resize": false,
+      "warp": false,
+      "source_seconds": 1823.678156,
+      "render_timestamps": null,
+      "panel_order": [
+        "native_source",
+        "B_original16spp_OIDN",
+        "B_F6_rejected24spp_OIDN"
+      ]
+    },
+    {
+      "relative_path": "B1_bed_visibility_native_scale.png",
+      "role": "seven_frame_viewport_crop_contact_sheet",
+      "input_files": [
+        "sweepB_03_1820.856.png",
+        "sweepB_04_1821.865.png",
+        "sweepB_05_1822.868.png",
+        "sweepB_06_1823.905.png",
+        "sweepB_07_1824.926.png",
+        "sweepB_08_1825.943.png",
+        "sweepB_09_1826.963.png"
+      ],
+      "crop_xyxy": [
+        400,
+        550,
+        1180,
+        700
+      ],
+      "resize": false,
+      "warp": false,
+      "coordinates": "original viewport pixels within each unresampled crop",
+      "padding_and_labels": true,
+      "timestamps": "per-frame filename and sweepB metadata; not encoded PTS"
+    }
+  ],
+  "delivery_scope": "Six nonredundant diagnostic images only. Other exploratory derived views excluded from final archive. No BLEND/model revision."
+}
