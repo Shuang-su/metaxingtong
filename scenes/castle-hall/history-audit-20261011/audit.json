@@ -1,0 +1,110 @@
+{
+  "scene": "castle-hall",
+  "audit_date_utc": "2026-10-11",
+  "branch": "archive/castle-hall-history",
+  "branch_tip_before_this_audit_commit": "e4c0f9cf2b2e0ffaa3089aa11c4121e8d142e96c",
+  "issue": "https://github.com/Shuang-su/metaxingtong/issues/3",
+  "pull_request": "https://github.com/Shuang-su/metaxingtong/pull/24",
+  "first_version_comment": "https://github.com/Shuang-su/metaxingtong/issues/3#issuecomment-6095693588",
+  "source_accepted": false,
+  "current_changed_by_this_audit": false,
+  "historical_commit_dates_fabricated": false,
+  "baseline_archive_stages": [
+    {
+      "scene": "城堡宴会厅",
+      "slug": "castle-hall",
+      "stage_key": "retain-earliest-binaries",
+      "title": "留存最早可核实模型及说明",
+      "kind": "snapshot",
+      "raw_commit": "af42a39db3d3feb93f6b7bdc4f789d541a6eef01",
+      "original_commit": "1c8496c195f04d79aeed01713deef4e09794081e",
+      "status": "raw_files_committed",
+      "raw_count": 54,
+      "models": [
+        {
+          "path": "scenes/castle-hall/01-retain-earliest-binaries/files/03_Castle_Hall_Textured_Blender--6a5b789ce1b6/models/Xingtong_Castle_Hall_Textured.blend",
+          "bytes": 3012241,
+          "sha256": "b225642cd93a73b6e9658c4ce2d2c04c0061ffd1bf4cadd20b0c6d3aab43c8a7",
+          "git_blob_sha1": "5b039219f770e16fbe4add68f32ded16f91024b0",
+          "stage_key": "retain-earliest-binaries",
+          "package_sha256": "6a5b789ce1b6057920b1b4d3b68e76bd433b97ea27c53f2cbf276d624ed11e9b",
+          "package_name": "03_Castle_Hall_Textured_Blender.zip",
+          "member_path": "models/Xingtong_Castle_Hall_Textured.blend",
+          "member_id": "zip-010:0002"
+        }
+      ],
+      "current_branch_head_at_baseline": "c750744c5bf802c98ef9d11ac27d12779548bac0"
+    },
+    {
+      "scene": "城堡宴会厅",
+      "slug": "castle-hall",
+      "stage_key": "retain-complete-geometry",
+      "title": "记录完整有限空间几何升级",
+      "kind": "snapshot",
+      "raw_commit": "c750744c5bf802c98ef9d11ac27d12779548bac0",
+      "original_commit": "5e9523c95fa6b687cd576d9b993f4a1eb4c9dcc5",
+      "status": "raw_files_committed",
+      "raw_count": 98,
+      "models": [
+        {
+          "path": "scenes/castle-hall/02-retain-complete-geometry/files/03_Castle_Hall_Textured_Blender--c8854932dc55/models/Xingtong_Castle_Hall_FullRoom.blend",
+          "bytes": 3370065,
+          "sha256": "b04ebc7091ce5bc6a2c8419a634effc5e6999f68a8db68701a832e69259a174e",
+          "git_blob_sha1": "4bc5eb3c60f57b75c64834b52698b127b9720e6a",
+          "stage_key": "retain-complete-geometry",
+          "package_sha256": "c8854932dc55bb8dc0a47e306a1b06d6af757eb6b7d0745eb96f4f012fdd0158",
+          "package_name": "03_Castle_Hall_Textured_Blender.zip",
+          "member_path": "models/Xingtong_Castle_Hall_FullRoom.blend",
+          "member_id": "zip-012:0011"
+        },
+        {
+          "path": "scenes/castle-hall/02-retain-complete-geometry/files/02_Castle_Hall_Textured_GLB--978f459d88ee/models/Xingtong_Castle_Hall_FullRoom.glb",
+          "bytes": 11103828,
+          "sha256": "f5dbb08a1e9f2a7b215638accb98fbd19df9e8becfad56faf5e9e6249e7e70c1",
+          "git_blob_sha1": "090d3b3f54a1c5154fcc7982fc62349e1b446836",
+          "stage_key": "retain-complete-geometry",
+          "package_sha256": "978f459d88eeba8fbaef36e01176d3dcf2057a7661dfad0a8e7d4f13b4e29f4c",
+          "package_name": "02_Castle_Hall_Textured_GLB.zip",
+          "member_path": "models/Xingtong_Castle_Hall_FullRoom.glb",
+          "member_id": "zip-013:0011"
+        }
+      ],
+      "current_branch_head_at_baseline": "c750744c5bf802c98ef9d11ac27d12779548bac0"
+    }
+  ],
+  "restored_original_member_bytes_this_pass": [
+    {
+      "sha256": "fbc16b7124260df1ff47b2ecc42ad6bd38f60425bc0978ccde85984101d9f965",
+      "git_blob_sha": "73ddd16238e00512b0d2fc48b74f629c3d2e8c82",
+      "bytes": 2983838,
+      "path": "scenes/castle-hall/historical-supplements/earliest-v1/models/Xingtong_Castle_Hall_White.blend"
+    },
+    {
+      "sha256": "f492c0c7cd58562dc6eabb1fa74caad94fd2015d3e5d2bcd9f79ee8e1c420d07",
+      "git_blob_sha": "36bab37d2aa0750bef3afb1b24599a5028c09cc5",
+      "bytes": 8168548,
+      "path": "scenes/castle-hall/historical-supplements/earliest-v1/models/Xingtong_Castle_Hall_White.glb"
+    }
+  ],
+  "unresolved_first_release_formats": [
+    {
+      "filename": "02_Castle_Hall_Textured_GLB.zip",
+      "historical_sha256": null,
+      "item_created_at": "2026-10-07T23:17:38.895665Z",
+      "last_replaced_at": "2026-10-10T03:58:56.400479Z"
+    }
+  ],
+  "first_release_scope_statement": "首版原格式缺口复核（2026-10-11，按本次已核验范围）：仍未取得`02_Castle_Hall_Textured_GLB.zip`（首版原格式）的可独立核验旧字节，历史SHA-256未知。相关条目已被后续版本替换，当前文件不能倒置为首版；已有其他格式或同几何模型的留存不自动补齐这些原交付包。此缺口不否定已经留存的首版实物，也不证明更早版本从未存在。",
+  "surviving_intermediate_history_records": [],
+  "new_native_sources": {
+    "commit": "e4c0f9cf2b2e0ffaa3089aa11c4121e8d142e96c",
+    "png_count": 5,
+    "comment": "https://github.com/Shuang-su/metaxingtong/issues/3#issuecomment-6110415589",
+    "acquired_at": "2026-10-11",
+    "not_used_retroactively_in_old_versions": true
+  },
+  "remaining_limitations": [
+    "归档、可打开、技术QA和合并不等于来源或用户验收。",
+    "时间/缺失范围按证据记录；后续模型、重新导出、截图和说明都不替代缺失旧模型。"
+  ]
+}

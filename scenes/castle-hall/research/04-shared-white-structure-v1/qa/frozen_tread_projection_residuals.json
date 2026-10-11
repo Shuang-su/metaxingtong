@@ -1,0 +1,175 @@
+{
+  "status": "diagnostic residual, not passed",
+  "method": "Manual approximate far-end points of six visible tread noses, +/-5 px observation uncertainty. Shared geometry and camera already frozen; no feedback edits. Perspective projection only; source image unchanged. The +/-5 px only describes coarse pixel picking, not a bound on semantic endpoint correspondence or occlusion. Do not treat these as surveyed vertex correspondences or a formal accuracy score.",
+  "geometry_sha256": "4340c968751af0b439b1daed3b29ba3cfd7da246b2356670ed36ef3c4b348474",
+  "world_points": [
+    [
+      7.36,
+      3.06,
+      0.18
+    ],
+    [
+      7.69,
+      3.06,
+      0.36
+    ],
+    [
+      8.02,
+      3.06,
+      0.54
+    ],
+    [
+      8.35,
+      3.06,
+      0.72
+    ],
+    [
+      8.68,
+      3.06,
+      0.8999999999999999
+    ],
+    [
+      9.01,
+      3.06,
+      1.08
+    ]
+  ],
+  "views": [
+    {
+      "view": "fit_4528",
+      "camera": "planar_camera_fit_4528.json",
+      "source": "hall_right_arch_4528_paused_core.png",
+      "manual_xy": [
+        [
+          928,
+          360
+        ],
+        [
+          942,
+          342
+        ],
+        [
+          959,
+          322
+        ],
+        [
+          978,
+          304
+        ],
+        [
+          996,
+          286
+        ],
+        [
+          1014,
+          268
+        ]
+      ],
+      "projected_xy": [
+        [
+          920.2855197604767,
+          375.91605107279224
+        ],
+        [
+          936.3056767455873,
+          354.4524822858499
+        ],
+        [
+          951.5823167618788,
+          333.9850665091019
+        ],
+        [
+          966.1660273215873,
+          314.4460273437499
+        ],
+        [
+          980.1029085347404,
+          295.7736005459363
+        ],
+        [
+          993.4350598870233,
+          277.91138184897807
+        ]
+      ],
+      "point_errors_px": [
+        17.68711076229597,
+        13.692685361358098,
+        14.094816204857016,
+        15.784878733135352,
+        18.66121069722848,
+        22.828759318162064
+      ],
+      "median_px": 16.73599474771566,
+      "max_px": 22.828759318162064,
+      "interpretation": "Treads exist in the correct side opening, but their projected levels/endpoints remain displaced. This may include floor/camera/column-scale bias and must not be corrected by lifting the stairs off the common floor."
+    },
+    {
+      "view": "holdout_4527",
+      "camera": "holdout_camera_4527.json",
+      "source": "holdout_arch_4527_paused_core.png",
+      "manual_xy": [
+        [
+          1048,
+          407
+        ],
+        [
+          1064,
+          384
+        ],
+        [
+          1081,
+          363
+        ],
+        [
+          1097,
+          341
+        ],
+        [
+          1114,
+          320
+        ],
+        [
+          1130,
+          301
+        ]
+      ],
+      "projected_xy": [
+        [
+          1037.2005760856473,
+          424.5862003732502
+        ],
+        [
+          1056.1632405842035,
+          398.13048827176715
+        ],
+        [
+          1074.1816329052924,
+          372.99217504502633
+        ],
+        [
+          1091.324571605179,
+          349.0752486630772
+        ],
+        [
+          1107.6543465160921,
+          326.29280562834276
+        ],
+        [
+          1123.2274750235763,
+          304.56599585723905
+        ]
+      ],
+      "point_errors_px": [
+        20.637393257143675,
+        16.15814026859599,
+        12.09684636459594,
+        9.870163546531064,
+        8.936818271282828,
+        7.653980729667994
+      ],
+      "median_px": 10.983504955563502,
+      "max_px": 20.637393257143675,
+      "interpretation": "Treads exist in the correct side opening, but their projected levels/endpoints remain displaced. This may include floor/camera/column-scale bias and must not be corrected by lifting the stairs off the common floor."
+    }
+  ]
+}

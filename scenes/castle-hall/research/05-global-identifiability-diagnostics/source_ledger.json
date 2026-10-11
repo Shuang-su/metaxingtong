@@ -1,0 +1,63 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV1aw411T7ws/",
+  "source_event": "2023-11-10 19点场 回城堡咯",
+  "capture_environment": "current cloud browser only",
+  "decoded": [
+    1920,
+    1080
+  ],
+  "viewport": [
+    1180,
+    757
+  ],
+  "fixed_core_crop": [
+    0,
+    27,
+    1180,
+    691
+  ],
+  "core_size": [
+    1180,
+    664
+  ],
+  "not_native_1920_export": true,
+  "static_inputs": "inputs_sha256.json",
+  "heldout_image": "inputs/hall_C_4426_paused_core.png",
+  "heldout_policy": "coverage viewing only;no points/fits/validation leaked into training",
+  "sequences": [
+    {
+      "directory": "inputs/motion_right_to_front_verified",
+      "role": "used continuous sequence;155 original screenshots archived",
+      "n_screenshots": 155,
+      "first_before": 4525.047337,
+      "last_after": 4538.699566,
+      "metadata_path": "inputs/motion_right_to_front_verified/metadata.json"
+    },
+    {
+      "directory": "inputs/motion_4527_continuous",
+      "role": "auxiliary frontal run;not fitted;metadata/contact only archived",
+      "n_screenshots": 100,
+      "first_before": 4537.792118,
+      "last_after": 4547.508157,
+      "metadata_path": "inputs/motion_4527_continuous/metadata.json"
+    },
+    {
+      "directory": "inputs/motion_side_front_active",
+      "role": "auxiliary frontal run;not fitted;metadata only archived",
+      "n_screenshots": 110,
+      "first_before": 4538.67107,
+      "last_after": 4549.572628,
+      "metadata_path": "inputs/motion_side_front_active/metadata.json"
+    },
+    {
+      "directory": "inputs/motion_side_to_front",
+      "role": "excluded paused duplicate batch;one time only;metadata only archived",
+      "n_screenshots": 130,
+      "first_before": 4527.668652,
+      "last_after": 4527.668652,
+      "metadata_path": "inputs/motion_side_to_front/metadata.json"
+    }
+  ],
+  "accepted_model_update": false,
+  "source_acceptance": false
+}

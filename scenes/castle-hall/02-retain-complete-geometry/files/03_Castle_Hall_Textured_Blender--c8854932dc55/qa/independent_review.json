@@ -1,0 +1,149 @@
+{
+  "candidate": "/workspace/scratch/fa58bfcf0425/castle_hall_fullroom/models/Xingtong_Castle_Hall_FullRoom.blend",
+  "geometry_hash": "6ed0286538f9092944d7307e7781a11d115f4d3914f1b9ef61995ad37e969be6",
+  "reviewer": "Independent read-only geometry inspection",
+  "scope": "PASS for final complete-room geometry, independent GLB portability and reviewed multiview inspection. Source likeness remains approximate with substantial visible residuals.",
+  "units": "Model units with inferred scale, not measured metres",
+  "method": "Evaluated actual saved Blender meshes. Dense BVH rays use architectural envelope separately from furniture, sampling uniform grid, 0.0001/0.001/0.005 inward perimeter bands and mesh-bounds seams ±0.0001/0.001/0.005. Separate object-only semantic probes verify that intended central window aperture is not opaque plaster.",
+  "dense_rays": {
+    "x-": {
+      "count": 149624,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "x+": {
+      "count": 149624,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "y-": {
+      "count": 139163,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "y+": {
+      "count": 139163,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "z-": {
+      "count": 207208,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    },
+    "z+": {
+      "count": 207208,
+      "missing_n": 0,
+      "expected_open_door_n": 0
+    }
+  },
+  "mesh_audit": {
+    "meshes": 1597,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "zero_area_faces": 0,
+    "nonpositive_volumes": [],
+    "hidden": [],
+    "hidden_collections": []
+  },
+  "semantic_arch_aperture": {
+    "probe_count": 43,
+    "opaque_wall_hits": 0,
+    "glazing_hits": 43,
+    "trim_obstructions": 0
+  },
+  "source_camera_comparison": [
+    {
+      "name": "MATCH_A_45m15_empty_aisle",
+      "max_matrix_error": 0.0,
+      "oldprops": {
+        "lens": 41.0,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": -0.0430000014603138
+      },
+      "newprops": {
+        "lens": 41.0,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": -0.0430000014603138
+      }
+    },
+    {
+      "name": "MATCH_B_75m07_oblique",
+      "max_matrix_error": 0.0,
+      "oldprops": {
+        "lens": 38.0,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": -0.019999999552965164
+      },
+      "newprops": {
+        "lens": 38.0,
+        "sensor_width": 36.0,
+        "sensor_fit": "AUTO",
+        "shift_x": 0.0,
+        "shift_y": -0.019999999552965164
+      }
+    }
+  ],
+  "glb_independent_reimport": {
+    "blend": "castle_hall_fullroom/models/Xingtong_Castle_Hall_FullRoom.blend",
+    "glb": "castle_hall_fullroom/models/Xingtong_Castle_Hall_FullRoom.glb",
+    "source_mesh_count": 1597,
+    "imported_mesh_count": 1597,
+    "missing": [],
+    "extra": [],
+    "maximum_bidirectional_vertex_error": 0.0,
+    "maximum_relative_area_error": 0.0,
+    "triangle_count_changes": [],
+    "without_uv": []
+  },
+  "fixed_issues": [
+    "Far-wall Boolean initially retained coplanar plaster faces across the central glazing. Builder rebuilt with outward cutter normals. Independent shell-only rays now hit no plaster throughout the intended arch; preview is uniform blue.",
+    "Two ceiling-panel beads protruded beyond rear façade to Y=-14.8. Clipped to Y=-11.9; exterior preflight confirms gone.",
+    "Overlapping side/rear/far wall faces caused black exterior corner bands. Sidewall ends trimmed to Y=-12 and 22; exterior preflight now clean."
+  ],
+  "interpretation": "The scene is a multi-component solid assembly, not one boolean-unioned watertight mesh. Near-surface rays starting inside solid trim can encounter outward normals, not evidence of inverted mesh normals. Architectural completeness does not establish original unseen layout or full source-image accuracy.",
+  "blend_sha256": "b04ebc7091ce5bc6a2c8419a634effc5e6999f68a8db68701a832e69259a174e",
+  "semantic_all_apertures": {
+    "side_-1": {
+      "count": 7564,
+      "opaque_wall_hits": []
+    },
+    "side_1": {
+      "count": 7564,
+      "opaque_wall_hits": []
+    },
+    "central_arch": {
+      "count": 8225,
+      "opaque_wall_hits": []
+    },
+    "rear_door_wall_aperture": {
+      "count": 1891,
+      "opaque_wall_hits": []
+    },
+    "inconsistent_winding": []
+  },
+  "visual_review": {
+    "inspected": [
+      "Fresh actual-source A/B/C comparisons with direct 50% raw-render overlays",
+      "Final source A/B/C renders",
+      "Final entry/reverse/side/ceiling images",
+      "Final exterior closed-envelope image",
+      "Final physically cut diagnostic view",
+      "Final six-view complete-room inspection sheet"
+    ],
+    "source_accuracy": "Substantial inherited differences remain in column/window proportions, prop size/distribution, material and lighting. A/B/C views are not independently calibrated reconstruction baselines. Complete-room geometry does not mean exact source likeness.",
+    "remaining": "None within this geometry QA assignment",
+    "result": "No remaining geometry blocker found. Central arch is clean; rear wall/door and ceiling complete; exterior protrusions/coplanar corner bands fixed; closed enclosure and room layout read consistently.",
+    "render_provenance": {
+      "actual_blend_sha256": "b04ebc7091ce5bc6a2c8419a634effc5e6999f68a8db68701a832e69259a174e",
+      "all_nine_reports_match_actual_file": true,
+      "ordinary_views_geometry_changes": "None; only diagnostic cutaway uses a physically clipped temporary copy."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "blend_sha256": "4340c968751af0b439b1daed3b29ba3cfd7da246b2356670ed36ef3c4b348474",
+  "glb_sha256": "dd29ddb8fa96db247ce2f2ac5b0fb7fd44b0e2d9e1445e5ef6609a85fe796817",
+  "method": "Compare each mesh by name; triangulate source and imported mesh, match triangles via sorted world-position corners rounded to 1e-5 model units; compare corresponding per-loop UV pairs in that corner order, independent of vertex/index reorder. All UV layers compared by layer index; names recorded but not required. Duplicate spatial triangles matched to nearest unused UV tuple.",
+  "uv_absolute_tolerance": 1e-05,
+  "world_position_key_precision": 1e-05,
+  "meshes_compared": 1609,
+  "triangles_compared": 278324,
+  "uv_corner_pairs_compared": 834972,
+  "max_uv_absolute_component_error": 2.384185791015625e-07,
+  "missing_meshes": [],
+  "extra_meshes": [],
+  "layer_count_mismatches": [],
+  "geometry_triangle_key_mismatches": [],
+  "uv_mismatches": [],
+  "source_uv_layer_count_histogram": {
+    "1": 1609
+  },
+  "imported_uv_layer_count_histogram": {
+    "1": 1609
+  },
+  "pass": true,
+  "scope": "UV data round-trip only. Does not validate source imagery, texture quality, material appearance, or hidden geometry."
+}
