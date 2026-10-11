@@ -1,0 +1,63 @@
+{
+  "status": "STRUCTURAL_QA_PASSED_WITH_DISCLOSED_LIMITS",
+  "source_reconstruction": "NOT_PRECISE_SOURCE_RECONSTRUCTION",
+  "room_bounds_model_units": {
+    "x": [
+      -3.52,
+      3.92
+    ],
+    "y": [
+      -7.7,
+      -0.011
+    ],
+    "z": [
+      0,
+      3.3
+    ]
+  },
+  "source": "BV1mx4y1z7oY",
+  "reviewed_images": [
+    "01–08 independent ordinary interior views",
+    "09 doorway reveal",
+    "10 window reveal",
+    "11 wall ceiling corner",
+    "12 closed exterior shell",
+    "13 separate cutaway copy",
+    "source front and same-axis close material/white comparisons",
+    "all four material/white 50-percent direct overlays"
+  ],
+  "geometry_summary": {
+    "dense_wall_corner_rays": 9324,
+    "floor_ceiling_perimeter_rays": 1608,
+    "opening_grid_rays": 703,
+    "entrance_rays": 78,
+    "all_passed": true,
+    "each_area_disk_boundary_samples": 4096,
+    "minimum_light_boundary_clearance": 0.18899998807907104,
+    "mesh_normal_degenerate_nonmanifold_errors": 0,
+    "hidden_objects_or_animation_or_render_pre_handlers": 0
+  },
+  "glb_summary": {
+    "objects_each": 1104,
+    "triangles_each": 210690,
+    "maximum_world_vertex_error": 2.920019426255749e-07,
+    "mapped_triangles_identical": true,
+    "material_white_geometry_identical": true
+  },
+  "limits": [
+    "模型尺度非实测米制；前墙/门窗/围护深度均为推定，不证明与其他房间连接。",
+    "七个手工结构点RMSE约30.12px，仅稀疏正面点；近景同轴缩放，不是独立侧面证据；精确源图还原未达标。",
+    "画框/床面投影/柜体相对位置仍有偏差；植物、床品、画作、光照并不精确一致。",
+    "左柜脚穿入软地毯约0.02模型单位；其余主要支撑接触正常。地毯跨木条窄缝存在最高约0.008的局部间隙。",
+    "推定延长地板在y约-5.55接续处可见锯齿木条端/裸木色基底；底板实体连续，不是楼板孔洞。",
+    "外壳图光照较暗，能辨门窗洞与围护；剖切图明确为独立删墙顶副本，不用于普通或源图渲染。",
+    "检查是指定几何与抽样路径的可复現QA，不是完整建筑规范或施工碰撞认证。"
+  ],
+  "sha256": {
+    "01_bedroom_material.blend": "0f2cf9f9c91ed63686309aa93daebe27d12b19b7053cba8d8b7982c61fcd75a6",
+    "02_bedroom_white.blend": "543917e80a7e30b6ec46d3b519cf95a42faa4f18aa57381058b58cefc1c06521",
+    "03_bedroom_material.glb": "b0a54d7fe4835500b8a3274d683decb5d497d97d92ad4503ecf05ccd5a110fa9",
+    "04_bedroom_white.glb": "199c7c0e141e4d54ccf088f9d8a292a6b497cb7e52d3591d589636bd0eb3c79d",
+    "05_bedroom_CUTAWAY_INFERRED.blend": "12d8a78baf943f2539b3290770221aeccc3ab1e4f8770ddde0c2e4c48d2f3f3b"
+  }
+}
