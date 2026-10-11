@@ -1,0 +1,5 @@
+apply_single_table_delta.py接受已核SHA的r05C材质或白模BLEND和输出文件路径，按随包manifest只改一张桌，已实际在当前Blender4.3.2执行重建测试。
+render_fixed_cameras.py接受已加载的BLEND和输出目录，复用历史相机，原生参考尚未重新标定，输出不得作为来源已通过。
+check_roundtrip.py和roundtrip_geometry.py从本目录上级读取两个候选GLB/BLEND，执行真实回导和全网格坐标容差检查。
+原模型从私有仓库恢复：固定提交7e28aa2e7c9bc900f59deca964d321f76294913e，scenes/train/historical-supplements/r05c-original-checkpoint/models；身份及SHA见recovered_baseline_identity.json。
+生成的GLB和BLEND均打包纹理，不依赖脚本的工作路径；textures目录另给同字节原纹理。

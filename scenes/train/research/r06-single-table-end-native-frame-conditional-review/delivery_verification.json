@@ -1,0 +1,64 @@
+{
+  "frozen_at_utc": "2026-10-11T20:54:00Z",
+  "source_checks": [
+    {
+      "file": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "verified": true
+    },
+    {
+      "file": "source_evidence/frames/train-side-rows-BV1fMP4ziEUd-t2694.677404-native.png",
+      "sha256": "572c046e396cec1e6c15e3c1686c4806fb93227bd37833df170742ca82f47cbf",
+      "verified": true
+    },
+    {
+      "file": "source_evidence/frames/train-door-wide-BV1fMP4ziEUd-t3593.084047-native.png",
+      "sha256": "06a7ee0c08b4c2cd220dd2aff97a4a7853b5ea4ee2862693c853a48fc0ebaa87",
+      "verified": true
+    },
+    {
+      "file": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "verified": true
+    },
+    {
+      "file": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "verified": true
+    },
+    {
+      "file": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "verified": true
+    }
+  ],
+  "camera_checks": [
+    {
+      "view": "A",
+      "old_new_camera_matrix_lens_exactly_equal": true,
+      "source_camera_calibrated": false
+    },
+    {
+      "view": "B",
+      "old_new_camera_matrix_lens_exactly_equal": true,
+      "source_camera_calibrated": false
+    },
+    {
+      "view": "D",
+      "old_new_camera_matrix_lens_exactly_equal": true,
+      "source_camera_calibrated": false
+    },
+    {
+      "view": "J",
+      "old_new_camera_matrix_lens_exactly_equal": true,
+      "source_camera_calibrated": false
+    }
+  ],
+  "inspection_views": 8,
+  "all_pngs_decode": true,
+  "normal_exception": "Original two door-window frames retain 8 zero corner normals; not fixed by this trial.",
+  "current_changed": false,
+  "source_fidelity_accepted": false,
+  "all_source_camera_regression_complete": false,
+  "scope": "Four inherited r05 source-camera hypotheses, conditional against new native frames; side/doorwide not camera-calibrated; older historical camera set not exhaustively rerun."
+}

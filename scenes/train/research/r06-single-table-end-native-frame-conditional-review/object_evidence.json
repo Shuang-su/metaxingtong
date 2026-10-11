@@ -1,0 +1,83 @@
+{
+  "source": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+  "source_pixels": [
+    1920,
+    1080
+  ],
+  "marks": "manual diagnostic endpoints ±5px, not calibrated geometry measurements",
+  "observations": [
+    {
+      "id": "SRC-A-left-near-table",
+      "file": "frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "time": 843.863376,
+      "crop": [
+        240,
+        930,
+        690,
+        1080
+      ],
+      "aisle_edge_endpoints_approx": [
+        [
+          529,
+          1039
+        ],
+        [
+          644,
+          990
+        ]
+      ],
+      "uncertainty_px": 5,
+      "adjacency": "Nearest visible left-side tabletop, between cropped green foreground backrest at image left and broad mid-left green backrest; before the smaller tables toward end door.",
+      "model_correspondence": "T-L-01 under inherited R05_HD_A camera; conditional, absolute source bay not established"
+    },
+    {
+      "id": "SRC-B-left-table",
+      "file": "frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "time": 925.690233,
+      "crop": [
+        0,
+        680,
+        450,
+        850
+      ],
+      "aisle_edge_endpoints_approx": [
+        [
+          216,
+          784
+        ],
+        [
+          351,
+          750
+        ]
+      ],
+      "uncertainty_px": 5,
+      "adjacency": "Left-edge tabletop below left green backrest, to image-left of the character and large right-side green backrest.",
+      "model_correspondence": "T-L-01 under inherited R05_HD_B camera; conditional, no continuous-motion proof connecting to A"
+    },
+    {
+      "id": "SRC-W-left-foreground-table",
+      "file": "frames/train-door-wide-BV1fMP4ziEUd-t3593.084047-native.png",
+      "time": 3593.084047,
+      "crop": [
+        0,
+        900,
+        780,
+        1080
+      ],
+      "aisle_edge_endpoints_approx": [
+        [
+          650,
+          1078
+        ],
+        [
+          712,
+          957
+        ]
+      ],
+      "uncertainty_px": 5,
+      "adjacency": "Left foreground tabletop immediately before nearest left green backrest; opposing right foreground tabletop also has straight edges.",
+      "model_correspondence": "Same visible tabletop profile class only; absolute bay and equality to A/B instance unconfirmed"
+    }
+  ],
+  "identity_limits": "A, B and wide source observations remain separate IDs. Similarity and inherited projection do not prove same absolute bay. Only one model instance is changed for a profile test; do not propagate to all 12 tables based on this candidate."
+}
