@@ -1,0 +1,464 @@
+{
+  "sample_roles": {
+    "shadow_band_candidates": [
+      1,
+      2,
+      4,
+      7,
+      8,
+      9
+    ],
+    "sunlit_controls": [
+      3,
+      5,
+      6,
+      10
+    ],
+    "positions_changed": false,
+    "new_points_added": false
+  },
+  "scope": "Read-only frozen green main scene. Pixel samples map into existing model with fixed legacy camera. Not a source-camera calibration or proof that source geometry and current model coincide.",
+  "ray_direction_to_sun": [
+    0.04488719627261162,
+    -0.6171989440917969,
+    0.7855256795883179
+  ],
+  "probes": [
+    {
+      "label": "point_01",
+      "probe_id": 1,
+      "role": "shadow_band_candidate",
+      "original_test_label": "diagonal_left_near",
+      "role_correction": "Shadow-band candidate only; transverse versus longitudinal caster identity is not assumed.",
+      "source_pixel": [
+        110,
+        1012
+      ],
+      "camera_ray_hits": "Deck_Continuation_UnseenExtent_02",
+      "hit_world": [
+        -3.3124427795410156,
+        -3.324819803237915,
+        -1.7136335372924805e-07
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -3.0398800373077393,
+        -7.07255744934082,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_02",
+      "probe_id": 2,
+      "role": "shadow_band_candidate",
+      "original_test_label": "diagonal_left_mid",
+      "role_correction": "Shadow-band candidate only; transverse versus longitudinal caster identity is not assumed.",
+      "source_pixel": [
+        215,
+        938
+      ],
+      "camera_ray_hits": "Deck_board.006",
+      "hit_world": [
+        -3.339416027069092,
+        -1.9257735013961792,
+        -5.21540641784668e-08
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -3.0668532848358154,
+        -5.673511028289795,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_03",
+      "probe_id": 3,
+      "role": "sunlit_control",
+      "original_test_label": "diagonal_centre_near",
+      "role_correction": "Originally mislabelled as a diagonal-shadow point; independently checked to be sunlit; position retained unchanged.",
+      "source_pixel": [
+        464,
+        1036
+      ],
+      "camera_ray_hits": "Deck_Continuation_UnseenExtent_04",
+      "hit_world": [
+        -1.9821746349334717,
+        -3.7262446880340576,
+        -5.21540641784668e-08
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -1.7096118927001953,
+        -7.473981857299805,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_04",
+      "probe_id": 4,
+      "role": "shadow_band_candidate",
+      "original_test_label": "diagonal_centre_mid",
+      "role_correction": "Shadow-band candidate only; transverse versus longitudinal caster identity is not assumed.",
+      "source_pixel": [
+        530,
+        948
+      ],
+      "camera_ray_hits": "Deck_board.005",
+      "hit_world": [
+        -2.001049280166626,
+        -2.168933391571045,
+        -2.905726432800293e-07
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -1.7284865379333496,
+        -5.916670799255371,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_05",
+      "probe_id": 5,
+      "role": "sunlit_control",
+      "original_test_label": "diagonal_right_near",
+      "role_correction": "Originally mislabelled as a diagonal-shadow point; independently checked to be sunlit; position retained unchanged.",
+      "source_pixel": [
+        785,
+        1038
+      ],
+      "camera_ray_hits": "Deck_Continuation_UnseenExtent_04",
+      "hit_world": [
+        -0.8862085938453674,
+        -3.779026746749878,
+        -5.21540641784668e-08
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -0.6136459112167358,
+        -7.526763916015625,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_06",
+      "probe_id": 6,
+      "role": "sunlit_control",
+      "original_test_label": "diagonal_right_mid",
+      "role_correction": "Originally mislabelled as a diagonal-shadow point; independently checked to be sunlit; position retained unchanged.",
+      "source_pixel": [
+        825,
+        970
+      ],
+      "camera_ray_hits": "Deck_board.002",
+      "hit_world": [
+        -0.7900583148002625,
+        -2.63633131980896,
+        -1.7136335372924805e-07
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -0.5174956321716309,
+        -6.384068489074707,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_07",
+      "probe_id": 7,
+      "role": "shadow_band_candidate",
+      "original_test_label": "horizontal_band_left",
+      "role_correction": "Shadow-band candidate only; transverse versus longitudinal caster identity is not assumed.",
+      "source_pixel": [
+        250,
+        951
+      ],
+      "camera_ray_hits": "Deck_board.004",
+      "hit_world": [
+        -3.1188273429870605,
+        -2.208045244216919,
+        -1.7136335372924805e-07
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -2.846264600753784,
+        -5.955782890319824,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_08",
+      "probe_id": 8,
+      "role": "shadow_band_candidate",
+      "original_test_label": "horizontal_band_mid",
+      "role_correction": "Shadow-band candidate only; transverse versus longitudinal caster identity is not assumed.",
+      "source_pixel": [
+        600,
+        951
+      ],
+      "camera_ray_hits": "Deck_board.004",
+      "hit_world": [
+        -1.7093279361724854,
+        -2.2377827167510986,
+        -5.21540641784668e-08
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -1.436765193939209,
+        -5.985520362854004,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_09",
+      "probe_id": 9,
+      "role": "shadow_band_candidate",
+      "original_test_label": "horizontal_band_right",
+      "role_correction": "Shadow-band candidate only; transverse versus longitudinal caster identity is not assumed.",
+      "source_pixel": [
+        1130,
+        951
+      ],
+      "camera_ray_hits": "Deck_board.004",
+      "hit_world": [
+        0.42505764961242676,
+        -2.282816171646118,
+        6.705522537231445e-08
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        0.6976203918457031,
+        -6.030553817749023,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    },
+    {
+      "label": "point_10",
+      "probe_id": 10,
+      "role": "sunlit_control",
+      "original_test_label": "adjacent_sunlit_control",
+      "role_correction": "Original sunlit control.",
+      "source_pixel": [
+        350,
+        1015
+      ],
+      "camera_ray_hits": "Deck_Continuation_UnseenExtent_02",
+      "hit_world": [
+        -2.4459171295166016,
+        -3.3916103839874268,
+        -1.7136335372924805e-07
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "existing_grid_sun_occlusion": false,
+      "grid_hit_world": null,
+      "any_scene_occluder_toward_sun": null,
+      "other_hit_world": null,
+      "other_hit_hidden_render": null,
+      "ray_at_grid_bottom_height": [
+        -2.173354387283325,
+        -7.139348030090332,
+        4.769845962524414
+      ],
+      "at_grid_height_within_current_grid_xy_bbox": false
+    }
+  ],
+  "lights": [
+    {
+      "name": "Large_soft_sky",
+      "type": "AREA",
+      "energy": 450.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": [
+        0.7088281512260437,
+        -1.1093240459558729e-07,
+        -0.5404195189476013
+      ],
+      "location": [
+        -3.0,
+        -4.0,
+        8.0
+      ],
+      "hide_render": false,
+      "angle": null
+    },
+    {
+      "name": "Front_fill",
+      "type": "AREA",
+      "energy": 150.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation": [
+        1.2365314960479736,
+        3.0548008567166107e-10,
+        0.519146203994751
+      ],
+      "location": [
+        4.0,
+        -6.0,
+        4.0
+      ],
+      "hide_render": false,
+      "angle": null
+    },
+    {
+      "name": "Sun",
+      "type": "SUN",
+      "energy": 12.0,
+      "color": [
+        1.0,
+        0.9399999976158142,
+        0.8700000047683716
+      ],
+      "rotation": [
+        0.6672510504722595,
+        7.3494890173719796e-09,
+        0.07259944081306458
+      ],
+      "location": [
+        -4.0,
+        -6.0,
+        7.0
+      ],
+      "hide_render": false,
+      "angle": 0.00930000003427267
+    }
+  ],
+  "world_background": [
+    {
+      "node": "Background",
+      "color": [
+        0.2800000011920929,
+        0.5199999809265137,
+        0.75,
+        1.0
+      ],
+      "strength": 0.18000000715255737
+    },
+    {
+      "node": "Background.001",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "strength": 1.100000023841858
+    }
+  ],
+  "conclusion": "All conclusions must distinguish absence of direct-sun geometric occlusion from the contrast effect of area/world fill. No lights, geometry, materials or per-camera visibility were changed.",
+  "direction_only_necessary_envelope_condition": {
+    "test_count": 6,
+    "sun_to_source_y_over_z_current": -0.7857145350299197,
+    "y_over_z_interval_to_intersect_all_six_grid_y_bounding_envelopes": [
+      0.5945306669518327,
+      1.1897183858625466
+    ],
+    "not_sufficient_for_actual_bars": true,
+    "rear_fascia_front_normal": [
+      0,
+      -1,
+      0
+    ],
+    "conflict": "Positive sun-ray Y required by the current grid Y envelope and six selected shadow-band candidates places the rear fascia front on the non-sunlit side. This rules out a small single-sun adjustment as a demonstrated complete repair; multi-light or different shared depth remains unverified."
+  }
+}
