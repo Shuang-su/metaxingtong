@@ -1,0 +1,811 @@
+{
+  "image_count": 32,
+  "final_images": 16,
+  "historical_diagnostic_images": 16,
+  "images": [
+    {
+      "file": "references/Sofa_boundary_playback_6626p598.jpg",
+      "sha256": "9e49abf97bf9318470bedad5bdaff67275a90ced9f56facf600c64ac7162b186",
+      "bytes": 123559,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "new_hd_boundary_source",
+      "caption": "最终18沙发+8推断附件候选；边界源截图；furnished；1920×1080解码，截图1180×757；来源时间精度为前/后读取。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "none",
+      "source_reference": "references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "renders/fixed_01_front_furnished.png",
+      "sha256": "ca824c24b8aaa0ff9d324002176dad11db971f4c049aa95a0af815ef71fb72b2",
+      "bytes": 1184241,
+      "pixels": [
+        1180,
+        664
+      ],
+      "role": "fixed_camera_state_render_raw",
+      "caption": "最终18沙发+8推断附件候选；固定已有01_front机位，显式furnished状态；不是源机位还原。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Unmodified Cycles render",
+      "source_reference": "references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/furnished_raw_canvas.png",
+      "sha256": "2d93a9863bcd8fcad1c6c1cf1ae8b97b3873653a3d83df280515dc82a576c891",
+      "bytes": 1049971,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "render_canvas_raw",
+      "caption": "最终18沙发+8推断附件候选；furnished诊断渲染嵌入源截图尺寸；未拟合对齐。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Black padding only; paste at x0 y27 from DOM picture y26.625 rounded; no resize/crop/warp",
+      "source_reference": "references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "renders/fixed_01_front_furnished.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/furnished_raw_overlay50.png",
+      "sha256": "65181f23dd406b1f342b491a3510f838c7fcb94b61445a596894c385becf523d",
+      "bytes": 1128985,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "direct_50pct_overlay_raw",
+      "caption": "最终18沙发+8推断附件候选；furnished源图与固定未校准机位渲染直接50%叠图；机位/尺度差异保留，不能作为来源还原通过。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Exact 50% blend; no feature fitting or image warp",
+      "source_reference": "references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "references/Sofa_boundary_playback_6626p598.jpg",
+        "comparisons/furnished_raw_canvas.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "renders/fixed_01_front_furnished_denoised.png",
+      "sha256": "b1ba2f907ea3e7a61b0f9c11792d7dbe5c9db997ea8a3d44b154a42fb824645e",
+      "bytes": 573543,
+      "pixels": [
+        1180,
+        664
+      ],
+      "role": "fixed_camera_state_render_denoised",
+      "caption": "最终18沙发+8推断附件候选；固定已有01_front机位，显式furnished状态；不是源机位还原。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Standalone OIDN; no geometric transform",
+      "source_reference": "references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/furnished_denoised_canvas.png",
+      "sha256": "5b3145f3af1d20d967079dff79a7112cf0ecf5975fa295aa4c557a8774b7ec05",
+      "bytes": 575317,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "render_canvas_denoised",
+      "caption": "最终18沙发+8推断附件候选；furnished诊断渲染嵌入源截图尺寸；未拟合对齐。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Black padding only; paste at x0 y27 from DOM picture y26.625 rounded; no resize/crop/warp",
+      "source_reference": "references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "renders/fixed_01_front_furnished_denoised.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/furnished_denoised_overlay50.png",
+      "sha256": "1ef44f807d652b8cb509edfba2f9cadc954ed30906ddf91ebe527fc2d80a9fc8",
+      "bytes": 912852,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "direct_50pct_overlay_denoised",
+      "caption": "最终18沙发+8推断附件候选；furnished源图与固定未校准机位渲染直接50%叠图；机位/尺度差异保留，不能作为来源还原通过。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Exact 50% blend; no feature fitting or image warp",
+      "source_reference": "references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "references/Sofa_boundary_playback_6626p598.jpg",
+        "comparisons/furnished_denoised_canvas.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "references/Sofa_boundary_playback_6627p319.jpg",
+      "sha256": "6804246d2e994b0bbfe41f8199350df7c887c2b65f20e74bf1fb989bfe67ed6d",
+      "bytes": 121602,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "new_hd_boundary_source",
+      "caption": "最终18沙发+8推断附件候选；边界源截图；unfurnished；1920×1080解码，截图1180×757；来源时间精度为前/后读取。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "none",
+      "source_reference": "references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "renders/fixed_01_front_unfurnished.png",
+      "sha256": "048d17138f2b7044997fe9a4c9ef494617bb0e6f772a75ac314fe665575b3503",
+      "bytes": 1172126,
+      "pixels": [
+        1180,
+        664
+      ],
+      "role": "fixed_camera_state_render_raw",
+      "caption": "最终18沙发+8推断附件候选；固定已有01_front机位，显式unfurnished状态；不是源机位还原。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Unmodified Cycles render",
+      "source_reference": "references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/unfurnished_raw_canvas.png",
+      "sha256": "269797b8ebe36b56faec235a921ba8b8da91f5ee48ae723b09a0f4ef879a9ae0",
+      "bytes": 1036522,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "render_canvas_raw",
+      "caption": "最终18沙发+8推断附件候选；unfurnished诊断渲染嵌入源截图尺寸；未拟合对齐。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Black padding only; paste at x0 y27 from DOM picture y26.625 rounded; no resize/crop/warp",
+      "source_reference": "references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "renders/fixed_01_front_unfurnished.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/unfurnished_raw_overlay50.png",
+      "sha256": "fc991bc250015828a92339c5b0652af132cb9e53c97b37988947c6e7dc241354",
+      "bytes": 1116904,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "direct_50pct_overlay_raw",
+      "caption": "最终18沙发+8推断附件候选；unfurnished源图与固定未校准机位渲染直接50%叠图；机位/尺度差异保留，不能作为来源还原通过。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Exact 50% blend; no feature fitting or image warp",
+      "source_reference": "references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "references/Sofa_boundary_playback_6627p319.jpg",
+        "comparisons/unfurnished_raw_canvas.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "renders/fixed_01_front_unfurnished_denoised.png",
+      "sha256": "b9b1d43aadef7d6d94c38e6a363d59c897f480255dc9ab87b9e57c85584fd12c",
+      "bytes": 572283,
+      "pixels": [
+        1180,
+        664
+      ],
+      "role": "fixed_camera_state_render_denoised",
+      "caption": "最终18沙发+8推断附件候选；固定已有01_front机位，显式unfurnished状态；不是源机位还原。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Standalone OIDN; no geometric transform",
+      "source_reference": "references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/unfurnished_denoised_canvas.png",
+      "sha256": "3bb64fdae582434d31ea79fe8d90984a157e7b9240f8201279cc30c98339cd51",
+      "bytes": 574031,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "render_canvas_denoised",
+      "caption": "最终18沙发+8推断附件候选；unfurnished诊断渲染嵌入源截图尺寸；未拟合对齐。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Black padding only; paste at x0 y27 from DOM picture y26.625 rounded; no resize/crop/warp",
+      "source_reference": "references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "renders/fixed_01_front_unfurnished_denoised.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/unfurnished_denoised_overlay50.png",
+      "sha256": "64d1f7154ca9b74c1a03e7be4121eb597e5128279f3848967d7cd930dfa3e591",
+      "bytes": 900454,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "direct_50pct_overlay_denoised",
+      "caption": "最终18沙发+8推断附件候选；unfurnished源图与固定未校准机位渲染直接50%叠图；机位/尺度差异保留，不能作为来源还原通过。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Exact 50% blend; no feature fitting or image warp",
+      "source_reference": "references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "references/Sofa_boundary_playback_6627p319.jpg",
+        "comparisons/unfurnished_denoised_canvas.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/Source_fixed_camera_state_overlay_board.jpg",
+      "sha256": "a3592ceb05d84455ed2ecf4ec6caa834504f468093433639e30e5f8c0a03b5e8",
+      "bytes": 604816,
+      "pixels": [
+        1770,
+        972
+      ],
+      "role": "source_render_overlay_board",
+      "caption": "最终18沙发+8推断附件候选；两状态来源/固定未校准机位/直接50%叠图总览；只证明显式状态规则。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Uniform downscale and external labels; source originals retained",
+      "parents": [
+        "references/Sofa_boundary_playback_6626p598.jpg",
+        "renders/fixed_01_front_furnished.png",
+        "comparisons/furnished_raw_canvas.png",
+        "comparisons/furnished_raw_overlay50.png",
+        "renders/fixed_01_front_furnished_denoised.png",
+        "comparisons/furnished_denoised_canvas.png",
+        "comparisons/furnished_denoised_overlay50.png",
+        "references/Sofa_boundary_playback_6627p319.jpg",
+        "renders/fixed_01_front_unfurnished.png",
+        "comparisons/unfurnished_raw_canvas.png",
+        "comparisons/unfurnished_raw_overlay50.png",
+        "renders/fixed_01_front_unfurnished_denoised.png",
+        "comparisons/unfurnished_denoised_canvas.png",
+        "comparisons/unfurnished_denoised_overlay50.png"
+      ],
+      "source_references": [
+        {
+          "file": "references/Sofa_boundary_playback_6626p598.jpg",
+          "before": 6626.597822,
+          "after": 6626.686632
+        },
+        {
+          "file": "references/Sofa_boundary_playback_6627p319.jpg",
+          "before": 6627.31912,
+          "after": 6627.396357
+        }
+      ],
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "comparisons/Fixed_camera_state_pair.jpg",
+      "sha256": "4b801e2c04cf33c6ffe649ce50159a9245b063f0e053de7905f0441f28893fc9",
+      "bytes": 159853,
+      "pixels": [
+        1180,
+        430
+      ],
+      "role": "render_only_state_pair",
+      "caption": "最终18沙发+8推断附件候选；渲染间固定机位两态对照；没有对应精确源机位。",
+      "source_url": null,
+      "source_camera_calibrated": false,
+      "transform": "Uniform downscale and external labels",
+      "parents": [
+        "renders/fixed_01_front_furnished_denoised.png",
+        "renders/fixed_01_front_unfurnished_denoised.png"
+      ],
+      "revision": "final_18_plus_8"
+    },
+    {
+      "file": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+      "sha256": "9e49abf97bf9318470bedad5bdaff67275a90ced9f56facf600c64ac7162b186",
+      "bytes": 123559,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "new_hd_boundary_source",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；边界源截图；furnished；1920×1080解码，截图1180×757；来源时间精度为前/后读取。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "none",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/renders/fixed_01_front_furnished.png",
+      "sha256": "c19b548e2e167d90d437f3b86163addd2319609dc0e1685bc9e1b5484607fec7",
+      "bytes": 1184241,
+      "pixels": [
+        1180,
+        664
+      ],
+      "role": "fixed_camera_state_render_raw",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；固定已有01_front机位，显式furnished状态；不是源机位还原。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Unmodified Cycles render",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/furnished_raw_canvas.png",
+      "sha256": "2d93a9863bcd8fcad1c6c1cf1ae8b97b3873653a3d83df280515dc82a576c891",
+      "bytes": 1049971,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "render_canvas_raw",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；furnished诊断渲染嵌入源截图尺寸；未拟合对齐。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Black padding only; paste at x0 y27 from DOM picture y26.625 rounded; no resize/crop/warp",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "historical_18_target_diagnostic/renders/fixed_01_front_furnished.png"
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/furnished_raw_overlay50.png",
+      "sha256": "65181f23dd406b1f342b491a3510f838c7fcb94b61445a596894c385becf523d",
+      "bytes": 1128985,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "direct_50pct_overlay_raw",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；furnished源图与固定未校准机位渲染直接50%叠图；机位/尺度差异保留，不能作为来源还原通过。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Exact 50% blend; no feature fitting or image warp",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+        "historical_18_target_diagnostic/comparisons/furnished_raw_canvas.png"
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/renders/fixed_01_front_furnished_denoised.png",
+      "sha256": "b1ba2f907ea3e7a61b0f9c11792d7dbe5c9db997ea8a3d44b154a42fb824645e",
+      "bytes": 573543,
+      "pixels": [
+        1180,
+        664
+      ],
+      "role": "fixed_camera_state_render_denoised",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；固定已有01_front机位，显式furnished状态；不是源机位还原。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Standalone OIDN; no geometric transform",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/furnished_denoised_canvas.png",
+      "sha256": "5b3145f3af1d20d967079dff79a7112cf0ecf5975fa295aa4c557a8774b7ec05",
+      "bytes": 575317,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "render_canvas_denoised",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；furnished诊断渲染嵌入源截图尺寸；未拟合对齐。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Black padding only; paste at x0 y27 from DOM picture y26.625 rounded; no resize/crop/warp",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "historical_18_target_diagnostic/renders/fixed_01_front_furnished_denoised.png"
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/furnished_denoised_overlay50.png",
+      "sha256": "1ef44f807d652b8cb509edfba2f9cadc954ed30906ddf91ebe527fc2d80a9fc8",
+      "bytes": 912852,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "direct_50pct_overlay_denoised",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；furnished源图与固定未校准机位渲染直接50%叠图；机位/尺度差异保留，不能作为来源还原通过。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Exact 50% blend; no feature fitting or image warp",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+      "source_video_before_seconds": 6626.597822,
+      "source_video_after_seconds": 6626.686632,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+        "historical_18_target_diagnostic/comparisons/furnished_denoised_canvas.png"
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+      "sha256": "6804246d2e994b0bbfe41f8199350df7c887c2b65f20e74bf1fb989bfe67ed6d",
+      "bytes": 121602,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "new_hd_boundary_source",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；边界源截图；unfurnished；1920×1080解码，截图1180×757；来源时间精度为前/后读取。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "none",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/renders/fixed_01_front_unfurnished.png",
+      "sha256": "78124e5cd41b2257d29056f3e7861674d677014d85042f4715861f11d5e33b0f",
+      "bytes": 1172637,
+      "pixels": [
+        1180,
+        664
+      ],
+      "role": "fixed_camera_state_render_raw",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；固定已有01_front机位，显式unfurnished状态；不是源机位还原。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Unmodified Cycles render",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/unfurnished_raw_canvas.png",
+      "sha256": "9eb78a5209e91d3014ae743f8ac932acbe36880faaa2f632ec1d195402d3144f",
+      "bytes": 1037155,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "render_canvas_raw",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；unfurnished诊断渲染嵌入源截图尺寸；未拟合对齐。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Black padding only; paste at x0 y27 from DOM picture y26.625 rounded; no resize/crop/warp",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "historical_18_target_diagnostic/renders/fixed_01_front_unfurnished.png"
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/unfurnished_raw_overlay50.png",
+      "sha256": "d3cb0fbc0d15e53ff4921539e6af09fd6a2f777afc9dac8912eb8a82a82e75d7",
+      "bytes": 1117419,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "direct_50pct_overlay_raw",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；unfurnished源图与固定未校准机位渲染直接50%叠图；机位/尺度差异保留，不能作为来源还原通过。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Exact 50% blend; no feature fitting or image warp",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+        "historical_18_target_diagnostic/comparisons/unfurnished_raw_canvas.png"
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/renders/fixed_01_front_unfurnished_denoised.png",
+      "sha256": "20eea1ce485a0ee9d6ba76ba72e7be912aa0e3c399552ad72633eee0069b02dd",
+      "bytes": 574568,
+      "pixels": [
+        1180,
+        664
+      ],
+      "role": "fixed_camera_state_render_denoised",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；固定已有01_front机位，显式unfurnished状态；不是源机位还原。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Standalone OIDN; no geometric transform",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/unfurnished_denoised_canvas.png",
+      "sha256": "7868e0fb355967a9985bda18b833db1c1f4e721b802bbcb98e8ba87058c3b33c",
+      "bytes": 576366,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "render_canvas_denoised",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；unfurnished诊断渲染嵌入源截图尺寸；未拟合对齐。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Black padding only; paste at x0 y27 from DOM picture y26.625 rounded; no resize/crop/warp",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "historical_18_target_diagnostic/renders/fixed_01_front_unfurnished_denoised.png"
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/unfurnished_denoised_overlay50.png",
+      "sha256": "c007bcbbf8b0639cf588b1750ce9a1a8bcd0fa2207a251699bd65c0148b0f892",
+      "bytes": 901688,
+      "pixels": [
+        1180,
+        757
+      ],
+      "role": "direct_50pct_overlay_denoised",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；unfurnished源图与固定未校准机位渲染直接50%叠图；机位/尺度差异保留，不能作为来源还原通过。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Exact 50% blend; no feature fitting or image warp",
+      "source_reference": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+      "source_video_before_seconds": 6627.31912,
+      "source_video_after_seconds": 6627.396357,
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "parents": [
+        "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+        "historical_18_target_diagnostic/comparisons/unfurnished_denoised_canvas.png"
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/Source_fixed_camera_state_overlay_board.jpg",
+      "sha256": "8e2e3c36880c93ca9b8dd6103de1adfe190d05cbf8b76e3c319b6b2f19c9bf32",
+      "bytes": 602724,
+      "pixels": [
+        1770,
+        972
+      ],
+      "role": "source_render_overlay_board",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；两状态来源/固定未校准机位/直接50%叠图总览；只证明显式状态规则。",
+      "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+      "source_camera_calibrated": false,
+      "transform": "Uniform downscale and external labels; source originals retained",
+      "parents": [
+        "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+        "historical_18_target_diagnostic/renders/fixed_01_front_furnished.png",
+        "historical_18_target_diagnostic/comparisons/furnished_raw_canvas.png",
+        "historical_18_target_diagnostic/comparisons/furnished_raw_overlay50.png",
+        "historical_18_target_diagnostic/renders/fixed_01_front_furnished_denoised.png",
+        "historical_18_target_diagnostic/comparisons/furnished_denoised_canvas.png",
+        "historical_18_target_diagnostic/comparisons/furnished_denoised_overlay50.png",
+        "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+        "historical_18_target_diagnostic/renders/fixed_01_front_unfurnished.png",
+        "historical_18_target_diagnostic/comparisons/unfurnished_raw_canvas.png",
+        "historical_18_target_diagnostic/comparisons/unfurnished_raw_overlay50.png",
+        "historical_18_target_diagnostic/renders/fixed_01_front_unfurnished_denoised.png",
+        "historical_18_target_diagnostic/comparisons/unfurnished_denoised_canvas.png",
+        "historical_18_target_diagnostic/comparisons/unfurnished_denoised_overlay50.png"
+      ],
+      "source_references": [
+        {
+          "file": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6626p598.jpg",
+          "before": 6626.597822,
+          "after": 6626.686632
+        },
+        {
+          "file": "historical_18_target_diagnostic/references/Sofa_boundary_playback_6627p319.jpg",
+          "before": 6627.31912,
+          "after": 6627.396357
+        }
+      ],
+      "source_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "revision": "historical_18_only"
+    },
+    {
+      "file": "historical_18_target_diagnostic/comparisons/Fixed_camera_state_pair.jpg",
+      "sha256": "da22110b512699a589dbb1ae69b073ec98773828d4ac48ae295446c57f513f5c",
+      "bytes": 158808,
+      "pixels": [
+        1180,
+        430
+      ],
+      "role": "render_only_state_pair",
+      "caption": "历史仅18沙发初稿，残垫问题已在最终候选修订；渲染间固定机位两态对照；没有对应精确源机位。",
+      "source_url": null,
+      "source_camera_calibrated": false,
+      "transform": "Uniform downscale and external labels",
+      "parents": [
+        "historical_18_target_diagnostic/renders/fixed_01_front_furnished_denoised.png",
+        "historical_18_target_diagnostic/renders/fixed_01_front_unfurnished_denoised.png"
+      ],
+      "revision": "historical_18_only"
+    }
+  ]
+}

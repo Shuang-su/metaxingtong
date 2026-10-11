@@ -1,0 +1,1410 @@
+{
+  "role": "fixed_visibility_regression",
+  "input_model": "/workspace/scratch/fa58bfcf0425/ktv_fullroom/source/restored/models/Xingtong_KTV_Textured.blend",
+  "input_sha256": "08aa390ad3dbb88d4a93bd88f9b0585ee39062c59829a2af303a42514fbc5098",
+  "output": "/workspace/scratch/fa58bfcf0425/ktv_fixed_visibility_20261010/renders/legacy_Telescope_Detail_fixed.png",
+  "blender_version": "4.3.2",
+  "camera": "DETAIL_Telescope_Lamp",
+  "camera_world_matrix": [
+    [
+      0.8753343820571899,
+      0.10617665946483612,
+      -0.4717162549495697,
+      -4.800000190734863
+    ],
+    [
+      -0.4835180640220642,
+      0.19221636652946472,
+      -0.8539690375328064,
+      -3.0999999046325684
+    ],
+    [
+      1.084071499235506e-09,
+      0.9755918383598328,
+      0.2195919156074524,
+      2.5999999046325684
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lens_mm": 50.0,
+  "sensor_width_mm": 36.0,
+  "shift": [
+    0.0,
+    0.0
+  ],
+  "resolution": [
+    1188,
+    668
+  ],
+  "samples": 48,
+  "seed": 20261010,
+  "threads": 2,
+  "use_denoising": false,
+  "geometry_edits": false,
+  "model_saved": false,
+  "visibility": {
+    "collections": {
+      "01_Visible_Stage_Patch": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "02_Inflated_Armchairs": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "03_Floor_Lamp": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "04_Telescope": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "05_Hanging_Silver_Stars": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "06_Stage_Lighting_Audio": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "07_Procedural_City_Approximation": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "08_Optional_Star_Companion": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "09_Optional_Moving_Balloon_Dog": {
+        "hide_render": true,
+        "hide_viewport": true
+      },
+      "10_Cameras_Studio_Lights": {
+        "hide_render": false,
+        "hide_viewport": false
+      },
+      "Collection": {
+        "hide_render": false,
+        "hide_viewport": false
+      }
+    },
+    "objects": {
+      "Checker_+00_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+00_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+00_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+00_-02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+00_-03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+00_-04": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+00_-05": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+00_-06": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+00_-07": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_-02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_-03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_-04": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_-05": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_-06": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+01_-07": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+02_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+02_-02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+02_-03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+02_-04": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+02_-05": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+02_-06": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+03_-03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+03_-04": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_+03_-05": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_+02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_-02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_-03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_-04": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_-05": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-01_-06": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-02_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-02_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-02_+02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-02_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-02_-02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-02_-03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-02_-04": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-02_-05": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-03_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-03_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-03_+02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-03_+03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-03_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-03_-02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-03_-03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-03_-04": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-04_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-04_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-04_+02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-04_+03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-04_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-04_-02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-04_-03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-05_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-05_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-05_+02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-05_+03": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-05_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-05_-02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-06_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-06_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-06_+02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-06_-01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-07_+00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Checker_-07_+01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_00_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_00_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_01_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_01_roof_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_01_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_02_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_02_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_03_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_03_roof_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_03_vertical_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_03_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_04_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_04_roof_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_04_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_05_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_05_roof_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_05_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_06_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_06_roof_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_06_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_07_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_07_roof_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_07_vertical_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_07_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_08_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_08_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_09_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_09_roof_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_09_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_10_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_10_roof_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_10_vertical_neon": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_10_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_11_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_11_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_12_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_12_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_13_mass_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_13_window_meshes": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_graphic_double_chevron": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_graphic_double_chevron.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_graphic_double_chevron.002": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "City_graphic_double_chevron.003": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_000": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_002": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_003": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_004": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_005": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_006": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_007": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_008": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_009": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_010": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_011": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_012": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_013": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_014": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_015": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_016": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_017": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_018": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_019": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_020": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_021": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_022": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_023": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_024": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_025": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_026": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_027": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_028": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_029": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_030": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_031": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_032": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_033": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_034": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_035": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_036": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_037": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_038": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_039": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_040": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_041": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_042": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_043": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_044": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_045": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_046": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_047": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_048": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_049": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_050": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_051": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_052": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_053": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_054": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_055": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_056": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_057": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_058": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_059": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_060": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_061": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_062": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_063": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_064": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_065": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_066": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_067": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_068": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_069": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_070": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_071": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_072": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_073": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_074": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_075": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_076": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_077": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_078": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_079": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_080": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_081": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_082": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_083": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_084": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_085": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_086": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_087": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_088": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_089": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_090": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_091": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_092": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_093": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_094": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_095": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_096": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_097": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_098": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_099": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_100": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_101": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_102": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_103": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Distant_sky_star_104": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Eyepiece_diagonal_housing": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Eyepiece_top": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Finder_bracket": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Finder_scope": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "INFERRED_support_under_visible_patch": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Lamp_lower_stem_sleeve": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Lamp_round_low_foot": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Lamp_slim_stem": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Lamp_warm_saucer_shade": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_covered_front_button": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_covered_front_button.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_gathered_back_bolster": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_lower_upholstery_seam": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_short_dark_foot": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_short_dark_foot.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_short_dark_foot.002": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_short_dark_foot.003": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Left_single_seat_inflated_base": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_body": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_ear_a": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_ear_b": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_front_leg_a": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_front_leg_b": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_head": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_neck": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_rear_leg_a": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_rear_leg_b": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_balloon_dog_tail": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_00_base": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_00_lens": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_00_lens_rim": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_00_rotating_body": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_00_yoke": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_00_yoke.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_01_base": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_01_lens": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_01_lens_rim": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_01_rotating_body": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_01_yoke": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_01_yoke.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_02_base": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_02_lens": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_02_lens_rim": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_02_rotating_body": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_02_yoke": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_02_yoke.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_03_base": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_03_lens": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_03_lens_rim": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_03_rotating_body": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_03_yoke": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_03_yoke.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_04_base": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_04_lens": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_04_lens_rim": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_04_rotating_body": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_04_yoke": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Moving_head_04_yoke.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Narrow_silver_boundary": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Narrow_silver_boundary.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Objective_black_rim": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Optical_tube_body": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Optional_yellow_plush_star": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Partial_planet_ring_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Partly_seen_ringed_planet_APPROX": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Rear_focuser": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Recessed_objective_glass": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_covered_front_button": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_covered_front_button.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_gathered_back_bolster": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_lower_upholstery_seam": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_short_dark_foot": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_short_dark_foot.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_short_dark_foot.002": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_short_dark_foot.003": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Right_single_seat_inflated_base": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Silver_star_00": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Silver_star_01": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Silver_star_02": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Star_double_curve_smile": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Star_embroidered_eye": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Star_embroidered_eye.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Star_pink_cheek": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Star_pink_cheek.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Star_top_wisp": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Suspension_line_00_UNSEEN_ANCHOR": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Suspension_line_01_UNSEEN_ANCHOR": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Suspension_line_02_UNSEEN_ANCHOR": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Telescope_black_mount_head": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Telescope_white_mount_post": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Tripod_black_leg": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Tripod_black_leg.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Tripod_black_leg.002": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Tripod_silver_foot": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Tripod_silver_foot.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Tripod_silver_foot.002": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Tripod_spreader_triangle": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Visible_blue_rear_band": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Visible_blue_rear_band.001": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Wedge_monitor_00_cabinet": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Wedge_monitor_00_perforated_grille": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Wedge_monitor_00_trim": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Wedge_monitor_01_cabinet": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Wedge_monitor_01_perforated_grille": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "Wedge_monitor_01_trim": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "White_tube_ring": {
+        "hide_render": false,
+        "visible_camera": true
+      },
+      "White_tube_ring.001": {
+        "hide_render": false,
+        "visible_camera": true
+      }
+    }
+  },
+  "visibility_sha256": "e36cc0c1cb4b72eff9b6efca226e5502a0e0ba19ad3d72331b0cafbf81bd6788",
+  "source_camera_match": "none; synthetic geometry diagnostic only",
+  "source_time": null,
+  "source_url": null,
+  "output_sha256": "749d13a0e8918e6f63f4f6d256c50f7e145a0f266400916c8c9ad4a2f173464c",
+  "output_bytes": 1217571
+}

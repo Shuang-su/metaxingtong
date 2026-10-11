@@ -1,0 +1,80 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV1ru41147sn/",
+  "prior_reference_ledger": [
+    {
+      "id": "A",
+      "time_hms": "01:15:29",
+      "seconds": 4529,
+      "old_crop_pixels": [
+        1188,
+        668
+      ],
+      "decoded_dimensions": "unknown",
+      "new_hd_capture_this_stage": false
+    },
+    {
+      "id": "B",
+      "time_hms": "00:35:17",
+      "seconds": 2117,
+      "old_crop_pixels": [
+        1188,
+        668
+      ],
+      "decoded_dimensions": "unknown",
+      "new_hd_capture_this_stage": false
+    },
+    {
+      "id": "D",
+      "time_hms": "01:58:39",
+      "seconds": 7119,
+      "old_crop_pixels": [
+        1188,
+        668
+      ],
+      "decoded_dimensions": "unknown",
+      "new_hd_nearby_continuity": "D_natural_playback_log.json"
+    }
+  ],
+  "sofa_layout": {
+    "last_visible_sample_before": 6626.597822,
+    "last_visible_sample_after": 6626.686632,
+    "first_absent_sample_before": 6627.31912,
+    "first_absent_sample_after": 6627.396357,
+    "sample_label_interval_seconds": [
+      6626.598,
+      6627.319
+    ],
+    "conservative_interval_including_screenshot_duration_seconds": [
+      6626.597822,
+      6627.396357
+    ],
+    "precise_frame_known": false,
+    "same_stage_identity_supported": true,
+    "physical_removal_observed": false,
+    "production_switch_or_edit_mechanism": "unknown",
+    "star_companion_still_present_across_layout_change": true
+  },
+  "dynamic_exits": {
+    "yellow_companion": {
+      "direction": "left",
+      "inside_sample": 7112.204957,
+      "crossing_frame_edge_sample": 7112.819021,
+      "outside_sample": 7113.428253
+    },
+    "person": {
+      "direction": "right",
+      "turning_sample": 7115.917794,
+      "crossing_frame_edge_sample": 7116.543366,
+      "outside_sample": 7117.139134
+    },
+    "red_balloon_dog": "continues moving; not a fixed calibration anchor"
+  },
+  "model_layers": [
+    "shared_static_stage",
+    "explicit_time_based_furnishing_state",
+    "dynamic_characters_props"
+  ],
+  "current_models_modified": false,
+  "new_state_variant_created": false,
+  "geometry_acceptance": false
+}

@@ -1,0 +1,40 @@
+{
+  "scene_name": "深月KTV开放舞台",
+  "status": "重建候选 / 待来源复核",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1ru41147sn/"
+  ],
+  "residuals": "开放舞台；A五点RMS约8.78px，D道具位置残差显著，不代表全图标定。",
+  "source_fidelity_acceptance": "待复核，未通过总体来源忠实度验收。",
+  "newly_logged_in_hd_used_for_every_scene": false,
+  "newly_logged_in_hd_for_this_scene": "仅以本文件列出的来源质量证据为准；未明确记录则未知。",
+  "independent_additional_video_baselines": "逐证据判断，重复/同轴/同族不算独立基线。",
+  "source_quality_facts": [
+    {
+      "field": "document_excerpt",
+      "value": "源视频：https://www.bilibili.com/video/BV1ru41147sn/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "已实际查看随包原截帧：01:15:29、00:35:17、01:58:39。可见棋盘台面、蓝色后带、沙发、落地灯、望远镜、舞台灯具、悬星和城市背景；没有可确认的玻璃、室内墙角、门窗或顶棚。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "遮挡人物、动态道具、城市简化、褶皱和光照会产生显著图像残差。A 的 5 个手工近似锚点 RMS 约8.78像素（1188×668源尺寸），仅是稀疏检查，不代表全图精确拟合；见 anchor_residuals.json。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "D机位的灯、望远镜、悬星等仍有明显位置残差，未声称该空镜完成精确相机标定；它用于公开核对差异。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "qa/：结构检查、回导、稀疏残差、并排/叠图。"
+    }
+  ],
+  "history_gaps": [
+    "未取得逐次聊天发布的确切时刻；Library创建/修改时间不替代聊天发布日期。",
+    "不能确认所有中间发布版本均已恢复；缺失历史不重建、不补造旧提交。"
+  ],
+  "technical_verification_scope": "随包已有记录，本次归档未重新运行Blender。",
+  "shared_standard": "docs/reconstruction-standard.md"
+}
