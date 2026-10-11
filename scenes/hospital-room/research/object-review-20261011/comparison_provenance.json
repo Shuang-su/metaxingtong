@@ -1,0 +1,101 @@
+{
+  "local_crops": [
+    {
+      "view": "F",
+      "role": "Native source; original video pixels",
+      "path": "hospital_object_audit/refs/extracted/hospital/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "crop_xyxy": [
+        780,
+        900,
+        1920,
+        1080
+      ],
+      "display_scale": 1
+    },
+    {
+      "view": "F",
+      "role": "Original model; legacy camera; denoised display",
+      "path": "hospital_object_audit/candidate/F_baseline_legacy_camera_1920_denoised.png",
+      "crop_xyxy": [
+        780,
+        900,
+        1920,
+        1080
+      ],
+      "display_scale": 1
+    },
+    {
+      "view": "F",
+      "role": "A: shoulder remains slanted; retained failure",
+      "path": "hospital_object_audit/candidate/F_candidate_legacy_camera_1920_denoised.png",
+      "crop_xyxy": [
+        780,
+        900,
+        1920,
+        1080
+      ],
+      "display_scale": 1
+    },
+    {
+      "view": "F",
+      "role": "B: continuous rounded shoulder hypothesis",
+      "path": "hospital_object_audit/candidate_b/F_B_legacy_camera_1920_denoised.png",
+      "crop_xyxy": [
+        780,
+        900,
+        1920,
+        1080
+      ],
+      "display_scale": 1
+    },
+    {
+      "view": "G",
+      "role": "Native source; original video pixels",
+      "path": "hospital_object_audit/refs/extracted/hospital/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "crop_xyxy": [
+        1510,
+        715,
+        1920,
+        1080
+      ],
+      "display_scale": 1
+    },
+    {
+      "view": "G",
+      "role": "Original model; legacy camera; denoised display",
+      "path": "hospital_object_audit/candidate/G_baseline_legacy_camera_1920_denoised.png",
+      "crop_xyxy": [
+        1510,
+        715,
+        1920,
+        1080
+      ],
+      "display_scale": 1
+    },
+    {
+      "view": "G",
+      "role": "A: shoulder remains slanted; retained failure",
+      "path": "hospital_object_audit/candidate/G_candidate_legacy_camera_1920_denoised.png",
+      "crop_xyxy": [
+        1510,
+        715,
+        1920,
+        1080
+      ],
+      "display_scale": 1
+    },
+    {
+      "view": "G",
+      "role": "B: continuous rounded shoulder hypothesis",
+      "path": "hospital_object_audit/candidate_b/G_B_legacy_camera_1920_denoised.png",
+      "crop_xyxy": [
+        1510,
+        715,
+        1920,
+        1080
+      ],
+      "display_scale": 1
+    }
+  ],
+  "overlay_method": "Exact 1920x1080 pixels, source 50% plus raw render 50%; no crop, resize, registration, warp or source edit. Legacy cameras unchanged, uncalibrated against new native frames."
+}
