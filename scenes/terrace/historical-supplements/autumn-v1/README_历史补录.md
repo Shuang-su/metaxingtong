@@ -12,6 +12,8 @@
 
 已存在的同SHA原件按固定旧commit路径复用，没有为了补录重复上传。原包仅用于恢复字节，本次保存为普通原文件。
 
-## 已恢复但尚未写入Git的原件
+## 原始GLB补齐
 
-- models/Xingtong_Seasonal_Terrace_Textured.glb: 18394204字节，SHA256 0ffc13c1ab310fa481c327dbaa67970123f664be5f9e613f455ce402e66d2e04。当前接口请求体限制，等待可用正常Git通路；没有上传分片或ZIP替代。
+2026-10-11通过正常Git提交以下原件，保留原字节，旧接口限制的历史记录仍可在之前commit追溯。本次不代表模型改进或来源验收。
+
+- models/Xingtong_Seasonal_Terrace_Textured.glb：18394204字节，SHA256 0ffc13c1ab310fa481c327dbaa67970123f664be5f9e613f455ce402e66d2e04。

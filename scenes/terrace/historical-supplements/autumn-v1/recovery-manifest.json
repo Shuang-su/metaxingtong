@@ -540,6 +540,16 @@
       "path": "scenes/terrace/historical-supplements/autumn-v1/renders/Final_White_Wide_clean.png",
       "original_package": "03_Seasonal_Terrace_Review_Source_Textures.zip",
       "original_member": "renders/Final_White_Wide_clean.png"
+    },
+    {
+      "bytes": 18394204,
+      "sha256": "0ffc13c1ab310fa481c327dbaa67970123f664be5f9e613f455ce402e66d2e04",
+      "git_blob_sha1": "b2878fd7ae97f379eebc1eb93fdaae348abf97c7",
+      "role": "model",
+      "path": "scenes/terrace/historical-supplements/autumn-v1/models/Xingtong_Seasonal_Terrace_Textured.glb",
+      "original_package": "02_Seasonal_Terrace_Textured.zip",
+      "original_member": "models/Xingtong_Seasonal_Terrace_Textured.glb",
+      "restoration_method": "Original bytes committed using authenticated Git; previous connector-size blocker resolved on 2026-10-11."
     }
   ],
   "reused_existing_originals": [
@@ -599,18 +609,7 @@
       "existing_ref": "c1817aad6b6e73decd6c2424957fd252baab55ea"
     }
   ],
-  "recovered_but_upload_blocked": [
-    {
-      "bytes": 18394204,
-      "sha256": "0ffc13c1ab310fa481c327dbaa67970123f664be5f9e613f455ce402e66d2e04",
-      "git_blob_sha1": "b2878fd7ae97f379eebc1eb93fdaae348abf97c7",
-      "role": "model",
-      "path": "scenes/terrace/historical-supplements/autumn-v1/models/Xingtong_Seasonal_Terrace_Textured.glb",
-      "original_package": "02_Seasonal_Terrace_Textured.zip",
-      "original_member": "models/Xingtong_Seasonal_Terrace_Textured.glb",
-      "reason": "Original binary is recovered locally, but base64 request would exceed or approach the current 16MiB connector request limit; no CLI authentication exists after environment rebuild. No fragments or ZIP substitute uploaded."
-    }
-  ],
+  "recovered_but_upload_blocked": [],
   "checks": {
     "zip_crc": true,
     "member_sha256": true,
@@ -620,5 +619,22 @@
     "new_visual_acceptance": false,
     "new_glb_roundtrip_geometry_validation": false
   },
-  "role_classification": "Role follows directory and image purpose; filenames containing Textured do not make renders into textures."
+  "role_classification": "Role follows directory and image purpose; filenames containing Textured do not make renders into textures.",
+  "git_original_glb_followup": {
+    "date_utc": "2026-10-11T14:43:59.149204+00:00",
+    "files": [
+      {
+        "bytes": 18394204,
+        "sha256": "0ffc13c1ab310fa481c327dbaa67970123f664be5f9e613f455ce402e66d2e04",
+        "git_blob_sha1": "b2878fd7ae97f379eebc1eb93fdaae348abf97c7",
+        "role": "model",
+        "path": "scenes/terrace/historical-supplements/autumn-v1/models/Xingtong_Seasonal_Terrace_Textured.glb",
+        "original_package": "02_Seasonal_Terrace_Textured.zip",
+        "original_member": "models/Xingtong_Seasonal_Terrace_Textured.glb",
+        "restoration_method": "Original bytes committed using authenticated Git; previous connector-size blocker resolved on 2026-10-11."
+      }
+    ],
+    "new_model_version": false,
+    "source_acceptance": false
+  }
 }
