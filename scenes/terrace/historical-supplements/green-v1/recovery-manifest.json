@@ -459,6 +459,26 @@
       "path": "scenes/terrace/historical-supplements/green-v1/models/Xingtong_Terrace_Green_White.blend",
       "original_package": "01_Green_White.zip",
       "original_member": "models/Xingtong_Terrace_Green_White.blend"
+    },
+    {
+      "bytes": 14342156,
+      "sha256": "2551331ce840ed178b94bf2935a4e93ebd390fd2d90df947774d6877469f5130",
+      "git_blob_sha1": "fc784b9319072bf6a6ca2a1f0ffbc3c6e703c035",
+      "role": "model",
+      "path": "scenes/terrace/historical-supplements/green-v1/models/Xingtong_Terrace_Green_White.glb",
+      "original_package": "01_Green_White.zip",
+      "original_member": "models/Xingtong_Terrace_Green_White.glb",
+      "restoration_method": "Original bytes committed using authenticated Git; previous connector-size blocker resolved on 2026-10-11."
+    },
+    {
+      "bytes": 20782604,
+      "sha256": "0e3750a70d3a798537305e2563ce9de9cedcd19f43b555bf04ba2484924df63b",
+      "git_blob_sha1": "2f72b5f969481adfa56de7604845862f4923608d",
+      "role": "model",
+      "path": "scenes/terrace/historical-supplements/green-v1/models/Xingtong_Terrace_Green_Textured.glb",
+      "original_package": "03_Green_Textured_GLB.zip",
+      "original_member": "models/Xingtong_Terrace_Green_Textured.glb",
+      "restoration_method": "Original bytes committed using authenticated Git; previous connector-size blocker resolved on 2026-10-11."
     }
   ],
   "reused_existing_originals": [
@@ -490,28 +510,7 @@
       "existing_ref": "c1817aad6b6e73decd6c2424957fd252baab55ea"
     }
   ],
-  "recovered_but_upload_blocked": [
-    {
-      "bytes": 14342156,
-      "sha256": "2551331ce840ed178b94bf2935a4e93ebd390fd2d90df947774d6877469f5130",
-      "git_blob_sha1": "fc784b9319072bf6a6ca2a1f0ffbc3c6e703c035",
-      "role": "model",
-      "path": "scenes/terrace/historical-supplements/green-v1/models/Xingtong_Terrace_Green_White.glb",
-      "original_package": "01_Green_White.zip",
-      "original_member": "models/Xingtong_Terrace_Green_White.glb",
-      "reason": "Original binary is recovered locally, but base64 request would exceed or approach the current 16MiB connector request limit; no CLI authentication exists after environment rebuild. No fragments or ZIP substitute uploaded."
-    },
-    {
-      "bytes": 20782604,
-      "sha256": "0e3750a70d3a798537305e2563ce9de9cedcd19f43b555bf04ba2484924df63b",
-      "git_blob_sha1": "2f72b5f969481adfa56de7604845862f4923608d",
-      "role": "model",
-      "path": "scenes/terrace/historical-supplements/green-v1/models/Xingtong_Terrace_Green_Textured.glb",
-      "original_package": "03_Green_Textured_GLB.zip",
-      "original_member": "models/Xingtong_Terrace_Green_Textured.glb",
-      "reason": "Original binary is recovered locally, but base64 request would exceed or approach the current 16MiB connector request limit; no CLI authentication exists after environment rebuild. No fragments or ZIP substitute uploaded."
-    }
-  ],
+  "recovered_but_upload_blocked": [],
   "checks": {
     "zip_crc": true,
     "member_sha256": true,
@@ -521,5 +520,32 @@
     "new_visual_acceptance": false,
     "new_glb_roundtrip_geometry_validation": false
   },
-  "role_classification": "Role follows directory and image purpose; filenames containing Textured do not make renders into textures."
+  "role_classification": "Role follows directory and image purpose; filenames containing Textured do not make renders into textures.",
+  "git_original_glb_followup": {
+    "date_utc": "2026-10-11T14:43:59.351558+00:00",
+    "files": [
+      {
+        "bytes": 14342156,
+        "sha256": "2551331ce840ed178b94bf2935a4e93ebd390fd2d90df947774d6877469f5130",
+        "git_blob_sha1": "fc784b9319072bf6a6ca2a1f0ffbc3c6e703c035",
+        "role": "model",
+        "path": "scenes/terrace/historical-supplements/green-v1/models/Xingtong_Terrace_Green_White.glb",
+        "original_package": "01_Green_White.zip",
+        "original_member": "models/Xingtong_Terrace_Green_White.glb",
+        "restoration_method": "Original bytes committed using authenticated Git; previous connector-size blocker resolved on 2026-10-11."
+      },
+      {
+        "bytes": 20782604,
+        "sha256": "0e3750a70d3a798537305e2563ce9de9cedcd19f43b555bf04ba2484924df63b",
+        "git_blob_sha1": "2f72b5f969481adfa56de7604845862f4923608d",
+        "role": "model",
+        "path": "scenes/terrace/historical-supplements/green-v1/models/Xingtong_Terrace_Green_Textured.glb",
+        "original_package": "03_Green_Textured_GLB.zip",
+        "original_member": "models/Xingtong_Terrace_Green_Textured.glb",
+        "restoration_method": "Original bytes committed using authenticated Git; previous connector-size blocker resolved on 2026-10-11."
+      }
+    ],
+    "new_model_version": false,
+    "source_acceptance": false
+  }
 }
