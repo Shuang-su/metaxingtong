@@ -1,0 +1,19 @@
+from pathlib import Path
+import json,hashlib,textwrap
+import numpy as np
+from PIL import Image,ImageDraw,ImageFont
+r=Path(__file__).parent;p=r.parent/'refs/extracted/hospital/frames';sources={v:next(p.glob(f'*-{v}-*')) for v in 'FG'};expected={'F':'b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3','G':'5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474'};times={'F':1823.678156,'G':1116.180816};boxes={'F':(750,900,1920,1080),'G':(1530,720,1920,1000)};font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',16);media=[]
+for v in 'FG':
+ assert hashlib.sha256(sources[v].read_bytes()).hexdigest()==expected[v]
+ src=Image.open(sources[v]).convert('RGB');assert src.size==(1920,1080)
+ for variant in 'BC':
+  render=Image.open(r/f'{v}_{variant}_same_camera_16spp_raw.png').convert('RGB');assert render.size==src.size
+  out=r/f'{v}_source_{variant}_direct50_UNCALIBRATED.png';Image.blend(src,render,.5).save(out);actual=np.array(Image.open(out));target=((np.array(src).astype(np.uint16)+np.array(render).astype(np.uint16))//2).astype(np.uint8);assert np.array_equal(actual,target)
+  media.append({'path':out.name,'role':'direct50_fullframe_native_plus_raw_render','source_sha256':expected[v],'source_seconds':times[v],'render':f'{v}_{variant}_same_camera_16spp_raw.png','render_samples':16,'formula':'floor((source uint16 + raw render uint16)/2)','pixel_exact':True,'size':[1920,1080],'registration':False,'resize':False,'warp':False,'camera_calibrated':False})
+ box=boxes[v];w=box[2]-box[0];h=box[3]-box[1];lh=58 if v=='G' else 38;head=62 if v=='G' else 42;panel=Image.new('RGB',(w,5*(h+lh)+head),'#151515');d=ImageDraw.Draw(panel);d.multiline_text((8,10),textwrap.fill(f'{v}: SAME-COORDINATE 1:1 CROPS. Camera mismatch retained.',width=42 if v=='G' else 120),fill='white',font=font,spacing=3)
+ rows=[('NATIVE SOURCE '+str(times[v])+' s (unchanged pixels)',sources[v]),('B BEFORE: original camera / exactly 16 spp / OIDN display',r/f'{v}_B_same_camera_16spp_oidn.png'),('C AFTER: only capsule outline / 16 spp / OIDN display',r/f'{v}_C_same_camera_16spp_oidn.png'),('NATIVE 50% + B RAW 50% / no registration',r/f'{v}_source_B_direct50_UNCALIBRATED.png'),('NATIVE 50% + C RAW 50% / no registration',r/f'{v}_source_C_direct50_UNCALIBRATED.png')]
+ for i,(label,path) in enumerate(rows):
+  y=head+i*(h+lh);d.multiline_text((8,y+8),textwrap.fill(label,width=42 if v=='G' else 120),fill='white',font=font,spacing=3);panel.paste(Image.open(path).convert('RGB').crop(box),(0,y+lh))
+ out=r/f'{v}_native_B_C_outline_same_coordinate_panel.png';panel.save(out);media.append({'path':out.name,'role':'native_scale_source_before_after_and_both_direct50_crop_panel','source_seconds':times[v],'source_sha256':expected[v],'crop_xyxy':box,'each_crop_size':[w,h],'panel_size':list(panel.size),'row_inputs':[str(path.relative_to(r)) if path.is_relative_to(r) else str(path) for _,path in rows],'labels_and_padding':True,'resize':False,'registration':False,'warp':False,'source_pixel_values_preserved_in_native_row':True,'render_display_processing':'OIDN display rows; overlays use RAW, not denoised','camera_calibrated':False})
+(r/'media_roles.json').write_text(json.dumps({'source_identity':'Native1920x1080 original video frames; no newly captured source','source_F_seconds':times['F'],'source_G_seconds':times['G'],'all_new_raw_renders':'16 spp exactly, adaptive sampling disabled, seed0, original B cameras','new_raw_render_roles':'F/G B before and C after each full1920x1080; see render_manifest.json','display_denoising':'OIDN2.5.1 CPU LDR sRGB high2threads; not geometry evidence on its own','scene_acceptance':'NOT ACCEPTED, contour candidate only','media':media},ensure_ascii=False,indent=2))
+print('Created',len(media),'evidence PNGs; raw direct50 pixel checks pass')
