@@ -1,0 +1,68 @@
+# 厨房 · 留存最早可核实模型及说明
+
+状态：重建候选 / 待来源复核。来源忠实度与几何技术检查分别记录。
+
+### 最早可核实的留存包
+旧版是独立L形厨柜墙、玻璃柜、电器、杯碗及画框组件，不是已证厨房完整户型。
+
+这些是已恢复的历史实物；“最早可核实”不保证此前没有版本。
+- `Xingtong_Kitchen_Complete.zip`；13753782字节；Library版本0；SHA256 `cb031a7efb07c2f4c6f030f061530a8fff9ee28fedc4d446f015fb9b49d51dd6`。
+  - 模型 `models/Xingtong_Kitchen_Textured.blend`：SHA256 `0aef9518459f62aabc542ed4a7d85a6313b58b981b6f4a06accfe25accdf4215`。
+  - 模型 `models/Xingtong_Kitchen_Textured.glb`：SHA256 `2878a2262c44955dcdfb63df2df79fa2ed54a21cc9b2be64a5597dbe0f2cdeb2`。
+  - 模型 `models/Xingtong_Kitchen_White.blend`：SHA256 `00f3f006b517d08c1b1815bfd2800b980bdbd5a5bdac90a1e4492b0e6306e227`。
+  - 模型 `models/Xingtong_Kitchen_White.glb`：SHA256 `e96fe00442fc309c5f18fa6e48548054f27169858246e310bdc098a61c970b45`。
+
+#### 旧包说明依据：Xingtong_Kitchen_Complete.zip 内 README_厨房说明.txt
+星瞳 3D 直播场景库｜白柜咖啡机厨房
+版本：2026-10-07，Blender 4.3.2
+
+来源
+《与星瞳共度的一天》，2024-04-19，BV1mx4y1z7oY。
+https://www.bilibili.com/video/BV1mx4y1z7oY/
+参考来自公开 360p 播放画面：20:28 无人 L 角，50:56 无人正面台面，1:10:09 与 1:25:33 同景有人镜头。后三张提供固定电器位置复核。媒体时间按保存截图命名，播放器可能显示下一秒。
+
+交付范围
+这是可见 L 形厨柜墙的独立重建组件，不是已验证的完整厨房户型，也未和卧室、客厅、舞房拼接。两份 BLEND、两份 GLB 的启用网格几何完全一致；白模只换材质、保持玻璃透明以便检查柜内真实结构。模型没有人物。
+
+真实几何
+柜体、立体门框和内线框、玻璃门格条、金属拉手、内部隔板、杯碗、咖啡机按钮/把手/蒸汽管/滴水盘、锥形电热壶和环形把手、烤面包机与双槽、嵌入电器边框/拉手、独立画框均为可旋转观察的真实网格。
+未以全景图、整张截图或板片代替房间。只有原画面里那一幅独立画框的画芯使用经过裁切的低清参考像素，仍是有厚度的框体与白色卡纸。画芯没有通过生成补写人物或文字。电器模糊品牌、显示器读数未臆造；几颗不可读灯点只表示可见亮点。
+
+空间与尺度的不确定性
+米制尺寸按人体、常见柜高与双机位比例推定，不是原场景测量：台面顶 0.923 m，主台面深 1.035 m，左腿台面深 0.674 m，主柜台宽 3.68 m，L 形另一腿至末端约 3.38 m，上柜下沿约 1.592 m。主台面比常见家用柜更深：1.035 m 是由正面台面前缘及 L 角转折两视角共同约束的推定，用来保持直角实体，不是现场量测或标准化厨房尺寸。柜门划分、电器隐藏后侧和细部厚度存在推定。
+左右可见墙面的延伸用于保持截图画面中的连续素墙，不表示测得的房间边界。地面没有可靠材质证据，因此仅使用中性检查地面，位于 90_Inferred_floor，可隐藏。
+91_Optional_unverified_enclosure 中的天花、反向墙和右侧封闭墙完全没有参考证据，默认视口与渲染均隐藏，并从两份 GLB 排除。不能据此推断门窗、厨房与其它场景的通路或完整户型。
+图中嵌入电器仅露一部分，模型未承诺看不到的完整内部功能。
+
+机位与对齐
+MATCH_front_50m56 对应正面台面参考，MATCH_corner_20m28 对应 L 角参考。
+QA_wide_level：29 mm、相机高 1.60 m、水平朝向的广角检查机位；便于检查正常空间尺度，不用极端低机位或长焦掩盖几何。
+QA_reverse_oblique：另一侧水平 27 mm 检查机位。
+参考叠图是校准记录，不意味着逐像素复刻。参考机位的焦距、相机位置也只是拟合参数，并非原直播相机元数据。墙画轮廓、柜门格条和固定电器用于交叉约束；低清图、部分画面遮挡、未量测尺度使电器与柜端仍有偏差。对齐记录中的台面前缘、L 转折和玻璃柜底线约有 17–20 像素残差（1188×668）；选点误差不能视作全场景精度。播放器标题/头像/进度条不属于模型。
+
+材质、纹理、UV
+材质版使用 Principled PBR。IvoryPaint、WarmWall、Quartz、BrushedSteel、OchreEnamel、CreamEnamel 各含 BaseColor、Roughness、Normal 三张 512x512 纹理。主体采用真实尺寸平面投影 UV，壶/杯碗用回转 UV。纹理已打包进 BLEND 与 GLB，另附独立纹理供修改。法线和粗糙度按 Non-Color 读取。
+金属、塑料和透明玻璃使用显式 PBR 参数。玻璃的 glTF transmission 需要支持 KHR_materials_transmission 的查看器；不支持时可使用 Blender 打开 GLB。
+
+查看与编辑
+打开 Xingtong_Kitchen_Textured.blend 或 Xingtong_Kitchen_White.blend 即可。默认显示水平广角机位。按数字小键盘 0 查看相机，选择相机名称可切换；轮转视图可检查背面。所有物件按柜体、电器、画框、杯碗、推定地面和相机灯光分组。
+Blender 4.3.2 此环境未启用内置 OIDN；主体交付 PNG 使用 Cycles 64 samples CPU 4 线程后独立 OIDN 降噪；GLB 回导检查图使用 32 samples。模型本身不依赖降噪器。
+
+验证
+qa/GLB_Roundtrip_Validation.json：对两份 GLB 重新导入，逐对象核对三角形、包围盒和双向最近顶点误差、UV、内嵌纹理。
+qa/source_geometry.json：两份原始模型几何摘要与一致性结果。
+原始低清参考、对齐图与检查图单独放在审阅包。所有 ZIP 均小于 18 MiB。
+
+使用提醒
+这是根据公开视频所作的近似重建；原直播美术、角色画芯及相关权利仍属于原权利方。交付不表示获得这些作品的商用授权。
+
+#### 本阶段实际归档路径
+- `scenes/kitchen/01-retain-earliest-binaries/assets/Xingtong_Kitchen_Complete.zip`；13753782字节；SHA256 `cb031a7efb07c2f4c6f030f061530a8fff9ee28fedc4d446f015fb9b49d51dd6`；Git blob SHA1 `1a5ab751c2cb16e7bdea551c79361ada0417adf4`。
+
+#### 日期语义
+- Xingtong_Kitchen_Complete.zip：精确原始日期未知。只确认实际留存字节及内容阶段；未取得精确保存/制作/聊天发布日期。
+聊天发布时间、原始模型制作日期及旧Git提交日期未获证实。新归档commit日期以实际执行时间为准。
+
+共享标准：`docs/reconstruction-standard.md`。
+本阶段是现有实物的候选快照归档；不是重新建模。
+完整原始包未重打包、未改字节。
