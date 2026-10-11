@@ -1,0 +1,87 @@
+{
+  "scene": "星斯卡舞台",
+  "scene_slug": "star-stage",
+  "capture_date_utc": "2026-10-11",
+  "native_png_count": 2,
+  "evidence_source_url": "https://github.com/Shuang-su/metaxingtong/issues/13",
+  "scene_and_angle_identity_limitations_zh": "本次交付A/B两张，存在可见透视与取景差异；没有完成本次相机标定、尺度求解或定量几何验收。人物遮挡、原片灯光/材质反射与图像模糊均保留。既有来源记录还提及C视图，但本次未取得可验证保留的C原生PNG，所以本包不包含C，也不计为已完成。既有星轮廓、光位等残差不因本次原生导出而视为解决；细节或更近取景不能自动增加广角独立基线。",
+  "native_resolution_policy_zh": "以PNG IHDR、Pillow解码尺寸和保存前后视频原始尺寸共同核验；原生尺寸按实际记录，禁止放大补足分辨率。",
+  "frames": [
+    {
+      "file": "frames/star-A-BV1xgBEYYEXF-t3850.637055-native.png",
+      "label": "star-A",
+      "source_bv": "BV1xgBEYYEXF",
+      "source_url": "https://www.bilibili.com/video/BV1xgBEYYEXF/",
+      "evidence_source_url": "https://github.com/Shuang-su/metaxingtong/issues/13",
+      "requested_reference_seconds": 3850.805,
+      "actual_paused_seconds": 3850.637055,
+      "actual_minus_requested_seconds": -0.167945,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2624954,
+      "sha256": "264131dc314bf0abcf6a70e3bf1280476ae1fccaaf9d1bf3bdc44a3f086cd663",
+      "media_state_before_save": {
+        "currentTime": 3850.637055,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "media_state_after_save": {
+        "currentTime": 3850.637055,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "same_current_time_before_and_after": true,
+      "native_export_method": "浏览器原生视频菜单：将视频帧另存为…",
+      "image_processing": "原始PNG字节未改变；未重编码、裁切、放大、AI处理或提亮。",
+      "capture_date_utc": "2026-10-11T00:53:27.917768+00:00",
+      "legacy_frame_identity": "未验证为旧参考的同一帧。",
+      "reference_time_relationship_zh": "比旧A参考3850.805秒早0.167945秒，是近邻新帧；未验证与旧参考同一帧。",
+      "view_family": "A左偏取景",
+      "independent_calibrated_geometry_verified": false,
+      "description_zh": "左偏舞台景，可见星纹/V形发光墙面、悬挂球灯及玻璃状吊饰、左侧竖条图像装饰、反光舞台与中部表演者。较大的发光星位于画面右侧区域。无浏览器或播放器控制界面。",
+      "scene_and_angle_limitations_zh": "表演者遮挡中部墙面和舞台，部分吊饰接近或超出画面边缘；原片照明、反射和运动状态保留。未进行本次定量标定。"
+    },
+    {
+      "file": "frames/star-B-BV1xgBEYYEXF-t3815.804546-native.png",
+      "label": "star-B",
+      "source_bv": "BV1xgBEYYEXF",
+      "source_url": "https://www.bilibili.com/video/BV1xgBEYYEXF/",
+      "evidence_source_url": "https://github.com/Shuang-su/metaxingtong/issues/13",
+      "requested_reference_seconds": 3815.666,
+      "actual_paused_seconds": 3815.804546,
+      "actual_minus_requested_seconds": 0.138546,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2669550,
+      "sha256": "0f058da8c6cfbed4cd8cac2acc428c9b205031d84cc1e989974ea3e1ca4baa53",
+      "media_state_before_save": {
+        "currentTime": 3815.804546,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "media_state_after_save": {
+        "currentTime": 3815.804546,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "same_current_time_before_and_after": true,
+      "native_export_method": "浏览器原生视频菜单：将视频帧另存为…",
+      "image_processing": "原始PNG字节未改变；未重编码、裁切、放大、AI处理或提亮。",
+      "capture_date_utc": "2026-10-11T00:54:02.970372+00:00",
+      "legacy_frame_identity": "未验证为旧参考的同一帧。",
+      "reference_time_relationship_zh": "比旧B参考3815.666秒晚0.138546秒，是近邻新帧；未验证与旧参考同一帧。",
+      "view_family": "B另一侧偏取景",
+      "independent_calibrated_geometry_verified": false,
+      "description_zh": "另一侧偏舞台景，大的发光星在左侧，右侧海报、两枚箭头、边桌与杯子更清楚；球灯、玻璃状吊饰及反光地面可见，表演者位于中部。无浏览器或播放器控制界面。",
+      "scene_and_angle_limitations_zh": "与A有可见透视差，但没有本次相机标定或几何精度验收。人物及悬挂物遮挡保留，不将既有模型验收状态改写为已通过。"
+    }
+  ]
+}
