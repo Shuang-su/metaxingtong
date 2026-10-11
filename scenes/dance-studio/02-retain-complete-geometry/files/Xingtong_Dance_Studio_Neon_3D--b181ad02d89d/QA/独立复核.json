@@ -1,0 +1,649 @@
+{
+  "review_date_utc": "2026-10-10",
+  "result": "PASS: complete finite room geometry, repaired attachments, valid exports, bounded internal emitters, and final visual inspection. Source matching remains approximate.",
+  "scope": "Independent read-only inspection of complete room geometry and exported files. Separate closed solid parts are permitted; a single boolean-unioned mesh is not required.",
+  "file_sha256": {
+    "Xingtong_Neon_Stage_FullRoom.blend": "94eb4f5c1fcdcf029a2673c440f0d63376fd393635f5a0eddc1ba85235dd0b1c",
+    "Xingtong_Neon_Stage_FullRoom.glb": "4855dba5a002fba10ab4905ae588ee917a297ca9f4439bfbdb4de4607735ff8f",
+    "Xingtong_Neon_Stage_FullRoom_White.blend": "a3511469405be36f0937d0c5e75473e6a05d89fd83bfb555244c7801943e61ee",
+    "Xingtong_Neon_Stage_FullRoom_White.glb": "d1235e47a5e151bd7418395c10d18bb9aae0c0503414ad26d22ac74ad2d07296"
+  },
+  "mesh_topology": {
+    "mesh_objects": 544,
+    "connected_components": 580,
+    "nonmanifold_inconsistent_normals_degenerate_or_nonpositive_components": [],
+    "units": {
+      "system": "NONE",
+      "scale": 1.0
+    }
+  },
+  "finite_envelope": {
+    "present": [
+      "floor slab",
+      "left wall",
+      "right wall",
+      "rear wall",
+      "front wall segments and entry header",
+      "ceiling slab"
+    ],
+    "interior_bounds_model_units": {
+      "x": [
+        -5,
+        5
+      ],
+      "y": [
+        -8,
+        3.37
+      ],
+      "z": [
+        0,
+        4.075
+      ]
+    },
+    "thickness_model_units": {
+      "floor": 0.18,
+      "side_and_front_walls": 0.22,
+      "ceiling": 0.25
+    },
+    "surface_grid": {
+      "rays": 175446,
+      "misses": 0,
+      "examples": [],
+      "tangential_face_edge_exclusion": 1e-05
+    },
+    "edge_diagonal_rays": {
+      "rays": 3852,
+      "misses": 0,
+      "examples": []
+    },
+    "note": "The exact coplanar edge of an axis-aligned ray is excluded by 1e-5; separate diagonal rays test the actual seams."
+  },
+  "inferred_entry": {
+    "real_through_wall_aperture": true,
+    "independent_closed_solid_leaf": true,
+    "clear_size_model_units": [
+      1.16,
+      2.43
+    ],
+    "leaf_thickness_model_units": 0.08,
+    "aperture_tests": {
+      "rays": 6161,
+      "failures": 0,
+      "examples": []
+    },
+    "six_handle_solids_parented_to_leaf": true,
+    "source_status": "Entry placement, size and hidden front wall are inferred, not observed or measured in the two source views."
+  },
+  "rear_arch": {
+    "interpretation": "Backed decorative arch/recess, not an entrance or passage.",
+    "continuous_rear_wall_retained": true
+  },
+  "attachment_repairs_verified": [
+    "Four suspension rods contact both outer neon frame and ceiling slab.",
+    "Two crosslinks connect the globe assembly to the supported outer frame.",
+    "Seven glyph pins connect the overhead lettering to globe tubes.",
+    "Three backing clips connect the arch light to its molding.",
+    "Yellow bands contact their anchors; radio handle, mounts and casing contact correctly."
+  ],
+  "clear_traffic_volume": {
+    "rays": 3861,
+    "obstacles": 0,
+    "examples": []
+  },
+  "exports": [
+    {
+      "file": "Xingtong_Neon_Stage_FullRoom.glb",
+      "sha256": "4855dba5a002fba10ab4905ae588ee917a297ca9f4439bfbdb4de4607735ff8f",
+      "meshes": 544,
+      "bounds": [
+        [
+          -5.220000267028809,
+          5.220000267028809
+        ],
+        [
+          -8.25,
+          4.150000095367432
+        ],
+        [
+          -0.18000000715255737,
+          4.324999809265137
+        ]
+      ],
+      "bad_after_uv_seam_weld": [],
+      "nonpositive": [],
+      "missing_uv": [],
+      "unpacked_images": [],
+      "image_count": 29
+    },
+    {
+      "file": "Xingtong_Neon_Stage_FullRoom_White.glb",
+      "sha256": "d1235e47a5e151bd7418395c10d18bb9aae0c0503414ad26d22ac74ad2d07296",
+      "meshes": 544,
+      "bounds": [
+        [
+          -5.220000267028809,
+          5.220000267028809
+        ],
+        [
+          -8.25,
+          4.150000095367432
+        ],
+        [
+          -0.18000000715255737,
+          4.324999809265137
+        ]
+      ],
+      "bad_after_uv_seam_weld": [],
+      "nonpositive": [],
+      "missing_uv": [],
+      "unpacked_images": [],
+      "image_count": 0
+    }
+  ],
+  "geometry_identity": {
+    "main_sha256": "94eb4f5c1fcdcf029a2673c440f0d63376fd393635f5a0eddc1ba85235dd0b1c",
+    "door_handles": [
+      {
+        "object": "Entry_handle_plate",
+        "parent": "INFERRED_Entry_leaf_closed"
+      },
+      {
+        "object": "Entry_handle_stem",
+        "parent": "INFERRED_Entry_leaf_closed"
+      },
+      {
+        "object": "Entry_handle_bar",
+        "parent": "INFERRED_Entry_leaf_closed"
+      },
+      {
+        "object": "Entry_handle_plate.001",
+        "parent": "INFERRED_Entry_leaf_closed"
+      },
+      {
+        "object": "Entry_handle_stem.001",
+        "parent": "INFERRED_Entry_leaf_closed"
+      },
+      {
+        "object": "Entry_handle_bar.001",
+        "parent": "INFERRED_Entry_leaf_closed"
+      }
+    ],
+    "comparisons": [
+      {
+        "file": "Xingtong_Neon_Stage_FullRoom.glb",
+        "sha256": "4855dba5a002fba10ab4905ae588ee917a297ca9f4439bfbdb4de4607735ff8f",
+        "missing_names": [],
+        "unexpected_names": [],
+        "maximum_nearest_vertex_distance": 5.840038852511498e-07,
+        "deformed_objects": [],
+        "tolerance": 1e-05
+      },
+      {
+        "file": "Xingtong_Neon_Stage_FullRoom_White.blend",
+        "sha256": "a3511469405be36f0937d0c5e75473e6a05d89fd83bfb555244c7801943e61ee",
+        "missing_names": [],
+        "unexpected_names": [],
+        "maximum_nearest_vertex_distance": 0,
+        "deformed_objects": [],
+        "tolerance": 1e-05
+      },
+      {
+        "file": "Xingtong_Neon_Stage_FullRoom_White.glb",
+        "sha256": "d1235e47a5e151bd7418395c10d18bb9aae0c0503414ad26d22ac74ad2d07296",
+        "missing_names": [],
+        "unexpected_names": [],
+        "maximum_nearest_vertex_distance": 5.840038852511498e-07,
+        "deformed_objects": [],
+        "tolerance": 1e-05
+      }
+    ]
+  },
+  "visibility_and_animation": {
+    "hidden_objects": [],
+    "animated_objects": [],
+    "ordinary_and_source_views": "Fixed geometry, transforms and visibility. Only the clearly labeled inspection cutaway removes the roof/front wall and associated ceiling pieces."
+  },
+  "visual_review": {
+    "source_A_B_original_render_50_percent_overlay": "Passed. Same-size unwarped 50% image blends; approximate camera-fit labels present.",
+    "eight_ordinary_views": "Passed. Coherent full room from front, rear and both sides. These views are inspection renders, not source evidence.",
+    "closed_exterior_and_labeled_cutaway": "Passed. Cutaway removes ceiling-only hangers together with their equipment.",
+    "neutral_entry_closeup": "Passed. Neutral studio/cavity-shaded closeup clearly shows finite leaf, jamb/header, three hinges and handle. Reverse view clearly shows front/side walls and ceiling connections. These are labeled inspection renders, not new source evidence.",
+    "final_refreshed_material_sheets": "Passed after emitter correction: eight ordinary views, exterior, cutaway and both original/render/50% source triptychs. Roof light-leak patch is absent."
+  },
+  "source_fit_limits": [
+    "Only two frontal source perspectives were provided. Neither reveals or measures the hidden front wall or entry.",
+    "Source A ceiling PERFECT lettering is cropped differently and absent from the reconstructed source-A crop.",
+    "Source B arch width/position and overhead-logo scale/placement differ from the source.",
+    "Floor-chevron placement/extent, fine fluorescent graphics and material/reflection response remain approximate.",
+    "Geometry tests establish properties of this model, not source accuracy, real-world dimensions, accessibility or building-code compliance. Model units are not calibrated meters."
+  ],
+  "inspection_lighting": "White file uses disclosed neutral inspection lighting. Final front/reverse/detail images use neutral Workbench studio shading with cavity/outline contrast, unchanged geometry/visibility and a disclosed detail camera. These inspection images are not source evidence.",
+  "lighting_extent_audit": {
+    "status": "Passed after lighting-only repair",
+    "tests": [
+      {
+        "file": "Xingtong_Neon_Stage_FullRoom.blend",
+        "sha256": "94eb4f5c1fcdcf029a2673c440f0d63376fd393635f5a0eddc1ba85235dd0b1c",
+        "interior_model_bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -8,
+            3.37
+          ],
+          [
+            0,
+            4.075
+          ]
+        ],
+        "lights": [
+          {
+            "name": "Soft neutral camera fill",
+            "type": "AREA",
+            "energy": 223.60000610351562,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -0.5810410380363464,
+                0.5810410380363464
+              ],
+              [
+                -4.032892155640402,
+                -3.567107748992166
+              ],
+              [
+                2.967675008358402,
+                4.032324991641598
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Pink rear wash",
+            "type": "AREA",
+            "energy": 163.39999389648438,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -0.5273500680923462,
+                0.5273500680923462
+              ],
+              [
+                2.272649884223938,
+                3.3273500204086304
+              ],
+              [
+                3.5,
+                3.5
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Left cyan bounce",
+            "type": "AREA",
+            "energy": 129.0,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -4.772556340124357,
+                -3.227443659875643
+              ],
+              [
+                -0.8868792322768706,
+                1.6868792441977996
+              ],
+              [
+                1.970174971432183,
+                4.029825028567817
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Right magenta bounce",
+            "type": "AREA",
+            "energy": 137.60000610351562,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                3.21617615792188,
+                4.78382384207812
+              ],
+              [
+                -0.49145679070739456,
+                2.4914567907073946
+              ],
+              [
+                1.4111336171627038,
+                3.988866478204728
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Overhead lavender fill",
+            "type": "AREA",
+            "energy": 103.19999694824219,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -1.5,
+                1.5
+              ],
+              [
+                -1.9864886403083801,
+                0.9864886403083801
+              ],
+              [
+                3.4991231560707092,
+                3.9008769392967224
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Exterior_key",
+            "type": "AREA",
+            "energy": 1800.0,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -1.9649177513905802,
+                5.96491775139058
+              ],
+              [
+                -14.747239900218469,
+                -9.252760099781531
+              ],
+              [
+                9.044987201690674,
+                14.955012798309326
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": true,
+            "within_inner_envelope_with_margin": false,
+            "margin_model_units": 0.01,
+            "above_outer_roof": true
+          },
+          {
+            "name": "Exterior_rim",
+            "type": "AREA",
+            "energy": 1200.0,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -10.54025555027089,
+                -5.45974444972911
+              ],
+              [
+                -2.4478516413946316,
+                4.447851641394632
+              ],
+              [
+                7.518181890249236,
+                12.481818109750764
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": true,
+            "within_inner_envelope_with_margin": false,
+            "margin_model_units": 0.01,
+            "above_outer_roof": true
+          }
+        ],
+        "invalid_interior_emitters": []
+      },
+      {
+        "file": "Xingtong_Neon_Stage_FullRoom_White.blend",
+        "sha256": "a3511469405be36f0937d0c5e75473e6a05d89fd83bfb555244c7801943e61ee",
+        "interior_model_bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -8,
+            3.37
+          ],
+          [
+            0,
+            4.075
+          ]
+        ],
+        "lights": [
+          {
+            "name": "White_inspection_front_wall_fill",
+            "type": "AREA",
+            "energy": 700.0,
+            "shape": "SQUARE",
+            "full_emitting_bounds": [
+              [
+                -1.0038691890241773,
+                1.0038691890241773
+              ],
+              [
+                -4.577158379122711,
+                -3.822841239407563
+              ],
+              [
+                2.169674821370598,
+                4.030324987894539
+              ]
+            ],
+            "method": "exact rectangular/square corner extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Soft neutral camera fill",
+            "type": "AREA",
+            "energy": 223.60000610351562,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -0.5810410380363464,
+                0.5810410380363464
+              ],
+              [
+                -4.032892155640402,
+                -3.567107748992166
+              ],
+              [
+                2.967675008358402,
+                4.032324991641598
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Pink rear wash",
+            "type": "AREA",
+            "energy": 163.39999389648438,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -0.5273500680923462,
+                0.5273500680923462
+              ],
+              [
+                2.272649884223938,
+                3.3273500204086304
+              ],
+              [
+                3.5,
+                3.5
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Left cyan bounce",
+            "type": "AREA",
+            "energy": 129.0,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -4.772556340124357,
+                -3.227443659875643
+              ],
+              [
+                -0.8868792322768706,
+                1.6868792441977996
+              ],
+              [
+                1.970174971432183,
+                4.029825028567817
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Right magenta bounce",
+            "type": "AREA",
+            "energy": 137.60000610351562,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                3.21617615792188,
+                4.78382384207812
+              ],
+              [
+                -0.49145679070739456,
+                2.4914567907073946
+              ],
+              [
+                1.4111336171627038,
+                3.988866478204728
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Overhead lavender fill",
+            "type": "AREA",
+            "energy": 103.19999694824219,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -1.5,
+                1.5
+              ],
+              [
+                -1.9864886403083801,
+                0.9864886403083801
+              ],
+              [
+                3.4991231560707092,
+                3.9008769392967224
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": false,
+            "within_inner_envelope_with_margin": true,
+            "margin_model_units": 0.01
+          },
+          {
+            "name": "Exterior_key",
+            "type": "AREA",
+            "energy": 1800.0,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -1.9649177513905802,
+                5.96491775139058
+              ],
+              [
+                -14.747239900218469,
+                -9.252760099781531
+              ],
+              [
+                9.044987201690674,
+                14.955012798309326
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": true,
+            "within_inner_envelope_with_margin": false,
+            "margin_model_units": 0.01,
+            "above_outer_roof": true
+          },
+          {
+            "name": "Exterior_rim",
+            "type": "AREA",
+            "energy": 1200.0,
+            "shape": "DISK",
+            "full_emitting_bounds": [
+              [
+                -10.54025555027089,
+                -5.45974444972911
+              ],
+              [
+                -2.4478516413946316,
+                4.447851641394632
+              ],
+              [
+                7.518181890249236,
+                12.481818109750764
+              ]
+            ],
+            "method": "analytic disk/ellipse full perimeter extrema",
+            "intentional_exterior_light": true,
+            "within_inner_envelope_with_margin": false,
+            "margin_model_units": 0.01,
+            "above_outer_roof": true
+          }
+        ],
+        "invalid_interior_emitters": []
+      }
+    ],
+    "repairs_verified": [
+      "Soft neutral camera fill no longer crosses roof.",
+      "Pink rear wash no longer crosses rear wall.",
+      "Left cyan bounce no longer enters ceiling slab.",
+      "White inspection square fill no longer crosses roof."
+    ],
+    "method": "Full disk/ellipse extrema calculated analytically; rectangular/square extrema derived from all four emitting corners. All internal emitters now stay inside the envelope with over 0.04 model-unit clearance. Intentional exterior emitters lie wholly above the outer roof.",
+    "visual_result": "The prior roof bright patch is absent in regenerated exterior evidence."
+  },
+  "export_lighting_limit": "GLB contains emissive mesh materials but does not reproduce Blender area lights. A GLB viewer may use different illumination; geometry/UV/embedded-texture checks pass.",
+  "review_image_sha256": {
+    "review/八视角_完整房间.jpg": "d8725bad1cf89823a58e40194c9dbecc103eab5d9ed9ddfc0d688fe4becaef0a",
+    "review/结构_白模_外壳_剖切.jpg": "3a678e4d16384890bb0e7ea934a029d8493cc278e81fdf0c7cb2f51afa28f5a4",
+    "review/舞房_完整房间_预览.jpg": "647dca1e1f4de038f3cf32190c6b5b1d88f670430304d3e8756ec0fc19b0f545",
+    "review/源图A_原图_重建_叠图.jpg": "91bbae6d6c82142619271deb0dd2602024e089bf4ec45cbb5f4e8d7fa28a1f3d",
+    "review/源图B_原图_重建_叠图.jpg": "a49f83ffb4bd52695b249b482a5cb87134e166a67ecce0b4e25319a01c75de50",
+    "renders/White_entry_detail_clean.png": "ac38f22a9441f9d9b226247ca817a935e43fd405699380d44921fa42b2a857d3"
+  }
+}

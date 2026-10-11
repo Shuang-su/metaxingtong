@@ -1,0 +1,55 @@
+{
+  "blend_sha256": "94eb4f5c1fcdcf029a2673c440f0d63376fd393635f5a0eddc1ba85235dd0b1c",
+  "dense_envelope_surface_checks": {
+    "tested": 50544,
+    "misses": 0,
+    "miss_samples": [],
+    "near_join_offset": 0.0001,
+    "includes": "axis-aligned wall, floor, roof grids near corners and door header/jamb transitions; closed leaf included"
+  },
+  "entry_aperture": {
+    "tested": 2501,
+    "unexpected_architecture_hits": 0,
+    "closed_leaf_misses": 0,
+    "clear_bounds": [
+      2.52,
+      3.68,
+      0,
+      2.43
+    ]
+  },
+  "rear_decorative_arch": {
+    "tested": 255,
+    "backing_misses": 0,
+    "interpretation": "backed decorative recess, not a door"
+  },
+  "walk_route": {
+    "points_xy": [
+      [
+        3.1,
+        -7.65
+      ],
+      [
+        3.1,
+        -5.5
+      ],
+      [
+        0,
+        -5.5
+      ],
+      [
+        0,
+        1.5
+      ]
+    ],
+    "sampled_radius": 0.28,
+    "height_interval": [
+      0.04,
+      2.04
+    ],
+    "samples": 1378,
+    "obstructions": 0,
+    "bad_samples": []
+  },
+  "limit": "Sampling validates this model geometry. It is neither a source-derived measurement nor a building-code/accessibility certification."
+}
