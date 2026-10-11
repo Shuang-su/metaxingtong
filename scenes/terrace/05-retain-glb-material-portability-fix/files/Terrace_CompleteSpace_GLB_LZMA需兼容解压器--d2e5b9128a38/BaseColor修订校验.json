@@ -1,0 +1,93 @@
+{
+  "scene": "terrace_complete_candidate_20261010",
+  "source_blend": {
+    "path": "/workspace/scratch/fa58bfcf0425/terrace_complete_candidate_20261010/delivery/Green_Terrace_Working_V16_CompleteSpace_REVIEW.blend",
+    "sha256": "47e9fb0a00803491b58d6d02bcb0c5cb4a1aa85b550bc906a2eda24888d56851",
+    "bytes": 16572008
+  },
+  "original_glb": {
+    "path": "/workspace/scratch/fa58bfcf0425/terrace_complete_candidate_20261010/Terrace_CompleteSpace_WithoutCity.glb",
+    "bytes": 33658432,
+    "sha256": "d303270a27552ce33b932da59e959920fd1bcf0ffa0592b18e2c9702776ffade"
+  },
+  "repaired_glb": {
+    "path": "/workspace/scratch/fa58bfcf0425/material_portability_repair_20261010/terrace_complete_candidate_20261010/Terrace_CompleteSpace_WithoutCity.glb",
+    "bytes": 34076844,
+    "sha256": "9c4551b99e20b02a8c0a29f2115f2c83bbf28ae18c5628228263d6cd8b12435d"
+  },
+  "changes": [
+    {
+      "material": "RearRail_PaleFinish_HYPOTHESIS",
+      "operation": {
+        "name": "Shared pale finish hypothesis",
+        "type": "MIX_RGB",
+        "inputs": {
+          "Fac": 0.44999998807907104,
+          "Color1": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "Color2": [
+            0.5799999833106995,
+            0.46000000834465027,
+            0.3499999940395355,
+            1.0
+          ]
+        },
+        "blend_type": "MIX"
+      },
+      "old_png_sha256": "ad70862745047fc7f05b97ef3ab2851b273b47f21ed7f50908f3bfbd910b31a0",
+      "new_png_sha256": "7b1db66786bd11adcd84589d3e4e09048cf969f306d293761a508774ee5258f4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_alpha_unchanged": true,
+      "old_texture_index": 9,
+      "new_texture_index": 31,
+      "original_image_shared_by_basecolor_materials": [
+        "RearRail_PaleFinish_HYPOTHESIS",
+        "wall_cedar"
+      ]
+    },
+    {
+      "material": "V4_Inferred_Tree_Leaf_Tone",
+      "operation": {
+        "name": "Gamma",
+        "type": "GAMMA",
+        "inputs": {
+          "Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Gamma": 0.699999988079071
+        }
+      },
+      "old_png_sha256": "26ed773767a25531785a9afedef2338b83140095fd152f967b24d94e81462744",
+      "new_png_sha256": "3c340985bd16be75e72aae3b48e5ffed62cc6f45cf79966e87682b15453bb3c2",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_alpha_unchanged": true,
+      "old_texture_index": 13,
+      "new_texture_index": 32,
+      "original_image_shared_by_basecolor_materials": [
+        "V4_Inferred_Tree_Leaf_Tone",
+        "green_leaf"
+      ]
+    }
+  ],
+  "validation": {
+    "entire_original_binary_buffer_preserved_byte_for_byte": true,
+    "all_original_bufferViews_unchanged": true,
+    "all_geometry_uv_normals_tangents_indices_draco_payloads_and_node_transforms_unchanged": true,
+    "all_non_basecolor_material_parameters_unchanged": true,
+    "json_equal_after_removing_appended_png_resources_and_restoring_seven_texture_references": true,
+    "original_source_blend_unmodified": true
+  }
+}
