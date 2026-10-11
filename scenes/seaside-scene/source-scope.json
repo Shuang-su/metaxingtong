@@ -1,0 +1,252 @@
+{
+  "scene_name": "海滨开放场景",
+  "status": "重建候选 / 待来源复核",
+  "source_urls": [
+    "https://www.bilibili.com/video/BV1mx4y1z7oY/"
+  ],
+  "residuals": "有限道路/岸坡/链栏场景；像素RGB残差不等于几何精度，植物、岸线、透视与光照仍近似。",
+  "source_fidelity_acceptance": "待复核，未通过总体来源忠实度验收。",
+  "newly_logged_in_hd_used_for_every_scene": false,
+  "newly_logged_in_hd_for_this_scene": "仅以本文件列出的来源质量证据为准；未明确记录则未知。",
+  "independent_additional_video_baselines": "逐证据判断，重复/同轴/同族不算独立基线。",
+  "source_quality_facts": [
+    {
+      "field": "document_excerpt",
+      "value": "来源：https://www.bilibili.com/video/BV1mx4y1z7oY/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "本轮已补拍两张1080解码的新帧：A实际6172.665443秒，暂停、readyState=2（当前解码帧已可见）；B实际6433.282443秒，暂停、readyState=4。解码1920×1080不等于截图尺寸：完整视口1180×757，原比例内容裁剪1180×663。新帧保留播放器淡线/水印，不做补绘；旧360p三帧另存以供追溯。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "6170秒（约1:42:50）：沿路前视；6310秒（约1:45:10）：侧向表演；6435秒（约1:47:15）：无人海上斜视。画面显示不同方向，但没有相机标定数据或可可靠三角化的连续基线；不能把三张图直接称为精确多视角测量。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "四、相机、光照与残差"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "两张高清新增帧和三张旧源帧均有等尺寸材质/白模渲染、50%直接叠图与三联图。全画面RGB差值仅量化像素差异，包含人物遮挡、海面、光照、天空等，绝不代表毫米误差或几何精度。没有为了降低残差裁掉不一致的建筑、人物或天空。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "实际查看 BV1mx4y1z7oY 约6170、6310、6435秒的三张现存360p播放视口截图。源图能支持开放海滨、沿海道路、步道、岸墩链条、弯灯杆、棕榈和坡地的类别与相对关系。未将其封成房间。道路和坡地的厚度、封口、底面、隐蔽背侧、有限地形截断范围及细节属于合理推定。模型单位无量纲，不能解释为实测米。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "实际查看10个普通视角、背面、底面、端面和明确标记的诊断剖视；检查材质、白模与源图的50%直接叠图。存在明显植被、岸线、透视与光照残差，不能称为像素级一致。没有根据各相机移动模型或切换网格显隐；场景动作和驱动器数量为0。诊断剖视是单独副本。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "七、高清补充来源复核（2026-10-10 05:13 UTC）"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "- B：6433.282443秒，paused=true，readyState=4，解码videoWidth=1920、videoHeight=1080。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "- A：6172.665443秒，paused=true，readyState=2（已有当前帧数据），解码videoWidth=1920、videoHeight=1080。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "更清楚的细节同时显示了仍存在的外观和形状残差：真实参考的岩岸断面轮廓更不规则，当前模型沿纵向重复起伏较明显；源图步道可见明确长方形铺装接缝，当前材质接缝尺度和走向未达到逐块匹配；源图棕榈的树干倾斜、叶冠舒展及个体分布、灯具相对高度/间距、植被密度仍与模型不同。夕阳光晕、海浪反射、云层和人物遮挡继续影响图像差值。这些残差已公开，不能以拓扑通过宣称视觉精确复刻。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "这次只更新来源与残差说明，四个核心模型未变，前述哈希与几何核验结论仍有效。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "文件整理说明（05:17 UTC）：浏览器原视口返回JPEG字节，扩展名由临时.png改为.jpg，字节哈希不变；裁剪图仍为PNG。以上路径及新增高清叠图说明由交付整理流程更新，主模型及独立数值结果未修改。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "来源：《与星瞳共度的一天》2024-04-19，BV1mx4y1z7oY"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "https://www.bilibili.com/video/BV1mx4y1z7oY/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "参考公开回放中的三帧：1:42:50（沿道路）、1:45:10（侧向表演）、1:47:15（无人海上斜视）。三帧属于正文中的连续海滨场景，不是片尾海滨静态结束卡；本模型是独立室外场景，不与卧室、厨房或舞房拼接。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "Blender中上述内容分别放在09、10、11集合；巨型唱片状日轮默认关闭，打开10_Optional_Stage_Sun并取消该物体的隐藏即可查看侧向表演版本。它是1:45:10可见的舞台化视觉效果，不能作为真实太阳尺寸依据。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "来源：《与星瞳共度的一天》2024-04-19，BV1mx4y1z7oY"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "https://www.bilibili.com/video/BV1mx4y1z7oY/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "参考公开回放中的三帧：1:42:50（沿道路）、1:45:10（侧向表演）、1:47:15（无人海上斜视）。三帧属于正文中的连续海滨场景，不是片尾海滨静态结束卡；本模型是独立室外场景，不与卧室、厨房或舞房拼接。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "Blender中上述内容分别放在09、10、11集合；巨型唱片状日轮默认关闭，打开10_Optional_Stage_Sun并取消该物体的隐藏即可查看侧向表演版本。它是1:45:10可见的舞台化视觉效果，不能作为真实太阳尺寸依据。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "来源：https://www.bilibili.com/video/BV1mx4y1z7oY/"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "A：实际时间6172.665443秒，约1:42:52.67，paused=true，readyState=2（HAVE_CURRENT_DATA，已有当前帧）。画面已直接检查为沿路海滨视角，人物在前景。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "B：实际时间6433.282443秒，约1:47:13.28，paused=true，readyState=4（HAVE_ENOUGH_DATA）。画面已直接检查为无人海上斜视。"
+    },
+    {
+      "field": "document_excerpt",
+      "value": "对照渲染使用近邻旧参考相机，几何不随参考图变化；新帧相机位置并未精准标定。50%叠图无形变。保留的植被、岸线、灯具、透视与光照残差不能被全画面RGB差值解释成测绘误差。"
+    },
+    {
+      "field": ".video[0].currentTime",
+      "value": 6172.665443
+    },
+    {
+      "field": ".video[0].paused",
+      "value": true
+    },
+    {
+      "field": ".video[0].readyState",
+      "value": 2
+    },
+    {
+      "field": ".video[0].rect.height",
+      "value": 757
+    },
+    {
+      "field": ".video[0].rect.width",
+      "value": 1180
+    },
+    {
+      "field": ".video[0].videoHeight",
+      "value": 1080
+    },
+    {
+      "field": ".video[0].videoWidth",
+      "value": 1920
+    },
+    {
+      "field": ".crop.width",
+      "value": 1180
+    },
+    {
+      "field": ".crop.height",
+      "value": 663
+    },
+    {
+      "field": ".url",
+      "value": "https://www.bilibili.com/video/BV1mx4y1z7oY/?vd_source=1be2bc00a5d2065400c29430a19686df"
+    },
+    {
+      "field": ".video[0].currentTime",
+      "value": 6433.282443
+    },
+    {
+      "field": ".video[0].paused",
+      "value": true
+    },
+    {
+      "field": ".video[0].readyState",
+      "value": 4
+    },
+    {
+      "field": ".video[0].rect.height",
+      "value": 757
+    },
+    {
+      "field": ".video[0].rect.width",
+      "value": 1180
+    },
+    {
+      "field": ".video[0].videoHeight",
+      "value": 1080
+    },
+    {
+      "field": ".video[0].videoWidth",
+      "value": 1920
+    },
+    {
+      "field": ".crop.width",
+      "value": 1180
+    },
+    {
+      "field": ".crop.height",
+      "value": 663
+    },
+    {
+      "field": ".url",
+      "value": "https://www.bilibili.com/video/BV1mx4y1z7oY/?vd_source=1be2bc00a5d2065400c29430a19686df"
+    },
+    {
+      "field": ".capture_timestamps[0]",
+      "value": "1:42:50"
+    },
+    {
+      "field": ".capture_timestamps[1]",
+      "value": "1:45:10"
+    },
+    {
+      "field": ".capture_timestamps[2]",
+      "value": "1:47:15"
+    },
+    {
+      "field": ".resolution[0]",
+      "value": 512
+    },
+    {
+      "field": ".resolution[1]",
+      "value": 512
+    },
+    {
+      "field": ".materials.asphalt.height_range_m",
+      "value": 0.00214
+    },
+    {
+      "field": ".materials.concrete.height_range_m",
+      "value": 0.00147
+    },
+    {
+      "field": ".materials.sidewalk.height_range_m",
+      "value": 0.00265
+    },
+    {
+      "field": ".materials.sidewalk.joint_width_m",
+      "value": 0.006
+    },
+    {
+      "field": ".materials.cliff.height_range_m",
+      "value": 0.03757
+    },
+    {
+      "field": ".materials.grass.height_range_m",
+      "value": 0.0029
+    },
+    {
+      "field": ".materials.palm_bark.height_range_m",
+      "value": 0.00507
+    },
+    {
+      "field": ".materials.palm_leaf.height_range_m",
+      "value": 0.00014
+    }
+  ],
+  "history_gaps": [
+    "未取得逐次聊天发布的确切时刻；Library创建/修改时间不替代聊天发布日期。",
+    "不能确认所有中间发布版本均已恢复；缺失历史不重建、不补造旧提交。"
+  ],
+  "technical_verification_scope": "随包已有记录，本次归档未重新运行Blender。",
+  "shared_standard": "docs/reconstruction-standard.md"
+}

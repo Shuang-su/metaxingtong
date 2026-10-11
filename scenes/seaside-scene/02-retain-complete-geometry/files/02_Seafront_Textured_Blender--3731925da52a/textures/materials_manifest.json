@@ -1,0 +1,174 @@
+{
+  "generator": "scripts/generate_textures.py",
+  "seed": 104729,
+  "resolution": [
+    512,
+    512
+  ],
+  "basecolor_color_space": "sRGB",
+  "roughness_color_space": "Non-Color / linear",
+  "normal_color_space": "Non-Color / linear",
+  "normal_convention": "Tangent space OpenGL (+Y), strength 1.0",
+  "metallic": 0.0,
+  "method": "Original procedural, periodic C2 value noise and analytic patterns; no photo projection, baked illumination, or external source images.",
+  "tiling": "All source fields are periodic in U and V; use repeat extension. Adjacent edge pixels need not be identical because samples are pixel centers on a periodic domain.",
+  "materials": {
+    "asphalt": {
+      "physical_tile_size_m": [
+        1.2,
+        1.2
+      ],
+      "suggested_normal_strength": 1.0,
+      "files": {
+        "basecolor": "asphalt_basecolor.png",
+        "roughness": "asphalt_roughness.png",
+        "normal": "asphalt_normal.png"
+      },
+      "roughness_min_max": [
+        0.765,
+        0.933
+      ],
+      "height_range_m": 0.00214,
+      "description": "Dark charcoal warm asphalt with millimetric fine aggregate; no road paint.",
+      "aggregate_scale_m": [
+        0.004,
+        0.02
+      ]
+    },
+    "concrete": {
+      "physical_tile_size_m": [
+        2,
+        2
+      ],
+      "suggested_normal_strength": 1.0,
+      "files": {
+        "basecolor": "concrete_basecolor.png",
+        "roughness": "concrete_roughness.png",
+        "normal": "concrete_normal.png"
+      },
+      "roughness_min_max": [
+        0.769,
+        0.933
+      ],
+      "height_range_m": 0.00147,
+      "description": "Weathered warm-gray concrete; subtle periodic lower-panel stain and fine pores.",
+      "mapping_note": "V vertical on retaining walls. Stain is periodic and intentionally subdued."
+    },
+    "sidewalk": {
+      "physical_tile_size_m": [
+        1.6,
+        1.6
+      ],
+      "suggested_normal_strength": 1.0,
+      "files": {
+        "basecolor": "sidewalk_basecolor.png",
+        "roughness": "sidewalk_roughness.png",
+        "normal": "sidewalk_normal.png"
+      },
+      "roughness_min_max": [
+        0.773,
+        0.929
+      ],
+      "height_range_m": 0.00265,
+      "description": "Staggered dusty pink/gray rectangular paving with subdued warm-gray joints.",
+      "paver_size_m": [
+        0.4,
+        0.2
+      ],
+      "joint_width_m": 0.006,
+      "layout": "4 columns \u00d7 8 rows, half-bond"
+    },
+    "cliff": {
+      "physical_tile_size_m": [
+        4,
+        4
+      ],
+      "suggested_normal_strength": 1.0,
+      "files": {
+        "basecolor": "cliff_basecolor.png",
+        "roughness": "cliff_roughness.png",
+        "normal": "cliff_normal.png"
+      },
+      "roughness_min_max": [
+        0.867,
+        0.957
+      ],
+      "height_range_m": 0.03757,
+      "description": "Dark warm soil/rock with fine irregular sedimentary bands and weathered mineral grain.",
+      "mapping_note": "V vertical along cliff; larger silhouette variation should come from geometry."
+    },
+    "grass": {
+      "physical_tile_size_m": [
+        2,
+        2
+      ],
+      "suggested_normal_strength": 1.0,
+      "files": {
+        "basecolor": "grass_basecolor.png",
+        "roughness": "grass_roughness.png",
+        "normal": "grass_normal.png"
+      },
+      "roughness_min_max": [
+        0.855,
+        0.941
+      ],
+      "height_range_m": 0.0029,
+      "description": "Patchy coastal olive-green ground cover, restrained dry brown patches and fine grass/straw.",
+      "mapping_note": "Ground-cover material; individual tall vegetation should be modeled separately."
+    },
+    "palm_bark": {
+      "physical_tile_size_m": [
+        0.9,
+        1.2
+      ],
+      "suggested_normal_strength": 1.0,
+      "files": {
+        "basecolor": "palm_bark_basecolor.png",
+        "roughness": "palm_bark_roughness.png",
+        "normal": "palm_bark_normal.png"
+      },
+      "roughness_min_max": [
+        0.847,
+        0.922
+      ],
+      "height_range_m": 0.00507,
+      "description": "Warm gray-brown fibrous palm trunk with periodic, irregular horizontal leaf-scar ridges.",
+      "mapping_note": "U wraps trunk circumference, V along trunk. Taper belongs to geometry.",
+      "ridge_spacing_m": 0.0857
+    },
+    "palm_leaf": {
+      "physical_tile_size_m": [
+        0.15,
+        1.5
+      ],
+      "suggested_normal_strength": 1.0,
+      "files": {
+        "basecolor": "palm_leaf_basecolor.png",
+        "roughness": "palm_leaf_roughness.png",
+        "normal": "palm_leaf_normal.png"
+      },
+      "roughness_min_max": [
+        0.416,
+        0.541
+      ],
+      "height_range_m": 0.00014,
+      "description": "Natural coastal palm green with slender longitudinal veins and subdued waxy roughness.",
+      "mapping_note": "U across the leaflet width; V along its length. Geometry supplies outline; no alpha mask.",
+      "recommended_double_sided": true
+    }
+  },
+  "png_total_bytes": 2775121,
+  "map_count": 21,
+  "scene_extra_maps": {
+    "asphalt_damp_roughness.png": {
+      "method": "Original asphalt roughness multiplied by 0.43 to support low-sun damp sheen.",
+      "color_space": "Non-Color"
+    },
+    "water_normal.png": {
+      "method": "Seamless random-phase sum of 70 sinusoidal wave modes; original procedural spectrum.",
+      "color_space": "Non-Color",
+      "convention": "OpenGL +Y",
+      "normal_strength": 0.65
+    }
+  }
+}
