@@ -1,0 +1,8 @@
+import bpy,json,hashlib,struct
+from pathlib import Path
+p=Path('/workspace/scratch/fa58bfcf0425/classroom_hd_alignment_20261010')
+# Reuse exactly documented state fingerprint, without executing render or write steps.
+code=(p/'scripts/finalize_audit.py').read_text().split('def state():',1)[1].split('\nbefore=state()',1)[0];exec('def state():'+code)
+bpy.ops.wm.open_mainfile(filepath='/workspace/scratch/fa58bfcf0425/classroom_fullroom/Classroom_FullRoom_REVIEW.blend');baseline=state();basecams={o.name:[list(o.location),list(o.rotation_euler),o.data.lens] for o in bpy.data.objects if o.type=='CAMERA'}
+bpy.ops.wm.open_mainfile(filepath=str(p/'Classroom_HD_Evidence_REVIEW.blend'));saved=state();cams={o.name:[list(o.location),list(o.rotation_euler),o.data.lens] for o in bpy.data.objects if o.type=='CAMERA'};same_old_cameras=all(cams.get(k)==v for k,v in basecams.items());bpy.context.scene.camera=bpy.data.objects['HD_classroom_4284_wide'];bpy.ops.wm.save_as_mainfile(filepath=str(p/'Classroom_HD_Evidence_REVIEW.blend'),compress=True)
+report={'baseline_non_camera_state_hash':baseline,'saved_main_non_camera_state_hash':saved,'geometry_material_visibility_exact_match':baseline==saved,'all_existing_cameras_exactly_preserved':same_old_cameras,'new_source_camera_count':sum(o.name.startswith('HD_classroom') for o in bpy.data.objects if o.type=='CAMERA'),'default_review_camera':bpy.context.scene.camera.name,'packed_image_count':sum(bool(i.packed_file) for i in bpy.data.images),'conclusion':'Geometry unchanged; D auxiliary static narrative background, primary-layout linkage unknown; primary residuals remain; rejected branch excluded.'};(p/'qa/saved_main_verification.json').write_text(json.dumps(report,indent=2));print(report)

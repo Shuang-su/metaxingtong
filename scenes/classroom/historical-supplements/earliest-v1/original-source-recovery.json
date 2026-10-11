@@ -1,0 +1,220 @@
+{
+  "status": "historical_original_source_restoration",
+  "model_changed": false,
+  "archived_at_utc_date": "2026-10-11",
+  "notes": [
+    "Original project scripts and QA JSON restored byte-for-byte; static review only.",
+    "No code in this batch was executed. Some scripts delete/rebuild their own ZIP outputs or refer to unavailable intermediate models. Do not execute as a historical recovery procedure.",
+    "Historical source interpretations are retained as original artifacts and may be superseded by later Issue corrections.",
+    "No credentials, private download URLs, assistant logs, networking or secret-environment reads found during static inspection."
+  ],
+  "files": [
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/qa/roundtrip_validation.json",
+      "bytes": 2265,
+      "sha256": "505ab1cbd0fc1b397c859f3594004d2d811c5339b2ea6c0d1c8a63e97ee04514",
+      "git_blob_sha1": "22498a42d4b6f99d920159557d7c8ed1320a5b1e",
+      "role": "QA",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "qa/roundtrip_validation.json"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/qa/blender_textured_geometry.json",
+      "bytes": 50174,
+      "sha256": "263d21db26174f1b08e0395fa5071ce384b4c502628ef04d0d5103d7ef70b957",
+      "git_blob_sha1": "0432ec56488a88855b000abff81b649a2657a24e",
+      "role": "QA",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "qa/blender_textured_geometry.json"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/qa/blender_white_geometry.json",
+      "bytes": 50174,
+      "sha256": "263d21db26174f1b08e0395fa5071ce384b4c502628ef04d0d5103d7ef70b957",
+      "git_blob_sha1": "0432ec56488a88855b000abff81b649a2657a24e",
+      "role": "QA",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "qa/blender_white_geometry.json"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/qa/normal_orientation_check.json",
+      "bytes": 10269,
+      "sha256": "beaf4b8e9e60fd43a6a6909dc86cb963361aef271d81a49a1d8d0f7085dee844",
+      "git_blob_sha1": "922b19398de4921cdf46cd409847e7f2516bce71",
+      "role": "QA",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "qa/normal_orientation_check.json"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/qa/wide_camera_landmarks.json",
+      "bytes": 3371,
+      "sha256": "a9bc5c2b4553dfdd37f14c9d7ea4febdf85c542244027b5a9e7222c76577fc15",
+      "git_blob_sha1": "5d163107117eb6f9409ff443d5239ce2d2e48d47",
+      "role": "QA",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "qa/wide_camera_landmarks.json"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/qa/image_comparison_manifest.json",
+      "bytes": 1380,
+      "sha256": "5c269711e46f65a1e514e12d3722f6f3884c6410a1bacf3e48da115e2035e59d",
+      "git_blob_sha1": "db78b9122803e3d2844ebab9ab5189cba1d784cd",
+      "role": "QA",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "qa/image_comparison_manifest.json"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/finalize.py",
+      "bytes": 8240,
+      "sha256": "9e84e0b1c4bab5fde19e919250c0ef4e5ccad9e6ffd71365ab789c8876a4984d",
+      "git_blob_sha1": "01b81f91c0c82a2c42cd64b76ddb3eb6e2e60b0f",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/finalize.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/validate_roundtrip.py",
+      "bytes": 3801,
+      "sha256": "b0600fb56df8a87373ac4967268351ca27e94980b20a8a4f2c183701fb6744d8",
+      "git_blob_sha1": "f68c60ece179965645d90596fcdd83a33093d4eb",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/validate_roundtrip.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/verify_release_normals.py",
+      "bytes": 857,
+      "sha256": "b5b2f89ed25fa75a8b1c41b6bf85deafae23673736899b01f3a3608ea616d0fd",
+      "git_blob_sha1": "62a4f3b28fda4269e7eede580bebfbba7f008df0",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/verify_release_normals.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/render_release.py",
+      "bytes": 696,
+      "sha256": "273bce0f4ab625351aaa188591e54f9e642a4e8908cbe43c03be7aff9b41f895",
+      "git_blob_sha1": "6a22d58fe208db6208a96c2cb2ae62f6d20b7323",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/render_release.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/build_classroom.py",
+      "bytes": 18022,
+      "sha256": "252819b7544c0821d5b5aca9190bf09d9b68bf765b14e99c35e56fddfbb81cb6",
+      "git_blob_sha1": "6dfc93ef6892c467440f48e35a3d64c9efa13f04",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/build_classroom.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/repair_detail_scale.py",
+      "bytes": 1331,
+      "sha256": "62da563c6fa60ec54fec3e8d26a7070471cb9ef190a812599a373a0ce78f5a8d",
+      "git_blob_sha1": "4d893bea797c9517ac50153dcd73d93d73d76862",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/repair_detail_scale.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/refine_classroom.py",
+      "bytes": 15034,
+      "sha256": "3483f4c76462726135677ad7865418dbab3ff1fbdf1b7aa4307c50a9cbd50d0d",
+      "git_blob_sha1": "35347c4d5911faf8f0a9fc7f9b5ac5d8fc1f8200",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/refine_classroom.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/complete_views.py",
+      "bytes": 603,
+      "sha256": "c5418078f290061d388d4b2d62608bf71e3e1ef8c532f113f3a777584699e6f7",
+      "git_blob_sha1": "f7728bfbac055d6d479771cf393d448fedd200ce",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/complete_views.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/textures.py",
+      "bytes": 1643,
+      "sha256": "841073240120b83b57813cec1227111a8f76aaef7bc43eec4f51119a1434c0d4",
+      "git_blob_sha1": "8accbdcec5e12476bbcfbfd2d8aac23243ae5673",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/textures.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/landmarks.py",
+      "bytes": 1710,
+      "sha256": "723cc2ef3426ceb2bb84b6a916c9b9b1385b0eef6dbba9da204f6a0a62806ccd",
+      "git_blob_sha1": "880494d52f94431ba8cec96fc1ea6823083006cb",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/landmarks.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/package_release.py",
+      "bytes": 2683,
+      "sha256": "6e262c70cca12b9357b55cf3423361f5c4798dffa81dd1263d4826d93ddc89c2",
+      "git_blob_sha1": "b0e3fb5a26f1608278b3fa5e3587fedba5ca7b33",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/package_release.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/check_normals.py",
+      "bytes": 678,
+      "sha256": "00b9ffa35fd8bed60afdf63e9ebe0b0c46a28882cdd37c1ae3cd84124de7d886",
+      "git_blob_sha1": "ebe958cb0809f34e3f25c9418b67c144f5930a0c",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/check_normals.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/add_verified_details.py",
+      "bytes": 3369,
+      "sha256": "1b8c7d5ac6e3d00b18cd6fe4f311cf60bf2ac0eee68924a8a533a19e5c4d1591",
+      "git_blob_sha1": "2e92002ab82d005642af7ad7dcac3299b56a75d8",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/add_verified_details.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/adopt.py",
+      "bytes": 5982,
+      "sha256": "16f2efb6dc28d30ee6ff8f65bab13849bb4f59a410f11d127b0f05c769352be4",
+      "git_blob_sha1": "9fa4160f03911db0f1cd50fadf4e2f17cd01c1ec",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/adopt.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/fix_normals_release.py",
+      "bytes": 3516,
+      "sha256": "0c10bd2806dd358497e3afbe8cee4d547221fa1641622abf84c8a4d7db5a5399",
+      "git_blob_sha1": "b839c476fe611146395379e86e03e1af723a5f29",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/fix_normals_release.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/finish_release.py",
+      "bytes": 4510,
+      "sha256": "08dee387239cc74ecbe7fdcf27b22c9a6ef113689b8ee558836e97ccc815d802",
+      "git_blob_sha1": "b0553c8572c0d2929af19804cf97896afe37270b",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/finish_release.py"
+    },
+    {
+      "path": "scenes/classroom/historical-supplements/earliest-v1/scripts/qa_images.py",
+      "bytes": 2488,
+      "sha256": "1efd428e1ea51bd556ba864b5b3e834323d6de7572b26a6e1db5ca8276ea90ae",
+      "git_blob_sha1": "6c76b83badd7429312e876bdd5078420d1e29521",
+      "role": "script",
+      "original_package": "02_Xingtong_Classroom_PBR_QA.zip",
+      "original_member": "scripts/qa_images.py"
+    }
+  ]
+}

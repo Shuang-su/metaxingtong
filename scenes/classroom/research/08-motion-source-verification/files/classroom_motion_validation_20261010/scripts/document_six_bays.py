@@ -1,0 +1,13 @@
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+import json,hashlib,numpy as np
+from scipy.optimize import least_squares
+p=Path('classroom_motion_validation_20261010');src=p/'source/B_connection';font=ImageFont.truetype('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',20)
+images=[]
+for n,marks,label in [('B_front_16',[143,323,462,568],'靠前窗段：书柜/植物/墙角同框，上部固定框定位前端jamb'),('B_front_19',[55,350,590,806,982,1120],'连续扫到宽墩：左灰带为宽墩；最前端仅最后一格在右画外')]:
+ f=src/(n+'.jpg');im=Image.open(f).convert('RGB');d=ImageDraw.Draw(im)
+ for i,x in enumerate(marks):d.line([(x,50),(x,155)],fill='yellow',width=3);d.text((x+4,53),str(i+1),fill='yellow',font=font,stroke_width=1,stroke_fill='black')
+ row=Image.new('RGB',(1180,800),'#202020');row.paste(im,(0,43));dr=ImageDraw.Draw(row);dr.text((8,7),n+'：'+label,font=font,fill='white');images.append(row)
+sheet=Image.new('RGB',(1180,1600));sheet.paste(images[0],(0,0));sheet.paste(images[1],(0,800));sheet.save(p/'B连续连接_前段六格计数证据.jpg',quality=95)
+k=np.array([1,2,3,4,5.]);x=np.array([1120,982,806,590,350.]);fit=least_squares(lambda v:(v[0]*k+v[1])/(v[2]*k+1)-x,[-100,1300,-.04]);v=fit.x;pred=lambda z:float((v[0]*z+v[1])/(v[2]*z+1));r={'source_records':['B_front_16','B_front_17','B_front_18','B_front_19','B_intro_16','B_path_042'],'observed_relation':'First opening pair and front-wall/bookcase corner continuously connect to B-view pier. Six fixed upper-frame intervals supported, not10. Opening-leaf free edges are not counted as fixed frames.','B_front16_upper_x_near_to_far':[568,462,323,143],'B_front19_upper_x_near_to_far':[None,1120,982,806,590,350,55],'first_jamb_outside_right':True,'source_count_confidence':'High qualitative confidence; raw moving screenshots have blur. Distances remain inferred, not measured metres.','projective_spacing_diagnostic':{'fit_frame_indices':[1,2,3,4,5],'manual_x':x.tolist(),'predicted_jamb_index0_x':pred(0),'predicted_six_bay_pier_index6_x':pred(6),'observed_pier_x_approx':55,'predicted_ten_bay_pier_index10_x':pred(10),'warning':'Diagnostic equal-pitch extrapolation only; not source warp or exact calibrated metrology.'},'old_model':{'front_jamb_y':.7913844585961222,'front_pitch':.5816229294917844,'front_pier_y':6.607613563537598,'front_intervals':10},'candidate':{'front_intervals':6,'front_pier_y':6.607613563537598-4*.5816229294917844,'shared_change':'Move pier and rear window section forward; restore opaque rear fill; keep first opening pair unchanged. B camera re-matched by segment identity; furniture unchanged.'}}
+(p/'qa/B_window_identity_six_bay_evidence.json').write_text(json.dumps(r,ensure_ascii=False,indent=2));print(r['projective_spacing_diagnostic'])

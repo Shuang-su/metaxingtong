@@ -1,0 +1,25 @@
+{
+  "tool": "Open Image Denoise 2.5.1 existing local installation",
+  "binary": "/workspace/scratch/fa58bfcf0425/teahouse_v2/oidn/bin/oidnDenoise",
+  "options": [
+    "--ldr",
+    "--srgb",
+    "--threads",
+    "3"
+  ],
+  "changes": "Denoising only; no image resize, registration, geometry, material or lighting changes; raw renders retained. Not used for geometric accuracy/count assertions.",
+  "pairs": [
+    {
+      "raw": "classroom_hd_alignment_20261010/renders/classroom_4284_wide_64samples.png",
+      "raw_sha256": "d39eff0c79f5c8d2fa9e322e6f00ef0aa3472537b6c7dee37a587c7070fc8b66",
+      "denoised": "classroom_hd_alignment_20261010/renders/classroom_4284_wide_64samples_denoised.png",
+      "denoised_sha256": "251a0a23f60c9ee7fffc92413f0a19263e637ec98c5c67b16a963df400cdbf27"
+    },
+    {
+      "raw": "classroom_hd_alignment_20261010/renders/classroom_5447_key_64samples.png",
+      "raw_sha256": "f70d376aa0236fcaf35b23264a4f7d6f48fab25f64f7a9a5c159684fcc04b3a5",
+      "denoised": "classroom_hd_alignment_20261010/renders/classroom_5447_key_64samples_denoised.png",
+      "denoised_sha256": "2b4c42b993cbfc435d9942cd189ac85ab9c1696e97eea681dd02c56579f5a9e3"
+    }
+  ]
+}

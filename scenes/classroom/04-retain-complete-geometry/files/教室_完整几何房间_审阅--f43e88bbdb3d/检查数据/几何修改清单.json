@@ -1,0 +1,5084 @@
+[
+  {
+    "object": "Continuous wood plank floor",
+    "before": [
+      [
+        -3.999033212661743,
+        4.711546921498666e-07,
+        -0.130000501871109
+      ],
+      [
+        4.441575050354004,
+        11.5,
+        5.026809617447725e-07
+      ]
+    ],
+    "after": [
+      [
+        -4.2,
+        -0.2,
+        -0.206
+      ],
+      [
+        4.287,
+        11.7,
+        0
+      ]
+    ],
+    "reason": "Close slab-to-wall perimeter; preserve visible floor planeZ0"
+  },
+  {
+    "object": "Ceiling plaster slab",
+    "before": [
+      [
+        -3.999033212661743,
+        -5.245382794782927e-09,
+        2.9372470378875732
+      ],
+      [
+        4.441575050354004,
+        11.500000953674316,
+        3.057248115539551
+      ]
+    ],
+    "after": [
+      [
+        -4.2,
+        -0.2,
+        2.937247
+      ],
+      [
+        4.287,
+        11.7,
+        3.144
+      ]
+    ],
+    "reason": "Close roof perimeter; preserve interior ceiling plane"
+  },
+  {
+    "object": "Front pale blue plaster wall",
+    "before": [
+      [
+        -3.999033212661743,
+        -0.20000015199184418,
+        -0.2063763290643692
+      ],
+      [
+        4.441574573516846,
+        1.4643315182638617e-07,
+        3.1436235904693604
+      ]
+    ],
+    "after": [
+      [
+        -4.2,
+        -0.2,
+        -0.206
+      ],
+      [
+        4.287,
+        0,
+        3.144
+      ]
+    ],
+    "reason": "Join both full-thickness side corners without exterior overhang"
+  },
+  {
+    "object": "INFERRED rear extent plain wall",
+    "before": [
+      [
+        -4.199999809265137,
+        11.5,
+        -0.2063763290643692
+      ],
+      [
+        4.240608215332031,
+        11.700000762939453,
+        3.1436235904693604
+      ]
+    ],
+    "after": [
+      [
+        -4.2,
+        11.5,
+        -0.206
+      ],
+      [
+        4.287,
+        11.7,
+        3.144
+      ]
+    ],
+    "reason": "Join rear wall to full left/right thickness"
+  },
+  {
+    "object": "INFERRED rear extent plain wall",
+    "reason": "Activate rear wall previously disabled through hidden collection"
+  },
+  {
+    "object": "FULLROOM inferred right rear wall",
+    "after": [
+      [
+        -4.2,
+        8.2,
+        0
+      ],
+      [
+        -4,
+        11.5,
+        2.937247
+      ]
+    ],
+    "reason": "Complete missing3.3-unit rear wall run",
+    "inferred": true
+  },
+  {
+    "object": "FULLROOM inferred left front backing",
+    "after": [
+      [
+        4.107,
+        0,
+        0
+      ],
+      [
+        4.287,
+        0.791384,
+        2.937247
+      ]
+    ],
+    "reason": "Join left window wall to front wall; back existing observed jamb",
+    "inferred": true
+  },
+  {
+    "object": "FULLROOM inferred front jamb outer return",
+    "after": [
+      [
+        4.252,
+        0.164,
+        0.651494
+      ],
+      [
+        4.287,
+        0.791384,
+        2.734114
+      ]
+    ],
+    "reason": "Full thickness exterior return behind preserved front masonry",
+    "inferred": true
+  },
+  {
+    "object": "FULLROOM inferred central pier outer return",
+    "after": [
+      [
+        4.252,
+        6.607614,
+        0.651494
+      ],
+      [
+        4.287,
+        7.107614,
+        2.734114
+      ]
+    ],
+    "reason": "Full thickness backing behind preserved broad pier",
+    "inferred": true
+  },
+  {
+    "object": "FULLROOM inferred rear pier outer return",
+    "after": [
+      [
+        4.252,
+        9.894,
+        0.651494
+      ],
+      [
+        4.287,
+        11.5,
+        2.734114
+      ]
+    ],
+    "reason": "Join rear solid window-end to exterior wall plane",
+    "inferred": true
+  },
+  {
+    "object": "FULLROOM door head reveal seal",
+    "after": [
+      [
+        -4.2,
+        0.719,
+        1.699
+      ],
+      [
+        -4,
+        1.69,
+        1.789
+      ]
+    ],
+    "reason": "Seal accidental gap above door frame; preserve door aperture below",
+    "inferred": true
+  },
+  {
+    "object": "Front ceiling perimeter beam",
+    "before": [
+      [
+        -3.999033212661743,
+        -0.005000008270144463,
+        2.6716647148132324
+      ],
+      [
+        4.441575050354004,
+        0.30500003695487976,
+        2.9716649055480957
+      ]
+    ],
+    "after": [
+      [
+        -4,
+        -0.005,
+        2.671665
+      ],
+      [
+        4.107,
+        0.305,
+        2.971665
+      ]
+    ],
+    "reason": "Finish front beam at interior side-wall joins"
+  },
+  {
+    "object": "Right ceiling perimeter beam",
+    "before": [
+      [
+        -4.0,
+        -1.3113426788891047e-08,
+        2.671664237976074
+      ],
+      [
+        -3.6599998474121094,
+        8.199999809265137,
+        2.971665382385254
+      ]
+    ],
+    "after": [
+      [
+        -4,
+        0,
+        2.671665
+      ],
+      [
+        -3.66,
+        11.5,
+        2.971665
+      ]
+    ],
+    "reason": "Extend existing beam to complete rear corner"
+  },
+  {
+    "object": "Blue grey skirting",
+    "before": [
+      [
+        -4.0,
+        -0.007500010076910257,
+        -2.4041264534702123e-09
+      ],
+      [
+        4.0,
+        0.04750001057982445,
+        0.2199999988079071
+      ]
+    ],
+    "after": [
+      [
+        -4,
+        0,
+        0
+      ],
+      [
+        4.107,
+        0.0475,
+        0.22
+      ]
+    ],
+    "reason": "Meet front sidewall joins"
+  },
+  {
+    "object": "Blue grey skirting.001",
+    "before": [
+      [
+        -4.012499809265137,
+        -9.616505813880849e-09,
+        -3.5843336831931083e-07
+      ],
+      [
+        -3.9574999809265137,
+        8.199999809265137,
+        0.22000035643577576
+      ]
+    ],
+    "after": [
+      [
+        -4.0125,
+        0,
+        0
+      ],
+      [
+        -3.9575,
+        0.653,
+        0.22
+      ]
+    ],
+    "reason": "Remove solid skirting from navigable doorway"
+  },
+  {
+    "object": "FULLROOM right rear skirting",
+    "after": [
+      [
+        -4.0125,
+        1.756,
+        0
+      ],
+      [
+        -3.9575,
+        11.5,
+        0.22
+      ]
+    ],
+    "reason": "Continue right skirting without blocking door",
+    "inferred": true
+  },
+  {
+    "object": "FULLROOM inferred rear skirting",
+    "after": [
+      [
+        -4,
+        11.4525,
+        0
+      ],
+      [
+        4.107,
+        11.5,
+        0.22
+      ]
+    ],
+    "reason": "Complete rear trim joined to rear wall",
+    "inferred": true
+  },
+  {
+    "object": "Right side pale glass pane",
+    "before": [
+      [
+        -4.015500068664551,
+        2.2100000381469727,
+        1.0750000476837158
+      ],
+      [
+        -4.006500244140625,
+        3.1500000953674316,
+        1.6050000190734863
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        2.201500219345093,
+        0.936
+      ],
+      [
+        -4.0065,
+        3.16349979019165,
+        1.414
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.001",
+    "before": [
+      [
+        -4.015500068664551,
+        2.2100000381469727,
+        1.6549999713897705
+      ],
+      [
+        -4.006500244140625,
+        3.1500000953674316,
+        2.575000047683716
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        2.201500219345093,
+        1.444
+      ],
+      [
+        -4.0065,
+        3.16349979019165,
+        2.265
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.002",
+    "before": [
+      [
+        -4.015500068664551,
+        3.2149999141693115,
+        1.0750000476837158
+      ],
+      [
+        -4.006500244140625,
+        4.154999732971191,
+        1.6050000190734863
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        3.206500095367432,
+        0.936
+      ],
+      [
+        -4.0065,
+        4.168499904632569,
+        1.414
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.003",
+    "before": [
+      [
+        -4.015500068664551,
+        3.2149999141693115,
+        1.6549999713897705
+      ],
+      [
+        -4.006500244140625,
+        4.15500020980835,
+        2.575000047683716
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        3.206500095367432,
+        1.444
+      ],
+      [
+        -4.0065,
+        4.168499904632569,
+        2.265
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.004",
+    "before": [
+      [
+        -4.015500068664551,
+        4.220000267028809,
+        1.0750000476837158
+      ],
+      [
+        -4.006500244140625,
+        5.159999847412109,
+        1.6050000190734863
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        4.211500209808349,
+        0.936
+      ],
+      [
+        -4.0065,
+        5.1735000190734866,
+        1.414
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.005",
+    "before": [
+      [
+        -4.015500068664551,
+        4.21999979019165,
+        1.6549999713897705
+      ],
+      [
+        -4.006500244140625,
+        5.160000324249268,
+        2.575000047683716
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        4.211500209808349,
+        1.444
+      ],
+      [
+        -4.0065,
+        5.1735000190734866,
+        2.265
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.006",
+    "before": [
+      [
+        -4.015500068664551,
+        5.225000381469727,
+        1.0750000476837158
+      ],
+      [
+        -4.006500244140625,
+        6.164999961853027,
+        1.6050000190734863
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        5.216500324249267,
+        0.936
+      ],
+      [
+        -4.0065,
+        6.178499656677246,
+        1.414
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.007",
+    "before": [
+      [
+        -4.015500068664551,
+        5.224999904632568,
+        1.6549999713897705
+      ],
+      [
+        -4.006500244140625,
+        6.1650004386901855,
+        2.575000047683716
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        5.216500324249267,
+        1.444
+      ],
+      [
+        -4.0065,
+        6.178499656677246,
+        2.265
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.008",
+    "before": [
+      [
+        -4.015500068664551,
+        6.230000019073486,
+        1.0750000476837158
+      ],
+      [
+        -4.006500244140625,
+        7.169999599456787,
+        1.6050000190734863
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        6.221499961853027,
+        0.936
+      ],
+      [
+        -4.0065,
+        7.183499771118164,
+        1.414
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.009",
+    "before": [
+      [
+        -4.015500068664551,
+        6.229999542236328,
+        1.6549999713897705
+      ],
+      [
+        -4.006500244140625,
+        7.170000076293945,
+        2.575000047683716
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        6.221499961853027,
+        1.444
+      ],
+      [
+        -4.0065,
+        7.183499771118164,
+        2.265
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.010",
+    "before": [
+      [
+        -4.015500068664551,
+        7.235000133514404,
+        1.0750000476837158
+      ],
+      [
+        -4.006500244140625,
+        8.175000190734863,
+        1.6050000190734863
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        7.226500076293945,
+        0.936
+      ],
+      [
+        -4.0065,
+        8.15850015258789,
+        1.414
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Right side pale glass pane.011",
+    "before": [
+      [
+        -4.015500068664551,
+        7.234999656677246,
+        1.6549999713897705
+      ],
+      [
+        -4.006500244140625,
+        8.175000190734863,
+        2.575000047683716
+      ]
+    ],
+    "after": [
+      [
+        -4.0155,
+        7.226500076293945,
+        1.444
+      ],
+      [
+        -4.0065,
+        8.15850015258789,
+        2.265
+      ]
+    ],
+    "reason": "Fit solid glazing into actual calibrated frame rabbets; preserve clear/frosted materials"
+  },
+  {
+    "object": "Extended front glass 5 0",
+    "before": [
+      [
+        4.12410831451416,
+        3.7242109775543213,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        4.256410121917725,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        3.7182109775543215,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        4.262410121917725,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 5 1",
+    "before": [
+      [
+        4.12410831451416,
+        3.7242109775543213,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        4.256410121917725,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        3.7182109775543215,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        4.262410121917725,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 5 2",
+    "before": [
+      [
+        4.12410831451416,
+        3.7242109775543213,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        4.256410121917725,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        3.7182109775543215,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        4.262410121917725,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 5 3",
+    "before": [
+      [
+        4.12410831451416,
+        3.7242109775543213,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        4.256410121917725,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        3.7182109775543215,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        4.262410121917725,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 6 0",
+    "before": [
+      [
+        4.12410831451416,
+        4.30583381652832,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        4.838033199310303,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        4.29983381652832,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        4.844033199310303,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 6 1",
+    "before": [
+      [
+        4.12410831451416,
+        4.30583381652832,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        4.838033199310303,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        4.29983381652832,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        4.844033199310303,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 6 2",
+    "before": [
+      [
+        4.12410831451416,
+        4.30583381652832,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        4.838033199310303,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        4.29983381652832,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        4.844033199310303,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 6 3",
+    "before": [
+      [
+        4.12410831451416,
+        4.30583381652832,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        4.838033199310303,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        4.29983381652832,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        4.844033199310303,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 7 0",
+    "before": [
+      [
+        4.12410831451416,
+        4.887456893920898,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        5.419656276702881,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        4.881456893920898,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        5.425656276702881,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 7 1",
+    "before": [
+      [
+        4.12410831451416,
+        4.887456893920898,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        5.419656276702881,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        4.881456893920898,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        5.425656276702881,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 7 2",
+    "before": [
+      [
+        4.12410831451416,
+        4.887456893920898,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        5.419656276702881,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        4.881456893920898,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        5.425656276702881,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 7 3",
+    "before": [
+      [
+        4.12410831451416,
+        4.887456893920898,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        5.419656276702881,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        4.881456893920898,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        5.425656276702881,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 8 0",
+    "before": [
+      [
+        4.12410831451416,
+        5.469079971313477,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        6.001278877258301,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        5.463079971313476,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        6.007278877258301,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 8 1",
+    "before": [
+      [
+        4.12410831451416,
+        5.469079971313477,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        6.001278877258301,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        5.463079971313476,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        6.007278877258301,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 8 2",
+    "before": [
+      [
+        4.12410831451416,
+        5.469079971313477,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        6.001278877258301,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        5.463079971313476,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        6.007278877258301,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 8 3",
+    "before": [
+      [
+        4.12410831451416,
+        5.469079971313477,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        6.001278877258301,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        5.463079971313476,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        6.007278877258301,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 9 0",
+    "before": [
+      [
+        4.12410831451416,
+        6.0507025718688965,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        6.582901954650879,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        6.044702571868896,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        6.588901954650879,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 9 1",
+    "before": [
+      [
+        4.12410831451416,
+        6.0507025718688965,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        6.582901954650879,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        6.044702571868896,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        6.588901954650879,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 9 2",
+    "before": [
+      [
+        4.12410831451416,
+        6.0507025718688965,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        6.582901954650879,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        6.044702571868896,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        6.588901954650879,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Extended front glass 9 3",
+    "before": [
+      [
+        4.12410831451416,
+        6.0507025718688965,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        6.582901954650879,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        6.044702571868896,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        6.588901954650879,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 0 2",
+    "before": [
+      [
+        4.12410831451416,
+        0.8160964846611023,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        1.3482954502105713,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        0.8100964846611023,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        1.3542954502105713,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 0 3",
+    "before": [
+      [
+        4.12410831451416,
+        0.8160964846611023,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        1.3482954502105713,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        0.8100964846611023,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        1.3542954502105713,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 1 2",
+    "before": [
+      [
+        4.12410831451416,
+        1.397719383239746,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        1.9299182891845703,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        1.391719383239746,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        1.9359182891845703,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 1 3",
+    "before": [
+      [
+        4.12410831451416,
+        1.397719383239746,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        1.9299182891845703,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        1.391719383239746,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        1.9359182891845703,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 2 0",
+    "before": [
+      [
+        4.12410831451416,
+        1.9793423414230347,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        2.5115413665771484,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        1.9733423414230347,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        2.517541366577148,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 2 1",
+    "before": [
+      [
+        4.12410831451416,
+        1.9793423414230347,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        2.5115413665771484,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        1.9733423414230347,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        2.517541366577148,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 2 2",
+    "before": [
+      [
+        4.12410831451416,
+        1.9793423414230347,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        2.5115413665771484,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        1.9733423414230347,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        2.517541366577148,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 2 3",
+    "before": [
+      [
+        4.12410831451416,
+        1.9793423414230347,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        2.5115413665771484,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        1.9733423414230347,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        2.517541366577148,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 3 0",
+    "before": [
+      [
+        4.12410831451416,
+        2.560965061187744,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        3.0931642055511475,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        2.5549650611877444,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        3.0991642055511472,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 3 1",
+    "before": [
+      [
+        4.12410831451416,
+        2.560965061187744,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        3.0931642055511475,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        2.5549650611877444,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        3.0991642055511472,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 3 2",
+    "before": [
+      [
+        4.12410831451416,
+        2.560965061187744,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        3.0931642055511475,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        2.5549650611877444,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        3.0991642055511472,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 3 3",
+    "before": [
+      [
+        4.12410831451416,
+        2.560965061187744,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        3.0931642055511475,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        2.5549650611877444,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        3.0991642055511472,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 4 0",
+    "before": [
+      [
+        4.12410831451416,
+        3.1425881385803223,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        3.6747872829437256,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        3.1365881385803225,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        3.6807872829437254,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 4 1",
+    "before": [
+      [
+        4.12410831451416,
+        3.1425881385803223,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        3.6747872829437256,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        3.1365881385803225,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        3.6807872829437254,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 4 2",
+    "before": [
+      [
+        4.12410831451416,
+        3.1425881385803223,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        3.6747872829437256,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        3.1365881385803225,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        3.6807872829437254,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent front glass 4 3",
+    "before": [
+      [
+        4.12410831451416,
+        3.1425881385803223,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        3.6747872829437256,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        3.1365881385803225,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        3.6807872829437254,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 0 0",
+    "before": [
+      [
+        4.12410831451416,
+        7.131775856018066,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        7.779052257537842,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        7.125775856018066,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        7.785052257537842,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 0 1",
+    "before": [
+      [
+        4.12410831451416,
+        7.131775856018066,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        7.779052257537842,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        7.125775856018066,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        7.785052257537842,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 0 2",
+    "before": [
+      [
+        4.12410831451416,
+        7.131775856018066,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        7.779052257537842,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        7.125775856018066,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        7.785052257537842,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 0 3",
+    "before": [
+      [
+        4.12410831451416,
+        7.131775856018066,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        7.779052257537842,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        7.125775856018066,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        7.785052257537842,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 1 0",
+    "before": [
+      [
+        4.12410831451416,
+        7.828476428985596,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        8.475752830505371,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        7.8224764289855955,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        8.481752830505371,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 1 1",
+    "before": [
+      [
+        4.12410831451416,
+        7.828476428985596,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        8.475752830505371,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        7.8224764289855955,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        8.481752830505371,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 1 2",
+    "before": [
+      [
+        4.12410831451416,
+        7.828476428985596,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        8.475752830505371,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        7.8224764289855955,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        8.481752830505371,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 1 3",
+    "before": [
+      [
+        4.12410831451416,
+        7.828476428985596,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        8.475752830505371,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        7.8224764289855955,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        8.481752830505371,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 2 0",
+    "before": [
+      [
+        4.12410831451416,
+        8.525177001953125,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        9.172452926635742,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        8.519177001953125,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        9.178452926635742,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 2 1",
+    "before": [
+      [
+        4.12410831451416,
+        8.525177001953125,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        9.172452926635742,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        8.519177001953125,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        9.178452926635742,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 2 2",
+    "before": [
+      [
+        4.12410831451416,
+        8.525177001953125,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        9.172452926635742,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        8.519177001953125,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        9.178452926635742,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 2 3",
+    "before": [
+      [
+        4.12410831451416,
+        8.525177001953125,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        9.172452926635742,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        8.519177001953125,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        9.178452926635742,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 3 0",
+    "before": [
+      [
+        4.12410831451416,
+        9.221877098083496,
+        0.6697971224784851
+      ],
+      [
+        4.133108139038086,
+        9.869153022766113,
+        0.992804765701294
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        9.215877098083496,
+        0.6637971224784851
+      ],
+      [
+        4.133108139038086,
+        9.875153022766114,
+        0.998804765701294
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 3 1",
+    "before": [
+      [
+        4.12410831451416,
+        9.221877098083496,
+        1.0302834510803223
+      ],
+      [
+        4.133108139038086,
+        9.869153022766113,
+        1.8084090948104858
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        9.215877098083496,
+        1.0242834510803223
+      ],
+      [
+        4.133108139038086,
+        9.875153022766114,
+        1.8144090948104858
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 3 2",
+    "before": [
+      [
+        4.12410831451416,
+        9.221877098083496,
+        1.8476606607437134
+      ],
+      [
+        4.133108139038086,
+        9.869153022766113,
+        2.076779842376709
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        9.215877098083496,
+        1.8416606607437134
+      ],
+      [
+        4.133108139038086,
+        9.875153022766114,
+        2.0827798423767088
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "V3 transparent rear glass 3 3",
+    "before": [
+      [
+        4.12410831451416,
+        9.221877098083496,
+        2.115676164627075
+      ],
+      [
+        4.133108139038086,
+        9.869153022766113,
+        2.7152936458587646
+      ]
+    ],
+    "after": [
+      [
+        4.12410831451416,
+        9.215877098083496,
+        2.1096761646270754
+      ],
+      [
+        4.133108139038086,
+        9.875153022766114,
+        2.7212936458587644
+      ]
+    ],
+    "reason": "Seat fixed glazing in frame with small overlap; leave open casements intact"
+  },
+  {
+    "object": "Observed dark door leaf",
+    "reason": "Cut real through-aperture for existing frosted glass; preserve outer door silhouette"
+  },
+  {
+    "object": "Door long narrow frosted glazing",
+    "before": [
+      [
+        -4.018500328063965,
+        1.0470800399780273,
+        0.7675464153289795
+      ],
+      [
+        -4.001500129699707,
+        1.3623194694519043,
+        1.4610655307769775
+      ]
+    ],
+    "after": [
+      [
+        -4.0495,
+        1.041,
+        0.762
+      ],
+      [
+        -4.0405,
+        1.368,
+        1.467
+      ]
+    ],
+    "reason": "Inset glazing within door thickness with sealed edge overlap"
+  },
+  {
+    "object": "Fluorescent fixture suspension",
+    "before": [
+      [
+        2.0521597862243652,
+        2.2756540775299072,
+        2.7032151222229004
+      ],
+      [
+        2.059666156768799,
+        2.285654306411743,
+        2.9532151222229004
+      ]
+    ],
+    "after": [
+      [
+        2.0521597862243652,
+        2.2756540775299072,
+        2.6982151222229005
+      ],
+      [
+        2.059666156768799,
+        2.285654306411743,
+        2.9532151222229004
+      ]
+    ],
+    "reason": "Close suspension-to-light housing gap"
+  },
+  {
+    "object": "Fluorescent fixture suspension.001",
+    "before": [
+      [
+        1.271496057510376,
+        2.2756540775299072,
+        2.7032151222229004
+      ],
+      [
+        1.2790024280548096,
+        2.285654306411743,
+        2.9532151222229004
+      ]
+    ],
+    "after": [
+      [
+        1.271496057510376,
+        2.2756540775299072,
+        2.6982151222229005
+      ],
+      [
+        1.2790024280548096,
+        2.285654306411743,
+        2.9532151222229004
+      ]
+    ],
+    "reason": "Close suspension-to-light housing gap"
+  },
+  {
+    "object": "Fluorescent fixture suspension.002",
+    "before": [
+      [
+        -1.2790024280548096,
+        2.2756540775299072,
+        2.7032151222229004
+      ],
+      [
+        -1.271496057510376,
+        2.285654306411743,
+        2.9532151222229004
+      ]
+    ],
+    "after": [
+      [
+        -1.2790024280548096,
+        2.2756540775299072,
+        2.6982151222229005
+      ],
+      [
+        -1.271496057510376,
+        2.285654306411743,
+        2.9532151222229004
+      ]
+    ],
+    "reason": "Close suspension-to-light housing gap"
+  },
+  {
+    "object": "Fluorescent fixture suspension.003",
+    "before": [
+      [
+        -2.059666156768799,
+        2.2756540775299072,
+        2.7032151222229004
+      ],
+      [
+        -2.0521597862243652,
+        2.285654306411743,
+        2.9532151222229004
+      ]
+    ],
+    "after": [
+      [
+        -2.059666156768799,
+        2.2756540775299072,
+        2.6982151222229005
+      ],
+      [
+        -2.0521597862243652,
+        2.285654306411743,
+        2.9532151222229004
+      ]
+    ],
+    "reason": "Close suspension-to-light housing gap"
+  },
+  {
+    "object": "Fluorescent fixture suspension.004",
+    "before": [
+      [
+        2.0521597862243652,
+        3.6858954429626465,
+        2.7032151222229004
+      ],
+      [
+        2.059666156768799,
+        3.6958956718444824,
+        2.9532151222229004
+      ]
+    ],
+    "after": [
+      [
+        2.0521597862243652,
+        3.6858954429626465,
+        2.6982151222229005
+      ],
+      [
+        2.059666156768799,
+        3.6958956718444824,
+        2.9532151222229004
+      ]
+    ],
+    "reason": "Close suspension-to-light housing gap"
+  },
+  {
+    "object": "Fluorescent fixture suspension.005",
+    "before": [
+      [
+        1.271496057510376,
+        3.6858954429626465,
+        2.7032151222229004
+      ],
+      [
+        1.2790024280548096,
+        3.6958956718444824,
+        2.9532151222229004
+      ]
+    ],
+    "after": [
+      [
+        1.271496057510376,
+        3.6858954429626465,
+        2.6982151222229005
+      ],
+      [
+        1.2790024280548096,
+        3.6958956718444824,
+        2.9532151222229004
+      ]
+    ],
+    "reason": "Close suspension-to-light housing gap"
+  },
+  {
+    "object": "Fluorescent fixture suspension.006",
+    "before": [
+      [
+        -1.2790024280548096,
+        3.6858954429626465,
+        2.7032151222229004
+      ],
+      [
+        -1.271496057510376,
+        3.6958956718444824,
+        2.9532151222229004
+      ]
+    ],
+    "after": [
+      [
+        -1.2790024280548096,
+        3.6858954429626465,
+        2.6982151222229005
+      ],
+      [
+        -1.271496057510376,
+        3.6958956718444824,
+        2.9532151222229004
+      ]
+    ],
+    "reason": "Close suspension-to-light housing gap"
+  },
+  {
+    "object": "Fluorescent fixture suspension.007",
+    "before": [
+      [
+        -2.059666156768799,
+        3.6858954429626465,
+        2.7032151222229004
+      ],
+      [
+        -2.0521597862243652,
+        3.6958956718444824,
+        2.9532151222229004
+      ]
+    ],
+    "after": [
+      [
+        -2.059666156768799,
+        3.6858954429626465,
+        2.6982151222229005
+      ],
+      [
+        -2.0521597862243652,
+        3.6958956718444824,
+        2.9532151222229004
+      ]
+    ],
+    "reason": "Close suspension-to-light housing gap"
+  },
+  {
+    "object": "Observed_front_right_side_set tubular desk leg",
+    "before": [
+      [
+        -2.0303075313568115,
+        1.0402382612228394,
+        0.035293638706207275
+      ],
+      [
+        -2.01277232170105,
+        1.0788525342941284,
+        0.5811681747436523
+      ]
+    ],
+    "after": [
+      [
+        -2.0303075313568115,
+        1.0402382612228394,
+        0.035293638706207275
+      ],
+      [
+        -2.01277232170105,
+        1.0788525342941284,
+        0.5861681747436523
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "Observed_front_right_side_set tubular desk leg.001",
+    "before": [
+      [
+        -2.0303075313568115,
+        1.4401726722717285,
+        0.035293638706207275
+      ],
+      [
+        -2.01277232170105,
+        1.4787869453430176,
+        0.5811681747436523
+      ]
+    ],
+    "after": [
+      [
+        -2.0303075313568115,
+        1.4401726722717285,
+        0.035293638706207275
+      ],
+      [
+        -2.01277232170105,
+        1.4787869453430176,
+        0.5861681747436523
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "Observed_front_right_side_set tubular desk leg.002",
+    "before": [
+      [
+        -2.3797616958618164,
+        1.0402382612228394,
+        0.035293638706207275
+      ],
+      [
+        -2.3622264862060547,
+        1.0788525342941284,
+        0.5811681747436523
+      ]
+    ],
+    "after": [
+      [
+        -2.3797616958618164,
+        1.0402382612228394,
+        0.035293638706207275
+      ],
+      [
+        -2.3622264862060547,
+        1.0788525342941284,
+        0.5861681747436523
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "Observed_front_right_side_set tubular desk leg.003",
+    "before": [
+      [
+        -2.3797616958618164,
+        1.4401726722717285,
+        0.035293638706207275
+      ],
+      [
+        -2.3622264862060547,
+        1.4787869453430176,
+        0.5811681747436523
+      ]
+    ],
+    "after": [
+      [
+        -2.3797616958618164,
+        1.4401726722717285,
+        0.035293638706207275
+      ],
+      [
+        -2.3622264862060547,
+        1.4787869453430176,
+        0.5861681747436523
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C1 tubular desk leg",
+    "before": [
+      [
+        1.4911292791366577,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.4911292791366577,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C1 tubular desk leg.001",
+    "before": [
+      [
+        1.4911292791366577,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.4911292791366577,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C1 tubular desk leg.002",
+    "before": [
+      [
+        1.1156073808670044,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.1156073808670044,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C1 tubular desk leg.003",
+    "before": [
+      [
+        1.1156073808670044,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.1156073808670044,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C2 tubular desk leg",
+    "before": [
+      [
+        0.6720314025878906,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.6720314025878906,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C2 tubular desk leg.001",
+    "before": [
+      [
+        0.6720314025878906,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.6720314025878906,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C2 tubular desk leg.002",
+    "before": [
+      [
+        0.29650962352752686,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.29650962352752686,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C2 tubular desk leg.003",
+    "before": [
+      [
+        0.29650962352752686,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.29650962352752686,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C3 tubular desk leg",
+    "before": [
+      [
+        -0.3153530955314636,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.3153530955314636,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C3 tubular desk leg.001",
+    "before": [
+      [
+        -0.3153530955314636,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.3153530955314636,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C3 tubular desk leg.002",
+    "before": [
+      [
+        -0.6908749341964722,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.6908749341964722,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C3 tubular desk leg.003",
+    "before": [
+      [
+        -0.6908749341964722,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.6908749341964722,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C4 tubular desk leg",
+    "before": [
+      [
+        -1.1344507932662964,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.1344507932662964,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C4 tubular desk leg.001",
+    "before": [
+      [
+        -1.1344507932662964,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.1344507932662964,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C4 tubular desk leg.002",
+    "before": [
+      [
+        -1.5099726915359497,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.5099726915359497,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R2C4 tubular desk leg.003",
+    "before": [
+      [
+        -1.5099726915359497,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.5099726915359497,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C1 tubular desk leg",
+    "before": [
+      [
+        1.4911292791366577,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.4911292791366577,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C1 tubular desk leg.001",
+    "before": [
+      [
+        1.4911292791366577,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.4911292791366577,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C1 tubular desk leg.002",
+    "before": [
+      [
+        1.1156073808670044,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.1156073808670044,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C1 tubular desk leg.003",
+    "before": [
+      [
+        1.1156073808670044,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.1156073808670044,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C2 tubular desk leg",
+    "before": [
+      [
+        0.6720314025878906,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.6720314025878906,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C2 tubular desk leg.001",
+    "before": [
+      [
+        0.6720314025878906,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.6720314025878906,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C2 tubular desk leg.002",
+    "before": [
+      [
+        0.29650962352752686,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.29650962352752686,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C2 tubular desk leg.003",
+    "before": [
+      [
+        0.29650962352752686,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.29650962352752686,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C3 tubular desk leg",
+    "before": [
+      [
+        -0.3153530955314636,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.3153530955314636,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C3 tubular desk leg.001",
+    "before": [
+      [
+        -0.3153530955314636,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.3153530955314636,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C3 tubular desk leg.002",
+    "before": [
+      [
+        -0.6908749341964722,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.6908749341964722,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C3 tubular desk leg.003",
+    "before": [
+      [
+        -0.6908749341964722,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.6908749341964722,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C4 tubular desk leg",
+    "before": [
+      [
+        -1.1344507932662964,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.1344507932662964,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C4 tubular desk leg.001",
+    "before": [
+      [
+        -1.1344507932662964,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.1344507932662964,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C4 tubular desk leg.002",
+    "before": [
+      [
+        -1.5099726915359497,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.5099726915359497,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R3C4 tubular desk leg.003",
+    "before": [
+      [
+        -1.5099726915359497,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.5099726915359497,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C1 tubular desk leg",
+    "before": [
+      [
+        1.4911292791366577,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.4911292791366577,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C1 tubular desk leg.001",
+    "before": [
+      [
+        1.4911292791366577,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.4911292791366577,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        1.5099726915359497,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C1 tubular desk leg.002",
+    "before": [
+      [
+        1.1156073808670044,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.1156073808670044,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C1 tubular desk leg.003",
+    "before": [
+      [
+        1.1156073808670044,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.1156073808670044,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        1.1344507932662964,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C2 tubular desk leg",
+    "before": [
+      [
+        0.6720314025878906,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.6720314025878906,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C2 tubular desk leg.001",
+    "before": [
+      [
+        0.6720314025878906,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.6720314025878906,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        0.6908749341964722,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C2 tubular desk leg.002",
+    "before": [
+      [
+        0.29650962352752686,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.29650962352752686,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C2 tubular desk leg.003",
+    "before": [
+      [
+        0.29650962352752686,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        0.29650962352752686,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        0.3153530955314636,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C3 tubular desk leg",
+    "before": [
+      [
+        -0.3153530955314636,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.3153530955314636,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C3 tubular desk leg.001",
+    "before": [
+      [
+        -0.3153530955314636,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.3153530955314636,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -0.29650962352752686,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C3 tubular desk leg.002",
+    "before": [
+      [
+        -0.6908749341964722,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.6908749341964722,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C3 tubular desk leg.003",
+    "before": [
+      [
+        -0.6908749341964722,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -0.6908749341964722,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -0.6720314025878906,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C4 tubular desk leg",
+    "before": [
+      [
+        -1.1344507932662964,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.1344507932662964,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C4 tubular desk leg.001",
+    "before": [
+      [
+        -1.1344507932662964,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.1344507932662964,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -1.1156073808670044,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C4 tubular desk leg.002",
+    "before": [
+      [
+        -1.5099726915359497,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.5099726915359497,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "R4C4 tubular desk leg.003",
+    "before": [
+      [
+        -1.5099726915359497,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.5099726915359497,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -1.4911292791366577,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 ObservedRearD04 tubular desk leg",
+    "before": [
+      [
+        -1.167736530303955,
+        7.831866264343262,
+        0.039792537689208984
+      ],
+      [
+        -1.148893117904663,
+        7.848931312561035,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.167736530303955,
+        7.831866264343262,
+        0.039792537689208984
+      ],
+      [
+        -1.148893117904663,
+        7.848931312561035,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 ObservedRearD04 tubular desk leg.001",
+    "before": [
+      [
+        -1.167736530303955,
+        8.0086088180542,
+        0.039792537689208984
+      ],
+      [
+        -1.148893117904663,
+        8.025673866271973,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.167736530303955,
+        8.0086088180542,
+        0.039792537689208984
+      ],
+      [
+        -1.148893117904663,
+        8.025673866271973,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 ObservedRearD04 tubular desk leg.002",
+    "before": [
+      [
+        -1.5432584285736084,
+        7.831866264343262,
+        0.039792537689208984
+      ],
+      [
+        -1.5244150161743164,
+        7.848931312561035,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.5432584285736084,
+        7.831866264343262,
+        0.039792537689208984
+      ],
+      [
+        -1.5244150161743164,
+        7.848931312561035,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 ObservedRearD04 tubular desk leg.003",
+    "before": [
+      [
+        -1.5432584285736084,
+        8.0086088180542,
+        0.039792537689208984
+      ],
+      [
+        -1.5244150161743164,
+        8.025673866271973,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.5432584285736084,
+        8.0086088180542,
+        0.039792537689208984
+      ],
+      [
+        -1.5244150161743164,
+        8.025673866271973,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 ObservedRearD08 tubular desk leg",
+    "before": [
+      [
+        -1.9042245149612427,
+        7.798768520355225,
+        0.039792537689208984
+      ],
+      [
+        -1.8853811025619507,
+        7.815833568572998,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.9042245149612427,
+        7.798768520355225,
+        0.039792537689208984
+      ],
+      [
+        -1.8853811025619507,
+        7.815833568572998,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 ObservedRearD08 tubular desk leg.001",
+    "before": [
+      [
+        -1.9042245149612427,
+        7.975511074066162,
+        0.039792537689208984
+      ],
+      [
+        -1.8853811025619507,
+        7.9925761222839355,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.9042245149612427,
+        7.975511074066162,
+        0.039792537689208984
+      ],
+      [
+        -1.8853811025619507,
+        7.9925761222839355,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 ObservedRearD08 tubular desk leg.002",
+    "before": [
+      [
+        -2.2797465324401855,
+        7.798768520355225,
+        0.039792537689208984
+      ],
+      [
+        -2.2609028816223145,
+        7.815833568572998,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -2.2797465324401855,
+        7.798768520355225,
+        0.039792537689208984
+      ],
+      [
+        -2.2609028816223145,
+        7.815833568572998,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 ObservedRearD08 tubular desk leg.003",
+    "before": [
+      [
+        -2.2797465324401855,
+        7.975511074066162,
+        0.039792537689208984
+      ],
+      [
+        -2.2609028816223145,
+        7.9925761222839355,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -2.2797465324401855,
+        7.975511074066162,
+        0.039792537689208984
+      ],
+      [
+        -2.2609028816223145,
+        7.9925761222839355,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R2OuterL tubular desk leg",
+    "before": [
+      [
+        2.2685141563415527,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        2.2685141563415527,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R2OuterL tubular desk leg.001",
+    "before": [
+      [
+        2.2685141563415527,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        2.2685141563415527,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R2OuterL tubular desk leg.002",
+    "before": [
+      [
+        1.892992377281189,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.892992377281189,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R2OuterL tubular desk leg.003",
+    "before": [
+      [
+        1.892992377281189,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.892992377281189,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R2OuterR tubular desk leg",
+    "before": [
+      [
+        -1.911835789680481,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.911835789680481,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R2OuterR tubular desk leg.001",
+    "before": [
+      [
+        -1.911835789680481,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.911835789680481,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R2OuterR tubular desk leg.002",
+    "before": [
+      [
+        -2.287357807159424,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        5.598890781402588,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -2.287357807159424,
+        5.5818257331848145,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        5.598890781402588,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R2OuterR tubular desk leg.003",
+    "before": [
+      [
+        -2.287357807159424,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        5.775632858276367,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -2.287357807159424,
+        5.758567810058594,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        5.775632858276367,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R3OuterL tubular desk leg",
+    "before": [
+      [
+        2.2685141563415527,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        2.2685141563415527,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R3OuterL tubular desk leg.001",
+    "before": [
+      [
+        2.2685141563415527,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        2.2685141563415527,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R3OuterL tubular desk leg.002",
+    "before": [
+      [
+        1.892992377281189,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.892992377281189,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R3OuterL tubular desk leg.003",
+    "before": [
+      [
+        1.892992377281189,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.892992377281189,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R3OuterR tubular desk leg",
+    "before": [
+      [
+        -1.911835789680481,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.911835789680481,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R3OuterR tubular desk leg.001",
+    "before": [
+      [
+        -1.911835789680481,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.911835789680481,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R3OuterR tubular desk leg.002",
+    "before": [
+      [
+        -2.287357807159424,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        6.33929443359375,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -2.287357807159424,
+        6.322229385375977,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        6.33929443359375,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R3OuterR tubular desk leg.003",
+    "before": [
+      [
+        -2.287357807159424,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        6.5160369873046875,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -2.287357807159424,
+        6.498971939086914,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        6.5160369873046875,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R4OuterL tubular desk leg",
+    "before": [
+      [
+        2.2685141563415527,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        2.2685141563415527,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R4OuterL tubular desk leg.001",
+    "before": [
+      [
+        2.2685141563415527,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        2.2685141563415527,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        2.287357807159424,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R4OuterL tubular desk leg.002",
+    "before": [
+      [
+        1.892992377281189,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.892992377281189,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R4OuterL tubular desk leg.003",
+    "before": [
+      [
+        1.892992377281189,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        1.892992377281189,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        1.911835789680481,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R4OuterR tubular desk leg",
+    "before": [
+      [
+        -1.911835789680481,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.911835789680481,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R4OuterR tubular desk leg.001",
+    "before": [
+      [
+        -1.911835789680481,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -1.911835789680481,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -1.892992377281189,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R4OuterR tubular desk leg.002",
+    "before": [
+      [
+        -2.287357807159424,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        7.015338897705078,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -2.287357807159424,
+        6.998273849487305,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        7.015338897705078,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "object": "V4 R4OuterR tubular desk leg.003",
+    "before": [
+      [
+        -2.287357807159424,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        7.192081451416016,
+        0.6552503108978271
+      ]
+    ],
+    "after": [
+      [
+        -2.287357807159424,
+        7.175016403198242,
+        0.039792537689208984
+      ],
+      [
+        -2.2685141563415527,
+        7.192081451416016,
+        0.6602503108978272
+      ]
+    ],
+    "reason": "Extend support into underside by tiny joint allowance; desk layout unchanged"
+  },
+  {
+    "normal_orientation_fixed": [
+      "CITY V3 | left pale block 00",
+      "CITY V3 | left pale block 01",
+      "CITY V3 | left pale block 02",
+      "CITY V3 | left roof edge 00",
+      "CITY V3 | left roof edge 01",
+      "CITY V3 | left roof edge 02",
+      "FOLIAGE V2 | right shared pale building 00",
+      "FOLIAGE V2 | right shared pale building 01",
+      "FOLIAGE V2 | right shared pale building 02",
+      "FOLIAGE V2 | right shared pale building 03",
+      "FOLIAGE V2 | right shared pale building 04",
+      "FOLIAGE V2 | right shared tree trunk 00",
+      "FOLIAGE V2 | right shared tree trunk 01",
+      "FOLIAGE V2 | right shared tree trunk 02",
+      "GRADE V4 | low-rise city continuation",
+      "V4 paired sash left bottom rail",
+      "V4 paired sash left free stile",
+      "V4 paired sash left handle",
+      "V4 paired sash left hinge stile",
+      "V4 paired sash left lower thin rail",
+      "V4 paired sash left top rail",
+      "V4 paired sash right bottom rail",
+      "V4 paired sash right free stile",
+      "V4 paired sash right handle",
+      "V4 paired sash right hinge stile",
+      "V4 paired sash right lower thin rail",
+      "V4 paired sash right top rail"
+    ],
+    "reason": "Outward normals for closed exterior solids; positions/materials unchanged"
+  },
+  {
+    "object": "Dark door header",
+    "before": [
+      [
+        -4.065999984741211,
+        0.6762102842330933,
+        1.6909399032592773
+      ],
+      [
+        -3.9260001182556152,
+        1.7331892251968384,
+        1.7688636779785156
+      ]
+    ],
+    "after": [
+      [
+        -4.065999984741211,
+        0.6762102842330933,
+        1.701
+      ],
+      [
+        -3.9260001182556152,
+        1.7331892251968384,
+        1.7688636779785156
+      ]
+    ],
+    "reason": "Provide real clearance above opening door leaf"
+  },
+  {
+    "object": "Monitor wall bracket",
+    "before": [
+      [
+        -0.04500001668930054,
+        0.22999998927116394,
+        2.325610876083374
+      ],
+      [
+        0.04500001668930054,
+        0.3400000035762787,
+        2.412299394607544
+      ]
+    ],
+    "after": [
+      [
+        -0.04500001668930054,
+        -0.005,
+        2.325610876083374
+      ],
+      [
+        0.04500001668930054,
+        0.3400000035762787,
+        2.412299394607544
+      ]
+    ],
+    "reason": "Connect monitor support to wall instead of floating behind screen"
+  },
+  {
+    "object": "Front ambient",
+    "before_location": [
+      -0.0,
+      1.5,
+      3.1500000953674316
+    ],
+    "after_location": [
+      -0.0,
+      1.899999976158142,
+      2.9000000953674316
+    ],
+    "reason": "Place existing fill below ceiling, down-facing, same energy"
+  },
+  {
+    "object": "Soft room fill",
+    "before_location": [
+      -1.0,
+      4.0,
+      3.130000114440918
+    ],
+    "after_location": [
+      -1.0,
+      4.0,
+      2.9000000953674316
+    ],
+    "reason": "Place existing fill below ceiling, down-facing, same energy"
+  },
+  {
+    "object": "FULLROOM recessed door front stop",
+    "after": [
+      [
+        -4.102,
+        0.719,
+        -0.005
+      ],
+      [
+        -4.075,
+        0.775,
+        1.701
+      ]
+    ],
+    "reason": "Seal closed-door side clearance behind leaf; maintain inward swing",
+    "inferred": true
+  },
+  {
+    "object": "FULLROOM recessed door rear stop",
+    "after": [
+      [
+        -4.102,
+        1.634,
+        -0.005
+      ],
+      [
+        -4.075,
+        1.69,
+        1.701
+      ]
+    ],
+    "reason": "Seal closed-door hinge-side clearance behind leaf",
+    "inferred": true
+  },
+  {
+    "object": "Right wall front door-side pier",
+    "before": [
+      [
+        -4.199999809265137,
+        -2.2175601088747499e-07,
+        -5.427753180242689e-08
+      ],
+      [
+        -4.0,
+        0.7189279198646545,
+        2.9372472763061523
+      ]
+    ],
+    "after": [
+      [
+        -4.199999809265137,
+        -2.2175601088747499e-07,
+        -0.01
+      ],
+      [
+        -4.0,
+        0.7189279198646545,
+        2.9372472763061523
+      ]
+    ],
+    "reason": "Overlap wall base with floor thickness to remove bevel-sized corner leakage"
+  },
+  {
+    "object": "Right wall door-to-window pier",
+    "before": [
+      [
+        -4.199999809265137,
+        1.6904715299606323,
+        -3.469341436357354e-08
+      ],
+      [
+        -4.0,
+        2.1500000953674316,
+        2.9372472763061523
+      ]
+    ],
+    "after": [
+      [
+        -4.199999809265137,
+        1.6904715299606323,
+        -0.01
+      ],
+      [
+        -4.0,
+        2.1500000953674316,
+        2.9372472763061523
+      ]
+    ],
+    "reason": "Overlap wall base with floor thickness to remove bevel-sized corner leakage"
+  },
+  {
+    "object": "Right window sill wall",
+    "before": [
+      [
+        -4.199999809265137,
+        2.1500000953674316,
+        -4.567623079765326e-07
+      ],
+      [
+        -4.0,
+        8.200000762939453,
+        0.920630156993866
+      ]
+    ],
+    "after": [
+      [
+        -4.199999809265137,
+        2.1500000953674316,
+        -0.01
+      ],
+      [
+        -4.0,
+        8.200000762939453,
+        0.920630156993866
+      ]
+    ],
+    "reason": "Overlap wall base with floor thickness to remove bevel-sized corner leakage"
+  },
+  {
+    "object": "V3 left sill wall",
+    "before": [
+      [
+        4.106607913970947,
+        0.7913846969604492,
+        0.0
+      ],
+      [
+        4.2866082191467285,
+        11.531440734863281,
+        0.6514937877655029
+      ]
+    ],
+    "after": [
+      [
+        4.106607913970947,
+        0.7913846969604492,
+        -0.01
+      ],
+      [
+        4.2866082191467285,
+        11.531440734863281,
+        0.6514937877655029
+      ]
+    ],
+    "reason": "Overlap wall base with floor thickness to remove bevel-sized corner leakage"
+  },
+  {
+    "object": "FULLROOM inferred right rear wall",
+    "before": [
+      [
+        -4.199999809265137,
+        8.200000762939453,
+        0.0
+      ],
+      [
+        -4.0,
+        11.5,
+        2.9372470378875732
+      ]
+    ],
+    "after": [
+      [
+        -4.199999809265137,
+        8.200000762939453,
+        -0.01
+      ],
+      [
+        -4.0,
+        11.5,
+        2.9372470378875732
+      ]
+    ],
+    "reason": "Overlap wall base with floor thickness to remove bevel-sized corner leakage"
+  },
+  {
+    "object": "FULLROOM inferred left front backing",
+    "before": [
+      [
+        4.10699987411499,
+        0.0,
+        0.0
+      ],
+      [
+        4.2870001792907715,
+        0.7913839817047119,
+        2.9372470378875732
+      ]
+    ],
+    "after": [
+      [
+        4.10699987411499,
+        0.0,
+        -0.01
+      ],
+      [
+        4.2870001792907715,
+        0.7913839817047119,
+        2.9372470378875732
+      ]
+    ],
+    "reason": "Overlap wall base with floor thickness to remove bevel-sized corner leakage"
+  }
+]
