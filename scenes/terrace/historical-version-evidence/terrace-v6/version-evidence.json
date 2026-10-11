@@ -1,0 +1,36 @@
+{
+  "scene": "terrace",
+  "scene_name": "开放露台",
+  "version_label": "V6",
+  "status": "历史交付有聊天记录；原模型二进制未恢复，来源与整体验收未通过。",
+  "historical_model_recovered": false,
+  "historical_model_sha256": null,
+  "model_publication_explicit_in_chat": true,
+  "chat_events": [
+    {
+      "sent_at": "2026-10-09T06:03:39.497782+00:00",
+      "kind": "publication",
+      "text": "露台 V6 模型与三视角叠图已附上。接下来检查右侧拱门：原图后面是有进深的室内，当前模型却透出了天空，这处需要继续修正；阴影色带不会直接当成墙面边界。"
+    }
+  ],
+  "date_semantics": "以下为真实聊天消息时刻（UTC），只说明当时发出交付或进度消息，不是原模型创建、保存或旧Git提交时间。",
+  "known_changes": "增加城市远景、天空和地面植物；三机位叠图；右拱后室内进深仍待修正。",
+  "images": [
+    {
+      "filename": "绿色露台_V6_三视角来源渲染叠加.jpg",
+      "sha256": "8b373a154b0d1e24f49a9091a7db9fdd242d535333f6382230b8393d7a042a12",
+      "bytes": 2953183,
+      "library_created_at": "2026-10-09T06:03:02.327585Z",
+      "library_modified_at": "2026-10-09T06:03:02.327585Z",
+      "historical_attachment_identity": "cross_evidence_candidate_not_directly_bridged",
+      "replacement_risk": "所见创建/修改时刻相同；未发现此条目后续替换，但不把这点当作原附件身份的直接证明。",
+      "repository_relative_path": "evidence/绿色露台_V6_三视角来源渲染叠加.jpg"
+    }
+  ],
+  "excluded_replaced_images": [],
+  "image_identity_caveat": "这些SHA-256标识本轮实际核验到的现存图像字节。与历史聊天附件的归属依据是版本文字、主题、附件数量和时间等交叉证据；未取得可直接验证的原附件到文件桥接，不能把图像归属写成字节级附件身份已证。图证不能恢复模型。",
+  "library_risk": "按旧版本号读取时，曾返回最新文件标识、大小与修改时间，不能仅凭回显版本号认定为旧字节。内容版本标签不与Library版本序号强行一一对应；后续模型、后续图像和重新建模都不能替代缺失原模型。 露台审阅条目的旧Library版本0–8字节仍未恢复，不能按内容标签猜测其对应关系。",
+  "later_corrections": "后续勘误必须同时保留：旧填充屋面及相应屋顶遮阳解释已作废，只作为当时假设留档。后续校核保留实际镂空井字梁、后侧接收投影边板及真实光照；不能把阴影色带当作墙面或实板。V15画外井格扩展仅是默认关闭的可选推定，隐藏长度、支承和室内进深仍未唯一确定。参见[V15原版本记录](https://github.com/Shuang-su/metaxingtong/issues/2#issuecomment-6095857098)。",
+  "existing_version_comment": "https://github.com/Shuang-su/metaxingtong/issues/2#issuecomment-6095687254",
+  "edit_mode": "expand_existing_comment_with_version_subheading; do_not_create_comment"
+}
