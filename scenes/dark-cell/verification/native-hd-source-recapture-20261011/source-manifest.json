@@ -1,0 +1,49 @@
+{
+  "scene": "暗色铁栏布景",
+  "scene_slug": "iron-bars",
+  "capture_date_utc": "2026-10-11",
+  "native_png_count": 1,
+  "evidence_source_url": "https://github.com/Shuang-su/metaxingtong/issues/16",
+  "scene_and_angle_identity_limitations_zh": "本包只含932秒附近的一张主要二维锚点。前景竖向铁栏与后方站立人物可见，原片极暗，未提亮或补画。旧证据记录为1280×720解码；本次保存前后媒体状态与PNG IHDR/Pillow实测1920×1080，是新的1080原生导出，未插值放大，不能改写旧720记录。单图不建立相机标定或前后场几何关系。1810秒附近仅人物近景/暗背景未提供新几何，本次未保存、不计入；3626秒附近同场归属未证实，未采用且不能作为反向硬几何；618秒附近插播不采用。",
+  "native_resolution_policy_zh": "以PNG IHDR、Pillow解码尺寸和保存前后视频原始尺寸共同核验；原生尺寸按实际记录，禁止放大补足分辨率。",
+  "frames": [
+    {
+      "file": "frames/iron-bars-main-anchor-BV1F8QzY7EAY-t932.710773-native.png",
+      "label": "iron-bars-main-anchor",
+      "source_bv": "BV1F8QzY7EAY",
+      "source_url": "https://www.bilibili.com/video/BV1F8QzY7EAY/",
+      "evidence_source_url": "https://github.com/Shuang-su/metaxingtong/issues/16",
+      "requested_reference_seconds": 932.522162,
+      "actual_paused_seconds": 932.710773,
+      "actual_minus_requested_seconds": 0.188611,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 371483,
+      "sha256": "e79def5fc47d9587c98a56f8b4f081c5ba5ff50672c139711b6308b97beae1cf",
+      "media_state_before_save": {
+        "currentTime": 932.710773,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "media_state_after_save": {
+        "currentTime": 932.710773,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "same_current_time_before_and_after": true,
+      "native_export_method": "浏览器原生视频菜单：将视频帧另存为…",
+      "image_processing": "原始PNG字节未改变；未重编码、裁切、放大、AI处理或提亮。",
+      "capture_date_utc": "2026-10-11T01:03:15.357234+00:00",
+      "legacy_frame_identity": "未验证为旧参考的同一帧。",
+      "reference_time_relationship_zh": "比旧主锚参考932.522162秒晚0.188611秒，是近邻新帧；未验证旧参考同帧。旧记录720解码，本次稳定1080解码后原生保存。",
+      "view_family": "932秒附近主要二维锚点",
+      "independent_calibrated_geometry_verified": false,
+      "description_zh": "极暗布景中，多根竖向铁栏位于前景；后方中央站立人物在局部光线下可见，底部有朦胧光影。图像不含浏览器或播放器控制界面。",
+      "scene_and_angle_limitations_zh": "原片暗部信息有限，铁栏与人物造成遮挡；371483字节的原始PNG经完整解码检查正常，不因文件较小而补画或提亮。不能从单张锚点推断完整布景、前后场关系或反向对齐。"
+    }
+  ]
+}
