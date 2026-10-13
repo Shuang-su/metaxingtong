@@ -1,0 +1,162 @@
+{
+  "coordinate_system": "native 1920x1080, origin upper-left; x right, y down",
+  "method": "Manual pixel review, independent samples; do not index-pair across views; never compare these partial visible curves to a complete projected mesh convex hull.",
+  "curves": [
+    {
+      "id": "H_arm_front_cap_visible_contour",
+      "source_xy": [
+        [
+          1083,
+          970
+        ],
+        [
+          1088,
+          978
+        ],
+        [
+          1091,
+          989
+        ],
+        [
+          1093,
+          1010
+        ],
+        [
+          1093,
+          1045
+        ],
+        [
+          1093,
+          1079
+        ]
+      ],
+      "uncertainty_px": 6,
+      "use": "soft_visible_contour",
+      "note": "Actual front/right end contour against back/seat. Last sample is frame clipping, not arm bottom; early cap samples have low contrast."
+    },
+    {
+      "id": "H_arm_back_occlusion_boundary_diagnostic",
+      "source_xy": [
+        [
+          879,
+          920
+        ],
+        [
+          900,
+          924
+        ],
+        [
+          925,
+          929
+        ],
+        [
+          950,
+          934
+        ],
+        [
+          978,
+          939
+        ],
+        [
+          1006,
+          944
+        ],
+        [
+          1035,
+          950
+        ],
+        [
+          1057,
+          955
+        ]
+      ],
+      "uncertainty_px": 7,
+      "use": "diagnostic_only_internal_occlusion_boundary",
+      "note": "Approximate top edge against back cushion. Requires visibility-aware correspondence. Do not substitute whole-object hull top. No geometric constraints from bright sun patch boundaries."
+    },
+    {
+      "id": "G_arm_front_cap_visible_contour",
+      "source_xy": [
+        [
+          428,
+          1061
+        ],
+        [
+          432,
+          1068
+        ],
+        [
+          435,
+          1079
+        ]
+      ],
+      "uncertainty_px": 8,
+      "use": "soft_visible_contour_short_segment",
+      "note": "Only short rounded front tip survives bottom clipping. No inferred bottom or hidden continuation."
+    },
+    {
+      "id": "G_arm_rear_top_skyline_short_visible",
+      "source_xy": [
+        [
+          147,
+          1012
+        ],
+        [
+          162,
+          1013
+        ],
+        [
+          178,
+          1016
+        ],
+        [
+          186,
+          1018
+        ]
+      ],
+      "uncertainty_px": 5,
+      "use": "diagnostic_only_short_skyline",
+      "note": "Blurry short segment between chair and cushion. Do not extend into angled cast shadow near x193,y1030."
+    }
+  ],
+  "excluded_illumination_samples": {
+    "H": [
+      [
+        960,
+        938
+      ],
+      [
+        1073,
+        960
+      ]
+    ],
+    "G": [
+      [
+        193,
+        1030
+      ],
+      [
+        218,
+        1042
+      ],
+      [
+        255,
+        1039
+      ],
+      [
+        303,
+        1044
+      ],
+      [
+        366,
+        1057
+      ],
+      [
+        420,
+        1058
+      ]
+    ]
+  },
+  "identity": "G/H same visible left sofa arm highly likely; not evidence of unseen rear geometry",
+  "geometry_constraint": "D local arm placement/visible forward extent is inconsistent in both H/G under fixed back/seat/cameras; no unique 3D recovery claimed."
+}
