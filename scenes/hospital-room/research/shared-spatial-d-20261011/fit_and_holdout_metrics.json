@@ -1,0 +1,700 @@
+{
+  "method": "One-way visible source contour sample to convex projected full mesh envelope distances; not exact vertex correspondences, not photometric similarity, not all-image error. Mask/occlusion points excluded. Architectural residuals are legacy proxy identities and separately reported.",
+  "no_source_registration": true,
+  "contours": [
+    {
+      "feature": "F_bed_upper_left_visible",
+      "object": "Bed • observed endboard, consistent width",
+      "split": "train",
+      "source_point_count": 14,
+      "annotation_uncertainty_px": 5,
+      "B": {
+        "mean_distance_px": 31.90570711832132,
+        "rms_distance_px": 34.470365645956086,
+        "max_distance_px": 58.28993050372409
+      },
+      "D": {
+        "mean_distance_px": 2.266544499402063,
+        "rms_distance_px": 3.573249181077156,
+        "max_distance_px": 11.090308721009022
+      }
+    },
+    {
+      "feature": "F_bed_upper_right_visible",
+      "object": "Bed • observed endboard, consistent width",
+      "split": "train",
+      "source_point_count": 3,
+      "annotation_uncertainty_px": 6,
+      "B": {
+        "mean_distance_px": 247.20308668135579,
+        "rms_distance_px": 248.60694329729733,
+        "max_distance_px": 280.1215516854463
+      },
+      "D": {
+        "mean_distance_px": 5.7509141625805595,
+        "rms_distance_px": 5.775977874016968,
+        "max_distance_px": 6.3926585579688995
+      }
+    },
+    {
+      "feature": "G_bed_upper_visible",
+      "object": "Bed • observed endboard, consistent width",
+      "split": "train",
+      "source_point_count": 11,
+      "annotation_uncertainty_px": 5,
+      "B": {
+        "mean_distance_px": 63.47572661902357,
+        "rms_distance_px": 73.28165947152992,
+        "max_distance_px": 112.23233906694901
+      },
+      "D": {
+        "mean_distance_px": 6.060377277109242,
+        "rms_distance_px": 8.194066541948429,
+        "max_distance_px": 18.527742066806567
+      }
+    },
+    {
+      "feature": "F_central_recess_visible_envelope",
+      "object": "Bed end • moulded central recess",
+      "split": "train",
+      "source_point_count": 11,
+      "annotation_uncertainty_px": 5,
+      "B": {
+        "mean_distance_px": 92.69636846775023,
+        "rms_distance_px": 134.9581271610562,
+        "max_distance_px": 239.3813746383068
+      },
+      "D": {
+        "mean_distance_px": 8.002655238290401,
+        "rms_distance_px": 8.905094630378304,
+        "max_distance_px": 15.955984436327517
+      }
+    },
+    {
+      "feature": "G_central_recess_visible_envelope",
+      "object": "Bed end • moulded central recess",
+      "split": "train",
+      "source_point_count": 9,
+      "annotation_uncertainty_px": 5,
+      "B": {
+        "mean_distance_px": 66.00108057823314,
+        "rms_distance_px": 71.07499134724837,
+        "max_distance_px": 99.69286853003857
+      },
+      "D": {
+        "mean_distance_px": 8.765907125993845,
+        "rms_distance_px": 11.898301937376399,
+        "max_distance_px": 27.94237196063672
+      }
+    },
+    {
+      "feature": "G_sofa_left_back_outer_visible",
+      "object": "Sofa • reclined back cushion 1",
+      "split": "partial_train_full_outline_diagnostic",
+      "source_point_count": 10,
+      "annotation_uncertainty_px": 7,
+      "B": {
+        "mean_distance_px": 23.375397505677746,
+        "rms_distance_px": 30.31806657285312,
+        "max_distance_px": 62.85370909769823
+      },
+      "D": {
+        "mean_distance_px": 7.60856228474305,
+        "rms_distance_px": 8.909924988972868,
+        "max_distance_px": 17.625961068164422
+      }
+    },
+    {
+      "feature": "G_sofa_right_back_outer_visible",
+      "object": "Sofa • reclined back cushion 2",
+      "split": "partial_train_full_outline_diagnostic",
+      "source_point_count": 7,
+      "annotation_uncertainty_px": 7,
+      "B": {
+        "mean_distance_px": 4.561933102645393,
+        "rms_distance_px": 5.456368528552738,
+        "max_distance_px": 9.46821201667711
+      },
+      "D": {
+        "mean_distance_px": 11.177640491477456,
+        "rms_distance_px": 16.54947019480228,
+        "max_distance_px": 30.72694505202905
+      }
+    },
+    {
+      "feature": "G_sofa_right_arm_upper_outer",
+      "object": "Sofa • broad padded arm.001",
+      "split": "partial_train_full_outline_diagnostic",
+      "source_point_count": 6,
+      "annotation_uncertainty_px": 7,
+      "B": {
+        "mean_distance_px": 18.636417589360633,
+        "rms_distance_px": 23.249050986807937,
+        "max_distance_px": 41.984899112272366
+      },
+      "D": {
+        "mean_distance_px": 11.306162628359223,
+        "rms_distance_px": 15.673045671437249,
+        "max_distance_px": 32.36662743618023
+      }
+    },
+    {
+      "feature": "H_sofa_right_arm_visible_outer",
+      "object": "Sofa • broad padded arm.001",
+      "split": "H_view_holdout_fixed_camera",
+      "source_point_count": 6,
+      "annotation_uncertainty_px": 7,
+      "B": {
+        "mean_distance_px": 13.642334362570525,
+        "rms_distance_px": 21.152603342456622,
+        "max_distance_px": 47.968691489653665
+      },
+      "D": {
+        "mean_distance_px": 13.642354724702656,
+        "rms_distance_px": 21.15264789383208,
+        "max_distance_px": 47.96878365587668
+      }
+    },
+    {
+      "feature": "H_green_chair_visible_envelope",
+      "object": "Chair • narrow curved wraparound back",
+      "split": "whole_object_holdout",
+      "source_point_count": 11,
+      "annotation_uncertainty_px": 18,
+      "B": {
+        "mean_distance_px": 13.107588614024259,
+        "rms_distance_px": 15.18710986071308,
+        "max_distance_px": 22.12019171394746
+      },
+      "D": {
+        "mean_distance_px": 13.107664815360902,
+        "rms_distance_px": 15.187195612713307,
+        "max_distance_px": 22.120291690482897
+      }
+    }
+  ],
+  "fixed_scanline_frame_widths": [
+    {
+      "view": "H",
+      "scanline_y": 400,
+      "source_visible_dark_interval_px": [
+        979,
+        1005
+      ],
+      "source_width_px": 26,
+      "model_objects": [
+        "Window • calibrated vertical mullion.001",
+        "Window_1__jamb_with_reveal.001",
+        "Window_2__jamb_with_reveal"
+      ],
+      "B": {
+        "projected_geometry_envelope": [
+          909.636611449741,
+          1035.1399858396262
+        ],
+        "width_px": 125.50337438988515
+      },
+      "D": {
+        "projected_geometry_envelope": [
+          987.5612146218392,
+          1009.8526285713804
+        ],
+        "width_px": 22.291413949541152
+      }
+    },
+    {
+      "view": "G",
+      "scanline_y": 400,
+      "source_visible_dark_interval_px": [
+        371,
+        398
+      ],
+      "source_width_px": 27,
+      "model_objects": [
+        "Window • calibrated vertical mullion.001",
+        "Window_1__jamb_with_reveal.001",
+        "Window_2__jamb_with_reveal"
+      ],
+      "B": {
+        "projected_geometry_envelope": [
+          291.773771791952,
+          423.97384607102697
+        ],
+        "width_px": 132.20007427907495
+      },
+      "D": {
+        "projected_geometry_envelope": [
+          385.1725758890697,
+          409.2143591325934
+        ],
+        "width_px": 24.041783243523696
+      }
+    },
+    {
+      "view": "F",
+      "scanline_y": 600,
+      "source_visible_dark_interval_px": [
+        573,
+        586
+      ],
+      "source_width_px": 13,
+      "model_objects": [
+        "Window • calibrated vertical mullion.003",
+        "Window_3__jamb_with_reveal.001",
+        "Window_4__jamb_with_reveal"
+      ],
+      "B": {
+        "projected_geometry_envelope": [
+          501.05590090978706,
+          596.1354718892055
+        ],
+        "width_px": 95.07957097941846
+      },
+      "D": {
+        "projected_geometry_envelope": [
+          567.834806403467,
+          580.4108307009539
+        ],
+        "width_px": 12.57602429748681
+      }
+    }
+  ],
+  "architecture": [
+    {
+      "view": "F",
+      "feature": "tv_tl",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 3,
+      "B": {
+        "component_rms_px": 3.080227755209339,
+        "errors_px": [
+          -2.2084117802414767,
+          -3.7548000555042336
+        ]
+      },
+      "D": {
+        "component_rms_px": 5.036153499998832,
+        "errors_px": [
+          5.113842099322483,
+          -4.957247536112959
+        ]
+      }
+    },
+    {
+      "view": "F",
+      "feature": "tv_tr",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 3,
+      "B": {
+        "component_rms_px": 3.1805061214433548,
+        "errors_px": [
+          -4.015978446942881,
+          2.0256247161721603
+        ]
+      },
+      "D": {
+        "component_rms_px": 2.704939840841003,
+        "errors_px": [
+          3.697968904452182,
+          0.9789918625007203
+        ]
+      }
+    },
+    {
+      "view": "F",
+      "feature": "tv_bl",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 3,
+      "B": {
+        "component_rms_px": 6.864427324250443,
+        "errors_px": [
+          -9.688095402661475,
+          0.6176831297370882
+        ]
+      },
+      "D": {
+        "component_rms_px": 1.4648050513535835,
+        "errors_px": [
+          0.41039241899125045,
+          -2.0304890394622817
+        ]
+      }
+    },
+    {
+      "view": "F",
+      "feature": "tv_br",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 3,
+      "B": {
+        "component_rms_px": 3.7486276871673674,
+        "errors_px": [
+          -3.667770011919174,
+          3.8277777121538747
+        ]
+      },
+      "D": {
+        "component_rms_px": 4.112699036867435,
+        "errors_px": [
+          -2.2632536480421095,
+          5.357823220331625
+        ]
+      }
+    },
+    {
+      "view": "F",
+      "feature": "m3_top",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 12,
+      "B": {
+        "component_rms_px": 2.788023023935912,
+        "errors_px": [
+          -3.585103346267715,
+          1.6410907228345195
+        ]
+      },
+      "D": {
+        "component_rms_px": 40.60318079769259,
+        "errors_px": [
+          -9.91384422696808,
+          56.55928106353224
+        ]
+      }
+    },
+    {
+      "view": "F",
+      "feature": "m4_top",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 12,
+      "B": {
+        "component_rms_px": 5.679773644574156,
+        "errors_px": [
+          -6.451053252000065,
+          4.78576736240467
+        ]
+      },
+      "D": {
+        "component_rms_px": 9.597111844259237,
+        "errors_px": [
+          3.5029074447817266,
+          13.11254174200161
+        ]
+      }
+    },
+    {
+      "view": "F",
+      "feature": "m3_axis",
+      "kind": "line",
+      "role": "training_architectural_proxy",
+      "sigma_px": 10,
+      "B": {
+        "component_rms_px": 9.493545642841074,
+        "errors_px": [
+          7.52199712561165,
+          11.12089820957388
+        ]
+      },
+      "D": {
+        "component_rms_px": 9.953246061538286,
+        "errors_px": [
+          7.507560552359079,
+          -11.906752238781012
+        ]
+      }
+    },
+    {
+      "view": "F",
+      "feature": "m4_axis",
+      "kind": "line",
+      "role": "training_architectural_proxy",
+      "sigma_px": 10,
+      "B": {
+        "component_rms_px": 11.835381013742582,
+        "errors_px": [
+          8.654425396099409,
+          14.326667740415646
+        ]
+      },
+      "D": {
+        "component_rms_px": 10.212808281085332,
+        "errors_px": [
+          -5.102412017410403,
+          -13.511783656386605
+        ]
+      }
+    },
+    {
+      "view": "F",
+      "feature": "shell_corner17",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 5,
+      "B": {
+        "component_rms_px": 10.702864938073004,
+        "errors_px": [
+          -14.579417420878485,
+          4.067336159336946
+        ]
+      },
+      "D": {
+        "component_rms_px": 3.387807980031077,
+        "errors_px": [
+          -4.721240417870831,
+          -0.8150918572696924
+        ]
+      }
+    },
+    {
+      "view": "G",
+      "feature": "tv_tl",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 3,
+      "B": {
+        "component_rms_px": 52.36600627365686,
+        "errors_px": [
+          -43.317146954434975,
+          60.0668128489703
+        ]
+      },
+      "D": {
+        "component_rms_px": 21.054263460620543,
+        "errors_px": [
+          -27.949147645727408,
+          -10.266896591267141
+        ]
+      }
+    },
+    {
+      "view": "G",
+      "feature": "m3_top",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 12,
+      "B": {
+        "component_rms_px": 75.05065917662705,
+        "errors_px": [
+          1.1592031799041251,
+          106.13132965189953
+        ]
+      },
+      "D": {
+        "component_rms_px": 40.344577976710084,
+        "errors_px": [
+          12.53612009572339,
+          55.66161727064065
+        ]
+      }
+    },
+    {
+      "view": "G",
+      "feature": "m4_top",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 12,
+      "B": {
+        "component_rms_px": 54.70567879381368,
+        "errors_px": [
+          -10.280732696892755,
+          76.67939175423129
+        ]
+      },
+      "D": {
+        "component_rms_px": 11.702651588303851,
+        "errors_px": [
+          11.004474394793078,
+          12.361458315619757
+        ]
+      }
+    },
+    {
+      "view": "G",
+      "feature": "m1_axis",
+      "kind": "line",
+      "role": "training_architectural_proxy",
+      "sigma_px": 10,
+      "B": {
+        "component_rms_px": 9.245049856331478,
+        "errors_px": [
+          11.532849906559372,
+          6.159161203027802
+        ]
+      },
+      "D": {
+        "component_rms_px": 24.293969689127625,
+        "errors_px": [
+          7.696488584075954,
+          -33.48369737630078
+        ]
+      }
+    },
+    {
+      "view": "G",
+      "feature": "m3_axis",
+      "kind": "line",
+      "role": "training_architectural_proxy",
+      "sigma_px": 10,
+      "B": {
+        "component_rms_px": 5.7303642711790195,
+        "errors_px": [
+          4.999258116643346,
+          6.378210379407828
+        ]
+      },
+      "D": {
+        "component_rms_px": 10.733602426506817,
+        "errors_px": [
+          -8.824854812047361,
+          -12.350804817780523
+        ]
+      }
+    },
+    {
+      "view": "G",
+      "feature": "m2_axis",
+      "kind": "line",
+      "role": "training_architectural_proxy",
+      "sigma_px": 10,
+      "B": {
+        "component_rms_px": 6.964273608029112,
+        "errors_px": [
+          6.385281945341507,
+          7.498692436250297
+        ]
+      },
+      "D": {
+        "component_rms_px": 4.777732411046331,
+        "errors_px": [
+          2.3558933321087348,
+          -6.332710366884843
+        ]
+      }
+    },
+    {
+      "view": "G",
+      "feature": "m4_axis",
+      "kind": "line",
+      "role": "training_architectural_proxy",
+      "sigma_px": 10,
+      "B": {
+        "component_rms_px": 13.475943369992772,
+        "errors_px": [
+          13.326789375124575,
+          13.623464477641914
+        ]
+      },
+      "D": {
+        "component_rms_px": 11.721403916569441,
+        "errors_px": [
+          -11.24815014011534,
+          -12.17627767325311
+        ]
+      }
+    },
+    {
+      "view": "G",
+      "feature": "shell_corner17",
+      "kind": "point",
+      "role": "training_architectural_proxy",
+      "sigma_px": 5,
+      "B": {
+        "component_rms_px": 50.718809186064355,
+        "errors_px": [
+          -21.430261719747023,
+          68.45099775115011
+        ]
+      },
+      "D": {
+        "component_rms_px": 0.9682860148980034,
+        "errors_px": [
+          -1.1381831042094745,
+          0.7613769333163418
+        ]
+      }
+    }
+  ],
+  "regression_notes": [
+    "G green chair remains absent in both baseline and D at the source-visible lower-left corner; this is an unresolved holdout failure, not a pass.",
+    "H left sofa arm remains badly misplaced; fixed camera and unchanged sofa mean no new regression, not source fidelity.",
+    "F m3 window-top proxy becomes worse while bed and sofa exclusion improve; report this conflict explicitly.",
+    "Former G328.2->264.0 and H181.4->181.4 left-arm contour metrics are withdrawn: mixed sunlight/geometry edge identities. No replacement numeric left-arm claim is made in D."
+  ],
+  "source_acceptance": false,
+  "withdrawn_historical_metrics_not_for_geometry_evaluation": [
+    {
+      "status": "WITHDRAWN_INVALID_LIGHTING_PROXY",
+      "reason": "INVALID mixed edge identity: first four points follow the large sunlight patch; [420,1058] follows the small sunlight patch. Only the short right-front edge near [432,1068] to [435,1079] is potentially a valid exterior contour; final point is frame-clipped. Entire former 328.2 -> 264.0 px aggregate is withdrawn.",
+      "original_record": {
+        "feature": "G_sofa_left_arm_front_visible",
+        "object": "Sofa • broad padded arm",
+        "split": "whole_object_holdout",
+        "source_point_count": 7,
+        "annotation_uncertainty_px": 8,
+        "B": {
+          "mean_distance_px": 328.20757906420107,
+          "rms_distance_px": 337.34766831029566,
+          "max_distance_px": 409.9277099996102
+        },
+        "D": {
+          "mean_distance_px": 263.9545584740638,
+          "rms_distance_px": 274.8367851009772,
+          "max_distance_px": 344.3268196951638
+        }
+      }
+    },
+    {
+      "status": "WITHDRAWN_INVALID_LIGHTING_PROXY",
+      "reason": "INVALID mixed edge identity: [960,938] is inside the large sunlight patch and [1073,960] is in the small sunlight patch. [873,920],[912,931],[1045,954] are internal arm/back junction or surface samples, not full-arm exterior silhouette. [1088,977],[1092,1010],[1093,1079] are visible front-right contour samples, final point frame-clipped. Entire former 181.4 -> 181.4 px aggregate is withdrawn.",
+      "original_record": {
+        "feature": "H_sofa_left_arm_visible_upper_front",
+        "object": "Sofa • broad padded arm",
+        "split": "whole_object_holdout",
+        "source_point_count": 8,
+        "annotation_uncertainty_px": 9,
+        "B": {
+          "mean_distance_px": 181.35766949786768,
+          "rms_distance_px": 199.67324465201872,
+          "max_distance_px": 258.4077918456013
+        },
+        "D": {
+          "mean_distance_px": 181.35760478534564,
+          "rms_distance_px": 199.67318402005034,
+          "max_distance_px": 258.4077132616936
+        }
+      }
+    }
+  ],
+  "annotation_erratum": {
+    "id": "D_LEFT_ARM_ANNOTATION_ERRATUM_20261011",
+    "status": "WITHDRAWN_INVALID_GEOMETRY_METRICS",
+    "trigger": "Subsequent independent native-pixel review by sofa-arm E worker, confirmed with original H/G native frames and same-coordinate crops. Sunlight patches must not be scored as geometry silhouettes.",
+    "affected_feature_ids": [
+      "G_sofa_left_arm_front_visible",
+      "H_sofa_left_arm_visible_upper_front"
+    ],
+    "affected_numbers_not_for_reuse": [
+      "G B 328.2px -> D 264.0px",
+      "H B 181.4px -> D 181.4px"
+    ],
+    "model_render_changes": false,
+    "fit_parameters_changed": false,
+    "training_impact": "These left-arm groups were held out, not used by the frozen D solver. Shared model/cameras and fit parameters are unchanged.",
+    "replacement_metrics": "None in D. Retained geometric subsets require independent re-annotation and re-evaluation; do not reuse the former aggregate as a baseline.",
+    "qualitative_scope": "H real front-right exterior contour is near x1090, whereas D arm maximum x is about836: gross visible displacement remains qualitative evidence, not the withdrawn contour statistic. G qualitative comparison does not inherit any quantitative support from the invalid group.",
+    "reviewed_sources": {
+      "G": {
+        "native_seconds": 1116.180816,
+        "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474"
+      },
+      "H": {
+        "native_seconds": 1101.728114,
+        "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48"
+      }
+    }
+  }
+}

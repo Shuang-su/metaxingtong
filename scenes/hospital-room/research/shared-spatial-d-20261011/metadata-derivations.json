@@ -1,0 +1,343 @@
+{
+  "scope": "Only transfer IDs and inherited absolute metadata paths are cleaned in JSON. Source hashes retained; numeric geometry, model and PNG bytes unchanged. Original source bytes are preserved in the receiving local Library materialization. Source delivery_manifest hashes describe originals; repository hashes are in archive-verification.json.",
+  "files": [
+    {
+      "filename": "final_asset_qa.json",
+      "source_sha256": "4fb8fe3de5656f12f9f66b634d3bcc00f9976393e2874c6cd918f9757d8a1bb6",
+      "repository_sha256": "4d2a2769166a669b34385e2d25400c02cde8cc5f018b3352c3ebf1ee2cfbd580",
+      "changes": [
+        {
+          "pointer": "/material_blend_texture_images/0/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "bbf52f65e06fc3ca884e315ee5398b45da9b35b09ab271fd5f918e289a568c25",
+          "replacement": "brown_leather_basecolor.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/1/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "f7998401c170ce565afe58fd66a8f06c2ec56b52823b2fcc9afa43f4c4942bcf",
+          "replacement": "brown_leather_normal.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/2/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "0ea92308b9b1e45f5fc1db1022969bb78b6a90be0a163d4fbc15a915e31aedb3",
+          "replacement": "brown_leather_roughness.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/3/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "05df56891aab7c6bdadd91df6aab8a24599ebc72570cbf71d18421aa6809f6cc",
+          "replacement": "charcoal_curtain_basecolor.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/4/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "e8f006932c2e86ae11c407a77d5778d9b71b3ee1d2c5d652ff0ade6992ed267d",
+          "replacement": "charcoal_curtain_normal.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/5/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2b202450fef12c956d311144fc109553dc0d063409c5e675ff09ca070c5b7d78",
+          "replacement": "charcoal_curtain_roughness.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/6/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "4fb5a9a3e2cb30ed961d03f9357b45c89abe97a7bc90bfbd790d26b1a83238c7",
+          "replacement": "cream_finish_basecolor.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/7/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "8d60537a399b2d5b68c4516a70ab56c0487974fe33facc0a275c4b2600fa7e98",
+          "replacement": "cream_finish_normal.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/8/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "7725247c6784b47ff68ce4f243f96ceb5f1a65e307ec5d0553c0c8cf60515673",
+          "replacement": "cream_finish_roughness.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/9/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "c62029e0b27ebf801b02722c3409bfb3c7bc198bd58da2db0593eeb90262045e",
+          "replacement": "green_upholstery_basecolor.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/10/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "225439b43e58096380de544f7b067a4ff023448e5ffea3ff622a167aa955aa26",
+          "replacement": "green_upholstery_normal.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/11/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "e22838e0cb078f4c79e492ffaebe919e71cd15863ec226694b23028686909e3a",
+          "replacement": "green_upholstery_roughness.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/12/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "71df2c5a3d48bdc50e286a631bf90877c028d2a13a6315bcec42088fa96e738b",
+          "replacement": "warm_plaster_basecolor.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/13/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2f2b7727164dfb60ddd82c6bbf76afc84bf6aa671d01117ed41a83cc7a0c8315",
+          "replacement": "warm_plaster_normal.png"
+        },
+        {
+          "pointer": "/material_blend_texture_images/14/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "18307314e97f4f949368581a31d7db3f0452ab51e749df38566e4ebb42eee79a",
+          "replacement": "warm_plaster_roughness.png"
+        }
+      ]
+    },
+    {
+      "filename": "independent_geometry_qa.json",
+      "source_sha256": "047c65647ae7525d982c99378b074556c1e3649bc9b1512b88e1a74ed18a64a4",
+      "repository_sha256": "d7d6052f0599cf4f58ceff1f1787d2808387ae07c8211f23f17151ebcf0842c8",
+      "changes": [
+        {
+          "pointer": "/supplemental_checks/images/0/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "bbf52f65e06fc3ca884e315ee5398b45da9b35b09ab271fd5f918e289a568c25",
+          "replacement": "brown_leather_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/1/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "f7998401c170ce565afe58fd66a8f06c2ec56b52823b2fcc9afa43f4c4942bcf",
+          "replacement": "brown_leather_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/2/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "0ea92308b9b1e45f5fc1db1022969bb78b6a90be0a163d4fbc15a915e31aedb3",
+          "replacement": "brown_leather_roughness.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/3/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "05df56891aab7c6bdadd91df6aab8a24599ebc72570cbf71d18421aa6809f6cc",
+          "replacement": "charcoal_curtain_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/4/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "e8f006932c2e86ae11c407a77d5778d9b71b3ee1d2c5d652ff0ade6992ed267d",
+          "replacement": "charcoal_curtain_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/5/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2b202450fef12c956d311144fc109553dc0d063409c5e675ff09ca070c5b7d78",
+          "replacement": "charcoal_curtain_roughness.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/6/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "4fb5a9a3e2cb30ed961d03f9357b45c89abe97a7bc90bfbd790d26b1a83238c7",
+          "replacement": "cream_finish_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/7/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "8d60537a399b2d5b68c4516a70ab56c0487974fe33facc0a275c4b2600fa7e98",
+          "replacement": "cream_finish_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/8/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "7725247c6784b47ff68ce4f243f96ceb5f1a65e307ec5d0553c0c8cf60515673",
+          "replacement": "cream_finish_roughness.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/9/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "c62029e0b27ebf801b02722c3409bfb3c7bc198bd58da2db0593eeb90262045e",
+          "replacement": "green_upholstery_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/10/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "225439b43e58096380de544f7b067a4ff023448e5ffea3ff622a167aa955aa26",
+          "replacement": "green_upholstery_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/11/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "e22838e0cb078f4c79e492ffaebe919e71cd15863ec226694b23028686909e3a",
+          "replacement": "green_upholstery_roughness.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/13/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "71df2c5a3d48bdc50e286a631bf90877c028d2a13a6315bcec42088fa96e738b",
+          "replacement": "warm_plaster_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/14/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2f2b7727164dfb60ddd82c6bbf76afc84bf6aa671d01117ed41a83cc7a0c8315",
+          "replacement": "warm_plaster_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/15/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "18307314e97f4f949368581a31d7db3f0452ab51e749df38566e4ebb42eee79a",
+          "replacement": "warm_plaster_roughness.png"
+        }
+      ]
+    },
+    {
+      "filename": "independent_geometry_qa_D2.json",
+      "source_sha256": "6053d833393f0988e8f8ac352f1e3dde2361ed1ecd76f0362867141d0544dd44",
+      "repository_sha256": "6a3af2d2b387cfbf1964316554803eb7036074ed04b1ed752c54798b5bbe44f3",
+      "changes": [
+        {
+          "pointer": "/supplemental_checks/images/0/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "bbf52f65e06fc3ca884e315ee5398b45da9b35b09ab271fd5f918e289a568c25",
+          "replacement": "brown_leather_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/1/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "f7998401c170ce565afe58fd66a8f06c2ec56b52823b2fcc9afa43f4c4942bcf",
+          "replacement": "brown_leather_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/2/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "0ea92308b9b1e45f5fc1db1022969bb78b6a90be0a163d4fbc15a915e31aedb3",
+          "replacement": "brown_leather_roughness.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/3/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "05df56891aab7c6bdadd91df6aab8a24599ebc72570cbf71d18421aa6809f6cc",
+          "replacement": "charcoal_curtain_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/4/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "e8f006932c2e86ae11c407a77d5778d9b71b3ee1d2c5d652ff0ade6992ed267d",
+          "replacement": "charcoal_curtain_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/5/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2b202450fef12c956d311144fc109553dc0d063409c5e675ff09ca070c5b7d78",
+          "replacement": "charcoal_curtain_roughness.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/6/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "4fb5a9a3e2cb30ed961d03f9357b45c89abe97a7bc90bfbd790d26b1a83238c7",
+          "replacement": "cream_finish_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/7/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "8d60537a399b2d5b68c4516a70ab56c0487974fe33facc0a275c4b2600fa7e98",
+          "replacement": "cream_finish_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/8/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "7725247c6784b47ff68ce4f243f96ceb5f1a65e307ec5d0553c0c8cf60515673",
+          "replacement": "cream_finish_roughness.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/9/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "c62029e0b27ebf801b02722c3409bfb3c7bc198bd58da2db0593eeb90262045e",
+          "replacement": "green_upholstery_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/10/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "225439b43e58096380de544f7b067a4ff023448e5ffea3ff622a167aa955aa26",
+          "replacement": "green_upholstery_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/11/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "e22838e0cb078f4c79e492ffaebe919e71cd15863ec226694b23028686909e3a",
+          "replacement": "green_upholstery_roughness.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/13/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "71df2c5a3d48bdc50e286a631bf90877c028d2a13a6315bcec42088fa96e738b",
+          "replacement": "warm_plaster_basecolor.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/14/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2f2b7727164dfb60ddd82c6bbf76afc84bf6aa671d01117ed41a83cc7a0c8315",
+          "replacement": "warm_plaster_normal.png"
+        },
+        {
+          "pointer": "/supplemental_checks/images/15/filepath",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "18307314e97f4f949368581a31d7db3f0452ab51e749df38566e4ebb42eee79a",
+          "replacement": "warm_plaster_roughness.png"
+        }
+      ]
+    },
+    {
+      "filename": "source_and_baseline_references.json",
+      "source_sha256": "258e46172d3f3dafdbff43fcd98286d7ed92e747e55aae24901fd649e3e270cc",
+      "repository_sha256": "b6691eb9c9ecc4fba0713357e9b76b3330fc2c8ab2e36f86527ed680108a54d1",
+      "changes": [
+        {
+          "pointer": "/reference_render_files/0/library_file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "d0ebb57acad21cc1cc49f654ecd6e9f82154aaecca7f22b499f4151a0f24d9fe"
+        },
+        {
+          "pointer": "/reference_render_files/0/file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "4050c7cecc5b19b023a1966c01458997afdeabd78dd92283320d0e12ffeffd25"
+        },
+        {
+          "pointer": "/reference_render_files/1/library_file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "6f240c6f897ed1221a0f2b450ab1531f637d50c78a6f42d9d8c276f184a57ce8"
+        },
+        {
+          "pointer": "/reference_render_files/1/file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "13db4ba078de252519c318f37c34844186261db83251005e3ad131f4d3bfa130"
+        },
+        {
+          "pointer": "/reference_render_files/2/library_file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "9f5bcdf49d75a8ea8ba29e973a8dcd62c788dbbaa466121ad6825fa09f4bf6b8"
+        },
+        {
+          "pointer": "/reference_render_files/2/file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "b8ae479ff7f3978f9e1dcefad63a48c76a4fe5b7c6e62dd4912162286890c612"
+        },
+        {
+          "pointer": "/reference_render_files/3/library_file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "c8986a4d0a1f4436d4863ec20f086a80c8d7fb74613930694cafbafc0414b0ce"
+        },
+        {
+          "pointer": "/reference_render_files/3/file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "1224aec46c5b0dbcfc866382c577361f6f93505e6a30f2244b1523c4ebef3dcf"
+        }
+      ]
+    }
+  ]
+}
