@@ -1,0 +1,412 @@
+{
+  "status": "REJECTED direct same-X vertical replacement under fixed uncalibrated D cameras; does not rule out a hanging-frame structure in the true scene",
+  "baseline_blend_sha256": "3c00994ea7532fd3646534814d27489c18a1c642833836197bd2a888c6eb7b53",
+  "fit_view": "A only",
+  "holdout_views": [
+    "B",
+    "G"
+  ],
+  "frozen": "upper bar, every non-rail object, materials, lighting, all camera parameters",
+  "observations": {
+    "A": {
+      "upper": [
+        [
+          400,
+          74.5
+        ],
+        [
+          500,
+          63
+        ],
+        [
+          600,
+          51
+        ],
+        [
+          700,
+          39.5
+        ],
+        [
+          800,
+          27.5
+        ],
+        [
+          900,
+          15.5
+        ]
+      ],
+      "lower": [
+        [
+          400,
+          125
+        ],
+        [
+          500,
+          114
+        ],
+        [
+          600,
+          103
+        ],
+        [
+          700,
+          92
+        ],
+        [
+          800,
+          80.5
+        ],
+        [
+          900,
+          69
+        ],
+        [
+          1000,
+          58
+        ],
+        [
+          1100,
+          47
+        ],
+        [
+          1200,
+          36
+        ],
+        [
+          1300,
+          24.5
+        ]
+      ]
+    },
+    "B": {
+      "upper": [
+        [
+          400,
+          31
+        ],
+        [
+          500,
+          20
+        ],
+        [
+          600,
+          9.5
+        ]
+      ],
+      "lower": [
+        [
+          400,
+          84.5
+        ],
+        [
+          500,
+          74
+        ],
+        [
+          600,
+          63
+        ],
+        [
+          700,
+          52.5
+        ],
+        [
+          800,
+          41.5
+        ],
+        [
+          1000,
+          19.5
+        ],
+        [
+          1100,
+          9.5
+        ]
+      ]
+    },
+    "G": {
+      "upper": [
+        [
+          1050,
+          40.5
+        ],
+        [
+          1100,
+          22
+        ],
+        [
+          1150,
+          6
+        ]
+      ],
+      "lower": [
+        [
+          1150,
+          52.5
+        ],
+        [
+          1200,
+          35.5
+        ],
+        [
+          1300,
+          4
+        ]
+      ]
+    }
+  },
+  "annotation_method": "Native source dark bar bands inspected at listed x columns; use bar centerlines, not light or shadow boundaries. Approximate 3 px picking / beam-section uncertainty. Connector direction checked independently against room verticals.",
+  "upper_center": [
+    1.4794292449951172,
+    -1.8640580773353577,
+    2.6918747425079346
+  ],
+  "baseline_lower_center": [
+    1.679429054260254,
+    -1.8640580773353577,
+    2.6918747425079346
+  ],
+  "candidate_lower_center": [
+    1.4794292449951172,
+    -1.8640580773353577,
+    2.5718161719625097
+  ],
+  "fitted_vertical_drop_D_units": 0.12005857054542483,
+  "bar_length_along_Y_D_units": 3.037500262260437,
+  "model_world_X_lateral_gap_removed": 0.19999980926513672,
+  "cameras": {
+    "A": {
+      "matrix_world": [
+        [
+          0.24282953766145396,
+          -0.17237883025056622,
+          -0.9546304806157047,
+          -1.853770104025269
+        ],
+        [
+          -0.9700143435329673,
+          -0.05359161645231997,
+          -0.237065628015396,
+          -2.767956940568757
+        ],
+        [
+          -0.01029509492094094,
+          0.9835717958174046,
+          -0.18022356531013062,
+          1.0175261872464425
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 35.980555534499935,
+      "sensor_width_mm": 36,
+      "sensor_fit": "HORIZONTAL",
+      "shift_x": 0,
+      "shift_y": 0,
+      "location": [
+        -1.853770104025269,
+        -2.767956940568757,
+        1.0175261872464425
+      ],
+      "rotation_euler_xyz_rad": [
+        1.7520197709209053,
+        0.010295276790715846,
+        -1.3255014272304877
+      ]
+    },
+    "B": {
+      "matrix_world": [
+        [
+          0.21370332038542733,
+          -0.1447410169112745,
+          -0.9661164158007736,
+          -1.675028814387102
+        ],
+        [
+          -0.9768359392476954,
+          -0.04286291614464771,
+          -0.2096528516706826,
+          -2.5839028434868214
+        ],
+        [
+          -0.011065199967272954,
+          0.9885407469816643,
+          -0.15054817470370474,
+          1.1826535194984595
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 35.980555534499935,
+      "sensor_width_mm": 36,
+      "sensor_fit": "HORIZONTAL",
+      "shift_x": 0,
+      "shift_y": 0,
+      "location": [
+        -1.675028814387102,
+        -2.5839028434868214,
+        1.1826535194984595
+      ],
+      "rotation_euler_xyz_rad": [
+        1.7219283942233017,
+        0.011065425781073168,
+        -1.355418639793553
+      ]
+    },
+    "G": {
+      "matrix_world": [
+        [
+          0.8272041082382202,
+          -0.061700716614723206,
+          -0.9351080656051636,
+          -1.5854567289352417
+        ],
+        [
+          -0.9367659687995911,
+          -0.08974464237689972,
+          -0.8227488994598389,
+          -2.784939765930176
+        ],
+        [
+          -0.026525482535362244,
+          1.2452467679977417,
+          -0.10562893003225327,
+          1.1699354648590088
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 30.776639938354492,
+      "sensor_width_mm": 36.0,
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "clip_start": 0.014999999664723873,
+      "clip_end": 500.0
+    }
+  },
+  "views": {
+    "A": {
+      "split": "train",
+      "upper_unchanged_rms_px": 3.661478973387788,
+      "baseline_lower_rms_px": 12.27040734708591,
+      "vertical_hypothesis_lower_rms_px": 1.2544893024365642,
+      "baseline_residuals_px": [
+        -9.311224727517509,
+        -10.074873523260393,
+        -10.838522319003307,
+        -11.602171114746193,
+        -11.869247036565538,
+        -12.136322958384854,
+        -12.899971754127753,
+        -13.663620549870666,
+        -14.427269345613565,
+        -14.694345267432881
+      ],
+      "candidate_residuals_px": [
+        2.17789998037895,
+        1.5716943793010443,
+        0.96548877822311,
+        0.35928317714519,
+        0.24974130406809564,
+        0.1401994309910013,
+        -0.46600617008691875,
+        -1.072211771164839,
+        -1.6784173722427589,
+        -1.787959245319846
+      ]
+    },
+    "B": {
+      "split": "holdout",
+      "upper_unchanged_rms_px": 3.6608936332667135,
+      "baseline_lower_rms_px": 3.4203653890203993,
+      "vertical_hypothesis_lower_rms_px": 12.659236236506567,
+      "baseline_residuals_px": [
+        -4.945087068098146,
+        -4.622082279043814,
+        -3.801645994088512,
+        -3.4786412050341657,
+        -2.658204920078879,
+        -1.017332350168305,
+        -1.1917590570148848
+      ],
+      "candidate_residuals_px": [
+        10.088772589009684,
+        10.591225806086527,
+        11.591200059342919,
+        12.093653276419762,
+        13.093627529676155,
+        15.093576036188939,
+        15.098508217086225
+      ]
+    },
+    "G": {
+      "split": "holdout",
+      "upper_unchanged_rms_px": 7.297949395617412,
+      "baseline_lower_rms_px": 0.8322663491365806,
+      "vertical_hypothesis_lower_rms_px": 11.991700143501436,
+      "baseline_residuals_px": [
+        0.48834846145951316,
+        1.2737503840501094,
+        0.4659158368608255
+      ],
+      "candidate_residuals_px": [
+        11.376207126191611,
+        12.42726914524318,
+        12.146913600113866
+      ]
+    }
+  },
+  "limits": [
+    "Free A/B camera hypotheses are semantically inconsistent with lying on D mattress; fixed here only to isolate this local structural hypothesis.",
+    "G uses unchanged existing D camera, also uncalibrated.",
+    "Visible lower-bar left start is occluded by curtain and is not treated as a physical endpoint.",
+    "User subsequently confirmed a horizontal pull-curtain system. This rejected historical test does not establish cross-section, rail count or hanger geometry.",
+    "Vertical drop is conditional on D scale/cameras; not physical measurement.",
+    "The whole bed support topology remains unresolved."
+  ],
+  "decision": "Do not merge into reconstruction; do not retune held-out B/G cameras to rescue this fit.",
+  "new_full_frame_renders": false,
+  "source_refs": {
+    "A": {
+      "sha256": "d378baae2687a7880630cf45e6a4fd110e9d7c10411e10087de3277b65ef1c7f",
+      "seconds": 1820.867783
+    },
+    "B": {
+      "sha256": "3e4c9b153a3dd541dc2eae31c987ea9b5d2ef0f06811115a9970b675242cf5bf",
+      "seconds": 1826.978388
+    },
+    "G": {
+      "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "seconds": 1116.180816,
+      "verified_repo_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png"
+    }
+  },
+  "current_user_semantics": {
+    "horizontal_pull_curtain_track": true,
+    "track_inserts_into_central_column_like_member": true,
+    "windows_on_both_sides_have_venetian_blinds": true,
+    "sources": [
+      "Sentinel_3f1f35b3102081918a123a1e8388c94a",
+      "Sentinel_af55c1d420ac81919cf41760bc1c0d47"
+    ],
+    "not_established": [
+      "load-bearing structural role",
+      "exact rail count or cross-section",
+      "hanger type or dimensions",
+      "whether the adjacent dark grey strip is the gathered curtain of this same system"
+    ],
+    "historical_test_geometry_and_numeric_results_changed": false
+  }
+}
