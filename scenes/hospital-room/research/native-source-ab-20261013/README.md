@@ -1,5 +1,12 @@
 # 病房：2026-10-13原生A/B来源归档
 
+<!-- cloud-issue4-display-35-20261013 -->
+
+2026-10-13显示状态更新：本版本2张图已由独立云端浏览器逐张完整显示核验通过。本批合计A/B2+D15+E11+机位7=35，A/B已含，不是37；无坏图、折叠或部分显示。显示通过不等于几何或用户验收，CURRENT/未采纳状态不变。38份云端截图/说明原件仍待可验证Library交付，尚未物化到本Mac、尚未Git；CP1也未交付。[独立核验记录](../../../../docs/research-display-20261013/cloud-issue4-35/README.md)。
+
+以下原正文保留归档时的核验状态；此前Mac/Safari技术阻塞和待验语句属于历史，不改写为当时通过。
+
+
 状态：来源帧归档 / 相机与几何未验收。正式原生帧仅A、B两张；本次不产生新模型版本。
 
 来源：[BV1GqXMByE1s](https://www.bilibili.com/video/BV1GqXMByE1s/)。保留两张PNG、原来源清单、更新后的采集操作说明和运动/视角证据JSON，5份原文件均保持字节不变。[归档大小与SHA](archive-verification.json) · [逐帧来源记录](source-manifest_A_B.json) · [采集操作说明](原生PNG采集操作说明.md) · [运动与视角证据](motion-and-perspective-evidence.json)。
