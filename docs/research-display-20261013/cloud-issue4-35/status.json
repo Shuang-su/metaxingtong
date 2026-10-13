@@ -469,5 +469,73 @@
     "status": "PENDING_VERIFIABLE_LIBRARY_HANDOFF",
     "same_as_existing_camera_27_files": false
   },
-  "prior_2248_and_226_display_batches": "Retained as separate historical batches; no recount or rerun claimed."
+  "prior_2248_and_226_display_batches": "Retained as separate historical batches; no recount or rerun claimed.",
+  "original_availability_update": {
+    "recorded_at_utc": "2026-10-13T22:16:06.491644+00:00",
+    "reported_recovery_check_window_utc": {
+      "start": "2026-10-13T22:07:00Z",
+      "end": "2026-10-13T22:12:00Z",
+      "precision": "minute; exact seconds were not supplied"
+    },
+    "source": "Authorized cloud-task recovery handoff; this Mac records the reported cloud workspace and Library checks and did not independently repeat them.",
+    "current_status": "ORIGINALS_CURRENTLY_UNAVAILABLE_RECOVERY_PENDING",
+    "reported_missing_originals": 65,
+    "batches": [
+      {
+        "name": "CP1 rejected diagnostic",
+        "reported_original_file_count": 27,
+        "status": "ORIGINALS_CURRENTLY_UNAVAILABLE_RECOVERY_PENDING",
+        "same_as_archived_frozen_D_camera_27_files": false
+      },
+      {
+        "name": "35-position display-check screenshots, list and descriptions",
+        "reported_original_file_count": 38,
+        "status": "ORIGINALS_CURRENTLY_UNAVAILABLE_RECOVERY_PENDING"
+      }
+    ],
+    "reported_cloud_findings": {
+      "environment_recreated": true,
+      "original_directories_and_pending_transfer_manifests_present_in_current_workspace_or_shared": false,
+      "library_checks": "Complete Library listing plus exact-name searches for all 65 filenames found no successful file identities.",
+      "verified_successful_library_identities_found": 0,
+      "exact_filename_list_or_hashes_delivered_to_this_mac": false,
+      "upload_outcome": "STILL_UNDETERMINED_AFTER_ORIGINAL_TIMEOUT",
+      "resumable_upload_session_available": false,
+      "permanent_loss_or_confirmed_upload_failure_established": false
+    },
+    "mac_materialized_originals": 0,
+    "original_files_added_to_git": 0,
+    "historical_display_verification": {
+      "passed": 35,
+      "positions": 35,
+      "counts": {
+        "A/B": 2,
+        "D": 15,
+        "E": 11,
+        "camera": 7,
+        "rejected_rail": 0
+      },
+      "A/B_included": true,
+      "valid_and_unchanged": true,
+      "pr": 50,
+      "document_commit": "609fc8ed4e2f724f7453cf703aae558ebd7d9372",
+      "scope": "Image display only; no geometry, camera or user acceptance."
+    },
+    "preserved_persisted_batches": [
+      "A/B originals",
+      "D",
+      "E",
+      "frozen-D camera diagnosis (27 files; not CP1)",
+      "rejected-rail trial (6 files)"
+    ],
+    "existing_records_and_current_preserved": true,
+    "replacement_evidence_policy": "Do not represent new screenshots as the original display evidence or a new model as the original CP1 failed trial.",
+    "future_joint_reconstruction": {
+      "reported_starting_material": "Persisted D and five original frames",
+      "must_be_a_new_version": true,
+      "delivered_or_archived_by_this_update": false
+    },
+    "supersedes_only_original_availability_wording": "Earlier pending-transfer wording is retained as a historical snapshot and does not establish that usable local originals still exist."
+  },
+  "historical_snapshot_note": "All original fields above are retained as the PR50 historical snapshot. For current availability of the 38 display-evidence originals and 27 CP1 originals, use original_availability_update; earlier pending-transfer status does not establish existing usable originals."
 }
