@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "version": "terrace-right-rear-table-rebuilt-20261011",
+  "supplement_only": true,
+  "frozen_manifest_sha256": "4f551df4c3e27f4a8046442f995eab413bc6822e51de96965c591a178ff86547",
+  "frozen_original_files_modified": false,
+  "png_paths": 14,
+  "unique_png_sha256_count": 12,
+  "aliases_are_not_additional_views": true,
+  "same_source_camera_for_old_and_new": true,
+  "images": [
+    {
+      "path": "new_main_normal.png",
+      "sha256": "84511e2f7f701af5008a46bfa51db44f2a7f7a2da5df8ca4048a81a6f9438d39",
+      "bytes": 2464930,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "new_normal_render",
+      "processing": "OIDN",
+      "byte_identical_aliases": [
+        "renders/main/render_oidn.png"
+      ],
+      "is_distinct_image_content": false,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "render_camera": "SOURCE_5586__01h33m06s",
+      "image_alignment_or_warp_applied": false
+    },
+    {
+      "path": "new_table_native_crop.png",
+      "sha256": "ad49c397713fc02af92f12a7110986fd4e9ffe3438e062c540b63a4da8046650",
+      "bytes": 64499,
+      "image_pixel_dimensions": [
+        220,
+        265
+      ],
+      "role": "new_normal_render_crop",
+      "processing": "OIDN-derived",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "render_camera": "SOURCE_5586__01h33m06s",
+      "image_alignment_or_warp_applied": false,
+      "crop": {
+        "from": "new_main_normal.png",
+        "box_xyxy_exclusive_right_bottom": [
+          1430,
+          580,
+          1650,
+          845
+        ],
+        "output_dimensions": [
+          220,
+          265
+        ],
+        "scale": 1,
+        "display_only": true,
+        "new_camera_view": false,
+        "registration": false
+      }
+    },
+    {
+      "path": "old_main_normal.png",
+      "sha256": "8edfb0d8b2456054235eef3da4e47798c0a5cd5291ab1cf4232d054c8421c11a",
+      "bytes": 2464180,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "baseline_normal_render",
+      "processing": "OIDN",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "render_camera": "SOURCE_5586__01h33m06s",
+      "image_alignment_or_warp_applied": false
+    },
+    {
+      "path": "old_main_raw.png",
+      "sha256": "d2de1b8d8591d52403a9a86e9af938d225d3b250ece1dc200a210c29cb60439e",
+      "bytes": 4183736,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "baseline_raw_render",
+      "processing": "raw",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "render_camera": "SOURCE_5586__01h33m06s",
+      "image_alignment_or_warp_applied": false
+    },
+    {
+      "path": "old_new_fullframe_50percent.png",
+      "sha256": "7e520cb4fb1175a56c401ab5563f3db19761a5f97774264029b698f86acf3865",
+      "bytes": 2144685,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "baseline_new_direct_50_percent_overlay",
+      "processing": "OIDN+OIDN",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "overlay": {
+        "inputs": [
+          "old_main_normal.png",
+          "new_main_normal.png"
+        ],
+        "recipe": "PIL.Image.blend(Image.open(input0).convert(\"RGB\"), Image.open(input1).convert(\"RGB\"), alpha=0.5)",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "size": [
+          1920,
+          1080
+        ],
+        "resize": false,
+        "crop": false,
+        "registration": false,
+        "warp": false,
+        "mask": false,
+        "hidden_geometry_change": false,
+        "independent_recalculation_difference": 0
+      }
+    },
+    {
+      "path": "old_table_native_crop.png",
+      "sha256": "2d099bfe0bb4de8d0f24fb2ae840eaed2d869ae19b6b251dd7aa05b30a5c0280",
+      "bytes": 63927,
+      "image_pixel_dimensions": [
+        220,
+        265
+      ],
+      "role": "baseline_normal_render_crop",
+      "processing": "OIDN-derived",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "render_camera": "SOURCE_5586__01h33m06s",
+      "image_alignment_or_warp_applied": false,
+      "crop": {
+        "from": "old_main_normal.png",
+        "box_xyxy_exclusive_right_bottom": [
+          1430,
+          580,
+          1650,
+          845
+        ],
+        "output_dimensions": [
+          220,
+          265
+        ],
+        "scale": 1,
+        "display_only": true,
+        "new_camera_view": false,
+        "registration": false
+      }
+    },
+    {
+      "path": "raw_source/frames/terrace-autumn-low-BV1g64y1P7VV-t2751.636134-native.png",
+      "sha256": "85591e9138c4ff2964328ff806778956b5d702d4b51e92070564bfdd536eee92",
+      "bytes": 3112060,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "native_video_source_low_context_only",
+      "processing": "native-source",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": 2751.636134,
+      "video_timestamp_applicability": "actual decoded source frame time",
+      "video_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "video_decoded_dimensions_applicability": "native decoded source dimensions",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-autumn-low-BV1g64y1P7VV-t2751.636134-native.png",
+        "timestamp_seconds": 2751.636134,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": false,
+      "furniture_evidence_limit": "Table is cropped out in this low autumn frame; not a second furniture acceptance view."
+    },
+    {
+      "path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+      "sha256": "ca728b6e9c87fb01e222e1ac94d342c583a9413efc5be3a5deff2c1eb28d52b0",
+      "bytes": 2493118,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "native_video_source_main",
+      "processing": "native-source",
+      "byte_identical_aliases": [
+        "source_native_1920x1080.png"
+      ],
+      "is_distinct_image_content": false,
+      "video_timestamp_seconds": 5586.011739,
+      "video_timestamp_applicability": "actual decoded source frame time",
+      "video_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "video_decoded_dimensions_applicability": "native decoded source dimensions",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted."
+    },
+    {
+      "path": "renders/main/render_oidn.png",
+      "sha256": "84511e2f7f701af5008a46bfa51db44f2a7f7a2da5df8ca4048a81a6f9438d39",
+      "bytes": 2464930,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "new_normal_render",
+      "processing": "OIDN",
+      "byte_identical_aliases": [
+        "new_main_normal.png"
+      ],
+      "is_distinct_image_content": false,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "render_camera": "SOURCE_5586__01h33m06s",
+      "image_alignment_or_warp_applied": false
+    },
+    {
+      "path": "renders/main/render_raw.png",
+      "sha256": "267feaa0abf1a7fee374a739d490da75e3929ef473e4e6bc9b14c6e7ee6586da",
+      "bytes": 4183881,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "new_raw_render",
+      "processing": "raw",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "render_camera": "SOURCE_5586__01h33m06s",
+      "image_alignment_or_warp_applied": false
+    },
+    {
+      "path": "source_native_1920x1080.png",
+      "sha256": "ca728b6e9c87fb01e222e1ac94d342c583a9413efc5be3a5deff2c1eb28d52b0",
+      "bytes": 2493118,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "native_video_source_main",
+      "processing": "native-source",
+      "byte_identical_aliases": [
+        "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png"
+      ],
+      "is_distinct_image_content": false,
+      "video_timestamp_seconds": 5586.011739,
+      "video_timestamp_applicability": "actual decoded source frame time",
+      "video_decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "video_decoded_dimensions_applicability": "native decoded source dimensions",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted."
+    },
+    {
+      "path": "source_new_fullframe_50percent.png",
+      "sha256": "3b4864e9c760f00a646b761142d3b7960f69dd72c3c5738ddb41a7ec0431d4b9",
+      "bytes": 3536415,
+      "image_pixel_dimensions": [
+        1920,
+        1080
+      ],
+      "role": "source_new_raw_direct_50_percent_overlay",
+      "processing": "native-source+raw",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "overlay": {
+        "inputs": [
+          "source_native_1920x1080.png",
+          "renders/main/render_raw.png"
+        ],
+        "recipe": "PIL.Image.blend(Image.open(input0).convert(\"RGB\"), Image.open(input1).convert(\"RGB\"), alpha=0.5)",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "size": [
+          1920,
+          1080
+        ],
+        "resize": false,
+        "crop": false,
+        "registration": false,
+        "warp": false,
+        "mask": false,
+        "hidden_geometry_change": false,
+        "independent_recalculation_difference": 0
+      }
+    },
+    {
+      "path": "source_old_new_table_comparison.png",
+      "sha256": "dbe74d41a80d2acc7e654b0bd926b2ea28d26e2bfa1dc0d380c91351ef07f63a",
+      "bytes": 268875,
+      "image_pixel_dimensions": [
+        1320,
+        635
+      ],
+      "role": "source_baseline_new_same_region_comparison",
+      "processing": "native-source+OIDN+OIDN",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "comparison": {
+        "panels_left_to_right": [
+          "source_native_1920x1080.png",
+          "old_main_normal.png",
+          "new_main_normal.png"
+        ],
+        "each_crop_box_xyxy_exclusive_right_bottom": [
+          1430,
+          580,
+          1650,
+          845
+        ],
+        "each_native_crop_dimensions": [
+          220,
+          265
+        ],
+        "each_display_dimensions": [
+          440,
+          530
+        ],
+        "display_scale": 2,
+        "resampling": "NEAREST",
+        "panel_positions_xy": [
+          [
+            0,
+            48
+          ],
+          [
+            440,
+            48
+          ],
+          [
+            880,
+            48
+          ]
+        ],
+        "canvas_dimensions": [
+          1320,
+          635
+        ],
+        "labels_and_footer_added": true,
+        "display_enlargement_only": true,
+        "new_camera_view": false,
+        "registration": false,
+        "masking": false
+      }
+    },
+    {
+      "path": "source_table_native_crop.png",
+      "sha256": "2fdda598125906b1443499d097b4a904f739ec7314d4c2780de999eb2173d5e3",
+      "bytes": 48336,
+      "image_pixel_dimensions": [
+        220,
+        265
+      ],
+      "role": "native_source_crop",
+      "processing": "native-source-derived",
+      "byte_identical_aliases": [],
+      "is_distinct_image_content": true,
+      "video_timestamp_seconds": null,
+      "video_timestamp_applicability": "not applicable: rendered or derived image, not a decoded video frame",
+      "video_decoded_dimensions": null,
+      "video_decoded_dimensions_applicability": "not applicable: use image_pixel_dimensions for this rendered/derived file",
+      "associated_source": {
+        "video_id": "BV1g64y1P7VV",
+        "native_frame_path": "raw_source/frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+        "timestamp_seconds": 5586.011739,
+        "native_dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "furniture_evidence_usable": true,
+      "furniture_evidence_limit": "One main view only; hidden construction remains inferred and remaining shape/accessory mismatches are not accepted.",
+      "crop": {
+        "from": "source_native_1920x1080.png",
+        "box_xyxy_exclusive_right_bottom": [
+          1430,
+          580,
+          1650,
+          845
+        ],
+        "output_dimensions": [
+          220,
+          265
+        ],
+        "scale": 1,
+        "display_only": true,
+        "new_camera_view": false,
+        "registration": false
+      }
+    }
+  ],
+  "remaining_limits": [
+    "Front tray rim still reads thinner/flatter than native source.",
+    "White unidentified inner object bottom is slightly less flattened than source.",
+    "Table base screen position retains fixed baseline camera/scene mismatch; no camera refit was performed.",
+    "Cup and plant geometry/materials remain prior approximations; only lowered to seat on the revised tray.",
+    "Hidden rib count, backside and depth are inferred.",
+    "Low autumn source crops out table and cannot validate furniture from a second view."
+  ]
+}

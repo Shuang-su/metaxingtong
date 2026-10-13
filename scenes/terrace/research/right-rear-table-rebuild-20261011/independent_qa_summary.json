@@ -1,0 +1,36 @@
+{
+  "status": "PASS within stated reconstruction scope",
+  "sha256": {
+    "blend": "1b927ed757db761d7a81b1a95a0bd63359fd11315c70ac15a27aa981342956d6",
+    "full_scene_glb": "b638613f0a795e96e0576dc59fd7dc345bc14cd0cfc19cf3260099a4c6bff794",
+    "main_normal_render": "84511e2f7f701af5008a46bfa51db44f2a7f7a2da5df8ca4048a81a6f9438d39"
+  },
+  "unrelated_blend_objects_unchanged": 1826,
+  "unrelated_glb_nodes_unchanged": 1380,
+  "structural_meshes_closed_outward_single_shell": 13,
+  "flat_rib_count": 10,
+  "minimum_rib_white_surface_clearance": 0.02300005592405796,
+  "clearance_method": "Evaluated triangulated world-space surfaces. BVH triangle intersection query; nearest vertex-to-triangle in both directions; all unique triangulated edge pairs checked for closest segment points after conservative AABB lower-bound pruning. This covers curved strip segments, surface interiors, edges and vertices, rather than vertices only.",
+  "table_bounds_match_after_glb_reimport": true,
+  "accessory_count_geometry_and_materials_unchanged": 26,
+  "accessory_z_translation": -0.096,
+  "final_render_visually_inspected": true,
+  "visual_findings": [
+    "Broader, lower, shallow tray is visible.",
+    "Continuous flat front strips wrap around the flattened white unidentified inner object.",
+    "The previous visually truncated/penetrating strip appearance is removed.",
+    "Unrelated surrounding scene remains unchanged in the verified BLEND and GLB."
+  ],
+  "limitations": [
+    "Hidden rib count, rear arrangement and depth are inferred from the available main view.",
+    "The low autumn reference crops this table out; it is not a second-view confirmation.",
+    "The white inner object is unidentified. Its purpose is not established.",
+    "The existing plain cup and cactus-like plant/pot are unchanged approximations; their geometry and materials were preserved and translated downward by 0.096 scene units. They do not reproduce the source vessels or plants.",
+    "The result is a corrected reconstruction candidate, not a source-exact or complete manufacturing model. All measurements are Blender scene units, not independently surveyed real-world units.",
+    "Watertightness assertions concern the 13 structural meshes; unchanged decorative leaf/accessory meshes were not redesigned."
+  ],
+  "initial_defects_resolved": [
+    "Inward rib normals corrected.",
+    "Duplicated tray pole rings replaced with explicit triangle fans; final tray has 642 vertices and zero boundary/nonmanifold edges."
+  ]
+}

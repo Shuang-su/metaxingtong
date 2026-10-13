@@ -1,0 +1,89 @@
+{
+  "scene": "开放露台",
+  "scene_slug": "terrace",
+  "capture_date_utc": "2026-10-11",
+  "native_png_count": 2,
+  "evidence_source_url": "https://github.com/Shuang-su/metaxingtong/issues/2",
+  "scene_and_angle_identity_limitations_zh": "本次分为两种场景状态：正面主参考为绿色树叶、站立表演者；秋色低角度为橙色树叶、吊椅中坐姿表演者。两者存在季节表现与布置状态差异，不能因为共享露台结构就视为完全相同布置。低角度属于已知低机位族，未验证独立标定几何。既有记录中的同轴/同族视图不能增加独立深度基线；本包亦不把缩放或相近取景另计为独立角度。隐藏支承、入口及边界不能仅凭这些图确定。",
+  "native_resolution_policy_zh": "以PNG IHDR、Pillow解码尺寸和保存前后视频原始尺寸共同核验；原生尺寸按实际记录，禁止放大补足分辨率。",
+  "frames": [
+    {
+      "file": "frames/terrace-main-front-BV1g64y1P7VV-t5586.011739-native.png",
+      "label": "terrace-main-front",
+      "source_bv": "BV1g64y1P7VV",
+      "source_url": "https://www.bilibili.com/video/BV1g64y1P7VV/",
+      "evidence_source_url": "https://github.com/Shuang-su/metaxingtong/issues/2",
+      "requested_reference_seconds": 5586.060643,
+      "actual_paused_seconds": 5586.011739,
+      "actual_minus_requested_seconds": -0.048904,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 2493118,
+      "sha256": "ca728b6e9c87fb01e222e1ac94d342c583a9413efc5be3a5deff2c1eb28d52b0",
+      "media_state_before_save": {
+        "currentTime": 5586.011739,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "media_state_after_save": {
+        "currentTime": 5586.011739,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "same_current_time_before_and_after": true,
+      "native_export_method": "浏览器原生视频菜单：将视频帧另存为…",
+      "image_processing": "原始PNG字节未改变；未重编码、裁切、放大、AI处理或提亮。",
+      "capture_date_utc": "2026-10-11T00:37:14.711236+00:00",
+      "legacy_frame_identity": "未验证为旧参考的同一帧。",
+      "reference_time_relationship_zh": "比旧参考5586.060643秒早0.048904秒，为近邻新帧；未验证与旧参考同一帧。",
+      "view_family": "正面宽景机位族",
+      "independent_calibrated_geometry_verified": false,
+      "description_zh": "正面宽景，可见绿色树叶、站立表演者、木质转角墙、连续栏杆、吊椅、画架与露台地面。图像不含浏览器或播放器控制界面。",
+      "scene_and_angle_limitations_zh": "与秋色低角度共享部分露台结构，但树叶季节表现、人物姿态及布置状态不同，不能当作完全相同布置。可用作正面场景参考，不把同轴缩放当作新增独立视图，未验证独立标定几何。",
+      "scene_state_zh": "绿色树叶、站立表演者的主参考状态"
+    },
+    {
+      "file": "frames/terrace-autumn-low-BV1g64y1P7VV-t2751.636134-native.png",
+      "label": "terrace-autumn-low",
+      "source_bv": "BV1g64y1P7VV",
+      "source_url": "https://www.bilibili.com/video/BV1g64y1P7VV/",
+      "evidence_source_url": "https://github.com/Shuang-su/metaxingtong/issues/2",
+      "requested_reference_seconds": 2727.153946,
+      "actual_paused_seconds": 2751.636134,
+      "actual_minus_requested_seconds": 24.482188,
+      "width": 1920,
+      "height": 1080,
+      "bytes": 3112060,
+      "sha256": "85591e9138c4ff2964328ff806778956b5d702d4b51e92070564bfdd536eee92",
+      "media_state_before_save": {
+        "currentTime": 2751.636134,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "media_state_after_save": {
+        "currentTime": 2751.636134,
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "same_current_time_before_and_after": true,
+      "native_export_method": "浏览器原生视频菜单：将视频帧另存为…",
+      "image_processing": "原始PNG字节未改变；未重编码、裁切、放大、AI处理或提亮。",
+      "capture_date_utc": "2026-10-11T00:40:10.352604+00:00",
+      "legacy_frame_identity": "未验证为旧参考的同一帧。",
+      "reference_time_relationship_zh": "比旧参考2727.153946秒晚24.482188秒，明确不是近乎精确的同帧替代；仅对应同一低角度机位族。",
+      "view_family": "秋季低角度机位族",
+      "independent_calibrated_geometry_verified": false,
+      "description_zh": "低视角可见栏杆、吊椅、画架与橙色树叶；表演者坐在吊椅中。图像不含浏览器或播放器控制界面。",
+      "scene_and_angle_limitations_zh": "与既有低角度参考属同一机位族；与本次绿色树叶、站立表演者主参考存在季节表现和布置状态差异，不能视为完全相同布置。未验证独立标定几何，不能充当额外独立深度基线。",
+      "scene_state_zh": "橙色树叶、吊椅中坐姿表演者的秋色状态"
+    }
+  ]
+}
