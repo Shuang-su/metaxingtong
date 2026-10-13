@@ -1,0 +1,56 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV1GqXMByE1s/",
+  "capture_date_utc": "2026-10-13",
+  "motion_observation": {
+    "requested_range_seconds": [
+      1098,
+      1120
+    ],
+    "record_count": 361,
+    "exclude_buffering_records": 59,
+    "valid_sample_count": 302,
+    "valid_time_range_seconds": [
+      1098.013904,
+      1120.048071
+    ],
+    "max_unsampled_gap_seconds": 0.053904000000102315,
+    "image_kind": "UI viewport JPEG,1165x747; observation only, not native video files",
+    "record_time_semantics": "Read currentTime before and after each screenshot. Exclude paused/readyState1 buffering samples.",
+    "playback": "One natural playback after UI seek; no pause or seek between first valid sample and final sample.",
+    "assessment": "Window/lounge composition sways, rapid view turn toward bed/TV around1107s, then back toward character/windows. Pure lateral translation not established.",
+    "static_candidates": [
+      "window mullions",
+      "sofa rigid silhouette",
+      "green chair rigid silhouette",
+      "fixed rail",
+      "bed structure",
+      "TV outer frame"
+    ],
+    "caveat": "Not all candidates are jointly visible. Moving character and TV content cannot provide static correspondences."
+  },
+  "semantic_evidence": {
+    "user_provided_context": "Character plays nurse/doctor; camera viewer is patient lying on bed.",
+    "independent_observation": "Chinese AI subtitles selected from visible menu. Actual audio was not listened to.",
+    "selected_short_quotes": [
+      {
+        "first_observed_seconds": 1127.023366,
+        "text": "我看一下你的这个挂水还好诶"
+      },
+      {
+        "first_observed_seconds": 1132.790739,
+        "text": "要记得按铃叫护士站哦"
+      }
+    ],
+    "other_observed_context_paraphrase": "The character asks about brightness around18:30/18:33, mentions the viewer being ill around18:35, asks about physical condition around18:44, and later asks about dry mouth.",
+    "scope_of_support": "Supports caregiving/patient interaction. Does not independently establish lying posture or quantify camera translation. AI subtitles may contain transcription errors.",
+    "timestamp_caveat": "Times are sampled currentTime values, not authoritative subtitle start times."
+  },
+  "native_deliverables": [
+    "hospital_A_1820.867783s.png",
+    "hospital_B_1826.978388s.png"
+  ],
+  "additional_export_status": {
+    "time_seconds": 1111.096417,
+    "status": "Browser completed indication observed but original bytes not obtained/validated. Not a delivered native frame."
+  }
+}
