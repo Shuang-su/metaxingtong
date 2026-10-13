@@ -1,0 +1,213 @@
+{
+  "source": "https://www.bilibili.com/video/BV1GqXMByE1s/",
+  "coordinates": "Approximate manually inspected screenshot pixels, origin top-left. Images 1180x757. Not native 1920x1080 coordinates. Typical point uncertainty +/-5px; rounded/cloth corners +/-10px.",
+  "camera_solution": "None; no calibrated depth, translation, focal length or scale inferred.",
+  "segments": [
+    {
+      "id": "A1",
+      "range": [
+        1098.139,
+        1106.293
+      ],
+      "visible_identities": [
+        "near green chair backrest, top-right corner",
+        "middle orange sofa, junction of two back cushions at top",
+        "far window-side blind lower right endpoint by dark vertical edge"
+      ],
+      "tracks": [
+        {
+          "id": "A1_chair_top_right",
+          "relative_depth": "near, qualitative",
+          "points": [
+            [
+              1098.139,
+              440,
+              558
+            ],
+            [
+              1106.293,
+              477,
+              569
+            ]
+          ],
+          "uncertainty_px": 10
+        },
+        {
+          "id": "A1_sofa_cushion_top_junction",
+          "relative_depth": "middle, qualitative",
+          "points": [
+            [
+              1098.139,
+              676,
+              516
+            ],
+            [
+              1106.293,
+              709,
+              520
+            ]
+          ],
+          "uncertainty_px": 10
+        },
+        {
+          "id": "A1_blind_lower_right_endpoint",
+          "relative_depth": "far, qualitative",
+          "points": [
+            [
+              1098.139,
+              871,
+              237
+            ],
+            [
+              1106.293,
+              909,
+              244
+            ]
+          ],
+          "uncertainty_px": 5
+        }
+      ],
+      "constraint": "Identity and ordering support; endpoint displacements similar, not persuasive independent translation baseline."
+    },
+    {
+      "id": "A2",
+      "range": [
+        1108.299,
+        1117.387
+      ],
+      "visible_identities": [
+        "same sofa overall silhouette",
+        "window and curtain rail",
+        "bed panel on right"
+      ],
+      "constraint": "Character intermittently occludes sofa and near-chair disappears left; retain independent visibility track, do not bridge rapid turn numerically."
+    },
+    {
+      "id": "B1",
+      "range": [
+        1820.856,
+        1826.963
+      ],
+      "visible_identities": [
+        "far TV outer black physical bezel corners",
+        "middle side window vertical frame and lower blind endpoint",
+        "near bed panel inset groove top-left rounded turn"
+      ],
+      "tracks": [
+        {
+          "id": "B1_tv_outer_top_left",
+          "relative_depth": "far, qualitative",
+          "points": [
+            [
+              1820.856,
+              630,
+              398
+            ],
+            [
+              1826.963,
+              620,
+              385
+            ]
+          ],
+          "uncertainty_px": 5
+        },
+        {
+          "id": "B1_tv_outer_top_right",
+          "relative_depth": "far, qualitative",
+          "points": [
+            [
+              1820.856,
+              958,
+              383
+            ],
+            [
+              1826.963,
+              953,
+              371
+            ]
+          ],
+          "uncertainty_px": 5
+        },
+        {
+          "id": "B1_side_blind_lower_endpoint_at_mullion",
+          "relative_depth": "middle, qualitative",
+          "points": [
+            [
+              1820.856,
+              330,
+              310
+            ],
+            [
+              1826.963,
+              310,
+              290
+            ]
+          ],
+          "uncertainty_px": 8
+        },
+        {
+          "id": "B1_bed_center_inset_top_left",
+          "relative_depth": "near, qualitative",
+          "points": [
+            [
+              1820.856,
+              648,
+              626
+            ],
+            [
+              1826.963,
+              649,
+              646
+            ]
+          ],
+          "uncertainty_px": 10
+        }
+      ],
+      "constraint": "Bed moves down while TV moves up: useful depth-separated reprojection check. Does not alone disambiguate camera rotation, translation, focal length or possible bed prop motion."
+    }
+  ],
+  "breaks": [
+    {
+      "range": [
+        1106.293,
+        1108.299
+      ],
+      "reason": "Large reorientation and motion-blurred intermediate screenshot at 1107.300; 1-second sampling cannot establish or exclude hard cut."
+    },
+    {
+      "range": [
+        1117.387,
+        1120.439
+      ],
+      "reason": "View turns back toward broad window; character overlaps furniture; no numeric continuity asserted."
+    },
+    {
+      "range": [
+        1819,
+        1819.832
+      ],
+      "reason": "First two screenshots are readyState=1 stale A image after seek, explicitly invalid for B."
+    },
+    {
+      "range": [
+        1827.971,
+        1829.001
+      ],
+      "reason": "Large reorientation and blur; do not connect TV track to character/window view."
+    },
+    {
+      "range": [
+        1120.439,
+        1819.832
+      ],
+      "reason": "Different source time intervals; never assume same camera or common motion track."
+    }
+  ],
+  "excluded_anchors": [
+    "Animated character",
+    "TV screen picture content",
+    "heart-rate overlay",
+    "player progress/title/pause controls",
+    "window-frame/sofa occlusion intersection, because not a fixed 3D corner"
+  ]
+}

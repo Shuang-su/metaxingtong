@@ -1,0 +1,574 @@
+{
+  "resolution": [
+    1920,
+    1080
+  ],
+  "annotation": "Manual visual picking at native source pixels; uncertainties are conservative assumptions, not empirically measured repeatability. No image registration. H has no well identified noncoplanar fixed point; kept unchanged.",
+  "observations": {
+    "F": [
+      {
+        "id": "tv_tl",
+        "object_id": "TV • rectangular black frame",
+        "kind": "point",
+        "xyz": [
+          5.461250305175781,
+          -1.2331293821334839,
+          2.134857416152954
+        ],
+        "observed": [
+          1096,
+          582
+        ],
+        "sigma_px": 3,
+        "split": "train",
+        "identification": "Outer black TV frame corner, unrounded bbox idealization; 3 px picking/bevel uncertainty."
+      },
+      {
+        "id": "tv_tr",
+        "object_id": "TV • rectangular black frame",
+        "kind": "point",
+        "xyz": [
+          5.461250305175781,
+          -3.223905086517334,
+          2.134857416152954
+        ],
+        "observed": [
+          1655,
+          551
+        ],
+        "sigma_px": 3,
+        "split": "train",
+        "identification": "Outer black TV frame corner, unrounded bbox idealization; 3 px picking/bevel uncertainty."
+      },
+      {
+        "id": "tv_bl",
+        "object_id": "TV • rectangular black frame",
+        "kind": "point",
+        "xyz": [
+          5.461250305175781,
+          -1.2331293821334839,
+          0.9909248948097229
+        ],
+        "observed": [
+          1108,
+          886
+        ],
+        "sigma_px": 3,
+        "split": "train",
+        "identification": "Outer black TV frame corner, unrounded bbox idealization; 3 px picking/bevel uncertainty."
+      },
+      {
+        "id": "tv_br",
+        "object_id": "TV • rectangular black frame",
+        "kind": "point",
+        "xyz": [
+          5.461250305175781,
+          -3.223905086517334,
+          0.9909248948097229
+        ],
+        "observed": [
+          1683,
+          877
+        ],
+        "sigma_px": 3,
+        "split": "holdout",
+        "identification": "Outer black TV frame corner, unrounded bbox idealization; 3 px picking/bevel uncertainty."
+      },
+      {
+        "id": "m3_top",
+        "object_id": "Window • calibrated vertical mullion.003",
+        "kind": "point",
+        "xyz": [
+          3.5764222145080566,
+          0.022499999031424522,
+          2.714665651321411
+        ],
+        "observed": [
+          590,
+          277
+        ],
+        "sigma_px": 12,
+        "split": "train",
+        "identification": "Inferred top centre of the same mullion cross-section at ceiling; not a visible exact vertex. 12 px cross-section ambiguity."
+      },
+      {
+        "id": "m4_top",
+        "object_id": "Window • calibrated vertical mullion.004",
+        "kind": "point",
+        "xyz": [
+          4.994256496429443,
+          0.022499999031424522,
+          2.714665651321411
+        ],
+        "observed": [
+          747,
+          411
+        ],
+        "sigma_px": 12,
+        "split": "holdout",
+        "identification": "Last window mullion top partially occluded by blind ends. 12 px identification uncertainty."
+      },
+      {
+        "id": "m3_axis",
+        "object_id": "Window • calibrated vertical mullion.003",
+        "kind": "line",
+        "xyz": [
+          [
+            3.5764222145080566,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            3.5764222145080566,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            586,
+            430
+          ],
+          [
+            556,
+            1070
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "train",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      },
+      {
+        "id": "m4_axis",
+        "object_id": "Window • calibrated vertical mullion.004",
+        "kind": "line",
+        "xyz": [
+          [
+            4.994256496429443,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            4.994256496429443,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            745,
+            550
+          ],
+          [
+            735,
+            1050
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "holdout",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      },
+      {
+        "id": "shell_corner17",
+        "object_id": "ROOM_SHELL__joined_solid__hidden_extents_inferred",
+        "kind": "point",
+        "xyz": [
+          5.537500381469727,
+          0.0,
+          2.714665412902832
+        ],
+        "observed": [
+          805,
+          451
+        ],
+        "sigma_px": 5,
+        "split": "holdout",
+        "identification": "Same visible window/TV-wall/ceiling three-surface junction; mesh vertex 17, interior corner, no inferred outer bbox corner."
+      },
+      {
+        "id": "rail_upper_edge",
+        "object_id": "Curtain rail • forward overhead beam",
+        "kind": "line",
+        "xyz": [
+          [
+            2.2765626907348633,
+            0.11875009536743164,
+            2.694040536880493
+          ],
+          [
+            2.2765626907348633,
+            -2.918750047683716,
+            2.694040536880493
+          ]
+        ],
+        "observed": [
+          [
+            257,
+            60
+          ],
+          [
+            670,
+            1
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "holdout",
+        "identification": "Upper edge of upper/left forward rail. Same beam ID by relative order; endpoints sample an edge, not exact 3D vertices. 10 px rail thickness/identity uncertainty. Entire rail object excluded from training."
+      }
+    ],
+    "G": [
+      {
+        "id": "tv_tl",
+        "object_id": "TV • rectangular black frame",
+        "kind": "point",
+        "xyz": [
+          5.461250305175781,
+          -1.2331293821334839,
+          2.134857416152954
+        ],
+        "observed": [
+          1884,
+          421
+        ],
+        "sigma_px": 3,
+        "split": "train",
+        "identification": "Outer TV top-left corner; rest of TV is cropped or bed-occluded."
+      },
+      {
+        "id": "m3_top",
+        "object_id": "Window • calibrated vertical mullion.003",
+        "kind": "point",
+        "xyz": [
+          3.5764222145080566,
+          0.022499999031424522,
+          2.714665651321411
+        ],
+        "observed": [
+          1312,
+          179
+        ],
+        "sigma_px": 12,
+        "split": "train",
+        "identification": "Top cross-section midpoint proxy, matched to mullion .003 via order between curtain and last window. 12 px ambiguity."
+      },
+      {
+        "id": "m4_top",
+        "object_id": "Window • calibrated vertical mullion.004",
+        "kind": "point",
+        "xyz": [
+          4.994256496429443,
+          0.022499999031424522,
+          2.714665651321411
+        ],
+        "observed": [
+          1481,
+          286
+        ],
+        "sigma_px": 12,
+        "split": "holdout",
+        "identification": "Last window mullion partly covered by blinds; 12 px identification ambiguity."
+      },
+      {
+        "id": "m1_axis",
+        "object_id": "Window • calibrated vertical mullion.001",
+        "kind": "line",
+        "xyz": [
+          [
+            0.0,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            0.0,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            408,
+            10
+          ],
+          [
+            360,
+            880
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "train",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      },
+      {
+        "id": "m3_axis",
+        "object_id": "Window • calibrated vertical mullion.003",
+        "kind": "line",
+        "xyz": [
+          [
+            3.5764222145080566,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            3.5764222145080566,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            1320,
+            340
+          ],
+          [
+            1344,
+            1015
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "train",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      },
+      {
+        "id": "m2_axis",
+        "object_id": "Window • calibrated vertical mullion.002",
+        "kind": "line",
+        "xyz": [
+          [
+            1.5,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            1.5,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            939,
+            450
+          ],
+          [
+            940,
+            930
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "holdout",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      },
+      {
+        "id": "m4_axis",
+        "object_id": "Window • calibrated vertical mullion.004",
+        "kind": "line",
+        "xyz": [
+          [
+            4.994256496429443,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            4.994256496429443,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            1487,
+            425
+          ],
+          [
+            1513,
+            970
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "holdout",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      },
+      {
+        "id": "tv_left_direction",
+        "object_id": "TV • rectangular black frame",
+        "kind": "line",
+        "xyz": [
+          [
+            5.461250305175781,
+            -1.2331293821334839,
+            2.134857416152954
+          ],
+          [
+            5.461250305175781,
+            -1.2331293821334839,
+            0.9909248948097229
+          ]
+        ],
+        "observed": [
+          [
+            1884,
+            421
+          ],
+          [
+            1917,
+            730
+          ]
+        ],
+        "sigma_px": 4,
+        "split": "direction_only",
+        "identification": "Visible left TV edge. Bottom point is bed occlusion, NOT TV corner. This is not independent of fitted top-left corner."
+      },
+      {
+        "id": "shell_corner17",
+        "object_id": "ROOM_SHELL__joined_solid__hidden_extents_inferred",
+        "kind": "point",
+        "xyz": [
+          5.537500381469727,
+          0.0,
+          2.714665412902832
+        ],
+        "observed": [
+          1545,
+          317
+        ],
+        "sigma_px": 5,
+        "split": "holdout",
+        "identification": "Same visible window/TV-wall/ceiling three-surface junction; mesh vertex 17, interior corner, no inferred outer bbox corner."
+      },
+      {
+        "id": "rail_upper_edge",
+        "object_id": "Curtain rail • forward overhead beam",
+        "kind": "line",
+        "xyz": [
+          [
+            2.2765626907348633,
+            0.11875009536743164,
+            2.694040536880493
+          ],
+          [
+            2.2765626907348633,
+            -2.918750047683716,
+            2.694040536880493
+          ]
+        ],
+        "observed": [
+          [
+            1016,
+            47
+          ],
+          [
+            1136,
+            1
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "holdout",
+        "identification": "Upper edge of upper/left forward rail. Same beam ID by relative order; endpoints sample an edge, not exact 3D vertices. 10 px rail thickness/identity uncertainty. Entire rail object excluded from training."
+      }
+    ],
+    "H": [
+      {
+        "id": "m0_axis",
+        "object_id": "Window • calibrated vertical mullion",
+        "kind": "line",
+        "xyz": [
+          [
+            -1.6036162376403809,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            -1.6036162376403809,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            82,
+            150
+          ],
+          [
+            32,
+            1050
+          ]
+        ],
+        "sigma_px": 12,
+        "split": "holdout",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      },
+      {
+        "id": "m1_axis",
+        "object_id": "Window • calibrated vertical mullion.001",
+        "kind": "line",
+        "xyz": [
+          [
+            0.0,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            0.0,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            990,
+            20
+          ],
+          [
+            992,
+            790
+          ]
+        ],
+        "sigma_px": 10,
+        "split": "holdout",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      },
+      {
+        "id": "m2_axis",
+        "object_id": "Window • calibrated vertical mullion.002",
+        "kind": "line",
+        "xyz": [
+          [
+            1.5,
+            0.022499999031424522,
+            0.4
+          ],
+          [
+            1.5,
+            0.022499999031424522,
+            2.5
+          ]
+        ],
+        "observed": [
+          [
+            1530,
+            100
+          ],
+          [
+            1546,
+            850
+          ]
+        ],
+        "sigma_px": 12,
+        "split": "holdout",
+        "identification": "Same numbered mullion, centreline of visible narrow dark strip; sampled image endpoints constrain a line, NOT arbitrary 3D point correspondences. Model cross-section differs; sigma includes edge-to-axis uncertainty."
+      }
+    ]
+  },
+  "annotation_protocol": {
+    "native_resolution": [
+      1920,
+      1080
+    ],
+    "manual_picking": "Agent visual pixel inspection, not a human-operated annotation GUI. No second independent annotator.",
+    "picking_errors": "3-12 pixel conservative assumed standard deviations; not measured inter-rater reliability.",
+    "heldout_freeze": "m4 top/axis, F tv_br and G m2 axis excluded before the first fit. Shell corner and rail edge added after first numerical result only as supplementary never-fitted diagnostics, not a blind validation set.",
+    "window_top_proxy": "Cross-section top centre is a proxy, not uniquely visible true 3D vertex. No claim of exact correspondences.",
+    "no_registration": true,
+    "no_model_changes": true
+  }
+}
