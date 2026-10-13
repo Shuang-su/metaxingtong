@@ -1,0 +1,50 @@
+{
+  "scope": "Only transfer IDs and inherited absolute metadata paths are cleaned in JSON. Source hashes retained; numeric geometry, model and PNG bytes unchanged. Original source bytes are preserved in the receiving local Library materialization. Source delivery_manifest hashes describe originals; repository hashes are in archive-verification.json.",
+  "files": [
+    {
+      "filename": "patient_region_render_manifest.json",
+      "source_sha256": "8bb9ca9494d3f4f752d781199914386b717f192189340520b384d042f71d5cad",
+      "repository_sha256": "9d6ef338ff08bd862ce206f1d089b2d6668dc7a642b67d344d03c6a4c80fce93",
+      "changes": [
+        {
+          "pointer": "/0/source_blend",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2a4140f1528761f0285263e4d1b15b6cfd7fb4461fd27b61414240e7ddaa1a92",
+          "replacement": "hospital_spatial_D.blend"
+        }
+      ]
+    },
+    {
+      "filename": "render_manifest.json",
+      "source_sha256": "a83efc6ba063227482756e0cfb8f8dc69726872a739f92fc75f92a06e3379882",
+      "repository_sha256": "09f25e7b8d3b9475b7717c3fa7d9014bf590af455ab40473a4a4a5ae7bf24f0c",
+      "changes": [
+        {
+          "pointer": "/0/source_blend",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2a4140f1528761f0285263e4d1b15b6cfd7fb4461fd27b61414240e7ddaa1a92",
+          "replacement": "hospital_spatial_D.blend"
+        },
+        {
+          "pointer": "/1/source_blend",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2a4140f1528761f0285263e4d1b15b6cfd7fb4461fd27b61414240e7ddaa1a92",
+          "replacement": "hospital_spatial_D.blend"
+        }
+      ]
+    },
+    {
+      "filename": "frozen_d_world_geometry.json",
+      "source_sha256": "647701ec494ec68500cef5910f71dcd4f3b906a20f3553f3cb41828e1f755704",
+      "repository_sha256": "fac007183e1daa806bef00423d60d627c32256c0b5bbe32d8fdeadd2b61da8f2",
+      "changes": [
+        {
+          "pointer": "/source_blend",
+          "operation": "absolute_path_to_basename",
+          "original_value_sha256": "2a4140f1528761f0285263e4d1b15b6cfd7fb4461fd27b61414240e7ddaa1a92",
+          "replacement": "hospital_spatial_D.blend"
+        }
+      ]
+    }
+  ]
+}
