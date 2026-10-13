@@ -1,0 +1,3677 @@
+{
+  "schema": "train-r06-media-roles-v1",
+  "stage": "r06-single-table-end-native-frame-conditional-review",
+  "metadata_created_date_utc": "2026-10-11",
+  "frozen_original_file_count": 135,
+  "frozen_original_bytes_modified": false,
+  "image_count": 82,
+  "issue_image_display_count": 63,
+  "texture_dependency_count": 19,
+  "status": "conditional research candidate; not adopted, cameras not recalibrated, CURRENT unchanged",
+  "not_applicable_convention": "null video source time and decoded dimensions mean not applicable for generated renders/diagrams; associated_source_seconds is linkage only, not render provenance",
+  "raw_oidn_convention": "Raw Cycles outputs and OIDN derivatives are separately classified; contact-sheet second OIDN derivative explicitly labeled",
+  "source_timing_caveat": "Actual saved player currentTime, not exact container PTS. Near-neighbor native captures are not retroactively identical to historical viewport screenshots.",
+  "image_visibility_caveat": "Decode and pixel-identity checks do not prove GitHub Issue viewport visibility; that remains separately checked by the authorized archive workflow.",
+  "entries": [
+    {
+      "relative_path": "comparisons/A_baseline_native_direct_50percent.png",
+      "sha256": "0319086e5ee18d5c75b74eca0161f166ddb1b84afee4168b5946ac299d8211a3",
+      "bytes": 1433854,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 843.863376,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_A",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "native_source_model_direct_50percent_overlay",
+      "version": "baseline",
+      "operation": "Image.blend(native RGB source, OIDN model render, 0.5) on identical 1920x1080 pixel lattice; no registration, warp, crop or resize",
+      "components": [
+        {
+          "role": "native_source_original",
+          "weight": 0.5,
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 843.863376,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        },
+        {
+          "weight": 0.5,
+          "relative_path": "renders/baseline/denoised/R05_HD_A.png",
+          "sha256": "2f877a148d9f7cad3a12006733e29e3aeb061ad770300ccfd7a99f5fd65b58a2",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_A",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 843.863376,
+          "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        }
+      ]
+    },
+    {
+      "relative_path": "comparisons/A_candidate_native_direct_50percent.png",
+      "sha256": "b36cad951db7d02c427091bc2c01dc5930b809ef228d93e7ba490c93cba983c0",
+      "bytes": 1435998,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 843.863376,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_A",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "native_source_model_direct_50percent_overlay",
+      "version": "candidate",
+      "operation": "Image.blend(native RGB source, OIDN model render, 0.5) on identical 1920x1080 pixel lattice; no registration, warp, crop or resize",
+      "components": [
+        {
+          "role": "native_source_original",
+          "weight": 0.5,
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 843.863376,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        },
+        {
+          "weight": 0.5,
+          "relative_path": "renders/candidate/denoised/R05_HD_A.png",
+          "sha256": "0a11f351477276848d9be8dcf643da653112852429fafbc1d1e3c16e2c49b35b",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_A",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 843.863376,
+          "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        }
+      ]
+    },
+    {
+      "relative_path": "comparisons/A_local_same_pixel_crop.png",
+      "sha256": "4b5776d51ac0825be20e45979fad0fbcf41234345cf5602f687fa4b96744aee5",
+      "bytes": 161439,
+      "image_dimensions": [
+        1800,
+        295
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 843.863376,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_A",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "same_pixel_crop_comparison_panel",
+      "version": "source plus baseline and candidate",
+      "components": [
+        {
+          "column": 1,
+          "role": "native_source_crop",
+          "crop_box_original_pixels": [
+            180,
+            850,
+            780,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            0,
+            25,
+            600,
+            255
+          ],
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 843.863376,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        },
+        {
+          "column": 2,
+          "crop_box_original_pixels": [
+            180,
+            850,
+            780,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            600,
+            25,
+            1200,
+            255
+          ],
+          "relative_path": "renders/baseline/denoised/R05_HD_A.png",
+          "sha256": "2f877a148d9f7cad3a12006733e29e3aeb061ad770300ccfd7a99f5fd65b58a2",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_A",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 843.863376,
+          "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        },
+        {
+          "column": 3,
+          "crop_box_original_pixels": [
+            180,
+            850,
+            780,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            1200,
+            25,
+            1800,
+            255
+          ],
+          "relative_path": "renders/candidate/denoised/R05_HD_A.png",
+          "sha256": "0a11f351477276848d9be8dcf643da653112852429fafbc1d1e3c16e2c49b35b",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_A",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 843.863376,
+          "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        }
+      ],
+      "operation": "Identical source-coordinate crop for all columns, 1:1 display; no local registration"
+    },
+    {
+      "relative_path": "comparisons/A_source_baseline_candidate_panel.png",
+      "sha256": "208c533f26dcf1474da8cfeb4d4cd22872de3124dcbb143c04aa6a5853008958",
+      "bytes": 518347,
+      "image_dimensions": [
+        1920,
+        400
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 843.863376,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_A",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "source_baseline_candidate_comparison_panel",
+      "version": "source plus baseline and candidate",
+      "components": [
+        {
+          "column": 1,
+          "role": "native_source_display_reduction",
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            0,
+            25,
+            640,
+            385
+          ],
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 843.863376,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        },
+        {
+          "column": 2,
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            640,
+            25,
+            1280,
+            385
+          ],
+          "relative_path": "renders/baseline/denoised/R05_HD_A.png",
+          "sha256": "2f877a148d9f7cad3a12006733e29e3aeb061ad770300ccfd7a99f5fd65b58a2",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_A",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 843.863376,
+          "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        },
+        {
+          "column": 3,
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            1280,
+            25,
+            1920,
+            385
+          ],
+          "relative_path": "renders/candidate/denoised/R05_HD_A.png",
+          "sha256": "0a11f351477276848d9be8dcf643da653112852429fafbc1d1e3c16e2c49b35b",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_A",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 843.863376,
+          "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+          "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a"
+        }
+      ],
+      "operation": "Full frames uniformly reduced from 1920x1080 to 640x360 for display; no registration; full-size originals and overlays retained"
+    },
+    {
+      "relative_path": "comparisons/B_baseline_native_direct_50percent.png",
+      "sha256": "dbedf4fda3742d99ce7cf4b46b090a333034d76ddd2cd52378843051e9ca9a92",
+      "bytes": 1314696,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 925.690233,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_B",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "native_source_model_direct_50percent_overlay",
+      "version": "baseline",
+      "operation": "Image.blend(native RGB source, OIDN model render, 0.5) on identical 1920x1080 pixel lattice; no registration, warp, crop or resize",
+      "components": [
+        {
+          "role": "native_source_original",
+          "weight": 0.5,
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 925.690233,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        },
+        {
+          "weight": 0.5,
+          "relative_path": "renders/baseline/denoised/R05_HD_B.png",
+          "sha256": "e3ae6bd6b38c0755efde7c736300a5f9a29b8731e1b6d4f00daa724602e89fe0",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_B",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 925.690233,
+          "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        }
+      ]
+    },
+    {
+      "relative_path": "comparisons/B_candidate_native_direct_50percent.png",
+      "sha256": "aa8b75e8ca47474421018a5558cb1bb3bfb01a5158d33f63698929c8464f107d",
+      "bytes": 1319718,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 925.690233,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_B",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "native_source_model_direct_50percent_overlay",
+      "version": "candidate",
+      "operation": "Image.blend(native RGB source, OIDN model render, 0.5) on identical 1920x1080 pixel lattice; no registration, warp, crop or resize",
+      "components": [
+        {
+          "role": "native_source_original",
+          "weight": 0.5,
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 925.690233,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        },
+        {
+          "weight": 0.5,
+          "relative_path": "renders/candidate/denoised/R05_HD_B.png",
+          "sha256": "4035910e9030ce3ffe706edbd29271382784d389fe3b8f0b573fd67cff6367a3",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_B",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 925.690233,
+          "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        }
+      ]
+    },
+    {
+      "relative_path": "comparisons/B_local_same_pixel_crop.png",
+      "sha256": "a93304d811645e1ce6d4c36aa408003c55b08b3fe01c1ce3e6a638fd3c1fea50",
+      "bytes": 191670,
+      "image_dimensions": [
+        1500,
+        475
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 925.690233,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_B",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "same_pixel_crop_comparison_panel",
+      "version": "source plus baseline and candidate",
+      "components": [
+        {
+          "column": 1,
+          "role": "native_source_crop",
+          "crop_box_original_pixels": [
+            0,
+            650,
+            500,
+            1060
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            0,
+            25,
+            500,
+            435
+          ],
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 925.690233,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        },
+        {
+          "column": 2,
+          "crop_box_original_pixels": [
+            0,
+            650,
+            500,
+            1060
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            500,
+            25,
+            1000,
+            435
+          ],
+          "relative_path": "renders/baseline/denoised/R05_HD_B.png",
+          "sha256": "e3ae6bd6b38c0755efde7c736300a5f9a29b8731e1b6d4f00daa724602e89fe0",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_B",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 925.690233,
+          "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        },
+        {
+          "column": 3,
+          "crop_box_original_pixels": [
+            0,
+            650,
+            500,
+            1060
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            1000,
+            25,
+            1500,
+            435
+          ],
+          "relative_path": "renders/candidate/denoised/R05_HD_B.png",
+          "sha256": "4035910e9030ce3ffe706edbd29271382784d389fe3b8f0b573fd67cff6367a3",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_B",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 925.690233,
+          "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        }
+      ],
+      "operation": "Identical source-coordinate crop for all columns, 1:1 display; no local registration"
+    },
+    {
+      "relative_path": "comparisons/B_source_baseline_candidate_panel.png",
+      "sha256": "c1ab78f377fd1a97da147e01f15e82f43b76cae8d134ff961385c216093b4974",
+      "bytes": 463577,
+      "image_dimensions": [
+        1920,
+        400
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 925.690233,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_B",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "source_baseline_candidate_comparison_panel",
+      "version": "source plus baseline and candidate",
+      "components": [
+        {
+          "column": 1,
+          "role": "native_source_display_reduction",
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            0,
+            25,
+            640,
+            385
+          ],
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 925.690233,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        },
+        {
+          "column": 2,
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            640,
+            25,
+            1280,
+            385
+          ],
+          "relative_path": "renders/baseline/denoised/R05_HD_B.png",
+          "sha256": "e3ae6bd6b38c0755efde7c736300a5f9a29b8731e1b6d4f00daa724602e89fe0",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_B",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 925.690233,
+          "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        },
+        {
+          "column": 3,
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            1280,
+            25,
+            1920,
+            385
+          ],
+          "relative_path": "renders/candidate/denoised/R05_HD_B.png",
+          "sha256": "4035910e9030ce3ffe706edbd29271382784d389fe3b8f0b573fd67cff6367a3",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_B",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 925.690233,
+          "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+          "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd"
+        }
+      ],
+      "operation": "Full frames uniformly reduced from 1920x1080 to 640x360 for display; no registration; full-size originals and overlays retained"
+    },
+    {
+      "relative_path": "comparisons/D_baseline_native_direct_50percent.png",
+      "sha256": "504f65a8a52be5619324b5f60d8cfe3dfd52554b5503bc12dae9a06baabc5e65",
+      "bytes": 1407105,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 2716.824742,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_D",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "native_source_model_direct_50percent_overlay",
+      "version": "baseline",
+      "operation": "Image.blend(native RGB source, OIDN model render, 0.5) on identical 1920x1080 pixel lattice; no registration, warp, crop or resize",
+      "components": [
+        {
+          "role": "native_source_original",
+          "weight": 0.5,
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 2716.824742,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        },
+        {
+          "weight": 0.5,
+          "relative_path": "renders/baseline/denoised/R05_HD_D.png",
+          "sha256": "fb696d30cf98dcae08e4c083c064c9ce3be1a12a9faf32e18dcf625fffdf14df",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_D",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 2716.824742,
+          "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        }
+      ]
+    },
+    {
+      "relative_path": "comparisons/D_candidate_native_direct_50percent.png",
+      "sha256": "e041f8fb0eef45afbc0511264aa79423177f4504430bd173a385eda31ac42060",
+      "bytes": 1410643,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 2716.824742,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_D",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "native_source_model_direct_50percent_overlay",
+      "version": "candidate",
+      "operation": "Image.blend(native RGB source, OIDN model render, 0.5) on identical 1920x1080 pixel lattice; no registration, warp, crop or resize",
+      "components": [
+        {
+          "role": "native_source_original",
+          "weight": 0.5,
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 2716.824742,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        },
+        {
+          "weight": 0.5,
+          "relative_path": "renders/candidate/denoised/R05_HD_D.png",
+          "sha256": "0be5816bc322d750334e7281f319cffbb5067d814a6068204b4f1955cc6b4175",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_D",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 2716.824742,
+          "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        }
+      ]
+    },
+    {
+      "relative_path": "comparisons/D_local_same_pixel_crop.png",
+      "sha256": "a7158bb131911afea30e43f465e09992f249113816ec9076a2f528cd9a8168f1",
+      "bytes": 404209,
+      "image_dimensions": [
+        2400,
+        445
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 2716.824742,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_D",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "same_pixel_crop_comparison_panel",
+      "version": "source plus baseline and candidate",
+      "components": [
+        {
+          "column": 1,
+          "role": "native_source_crop",
+          "crop_box_original_pixels": [
+            250,
+            700,
+            1050,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            0,
+            25,
+            800,
+            405
+          ],
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 2716.824742,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        },
+        {
+          "column": 2,
+          "crop_box_original_pixels": [
+            250,
+            700,
+            1050,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            800,
+            25,
+            1600,
+            405
+          ],
+          "relative_path": "renders/baseline/denoised/R05_HD_D.png",
+          "sha256": "fb696d30cf98dcae08e4c083c064c9ce3be1a12a9faf32e18dcf625fffdf14df",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_D",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 2716.824742,
+          "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        },
+        {
+          "column": 3,
+          "crop_box_original_pixels": [
+            250,
+            700,
+            1050,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            1600,
+            25,
+            2400,
+            405
+          ],
+          "relative_path": "renders/candidate/denoised/R05_HD_D.png",
+          "sha256": "0be5816bc322d750334e7281f319cffbb5067d814a6068204b4f1955cc6b4175",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_D",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 2716.824742,
+          "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        }
+      ],
+      "operation": "Identical source-coordinate crop for all columns, 1:1 display; no local registration"
+    },
+    {
+      "relative_path": "comparisons/D_source_baseline_candidate_panel.png",
+      "sha256": "a94fc719ccc542d727e7dcbb99c071abccb43b5360474c0fe3aa2c6f369b2d51",
+      "bytes": 511524,
+      "image_dimensions": [
+        1920,
+        400
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 2716.824742,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_HD_D",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "source_baseline_candidate_comparison_panel",
+      "version": "source plus baseline and candidate",
+      "components": [
+        {
+          "column": 1,
+          "role": "native_source_display_reduction",
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            0,
+            25,
+            640,
+            385
+          ],
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 2716.824742,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        },
+        {
+          "column": 2,
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            640,
+            25,
+            1280,
+            385
+          ],
+          "relative_path": "renders/baseline/denoised/R05_HD_D.png",
+          "sha256": "fb696d30cf98dcae08e4c083c064c9ce3be1a12a9faf32e18dcf625fffdf14df",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_HD_D",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 2716.824742,
+          "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        },
+        {
+          "column": 3,
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            1280,
+            25,
+            1920,
+            385
+          ],
+          "relative_path": "renders/candidate/denoised/R05_HD_D.png",
+          "sha256": "0be5816bc322d750334e7281f319cffbb5067d814a6068204b4f1955cc6b4175",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_HD_D",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 2716.824742,
+          "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+          "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8"
+        }
+      ],
+      "operation": "Full frames uniformly reduced from 1920x1080 to 640x360 for display; no registration; full-size originals and overlays retained"
+    },
+    {
+      "relative_path": "comparisons/J_baseline_native_direct_50percent.png",
+      "sha256": "cfea650ffc2a2d0570198612315f5e01abd3ca36c6804551dde674a7d9c532a7",
+      "bytes": 1008705,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 6021.165132,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "native_source_model_direct_50percent_overlay",
+      "version": "baseline",
+      "operation": "Image.blend(native RGB source, OIDN model render, 0.5) on identical 1920x1080 pixel lattice; no registration, warp, crop or resize",
+      "components": [
+        {
+          "role": "native_source_original",
+          "weight": 0.5,
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 6021.165132,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        },
+        {
+          "weight": 0.5,
+          "relative_path": "renders/baseline/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+          "sha256": "25dfcbb3f9ee6f6ff94d318f0d6f5b896439c0bb0b52da74991c209207ce13f1",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 6021.165132,
+          "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        }
+      ],
+      "notes": "Source side, absolute bay and gray foreground object identity unresolved; do not name gray object/black handle as a table or claim instance match."
+    },
+    {
+      "relative_path": "comparisons/J_candidate_native_direct_50percent.png",
+      "sha256": "1a21305743012f3431932407e26a861798d6d35cd32343e6795eee3fa128bf19",
+      "bytes": 1008864,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 6021.165132,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "native_source_model_direct_50percent_overlay",
+      "version": "candidate",
+      "operation": "Image.blend(native RGB source, OIDN model render, 0.5) on identical 1920x1080 pixel lattice; no registration, warp, crop or resize",
+      "components": [
+        {
+          "role": "native_source_original",
+          "weight": 0.5,
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 6021.165132,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        },
+        {
+          "weight": 0.5,
+          "relative_path": "renders/candidate/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+          "sha256": "23b087baffaa17678060a42d635118832bcb46bba47c59b4ef2b00fd774545c0",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 6021.165132,
+          "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        }
+      ],
+      "notes": "Source side, absolute bay and gray foreground object identity unresolved; do not name gray object/black handle as a table or claim instance match."
+    },
+    {
+      "relative_path": "comparisons/J_local_same_pixel_crop.png",
+      "sha256": "7fb58cf9b39fecd6fcff50b72cac9aae450ca6da114518a7a97fb0ce1ba92a92",
+      "bytes": 184080,
+      "image_dimensions": [
+        2010,
+        325
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 6021.165132,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "same_pixel_crop_comparison_panel",
+      "version": "source plus baseline and candidate",
+      "components": [
+        {
+          "column": 1,
+          "role": "native_source_crop",
+          "crop_box_original_pixels": [
+            650,
+            820,
+            1320,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            0,
+            25,
+            670,
+            285
+          ],
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 6021.165132,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        },
+        {
+          "column": 2,
+          "crop_box_original_pixels": [
+            650,
+            820,
+            1320,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            670,
+            25,
+            1340,
+            285
+          ],
+          "relative_path": "renders/baseline/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+          "sha256": "25dfcbb3f9ee6f6ff94d318f0d6f5b896439c0bb0b52da74991c209207ce13f1",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 6021.165132,
+          "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        },
+        {
+          "column": 3,
+          "crop_box_original_pixels": [
+            650,
+            820,
+            1320,
+            1080
+          ],
+          "uniform_display_scale": 1,
+          "image_content_rect": [
+            1340,
+            25,
+            2010,
+            285
+          ],
+          "relative_path": "renders/candidate/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+          "sha256": "23b087baffaa17678060a42d635118832bcb46bba47c59b4ef2b00fd774545c0",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 6021.165132,
+          "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        }
+      ],
+      "operation": "Identical source-coordinate crop for all columns, 1:1 display; no local registration",
+      "notes": "Source side, absolute bay and gray foreground object identity unresolved; do not name gray object/black handle as a table or claim instance match."
+    },
+    {
+      "relative_path": "comparisons/J_source_baseline_candidate_panel.png",
+      "sha256": "d477e92ab771e5759eb9cf2c63cd35c43f52ea9cfb5d90ca659e60c6406ec9f9",
+      "bytes": 355148,
+      "image_dimensions": [
+        1920,
+        400
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 6021.165132,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "Applies only to original source component; renders have no video decode dimensions",
+      "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+      "denoising": "Source unchanged; model render components OIDN LDR sRGB high",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "source_camera_calibration_status": "historical camera hypothesis; new native frame not recalibrated",
+      "source_time_scope": "source component only; rendered components are not video frames",
+      "visibility_or_light_or_material_changes": false,
+      "role": "source_baseline_candidate_comparison_panel",
+      "version": "source plus baseline and candidate",
+      "components": [
+        {
+          "column": 1,
+          "role": "native_source_display_reduction",
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            0,
+            25,
+            640,
+            385
+          ],
+          "source_bv": "BV1fMP4ziEUd",
+          "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+          "source_time_seconds": 6021.165132,
+          "source_time_status": "actual saved player currentTime, not container PTS",
+          "decoded_dimensions": [
+            1920,
+            1080
+          ],
+          "decoded_dimensions_scope": "original decoded video frame only",
+          "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        },
+        {
+          "column": 2,
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            640,
+            25,
+            1280,
+            385
+          ],
+          "relative_path": "renders/baseline/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+          "sha256": "25dfcbb3f9ee6f6ff94d318f0d6f5b896439c0bb0b52da74991c209207ce13f1",
+          "role": "model_render",
+          "version": "baseline",
+          "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 6021.165132,
+          "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        },
+        {
+          "column": 3,
+          "crop_box_original_pixels": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "uniform_display_scale": 0.3333333333333333,
+          "image_content_rect": [
+            1280,
+            25,
+            1920,
+            385
+          ],
+          "relative_path": "renders/candidate/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+          "sha256": "23b087baffaa17678060a42d635118832bcb46bba47c59b4ef2b00fd774545c0",
+          "role": "model_render",
+          "version": "candidate",
+          "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+          "source_time_seconds": null,
+          "source_time_status": "not_applicable: this is a model render",
+          "decoded_dimensions": null,
+          "decoded_dimensions_status": "not_applicable: this is not decoded video",
+          "image_dimensions": [
+            1920,
+            1080
+          ],
+          "denoising": "OIDN LDR sRGB high, same pixel lattice",
+          "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+          "associated_source_bv": "BV1fMP4ziEUd",
+          "associated_source_seconds": 6021.165132,
+          "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+          "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a"
+        }
+      ],
+      "operation": "Full frames uniformly reduced from 1920x1080 to 640x360 for display; no registration; full-size originals and overlays retained",
+      "notes": "Source side, absolute bay and gray foreground object identity unresolved; do not name gray object/black handle as a table or claim instance match."
+    },
+    {
+      "relative_path": "comparisons/table_plan_profile_diagnostic.png",
+      "sha256": "335bd077784592e26a20178150b47fb9829aa53b1fbe76720559989153182b18",
+      "bytes": 12135,
+      "image_dimensions": [
+        1200,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "orthographic plotting of mesh XY coordinates; not a Blender camera",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "isolated_geometry_profile_diagram",
+      "version": "baseline and candidate",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": [
+        843.863376,
+        925.690233,
+        3593.084047
+      ],
+      "components": [
+        {
+          "column": 1,
+          "role": "r05C tabletop XY polygon, shared plotting scale",
+          "source_time_seconds": null,
+          "decoded_dimensions": null
+        },
+        {
+          "column": 2,
+          "role": "r06 single-table XY polygon, shared plotting scale",
+          "source_time_seconds": null,
+          "decoded_dimensions": null
+        }
+      ],
+      "notes": "Explicit isolated top-view geometry diagnostic; not a source-matched view, original source bay unconfirmed; corner radius inferred."
+    },
+    {
+      "relative_path": "inspections/INSPECT_01_forward_aisle.png",
+      "sha256": "bae3ff4fc6cf428c881d73d3e021dc99752cf5128b777cb3e48a54e6e0da34bd",
+      "bytes": 1220120,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_01_forward_aisle",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_01_forward_aisle.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/INSPECT_02_reverse_aisle.png",
+      "sha256": "9bd3eb59985e83ca2e96d13a4d60120a4b3872b7b9582b3c6c0f94ed957113d9",
+      "bytes": 1193910,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_02_reverse_aisle",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_02_reverse_aisle.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/INSPECT_03_right_booth.png",
+      "sha256": "61ccb8cebf4316615a3495cedab5face44210953bec5ddbc997d1e465a7c799e",
+      "bytes": 1142975,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_03_right_booth",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_03_right_booth.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/INSPECT_04_left_booth.png",
+      "sha256": "bd9df3ffff7c0fcb2dd29813a58233f4696c9152992c4278775819f5765fc6d0",
+      "bytes": 1119955,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_04_left_booth",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_04_left_booth.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/INSPECT_05_ceiling.png",
+      "sha256": "b5e2d441bdc578aefbe2362bf399f4b144a35e4a8290d7f420e1e4e6179ccbaf",
+      "bytes": 1186899,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_05_ceiling",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_05_ceiling.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/INSPECT_06_floor_supports.png",
+      "sha256": "d778110268f5c5b5964affa3f598b33f96f8d5fbf7344569e569dca6cad0a35d",
+      "bytes": 1127368,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_06_floor_supports",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_06_floor_supports.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/INSPECT_07_forward_door.png",
+      "sha256": "be61311cec9fa09686aa3caf88bb31547568142cefa4ed4eeba49c47a16939ab",
+      "bytes": 1148220,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_07_forward_door",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_07_forward_door.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/INSPECT_08_reverse_door.png",
+      "sha256": "f5abc13724c33df6d6338aabb3253ba4c50e11f6506c546d8cbb3547bc61e3d0",
+      "bytes": 1128074,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_08_reverse_door",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_08_reverse_door.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/INSPECT_01_forward_aisle.png",
+      "sha256": "08c4b12c2510b911a4142245cca0a916a0f15b241c8f6e645909d93f94ff31c1",
+      "bytes": 381772,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_01_forward_aisle",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_01_forward_aisle.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/INSPECT_02_reverse_aisle.png",
+      "sha256": "753a5a656fa33d22e4598ba414755cd03689750f67f04f2945fb3a91319d407d",
+      "bytes": 383114,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_02_reverse_aisle",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_02_reverse_aisle.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/INSPECT_03_right_booth.png",
+      "sha256": "28983415f2c5d57dd4b61224079f235a7ba828282341dc4f5d5e689245fbedcd",
+      "bytes": 329211,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_03_right_booth",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_03_right_booth.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/INSPECT_04_left_booth.png",
+      "sha256": "08d62f6421d38898b2e2a7950caf5aaa62f6e46a1d298a3bfec897e94e530f28",
+      "bytes": 328242,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_04_left_booth",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_04_left_booth.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/INSPECT_05_ceiling.png",
+      "sha256": "73932aca578e4338bf501779ff155ce9b32e310747655689d95f975d802d5dfb",
+      "bytes": 419095,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_05_ceiling",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_05_ceiling.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/INSPECT_06_floor_supports.png",
+      "sha256": "a18f532f9b00af15e22a0a2af15789f2b0d68e7c4fe20fed6db624a4e57175bd",
+      "bytes": 282431,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_06_floor_supports",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_06_floor_supports.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/INSPECT_07_forward_door.png",
+      "sha256": "8cef95cef686dac905de9b8235a7f84103c0500c7ec8db9820300f01385b9f03",
+      "bytes": 313738,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_07_forward_door",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_07_forward_door.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/INSPECT_08_reverse_door.png",
+      "sha256": "8eee8d9e76b102fd30b6dc62018bfc34894fd103a5d90aca60f1e52755dbfa0d",
+      "bytes": 273732,
+      "image_dimensions": [
+        960,
+        540
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "INSPECT_08_reverse_door",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "arbitrary_structural_inspection_render",
+      "version": "candidate",
+      "samples": 8,
+      "raw_render_path": "inspections/INSPECT_08_reverse_door.png",
+      "associated_source_seconds": null,
+      "source_camera_calibration_status": "not_applicable: arbitrary model inspection, not a source view",
+      "notes": "Original inspection camera and full shared scene; no geometry visibility or light changes. Does not add a source baseline."
+    },
+    {
+      "relative_path": "inspections/denoised/eight_view_contact.png",
+      "sha256": "ef0e793a4aa89d4012670c832e88bef010f18ca8ec74b3d19801b58d339a5120",
+      "bytes": 916818,
+      "image_dimensions": [
+        1920,
+        630
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "eight listed arbitrary inspection cameras",
+      "denoising": "Additional whole-contact OIDN pass; input sheet already contains OIDN-denoised tiles and text. This is a secondary display derivative.",
+      "frozen_file_unchanged": true,
+      "role": "inspection_contact_sheet",
+      "version": "candidate",
+      "components": [
+        {
+          "tile_index": 1,
+          "row": 1,
+          "column": 1,
+          "relative_path": "inspections/denoised/INSPECT_01_forward_aisle.png",
+          "sha256": "08c4b12c2510b911a4142245cca0a916a0f15b241c8f6e645909d93f94ff31c1",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_01_forward_aisle",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            0,
+            25,
+            480,
+            295
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 2,
+          "row": 1,
+          "column": 2,
+          "relative_path": "inspections/denoised/INSPECT_02_reverse_aisle.png",
+          "sha256": "753a5a656fa33d22e4598ba414755cd03689750f67f04f2945fb3a91319d407d",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_02_reverse_aisle",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            480,
+            25,
+            960,
+            295
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 3,
+          "row": 1,
+          "column": 3,
+          "relative_path": "inspections/denoised/INSPECT_03_right_booth.png",
+          "sha256": "28983415f2c5d57dd4b61224079f235a7ba828282341dc4f5d5e689245fbedcd",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_03_right_booth",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            960,
+            25,
+            1440,
+            295
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 4,
+          "row": 1,
+          "column": 4,
+          "relative_path": "inspections/denoised/INSPECT_04_left_booth.png",
+          "sha256": "08d62f6421d38898b2e2a7950caf5aaa62f6e46a1d298a3bfec897e94e530f28",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_04_left_booth",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            1440,
+            25,
+            1920,
+            295
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 5,
+          "row": 2,
+          "column": 1,
+          "relative_path": "inspections/denoised/INSPECT_05_ceiling.png",
+          "sha256": "73932aca578e4338bf501779ff155ce9b32e310747655689d95f975d802d5dfb",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_05_ceiling",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            0,
+            325,
+            480,
+            595
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 6,
+          "row": 2,
+          "column": 2,
+          "relative_path": "inspections/denoised/INSPECT_06_floor_supports.png",
+          "sha256": "a18f532f9b00af15e22a0a2af15789f2b0d68e7c4fe20fed6db624a4e57175bd",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_06_floor_supports",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            480,
+            325,
+            960,
+            595
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 7,
+          "row": 2,
+          "column": 3,
+          "relative_path": "inspections/denoised/INSPECT_07_forward_door.png",
+          "sha256": "8cef95cef686dac905de9b8235a7f84103c0500c7ec8db9820300f01385b9f03",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_07_forward_door",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            960,
+            325,
+            1440,
+            595
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 8,
+          "row": 2,
+          "column": 4,
+          "relative_path": "inspections/denoised/INSPECT_08_reverse_door.png",
+          "sha256": "8eee8d9e76b102fd30b6dc62018bfc34894fd103a5d90aca60f1e52755dbfa0d",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_08_reverse_door",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            1440,
+            325,
+            1920,
+            595
+          ],
+          "uniform_display_scale": 0.5
+        }
+      ],
+      "source_camera_calibration_status": "not_applicable",
+      "notes": "Two rows of four inspection tiles, labels and footer. Not source evidence.",
+      "input_contact_sheet": "inspections/eight_view_contact.png"
+    },
+    {
+      "relative_path": "inspections/eight_view_contact.png",
+      "sha256": "4fc6d2f4fada9fd190a94d5fb1276ee7de21b63d630c094eb12ed61bdd4d9175",
+      "bytes": 893326,
+      "image_dimensions": [
+        1920,
+        630
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "eight listed arbitrary inspection cameras",
+      "denoising": "Tiles are OIDN-denoised inspection renders; assembled sheet receives no further denoising",
+      "frozen_file_unchanged": true,
+      "role": "inspection_contact_sheet",
+      "version": "candidate",
+      "components": [
+        {
+          "tile_index": 1,
+          "row": 1,
+          "column": 1,
+          "relative_path": "inspections/denoised/INSPECT_01_forward_aisle.png",
+          "sha256": "08c4b12c2510b911a4142245cca0a916a0f15b241c8f6e645909d93f94ff31c1",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_01_forward_aisle",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            0,
+            25,
+            480,
+            295
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 2,
+          "row": 1,
+          "column": 2,
+          "relative_path": "inspections/denoised/INSPECT_02_reverse_aisle.png",
+          "sha256": "753a5a656fa33d22e4598ba414755cd03689750f67f04f2945fb3a91319d407d",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_02_reverse_aisle",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            480,
+            25,
+            960,
+            295
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 3,
+          "row": 1,
+          "column": 3,
+          "relative_path": "inspections/denoised/INSPECT_03_right_booth.png",
+          "sha256": "28983415f2c5d57dd4b61224079f235a7ba828282341dc4f5d5e689245fbedcd",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_03_right_booth",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            960,
+            25,
+            1440,
+            295
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 4,
+          "row": 1,
+          "column": 4,
+          "relative_path": "inspections/denoised/INSPECT_04_left_booth.png",
+          "sha256": "08d62f6421d38898b2e2a7950caf5aaa62f6e46a1d298a3bfec897e94e530f28",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_04_left_booth",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            1440,
+            25,
+            1920,
+            295
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 5,
+          "row": 2,
+          "column": 1,
+          "relative_path": "inspections/denoised/INSPECT_05_ceiling.png",
+          "sha256": "73932aca578e4338bf501779ff155ce9b32e310747655689d95f975d802d5dfb",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_05_ceiling",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            0,
+            325,
+            480,
+            595
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 6,
+          "row": 2,
+          "column": 2,
+          "relative_path": "inspections/denoised/INSPECT_06_floor_supports.png",
+          "sha256": "a18f532f9b00af15e22a0a2af15789f2b0d68e7c4fe20fed6db624a4e57175bd",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_06_floor_supports",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            480,
+            325,
+            960,
+            595
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 7,
+          "row": 2,
+          "column": 3,
+          "relative_path": "inspections/denoised/INSPECT_07_forward_door.png",
+          "sha256": "8cef95cef686dac905de9b8235a7f84103c0500c7ec8db9820300f01385b9f03",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_07_forward_door",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            960,
+            325,
+            1440,
+            595
+          ],
+          "uniform_display_scale": 0.5
+        },
+        {
+          "tile_index": 8,
+          "row": 2,
+          "column": 4,
+          "relative_path": "inspections/denoised/INSPECT_08_reverse_door.png",
+          "sha256": "8eee8d9e76b102fd30b6dc62018bfc34894fd103a5d90aca60f1e52755dbfa0d",
+          "role": "arbitrary_structural_inspection_render",
+          "camera": "INSPECT_08_reverse_door",
+          "source_time_seconds": null,
+          "decoded_dimensions": null,
+          "denoising": "OIDN of raw 8-sample inspection render",
+          "image_content_rect": [
+            1440,
+            325,
+            1920,
+            595
+          ],
+          "uniform_display_scale": 0.5
+        }
+      ],
+      "source_camera_calibration_status": "not_applicable",
+      "notes": "Two rows of four inspection tiles, labels and footer. Not source evidence.",
+      "input_contact_sheet": null
+    },
+    {
+      "relative_path": "renders/baseline/R05_HD_A.png",
+      "sha256": "b38d5b39fd262fda9b18372b75c31b399e40d01a58319ef3e4dc2dd9825cdbea",
+      "bytes": 4351713,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_A",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "baseline",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 843.863376,
+      "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/baseline/R05_HD_A.png",
+      "camera_metadata_path": "renders/baseline/R05_HD_A.json"
+    },
+    {
+      "relative_path": "renders/baseline/R05_HD_B.png",
+      "sha256": "ee1044df2709278986fb690b8f7753563c498fa1fba5df1978c4fbbc53a6ce56",
+      "bytes": 4011963,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_B",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "baseline",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 925.690233,
+      "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/baseline/R05_HD_B.png",
+      "camera_metadata_path": "renders/baseline/R05_HD_B.json"
+    },
+    {
+      "relative_path": "renders/baseline/R05_HD_D.png",
+      "sha256": "1e619d8bddded43b6f7a5ee290860812d1b4d3381ebce11af57359a4a6c8282a",
+      "bytes": 4302589,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_D",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "baseline",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 2716.824742,
+      "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/baseline/R05_HD_D.png",
+      "camera_metadata_path": "renders/baseline/R05_HD_D.json"
+    },
+    {
+      "relative_path": "renders/baseline/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "sha256": "c2aae7add2f1fd9615390e492f962bd79ac2e4e96b6dbda2c5357dd0d9dd9086",
+      "bytes": 3868736,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "baseline",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 6021.165132,
+      "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/baseline/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "camera_metadata_path": "renders/baseline/R05_J_LOCAL_UNRESOLVED_BAY.json"
+    },
+    {
+      "relative_path": "renders/baseline/denoised/R05_HD_A.png",
+      "sha256": "2f877a148d9f7cad3a12006733e29e3aeb061ad770300ccfd7a99f5fd65b58a2",
+      "bytes": 1489364,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_A",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "baseline",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 843.863376,
+      "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/baseline/R05_HD_A.png",
+      "camera_metadata_path": "renders/baseline/R05_HD_A.json"
+    },
+    {
+      "relative_path": "renders/baseline/denoised/R05_HD_B.png",
+      "sha256": "e3ae6bd6b38c0755efde7c736300a5f9a29b8731e1b6d4f00daa724602e89fe0",
+      "bytes": 1333635,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_B",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "baseline",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 925.690233,
+      "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/baseline/R05_HD_B.png",
+      "camera_metadata_path": "renders/baseline/R05_HD_B.json"
+    },
+    {
+      "relative_path": "renders/baseline/denoised/R05_HD_D.png",
+      "sha256": "fb696d30cf98dcae08e4c083c064c9ce3be1a12a9faf32e18dcf625fffdf14df",
+      "bytes": 1388178,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_D",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "baseline",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 2716.824742,
+      "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/baseline/R05_HD_D.png",
+      "camera_metadata_path": "renders/baseline/R05_HD_D.json"
+    },
+    {
+      "relative_path": "renders/baseline/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "sha256": "25dfcbb3f9ee6f6ff94d318f0d6f5b896439c0bb0b52da74991c209207ce13f1",
+      "bytes": 1074491,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "baseline",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 6021.165132,
+      "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/baseline/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "camera_metadata_path": "renders/baseline/R05_J_LOCAL_UNRESOLVED_BAY.json"
+    },
+    {
+      "relative_path": "renders/candidate/R05_HD_A.png",
+      "sha256": "1ab7d097c3ea6ec5de8851c622710f10f8767d0c36047d16df1354b4fe95f39f",
+      "bytes": 4353918,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_A",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "candidate",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 843.863376,
+      "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/candidate/R05_HD_A.png",
+      "camera_metadata_path": "renders/candidate/R05_HD_A.json"
+    },
+    {
+      "relative_path": "renders/candidate/R05_HD_B.png",
+      "sha256": "6f9570c857e29623acfb3f8b1d24b78facda0adc1359bf27f816034e40a5d2f6",
+      "bytes": 4015252,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_B",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "candidate",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 925.690233,
+      "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/candidate/R05_HD_B.png",
+      "camera_metadata_path": "renders/candidate/R05_HD_B.json"
+    },
+    {
+      "relative_path": "renders/candidate/R05_HD_D.png",
+      "sha256": "9666bf406538efa20aa26b0977c0f3d951fa1a250c4791c1432bcfee01564159",
+      "bytes": 4309134,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_D",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "candidate",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 2716.824742,
+      "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/candidate/R05_HD_D.png",
+      "camera_metadata_path": "renders/candidate/R05_HD_D.json"
+    },
+    {
+      "relative_path": "renders/candidate/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "sha256": "cebe7d8938710b242c39baa785f361c30792c6e53a29027c48fc1d32d1f0b9a3",
+      "bytes": 3868784,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+      "denoising": "none; raw Cycles render",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "candidate",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 6021.165132,
+      "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/candidate/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "camera_metadata_path": "renders/candidate/R05_J_LOCAL_UNRESOLVED_BAY.json"
+    },
+    {
+      "relative_path": "renders/candidate/denoised/R05_HD_A.png",
+      "sha256": "0a11f351477276848d9be8dcf643da653112852429fafbc1d1e3c16e2c49b35b",
+      "bytes": 1491755,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_A",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "candidate",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 843.863376,
+      "associated_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "associated_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/candidate/R05_HD_A.png",
+      "camera_metadata_path": "renders/candidate/R05_HD_A.json"
+    },
+    {
+      "relative_path": "renders/candidate/denoised/R05_HD_B.png",
+      "sha256": "4035910e9030ce3ffe706edbd29271382784d389fe3b8f0b573fd67cff6367a3",
+      "bytes": 1341615,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_B",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "candidate",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 925.690233,
+      "associated_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "associated_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/candidate/R05_HD_B.png",
+      "camera_metadata_path": "renders/candidate/R05_HD_B.json"
+    },
+    {
+      "relative_path": "renders/candidate/denoised/R05_HD_D.png",
+      "sha256": "0be5816bc322d750334e7281f319cffbb5067d814a6068204b4f1955cc6b4175",
+      "bytes": 1393435,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_HD_D",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "candidate",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 2716.824742,
+      "associated_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "associated_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/candidate/R05_HD_D.png",
+      "camera_metadata_path": "renders/candidate/R05_HD_D.json"
+    },
+    {
+      "relative_path": "renders/candidate/denoised/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "sha256": "23b087baffaa17678060a42d635118832bcb46bba47c59b4ef2b00fd774545c0",
+      "bytes": 1074205,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: this is a model render",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: this is not decoded video",
+      "camera": "R05_J_LOCAL_UNRESOLVED_BAY",
+      "denoising": "OIDN LDR sRGB high, same pixel lattice",
+      "frozen_file_unchanged": true,
+      "role": "historical_camera_model_render",
+      "version": "candidate",
+      "source_camera_calibration_status": "historical camera hypothesis; not recalibrated for native neighbor frame",
+      "associated_source_bv": "BV1fMP4ziEUd",
+      "associated_source_seconds": 6021.165132,
+      "associated_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "associated_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "samples": 24,
+      "visibility_or_light_or_material_changes": false,
+      "raw_render_path": "renders/candidate/R05_J_LOCAL_UNRESOLVED_BAY.png",
+      "camera_metadata_path": "renders/candidate/R05_J_LOCAL_UNRESOLVED_BAY.json"
+    },
+    {
+      "relative_path": "source_evidence/SRC-A-left-near-table_annotated.png",
+      "sha256": "76cb59f84a3675950284c6155e4ef2081f15b971f4ccf21e6eb4e6e4d582f35a",
+      "bytes": 954042,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 843.863376,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "original frame decode size; output crop size is image_dimensions",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "role": "source_annotation",
+      "source_object_observation_id": "SRC-A-left-near-table",
+      "absolute_source_bay": "unconfirmed; separate source IDs retained",
+      "operation": "Full native-size copy with diagnostic endpoint marks added; original frame preserved separately",
+      "annotation_points": [
+        [
+          529,
+          1039
+        ],
+        [
+          644,
+          990
+        ]
+      ],
+      "annotation_uncertainty_pixels": 5
+    },
+    {
+      "relative_path": "source_evidence/SRC-A-left-near-table_crop.png",
+      "sha256": "72493000ed26b882e0bd9d618bfe59509dd79addbf17d34c767bac4dfa659ecd",
+      "bytes": 13983,
+      "image_dimensions": [
+        450,
+        150
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 843.863376,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "original frame decode size; output crop size is image_dimensions",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "role": "source_crop",
+      "source_object_observation_id": "SRC-A-left-near-table",
+      "absolute_source_bay": "unconfirmed; separate source IDs retained",
+      "crop_box_original_pixels": [
+        240,
+        930,
+        690,
+        1080
+      ],
+      "display_scale": 1,
+      "operation": "Exact pixel crop from native frame, no resize or warp"
+    },
+    {
+      "relative_path": "source_evidence/SRC-B-left-table_annotated.png",
+      "sha256": "586e40479e76c56457f3044503c2e06b9af4405f13d651542d095699fc5c0774",
+      "bytes": 853518,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 925.690233,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "original frame decode size; output crop size is image_dimensions",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "role": "source_annotation",
+      "source_object_observation_id": "SRC-B-left-table",
+      "absolute_source_bay": "unconfirmed; separate source IDs retained",
+      "operation": "Full native-size copy with diagnostic endpoint marks added; original frame preserved separately",
+      "annotation_points": [
+        [
+          216,
+          784
+        ],
+        [
+          351,
+          750
+        ]
+      ],
+      "annotation_uncertainty_pixels": 5
+    },
+    {
+      "relative_path": "source_evidence/SRC-B-left-table_crop.png",
+      "sha256": "6982406b3bfbc3d2930f90935a1d822b419d2dd9f5eec4dcd2a0c35149087335",
+      "bytes": 9428,
+      "image_dimensions": [
+        450,
+        170
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 925.690233,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "original frame decode size; output crop size is image_dimensions",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "role": "source_crop",
+      "source_object_observation_id": "SRC-B-left-table",
+      "absolute_source_bay": "unconfirmed; separate source IDs retained",
+      "crop_box_original_pixels": [
+        0,
+        680,
+        450,
+        850
+      ],
+      "display_scale": 1,
+      "operation": "Exact pixel crop from native frame, no resize or warp"
+    },
+    {
+      "relative_path": "source_evidence/SRC-W-left-foreground-table_annotated.png",
+      "sha256": "eddb1a6d27387799f26448f2c7fc8654a625ea221d1a1f58016dd36941588842",
+      "bytes": 709905,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 3593.084047,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "original frame decode size; output crop size is image_dimensions",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-door-wide-BV1fMP4ziEUd-t3593.084047-native.png",
+      "original_source_sha256": "06a7ee0c08b4c2cd220dd2aff97a4a7853b5ea4ee2862693c853a48fc0ebaa87",
+      "role": "source_annotation",
+      "source_object_observation_id": "SRC-W-left-foreground-table",
+      "absolute_source_bay": "unconfirmed; separate source IDs retained",
+      "operation": "Full native-size copy with diagnostic endpoint marks added; original frame preserved separately",
+      "annotation_points": [
+        [
+          650,
+          1078
+        ],
+        [
+          712,
+          957
+        ]
+      ],
+      "annotation_uncertainty_pixels": 5
+    },
+    {
+      "relative_path": "source_evidence/SRC-W-left-foreground-table_crop.png",
+      "sha256": "ad21155b3a3587b2a7f06890308971baf9dde689b446fdc08c7982f932677b94",
+      "bytes": 25196,
+      "image_dimensions": [
+        780,
+        180
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 3593.084047,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "original frame decode size; output crop size is image_dimensions",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-door-wide-BV1fMP4ziEUd-t3593.084047-native.png",
+      "original_source_sha256": "06a7ee0c08b4c2cd220dd2aff97a4a7853b5ea4ee2862693c853a48fc0ebaa87",
+      "role": "source_crop",
+      "source_object_observation_id": "SRC-W-left-foreground-table",
+      "absolute_source_bay": "unconfirmed; separate source IDs retained",
+      "crop_box_original_pixels": [
+        0,
+        900,
+        780,
+        1080
+      ],
+      "display_scale": 1,
+      "operation": "Exact pixel crop from native frame, no resize or warp"
+    },
+    {
+      "relative_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "bytes": 1331244,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 843.863376,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "recorded source decode size",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none; native saved PNG unchanged",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-A2-neighbor-BV1fMP4ziEUd-t843.863376-native.png",
+      "original_source_sha256": "98c467a60823cf9765d7af6f495bd604f384b8731bbaa64d2f6383d059ecdd5a",
+      "role": "native_source_original",
+      "version": "2026-10-11 native recapture; neighboring frame, not old screenshot identity"
+    },
+    {
+      "relative_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "bytes": 1169157,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 925.690233,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "recorded source decode size",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none; native saved PNG unchanged",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-B2-neighbor-BV1fMP4ziEUd-t925.690233-native.png",
+      "original_source_sha256": "1049e551aabcaf1e66ad2e8cb03f7f26ec885b4535db493214695f49905043dd",
+      "role": "native_source_original",
+      "version": "2026-10-11 native recapture; neighboring frame, not old screenshot identity"
+    },
+    {
+      "relative_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "bytes": 1423721,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 2716.824742,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "recorded source decode size",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none; native saved PNG unchanged",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-D2-neighbor-BV1fMP4ziEUd-t2716.824742-native.png",
+      "original_source_sha256": "b40dc68fff61c395d26b72b3f2fb040a9a4a16fe45e2231ad44eb524c41f1dc8",
+      "role": "native_source_original",
+      "version": "2026-10-11 native recapture; neighboring frame, not old screenshot identity"
+    },
+    {
+      "relative_path": "source_evidence/frames/train-door-wide-BV1fMP4ziEUd-t3593.084047-native.png",
+      "sha256": "06a7ee0c08b4c2cd220dd2aff97a4a7853b5ea4ee2862693c853a48fc0ebaa87",
+      "bytes": 999277,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 3593.084047,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "recorded source decode size",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none; native saved PNG unchanged",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-door-wide-BV1fMP4ziEUd-t3593.084047-native.png",
+      "original_source_sha256": "06a7ee0c08b4c2cd220dd2aff97a4a7853b5ea4ee2862693c853a48fc0ebaa87",
+      "role": "native_source_original",
+      "version": "2026-10-11 native recapture; neighboring frame, not old screenshot identity"
+    },
+    {
+      "relative_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "bytes": 775272,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 6021.165132,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "recorded source decode size",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none; native saved PNG unchanged",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-empty-window-BV1fMP4ziEUd-t6021.165132-native.png",
+      "original_source_sha256": "65f07c8b7fe3a02d17bcf78517af1b52ddba0bed1c5cff54ab0e89283f498d0a",
+      "role": "native_source_original",
+      "version": "2026-10-11 native recapture; neighboring frame, not old screenshot identity"
+    },
+    {
+      "relative_path": "source_evidence/frames/train-side-rows-BV1fMP4ziEUd-t2694.677404-native.png",
+      "sha256": "572c046e396cec1e6c15e3c1686c4806fb93227bd37833df170742ca82f47cbf",
+      "bytes": 1393962,
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "issue_display_required": true,
+      "source_bv": "BV1fMP4ziEUd",
+      "source_time_seconds": 2694.677404,
+      "source_time_status": "actual saved player currentTime, not container PTS",
+      "decoded_dimensions": [
+        1920,
+        1080
+      ],
+      "decoded_dimensions_status": "recorded source decode size",
+      "camera": "source video camera; no solved calibration",
+      "denoising": "none; native saved PNG unchanged",
+      "frozen_file_unchanged": true,
+      "source_url": "https://www.bilibili.com/video/BV1fMP4ziEUd/",
+      "decoded_dimensions_scope": "original decoded video frame only",
+      "original_source_path": "source_evidence/frames/train-side-rows-BV1fMP4ziEUd-t2694.677404-native.png",
+      "original_source_sha256": "572c046e396cec1e6c15e3c1686c4806fb93227bd37833df170742ca82f47cbf",
+      "role": "native_source_original",
+      "version": "2026-10-11 native recapture; neighboring frame, not old screenshot identity"
+    },
+    {
+      "relative_path": "textures/HD_leather_restrained_roughness.png",
+      "sha256": "5a1c1b7c0d1fb1168242f3125fdd3104a814c35a13a6052314cfc5dd22ec17ec",
+      "bytes": 110805,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/burgundy_velvet_basecolor.png",
+      "sha256": "01171142778286df2ba9a31ca822355478f679a871011cbe1d909a6488f689da",
+      "bytes": 292230,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/burgundy_velvet_normal.png",
+      "sha256": "ae750d242c99d9ef180b80c053103aeb7c2156b2bcd6eefc766ec943e6c899c8",
+      "bytes": 452755,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/burgundy_velvet_roughness.png",
+      "sha256": "2c167e1bd6f88a8f51c66051cdd6160bbbe136634bd9551bd13d96ff58e2dbcb",
+      "bytes": 107027,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/ceiling_cream_basecolor.png",
+      "sha256": "8de59ec2dab8b50e609f510d4be16bd3556c2b45c1733cede0c67c6a0219f937",
+      "bytes": 251264,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/ceiling_cream_normal.png",
+      "sha256": "d9c8399c34bada422d77506417e6e8d5fd2fd520a899434be9adf12cf8459a20",
+      "bytes": 394065,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/ceiling_cream_roughness.png",
+      "sha256": "7078fdb7ebed10dcf2ac8613ea8ff834ccb770612d57e1487bf7b01ed376574c",
+      "bytes": 135549,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/destination_sign_basecolor.png",
+      "sha256": "944b4b517b9bc72e44193800cbfa29315768c17d7b838b9dbca9bc61d7cba9eb",
+      "bytes": 16177,
+      "image_dimensions": [
+        1536,
+        192
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/floor_wood_basecolor.png",
+      "sha256": "23359e03d1b8565d84470e9cd8dc8ee1d4de5ad5d1d9db22b43edaceef4b2793",
+      "bytes": 216633,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/floor_wood_normal.png",
+      "sha256": "bf792d3ac5d286daffe9f34f7001602ff4519c0eeec75118172a43eaa276f3b2",
+      "bytes": 247785,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/floor_wood_roughness.png",
+      "sha256": "565cf443e01e175b78c029b51f38dadc1689a612f6cd3a8bbadde5908af6237d",
+      "bytes": 97910,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/forest_leather_basecolor.png",
+      "sha256": "f17b34601ed7f427ba2e6c482175d4451fd5c0a25f9ddff514a06e0cd5db1d78",
+      "bytes": 253158,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/forest_leather_normal.png",
+      "sha256": "3072a675d9917b0467e57e3457a05dd9b606963d86883e6a7136ff950696f711",
+      "bytes": 714202,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/rosewood_basecolor.png",
+      "sha256": "3e8746ff7bdd5fed6f595ec9cf5ec5b9a84072e268bc36630b728a36e7ff6a37",
+      "bytes": 308274,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/rosewood_normal.png",
+      "sha256": "ff6f9849fc1622ae28e69c94000efd7b0b9141fe6d3cdb5033b2c968e2689c37",
+      "bytes": 544394,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/rosewood_roughness.png",
+      "sha256": "1d6863b65246a69bd8b60d74e1ac1cd090f29d53982eef0315968fcf08322008",
+      "bytes": 126478,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/walnut_basecolor.png",
+      "sha256": "6bed832d90e9662bc042a6822c6c5dfb9da41ac2a6c15507e48ed56d600007cb",
+      "bytes": 328330,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/walnut_normal.png",
+      "sha256": "f3059288547be435de05fe3e0eb4f47ec41e25d4a040a1143266ae777afdf4b5",
+      "bytes": 509190,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    },
+    {
+      "relative_path": "textures/walnut_roughness.png",
+      "sha256": "be4eed7aaca20ff0fdc6827597efdcee36c89b47c72e9036a86a8ff7a8db21e0",
+      "bytes": 134661,
+      "image_dimensions": [
+        512,
+        512
+      ],
+      "issue_display_required": false,
+      "source_bv": null,
+      "source_time_seconds": null,
+      "source_time_status": "not_applicable: generated image, not decoded video",
+      "decoded_dimensions": null,
+      "decoded_dimensions_status": "not_applicable: generated image, not decoded video",
+      "camera": "not_applicable",
+      "denoising": "not_applicable",
+      "frozen_file_unchanged": true,
+      "role": "unchanged_model_texture_dependency",
+      "version": "inherited r05C texture bytes",
+      "notes": "Model dependency only, not source evidence or rendered scene; no Issue image display required."
+    }
+  ]
+}
