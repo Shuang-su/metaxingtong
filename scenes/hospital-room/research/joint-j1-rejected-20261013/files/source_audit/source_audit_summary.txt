@@ -1,0 +1,19 @@
+Native hospital source audit: A/G fitting, B/H holdouts, F supplemental
+
+Reliable topology
+At the central junction, G/H show a pale gray region to the LEFT of a thin black jamb. The visible beige member lies to the RIGHT of that jamb, followed by a distinct gray pleated curtain. The source does not establish whether the pale gray region is behind glass/exterior, a reveal, or another surface. It must not replace the separately visible beige member. Both window groups have horizontal blinds. The overhead track has two open parallel rail members and short connectors/hangers; its window-side left end cap is visible over the beige member. Exact concealed attachment depth is not measured.
+
+MANDATORY FIT WARNING
+Exclude beige-to-curtain and light-to-ochre transitions from physical-corner fitting. Those are soft/shading/occlusion transitions, not a measured pillar right silhouette. At y500, the G black jamb is x929..943, the soft beige-to-curtain transition is roughly x1015..1030, and the curtain right silhouette is x1162. In H at y500 these are x1534..1550, x1633..1650, and x1814. The old H jamb annotations were about 7–14 pixels too far right in some places. Use the new row-verified hard edges in the JSON.
+
+Measurement use
+JSON coordinates use native 1920×1080 pixels, x right, y down. Most unobscured hard edges were checked with RGB row gradients and have ±2 px uncertainty. Track/cap traces are ±2–3 px. Pale-gray boundary identity is unresolved. Beige/curtain transitions have ±10–12 px uncertainty and must not be rigid-corner residuals. Bed-board samples are approximate contour guardrails, not vertices. No polyline-index or same-row 3D correspondence is implied. A/G are the requested fit partition; B/H must stay genuinely held out. F is supplemental, not implicit permission to expand the fit set.
+
+Bed-eye relationship
+The user's lying-patient interpretation is the governing prior. The visible far board/TV ahead, mattress in the lower foreground, and window views are compatible with an eye over the mattress head region. The sources do not show the pillow/head boundary or measure eye height, exact head translation, or anatomy. A freely adjusted room camera is not validated as a lying-patient camera merely by matching a board silhouette.
+
+Depth limits
+No calibrated translational baseline, known focal metadata, exposed column cross-section, or real metric landmark is supplied. These views may largely be rotations near one eye point; pure rotation cannot triangulate depth. The images constrain projection, ordering, line direction, and visible silhouette, but not a unique pillar depth, rail offset, room dimensions, or absolute scale. Keep bounded source-consistent candidates, and state the sensitivity of hidden dimensions. Do not claim recovered metric truth from a low image residual.
+
+Most informative missing view
+Acquire a native oblique view from a genuinely laterally displaced and slightly raised eye position, with unchanged/known field of view and preferably a measured baseline. Include the actual rail attachment, both visible sides of the beige member around the curtain, a black jamb, and a mattress/head-end or bed-rail corner in the same frame. Another pan from the same eye point does not resolve hidden depth. If restricted to the lying position, a downward view showing pillow/head end and both mattress side edges while retaining the pillar is best for the bed-eye relationship, but it cannot settle the concealed column depth.

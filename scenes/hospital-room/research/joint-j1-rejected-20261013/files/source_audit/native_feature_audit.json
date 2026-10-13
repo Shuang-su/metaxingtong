@@ -1,0 +1,1389 @@
+{
+  "coordinate_system": {
+    "size": [
+      1920,
+      1080
+    ],
+    "origin": "upper left",
+    "x": "right",
+    "y": "down"
+  },
+  "method": "Independent full-frame native image inspection, unaltered diagnostic crops, and RGB row-gradient checks. Existing G/H annotation labels were inspected only after independent visual inspection. No accepted 3D geometry is assumed; no image render or scene change was performed.",
+  "fitting_partition": {
+    "A": "fit",
+    "G": "fit",
+    "B": "holdout",
+    "H": "holdout",
+    "F": "supplemental source check; do not silently add to prescribed A/G fit"
+  },
+  "use_warning": "Same-row samples and polyline indices are not 3D point correspondences. Fit each predicted silhouette/line to its observed line, retaining visibility and semantic identity. A material/lighting boundary is not automatically a physical corner. Holdout camera pose must have an independently specified or limited estimation rule if claiming a meaningful holdout.",
+  "topology": [
+    "At the central window group in G/H, the visible left-to-right ordering is sky/glass, a pale gray region, a narrow black jamb, a beige architectural member, and a distinct dark gray pleated curtain. The curtain outer-right silhouette then reveals the next glazed window group.",
+    "The pale gray region is left of the black jamb. Source pixels do not establish whether it is an exterior/behind-glass surface, a deep reveal, or another architectural surface. Do not relabel it as the separately visible beige member.",
+    "The black jamb-to-beige boundary is a high-confidence visible hard line. The beige member has a light-to-ochre vertical shading/face transition, then darkens toward the curtain. Those latter transitions do not establish a visible pillar right silhouette.",
+    "The gray curtain has independently visible repeated folds and an outer silhouette. It is not a solid beige pillar or a black window mullion.",
+    "Both window groups carry horizontal slats. Their bright slat lines cross and partially obscure the upper black frame edges. Use lower unobscured jamb segments for precise edge fitting.",
+    "The overhead track is an open assembly of two approximately parallel horizontal-direction rails with short connecting/hanging pieces. The window-side rail has a visible left end cap over the beige member; the room-side rail leading edge is partly drape-occluded. The user establishes that the track connects to the beige member, but the exact 3D attachment/contact point is not exposed.",
+    "A/B/F are upward views toward the TV and the far bed board; G adds mattress/bed foreground, H primarily shows the window/sofa. This supports the user-provided patient-eye interpretation, but no pillow/head contact point is visible."
+  ],
+  "views": {
+    "A": {
+      "source": "recovery/hospital_A_1820.867783s.png",
+      "features": [
+        {
+          "name": "central_member_black_jamb_beige_side",
+          "points": [
+            [
+              75,
+              500
+            ],
+            [
+              49,
+              700
+            ],
+            [
+              23,
+              900
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": "The black edge separating left window region from beige member; exits image near bottom."
+        },
+        {
+          "name": "curtain_outer_right",
+          "points": [
+            [
+              349,
+              500
+            ],
+            [
+              332,
+              700
+            ],
+            [
+              315,
+              900
+            ],
+            [
+              303,
+              1050
+            ]
+          ],
+          "kind": "occluding_silhouette",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_mid_black_left",
+          "points": [
+            [
+              519,
+              500
+            ],
+            [
+              507,
+              700
+            ],
+            [
+              495,
+              900
+            ],
+            [
+              485,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_mid_black_right",
+          "points": [
+            [
+              528,
+              500
+            ],
+            [
+              516,
+              700
+            ],
+            [
+              505,
+              900
+            ],
+            [
+              496,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_wall_jamb_left",
+          "points": [
+            [
+              675,
+              700
+            ],
+            [
+              668,
+              900
+            ],
+            [
+              663,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_wall_jamb_right",
+          "points": [
+            [
+              681,
+              700
+            ],
+            [
+              675,
+              900
+            ],
+            [
+              670,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "beige_to_curtain_transition",
+          "points": [
+            [
+              203,
+              300
+            ],
+            [
+              180,
+              500
+            ],
+            [
+              156,
+              700
+            ],
+            [
+              134,
+              900
+            ]
+          ],
+          "kind": "soft_radiometric_transition",
+          "uncertainty_px": 10,
+          "note": "Exclude as a rigid pillar corner. The broad shadow transition overlaps the curtain grazing edge."
+        },
+        {
+          "name": "track_window_side_top",
+          "points": [
+            [
+              220,
+              87
+            ],
+            [
+              400,
+              65
+            ],
+            [
+              600,
+              41
+            ],
+            [
+              800,
+              17
+            ],
+            [
+              900,
+              5
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_window_side_bottom",
+          "points": [
+            [
+              240,
+              103
+            ],
+            [
+              400,
+              84
+            ],
+            [
+              600,
+              61
+            ],
+            [
+              800,
+              38
+            ],
+            [
+              1000,
+              14
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_room_side_top",
+          "points": [
+            [
+              380,
+              119
+            ],
+            [
+              600,
+              95
+            ],
+            [
+              800,
+              72
+            ],
+            [
+              1000,
+              49
+            ],
+            [
+              1200,
+              27
+            ],
+            [
+              1400,
+              4
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_room_side_bottom",
+          "points": [
+            [
+              380,
+              136
+            ],
+            [
+              600,
+              111
+            ],
+            [
+              800,
+              89
+            ],
+            [
+              1000,
+              67
+            ],
+            [
+              1200,
+              45
+            ],
+            [
+              1400,
+              23
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_window_side_left_cap",
+          "points": [
+            [
+              220,
+              87
+            ],
+            [
+              220,
+              101
+            ]
+          ],
+          "kind": "visible_end_cap",
+          "uncertainty_px": 3,
+          "note": "Cap is visible; exact concealed attachment depth remains unknown."
+        },
+        {
+          "name": "bed_far_board_upper_envelope",
+          "points": [
+            [
+              735,
+              980
+            ],
+            [
+              753,
+              948
+            ],
+            [
+              789,
+              927
+            ],
+            [
+              1000,
+              889
+            ],
+            [
+              1200,
+              881
+            ],
+            [
+              1400,
+              887
+            ],
+            [
+              1550,
+              903
+            ]
+          ],
+          "kind": "rigid_silhouette_guardrail",
+          "uncertainty_px": 8,
+          "note": "Approximate visual samples, not mesh vertices. Right part interrupted by HUD."
+        }
+      ]
+    },
+    "B": {
+      "source": "recovery/hospital_B_1826.978388s.png",
+      "features": [
+        {
+          "name": "central_member_black_jamb_beige_side",
+          "points": [
+            [
+              16,
+              500
+            ],
+            [
+              3,
+              600
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": "Only short lower unobscured run remains before left image clipping."
+        },
+        {
+          "name": "curtain_outer_right",
+          "points": [
+            [
+              307,
+              500
+            ],
+            [
+              291,
+              700
+            ],
+            [
+              274,
+              900
+            ],
+            [
+              262,
+              1050
+            ]
+          ],
+          "kind": "occluding_silhouette",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_mid_black_left",
+          "points": [
+            [
+              488,
+              500
+            ],
+            [
+              476,
+              700
+            ],
+            [
+              465,
+              900
+            ],
+            [
+              456,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_mid_black_right",
+          "points": [
+            [
+              498,
+              500
+            ],
+            [
+              487,
+              700
+            ],
+            [
+              476,
+              900
+            ],
+            [
+              468,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_wall_jamb_left",
+          "points": [
+            [
+              651,
+              700
+            ],
+            [
+              644,
+              900
+            ],
+            [
+              639,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_wall_jamb_right",
+          "points": [
+            [
+              658,
+              700
+            ],
+            [
+              651,
+              900
+            ],
+            [
+              646,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "beige_to_curtain_transition",
+          "points": [
+            [
+              152,
+              300
+            ],
+            [
+              129,
+              500
+            ],
+            [
+              106,
+              700
+            ],
+            [
+              84,
+              900
+            ]
+          ],
+          "kind": "soft_radiometric_transition",
+          "uncertainty_px": 10,
+          "note": "Exclude as a rigid pillar corner."
+        },
+        {
+          "name": "track_window_side_top",
+          "points": [
+            [
+              220,
+              42
+            ],
+            [
+              400,
+              21
+            ],
+            [
+              550,
+              4
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_window_side_bottom",
+          "points": [
+            [
+              220,
+              62
+            ],
+            [
+              400,
+              42
+            ],
+            [
+              600,
+              19
+            ],
+            [
+              700,
+              8
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_room_side_top",
+          "points": [
+            [
+              380,
+              78
+            ],
+            [
+              600,
+              54
+            ],
+            [
+              800,
+              33
+            ],
+            [
+              1000,
+              11
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_room_side_bottom",
+          "points": [
+            [
+              380,
+              95
+            ],
+            [
+              600,
+              72
+            ],
+            [
+              800,
+              51
+            ],
+            [
+              1000,
+              29
+            ],
+            [
+              1200,
+              8
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_window_side_left_cap",
+          "points": [
+            [
+              171,
+              48
+            ],
+            [
+              171,
+              62
+            ]
+          ],
+          "kind": "visible_end_cap",
+          "uncertainty_px": 3,
+          "note": ""
+        },
+        {
+          "name": "bed_far_board_upper_envelope",
+          "points": [
+            [
+              708,
+              1079
+            ],
+            [
+              715,
+              1017
+            ],
+            [
+              741,
+              982
+            ],
+            [
+              779,
+              962
+            ],
+            [
+              1000,
+              916
+            ],
+            [
+              1200,
+              909
+            ],
+            [
+              1400,
+              914
+            ],
+            [
+              1550,
+              929
+            ]
+          ],
+          "kind": "rigid_silhouette_guardrail",
+          "uncertainty_px": 8,
+          "note": "Approximate visual samples, not mesh vertices. HUD overlaps right extent."
+        }
+      ]
+    },
+    "G": {
+      "source": "recovery/native_old/hospital/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "features": [
+        {
+          "name": "main_window_mid_black_left",
+          "points": [
+            [
+              378,
+              300
+            ],
+            [
+              366,
+              500
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": "Longer segment continues, but these measured rows avoid foreground occlusion."
+        },
+        {
+          "name": "main_window_mid_black_right",
+          "points": [
+            [
+              404,
+              300
+            ],
+            [
+              393,
+              500
+            ],
+            [
+              382,
+              700
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "pale_gray_region_left",
+          "points": [
+            [
+              793,
+              0
+            ],
+            [
+              797,
+              272
+            ]
+          ],
+          "kind": "visible_material_or_occlusion_boundary",
+          "uncertainty_px": 4,
+          "note": "Below this the person interrupts the boundary; no hidden continuation inferred; 3D surface identity unresolved."
+        },
+        {
+          "name": "central_member_black_jamb_left",
+          "points": [
+            [
+              929,
+              500
+            ],
+            [
+              929,
+              700
+            ],
+            [
+              929,
+              900
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "central_member_black_jamb_beige_side",
+          "points": [
+            [
+              943,
+              100
+            ],
+            [
+              943,
+              500
+            ],
+            [
+              943,
+              900
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "beige_to_curtain_transition",
+          "points": [
+            [
+              1023,
+              300
+            ],
+            [
+              1023,
+              500
+            ],
+            [
+              1022,
+              700
+            ],
+            [
+              1026,
+              900
+            ]
+          ],
+          "kind": "soft_radiometric_transition",
+          "uncertainty_px": 10,
+          "note": "The curtain overlaps and shadows the member. Not a physical pillar right edge."
+        },
+        {
+          "name": "curtain_outer_right",
+          "points": [
+            [
+              1151,
+              100
+            ],
+            [
+              1162,
+              500
+            ],
+            [
+              1171,
+              900
+            ],
+            [
+              1174,
+              1050
+            ]
+          ],
+          "kind": "occluding_silhouette",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_mid_black_left",
+          "points": [
+            [
+              1317,
+              500
+            ],
+            [
+              1325,
+              700
+            ],
+            [
+              1332,
+              900
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_mid_black_right",
+          "points": [
+            [
+              1327,
+              500
+            ],
+            [
+              1335,
+              700
+            ],
+            [
+              1343,
+              900
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_wall_jamb_left",
+          "points": [
+            [
+              1485,
+              500
+            ],
+            [
+              1496,
+              700
+            ],
+            [
+              1507,
+              900
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_wall_jamb_right",
+          "points": [
+            [
+              1492,
+              500
+            ],
+            [
+              1503,
+              700
+            ],
+            [
+              1514,
+              900
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_window_side_top",
+          "points": [
+            [
+              1015,
+              46
+            ],
+            [
+              1139,
+              0
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 3,
+          "note": ""
+        },
+        {
+          "name": "track_window_side_bottom",
+          "points": [
+            [
+              1021,
+              60
+            ],
+            [
+              1181,
+              0
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 3,
+          "note": ""
+        },
+        {
+          "name": "track_room_side_top",
+          "points": [
+            [
+              1137,
+              49
+            ],
+            [
+              1290,
+              0
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 3,
+          "note": ""
+        },
+        {
+          "name": "track_room_side_bottom",
+          "points": [
+            [
+              1143,
+              64
+            ],
+            [
+              1323,
+              0
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 3,
+          "note": ""
+        },
+        {
+          "name": "bed_far_board_upper_envelope",
+          "points": [
+            [
+              1537,
+              970
+            ],
+            [
+              1537,
+              887
+            ],
+            [
+              1540,
+              847
+            ],
+            [
+              1548,
+              819
+            ],
+            [
+              1565,
+              794
+            ],
+            [
+              1585,
+              780
+            ],
+            [
+              1624,
+              766
+            ],
+            [
+              1700,
+              755
+            ],
+            [
+              1824,
+              739
+            ],
+            [
+              1900,
+              733
+            ],
+            [
+              1919,
+              732
+            ]
+          ],
+          "kind": "rigid_silhouette_guardrail",
+          "uncertainty_px": 5,
+          "note": "Existing native-source trace independently visually consistent. These are not corresponding mesh vertices."
+        },
+        {
+          "name": "beige_light_ochre_transition_example",
+          "points": [
+            [
+              981,
+              500
+            ]
+          ],
+          "kind": "surface_shading_or_crease",
+          "uncertainty_px": 5,
+          "note": "Noticeable face transition, but not a silhouette. Do not declare wall thickness from this alone."
+        }
+      ]
+    },
+    "H": {
+      "source": "recovery/native_old/hospital/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "features": [
+        {
+          "name": "main_window_mid_black_left",
+          "points": [
+            [
+              978,
+              300
+            ],
+            [
+              979,
+              500
+            ],
+            [
+              980,
+              700
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "main_window_mid_black_right",
+          "points": [
+            [
+              1002,
+              300
+            ],
+            [
+              1003,
+              500
+            ],
+            [
+              1005,
+              700
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "pale_gray_region_left",
+          "points": [
+            [
+              1362,
+              0
+            ],
+            [
+              1373,
+              400
+            ],
+            [
+              1383,
+              787
+            ]
+          ],
+          "kind": "visible_material_or_occlusion_boundary",
+          "uncertainty_px": 4,
+          "note": "3D surface identity unresolved. Sofa hides lower continuation."
+        },
+        {
+          "name": "central_member_black_jamb_left",
+          "points": [
+            [
+              1525,
+              300
+            ],
+            [
+              1534,
+              500
+            ],
+            [
+              1543,
+              700
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "central_member_black_jamb_beige_side",
+          "points": [
+            [
+              1541,
+              300
+            ],
+            [
+              1550,
+              500
+            ],
+            [
+              1559,
+              700
+            ],
+            [
+              1564,
+              800
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "beige_to_curtain_transition",
+          "points": [
+            [
+              1631,
+              300
+            ],
+            [
+              1640,
+              500
+            ],
+            [
+              1651,
+              700
+            ]
+          ],
+          "kind": "soft_radiometric_transition",
+          "uncertainty_px": 12,
+          "note": "Sofa interrupts below; not a physical pillar right edge."
+        },
+        {
+          "name": "curtain_outer_right",
+          "points": [
+            [
+              1801,
+              300
+            ],
+            [
+              1814,
+              500
+            ],
+            [
+              1827,
+              700
+            ],
+            [
+              1840,
+              900
+            ]
+          ],
+          "kind": "occluding_silhouette",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "beige_light_ochre_transition_example",
+          "points": [
+            [
+              1593,
+              500
+            ]
+          ],
+          "kind": "surface_shading_or_crease",
+          "uncertainty_px": 5,
+          "note": "Noticeable face transition, but not a silhouette."
+        }
+      ],
+      "not_visible": [
+        "Overhead track is clipped out, so H cannot directly validate track attachment.",
+        "Near-wall right window jamb and bed far board are offscreen."
+      ]
+    },
+    "F": {
+      "source": "recovery/native_old/hospital/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "features": [
+        {
+          "name": "curtain_outer_right",
+          "points": [
+            [
+              394,
+              500
+            ],
+            [
+              381,
+              700
+            ],
+            [
+              367,
+              900
+            ],
+            [
+              357,
+              1050
+            ]
+          ],
+          "kind": "occluding_silhouette",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_mid_black_left",
+          "points": [
+            [
+              573,
+              500
+            ],
+            [
+              564,
+              700
+            ],
+            [
+              555,
+              900
+            ],
+            [
+              548,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_mid_black_right",
+          "points": [
+            [
+              583,
+              500
+            ],
+            [
+              574,
+              700
+            ],
+            [
+              566,
+              900
+            ],
+            [
+              560,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_wall_jamb_left",
+          "points": [
+            [
+              736,
+              700
+            ],
+            [
+              732,
+              900
+            ],
+            [
+              729,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "window_right_group_wall_jamb_right",
+          "points": [
+            [
+              743,
+              700
+            ],
+            [
+              739,
+              900
+            ],
+            [
+              736,
+              1050
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 2,
+          "note": ""
+        },
+        {
+          "name": "track_window_side_top",
+          "points": [
+            [
+              254,
+              61
+            ],
+            [
+              662,
+              0
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 3,
+          "note": "Earlier native trace independently visually consistent; no surface-label assumption."
+        },
+        {
+          "name": "track_window_side_bottom",
+          "points": [
+            [
+              260,
+              79
+            ],
+            [
+              799,
+              0
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 3,
+          "note": ""
+        },
+        {
+          "name": "track_room_side_top",
+          "points": [
+            [
+              405,
+              91
+            ],
+            [
+              1086,
+              0
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 3,
+          "note": ""
+        },
+        {
+          "name": "track_room_side_bottom",
+          "points": [
+            [
+              406,
+              109
+            ],
+            [
+              1214,
+              0
+            ]
+          ],
+          "kind": "hard_edge",
+          "uncertainty_px": 3,
+          "note": ""
+        }
+      ]
+    }
+  },
+  "constraints_and_limits": {
+    "bed_eye": "Use the user-established lying-patient camera: an eye/head region over the head end of the mattress, viewing toward the far board/TV and rotating left toward the window. The sources support near-mattress foreground perspective; they do not expose the pillow/head-end boundary or measure eye height, pitch, roll, or exact head translation. Do not claim that any independently adjusted generic room camera is a validated patient camera merely because a board silhouette fits.",
+    "depth": "There is no supplied calibrated translation baseline, fixed focal metadata, exposed column cross-section, or known metric landmark. Nearby A/B and F differ mainly in viewing direction; G/H likewise may be predominantly head-look changes. Pure rotation cannot triangulate depth. The images constrain line incidence, screen silhouettes, ordering, and candidate projection consistency, not a unique metric column depth, rail offset, or room size. Even a joint fit retains global scale ambiguity without one real measurement.",
+    "bounded_candidates": "Keep a family of source-consistent column/rail-depth candidates and report sensitivity. Strong constraints are black jamb locations, drape outer silhouettes, rail line directions, and visible bed/TV contours. The concealed pillar edge and track contact should be bounded priors rather than measured points.",
+    "recommended_missing_view": "Most informative is a native oblique view from a genuinely laterally displaced and slightly raised eye position, with unchanged/known FOV and preferably a measured baseline. It should show the beige member on both sides of the gathered curtain, the actual track endpoint/contact, a black window jamb, and a mattress/head-end or bed-rail corner simultaneously. A further pan from the same eye point will not resolve hidden depth. If only one patient-position shot is possible, tilt down enough to include pillow/head end and both mattress side edges while retaining the pillar; this chiefly resolves the bed-eye relationship, not hidden column depth."
+  },
+  "mandatory_exclusions": [
+    "Exclude all beige_to_curtain_transition and beige_light_ochre_transition_example features from physical-corner fitting.",
+    "Do not treat a pale_gray_region_left boundary as a named wall/pillar/mullion vertex without further physical evidence.",
+    "No pseudo-correspondence from same polyline index, same sampled row, or top image clipping.",
+    "Do not use person/HUD silhouettes, exterior skyline points, or hidden edge continuation as fixed room geometry.",
+    "Curved bed-board contour samples are silhouette guardrails, not mesh vertex correspondences."
+  ]
+}
