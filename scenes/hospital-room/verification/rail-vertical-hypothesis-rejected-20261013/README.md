@@ -1,0 +1,23 @@
+# 病房顶轨同X上下替换：已拒绝历史假设
+
+状态：`REJECTED_DO_NOT_ADOPT`。真实归档提交日期使用当前日期，不回填历史提交日期。
+
+仅归档6份已拒绝历史试验原件：1份BLEND、报告、参数、QA和2脚本。固定D及未校准机位，只将下杆与6短杆改为同X上下替换；A训练改善，B/G留出恶化，拒绝直接替换。不否定用户确认的横向拉帘功能与未知支承结构。没有为本批运行新全帧渲染或叠图，不能冒用此前D的RAW。报告与参数为v1，定稿索引为v2；报告末段遗留“主索引/报告v1”引用，以已验证主索引/报告v2为准，原报告字节不改。
+
+本版6份原件共6,243,147字节已在接收端实际物化并校验SHA256/Git blob。模型、PNG、脚本和报告均原字节；1份JSON仅清理检索ID或继承绝对路径，保留原件SHA、仓库SHA与逐字段派生记录。原delivery_manifest仍描述输入原件；仓库文件哈希以archive-verification.json为准。
+
+[原报告](%E9%A1%B6%E8%BD%A8%E6%9C%80%E5%B0%8F%E5%81%87%E8%AE%BE_%E6%8B%92%E7%BB%9D%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%90%8E%E7%BB%AD%E5%8F%96%E8%AF%81_20261013.txt) · [原件与仓库核验](archive-verification.json) · [JSON派生记录](metadata-derivations.json) · [依赖固定提交](dependencies.json)
+
+本CLI归档没有重跑Blender、拟合、渲染或浏览器采集。原报告技术检查是该研究阶段的记录，不冒称本次重跑或模型来源验收。CURRENT及以前全部原文件保持不变；本次Git合并只是独立归档。
+
+2026-10-13后续约束（单列，不重写旧研究结论）：用户明确病人躺床第一视角；顶部横向拉帘、带百叶的两侧落地窗及中央柱状构件接杆。柱的承重性、准确截面/尺寸与灰条身份未证实。现有D及自由像素拟合机位与床垫关系存在冲突，后续诊断不能标为通过。
+
+## 模型原件
+
+- [hospital_rail_vertical_hypothesis_REJECTED.blend](hospital_rail_vertical_hypothesis_REJECTED.blend) · SHA256 `06cae9e5b6d64e8dc66cfbebce773a41a3a8bec8e5fdbae9309fddc02561a15d`
+
+## 本版全部PNG图证
+
+图证直接展开，未折叠。撤回的旧标题板单独标记，只保留历史，不作当前几何精度证据。
+
+本批没有新增PNG或渲染。此前诊断图属于此前版本，不冒充本模型输出。

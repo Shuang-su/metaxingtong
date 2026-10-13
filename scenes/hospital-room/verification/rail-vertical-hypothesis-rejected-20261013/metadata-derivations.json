@@ -1,0 +1,22 @@
+{
+  "scope": "Only transfer IDs and inherited absolute metadata paths are cleaned in JSON. Source hashes retained; numeric geometry, model and PNG bytes unchanged. Original source bytes are preserved in the receiving local Library materialization. Source delivery_manifest hashes describe originals; repository hashes are in archive-verification.json.",
+  "files": [
+    {
+      "filename": "rail_vertical_hypothesis_parameters.json",
+      "source_sha256": "bf8b34518723b2ccf7b6cecc5f9701c1b7db51691dba68b4e82208cab35ffda6",
+      "repository_sha256": "243ceb24166906a7ffced1812cea821563d4f93f108887090e67cf58628d2de7",
+      "changes": [
+        {
+          "pointer": "/source_refs/A/library_file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "a0aa3db5df3114af8a94618b215e3901d7de1f2d444fdc65a0c0b9596ecfe1ac"
+        },
+        {
+          "pointer": "/source_refs/B/library_file_id",
+          "operation": "remove_transfer_identifier",
+          "original_value_sha256": "42437dc9cd6e90a5ac2c56dda1ef39df403dbd0bda29741a9d1ac75e58099601"
+        }
+      ]
+    }
+  ]
+}

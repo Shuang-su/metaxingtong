@@ -1,0 +1,18 @@
+from pathlib import Path
+import json,numpy as np,os
+from scipy.optimize import minimize_scalar
+from scipy.spatial.transform import Rotation
+R=Path(__file__).parent;DATA=Path(os.environ.get('HOSPITAL_CAMERA_AUDIT_DIR',str(R.parent/'hospital_native_comparison_20261013')));W=json.load(open(DATA/'frozen_d_world_geometry.json'));free=json.load(open(DATA/'camera_candidates.json'));cams={k:free['cameras'][k] for k in ['A','B']};cams['G']=W['cameras']['MATCH_G_Sofa_And_Bed']
+UP='Curtain rail • forward overhead beam';LOW=UP+'.001';a=np.array(W['objects'][UP]['vertices']);b=np.array(W['objects'][LOW]['vertices']);up=(a.min(0)+a.max(0))/2;low=(b.min(0)+b.max(0))/2;ya=a[:,1].min();yb=a[:,1].max()
+obs={'A':{'upper':[[400,74.5],[500,63],[600,51],[700,39.5],[800,27.5],[900,15.5]],'lower':[[400,125],[500,114],[600,103],[700,92],[800,80.5],[900,69],[1000,58],[1100,47],[1200,36],[1300,24.5]]},'B':{'upper':[[400,31],[500,20],[600,9.5]],'lower':[[400,84.5],[500,74],[600,63],[700,52.5],[800,41.5],[1000,19.5],[1100,9.5]]},'G':{'upper':[[1050,40.5],[1100,22],[1150,6]],'lower':[[1150,52.5],[1200,35.5],[1300,4]]}}
+
+def project(k,p):
+ c=cams[k];m=np.array(c['matrix_world']);rt=m[:3,:3]/np.linalg.norm(m[:3,:3],axis=0);q=(np.asarray(p)-m[:3,3])@rt;f=c['lens_mm']/36*1920;return np.c_[960-f*q[:,0]/q[:,2],540+f*q[:,1]/q[:,2]]
+def residual(k,center,points):
+ q=project(k,[[center[0],ya,center[2]],[center[0],yb,center[2]]]);v=q[1]-q[0];n=np.array([-v[1],v[0]])/np.linalg.norm(v);return (np.array(points)-q[0])@n
+sol=minimize_scalar(lambda d:np.mean(residual('A',up+np.array([0,0,-d]),obs['A']['lower'])**2),bounds=(.02,.30),method='bounded',options={'xatol':1e-12});drop=sol.x
+result={'status':'rail_vertical_hypothesis; local geometry diagnosis only, not accepted patient camera or full reconstruction','baseline_blend_sha256':W['source_sha256'],'fit_view':'A only','holdout_views':['B','G'],'frozen':'upper bar, every non-rail object, materials, lighting, all camera parameters','observations':obs,'annotation_method':'Native source dark bar bands inspected at listed x columns; use bar centerlines, not light or shadow boundaries. Approximate 3 px picking / beam-section uncertainty. Connector direction checked independently against room verticals.','upper_center':up.tolist(),'baseline_lower_center':low.tolist(),'candidate_lower_center':(up+np.array([0,0,-drop])).tolist(),'fitted_vertical_drop_D_units':float(drop),'bar_length_along_Y_D_units':float(yb-ya),'model_world_X_lateral_gap_removed':float(low[0]-up[0]),'cameras':cams,'views':{}}
+for k,o in obs.items():
+ e0=residual(k,low,o['lower']);e1=residual(k,up+[0,0,-drop],o['lower']);eu=residual(k,up,o['upper']);result['views'][k]={'split':'train' if k=='A' else 'holdout','upper_unchanged_rms_px':float(np.sqrt(np.mean(eu**2))),'baseline_lower_rms_px':float(np.sqrt(np.mean(e0**2))),'vertical_hypothesis_lower_rms_px':float(np.sqrt(np.mean(e1**2))),'baseline_residuals_px':e0.tolist(),'candidate_residuals_px':e1.tolist()}
+result['limits']=['Free A/B camera hypotheses are semantically inconsistent with lying on D mattress; fixed here only to isolate this local structural hypothesis.','G uses unchanged existing D camera, also uncalibrated.','Visible lower-bar left start is occluded by curtain and is not treated as a physical endpoint.','No claim that rail is an IV track rather than curtain/suspension hardware.','Vertical drop is conditional on D scale/cameras; not physical measurement.','The whole bed support topology remains unresolved.']
+(R/'rail_vertical_hypothesis_parameters.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print(json.dumps(result,ensure_ascii=False,indent=2))
