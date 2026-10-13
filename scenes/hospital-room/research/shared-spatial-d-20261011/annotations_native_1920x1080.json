@@ -1,0 +1,2331 @@
+{
+  "coordinate_system": "Native image pixels; x right, y down; origin upper-left; image size 1920x1080.",
+  "method": "Independent manual visible-contour annotation after full-frame and coordinate-grid inspection. Coordinates are approximate with per-feature uncertainty. No Blender rendering or source image modification performed. Subsequent correction: two left-arm groups are invalid mixed light/geometry proxies, preserved only for provenance; see per-feature status.",
+  "exclusions": [
+    "Person/character",
+    "TV content",
+    "Heart-rate HUD",
+    "Exterior skyline objects",
+    "Hidden continuation behind occluders"
+  ],
+  "correspondence_warning": "Polylines are independently sampled and MUST NOT be paired by array index. Hard lines are visible edge evidence; labels do not establish mesh-surface identity. Rounded bed contours and upholstery are silhouette proxies, never exact geometric vertex correspondences.",
+  "images": {
+    "F": {
+      "source": "hospital_object_audit/refs/extracted/hospital/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "candidate_b": "hospital_object_audit/candidate_b/F_B_legacy_camera_1920_denoised.png"
+    },
+    "G": {
+      "source": "hospital_object_audit/refs/extracted/hospital/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "candidate_b": "hospital_object_audit/candidate_b/G_B_legacy_camera_1920_denoised.png"
+    },
+    "H": {
+      "source": "hospital_object_audit/refs/extracted/hospital/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "candidate_b": "hospital_object_audit/candidate_b/H_B_legacy_camera_1920.png"
+    }
+  },
+  "features": [
+    {
+      "id": "F_bed_upper_left_visible",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "rigid_silhouette",
+      "semantic": "bed_upper_left_visible",
+      "source_xy": [
+        [
+          807,
+          1079
+        ],
+        [
+          813,
+          1044
+        ],
+        [
+          824,
+          1020
+        ],
+        [
+          840,
+          997
+        ],
+        [
+          862,
+          983
+        ],
+        [
+          904,
+          974
+        ],
+        [
+          984,
+          960
+        ],
+        [
+          1085,
+          947
+        ],
+        [
+          1172,
+          940
+        ],
+        [
+          1280,
+          937
+        ],
+        [
+          1380,
+          936
+        ],
+        [
+          1495,
+          940
+        ],
+        [
+          1565,
+          946
+        ],
+        [
+          1590,
+          951
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          789,
+          1028
+        ],
+        [
+          790,
+          974
+        ],
+        [
+          795,
+          956
+        ],
+        [
+          812,
+          940
+        ],
+        [
+          842,
+          928
+        ],
+        [
+          884,
+          920
+        ],
+        [
+          950,
+          917
+        ],
+        [
+          1200,
+          914
+        ],
+        [
+          1490,
+          917
+        ],
+        [
+          1540,
+          922
+        ],
+        [
+          1582,
+          933
+        ],
+        [
+          1612,
+          950
+        ],
+        [
+          1630,
+          973
+        ],
+        [
+          1638,
+          999
+        ],
+        [
+          1641,
+          1040
+        ]
+      ],
+      "pixel_uncertainty": 5,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Source is interrupted by the HUD at x~1593–1852. Candidate is smaller and left-shifted in projection; both are clipped below. Do not pair equally spaced polyline indices."
+    },
+    {
+      "id": "F_bed_upper_right_visible",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "rigid_silhouette",
+      "semantic": "bed_upper_right_visible",
+      "source_xy": [
+        [
+          1853,
+          975
+        ],
+        [
+          1884,
+          981
+        ],
+        [
+          1919,
+          990
+        ]
+      ],
+      "candidate_b_xy": null,
+      "pixel_uncertainty": 6,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Only this short terminal run is visible beyond the HUD; no invented bridge across HUD."
+    },
+    {
+      "id": "F_central_recess_visible_envelope",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "rigid_silhouette",
+      "semantic": "central_recess_visible_envelope",
+      "source_xy": [
+        [
+          1132,
+          1079
+        ],
+        [
+          1135,
+          1061
+        ],
+        [
+          1142,
+          1049
+        ],
+        [
+          1154,
+          1041
+        ],
+        [
+          1172,
+          1037
+        ],
+        [
+          1270,
+          1038
+        ],
+        [
+          1410,
+          1039
+        ],
+        [
+          1545,
+          1040
+        ],
+        [
+          1571,
+          1047
+        ],
+        [
+          1583,
+          1059
+        ],
+        [
+          1590,
+          1079
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1040,
+          1029
+        ],
+        [
+          1040,
+          994
+        ],
+        [
+          1351,
+          994
+        ],
+        [
+          1352,
+          1032
+        ]
+      ],
+      "pixel_uncertainty": 5,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Source rounded recess bottom is off-screen. Candidate lower portion is mattress-occluded. Candidate corners are nearly square. This is the visible outer recess envelope, not a true vertex list."
+    },
+    {
+      "id": "G_bed_upper_visible",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "rigid_silhouette",
+      "semantic": "bed_upper_visible",
+      "source_xy": [
+        [
+          1537,
+          970
+        ],
+        [
+          1537,
+          887
+        ],
+        [
+          1540,
+          847
+        ],
+        [
+          1548,
+          819
+        ],
+        [
+          1565,
+          794
+        ],
+        [
+          1585,
+          780
+        ],
+        [
+          1624,
+          766
+        ],
+        [
+          1700,
+          755
+        ],
+        [
+          1824,
+          739
+        ],
+        [
+          1900,
+          733
+        ],
+        [
+          1919,
+          732
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1547,
+          941
+        ],
+        [
+          1545,
+          884
+        ],
+        [
+          1549,
+          870
+        ],
+        [
+          1562,
+          857
+        ],
+        [
+          1588,
+          847
+        ],
+        [
+          1624,
+          842
+        ],
+        [
+          1710,
+          841
+        ],
+        [
+          1820,
+          843
+        ],
+        [
+          1919,
+          845
+        ]
+      ],
+      "pixel_uncertainty": 5,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Source upper contour rises appreciably to the right; candidate nearly flattens. At x1700 B is ~86 px lower; at x1900 ~112 px lower."
+    },
+    {
+      "id": "G_central_recess_visible_envelope",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "rigid_silhouette",
+      "semantic": "central_recess_visible_envelope",
+      "source_xy": [
+        [
+          1919,
+          819
+        ],
+        [
+          1884,
+          819
+        ],
+        [
+          1864,
+          823
+        ],
+        [
+          1851,
+          834
+        ],
+        [
+          1846,
+          849
+        ],
+        [
+          1849,
+          866
+        ],
+        [
+          1860,
+          878
+        ],
+        [
+          1882,
+          884
+        ],
+        [
+          1919,
+          884
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1919,
+          920
+        ],
+        [
+          1792,
+          915
+        ],
+        [
+          1791,
+          948
+        ]
+      ],
+      "pixel_uncertainty": 5,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Only left rounded end and top/bottom continuations to right frame edge are visible in source. Candidate top-left recess edge is at ~1792,915 and lower is mattress-occluded. No closed-source polygon inferred."
+    },
+    {
+      "id": "G_sofa_left_back_outer_visible",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "soft_silhouette",
+      "semantic": "sofa_left_back_outer_visible",
+      "source_xy": [
+        [
+          217,
+          1025
+        ],
+        [
+          205,
+          977
+        ],
+        [
+          196,
+          916
+        ],
+        [
+          207,
+          904
+        ],
+        [
+          227,
+          894
+        ],
+        [
+          309,
+          885
+        ],
+        [
+          422,
+          879
+        ],
+        [
+          528,
+          875
+        ],
+        [
+          588,
+          877
+        ],
+        [
+          602,
+          882
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          157,
+          1079
+        ],
+        [
+          151,
+          947
+        ],
+        [
+          149,
+          920
+        ],
+        [
+          154,
+          898
+        ],
+        [
+          170,
+          885
+        ],
+        [
+          199,
+          882
+        ],
+        [
+          403,
+          873
+        ],
+        [
+          555,
+          866
+        ],
+        [
+          573,
+          868
+        ],
+        [
+          584,
+          880
+        ],
+        [
+          593,
+          917
+        ],
+        [
+          629,
+          1079
+        ]
+      ],
+      "pixel_uncertainty": 7,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Source x~604–803 back is person-occluded. Do not fill that interval or use the person contour. Candidate left envelope reaches ~47 px farther left."
+    },
+    {
+      "id": "G_sofa_right_back_outer_visible",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "soft_silhouette",
+      "semantic": "sofa_right_back_outer_visible",
+      "source_xy": [
+        [
+          802,
+          868
+        ],
+        [
+          839,
+          864
+        ],
+        [
+          868,
+          866
+        ],
+        [
+          879,
+          870
+        ],
+        [
+          893,
+          916
+        ],
+        [
+          908,
+          966
+        ],
+        [
+          921,
+          1021
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          594,
+          919
+        ],
+        [
+          597,
+          887
+        ],
+        [
+          610,
+          872
+        ],
+        [
+          630,
+          868
+        ],
+        [
+          847,
+          857
+        ],
+        [
+          866,
+          859
+        ],
+        [
+          879,
+          876
+        ],
+        [
+          897,
+          935
+        ],
+        [
+          939,
+          1069
+        ]
+      ],
+      "pixel_uncertainty": 7,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Source only right outer portion is unobscured; candidate left edge is visible because no person. Do not index-pair these traces."
+    },
+    {
+      "id": "G_sofa_right_arm_upper_outer",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "soft_silhouette",
+      "semantic": "sofa_right_arm_upper_outer",
+      "source_xy": [
+        [
+          907,
+          941
+        ],
+        [
+          972,
+          946
+        ],
+        [
+          1070,
+          951
+        ],
+        [
+          1149,
+          955
+        ],
+        [
+          1162,
+          961
+        ],
+        [
+          1164,
+          1070
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          929,
+          1000
+        ],
+        [
+          925,
+          978
+        ],
+        [
+          932,
+          960
+        ],
+        [
+          950,
+          951
+        ],
+        [
+          978,
+          948
+        ],
+        [
+          1065,
+          960
+        ],
+        [
+          1177,
+          977
+        ],
+        [
+          1196,
+          985
+        ],
+        [
+          1205,
+          1003
+        ],
+        [
+          1205,
+          1079
+        ]
+      ],
+      "pixel_uncertainty": 7,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Source outer arm reaches ~1164; B ~1205. Profile is soft and shading-dependent."
+    },
+    {
+      "id": "G_sofa_left_arm_visible",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "soft_silhouette",
+      "semantic": "sofa_left_arm_visible",
+      "source_xy": [
+        [
+          145,
+          1014
+        ],
+        [
+          184,
+          1020
+        ],
+        [
+          193,
+          1030
+        ]
+      ],
+      "candidate_b_xy": null,
+      "pixel_uncertainty": 8,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Short rear/top segment is visible next to green chair; near front arm top also visible below."
+    },
+    {
+      "id": "G_sofa_left_arm_front_visible",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "invalid_mixed_sunlight_internal_edge_and_exterior_samples",
+      "semantic": "sofa_left_arm_front_visible",
+      "source_xy": [
+        [
+          218,
+          1042
+        ],
+        [
+          255,
+          1039
+        ],
+        [
+          303,
+          1044
+        ],
+        [
+          366,
+          1057
+        ],
+        [
+          420,
+          1058
+        ],
+        [
+          432,
+          1068
+        ],
+        [
+          435,
+          1079
+        ]
+      ],
+      "candidate_b_xy": null,
+      "pixel_uncertainty": 8,
+      "optimization_use": "EXCLUDE_FROM_GEOMETRY_FIT_AND_VALIDATION",
+      "note": "Visible upper/front envelope only; left extent partly chair-occluded.",
+      "pre_erratum_metadata": {
+        "kind": "soft_silhouette",
+        "optimization_use": "silhouette_guardrail",
+        "note": "Visible upper/front envelope only; left extent partly chair-occluded.",
+        "pixel_uncertainty": 8
+      },
+      "valid_for_geometry_metrics": false,
+      "annotation_review_status": "WITHDRAWN",
+      "erratum_reason": "INVALID mixed edge identity: first four points follow the large sunlight patch; [420,1058] follows the small sunlight patch. Only the short right-front edge near [432,1068] to [435,1079] is potentially a valid exterior contour; final point is frame-clipped. Entire former 328.2 -> 264.0 px aggregate is withdrawn."
+    },
+    {
+      "id": "H_sofa_back_upper_and_right_outer",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "soft_silhouette",
+      "semantic": "sofa_back_upper_and_right_outer",
+      "source_xy": [
+        [
+          872,
+          909
+        ],
+        [
+          862,
+          870
+        ],
+        [
+          855,
+          824
+        ],
+        [
+          863,
+          814
+        ],
+        [
+          882,
+          804
+        ],
+        [
+          963,
+          798
+        ],
+        [
+          1080,
+          795
+        ],
+        [
+          1196,
+          793
+        ],
+        [
+          1209,
+          797
+        ],
+        [
+          1216,
+          808
+        ],
+        [
+          1228,
+          798
+        ],
+        [
+          1332,
+          791
+        ],
+        [
+          1440,
+          787
+        ],
+        [
+          1481,
+          788
+        ],
+        [
+          1493,
+          793
+        ],
+        [
+          1506,
+          826
+        ],
+        [
+          1527,
+          867
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          865,
+          884
+        ],
+        [
+          849,
+          822
+        ],
+        [
+          850,
+          807
+        ],
+        [
+          858,
+          792
+        ],
+        [
+          875,
+          785
+        ],
+        [
+          1100,
+          787
+        ],
+        [
+          1196,
+          789
+        ],
+        [
+          1210,
+          801
+        ],
+        [
+          1219,
+          826
+        ],
+        [
+          1228,
+          809
+        ],
+        [
+          1240,
+          798
+        ],
+        [
+          1255,
+          795
+        ],
+        [
+          1440,
+          797
+        ],
+        [
+          1485,
+          797
+        ],
+        [
+          1496,
+          803
+        ],
+        [
+          1508,
+          830
+        ],
+        [
+          1551,
+          911
+        ]
+      ],
+      "pixel_uncertainty": 7,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Source left-side lower endpoint is interrupted by the green chair. Top cushion positions mostly agree within 10–20 px, so fitting only these tops can conceal arm/seat depth errors."
+    },
+    {
+      "id": "H_sofa_right_arm_visible_outer",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "soft_silhouette",
+      "semantic": "sofa_right_arm_visible_outer",
+      "source_xy": [
+        [
+          1527,
+          868
+        ],
+        [
+          1612,
+          876
+        ],
+        [
+          1723,
+          884
+        ],
+        [
+          1806,
+          889
+        ],
+        [
+          1837,
+          895
+        ],
+        [
+          1844,
+          1014
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1552,
+          936
+        ],
+        [
+          1554,
+          914
+        ],
+        [
+          1563,
+          898
+        ],
+        [
+          1580,
+          894
+        ],
+        [
+          1807,
+          891
+        ],
+        [
+          1829,
+          897
+        ],
+        [
+          1842,
+          911
+        ],
+        [
+          1851,
+          961
+        ],
+        [
+          1853,
+          1079
+        ]
+      ],
+      "pixel_uncertainty": 7,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Source bottom edge is mattress-occluded. B arm lower extent runs past bottom of view; avoid claiming a physical depth from this alone."
+    },
+    {
+      "id": "H_sofa_left_arm_visible_upper_front",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "invalid_mixed_sunlight_internal_edge_and_exterior_samples",
+      "semantic": "sofa_left_arm_visible_upper_front",
+      "source_xy": [
+        [
+          873,
+          920
+        ],
+        [
+          912,
+          931
+        ],
+        [
+          960,
+          938
+        ],
+        [
+          1045,
+          954
+        ],
+        [
+          1073,
+          960
+        ],
+        [
+          1088,
+          977
+        ],
+        [
+          1092,
+          1010
+        ],
+        [
+          1093,
+          1079
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          626,
+          894
+        ],
+        [
+          649,
+          885
+        ],
+        [
+          713,
+          879
+        ],
+        [
+          778,
+          879
+        ],
+        [
+          816,
+          885
+        ]
+      ],
+      "pixel_uncertainty": 9,
+      "optimization_use": "EXCLUDE_FROM_GEOMETRY_FIT_AND_VALIDATION",
+      "note": "B visible orange lobe behind chair is projected much farther left; source upper/front arm is visible to the right of chair. This is a diagnostic mismatch, not established point correspondence. Requires geometry/depth inspection.",
+      "pre_erratum_metadata": {
+        "kind": "soft_silhouette",
+        "optimization_use": "silhouette_guardrail",
+        "note": "B visible orange lobe behind chair is projected much farther left; source upper/front arm is visible to the right of chair. This is a diagnostic mismatch, not established point correspondence. Requires geometry/depth inspection.",
+        "pixel_uncertainty": 9
+      },
+      "valid_for_geometry_metrics": false,
+      "annotation_review_status": "WITHDRAWN",
+      "erratum_reason": "INVALID mixed edge identity: [960,938] is inside the large sunlight patch and [1073,960] is in the small sunlight patch. [873,920],[912,931],[1045,954] are internal arm/back junction or surface samples, not full-arm exterior silhouette. [1088,977],[1092,1010],[1093,1079] are visible front-right contour samples, final point frame-clipped. Entire former 181.4 -> 181.4 px aggregate is withdrawn."
+    },
+    {
+      "id": "F_no_sofa_lower_left",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "exclusion_region",
+      "semantic": "no_sofa_lower_left",
+      "source_xy": [
+        [
+          0,
+          760
+        ],
+        [
+          480,
+          760
+        ],
+        [
+          480,
+          1079
+        ],
+        [
+          0,
+          1079
+        ],
+        [
+          0,
+          760
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          0,
+          804
+        ],
+        [
+          46,
+          938
+        ],
+        [
+          55,
+          925
+        ],
+        [
+          80,
+          913
+        ],
+        [
+          407,
+          906
+        ],
+        [
+          436,
+          911
+        ],
+        [
+          453,
+          928
+        ],
+        [
+          458,
+          954
+        ],
+        [
+          450,
+          1079
+        ],
+        [
+          0,
+          1079
+        ],
+        [
+          0,
+          804
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "class_exclusion_mask",
+      "note": "Source contains window/curtain only throughout this region. Candidate has obvious sofa intrusion. This exclusion is class-specific: no sofa, not empty space."
+    },
+    {
+      "id": "F_central_thin_dark_divider_left",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "central_thin_dark_divider_left",
+      "source_xy": [
+        [
+          585,
+          279
+        ],
+        [
+          573,
+          600
+        ],
+        [
+          548,
+          1079
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          511,
+          438
+        ],
+        [
+          497,
+          700
+        ],
+        [
+          477,
+          1046
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Source central thin dark divider left border; candidate line is broad dark-envelope left edge, not asserted same surface."
+    },
+    {
+      "id": "F_central_thin_dark_divider_right",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "central_thin_dark_divider_right",
+      "source_xy": [
+        [
+          597,
+          291
+        ],
+        [
+          586,
+          600
+        ],
+        [
+          561,
+          1079
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          599,
+          484
+        ],
+        [
+          585,
+          700
+        ],
+        [
+          567,
+          1037
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Pair of source borders measures visible thin dark strip, while candidate envelope includes a side/reveal."
+    },
+    {
+      "id": "G_main_opening_thin_dark_divider_left",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "main_opening_thin_dark_divider_left",
+      "source_xy": [
+        [
+          395,
+          0
+        ],
+        [
+          371,
+          400
+        ],
+        [
+          346,
+          879
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          303,
+          226
+        ],
+        [
+          292,
+          400
+        ],
+        [
+          267,
+          878
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Candidate broad dark left boundary includes reveal and is not a true mullion-width correspondence."
+    },
+    {
+      "id": "G_main_opening_thin_dark_divider_right",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "main_opening_thin_dark_divider_right",
+      "source_xy": [
+        [
+          420,
+          0
+        ],
+        [
+          398,
+          400
+        ],
+        [
+          374,
+          879
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          430,
+          268
+        ],
+        [
+          420,
+          400
+        ],
+        [
+          402,
+          872
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Source y400 width~27; candidate full dark envelope~128. Cross-view material-adjacency label only."
+    },
+    {
+      "id": "H_main_opening_thin_dark_divider_left",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "main_opening_thin_dark_divider_left",
+      "source_xy": [
+        [
+          978,
+          0
+        ],
+        [
+          979,
+          400
+        ],
+        [
+          980,
+          797
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          912,
+          200
+        ],
+        [
+          910,
+          400
+        ],
+        [
+          909,
+          784
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "H source main divider is nearly vertical; B left boundary is outer edge of a broad dark reveal."
+    },
+    {
+      "id": "H_main_opening_thin_dark_divider_right",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "main_opening_thin_dark_divider_right",
+      "source_xy": [
+        [
+          1001,
+          0
+        ],
+        [
+          1004,
+          400
+        ],
+        [
+          1006,
+          797
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1034,
+          235
+        ],
+        [
+          1037,
+          400
+        ],
+        [
+          1038,
+          785
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Source y400 width~25; B full dark envelope~127. Do not shrink mullion alone without inspecting side/reveal."
+    },
+    {
+      "id": "G_opening2_glass_to_lightgray_plane",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "opening2_glass_to_lightgray_plane",
+      "source_xy": [
+        [
+          793,
+          0
+        ],
+        [
+          797,
+          272
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          718,
+          350
+        ],
+        [
+          711,
+          852
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Source lower continuation is obscured by person then sofa. No continuation through person. This is NOT assigned to a model mullion ID."
+    },
+    {
+      "id": "G_opening2_right_thin_dark_edge_left",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "opening2_right_thin_dark_edge_left",
+      "source_xy": [
+        [
+          929,
+          430
+        ],
+        [
+          931,
+          700
+        ],
+        [
+          931,
+          942
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          792,
+          367
+        ],
+        [
+          798,
+          700
+        ],
+        [
+          800,
+          858
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Source light-gray plane lies left of this border. B matching opening-end candidate is around x800, not automatically x950."
+    },
+    {
+      "id": "G_opening2_right_thin_dark_edge_right",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "opening2_right_thin_dark_edge_right",
+      "source_xy": [
+        [
+          943,
+          430
+        ],
+        [
+          944,
+          700
+        ],
+        [
+          945,
+          943
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          804,
+          371
+        ],
+        [
+          804,
+          700
+        ],
+        [
+          804,
+          858
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Source warm ivory pier lies to right, then curtain. Model semantic identity requires 3D check."
+    },
+    {
+      "id": "G_ivory_pier_to_curtain_visible",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "soft_silhouette",
+      "semantic": "ivory_pier_to_curtain_visible",
+      "source_xy": [
+        [
+          1018,
+          78
+        ],
+        [
+          1020,
+          500
+        ],
+        [
+          1027,
+          947
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1004,
+          110
+        ],
+        [
+          1008,
+          500
+        ],
+        [
+          1012,
+          950
+        ]
+      ],
+      "pixel_uncertainty": 5,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Curtain edge is soft/occluding, not a wall-pier physical corner."
+    },
+    {
+      "id": "H_opening2_glass_to_lightgray_plane",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "opening2_glass_to_lightgray_plane",
+      "source_xy": [
+        [
+          1362,
+          0
+        ],
+        [
+          1373,
+          400
+        ],
+        [
+          1383,
+          787
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1301,
+          300
+        ],
+        [
+          1305,
+          500
+        ],
+        [
+          1313,
+          793
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Source is a visible material/occlusion boundary; no claim about what the light-gray plane is in 3D."
+    },
+    {
+      "id": "H_opening2_right_thin_dark_edge_left",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "opening2_right_thin_dark_edge_left",
+      "source_xy": [
+        [
+          1525,
+          0
+        ],
+        [
+          1537,
+          400
+        ],
+        [
+          1550,
+          868
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1394,
+          317
+        ],
+        [
+          1404,
+          600
+        ],
+        [
+          1413,
+          795
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Source gray plane to thin black edge. B candidate opening right edge is far left of source at this border."
+    },
+    {
+      "id": "H_opening2_right_thin_dark_edge_right",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "opening2_right_thin_dark_edge_right",
+      "source_xy": [
+        [
+          1540,
+          0
+        ],
+        [
+          1552,
+          400
+        ],
+        [
+          1567,
+          870
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1400,
+          319
+        ],
+        [
+          1408,
+          600
+        ],
+        [
+          1417,
+          796
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "line_only",
+      "note": "Source thin black edge to warm ivory strip. Do not confuse with far right edge of ivory pier."
+    },
+    {
+      "id": "H_ivory_pier_to_curtain_visible",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "soft_silhouette",
+      "semantic": "ivory_pier_to_curtain_visible",
+      "source_xy": [
+        [
+          1603,
+          0
+        ],
+        [
+          1621,
+          400
+        ],
+        [
+          1642,
+          878
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1608,
+          40
+        ],
+        [
+          1628,
+          400
+        ],
+        [
+          1645,
+          891
+        ]
+      ],
+      "pixel_uncertainty": 5,
+      "optimization_use": "silhouette_guardrail",
+      "note": "Curtain is an occluder. Its boundary agrees much better than opening2 glass/dark boundaries."
+    },
+    {
+      "id": "F_blinds_lower_window1_visible",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_window1_visible",
+      "source_xy": [
+        [
+          407,
+          327
+        ],
+        [
+          576,
+          434
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          431,
+          372
+        ],
+        [
+          600,
+          485
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Last visible slat lower envelope. Source/B differ by roughly 40–60 px vertically at common x."
+    },
+    {
+      "id": "F_blinds_lower_window2_visible",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_window2_visible",
+      "source_xy": [
+        [
+          596,
+          441
+        ],
+        [
+          744,
+          542
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          607,
+          490
+        ],
+        [
+          760,
+          582
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Right opening slat bottom; stop at opening edge, exclude hanging cords."
+    },
+    {
+      "id": "G_blinds_lower_leftmost_visible",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_leftmost_visible",
+      "source_xy": [
+        [
+          0,
+          160
+        ],
+        [
+          347,
+          254
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          0,
+          147
+        ],
+        [
+          397,
+          246
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Source run ends near x347 while B extends to397. Line slope itself has useful independent evidence."
+    },
+    {
+      "id": "G_blinds_lower_middle_visible_before_person",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_middle_visible_before_person",
+      "source_xy": [
+        [
+          464,
+          302
+        ],
+        [
+          694,
+          379
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          428,
+          271
+        ],
+        [
+          803,
+          371
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Source right continuation is person-occluded. Do not fit through the person."
+    },
+    {
+      "id": "G_blinds_lower_middle_visible_after_person",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_middle_visible_after_person",
+      "source_xy": [
+        [
+          850,
+          419
+        ],
+        [
+          936,
+          448
+        ]
+      ],
+      "candidate_b_xy": null,
+      "pixel_uncertainty": 5,
+      "optimization_use": "line_only",
+      "note": "Short run visible beyond person. Same slat envelope identification is moderate confidence."
+    },
+    {
+      "id": "G_blinds_lower_right_window1",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_right_window1",
+      "source_xy": [
+        [
+          1154,
+          245
+        ],
+        [
+          1306,
+          330
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1177,
+          413
+        ],
+        [
+          1338,
+          465
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Large G vertical mismatch ~130–170 px, while F is ~40–60. Shared blind/rail/camera contradiction."
+    },
+    {
+      "id": "G_blinds_lower_right_window2",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_right_window2",
+      "source_xy": [
+        [
+          1323,
+          335
+        ],
+        [
+          1487,
+          417
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1345,
+          470
+        ],
+        [
+          1497,
+          514
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Lower slat envelope; not pull cord."
+    },
+    {
+      "id": "H_blinds_lower_left_visible",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_left_visible",
+      "source_xy": [
+        [
+          270,
+          82
+        ],
+        [
+          947,
+          205
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          292,
+          59
+        ],
+        [
+          1012,
+          220
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Left source start is IV-bag occluded; no extrapolated line through bag."
+    },
+    {
+      "id": "H_blinds_lower_right_visible",
+      "view": "H",
+      "geometry": "polyline",
+      "kind": "thin_rigid_edge",
+      "semantic": "blinds_lower_right_visible",
+      "source_xy": [
+        [
+          1030,
+          245
+        ],
+        [
+          1531,
+          345
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1033,
+          240
+        ],
+        [
+          1401,
+          319
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "line_only",
+      "note": "Source slats continue farther right to thin dark edge; B opening/slat right edge ends ~130 px left."
+    },
+    {
+      "id": "F_rail_window_side_upper_edge",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "rail_window_side_upper_edge",
+      "source_xy": [
+        [
+          254,
+          61
+        ],
+        [
+          662,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          432,
+          79
+        ],
+        [
+          1208,
+          0
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "line_only",
+      "note": "Visible source end cap at x254. B start at432 is curtain-occluded, not a cap correspondence."
+    },
+    {
+      "id": "F_rail_window_side_lower_edge",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "rail_window_side_lower_edge",
+      "source_xy": [
+        [
+          260,
+          79
+        ],
+        [
+          799,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          432,
+          99
+        ],
+        [
+          1361,
+          0
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "line_only",
+      "note": "At x600 source lower edge~30, B~80: B around50px lower."
+    },
+    {
+      "id": "F_rail_room_side_upper_edge",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "rail_room_side_upper_edge",
+      "source_xy": [
+        [
+          405,
+          91
+        ],
+        [
+          1086,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          444,
+          115
+        ],
+        [
+          1538,
+          0
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "line_only",
+      "note": "Source left terminus is near curtain and not guaranteed cut cap."
+    },
+    {
+      "id": "F_rail_room_side_lower_edge",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "rail_room_side_lower_edge",
+      "source_xy": [
+        [
+          406,
+          109
+        ],
+        [
+          1214,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          447,
+          137
+        ],
+        [
+          1657,
+          11
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "line_only",
+      "note": "At x800 source~54, B~100, around46px down."
+    },
+    {
+      "id": "G_rail_window_side_upper_edge",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "rail_window_side_upper_edge",
+      "source_xy": [
+        [
+          1015,
+          46
+        ],
+        [
+          1139,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1158,
+          176
+        ],
+        [
+          1819,
+          0
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "line_only",
+      "note": "Source far rail cut cap visible; B origin comes from curtain boundary."
+    },
+    {
+      "id": "G_rail_window_side_lower_edge",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "rail_window_side_lower_edge",
+      "source_xy": [
+        [
+          1021,
+          60
+        ],
+        [
+          1181,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1158,
+          191
+        ],
+        [
+          1887,
+          0
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "line_only",
+      "note": "Large vertical offset. No invented source off-screen extension."
+    },
+    {
+      "id": "G_rail_room_side_upper_edge",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "rail_room_side_upper_edge",
+      "source_xy": [
+        [
+          1137,
+          49
+        ],
+        [
+          1290,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1174,
+          199
+        ],
+        [
+          1919,
+          10
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "line_only",
+      "note": "At x1200 source upper~29–32, B upper~192: roughly160px lower."
+    },
+    {
+      "id": "G_rail_room_side_lower_edge",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_line",
+      "semantic": "rail_room_side_lower_edge",
+      "source_xy": [
+        [
+          1143,
+          64
+        ],
+        [
+          1323,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1177,
+          216
+        ],
+        [
+          1919,
+          27
+        ]
+      ],
+      "pixel_uncertainty": 2,
+      "optimization_use": "line_only",
+      "note": "Source rail pair leaves top frame; B remains inside frame."
+    },
+    {
+      "id": "F_rail_first_fully_visible_crossbar_outline",
+      "view": "F",
+      "geometry": "polyline",
+      "kind": "hard_component",
+      "semantic": "rail_first_fully_visible_crossbar_outline",
+      "source_xy": [
+        [
+          555,
+          31
+        ],
+        [
+          567,
+          29
+        ],
+        [
+          567,
+          65
+        ],
+        [
+          576,
+          74
+        ],
+        [
+          561,
+          79
+        ],
+        [
+          554,
+          72
+        ],
+        [
+          555,
+          31
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          592,
+          80
+        ],
+        [
+          607,
+          78
+        ],
+        [
+          624,
+          108
+        ],
+        [
+          612,
+          113
+        ],
+        [
+          592,
+          80
+        ]
+      ],
+      "pixel_uncertainty": 3,
+      "optimization_use": "diagnostic_only",
+      "note": "Nearest fully visible connector between rail pair in each image. The word nearest is image-local: do not assume identical longitudinal index without geometry verification."
+    },
+    {
+      "id": "G_rail_nearest_curtain_hanger_outline",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_component",
+      "semantic": "rail_nearest_curtain_hanger_outline",
+      "source_xy": [
+        [
+          1074,
+          31
+        ],
+        [
+          1086,
+          27
+        ],
+        [
+          1086,
+          68
+        ],
+        [
+          1075,
+          73
+        ],
+        [
+          1074,
+          31
+        ]
+      ],
+      "candidate_b_xy": null,
+      "pixel_uncertainty": 3,
+      "optimization_use": "diagnostic_only",
+      "note": "Visible vertical piece hangs behind curtain; it is NOT confirmed a full connector to room-side rail."
+    },
+    {
+      "id": "G_rail_top_clipped_connector_visible",
+      "view": "G",
+      "geometry": "polyline",
+      "kind": "hard_component",
+      "semantic": "rail_top_clipped_connector_visible",
+      "source_xy": [
+        [
+          1260,
+          0
+        ],
+        [
+          1272,
+          0
+        ],
+        [
+          1281,
+          16
+        ],
+        [
+          1268,
+          21
+        ],
+        [
+          1260,
+          16
+        ],
+        [
+          1260,
+          0
+        ]
+      ],
+      "candidate_b_xy": [
+        [
+          1282,
+          143
+        ],
+        [
+          1299,
+          139
+        ],
+        [
+          1323,
+          169
+        ],
+        [
+          1311,
+          174
+        ],
+        [
+          1282,
+          143
+        ]
+      ],
+      "pixel_uncertainty": 4,
+      "optimization_use": "diagnostic_only",
+      "note": "Source connector is top-clipped. Candidate is nearest fully visible connector; longitudinal identity is not proven. Do not fit this as a hard point pair."
+    }
+  ],
+  "annotation_errata": [
+    {
+      "id": "D_LEFT_ARM_ANNOTATION_ERRATUM_20261011",
+      "status": "WITHDRAWN_INVALID_GEOMETRY_METRICS",
+      "trigger": "Subsequent independent native-pixel review by sofa-arm E worker, confirmed with original H/G native frames and same-coordinate crops. Sunlight patches must not be scored as geometry silhouettes.",
+      "affected_feature_ids": [
+        "G_sofa_left_arm_front_visible",
+        "H_sofa_left_arm_visible_upper_front"
+      ],
+      "affected_numbers_not_for_reuse": [
+        "G B 328.2px -> D 264.0px",
+        "H B 181.4px -> D 181.4px"
+      ],
+      "model_render_changes": false,
+      "fit_parameters_changed": false,
+      "training_impact": "These left-arm groups were held out, not used by the frozen D solver. Shared model/cameras and fit parameters are unchanged.",
+      "replacement_metrics": "None in D. Retained geometric subsets require independent re-annotation and re-evaluation; do not reuse the former aggregate as a baseline.",
+      "qualitative_scope": "H real front-right exterior contour is near x1090, whereas D arm maximum x is about836: gross visible displacement remains qualitative evidence, not the withdrawn contour statistic. G qualitative comparison does not inherit any quantitative support from the invalid group.",
+      "reviewed_sources": {
+        "G": {
+          "native_seconds": 1116.180816,
+          "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474"
+        },
+        "H": {
+          "native_seconds": 1101.728114,
+          "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48"
+        }
+      }
+    }
+  ]
+}

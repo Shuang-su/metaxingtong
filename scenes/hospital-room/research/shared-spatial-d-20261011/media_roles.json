@@ -1,0 +1,579 @@
+{
+  "candidate_status": "NOT_ACCEPTED",
+  "final_main_view": "G_D_full_1920_16spp_raw_oidn.png",
+  "final_png_count": 13,
+  "source_originals_duplicated": false,
+  "all_direct50_checks": [
+    {
+      "view": "F",
+      "max_integer_difference": 0,
+      "different_pixels": 0
+    },
+    {
+      "view": "G",
+      "max_integer_difference": 0,
+      "different_pixels": 0
+    },
+    {
+      "view": "H",
+      "max_integer_difference": 0,
+      "different_pixels": 0
+    }
+  ],
+  "media": [
+    {
+      "path": "F_D_full_1920_16spp_raw.png",
+      "role": "actual_fullframe_cycles_raw",
+      "sha256": "00c146ee9720f3d796f37c5e4eaf4beb73304c51620f9a8d46b506ba35838f30",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "F",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1823.678156,
+      "associated_source_seconds": 1823.678156,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "samples": 16,
+      "adaptive_sampling": false,
+      "denoise": false,
+      "geometry_variant": "D"
+    },
+    {
+      "path": "F_D_full_1920_16spp_raw_oidn.png",
+      "role": "normal_view_fullframe_display",
+      "sha256": "7526b96c83962e5c978b83a5b54a1e31142d3f77d79b2852030797a831ecd5fc",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "F",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1823.678156,
+      "associated_source_seconds": 1823.678156,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "input": "F_D_full_1920_16spp_raw.png",
+      "input_sha256": "00c146ee9720f3d796f37c5e4eaf4beb73304c51620f9a8d46b506ba35838f30",
+      "samples_in_input": 16,
+      "denoise": "OIDN2.5.1 RT LDR sRGB high CPU 2threads",
+      "main_view": false
+    },
+    {
+      "path": "F_source_D_direct50_UNREGISTERED.png",
+      "role": "direct50_native_plus_raw",
+      "sha256": "4b675f79958d252c50ccc58d657977d568f1118c4d0411ced420ec93b052b18a",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "F",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1823.678156,
+      "associated_source_seconds": 1823.678156,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "inputs": [
+        "hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "F_D_full_1920_16spp_raw.png"
+      ],
+      "formula": "floor((source uint16 + raw uint16)/2)",
+      "pixel_exact": true,
+      "samples_in_render": 16
+    },
+    {
+      "path": "F_source_B_D_fullframe_review.png",
+      "role": "source_baseline_candidate_and_direct50_fullframe_panel",
+      "sha256": "82274bd819fa5b38626e2e7cbb180e398fe04d5b01ba510ba9d330e221113c59",
+      "dimensions": [
+        1920,
+        1250
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "F",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1823.678156,
+      "associated_source_seconds": 1823.678156,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "cell_size": [
+        960,
+        540
+      ],
+      "display_scale": 0.5,
+      "baseline_raw": "F_B_same_camera_16spp_raw.png",
+      "baseline_raw_sha256": "3283eafd19f3a4dbc4f393cca1f2d0401d48b2272b7151afa72fdbd260f2240b",
+      "baseline_display": "F_B_same_camera_16spp_oidn.png",
+      "baseline_display_sha256": "90209a8eb17e01b361847d774cabf8de0486c303e0479d2c58bcf1ef4c9d02dd",
+      "cell_inputs": [
+        "hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+        "F_B_same_camera_16spp_oidn.png",
+        "F_D_full_1920_16spp_raw_oidn.png",
+        "F_source_D_direct50_UNREGISTERED.png"
+      ],
+      "panel_size": [
+        1920,
+        1250
+      ],
+      "labels": true,
+      "source_image_resize_only_for_display": true
+    },
+    {
+      "path": "G_D_full_1920_16spp_raw.png",
+      "role": "actual_fullframe_cycles_raw",
+      "sha256": "d361e0cde96165edae9c03c55016b07b638e38f5d117597ec428daa55c21ade4",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "G",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1116.180816,
+      "associated_source_seconds": 1116.180816,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "samples": 16,
+      "adaptive_sampling": false,
+      "denoise": false,
+      "geometry_variant": "D"
+    },
+    {
+      "path": "G_D_full_1920_16spp_raw_oidn.png",
+      "role": "normal_view_fullframe_display",
+      "sha256": "ee21196b5da482aa758f9f454488a242a5525ae8823559979a0a7824127f1802",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "G",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1116.180816,
+      "associated_source_seconds": 1116.180816,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "input": "G_D_full_1920_16spp_raw.png",
+      "input_sha256": "d361e0cde96165edae9c03c55016b07b638e38f5d117597ec428daa55c21ade4",
+      "samples_in_input": 16,
+      "denoise": "OIDN2.5.1 RT LDR sRGB high CPU 2threads",
+      "main_view": true
+    },
+    {
+      "path": "G_source_D_direct50_UNREGISTERED.png",
+      "role": "direct50_native_plus_raw",
+      "sha256": "24eabdad53f8d19a6b4100af019d2421873346e1f59258a80069ae6887b2b0f4",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "G",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1116.180816,
+      "associated_source_seconds": 1116.180816,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "inputs": [
+        "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "G_D_full_1920_16spp_raw.png"
+      ],
+      "formula": "floor((source uint16 + raw uint16)/2)",
+      "pixel_exact": true,
+      "samples_in_render": 16
+    },
+    {
+      "path": "G_source_B_D_fullframe_review.png",
+      "role": "source_baseline_candidate_and_direct50_fullframe_panel",
+      "sha256": "c0bf61ca0165c3badd47d046e62f15332391c1c4ca14c8dfc0a81ce9a604daa0",
+      "dimensions": [
+        1920,
+        1250
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "G",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1116.180816,
+      "associated_source_seconds": 1116.180816,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "cell_size": [
+        960,
+        540
+      ],
+      "display_scale": 0.5,
+      "baseline_raw": "G_B_same_camera_16spp_raw.png",
+      "baseline_raw_sha256": "a90c22d2403ecf26bf3b3cef998f571973ff5f6bab6b51a7d36c202404bc4e43",
+      "baseline_display": "G_B_same_camera_16spp_oidn.png",
+      "baseline_display_sha256": "07d16ee596b4971097422d68fe46e067f5a9dce279eb881795c00768381ce53a",
+      "cell_inputs": [
+        "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "G_B_same_camera_16spp_oidn.png",
+        "G_D_full_1920_16spp_raw_oidn.png",
+        "G_source_D_direct50_UNREGISTERED.png"
+      ],
+      "panel_size": [
+        1920,
+        1250
+      ],
+      "labels": true,
+      "source_image_resize_only_for_display": true,
+      "caption_scope": "Qualitative only; old328.2->264.0px aggregate invalid and withdrawn.",
+      "caption_revision": {
+        "status": "CURRENT_CAPTION_CORRECTED",
+        "current_path": "G_source_B_D_fullframe_review.png",
+        "old_library_version": 0,
+        "current_library_version_after_replace": 1,
+        "old_sha256": "d5baba50dc5f7fed9e9c505b6e0564f3cf2b4806c9070331353f4a4941035804",
+        "new_sha256": "c0bf61ca0165c3badd47d046e62f15332391c1c4ca14c8dfc0a81ce9a604daa0",
+        "historical_invalid_path": "G_source_B_D_fullframe_review_SUPERSEDED_UNVERIFIED_ARM_CLAIM.png",
+        "changed_pixel_bounds_xyxy": [
+          524,
+          53,
+          912,
+          72
+        ],
+        "all_four_image_cells_pixel_identical": true,
+        "all_pixels_outside_header_y49_to78_identical": true,
+        "caption_only": true
+      }
+    },
+    {
+      "path": "H_D_full_1920_16spp_raw.png",
+      "role": "actual_fullframe_cycles_raw",
+      "sha256": "9e288cdb92bd466ddf3bcfd02a682e3bcb035d7ee4145113da3b0165b818e021",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "H",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1101.728114,
+      "associated_source_seconds": 1101.728114,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "samples": 16,
+      "adaptive_sampling": false,
+      "denoise": false,
+      "geometry_variant": "D"
+    },
+    {
+      "path": "H_D_full_1920_16spp_raw_oidn.png",
+      "role": "normal_view_fullframe_display",
+      "sha256": "8e5f5944c804ab966058bd5360bc92bd11161f70d13d32a2cf00628b2b438ea8",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "H",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1101.728114,
+      "associated_source_seconds": 1101.728114,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "input": "H_D_full_1920_16spp_raw.png",
+      "input_sha256": "9e288cdb92bd466ddf3bcfd02a682e3bcb035d7ee4145113da3b0165b818e021",
+      "samples_in_input": 16,
+      "denoise": "OIDN2.5.1 RT LDR sRGB high CPU 2threads",
+      "main_view": false
+    },
+    {
+      "path": "H_source_D_direct50_UNREGISTERED.png",
+      "role": "direct50_native_plus_raw",
+      "sha256": "b4abe0820f561e0dbf7885f464d3e97c3d4c8a515dce23ab46cda34f01019438",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "H",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1101.728114,
+      "associated_source_seconds": 1101.728114,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "inputs": [
+        "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "H_D_full_1920_16spp_raw.png"
+      ],
+      "formula": "floor((source uint16 + raw uint16)/2)",
+      "pixel_exact": true,
+      "samples_in_render": 16
+    },
+    {
+      "path": "H_source_B_D_fullframe_review.png",
+      "role": "source_baseline_candidate_and_direct50_fullframe_panel",
+      "sha256": "56730e9e4d51664d8ee6e585b5403da9a71db43542011052c6187feae46c098c",
+      "dimensions": [
+        1920,
+        1250
+      ],
+      "registration": false,
+      "warp": false,
+      "crop": null,
+      "source_view": "H",
+      "source_bv": "BV1GqXMByE1s",
+      "source_seconds": 1101.728114,
+      "associated_source_seconds": 1101.728114,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only.",
+      "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "source_fixed_url": "https://github.com/Shuang-su/metaxingtong/blob/920f8240b957933cdb604e01c8db58fe3a8e9c24/scenes/hospital-room/verification/native-hd-source-recapture-20261011/frames/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "new_source_capture": false,
+      "cell_size": [
+        960,
+        540
+      ],
+      "display_scale": 0.5,
+      "baseline_raw": "H_B_full_1920_16spp_raw.png",
+      "baseline_raw_sha256": "098bc08d63b72492744a0041c007dd21b53f53066c63225a1be1bb059e1b72a7",
+      "baseline_display": "H_B_full_1920_16spp_raw_oidn.png",
+      "baseline_display_sha256": "fc2519012c62a8f44be7f35d7ce332879e6e087e21c04f8179f9b282c7d1fa16",
+      "cell_inputs": [
+        "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "H_B_full_1920_16spp_raw_oidn.png",
+        "H_D_full_1920_16spp_raw_oidn.png",
+        "H_source_D_direct50_UNREGISTERED.png"
+      ],
+      "panel_size": [
+        1920,
+        1250
+      ],
+      "labels": true,
+      "source_image_resize_only_for_display": true,
+      "left_arm_metric_status": "WITHDRAWN; no current numerical arm error.",
+      "caption_revision": {
+        "status": "CURRENT_CAPTION_CORRECTED",
+        "current_path": "H_source_B_D_fullframe_review.png",
+        "old_library_version": 0,
+        "current_library_version_after_replace": 1,
+        "old_sha256": "3fb264aac1551daf50381b7b82960cb87b439baee703370f4b77ee65bda3bab9",
+        "new_sha256": "56730e9e4d51664d8ee6e585b5403da9a71db43542011052c6187feae46c098c",
+        "historical_invalid_path": "H_source_B_D_fullframe_review_SUPERSEDED_INVALID_181PX.png",
+        "changed_pixel_bounds_xyxy": [
+          16,
+          53,
+          1041,
+          72
+        ],
+        "all_four_image_cells_pixel_identical": true,
+        "all_pixels_outside_header_y49_to78_identical": true,
+        "caption_only": true
+      }
+    },
+    {
+      "path": "H_B_full_1920_16spp_raw.png",
+      "role": "fresh_matching_sample_baseline_control",
+      "source_view": "H",
+      "source_seconds": 1101.728114,
+      "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "samples": 16,
+      "adaptive_sampling": false,
+      "denoise": false,
+      "baseline_model": "hospital_endboard_shape_B.blend",
+      "camera_changed": false,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "098bc08d63b72492744a0041c007dd21b53f53066c63225a1be1bb059e1b72a7",
+      "registration": false,
+      "warp": false,
+      "associated_source_seconds": 1101.728114,
+      "render_video_seconds": null,
+      "render_video_time_note": "Synthetic still render; associated_source_seconds identifies comparison source only."
+    }
+  ],
+  "annotation_erratum": {
+    "id": "D_LEFT_ARM_ANNOTATION_ERRATUM_20261011",
+    "status": "WITHDRAWN_INVALID_GEOMETRY_METRICS",
+    "trigger": "Subsequent independent native-pixel review by sofa-arm E worker, confirmed with original H/G native frames and same-coordinate crops. Sunlight patches must not be scored as geometry silhouettes.",
+    "affected_feature_ids": [
+      "G_sofa_left_arm_front_visible",
+      "H_sofa_left_arm_visible_upper_front"
+    ],
+    "affected_numbers_not_for_reuse": [
+      "G B 328.2px -> D 264.0px",
+      "H B 181.4px -> D 181.4px"
+    ],
+    "model_render_changes": false,
+    "fit_parameters_changed": false,
+    "training_impact": "These left-arm groups were held out, not used by the frozen D solver. Shared model/cameras and fit parameters are unchanged.",
+    "replacement_metrics": "None in D. Retained geometric subsets require independent re-annotation and re-evaluation; do not reuse the former aggregate as a baseline.",
+    "qualitative_scope": "H real front-right exterior contour is near x1090, whereas D arm maximum x is about836: gross visible displacement remains qualitative evidence, not the withdrawn contour statistic. G qualitative comparison does not inherit any quantitative support from the invalid group.",
+    "reviewed_sources": {
+      "G": {
+        "native_seconds": 1116.180816,
+        "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474"
+      },
+      "H": {
+        "native_seconds": 1101.728114,
+        "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48"
+      }
+    }
+  },
+  "caption_revisions": [
+    {
+      "status": "CURRENT_CAPTION_CORRECTED",
+      "current_path": "G_source_B_D_fullframe_review.png",
+      "old_library_version": 0,
+      "current_library_version_after_replace": 1,
+      "old_sha256": "d5baba50dc5f7fed9e9c505b6e0564f3cf2b4806c9070331353f4a4941035804",
+      "new_sha256": "c0bf61ca0165c3badd47d046e62f15332391c1c4ca14c8dfc0a81ce9a604daa0",
+      "historical_invalid_path": "G_source_B_D_fullframe_review_SUPERSEDED_UNVERIFIED_ARM_CLAIM.png",
+      "changed_pixel_bounds_xyxy": [
+        524,
+        53,
+        912,
+        72
+      ],
+      "all_four_image_cells_pixel_identical": true,
+      "all_pixels_outside_header_y49_to78_identical": true,
+      "caption_only": true
+    },
+    {
+      "status": "CURRENT_CAPTION_CORRECTED",
+      "current_path": "H_source_B_D_fullframe_review.png",
+      "old_library_version": 0,
+      "current_library_version_after_replace": 1,
+      "old_sha256": "3fb264aac1551daf50381b7b82960cb87b439baee703370f4b77ee65bda3bab9",
+      "new_sha256": "56730e9e4d51664d8ee6e585b5403da9a71db43542011052c6187feae46c098c",
+      "historical_invalid_path": "H_source_B_D_fullframe_review_SUPERSEDED_INVALID_181PX.png",
+      "changed_pixel_bounds_xyxy": [
+        16,
+        53,
+        1041,
+        72
+      ],
+      "all_four_image_cells_pixel_identical": true,
+      "all_pixels_outside_header_y49_to78_identical": true,
+      "caption_only": true
+    }
+  ],
+  "historical_invalid_media": [
+    {
+      "path": "G_source_B_D_fullframe_review_SUPERSEDED_UNVERIFIED_ARM_CLAIM.png",
+      "sha256": "d5baba50dc5f7fed9e9c505b6e0564f3cf2b4806c9070331353f4a4941035804",
+      "role": "SUPERSEDED_ERRONEOUS_CAPTION_NOT_CURRENT_EVIDENCE",
+      "invalid_caption": "left sofa arm remains severely displaced",
+      "superseded_by": "G_source_B_D_fullframe_review.png"
+    },
+    {
+      "path": "H_source_B_D_fullframe_review_SUPERSEDED_INVALID_181PX.png",
+      "sha256": "3fb264aac1551daf50381b7b82960cb87b439baee703370f4b77ee65bda3bab9",
+      "role": "SUPERSEDED_ERRONEOUS_CAPTION_NOT_CURRENT_EVIDENCE",
+      "invalid_caption": "left sofa arm ~181 px error",
+      "superseded_by": "H_source_B_D_fullframe_review.png"
+    }
+  ],
+  "historical_invalid_png_count": 2
+}
