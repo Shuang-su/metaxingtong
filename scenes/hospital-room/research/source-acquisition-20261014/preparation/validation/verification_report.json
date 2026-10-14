@@ -1,0 +1,21 @@
+{
+  "status": "preparation_tool_tests_completed",
+  "test_scope": "Synthetic input contract and directed screen-space calculations only; no actual hospital observations were scored.",
+  "unittest_command": "python -m unittest discover -s hospital_anchor_preparation_20261014/validation -p 'test_*.py' -v",
+  "unittest_tests_run": 71,
+  "unittest_failures": 0,
+  "unittest_errors": 0,
+  "unittest_exit_code": 0,
+  "syntax_check_command": "python -m py_compile hospital_anchor_preparation_20261014/validation/directed_anchor_validator.py hospital_anchor_preparation_20261014/validation/test_directed_anchor_validator.py",
+  "syntax_check": "passed",
+  "schema_check": "Draft202012Validator.check_schema and structural validation of all four JSON examples passed; installed jsonschema used only for this optional development check, not required at runtime.",
+  "invalid_wrong_branch_example": "Structurally valid JSON; required semantic lint rejects association_mismatch, as tested.",
+  "model_validation": "not_performed",
+  "legacy_J1_status": "REJECTED",
+  "fitting_performed": false,
+  "hospital_rendering_performed": false,
+  "legacy_audit_scripts_executed": false,
+  "git_actions_performed": false,
+  "library_actions_performed": false,
+  "runtime_dependencies": "Python 3.9+ standard library and the adjacent anchor_input.schema.json only"
+}

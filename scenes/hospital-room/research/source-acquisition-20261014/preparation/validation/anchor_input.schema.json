@@ -1,0 +1,434 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hospital-anchor-preparation:input:1.0",
+  "title": "Explicit native-frame branch-specific screen-space observation contract",
+  "description": "Structural schema only. Run directed_anchor_validator.py lint for cross-record, identity, branch, axis, visibility, and physical-point semantic rules. No model validation is implied.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "dataset_kind",
+    "frames",
+    "observations",
+    "projections",
+    "comparisons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "dataset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataset_kind": {
+      "type": "string",
+      "enum": [
+        "synthetic_example",
+        "real_observations"
+      ]
+    },
+    "frames": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "projections": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/$defs/projection"
+      }
+    },
+    "comparisons": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/$defs/comparison"
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame_id",
+        "source_sha256",
+        "source_filename",
+        "actual_dimensions",
+        "coordinate_transform",
+        "native_decode_status",
+        "pixel_coordinate_convention"
+      ],
+      "properties": {
+        "frame_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_filename": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[^/\\\\]+$"
+        },
+        "actual_dimensions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "width_px",
+            "height_px"
+          ],
+          "properties": {
+            "width_px": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10000000
+            },
+            "height_px": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10000000
+            }
+          }
+        },
+        "coordinate_transform": {
+          "type": "string",
+          "const": "none"
+        },
+        "native_decode_status": {
+          "type": "string",
+          "const": "native_decoded"
+        },
+        "pixel_coordinate_convention": {
+          "type": "string",
+          "const": "top_left_x_right_y_down"
+        }
+      }
+    },
+    "xy": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number",
+        "minimum": -1000000000,
+        "maximum": 1000000000
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observation_id",
+        "source",
+        "object_id",
+        "semantic_part",
+        "contour_branch",
+        "evidence_kind",
+        "identity_state",
+        "identity_evidence",
+        "geometry_use_allowed",
+        "source_xy",
+        "uncertainty_px",
+        "visibility",
+        "sample_order",
+        "point_identity"
+      ],
+      "properties": {
+        "observation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "semantic_part": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contour_branch": {
+          "type": "string",
+          "enum": [
+            "upper",
+            "lower",
+            "left",
+            "right",
+            "physical_edge",
+            "physical_vertex",
+            "soft_shading"
+          ]
+        },
+        "evidence_kind": {
+          "type": "string",
+          "enum": [
+            "silhouette",
+            "physical_edge",
+            "physical_vertex",
+            "soft_shading"
+          ]
+        },
+        "identity_state": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "conditional",
+            "unresolved"
+          ]
+        },
+        "identity_evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geometry_use_allowed": {
+          "type": "boolean"
+        },
+        "source_xy": {
+          "$ref": "#/$defs/xy"
+        },
+        "uncertainty_px": {
+          "type": "number",
+          "minimum": 1e-09,
+          "maximum": 1000000000
+        },
+        "visibility": {
+          "type": "string",
+          "enum": [
+            "visible",
+            "occluded",
+            "unknown"
+          ]
+        },
+        "sample_order": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1000000000
+        },
+        "point_identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state",
+            "physical_point_id",
+            "evidence"
+          ],
+          "properties": {
+            "state": {
+              "type": "string",
+              "enum": [
+                "not_asserted",
+                "verified"
+              ]
+            },
+            "physical_point_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "evidence": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "polyline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "polyline_id",
+        "vertices_xy",
+        "segment_ids",
+        "segment_visibility"
+      ],
+      "properties": {
+        "polyline_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "vertices_xy": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/xy"
+          }
+        },
+        "segment_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "segment_visibility": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "visible",
+              "occluded",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "projection_id",
+        "source",
+        "object_id",
+        "semantic_part",
+        "contour_branch",
+        "evidence_kind",
+        "identity_state",
+        "identity_evidence",
+        "geometry_use_allowed",
+        "polylines"
+      ],
+      "properties": {
+        "projection_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "semantic_part": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contour_branch": {
+          "type": "string",
+          "enum": [
+            "upper",
+            "lower",
+            "left",
+            "right",
+            "physical_edge",
+            "physical_vertex",
+            "soft_shading"
+          ]
+        },
+        "evidence_kind": {
+          "type": "string",
+          "enum": [
+            "silhouette",
+            "physical_edge",
+            "physical_vertex",
+            "soft_shading"
+          ]
+        },
+        "identity_state": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "conditional",
+            "unresolved"
+          ]
+        },
+        "identity_evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geometry_use_allowed": {
+          "type": "boolean"
+        },
+        "polylines": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/polyline"
+          }
+        }
+      }
+    },
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "comparison_id",
+        "observation_id",
+        "projection_id",
+        "method",
+        "cross_section_axis",
+        "segment_id"
+      ],
+      "properties": {
+        "comparison_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "projection_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "directed_cross_section",
+            "named_segment_distance"
+          ]
+        },
+        "cross_section_axis": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "x",
+            "y",
+            null
+          ]
+        },
+        "segment_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
