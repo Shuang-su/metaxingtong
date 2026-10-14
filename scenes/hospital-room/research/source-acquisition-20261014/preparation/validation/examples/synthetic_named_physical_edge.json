@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "synthetic_named_verified_physical_edge",
+  "dataset_kind": "synthetic_example",
+  "frames": [
+    {
+      "frame_id": "SYNTHETIC_A",
+      "source_sha256": "31477cf0c8805f3075df355b92976792ec59f36af910bd2b7cda2696c56fc9cd",
+      "source_filename": "SYNTHETIC_A_NOT_A_REAL_SOURCE.png",
+      "actual_dimensions": {
+        "width_px": 200,
+        "height_px": 120
+      },
+      "coordinate_transform": "none",
+      "native_decode_status": "native_decoded",
+      "pixel_coordinate_convention": "top_left_x_right_y_down"
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "upper_sample_0",
+      "source": {
+        "frame_id": "SYNTHETIC_A",
+        "source_sha256": "31477cf0c8805f3075df355b92976792ec59f36af910bd2b7cda2696c56fc9cd",
+        "source_filename": "SYNTHETIC_A_NOT_A_REAL_SOURCE.png",
+        "actual_dimensions": {
+          "width_px": 200,
+          "height_px": 120
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "SYNTHETIC_WINDOW_FRAME",
+      "semantic_part": "named_left_mullion",
+      "contour_branch": "physical_edge",
+      "evidence_kind": "physical_edge",
+      "identity_state": "verified",
+      "identity_evidence": "Synthetic test assertion only; this is not a hospital observation.",
+      "geometry_use_allowed": true,
+      "source_xy": [
+        16,
+        40
+      ],
+      "uncertainty_px": 2.0,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    }
+  ],
+  "projections": [
+    {
+      "projection_id": "SYNTHETIC_A_SOFA_UPPER",
+      "source": {
+        "frame_id": "SYNTHETIC_A",
+        "source_sha256": "31477cf0c8805f3075df355b92976792ec59f36af910bd2b7cda2696c56fc9cd",
+        "source_filename": "SYNTHETIC_A_NOT_A_REAL_SOURCE.png",
+        "actual_dimensions": {
+          "width_px": 200,
+          "height_px": 120
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "SYNTHETIC_WINDOW_FRAME",
+      "semantic_part": "named_left_mullion",
+      "contour_branch": "physical_edge",
+      "evidence_kind": "physical_edge",
+      "identity_state": "verified",
+      "identity_evidence": "Synthetic test assertion only; this is not a hospital observation.",
+      "geometry_use_allowed": true,
+      "polylines": [
+        {
+          "polyline_id": "left_mullion",
+          "vertices_xy": [
+            [
+              10,
+              10
+            ],
+            [
+              10,
+              90
+            ]
+          ],
+          "segment_ids": [
+            "left_mullion_physical_edge"
+          ],
+          "segment_visibility": [
+            "visible"
+          ]
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison_id": "upper_sample_0_vs_named_upper",
+      "observation_id": "upper_sample_0",
+      "projection_id": "SYNTHETIC_A_SOFA_UPPER",
+      "method": "named_segment_distance",
+      "cross_section_axis": null,
+      "segment_id": "left_mullion_physical_edge"
+    }
+  ]
+}
