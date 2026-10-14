@@ -1,0 +1,75 @@
+{
+  "review_type": "独立原图语义与可辨识性审查；非像素标注、非拟合结果",
+  "reviewed_at_utc": "2026-10-14T03:39:00Z",
+  "method": "实际用 view_image 看过以下三张原 PNG；新图另以 original detail 查看。只读尺寸与 SHA256，无裁剪、渲染、相机/几何优化或 Git 操作。",
+  "reviewed_originals": [
+    {
+      "id": "E640",
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_expanded_video_20261014_0315/native_frames/BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+      "size_px": [1920, 1080],
+      "sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c"
+    },
+    {
+      "id": "G",
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "size_px": [1920, 1080],
+      "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474"
+    },
+    {
+      "id": "H",
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "size_px": [1920, 1080],
+      "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48"
+    }
+  ],
+  "E640_edge_semantics": [
+    {
+      "part": "两块沙发靠背的上缘及外侧肩部",
+      "classification": "可见真实物体轮廓",
+      "evidence": "棕色靠背终止，另一侧直接变成窗外城市/窗框；顶部波纹属于软包不规则外缘。",
+      "restriction": "不能把软包轮廓极值或褶皱当作固定三维角点，不能把整个上缘强制成一条理想直线。"
+    },
+    {
+      "part": "两靠背间竖向暗槽、靠背与座垫交界及座垫之间暗线",
+      "classification": "软包部件接缝/接触槽，非整体外轮廓",
+      "evidence": "暗线两侧均仍为棕色沙发表面；其端点会受软包形变和遮挡影响。",
+      "restriction": "可作条件性部件分界，不可与沙发外缘或窗框线混用。"
+    },
+    {
+      "part": "右扶手面对窗帘/窗外背景的上缘与最右外缘",
+      "classification": "可见真实外轮廓",
+      "evidence": "扶手棕色实体与背景直接相接；靠背到扶手的交会是不同部件的遮挡/接触结构。",
+      "restriction": "圆角软包的可见轮廓点仍不是未经验证的精确三维顶点。"
+    },
+    {
+      "part": "左扶手顶面白亮块及附近亮暗条带",
+      "classification": "多数为日照/投影边界，不能整体当作扶手顶面边界",
+      "evidence": "最醒目的白亮块终止于仍连续存在的棕色扶手顶面内部；其周围暗部仍属于同一扶手。",
+      "restriction": "单独追踪实体对背景的外缘和可辨认的顶面/侧面转折；不要用亮块的四个角替代几何角点。绿椅遮住的扶手部分不可补成可见测量。"
+    },
+    {
+      "part": "绿椅背顶缘、左右外侧及椅背面板下缘",
+      "classification": "可见真实物体边界",
+      "evidence": "顶缘和外侧分别对着窗外或沙发；面板下缘之下可见开口及后方背景，故该下缘是椅背面板边界。",
+      "restriction": "椅背面板下缘不是沙发下缘，更不是椅子整体底边；左侧窄亮边与暗竖带包含包边/厚度/褶皱和照明，不能将每条色线都升格为外轮廓。"
+    }
+  ],
+  "occlusion": {
+    "visible_order": "绿椅在沙发左扶手之前，遮住扶手靠左的部分；扶手仍在绿椅右侧及部分椅架后方可见。前景浅色床面/床品样表面又截断画面下部的家具。",
+    "evidence": "绿椅右侧实体边界覆盖棕色扶手区域，沙发边界在该重叠处消失；不能将此处视作二者接触或共享角点。",
+    "limits": "只确立局部前后顺序，不给出椅到沙发的距离、固定摆位或各时间点相同三维点身份。"
+  },
+  "comparison": {
+    "against_G": "E640无人物，便于检查G中受人物遮挡的靠背、接缝和座面；G右侧另有明显床端板样构件，但E640没有补出可连接到它的完整床边框。",
+    "against_H": "H本身也无人，且椅背、沙发和窗帘布局相似；E640主要提供另一次可复核的局部轮廓观察，独立信息增益有限。",
+    "cross_frame_guardrail": "相似窗框/家具仅支持条件性对应。640秒与1100秒段不默认相同内参、姿态、裁切或严格静态场景；当前没有验证这些条件。"
+  },
+  "camera_identifiability": {
+    "direct_new_bed_eye_constraint": false,
+    "reason": "新图没有显示可可靠配对的床另一端、两条完整长边或枕位，也没有眼位高度/枕面高度/床宽等量测。前景浅色表面可支持床上视角的语义理解，但其亮暗边/画面裁切不能直接充当床的三维边框。",
+    "retained_semantics": "用户所述摄像机躺在病床上继续作为主语义；本审查没有提出脱离病床的替代机位。",
+    "conditional_gain": "真实家具轮廓、接缝类别与局部遮挡顺序可以帮助未来拒绝错误对应；在另行证实刚性同场景和相机关系后才可能参与多视图约束。它们目前不锚定绝对尺度、床头/床尾身份或床上眼位。",
+    "known_rejections_preserved": "D未验收；J1因21百叶相交被拒绝；H的85px旧说法因全凸包下边误配已撤回，均不恢复为本次证据。"
+  },
+  "not_performed": ["相机优化", "几何优化", "3D重建", "渲染", "Git操作", "改写原PNG", "宣称精确三维点身份"]
+}

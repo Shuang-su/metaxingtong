@@ -1,0 +1,1179 @@
+{
+  "status": "SOURCE_ONLY_BRANCH_ANNOTATION_NO_FIT",
+  "frames": [
+    {
+      "frame_id": "N640",
+      "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+      "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+      "actual_dimensions": {
+        "width_px": 1920,
+        "height_px": 1080
+      },
+      "coordinate_transform": "none",
+      "native_decode_status": "native_decoded",
+      "pixel_coordinate_convention": "top_left_x_right_y_down",
+      "seconds": 640.406589,
+      "source_bv": "BV1GqXMByE1s"
+    },
+    {
+      "frame_id": "H",
+      "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "actual_dimensions": {
+        "width_px": 1920,
+        "height_px": 1080
+      },
+      "coordinate_transform": "none",
+      "native_decode_status": "native_decoded",
+      "pixel_coordinate_convention": "top_left_x_right_y_down",
+      "seconds": 1101.728114,
+      "source_bv": "BV1GqXMByE1s"
+    },
+    {
+      "frame_id": "G",
+      "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "actual_dimensions": {
+        "width_px": 1920,
+        "height_px": 1080
+      },
+      "coordinate_transform": "none",
+      "native_decode_status": "native_decoded",
+      "pixel_coordinate_convention": "top_left_x_right_y_down",
+      "seconds": 1116.180816,
+      "source_bv": "BV1GqXMByE1s"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "N640:sofa_back_left:backrest_outer:upper",
+      "frame": "N640",
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          900,
+          765
+        ],
+        [
+          950,
+          762
+        ],
+        [
+          1000,
+          758
+        ],
+        [
+          1050,
+          755
+        ],
+        [
+          1100,
+          754
+        ],
+        [
+          1150,
+          753
+        ],
+        [
+          1200,
+          752
+        ]
+      ],
+      "uncertainty_px": 4,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Outer skyline of the left cushion; bright piping creates a second stronger inner gradient 3–8px lower. Sample positions are not material vertices.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:sofa_back_left:backrest_outer:left",
+      "frame": "N640",
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "source_points": [
+        [
+          880,
+          787
+        ],
+        [
+          883,
+          817
+        ],
+        [
+          890,
+          850
+        ],
+        [
+          896,
+          870
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Short exterior side above left arm; do not extend below arm overlap.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:sofa_back_right:backrest_outer:upper",
+      "frame": "N640",
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          1250,
+          754
+        ],
+        [
+          1300,
+          749
+        ],
+        [
+          1350,
+          746
+        ],
+        [
+          1400,
+          745
+        ],
+        [
+          1450,
+          743
+        ],
+        [
+          1500,
+          742
+        ]
+      ],
+      "uncertainty_px": 4,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Separate right cushion. Do not bridge the center cushion notch or use the dark diagonal seam.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:sofa_back_right:backrest_outer:right",
+      "frame": "N640",
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          1515,
+          752
+        ],
+        [
+          1522,
+          771
+        ],
+        [
+          1536,
+          803
+        ],
+        [
+          1548,
+          824
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Ends where the arm overlaps. Not a physical rectangular corner chain.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:sofa_arm_right:arm_exterior_to_background:upper",
+      "frame": "N640",
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          1560,
+          825
+        ],
+        [
+          1600,
+          829
+        ],
+        [
+          1650,
+          833
+        ],
+        [
+          1700,
+          838
+        ],
+        [
+          1750,
+          842
+        ],
+        [
+          1800,
+          846
+        ],
+        [
+          1830,
+          848
+        ]
+      ],
+      "uncertainty_px": 4,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Against window/gray-fold background; this is an exterior edge, unlike highlights on the left arm.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:sofa_arm_right:arm_exterior_to_background:right",
+      "frame": "N640",
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          1854,
+          860
+        ],
+        [
+          1859,
+          900
+        ],
+        [
+          1863,
+          940
+        ],
+        [
+          1865,
+          960
+        ]
+      ],
+      "uncertainty_px": 6,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Stop before pale foreground bedding occludes the bottom; rounded shoulder split from upper branch.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:sofa_arm_left:short_rear_upper_run:upper",
+      "frame": "N640",
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          847,
+          869
+        ],
+        [
+          858,
+          869
+        ],
+        [
+          870,
+          871
+        ],
+        [
+          882,
+          882
+        ]
+      ],
+      "uncertainty_px": 6,
+      "source_identity_state": "conditional",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Only short exposed run between chair and backrest. Chair hides left/front boundary; attribution at cushion/arm junction still conditional. Never expand this into the sunlight patch.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:chair_back_assembly:backrest_outer:upper",
+      "frame": "N640",
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          450,
+          867
+        ],
+        [
+          475,
+          861
+        ],
+        [
+          500,
+          856
+        ],
+        [
+          550,
+          851
+        ],
+        [
+          600,
+          846
+        ],
+        [
+          650,
+          842
+        ],
+        [
+          700,
+          839
+        ],
+        [
+          750,
+          839
+        ],
+        [
+          800,
+          839
+        ],
+        [
+          825,
+          841
+        ]
+      ],
+      "uncertainty_px": 4,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:chair_back_assembly:backrest_outer:right",
+      "frame": "N640",
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          842,
+          875
+        ],
+        [
+          841,
+          900
+        ],
+        [
+          834,
+          925
+        ],
+        [
+          828,
+          940
+        ],
+        [
+          823,
+          950
+        ]
+      ],
+      "uncertainty_px": 4,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Chair occludes the sofa behind it. Do not use this as a sofa contour.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:chair_back_assembly:backrest_outer:left",
+      "frame": "N640",
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "source_points": [
+        [
+          420,
+          895
+        ],
+        [
+          420,
+          910
+        ],
+        [
+          412,
+          930
+        ],
+        [
+          412,
+          950
+        ],
+        [
+          412,
+          975
+        ]
+      ],
+      "uncertainty_px": 6,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Exterior of assembly including narrow side support; panel-to-support seam is not separately identified.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower",
+      "frame": "N640",
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "source_points": [
+        [
+          475,
+          1009
+        ],
+        [
+          500,
+          1003
+        ],
+        [
+          550,
+          993
+        ],
+        [
+          600,
+          984
+        ],
+        [
+          650,
+          977
+        ],
+        [
+          700,
+          970
+        ],
+        [
+          750,
+          963
+        ],
+        [
+          790,
+          958
+        ]
+      ],
+      "uncertainty_px": 4,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "H:sofa_back_left:backrest_outer:upper",
+      "frame": "H",
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          882,
+          804
+        ],
+        [
+          963,
+          798
+        ],
+        [
+          1080,
+          795
+        ],
+        [
+          1196,
+          793
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Explicit left-cushion upper subset; old compound curve is not reused whole.",
+      "legacy_source_id": "H_sofa_back_upper_and_right_outer"
+    },
+    {
+      "branch_id": "H:sofa_back_left:backrest_outer:left",
+      "frame": "H",
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "source_points": [
+        [
+          855,
+          824
+        ],
+        [
+          859,
+          847
+        ],
+        [
+          862,
+          868
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Stop before green-chair occlusion; no inferred lower continuation.",
+      "legacy_source_id": "H_sofa_back_upper_and_right_outer"
+    },
+    {
+      "branch_id": "H:sofa_back_right:backrest_outer:upper",
+      "frame": "H",
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          1228,
+          798
+        ],
+        [
+          1332,
+          791
+        ],
+        [
+          1440,
+          787
+        ],
+        [
+          1481,
+          788
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Separate right cushion, not whole sofa hull.",
+      "legacy_source_id": "H_sofa_back_upper_and_right_outer"
+    },
+    {
+      "branch_id": "H:sofa_back_right:backrest_outer:right",
+      "frame": "H",
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          1493,
+          793
+        ],
+        [
+          1506,
+          826
+        ],
+        [
+          1527,
+          867
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "",
+      "legacy_source_id": "H_sofa_back_upper_and_right_outer"
+    },
+    {
+      "branch_id": "H:sofa_arm_right:arm_exterior_to_background:upper",
+      "frame": "H",
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          1527,
+          868
+        ],
+        [
+          1612,
+          876
+        ],
+        [
+          1723,
+          884
+        ],
+        [
+          1806,
+          889
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "",
+      "legacy_source_id": "H_sofa_right_arm_visible_outer"
+    },
+    {
+      "branch_id": "H:sofa_arm_right:arm_exterior_to_background:right",
+      "frame": "H",
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          1840,
+          918
+        ],
+        [
+          1842,
+          958
+        ],
+        [
+          1844,
+          1000
+        ]
+      ],
+      "uncertainty_px": 6,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Rounded corner and mattress occlusion excluded. No arm-depth metric asserted.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "H:chair_back_assembly:backrest_outer:upper",
+      "frame": "H",
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          475,
+          891
+        ],
+        [
+          500,
+          885
+        ],
+        [
+          550,
+          878
+        ],
+        [
+          600,
+          874
+        ],
+        [
+          650,
+          870
+        ],
+        [
+          700,
+          868
+        ],
+        [
+          750,
+          868
+        ],
+        [
+          800,
+          867
+        ],
+        [
+          850,
+          868
+        ]
+      ],
+      "uncertainty_px": 4,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "New explicit chair branch review of the old H native source.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "H:chair_back_assembly:backrest_outer:right",
+      "frame": "H",
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          873,
+          900
+        ],
+        [
+          872,
+          925
+        ],
+        [
+          868,
+          940
+        ],
+        [
+          866,
+          950
+        ],
+        [
+          863,
+          960
+        ],
+        [
+          856,
+          975
+        ],
+        [
+          851,
+          985
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Ends before lower panel/support junction.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower",
+      "frame": "H",
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "source_points": [
+        [
+          475,
+          1052
+        ],
+        [
+          500,
+          1043
+        ],
+        [
+          550,
+          1032
+        ],
+        [
+          600,
+          1022
+        ],
+        [
+          650,
+          1014
+        ],
+        [
+          700,
+          1008
+        ],
+        [
+          750,
+          1001
+        ],
+        [
+          790,
+          995
+        ],
+        [
+          810,
+          992
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "G:sofa_back_left:backrest_outer:upper",
+      "frame": "G",
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          227,
+          894
+        ],
+        [
+          309,
+          885
+        ],
+        [
+          422,
+          879
+        ],
+        [
+          528,
+          875
+        ],
+        [
+          588,
+          877
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "No continuation into x604–803 person occlusion; left rounding separated.",
+      "legacy_source_id": "G_sofa_left_back_outer_visible"
+    },
+    {
+      "branch_id": "G:sofa_back_left:backrest_outer:left",
+      "frame": "G",
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "source_points": [
+        [
+          196,
+          916
+        ],
+        [
+          205,
+          977
+        ],
+        [
+          217,
+          1025
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "",
+      "legacy_source_id": "G_sofa_left_back_outer_visible"
+    },
+    {
+      "branch_id": "G:sofa_back_right:backrest_outer:upper",
+      "frame": "G",
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          802,
+          868
+        ],
+        [
+          839,
+          864
+        ],
+        [
+          868,
+          866
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Only small right-side fragment is exposed; it is not homologous point-for-point with H/N640 samples.",
+      "legacy_source_id": "G_sofa_right_back_outer_visible"
+    },
+    {
+      "branch_id": "G:sofa_back_right:backrest_outer:right",
+      "frame": "G",
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          879,
+          870
+        ],
+        [
+          893,
+          916
+        ],
+        [
+          908,
+          966
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "",
+      "legacy_source_id": "G_sofa_right_back_outer_visible"
+    },
+    {
+      "branch_id": "G:sofa_arm_right:arm_exterior_to_background:upper",
+      "frame": "G",
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          907,
+          941
+        ],
+        [
+          972,
+          946
+        ],
+        [
+          1070,
+          951
+        ],
+        [
+          1149,
+          955
+        ]
+      ],
+      "uncertainty_px": 5,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "",
+      "legacy_source_id": "G_sofa_right_arm_upper_outer"
+    },
+    {
+      "branch_id": "G:sofa_arm_right:arm_exterior_to_background:right",
+      "frame": "G",
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          1163,
+          975
+        ],
+        [
+          1164,
+          1020
+        ],
+        [
+          1164,
+          1065
+        ]
+      ],
+      "uncertainty_px": 6,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "",
+      "legacy_source_id": "G_sofa_right_arm_upper_outer"
+    },
+    {
+      "branch_id": "G:sofa_arm_left:short_rear_upper_run:upper",
+      "frame": "G",
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          145,
+          1014
+        ],
+        [
+          184,
+          1020
+        ],
+        [
+          193,
+          1030
+        ]
+      ],
+      "uncertainty_px": 6,
+      "source_identity_state": "conditional",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Only short rear run; no reuse of withdrawn sunlight-contaminated front-arm group.",
+      "legacy_source_id": "G_sofa_left_arm_visible"
+    },
+    {
+      "branch_id": "G:chair_back_assembly:backrest_outer:upper",
+      "frame": "G",
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "source_points": [
+        [
+          0,
+          978
+        ],
+        [
+          50,
+          978
+        ],
+        [
+          100,
+          976
+        ],
+        [
+          132,
+          976
+        ]
+      ],
+      "uncertainty_px": 6,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Mostly left-clipped chair: only a fragment, no inferred corners or panel bottom.",
+      "legacy_source_id": null
+    },
+    {
+      "branch_id": "G:chair_back_assembly:backrest_outer:right",
+      "frame": "G",
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "source_points": [
+        [
+          142,
+          991
+        ],
+        [
+          145,
+          1006
+        ],
+        [
+          141,
+          1030
+        ],
+        [
+          130,
+          1053
+        ],
+        [
+          114,
+          1077
+        ]
+      ],
+      "uncertainty_px": 6,
+      "source_identity_state": "verified",
+      "visibility": "visible",
+      "geometry_use_allowed": false,
+      "same_3d_points_across_views": false,
+      "candidate_instance_across_times": "conditional_only",
+      "note": "Image-local visible fragment; cannot assert sample-wise cross-frame correspondence.",
+      "legacy_source_id": null
+    }
+  ],
+  "exclusions": [
+    {
+      "frame": "N640",
+      "object_id": "sofa_arm_left",
+      "sample_xy": [
+        970,
+        910
+      ],
+      "reason": "Bright sunlight patch region, not a physical surface corner or external silhouette."
+    },
+    {
+      "frame": "H",
+      "object_id": "sofa_arm_left",
+      "sample_xy": [
+        970,
+        950
+      ],
+      "reason": "Bright sunlight patch; old H arm aggregate withdrawn, not restored by this review."
+    },
+    {
+      "frame": "G",
+      "object_id": "sofa_arm_left",
+      "sample_xy": [
+        302,
+        1049
+      ],
+      "reason": "Bright sunlight patch; old G front-arm aggregate withdrawn."
+    },
+    {
+      "frame": "all",
+      "object_id": "sofa",
+      "reason": "Central diagonal cushion seam and seat/back contact boundaries excluded from whole-object external envelope."
+    },
+    {
+      "frame": "N640",
+      "object_id": "bed_or_bedding_foreground",
+      "reason": "Only clipped pale foreground boundary is visible; no two mattress long sides, near/far endpoint ownership, pillow or rail joint. It cannot define a mattress footprint or patient-eye location."
+    }
+  ],
+  "mesh_family_candidates": {
+    "sofa_back_left": "Sofa • reclined back cushion 1",
+    "sofa_back_right": "Sofa • reclined back cushion 2",
+    "sofa_arm_left": [
+      "Sofa • broad padded arm",
+      "Sofa • broad padded arm.001"
+    ],
+    "sofa_arm_right": [
+      "Sofa • broad padded arm",
+      "Sofa • broad padded arm.001"
+    ],
+    "chair_back_assembly": [
+      "Chair • narrow curved wraparound back",
+      "Chair • slim back support",
+      "Chair • slim back support.001"
+    ],
+    "chair_back_panel": "Chair • narrow curved wraparound back"
+  },
+  "camera_constraint_conclusion": "New furniture contour checks, not a new bed-eye anchor. H was already unoccluded. Cross-time camera/intrinsics/layout equality is unverified.",
+  "point_identity": "No named physical 3D vertices and no cross-frame point pairing are asserted.",
+  "source_annotation_policy": "Manual full-native review plus local RGB profiles. Record approximate border with 4–6px uncertainty; do not choose strongest inner piping/shading gradient as outer silhouette.",
+  "old_states": {
+    "D": "NOT_ACCEPTED",
+    "J1": "REJECTED",
+    "H85px": "WITHDRAWN"
+  }
+}

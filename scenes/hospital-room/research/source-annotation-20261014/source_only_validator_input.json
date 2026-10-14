@@ -1,0 +1,4909 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "N640_G_H_source_only_branch_review_20261014",
+  "dataset_kind": "real_observations",
+  "frames": [
+    {
+      "frame_id": "N640",
+      "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+      "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+      "actual_dimensions": {
+        "width_px": 1920,
+        "height_px": 1080
+      },
+      "coordinate_transform": "none",
+      "native_decode_status": "native_decoded",
+      "pixel_coordinate_convention": "top_left_x_right_y_down"
+    },
+    {
+      "frame_id": "H",
+      "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "actual_dimensions": {
+        "width_px": 1920,
+        "height_px": 1080
+      },
+      "coordinate_transform": "none",
+      "native_decode_status": "native_decoded",
+      "pixel_coordinate_convention": "top_left_x_right_y_down"
+    },
+    {
+      "frame_id": "G",
+      "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "actual_dimensions": {
+        "width_px": 1920,
+        "height_px": 1080
+      },
+      "coordinate_transform": "none",
+      "native_decode_status": "native_decoded",
+      "pixel_coordinate_convention": "top_left_x_right_y_down"
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Outer skyline of the left cushion; bright piping creates a second stronger inner gradient 3–8px lower. Sample positions are not material vertices.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        900,
+        765
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Outer skyline of the left cushion; bright piping creates a second stronger inner gradient 3–8px lower. Sample positions are not material vertices.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        950,
+        762
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Outer skyline of the left cushion; bright piping creates a second stronger inner gradient 3–8px lower. Sample positions are not material vertices.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1000,
+        758
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:upper:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Outer skyline of the left cushion; bright piping creates a second stronger inner gradient 3–8px lower. Sample positions are not material vertices.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1050,
+        755
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:upper:s4",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Outer skyline of the left cushion; bright piping creates a second stronger inner gradient 3–8px lower. Sample positions are not material vertices.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1100,
+        754
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:upper:s5",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Outer skyline of the left cushion; bright piping creates a second stronger inner gradient 3–8px lower. Sample positions are not material vertices.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1150,
+        753
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 5,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:upper:s6",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Outer skyline of the left cushion; bright piping creates a second stronger inner gradient 3–8px lower. Sample positions are not material vertices.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1200,
+        752
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 6,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:left:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Short exterior side above left arm; do not extend below arm overlap.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        880,
+        787
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:left:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Short exterior side above left arm; do not extend below arm overlap.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        883,
+        817
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:left:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Short exterior side above left arm; do not extend below arm overlap.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        890,
+        850
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_left:backrest_outer:left:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Short exterior side above left arm; do not extend below arm overlap.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        896,
+        870
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion. Do not bridge the center cushion notch or use the dark diagonal seam.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1250,
+        754
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion. Do not bridge the center cushion notch or use the dark diagonal seam.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1300,
+        749
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion. Do not bridge the center cushion notch or use the dark diagonal seam.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1350,
+        746
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:upper:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion. Do not bridge the center cushion notch or use the dark diagonal seam.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1400,
+        745
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:upper:s4",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion. Do not bridge the center cushion notch or use the dark diagonal seam.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1450,
+        743
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:upper:s5",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion. Do not bridge the center cushion notch or use the dark diagonal seam.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1500,
+        742
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 5,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:right:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends where the arm overlaps. Not a physical rectangular corner chain.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1515,
+        752
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:right:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends where the arm overlaps. Not a physical rectangular corner chain.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1522,
+        771
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:right:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends where the arm overlaps. Not a physical rectangular corner chain.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1536,
+        803
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_back_right:backrest_outer:right:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends where the arm overlaps. Not a physical rectangular corner chain.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1548,
+        824
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:upper:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Against window/gray-fold background; this is an exterior edge, unlike highlights on the left arm.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1560,
+        825
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:upper:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Against window/gray-fold background; this is an exterior edge, unlike highlights on the left arm.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1600,
+        829
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:upper:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Against window/gray-fold background; this is an exterior edge, unlike highlights on the left arm.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1650,
+        833
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:upper:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Against window/gray-fold background; this is an exterior edge, unlike highlights on the left arm.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1700,
+        838
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:upper:s4",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Against window/gray-fold background; this is an exterior edge, unlike highlights on the left arm.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1750,
+        842
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:upper:s5",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Against window/gray-fold background; this is an exterior edge, unlike highlights on the left arm.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1800,
+        846
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 5,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:upper:s6",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Against window/gray-fold background; this is an exterior edge, unlike highlights on the left arm.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1830,
+        848
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 6,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:right:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Stop before pale foreground bedding occludes the bottom; rounded shoulder split from upper branch.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1854,
+        860
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:right:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Stop before pale foreground bedding occludes the bottom; rounded shoulder split from upper branch.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1859,
+        900
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:right:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Stop before pale foreground bedding occludes the bottom; rounded shoulder split from upper branch.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1863,
+        940
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_right:arm_exterior_to_background:right:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Stop before pale foreground bedding occludes the bottom; rounded shoulder split from upper branch.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1865,
+        960
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_left:short_rear_upper_run:upper:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "conditional",
+      "identity_evidence": "Image-space object/branch reviewed only. Only short exposed run between chair and backrest. Chair hides left/front boundary; attribution at cushion/arm junction still conditional. Never expand this into the sunlight patch.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        847,
+        869
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_left:short_rear_upper_run:upper:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "conditional",
+      "identity_evidence": "Image-space object/branch reviewed only. Only short exposed run between chair and backrest. Chair hides left/front boundary; attribution at cushion/arm junction still conditional. Never expand this into the sunlight patch.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        858,
+        869
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_left:short_rear_upper_run:upper:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "conditional",
+      "identity_evidence": "Image-space object/branch reviewed only. Only short exposed run between chair and backrest. Chair hides left/front boundary; attribution at cushion/arm junction still conditional. Never expand this into the sunlight patch.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        870,
+        871
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:sofa_arm_left:short_rear_upper_run:upper:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "conditional",
+      "identity_evidence": "Image-space object/branch reviewed only. Only short exposed run between chair and backrest. Chair hides left/front boundary; attribution at cushion/arm junction still conditional. Never expand this into the sunlight patch.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        882,
+        882
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        450,
+        867
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        475,
+        861
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        500,
+        856
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        550,
+        851
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s4",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        600,
+        846
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s5",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        650,
+        842
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 5,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s6",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        700,
+        839
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 6,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s7",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        750,
+        839
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 7,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s8",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        800,
+        839
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 8,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:upper:s9",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Green chair upper silhouette; curved corners are omitted, no rectangular-corner inference.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        825,
+        841
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 9,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:right:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Chair occludes the sofa behind it. Do not use this as a sofa contour.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        842,
+        875
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:right:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Chair occludes the sofa behind it. Do not use this as a sofa contour.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        841,
+        900
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:right:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Chair occludes the sofa behind it. Do not use this as a sofa contour.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        834,
+        925
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:right:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Chair occludes the sofa behind it. Do not use this as a sofa contour.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        828,
+        940
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:right:s4",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Chair occludes the sofa behind it. Do not use this as a sofa contour.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        823,
+        950
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:left:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Exterior of assembly including narrow side support; panel-to-support seam is not separately identified.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        420,
+        895
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:left:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Exterior of assembly including narrow side support; panel-to-support seam is not separately identified.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        420,
+        910
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:left:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Exterior of assembly including narrow side support; panel-to-support seam is not separately identified.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        412,
+        930
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:left:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Exterior of assembly including narrow side support; panel-to-support seam is not separately identified.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        412,
+        950
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_assembly:backrest_outer:left:s4",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Exterior of assembly including narrow side support; panel-to-support seam is not separately identified.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        412,
+        975
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower:s0",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        475,
+        1009
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower:s1",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        500,
+        1003
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower:s2",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        550,
+        993
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower:s3",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        600,
+        984
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower:s4",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        650,
+        977
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower:s5",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        700,
+        970
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 5,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower:s6",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        750,
+        963
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 6,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "N640:chair_back_panel:panel_bottom_to_visible_background:lower:s7",
+      "source": {
+        "frame_id": "N640",
+        "source_sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+        "source_filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Bottom edge of green back panel, with background below. Excludes chair uprights at its ends; not sofa lower edge.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        790,
+        958
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 7,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_left:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Explicit left-cushion upper subset; old compound curve is not reused whole.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        882,
+        804
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_left:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Explicit left-cushion upper subset; old compound curve is not reused whole.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        963,
+        798
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_left:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Explicit left-cushion upper subset; old compound curve is not reused whole.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1080,
+        795
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_left:backrest_outer:upper:s3",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Explicit left-cushion upper subset; old compound curve is not reused whole.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1196,
+        793
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_left:backrest_outer:left:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Stop before green-chair occlusion; no inferred lower continuation.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        855,
+        824
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_left:backrest_outer:left:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Stop before green-chair occlusion; no inferred lower continuation.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        859,
+        847
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_left:backrest_outer:left:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Stop before green-chair occlusion; no inferred lower continuation.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        862,
+        868
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_right:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion, not whole sofa hull.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1228,
+        798
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_right:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion, not whole sofa hull.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1332,
+        791
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_right:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion, not whole sofa hull.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1440,
+        787
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_right:backrest_outer:upper:s3",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Separate right cushion, not whole sofa hull.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1481,
+        788
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_right:backrest_outer:right:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1493,
+        793
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_right:backrest_outer:right:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1506,
+        826
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_back_right:backrest_outer:right:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1527,
+        867
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_arm_right:arm_exterior_to_background:upper:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1527,
+        868
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_arm_right:arm_exterior_to_background:upper:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1612,
+        876
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_arm_right:arm_exterior_to_background:upper:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1723,
+        884
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_arm_right:arm_exterior_to_background:upper:s3",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1806,
+        889
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_arm_right:arm_exterior_to_background:right:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Rounded corner and mattress occlusion excluded. No arm-depth metric asserted.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1840,
+        918
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_arm_right:arm_exterior_to_background:right:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Rounded corner and mattress occlusion excluded. No arm-depth metric asserted.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1842,
+        958
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:sofa_arm_right:arm_exterior_to_background:right:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Rounded corner and mattress occlusion excluded. No arm-depth metric asserted.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1844,
+        1000
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        475,
+        891
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        500,
+        885
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        550,
+        878
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s3",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        600,
+        874
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s4",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        650,
+        870
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s5",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        700,
+        868
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 5,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s6",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        750,
+        868
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 6,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s7",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        800,
+        867
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 7,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:upper:s8",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. New explicit chair branch review of the old H native source.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        850,
+        868
+      ],
+      "uncertainty_px": 4,
+      "visibility": "visible",
+      "sample_order": 8,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:right:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends before lower panel/support junction.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        873,
+        900
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:right:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends before lower panel/support junction.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        872,
+        925
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:right:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends before lower panel/support junction.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        868,
+        940
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:right:s3",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends before lower panel/support junction.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        866,
+        950
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:right:s4",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends before lower panel/support junction.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        863,
+        960
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:right:s5",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends before lower panel/support junction.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        856,
+        975
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 5,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_assembly:backrest_outer:right:s6",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Ends before lower panel/support junction.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        851,
+        985
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 6,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s0",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        475,
+        1052
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s1",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        500,
+        1043
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s2",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        550,
+        1032
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s3",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        600,
+        1022
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s4",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        650,
+        1014
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s5",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        700,
+        1008
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 5,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s6",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        750,
+        1001
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 6,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s7",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        790,
+        995
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 7,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower:s8",
+      "source": {
+        "frame_id": "H",
+        "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "source_filename": "hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_panel",
+      "semantic_part": "panel_bottom_to_visible_background",
+      "contour_branch": "lower",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        810,
+        992
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 8,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_left:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. No continuation into x604–803 person occlusion; left rounding separated.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        227,
+        894
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_left:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. No continuation into x604–803 person occlusion; left rounding separated.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        309,
+        885
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_left:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. No continuation into x604–803 person occlusion; left rounding separated.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        422,
+        879
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_left:backrest_outer:upper:s3",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. No continuation into x604–803 person occlusion; left rounding separated.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        528,
+        875
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_left:backrest_outer:upper:s4",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. No continuation into x604–803 person occlusion; left rounding separated.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        588,
+        877
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_left:backrest_outer:left:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        196,
+        916
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_left:backrest_outer:left:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        205,
+        977
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_left:backrest_outer:left:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_left",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "left",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        217,
+        1025
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_right:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Only small right-side fragment is exposed; it is not homologous point-for-point with H/N640 samples.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        802,
+        868
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_right:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Only small right-side fragment is exposed; it is not homologous point-for-point with H/N640 samples.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        839,
+        864
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_right:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Only small right-side fragment is exposed; it is not homologous point-for-point with H/N640 samples.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        868,
+        866
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_right:backrest_outer:right:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        879,
+        870
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_right:backrest_outer:right:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        893,
+        916
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_back_right:backrest_outer:right:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_back_right",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        908,
+        966
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_right:arm_exterior_to_background:upper:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        907,
+        941
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_right:arm_exterior_to_background:upper:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        972,
+        946
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_right:arm_exterior_to_background:upper:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1070,
+        951
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_right:arm_exterior_to_background:upper:s3",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1149,
+        955
+      ],
+      "uncertainty_px": 5,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_right:arm_exterior_to_background:right:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1163,
+        975
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_right:arm_exterior_to_background:right:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1164,
+        1020
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_right:arm_exterior_to_background:right:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_right",
+      "semantic_part": "arm_exterior_to_background",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. ",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        1164,
+        1065
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_left:short_rear_upper_run:upper:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "conditional",
+      "identity_evidence": "Image-space object/branch reviewed only. Only short rear run; no reuse of withdrawn sunlight-contaminated front-arm group.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        145,
+        1014
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_left:short_rear_upper_run:upper:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "conditional",
+      "identity_evidence": "Image-space object/branch reviewed only. Only short rear run; no reuse of withdrawn sunlight-contaminated front-arm group.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        184,
+        1020
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:sofa_arm_left:short_rear_upper_run:upper:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "sofa_arm_left",
+      "semantic_part": "short_rear_upper_run",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "conditional",
+      "identity_evidence": "Image-space object/branch reviewed only. Only short rear run; no reuse of withdrawn sunlight-contaminated front-arm group.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        193,
+        1030
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:upper:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Mostly left-clipped chair: only a fragment, no inferred corners or panel bottom.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        0,
+        978
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:upper:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Mostly left-clipped chair: only a fragment, no inferred corners or panel bottom.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        50,
+        978
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:upper:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Mostly left-clipped chair: only a fragment, no inferred corners or panel bottom.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        100,
+        976
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:upper:s3",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "upper",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Mostly left-clipped chair: only a fragment, no inferred corners or panel bottom.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        132,
+        976
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:right:s0",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Image-local visible fragment; cannot assert sample-wise cross-frame correspondence.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        142,
+        991
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 0,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:right:s1",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Image-local visible fragment; cannot assert sample-wise cross-frame correspondence.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        145,
+        1006
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 1,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:right:s2",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Image-local visible fragment; cannot assert sample-wise cross-frame correspondence.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        141,
+        1030
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 2,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:right:s3",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Image-local visible fragment; cannot assert sample-wise cross-frame correspondence.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        130,
+        1053
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 3,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    },
+    {
+      "observation_id": "G:chair_back_assembly:backrest_outer:right:s4",
+      "source": {
+        "frame_id": "G",
+        "source_sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "source_filename": "hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "actual_dimensions": {
+          "width_px": 1920,
+          "height_px": 1080
+        },
+        "coordinate_transform": "none",
+        "native_decode_status": "native_decoded",
+        "pixel_coordinate_convention": "top_left_x_right_y_down"
+      },
+      "object_id": "chair_back_assembly",
+      "semantic_part": "backrest_outer",
+      "contour_branch": "right",
+      "evidence_kind": "silhouette",
+      "identity_state": "verified",
+      "identity_evidence": "Image-space object/branch reviewed only. Image-local visible fragment; cannot assert sample-wise cross-frame correspondence.",
+      "geometry_use_allowed": false,
+      "source_xy": [
+        114,
+        1077
+      ],
+      "uncertainty_px": 6,
+      "visibility": "visible",
+      "sample_order": 4,
+      "point_identity": {
+        "state": "not_asserted",
+        "physical_point_id": null,
+        "evidence": null
+      }
+    }
+  ],
+  "projections": [],
+  "comparisons": []
+}
