@@ -1,0 +1,14 @@
+from pathlib import Path
+import hashlib,json,mimetypes
+from PIL import Image
+R=Path(__file__).parent
+primary=['README_病房共享几何候选C3_20261015.md','models/hospital_C3_width_refinement_UNACCEPTED.blend','models/hospital_C3_width_refinement_WHITE_UNACCEPTED.blend','models/hospital_C3_width_refinement_UNACCEPTED.glb','renders_C3/G_C3_RAW_1920x1080.png','renders_C3/G_C3_direct_50pct_overlay_1920x1080.png','renders_C3/H_C3_RAW_1920x1080.png','renders_C3/H_C3_direct_50pct_overlay_1920x1080.png','renders_C3/F_C3_RAW_1920x1080.png','renders_C3/F_C3_direct_50pct_overlay_1920x1080.png','renders_C3/N640_C3_RAW_1920x1080.png','renders_C3/N640_C3_direct_50pct_overlay_1920x1080.png','source_diagnostic_summary.json','independent_physics/final_C3_independent_physics_report.json','independent_visual/independent_visual_report.json','independent_visual/independent_visual_report.md','independent_visual/gray_interior_identity_points.json']
+exclude={'delivery_index.json','pending_library_uploads.json'}
+files=[]
+for p in sorted(R.rglob('*')):
+ if not p.is_file() or p.suffix.lower() not in ['.blend','.glb','.png','.py','.json','.md'] or p.name in exclude or '__pycache__' in p.parts:continue
+ rel=str(p.relative_to(R));data=p.read_bytes();q={'relative_path':rel,'absolute_path':str(p.resolve()),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'mime_type':mimetypes.guess_type(p.name)[0] or 'application/octet-stream','role':'primary' if rel in primary else ('failed_stage_original' if '/hospital_P' in '/'+rel or '/hospital_C2' in '/'+rel or rel.startswith('renders_C2/') else 'supporting_evidence'),'library_state':'not_uploaded_this_stage','recommended_library_artifact_type':'image' if p.suffix=='.png' else 'other'}
+ if p.suffix=='.png':im=Image.open(p);im.load();q['decoded_size']=list(im.size)
+ files.append(q)
+ready={f['relative_path'] for f in files};out={'status':'C3_FROZEN_NOT_SOURCE_ACCEPTED_2026-10-15T05:02Z','archive_action':'New real stage only; do not edit CURRENT or old binaries; preserve failed P0/P1/C2 originals; Git writer handles commits','format':'ordinary original files, no new ZIP','file_count':len(files),'total_bytes':sum(x['bytes'] for x in files),'all_under_18MiB':all(x['bytes']<18*1024*1024 for x in files),'primary_order':primary,'primary_missing':[p for p in primary if p not in ready],'files':files,'source_inputs_are_referenced_not_reuploaded':True,'library_upload_status':'FROZEN_FOR_DEDICATED_LIBRARY_DELIVERY_WORKER; no upload was attempted by geometry worker; no uncertain writes'}
+(R/'delivery_index.json').write_text(json.dumps(out,ensure_ascii=False,indent=2));(R/'pending_library_uploads.json').write_text(json.dumps({'status':out['library_upload_status'],'files':[x for p in primary for x in files if x['relative_path']==p]+[x for x in files if x['relative_path'] not in primary]},ensure_ascii=False,indent=2));print(out['file_count'],out['total_bytes'],out['primary_missing'])
