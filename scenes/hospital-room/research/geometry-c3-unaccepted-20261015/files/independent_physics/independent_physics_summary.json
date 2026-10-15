@@ -1,0 +1,378 @@
+{
+  "status": "PHYSICAL_DIAGNOSTIC_ONLY_NOT_SOURCE_ACCEPTANCE",
+  "units": "Arbitrary D scene units, not recovered metric dimensions",
+  "scope": "Read-only evaluated-world-mesh comparison of D and rejected J1; synthetic reversible parameter tests; no .blend edited or saved",
+  "input_sha256": {
+    "hospital_D_before_J1_cameras.blend": "e9dc64cf351f7e028d045b10461d51cf49d08ef4a1cec4a8953cef70b99af27f",
+    "hospital_joint_J1_REJECTED.blend": "e4ea777ebd72c3cfa3a7853015af6b4610dfd5b99546921657ef1069383ebb96"
+  },
+  "sources_unchanged": true,
+  "findings": {
+    "D_curtain_bank3_real_surface_crossing_objects": 21,
+    "J1_curtain_bank3_real_surface_crossing_objects": 21,
+    "D_problem_predates_J1": true,
+    "J1_new_curtain_structural_penetrations": [
+      "ROOM_SHELL__joined_solid__hidden_extents_inferred",
+      "Window • calibrated perimeter rail",
+      "Window_3__sill_or_lintel",
+      "Window_3__sill_or_lintel.001"
+    ]
+  },
+  "P0_recommended_reversible_change": {
+    "base": "hospital_D_before_J1_cameras.blend",
+    "object": "Curtain • rebuilt uniform eight-fold drape",
+    "world_translation": [
+      0,
+      -0.04011060774326324,
+      0
+    ],
+    "new_bounds": [
+      [
+        1.6446596384048462,
+        -0.21619495749473572,
+        0.0062499940395355225
+      ],
+      [
+        2.3415627479553223,
+        -0.12162499129772186,
+        2.714665412902832
+      ]
+    ],
+    "clearance_to_frontmost_blind_or_lift_cord_y": 0.005,
+    "conservative_zero_clearance_world_translation_y": -0.03511060774326324,
+    "clearance_is_inference_not_source_measurement": true,
+    "all_scene_mesh_strict_surface_crossings_after_change": 0,
+    "remaining_contacts": [
+      {
+        "a": "Curtain • rebuilt uniform eight-fold drape",
+        "b": "ROOM_SHELL__joined_solid__hidden_extents_inferred",
+        "triangle_overlap_pairs": 900,
+        "raw_triangle_edge_crossing_pairs": 0,
+        "aabb_overlap_depth_xyz": [
+          0.6969031095504761,
+          0.09456996619701385,
+          2.7084154188632965
+        ],
+        "strict_transverse_crossing_pairs": 0,
+        "classification": "touch_or_coplanar_or_tolerance_needs_review",
+        "crossing_bounds": null,
+        "crossing_samples": [],
+        "semantic_interpretation": "curtain_structural_contact_requires_review"
+      }
+    ],
+    "scope_limit": "A physical depth-order repair only. Camera/source shape, occlusion, and cloth support acceptance remain separate."
+  },
+  "P1_pillar_experiment": {
+    "independent_from_P0": true,
+    "details": "D_proposed_pillar_connector_audit.json",
+    "pillar_intersecting_or_touching_objects": [
+      {
+        "name": "Blind bank 3 • physical slat 01",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 02",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 03",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 04",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 05",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 06",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 07",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 08",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 09",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 10",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 11",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 12",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 13",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 14",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 15",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 16",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 17",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 18",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 19",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 20",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Blind bank 3 • physical slat 21",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965978145599365,
+          0.06446999311447144,
+          0.016656875610351562
+        ]
+      },
+      {
+        "name": "Curtain • rebuilt uniform eight-fold drape",
+        "strict_crossing": false,
+        "aabb_overlap_depth_xyz": [
+          0.0,
+          0.09456995874643326,
+          2.7084154188632965
+        ]
+      },
+      {
+        "name": "ROOM_SHELL__joined_solid__hidden_extents_inferred",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.12278461456298828,
+          0.36000001430511475,
+          2.714665412902832
+        ]
+      },
+      {
+        "name": "Window • calibrated perimeter rail",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.12278461456298828,
+          0.003750000149011612,
+          0.028124993667006493
+        ]
+      },
+      {
+        "name": "Window • calibrated perimeter rail.001",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.12278461456298828,
+          0.003750000149011612,
+          0.02187490463256836
+        ]
+      },
+      {
+        "name": "Window • calibrated vertical mullion.002",
+        "strict_crossing": false,
+        "aabb_overlap_depth_xyz": [
+          0.0,
+          0.002550000324845314,
+          2.714665412902832
+        ]
+      },
+      {
+        "name": "Window_3__sill_or_lintel",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965954303741455,
+          0.004500001668930054,
+          0.03499999828636646
+        ]
+      },
+      {
+        "name": "Window_3__sill_or_lintel.001",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.11965954303741455,
+          0.004500001668930054,
+          0.034999847412109375
+        ]
+      },
+      {
+        "name": "PROPOSED inferred short rail connector",
+        "strict_crossing": true,
+        "aabb_overlap_depth_xyz": [
+          0.12278461456298828,
+          0.02969205379486084,
+          0.033750057220458984
+        ]
+      }
+    ],
+    "acceptable_join_interpretation": {
+      "ROOM_SHELL__joined_solid__hidden_extents_inferred": "intentional base/top architectural join; do not count as arbitrary free penetration defect",
+      "Window • calibrated perimeter rail": "intentional lower continuous-frame junction, or trim frame at column if chosen",
+      "Window • calibrated perimeter rail.001": "intentional upper continuous-frame junction, or trim frame at column if chosen",
+      "Window • calibrated vertical mullion.002": "zero-thickness side boundary contact at x=1.521875; floating-point tolerance is not physical penetration",
+      "Window_3__sill_or_lintel": "lower-frame architectural junction; proposed shortening is a clean optional resolve",
+      "Window_3__sill_or_lintel.001": "upper-frame architectural junction; proposed shortening is a clean optional resolve",
+      "Curtain • rebuilt uniform eight-fold drape": "zero-thickness side boundary contact; no positive X penetration",
+      "PROPOSED inferred short rail connector": "intentional structural connector overlap",
+      "Blind bank 3 • physical slat 01 through 21": "unwanted intersections; uniformly shorten left ends if adding proposed column"
+    },
+    "bank3_slats_left_x_after_trim": 1.649659638404846,
+    "bank3_slats_trim_uses_affine_x_right_end_fixed": true,
+    "bank3_slats_trim_strict_surface_crossing_pairs_all_scene": 0,
+    "source_acceptance": false
+  },
+  "artifact_files": [
+    "C2_material_white_identity.json",
+    "D_proposed_pillar_connector_audit.json",
+    "P0_boundary_contact_diagnosis.json",
+    "audit_physics.py",
+    "final_independent_physics_report.json",
+    "hospital_C2_small_shared_geometry_UNACCEPTED_changed_evaluated_world_meshes.json",
+    "hospital_C2_small_shared_geometry_UNACCEPTED_final_regression.json",
+    "hospital_D_before_J1_cameras_changed_evaluated_world_meshes.json",
+    "hospital_D_before_J1_cameras_clearance_variants.json",
+    "hospital_D_before_J1_cameras_evaluated_world_meshes.json",
+    "hospital_D_before_J1_cameras_final_regression.json",
+    "hospital_D_before_J1_cameras_inventory.json",
+    "hospital_D_before_J1_cameras_physical_audit.json",
+    "hospital_P0_drape_clearance_UNACCEPTED_changed_evaluated_world_meshes.json",
+    "hospital_P0_drape_clearance_UNACCEPTED_final_regression.json",
+    "hospital_P1_column_connection_UNACCEPTED_changed_evaluated_world_meshes.json",
+    "hospital_P1_column_connection_UNACCEPTED_final_regression.json",
+    "hospital_joint_J1_REJECTED_clearance_variants.json",
+    "hospital_joint_J1_REJECTED_evaluated_world_meshes.json",
+    "hospital_joint_J1_REJECTED_inventory.json",
+    "hospital_joint_J1_REJECTED_physical_audit.json",
+    "independent_physics_summary.json",
+    "inspect_boundary_contacts.py",
+    "inspect_inventory.py",
+    "regress_final_candidates.py",
+    "test_D_pillar_proposal.py",
+    "test_clearance_variants.py",
+    "verify_white_identity.py"
+  ],
+  "final_regression_report": "final_independent_physics_report.json"
+}
