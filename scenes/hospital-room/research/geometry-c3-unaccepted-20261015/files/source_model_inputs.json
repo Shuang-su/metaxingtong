@@ -1,0 +1,115 @@
+{
+  "status": "IMMUTABLE_INPUT_DEPENDENCY_REFERENCES",
+  "base_model": {
+    "file_name": "hospital_D_before_J1_cameras.blend",
+    "local_path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital_D_before_J1_cameras.blend",
+    "library_file_id": "libfile_77f1cd44fb488191b52e63c058db9354",
+    "sha256": "e9dc64cf351f7e028d045b10461d51cf49d08ef4a1cec4a8953cef70b99af27f",
+    "role": "exact immutable D geometry baseline with inherited camera collection; original D F/G/H used, J1 cameras not used"
+  },
+  "rejected_comparison": {
+    "file_name": "hospital_joint_J1_REJECTED.blend",
+    "library_file_id": "libfile_1f13e54831fc819192e639d5abae2d66",
+    "sha256": "e4ea777ebd72c3cfa3a7853015af6b4610dfd5b99546921657ef1069383ebb96"
+  },
+  "prior_preparation_index_library_file_id": "libfile_a4098a44be3c8191bdaa22928007b342",
+  "source_annotation_index_library_file_id": "libfile_08c249d20c4c81918e064b8424e98766",
+  "source_frames": [
+    {
+      "frame": "F",
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "bytes": 1433570,
+      "sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "source_transform": "none"
+    },
+    {
+      "frame": "G",
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "bytes": 1784511,
+      "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "source_transform": "none"
+    },
+    {
+      "frame": "H",
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "bytes": 1953219,
+      "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "source_transform": "none"
+    },
+    {
+      "frame": "N640",
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_empty_frame_annotation_20261014/source_views/BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+      "bytes": 1980785,
+      "sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "source_transform": "none"
+    }
+  ],
+  "new_frame_library_references": [
+    {
+      "frame_id": "N640",
+      "filename": "BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+      "source_bv": "BV1GqXMByE1s",
+      "seconds": 640.406589,
+      "sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "png_library_file_id": "libfile_a637393f5ef08191a1faee3d0920830c",
+      "metadata_library_file_id": "libfile_01bf2441bc1c8191a01e0b7fe959f6a6",
+      "version": 0,
+      "native_png_full_decode_verified": true,
+      "use": "29-branch source annotation with G/H comparison"
+    },
+    {
+      "frame_id": "N642",
+      "filename": "BV1GqXMByE1s_642.617525_right_turn_native.png",
+      "source_bv": "BV1GqXMByE1s",
+      "seconds": 642.617525,
+      "sha256": "73a60160a5a74b2184eba295a0e279c5bfd523003fd5452cf05bc16b1bd55522",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "png_library_file_id": "libfile_419ccb308b408191ae80b489a22a39d5",
+      "metadata_library_file_id": "libfile_281467fc658881918a4d62554aebd64e",
+      "version": 0,
+      "native_png_full_decode_verified": true,
+      "use": "supplemental visual review only; not added to 143-point annotation"
+    },
+    {
+      "frame_id": "N665",
+      "filename": "BV1GqXMByE1s_665.501733_downward_native.png",
+      "source_bv": "BV1GqXMByE1s",
+      "seconds": 665.501733,
+      "sha256": "79bfec7d314c6613f6ff8b7df982ad6f6c3c47f54a49a1bab98bc4f4ba539c83",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "png_library_file_id": "libfile_a4b0dcdd52c0819194c83770f1a915ff",
+      "metadata_library_file_id": "libfile_6d9e39257e088191a80a78db4c44c85c",
+      "version": 0,
+      "native_png_full_decode_verified": true,
+      "use": "supplemental visual review only; not added to 143-point annotation"
+    }
+  ],
+  "repository_rule_reference": "https://github.com/Shuang-su/metaxingtong/blob/811f4c634a2886950b9c0061d5a5cf4ec63fbc26/docs/reconstruction-standard.md",
+  "git_write_performed": false
+}
