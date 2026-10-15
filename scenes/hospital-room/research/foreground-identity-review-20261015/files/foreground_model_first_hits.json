@@ -1,0 +1,175 @@
+{
+  "status": "MODEL_ATTRIBUTION_ONLY_NO_GEOMETRY_EDIT",
+  "input_model": "/workspace/scratch/fa58bfcf0425/hospital_geometry_camera_parallax_20261015/hospital_C5Y_N640_parallax_camera_UNACCEPTED.blend",
+  "input_sha256": "9bc2f22abeec3218502d1a8aad8cec3702d32fe5bc6321d0f2b08251b8933863",
+  "native_source_coordinate_system": [
+    1920,
+    1080
+  ],
+  "new_viewports_not_raycast": "5476/5663/6063 have no validated camera and are viewport observations, no native pixel residual",
+  "rays": [
+    {
+      "frame": "G",
+      "source_xy": [
+        1570,
+        985
+      ],
+      "source_observation": "visible pale foreground plane, identity unresolved",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "MATCH_G_Sofa_And_Bed",
+      "current_model_first_hit": "Bed • observed endboard, consistent width",
+      "hit_world": [
+        1.9904077053070068,
+        -1.3691191673278809,
+        0.4822823107242584
+      ],
+      "face": 689,
+      "not_a_metric_residual": true
+    },
+    {
+      "frame": "G",
+      "source_xy": [
+        1805,
+        1055
+      ],
+      "source_observation": "visible pale foreground plane, identity unresolved",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "MATCH_G_Sofa_And_Bed",
+      "current_model_first_hit": "Bed • mattress and sheet",
+      "hit_world": [
+        1.3046462535858154,
+        -2.0137248039245605,
+        0.5437729358673096
+      ],
+      "face": 2,
+      "not_a_metric_residual": true
+    },
+    {
+      "frame": "G",
+      "source_xy": [
+        1700,
+        900
+      ],
+      "source_observation": "visible endboard interior control",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "MATCH_G_Sofa_And_Bed",
+      "current_model_first_hit": "Bed • observed endboard, consistent width",
+      "hit_world": [
+        1.990407943725586,
+        -1.649145483970642,
+        0.683463454246521
+      ],
+      "face": 4,
+      "not_a_metric_residual": true
+    },
+    {
+      "frame": "H",
+      "source_xy": [
+        1740,
+        1035
+      ],
+      "source_observation": "visible narrow pale foreground plane, identity unresolved",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "MATCH_H",
+      "current_model_first_hit": "Bed • mattress and sheet",
+      "hit_world": [
+        -0.6315531730651855,
+        -1.9568549394607544,
+        0.5437729954719543
+      ],
+      "face": 2,
+      "not_a_metric_residual": true
+    },
+    {
+      "frame": "H",
+      "source_xy": [
+        1840,
+        1025
+      ],
+      "source_observation": "visible narrow pale foreground plane, identity unresolved",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "MATCH_H",
+      "current_model_first_hit": "Bed • mattress and sheet",
+      "hit_world": [
+        -0.33380961418151855,
+        -1.859268307685852,
+        0.5437729954719543
+      ],
+      "face": 2,
+      "not_a_metric_residual": true
+    },
+    {
+      "frame": "N640",
+      "source_xy": [
+        1530,
+        1030
+      ],
+      "source_observation": "visible pale foreground plane, identity unresolved",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "C5_N640_XY_parallax_hypothesis",
+      "current_model_first_hit": "Bed • inferred low foot bumper",
+      "hit_world": [
+        -0.796410083770752,
+        -1.9062907695770264,
+        0.5052552223205566
+      ],
+      "face": 67,
+      "not_a_metric_residual": true
+    },
+    {
+      "frame": "N640",
+      "source_xy": [
+        1770,
+        1000
+      ],
+      "source_observation": "visible pale foreground plane, identity unresolved",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "C5_N640_XY_parallax_hypothesis",
+      "current_model_first_hit": "Bed • mattress and sheet",
+      "hit_world": [
+        -0.731126070022583,
+        -2.1067402362823486,
+        0.5366452932357788
+      ],
+      "face": 67,
+      "not_a_metric_residual": true
+    },
+    {
+      "frame": "N640",
+      "source_xy": [
+        1850,
+        1060
+      ],
+      "source_observation": "visible pale foreground plane, identity unresolved",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "C5_N640_XY_parallax_hypothesis",
+      "current_model_first_hit": "Bed • inferred low foot bumper",
+      "hit_world": [
+        -0.8153079748153687,
+        -2.2377896308898926,
+        0.4995957016944885
+      ],
+      "face": 68,
+      "not_a_metric_residual": true
+    },
+    {
+      "frame": "F",
+      "source_xy": [
+        1450,
+        1000
+      ],
+      "source_observation": "visible endboard interior control",
+      "source_identity_status": "requires source visual-review interpretation; these queries alone cannot confirm source identity",
+      "camera": "MATCH_F_Turning_Right",
+      "current_model_first_hit": "Bed • observed endboard, consistent width",
+      "hit_world": [
+        1.990407109260559,
+        -2.4851033687591553,
+        0.9228836297988892
+      ],
+      "face": 634,
+      "not_a_metric_residual": true
+    }
+  ],
+  "warning": "Do not transfer Bed mesh names into source annotations. Existing model labels are hypotheses; foreground source identities are separate."
+}

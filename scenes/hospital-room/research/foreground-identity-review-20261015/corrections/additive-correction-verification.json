@@ -1,0 +1,36 @@
+{
+  "frozen_source_path": "scenes/hospital-room/research/source-annotation-20261014/source_contour_branches_N640_G_H.json",
+  "frozen_source_sha256": "dee3825ae55a8f5d80621168e6520c4889e18bdbfbf30d72464a0bb5f016b1c6",
+  "frozen_source_git_blob": "2b6bcad04c701b32318b2b6f2f0433591400c4c0",
+  "frozen_source_unchanged": true,
+  "corrected_derivative": "scenes/hospital-room/research/foreground-identity-review-20261015/corrections/source_contour_branches_N640_G_H.corrected_identity_20261015.json",
+  "changes": [
+    {
+      "target_branch_id": "N640:sofa_arm_right:arm_exterior_to_background:right",
+      "field": "note",
+      "old_text": "Stop before pale foreground bedding occludes the bottom; rounded shoulder split from upper branch.",
+      "proposed_text": "Stop before the narrow pale foreground surface occludes the bottom. Its material/ownership is unresolved in this view; tabletop is a candidate. Do not use it as a confirmed mattress edge. Rounded shoulder remains separate from the upper branch.",
+      "reason": "Native665 shows wood-grained rigid plane; H/N640 show only thin pale foreground, insufficient to identify a mattress. Preserve contour samples and source identity of the chair/arm itself."
+    },
+    {
+      "target_branch_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower",
+      "field": "note",
+      "old_text": "Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "proposed_text": "Panel bottom only. Chair uprights and the narrow pale foreground surface are different boundaries. The foreground surface is not confirmed bedding; tabletop remains a candidate.",
+      "reason": "Native665 shows wood-grained rigid plane; H/N640 show only thin pale foreground, insufficient to identify a mattress. Preserve contour samples and source identity of the chair/arm itself."
+    }
+  ],
+  "exclusion_label_correction": {
+    "old_object_id": "bed_or_bedding_foreground",
+    "proposed_object_id": "pale_foreground_surface_unresolved",
+    "candidate_identity": "tabletop in G/H/N640 is plausible, not yet confirmed per-view; native665 tabletop is high-confidence",
+    "retain_old_exclusion_rule": "No mattress footprint or patient-eye calibration from clipped foreground strips. No two mattress long sides or hidden endpoint ownership established."
+  },
+  "exact_note_replacements": {
+    "Stop before pale foreground bedding occludes the bottom; rounded shoulder split from upper branch.": 1,
+    "Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.": 1
+  },
+  "exact_exclusion_id_replacements": 1,
+  "all_coordinates_branch_geometry_and_other_values_unchanged": true,
+  "source_acceptance": false
+}
