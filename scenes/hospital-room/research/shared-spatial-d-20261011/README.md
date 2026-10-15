@@ -1,5 +1,12 @@
 # 病房共享空间候选D：未采纳及标注勘误
 
+<!-- c3-d-origin-correction-20261015 -->
+
+**2026-10-15穿插起点勘误：独立evaluated世界网格和严格三角形横穿复查确认，D基线本身已有bank 3 slat01–21穿入灰折面，不能再把这21片穿插描述为J1首次引入。J1另新增灰折面与ROOM_SHELL、perimeter rail及Window_3上下sill/lintel的穿插。D仍未采纳、J1仍REJECTED_DIAGNOSTIC；H旧85px撤回不变。本轮P0–C3消穿插不构成来源验收，C3仍因柱遮挡和来源形状失败。以下历史文字及原图保留原语境；不倒改旧QA、旧二进制或当时显示核验。**
+
+[本轮D/J1复查原件与图证](../geometry-c3-unaccepted-20261015/versions/D.md)。
+
+
 <!-- cloud-originals-recovery-65-20261013 -->
 
 **2026-10-13 22:07–22:12 UTC恢复检查补充：CP1的27件与验图38件（合计65件）当前原件不可取得／恢复待查。** 云端环境重建后，原目录及待传清单不在当前workspace/shared；Library完整清单及65精确文件名检查未找到成功身份。上传超时结果仍未定、无会话可恢复，两批均未在本Mac物化或进入Git。下文“待交付/待传输”为此前历史状态，不表示仍有可用本地待传原件。35/35实显曾真实完成，PR #50结论仍有效；不以补图或新模型冒充旧证据/CP1。已Git保存的D/E/机位诊断/顶轨6件/A/B不受影响，CURRENT及拒绝/未采纳状态不变。后续从持久化D及5原帧开始的联合重建将另立新版本。[恢复状态记录](../../../../docs/research-display-20261013/cloud-originals-recovery-65/README.md)。
