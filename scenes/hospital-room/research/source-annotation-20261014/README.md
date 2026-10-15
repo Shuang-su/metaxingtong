@@ -1,5 +1,10 @@
 # N640、G、H源图标注：29分支、143点
 
+<!-- foreground-identity-correction-20261015 -->
+
+**2026-10-15身份更正：** N640右沙发扶手及H绿椅底沿说明中的“pale foreground bedding”不再作为已确认床品身份；应读为“身份待定的浅色前景平面，桌面候选”。原生665与viewport6063明确为木桌，不把G/H/N640全部改为桌。冻结原JSON、原坐标和旧正文保留；[另存的两处说明及排除标签更正版](../foreground-identity-review-20261015/corrections/source_contour_branches_N640_G_H.corrected_identity_20261015.json)和[逐项验证](../foreground-identity-review-20261015/corrections/additive-correction-verification.json)只更正身份措辞。A/B/G端板族、遮挡排除、圆肩拆分及无残差门槛不变。[本轮原始图证与报告](../foreground-identity-review-20261015/README.md)。
+
+
 本版本独立保存11件源图标注文件及权威索引1件，共12件原文件、254,906字节；另有本README、交付状态、本机核验及SHA清单4份，共16件新增仓库文件。所有原字节不改写；原PNG、准备阶段验证器及旧模型均通过已有Git依赖引用，不重复复制。
 
 [原报告](新640帧_轮廓与床上相机约束.md) · [权威索引](provenance/confirmed_annotation_library_index.json) · [SHA清单](SHA256SUMS.txt) · [实际依赖与交付状态](delivery-status.json)。此前Library技能不可用只影响当时本机接收；本次恢复后使用当前流程完成原件物化与身份/字节/SHA核验。

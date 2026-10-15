@@ -1,0 +1,38 @@
+{
+  "status": "PROPOSED_ADDITIVE_CORRECTION_NO_ARCHIVE_MUTATION",
+  "target_path": "/workspace/scratch/fa58bfcf0425/hospital_empty_frame_annotation_20261014/source_contour_branches_N640_G_H.json",
+  "target_sha256": "dee3825ae55a8f5d80621168e6520c4889e18bdbfbf30d72464a0bb5f016b1c6",
+  "source_annotation_index_library_id": "libfile_08c249d20c4c81918e064b8424e98766",
+  "changes": [
+    {
+      "target_branch_id": "N640:sofa_arm_right:arm_exterior_to_background:right",
+      "field": "note",
+      "old_text": "Stop before pale foreground bedding occludes the bottom; rounded shoulder split from upper branch.",
+      "proposed_text": "Stop before the narrow pale foreground surface occludes the bottom. Its material/ownership is unresolved in this view; tabletop is a candidate. Do not use it as a confirmed mattress edge. Rounded shoulder remains separate from the upper branch.",
+      "reason": "Native665 shows wood-grained rigid plane; H/N640 show only thin pale foreground, insufficient to identify a mattress. Preserve contour samples and source identity of the chair/arm itself."
+    },
+    {
+      "target_branch_id": "H:chair_back_panel:panel_bottom_to_visible_background:lower",
+      "field": "note",
+      "old_text": "Panel bottom only. Chair upright silhouettes and pale foreground bedding are different boundaries.",
+      "proposed_text": "Panel bottom only. Chair uprights and the narrow pale foreground surface are different boundaries. The foreground surface is not confirmed bedding; tabletop remains a candidate.",
+      "reason": "Native665 shows wood-grained rigid plane; H/N640 show only thin pale foreground, insufficient to identify a mattress. Preserve contour samples and source identity of the chair/arm itself."
+    }
+  ],
+  "exclusion_label_correction": {
+    "old_object_id": "bed_or_bedding_foreground",
+    "proposed_object_id": "pale_foreground_surface_unresolved",
+    "candidate_identity": "tabletop in G/H/N640 is plausible, not yet confirmed per-view; native665 tabletop is high-confidence",
+    "retain_old_exclusion_rule": "No mattress footprint or patient-eye calibration from clipped foreground strips. No two mattress long sides or hidden endpoint ownership established."
+  },
+  "preserve_distinct_endboard_branch": {
+    "catalog": "hospital_anchor_preparation_20261014/source_anchor_catalog.json",
+    "branch_ids": [
+      "A:bed_far_board_upper_envelope",
+      "B:bed_far_board_upper_envelope",
+      "G:bed_far_board_upper_envelope"
+    ],
+    "action": "Do not relabel these rigid endboard branches as tabletop. Their conditional endboard-family state, head/foot ambiguity, shoulder splitting and no-residual guards remain."
+  },
+  "frozen_C3_C4_C5_reports": "Keep historical files and true RAW unchanged; append this identity review to any later archive. Model-object names are not source identity evidence."
+}
