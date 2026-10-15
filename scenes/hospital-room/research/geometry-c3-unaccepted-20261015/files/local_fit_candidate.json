@@ -1,0 +1,1342 @@
+{
+  "status": "UNACCEPTED_CONDITIONAL_SHARED_CUSHION_CANDIDATE",
+  "base": "D",
+  "cameras": {
+    "G": {
+      "matrix": [
+        [
+          0.8272041082382202,
+          -0.061700716614723206,
+          -0.9351080656051636,
+          -1.5854567289352417
+        ],
+        [
+          -0.9367659687995911,
+          -0.08974464237689972,
+          -0.8227488994598389,
+          -2.784939765930176
+        ],
+        [
+          -0.026525482535362244,
+          1.2452467679977417,
+          -0.10562893003225327,
+          1.1699354648590088
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 30.776639938354492,
+      "sensor_width": 36.0,
+      "sensor_fit": "AUTO",
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "clip_start": 0.014999999664723873
+    },
+    "H": {
+      "matrix": [
+        [
+          1.0158050060272217,
+          -0.12624509632587433,
+          -0.7174273729324341,
+          -2.4226064682006836
+        ],
+        [
+          -0.7284500598907471,
+          -0.175205796957016,
+          -1.0005815029144287,
+          -3.2555174827575684
+        ],
+        [
+          0.0004968548892065883,
+          1.2312047481536865,
+          -0.21595057845115662,
+          0.6256240606307983
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 43.01101303100586,
+      "sensor_width": 36.0,
+      "sensor_fit": "AUTO",
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "clip_start": 0.014999999664723873
+    },
+    "N640": {
+      "matrix": [
+        [
+          0.8189936777553349,
+          -0.06391267695710481,
+          -0.5702319697550853,
+          -2.4226064682006836
+        ],
+        [
+          -0.573623897440583,
+          -0.11599080601467589,
+          -0.8108648356224943,
+          -3.2555174827575684
+        ],
+        [
+          -0.01431712547497772,
+          0.9911918596539434,
+          -0.13165758246352874,
+          0.6256240606307983
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens": 42.550396213860196,
+      "sensor_width": 36.0,
+      "sensor_fit": "AUTO",
+      "shift_x": 0.0,
+      "shift_y": 0.0,
+      "clip_start": 0.014999999664723873
+    }
+  },
+  "geometry_parameters": {
+    "Sofa • reclined back cushion 1": [
+      0.004047829742759632,
+      -0.010505475750121767,
+      -0.019476508375484005
+    ],
+    "Sofa • reclined back cushion 2": [
+      -0.07999999999999999,
+      -0.07845090889778154,
+      -0.005193852878718242
+    ]
+  },
+  "deformation": "world deltaXYZ times normalized height above cushion bottom; all views same mesh; bottom fixed",
+  "fit_views": [
+    "G",
+    "H"
+  ],
+  "heldout_furniture_view": "N640",
+  "N640_camera": {
+    "hypothesis": "D H camera position fixed; rotation and <=6% focal correction from three known window centerlines only; no sofa observations used; pure-rotation cross-time identity not independently verified",
+    "parameters": [
+      -0.025413747849846263,
+      0.036044875371664765,
+      0.01141372179205958,
+      -0.010767033201215536
+    ],
+    "window_samples": [
+      [
+        -1.603616178,
+        [
+          [
+            106.5,
+            350
+          ],
+          [
+            101,
+            500
+          ],
+          [
+            95.5,
+            650
+          ]
+        ]
+      ],
+      [
+        0,
+        [
+          [
+            1009,
+            350
+          ],
+          [
+            1010,
+            500
+          ],
+          [
+            1012,
+            650
+          ]
+        ]
+      ],
+      [
+        1.5,
+        [
+          [
+            1567,
+            350
+          ],
+          [
+            1573,
+            500
+          ],
+          [
+            1579.5,
+            650
+          ]
+        ]
+      ]
+    ],
+    "window_residuals_px": {
+      "-1.603616178": [
+        -2.9483750748331374,
+        -2.8612325536498417,
+        -2.774090032466546
+      ],
+      "0": [
+        7.130882198881409,
+        8.820252740148021,
+        9.50962328141452
+      ],
+      "1.5": [
+        -6.226988816700214,
+        -4.702076942225858,
+        -3.6771650677512753
+      ]
+    }
+  },
+  "branches": [
+    {
+      "branch_id": "N640:sofa_back_left:backrest_outer:upper",
+      "mesh": "Sofa • reclined back cushion 1",
+      "frame": "N640",
+      "role": "conditional_holdout",
+      "branch": "upper",
+      "source_uncertainty_px": 4,
+      "excluded_rounded_transition_samples": [],
+      "before": [
+        {
+          "source": [
+            900,
+            765
+          ],
+          "projection": [
+            900,
+            686.1844791930712
+          ],
+          "residual": -78.81552080692882
+        },
+        {
+          "source": [
+            950,
+            762
+          ],
+          "projection": [
+            950,
+            686.1242021834689
+          ],
+          "residual": -75.87579781653108
+        },
+        {
+          "source": [
+            1000,
+            758
+          ],
+          "projection": [
+            1000,
+            686.0666473860939
+          ],
+          "residual": -71.9333526139061
+        },
+        {
+          "source": [
+            1050,
+            755
+          ],
+          "projection": [
+            1050,
+            686.0090925887189
+          ],
+          "residual": -68.99090741128111
+        },
+        {
+          "source": [
+            1100,
+            754
+          ],
+          "projection": [
+            1100,
+            685.9515377913439
+          ],
+          "residual": -68.04846220865613
+        },
+        {
+          "source": [
+            1150,
+            753
+          ],
+          "projection": [
+            1150,
+            685.8939829939688
+          ],
+          "residual": -67.10601700603115
+        },
+        {
+          "source": [
+            1200,
+            752
+          ],
+          "projection": [
+            1200,
+            685.8364281965938
+          ],
+          "residual": -66.16357180340617
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            900,
+            765
+          ],
+          "projection": [
+            900,
+            699.2503295847722
+          ],
+          "residual": -65.7496704152278
+        },
+        {
+          "source": [
+            950,
+            762
+          ],
+          "projection": [
+            950,
+            697.6417031563833
+          ],
+          "residual": -64.3582968436167
+        },
+        {
+          "source": [
+            1000,
+            758
+          ],
+          "projection": [
+            1000,
+            697.5212006301784
+          ],
+          "residual": -60.47879936982156
+        },
+        {
+          "source": [
+            1050,
+            755
+          ],
+          "projection": [
+            1050,
+            697.4006981039735
+          ],
+          "residual": -57.59930189602653
+        },
+        {
+          "source": [
+            1100,
+            754
+          ],
+          "projection": [
+            1100,
+            697.2801955777686
+          ],
+          "residual": -56.71980442223139
+        },
+        {
+          "source": [
+            1150,
+            753
+          ],
+          "projection": [
+            1150,
+            697.1596930515637
+          ],
+          "residual": -55.84030694843625
+        },
+        {
+          "source": [
+            1200,
+            752
+          ],
+          "projection": [
+            1200,
+            697.0391905253589
+          ],
+          "residual": -54.96080947464111
+        }
+      ]
+    },
+    {
+      "branch_id": "N640:sofa_back_left:backrest_outer:left",
+      "mesh": "Sofa • reclined back cushion 1",
+      "frame": "N640",
+      "role": "conditional_holdout",
+      "branch": "left",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [
+        [
+          880,
+          787
+        ]
+      ],
+      "before": [
+        {
+          "source": [
+            883,
+            817
+          ],
+          "projection": [
+            894.5401757129029,
+            817
+          ],
+          "residual": 11.540175712902851
+        },
+        {
+          "source": [
+            890,
+            850
+          ],
+          "projection": [
+            901.8220220528948,
+            850
+          ],
+          "residual": 11.822022052894795
+        },
+        {
+          "source": [
+            896,
+            870
+          ],
+          "projection": [
+            906.2352622589505,
+            870
+          ],
+          "residual": 10.235262258950456
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            883,
+            817
+          ],
+          "projection": [
+            896.0495540367058,
+            817
+          ],
+          "residual": 13.049554036705786
+        },
+        {
+          "source": [
+            890,
+            850
+          ],
+          "projection": [
+            902.8927874394398,
+            850
+          ],
+          "residual": 12.892787439439758
+        },
+        {
+          "source": [
+            896,
+            870
+          ],
+          "projection": [
+            907.040201622915,
+            870
+          ],
+          "residual": 11.040201622914992
+        }
+      ]
+    },
+    {
+      "branch_id": "N640:sofa_back_right:backrest_outer:upper",
+      "mesh": "Sofa • reclined back cushion 2",
+      "frame": "N640",
+      "role": "conditional_holdout",
+      "branch": "upper",
+      "source_uncertainty_px": 4,
+      "excluded_rounded_transition_samples": [],
+      "before": [
+        {
+          "source": [
+            1250,
+            754
+          ],
+          "projection": [
+            1250,
+            698.7496670034545
+          ],
+          "residual": -55.25033299654547
+        },
+        {
+          "source": [
+            1300,
+            749
+          ],
+          "projection": [
+            1300,
+            689.2977479488319
+          ],
+          "residual": -59.7022520511681
+        },
+        {
+          "source": [
+            1350,
+            746
+          ],
+          "projection": [
+            1350,
+            689.2110713749496
+          ],
+          "residual": -56.7889286250504
+        },
+        {
+          "source": [
+            1400,
+            745
+          ],
+          "projection": [
+            1400,
+            689.1243948010674
+          ],
+          "residual": -55.87560519893259
+        },
+        {
+          "source": [
+            1450,
+            743
+          ],
+          "projection": [
+            1450,
+            689.0377182271851
+          ],
+          "residual": -53.96228177281489
+        },
+        {
+          "source": [
+            1500,
+            742
+          ],
+          "projection": [
+            1500,
+            691.3066469854554
+          ],
+          "residual": -50.69335301454464
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            1250,
+            754
+          ],
+          "projection": [
+            1250,
+            693.6601453187312
+          ],
+          "residual": -60.339854681268775
+        },
+        {
+          "source": [
+            1300,
+            749
+          ],
+          "projection": [
+            1300,
+            688.2058876386451
+          ],
+          "residual": -60.794112361354905
+        },
+        {
+          "source": [
+            1350,
+            746
+          ],
+          "projection": [
+            1350,
+            688.1253768900366
+          ],
+          "residual": -57.87462310996341
+        },
+        {
+          "source": [
+            1400,
+            745
+          ],
+          "projection": [
+            1400,
+            688.0448661414281
+          ],
+          "residual": -56.95513385857191
+        },
+        {
+          "source": [
+            1450,
+            743
+          ],
+          "projection": [
+            1450,
+            687.9643553928195
+          ],
+          "residual": -55.03564460718053
+        },
+        {
+          "source": [
+            1500,
+            742
+          ],
+          "projection": [
+            1500,
+            689.4466455905937
+          ],
+          "residual": -52.553354409406325
+        }
+      ]
+    },
+    {
+      "branch_id": "N640:sofa_back_right:backrest_outer:right",
+      "mesh": "Sofa • reclined back cushion 2",
+      "frame": "N640",
+      "role": "conditional_holdout",
+      "branch": "right",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [
+        [
+          1515,
+          752
+        ]
+      ],
+      "before": [
+        {
+          "source": [
+            1522,
+            771
+          ],
+          "projection": [
+            1542.7968282114282,
+            771
+          ],
+          "residual": 20.796828211428192
+        },
+        {
+          "source": [
+            1536,
+            803
+          ],
+          "projection": [
+            1556.9009280736102,
+            803
+          ],
+          "residual": 20.900928073610203
+        },
+        {
+          "source": [
+            1548,
+            824
+          ],
+          "projection": [
+            1566.1567436081673,
+            824
+          ],
+          "residual": 18.15674360816729
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            1522,
+            771
+          ],
+          "projection": [
+            1545.3036326559668,
+            771
+          ],
+          "residual": 23.303632655966794
+        },
+        {
+          "source": [
+            1536,
+            803
+          ],
+          "projection": [
+            1558.845837411552,
+            803
+          ],
+          "residual": 22.84583741155211
+        },
+        {
+          "source": [
+            1548,
+            824
+          ],
+          "projection": [
+            1567.732909282405,
+            824
+          ],
+          "residual": 19.73290928240499
+        }
+      ]
+    },
+    {
+      "branch_id": "H:sofa_back_left:backrest_outer:upper",
+      "mesh": "Sofa • reclined back cushion 1",
+      "frame": "H",
+      "role": "fit",
+      "branch": "upper",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [],
+      "before": [
+        {
+          "source": [
+            882,
+            804
+          ],
+          "projection": [
+            882,
+            782.9898268350706
+          ],
+          "residual": -21.01017316492937
+        },
+        {
+          "source": [
+            963,
+            798
+          ],
+          "projection": [
+            963,
+            784.1535379099917
+          ],
+          "residual": -13.846462090008345
+        },
+        {
+          "source": [
+            1080,
+            795
+          ],
+          "projection": [
+            1080,
+            785.8344539070998
+          ],
+          "residual": -9.165546092900172
+        },
+        {
+          "source": [
+            1196,
+            793
+          ],
+          "projection": [
+            1196,
+            789.1087356302435
+          ],
+          "residual": -3.8912643697565272
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            882,
+            804
+          ],
+          "projection": [
+            882,
+            794.77775198851
+          ],
+          "residual": -9.222248011490024
+        },
+        {
+          "source": [
+            963,
+            798
+          ],
+          "projection": [
+            963,
+            795.8355855535493
+          ],
+          "residual": -2.164414446450678
+        },
+        {
+          "source": [
+            1080,
+            795
+          ],
+          "projection": [
+            1080,
+            797.3635673697173
+          ],
+          "residual": 2.363567369717316
+        },
+        {
+          "source": [
+            1196,
+            793
+          ],
+          "projection": [
+            1196,
+            798.881800454205
+          ],
+          "residual": 5.881800454204949
+        }
+      ]
+    },
+    {
+      "branch_id": "H:sofa_back_left:backrest_outer:left",
+      "mesh": "Sofa • reclined back cushion 1",
+      "frame": "H",
+      "role": "fit",
+      "branch": "left",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [
+        [
+          855,
+          824
+        ]
+      ],
+      "before": [
+        {
+          "source": [
+            859,
+            847
+          ],
+          "projection": [
+            853.9732677443062,
+            847
+          ],
+          "residual": -5.026732255693787
+        },
+        {
+          "source": [
+            862,
+            868
+          ],
+          "projection": [
+            858.197030402016,
+            868
+          ],
+          "residual": -3.8029695979839744
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            859,
+            847
+          ],
+          "projection": [
+            856.4133873154395,
+            847
+          ],
+          "residual": -2.586612684560464
+        },
+        {
+          "source": [
+            862,
+            868
+          ],
+          "projection": [
+            860.3618571061663,
+            868
+          ],
+          "residual": -1.638142893833674
+        }
+      ]
+    },
+    {
+      "branch_id": "H:sofa_back_right:backrest_outer:upper",
+      "mesh": "Sofa • reclined back cushion 2",
+      "frame": "H",
+      "role": "fit",
+      "branch": "upper",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [],
+      "before": [
+        {
+          "source": [
+            1228,
+            798
+          ],
+          "projection": [
+            1228,
+            804.380261592144
+          ],
+          "residual": 6.380261592144052
+        },
+        {
+          "source": [
+            1332,
+            791
+          ],
+          "projection": [
+            1332,
+            793.0615162243325
+          ],
+          "residual": 2.061516224332536
+        },
+        {
+          "source": [
+            1440,
+            787
+          ],
+          "projection": [
+            1440,
+            794.5484576289293
+          ],
+          "residual": 7.548457628929327
+        },
+        {
+          "source": [
+            1481,
+            788
+          ],
+          "projection": [
+            1481,
+            796.8906339898349
+          ],
+          "residual": 8.890633989834896
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            1228,
+            798
+          ],
+          "projection": [
+            1228,
+            798.5788372573372
+          ],
+          "residual": 0.5788372573372271
+        },
+        {
+          "source": [
+            1332,
+            791
+          ],
+          "projection": [
+            1332,
+            791.9576040890527
+          ],
+          "residual": 0.9576040890526656
+        },
+        {
+          "source": [
+            1440,
+            787
+          ],
+          "projection": [
+            1440,
+            793.4583752407349
+          ],
+          "residual": 6.458375240734881
+        },
+        {
+          "source": [
+            1481,
+            788
+          ],
+          "projection": [
+            1481,
+            794.9913474912896
+          ],
+          "residual": 6.991347491289616
+        }
+      ]
+    },
+    {
+      "branch_id": "H:sofa_back_right:backrest_outer:right",
+      "mesh": "Sofa • reclined back cushion 2",
+      "frame": "H",
+      "role": "fit",
+      "branch": "right",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [
+        [
+          1493,
+          793
+        ]
+      ],
+      "before": [
+        {
+          "source": [
+            1506,
+            826
+          ],
+          "projection": [
+            1503.2310368090366,
+            826
+          ],
+          "residual": -2.7689631909634045
+        },
+        {
+          "source": [
+            1527,
+            867
+          ],
+          "projection": [
+            1520.8167505677227,
+            867
+          ],
+          "residual": -6.183249432277307
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            1506,
+            826
+          ],
+          "projection": [
+            1506.665938430453,
+            826
+          ],
+          "residual": 0.6659384304530249
+        },
+        {
+          "source": [
+            1527,
+            867
+          ],
+          "projection": [
+            1523.547901164377,
+            867
+          ],
+          "residual": -3.452098835623019
+        }
+      ]
+    },
+    {
+      "branch_id": "G:sofa_back_left:backrest_outer:upper",
+      "mesh": "Sofa • reclined back cushion 1",
+      "frame": "G",
+      "role": "fit",
+      "branch": "upper",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [],
+      "before": [
+        {
+          "source": [
+            227,
+            894
+          ],
+          "projection": [
+            227,
+            884.187655298287
+          ],
+          "residual": -9.81234470171296
+        },
+        {
+          "source": [
+            309,
+            885
+          ],
+          "projection": [
+            309,
+            876.645236300757
+          ],
+          "residual": -8.354763699242994
+        },
+        {
+          "source": [
+            422,
+            879
+          ],
+          "projection": [
+            422,
+            866.66627810013
+          ],
+          "residual": -12.333721899870056
+        },
+        {
+          "source": [
+            528,
+            875
+          ],
+          "projection": [
+            528,
+            857.3054854517541
+          ],
+          "residual": -17.694514548245934
+        },
+        {
+          "source": [
+            588,
+            877
+          ],
+          "projection": [
+            588,
+            862.6863192250898
+          ],
+          "residual": -14.313680774910154
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            227,
+            894
+          ],
+          "projection": [
+            227,
+            898.6216789114955
+          ],
+          "residual": 4.621678911495451
+        },
+        {
+          "source": [
+            309,
+            885
+          ],
+          "projection": [
+            309,
+            889.4955508991558
+          ],
+          "residual": 4.4955508991557735
+        },
+        {
+          "source": [
+            422,
+            879
+          ],
+          "projection": [
+            422,
+            879.1189490517579
+          ],
+          "residual": 0.11894905175790882
+        },
+        {
+          "source": [
+            528,
+            875
+          ],
+          "projection": [
+            528,
+            869.3851455488892
+          ],
+          "residual": -5.614854451110773
+        },
+        {
+          "source": [
+            588,
+            877
+          ],
+          "projection": [
+            588,
+            868.3653521365864
+          ],
+          "residual": -8.634647863413647
+        }
+      ]
+    },
+    {
+      "branch_id": "G:sofa_back_left:backrest_outer:left",
+      "mesh": "Sofa • reclined back cushion 1",
+      "frame": "G",
+      "role": "fit",
+      "branch": "left",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [
+        [
+          196,
+          916
+        ]
+      ],
+      "before": [
+        {
+          "source": [
+            205,
+            977
+          ],
+          "projection": [
+            204.7681691321284,
+            977
+          ],
+          "residual": -0.23183086787159368
+        },
+        {
+          "source": [
+            217,
+            1025
+          ],
+          "projection": [
+            208.96114431653646,
+            1025
+          ],
+          "residual": -8.038855683463538
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            205,
+            977
+          ],
+          "projection": [
+            207.67205969411677,
+            977
+          ],
+          "residual": 2.6720596941167685
+        },
+        {
+          "source": [
+            217,
+            1025
+          ],
+          "projection": [
+            211.13897553742353,
+            1025
+          ],
+          "residual": -5.8610244625764665
+        }
+      ]
+    },
+    {
+      "branch_id": "G:sofa_back_right:backrest_outer:upper",
+      "mesh": "Sofa • reclined back cushion 2",
+      "frame": "G",
+      "role": "fit",
+      "branch": "upper",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [],
+      "before": [
+        {
+          "source": [
+            802,
+            868
+          ],
+          "projection": [
+            802,
+            837.1494707743735
+          ],
+          "residual": -30.850529225626474
+        },
+        {
+          "source": [
+            839,
+            864
+          ],
+          "projection": [
+            839,
+            833.8266271467304
+          ],
+          "residual": -30.173372853269598
+        },
+        {
+          "source": [
+            868,
+            866
+          ],
+          "projection": [
+            868,
+            853.7424237067291
+          ],
+          "residual": -12.257576293270859
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            802,
+            868
+          ],
+          "projection": [
+            802,
+            845.5856241780842
+          ],
+          "residual": -22.41437582191577
+        },
+        {
+          "source": [
+            839,
+            864
+          ],
+          "projection": [
+            839,
+            842.1641958009677
+          ],
+          "residual": -21.83580419903228
+        },
+        {
+          "source": [
+            868,
+            866
+          ],
+          "projection": [
+            868,
+            862.4015382992836
+          ],
+          "residual": -3.5984617007163706
+        }
+      ]
+    },
+    {
+      "branch_id": "G:sofa_back_right:backrest_outer:right",
+      "mesh": "Sofa • reclined back cushion 2",
+      "frame": "G",
+      "role": "fit",
+      "branch": "right",
+      "source_uncertainty_px": 5,
+      "excluded_rounded_transition_samples": [
+        [
+          879,
+          870
+        ]
+      ],
+      "before": [
+        {
+          "source": [
+            893,
+            916
+          ],
+          "projection": [
+            888.6120889223571,
+            916
+          ],
+          "residual": -4.3879110776429116
+        },
+        {
+          "source": [
+            908,
+            966
+          ],
+          "projection": [
+            905.1659689073904,
+            966
+          ],
+          "residual": -2.834031092609621
+        }
+      ],
+      "after": [
+        {
+          "source": [
+            893,
+            916
+          ],
+          "projection": [
+            886.5178327171891,
+            916
+          ],
+          "residual": -6.482167282810906
+        },
+        {
+          "source": [
+            908,
+            966
+          ],
+          "projection": [
+            903.7924261752897,
+            966
+          ],
+          "residual": -4.207573824710266
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Camera/geometry ambiguity remains. No patient-bed metric calibration. No acceptance. Mesh visibility to be checked with scene ray casts. Source shoulder points excluded instead of reassigning to another branch."
+  ]
+}
