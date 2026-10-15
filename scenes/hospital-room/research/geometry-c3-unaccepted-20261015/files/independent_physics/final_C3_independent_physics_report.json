@@ -1,0 +1,750 @@
+{
+  "status": "C3_GEOMETRY_AND_PHYSICAL_CHECKS_PASSED_WITH_GLB_RENDER_STATE_LIMITATION_SOURCE_UNACCEPTED",
+  "source_fidelity_accepted": false,
+  "source_visual_status_reported_but_not_remeasured_here": "C3 improves the visible right curtain outline, while the inferred pillar depth still causes incorrect left-side occlusion. Source acceptance remains failed; this independent audit did not rescore source pixels.",
+  "scope": "Read-only evaluated-world-mesh physical audit, C2->C3 difference audit, material/white identity audit, and actual GLB import into a fresh empty Blender scene.",
+  "units": "Arbitrary D scene units, not recovered metric dimensions.",
+  "C3_vs_C2": {
+    "C2": "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C2_small_shared_geometry_UNACCEPTED.blend",
+    "C3": "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C3_width_refinement_UNACCEPTED.blend",
+    "changed_meshes": [
+      "Curtain • rebuilt uniform eight-fold drape"
+    ],
+    "added_meshes": [],
+    "removed_meshes": [],
+    "only_changed_mesh_is_curtain": true,
+    "curtain_expected_affine_transform": {
+      "fixed_left_x": 1.6446596384048462,
+      "scale_x": 0.7533634597251563,
+      "preserve_world_y_z": true
+    },
+    "maximum_expected_affine_vertex_error": 1.6924465733171325e-07,
+    "C2_curtain_bounds": [
+      [
+        1.6446596384048462,
+        -0.2161949723958969,
+        0.0062499940395355225
+      ],
+      [
+        2.3415627479553223,
+        -0.12162499874830246,
+        2.714665412902832
+      ]
+    ],
+    "C3_curtain_bounds": [
+      [
+        1.6446596384048462,
+        -0.2161949723958969,
+        0.0062499940395355225
+      ],
+      [
+        2.1696810722351074,
+        -0.12162499874830246,
+        2.714665412902832
+      ]
+    ],
+    "all_camera_parameters_unchanged": true,
+    "object_visibility_unchanged": true,
+    "source_fidelity_accepted": false
+  },
+  "C3_blend_physical": {
+    "file": "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C3_width_refinement_UNACCEPTED.blend",
+    "sha256": "0f7bc1c1b5e53393717fa971c5f274e015f9e409108443c932ce8585f00c82fd",
+    "curtain_bounds": [
+      [
+        1.6446596384048462,
+        -0.2161949723958969,
+        0.0062499940395355225
+      ],
+      [
+        2.1696810722351074,
+        -0.12162499874830246,
+        2.714665412902832
+      ]
+    ],
+    "curtain_strict_surface_crossing_objects_all_scene": 0,
+    "curtain_to_blinds_and_cords_global_y_clearance": 0.005000002682209015,
+    "curtain_remaining_contacts": [
+      {
+        "a": "C2 • inferred beige column right of central black frame",
+        "b": "Curtain • rebuilt uniform eight-fold drape",
+        "triangle_overlap_pairs": 255,
+        "raw_triangle_edge_crossing_pairs": 1,
+        "aabb_overlap_depth_xyz": [
+          0.0,
+          0.09456997364759445,
+          2.7084154188632965
+        ],
+        "strict_transverse_crossing_pairs": 0,
+        "classification": "touch_or_coplanar_or_tolerance_needs_review",
+        "crossing_bounds": [
+          [
+            1.6446596384048462,
+            -0.17026695609092712,
+            1.2839382886886597
+          ],
+          [
+            1.6446596384048462,
+            -0.17026695609092712,
+            1.2839382886886597
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.6446596384048462,
+            -0.17026695609092712,
+            1.2839382886886597
+          ]
+        ],
+        "semantic_interpretation": "curtain_structural_contact_requires_review"
+      },
+      {
+        "a": "Curtain • rebuilt uniform eight-fold drape",
+        "b": "ROOM_SHELL__joined_solid__hidden_extents_inferred",
+        "triangle_overlap_pairs": 900,
+        "raw_triangle_edge_crossing_pairs": 0,
+        "aabb_overlap_depth_xyz": [
+          0.5250214338302612,
+          0.09456997364759445,
+          2.7084154188632965
+        ],
+        "strict_transverse_crossing_pairs": 0,
+        "classification": "touch_or_coplanar_or_tolerance_needs_review",
+        "crossing_bounds": null,
+        "crossing_samples": [],
+        "semantic_interpretation": "curtain_structural_contact_requires_review"
+      }
+    ],
+    "pillar_connector_and_both_rails_contact_preserved": true,
+    "sofa_left_back_seat_contact_preserved": true,
+    "mesh_visibility_changes_from_D": {},
+    "collection_visibility_changes_from_D": {},
+    "existing_material_parameter_changes_from_D": [],
+    "candidate_unchanged": true,
+    "original_D_unchanged": true
+  },
+  "C3_material_white_identity": {
+    "material_file": "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C3_width_refinement_UNACCEPTED.blend",
+    "white_file": "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C3_width_refinement_WHITE_UNACCEPTED.blend",
+    "material_sha256": "0f7bc1c1b5e53393717fa971c5f274e015f9e409108443c932ce8585f00c82fd",
+    "white_sha256": "a2b04c90b959e27fcac5d2a5d24e98a157d111f5ce8de833f34e2194cb836461",
+    "evaluated_geometry_identical": true,
+    "object_visibility_identical": true,
+    "all_camera_parameters_identical": true,
+    "mesh_count": 359,
+    "camera_count": 19,
+    "sources_unchanged": true,
+    "source_fidelity_accepted": false
+  },
+  "actual_GLB_reimport": {
+    "file": "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C3_width_refinement_UNACCEPTED.glb",
+    "import_completed": true,
+    "fresh_empty_scene": true,
+    "mesh_counts": {
+      "source": 359,
+      "imported": 359
+    },
+    "missing_meshes": [],
+    "extra_meshes": [],
+    "all_meshes_world_vertex_sets_and_bounds_within_5e_minus_6": true,
+    "maximum_bidirectional_world_vertex_error": 5.331201577973843e-07,
+    "all_per_object_triangle_counts_identical": true,
+    "vertex_counts": {
+      "source": 58959,
+      "imported": 137732
+    },
+    "vertex_count_note": "glTF expands normal/UV seams. Counts differ without changed world geometry or per-object triangle counts; no byte-identical topology claim.",
+    "camera_counts": {
+      "source": 19,
+      "imported": 19
+    },
+    "missing_cameras": [],
+    "extra_cameras": [],
+    "maximum_camera_world_matrix_error": 2.7567148208618164e-07,
+    "maximum_camera_projection_matrix_error_1920x1080": 9.5367431640625e-07,
+    "curtain_strict_surface_crossing_objects_all_scene": 0,
+    "curtain_blind_cord_y_clearance": 0.005000002682209015,
+    "focus_contacts": [
+      {
+        "a": "Curtain • rebuilt uniform eight-fold drape",
+        "b": "C2 • inferred beige column right of central black frame",
+        "triangle_overlap_pairs": 255,
+        "raw_triangle_edge_crossing_pairs": 1,
+        "aabb_overlap_depth_xyz": [
+          0.0,
+          0.09456997364759445,
+          2.7084154188632965
+        ],
+        "strict_transverse_crossing_pairs": 0,
+        "classification": "touch_or_coplanar_or_tolerance_needs_review",
+        "crossing_bounds": [
+          [
+            1.6446596384048462,
+            -0.17026695609092712,
+            1.2839382886886597
+          ],
+          [
+            1.6446596384048462,
+            -0.17026695609092712,
+            1.2839382886886597
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.6446596384048462,
+            -0.17026695609092712,
+            1.2839382886886597
+          ]
+        ],
+        "semantic_interpretation": "curtain_structural_contact_requires_review"
+      },
+      {
+        "a": "Curtain • rebuilt uniform eight-fold drape",
+        "b": "ROOM_SHELL__joined_solid__hidden_extents_inferred",
+        "triangle_overlap_pairs": 900,
+        "raw_triangle_edge_crossing_pairs": 0,
+        "aabb_overlap_depth_xyz": [
+          0.5250214338302612,
+          0.09456997364759445,
+          2.7084154188632965
+        ],
+        "strict_transverse_crossing_pairs": 0,
+        "classification": "touch_or_coplanar_or_tolerance_needs_review",
+        "crossing_bounds": null,
+        "crossing_samples": [],
+        "semantic_interpretation": "curtain_structural_contact_requires_review"
+      },
+      {
+        "a": "Sofa • reclined back cushion 1",
+        "b": "Sofa • seat cushion 1",
+        "triangle_overlap_pairs": 39,
+        "raw_triangle_edge_crossing_pairs": 39,
+        "aabb_overlap_depth_xyz": [
+          0.5924158245325089,
+          0.21820560097694397,
+          0.042736589908599854
+        ],
+        "strict_transverse_crossing_pairs": 39,
+        "classification": "surface_crossing",
+        "crossing_bounds": [
+          [
+            -0.4795690178871155,
+            -0.5700263977050781,
+            0.4972617030143738
+          ],
+          [
+            0.09683825075626373,
+            -0.37426453828811646,
+            0.5350791811943054
+          ]
+        ],
+        "crossing_samples": [
+          [
+            0.09521756321191788,
+            -0.5445965528488159,
+            0.5120967030525208
+          ],
+          [
+            0.08548206835985184,
+            -0.5384367108345032,
+            0.5065576434135437
+          ],
+          [
+            0.09490171074867249,
+            -0.5439893007278442,
+            0.5116404294967651
+          ],
+          [
+            0.09556154161691666,
+            -0.5613275766372681,
+            0.5235008001327515
+          ],
+          [
+            0.09683825075626373,
+            -0.5568485856056213,
+            0.5206388235092163
+          ]
+        ],
+        "semantic_interpretation": "structural_window_frame_join_or_duplicate_requires_review"
+      },
+      {
+        "a": "C2 • inferred beige column right of central black frame",
+        "b": "C2 • inferred rail end cross connector",
+        "triangle_overlap_pairs": 18,
+        "raw_triangle_edge_crossing_pairs": 18,
+        "aabb_overlap_depth_xyz": [
+          0.12278461456298828,
+          0.02969205379486084,
+          0.033750057220458984
+        ],
+        "strict_transverse_crossing_pairs": 18,
+        "classification": "surface_crossing",
+        "crossing_bounds": [
+          [
+            1.521875023841858,
+            -0.36000001430511475,
+            2.674999713897705
+          ],
+          [
+            1.6446596384048462,
+            -0.3303079605102539,
+            2.708750009536743
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.6446596384048462,
+            -0.35473984479904175,
+            2.674999713897705
+          ],
+          [
+            1.6446596384048462,
+            -0.35921555757522583,
+            2.708750009536743
+          ],
+          [
+            1.6446596384048462,
+            -0.35473981499671936,
+            2.674999713897705
+          ],
+          [
+            1.6446596384048462,
+            -0.3303079605102539,
+            2.708749771118164
+          ],
+          [
+            1.6446596384048462,
+            -0.35921552777290344,
+            2.708749771118164
+          ]
+        ],
+        "semantic_interpretation": "allowable_join_if_intended_attachment"
+      },
+      {
+        "a": "C2 • inferred beige column right of central black frame",
+        "b": "ROOM_SHELL__joined_solid__hidden_extents_inferred",
+        "triangle_overlap_pairs": 15,
+        "raw_triangle_edge_crossing_pairs": 6,
+        "aabb_overlap_depth_xyz": [
+          0.12278461456298828,
+          0.36000001430511475,
+          2.714665412902832
+        ],
+        "strict_transverse_crossing_pairs": 6,
+        "classification": "surface_crossing",
+        "crossing_bounds": [
+          [
+            1.5218751430511475,
+            0.0,
+            0.0
+          ],
+          [
+            1.6446596384048462,
+            0.0,
+            2.714665412902832
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.6446595191955566,
+            0.0,
+            0.0
+          ],
+          [
+            1.5218751430511475,
+            0.0,
+            2.714665412902832
+          ],
+          [
+            1.5218753814697266,
+            0.0,
+            0.0
+          ],
+          [
+            1.5249998569488525,
+            0.0,
+            0.06908750534057617
+          ],
+          [
+            1.6446596384048462,
+            0.0,
+            0.03125
+          ]
+        ],
+        "semantic_interpretation": "structural_window_frame_join_or_duplicate_requires_review"
+      },
+      {
+        "a": "C2 • inferred beige column right of central black frame",
+        "b": "Window • calibrated perimeter rail",
+        "triangle_overlap_pairs": 27,
+        "raw_triangle_edge_crossing_pairs": 27,
+        "aabb_overlap_depth_xyz": [
+          0.12278461456298828,
+          0.003750000149011612,
+          0.028124993667006493
+        ],
+        "strict_transverse_crossing_pairs": 27,
+        "classification": "surface_crossing",
+        "crossing_bounds": [
+          [
+            1.5218749046325684,
+            -0.003750000149011612,
+            0.0
+          ],
+          [
+            1.6446599960327148,
+            0.0,
+            0.02812504768371582
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.6446596384048462,
+            -0.0037499964237213135,
+            0.0
+          ],
+          [
+            1.6446599960327148,
+            -0.003750000149011612,
+            0.023124992847442627
+          ],
+          [
+            1.6446599960327148,
+            -0.0036451746709644794,
+            0.02577616088092327
+          ],
+          [
+            1.6446599960327148,
+            -0.003574265167117119,
+            0.026660528033971786
+          ],
+          [
+            1.6446599960327148,
+            -0.003704328089952469,
+            0.02503841184079647
+          ]
+        ],
+        "semantic_interpretation": "structural_window_frame_join_or_duplicate_requires_review"
+      },
+      {
+        "a": "C2 • inferred beige column right of central black frame",
+        "b": "Window • calibrated perimeter rail.001",
+        "triangle_overlap_pairs": 25,
+        "raw_triangle_edge_crossing_pairs": 25,
+        "aabb_overlap_depth_xyz": [
+          0.12278461456298828,
+          0.003750000149011612,
+          0.02187490463256836
+        ],
+        "strict_transverse_crossing_pairs": 25,
+        "classification": "surface_crossing",
+        "crossing_bounds": [
+          [
+            1.5218747854232788,
+            -0.003750026226043701,
+            2.6927905082702637
+          ],
+          [
+            1.6446596384048462,
+            0.0,
+            2.714665412902832
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.521875023841858,
+            -0.0037499999161809683,
+            2.714665412902832
+          ],
+          [
+            1.6433806419372559,
+            -0.0037499999161809683,
+            2.714665412902832
+          ],
+          [
+            1.6446596384048462,
+            -0.0037499999161809683,
+            2.714665412902832
+          ],
+          [
+            1.6446596384048462,
+            -0.003725100075826049,
+            2.696747303009033
+          ],
+          [
+            1.6446596384048462,
+            -0.003704328089952469,
+            2.6958770751953125
+          ]
+        ],
+        "semantic_interpretation": "structural_window_frame_join_or_duplicate_requires_review"
+      },
+      {
+        "a": "C2 • inferred beige column right of central black frame",
+        "b": "Window • calibrated vertical mullion.002",
+        "triangle_overlap_pairs": 7,
+        "raw_triangle_edge_crossing_pairs": 2,
+        "aabb_overlap_depth_xyz": [
+          0.0,
+          0.002550000324845314,
+          2.714665412902832
+        ],
+        "strict_transverse_crossing_pairs": 0,
+        "classification": "touch_or_coplanar_or_tolerance_needs_review",
+        "crossing_bounds": [
+          [
+            1.521875023841858,
+            -0.0017999988049268723,
+            2.384185791015625e-07
+          ],
+          [
+            1.521875023841858,
+            -0.0008287556120194495,
+            2.708415985107422
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.521875023841858,
+            -0.0008287556120194495,
+            2.708415985107422
+          ],
+          [
+            1.521875023841858,
+            -0.0017999988049268723,
+            2.384185791015625e-07
+          ]
+        ],
+        "semantic_interpretation": "structural_window_frame_join_or_duplicate_requires_review"
+      },
+      {
+        "a": "C2 • inferred rail end cross connector",
+        "b": "Curtain rail • forward overhead beam",
+        "triangle_overlap_pairs": 56,
+        "raw_triangle_edge_crossing_pairs": 42,
+        "aabb_overlap_depth_xyz": [
+          0.029999971389770508,
+          0.014999985694885254,
+          0.033750057220458984
+        ],
+        "strict_transverse_crossing_pairs": 42,
+        "classification": "surface_crossing",
+        "crossing_bounds": [
+          [
+            1.464429259300232,
+            -0.3603079319000244,
+            2.674999713897705
+          ],
+          [
+            1.4944292306900024,
+            -0.35912927985191345,
+            2.708749771118164
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.489429235458374,
+            -0.3603079319000244,
+            2.674999713897705
+          ],
+          [
+            1.4694292545318604,
+            -0.35912927985191345,
+            2.708749771118164
+          ],
+          [
+            1.4694292545318604,
+            -0.3603079319000244,
+            2.708749771118164
+          ],
+          [
+            1.489429235458374,
+            -0.3603079319000244,
+            2.708749771118164
+          ],
+          [
+            1.4894355535507202,
+            -0.3603079319000244,
+            2.7087485790252686
+          ]
+        ],
+        "semantic_interpretation": "allowable_join_if_intended_attachment"
+      },
+      {
+        "a": "C2 • inferred rail end cross connector",
+        "b": "Curtain rail • forward overhead beam.001",
+        "triangle_overlap_pairs": 56,
+        "raw_triangle_edge_crossing_pairs": 42,
+        "aabb_overlap_depth_xyz": [
+          0.029999971389770508,
+          0.014999985694885254,
+          0.033750057220458984
+        ],
+        "strict_transverse_crossing_pairs": 42,
+        "classification": "surface_crossing",
+        "crossing_bounds": [
+          [
+            1.6644290685653687,
+            -0.3603079319000244,
+            2.674999713897705
+          ],
+          [
+            1.6944290399551392,
+            -0.3589865565299988,
+            2.708749771118164
+          ]
+        ],
+        "crossing_samples": [
+          [
+            1.669429063796997,
+            -0.3603079319000244,
+            2.708749771118164
+          ],
+          [
+            1.694427728652954,
+            -0.3603076934814453,
+            2.6799933910369873
+          ],
+          [
+            1.6940484046936035,
+            -0.3603076934814453,
+            2.678086280822754
+          ],
+          [
+            1.6648097038269043,
+            -0.3603076934814453,
+            2.7056632041931152
+          ],
+          [
+            1.6944290399551392,
+            -0.3603079319000244,
+            2.6800782680511475
+          ]
+        ],
+        "semantic_interpretation": "allowable_join_if_intended_attachment"
+      }
+    ],
+    "render_state_differences": {
+      "Window_3__closed_glass_solid": {
+        "source": {
+          "hide_render": false,
+          "hide_viewport": false,
+          "visible_camera": true,
+          "visible_shadow": false
+        },
+        "imported": {
+          "hide_render": false,
+          "hide_viewport": false,
+          "visible_camera": true,
+          "visible_shadow": true
+        }
+      },
+      "Window_2__closed_glass_solid": {
+        "source": {
+          "hide_render": false,
+          "hide_viewport": false,
+          "visible_camera": true,
+          "visible_shadow": false
+        },
+        "imported": {
+          "hide_render": false,
+          "hide_viewport": false,
+          "visible_camera": true,
+          "visible_shadow": true
+        }
+      },
+      "Window_1__closed_glass_solid": {
+        "source": {
+          "hide_render": false,
+          "hide_viewport": false,
+          "visible_camera": true,
+          "visible_shadow": false
+        },
+        "imported": {
+          "hide_render": false,
+          "hide_viewport": false,
+          "visible_camera": true,
+          "visible_shadow": true
+        }
+      },
+      "Window_4__closed_glass_solid": {
+        "source": {
+          "hide_render": false,
+          "hide_viewport": false,
+          "visible_camera": true,
+          "visible_shadow": false
+        },
+        "imported": {
+          "hide_render": false,
+          "hide_viewport": false,
+          "visible_camera": true,
+          "visible_shadow": true
+        }
+      }
+    },
+    "render_state_limitation": "The four window glass objects lose Blender-specific visible_shadow=False on GLB round trip and import as visible_shadow=True. Camera visibility and hide_render are unchanged. GLB is not certified render-equivalent to .blend; target-viewer glass shadows/lighting require a separate check.",
+    "input_files_unchanged": true,
+    "inputs_sha256": {
+      "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C2_small_shared_geometry_UNACCEPTED.blend": "5962bed7a7d7acf6d657f6a45a25d2629c746d89325324721d7ceb9b6dcaafcd",
+      "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C3_width_refinement_UNACCEPTED.blend": "0f7bc1c1b5e53393717fa971c5f274e015f9e409108443c932ce8585f00c82fd",
+      "/workspace/scratch/fa58bfcf0425/hospital_geometry_candidate_20261015/models/hospital_C3_width_refinement_UNACCEPTED.glb": "c9aa084a38148828ee02fb23a9f3ed4d550f58575b7021631545749b6b0c4281"
+    }
+  },
+  "interpretation_and_limits": [
+    "Grey drape / column and column / central black mullion are zero-X-depth boundary contacts, not positive-volume penetration.",
+    "Drape ceiling contact is retained on Z=2.7146654129; no strict volume penetration.",
+    "Column-to-connector-to-two-rails overlaps are intentional connections. Column-to-shell/perimeter-frame overlaps are explicit architectural joins.",
+    "Upholstered back/seat overlap is retained contact, not a load-bearing engineering validation.",
+    "All geometric comparisons use evaluated world-space meshes. Related modifiers are already applied/absent; no raw-mesh-only shortcut.",
+    "No view-specific geometry or hide-state change was introduced in C3 or its white material variant.",
+    "No source-image geometry, silhouette, occlusion, color, shadow or camera calibration acceptance is inferred from these physical checks.",
+    "No original report, input model or GLB was overwritten by this C3 audit; new uncompressed JSON outputs are provided."
+  ],
+  "uncompressed_artifacts": [
+    {
+      "file": "C3_vs_C2_geometry_delta.json",
+      "bytes": 1202,
+      "sha256": "c3c2dfc133257f6d05ec32ae4cf4d5293cb0f71d92b0116bd51ae60bc5bdba47"
+    },
+    {
+      "file": "hospital_C3_width_refinement_UNACCEPTED_final_regression.json",
+      "bytes": 240368,
+      "sha256": "0d4624d56096c1681713f531ee98b0212850a332c356f65aa624de4471b18ea8"
+    },
+    {
+      "file": "hospital_C3_width_refinement_UNACCEPTED_changed_evaluated_world_meshes.json",
+      "bytes": 3450088,
+      "sha256": "8f2c95195f24e71bcec18b07b505b91cea8e3f5f8b3f8ad1e3be96e0349c7de6"
+    },
+    {
+      "file": "C3_material_white_identity.json",
+      "bytes": 39597,
+      "sha256": "0a0c70a61af17ea5e90d3af01ebf159d42812d052572b769a1902800babdb140"
+    },
+    {
+      "file": "C3_actual_GLB_reimport_audit.json",
+      "bytes": 456496,
+      "sha256": "c3c287bb3814170c4d946f6f2c92afa9e84101f221ea674717f391d13ed2f6a5"
+    },
+    {
+      "file": "audit_C3_glb_reimport.py",
+      "bytes": 7525,
+      "sha256": "82a96127db111ba523b9d3a73b306efe739d146695acbc568b364e639cc86299"
+    },
+    {
+      "file": "verify_C3_white_identity.py",
+      "bytes": 2189,
+      "sha256": "afac00054bf5e3170662fb423986ee2f1f8ca08aa070271cca09c30e32f41ca7"
+    },
+    {
+      "file": "regress_final_candidates.py",
+      "bytes": 7120,
+      "sha256": "03914f6f76b273477648f3f99a48c47f69bd41c3c4dd5d934b1ca834cbb8918c"
+    },
+    {
+      "file": "audit_physics.py",
+      "bytes": 8373,
+      "sha256": "f120402c298e3f986817654560b709dba235cbbf7492c81aa60bf1b6ad687422"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "status": "PARTIAL_COMPONENT_DIAGNOSTIC_NOT_SOURCE_ACCEPTANCE",
+  "camera_rule": "G/H/F frozen D cameras; no external calibration. N640 source-relative static-window/background rotation/focal hypothesis; no furniture fitting. Same geometry in all views.",
+  "safety_gates": {
+    "exact_source_identity": "native file SHA and 1920x1080 verified",
+    "named_model_parts": "two actual cushion meshes and gray mesh; rounded transition points excluded from straight branch fit",
+    "model_visibility": "whole-scene actual camera ray cast 2px inside projected boundary",
+    "image_registration": "none"
+  },
+  "sofa_left": {
+    "G": {
+      "D": {
+        "count": 7,
+        "mean_abs_px": 10.111387453616747,
+        "max_abs_px": 17.694514548245934
+      },
+      "C3": {
+        "count": 7,
+        "mean_abs_px": 4.574109333375255,
+        "max_abs_px": 8.634647863413647
+      },
+      "role": "fit"
+    },
+    "H": {
+      "D": {
+        "count": 6,
+        "mean_abs_px": 9.457191261878696,
+        "max_abs_px": 21.01017316492937
+      },
+      "C3": {
+        "count": 6,
+        "mean_abs_px": 3.9761309767095177,
+        "max_abs_px": 9.222248011490024
+      },
+      "role": "fit"
+    },
+    "N640": {
+      "D": {
+        "count": 7,
+        "mean_abs_px": 23.173218623723056,
+        "max_abs_px": 42.70319243614256
+      },
+      "C3": {
+        "count": 7,
+        "mean_abs_px": 13.587709151527845,
+        "max_abs_px": 44.87617980641585
+      },
+      "role": "conditional_holdout"
+    }
+  },
+  "sofa_right": {
+    "G": {
+      "D": {
+        "count": 5,
+        "mean_abs_px": 16.100684108483893,
+        "max_abs_px": 30.850529225626474
+      },
+      "C3": {
+        "count": 5,
+        "mean_abs_px": 16.100684108483893,
+        "max_abs_px": 30.850529225626474
+      },
+      "role": "fit"
+    },
+    "H": {
+      "D": {
+        "count": 6,
+        "mean_abs_px": 5.638847009746921,
+        "max_abs_px": 8.890633989834896
+      },
+      "C3": {
+        "count": 6,
+        "mean_abs_px": 5.638847009746921,
+        "max_abs_px": 8.890633989834896
+      },
+      "role": "fit"
+    },
+    "N640": {
+      "D": {
+        "count": 8,
+        "mean_abs_px": 18.614272267884743,
+        "max_abs_px": 47.427782863230505
+      },
+      "C3": {
+        "count": 8,
+        "mean_abs_px": 18.614272267884743,
+        "max_abs_px": 47.427782863230505
+      },
+      "role": "conditional_holdout"
+    }
+  },
+  "gray_outer_right": {
+    "G": {
+      "D": {
+        "count": 3,
+        "mean_abs_px": 19.558161187802472,
+        "max_abs_px": 22.175585142573482
+      },
+      "P0": {
+        "count": 3,
+        "mean_abs_px": 31.62120106609571,
+        "max_abs_px": 34.38203378637559
+      },
+      "width_candidate": {
+        "count": 3,
+        "mean_abs_px": 2.6965860074001284,
+        "max_abs_px": 5.675458403546827
+      },
+      "role": "fit"
+    },
+    "H": {
+      "D": {
+        "count": 3,
+        "mean_abs_px": 28.591785653050845,
+        "max_abs_px": 29.04918221604362
+      },
+      "P0": {
+        "count": 3,
+        "mean_abs_px": 44.13720975750675,
+        "max_abs_px": 44.833062497492165
+      },
+      "width_candidate": {
+        "count": 3,
+        "mean_abs_px": 1.3876018003934405,
+        "max_abs_px": 1.42770478322268
+      },
+      "role": "fit"
+    },
+    "F": {
+      "D": {
+        "count": 4,
+        "mean_abs_px": 18.823239613905614,
+        "max_abs_px": 28.682516393161052
+      },
+      "P0": {
+        "count": 4,
+        "mean_abs_px": 34.55466521443935,
+        "max_abs_px": 44.725926976181825
+      },
+      "width_candidate": {
+        "count": 4,
+        "mean_abs_px": 8.170733978703694,
+        "max_abs_px": 17.041207609956587
+      },
+      "role": "conditional_fixed_camera_holdout"
+    }
+  },
+  "excluded": {
+    "rounded_shoulders": [
+      {
+        "branch_id": "N640:sofa_back_left:backrest_outer:left",
+        "points": [
+          [
+            880,
+            787
+          ]
+        ]
+      },
+      {
+        "branch_id": "N640:sofa_back_right:backrest_outer:right",
+        "points": [
+          [
+            1515,
+            752
+          ]
+        ]
+      },
+      {
+        "branch_id": "H:sofa_back_left:backrest_outer:left",
+        "points": [
+          [
+            855,
+            824
+          ]
+        ]
+      },
+      {
+        "branch_id": "H:sofa_back_right:backrest_outer:right",
+        "points": [
+          [
+            1493,
+            793
+          ]
+        ]
+      },
+      {
+        "branch_id": "G:sofa_back_left:backrest_outer:left",
+        "points": [
+          [
+            196,
+            916
+          ]
+        ]
+      },
+      {
+        "branch_id": "G:sofa_back_right:backrest_outer:right",
+        "points": [
+          [
+            879,
+            870
+          ]
+        ]
+      }
+    ],
+    "old_gray_samples": {
+      "H": [
+        [
+          1840,
+          900
+        ]
+      ],
+      "G": [
+        [
+          1151,
+          100
+        ]
+      ]
+    },
+    "N640_model_occlusions": [
+      {
+        "branch_id": "N640:sofa_back_left:backrest_outer:left",
+        "view": "N640",
+        "expected_object": "Sofa • reclined back cushion 1",
+        "branch": "left",
+        "source": [
+          890,
+          850
+        ],
+        "projected_boundary": [
+          934.3472424323793,
+          850
+        ],
+        "inset_pixel": [
+          936.3472424323793,
+          850
+        ],
+        "ray_hit_object": "Chair • narrow curved wraparound back",
+        "expected_visible": false,
+        "ray_distance": 2.2134300042106454
+      },
+      {
+        "branch_id": "N640:sofa_back_left:backrest_outer:left",
+        "view": "N640",
+        "expected_object": "Sofa • reclined back cushion 1",
+        "branch": "left",
+        "source": [
+          896,
+          870
+        ],
+        "projected_boundary": [
+          938.2690985693267,
+          870
+        ],
+        "inset_pixel": [
+          940.2690985693267,
+          870
+        ],
+        "ray_hit_object": "Chair • slim back support.001",
+        "expected_visible": false,
+        "ray_distance": 2.2300670678471644
+      }
+    ]
+  },
+  "limits": [
+    "No aggregate whole-image accuracy or model acceptance score.",
+    "No claim that material vertex identities are shared across source frames.",
+    "Column depth/gray left visibility remain visibly wrong; C2 and C3 overall source review fails.",
+    "N640 pure rotation/focal hypothesis cannot prove a fixed patient eye or exclude translation.",
+    "Source H gray y900 is hidden by right sofa arm; G gray y100 is a distinct top-end branch that model does not match; neither is silently counted as long visible right edge."
+  ]
+}
