@@ -1,0 +1,881 @@
+{
+  "status": "SOURCE_ONLY_NO_MODEL_RESIDUAL_NO_GEOMETRY_GENERATED",
+  "created_utc": "2026-10-15",
+  "sources": {
+    "H": {
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "size_xy": [
+        1920,
+        1080
+      ],
+      "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "coordinate_space": "native_1920x1080_pixels_top_left_origin"
+    },
+    "G": {
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "size_xy": [
+        1920,
+        1080
+      ],
+      "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "coordinate_space": "native_1920x1080_pixels_top_left_origin"
+    },
+    "F": {
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_anchor_preparation_20261014/restored/hospital-F-tv-BV1GqXMByE1s-t1823.678156-native.png",
+      "size_xy": [
+        1920,
+        1080
+      ],
+      "sha256": "b1ec220a90db53d00819ea00e14b7a2e5a42c297855770fcf8f66e397c3222c3",
+      "coordinate_space": "native_1920x1080_pixels_top_left_origin"
+    },
+    "N640": {
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_expanded_video_20261014_0315/native_frames/BV1GqXMByE1s_640.406589_empty_hospital_native.png",
+      "size_xy": [
+        1920,
+        1080
+      ],
+      "sha256": "9f56d9774d8745b832917a3923b43a24a99488e5eee2cc443161edf0b4c3e79c",
+      "coordinate_space": "native_1920x1080_pixels_top_left_origin"
+    },
+    "N665": {
+      "path": "/workspace/scratch/fa58bfcf0425/hospital_expanded_video_20261014_0315/native_frames/BV1GqXMByE1s_665.501733_downward_native.png",
+      "size_xy": [
+        1920,
+        1080
+      ],
+      "sha256": "79bfec7d314c6613f6ff8b7df982ad6f6c3c47f54a49a1bab98bc4f4ba539c83",
+      "coordinate_space": "native_1920x1080_pixels_top_left_origin"
+    }
+  },
+  "coordinate_convention": "Source-native pixels, origin top-left, x right, y down. Manual uncertainties, not subpixel metrology.",
+  "source_selection": "Visual source review preceded branch annotation. No model output is used to accept/reject identity or to choose points.",
+  "rules": [
+    "Never pair polyline entries by array index across views.",
+    "Silhouette samples can migrate on a rounded surface; branch-family correspondence is not a shared 3D vertex.",
+    "No hidden-edge completion through person, image crop or foreground.",
+    "N642 furniture is a locked holdout in a separate JSON; do not use it to fit, rank, tune, choose topology or select geometry.",
+    "Shadow/highlight stripes are not physical edges.",
+    "No material-pattern match or repeated physical corner currently proves that H/G/N640 foreground is the N665 table.",
+    "A numerical model mismatch must not be converted into entity-identity rejection."
+  ],
+  "entity_assessment": {
+    "green_chair_shared_candidate": {
+      "same_design_or_entity_family": "high",
+      "same_static_instance_transform": "plausible but unproved",
+      "evidence": "Consistent green wide back panel, rounded right shoulder, rolled left return, two upright supports, and sofa/window context. G sees only cropped right part; N665 is heavily person-occluded.",
+      "front_back": "Visible broad panel is likely the seated-contact front face: N665 person is in front of the panel. No clean rear-face observation.",
+      "curvature": "H rim is visibly nonlinear in projection and its rounded right shoulder is resolved. This does not uniquely establish cylindrical cupping depth, back tilt or shell thickness."
+    },
+    "N665_wood_table_confirmed": {
+      "identity": "high, wood grain and hard exterior edge",
+      "same_table_edges_in_other_views": "none certified",
+      "visible_face": "top only; no reliable underside/thickness/legs"
+    },
+    "foreground_unresolved_H_G_N640": {
+      "identity": "unresolved",
+      "same_table_hypothesis": "compatible appearance/context only; no distinctive woodgrain or same physical corner/edge certified"
+    }
+  },
+  "visibility": {
+    "H": {
+      "chair": "front-facing broad back panel, rolled left side return, both short supports; seat and feet hidden below frame/foreground",
+      "table": "narrow right foreground surface unresolved"
+    },
+    "G": {
+      "chair": "cropped upper/right backrest only; seat/supports outside frame",
+      "table": "foreground with shallow turn beside bed end, unresolved"
+    },
+    "N665": {
+      "chair": "front panel behind seated person; only top/bottom slivers and left support available; right support hidden",
+      "table": "confirmed wood top, right far exterior line; left shallow foreground is separate unresolved branch"
+    },
+    "N640": {
+      "chair": "matches H broad design; supplementary visual context only, no extra chair fit points added",
+      "table": "unresolved narrow strip, reused two source-only exterior branches"
+    },
+    "F": {
+      "chair": "not visible",
+      "table": "not visible as an independently identifiable tabletop; bed-end context only"
+    }
+  },
+  "seat_observations": [
+    {
+      "view": "N665",
+      "roi_xyxy": [
+        285,
+        884,
+        482,
+        973
+      ],
+      "identity": "warm_oblique_surface_unresolved",
+      "role": "diagnostic_only_do_not_fit",
+      "possible_roles": [
+        "chair arm/seat-edge fragment",
+        "other overlapping surface"
+      ],
+      "reason": "No uninterrupted junction or matching green material certifies chair-seat ownership; person and foreground obscure its connection. No chair seat perimeter is supplied."
+    }
+  ],
+  "branches": [
+    {
+      "id": "H_C_TOP",
+      "view": "H",
+      "entity": "green_chair_shared_candidate",
+      "part": "backrest_upper_curved_rim",
+      "points_xy": [
+        [
+          455,
+          899
+        ],
+        [
+          480,
+          891
+        ],
+        [
+          520,
+          884
+        ],
+        [
+          560,
+          879
+        ],
+        [
+          600,
+          874
+        ],
+        [
+          650,
+          871
+        ],
+        [
+          700,
+          868
+        ],
+        [
+          750,
+          868
+        ],
+        [
+          800,
+          868
+        ],
+        [
+          850,
+          868
+        ]
+      ],
+      "tolerance_px": 2.5,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "front_contact_face_inferred",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Left end meets rolled side-return; right end transitions to rounded shoulder. End samples are branch cuts, not corners."
+    },
+    {
+      "id": "H_C_R_SHOULDER",
+      "view": "H",
+      "entity": "green_chair_shared_candidate",
+      "part": "backrest_right_rounded_shoulder",
+      "points_xy": [
+        [
+          852,
+          868
+        ],
+        [
+          859,
+          872
+        ],
+        [
+          865,
+          882
+        ],
+        [
+          870,
+          898
+        ],
+        [
+          872,
+          916
+        ],
+        [
+          870,
+          933
+        ],
+        [
+          865,
+          952
+        ],
+        [
+          858,
+          972
+        ],
+        [
+          850,
+          985
+        ]
+      ],
+      "tolerance_px": 2.5,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "front_contact_face_inferred",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Top joins curved rim; lower continuation meets support. No manufactured vertex asserted."
+    },
+    {
+      "id": "H_C_LOWER",
+      "view": "H",
+      "entity": "green_chair_shared_candidate",
+      "part": "backrest_lower_curved_rim",
+      "points_xy": [
+        [
+          467,
+          1052
+        ],
+        [
+          500,
+          1042
+        ],
+        [
+          550,
+          1029
+        ],
+        [
+          600,
+          1020
+        ],
+        [
+          650,
+          1012
+        ],
+        [
+          700,
+          1005
+        ],
+        [
+          750,
+          997
+        ],
+        [
+          800,
+          991
+        ],
+        [
+          825,
+          988
+        ]
+      ],
+      "tolerance_px": 2.5,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "front_contact_face_inferred",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Ends merge into side-return/support. Visible city/sofa under the rim; not foreground occluder."
+    },
+    {
+      "id": "H_C_L_RETURN_OUTER",
+      "view": "H",
+      "entity": "green_chair_shared_candidate",
+      "part": "left_side_return_and_support_outer",
+      "points_xy": [
+        [
+          440,
+          906
+        ],
+        [
+          440,
+          927
+        ],
+        [
+          435,
+          951
+        ],
+        [
+          433,
+          975
+        ],
+        [
+          433,
+          1000
+        ],
+        [
+          434,
+          1020
+        ],
+        [
+          432,
+          1048
+        ],
+        [
+          430,
+          1070
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "left_side_return_outer_surface_and_support",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Lower continuation hidden by unresolved foreground at y~1072. Bright inner stripe is shading, excluded from geometry."
+    },
+    {
+      "id": "H_C_L_SUPPORT_INNER",
+      "view": "H",
+      "entity": "green_chair_shared_candidate",
+      "part": "left_support_inner_edge_short",
+      "points_xy": [
+        [
+          464,
+          1054
+        ],
+        [
+          462,
+          1063
+        ],
+        [
+          461,
+          1070
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "support_side_surface",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Only short exposed segment; not a leg-foot or seat junction measurement."
+    },
+    {
+      "id": "H_C_R_SUPPORT_INNER",
+      "view": "H",
+      "entity": "green_chair_shared_candidate",
+      "part": "right_support_inner_edge",
+      "points_xy": [
+        [
+          828,
+          991
+        ],
+        [
+          826,
+          1020
+        ],
+        [
+          823,
+          1045
+        ],
+        [
+          818,
+          1078
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "support_side_surface",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Upper endpoint at backrest underside; lower is image-clipped, not a foot."
+    },
+    {
+      "id": "H_C_R_SUPPORT_OUTER",
+      "view": "H",
+      "entity": "green_chair_shared_candidate",
+      "part": "right_support_outer_edge",
+      "points_xy": [
+        [
+          848,
+          990
+        ],
+        [
+          846,
+          1015
+        ],
+        [
+          842,
+          1045
+        ],
+        [
+          838,
+          1078
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "support_side_surface",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Lower is image-clipped. Do not use as seat depth or completed rear leg."
+    },
+    {
+      "id": "G_C_TOP",
+      "view": "G",
+      "entity": "green_chair_shared_candidate",
+      "part": "backrest_upper_rim_cropped_fragment",
+      "points_xy": [
+        [
+          2,
+          978
+        ],
+        [
+          30,
+          978
+        ],
+        [
+          60,
+          977
+        ],
+        [
+          90,
+          977
+        ],
+        [
+          120,
+          977
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "front_contact_face_inferred",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Left side of chair is image-clipped. This is a terminal part of the upper rim, not full chair width."
+    },
+    {
+      "id": "G_C_R_SHOULDER",
+      "view": "G",
+      "entity": "green_chair_shared_candidate",
+      "part": "backrest_right_rounded_shoulder",
+      "points_xy": [
+        [
+          125,
+          978
+        ],
+        [
+          134,
+          984
+        ],
+        [
+          141,
+          995
+        ],
+        [
+          144,
+          1010
+        ],
+        [
+          142,
+          1028
+        ],
+        [
+          137,
+          1047
+        ],
+        [
+          131,
+          1065
+        ],
+        [
+          127,
+          1077
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "front_contact_face_inferred",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Lower end is image-clipped before backrest underside and supports become visible."
+    },
+    {
+      "id": "N665_C_TOP_SLIVER",
+      "view": "N665",
+      "entity": "green_chair_shared_candidate",
+      "part": "backrest_upper_rim_short_visible_fragment",
+      "points_xy": [
+        [
+          440,
+          584
+        ],
+        [
+          450,
+          582
+        ],
+        [
+          460,
+          581
+        ],
+        [
+          475,
+          579
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "front_contact_face_inferred",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Left endpoint hidden by diagonal upper arm; right endpoint hidden by torso. No endpoint correspondence to H corners."
+    },
+    {
+      "id": "N665_C_LOWER_SLIVER",
+      "view": "N665",
+      "entity": "green_chair_shared_candidate",
+      "part": "backrest_lower_rim_short_visible_fragment",
+      "points_xy": [
+        [
+          437,
+          754
+        ],
+        [
+          450,
+          751
+        ],
+        [
+          463,
+          748
+        ],
+        [
+          476,
+          745
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "front_contact_face_inferred",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Left endpoint disappears behind forearm; right endpoint behind torso. Do not trace either person boundary as chair."
+    },
+    {
+      "id": "N665_C_L_SUPPORT_OUTER",
+      "view": "N665",
+      "entity": "green_chair_shared_candidate",
+      "part": "left_support_outer_edge",
+      "points_xy": [
+        [
+          294,
+          858
+        ],
+        [
+          292,
+          888
+        ],
+        [
+          290,
+          920
+        ],
+        [
+          287,
+          954
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "support_side_surface",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Top hidden by forearm; bottom merges with warm strip/foreground occlusion, no chair floor contact visible."
+    },
+    {
+      "id": "N665_C_L_SUPPORT_INNER",
+      "view": "N665",
+      "entity": "green_chair_shared_candidate",
+      "part": "left_support_inner_edge",
+      "points_xy": [
+        [
+          332,
+          870
+        ],
+        [
+          330,
+          896
+        ],
+        [
+          329,
+          922
+        ],
+        [
+          327,
+          939
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "furniture_geometry_candidate_source_only",
+      "face": "support_side_surface",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Top hidden by forearm; lower end hidden by warm oblique strip. Same support candidate as H left post, not pointwise correspondence."
+    },
+    {
+      "id": "H_FG_R_OUTER_MAIN",
+      "view": "H",
+      "entity": "foreground_unresolved_H",
+      "part": "visible_outer_contour",
+      "points_xy": [
+        [
+          1480,
+          1070.5
+        ],
+        [
+          1520,
+          1065.5
+        ],
+        [
+          1580,
+          1055.5
+        ],
+        [
+          1640,
+          1045.5
+        ],
+        [
+          1700,
+          1037.5
+        ],
+        [
+          1760,
+          1027.5
+        ],
+        [
+          1820,
+          1017.5
+        ]
+      ],
+      "tolerance_px": 1.5,
+      "role": "identity_unresolved_observation_only",
+      "face": "upper_facing_surface_only",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Uses the actual upper/remote silhouette of the pale foreground patch against the sofa. Internal dark strip is a cast-shadow candidate, not this boundary.",
+      "provenance": "Read-only reused source-native annotation; no model scores imported."
+    },
+    {
+      "id": "N640_FG_R_OUTER_LEFT_SHORT",
+      "view": "N640",
+      "entity": "foreground_unresolved_N640",
+      "part": "visible_outer_contour",
+      "points_xy": [
+        [
+          1180,
+          1069.5
+        ],
+        [
+          1240,
+          1059.5
+        ]
+      ],
+      "tolerance_px": 1.5,
+      "role": "identity_unresolved_observation_only",
+      "face": "upper_facing_surface_only",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Short bright exterior edge before low-contrast cast-shadow crossing. No line is supplied through the gap.",
+      "provenance": "Read-only reused source-native annotation; no model scores imported."
+    },
+    {
+      "id": "N640_FG_R_OUTER_RIGHT_MAIN",
+      "view": "N640",
+      "entity": "foreground_unresolved_N640",
+      "part": "visible_outer_contour",
+      "points_xy": [
+        [
+          1360,
+          1041.5
+        ],
+        [
+          1420,
+          1034.5
+        ],
+        [
+          1480,
+          1024.5
+        ],
+        [
+          1540,
+          1016.5
+        ],
+        [
+          1600,
+          1006.5
+        ],
+        [
+          1660,
+          1000.5
+        ],
+        [
+          1720,
+          989.5
+        ],
+        [
+          1780,
+          981.5
+        ],
+        [
+          1840,
+          971.5
+        ]
+      ],
+      "tolerance_px": 1.5,
+      "role": "identity_unresolved_observation_only",
+      "face": "upper_facing_surface_only",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Visible physical silhouette after the shadowed gap. Local slight waviness is retained; no exact straightness or physical rounded-corner claim.",
+      "provenance": "Read-only reused source-native annotation; no model scores imported."
+    },
+    {
+      "id": "N665_T_RIGHT_FAR",
+      "view": "N665",
+      "entity": "N665_wood_table_confirmed",
+      "part": "right_far_straight_outer_edge",
+      "points_xy": [
+        [
+          1220,
+          918.5
+        ],
+        [
+          1240,
+          914.5
+        ],
+        [
+          1300,
+          900.5
+        ],
+        [
+          1400,
+          880.5
+        ],
+        [
+          1500,
+          860.5
+        ],
+        [
+          1600,
+          838.5
+        ],
+        [
+          1700,
+          817.5
+        ],
+        [
+          1800,
+          798.5
+        ],
+        [
+          1900,
+          775.5
+        ],
+        [
+          1910,
+          774.5
+        ]
+      ],
+      "tolerance_px": 2.5,
+      "role": "table_geometry_candidate_source_only",
+      "face": "upper_woodgrain_face",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Visible outer boundary between wooden tabletop and background below sofa. Sampled only clear of the person. Crosses cast-shadow regions without switching to their borders. Stops before image clipping; no corner inferred.",
+      "provenance": "Read-only reused native665 T_RIGHT_FAR_STRAIGHT.",
+      "forbidden_extensions": "Do not connect across x548-1219, into left rounded foreground, or to an assumed unseen near edge."
+    },
+    {
+      "id": "G_FG_L_OUTER",
+      "view": "G",
+      "entity": "foreground_unresolved_G",
+      "part": "left_diagonal_outer_branch",
+      "points_xy": [
+        [
+          1330,
+          1022
+        ],
+        [
+          1400,
+          1006
+        ],
+        [
+          1470,
+          989
+        ],
+        [
+          1530,
+          976
+        ],
+        [
+          1560,
+          971
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "identity_unresolved_observation_only",
+      "face": "upper_facing_surface_only",
+      "boundary_kind": "physical_visible_silhouette",
+      "occlusion_or_truncation": "Main samples avoid wide dark foreground shadow. Ends are branch cuts, not established table corners."
+    },
+    {
+      "id": "G_FG_R_OUTER",
+      "view": "G",
+      "entity": "foreground_unresolved_G",
+      "part": "shallow_turn_and_right_upper_branch",
+      "points_xy": [
+        [
+          1575,
+          970
+        ],
+        [
+          1600,
+          972
+        ],
+        [
+          1650,
+          975
+        ],
+        [
+          1730,
+          980
+        ],
+        [
+          1820,
+          986
+        ],
+        [
+          1900,
+          991
+        ]
+      ],
+      "tolerance_px": 3,
+      "role": "diagnostic_only_do_not_fit",
+      "face": "upper_facing_surface_only",
+      "boundary_kind": "bed_foreground_contact_or_occlusion_boundary_unresolved",
+      "occlusion_or_truncation": "Interface against upright bed-end face; ownership/order is not certified as a free tabletop exterior. Mere contact in projection does not identify mattress/table. No exact rectangular corner asserted."
+    }
+  ],
+  "correspondence_groups": [
+    {
+      "id": "chair_upper_rim_family",
+      "branches": [
+        "H_C_TOP",
+        "G_C_TOP",
+        "N665_C_TOP_SLIVER"
+      ],
+      "status": "same-boundary-family candidate; not certified material-point matches",
+      "rule": "Optimize each visible segment against a predicted common rim, with visibility; never zip sample indices."
+    },
+    {
+      "id": "chair_right_shoulder_family",
+      "branches": [
+        "H_C_R_SHOULDER",
+        "G_C_R_SHOULDER"
+      ],
+      "status": "same rounded boundary-family candidate",
+      "rule": "Silhouette tangency can shift with viewpoint; endpoints are not corners."
+    },
+    {
+      "id": "chair_lower_rim_family",
+      "branches": [
+        "H_C_LOWER",
+        "N665_C_LOWER_SLIVER"
+      ],
+      "status": "same-boundary-family candidate with severe N665 truncation",
+      "rule": "N665 fragment only; do not extrapolate through the torso or forearm."
+    },
+    {
+      "id": "chair_left_support_family",
+      "branches": [
+        "H_C_L_RETURN_OUTER",
+        "H_C_L_SUPPORT_INNER",
+        "N665_C_L_SUPPORT_OUTER",
+        "N665_C_L_SUPPORT_INNER"
+      ],
+      "status": "same-support candidate",
+      "rule": "No seat connection or floor endpoint observed."
+    }
+  ],
+  "N642_holdout_file": "N642_furniture_LOCKED_HOLDOUT.json",
+  "recommended_minimal_geometry_hypothesis": {
+    "chair": "One shared backrest with curved upper/lower boundary and rounded lateral shoulder, two separate support branches; weakly regularized shell-depth/tilt. Keep unseen seat and lower frame explicitly unverified.",
+    "table": "One independent thin top-face hypothesis for N665 right tabletop only. Do not derive total width, left notch, thickness, base or legs from this branch.",
+    "alternatives": "Keep H/G/N640 foreground identity/association as explicit alternatives; do not rename bed mesh or attach to table to make a metric improve."
+  }
+}
