@@ -1,1 +1,1 @@
-Conditional v1: repaired simple shell boundary and integrated lip. Bounded manifold/BVH tests pass; source fidelity pending. Right support restored C23.
+V1 numerical geometry passed, source fidelity unaccepted. Broad side volume achieved; upper termination still looks capped/rod-like. Original rim tolerances unchanged.
