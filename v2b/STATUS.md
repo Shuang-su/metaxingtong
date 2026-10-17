@@ -1,1 +1,1 @@
-Final bounded ribbon transition repair; actual source review pending.
+FROZEN CONDITIONAL, SOURCE UNACCEPTED. Final bounded C25v2b ribbon hypothesis. Numerical geometry, scene invariance, white parity and contact checks pass. Native3 RAW/direct50 and H white complete. Top curl remains angular; one leftreturn record missing; H/G panel residuals regress. No more fitting in this cycle.

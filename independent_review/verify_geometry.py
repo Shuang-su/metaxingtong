@@ -96,7 +96,7 @@ for ob in bpy.data.objects:
  vols=np.einsum('ij,ij->i',tri[:,0],np.cross(tri[:,1],tri[:,2]))/6;compvol=[float(vols[labels[f[:,0]]==i].sum())for i in range(nc)]
  g={'vertices':len(v),'polygons':len(polys),'triangles':len(f),'unique_edges_triangulated':len(u),'nonmanifold_vertex_count':nonmanifold_vertices,'boundary_edge_count':int(np.sum(cnt==1)),'nonmanifold_edge_count':int(np.sum(cnt!=2)),'inconsistent_oriented_edge_count':int(np.sum(balance!=0)),'connected_components':int(nc),'component_signed_volumes':compvol,'signed_volume':float(vols.sum()),'min_triangle_area':float(area.min()),'degenerate_triangle_count_area_le_1e_14':int(np.sum(area<=1e-14)),'euler_characteristic':int(len(v)-len(u)+len(f)),'finite':bool(np.all(np.isfinite(v))),'world_bounds':[v.min(0).tolist(),v.max(0).tolist()]}
  g['closed_oriented_manifold_numerical_pass']=bool(g['finite']and not g['nonmanifold_vertex_count']and not g['nonmanifold_edge_count']and not g['inconsistent_oriented_edge_count']and not g['degenerate_triangle_count_area_le_1e_14']and all(q>0 for q in compvol))
- if not a.skip_self and ob.name in changed:
+ if not a.skip_self and (ob.name in changed or ob.name in S):
   start=time.time();pairs=tree.overlap(tree);cand=[(i,j)for i,j in pairs if i<j and not np.intersect1d(f[i],f[j],assume_unique=True).size];hits=[];limit=2000000
   for i,j in cand[:limit]:
    if tri_intersect(tri[i],tri[j]):hits.append([i,j])
