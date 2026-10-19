@@ -1,0 +1,8 @@
+from pathlib import Path
+import json,numpy as np
+R=Path(__file__).resolve().parents[2];P=R/'c30';C=json.load(open(R/'c27/blinds_projection_source.json'))['cameras'];audit=json.load(open(P/'build_verification.json'))['MATERIAL'];obs=json.load(open(R/'c30_diagnosis/corrected_bed_edge_observations.json'));chk=json.load(open(R/'c30_diagnosis/H_665_frozen_source_observations.json'));pts={k:[a['pixel'] for a in v] for k,v in obs['views'].items()};pts.update({k:[a['pixel_xy'] for a in v['points']] for k,v in chk['views'].items()});out={'identity':'source bedding/sheet silhouette versus conditional model mattress far-y edge; correspondence medium confidence','model_top_from_actual_saved_geometry':True,'fitted_views':['G','N642'],'previously_seen_check_views':['H','665'],'views':{}}
+for k,pp in pts.items():
+ points=np.array(pp,float);p=np.array(C[k]['projection']);out['views'][k]={'source_points':pp}
+ for label,bounds in [('C29',audit['before_bounds']),('C30',audit['after_bounds'])]:
+  b=bounds['Bed • mattress and sheet'];y=b['max'][1];z=b['max'][2];u=points[:,0]/960-1;x=(u*(p[3,1]*y+p[3,2]*z+p[3,3])-(p[0,1]*y+p[0,2]*z+p[0,3]))/(p[0,0]-u*p[3,0]);q=np.c_[x,np.full(len(x),y),np.full(len(x),z),np.ones(len(x))]@p.T;ys=(1-q[:,1]/q[:,3])*540;r=ys-points[:,1];out['views'][k][label]={'top_z':z,'predicted_edge_y':ys.tolist(),'signed_vertical_residual_px':r.tolist(),'rmse_px':float(np.sqrt(np.mean(r*r))),'inside_x_extent':bool(((x>=b['min'][0])&(x<=b['max'][0])).all())}
+(P/'four_view_edge_metrics.json').write_text(json.dumps(out,indent=2));print({k:{t:row[t]['rmse_px'] for t in ['C29','C30']} for k,row in out['views'].items()})
