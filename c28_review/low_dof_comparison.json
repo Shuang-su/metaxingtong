@@ -1,0 +1,630 @@
+{
+  "fit_views": [
+    "H",
+    "G"
+  ],
+  "check_view": "N642 previously viewed, not used in parameter fit",
+  "native_slat_principal_depth_yz": [
+    0.9713380662737818,
+    0.23770225284483543
+  ],
+  "native_slat_tilt_degrees": 13.750965046846945,
+  "objective": "Per fit view: endpoint dx,dy plus bottom-line residuals at left/mid/right weighted 1/sqrt(3); equal aggregate endpoint-coordinate and line weights; line residual is silhouette minus fitted dark image ridge, not semantic contour truth.",
+  "baseline": {
+    "H": {
+      "endpoint_xy": [
+        938.6751065341125,
+        199.73215322045883
+      ],
+      "endpoint_residual_xy": [
+        -8.324893465887499,
+        -4.267846779541173
+      ],
+      "endpoint_distance_px": 9.355125191680566,
+      "line_mean_abs_vertical_px": 2.758309666222248,
+      "line_signed_mean_px": -2.758309666222248,
+      "line_slope": 0.19219530403270665,
+      "slope_delta": 0.0016555534554296703,
+      "line_residual_at_left_mid_right_px": [
+        -2.9818093827052223,
+        -2.748592287244719,
+        -2.5348099497392695
+      ]
+    },
+    "G": {
+      "endpoint_xy": [
+        352.53392866642986,
+        248.65175088958773
+      ],
+      "endpoint_residual_xy": [
+        9.533928666429858,
+        -5.348249110412269
+      ],
+      "endpoint_distance_px": 10.931585628974355,
+      "line_mean_abs_vertical_px": 3.064727433791841,
+      "line_signed_mean_px": -3.064727433791841,
+      "line_slope": 0.2775518958206939,
+      "slope_delta": 0.001294220414450098,
+      "line_residual_at_left_mid_right_px": [
+        -3.216798332489759,
+        -3.058115655587585,
+        -2.9126565350939586
+      ]
+    },
+    "N642": {
+      "endpoint_xy": [
+        607.5508317748823,
+        167.72374300341517
+      ],
+      "endpoint_residual_xy": [
+        -9.44916822511766,
+        -4.276256996584834
+      ],
+      "endpoint_distance_px": 10.371747878126135,
+      "line_mean_abs_vertical_px": 3.6929206338934524,
+      "line_signed_mean_px": -3.6929206338934524,
+      "line_slope": 0.22390169208245408,
+      "slope_delta": 0.02773672512622888,
+      "line_residual_at_left_mid_right_px": [
+        -7.021327649040941,
+        -3.548207285408779,
+        -0.3645136187459457
+      ]
+    }
+  },
+  "models": {
+    "trim_dx": {
+      "parameters": {
+        "trim_dx": 1.6478340803041862e-09
+      },
+      "fit_objective_sse": 224.03614478356616,
+      "stats": {
+        "H": {
+          "endpoint_xy": [
+            938.6751073241048,
+            199.7321533724126
+          ],
+          "endpoint_residual_xy": [
+            -8.324892675895171,
+            -4.267846627587403
+          ],
+          "endpoint_distance_px": 9.355124419364087,
+          "line_mean_abs_vertical_px": 2.7583096662222055,
+          "line_signed_mean_px": -2.7583096662222055,
+          "line_slope": 0.19219530403270674,
+          "slope_delta": 0.0016555534554297535,
+          "line_residual_at_left_mid_right_px": [
+            -2.981809382705194,
+            -2.7485922872446906,
+            -2.5348099497392127
+          ]
+        },
+        "G": {
+          "endpoint_xy": [
+            352.5339295654471,
+            248.65175114126876
+          ],
+          "endpoint_residual_xy": [
+            9.533929565447124,
+            -5.348248858731239
+          ],
+          "endpoint_distance_px": 10.931586289913591,
+          "line_mean_abs_vertical_px": 3.0647274337918744,
+          "line_signed_mean_px": -3.0647274337918744,
+          "line_slope": 0.2775518958206943,
+          "slope_delta": 0.0012942204144504865,
+          "line_residual_at_left_mid_right_px": [
+            -3.216798332489816,
+            -3.0581156555876134,
+            -2.9126565350939586
+          ]
+        },
+        "N642": {
+          "endpoint_xy": [
+            607.550832611439,
+            167.72374319087677
+          ],
+          "endpoint_residual_xy": [
+            -9.449167388561023,
+            -4.276256809123225
+          ],
+          "endpoint_distance_px": 10.371747038692078,
+          "line_mean_abs_vertical_px": 3.6929206338934395,
+          "line_signed_mean_px": -3.6929206338934395,
+          "line_slope": 0.22390169208245422,
+          "slope_delta": 0.027736725126229017,
+          "line_residual_at_left_mid_right_px": [
+            -7.0213276490409555,
+            -3.548207285408779,
+            -0.36451361874591726
+          ]
+        }
+      }
+    },
+    "tilt_deg+trim_dx": {
+      "parameters": {
+        "tilt_deg": 23.17638107843952,
+        "trim_dx": -0.013723193597444255
+      },
+      "fit_objective_sse": 0.6917748783824318,
+      "stats": {
+        "H": {
+          "endpoint_xy": [
+            947.242379077583,
+            203.87239595687922
+          ],
+          "endpoint_residual_xy": [
+            0.2423790775829957,
+            -0.12760404312078322
+          ],
+          "endpoint_distance_px": 0.27391679223945825,
+          "line_mean_abs_vertical_px": 0.07646553951288837,
+          "line_signed_mean_px": 0.07414782913103816,
+          "line_slope": 0.19121651580660504,
+          "slope_delta": 0.0006767652293280524,
+          "line_residual_at_left_mid_right_px": [
+            -0.01721547682819846,
+            0.07812014678142987,
+            0.16551113509029847
+          ]
+        },
+        "G": {
+          "endpoint_xy": [
+            342.96518336306735,
+            253.42731244458773
+          ],
+          "endpoint_residual_xy": [
+            -0.03481663693264636,
+            -0.5726875554122728
+          ],
+          "endpoint_distance_px": 0.5737449209634755,
+          "line_mean_abs_vertical_px": 0.524936473257816,
+          "line_signed_mean_px": 0.524936473257816,
+          "line_slope": 0.2758613427658214,
+          "slope_delta": -0.00039633264042238103,
+          "line_residual_at_left_mid_right_px": [
+            0.5715055585074538,
+            0.5229117304208728,
+            0.47836738800816647
+          ]
+        },
+        "N642": {
+          "endpoint_xy": [
+            615.6118459812462,
+            172.99044605512225
+          ],
+          "endpoint_residual_xy": [
+            -1.3881540187537666,
+            0.9904460551222485
+          ],
+          "endpoint_distance_px": 1.7052726960487747,
+          "line_mean_abs_vertical_px": 1.6413261058617739,
+          "line_signed_mean_px": 0.24600392959500125,
+          "line_slope": 0.22223419276258657,
+          "slope_delta": 0.026069225806361368,
+          "line_residual_at_left_mid_right_px": [
+            -2.882303167168402,
+            0.3820172816281797,
+            3.3743110263583844
+          ]
+        }
+      }
+    },
+    "depth_scale+trim_dx": {
+      "parameters": {
+        "depth_scale": 0.200000000000001,
+        "trim_dx": 0.0015712479145232857
+      },
+      "fit_objective_sse": 108.33498123411599,
+      "stats": {
+        "H": {
+          "endpoint_xy": [
+            946.062559476556,
+            199.34240832882946
+          ],
+          "endpoint_residual_xy": [
+            -0.9374405234440246,
+            -4.657591671170536
+          ],
+          "endpoint_distance_px": 4.7509951494768075,
+          "line_mean_abs_vertical_px": 4.734232084665456,
+          "line_signed_mean_px": -4.734232084665456,
+          "line_slope": 0.1928781091589341,
+          "slope_delta": 0.002338358581657124,
+          "line_residual_at_left_mid_right_px": [
+            -5.049910493189145,
+            -4.72050693646878,
+            -4.418553676141755
+          ]
+        },
+        "G": {
+          "endpoint_xy": [
+            346.1289097273581,
+            248.60982038102756
+          ],
+          "endpoint_residual_xy": [
+            3.1289097273581206,
+            -5.390179618972439
+          ],
+          "endpoint_distance_px": 6.232504505152174,
+          "line_mean_abs_vertical_px": 4.947293272980523,
+          "line_signed_mean_px": -4.947293272980523,
+          "line_slope": 0.2784384921203774,
+          "slope_delta": 0.0021808167141336154,
+          "line_residual_at_left_mid_right_px": [
+            -5.203539236891203,
+            -4.936152144114857,
+            -4.691047309069859
+          ]
+        },
+        "N642": {
+          "endpoint_xy": [
+            614.968701352136,
+            167.90146818864554
+          ],
+          "endpoint_residual_xy": [
+            -2.0312986478639914,
+            -4.098531811354462
+          ],
+          "endpoint_distance_px": 4.574290896466748,
+          "line_mean_abs_vertical_px": 5.315426086727493,
+          "line_signed_mean_px": -5.315426086727493,
+          "line_slope": 0.22458856284089326,
+          "slope_delta": 0.028423595884668057,
+          "line_residual_at_left_mid_right_px": [
+            -8.726257592887691,
+            -5.167129064720541,
+            -1.9045945805672773
+          ]
+        }
+      }
+    },
+    "tilt_deg+depth_scale+trim_dx": {
+      "parameters": {
+        "tilt_deg": 34.99999999999989,
+        "depth_scale": 0.5964610885583275,
+        "trim_dx": -0.006691427162215788
+      },
+      "fit_objective_sse": 0.6035602353053041,
+      "stats": {
+        "H": {
+          "endpoint_xy": [
+            947.1163911585942,
+            203.9097554510285
+          ],
+          "endpoint_residual_xy": [
+            0.11639115859418325,
+            -0.0902445489714978
+          ],
+          "endpoint_distance_px": 0.1472785809884295,
+          "line_mean_abs_vertical_px": 0.125540149290971,
+          "line_signed_mean_px": 0.125540149290971,
+          "line_slope": 0.1911987556887664,
+          "slope_delta": 0.0006590051114894191,
+          "line_residual_at_left_mid_right_px": [
+            0.036574459239943735,
+            0.12940822277144548,
+            0.21450583934202427
+          ]
+        },
+        "G": {
+          "endpoint_xy": [
+            343.07552389612886,
+            253.40881191496226
+          ],
+          "endpoint_residual_xy": [
+            0.0755238961288569,
+            -0.5911880850377429
+          ],
+          "endpoint_distance_px": 0.5959926264452237,
+          "line_mean_abs_vertical_px": 0.4523781794004395,
+          "line_signed_mean_px": 0.4523781794004395,
+          "line_slope": 0.2758955140890175,
+          "slope_delta": -0.00036216131722627276,
+          "line_residual_at_left_mid_right_px": [
+            0.4949321341745758,
+            0.4505280074537552,
+            0.4098242246263055
+          ]
+        },
+        "N642": {
+          "endpoint_xy": [
+            615.7053657706848,
+            172.8672195501491
+          ],
+          "endpoint_residual_xy": [
+            -1.294634229315193,
+            0.8672195501490876
+          ],
+          "endpoint_distance_px": 1.5582514353836896,
+          "line_mean_abs_vertical_px": 1.6370077980478843,
+          "line_signed_mean_px": 0.06310906688490132,
+          "line_slope": 0.22231161928615642,
+          "slope_delta": 0.026146652329931214,
+          "line_residual_at_left_mid_right_px": [
+            -3.0744892127068795,
+            0.19952638338889983,
+            3.2007073464766904
+          ]
+        }
+      }
+    },
+    "bank_yaw_deg+trim_dx": {
+      "parameters": {
+        "bank_yaw_deg": 0.758175635006928,
+        "trim_dx": 0.009561993109596528
+      },
+      "fit_objective_sse": 168.09237145094963,
+      "stats": {
+        "H": {
+          "endpoint_xy": [
+            937.6134577439589,
+            203.5025146024929
+          ],
+          "endpoint_residual_xy": [
+            -9.386542256041139,
+            -0.4974853975070914
+          ],
+          "endpoint_distance_px": 9.399716338548663,
+          "line_mean_abs_vertical_px": 0.6176768582577061,
+          "line_signed_mean_px": 0.5758868929191993,
+          "line_slope": 0.19651341952005452,
+          "slope_delta": 0.005973668942777538,
+          "line_residual_at_left_mid_right_px": [
+            -0.23055841435572688,
+            0.6109497323659241,
+            1.3823322001941278
+          ]
+        },
+        "G": {
+          "endpoint_xy": [
+            351.7400591865671,
+            252.5654722159257
+          ],
+          "endpoint_residual_xy": [
+            8.740059186567123,
+            -1.4345277840743051
+          ],
+          "endpoint_distance_px": 8.857003135822946,
+          "line_mean_abs_vertical_px": 0.5670011401667784,
+          "line_signed_mean_px": 0.5670011401667784,
+          "line_slope": 0.28070280980997037,
+          "slope_delta": 0.004445134403726569,
+          "line_residual_at_left_mid_right_px": [
+            0.044697847728912166,
+            0.5897099789684148,
+            1.0893044326046208
+          ]
+        },
+        "N642": {
+          "endpoint_xy": [
+            623.6787163458608,
+            171.4725295144628
+          ],
+          "endpoint_residual_xy": [
+            6.678716345860835,
+            -0.5274704855372079
+          ],
+          "endpoint_distance_px": 6.699513201836501,
+          "line_mean_abs_vertical_px": 1.971923312372592,
+          "line_signed_mean_px": -0.36081672563064277,
+          "line_slope": 0.2273976038749505,
+          "slope_delta": 0.0312326369187253,
+          "line_residual_at_left_mid_right_px": [
+            -4.108733155877715,
+            -0.1978638373590229,
+            3.387099704616446
+          ]
+        }
+      }
+    },
+    "bank_dy+trim_dx": {
+      "parameters": {
+        "bank_dy": 0.0181971629560281,
+        "trim_dx": 0.009004077525074587
+      },
+      "fit_objective_sse": 163.3568962177392,
+      "stats": {
+        "H": {
+          "endpoint_xy": [
+            937.859661549692,
+            203.35272314212997
+          ],
+          "endpoint_residual_xy": [
+            -9.140338450308036,
+            -0.6472768578700254
+          ],
+          "endpoint_distance_px": 9.163228378519964,
+          "line_mean_abs_vertical_px": 1.217422090003711,
+          "line_signed_mean_px": 1.217422090003711,
+          "line_slope": 0.190821441528308,
+          "slope_delta": 0.00028169095103100505,
+          "line_residual_at_left_mid_right_px": [
+            1.179393811614574,
+            1.2190754934119354,
+            1.2554503683928715
+          ]
+        },
+        "G": {
+          "endpoint_xy": [
+            351.6040336410149,
+            252.32181907342084
+          ],
+          "endpoint_residual_xy": [
+            8.604033641014894,
+            -1.6781809265791594
+          ],
+          "endpoint_distance_px": 8.766167128115349,
+          "line_mean_abs_vertical_px": 1.0298310006555838,
+          "line_signed_mean_px": 1.0298310006555838,
+          "line_slope": 0.27562356144491434,
+          "slope_delta": -0.0006341139613294522,
+          "line_residual_at_left_mid_right_px": [
+            1.1043393911118073,
+            1.0265915054183665,
+            0.955322610199346
+          ]
+        },
+        "N642": {
+          "endpoint_xy": [
+            623.54263333987,
+            171.24877117648276
+          ],
+          "endpoint_residual_xy": [
+            6.542633339870008,
+            -0.7512288235172377
+          ],
+          "endpoint_distance_px": 6.585620378161929,
+          "line_mean_abs_vertical_px": 1.6354261688306462,
+          "line_signed_mean_px": 0.12278035440721347,
+          "line_slope": 0.22228635715282555,
+          "slope_delta": 0.02612139019660034,
+          "line_residual_at_left_mid_right_px": [
+            -3.0117864691848553,
+            0.25906586847642643,
+            3.257347177999293
+          ]
+        }
+      }
+    },
+    "bank_dz+trim_dx": {
+      "parameters": {
+        "bank_dz": -0.007085370372596349,
+        "trim_dx": -0.0015125820345593527
+      },
+      "fit_objective_sse": 159.4647404418686,
+      "stats": {
+        "H": {
+          "endpoint_xy": [
+            937.953496788989,
+            203.412700992416
+          ],
+          "endpoint_residual_xy": [
+            -9.046503211010986,
+            -0.5872990075839937
+          ],
+          "endpoint_distance_px": 9.065546893108062,
+          "line_mean_abs_vertical_px": 1.2649614216180762,
+          "line_signed_mean_px": 1.2649614216180762,
+          "line_slope": 0.19080501372573483,
+          "slope_delta": 0.00026526314845784493,
+          "line_residual_at_left_mid_right_px": [
+            1.2291508965763,
+            1.2665184009677262,
+            1.3007719466598644
+          ]
+        },
+        "G": {
+          "endpoint_xy": [
+            351.47021859495186,
+            252.4642996368656
+          ],
+          "endpoint_residual_xy": [
+            8.47021859495186,
+            -1.5357003631343957
+          ],
+          "endpoint_distance_px": 8.608308698670104,
+          "line_mean_abs_vertical_px": 1.2543695174820766,
+          "line_signed_mean_px": 1.2543695174820766,
+          "line_slope": 0.2755178149090674,
+          "slope_delta": -0.0007398604971763922,
+          "line_residual_at_left_mid_right_px": [
+            1.3413031259003105,
+            1.2505897953769534,
+            1.167435909063812
+          ]
+        },
+        "N642": {
+          "endpoint_xy": [
+            623.4364431972314,
+            171.54331734173886
+          ],
+          "endpoint_residual_xy": [
+            6.43644319723137,
+            -0.45668265826114407
+          ],
+          "endpoint_distance_px": 6.452624278659222,
+          "line_mean_abs_vertical_px": 1.6615938271652098,
+          "line_signed_mean_px": 0.48568611427430913,
+          "line_slope": 0.22213272499437853,
+          "slope_delta": 0.02596775803815332,
+          "line_residual_at_left_mid_right_px": [
+            -2.630444850304116,
+            0.6211700692559816,
+            3.601817078852747
+          ]
+        }
+      }
+    },
+    "tilt_deg+trim_dx+bank_dz": {
+      "parameters": {
+        "tilt_deg": 8.801646988680668,
+        "trim_dx": -0.015952715288877647,
+        "bank_dz": -0.008176594190618185
+      },
+      "fit_objective_sse": 0.4412761526305058,
+      "stats": {
+        "H": {
+          "endpoint_xy": [
+            947.2546406938596,
+            204.00177136398295
+          ],
+          "endpoint_residual_xy": [
+            0.25464069385964194,
+            0.0017713639829537442
+          ],
+          "endpoint_distance_px": 0.25464685487883015,
+          "line_mean_abs_vertical_px": 0.05923686365601929,
+          "line_signed_mean_px": -0.04201962170319836,
+          "line_slope": 0.191256658007915,
+          "slope_delta": 0.0007169074306380141,
+          "line_residual_at_left_mid_right_px": [
+            -0.13880212483928744,
+            -0.03781168678423796,
+            0.05476288143290731
+          ]
+        },
+        "G": {
+          "endpoint_xy": [
+            342.89104225126823,
+            253.57694328395343
+          ],
+          "endpoint_residual_xy": [
+            -0.10895774873176833,
+            -0.4230567160465739
+          ],
+          "endpoint_distance_px": 0.43686242228052374,
+          "line_mean_abs_vertical_px": 0.42079765369821825,
+          "line_signed_mean_px": 0.42079765369821825,
+          "line_slope": 0.27591038529968887,
+          "slope_delta": -0.00034729010655493164,
+          "line_residual_at_left_mid_right_px": [
+            0.46160424121842425,
+            0.4190234542408291,
+            0.3799910661780075
+          ]
+        },
+        "N642": {
+          "endpoint_xy": [
+            615.552386610992,
+            173.17292927235616
+          ],
+          "endpoint_residual_xy": [
+            -1.4476133890079836,
+            1.172929272356157
+          ],
+          "endpoint_distance_px": 1.8631552812326524,
+          "line_mean_abs_vertical_px": 1.636784123710724,
+          "line_signed_mean_px": 0.16634012849391588,
+          "line_slope": 0.22226791539380064,
+          "slope_delta": 0.026102948437575435,
+          "line_residual_at_left_mid_right_px": [
+            -2.9660136840151665,
+            0.3025294246899648,
+            3.298693941003023
+          ]
+        }
+      }
+    }
+  }
+}
