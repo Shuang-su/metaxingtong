@@ -73,14 +73,17 @@
         "x": 1750,
         "source_y": 902,
         "analytic_top_line_y": 911.907677759204,
-        "observed_positive_gradient_edge_y": 911,
-        "observed_source_residual_px": 9,
-        "analytic_vs_render_offset_px": -0.9076777592040344,
-        "edge_gradient": 21.51343131963445,
+        "observed_positive_gradient_edge_y": 922,
+        "observed_source_residual_px": 20,
+        "analytic_vs_render_offset_px": 10.092322240795966,
+        "edge_gradient": 20.379220103082105,
         "search_y_half_open": [
           881,
           951
-        ]
+        ],
+        "rejected_automatic_edge_y": 911,
+        "rejected_automatic_edge_reason": "y911 is window-frame/floor transition, verified visually in N642_last_point_inspection4x.png",
+        "manual_context_selection": "second positive gradient at y922 is floor/white-bed silhouette"
       }
     ],
     "H": [
@@ -165,5 +168,19 @@
         ]
       }
     ]
+  },
+  "estimated_candidate_edge_uncertainty_px": 2,
+  "source_point_uncertainty_px": {
+    "G": 4,
+    "N642": 4,
+    "H": 4,
+    "665": 3
+  },
+  "status": "actual material-render appearance boundary observations, NOT ideal AABB line; N last-point automatic false edge corrected after context inspection",
+  "rmse_actual_observed_px": {
+    "G": 4.08248290463863,
+    "N642": 23.18764038591824,
+    "H": 6.4031242374328485,
+    "665": 15.198684153570664
   }
 }
