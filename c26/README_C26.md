@@ -36,3 +36,5 @@ SHA256：b7d381a9fd8ee1b8ef60fd3cfb445b97e80baef95134f930766351f067efc1b9。
 脚本顺序：build_candidate.py、verify_candidate.py、原scripts/render_native.py（C26_WHITE H G）、make_overlays.py。构建保存到新路径，不覆盖v2b。
 
 下一步依据覆盖索引寻找真正不同深度结构与遮挡变化。若没有，则先用本候选开展局部结构审核，保留不确定参数，不强行给出完整标定。
+
+补充形状诊断：原白模在继承灯光下较亮且有16采样噪声，另实际生成Workbench单色、阴影/轮廓增强H/G图，方便看几何。这两张标为CLAY_DIAGNOSTIC，只是形状显示，不是材质/光照还原成绩；不替换Cycles原始白模或其50%叠图。Workbench曾报EGL/缓存警告，最终两图保存成功、进程正常退出，图像已目视检查。
