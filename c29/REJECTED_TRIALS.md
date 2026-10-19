@@ -1,0 +1,4 @@
+# 不可用作交付的试版
+hospital_C29_TEST_5fold_MATERIAL.blend、hospital_C29_TEST_6fold_MATERIAL.blend、hospital_C29_TEST_7fold_MATERIAL.blend均被拒绝。
+这些文件用于复现实测历史：前后层沿相同方向移动后出现新增穿插。5周期另有过疏回归；6周期另有明显间距不均。它们的区域渲染可能看似正常，不能替代截面检查。
+只使用带curtain_MATERIAL_CONDITIONAL/curtain_WHITE_CONDITIONAL的修正版候选；修正版仍有README所列不确定性。
