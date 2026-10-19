@@ -1,0 +1,139 @@
+{
+  "1801.323": {
+    "outer_recess": [
+      892,
+      921,
+      1249,
+      983
+    ],
+    "inner_face": [
+      900,
+      928,
+      1241,
+      976
+    ],
+    "left_aperture": [
+      707,
+      927,
+      840,
+      977
+    ],
+    "right_aperture": [
+      1303,
+      925,
+      1454,
+      976
+    ],
+    "left_lip": [
+      691,
+      923,
+      846,
+      983
+    ],
+    "right_lip": [
+      1297,
+      920,
+      1466,
+      983
+    ],
+    "board_top_at_feature_center": {
+      "left": 866,
+      "center": 842,
+      "right": 864
+    },
+    "source": "c26/new_evidence/frame_1801.323.png",
+    "sha256": "05d5d56ea72c57ea6e604adb2262d8641c6b7a3711010a42045cc4ea2132b78d",
+    "boundary_uncertainty_px": 3,
+    "board_top_uncertainty_px": 3,
+    "metrics": {
+      "outer_recess_height_px": 62,
+      "inner_face_height_px": 48,
+      "aperture_heights_px": [
+        50,
+        51
+      ],
+      "outer_height_over_mean_aperture": 1.2277227722772277,
+      "outer_height_over_mean_lip": 1.008130081300813,
+      "outer_image_width_height": 5.758064516129032,
+      "inner_image_width_height": 7.104166666666667,
+      "center_y_minus_interpolated_aperture_centers_px": 0.75,
+      "top_margin_px": [
+        57,
+        79,
+        56
+      ]
+    }
+  },
+  "1804.861": {
+    "outer_recess": [
+      861,
+      933,
+      1215,
+      993
+    ],
+    "inner_face": [
+      869,
+      940,
+      1207,
+      986
+    ],
+    "left_aperture": [
+      680,
+      938,
+      809,
+      987
+    ],
+    "right_aperture": [
+      1268,
+      937,
+      1418,
+      986
+    ],
+    "left_lip": [
+      662,
+      934,
+      816,
+      994
+    ],
+    "right_lip": [
+      1261,
+      932,
+      1430,
+      993
+    ],
+    "board_top_at_feature_center": {
+      "left": 880,
+      "center": 852,
+      "right": 875
+    },
+    "source": "c26/new_evidence/frame_1804.861.png",
+    "sha256": "d2dd9eb6494e6b4508c2e85475c4ca9012d2333b53db2414b194c33835efcd36",
+    "boundary_uncertainty_px": 3,
+    "board_top_uncertainty_px": 3,
+    "metrics": {
+      "outer_recess_height_px": 60,
+      "inner_face_height_px": 46,
+      "aperture_heights_px": [
+        49,
+        49
+      ],
+      "outer_height_over_mean_aperture": 1.2244897959183674,
+      "outer_height_over_mean_lip": 0.9917355371900827,
+      "outer_image_width_height": 5.9,
+      "inner_image_width_height": 7.3478260869565215,
+      "center_y_minus_interpolated_aperture_centers_px": 1.0,
+      "top_margin_px": [
+        54,
+        81,
+        57
+      ]
+    }
+  },
+  "limitations": [
+    "Manual soft-edge estimates \u00b13px per boundary; apparent pixel ratios are not a plane rectification.",
+    "Hole mouth and dark through-aperture differ due to lip depth and perspective; both are annotated.",
+    "New cameras uncalibrated: no absolute pixel to world scale.",
+    "Outer dark/bright recess lip is distinct from inner flat cream face; shadows blur exact boundary.",
+    "G shows only left hole and left portion of central recess; no complete central width or center measurement."
+  ]
+}
