@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:47:29.824822+00:00",
+  "archive_recorded_utc": "2026-10-29T03:47:30.100845+00:00",
   "scene": "terrace",
-  "original_snapshot": "0bed277041d9f0cae29f44cb2f4a72a4714a5fbf",
-  "original_snapshot_tree": "13b7ee5503ffcfe3b104b9e7c70fd21ca024e4b2",
+  "original_snapshot": "16d3eecb8f7a781bc367957376c01f58c95e55c3",
+  "original_snapshot_tree": "51bfd9f20d5117f9552f8a1f393a77c3499b183f",
   "original_history_branch": "history/terrace-t3-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -274,6 +274,14 @@
       "sha256": "694c9a515fdf32170e28c4314327ecc2e0e6afa6be2f18f1e05ec0ab5572d668"
     },
     {
+      "relative_path": "image_library_receipts.json",
+      "destination_path": "scenes/terrace/research/t3-rosette-tips/files/image_library_receipts.json",
+      "mode": "100644",
+      "git_blob_sha1": "d5d6a50dbe3ceb0c87acf8721d771ef1bc8c06b7",
+      "bytes": 3791,
+      "sha256": "0484180b37b6abbc3abb2425fd49c2de7d664ceac0968a82f79d3502689695bd"
+    },
+    {
       "relative_path": "initial_inspect.log",
       "destination_path": "scenes/terrace/research/t3-rosette-tips/files/initial_inspect.log",
       "mode": "100644",
@@ -492,6 +500,18 @@
       "message": "Record T3 native material white overlays and independent freeze verification\n",
       "raw_commit_sha256": "d4271535b29d1ff7b9da04afaf3cf25cfa51af69c9e5ec008997a81459df3d2a",
       "changed_files_raw": "A\tDELIVERY_MANIFEST.json\nA\tSTATUS_T3.md\nA\tT2_geometry_qa.json\nA\tT3_geometry_qa.json\nA\tT3_independent_freeze_check.json\nA\tT3_material_native_crop.png\nA\tT3_material_raw.png\nA\tT3_source_before_after_native_strip.png\nA\tT3_source_material_direct50.png\nA\tT3_source_white_direct50.png\nA\tT3_white_native_crop.png\nA\tT3_white_raw.png\nA\tbefore_native_crop.png\nA\tbounds.log\nA\tbuild.log\nA\tcomparison_manifest.json\nA\tdecor_inspect.log\nA\tdecor_inspect2.log\nA\tdecor_inspect3.log\nA\tinitial_inspect.log\nA\tqa.log\nA\tqa_T3.log\nA\tqa_T3.py\nA\trefine.log\nA\trender_T3_full.log\nA\trender_full.log\nA\trender_manifest.json\nA\tsource_native_crop.png\nA\tverify_freeze.log\nM\tverify_freeze.py\nA\tverify_freeze_initial_hash_false_positive.log\n"
+    },
+    {
+      "commit": "16d3eecb8f7a781bc367957376c01f58c95e55c3",
+      "parents": [
+        "0bed277041d9f0cae29f44cb2f4a72a4714a5fbf"
+      ],
+      "tree": "51bfd9f20d5117f9552f8a1f393a77c3499b183f",
+      "author": "dot <dot@local.invalid> 1792416302 +0900",
+      "committer": "dot <dot@local.invalid> 1792416302 +0900",
+      "message": "Record persistent Library identities of final T3 visual evidence\n",
+      "raw_commit_sha256": "4b9e08b7c1d759b8d3c6b40b91ad692dbc8116b8acfa1f1d3327a884320b6155",
+      "changed_files_raw": "A\timage_library_receipts.json\n"
     }
   ],
   "historical_only_blobs": [
