@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:34.951610+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:35.082446+00:00",
   "scene": "hospital",
-  "original_snapshot": "24b97308612dfccd92c936b0c1751ebe819ff464",
-  "original_snapshot_tree": "f103f42a9887313ed94739d7726b4a9e3ecf5cc7",
+  "original_snapshot": "9f03bf5ed0a21721f3076ae40d68bc863592c5e5",
+  "original_snapshot_tree": "71065c76de197e2a7d8f887fe2f21dc22d0a55ef",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -138,6 +138,62 @@
       "sha256": "089f4134f2603d214c4c9e7738a4e75dc7269abf756003e68953b6b1979bcc2f"
     },
     {
+      "relative_path": "c26/new_evidence/C26_FINAL_RECOVERY_INDEX.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/new_evidence/C26_FINAL_RECOVERY_INDEX.json",
+      "mode": "100644",
+      "git_blob_sha1": "3eb00261b42b9912d32f4e8df9e3805c480dec53",
+      "bytes": 2218,
+      "sha256": "4374697e2f73aebfcc7d8af384f6497b0806133d634ec803b14e8610c4369603"
+    },
+    {
+      "relative_path": "c26/new_evidence/HEADWALL_ADDENDUM.md",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/new_evidence/HEADWALL_ADDENDUM.md",
+      "mode": "100644",
+      "git_blob_sha1": "adf7ed4e29616e1820d0cd2adf83b56fa00280e7",
+      "bytes": 1205,
+      "sha256": "13e424b0cdc49d1f01371c24dab57f82f2b0b3f66f83fcc50153f50d98965637"
+    },
+    {
+      "relative_path": "c26/new_evidence/frame_1801.323.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/new_evidence/frame_1801.323.png",
+      "mode": "100644",
+      "git_blob_sha1": "c10986857379015f81763f9576a99ead73b5705e",
+      "bytes": 1186801,
+      "sha256": "05d5d56ea72c57ea6e604adb2262d8641c6b7a3711010a42045cc4ea2132b78d"
+    },
+    {
+      "relative_path": "c26/new_evidence/frame_1804.861.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/new_evidence/frame_1804.861.png",
+      "mode": "100644",
+      "git_blob_sha1": "88bd8cabbef037c8afd8ce1bd5ce2131fc00768a",
+      "bytes": 1236705,
+      "sha256": "d2dd9eb6494e6b4508c2e85475c4ca9012d2333b53db2414b194c33835efcd36"
+    },
+    {
+      "relative_path": "c26/new_evidence/headwall_1804_native_annotations.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/new_evidence/headwall_1804_native_annotations.png",
+      "mode": "100644",
+      "git_blob_sha1": "1d2cd611b1fc72b8d09cadde0cf6a5779b27e207",
+      "bytes": 771332,
+      "sha256": "81d24d60694aef57af0a6bc8a5742b5ee767d0766c4319dbc8720cb703d8567b"
+    },
+    {
+      "relative_path": "c26/new_evidence/headwall_evidence_update.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/new_evidence/headwall_evidence_update.json",
+      "mode": "100644",
+      "git_blob_sha1": "7a6bf3ee2f3b51d55d972e6def025c210ef9a067",
+      "bytes": 2372,
+      "sha256": "323b8d44cb3dfe68ba4fed251f4384acbdff86bbe245ee14fcbfedec3d44d569"
+    },
+    {
+      "relative_path": "c26/new_evidence/shot_coverage_index.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/new_evidence/shot_coverage_index.json",
+      "mode": "100644",
+      "git_blob_sha1": "b13fd96fff64432ba65249a3f461fafb99ae9bb9",
+      "bytes": 7226,
+      "sha256": "bcb3b6fca197f81e58a0d5081c93cc061f957cbd029f0e65b98b1be8957bb77a"
+    },
+    {
       "relative_path": "c26/render.log",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/render.log",
       "mode": "100644",
@@ -208,6 +264,14 @@
       "git_blob_sha1": "ee233257cfa1c84e35deef09ce7bf7f9b41836c0",
       "bytes": 1115,
       "sha256": "f157074e7fd6d7f069b03c215dd58aaae63b0b10c6fa73eb0ed2aae9d6823e9f"
+    },
+    {
+      "relative_path": "c26/scripts/annotate_headwall.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c26/scripts/annotate_headwall.py",
+      "mode": "100644",
+      "git_blob_sha1": "19390349fef9a47ec1d72be755840030ca70ea99",
+      "bytes": 2739,
+      "sha256": "33d1b9b3b59990071d7fe636fdc293a6955df941ce28f1ebc44cf128df90c778"
     },
     {
       "relative_path": "c26/scripts/build_candidate.py",
@@ -2060,6 +2124,18 @@
       "message": "Record visual limitations without claiming geometric improvement\n",
       "raw_commit_sha256": "bd9a32ac0c3ad3ddd82df8091ab58b208f5ab22446f5039d661f8759bf2fa3f4",
       "changed_files_raw": "M\tc26/README_C26.md\n"
+    },
+    {
+      "commit": "9f03bf5ed0a21721f3076ae40d68bc863592c5e5",
+      "parents": [
+        "24b97308612dfccd92c936b0c1751ebe819ff464"
+      ],
+      "tree": "71065c76de197e2a7d8f887fe2f21dc22d0a55ef",
+      "author": "dot <dot@local> 1792381735 +0900",
+      "committer": "dot <dot@local> 1792381735 +0900",
+      "message": "Add headwall native evidence and final bounded capture recovery index\n",
+      "raw_commit_sha256": "b8a28e4c0d69a86023e1cedd89182a40396d09356f95c7cf3105917d181f4a97",
+      "changed_files_raw": "A\tc26/new_evidence/C26_FINAL_RECOVERY_INDEX.json\nA\tc26/new_evidence/HEADWALL_ADDENDUM.md\nA\tc26/new_evidence/frame_1801.323.png\nA\tc26/new_evidence/frame_1804.861.png\nA\tc26/new_evidence/headwall_1804_native_annotations.png\nA\tc26/new_evidence/headwall_evidence_update.json\nA\tc26/new_evidence/shot_coverage_index.json\nA\tc26/scripts/annotate_headwall.py\n"
     }
   ],
   "historical_only_blobs": [

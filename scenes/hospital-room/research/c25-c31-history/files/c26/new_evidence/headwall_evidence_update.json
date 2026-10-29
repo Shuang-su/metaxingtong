@@ -1,0 +1,95 @@
+{
+  "source": "frame_1804.861.png",
+  "time_seconds": 1804.861415,
+  "sha256": "d2dd9eb6494e6b4508c2e85475c4ca9012d2333b53db2414b194c33835efcd36",
+  "native_size": [
+    1920,
+    1080
+  ],
+  "annotation_method": "Manual visual pointers; approximate image locations, not fitted calibration landmarks",
+  "pointers": [
+    {
+      "label": "A left wall-ceiling junction",
+      "xy": [
+        647,
+        433
+      ]
+    },
+    {
+      "label": "B right wall-ceiling junction",
+      "xy": [
+        1731,
+        383
+      ]
+    },
+    {
+      "label": "C display frame identity",
+      "xy": [
+        921,
+        565
+      ]
+    },
+    {
+      "label": "D panel seam intersection",
+      "xy": [
+        1063,
+        468
+      ]
+    },
+    {
+      "label": "E near overhead rail",
+      "xy": [
+        568,
+        51
+      ]
+    },
+    {
+      "label": "F partial right door casing",
+      "xy": [
+        1881,
+        525
+      ]
+    }
+  ],
+  "object_identity_updates": [
+    {
+      "objects": [
+        "TV • rectangular black frame",
+        "TV • blank blue display"
+      ],
+      "update": "Complete display rectangle now directly visible on far panelled wall; object identity confirmed, current model size/position not validated"
+    },
+    {
+      "objects": [
+        "ROOM_SHELL__joined_solid__hidden_extents_inferred"
+      ],
+      "update": "Both far wall-ceiling corners and adjoining side surfaces visible. Hidden extents, wall thickness, angles and camera still unverified"
+    },
+    {
+      "objects": [
+        "TV wall • horizontal join",
+        "TV wall • vertical join"
+      ],
+      "update": "Multiple panel seams visible; model exact spacing/count and depth remain unvalidated"
+    },
+    {
+      "objects": [
+        "Curtain rail • forward overhead beam"
+      ],
+      "update": "Near overhead rail pair and connectors visible across upper image; visible topology stronger, length/spacing/attachment still unmeasured"
+    },
+    {
+      "objects": [
+        "Entrance • jamb, full wall depth"
+      ],
+      "update": "Partial right-side door casing visible; does not validate existing model door location, width, depth or opening angle"
+    }
+  ],
+  "no_geometry_or_camera_change": true,
+  "not_claimed": [
+    "true translation",
+    "metric dimensions",
+    "camera calibration",
+    "complete room validation"
+  ]
+}
