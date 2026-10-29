@@ -1,0 +1,118 @@
+{
+  "role": "Frozen original-image observations for posterior check only of predetermined +0.1354234 model-unit height trial; never use for fitting or candidate selection",
+  "frozen_at_utc": "2026-10-19T12:29:00Z",
+  "identity": "visible bedding/sheet outer contour, not certified bare-mattress mechanical edge",
+  "candidate_images_seen": false,
+  "views": {
+    "H": {
+      "source": "inputs/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "source_sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        1350,
+        980,
+        1920,
+        1080
+      ],
+      "points": [
+        {
+          "pixel_xy": [
+            1500,
+            1067
+          ],
+          "uncertainty_y_px": 4,
+          "uncertainty_x_px": 1,
+          "vertical_search_half_open": [
+            1045,
+            1080
+          ]
+        },
+        {
+          "pixel_xy": [
+            1700,
+            1037
+          ],
+          "uncertainty_y_px": 4,
+          "uncertainty_x_px": 1,
+          "vertical_search_half_open": [
+            1010,
+            1060
+          ]
+        },
+        {
+          "pixel_xy": [
+            1850,
+            1012
+          ],
+          "uncertainty_y_px": 4,
+          "uncertainty_x_px": 1,
+          "vertical_search_half_open": [
+            990,
+            1040
+          ]
+        }
+      ],
+      "visibility": "all selected points are clear of people, source edge is a cloth silhouette with small nonrigid contour variations; source-only manual ROI inspection followed by maximum positive vertical gradient",
+      "edge_locator": "3-pixel horizontal RGB mean, vertical Gaussian sigma1, max positive difference within preselected window",
+      "limitations": "source contour may be sheet overhang; H has a narrow visible strip; 665 center-left is person-occluded but selected right side is clear"
+    },
+    "665": {
+      "source": "inputs/BV1GqXMByE1s_665.501733_downward_native.png",
+      "source_sha256": "79bfec7d314c6613f6ff8b7df982ad6f6c3c47f54a49a1bab98bc4f4ba539c83",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "crop_xyxy": [
+        1150,
+        740,
+        1920,
+        1050
+      ],
+      "points": [
+        {
+          "pixel_xy": [
+            1300,
+            900
+          ],
+          "uncertainty_y_px": 3,
+          "uncertainty_x_px": 1,
+          "vertical_search_half_open": [
+            890,
+            930
+          ]
+        },
+        {
+          "pixel_xy": [
+            1600,
+            838
+          ],
+          "uncertainty_y_px": 3,
+          "uncertainty_x_px": 1,
+          "vertical_search_half_open": [
+            820,
+            865
+          ]
+        },
+        {
+          "pixel_xy": [
+            1850,
+            787
+          ],
+          "uncertainty_y_px": 3,
+          "uncertainty_x_px": 1,
+          "vertical_search_half_open": [
+            765,
+            805
+          ]
+        }
+      ],
+      "visibility": "all selected points are clear of people, source edge is a cloth silhouette with small nonrigid contour variations; source-only manual ROI inspection followed by maximum positive vertical gradient",
+      "edge_locator": "3-pixel horizontal RGB mean, vertical Gaussian sigma1, max positive difference within preselected window",
+      "limitations": "source contour may be sheet overhang; H has a narrow visible strip; 665 center-left is person-occluded but selected right side is clear"
+    }
+  }
+}
