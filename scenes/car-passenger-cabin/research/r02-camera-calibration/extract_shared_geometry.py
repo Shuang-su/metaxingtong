@@ -21,8 +21,8 @@ for frame in [1,2]:
   'vent_rim':[[.8+.117*math.cos(a*2*math.pi/160),.6135,.77+.117*math.sin(a*2*math.pi/160)] for a in range(160)],
   'dash_top_corner':point('D01_dashboard_top',(1.015,.65,1.022)),
   'dash_bottom_corner':point('D01_dashboard_top',(1.015,.65,.947)),
-  'a_foot':point('A01_fixed_A_pillar',(.87,.93,.97)),
-  'a_inner_edge':[[.87,.93,.97],[.87,.23,1.66]],
+  'a_foot':[.87,.93+(.23-.93)*(1.0325-.97)/(1.66-.97),1.0325],
+  'a_inner_edge':[[.87,.93+(.23-.93)*(1.0325-.97)/(1.66-.97),1.0325],[.87,.23,1.66]],
   'door_belt_line':[door([.90,.75,.98]),door([.90,-.82,.98])],
   'roof_lower_line':[[.87,.15,1.615],[.87,-.8,1.615]],
   'mirror_center':door([1.11,.628,1.20])

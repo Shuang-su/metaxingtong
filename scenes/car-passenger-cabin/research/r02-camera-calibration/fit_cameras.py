@@ -57,7 +57,7 @@ def summary(p,id):
   rr=np.ravel(feature_residual(p,id,name));rows[name]={'rms_pixels':float(np.sqrt(np.mean(rr*rr))),'max_abs_pixels':float(abs(rr).max()),'residual_components_pixels':rr.tolist(),'role':'fit' if name in TRAIN else 'held-out'}
  return rows
 if __name__=='__main__':
- lo=[-3.5,-1.7,.60,-1.1,-.55,-.20,14];hi=[.50,1.40,1.95,1.1,.55,.20,70]
+ lo=[-3.5,-1.7,1.04,-1.1,-.55,-.20,14];hi=[.50,1.40,1.58,1.1,.55,.20,70]
  rng=np.random.default_rng(73);results={}
  for id,c in G['cameras'].items():
   p0=np.array(c['position']+c['yaw_pitch_roll']+[c['lens']]);trials=[]

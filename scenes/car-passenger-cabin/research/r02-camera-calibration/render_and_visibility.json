@@ -13,30 +13,37 @@
     "visibility_checks": [
       {
         "feature": "dash_top_corner",
-        "expected_object": "D01_dashboard_top",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
         "first_hit_object": "P14_mirror_sail",
-        "target_distance": 1.7971123994654974,
-        "first_hit_distance": 1.7613349885652423,
+        "target_distance": 3.3353675760097494,
+        "first_hit_distance": 3.306858384539197,
         "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       },
       {
         "feature": "dash_bottom_corner",
-        "expected_object": "D01_dashboard_top",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
         "first_hit_object": "P02_upper_belt",
-        "target_distance": 1.7817728086823195,
-        "first_hit_distance": 1.636619498855685,
+        "target_distance": 3.3365430495874784,
+        "first_hit_distance": 3.219841220270283,
         "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       },
       {
         "feature": "a_foot",
-        "expected_object": "A01_fixed_A_pillar",
-        "first_hit_object": "D02_dashboard_end_fascia",
-        "target_distance": 1.8957025544853303,
-        "first_hit_distance": 1.4945582560379007,
-        "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "expected_objects": [
+          "A01_fixed_A_pillar",
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 3.295900424095169,
+        "first_hit_distance": 3.2959068259948148,
+        "surface_visible_within_0_005": true,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       }
     ],
     "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
@@ -55,30 +62,37 @@
     "visibility_checks": [
       {
         "feature": "dash_top_corner",
-        "expected_object": "D01_dashboard_top",
-        "first_hit_object": null,
-        "target_distance": 2.8586417128216035,
-        "first_hit_distance": null,
-        "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 2.238014105388024,
+        "first_hit_distance": 2.2380139855402943,
+        "surface_visible_within_0_005": true,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       },
       {
         "feature": "dash_bottom_corner",
-        "expected_object": "D01_dashboard_top",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
         "first_hit_object": "D01_dashboard_top",
-        "target_distance": 2.8826091663634887,
-        "first_hit_distance": 2.827356012659815,
+        "target_distance": 2.256889563814308,
+        "first_hit_distance": 2.208418243203334,
         "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       },
       {
         "feature": "a_foot",
-        "expected_object": "A01_fixed_A_pillar",
+        "expected_objects": [
+          "A01_fixed_A_pillar",
+          "D01_dashboard_top"
+        ],
         "first_hit_object": "D01_dashboard_top",
-        "target_distance": 2.877732740380786,
-        "first_hit_distance": 2.7310747120910244,
-        "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "target_distance": 2.208433822978559,
+        "first_hit_distance": 2.208434234569225,
+        "surface_visible_within_0_005": true,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       }
     ],
     "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
@@ -97,30 +111,37 @@
     "visibility_checks": [
       {
         "feature": "dash_top_corner",
-        "expected_object": "D01_dashboard_top",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
         "first_hit_object": "P14_mirror_sail",
-        "target_distance": 1.6427691753378875,
-        "first_hit_distance": 1.6060729873655661,
+        "target_distance": 3.459604413261688,
+        "first_hit_distance": 3.431364640728847,
         "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       },
       {
         "feature": "dash_bottom_corner",
-        "expected_object": "D01_dashboard_top",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
         "first_hit_object": "P02_upper_belt",
-        "target_distance": 1.6259741476688265,
-        "first_hit_distance": 1.4773464493346102,
+        "target_distance": 3.4607376888335684,
+        "first_hit_distance": 3.3451419032954433,
         "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       },
       {
         "feature": "a_foot",
-        "expected_object": "A01_fixed_A_pillar",
-        "first_hit_object": "D02_dashboard_end_fascia",
-        "target_distance": 1.7484140489998132,
-        "first_hit_distance": 1.3574329732537256,
-        "surface_visible_within_0_005": false,
-        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+        "expected_objects": [
+          "A01_fixed_A_pillar",
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 3.4135337236925207,
+        "first_hit_distance": 3.413540568504735,
+        "surface_visible_within_0_005": true,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
       }
     ],
     "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
