@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:31.997550+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:32.395756+00:00",
   "scene": "hospital",
-  "original_snapshot": "b47c0b16f2b0346e8d878514af470998eaa45998",
-  "original_snapshot_tree": "918eb603c0844ef9590098c1944dd4e968bf77df",
+  "original_snapshot": "4a8c867d3ebaf3ac0b52d247234b509e4f56f503",
+  "original_snapshot_tree": "2238e3bc23ee909d0b271004869aaf849c1060c4",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -64,6 +64,38 @@
       "git_blob_sha1": "d50829b87267113ce9d7476fe40b0488c4a8a8a6",
       "bytes": 2701737,
       "sha256": "6d549fb378e23c0dca99f5e036485dfc2e6dd1219d8723e93af6ae0a769681a9"
+    },
+    {
+      "relative_path": "independent_review/C25_v0_intersection_witnesses.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/independent_review/C25_v0_intersection_witnesses.json",
+      "mode": "100644",
+      "git_blob_sha1": "12085166424c55d8c71eaa7322a946b821debd63",
+      "bytes": 14808,
+      "sha256": "1606aaee9afcbd50ecf94fafb46d0102cfa0495d94bdb49b3a2e456945f7b8b4"
+    },
+    {
+      "relative_path": "independent_review/compare_reports.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/independent_review/compare_reports.py",
+      "mode": "100644",
+      "git_blob_sha1": "bd0b829c3bfe6d671b116700a38bfe75920c80f7",
+      "bytes": 5084,
+      "sha256": "1b2ae49aeba5cb694e5daf448784830d791ac0d638b84c48aab05fdf38b52006"
+    },
+    {
+      "relative_path": "independent_review/verify_geometry.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/independent_review/verify_geometry.py",
+      "mode": "100644",
+      "git_blob_sha1": "7f2e2104d07fb68642358dedf48be3f383b1300e",
+      "bytes": 13171,
+      "sha256": "496297a20be6d43546558a6d572aadde93624dfdd7b09c8d22887050ded877c9"
+    },
+    {
+      "relative_path": "independent_review/verify_silhouettes.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/independent_review/verify_silhouettes.py",
+      "mode": "100644",
+      "git_blob_sha1": "0db1ad03fa11b683c901d45c9fe9184164e940f9",
+      "bytes": 15951,
+      "sha256": "884db9c59f475e2ace7d01c4d433b00c1bb6de78183bafeed2b93b3864a4ff3e"
     },
     {
       "relative_path": "inputs/BV1GqXMByE1s_642.617525_right_turn_native.png",
@@ -242,6 +274,22 @@
       "sha256": "47204c8a37174c76d1d5188da631e4accfea5a10e6e6f7d66386da6a25a30769"
     },
     {
+      "relative_path": "scripts/build_c25_v1.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/scripts/build_c25_v1.py",
+      "mode": "100644",
+      "git_blob_sha1": "f19edca92069f91467402d943476cd82b54bf3c0",
+      "bytes": 7881,
+      "sha256": "b80f550164abfb339eaf7ddda25cee47e5ae83cd150ccddb0975583f8d21e5b7"
+    },
+    {
+      "relative_path": "scripts/make_comparison.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/scripts/make_comparison.py",
+      "mode": "100644",
+      "git_blob_sha1": "bd51a27fc9aa5e17f5456286e71bcdd06219c3e0",
+      "bytes": 2533,
+      "sha256": "21a88548cd5b86d6ad6133a63ce77f0f96fcbba0fa7044a04401aaf8d02be0b1"
+    },
+    {
       "relative_path": "scripts/render_native.py",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/scripts/render_native.py",
       "mode": "100644",
@@ -314,6 +362,14 @@
       "sha256": "9e8c5521c812787fd60efe0ae53116bb9038ad2bab6b6b9f56fdf608ddd87286"
     },
     {
+      "relative_path": "v0/STATUS.md",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/STATUS.md",
+      "mode": "100644",
+      "git_blob_sha1": "6e8c9827ba040d6201b0680c6826c83127cc6a98",
+      "bytes": 127,
+      "sha256": "7a1a7a09b9602b53660a94c8a0ee0381218ae246ba697cc1b62eebf72485e389"
+    },
+    {
       "relative_path": "v0/build_manifest.json",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/build_manifest.json",
       "mode": "100644",
@@ -344,6 +400,150 @@
       "git_blob_sha1": "48d0e5407523ad2c101c6f35cf993f38baf845a2",
       "bytes": 184850,
       "sha256": "4e2e4df09ef700d6dc88aa63b31eb8a926114803026f6b393f2f0da68bceda42"
+    },
+    {
+      "relative_path": "v0/review_renders/665_C25_RAW_1920x1080.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/665_C25_RAW_1920x1080.png",
+      "mode": "100644",
+      "git_blob_sha1": "b6511000e3de2b968701eb32888d4782b1ce3020",
+      "bytes": 4427623,
+      "sha256": "9cebf1f7e932e11b48963942aa85a6c886b0602867a06f669d51f746802439b6"
+    },
+    {
+      "relative_path": "v0/review_renders/665_C25_direct50_1920x1080.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/665_C25_direct50_1920x1080.png",
+      "mode": "100644",
+      "git_blob_sha1": "016ca8c8e7160444755fb38daba1904aa5aa685b",
+      "bytes": 3872533,
+      "sha256": "504112f9bf1a278d1fb04d3efde445c6b5d3b327f5750f11ecdbada2a43804d7"
+    },
+    {
+      "relative_path": "v0/review_renders/C25_WHITE_render_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/C25_WHITE_render_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "67e7ee7629fd081a0269ba1bb2b8870d4e2da7b2",
+      "bytes": 1478,
+      "sha256": "1b40d8a992cc9c37241760b697db23c42d0228f44d28582771762121ad1597f9"
+    },
+    {
+      "relative_path": "v0/review_renders/C25_native_before_after_sheet.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/C25_native_before_after_sheet.png",
+      "mode": "100644",
+      "git_blob_sha1": "301e1bc8dbdfbe7b6e85e669262867d22fad165d",
+      "bytes": 1790099,
+      "sha256": "f130deb966823d0c0aaef56a1bc54ea101128fc00bcbe08d25bd8a781358b490"
+    },
+    {
+      "relative_path": "v0/review_renders/C25_render_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/C25_render_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "23df37f55cc1935097c4cdce5694750f78643bea",
+      "bytes": 3542,
+      "sha256": "11913d06d2ef6dc4c6260d9ca435c666f2a05eb0d9ff398aabc2f75408a60031"
+    },
+    {
+      "relative_path": "v0/review_renders/G_C25_RAW_1920x1080.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/G_C25_RAW_1920x1080.png",
+      "mode": "100644",
+      "git_blob_sha1": "77b3a97c277efa1f0e40d300bc3d3b2432d33579",
+      "bytes": 4504411,
+      "sha256": "b857eb1cf8a259938d2624051f0fb230f201657b06b4240fa8875c3d3630ab65"
+    },
+    {
+      "relative_path": "v0/review_renders/G_C25_direct50_1920x1080.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/G_C25_direct50_1920x1080.png",
+      "mode": "100644",
+      "git_blob_sha1": "84d77954da560eeb6abff0c3d28d3549c452a632",
+      "bytes": 3933552,
+      "sha256": "f29cea66d4445d0b7a47d2a9e0c2034ef2194ea538d0d40acc11b1b91f061048"
+    },
+    {
+      "relative_path": "v0/review_renders/H_C25_RAW_1920x1080.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/H_C25_RAW_1920x1080.png",
+      "mode": "100644",
+      "git_blob_sha1": "7c8397a2cb8225cc344698f4af4745daf41bba95",
+      "bytes": 4298528,
+      "sha256": "f4e11e98fe15cd6828bf1dcfbaf7837add2a8168576971567380938c73db357a"
+    },
+    {
+      "relative_path": "v0/review_renders/H_C25_WHITE_RAW_1920x1080.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/H_C25_WHITE_RAW_1920x1080.png",
+      "mode": "100644",
+      "git_blob_sha1": "348e6de3bca7a35814bfb3db456e759a78bf067a",
+      "bytes": 3741957,
+      "sha256": "efe40aadfb275b5a09c5206ffcfa0c3457a3922744eb7ffd059bfcb2718b7dbd"
+    },
+    {
+      "relative_path": "v0/review_renders/H_C25_direct50_1920x1080.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/H_C25_direct50_1920x1080.png",
+      "mode": "100644",
+      "git_blob_sha1": "a73dc6c52f38c729d0ea4bc44fa390fc860aa539",
+      "bytes": 3685411,
+      "sha256": "8b7b87f144911771f681afd199cd8fbff00f947bba9f4ac5931b9760bcb36a80"
+    },
+    {
+      "relative_path": "v0/review_renders/H_C25_inspection2x.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/H_C25_inspection2x.png",
+      "mode": "100644",
+      "git_blob_sha1": "44a46f0f5cbbd04df44cfb6914669e168d624321",
+      "bytes": 919494,
+      "sha256": "2da74f9aa8de42a60332d74217ee98620a709ea45226f9cc359e81cca160b615"
+    },
+    {
+      "relative_path": "v0/review_renders/comparison_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/comparison_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "4e2caeb9e67d3978b2bd265ae61b296f689cb19e",
+      "bytes": 257,
+      "sha256": "d5f2f7eaf3e0374305661b519608b0ffff281e457bdfdf1deb5ec2a572d1a784"
+    },
+    {
+      "relative_path": "v0/review_renders/direct50_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v0/review_renders/direct50_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "e0eee9dae6be354e63dcbb37636c06d8280abefd",
+      "bytes": 1638,
+      "sha256": "748fe244d2c6b30ff0dde9befc4f8c13c532055c00c4a7c96155c805cd8b635f"
+    },
+    {
+      "relative_path": "v1/STATUS.md",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v1/STATUS.md",
+      "mode": "100644",
+      "git_blob_sha1": "ee62005e5c583fa1fe60ce270e1a21ab0d232c8b",
+      "bytes": 153,
+      "sha256": "ce69acd2d8f59b885aad6a7d512047bbd27e1cf0e5b7af04c605439ac74b8b67"
+    },
+    {
+      "relative_path": "v1/build_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v1/build_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "1bcb7dfdc6be303580fe321cdc46f0850518e60c",
+      "bytes": 1708,
+      "sha256": "35fc6207b00a0b6c020cb308df0f14e1198f013d98edecde9c3f3fb8be954f57"
+    },
+    {
+      "relative_path": "v1/hospital_C25_structural_volume_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v1/hospital_C25_structural_volume_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "58397cee39c29f5cd6c135cbf4b839867e69696b",
+      "bytes": 12981145,
+      "sha256": "28aee8b2f6cbdb44b936c648309b26d945fd47714b5090c4958c00e4e5cd3555"
+    },
+    {
+      "relative_path": "v1/hospital_C25_white_geometry_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v1/hospital_C25_white_geometry_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "008829571a59dffef2740109e9f67c8ed6a162ab",
+      "bytes": 12955075,
+      "sha256": "16f4ca8d07bb986d9b2d64fc71afe23b3115c6205e1e360b37ada91b34ce394b"
+    },
+    {
+      "relative_path": "v1/panel_vertex_semantics.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v1/panel_vertex_semantics.json",
+      "mode": "100644",
+      "git_blob_sha1": "3c1671245fb43d2b9800d02a91422f7eeb8a98e1",
+      "bytes": 265634,
+      "sha256": "d76b18c5d44588ad26274fe80d578b7f4e2867052fb1190b305f7347dd2d5b76"
     }
   ],
   "original_commits": [
@@ -368,9 +568,66 @@
       "message": "Build C25 whole back volume and continuous broad side-frame hypothesis\n",
       "raw_commit_sha256": "92d2f50cef47999d6772fb61b9f9db8f2ab5fc3acdec2babb07db4f3de310beb",
       "changed_files_raw": "A\tscripts/build_c25.py\nA\tscripts/render_native.py\nA\tsource_review/1103_native_crop.png\nA\tsource_review/650_native_crop.png\nA\tsource_review/658_native_crop.png\nA\tsource_review/872_native_crop.png\nA\tsource_review/C25_read_only_structural_review.md\nA\tsource_review/H_C23_native_crop.png\nA\tsource_review/H_source_native_crop.png\nA\tsource_review/review_manifest.json\nA\tv0/build_manifest.json\nA\tv0/hospital_C25_structural_volume_CONDITIONAL.blend\nA\tv0/hospital_C25_white_geometry_CONDITIONAL.blend\nA\tv0/panel_vertex_semantics.json\n"
+    },
+    {
+      "commit": "4a8c867d3ebaf3ac0b52d247234b509e4f56f503",
+      "parents": [
+        "b47c0b16f2b0346e8d878514af470998eaa45998"
+      ],
+      "tree": "2238e3bc23ee909d0b271004869aaf849c1060c4",
+      "author": "dot <dot@localhost> 1792223065 +0900",
+      "committer": "dot <dot@localhost> 1792223065 +0900",
+      "message": "Preserve failed C25 v0 renders and repair structural shell plus integrated top lip\n",
+      "raw_commit_sha256": "60c07eb29fbcb326255a9908ec2017379e7188dd4c38e539bf73c3388ef74edf",
+      "changed_files_raw": "A\tindependent_review/C25_v0_intersection_witnesses.json\nA\tindependent_review/compare_reports.py\nA\tindependent_review/verify_geometry.py\nA\tindependent_review/verify_silhouettes.py\nA\tscripts/build_c25_v1.py\nA\tscripts/make_comparison.py\nA\tv0/STATUS.md\nA\tv0/review_renders/665_C25_RAW_1920x1080.png\nA\tv0/review_renders/665_C25_direct50_1920x1080.png\nA\tv0/review_renders/C25_WHITE_render_manifest.json\nA\tv0/review_renders/C25_native_before_after_sheet.png\nA\tv0/review_renders/C25_render_manifest.json\nA\tv0/review_renders/G_C25_RAW_1920x1080.png\nA\tv0/review_renders/G_C25_direct50_1920x1080.png\nA\tv0/review_renders/H_C25_RAW_1920x1080.png\nA\tv0/review_renders/H_C25_WHITE_RAW_1920x1080.png\nA\tv0/review_renders/H_C25_direct50_1920x1080.png\nA\tv0/review_renders/H_C25_inspection2x.png\nA\tv0/review_renders/comparison_manifest.json\nA\tv0/review_renders/direct50_manifest.json\nA\tv1/STATUS.md\nA\tv1/build_manifest.json\nA\tv1/hospital_C25_structural_volume_CONDITIONAL.blend\nA\tv1/hospital_C25_white_geometry_CONDITIONAL.blend\nA\tv1/panel_vertex_semantics.json\n"
     }
   ],
-  "historical_only_blobs": [],
+  "historical_only_blobs": [
+    {
+      "git_blob_sha1": "7f2e2104d07fb68642358dedf48be3f383b1300e",
+      "bytes": 13171,
+      "sha256": "496297a20be6d43546558a6d572aadde93624dfdd7b09c8d22887050ded877c9",
+      "original_paths": [
+        "independent_review/verify_geometry.py"
+      ],
+      "commits_containing_blob": [
+        "4a8c867d3ebaf3ac0b52d247234b509e4f56f503",
+        "6cabb9339c063014bed92f135b899fcce2db0170",
+        "7c7ed4069e8aa769c4062dfd3e8107dffb7a981d"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/7f2e2104d07fb68642358dedf48be3f383b1300e",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "7f2e2104d07fb68642358dedf48be3f383b1300e"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
+    {
+      "git_blob_sha1": "ee62005e5c583fa1fe60ce270e1a21ab0d232c8b",
+      "bytes": 153,
+      "sha256": "ce69acd2d8f59b885aad6a7d512047bbd27e1cf0e5b7af04c605439ac74b8b67",
+      "original_paths": [
+        "v1/STATUS.md"
+      ],
+      "commits_containing_blob": [
+        "4a8c867d3ebaf3ac0b52d247234b509e4f56f503"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/ee62005e5c583fa1fe60ce270e1a21ab0d232c8b",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "ee62005e5c583fa1fe60ce270e1a21ab0d232c8b"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    }
+  ],
   "excluded_later_work": {
     "commit": "0e4cbe02b7733ced05fbfa4bd6b483f55b98493c",
     "parent": "053cd60bb026155e3cfbf979fef11965cd2600ba",
