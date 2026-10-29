@@ -32,8 +32,8 @@ def shore_z(x,y):
  return -.08-.50*(1-left)-.48*wet-.45*end
 h=w=1024;v,u=np.mgrid[:h,:w];xx=2.5+u/(w-1)*7.1;yy=-12+v/(h-1)*24;zz=shore_z(xx,yy);sandnoise=.55*noise(h,w,35,35)+.3*noise(h,w,130,130)+.15*rng.random((h,w));wet=np.clip((-zz-.15)/.32,0,1);sand=(.72+.30*(sandnoise-.5))*(1-.48*wet)
 save('shore_color.png',sand[...,None]*np.array([.36,.29,.23]));save('shore_roughness.png',.88-.35*wet+.04*(sandnoise-.5));save('shore_normal.png',normal(sandnoise,1.6))
-h=w=512;y,x=np.mgrid[:h,:w];waves=.50*np.sin(y*.17+1.8*np.sin(x*.018))+.22*np.sin(y*.43+x*.04)+.12*np.sin(y*.73-x*.08)+.10*noise(h,w,32,32)
-save('water_ripple_normal.png',normal(waves,1.7))
+h=w=512;y,x=np.mgrid[:h,:w];waves=.66*noise(h,w,90,32)+.24*noise(h,w,160,85)+.10*np.sin(y*.35+4*noise(h,w,30,25))
+save('water_ripple_normal.png',normal(waves,.9))
 h=w=512;y,x=np.mgrid[:h,:w];fiber=noise(h,w,36,70)*.7+rng.random((h,w))*.3;rad=((x-w*.5)/(w*.46))**2+((y-h*.5)/(h*.40))**2;glow=np.exp(-rad*1.3)
 save('paper_color.png',(0.91+fiber[...,None]*.07)*np.array([.91,.50,.16]));save('paper_emission.png',(0.22+.78*glow)[...,None]*np.array([1.,.45,.08]));save('paper_normal.png',normal(fiber,.24))
 # Portable Radiance RGBE files, literal scanline RLE. These are authored sky hypotheses.
@@ -45,10 +45,10 @@ def write_hdr(path,rgb):
    f.write(bytes([2,2,w>>8,w&255]))
    for c in range(4):
     for start in range(0,w,127):part=row[start:start+127,c];f.write(bytes([len(part)]));f.write(part.tobytes())
-h,w=512,1024;y,x=np.mgrid[:h,:w];az=x/w*2*np.pi;alt=np.cos(y/(h-1)*np.pi);cloud=.58*noise(h,w,14,28)+.28*noise(h,w,28,56)+.14*noise(h,w,64,128);mask=np.clip((cloud-.43)*4.7,0,1);mask*=np.clip((alt+.035)/.15,0,1);mask*=np.clip((1.08-alt)/.30,0,1);azdist=np.arctan2(np.sin(az-.15),np.cos(az-.15));sunsector=np.exp(-(azdist/.65)**2);hz=np.exp(-np.abs(alt)/.19);sun=np.exp(-(azdist/.018)**2-((alt-.035)/.012)**2)*22
+h,w=512,1024;y,x=np.mgrid[:h,:w];az=x/w*2*np.pi;alt=np.cos(y/(h-1)*np.pi);cloud=.55*noise(h,w,85,26)+.27*noise(h,w,180,65)+.18*noise(h,w,300,150);mask=np.clip((cloud-.46)*5.8,0,1);mask*=np.clip((alt+.008)/.05,0,1);mask*=np.exp(-((alt-.18)/.38)**2);azdist=np.arctan2(np.sin(az-.15),np.cos(az-.15));sunsector=np.exp(-(azdist/.65)**2);hz=np.exp(-np.abs(alt)/.19);sun=np.exp(-(azdist/.018)**2-((alt-.035)/.012)**2)*22
 for state in ['S40_sunset','S105_bluehour']:
- if state=='S40_sunset':zen=np.array([.055,.095,.19]);horizon=np.array([.90,.49,.34]);shadow=np.array([.12,.065,.11]);rim=np.array([.65,.18,.11]);level=1.
- else:zen=np.array([.008,.025,.075]);horizon=np.array([.34,.21,.19]);shadow=np.array([.035,.035,.07]);rim=np.array([.22,.085,.085]);level=.16
+ if state=='S40_sunset':zen=np.array([.055,.095,.19]);horizon=np.array([.90,.42,.52]);shadow=np.array([.12,.075,.16]);rim=np.array([.80,.27,.26]);level=1.
+ else:zen=np.array([.008,.025,.075]);horizon=np.array([.16,.25,.47]);shadow=np.array([.035,.055,.105]);rim=np.array([.22,.18,.24]);level=.16
  sky=zen[None,None,:]*(1-hz[...,None])+horizon[None,None,:]*hz[...,None]*(.48+.52*sunsector[...,None]);lit=np.exp(-((mask-.28)/.18)**2)*sunsector*hz
  sky=sky*(1-mask[...,None]*.88)+shadow[None,None,:]*mask[...,None]+rim[None,None,:]*lit[...,None];sky+=sun[...,None]*np.array([1.,.48,.23])*level*(1-mask[...,None]);sky=np.maximum(sky,.002)
  write_hdr(OUT/(state+'.hdr'),sky);save(state+'_preview.jpg',np.power(sky/(1+sky),1/2.2))

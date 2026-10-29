@@ -81,19 +81,23 @@ for id,anchor,size in [('L01_lantern',(-.92,1.22,0),.25),('L02_lantern',(7.2,-5.
  for i in range(N):
   j=(i+1)%N;fs.extend([(i,j,N+j,N+i),(N+i,N+j,2*N+j,2*N+i),(2*N+i,2*N+j,3*N+j,3*N+i)])
  fs.extend([tuple(range(N-1,-1,-1)),tuple(range(3*N,4*N))]);o=mesh(id+' open thin paper shell',vs,fs,paper,id)
- # Two five-point apertures through each broad panel. Rear-panel replication is inferred.
- for panel in [-1,1]:
+ # Two five-point apertures through observed-style front panel; unseen rear is plain.
+ for panel in [-1]:
   for k,(cx,cz,r) in enumerate([(-w*.16,z0+h*.74,w*.13),(w*.19,z0+h*.22,w*.082)]):
    star=[(x+cx+(r if i%2==0 else r*.43)*math.cos(math.pi/2+i*math.pi/5),cz+(r if i%2==0 else r*.43)*math.sin(math.pi/2+i*math.pi/5)) for i in range(10)]
    yy=y+panel*d/2;vv=[(xx,dep,zz) for dep in [yy-.015,yy+.015] for xx,zz in star];ff=[tuple(range(9,-1,-1)),tuple(range(10,20))]+[(i,(i+1)%10,(i+1)%10+10,i+10) for i in range(10)]
    c=mesh('temporary star aperture',vv,ff,None,'construction');bpy.context.view_layer.objects.active=o;mod=o.modifiers.new('Real star aperture','BOOLEAN');mod.operation='DIFFERENCE';mod.solver='EXACT';mod.object=c;bpy.ops.object.modifier_apply(modifier=mod.name);bpy.data.objects.remove(c,do_unlink=True)
+ inner_paper=mat(id+' inferred lit interior paper',(1,.55,.18),.9)
+ inner_paper.node_tree.nodes.get('Principled BSDF').inputs['Emission Color'].default_value=(1,.55,.18,1);inner_paper.node_tree.nodes.get('Principled BSDF').inputs['Emission Strength'].default_value=3.8;o.data.materials.append(inner_paper)
+ for f in o.data.polygons:
+  if (f.center.x-x)*f.normal.x+(f.center.y-y)*f.normal.y < -.02 and abs(f.normal.z)<.5:f.material_index=1
  uv_project(o,lambda v,n:((v.x-x)/w+.5,(v.z-z0)/h) if abs(n.y)>.3 else ((v.y-y)/d+.5,(v.z-z0)/h))
  cube(id+' thin base',(x,y,z+.007),(w*1.06,d*1.06,.014),base,id)
  bpy.ops.mesh.primitive_uv_sphere_add(segments=16,ring_count=8,radius=w*.095,location=(x,y,z0+h*.45));bulb=bpy.context.object;bulb.name=id+' inferred internal emitter';tag(bulb,id);bulb.data.materials.append(wick)
  lights=[a for a in sc.objects if a.type=='LIGHT' and a.data.type=='POINT' and abs(a.location.x-x)<.01 and abs(a.location.y-y)<.01]
  assert len(lights)==1,(id,len(lights))
  l=lights[0];l.location.z=z0+h*.46;l.data.energy=12*size/.25;l.data.color=(1,.44,.12);l.data.shadow_soft_size=w*.12;l['evidence_id']=id
- lamps.append({'id':id,'anchor':anchor,'size_inferred':size,'height_inferred':h,'thickness_inferred':t,'removed_generic_components':old,'new_components':[o.name,id+' thin base',bulb.name],'visible_class':'open paper bag with star apertures','inferred':'hidden panel duplicate stars; exact dimensions; internal emitter; cross-frame instance identity'})
+ lamps.append({'id':id,'anchor':anchor,'size_inferred':size,'height_inferred':h,'thickness_inferred':t,'removed_generic_components':old,'new_components':[o.name,id+' thin base',bulb.name],'visible_class':'open paper bag with star apertures','inferred':'plain unseen rear panel; exact dimensions; lit interior paper approximation; internal emitter; cross-frame instance identity'})
 # Replace hard rectangular shore by a limited closed topographic transition.
 old=bpy.data.objects['S01 local sand patch'];oldid=old.get('evidence_id');bpy.data.objects.remove(old,do_unlink=True)
 def shore_z(x,y):
@@ -125,7 +129,7 @@ old=bpy.data.objects['E01 water environment'];oldid=old.get('evidence_id');bpy.d
 xs=[-500,-320,-160,-80,-40]+[-24+.25*i for i in range(193)]+[40,80,160,320,500]
 def wave(x,y):
  f=max(0,min(1,(24-max(abs(x),abs(y)))/6));f=f*f*(3-2*f)
- return -.42+f*(.008*math.sin(y*3.9+x*.35)+.004*math.sin(y*8.3-x*.7))
+ return -.42+f*(.002*math.sin(y*3.9+x*.35)+.001*math.sin(y*8.3-x*.7))
 sea=closed_grid('E01 water environment',xs,xs,wave,-1.8,water,oldid);uv_project(sea,lambda v,n:(v.x*.28,v.y*.28));sea['evidence_status']='shared near-surface waves inferred; finite render extent, no real sea boundary claimed'
 # HDR worlds are environment state sidecars; never part of finite physical room geometry.
 def world(state):

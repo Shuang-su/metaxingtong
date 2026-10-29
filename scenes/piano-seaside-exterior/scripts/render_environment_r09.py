@@ -8,7 +8,7 @@ source=['source_N4037','source_N6318','source_N2518','source_N2453','source_N676
 def render(name,path,width,samples):
  sc.camera=bpy.data.objects[name];sc.render.resolution_x=width;sc.render.resolution_y=width*9//16;sc.render.resolution_percentage=100;sc.eevee.taa_render_samples=samples;sc.render.filepath=str(path);bpy.ops.render.render(write_still=True)
 # Extra close camera is only an environment diagnostic; no scene object is hidden.
-d=bpy.data.cameras.new('diagnostic_lantern');o=bpy.data.objects.new('diagnostic_lantern',d);sc.collection.objects.link(o);o.location=(-1.5,.48,.74);o.rotation_euler=(Vector((-.92,1.22,.19))-o.location).to_track_quat('-Z','Y').to_euler();d.lens=55
+d=bpy.data.cameras.new('diagnostic_lantern');o=bpy.data.objects.new('diagnostic_lantern',d);sc.collection.objects.link(o);o.location=(-1.8,.1,1.0);o.rotation_euler=(Vector((-.92,1.22,.21))-o.location).to_track_quat('-Z','Y').to_euler();d.lens=55
 if mode=='preview':
  out=Q/'low';out.mkdir(exist_ok=True)
  for state in ['S40_sunset','S105_bluehour']:
