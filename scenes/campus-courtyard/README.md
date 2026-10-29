@@ -28,7 +28,7 @@
 
 模型可打开、几何检查与 Library/Git 保存分别记录；任何一项都不等同于来源验收。
 
-## 当前候选入口
+## Stage02 保留候选入口
 
 - `stage-02-material-candidate/campus-courtyard_material.blend`：材质模型（贴图已打包）。
 - `stage-02-material-candidate/campus-courtyard_white.blend`：同几何白模。
@@ -38,4 +38,8 @@
 - `stage-02-material-candidate/renders/CHECK*.png`：8 个内部检查角，均为 1280×720。
 - `qa/REPORT.md`、`qa/object_evidence.csv`：逐组件证据、范围和剩余问题；共 128 组件、72 个候选踏步实例。
 
-当前仍未来源验收：条件机位约 50–57px 平均手选锚点残差，跨回放同场证据缺失；SRC04 有限地面边缘可见，四张长凳约 0.0126 模型单位接触间隙待修。不得以有限 QA 或文件可打开替代来源门槛。
+Stage02当时仍未来源验收：条件机位约 50–57px 平均手选锚点残差，跨回放同场证据缺失；SRC04 有限地面边缘可见，四张长凳约 0.0126 模型单位接触间隙待修。不得以有限 QA 或文件可打开替代来源门槛。
+
+## 最新冻结候选：Stage03
+
+见 `stage-03-contact-qa/HANDOFF.md`。已完成四源接触/边缘修正、同几何白模/材质/GLB实际回导与四源/八角回归；旧Stage02原件和失败试验保留。主图JPEG和小联系表在新阶段目录。来源与完整几何仍未验收；新反向帧尚未接收，后续先只加新相机做独立基线诊断。未push/PR或重试Library。

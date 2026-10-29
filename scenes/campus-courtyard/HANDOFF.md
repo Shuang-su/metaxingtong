@@ -1,3 +1,5 @@
+> 后续Stage03冻结候选见 `stage-03-contact-qa/HANDOFF.md`；下文保留Stage02当时的交接及401回执，不代表最新文件已跨环境交付。
+
 # 校园庭院本地候选交接
 
 分支 `scene/campus-courtyard`。原文件候选 commit `647a9d6c42c4e169aa39803914a5ced0f9496358`。仅本地制作，未 push/PR/Issue/发布；未碰钢琴、main 或 archive/history。
