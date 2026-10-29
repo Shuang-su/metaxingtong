@@ -4024,6 +4024,32 @@
         ]
       }
     ],
+    "slab_fascia_connection_probes": [
+      {
+        "sample_x": 0.4,
+        "distance_behind_fascia_front": 0.05,
+        "slab_underside_z": 0.9375,
+        "fascia_top_hit_z": 0.9399999976158142,
+        "underside_to_fascia_gap": -0.002499997615814209,
+        "interpretation": "Positive = unsolved underside/fascia gap in the inclined solid profile. Negative = overlap. This is an inferred internal connection, not source-measured structure."
+      },
+      {
+        "sample_x": 0.4,
+        "distance_behind_fascia_front": 0.1,
+        "slab_underside_z": 0.9375,
+        "fascia_top_hit_z": 0.9399999976158142,
+        "underside_to_fascia_gap": -0.002499997615814209,
+        "interpretation": "Positive = unsolved underside/fascia gap in the inclined solid profile. Negative = overlap. This is an inferred internal connection, not source-measured structure."
+      },
+      {
+        "sample_x": 0.4,
+        "distance_behind_fascia_front": 0.2,
+        "slab_underside_z": 0.9375,
+        "fascia_top_hit_z": 0.9399999380111694,
+        "underside_to_fascia_gap": -0.0024999380111694336,
+        "interpretation": "Positive = unsolved underside/fascia gap in the inclined solid profile. Negative = overlap. This is an inferred internal connection, not source-measured structure."
+      }
+    ],
     "vent_gap_rays": {
       "count": 208,
       "recess_end_hits": 208,
@@ -5903,7 +5929,7 @@
         ]
       ]
     },
-    "limits": "Local mesh and sampled aperture only. No full car, collision sweep, support, true camera, or source acceptance."
+    "limits": "Local mesh and sampled aperture only. No full car, collision sweep, support, true camera, or source acceptance. Individual closed solids do not prove inter-component closure; slab/fascia gap probes are explicit."
   },
   "D1": {
     "mesh_count": 45,
@@ -9858,6 +9884,32 @@
         ]
       }
     ],
+    "slab_fascia_connection_probes": [
+      {
+        "sample_x": 0.4,
+        "distance_behind_fascia_front": 0.05,
+        "slab_underside_z": 0.9424376394989148,
+        "fascia_top_hit_z": 0.9195370674133301,
+        "underside_to_fascia_gap": 0.022900572085584714,
+        "interpretation": "Positive = unsolved underside/fascia gap in the inclined solid profile. Negative = overlap. This is an inferred internal connection, not source-measured structure."
+      },
+      {
+        "sample_x": 0.4,
+        "distance_behind_fascia_front": 0.1,
+        "slab_underside_z": 0.9424376394989148,
+        "fascia_top_hit_z": 0.8941364884376526,
+        "underside_to_fascia_gap": 0.048301151061262204,
+        "interpretation": "Positive = unsolved underside/fascia gap in the inclined solid profile. Negative = overlap. This is an inferred internal connection, not source-measured structure."
+      },
+      {
+        "sample_x": 0.4,
+        "distance_behind_fascia_front": 0.2,
+        "slab_underside_z": 0.9424376394989148,
+        "fascia_top_hit_z": 0.8433353900909424,
+        "underside_to_fascia_gap": 0.09910224940797241,
+        "interpretation": "Positive = unsolved underside/fascia gap in the inclined solid profile. Negative = overlap. This is an inferred internal connection, not source-measured structure."
+      }
+    ],
     "vent_gap_rays": {
       "count": 208,
       "recess_end_hits": 208,
@@ -11737,6 +11789,6 @@
         ]
       ]
     },
-    "limits": "Local mesh and sampled aperture only. No full car, collision sweep, support, true camera, or source acceptance."
+    "limits": "Local mesh and sampled aperture only. No full car, collision sweep, support, true camera, or source acceptance. Individual closed solids do not prove inter-component closure; slab/fascia gap probes are explicit."
   }
 }
