@@ -123,13 +123,15 @@ def ribbon(a,points,left,right,z,h,mat):
 a=A('TRACK-ARC','partial curved track','SRC01,SRC02','red curved band with parallel white markings','path curvature, lane count beyond occlusion; not a 400m circuit');ribbon(a,track,-3.6,3.6,.015,.035,red)
 for off in [-3.52,-1.75,0,1.75,3.52]:ribbon(a,track,off-.035,off+.035,.051,.004,line)
 a.finish()
-for id,c,d,mat in [('COURT-NE',(10.5,16,.07),(18,13,.08),cyan),('COURT-E',(17,-.8,.06),(20,10,.08),red),('COURT-E-IN',(17,-.8,.105),(17,7,.01),green)]:
+for id,c,d,mat in [('COURT-NE',(10.5,16,.07),(18,13,.08),cyan),('COURT-E',(13.5,-.8,.04),(12,10,.04),red),('COURT-E-IN',(13.5,-.8,.065),(10.7,7,.01),green)]:
     a=A(id,'partial sports surface','SRC01,SRC02,SRC03','finite cyan/green/red sport surface edges','exact dimensions, standard sport specification unproven');a.box(c,d,mat);a.finish()
 a=A('COURT-MARKINGS','court lines');
 for x in [2,9,19]:a.box((x,16,.118),(.045,12,.008),line)
 for y in [10,16,22]:a.box((10.5,y,.118),(17,.045,.008),line)
-for y in [-4.15,2.55]:a.box((17,y,.12),(16.7,.045,.008),line)
-a.box((8.65,-.8,.12),(.045,6.7,.008),line);a.finish()
+for y in [-4.15,2.55]:a.box((13.5,y,.077),(10.5,.045,.008),line)
+a.box((8.25,-.8,.077),(.045,6.7,.008),line)
+pts=[(14.4+2.5*math.cos(t*math.pi/48),-.8+2.5*math.sin(t*math.pi/48),.078) for t in range(97)]
+a.path(pts,.024,line,6);a.finish()
 
 # L-shaped finite buildings. Actual apertures: pier/spandrel assembly, no solid slab behind glass.
 def facade(prefix,origin,axis,bays,pitch,levels,door_bay=None):
@@ -154,7 +156,7 @@ def facade(prefix,origin,axis,bays,pitch,levels,door_bay=None):
     wall.finish()
     for row in range(levels):
       for c in range(bays):
-        door=(row==0 and c==door_bay);bot=.18 if door else row*floor+sill;h=2.55 if door else wh;u=(c+.5)*pitch
+        door=(row==0 and c==door_bay);bot=.40 if door else row*floor+sill;h=2.20 if door else wh;u=(c+.5)*pitch
         a=A(f'{prefix}-'+('DOOR' if door else f'W-r{row+1:02d}-c{c+1:02d}'),'door' if door else 'window','SRC01,SRC02,SRC03','rectangular opening, brown mullions and blue/dark panes','instance correspondence/corner occlusion provisional; glazing optical values and recess depth')
         for side in [-1,1]:a.box(pos(u+side*w/2,.14,bot+h/2),(.085,.30,h+.10),trim,rot)
         for z in [bot,bot+h]:a.box(pos(u,.14,z),(w+.08,.30,.085),trim,rot)
@@ -170,10 +172,13 @@ def facade(prefix,origin,axis,bays,pitch,levels,door_bay=None):
     a.finish()
 
 facade('BLD-A',(-5.6,28),(1,0),7,3.65,4)
-facade('BLD-B',(20,-10),(0,1),10,3.8,4,3)
+facade('BLD-B',(20,28),(0,-1),12,3.8,4,6)
+a=A('BACKDROP-WEST-FRAGMENT','finite background wall','SRC01','dark wall-like patch behind left tree and goals','identity, depth and hidden extent unresolved')
+a.box((-15.3,29,4.2),(19,.35,8.4),dark);a.finish()
 # Entrance raised landing and continuous real steps, observed in SRC02/03.
 a=A('ENTRY-STEPS','entrance steps','SRC02,SRC03','low stepped rise along east facade, door/planter adjacency','rise/run and length not calibrated')
 for i in range(3):a.box((19.25-i*.32,3.8,(3-i)*.065),(.64+2*i*.32,17,(3-i)*.13),trim)
+a.box((19.7,3.8,.195),(.6,17,.39),trim)
 a.finish()
 a=A('BLD-B-DRAIN','rain pipe','SRC02,SRC03','vertical light drain pipe near corner, curved foot','diameter and joints')
 a.path([(19.7,9.1,12.6),(19.7,9.1,1),(19.45,9.1,.8),(19.45,9.1,.5)],.075,trim);a.finish()
@@ -199,7 +204,8 @@ treebed('TREEBED-01',3.9,-3.1,2.24);tree('TREE-01',3.9,-3.1,.68,16)
 tree('TREE-02',-12,16,.45,12)
 tree('TREE-03',13,13,.36,11)
 tree('TREE-04',15,6,.32,12,True)
-tree('TREE-05',17,-8,.36,12)
+tree('TREE-05',18,-5.5,.36,12)
+treebed('TREEBED-05',18,-5.5,.9)
 tree('TREE-06',-24,20,.45,13)
 tree('TREE-07',8,24,.25,10)
 
@@ -267,7 +273,7 @@ def hoop(id,x,y,z,rot=0):
     for i in range(12):
         t=i*2*math.pi/12;a.tube(p(.31*math.cos(t),-.42+.31*math.sin(t),z-.1),p(.17*math.cos(t+.35),-.42+.17*math.sin(t+.35),z-.53),.008,net,n=5)
     a.finish()
-hoop('HOOP-01',4.7,24,3.5);hoop('HOOP-02',6.6,14,4.4);hoop('HOOP-03',15,-1,4.2,math.pi/2)
+hoop('HOOP-01',4.7,24,3.5);hoop('HOOP-02',6.6,14,4.4);hoop('HOOP-03',17,-6,7.0,0)
 a=A('BALL-RACK-01','ball rack','SRC01,SRC02,SRC03','brown open rack with three orange balls near east entrance','underside joinery, exact tube/wood material')
 for x in [13.2,15.4]:
     for y in [1.8,2.4]:a.box((x,y,.70),(.055,.055,1.4),wood)
@@ -295,17 +301,17 @@ for floor in range(4):
     a.box((17.8,endy+direction*.40,base+3.18-.06),(3.05,1.05,.12),rust)
     for xx in [16.3,17.3,18.3,19.25]:a.tube((xx,endy+direction*.85,base+3.18),(xx,endy+direction*.85,base+4.13),.025,metal)
     a.tube((16.3,endy+direction*.85,base+4.13),(19.25,endy+direction*.85,base+4.13),.035,metal)
-a.finish()
+a.finish().location.y=-7
 
 scene=bpy.context.scene
 scene.unit_settings.system='NONE'
 world=bpy.data.worlds.new('Courtyard shared daylight');scene.world=world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.48,.63,.78,1);world.node_tree.nodes['Background'].inputs[1].default_value=.65
-data=bpy.data.lights.new('SUN-shared','SUN');o=bpy.data.objects.new('SUN-shared',data);scene.collection.objects.link(o);data.energy=3.0;data.angle=.06;o.rotation_euler=(math.radians(26),math.radians(-24),math.radians(-42))
+data=bpy.data.lights.new('SUN-shared','SUN');o=bpy.data.objects.new('SUN-shared',data);scene.collection.objects.link(o);data.energy=3.0;data.angle=.06;o.rotation_euler=(math.radians(66),math.radians(-24),math.radians(-42))
 CAMERAS={
  'SRC01':((0,-28,3.0),(0,28,.9),45),
- 'SRC02':((0,-28,3.0),(14,25,.8),45),
- 'SRC03':((0,-19,2.4),(20,2,4.2),42),
- 'SRC04':((0,-25,3.0),(17,25,1.5),45),
+ 'SRC02':((-12,-25,3.0),(20,12,.8),45),
+ 'SRC03':((-8,-20,2.4),(20,-7.5,7.0),42),
+ 'SRC04':((-14,-22,3.0),(20,4.1,1.0),45),
  'MAIN':((-18,-28,17),(2,7,3.5),42),
  'CHECK01-front':((0,-37,13),(0,9,3),38),
  'CHECK02-left':((-35,-18,17),(0,9,3),38),
@@ -314,7 +320,7 @@ CAMERAS={
  'CHECK05-east':((35,28,21),(4,8,3),34),
  'CHECK06-south-east':((31,-23,15),(4,8,3),38),
  'CHECK07-overhead':((1,4,65),(1,4,0),38),
- 'CHECK08-stair':((6,-19,9),(18,-5,6),42),
+ 'CHECK08-stair':((6,-25,9),(18,-12,6),42),
 }
 for name,(loc,target,lens) in CAMERAS.items():
     d=bpy.data.cameras.new(name);o=bpy.data.objects.new(name,d);scene.collection.objects.link(o);o.location=loc;o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler();d.lens=lens;d.clip_end=250;o['role']='conditional source fit' if name.startswith('SRC') else 'internal inspection, not a source baseline'

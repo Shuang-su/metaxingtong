@@ -1,0 +1,1 @@
+Generated deterministic material tiles, no photograph projection. pavers.png: 512×512, repeated via physical ground UV; bark.png: 512×512 stylized bark. Seed42. Model units and texture scale inferred. Native source image pixels were never used as scene texture.
