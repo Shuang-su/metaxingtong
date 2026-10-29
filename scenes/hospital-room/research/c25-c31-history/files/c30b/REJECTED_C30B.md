@@ -1,0 +1,6 @@
+# C30B conservative trial rejected as replacement
+The +0.08 trial restores a visible strip beneath the existing central recess in G and preserves the complete left handle opening. However it does not restore the observed bed covering silhouette: all three H sample positions are outside the visible bed edge; G has only x1580 readable at about1027 versus source970; N642 x1500/x1750 about1071/995 versus959/902;665 x1600/x1850 about996/926 versus838/787. Missing/out-of-frame edges are not assigned fabricated pixel coordinates.
+
+Do not promote this trial or continue compromising the same height parameter. The previous +0.1354234 trial was rejected for recess occlusion; this one is rejected for insufficient visible bedding coverage. Both retain original mattress thickness, fixed cameras/chairs/endboard, and explicitly assumed support extensions. Neither is accepted as physical bed reconstruction.
+
+C29 remains the last retained local curtain candidate. C30/C30B preserve actual trials and failures, with no full-scene acceptance claim. No expensive full-scene render was started for these rejected variants; region images explicitly carry REGION_ONLY. Existing C29 full material/white/50% images remain the delivered main views.
