@@ -1,0 +1,39 @@
+{
+  "panels_left_to_right": [
+    "source 5586.011739",
+    "Oct11 candidate OIDN historical baseline",
+    "T3 raw 8spp"
+  ],
+  "crop_box": [
+    1430,
+    580,
+    1650,
+    845
+  ],
+  "crop_size": [
+    220,
+    265
+  ],
+  "no_scaling": true,
+  "overlays": {
+    "material": {
+      "resolution": [
+        1920,
+        1080
+      ],
+      "overlay_formula": "floor((source RGB uint16 + render RGB uint16)/2)",
+      "max_formula_difference": 0,
+      "no_warp_no_registration": true
+    },
+    "white": {
+      "resolution": [
+        1920,
+        1080
+      ],
+      "overlay_formula": "floor((source RGB uint16 + render RGB uint16)/2)",
+      "max_formula_difference": 0,
+      "no_warp_no_registration": true
+    }
+  },
+  "warning": "Different raw/OIDN noise conditions; not a quantitative material-color acceptance. Front camera uncalibrated; no second independent table view."
+}
