@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:39.353571+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:39.637217+00:00",
   "scene": "hospital",
-  "original_snapshot": "2be7270d0ab4332284e3dd94d676b366c9d5a7c2",
-  "original_snapshot_tree": "6c0fee545613c841c8c97651cd56c6d387f0db8f",
+  "original_snapshot": "ecea79aa318b99d7a7a5b4f8bb6b915ea75e48e1",
+  "original_snapshot_tree": "de6f4ce02c28b6ad7d9e5fd2197c3ab43ddc3689",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -2458,6 +2458,70 @@
       "sha256": "53eaebd56505658e6db916ab4b2d277b14d063bf0a00cd7c94475d551bab97d9"
     },
     {
+      "relative_path": "c30b/build.log",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30b/build.log",
+      "mode": "100644",
+      "git_blob_sha1": "dbd63a1c2bddf1de7b6a30a6991e7e08e1fa4559",
+      "bytes": 638,
+      "sha256": "336e7e861ecdbc40b6bcda839469eb9271a070deafd6647f5c914b3b9f007294"
+    },
+    {
+      "relative_path": "c30b/build_verification.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30b/build_verification.json",
+      "mode": "100644",
+      "git_blob_sha1": "e5d4a2273b3c7054866df89a9422bf61de644600",
+      "bytes": 1264643,
+      "sha256": "10fca92ceaa6a5addca31ebf07f7a7be913bbebda403df4c106dc6639c5cc0ab"
+    },
+    {
+      "relative_path": "c30b/four_view_edge_metrics.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30b/four_view_edge_metrics.json",
+      "mode": "100644",
+      "git_blob_sha1": "2b8cb9be66046181574c1592bc2e5eb837185a95",
+      "bytes": 4325,
+      "sha256": "8b0baa4876aa25ad11c9cb0149bdece0d23ff237bddeb150126c058742c61985"
+    },
+    {
+      "relative_path": "c30b/hospital_C30B_beddeck_MATERIAL_TRIAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30b/hospital_C30B_beddeck_MATERIAL_TRIAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "6bdb189920eeb1edfacbcb22fe5b2ed0ff462c5d",
+      "bytes": 13053755,
+      "sha256": "c9756fac23c457d29d3908116dc1d7e3315d8018a582ff7a217a5b964ec21fa9"
+    },
+    {
+      "relative_path": "c30b/hospital_C30B_beddeck_WHITE_TRIAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30b/hospital_C30B_beddeck_WHITE_TRIAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "eb4c20799b268e64a2717c574e62b5b1db16d9f3",
+      "bytes": 8085608,
+      "sha256": "17f5ee4eb9163e75df3c6c929dbd9b5111e89caf73eea8b3c3aab007b8b38424"
+    },
+    {
+      "relative_path": "c30b/scripts/build_trial.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30b/scripts/build_trial.py",
+      "mode": "100644",
+      "git_blob_sha1": "d4142888f1070b40b33b1f5b66af88fa9e6cf8ae",
+      "bytes": 2901,
+      "sha256": "8242f68cbf82d7b00f709f52555bdc649cf4be12b090d75a079982ab86ce3bb6"
+    },
+    {
+      "relative_path": "c30b/scripts/measure_four_views.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30b/scripts/measure_four_views.py",
+      "mode": "100644",
+      "git_blob_sha1": "d627486c7e89ef28d24b531d10f219d81c644a91",
+      "bytes": 1642,
+      "sha256": "57f629ee6d0c3d84a117d2717daab7f6e627168cce97e773934692cfdc10f3d9"
+    },
+    {
+      "relative_path": "c30b/scripts/render_trial_regions.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30b/scripts/render_trial_regions.py",
+      "mode": "100644",
+      "git_blob_sha1": "8e7c765a16a6f019d7b85f1bda3ecd6204dfa4bb",
+      "bytes": 1846,
+      "sha256": "2b85da15bd25bd1dd2a9ae87359b61f83e9e89628b5e66272fddf92956c0d512"
+    },
+    {
       "relative_path": "clean_v2.log",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/clean_v2.log",
       "mode": "100644",
@@ -4488,6 +4552,18 @@
       "message": "Reject C30 joint-height trial for central-recess occlusion despite four-view edge improvement\n",
       "raw_commit_sha256": "6f2e187492cac6cf481889dd149ec3344ddc72325e33f3e44419031a58dcf262",
       "changed_files_raw": "A\tc30/C30_four_view_region_comparison.png\nA\tc30/REJECTED_JOINT_HEIGHT.md\nA\tc30/four_view_edge_metrics.json\nA\tc30/region_render.log\nA\tc30/region_render_manifest.json\nA\tc30/region_tests/665_C29_REGION_ONLY.png\nA\tc30/region_tests/665_C30_REGION_ONLY.png\nA\tc30/region_tests/G_C30_REGION_ONLY.png\nA\tc30/region_tests/H_C30_REGION_ONLY.png\nA\tc30/region_tests/N642_C30_REGION_ONLY.png\nA\tc30/scripts/make_region_board.py\nA\tc30/scripts/measure_four_views.py\nA\tc30/scripts/render_full_candidate.py\nA\tc30_diagnosis/665_frozen_bedding_edge_native1x.png\nA\tc30_diagnosis/665_holdout_source_inspect.png\nA\tc30_diagnosis/H_665_frozen_source_observations.json\nA\tc30_diagnosis/H_frozen_bedding_edge_native1x.png\nA\tc30_diagnosis/H_holdout_source_inspect.png\nA\tc30_diagnosis/freeze_H_665_source_edges.py\nA\tc30_review/665_bedding_native_comparison.png\nA\tc30_review/G_endboard_openings_native_comparison.png\nA\tc30_review/H_bedding_native_comparison.png\nA\tc30_review/N642_bedding_native_comparison.png\nA\tc30_review/actual_render_edge_observations.json\nA\tc30_review/check_render_edge.py\n"
+    },
+    {
+      "commit": "ecea79aa318b99d7a7a5b4f8bb6b915ea75e48e1",
+      "parents": [
+        "2be7270d0ab4332284e3dd94d676b366c9d5a7c2"
+      ],
+      "tree": "de6f4ce02c28b6ad7d9e5fd2197c3ab43ddc3689",
+      "author": "Codex <codex@openai.com> 1792413295 +0900",
+      "committer": "Codex <codex@openai.com> 1792413295 +0900",
+      "message": "Create conservative C30B bed-deck trial below existing central-recess lower edge\n",
+      "raw_commit_sha256": "fb1ae2b3cea5cc2889d9fd4055e1cd54002fe7d06053bad3a26e02c2c41acd1c",
+      "changed_files_raw": "A\tc30b/build.log\nA\tc30b/build_verification.json\nA\tc30b/four_view_edge_metrics.json\nA\tc30b/hospital_C30B_beddeck_MATERIAL_TRIAL.blend\nA\tc30b/hospital_C30B_beddeck_WHITE_TRIAL.blend\nA\tc30b/scripts/build_trial.py\nA\tc30b/scripts/measure_four_views.py\nA\tc30b/scripts/render_trial_regions.py\n"
     }
   ],
   "historical_only_blobs": [
@@ -4621,6 +4697,27 @@
         "cat-file",
         "blob",
         "27fdbf0f8c07e0e2c4e782b0a97a9edcefe30698"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
+    {
+      "git_blob_sha1": "2b8cb9be66046181574c1592bc2e5eb837185a95",
+      "bytes": 4325,
+      "sha256": "8b0baa4876aa25ad11c9cb0149bdece0d23ff237bddeb150126c058742c61985",
+      "original_paths": [
+        "c30b/four_view_edge_metrics.json"
+      ],
+      "commits_containing_blob": [
+        "ecea79aa318b99d7a7a5b4f8bb6b915ea75e48e1"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/2b8cb9be66046181574c1592bc2e5eb837185a95",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "2b8cb9be66046181574c1592bc2e5eb837185a95"
       ],
       "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
     },
@@ -4903,6 +5000,27 @@
         "cat-file",
         "blob",
         "bd8115242455d04729bfe42cff5be5ef5a341825"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
+    {
+      "git_blob_sha1": "d627486c7e89ef28d24b531d10f219d81c644a91",
+      "bytes": 1642,
+      "sha256": "57f629ee6d0c3d84a117d2717daab7f6e627168cce97e773934692cfdc10f3d9",
+      "original_paths": [
+        "c30b/scripts/measure_four_views.py"
+      ],
+      "commits_containing_blob": [
+        "ecea79aa318b99d7a7a5b4f8bb6b915ea75e48e1"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/d627486c7e89ef28d24b531d10f219d81c644a91",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "d627486c7e89ef28d24b531d10f219d81c644a91"
       ],
       "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
     },
