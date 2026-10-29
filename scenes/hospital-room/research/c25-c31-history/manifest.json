@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:35.856320+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:36.190947+00:00",
   "scene": "hospital",
-  "original_snapshot": "fc90c2ae88cb8354cded7e01b1b71d890fb2eff3",
-  "original_snapshot_tree": "52255d762637676e324f26534da1edefa0e1a6d4",
+  "original_snapshot": "b7d3ebf262ce5f35333885f71370541c63b9c087",
+  "original_snapshot_tree": "2bd3e4f861839ad79cd04a71d76cae9b7b37f86a",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -730,12 +730,36 @@
       "sha256": "fa123a3ff7513f7c95c6b563acf8b67e781969e8d0bafd6231cbbee126778978"
     },
     {
+      "relative_path": "c28/build.log",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c28/build.log",
+      "mode": "100644",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "c28/hospital_C28_bank1_WHITE_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c28/hospital_C28_bank1_WHITE_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "84e4abc4e7dcea9e9d1a87a812a535a5c067fda9",
+      "bytes": 8082185,
+      "sha256": "1d034b3aa834794f407aa3a6de1ce8be4ced36439bc28d2855d9a4b5c3afc9cb"
+    },
+    {
       "relative_path": "c28/observations_summary.txt",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c28/observations_summary.txt",
       "mode": "100644",
       "git_blob_sha1": "199a6ad9838c01eeb295d329439224ed116251da",
       "bytes": 2325,
       "sha256": "40f7d3d20fddac6e3675c8b750682b5853e2ede332af7788e1f040502aec2301"
+    },
+    {
+      "relative_path": "c28/scripts/build_c28.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c28/scripts/build_c28.py",
+      "mode": "100644",
+      "git_blob_sha1": "4434efba41e6cfbc2dfe98f2138695848c80db1d",
+      "bytes": 2781,
+      "sha256": "2e698788d96fb6e6723aed341fd15cb150ee504fc3f551fa854f02ead6316543"
     },
     {
       "relative_path": "c28/scripts/fit_spacing.py",
@@ -752,6 +776,14 @@
       "git_blob_sha1": "36781e87689792cfa4ff9e915b3734d68c355268",
       "bytes": 2423,
       "sha256": "d6b36ab958c868d1e198cce96dc80f7379da5f221129cd8de763eae15ca5126b"
+    },
+    {
+      "relative_path": "c28/scripts/render_c28.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c28/scripts/render_c28.py",
+      "mode": "100644",
+      "git_blob_sha1": "7f4939b4d496ec4dd041c728bb97c063324a7988",
+      "bytes": 1607,
+      "sha256": "3f4f0f05cc166d687cb02b5e35c8f69e9fc8625c69810dda87ca8b68c1b74a97"
     },
     {
       "relative_path": "c28/section_width_source_vs_C27.png",
@@ -2748,6 +2780,18 @@
       "message": "Checkpoint C28 spacing evidence and reject endpoint-only tilt workaround\n",
       "raw_commit_sha256": "c813355657469bc2a5ad1f903e3372ff2b45b8829f6ea7b1cba8b1847f05f829",
       "changed_files_raw": "A\tc28/DIAGNOSTIC_DECISIONS.md\nA\tc28/G_upper_lines_native.png\nA\tc28/H_upper_lines_native.png\nA\tc28/N642_upper_crop_3x.png\nA\tc28/N642_upper_lines_native.png\nA\tc28/observations_summary.txt\nA\tc28/scripts/fit_spacing.py\nA\tc28/scripts/observe_upper_lines.py\nA\tc28/section_width_source_vs_C27.png\nA\tc28/spacing_fit.json\nA\tc28/upper_bank_native_crops.png\nA\tc28/upper_line_observations.json\nA\tc28_review/G_upper_endpoint_crop.png\nA\tc28_review/H_upper_endpoint_crop.png\nA\tc28_review/N642_bottom_line_crop.png\nA\tc28_review/N642_upper_endpoint_crop.png\nA\tc28_review/check_spacing_scope.py\nA\tc28_review/check_thickness.py\nA\tc28_review/check_upper_prediction.py\nA\tc28_review/compare_low_dof.py\nA\tc28_review/diagnose_bank1.py\nA\tc28_review/endpoint_diagnosis.json\nA\tc28_review/low_dof_comparison.json\nA\tc28_review/spacing_scope_diagnosis.json\nA\tc28_review/thickness_diagnosis.json\nA\tc28_review/upper_prediction_only.json\n"
+    },
+    {
+      "commit": "b7d3ebf262ce5f35333885f71370541c63b9c087",
+      "parents": [
+        "fc90c2ae88cb8354cded7e01b1b71d890fb2eff3"
+      ],
+      "tree": "2bd3e4f861839ad79cd04a71d76cae9b7b37f86a",
+      "author": "Codex <codex@openai.com> 1792409363 +0900",
+      "committer": "Codex <codex@openai.com> 1792409363 +0900",
+      "message": "Build C28 uniform slat-spacing candidate with frozen camera and chair checks\n",
+      "raw_commit_sha256": "3f9548d410cd85e26e968e608e1fee6b7bb0ee74d1d55308b4df9f56f7b750c9",
+      "changed_files_raw": "A\tc28/build.log\nA\tc28/hospital_C28_bank1_WHITE_CONDITIONAL.blend\nA\tc28/scripts/build_c28.py\nA\tc28/scripts/render_c28.py\n"
     }
   ],
   "historical_only_blobs": [
@@ -2901,6 +2945,27 @@
         "cat-file",
         "blob",
         "d9b08533519ca5b3a6d035739ebe75ebe18b907f"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
+    {
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_paths": [
+        "c28/build.log"
+      ],
+      "commits_containing_blob": [
+        "b7d3ebf262ce5f35333885f71370541c63b9c087"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
       ],
       "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
     },
