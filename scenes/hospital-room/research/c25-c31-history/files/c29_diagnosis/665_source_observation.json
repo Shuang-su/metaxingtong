@@ -1,0 +1,53 @@
+{
+  "source": "inputs/BV1GqXMByE1s_665.501733_downward_native.png",
+  "sha256": "79bfec7d314c6613f6ff8b7df982ad6f6c3c47f54a49a1bab98bc4f4ba539c83",
+  "source_dimensions": [
+    1920,
+    1080
+  ],
+  "view": "665.501733 downward native",
+  "role": "post-freeze source observation only; not used to select or fit C29 parameters",
+  "fixed_roi": {
+    "x_half_open": [
+      1725,
+      1860
+    ],
+    "y_inclusive": [
+      245,
+      255
+    ],
+    "sample_y": 250
+  },
+  "algorithm": {
+    "channel_reduction": "arithmetic mean of RGB then mean of 11 image rows",
+    "gaussian_sigma_px": 1.5,
+    "find_peaks_prominence": 3,
+    "find_peaks_min_distance_px": 7
+  },
+  "photometric_ridges_x": [
+    1755,
+    1783,
+    1813,
+    1843
+  ],
+  "spacing_sequence_px": [
+    28,
+    30,
+    30
+  ],
+  "median_spacing_px": 30.0,
+  "visibility": "ROI is above sofa and to right of person, with no visible person/bed/sofa occlusion; interior only, excludes left column-side transition and right broad terminal return face. Curtain top and bottom are out of this ROI.",
+  "limitations": [
+    "brightness maxima are not certified 3D fold-vertex correspondences",
+    "only one horizontal strip and one fixed view",
+    "no scale, camera or total fold-count calibration",
+    "no fitting or parameter updates allowed from this check"
+  ],
+  "predeclared_window_sensitivity_check": {
+    "x_half_open": [
+      1710,
+      1875
+    ],
+    "result": "same four peak coordinates; inspection only, not used to choose a more favorable candidate result"
+  }
+}
