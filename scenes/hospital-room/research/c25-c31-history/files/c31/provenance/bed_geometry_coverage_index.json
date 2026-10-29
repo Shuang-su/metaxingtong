@@ -1,0 +1,70 @@
+{
+  "source": "https://www.bilibili.com/video/BV1GqXMByE1s/",
+  "review_utc": "2026-10-19T12:39:00Z/2026-10-19T12:48:00Z",
+  "environment": "dot cloud Chromium only",
+  "prior_index_library_id": "libfile_2aa6f0efa63c819195a4f8a07d32d52f",
+  "duration_seconds": 6673,
+  "login": "Existing authenticated navigation visible; no new login",
+  "quality": "1080P 高码率, highest visible option; no 4K option",
+  "decoded_dimensions": [
+    1920,
+    1080
+  ],
+  "method": "Player UI time field, half-speed for transition; screenshots for visual inspection only. DOM reads only playback time/state/dimensions. No canvas or video extraction.",
+  "coverage": "Targeted discrete inspections around 30:03–30:08, 45:08 and 70:02; not continuous full-video review. Earlier 30:01/30:04 native originals already exist.",
+  "observations": [
+    {
+      "time_seconds": 1803.65138,
+      "state": "paused_ready4",
+      "finding": "Bed-end upper panel and openings; bottom edge cropped, mattress side and rail connections absent."
+    },
+    {
+      "time_seconds": 1804.097518,
+      "state": "paused_ready4",
+      "finding": "Same frontal bed-end topology as existing 1801/1804 originals; no new lower geometry."
+    },
+    {
+      "time_seconds": 1805.750061,
+      "state": "paused_ready4",
+      "finding": "Start of turn toward window; end panel upper half still cropped at bottom, motion softening; reject duplicate/insufficient."
+    },
+    {
+      "time_seconds": 1805.992911,
+      "state": "playing_ready4",
+      "finding": "Time read before screenshot; screenshot later during turn, NOT exact frame timestamp. End panel exits right, no usable rail or mattress side."
+    },
+    {
+      "time_seconds": 1806.831941,
+      "state": "playing_ready4",
+      "finding": "Time read before screenshot; screenshot later window-facing character, no usable bed geometry."
+    },
+    {
+      "time_seconds": 1807.191602,
+      "state": "paused_ready4",
+      "finding": "Window-facing character/sofa; bed absent."
+    },
+    {
+      "time_seconds": 1807.339558,
+      "state": "paused_ready4",
+      "finding": "Window-facing character/sofa; bed absent."
+    },
+    {
+      "time_seconds": 2700.5,
+      "state": "paused_ready1",
+      "finding": "45:00 still buffering, stale prior image excluded from scene classification."
+    },
+    {
+      "time_seconds": 2708.065162,
+      "state": "playing_ready4",
+      "finding": "45:08 outdoor school stair/track scene, not hospital; timestamp preceding screenshot slightly."
+    },
+    {
+      "time_seconds": 4202.709469,
+      "state": "paused_ready4",
+      "finding": "70:02 outdoor school stair/track scene, not hospital."
+    }
+  ],
+  "new_native_pngs": [],
+  "result": "No new frame provides simultaneous mattress side thickness, side-rail attachment and bed-end bottom/opening geometry. Do not infer bed height or calibrated translation from these checks.",
+  "limits": "Unobserved instants remain unchecked; no assertion that full video lacks usable side views."
+}

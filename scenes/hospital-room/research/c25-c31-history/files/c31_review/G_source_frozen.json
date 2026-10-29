@@ -1,0 +1,39 @@
+{
+  "source": "inputs/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+  "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+  "frozen_utc": "2026-10-19T12:48:11.034669+00:00",
+  "candidate_seen_at_freeze": false,
+  "classification": "Previously seen fixed-view projection check, not blind test",
+  "method": "Native visual context plus mean RGB over x\u00b12 columns; Gaussian sigma1 and vertical-gradient extrema. Lip outer boundary uses entrance/exit gradient of dark lip; inner uses reverse-sign transition. These are appearance edges, not exact mesh vertices.",
+  "slot": {
+    "x": 1900,
+    "outer_top": 818,
+    "outer_bottom": 885,
+    "inner_top_transition": 823,
+    "inner_bottom_transition": 881,
+    "outer_height": 67,
+    "outer_center_y": 851.5,
+    "inner_transition_height": 58,
+    "inner_transition_center_y": 852,
+    "boundary_uncertainty_px": 3,
+    "flat_face_approx_y": [
+      828,
+      877
+    ],
+    "flat_face_boundary_uncertainty_px": 4
+  },
+  "left_hole": {
+    "x": 1700,
+    "aperture_top": 822,
+    "aperture_bottom": 880,
+    "height": 58,
+    "center_y": 851,
+    "boundary_uncertainty_px": 3
+  },
+  "limitations": [
+    "Appearance-gradient inner transition is not identical to the approximately flat cream interior extent; both definitions are recorded.",
+    "Slot complete width and true object center are offscreen.",
+    "Vertical source readings vary with x due to perspective; do not infer world center from this one scanline.",
+    "Source endboard lower edge near x1900 around y993 is bedding-adjacent/soft; lower margin approx108px \u00b16, not a mechanical clearance."
+  ]
+}

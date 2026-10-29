@@ -1,0 +1,235 @@
+{
+  "version": "C31 central recess conditional candidate from C29",
+  "geometry": {
+    "MATERIAL": {
+      "only_two_expected_meshes_changed": [
+        "Bed end • cream inset face",
+        "Bed end • moulded central recess"
+      ],
+      "x_y_bounds_and_topology_preserved": true,
+      "relative_target_heights_confirmed": true,
+      "reopen_equal": true
+    },
+    "WHITE": {
+      "only_two_expected_meshes_changed": [
+        "Bed end • cream inset face",
+        "Bed end • moulded central recess"
+      ],
+      "x_y_bounds_and_topology_preserved": true,
+      "relative_target_heights_confirmed": true,
+      "reopen_equal": true
+    }
+  },
+  "four_full_1920x1080_renders": {
+    "settings": {
+      "engine": "CYCLES",
+      "samples": 16,
+      "denoise": false,
+      "seed": 0,
+      "threads": 8,
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    "renders": [
+      {
+        "kind": "MATERIAL",
+        "view": "G",
+        "camera": "C10_G_shared_sofa_height_CONDITIONAL",
+        "camera_world_matrix": [
+          [
+            0.6350439190864563,
+            -0.12139002978801727,
+            -0.7628785371780396,
+            -1.5311541557312012
+          ],
+          [
+            -0.7724717259407043,
+            -0.10305409133434296,
+            -0.6266316175460815,
+            -2.571786403656006
+          ],
+          [
+            -0.002550919074565172,
+            0.987240731716156,
+            -0.15921425819396973,
+            0.8380268216133118
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 30.765270233154297,
+        "source_model_sha256": "0e0954f9fc4a5a0321151c3ec85b7dd7c7f49d0af6e421390a9fae690b8967fa",
+        "path": "G_C31_MATERIAL_RAW_1920x1080.png",
+        "sha256": "4e03dadc9f56b0d8958a091e4bec264bb4bc7f54a37f62c70f31ce490f9e74e5",
+        "seconds": 223.2778604030609
+      },
+      {
+        "kind": "MATERIAL",
+        "view": "H",
+        "camera": "C10_H_shared_sofa_height_CONDITIONAL",
+        "camera_world_matrix": [
+          [
+            0.8550561666488647,
+            -0.05894071236252785,
+            -0.5151746869087219,
+            -1.5852514505386353
+          ],
+          [
+            -0.5185292363166809,
+            -0.10203729569911957,
+            -0.8489498496055603,
+            -2.5076160430908203
+          ],
+          [
+            -0.0025293210055679083,
+            0.9930329322814941,
+            -0.11781010031700134,
+            0.8229129910469055
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 30.771024703979492,
+        "source_model_sha256": "0e0954f9fc4a5a0321151c3ec85b7dd7c7f49d0af6e421390a9fae690b8967fa",
+        "path": "H_C31_MATERIAL_RAW_1920x1080.png",
+        "sha256": "1b37fa05efc52ba71e04dbe06dfa779e246de55168cd3f23aaca709fdf53bf4f",
+        "seconds": 120.62357687950134
+      },
+      {
+        "kind": "WHITE",
+        "view": "G",
+        "camera": "C10_G_shared_sofa_height_CONDITIONAL",
+        "camera_world_matrix": [
+          [
+            0.6350439190864563,
+            -0.12139002978801727,
+            -0.7628785371780396,
+            -1.5311541557312012
+          ],
+          [
+            -0.7724717259407043,
+            -0.10305409133434296,
+            -0.6266316175460815,
+            -2.571786403656006
+          ],
+          [
+            -0.002550919074565172,
+            0.987240731716156,
+            -0.15921425819396973,
+            0.8380268216133118
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 30.765270233154297,
+        "source_model_sha256": "56f54da33feec04db3411da2ce8341b441ed17cf175180e383a320c9c7d9c1f1",
+        "path": "G_C31_WHITE_RAW_1920x1080.png",
+        "sha256": "0ece73c162cc8d0771a8587457a0fe56f90683f6037b3b1f7ed8966d4fa3b730",
+        "seconds": 232.483149766922
+      },
+      {
+        "kind": "WHITE",
+        "view": "H",
+        "camera": "C10_H_shared_sofa_height_CONDITIONAL",
+        "camera_world_matrix": [
+          [
+            0.8550561666488647,
+            -0.05894071236252785,
+            -0.5151746869087219,
+            -1.5852514505386353
+          ],
+          [
+            -0.5185292363166809,
+            -0.10203729569911957,
+            -0.8489498496055603,
+            -2.5076160430908203
+          ],
+          [
+            -0.0025293210055679083,
+            0.9930329322814941,
+            -0.11781010031700134,
+            0.8229129910469055
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 30.771024703979492,
+        "source_model_sha256": "56f54da33feec04db3411da2ce8341b441ed17cf175180e383a320c9c7d9c1f1",
+        "path": "H_C31_WHITE_RAW_1920x1080.png",
+        "sha256": "ad50a59879f0408b56941b0b17e12645021e309342af0e011fddfb42aa7ef67a",
+        "seconds": 206.7858955860138
+      }
+    ]
+  },
+  "four_exact_50_percent_overlays": true,
+  "same_column_actual_full_G_pixels": {
+    "file": "G_C31_MATERIAL_RAW_1920x1080.png",
+    "sha256": "4e03dadc9f56b0d8958a091e4bec264bb4bc7f54a37f62c70f31ce490f9e74e5",
+    "method": "Same source-defined columns and 5-column sigma1 gradient; signed extrema within region-observed boundary windows, not AABB projections",
+    "edges": {
+      "inner_upper": {
+        "x": 1900,
+        "y": 827,
+        "signed_gradient": 11.208393045948839,
+        "search_interval": [
+          817,
+          837
+        ]
+      },
+      "inner_lower": {
+        "x": 1900,
+        "y": 896,
+        "signed_gradient": -11.717482155744449,
+        "search_interval": [
+          886,
+          906
+        ]
+      },
+      "hole_upper": {
+        "x": 1700,
+        "y": 824,
+        "signed_gradient": -16.14184814984226,
+        "search_interval": [
+          814,
+          834
+        ]
+      },
+      "hole_lower": {
+        "x": 1700,
+        "y": 890,
+        "signed_gradient": 17.829033643830613,
+        "search_interval": [
+          880,
+          900
+        ]
+      }
+    }
+  },
+  "review": "Independent region review supports local improvement, not exact pixel match; full material G observed transitions match region values. Full H/G white/material visually checked before delivery.",
+  "limits": [
+    "1801/1804 are uncalibrated proportional evidence, not full camera calibration",
+    "G is partial-slot fixed-camera check; H/665 cannot validate a slot they do not show",
+    "outer top lip not reliably measurable; no invented external height score",
+    "C30/C30B remain rejected; bed geometry still C29",
+    "16-sample noise and bright white lighting inherited; no retouching",
+    "no authenticated remote push"
+  ]
+}

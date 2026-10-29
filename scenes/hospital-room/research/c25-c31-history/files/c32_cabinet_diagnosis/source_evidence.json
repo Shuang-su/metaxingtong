@@ -1,0 +1,219 @@
+{
+  "source_url": "https://www.bilibili.com/video/BV1GqXMByE1s/",
+  "source_frames": [
+    {
+      "id": "658",
+      "path": "inputs/hospital_658.052095_native.png",
+      "seconds": 658.052095,
+      "camera_status": "No calibrated camera in this audit; source correspondence only",
+      "crop_xyxy": [
+        0,
+        720,
+        115,
+        1035
+      ],
+      "features": [
+        {
+          "id": "counter",
+          "box_xyxy": [
+            0,
+            732,
+            43,
+            793
+          ],
+          "observation": "White projecting slab with rounded outer corner; left side clipped by native frame"
+        },
+        {
+          "id": "upper_pull",
+          "box_xyxy": [
+            23,
+            853,
+            57,
+            882
+          ],
+          "observation": "Small external U-shaped pull, with bright outer connector and two bars visible"
+        },
+        {
+          "id": "lower_pull",
+          "box_xyxy": [
+            6,
+            893,
+            51,
+            926
+          ],
+          "observation": "Second external U-shaped pull at a lower level; bright outer connector, bars and cast shadow"
+        }
+      ],
+      "sha256": "b2e16cbefaffb4fcd02e65bdd3f7139b20db003800b53da384baff998dcc9549",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "pixel_annotation_method": "Manual approximate feature envelopes; not fitted corners or calibrated measurements; boundary tolerance roughly 2-4 native pixels."
+    },
+    {
+      "id": "H",
+      "path": "inputs/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "seconds": 1101.728114,
+      "camera_status": "Existing conditional C10_H camera; no refit performed",
+      "crop_xyxy": [
+        0,
+        770,
+        115,
+        1080
+      ],
+      "features": [
+        {
+          "id": "counter",
+          "box_xyxy": [
+            0,
+            790,
+            20,
+            845
+          ],
+          "observation": "White slab outer corner partly visible at native left boundary"
+        },
+        {
+          "id": "upper_pull",
+          "box_xyxy": [
+            0,
+            906,
+            21,
+            928
+          ],
+          "observation": "Upper bright protruding pull portion; its left attachment is frame-clipped"
+        },
+        {
+          "id": "lower_pull",
+          "box_xyxy": [
+            0,
+            947,
+            34,
+            981
+          ],
+          "observation": "Lower bright protruding pull portion; left portion frame-clipped"
+        }
+      ],
+      "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "pixel_annotation_method": "Manual approximate feature envelopes; not fitted corners or calibrated measurements; boundary tolerance roughly 2-4 native pixels."
+    }
+  ],
+  "input_native_frame_inventory": [
+    {
+      "path": "inputs/BV1GqXMByE1s_642.617525_right_turn_native.png",
+      "sha256": "73a60160a5a74b2184eba295a0e279c5bfd523003fd5452cf05bc16b1bd55522",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "inputs/BV1GqXMByE1s_665.501733_downward_native.png",
+      "sha256": "79bfec7d314c6613f6ff8b7df982ad6f6c3c47f54a49a1bab98bc4f4ba539c83",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "inputs/C23_native_before_after_sheet.png",
+      "sha256": "ec09c94461ad29b551d407fd19f348dd0f2bff9535b6dfd869fe8df7e15002a4",
+      "dimensions": [
+        2160,
+        1080
+      ]
+    },
+    {
+      "path": "inputs/C24_all_variants_native_comparison.png",
+      "sha256": "712decad75eb582613e3aad602af119840e97e957a6e1ccf20fbed5f4adbd77a",
+      "dimensions": [
+        2700,
+        1110
+      ]
+    },
+    {
+      "path": "inputs/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+      "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "inputs/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+      "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "inputs/hospital_1103.087901_native.png",
+      "sha256": "b59b9e656ffd94dc7c40004737fd10f1e3ad16a6b732a312fd554ee7edcb26fe",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "inputs/hospital_650.811153_native.png",
+      "sha256": "6233e9598f1374a719ecda50620fe584e24f53ef6a221352b0e103bcba3f038d",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "inputs/hospital_658.052095_native.png",
+      "sha256": "b2e16cbefaffb4fcd02e65bdd3f7139b20db003800b53da384baff998dcc9549",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "inputs/hospital_872.246724_native_context.png",
+      "sha256": "eee84be37ec06f3f97a6e6d66c3a03cc430b5b7a4c5919f987b81a5983900aee",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "negative_source_coverage": [
+    {
+      "id": "872.246724",
+      "finding": "Window/sofa/character view; no visible target cabinet. Not a calibrated fitting target."
+    },
+    {
+      "id": "G_1116.180816",
+      "finding": "Bed/window view; target cabinet is outside native image."
+    },
+    {
+      "id": "N642",
+      "finding": "Window/right-turn view; target cabinet is outside native image."
+    },
+    {
+      "id": "665.501733",
+      "finding": "Downward window/sofa view; no target cabinet local contour."
+    },
+    {
+      "id": "650.811153",
+      "finding": "Window/sofa view; no target cabinet local contour."
+    },
+    {
+      "id": "1103.087901",
+      "finding": "Window/sofa view; target cabinet not visibly exposed."
+    },
+    {
+      "id": "1801.322818 and 1804.861415",
+      "finding": "Headwall/bed view; no target cabinet; these do not supply second calibrated cabinet contour."
+    }
+  ],
+  "feature_scope": "The repeated local white slab and two pull levels support a matching cabinet assembly near the native left border. The project name right-rear is not a screen-side label. The correspondence to the two named model objects remains a semantic hypothesis, not a recovered full object pose.",
+  "two_source_limit": "H and 658 are two native source frames from one video, not two independently calibrated camera observations. Partial repeated shapes establish visible feature identity; they do not establish an unchanged world pose across the time gap or recover full dimensions."
+}
