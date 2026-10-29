@@ -19,6 +19,14 @@ def geometry():
         verts[o.name]=vv
     return result,verts
 bpy.ops.wm.open_mainfile(filepath=str(D/'campus-courtyard_material.blend'))
+def image_report():
+    out={}
+    for im in bpy.data.images:
+        if im.type!='IMAGE' or im.size[0]==0:continue
+        p=np.array(im.pixels[:],dtype=np.float32)
+        out[im.name]={'size':list(im.size),'packed':bool(im.packed_file),'pixel_sha256':hashlib.sha256(p.tobytes()).hexdigest()}
+    return out
+source_images=image_report()
 g,vertices=geometry();np.savez_compressed(Q/'original_world_vertices.npz',**vertices)
 (Q/'material_geometry.json').write_text(json.dumps(g,indent=2))
 scene=bpy.context.scene;deps=bpy.context.evaluated_depsgraph_get()
@@ -51,7 +59,7 @@ for x in np.linspace(-.6,.6,7):
 # Neither these image picks nor the cameras are a solved calibration.
 anchors={
  'treebed_near_rim':(3.9,-5.34,.39),
- 'bench01_ground':(3.6,10,0),
+ 'bench01_ground':(3.6,8.8,0),
  'hoop03_base':(17,-5.1,0),
  'ballrack_base':(14.3,2.1,0),
  'door_B_bottom':(20,3.3,.40),
@@ -76,9 +84,11 @@ w,_=geometry();baseline['material_white_equal']=g.keys()==w.keys() and all(g[k][
 (Q/'white_geometry.json').write_text(json.dumps(w,indent=2))
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.gltf(filepath=str(D/'campus-courtyard.glb'))
+import_images=image_report()
+(Q/'texture_roundtrip.json').write_text(json.dumps({'original':source_images,'glb_reimport':import_images,'pixel_hash_sets_equal':sorted(x['pixel_sha256'] for x in source_images.values())==sorted(x['pixel_sha256'] for x in import_images.values())},indent=2))
 ig,iv=geometry();np.savez_compressed(Q/'glb_reimport_world_vertices.npz',**iv)
 (Q/'glb_reimport_geometry.json').write_text(json.dumps(ig,indent=2))
 baseline['glb_reimport_meshes']=len(ig);baseline['glb_mesh_names_equal']=g.keys()==ig.keys();baseline['glb_triangle_count_equal']=all(k in ig and g[k]['triangles']==ig[k]['triangles'] for k in g)
-bpy.ops.wm.save_as_mainfile(filepath=str(Q/'glb_actual_reimport.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(Q/'glb_actual_reimport.blend'),compress=True)
 (Q/'blender_qa_summary.json').write_text(json.dumps(baseline,indent=2))
 print('QA_COMPLETE',json.dumps(baseline),flush=True)

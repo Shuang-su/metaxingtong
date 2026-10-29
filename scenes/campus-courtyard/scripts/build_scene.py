@@ -202,7 +202,7 @@ def treebed(id,x,y,r):
     a=A(id,'tree bed','SRC01,SRC02','circular low concrete rim and soil inside','exact section and buried foundation');a.ring((x,y,0),r,r-.16,.39,trim);a.tube((x,y,0),(x,y,.19),r-.16,soil,n=64);a.finish()
 treebed('TREEBED-01',3.9,-3.1,2.24);tree('TREE-01',3.9,-3.1,.68,16)
 tree('TREE-02',-12,16,.45,12)
-tree('TREE-03',13,13,.36,11)
+tree('TREE-03',13,24,.36,11)
 tree('TREE-04',15,6,.32,12,True)
 tree('TREE-05',17.8,-8.5,.36,15)
 treebed('TREEBED-05',17.8,-8.5,.9)
@@ -239,7 +239,7 @@ def bench(id,x,y,rot=0):
         a.path([p(u,-.36,.025),p(u,-.24,.48),p(u,.23,.55),p(u,.38,.025)],.045,metal)
         a.path([p(u,.23,.48),p(u,.33,.85),p(u,.45,1.34)],.035,metal)
     a.finish()
-bench('BENCH-01',3.6,10);bench('BENCH-02',-7.8,18);bench('BENCH-03',-13,21);bench('BENCH-04',13,20)
+bench('BENCH-01',3.6,8.8);bench('BENCH-02',-7.8,18);bench('BENCH-03',-13,21);bench('BENCH-04',13,23.4)
 for id,x,y in [('BIN-01',5.4,6.9),('BIN-02',6.6,6.9)]:
     a=A(id,'bin','SRC02','small paired rectangular bins by bench','underside/opening hidden');a.box((x,y,.49),(.7,.72,.98),wood);a.box((x,y,.99),(.75,.77,.08),metal);a.finish()
 
@@ -303,15 +303,24 @@ for floor in range(4):
     a.tube((16.3,endy+direction*.85,base+4.13),(19.25,endy+direction*.85,base+4.13),.035,metal)
 a.finish().location.y=-7
 
+a=A('STAIR-GUARD-CONNECTIONS','stair landing rail returns','SRC03','continuous rail system required by visible stair','hidden corner routing and exact joints inferred')
+for floor in range(4):
+    di=1 if floor%2==0 else -1;y0=-9.7 if di==1 else -3.9;ey=y0+di*17*.32-7;z=(floor+1)*3.18+.95
+    for xx in [16.3,19.25]:a.tube((xx,ey,z),(xx,ey+di*.85,z),.035,metal)
+    if floor<3:
+        x1=17.67 if di==1 else 17.88;x2=17.88 if di==1 else 17.67;ny=(-3.9 if di==1 else -9.7)-7
+        a.path([(x1,ey,z),(x1,ey+di*.25,z),(x2,ny,z)],.028,metal)
+a.finish()
+
 scene=bpy.context.scene
 scene.unit_settings.system='NONE'
 world=bpy.data.worlds.new('Courtyard shared daylight');scene.world=world;world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.48,.63,.78,1);world.node_tree.nodes['Background'].inputs[1].default_value=.65
 data=bpy.data.lights.new('SUN-shared','SUN');o=bpy.data.objects.new('SUN-shared',data);scene.collection.objects.link(o);data.energy=3.0;data.angle=.06;o.rotation_euler=(math.radians(66),math.radians(-24),math.radians(-42))
 CAMERAS={
  'SRC01':((0,-28,3.0),(0,28,.9),45),
- 'SRC02':((-12,-25,3.0),(20,12,.8),45),
+ 'SRC02':((-12.676153,-34.781917,6.0),(14.608152,6.668716,-.116511),62.139896),
  'SRC03':((-8,-20,2.4),(20,-7.5,7.0),42),
- 'SRC04':((-14,-22,3.0),(20,4.1,1.0),45),
+ 'SRC04':((-5.782931,-29.897674,6.0),(21.804981,10.666869,-3.66566),35.0),
  'MAIN':((-18,-28,17),(2,7,3.5),42),
  'CHECK01-front':((0,-37,13),(0,9,3),38),
  'CHECK02-left':((-35,-18,17),(0,9,3),38),

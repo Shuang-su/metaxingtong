@@ -27,3 +27,15 @@
 4. `qa/`：GLB 实际重新导入、几何一致性、原文件 hash、限制与检查原件。
 
 模型可打开、几何检查与 Library/Git 保存分别记录；任何一项都不等同于来源验收。
+
+## 当前候选入口
+
+- `stage-02-material-candidate/campus-courtyard_material.blend`：材质模型（贴图已打包）。
+- `stage-02-material-candidate/campus-courtyard_white.blend`：同几何白模。
+- `stage-02-material-candidate/campus-courtyard.glb`：跨软件导出；实际回导文件为 `qa/glb_actual_reimport.blend`。
+- `stage-02-material-candidate/renders/MAIN.png`：正常主图；`MAIN_display_preview.jpg` 为未缩放 1920×1080 展示预览，463,706 字节。
+- `stage-02-material-candidate/comparison/`：4 组 1920×1080 直接 50% 叠图、三联展示和 10 组明确像素坐标裁切。
+- `stage-02-material-candidate/renders/CHECK*.png`：8 个内部检查角，均为 1280×720。
+- `qa/REPORT.md`、`qa/object_evidence.csv`：逐组件证据、范围和剩余问题；共 128 组件、72 个候选踏步实例。
+
+当前仍未来源验收：条件机位约 50–57px 平均手选锚点残差，跨回放同场证据缺失；SRC04 有限地面边缘可见，四张长凳约 0.0126 模型单位接触间隙待修。不得以有限 QA 或文件可打开替代来源门槛。
