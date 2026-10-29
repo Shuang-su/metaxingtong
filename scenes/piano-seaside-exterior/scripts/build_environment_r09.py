@@ -87,10 +87,12 @@ for id,anchor,size in [('L01_lantern',(-.92,1.22,0),.25),('L02_lantern',(7.2,-5.
    star=[(x+cx+(r if i%2==0 else r*.43)*math.cos(math.pi/2+i*math.pi/5),cz+(r if i%2==0 else r*.43)*math.sin(math.pi/2+i*math.pi/5)) for i in range(10)]
    yy=y+panel*d/2;vv=[(xx,dep,zz) for dep in [yy-.015,yy+.015] for xx,zz in star];ff=[tuple(range(9,-1,-1)),tuple(range(10,20))]+[(i,(i+1)%10,(i+1)%10+10,i+10) for i in range(10)]
    c=mesh('temporary star aperture',vv,ff,None,'construction');bpy.context.view_layer.objects.active=o;mod=o.modifiers.new('Real star aperture','BOOLEAN');mod.operation='DIFFERENCE';mod.solver='EXACT';mod.object=c;bpy.ops.object.modifier_apply(modifier=mod.name);bpy.data.objects.remove(c,do_unlink=True)
- inner_paper=mat(id+' inferred lit interior paper',(1,.55,.18),.9)
- inner_paper.node_tree.nodes.get('Principled BSDF').inputs['Emission Color'].default_value=(1,.55,.18,1);inner_paper.node_tree.nodes.get('Principled BSDF').inputs['Emission Strength'].default_value=3.8;o.data.materials.append(inner_paper)
+ inner_paper=maps(mat(id+' inferred lit interior paper',(.91,.50,.16),.9),'paper_color.png',emission='paper_emission.png')
+ inner_paper.node_tree.nodes.get('Principled BSDF').inputs['Emission Strength'].default_value=2.6;o.data.materials.append(inner_paper)
+ back_lit=mat(id+' inferred back panel warm illumination',(.91,.5,.16),.9);back_lit.node_tree.nodes.get('Principled BSDF').inputs['Emission Color'].default_value=(1,.26,.02,1);back_lit.node_tree.nodes.get('Principled BSDF').inputs['Emission Strength'].default_value=2.8;o.data.materials.append(back_lit)
  for f in o.data.polygons:
   if (f.center.x-x)*f.normal.x+(f.center.y-y)*f.normal.y < -.02 and abs(f.normal.z)<.5:f.material_index=1
+  if f.center.y>y+d*.3 and f.normal.y<-.5:f.material_index=2
  uv_project(o,lambda v,n:((v.x-x)/w+.5,(v.z-z0)/h) if abs(n.y)>.3 else ((v.y-y)/d+.5,(v.z-z0)/h))
  cube(id+' thin base',(x,y,z+.007),(w*1.06,d*1.06,.014),base,id)
  bpy.ops.mesh.primitive_uv_sphere_add(segments=16,ring_count=8,radius=w*.095,location=(x,y,z0+h*.45));bulb=bpy.context.object;bulb.name=id+' inferred internal emitter';tag(bulb,id);bulb.data.materials.append(wick)

@@ -6,7 +6,15 @@
 
 R08仅更新N6766近景相机，几何/有效材质/灯光及其他17机位保持R07；校准仍未通过。[小联系图](qa/r08/N6766-camera-comparison.jpg) · [R08说明与不变项](qa/r08/review.md) · [主图JPEG预览（R07原PNG派生，无缩放）](qa/r08/main_R07_retained_preview.jpg)。其余主图、检查图、GLB保留R07原件，未重渲。
 
-## 当前候选原文件
+## R09 本地环境候选
+
+![R09 环境候选主视角](qa/r09/main.png)
+
+R09 冻结 R08 琴体和全部相机，更新两盏开口星孔纸袋灯、共同木纹/粗糙度、有限沙岸及双时间状态的天空/海面。614 个网格，仍待来源复核。当前主图和全尺寸叠图统一使用 S40；S105 另对全部来源输出。详见 [R09 范围与失败记录](qa/r09/review.md)。
+
+[材质 BLEND](models/r09/piano_seaside_material.blend) · [材质 GLB](models/r09/piano_seaside_material.glb) · [白模 BLEND](models/r09/piano_seaside_white.blend) · [白模 GLB](models/r09/piano_seaside_white.glb) · [5 源联系图](qa/r09/source-render-overlay-contact.jpg) · [9 角检查](qa/r09/inspection-contact.jpg) · [全尺寸 JPEG 展示预览](qa/r09/main_preview.jpg) · [保存后不变项检查](qa/r09/saved-environment-checks.json)。
+
+## R08 / R07 保留原文件
 
 | 文件 | 作用 |
 |---|---|
@@ -25,7 +33,7 @@ R08仅更新N6766近景相机，几何/有效材质/灯光及其他17机位保�
 
 旧6300.916514秒参考是1180×663视口裁图，保留历史身份，不升级为原生。旧吧台说明把00:40:30及约105分钟钢琴外景排除；本轮N2453证实琴区与装饰吧台样背景同框邻近，但连续通路和与旧模型一一身份仍未证。BV1yD9VY9EEC白琴圆窗门廊属于另一场景。
 
-## 实际建模范围
+## R07 / R08 实际建模范围
 
 622个共同网格：曲面琴体、开盖/撑杆、88键候选、谱架、三腿/脚轮、三踏板、铜骨架与简化弦列、纽扣凳、有限木甲板、沙带、两灯、编织椅/篮、近艇、远帆船及环境海面。所有相机共用几何、材质和照明。隐藏尺寸、第三轮触地、弦数、甲板边界及远物距离均属推断；尺寸是模型单位。保留开放性质，未补屋顶、整栋建筑、未知围墙或吧台连接。
 
