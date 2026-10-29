@@ -12,4 +12,15 @@
 
 来源边界：采集清单记载实际选择 1080P 高清，未证明所有更高可用档位已排除；没有跨 BV 后续回放补角，没有观看整部回放。相机未标定，三张侧舱图只有有限视角增量、角色遮挡严重。任何几何/导出检查通过均不能替代来源验收。
 
-后续阶段将在 models、scripts、textures、renders、qa、docs 中提供原文件与检查记录；不生成新 ZIP，不启用付费 LFS。
+## 当前本地交付
+
+- [主图 PNG 无损原件](renders/main/car_passenger_cabin_main.png) · [JPEG 展示预览](renders/main/car_passenger_cabin_main.jpg)（完整 1920×1080，不缩放，<900 KiB）
+- [可编辑材质 BLEND](models/car_passenger_cabin_material.blend)（纹理已打包）· [同几何白模](models/car_passenger_cabin_white.blend) · [含门状态动画 GLB](models/car_passenger_cabin.glb)
+- [检查说明与未完成项](docs/REVIEW.md) · [45 件逐物件证据表](docs/OBJECT_EVIDENCE.md)
+- [原生来源清单](sources/source-manifest.json) · [完整源/渲染/50%叠图与局部裁切清单](qa/comparison-manifest.json)
+- [几何检查](qa/geometry-report.json) · [真实 GLB 回导报告](qa/glb-roundtrip-report.json) · [回导 BLEND](qa/glb_actual_reimport.blend)
+- [8 方位及额外开门检查联系图](qa/arbitrary_views_contact_sheet.jpg) · [全部相机/状态记录](qa/render-manifest.json)
+
+当前 45 网格闭合流形、正体积、零退化面；窗孔400、槽体200、风口间隙208条局部射线检查通过。初版失败报告及修改前试图保留在 qa。几何检查范围和剩余来源残差详见 REVIEW，不代替完整内舱验收或用户确认。
+
+原文件分别位于 models、scripts、textures、renders、qa、docs；不生成新 ZIP，不启用付费 LFS。该入口只是局部候选，不改变仓库16场历史计数或 CURRENT。

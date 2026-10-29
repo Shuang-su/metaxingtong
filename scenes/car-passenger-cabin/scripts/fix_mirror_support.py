@@ -14,4 +14,6 @@ o['limitations']='Inferred attachment; connected to partial roof, source mechani
 for m in mats:o.data.materials.append(m)
 for p in o.data.polygons:p.use_smooth=True
 bpy.context.scene['support_revision']='M03 inferred support reconnected to headliner after main-view review'
+bpy.data.objects['P12_side_window_glass']['evidence_class']='observed-aperture_inferred-glazing'
+bpy.data.objects['P12_side_window_glass']['limitations']='Window aperture observed; whether glass is raised, thickness and IOR inferred'
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'models/car_passenger_cabin_white.blend'))

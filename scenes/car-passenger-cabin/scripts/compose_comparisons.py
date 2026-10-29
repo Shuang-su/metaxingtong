@@ -13,7 +13,8 @@ for src,r in zip(sources,renders):
  out.append({'source':src['path'],'render':str((O/r).relative_to(R)),'overlay':str(p.relative_to(R)),'alpha':.5,'operation':'PIL.Image.blend(source RGB, render RGB, 0.5), no mask/warp/crop','dimensions':[1920,1080],'status':'uncalibrated diagnostic; no source fit acceptance','source_sha256':src['sha256'],'render_sha256':hashlib.sha256((O/r).read_bytes()).hexdigest(),'overlay_sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
  # Viewer panel: labeled display only; original 1920 PNG trio remains authoritative.
  panel=Image.new('RGB',(1440,306),(24,27,34));d=ImageDraw.Draw(panel)
- for i,(im,title) in enumerate(zip([a,b,over],['NATIVE SOURCE','UNCALIBRATED RENDER','DIRECT 50% BLEND'])):
+ labels=['NATIVE SOURCE','UNCALIBRATED RENDER','DIRECT 50% BLEND'] if src['id']!='S04' else ['CONTEXT SOURCE ONLY','CONTEXT ONLY / NO REGISTRATION','CONTEXT ONLY / 50% BLEND']
+ for i,(im,title) in enumerate(zip([a,b,over],labels)):
   panel.paste(im.resize((480,270)),(i*480,36));d.text((i*480+12,11),src['id']+' / '+title,fill='white')
  panel.save(O/(src['id']+'_comparison_panel.jpg'),quality=92)
 crop_specs=[('C01_round_vent','S03',(270,600,470,800),'D02-D06; vent center/diameter remain mismatched'),('C02_pillar_mirror','S03',(0,160,860,600),'A01,P14-P17; pillar inclination and mirror visibility uncalibrated'),('C03_woven_strip','S03',(400,555,990,680),'P02,P03; center occluded by character'),('C04_armrest','S03',(460,715,920,880),'P05,P06; character intersects crop; shape inferred'),('C05_seat_edge','S01',(1580,475,1920,1080),'S01,S02; only visible outer edge, not whole seat'),('C06_opening_sill','S02',(900,630,1130,1000),'B02,P01; door angle and character occlusion unresolved'),('C07_visor','S01',(275,0,1020,235),'A03,A05; visor footprint/thickness uncalibrated')]
