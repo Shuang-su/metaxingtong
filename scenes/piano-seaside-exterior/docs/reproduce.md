@@ -39,3 +39,18 @@ python scripts/make_environment_review_r09.py
 ```
 
 `full` 的主输出固定 S40；S105 全部来源另在 `alternate_S105/`，不按相机切状态。HDR 世界、场景灯光与相机不是此 GLB 导出的内容，跨软件需显式载入 `textures/r09/S40_sunset.hdr` 或 `S105_bluehour.hdr`。GLB 回导图只验证在保留的 Blender 世界/灯光中导入后的表现。真实时间状态值均是候选，不是光照测量。
+
+## R10 天空采样窄修正
+
+保留 R09 模型和贴图。`resample_sky_r10.py` 先逐字节复算 R09 天空，再对同一个连续场作抗锯齿试验；不会覆盖 R09。`textures/r10_trial/` 名称保留试验历史，其中两张无 `_R09_reproduced` 后缀的 HDR 是本次选用版本。
+
+```bash
+blender -b -t 8 --python scripts/diagnose_sky_r10.py
+python scripts/resample_sky_r10.py
+blender -b -t 8 --python scripts/trial_sky_r10.py
+blender -b -t 8 --python scripts/apply_sky_r10.py -- antialias
+blender -b -t 8 --python scripts/render_sky_r10.py
+python scripts/make_sky_review_r10.py
+```
+
+本次选用 `antialias`；脚本支持的 `rollback` 只是明确回退 R08 世界的备用方案，本次未执行。R10 GLB 仍使用 R09 原件，因为只变世界且原 GLB 不导出世界/灯光/相机。

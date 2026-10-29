@@ -6,6 +6,12 @@
 
 R08仅更新N6766近景相机，几何/有效材质/灯光及其他17机位保持R07；校准仍未通过。[小联系图](qa/r08/N6766-camera-comparison.jpg) · [R08说明与不变项](qa/r08/review.md) · [主图JPEG预览（R07原PNG派生，无缩放）](qa/r08/main_R07_retained_preview.jpg)。其余主图、检查图、GLB保留R07原件，未重渲。
 
+## R10 本地天空窄修正版
+
+R10 只修 R09 引入的云边阶梯瑕疵，保留全部几何、物件材质、灯光和 18 个相机。使用同一云层场的抗锯齿采样与 Cubic 插值；纸灯、甲板和其他 R09 改进保持。
+
+[主图预览](qa/r10/main_preview.jpg) · [五源/主图前后对照](qa/r10/before-after-source-main.jpg) · [N6766 天空原像素裁区](qa/r10/N6766-sky-before-after.jpg) · [范围与旧残差](qa/r10/review.md) · [最终独立复核](qa/r10/independent-final-review.md) · [保存后不变项](qa/r10/sky-only-saved-invariants.json) · [材质 BLEND](models/r10/piano_seaside_material.blend) · [白模 BLEND](models/r10/piano_seaside_white.blend)。GLB 保留 R09 原件；本轮不声称旧来源问题已解决。
+
 ## R09 本地环境候选
 
 ![R09 环境候选主视角](qa/r09/main.png)
