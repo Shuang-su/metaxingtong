@@ -71,31 +71,42 @@ def smooth_poly(points):
 # Body is a closed bottom with inner cavity and true rim, not a filled box.
 poly=smooth_poly(poly);N=len(poly);inside=[(x*.93,(y-1.2)*.95+1.2) for x,y in poly]
 vs=[]
-for pxy,z in [(poly,.83),(poly,1.19),(inside,1.19),(inside,.91)]:vs.extend([(x,y,z) for x,y in pxy])
+for pxy,z in [(poly,.70),(poly,1.19),(inside,1.19),(inside,.91)]:vs.extend([(x,y,z) for x,y in pxy])
 fs=[]
 for j in range(N):
  k=(j+1)%N;fs += [(j,k,N+k,N+j),(N+j,N+k,2*N+k,2*N+j),(2*N+j,2*N+k,3*N+k,3*N+j)]
 fs += [tuple(range(N-1,-1,-1)),tuple(range(3*N,4*N))]
-mesh('P01 grand piano curved rim and bottom',vs,fs,ivory,'P01_body')
+body=mesh('P01 grand piano curved rim and bottom',vs,fs,ivory,'P01_body')
+for f in body.data.polygons:
+ if abs(f.normal.z)<.5:f.use_smooth=True
 prism('P01 soundboard inside rim',[(x*.90,(y-1.2)*.91+1.2) for x,y in poly],.914,.935,inner,'P01_body')
+# P09/P10: native N2453 reveals harp and strings; counts/lengths remain inferred.
+for a,b in [((-.65,.30,1.00),(.61,.30,1.00)),((-.60,.65,1.00),(.52,.65,1.00)),((-.58,1.03,1.00),(.20,1.03,1.00)),((-.58,.31,1.01),(-.41,2.19,1.01)),((.02,.31,1.01),(-.18,2.17,1.01)),((.52,.31,1.01),(-.07,1.86,1.01))]:
+ rod('P09 copper harp brace',a,b,.028,gold,'P09_harp',8)
+for i in range(62):
+ x=-.58+i*1.15/61;end_y=2.20-max(0,x+.20)*1.95
+ rod('P10 string %02d'%i,(x,.24,.98),(x*.53-.15,end_y,.98),.0018,gold,'P10_strings',6)
+ for yy in [.24,end_y]:rod('P09 tuning pin',(x if yy==.24 else x*.53-.15,yy,.967),(x if yy==.24 else x*.53-.15,yy,.995),.006,dark,'P09_harp',8)
+for yy in [1.12,1.45]:
+ bpy.ops.mesh.primitive_torus_add(major_radius=.068,minor_radius=.009,major_segments=24,minor_segments=8,location=(-.42,yy,.951));tag(bpy.context.object,'P09_harp',gold);bpy.context.object.name='P09 open soundboard ring'
 # Lid thickness and raised edge; one transform shared across all cameras.
-lid=prism('P02 raised lid',poly,0,.045,ivory,'P02_lid');hinge=Vector((-.78,0,1.21));tilt=math.radians(31)
+lid=prism('P02 raised lid',poly,0,.045,ivory,'P02_lid');hinge=Vector((-.78,0,1.21));tilt=math.radians(24)
 R=Matrix.Rotation(-tilt,4,'Y');lid.matrix_world=Matrix.Translation(hinge)@R@Matrix.Translation((.78,0,0))
 def lid_pt(x,y,z):return lid.matrix_world@Vector((x,y,z))
 a=lid_pt(.68,.2,.045);b=lid_pt(-.65,.2,.045);rod('P02 lid front reinforcement',a,b,.024,ivoryedge,'P02_lid',8)
 rod('P03 lid support',(.55,.62,1.02),lid_pt(.62,.62,0),.014,gold,'P03_prop')
 rod('P02 hinge',(-.78,.1,1.2),(-.78,2,1.2),.012,gold,'P02_lid')
 # Keyboard and cheeks.
-cube('P04 keybed', (0,-.19,.82),(1.56,.43,.12),ivory,'P04_keys',.025)
-cube('P04 fallboard',(0,.015,1.04),(1.44,.055,.26),ivory,'P04_keys',.015)
+cube('P04 keybed', (0,-.19,.72),(1.56,.43,.12),ivory,'P04_keys',.025)
+cube('P04 fallboard',(0,.015,.99),(1.44,.055,.40),ivory,'P04_keys',.015)
 for sx in [-1,1]:
  # Explicit curved-looking cheek made with profile, extruded in X.
- profile=[(-.40,.80),(.10,.80),(.10,1.19),(.02,1.19),(-.01,1.08),(-.08,.98),(-.20,.92),(-.4,.92)];vs=[(sx*.73+dx,y,z) for dx in [-.045,.045] for y,z in profile];nn=len(profile);fs=[tuple(range(nn-1,-1,-1)),tuple(range(nn,nn*2))]+[(i,(i+1)%nn,(i+1)%nn+nn,i+nn) for i in range(nn)];mesh('P04 cheek '+str(sx),vs,fs,ivory,'P04_keys')
+ profile=[(-.40,.70),(.10,.70),(.10,1.19),(.02,1.19),(-.01,1.04),(-.08,.88),(-.20,.82),(-.4,.82)];vs=[(sx*.73+dx,y,z) for dx in [-.045,.045] for y,z in profile];nn=len(profile);fs=[tuple(range(nn-1,-1,-1)),tuple(range(nn,nn*2))]+[(i,(i+1)%nn,(i+1)%nn+nn,i+nn) for i in range(nn)];mesh('P04 cheek '+str(sx),vs,fs,ivory,'P04_keys')
 kw=1.38/52
 for i in range(52):
- x=-.69+(i+.5)*kw;cube(f'P04 white key {i+1:02}',(x,-.21,.898),(kw*.95,.32,.028),whitekey,'P04_keys',.002)
+ x=-.69+(i+.5)*kw;cube(f'P04 white key {i+1:02}',(x,-.21,.798),(kw*.95,.32,.028),whitekey,'P04_keys',.002)
  # Conventional 88-key pattern is explicitly inferred.
- if i<51 and i%7 in [0,2,3,5,6]:cube(f'P04 black key {i+1:02}',(x+kw*.5,-.132,.929),(kw*.60,.17,.035),black,'P04_keys',.002)
+ if i<51 and i%7 in [0,2,3,5,6]:cube(f'P04 black key {i+1:02}',(x+kw*.5,-.132,.829),(kw*.60,.17,.035),black,'P04_keys',.002)
 # Music desk at keyboard rear. No fabricated notation.
 desk=cube('P05 music desk',(0,.23,1.39),(.66,.035,.37),ivoryedge,'P05_music',.01);desk.rotation_euler.x=math.radians(-13)
 for i in [-1,1]:
@@ -104,7 +115,7 @@ cube('P05 music desk ledge',(0,.14,1.215),(.72,.12,.025),ivory,'P05_music',.006)
 # Three leg load paths. Third leg and lower structure inferred where obscured.
 legs=[(-.61,.18,'P07_leg_front'),(.61,.18,'P07_leg_front'),(-.31,2.08,'P06_leg_tail')]
 for ix,(x,y,id) in enumerate(legs):
- tapered('leg '+str(ix),(x,y),.11,.82,.055,.095,ivory,id);cube('leg shoulder '+str(ix),(x,y,.80),(.26,.24,.12),ivory,id,.02)
+ tapered('leg '+str(ix),(x,y),.11,.69,.055,.095,ivory,id);cube('leg shoulder '+str(ix),(x,y,.68),(.26,.24,.12),ivory,id,.02)
  rod('leg caster axle '+str(ix),(x-.065,y,.075),(x+.065,y,.075),.02,gold,id)
  bpy.ops.mesh.primitive_cylinder_add(vertices=20,radius=.075,depth=.045,location=(x,y,.075),rotation=(0,pi/2,0));tag(bpy.context.object,id,gold);bpy.context.object.name='caster '+str(ix)
 # Pedal lyre / rods are explicitly approximate.
@@ -146,7 +157,7 @@ def lantern(id,loc,size):
   for dy in [-.5,.5]:rod(id+' upright',(x+dx*s,y+dy*s,z+.04),(x+dx*s,y+dy*s,z+s),.009,dark,id)
  cube(id+' top',(x,y,z+s),(s,s,.025),dark,id,.005)
  bpy.ops.object.light_add(type='POINT',location=(x,y,z+s*.55));bpy.context.object.data.energy=18*s/.25;bpy.context.object.data.color=(1,.32,.055);bpy.context.object.data.shadow_soft_size=s*.4
-lantern('L01_lantern',(.92,1.22,0),.25);lantern('L02_lantern',(5.45,-3.6,-.08),.27)
+lantern('L01_lantern',(-.92,1.22,0),.25);lantern('L02_lantern',(5.45,-3.6,-.08),.27)
 # Woven chair, true open weave and separate supporting frame.
 cx,cy=5.55,-2.45
 for sx in [-1,1]:
@@ -198,9 +209,10 @@ aim(key,(0,.5,0));aim(fill,(0,.5,0))
 def camera(name,loc,target,lens=50):
  bpy.ops.object.camera_add(location=loc);o=bpy.context.object;o.name=name;o.data.lens=lens;o.data.clip_end=1000;aim(o,target);o['role']='inspection' if name.startswith('check') else 'conditional source camera fit';return o
 cams={}
-cams['source_N6318']=camera('source_N6318',(-5.9,-2.1,1.2),(.05,.75,1.40),52)
-cams['source_N4037']=camera('source_N4037',(-3.5,.3,1.95),(-.1,.25,1.20),48)
-cams['source_N2518']=camera('source_N2518',(1.12,-1.12,1.27),(-.04,-.05,1.02),44)
+cams['source_N6318']=camera('source_N6318',(-5.9,-2.1,1.2),(.05,.75,1.55),48)
+cams['source_N4037']=camera('source_N4037',(-4.5,-.2,2.2),(-.1,-.3,1.22),50)
+cams['source_N2518']=camera('source_N2518',(1.12,-1.12,1.21),(-.04,-.05,.87),44)
+cams['source_N2453']=camera('source_N2453',(3.8,4.0,3.3),(-.02,.95,1.0),52)
 cams['main']=camera('main',(-5.2,-6.4,4.1),(0,1,.65),45)
 for i in range(8):
  a=2*pi*i/8;cams['check_%02d'%i]=camera('check_%02d'%i,(7.5*cos(a),.8+7.5*sin(a),4.1 if i%2 else 3),(0,.8,.6),42)
@@ -228,7 +240,7 @@ for o in objects:
  for m in original[o.name]:o.data.materials.append(m)
 # Exports above are complete even if an optional render fails.
 if args.render!='none':
- keys=['source_N6318','source_N4037','source_N2518'] if args.render=='preview' else list(cams)
+ keys=['source_N6318','source_N4037','source_N2518','source_N2453'] if args.render=='preview' else list(cams)
  for name in keys:
   sc.camera=cams[name];sc.render.resolution_x=960 if args.render=='preview' or name.startswith('check') else 1920;sc.render.resolution_y=540 if args.render=='preview' or name.startswith('check') else 1080;sc.render.filepath=str(QA/(name+'.png'));bpy.ops.render.render(write_still=True)
 (QA/'build-summary.json').write_text(json.dumps({'stage':args.stage,'blender_version':bpy.app.version_string,'mesh_objects':len(objects),'common_geometry_for_all_cameras':True,'units':'model units','material_and_white_share_geometry':True,'native_source_alignment':'conditional manual perspective fit, not calibrated','status':'candidate, source review pending'},indent=2)+'\n')

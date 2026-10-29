@@ -1,0 +1,37 @@
+# Piano seaside — native source handoff (2026-10-29)
+
+Source: https://www.bilibili.com/video/BV1CY411k7Co/ — 星瞳_Official, 2023-02-24 replay (uploaded 2023-02-25), duration UI 1:58:29.
+
+All five images are unmodified Chromium **Save video frame as** PNG exports, not screenshots, canvas renders, crops, upscales or generated images. Each is 1920×1080, visually opened and verified locally. Source watermark and embedded graphics remain intact. Existing signed-in session used. Selected quality was 1080P 高清; higher menu entry 1080P 高码率 was marked 大会员; no subscription or entitlement change attempted. Native decoded videoWidth/videoHeight corroborated 1920×1080 for references 2–5. First image dimensions validated from PNG.
+
+## References
+
+1. `BV1CY411k7Co_00-40-37_native.png` — libfile_0b008dd07c8481919b39fa6b2ad4866c / file_00000000a43081fbb8ff6b03a7a92650. 1,777,404 bytes. SHA256 `221caeb1835b0f6c63c94355e09f8e1d6d8655d0c937a97ad8929536f6fd9115`. Time is **displayed 00:40:37 only**; do not infer subsecond time or readyState retrospectively. Frontal environment view: open white grand, tufted bench, plank deck, sand strip, lanterns, shore chair/basket, sailboat, purple-pink sunset. Character occludes keyboard. Piano tail and some feet clipped.
+2. `BV1CY411k7Co_t6318.457925_native.png` — libfile_091c4188b4e48191b4c533cc3b3c3a55 / file_00000000bfec81f5a923ee0fdbc98806. 1,271,027 bytes. SHA256 `99a511d5bd0fda6d4f8cab46ee9b098d99f9cc9e23c338d74e1612dad81db04e`. Media currentTime **6318.457925**, paused=true before and after save; readyState not recorded. Low side silhouette, raised lid/prop, tail-to-keyboard profile, bench cushion, lantern and boat/platform fragment left. Source crops lower legs.
+3. `BV1CY411k7Co_t2518.167350_native.png` — libfile_7fc809a706948191a04abe9d3b71ddb8 / file_00000000afa081f6803b0ec5aeffaa3a. 1,531,943 bytes. SHA256 `58ddc638b212e84d9593b907a18f26573cb0bbd0abd28ca858707fc21a67c574`. Media currentTime **2518.16735**, paused=true, readyState=4 before and after save. Keyboard-side detail: curved cheek, key-bed, glossy ivory front, trim ledges, keys, partial legs; triangular pathway lamp and dark foliage behind. Hands obscure some keys.
+4. `BV1CY411k7Co_t2453.795568_native.png` — libfile_4cc377f4a6748191a2c342912fea8df5 / file_00000000606881f48102e4a7ce35a68b. 2,846,269 bytes. SHA256 `f17a9b774e1abbff637108ffa495595a664cec3ddd25c9a09632a36457f83866`. Media currentTime **2453.795568**, paused=true, readyState=4 before and after save. Elevated rear/tail three-quarter view, interior bronze frame/strings, lid prop, left tapered leg and brass caster touching deck, three brass pedals/lyre. Plank orientation and sand edge clear. Background co-visible luminous large sign, hanging stars, stool, counter/exterior wall and balloons. Bench obscured; bottom of tail clipped.
+5. `BV1CY411k7Co_t6766.766366_native.png` — libfile_dad36ec11db4819184ae4b22e8801388 / file_000000006ee481fb83f5c310a83586e6. 1,467,192 bytes. SHA256 `0a68c6517847658593b04abd4469548e3af06aa1a7daaa40cff28cf402c38835`. Media currentTime **6766.766366**, paused=true, readyState=4 before and after save. Source surveillance Cam2, embedded timer 00:29:4 (NOT video playback timestamp). Low reverse keyboard-side view; palm grove and lit-window building co-visible. Miniature character stands atop cheek: **not valid human scale reference**. No full footprint.
+
+## Scope and limits
+
+Keep this candidate separate from both seaside-bar interior and BV1yD9VY9EEC round-window/white-piano porch. No continuous navigable connection or measured spatial adjacency to bar interior was established. Exterior props co-visible in frame4 are supported only as shown. Sampled performance viewpoints are cut-based camera families, not a verified continuous 360-degree orbit. No complete overhead plan, rear-side coverage, full bench footprint or all three caster contacts exists in this set. Use visible constraints; mark hidden geometry inferred. Do not use miniature Cam2 character to infer dimensions.
+
+Scouting samples, not native references: 2421.918 bar and2430.270 piano are separated observations, not adjacency proof;2468/6204 low side repeat;2604/6006/6106 keyboard repeat;2707 frontal repeat;6406/6607 bar;6732 empty bar;6746/6757 Cam1 bar gag;6769 Cam2 piano;6780 Cam3 stool/counter gag;around6800 montage;6902 urban room;7005/7074/7099 end card. Do not count repeats as new angles. The ending surveillance clue did reveal Cam2 but not a wide footprint view.
+
+## Reusable supported native-transfer workflow
+
+1. Fresh CUA docs first: `await cua.getState()`; create/bind tab with current documented APIs. Existing Bilibili login worked; do not sign out or alter authentication.
+2. Navigate source normally and use UI playback/seek. Inspect rendered screenshot and read only DOM-backed media properties via `tab.playwright.evaluate(() => Array.from(document.querySelectorAll('video')).map(v => ({time:v.currentTime,paused:v.paused,readyState:v.readyState,width:v.videoWidth,height:v.videoHeight})))`.
+3. UI click delivery is asynchronous: inspect screenshot/state after click before trusting paused status. Bilibili Left/Right seeks may resume playback. Do not mutate currentTime via evaluate.
+4. Pause desired sharp frame, verify paused=true and readyState>=2 (captured frames3–5 had4). Record exact currentTime; if unavailable retain only UI-second precision.
+5. Import supported `@oai/sky`, capture desktop. Right-click video opens custom Bili menu; right-click a different video position outside custom popup opens Chromium native VIDEO popup. Confirm the menu visually (not browser page context menu).
+6. BEFORE choosing **将视频帧另存为… / Save video frame as**, start documented observer: `var saveEvent = tab.playwright.waitForEvent('download',{timeoutMs:20000}).then(d=>d.path({timeoutMs:20000})).catch(e=>({error:String(e)}));`.
+7. Hover observed native Save video frame as menu item with `sky.move`, press Return, await saveEvent. Do not select Save video as, copy URL or screenshot. This returned `/opt/codex/downloads/.../<uuid>` for all five exports.
+8. Critical improvement over prior Sky-only save: use returned **download.path()**, which WAS visible to exec here. Do not guess Downloads paths or assume isolated Sky filesystem. Clipboard Copy video frame + documented clipboard.read returned[] in this session and was abandoned.
+9. Verify returned file exists; copy byte-for-byte into task workspace, inspect PNG dimensions, byte count, SHA256 and actual image; compare media state again to confirm stable time. No pixel modification. Register Library file, keep returned IDs and xattrs. Source native images, not desktop screenshots, are deliverables.
+
+No security warning was bypassed and no new login, subscription, extension or software was requested. Browser is shared; release ownership to parent after this survey.
+
+## Bounded cross-video check
+
+https://www.bilibili.com/video/BV1fp4y1K7s8/ was observed at media times13.847784 and49.762410. Both show a curved coastal roadway with striped barriers/bollards, streetlamps, palms and very large orange sun; no piano deck in either observed sample. This is NOT a verified cross-replay match. The entire clip was not exhaustively frame-scanned and no later97-minute replay was pursued. No native references were acquired from this different setting. The source browser tab was closed after the bounded survey so parent can resume independently.
