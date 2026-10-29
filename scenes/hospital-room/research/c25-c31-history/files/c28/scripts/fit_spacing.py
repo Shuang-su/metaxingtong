@@ -11,11 +11,11 @@ def bottom(k,idx,scale,xs):
  for x in xs:
   y=[u[1]+(v[1]-u[1])*(x-u[0])/(v[0]-u[0]) for u,v in zip(a,np.roll(a,-1,axis=0)) if min(u[0],v[0])<=x<=max(u[0],v[0]) and abs(v[0]-u[0])>1e-9];out.append(max(y))
  return np.array(out)
-def residual(s):
+def residual(s,views=('H','G'),maxline=5):
  a=[]
- for k in ['H','G']:
+ for k in views:
   rows=obs[k]['lines'];xs=np.linspace(rows[0]['search_domain'][0]+5,rows[0]['search_domain'][1]-5,24);b=bottom(k,1,s,xs);y=np.polyval(rows[0]['fit_y_ax_b'],xs)
-  for n in range(1,5):a.extend((bottom(k,n+1,s,xs)-b)-(np.polyval(rows[n]['fit_y_ax_b'],xs)-y))
+  for n in range(1,maxline):a.extend((bottom(k,n+1,s,xs)-b)-(np.polyval(rows[n]['fit_y_ax_b'],xs)-y))
  return np.array(a)
 fit=minimize_scalar(lambda s:np.mean(residual(s)**2),bounds=(.65,1.05),method='bounded',options={'xatol':1e-10});scale=float(fit.x);out={'fit_views':['H','G'],'check_view':'N642 previously viewed; not used in spacing fit','objective':'Within-view relative vertical gaps to lowest remaining slat, five source ridges, 24 correlated x samples per line; no endpoint fit','scale':scale,'anchor_world_z':float(anchor),'relative_gap_RMSE_before_px':float(np.sqrt(np.mean(residual(1)**2))),'relative_gap_RMSE_after_px':float(np.sqrt(fit.fun)),'views':{}}
 for k,entry in obs.items():
@@ -24,4 +24,7 @@ for k,entry in obs.items():
   xs=np.linspace(r['search_domain'][0]+5,r['search_domain'][1]-5,24);y=np.polyval(r['fit_y_ax_b'],xs);a=bottom(k,n+1,1,xs);b=bottom(k,n+1,scale,xs)
   rows.append({'slat':n+2,'before_MAE_px':float(np.abs(a-y).mean()),'after_MAE_px':float(np.abs(b-y).mean()),'before_signed_px':float((a-y).mean()),'after_signed_px':float((b-y).mean()),'observed_slope':r['fit_y_ax_b'][0],'before_slope':float(np.polyfit(xs,a,1)[0]),'after_slope':float(np.polyfit(xs,b,1)[0])})
  out['views'][k]=rows
+out['stability_checks']={}
+for tag,views,n in [('H_only',['H'],5),('G_only',['G'],5),('first_two_gaps_H_G',['H','G'],3)]:
+ t=minimize_scalar(lambda q:np.mean(residual(q,views,n)**2),bounds=(.65,1.05),method='bounded');out['stability_checks'][tag]={'scale':float(t.x),'relative_gap_rmse_px':float(np.sqrt(t.fun))}
 (P/'spacing_fit.json').write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))
