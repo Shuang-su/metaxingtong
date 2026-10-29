@@ -1,5 +1,7 @@
 # Cross-BV holdout diagnostic — geometry frozen
 
+Final source classification: **unregistered supplementary source**. No fixed object can yet be unambiguously matched across 2025/2026. Similar blue-court / paved-furniture-strip / track / grass-goal order is a broad layout clue only; there is no direct pixel contradiction proving different assets. Historical “holdout” naming does not mean a registered same-scene view. Existing diagnostics are retained; this round ends without further geometry, camera or rendering work. Another task handles source follow-up.
+
 2026-10-29 correspondence correction: the original four frames support a high-confidence near-hoop / three-ball rack / doorway-steps / exterior-stair chain. The earlier frame lacks co-visible rack, same doorway and large round tree planter bridging that chain; its foreground hoop cannot uniquely be assigned to the original near hoop. No unambiguous 2025/2026 instance match is established. “Reverse view” is only a pending hypothesis; existing FORWARD/REVERSE camera labels are experiment names. See `qa/correspondence_correction_2026-10-29.md`. Keep the candidate frozen and do not automatically add cameras or renders pending the parent's full relation table.
 
 Base: `87b37f98911f533605d5aebdd60756edb96fe951`, stage-03-contact-qa. This stage may add diagnostic cameras only. Mesh coordinates/topology, material nodes/assignments/texture pixels, lighting, existing cameras and object visibility must remain unchanged. All original files are retained.
