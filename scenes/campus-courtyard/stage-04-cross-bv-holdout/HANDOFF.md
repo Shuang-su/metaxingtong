@@ -1,5 +1,7 @@
 # Stage04 local handoff — earlier cross-BV camera diagnostic failed
 
+2026-10-29 correction after the artifact readback below: no unambiguous cross-period instance match is established. Original four-frame near-hoop / three-ball rack / doorway-steps / stair chain is high-confidence, but the earlier frame does not provide those co-visible bridges. Reverse orientation remains a hypothesis. Only report text is amended; no new camera/render or geometry change. See `qa/correspondence_correction_2026-10-29.md`. The 73-file readback below refers to its recorded historical commit, not these subsequently amended Markdown bytes.
+
 Geometry base remains `87b37f98911f533605d5aebdd60756edb96fe951`. Source intake commit `006edc1`. Completed diagnostic content commit `a788ad15247638eecf2f3d48517c0cf120c6f27a`.
 
 73 ordinary files were read back from the actual local commit/tree/blob with matching byte counts, SHA256 and Git blob SHA. No remote fetch/push or output Library save is claimed. Three original Stage03 model files remain byte-identical to the frozen commit. Detailed receipt: `qa/git_originals_readback.json`.
