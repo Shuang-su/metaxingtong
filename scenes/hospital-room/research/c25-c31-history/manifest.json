@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:40.133967+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:40.314727+00:00",
   "scene": "hospital",
-  "original_snapshot": "1513b7ada509bb885e59da1c521bbd40cee7fa4f",
-  "original_snapshot_tree": "70b805998392cf70268a92e15c144c2bbf1ee595",
+  "original_snapshot": "79f921fb3cc9db6786eff19f89c27b2868e4a643",
+  "original_snapshot_tree": "dfdf9f4c72c7ea7cb5ab06b3a29dc953c9b385ea",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -2674,12 +2674,68 @@
       "sha256": "9c65f49829ce4e9397e64a175fbb8f031b3bd27db6a3a9068701455861bb0837"
     },
     {
+      "relative_path": "c31/SCOPE.md",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/SCOPE.md",
+      "mode": "100644",
+      "git_blob_sha1": "5efbe20b9f0de6b1d14f963c78252b1536087ef7",
+      "bytes": 1422,
+      "sha256": "af332f6d3a023fdf097e805de1d6ec6e1f3b31877dd9955d97806f032117ad7f"
+    },
+    {
+      "relative_path": "c31/build.log",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/build.log",
+      "mode": "100644",
+      "git_blob_sha1": "8f02c6765c7479d926bc16277700d4ec0a85e61b",
+      "bytes": 775,
+      "sha256": "bfb0bd27d41246d783c29ad4a340a2cd951c91da4ee699f7ba88e5b4f1d92637"
+    },
+    {
+      "relative_path": "c31/build_verification.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/build_verification.json",
+      "mode": "100644",
+      "git_blob_sha1": "65ed8827521af0a29bd9a8ebd550d2c114b1b7b2",
+      "bytes": 1254973,
+      "sha256": "e3385400487bceac79a21090695161fe9e1da6af669a3f43a51bd47247835fab"
+    },
+    {
+      "relative_path": "c31/hospital_C31_recess_MATERIAL_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/hospital_C31_recess_MATERIAL_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "be00cdd56124a30129f2ebbd6ee96acbabacbbb4",
+      "bytes": 13052868,
+      "sha256": "0e0954f9fc4a5a0321151c3ec85b7dd7c7f49d0af6e421390a9fae690b8967fa"
+    },
+    {
+      "relative_path": "c31/hospital_C31_recess_WHITE_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/hospital_C31_recess_WHITE_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "d53e739453949486dd30383eafb98a998def8232",
+      "bytes": 8085064,
+      "sha256": "56f54da33feec04db3411da2ce8341b441ed17cf175180e383a320c9c7d9c1f1"
+    },
+    {
       "relative_path": "c31/provenance/C30_rejected_diagnostics_index.json",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/provenance/C30_rejected_diagnostics_index.json",
       "mode": "100644",
       "git_blob_sha1": "cae43603fb53fd98c9c524641a3a589b9f200765",
       "bytes": 16598,
       "sha256": "9edacd7e0fb94f97aad199eb6122428b341a2fc815aa631f0fa4d60b22939728"
+    },
+    {
+      "relative_path": "c31/scripts/build_candidate.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/scripts/build_candidate.py",
+      "mode": "100644",
+      "git_blob_sha1": "979c653100e9995891c03846abb11dde67df5e90",
+      "bytes": 2444,
+      "sha256": "1031240fd9cd5873a6b97a125769da3e114467994fcfd0f6031c28913a001751"
+    },
+    {
+      "relative_path": "c31/scripts/render_G_region.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/scripts/render_G_region.py",
+      "mode": "100644",
+      "git_blob_sha1": "7f7b031bfaf226c5f94b4302a39c609d08db84db",
+      "bytes": 1758,
+      "sha256": "5532c4ff18c7cedaf515964a1e02ff60fbe756a3bca0874df10f9bdd5dda0a64"
     },
     {
       "relative_path": "c31_diagnosis/1801.323_annotated_native1x.png",
@@ -4828,6 +4884,18 @@
       "message": "Freeze independent native endboard slot-to-aperture proportions before C31 changes\n",
       "raw_commit_sha256": "59ca62a99ba2cf482cdb6e3106a99f14e4702602cba896cfcc11f0bbfee5b1c5",
       "changed_files_raw": "A\tc31/provenance/C30_rejected_diagnostics_index.json\nA\tc31_diagnosis/1801.323_annotated_native1x.png\nA\tc31_diagnosis/1801.323_endboard_crop2x.png\nA\tc31_diagnosis/1804.861_annotated_native1x.png\nA\tc31_diagnosis/1804.861_endboard_crop2x.png\nA\tc31_diagnosis/G_partial_endboard_crop2x.png\nA\tc31_diagnosis/READ_ONLY_FINDINGS.md\nA\tc31_diagnosis/actual_endboard_hole_geometry.json\nA\tc31_diagnosis/inspect_endboard.py\nA\tc31_diagnosis/measure_native_ratios.py\nA\tc31_diagnosis/native_endboard_ratios.json\n"
+    },
+    {
+      "commit": "79f921fb3cc9db6786eff19f89c27b2868e4a643",
+      "parents": [
+        "1513b7ada509bb885e59da1c521bbd40cee7fa4f"
+      ],
+      "tree": "dfdf9f4c72c7ea7cb5ab06b3a29dc953c9b385ea",
+      "author": "Codex <codex@openai.com> 1792414061 +0900",
+      "committer": "Codex <codex@openai.com> 1792414061 +0900",
+      "message": "Build C31 independent central recess and inset proportion candidate from C29\n",
+      "raw_commit_sha256": "401d8c4eeea869f6b1204359a1fdc7ce7840b85c7a797cce199f57ae1d9eb71d",
+      "changed_files_raw": "A\tc31/SCOPE.md\nA\tc31/build.log\nA\tc31/build_verification.json\nA\tc31/hospital_C31_recess_MATERIAL_CONDITIONAL.blend\nA\tc31/hospital_C31_recess_WHITE_CONDITIONAL.blend\nA\tc31/scripts/build_candidate.py\nA\tc31/scripts/render_G_region.py\n"
     }
   ],
   "historical_only_blobs": [
