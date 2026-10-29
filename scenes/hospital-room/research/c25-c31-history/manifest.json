@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:36.190947+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:36.301890+00:00",
   "scene": "hospital",
-  "original_snapshot": "b7d3ebf262ce5f35333885f71370541c63b9c087",
-  "original_snapshot_tree": "2bd3e4f861839ad79cd04a71d76cae9b7b37f86a",
+  "original_snapshot": "27b27a940c8fa64dbede9c201fc7c88ed3ec683b",
+  "original_snapshot_tree": "0152096b5a73af80784e89d7bfc314cf78519818",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -733,9 +733,25 @@
       "relative_path": "c28/build.log",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c28/build.log",
       "mode": "100644",
-      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "git_blob_sha1": "4bac2eeaccef089d2aace2043f5373b57f64b48a",
+      "bytes": 691,
+      "sha256": "c14a9d9a626b781bb0f34a65985627548a52e8e6420a4cf20560330195886952"
+    },
+    {
+      "relative_path": "c28/build_verification.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c28/build_verification.json",
+      "mode": "100644",
+      "git_blob_sha1": "bc76034291efb6af9e296d3bed76e5af366e207a",
+      "bytes": 1265195,
+      "sha256": "8f0a2d44c1baa1c04735e8e55b300b55fdb8ce60107c67db868746ac4edcef17"
+    },
+    {
+      "relative_path": "c28/hospital_C28_bank1_MATERIAL_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c28/hospital_C28_bank1_MATERIAL_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "92ed0cda2eaa5102524ce7d84cb449fd43010b9e",
+      "bytes": 13056193,
+      "sha256": "d824d3517d2f7c1af10270d97a9ead47cdb0bbeef32f186fc94472b962f2fe01"
     },
     {
       "relative_path": "c28/hospital_C28_bank1_WHITE_CONDITIONAL.blend",
@@ -2792,6 +2808,18 @@
       "message": "Build C28 uniform slat-spacing candidate with frozen camera and chair checks\n",
       "raw_commit_sha256": "3f9548d410cd85e26e968e608e1fee6b7bb0ee74d1d55308b4df9f56f7b750c9",
       "changed_files_raw": "A\tc28/build.log\nA\tc28/hospital_C28_bank1_WHITE_CONDITIONAL.blend\nA\tc28/scripts/build_c28.py\nA\tc28/scripts/render_c28.py\n"
+    },
+    {
+      "commit": "27b27a940c8fa64dbede9c201fc7c88ed3ec683b",
+      "parents": [
+        "b7d3ebf262ce5f35333885f71370541c63b9c087"
+      ],
+      "tree": "0152096b5a73af80784e89d7bfc314cf78519818",
+      "author": "Codex <codex@openai.com> 1792409403 +0900",
+      "committer": "Codex <codex@openai.com> 1792409403 +0900",
+      "message": "Record completed C28 dual-model reopen invariants\n",
+      "raw_commit_sha256": "66ba000cc16a94da1a375dfd9062064853a58be98b9d7e35698b961e7b590036",
+      "changed_files_raw": "M\tc28/build.log\nA\tc28/build_verification.json\nA\tc28/hospital_C28_bank1_MATERIAL_CONDITIONAL.blend\n"
     }
   ],
   "historical_only_blobs": [
