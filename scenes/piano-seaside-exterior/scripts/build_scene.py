@@ -11,7 +11,7 @@ OUT=ROOT/'models'/args.stage; QA=ROOT/'qa'/args.stage
 OUT.mkdir(parents=True,exist_ok=True);QA.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc=bpy.context.scene;sc.unit_settings.system='NONE';sc['status']='conditional reconstruction candidate; source review pending; no user acceptance';sc['units']='relative model units; no measured scale';sc['source_state']='single approximate sunset material and light state, shared by every camera'
-sc.render.engine='CYCLES';sc.cycles.samples=24;sc.cycles.use_denoising=True
+sc.render.engine='CYCLES';sc.cycles.samples=48;sc.cycles.use_denoising=False
 sc.render.resolution_percentage=100;sc.render.image_settings.file_format='PNG';sc.view_settings.view_transform='AgX'
 sc.world=bpy.data.worlds.new('Approximate sunset environment');sc.world.use_nodes=True
 n=sc.world.node_tree.nodes; l=sc.world.node_tree.links;n.clear()
@@ -200,6 +200,7 @@ def camera(name,loc,target,lens=50):
 cams={}
 cams['source_N6318']=camera('source_N6318',(5.9,-3.6,2.15),(.05,.75,1.18),52)
 cams['source_N4037']=camera('source_N4037',(4.8,.6,2.40),(-.1,.25,1.20),48)
+cams['source_N2518']=camera('source_N2518',(1.12,-1.12,1.27),(-.04,-.05,1.02),44)
 cams['main']=camera('main',(5.2,-6.4,4.1),(0,1,.65),45)
 for i in range(8):
  a=2*pi*i/8;cams['check_%02d'%i]=camera('check_%02d'%i,(7.5*cos(a),.8+7.5*sin(a),4.1 if i%2 else 3),(0,.8,.6),42)
