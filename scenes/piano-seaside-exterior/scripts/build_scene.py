@@ -11,7 +11,7 @@ OUT=ROOT/'models'/args.stage; QA=ROOT/'qa'/args.stage
 OUT.mkdir(parents=True,exist_ok=True);QA.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc=bpy.context.scene;sc.unit_settings.system='NONE';sc['status']='conditional reconstruction candidate; source review pending; no user acceptance';sc['units']='relative model units; no measured scale';sc['source_state']='single approximate sunset material and light state, shared by every camera'
-sc.render.engine='CYCLES';sc.cycles.samples=48;sc.cycles.use_denoising=False
+sc.render.engine='BLENDER_EEVEE_NEXT';sc.cycles.samples=48;sc.cycles.use_denoising=False
 sc.render.resolution_percentage=100;sc.render.image_settings.file_format='PNG';sc.view_settings.view_transform='AgX'
 sc.world=bpy.data.worlds.new('Approximate sunset environment');sc.world.use_nodes=True
 n=sc.world.node_tree.nodes; l=sc.world.node_tree.links;n.clear()
@@ -135,8 +135,8 @@ faces.append(tuple(reversed(base_idx)));mesh('B01 tufted cushion',verts,faces,li
 for i in range(23):cube(f'D01 deck plank {i:02}',(0,-2+i*.255,-.07),(7.4,.244,.14),wood,'D01_deck',.006)
 for y in [-1.9,.5,3.45]:cube('D01 inferred joist',(0,y,-.24),(7.1,.14,.20),wood,'D01_deck')
 # finite sand patch behind deck. Simplified visible margin; no invented building.
-cube('S01 local sand patch',(0,6.2,-.24),(16,5.1,.32),sand,'S01_sand',.04)
-cube('E01 water environment',(0,130,-.46),(500,250,.08),water,'E01_sea')
+cube('S01 local sand patch',(6.2,0,-.24),(5.1,16,.32),sand,'S01_sand',.04)
+cube('E01 water environment',(0,0,-.46),(1000,1000,.08),water,'E01_sea')
 # Lanterns, open frames with solid warm inserts; not source photometric calibration.
 def lantern(id,loc,size):
  x,y,z=loc;s=size
@@ -146,9 +146,9 @@ def lantern(id,loc,size):
   for dy in [-.5,.5]:rod(id+' upright',(x+dx*s,y+dy*s,z+.04),(x+dx*s,y+dy*s,z+s),.009,dark,id)
  cube(id+' top',(x,y,z+s),(s,s,.025),dark,id,.005)
  bpy.ops.object.light_add(type='POINT',location=(x,y,z+s*.55));bpy.context.object.data.energy=18*s/.25;bpy.context.object.data.color=(1,.32,.055);bpy.context.object.data.shadow_soft_size=s*.4
-lantern('L01_lantern',(.92,1.22,0),.25);lantern('L02_lantern',(-3.6,5.45,-.08),.27)
+lantern('L01_lantern',(.92,1.22,0),.25);lantern('L02_lantern',(5.45,-3.6,-.08),.27)
 # Woven chair, true open weave and separate supporting frame.
-cx,cy=-2.45,5.55
+cx,cy=5.55,-2.45
 for sx in [-1,1]:
  for sy in [-1,1]:rod('C01 chair leg',(cx+sx*.30,cy+sy*.26,-.08),(cx+sx*.25,cy+sy*.22,.45),.022,dark,'C01_chair')
  rod('C01 back upright',(cx+sx*.25,cy+.22,.4),(cx+sx*.27,cy+.32,.88),.018,dark,'C01_chair')
@@ -161,7 +161,7 @@ for i in range(14):
  y=cy-.23+i*.46/13;rod('C01 seat weave Y',(cx-.25,y,.45),(cx+.25,y,.45),.007,weave,'C01_chair',6)
  z=.46+i*.40/13;y=cy+.22+(z-.46)*.25;rod('C01 back weave Y',(cx-.25,y+.006,z),(cx+.25,y+.006,z),.007,weave,'C01_chair',6)
 # Low open basket with visible spaced slats, not a painted black hole.
-kx,ky=-1.65,5.1
+kx,ky=5.1,-1.65
 bpy.ops.mesh.primitive_cylinder_add(vertices=32,radius=.15,depth=.025,location=(kx,ky,-.065));tag(bpy.context.object,'K01_basket',weave)
 for i in range(24):
  a=i*2*pi/24;rod('K01 basket upright',(kx+.15*cos(a),ky+.15*sin(a),-.06),(kx+.19*cos(a),ky+.19*sin(a),.20),.009,weave,'K01_basket',6)
@@ -180,11 +180,11 @@ def hull(id,center,length,width):
  fs.extend([tuple(range(2*N-1,N-1,-1)),tuple(range(3*N,4*N))]);o=mesh(id+' closed hull shell',vs,fs,boatmat,id)
  for i in range(N):j=(i+1)%N;rod(id+' gunwale',(x+outer[i][0],y+outer[i][1],z+.17),(x+outer[j][0],y+outer[j][1],z+.17),.027,boatwood,id)
  return center
-hull('V01_boat',(3.7,6.4,-.34),2.4,1.0)
-cube('V01 inferred seat',(3.7,6.4,-.12),(.87,.25,.08),boatwood,'V01_boat')
-rod('V01 windshield bar',(3.27,6.63,.07),(4.13,6.63,.07),.015,dark,'V01_boat')
+hull('V01_boat',(6.4,3.7,-.34),2.4,1.0)
+cube('V01 inferred seat',(6.4,3.7,-.12),(.87,.25,.08),boatwood,'V01_boat')
+rod('V01 windshield bar',(5.97,3.93,.07),(6.83,3.93,.07),.015,dark,'V01_boat')
 # Far boat distance / scale not identified by a single image.
-vx,vy,vz=-8,35,-.34;hull('V02_sailboat',(vx,vy,vz),2.5,.8)
+vx,vy,vz=35,-8,-.34;hull('V02_sailboat',(vx,vy,vz),2.5,.8)
 rod('V02 mast',(vx,vy,0),(vx,vy,3.5),.025,dark,'V02_sailboat')
 prism('V02 sail',[(vx+.015,vy),(vx+.045,vy),(vx+.045,vy+1.30)],.25,.27,sailmat,'V02_sailboat')
 # Replace horizontal placeholder sail with true vertical finite triangular prism.
@@ -198,10 +198,10 @@ aim(key,(0,.5,0));aim(fill,(0,.5,0))
 def camera(name,loc,target,lens=50):
  bpy.ops.object.camera_add(location=loc);o=bpy.context.object;o.name=name;o.data.lens=lens;o.data.clip_end=1000;aim(o,target);o['role']='inspection' if name.startswith('check') else 'conditional source camera fit';return o
 cams={}
-cams['source_N6318']=camera('source_N6318',(5.9,-3.6,2.15),(.05,.75,1.18),52)
-cams['source_N4037']=camera('source_N4037',(4.8,.6,2.40),(-.1,.25,1.20),48)
+cams['source_N6318']=camera('source_N6318',(-5.9,-2.1,1.2),(.05,.75,1.40),52)
+cams['source_N4037']=camera('source_N4037',(-3.5,.3,1.95),(-.1,.25,1.20),48)
 cams['source_N2518']=camera('source_N2518',(1.12,-1.12,1.27),(-.04,-.05,1.02),44)
-cams['main']=camera('main',(5.2,-6.4,4.1),(0,1,.65),45)
+cams['main']=camera('main',(-5.2,-6.4,4.1),(0,1,.65),45)
 for i in range(8):
  a=2*pi*i/8;cams['check_%02d'%i]=camera('check_%02d'%i,(7.5*cos(a),.8+7.5*sin(a),4.1 if i%2 else 3),(0,.8,.6),42)
 cams['check_top']=camera('check_top',(0,1,9),(0,1,0),38)
@@ -228,7 +228,7 @@ for o in objects:
  for m in original[o.name]:o.data.materials.append(m)
 # Exports above are complete even if an optional render fails.
 if args.render!='none':
- keys=['source_N6318','source_N4037'] if args.render=='preview' else list(cams)
+ keys=['source_N6318','source_N4037','source_N2518'] if args.render=='preview' else list(cams)
  for name in keys:
   sc.camera=cams[name];sc.render.resolution_x=960 if args.render=='preview' or name.startswith('check') else 1920;sc.render.resolution_y=540 if args.render=='preview' or name.startswith('check') else 1080;sc.render.filepath=str(QA/(name+'.png'));bpy.ops.render.render(write_still=True)
 (QA/'build-summary.json').write_text(json.dumps({'stage':args.stage,'blender_version':bpy.app.version_string,'mesh_objects':len(objects),'common_geometry_for_all_cameras':True,'units':'model units','material_and_white_share_geometry':True,'native_source_alignment':'conditional manual perspective fit, not calibrated','status':'candidate, source review pending'},indent=2)+'\n')
