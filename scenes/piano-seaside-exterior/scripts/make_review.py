@@ -33,3 +33,12 @@ if checks:
   x=i%3*480;y=i//3*310;im=Image.open(p);sheet.paste(im.resize((480,270)),(x,y+40));d.text((x+10,y+10),p.stem+' | inspection, not source',font=font,fill='white')
  sheet.save(qa/'inspection-contact.jpg',quality=92)
 print('review generated',len(records),'source overlays;',len(checks),'inspection views')
+# Additional material/white geometry diagnostics; never counted as source views.
+if (qa/'detail_cheek_right.png').exists():
+ names=['detail_cheek_right','detail_cheek_left','detail_bench'];sheet=Image.new('RGB',(1440,620),'#19202a');d=ImageDraw.Draw(sheet)
+ for row,prefix in enumerate(['','white_']):
+  for col,name in enumerate(names):
+   p=qa/(prefix+name+'.png')
+   if not p.exists():continue
+   sheet.paste(Image.open(p).resize((480,270)),(col*480,row*310+40));d.text((col*480+8,row*310+10),prefix+name+' | diagnostic',font=font,fill='white')
+ sheet.save(qa/'junction-cushion-contact.jpg',quality=92)

@@ -1,0 +1,744 @@
+{
+  "common_lid_angle_degrees": 36.224064082288464,
+  "method": "joint rigid perspective cameras and one shared hinge angle; fixed body/keyboard/cheek; no image transform",
+  "cameras": {
+    "N2518": {
+      "location": [
+        1.2210685085217372,
+        -1.383497036021173,
+        1.2895533346650883
+      ],
+      "target": [
+        0.5873077591081597,
+        -0.6661050607912709,
+        1.000250610207678
+      ],
+      "lens_mm": 39.47400502852125,
+      "roll_rad": -0.004663192939616394,
+      "rms_pixels": 52.74277285577017,
+      "anchors": [
+        {
+          "name": "far trim end",
+          "model_xyz": [
+            -0.76,
+            -0.014,
+            1.167
+          ],
+          "source_xy": [
+            280,
+            88
+          ],
+          "uncertainty_px": 20,
+          "projected_xy": [
+            422.3594229870936,
+            24.78772871592753
+          ],
+          "residual_px": 155.76262887518752
+        },
+        {
+          "name": "far cheek low arc",
+          "model_xyz": [
+            -0.75,
+            -0.27,
+            0.852
+          ],
+          "source_xy": [
+            260,
+            315
+          ],
+          "uncertainty_px": 35,
+          "projected_xy": [
+            242.70646432222554,
+            349.6030688756323
+          ],
+          "residual_px": 38.68383062534281
+        },
+        {
+          "name": "far keyboard rear",
+          "model_xyz": [
+            -0.69,
+            -0.069,
+            0.812
+          ],
+          "source_xy": [
+            462,
+            350
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            443.08923767323006,
+            364.3159753087149
+          ],
+          "residual_px": 23.71843335507882
+        },
+        {
+          "name": "near keyboard rear",
+          "model_xyz": [
+            0.69,
+            -0.069,
+            0.812
+          ],
+          "source_xy": [
+            1700,
+            632
+          ],
+          "uncertainty_px": 18,
+          "projected_xy": [
+            1661.8084042481928,
+            641.2826376228866
+          ],
+          "residual_px": 39.3035029902843
+        },
+        {
+          "name": "near keyboard front",
+          "model_xyz": [
+            0.69,
+            -0.423,
+            0.812
+          ],
+          "source_xy": [
+            1393,
+            825
+          ],
+          "uncertainty_px": 30,
+          "projected_xy": [
+            1391.6248486886527,
+            804.2051593324622
+          ],
+          "residual_px": 20.840260063573634
+        },
+        {
+          "name": "near cheek low arc",
+          "model_xyz": [
+            0.78,
+            -0.27,
+            0.852
+          ],
+          "source_xy": [
+            1600,
+            698
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            1671.2767853818893,
+            699.0675927148907
+          ],
+          "residual_px": 71.28478020293534
+        }
+      ],
+      "status": "conditional manual correspondence fit; not calibrated; shared fixed geometry"
+    },
+    "N6766": {
+      "location": [
+        2.253926440641959,
+        -1.4029623820482908,
+        0.8071366364150687
+      ],
+      "target": [
+        1.46198246420717,
+        -0.8088581267161028,
+        0.9480794332684055
+      ],
+      "lens_mm": 34.841882196715,
+      "roll_rad": -0.034999999999999996,
+      "rms_pixels": 105.34518260147743,
+      "anchors": [
+        {
+          "name": "far cheek nose",
+          "model_xyz": [
+            -0.78,
+            -0.48,
+            0.773
+          ],
+          "source_xy": [
+            384,
+            935
+          ],
+          "uncertainty_px": 20,
+          "projected_xy": [
+            287.787152748312,
+            850.0055704595595
+          ],
+          "residual_px": 128.37821088168175
+        },
+        {
+          "name": "far cheek upper join",
+          "model_xyz": [
+            -0.78,
+            0.3,
+            1.225
+          ],
+          "source_xy": [
+            637,
+            534
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            716.2648758956883,
+            587.2922196049934
+          ],
+          "residual_px": 95.51429851695355
+        },
+        {
+          "name": "far trim outer end",
+          "model_xyz": [
+            -0.76,
+            -0.014,
+            1.167
+          ],
+          "source_xy": [
+            565,
+            632
+          ],
+          "uncertainty_px": 20,
+          "projected_xy": [
+            564.9720596260381,
+            611.3940637311696
+          ],
+          "residual_px": 20.60595521153043
+        },
+        {
+          "name": "near trim outer end",
+          "model_xyz": [
+            0.76,
+            -0.014,
+            1.167
+          ],
+          "source_xy": [
+            1130,
+            337
+          ],
+          "uncertainty_px": 20,
+          "projected_xy": [
+            1151.3097791512946,
+            469.7613149631603
+          ],
+          "residual_px": 134.46067617792352
+        },
+        {
+          "name": "near cheek nose",
+          "model_xyz": [
+            0.78,
+            -0.48,
+            0.773
+          ],
+          "source_xy": [
+            820,
+            880
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            811.8750021804613,
+            847.3694904174623
+          ],
+          "residual_px": 33.626860471706145
+        },
+        {
+          "name": "near cheek low arc",
+          "model_xyz": [
+            0.78,
+            -0.27,
+            0.852
+          ],
+          "source_xy": [
+            1090,
+            780
+          ],
+          "uncertainty_px": 30,
+          "projected_xy": [
+            989.5787074583526,
+            758.0448800465199
+          ],
+          "residual_px": 102.79330371141317
+        },
+        {
+          "name": "near cheek upper join",
+          "model_xyz": [
+            0.78,
+            0.3,
+            1.225
+          ],
+          "source_xy": [
+            1340,
+            125
+          ],
+          "uncertainty_px": 20,
+          "projected_xy": [
+            1353.4519804594233,
+            440.24608653018726
+          ],
+          "residual_px": 315.5329631763994
+        }
+      ],
+      "status": "conditional manual correspondence fit; not calibrated; shared fixed geometry"
+    },
+    "N2453": {
+      "location": [
+        1.2300728771843654,
+        4.022297274841873,
+        1.8972386793202882
+      ],
+      "target": [
+        0.9062644579775263,
+        3.097429833439319,
+        1.6978187117035497
+      ],
+      "lens_mm": 37.86242178427595,
+      "roll_rad": 0.0036123430858209554,
+      "rms_pixels": 47.33092058347882,
+      "anchors": [
+        {
+          "name": "near rim front",
+          "model_xyz": [
+            0.78,
+            0.22,
+            1.19
+          ],
+          "source_xy": [
+            510,
+            435
+          ],
+          "uncertainty_px": 35,
+          "projected_xy": [
+            518.5501311285905,
+            510.6457984032841
+          ],
+          "residual_px": 76.12746914476006
+        },
+        {
+          "name": "near rim curve start",
+          "model_xyz": [
+            0.78,
+            0.54,
+            1.19
+          ],
+          "source_xy": [
+            550,
+            540
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            542.0538946251988,
+            543.0644352240204
+          ],
+          "residual_px": 8.516534146568118
+        },
+        {
+          "name": "far rim front",
+          "model_xyz": [
+            -0.78,
+            0.22,
+            1.19
+          ],
+          "source_xy": [
+            1290,
+            430
+          ],
+          "uncertainty_px": 50,
+          "projected_xy": [
+            1260.5464497216838,
+            468.39999305794953
+          ],
+          "residual_px": 48.39494902206092
+        },
+        {
+          "name": "tail rim",
+          "model_xyz": [
+            -0.26,
+            2.4,
+            1.19
+          ],
+          "source_xy": [
+            1795,
+            817
+          ],
+          "uncertainty_px": 40,
+          "projected_xy": [
+            1786.4206190521309,
+            818.2240885747306
+          ],
+          "residual_px": 8.666266225280982
+        },
+        {
+          "name": "front near caster",
+          "model_xyz": [
+            0.61,
+            0.18,
+            0.075
+          ],
+          "source_xy": [
+            580,
+            1025
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            622.5537587976521,
+            1039.7623886025822
+          ],
+          "residual_px": 45.041653000999005
+        },
+        {
+          "name": "music rear top near",
+          "model_xyz": [
+            0.33,
+            0.273,
+            1.57
+          ],
+          "source_xy": [
+            755,
+            375
+          ],
+          "uncertainty_px": 35,
+          "projected_xy": [
+            755.2215036530357,
+            304.64161547494007
+          ],
+          "residual_px": 70.35873319527933
+        },
+        {
+          "name": "music rear top far",
+          "model_xyz": [
+            -0.33,
+            0.273,
+            1.57
+          ],
+          "source_xy": [
+            1200,
+            370
+          ],
+          "uncertainty_px": 35,
+          "projected_xy": [
+            1077.6470437208495,
+            296.4738699481509
+          ],
+          "residual_px": 142.74570995532278
+        },
+        {
+          "name": "free lid front",
+          "model_xyz": [
+            0.47847101342573417,
+            0.38,
+            2.131873477418244
+          ],
+          "source_xy": [
+            670,
+            0
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            682.0629139165308,
+            -7.57661364781211
+          ],
+          "residual_px": 14.24496284747153
+        }
+      ],
+      "status": "conditional manual correspondence fit; not calibrated; shared fixed geometry"
+    },
+    "N6318": {
+      "location": [
+        -5.052318226474667,
+        -2.421764092547243,
+        0.8574630115737039
+      ],
+      "target": [
+        -4.21264798898804,
+        -1.8946225493771187,
+        0.9881369789251674
+      ],
+      "lens_mm": 44.47714397560064,
+      "roll_rad": 0.0023408810605363146,
+      "rms_pixels": 37.83086967780412,
+      "anchors": [
+        {
+          "name": "hinge front",
+          "model_xyz": [
+            -0.78,
+            0.38,
+            1.21
+          ],
+          "source_xy": [
+            870,
+            663
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            912.6284454987644,
+            687.4880589206855
+          ],
+          "residual_px": 49.16146250208689
+        },
+        {
+          "name": "near cheek upper join",
+          "model_xyz": [
+            -0.78,
+            0.184,
+            1.225
+          ],
+          "source_xy": [
+            1104,
+            670
+          ],
+          "uncertainty_px": 20,
+          "projected_xy": [
+            990.3137489432854,
+            677.1648413689558
+          ],
+          "residual_px": 113.91180198369543
+        },
+        {
+          "name": "near cheek low arc",
+          "model_xyz": [
+            -0.78,
+            -0.27,
+            0.852
+          ],
+          "source_xy": [
+            1198,
+            849
+          ],
+          "uncertainty_px": 20,
+          "projected_xy": [
+            1184.9683761957176,
+            855.9507099692886
+          ],
+          "residual_px": 14.769413937374336
+        },
+        {
+          "name": "near cheek nose",
+          "model_xyz": [
+            -0.78,
+            -0.48,
+            0.773
+          ],
+          "source_xy": [
+            1232,
+            937
+          ],
+          "uncertainty_px": 30,
+          "projected_xy": [
+            1282.5285294662444,
+            897.3438880540033
+          ],
+          "residual_px": 64.23191967156637
+        },
+        {
+          "name": "near front leg shoulder",
+          "model_xyz": [
+            -0.61,
+            0.18,
+            0.68
+          ],
+          "source_xy": [
+            1010,
+            963
+          ],
+          "uncertainty_px": 40,
+          "projected_xy": [
+            1033.0913154114915,
+            936.4364935719523
+          ],
+          "residual_px": 35.196998752534505
+        },
+        {
+          "name": "tail shoulder",
+          "model_xyz": [
+            -0.31,
+            2.08,
+            0.68
+          ],
+          "source_xy": [
+            480,
+            910
+          ],
+          "uncertainty_px": 45,
+          "projected_xy": [
+            475.38983199839737,
+            918.5793347701385
+          ],
+          "residual_px": 9.739539727374632
+        },
+        {
+          "name": "music upper near",
+          "model_xyz": [
+            -0.33,
+            0.273,
+            1.57
+          ],
+          "source_xy": [
+            1053,
+            584
+          ],
+          "uncertainty_px": 35,
+          "projected_xy": [
+            1058.9610367326895,
+            541.717526143855
+          ],
+          "residual_px": 42.7006036763423
+        },
+        {
+          "name": "free lid front",
+          "model_xyz": [
+            0.47847101342573417,
+            0.38,
+            2.131873477418244
+          ],
+          "source_xy": [
+            1176,
+            370
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            1174.6268138472942,
+            368.1951343046854
+          ],
+          "residual_px": 2.2678581058140375
+        }
+      ],
+      "status": "conditional manual correspondence fit; not calibrated; shared fixed geometry"
+    },
+    "N4037": {
+      "location": [
+        -5.917613806383501,
+        2.786419809414669,
+        2.2836501435127445
+      ],
+      "target": [
+        -5.034253729843497,
+        2.342693431687799,
+        2.132713478369281
+      ],
+      "lens_mm": 58.27514054149477,
+      "roll_rad": 0.005330261560825673,
+      "rms_pixels": 40.08257503919613,
+      "anchors": [
+        {
+          "name": "hinge front",
+          "model_xyz": [
+            -0.78,
+            0.38,
+            1.21
+          ],
+          "source_xy": [
+            875,
+            640
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            875.4939536699533,
+            650.2073343271666
+          ],
+          "residual_px": 10.219279049649892
+        },
+        {
+          "name": "near cheek upper join",
+          "model_xyz": [
+            -0.78,
+            0.184,
+            1.225
+          ],
+          "source_xy": [
+            1090,
+            638
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            969.8005612302163,
+            634.1828051473977
+          ],
+          "residual_px": 120.26003516178477
+        },
+        {
+          "name": "near cheek low arc",
+          "model_xyz": [
+            -0.78,
+            -0.27,
+            0.852
+          ],
+          "source_xy": [
+            1165,
+            784
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            1174.8117770649196,
+            803.2047960036107
+          ],
+          "residual_px": 21.566064979777455
+        },
+        {
+          "name": "near cheek nose",
+          "model_xyz": [
+            -0.78,
+            -0.48,
+            0.773
+          ],
+          "source_xy": [
+            1194,
+            850
+          ],
+          "uncertainty_px": 20,
+          "projected_xy": [
+            1264.8392504474796,
+            831.1886676132308
+          ],
+          "residual_px": 73.29437652457551
+        },
+        {
+          "name": "near front leg shoulder",
+          "model_xyz": [
+            -0.61,
+            0.18,
+            0.68
+          ],
+          "source_xy": [
+            938,
+            920
+          ],
+          "uncertainty_px": 35,
+          "projected_xy": [
+            930.8841736542811,
+            893.5938512287655
+          ],
+          "residual_px": 27.34812018240003
+        },
+        {
+          "name": "far front caster",
+          "model_xyz": [
+            0.61,
+            0.18,
+            0.075
+          ],
+          "source_xy": [
+            696,
+            1044
+          ],
+          "uncertainty_px": 45,
+          "projected_xy": [
+            700.0274557849841,
+            1021.0629222313407
+          ],
+          "residual_px": 23.287978372231564
+        },
+        {
+          "name": "free lid front",
+          "model_xyz": [
+            0.47847101342573417,
+            0.38,
+            2.131873477418244
+          ],
+          "source_xy": [
+            644,
+            110
+          ],
+          "uncertainty_px": 25,
+          "projected_xy": [
+            629.8893891414482,
+            134.47754157578913
+          ],
+          "residual_px": 28.253484393893185
+        }
+      ],
+      "status": "conditional manual correspondence fit; not calibrated; shared fixed geometry"
+    }
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "created_utc": "2026-10-29T11:34:35.510349+00:00",
+  "scope": "R07 models, QA including labelled intermediate trials, current scripts/docs and unchanged five native source inputs; not old R06 frozen inventory",
+  "files": [
+    {
+      "path": "scenes/piano-seaside-exterior/README.md",
+      "bytes": 4150,
+      "sha256": "4ad426001c3323d25d9e1576626123ad5764057b5bc71ca49d3e36f9c71d34aa",
+      "git_blob_sha1": "8ea357a2effe01198dd14b9eafcdd67b266d9a9c"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/docs/object-evidence.md",
+      "bytes": 8348,
+      "sha256": "c1e65314fb935548f77372433e2b4c742ee33b5478774da6d7cc2b5583031c08",
+      "git_blob_sha1": "cf61c9e8974078952651a032ffaf3506c63ed54c"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/docs/reproduce.md",
+      "bytes": 2043,
+      "sha256": "d33b12939314c62e4c22dd4ffed9ae2962a31120ef98e35b841a61f632d79869",
+      "git_blob_sha1": "9e502b042a0d3e1add17cab4f8b3fc8e7c9167dc"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/models/r07/piano_seaside_material.blend",
+      "bytes": 6722320,
+      "sha256": "0cbd84c627471e6e24883c825a4df44dfc044f55ef1394cb7758330d4c00d555",
+      "git_blob_sha1": "4e98bbc28898ac9913325221e37f9c39afcf1cc5"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/models/r07/piano_seaside_material.glb",
+      "bytes": 4663592,
+      "sha256": "9228d35df0c17625e76cbf7370f91a42c8e95caed548ed620a65454004212bee",
+      "git_blob_sha1": "374050864f2fcca36907e5b4b03b748e7b59f533"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/models/r07/piano_seaside_white.blend",
+      "bytes": 6381188,
+      "sha256": "22349a7a2b562f0433f777e2ca1ea1c1f320a286fd15071e88b39a4b8a4d87e9",
+      "git_blob_sha1": "b77f43b6b9604d6a0c33783eeb8ae5f25b36e5cd"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/models/r07/piano_seaside_white.glb",
+      "bytes": 3519896,
+      "sha256": "98c8937e11da70e3adc6537152dc08f499cd48053760de0d60acddbb4453bb6a",
+      "git_blob_sha1": "fa69930627a0e92c916be2e64f0d24dab73120b5"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/plan.md",
+      "bytes": 1602,
+      "sha256": "2fd652557b8245fa37d96618b66e89a60fa9c94ea6a93cba133ce968e5351730",
+      "git_blob_sha1": "16876ed6e8c9d6d3ec76156dc4f5614fe93e1156"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/build-summary.json",
+      "bytes": 319,
+      "sha256": "971c3d7c5ebb62ff92688e3c49bbef08c324e25fbb1031312bf4c96304105cfd",
+      "git_blob_sha1": "c32dbf2e8a905d1687713991a356274b547ff4e3"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/camera-anchor-fit.json",
+      "bytes": 17148,
+      "sha256": "1671de48891bc317d5594ad09d995654b2fedbeb4a73e9fbdccfefe62bdaf177",
+      "git_blob_sha1": "451565820048115534ba0e7315d4cd2d46e61881"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/camera-grid/case_0.png",
+      "bytes": 286758,
+      "sha256": "c55797b5c0af102d6de6c76eea55266e1cf03a364939d1d62ff71b283728b403",
+      "git_blob_sha1": "dc268bbe76526058d834a61aab2668145f3025d7"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/camera-grid/case_1.png",
+      "bytes": 297745,
+      "sha256": "c9f935c8cb403db8d5c2ddccf0306b665269185825631e6ec2128290f9e55438",
+      "git_blob_sha1": "513636a7acf5c73b9915adac690c6dcfca6a1790"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/camera-grid/case_2.png",
+      "bytes": 307327,
+      "sha256": "f2d90b628e5f31695d10ddefac7eced821c6b784b7fef11b14cda77dff2e8681",
+      "git_blob_sha1": "93b004a6c68afc5b7c074b67a952a4e204f49d0d"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/camera-grid/case_3.png",
+      "bytes": 307840,
+      "sha256": "4856a6f390ebefd8e3840d5afde778f98f6463448cee4e5bf5c55b1138a446bd",
+      "git_blob_sha1": "a152b28ce45eaf0866a8e2b4a1feef797b389431"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/camera-grid/case_4.png",
+      "bytes": 305312,
+      "sha256": "b49fc3542f9e32cf966adc16a588284c25ca13a880cd8a2b986125c89a8d7e7e",
+      "git_blob_sha1": "813d229ac31faae7fbb6d9d3b630748153fd4002"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/camera-grid/case_5.png",
+      "bytes": 289758,
+      "sha256": "f345dca45c15770ece20330c958c1342cb709552effe3d59ec8a9630c5cde85e",
+      "git_blob_sha1": "f95f0694419717cf7bdd056549d68b45bcab5e47"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/camera-grid/contact.jpg",
+      "bytes": 96277,
+      "sha256": "2ca54277befc2aa841e4bcec375d68b2a8ebd654039ecc6d1e07f21624a7fe21",
+      "git_blob_sha1": "8e7301fd7175530bf7ab470808f51989ae5a314c"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/cameras.json",
+      "bytes": 5132,
+      "sha256": "94116e1ad8405f59435bb9bffa00bb46bb1f73ac1ea5b4e68ddfb83a7c75e8c9",
+      "git_blob_sha1": "296e1ebda602044c982304d5f6c033fa7ecda304"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_00.png",
+      "bytes": 689160,
+      "sha256": "4d523a279dfd63474e5ca0defe717411fcdc69ddbd926c3beb3193855672c38c",
+      "git_blob_sha1": "5f16c49b67078f0e4cbd9cdd63fa3b9521861787"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_01.png",
+      "bytes": 700362,
+      "sha256": "a49bbf39d0c906ec3e19b1af81916bb81f5682b388a167f6636a19652d1a6491",
+      "git_blob_sha1": "384c793c0dcd3281ef9ccd3e3e969d8e5a7ff2c8"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_02.png",
+      "bytes": 587745,
+      "sha256": "50506a8c3deb46a1d7b9baf81b3834b0aad5ff39cfcd8b16bc419fc3e4dad99b",
+      "git_blob_sha1": "6c5c2fd0d20ea032e8290279e3c28366c090283f"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_03.png",
+      "bytes": 670048,
+      "sha256": "9721ddca304e86849acf210509e7ba7cd8bd569e985738d9a7e8805783c1490e",
+      "git_blob_sha1": "aadf644f54e82d096391795a75bad9abdd9377d5"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_04.png",
+      "bytes": 670342,
+      "sha256": "d47b00541472da808fa39c05ac80b700b17d0732939deaedd698a8005ffe895b",
+      "git_blob_sha1": "4a5a1df9b208380d040a06db7e060e8ce44b5ee6"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_05.png",
+      "bytes": 720473,
+      "sha256": "89c9ae4987e2c3eb891f5d3a8950ff117ee60e4b5b8971b0571c5fd8370f7fb6",
+      "git_blob_sha1": "5a1fd037947411f7dd6dc8359405b09a84fe63b2"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_06.png",
+      "bytes": 618663,
+      "sha256": "853832148a12581330e0140ff83b8612a99da70646b6a0821016832a2588aece",
+      "git_blob_sha1": "d372abe5343ee4e66997edeb23b22e6cc14016fc"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_07.png",
+      "bytes": 716730,
+      "sha256": "b3597fe2a9e3c2a09a707f9b8cc62825c8f7e7075cddd25fa52316556c7f9e67",
+      "git_blob_sha1": "d7b6987d0fb3337e8aced1a64b22db0caba857b0"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/check_top.png",
+      "bytes": 636861,
+      "sha256": "ba69db77ac2b03d57e4690aa4a795c563389af75473712574b409bd64f63afbe",
+      "git_blob_sha1": "a7313ff4bdcfd47417472d7d5ebbf2825e61a6e8"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/detail_bench.png",
+      "bytes": 2834557,
+      "sha256": "1e77fe3e69dcf708d01ef736707249e55152b4398b92db71c6b8902b8267be79",
+      "git_blob_sha1": "063cff30c8dbc6a8420681b9331807ebb8418ffe"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/detail_cheek_left.png",
+      "bytes": 2720897,
+      "sha256": "c3cdbe5f82e85972d10500157022a3a1696821d3cb979cefbf0d078b794ce9b1",
+      "git_blob_sha1": "0705cf19fd88589d086a6db13474db6de46abad2"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/detail_cheek_right.png",
+      "bytes": 2744442,
+      "sha256": "d492f8744d2d0288d905abb7492f037bdd2e45c9a00a01824cb5aa9feda4da93",
+      "git_blob_sha1": "163e9feb16a2b6b23e74a9a027f3bbb63b494647"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/fit-preview/N2453.png",
+      "bytes": 649806,
+      "sha256": "45a4e9c35e941f94d7ea11e049e374a50f2bc9057ce6dab4b08509b28af244f2",
+      "git_blob_sha1": "3603233904410642da51c01accb206e0dd8a885f"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/fit-preview/N2518.png",
+      "bytes": 795259,
+      "sha256": "442d24c27aa2076931d990963fd48f2abe6543111d7504d786b2255ab961e515",
+      "git_blob_sha1": "45abace504a69cbd2be282ee79e76df759bb0ef9"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/fit-preview/N4037.png",
+      "bytes": 554696,
+      "sha256": "df140bbd4177b11d320dbc2131862ff2fb828629a101a98229ee6105fa7e719b",
+      "git_blob_sha1": "070f2b43265ef075921c31f7fec2968dfa134783"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/fit-preview/N6318.png",
+      "bytes": 558541,
+      "sha256": "27ceb566557a0691f6e23bfcc73b781a193edc5e61bcef827172c5a1af66b351",
+      "git_blob_sha1": "292e7b7e92fa77940ee59caedb9411e2a4115d21"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/fit-preview/N6766.png",
+      "bytes": 620492,
+      "sha256": "23a917a4848ec2042f29198e1be03f6f22a111fda2683ea5056231b7aad6a01e",
+      "git_blob_sha1": "a64d28b6e9ecacc4ad049c8658a95e5272d5fdcc"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/geometry-checks.json",
+      "bytes": 1027235,
+      "sha256": "9222b75c4eef2fd5736daa7d606bcc3223431675cdcb07ae75520d4323baf7b3",
+      "git_blob_sha1": "cb10ac31c850f2cc45058016723ac72208562115"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/glb-render-comparison.json",
+      "bytes": 350,
+      "sha256": "109f4e714bb986b9600504dfbfc2e85fa1eb6242533bcc4069d1e9ab1c15757f",
+      "git_blob_sha1": "b2dde13ece219b2c266fc6d7788488f4cf9e03ae"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/glb_reimport_main.png",
+      "bytes": 2613481,
+      "sha256": "4d69cdeb7573829ad1993b0ce9e2323fafd6aae78e6963643b6c34c06ea95593",
+      "git_blob_sha1": "ea789476f58fb45e772ea5c2aaf0f7f848fd4d0b"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/initial-camera/source_N2453.png",
+      "bytes": 658723,
+      "sha256": "a1c3324febaf67b61143b069081c0bf46cf36ebc074294d952e13bbfb975fdea",
+      "git_blob_sha1": "b9c835be5b8129c3dbd42697c5de220db4c1a4f5"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/initial-camera/source_N2518.png",
+      "bytes": 795076,
+      "sha256": "3cdb491bc71b02395aa7f64b635138d50050395cbd510d91b171f0cdc3274da9",
+      "git_blob_sha1": "f10ef8cdbbf36532ca778b8d5b9e05702231333f"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/initial-camera/source_N4037.png",
+      "bytes": 598524,
+      "sha256": "23987aa3c32ac093ec93a6f5a1694c553e5171e4bb776e623d854f56d955ca04",
+      "git_blob_sha1": "5d5bf0081192c7737bde6a8b926b721aaaf5dcd0"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/initial-camera/source_N6318.png",
+      "bytes": 557041,
+      "sha256": "73fce3f8fd9b7b70e2f20fdc9b42d533a17ee3893d3a5478cb2a63c799868d0e",
+      "git_blob_sha1": "a11b37c2f2232f8768c7c7e6775c686a53c03a89"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/initial-camera/source_N6766.png",
+      "bytes": 596000,
+      "sha256": "e65d8a65210949e3d67bd6f1f1a7c8a54eb8c632ea0bd207c2a3ec36cc6c1fbc",
+      "git_blob_sha1": "82320ff3a60e6ac89a296ef6578b210fddc0c2d7"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/inspection-contact.jpg",
+      "bytes": 233414,
+      "sha256": "39ca48f561bde4b10ad9edfc640c67f2f401245791c7e0818ccfa40ddc9014dc",
+      "git_blob_sha1": "1e792531fe229ad18f4c7ff3b3604e8ff71a0813"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/junction-checks.json",
+      "bytes": 706,
+      "sha256": "a9b7a80b58aba6f42050eb5ed076d0dca78d99803a990c9053a4fa3ccb566f47",
+      "git_blob_sha1": "f1272f0bcf8d48efba30a8d6bb35f881ae035ec8"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/junction-cushion-contact.jpg",
+      "bytes": 179252,
+      "sha256": "5ae0a5ca56a9d2927d396f3c1aa3466d65ace13979fa822a78e7d4c2fbe2c32b",
+      "git_blob_sha1": "41c4ab6b08e62b5baa626c664282bfda921bfa75"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local-crops.json",
+      "bytes": 378,
+      "sha256": "2d798b8f7ba22996892748143ba32a18f7f4ef4e80725b1018d22ea0e5049b35",
+      "git_blob_sha1": "22808bb9677d040017c978c40b39c8f985f2c139"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N2453_overlay50.png",
+      "bytes": 704530,
+      "sha256": "d179bcae1d091e1858b296127b23650e330d1c5244f24cd60dee4d048b74a7d5",
+      "git_blob_sha1": "21ce56928eaf5dfbdf3a1c1fca92638a53a78f86"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N2453_render.png",
+      "bytes": 725650,
+      "sha256": "e64c5e247368979695b54b9cb587e22a3b57479b3020a375ccc40f7db781fb0d",
+      "git_blob_sha1": "ea16a7a9ed964e4e7a558103cbaec696231ed3f8"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N2453_source.png",
+      "bytes": 480214,
+      "sha256": "b6a3f7dc9a0b503998bcf392588ef75e60826db9d9c4ce89e1ba75e4e6d4c61e",
+      "git_blob_sha1": "f2cacb7de9fd1701fc1d0cdd5066e803558e90ea"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N2518_overlay50.png",
+      "bytes": 1087138,
+      "sha256": "830e69989a5aced09914f3f2ee0eb9cf33176224deb12f661122390cbe87c8f7",
+      "git_blob_sha1": "281d724d19b26a5197dd3f679a4df2121fc83876"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N2518_render.png",
+      "bytes": 1249207,
+      "sha256": "d66a27538f417fb2365a770476c6b4bb4a23c56d3d32b11493dcf0dec53f78ac",
+      "git_blob_sha1": "586853d6f0befe0883a55c76204fd77dba5836e7"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N2518_source.png",
+      "bytes": 466273,
+      "sha256": "dc9e7ac0a4f00912a2b7ca77f27b20c0b8432bcd0bcca2e6e80641bc4240e5c7",
+      "git_blob_sha1": "8ffc5fa3897bdcba271915718946f4054fa152bf"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N4037_overlay50.png",
+      "bytes": 404401,
+      "sha256": "ad942adb4376e6ae9442495c9fce8049c66e2c11b9ede026a8a373dfc59ff53d",
+      "git_blob_sha1": "d0d419e95fa9c78d641b2a82c98aada87ebf63b2"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N4037_render.png",
+      "bytes": 371121,
+      "sha256": "78378bcf3b6fe260410365da35119cedaa5110e6407cb950ca11f0624a0e48e6",
+      "git_blob_sha1": "cc66d5dd04141ea930d3d9fbc4859a2d1a0c1520"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N4037_source.png",
+      "bytes": 360545,
+      "sha256": "362e2a893099a2a991af87376e10b880747491bc73085a5d730effeb55127481",
+      "git_blob_sha1": "dc02bd42ff0657bc5e2d7df0526d5acc39aea882"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N6318_overlay50.png",
+      "bytes": 523691,
+      "sha256": "e2ae23cd6a47089f29f92091600a543a0e9721ab215373750e421be11a6999ea",
+      "git_blob_sha1": "3db10e495a4349b2902612183a13d3dc70a60a66"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N6318_render.png",
+      "bytes": 539121,
+      "sha256": "e79aac9b5ba7df14a83afde24593c0347eb33ff9d93872676f5d9e0de22cf99a",
+      "git_blob_sha1": "8aa6e4432cc0ef98304cb8fb069f5e50d36eba65"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/local_N6318_source.png",
+      "bytes": 283704,
+      "sha256": "90dadfb93902b3b6ccb5bcd4ebc627bb6bbab710f8bafac1dbb85633b292d498",
+      "git_blob_sha1": "29cdc67ed88bc48b5a05ead9400e36c7ca8ade38"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/main.png",
+      "bytes": 2613484,
+      "sha256": "a1a5f6b121295308f706cba8537dbab72787fb7fcd0f35a9c632da4351058e2f",
+      "git_blob_sha1": "fde4e6a475c60f00eafc98238f10f8d660382b91"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/object-inventory.json",
+      "bytes": 113650,
+      "sha256": "b2cf91930e3b10b77c860ed6ce6c30fff511f8ac820cec9901d30b1773e8bdbb",
+      "git_blob_sha1": "45d6f23ad35bb6a7cce583478bdfa3e4a2e15901"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/overlay-manifest.json",
+      "bytes": 2439,
+      "sha256": "1bf651ca4fb600267f53f095b556f02641582d8a93ca4133a6ffac26d7c7684d",
+      "git_blob_sha1": "1f8a47f133b89e3d5f8e3dd70101fefabe7e948e"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/overlay50_N2453.png",
+      "bytes": 2220389,
+      "sha256": "080419525814912e85dbb3807fd83c37706db92f24123cf6b1837e13cf41b732",
+      "git_blob_sha1": "08b66917132643d350bb00d44b1ddb198498a680"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/overlay50_N2518.png",
+      "bytes": 2088272,
+      "sha256": "869a9709c384d8ebf44ab67942e61248fa6afbc8a565b73d8f81cbb39a2a3701",
+      "git_blob_sha1": "74ae53df3509ef3561fc24d69fa7878501d1fbd7"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/overlay50_N4037.png",
+      "bytes": 1652696,
+      "sha256": "fa1cca7c08531a5ac5320ce54276945d7fd56611c2ac5f78a88469e54db546a5",
+      "git_blob_sha1": "12637ce491bc2adf2a8102b0ffc3b069dc8a3990"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/overlay50_N6318.png",
+      "bytes": 1458666,
+      "sha256": "befbc2f88e1f4183f98a18fc875530e5bdc1f28a94ab05ddcf73853978aa261c",
+      "git_blob_sha1": "423f8485565522eb2b1d292db195a3a0c7f34d6e"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/overlay50_N6766.png",
+      "bytes": 1708503,
+      "sha256": "b618c7e1ffa604e090d2a5866fe3e2553e0c668240ee749aa9ca81a1649c35da",
+      "git_blob_sha1": "96ab106d4fc98907567949f410efabeeddc793af"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/pre_join_diagnostics/detail_bench.png",
+      "bytes": 2834512,
+      "sha256": "67276729e31ab95cac0f826a38f0adbbd789bfab9f2eae0c2be8a242237343b8",
+      "git_blob_sha1": "42a808c09e9ee5855f54da209f4e3f2779a29169"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/pre_join_diagnostics/detail_cheek_left.png",
+      "bytes": 2710703,
+      "sha256": "3a021a744e8baf3fc0c60454e5f47c067d137b6736cdf1265093a0189e062b87",
+      "git_blob_sha1": "2fa752f2728caba029cd9044d88b25959b2ee6b5"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/pre_join_diagnostics/detail_cheek_right.png",
+      "bytes": 2745973,
+      "sha256": "f1e74e2389fe1e30f2f6a91c1fbb487a0a0d3e7da9b31e83480089de06a6a5b9",
+      "git_blob_sha1": "43f665d10b6df6a310e00631e402314a5dff3716"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/pre_join_diagnostics/geometry-checks-initial-failed-glb.json",
+      "bytes": 1030085,
+      "sha256": "193102068b9b5c3d744a4dd67891efc4a7f14a126f01b3331c35460aaa21fed5",
+      "git_blob_sha1": "2c7b2de14771ea9c809a38c327c103a5d1857123"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/reimport_material_diagnostic.blend",
+      "bytes": 11610805,
+      "sha256": "57a8e4af85b0bfef97cbf8df107522602bbe2b6a68dd2d3cd9df6697042a876f",
+      "git_blob_sha1": "9c42bb5e927b9dea252b538e6b03965d346b6a16"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/reimport_white_diagnostic.blend",
+      "bytes": 10082272,
+      "sha256": "9dfaead2820673c55fe596dab0798a612c086de9a2da152cb99bbffff9f1e2a7",
+      "git_blob_sha1": "7ff5afa4443de638f4b61da5132bedda520ea01d"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/review.md",
+      "bytes": 4150,
+      "sha256": "80d2ef0f647b0a68b5ff24b258fdf1301b3f5274c81bd7b7adc0bb7606425526",
+      "git_blob_sha1": "3bcd4bc01da0e369e44f10fab4a038b81b3858de"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/source-render-overlay-contact.jpg",
+      "bytes": 431564,
+      "sha256": "ad984054b6c69f51d66b71dd713ff14e84635e4edbffa1999212243c05cc40ed",
+      "git_blob_sha1": "8960ec28b354d4143730644fdd23b1a3389b8b6d"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/source_N2453.png",
+      "bytes": 2458240,
+      "sha256": "fc4e14f4b4d32a7fb98b9f7df231c207a02a107e2c4ddf7949b5d60d73cc30f2",
+      "git_blob_sha1": "a99b8ee94bef9fd33d85785e20be2053139cc383"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/source_N2518.png",
+      "bytes": 2949368,
+      "sha256": "3319bcffe1f2b3ec82668645342c9cebc51210cb38d0c85bda12f642a121f71a",
+      "git_blob_sha1": "ce6fc26b6cb87645616ee587389807a4ebfc9be5"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/source_N4037.png",
+      "bytes": 2257244,
+      "sha256": "99b38733c3da782fd6e966aecc8dbc011e1a76ccdcad43ecb3c195aac602a4f6",
+      "git_blob_sha1": "cc80f4b03da282944fd727a18a9870d6e454e1c2"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/source_N6318.png",
+      "bytes": 2145120,
+      "sha256": "67ba8b9a766d146d8bbb0a3cf5cf357fc6822b99335223934e8d9ed6c9cf3ea6",
+      "git_blob_sha1": "e84da0b98adc51b1fd8dadebf523f3b957ef6596"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/source_N6766.png",
+      "bytes": 2261140,
+      "sha256": "03bcf55822db0aaa567b39cf9193ed280b4dc96457d698ea15a9c17dd6575da4",
+      "git_blob_sha1": "535812174f592b80aa186a47d480e384a12cde8d"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/white_detail_bench.png",
+      "bytes": 729983,
+      "sha256": "3ff87ae859c08b7cecf0a4f353d1e1376d757848556a472dc87ce28f26683887",
+      "git_blob_sha1": "460cc7111cb1569b2d7ddb24a41f391f49381d13"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/white_detail_cheek_left.png",
+      "bytes": 722610,
+      "sha256": "39d49e1a83f54a5e4e7c5c3f10c37357853da691802a005b900f9c3504b84ac4",
+      "git_blob_sha1": "67182b5a163f96e4a3235559842c4f7c5c1745e6"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/white_detail_cheek_right.png",
+      "bytes": 710139,
+      "sha256": "75ae5d9e1d824772b8faf6bc79260efc41575043fcb3f7d331ca488319e840d1",
+      "git_blob_sha1": "48a20fc1248404e1f98a05eb9719be7e9c1bd3cb"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/qa/r07/white_main.png",
+      "bytes": 2511620,
+      "sha256": "0b0dfc176c31cfcac27704a42577d9a6ce8f68bd673c16a360be3393c100d581",
+      "git_blob_sha1": "7f6ba7a05000a514ff3efabe09b21a32581eeee0"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/report.md",
+      "bytes": 3317,
+      "sha256": "e2718d49f1d98a4a6112e2b7cf8078c496ce1079e56457cdc8121c799291c526",
+      "git_blob_sha1": "c0cd9a1729ed7192ffa8a3dba0ca719a2fe7d807"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/build_scene.py",
+      "bytes": 25760,
+      "sha256": "53e207a35fb853a8d4372b0de0cf58b01c16378fa6a6aaca7888c8a2177c10b0",
+      "git_blob_sha1": "31901e64d39c4c44aa92e6fd6e4829a068085843"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/check_piano_joints.py",
+      "bytes": 2240,
+      "sha256": "2f5de7b41cb53f7b4f95a050f28e498ab774251c06b19fa4248cd9cc37b987e9",
+      "git_blob_sha1": "cbaec339802b0737205056b51b1907a45478b565"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/file_inventory.py",
+      "bytes": 985,
+      "sha256": "0d941a0323ee2531d72ae688862fa9ad978b3219200181e022e6cfd33784a3dd",
+      "git_blob_sha1": "c9e2e81dcb69329d9fec49ee4d753a222efe6671"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/fit_source_cameras.py",
+      "bytes": 5766,
+      "sha256": "6df6cb6c1ccc5d9ff89d2b5a107cbfd12dbdceb04a145eb29e861890402980dd",
+      "git_blob_sha1": "367ea3f88d686f62c8ed6904e18c03b344435d1a"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/make_review.py",
+      "bytes": 3707,
+      "sha256": "513e21244b7c1d3964e904923a006bd1145dfafea8bf95c1a04df26f2bd1841f",
+      "git_blob_sha1": "6a4d5bad14f0975c0a19c22e65640dc7e4ed98f4"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/make_textures.py",
+      "bytes": 681,
+      "sha256": "eaec50e5e309244790886dc39a429faa96eb5a92788f5fbe99a16631a70e42a8",
+      "git_blob_sha1": "d6e9b80e4f36943821a83bd2d0601635f7096562"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/render_glb_check.py",
+      "bytes": 699,
+      "sha256": "4f8d09a1d8e1614411becc53d0d1fb7254b50375c085e91a38a39da0af18fa28",
+      "git_blob_sha1": "4c6db0abd1b64e2f778c67a81f88ae20f9168b14"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/render_saved_review.py",
+      "bytes": 809,
+      "sha256": "dc28e9334afdc872e018759f8dbda6f67e6aaddf8674b75a5aa7f14347da1992",
+      "git_blob_sha1": "b7dc0ae8adcbdf6d2a89c3730f412f9150f29baa"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/render_white_review.py",
+      "bytes": 618,
+      "sha256": "7a3e5bfe8479d15b7610e42b5ca77906c958aa9f7ccf797be96fc60e7592cb9f",
+      "git_blob_sha1": "a904e9d590518ecb26c1f2b64f47d316fea083c7"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/scripts/validate_scene.py",
+      "bytes": 5660,
+      "sha256": "3aa3a1d4ca6b4999728f8e6c74b8aa283b3d39cc10e313cf898c369006539670",
+      "git_blob_sha1": "c35323235fae8fc103eab053ce60f6e158b02a65"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/sources/native/BV1CY411k7Co_00-40-37_native.png",
+      "bytes": 1777404,
+      "sha256": "221caeb1835b0f6c63c94355e09f8e1d6d8655d0c937a97ad8929536f6fd9115",
+      "git_blob_sha1": "a294877921e8f337f578f12f992c876ceafe5ee2"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/sources/native/BV1CY411k7Co_t2453.795568_native.png",
+      "bytes": 2846269,
+      "sha256": "f17a9b774e1abbff637108ffa495595a664cec3ddd25c9a09632a36457f83866",
+      "git_blob_sha1": "b05795aa20df98055a741fe1a0c2d19262f900cb"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/sources/native/BV1CY411k7Co_t2518.167350_native.png",
+      "bytes": 1531943,
+      "sha256": "58ddc638b212e84d9593b907a18f26573cb0bbd0abd28ca858707fc21a67c574",
+      "git_blob_sha1": "244c8b57b7cf1803676cc29caa2823af70583442"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/sources/native/BV1CY411k7Co_t6318.457925_native.png",
+      "bytes": 1271027,
+      "sha256": "99a511d5bd0fda6d4f8cab46ee9b098d99f9cc9e23c338d74e1612dad81db04e",
+      "git_blob_sha1": "9cbfeed2d65ce472f0caba21db3bbed8c3878112"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/sources/native/BV1CY411k7Co_t6766.766366_native.png",
+      "bytes": 1467192,
+      "sha256": "0a68c6517847658593b04abd4469548e3af06aa1a7daaa40cff28cf402c38835",
+      "git_blob_sha1": "ac83eeeacbd97c6718ef2ebe296334333ed7e6f4"
+    },
+    {
+      "path": "scenes/piano-seaside-exterior/spec.md",
+      "bytes": 956,
+      "sha256": "90a7d706580a08e69ca62ebcf4dfd088e4faec13e561102929c505a5cae193c6",
+      "git_blob_sha1": "10579e33e2e2af79c4bfa48fb9054545ec65cb4d"
+    }
+  ]
+}
