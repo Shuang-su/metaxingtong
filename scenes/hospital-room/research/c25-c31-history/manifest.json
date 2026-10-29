@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:38.754409+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:39.104985+00:00",
   "scene": "hospital",
-  "original_snapshot": "d3de2ae7960a762370c337519029d19ca7561ad4",
-  "original_snapshot_tree": "706ad89148899229456a0c93a96855677f34a941",
+  "original_snapshot": "69b2289eb20600a47be2d17ae6686f484144b9a0",
+  "original_snapshot_tree": "cd35b20ae372e777e6e133174f48ebc5a22be5d5",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -2050,12 +2050,68 @@
       "sha256": "17d1c9cce55f3d5bfa0d39687f6b14bcde85230476ced15f436456b77e38b609"
     },
     {
+      "relative_path": "c30/SCOPE.md",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30/SCOPE.md",
+      "mode": "100644",
+      "git_blob_sha1": "7399d80b5cf78d3e42d04a4c7803ad4eeb727cb6",
+      "bytes": 1275,
+      "sha256": "fa4d60704ac0a220cb6d687500b90bdb097c5672d58b6b74161db8a536cba258"
+    },
+    {
+      "relative_path": "c30/build.log",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30/build.log",
+      "mode": "100644",
+      "git_blob_sha1": "8e16bc15be12f4634b558329c3cc738dc4a67c3c",
+      "bytes": 646,
+      "sha256": "c56deb5525f0dd79dcd96eccec29469a25356b8eccb8050f21a5c928ab14e4ef"
+    },
+    {
+      "relative_path": "c30/build_verification.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30/build_verification.json",
+      "mode": "100644",
+      "git_blob_sha1": "335a71b6512a0901c17c892063845de51afbc6b1",
+      "bytes": 1264781,
+      "sha256": "d73c9531bd5784b5cec384e4c64a41d68594e0c873d2f3049f2185f743b7ed9f"
+    },
+    {
+      "relative_path": "c30/hospital_C30_beddeck_MATERIAL_TRIAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30/hospital_C30_beddeck_MATERIAL_TRIAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "8b64d3b70e9e834c9b066b0198ff1f10be4533a0",
+      "bytes": 13052360,
+      "sha256": "1f03e982614bfcf2bdb4c503fb61b8cb97e5b96512451ba0266fe9eb8e9d6dda"
+    },
+    {
+      "relative_path": "c30/hospital_C30_beddeck_WHITE_TRIAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30/hospital_C30_beddeck_WHITE_TRIAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "7e57a35c730b280a0084cb0159746fd1838fd0c4",
+      "bytes": 8086360,
+      "sha256": "fbe5b11f22a51317e02b31206e6f9e2af44ba09c48f96db0cfc557a237d16aee"
+    },
+    {
       "relative_path": "c30/provenance/C29_delivery_index.json",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30/provenance/C29_delivery_index.json",
       "mode": "100644",
       "git_blob_sha1": "9189433c64365e73904dcfd05a4a19e997defaf3",
       "bytes": 19841,
       "sha256": "4d2017e78e18a0dacc465304a43c519d3e39e6a9883361a21f17066a3396a640"
+    },
+    {
+      "relative_path": "c30/scripts/build_trial.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30/scripts/build_trial.py",
+      "mode": "100644",
+      "git_blob_sha1": "e869fdb62f364a77972a4480dbc5e3ade81c23c6",
+      "bytes": 2923,
+      "sha256": "170082abf8de009b9cffd26ee7f0f5dd4c4332d9bf79c95714da55b8899c8d33"
+    },
+    {
+      "relative_path": "c30/scripts/render_trial_regions.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c30/scripts/render_trial_regions.py",
+      "mode": "100644",
+      "git_blob_sha1": "fdbadc174a0c5cebe2c0387e7ba7d1697d0b1e16",
+      "bytes": 1842,
+      "sha256": "7be28726b12c309064d742b9950a492e2d830b1cef9f0224b6215dd5c1433af9"
     },
     {
       "relative_path": "c30_diagnosis/BED_CONTACT_LIMITS.md",
@@ -4208,6 +4264,18 @@
       "message": "Freeze C30 bed-edge observations and conditional one-DOF scope before mesh changes\n",
       "raw_commit_sha256": "ed4035cee257b4483722fa3464063448b4d8796cd4b82fc7e201a3ea3fd66373",
       "changed_files_raw": "A\tc30/provenance/C29_delivery_index.json\nA\tc30_diagnosis/BED_CONTACT_LIMITS.md\nA\tc30_diagnosis/BED_EDGE_IDENTITY_REVIEW.md\nA\tc30_diagnosis/G_bed_edge_C28_native.png\nA\tc30_diagnosis/G_bed_edge_source_native.png\nA\tc30_diagnosis/HEIGHT_1DOF_RESULT.md\nA\tc30_diagnosis/N642_bed_edge_C28_native.png\nA\tc30_diagnosis/N642_bed_edge_source_native.png\nA\tc30_diagnosis/README_BED_DECK_DIAGNOSIS.md\nA\tc30_diagnosis/bed_actual_world_bounds.json\nA\tc30_diagnosis/bed_snapshot_projection.json\nA\tc30_diagnosis/c28_actual_bed_objects.json\nA\tc30_diagnosis/camera_relative_to_bed_conditional.json\nA\tc30_diagnosis/corrected_bed_edge_observations.json\nA\tc30_diagnosis/fit_height_projection_only.py\nA\tc30_diagnosis/height_projection_fit.json\nA\tc30_diagnosis/inspect_actual_bed.log\nA\tc30_diagnosis/inspect_actual_bed.py\nA\tc30_diagnosis/reproduce_bed_diagnosis.py\n"
+    },
+    {
+      "commit": "69b2289eb20600a47be2d17ae6686f484144b9a0",
+      "parents": [
+        "d3de2ae7960a762370c337519029d19ca7561ad4"
+      ],
+      "tree": "cd35b20ae372e777e6e133174f48ebc5a22be5d5",
+      "author": "Codex <codex@openai.com> 1792412990 +0900",
+      "committer": "Codex <codex@openai.com> 1792412990 +0900",
+      "message": "Build isolated C30 deck-height trial preserving mattress thickness and extending hypothetical supports\n",
+      "raw_commit_sha256": "3da2f6a40240d889e8b1d945bdde176a763cc0290108136248277145f9a738e2",
+      "changed_files_raw": "A\tc30/SCOPE.md\nA\tc30/build.log\nA\tc30/build_verification.json\nA\tc30/hospital_C30_beddeck_MATERIAL_TRIAL.blend\nA\tc30/hospital_C30_beddeck_WHITE_TRIAL.blend\nA\tc30/scripts/build_trial.py\nA\tc30/scripts/render_trial_regions.py\n"
     }
   ],
   "historical_only_blobs": [
