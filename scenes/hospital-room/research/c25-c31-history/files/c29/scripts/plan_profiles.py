@@ -3,7 +3,7 @@ import numpy as np,json
 from scipy.interpolate import CubicSpline
 from scipy.spatial import ConvexHull
 R=Path(__file__).resolve().parents[2];P=R/'c29';j=json.load(open(R/'c29_diagnosis/c28_curtain_mesh_readonly.json'));v=np.array(j['verts_local']);m=np.array(j['matrix_world']);cams=json.load(open(R/'c27/blinds_projection_source.json'))['cameras'];n=225;layers=65;profile=v[:n,0];old=profile[:29].copy();old[-1]=old[0];spline=CubicSpline(np.arange(29)/28,old,bc_type='periodic');variants={};out={}
-for count in [5,6]:
+for count in [5,6,7]:
  w=v.copy();cols=np.arange(n);t=np.clip((cols-28)/168,0,1);d=count-2;phase=d*t+(6-d)*(t-3*t*t+2*t*t*t);x=spline(phase%1);delta=x-profile;delta[(cols<=28)|(cols>=196)]=0
  for face in range(2):
   for z in range(layers):w[face*n*layers+z*n:face*n*layers+(z+1)*n,0]+=delta
