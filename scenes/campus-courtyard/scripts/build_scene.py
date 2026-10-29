@@ -109,7 +109,7 @@ def catmull(points):
         for j in range(15):
             t=j/15;result.append(.5*((2*p1)+(-p0+p2)*t+(2*p0-5*p1+4*p2-p3)*t*t+(-p0+3*p1-3*p2+p3)*t*t*t))
     result.append(Vector(points[-1]));return result
-track=catmull([(-31,-12),(-19,-10),(-10,-6),(-5,0),(-2.5,8),(-2.5,19)])
+track=catmull([(-31,-18),(-19,-15),(-10,-12),(-4,-7),(-2.5,2),(-2.5,19)])
 def ribbon(a,points,left,right,z,h,mat):
     vs=[]
     for i,p in enumerate(points):
@@ -123,14 +123,14 @@ def ribbon(a,points,left,right,z,h,mat):
 a=A('TRACK-ARC','partial curved track','SRC01,SRC02','red curved band with parallel white markings','path curvature, lane count beyond occlusion; not a 400m circuit');ribbon(a,track,-3.6,3.6,.015,.035,red)
 for off in [-3.52,-1.75,0,1.75,3.52]:ribbon(a,track,off-.035,off+.035,.051,.004,line)
 a.finish()
-for id,c,d,mat in [('COURT-NE',(10.5,16,.07),(18,13,.08),cyan),('COURT-E',(13.5,-.8,.04),(12,10,.04),red),('COURT-E-IN',(13.5,-.8,.065),(10.7,7,.01),green)]:
+for id,c,d,mat in [('COURT-NE',(10.5,16,.07),(18,13,.08),cyan),('COURT-E',(13.5,-7.5,.04),(12,21,.04),red),('COURT-E-IN',(13.5,-7.5,.065),(10.7,18,.01),green)]:
     a=A(id,'partial sports surface','SRC01,SRC02,SRC03','finite cyan/green/red sport surface edges','exact dimensions, standard sport specification unproven');a.box(c,d,mat);a.finish()
 a=A('COURT-MARKINGS','court lines');
 for x in [2,9,19]:a.box((x,16,.118),(.045,12,.008),line)
 for y in [10,16,22]:a.box((10.5,y,.118),(17,.045,.008),line)
-for y in [-4.15,2.55]:a.box((13.5,y,.077),(10.5,.045,.008),line)
-a.box((8.25,-.8,.077),(.045,6.7,.008),line)
-pts=[(14.4+2.5*math.cos(t*math.pi/48),-.8+2.5*math.sin(t*math.pi/48),.078) for t in range(97)]
+for y in [-16.35,1.35]:a.box((13.5,y,.077),(10.5,.045,.008),line)
+a.box((8.25,-7.5,.077),(.045,17.7,.008),line)
+pts=[(14.4+2.5*math.cos(t*math.pi/48),-7.5+2.5*math.sin(t*math.pi/48),.078) for t in range(97)]
 a.path(pts,.024,line,6);a.finish()
 
 # L-shaped finite buildings. Actual apertures: pier/spandrel assembly, no solid slab behind glass.
@@ -185,7 +185,7 @@ a.path([(19.7,9.1,12.6),(19.7,9.1,1),(19.45,9.1,.8),(19.45,9.1,.5)],.075,trim);a
 
 def tree(id,x,y,r,h,pink=False):
     a=A(id,'volumetric tree','SRC01,SRC02,SRC03','trunk/canopy silhouette and approximate shared location','all branching topology, hidden roots, leaf distribution')
-    a.tube((x,y,.22),(x+.12,y,h*.5),r,bark,r*.56,16)
+    a.tube((x,y,0),(x+.12,y,h*.5),r,bark,r*.56,16)
     for k in range(9):
         ang=k*2.399+random.uniform(-.2,.2);z=h*(.30+.036*k)
         start=Vector((x+.08,y,z));end=Vector((x+math.cos(ang)*h*.25,y+math.sin(ang)*h*.25,h*(.66+random.random()*.17)))
@@ -199,13 +199,13 @@ def tree(id,x,y,r,h,pink=False):
                 s=random.uniform(.16,.38);a.sphere(c,(s*1.5,s,s*.45),leafs[4] if pink else random.choice(leafs[:4]),6,3)
     a.finish()
 def treebed(id,x,y,r):
-    a=A(id,'tree bed','SRC01,SRC02','circular low concrete rim and soil inside','exact section and buried foundation');a.ring((x,y,.02),r,r-.16,.39,trim);a.tube((x,y,.01),(x,y,.19),r-.16,soil,n=64);a.finish()
+    a=A(id,'tree bed','SRC01,SRC02','circular low concrete rim and soil inside','exact section and buried foundation');a.ring((x,y,0),r,r-.16,.39,trim);a.tube((x,y,0),(x,y,.19),r-.16,soil,n=64);a.finish()
 treebed('TREEBED-01',3.9,-3.1,2.24);tree('TREE-01',3.9,-3.1,.68,16)
 tree('TREE-02',-12,16,.45,12)
 tree('TREE-03',13,13,.36,11)
 tree('TREE-04',15,6,.32,12,True)
-tree('TREE-05',18,-5.5,.36,12)
-treebed('TREEBED-05',18,-5.5,.9)
+tree('TREE-05',17.8,-8.5,.36,15)
+treebed('TREEBED-05',17.8,-8.5,.9)
 tree('TREE-06',-24,20,.45,13)
 tree('TREE-07',8,24,.25,10)
 
@@ -236,7 +236,7 @@ def bench(id,x,y,rot=0):
     for v in [-.26,-.09,.08,.25]:a.box(p(0,v,.57),(2.35,.14,.10),wood,rot)
     for z in [.83,1.03,1.23]:a.box(p(0,.36+(z-.8)*.2,z),(2.35,.11,.15),wood,rot)
     for u in [-.88,.88]:
-        a.path([p(u,-.36,.06),p(u,-.24,.48),p(u,.23,.55),p(u,.38,.06)],.045,metal)
+        a.path([p(u,-.36,.025),p(u,-.24,.48),p(u,.23,.55),p(u,.38,.025)],.045,metal)
         a.path([p(u,.23,.48),p(u,.33,.85),p(u,.45,1.34)],.035,metal)
     a.finish()
 bench('BENCH-01',3.6,10);bench('BENCH-02',-7.8,18);bench('BENCH-03',-13,21);bench('BENCH-04',13,20)
@@ -264,7 +264,7 @@ def hoop(id,x,y,z,rot=0):
     a=A(id,'basketball stand','SRC01,SRC02,SRC03','black post, angled brace, rectangular board and rim/net','base plate/anchors and hidden support sections')
     co=math.cos(rot);si=math.sin(rot)
     def p(u,v,zz):return(x+u*co-v*si,y+u*si+v*co,zz)
-    a.box(p(0,.9,.10),(.65,.65,.15),metal,rot);a.box(p(0,.9,z*.36),(.23,.23,z*.72),metal,rot)
+    a.box(p(0,.9,.075),(.65,.65,.15),metal,rot);a.box(p(0,.9,z*.36),(.23,.23,z*.72),metal,rot)
     for u in [-.17,.17]:a.tube(p(u,.9,z*.65),p(u,0,z),.07,metal)
     a.box(p(0,0,z+.36),(1.9,.13,1.25),metal,rot);a.box(p(0,-.075,z+.36),(1.77,.018,1.12),plaster,rot)
     for u in [-.36,.36]:a.box(p(u,-.095,z+.23),(.03,.02,.49),metal,rot)
@@ -348,7 +348,7 @@ else:
 manifest=[]
 for o in scene.objects:
     if o.type=='MESH':
-        manifest.append({'id':o.name,'category':o.get('category'),'sources':o.get('source_ids'),'observed':o.get('observed'),'inferred':o.get('inferred'),'vertices':len(o.data.vertices),'polygons':len(o.data.polygons),'bounds':[list(map(float,v)) for v in o.bound_box]})
+        manifest.append({'id':o.name,'category':o.get('category'),'sources':o.get('source_ids'),'observed':o.get('observed'),'inferred':o.get('inferred'),'vertices':len(o.data.vertices),'polygons':len(o.data.polygons),'world_bounds':[list(map(float,o.matrix_world@Vector(v))) for v in o.bound_box]})
 (OUT/'object_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 (OUT/'camera_parameters.json').write_text(json.dumps({k:{'location':v[0],'target':v[1],'lens_mm':v[2],'sensor_width_mm':36,'calibrated':False,'role':'conditional source' if k.startswith('SRC') else 'internal inspection'} for k,v in CAMERAS.items()},indent=2))
 print('BUILD_COMPLETE',stage,len(manifest))
