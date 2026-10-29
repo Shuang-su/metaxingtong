@@ -1,0 +1,8 @@
+import bpy,json,hashlib,time,sys
+from pathlib import Path
+R=Path(__file__).resolve().parents[1];args=sys.argv[sys.argv.index('--')+1:];P=Path(args[0]);label=args[1];views=args[2:] or ['H','G','665'];O=P.parent/'review_renders';O.mkdir(exist_ok=True);before=hashlib.sha256(P.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(P));s=bpy.context.scene
+s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=16;s.cycles.use_adaptive_sampling=False;s.cycles.use_denoising=False;s.view_layers[0].cycles.use_denoising=False;s.cycles.seed=0;s.render.threads_mode='FIXED';s.render.threads=4;s.render.resolution_x=1920;s.render.resolution_y=1080;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG';s.render.image_settings.color_mode='RGB'
+D={'input_model':str(P),'input_sha256':before,'label':label,'settings':{'engine':'Cycles','samples':16,'denoise':False,'seed':0,'resolution':[1920,1080]},'renders':[]}
+for k in views:
+ c=bpy.data.objects['C10_'+k+'_shared_sofa_height_CONDITIONAL'];s.camera=c;p=O/(k+'_'+label+'_RAW_1920x1080.png');s.render.filepath=str(p);t=time.time();bpy.ops.render.render(write_still=True);D['renders'].append({'view':k,'camera':c.name,'matrix':[list(r) for r in c.matrix_world],'lens':c.data.lens,'sensor_fit':c.data.sensor_fit,'sensor_width':c.data.sensor_width,'shift':[c.data.shift_x,c.data.shift_y],'path':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'seconds':time.time()-t});json.dump(D,open(O/(label+'_render_manifest.json'),'w'),indent=2);print('RAW_READY',k,flush=True)
+assert hashlib.sha256(P.read_bytes()).hexdigest()==before

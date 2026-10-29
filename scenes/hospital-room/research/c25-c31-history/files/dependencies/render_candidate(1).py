@@ -1,0 +1,8 @@
+import bpy,json,hashlib,time,sys
+from pathlib import Path
+R=Path(__file__).resolve().parent;P=Path(sys.argv[sys.argv.index('--')+1]).resolve();before=hashlib.sha256(P.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(P));s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=16;s.cycles.use_adaptive_sampling=False;s.cycles.use_denoising=False;s.view_layers[0].cycles.use_denoising=False;s.cycles.seed=0;s.render.threads_mode='FIXED';s.render.threads=4;s.render.resolution_x=1920;s.render.resolution_y=1080;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG';s.render.image_settings.color_mode='RGB'
+D=dict(status='C22_REAR_POST_REPAIR_ACTUAL_REVIEW_RAW_NOT_ACCEPTANCE',input_model=str(P),input_sha256=before,no_model_save=True,no_geometry_material_visibility_changes=True,settings=dict(engine='Cycles',samples=16,denoise=False,seed=0,resolution=[1920,1080]),renders=[])
+for v in ['G','H','665']:
+ c=bpy.data.objects['C10_'+v+'_shared_sofa_height_CONDITIONAL'];s.camera=c;out=R/(v+'_C22_RAW_1920x1080.png');s.render.filepath=str(out);t=time.time();bpy.ops.render.render(write_still=True);D['renders'].append(dict(view=v,camera=c.name,matrix=[list(r)for r in c.matrix_world],lens=c.data.lens,sensor_fit=c.data.sensor_fit,sensor_width=c.data.sensor_width,shift=[c.data.shift_x,c.data.shift_y],path=str(out),sha256=hashlib.sha256(out.read_bytes()).hexdigest(),seconds=time.time()-t));(R/'render_manifest.json').write_text(json.dumps(D,indent=2));print('RAW_READY',v,str(out),flush=True)
+assert hashlib.sha256(P.read_bytes()).hexdigest()==before
+print('INPUT_MODEL_SHA_UNCHANGED',flush=True)
