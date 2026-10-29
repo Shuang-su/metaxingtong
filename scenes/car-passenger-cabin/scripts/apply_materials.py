@@ -44,6 +44,7 @@ for o in s.objects:
             uv.data[li].uv=(co[axes[0]]*4,co[axes[1]]*4)
 assert geometry_digest()==digest_before
 s['geometry_digest']=digest_before;s['material_notes']='Synthetic PBR approximations; no source-extracted texture or source lighting match claim. UV image textures exported; fine bump is Blender detail only.'
+bpy.ops.file.pack_all()
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'models/car_passenger_cabin_material.blend'))
 (R/'qa/material-geometry-identity.json').write_text(json.dumps({'vertex_polygon_digest_before':digest_before,'vertex_polygon_digest_after':geometry_digest(),'same_geometry':True,'material_groups':list(materials),'geometry_objects':len([o for o in s.objects if o.type=='MESH']),'procedural_bump_export_limit':'Blender bump nodes not guaranteed in GLB; basecolor and roughness image textures supported'},indent=2)+'\n')
 print('MATERIAL_SAVED',digest_before)
