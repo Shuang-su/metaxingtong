@@ -6,12 +6,12 @@ from pathlib import Path
 from mathutils import Vector, Matrix
 from math import sin, cos, pi
 ROOT=Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser(); p.add_argument('--stage',default='r01');p.add_argument('--render',default='preview',choices=['none','preview','all']);args=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
+p=argparse.ArgumentParser(); p.add_argument('--stage',default='r05');p.add_argument('--render',default='preview',choices=['none','preview','all']);args=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
 OUT=ROOT/'models'/args.stage; QA=ROOT/'qa'/args.stage
 OUT.mkdir(parents=True,exist_ok=True);QA.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 sc=bpy.context.scene;sc.unit_settings.system='NONE';sc['status']='conditional reconstruction candidate; source review pending; no user acceptance';sc['units']='relative model units; no measured scale';sc['source_state']='single approximate sunset material and light state, shared by every camera'
-sc.render.engine='BLENDER_EEVEE_NEXT';sc.cycles.samples=48;sc.cycles.use_denoising=False
+sc.render.engine='BLENDER_EEVEE_NEXT';sc.eevee.taa_render_samples=32;sc.cycles.samples=48;sc.cycles.use_denoising=False
 sc.render.resolution_percentage=100;sc.render.image_settings.file_format='PNG';sc.view_settings.view_transform='AgX'
 sc.world=bpy.data.worlds.new('Approximate sunset environment');sc.world.use_nodes=True
 n=sc.world.node_tree.nodes; l=sc.world.node_tree.links;n.clear()
@@ -33,10 +33,9 @@ water=mat('Sea approximation',(.075,.10,.16),.42,.22);glow=mat('Lantern warm ins
 weave=mat('Chair basket weave',(.09,.052,.025),0,.9);sailmat=mat('Distant sail cloth',(.43,.35,.32),0,.9)
 # Image texture is generated locally, not sampled or disguised as source imagery.
 if (ROOT/'textures/deck_color.png').exists():
- nt=wood.node_tree;bs=nt.nodes.get('Principled BSDF');tc=nt.nodes.new('ShaderNodeTexCoord');im=nt.nodes.new('ShaderNodeTexImage');im.image=bpy.data.images.load(str(ROOT/'textures/deck_color.png'));nt.links.new(tc.outputs['Generated'],im.inputs[0]);nt.links.new(im.outputs[0],bs.inputs['Base Color'])
- im2=nt.nodes.new('ShaderNodeTexImage');im2.image=bpy.data.images.load(str(ROOT/'textures/deck_roughness.png'));im2.image.colorspace_settings.name='Non-Color';nt.links.new(tc.outputs['Generated'],im2.inputs[0]);nt.links.new(im2.outputs[0],bs.inputs['Roughness'])
-for m,scale,strength in [(sand,8,.16),(water,1.1,.13)]:
- nt=m.node_tree;bs=nt.nodes.get('Principled BSDF');noise=nt.nodes.new('ShaderNodeTexNoise');noise.inputs['Scale'].default_value=scale;noise.inputs['Detail'].default_value=3;bump=nt.nodes.new('ShaderNodeBump');bump.inputs['Strength'].default_value=strength;bump.inputs['Distance'].default_value=.06;nt.links.new(noise.outputs['Fac'],bump.inputs['Height']);nt.links.new(bump.outputs[0],bs.inputs['Normal'])
+ nt=wood.node_tree;bs=nt.nodes.get('Principled BSDF');tc=nt.nodes.new('ShaderNodeTexCoord');im=nt.nodes.new('ShaderNodeTexImage');im.image=bpy.data.images.load(str(ROOT/'textures/deck_color.png'));nt.links.new(tc.outputs['UV'],im.inputs[0]);nt.links.new(im.outputs[0],bs.inputs['Base Color'])
+ im2=nt.nodes.new('ShaderNodeTexImage');im2.image=bpy.data.images.load(str(ROOT/'textures/deck_roughness.png'));im2.image.colorspace_settings.name='Non-Color';nt.links.new(tc.outputs['UV'],im2.inputs[0]);nt.links.new(im2.outputs[0],bs.inputs['Roughness'])
+# Sand and water use portable uniform PBR; procedural bumps removed for GLB parity.
 # Stable IDs and epistemic status are on every geometry object.
 def tag(o,id,material,status='inferred dimensions; observed object class'):
  o['evidence_id']=id;o['evidence_status']=status;o['camera_independent']=True
@@ -90,15 +89,21 @@ for i in range(62):
 for yy in [1.12,1.45]:
  bpy.ops.mesh.primitive_torus_add(major_radius=.068,minor_radius=.009,major_segments=24,minor_segments=8,location=(-.42,yy,.951));tag(bpy.context.object,'P09_harp',gold);bpy.context.object.name='P09 open soundboard ring'
 # Lid thickness and raised edge; one transform shared across all cameras.
-lid=prism('P02 raised lid',poly,0,.045,ivory,'P02_lid');hinge=Vector((-.78,0,1.21));tilt=math.radians(24)
+lid_poly=[]
+for i,a in enumerate(poly):
+ b=poly[(i+1)%len(poly)]
+ if a[1]>=.38:lid_poly.append(a)
+ if (a[1]>=.38)!=(b[1]>=.38):
+  t=(.38-a[1])/(b[1]-a[1]);lid_poly.append((a[0]+t*(b[0]-a[0]),.38))
+lid=prism('P02 raised lid',lid_poly,0,.045,ivory,'P02_lid');hinge=Vector((-.78,0,1.21));tilt=math.radians(31)
 R=Matrix.Rotation(-tilt,4,'Y');lid.matrix_world=Matrix.Translation(hinge)@R@Matrix.Translation((.78,0,0))
 def lid_pt(x,y,z):return lid.matrix_world@Vector((x,y,z))
-a=lid_pt(.68,.2,.045);b=lid_pt(-.65,.2,.045);rod('P02 lid front reinforcement',a,b,.024,ivoryedge,'P02_lid',8)
+a=lid_pt(.73,.42,.045);b=lid_pt(-.75,.42,.045);rod('P02 lid front reinforcement',a,b,.024,ivoryedge,'P02_lid',8)
 rod('P03 lid support',(.55,.62,1.02),lid_pt(.62,.62,0),.014,gold,'P03_prop')
 rod('P02 hinge',(-.78,.1,1.2),(-.78,2,1.2),.012,gold,'P02_lid')
 # Keyboard and cheeks.
 cube('P04 keybed', (0,-.19,.72),(1.56,.43,.12),ivory,'P04_keys',.025)
-cube('P04 fallboard',(0,.015,.99),(1.44,.055,.40),ivory,'P04_keys',.015)
+cube('P04 fallboard',(0,.015,.94),(1.44,.055,.28),ivory,'P04_keys',.015)
 for sx in [-1,1]:
  # Explicit curved-looking cheek made with profile, extruded in X.
  profile=[(-.40,.70),(.10,.70),(.10,1.19),(.02,1.19),(-.01,1.04),(-.08,.88),(-.20,.82),(-.4,.82)];vs=[(sx*.73+dx,y,z) for dx in [-.045,.045] for y,z in profile];nn=len(profile);fs=[tuple(range(nn-1,-1,-1)),tuple(range(nn,nn*2))]+[(i,(i+1)%nn,(i+1)%nn+nn,i+nn) for i in range(nn)];mesh('P04 cheek '+str(sx),vs,fs,ivory,'P04_keys')
@@ -157,9 +162,9 @@ def lantern(id,loc,size):
   for dy in [-.5,.5]:rod(id+' upright',(x+dx*s,y+dy*s,z+.04),(x+dx*s,y+dy*s,z+s),.009,dark,id)
  cube(id+' top',(x,y,z+s),(s,s,.025),dark,id,.005)
  bpy.ops.object.light_add(type='POINT',location=(x,y,z+s*.55));bpy.context.object.data.energy=18*s/.25;bpy.context.object.data.color=(1,.32,.055);bpy.context.object.data.shadow_soft_size=s*.4
-lantern('L01_lantern',(-.92,1.22,0),.25);lantern('L02_lantern',(5.45,-3.6,-.08),.27)
+lantern('L01_lantern',(-.92,1.22,0),.25);lantern('L02_lantern',(7.2,-5.5,-.08),.27)
 # Woven chair, true open weave and separate supporting frame.
-cx,cy=5.55,-2.45
+cx,cy=7.2,-4.1
 for sx in [-1,1]:
  for sy in [-1,1]:rod('C01 chair leg',(cx+sx*.30,cy+sy*.26,-.08),(cx+sx*.25,cy+sy*.22,.45),.022,dark,'C01_chair')
  rod('C01 back upright',(cx+sx*.25,cy+.22,.4),(cx+sx*.27,cy+.32,.88),.018,dark,'C01_chair')
@@ -172,7 +177,7 @@ for i in range(14):
  y=cy-.23+i*.46/13;rod('C01 seat weave Y',(cx-.25,y,.45),(cx+.25,y,.45),.007,weave,'C01_chair',6)
  z=.46+i*.40/13;y=cy+.22+(z-.46)*.25;rod('C01 back weave Y',(cx-.25,y+.006,z),(cx+.25,y+.006,z),.007,weave,'C01_chair',6)
 # Low open basket with visible spaced slats, not a painted black hole.
-kx,ky=5.1,-1.65
+kx,ky=7,-3.1
 bpy.ops.mesh.primitive_cylinder_add(vertices=32,radius=.15,depth=.025,location=(kx,ky,-.065));tag(bpy.context.object,'K01_basket',weave)
 for i in range(24):
  a=i*2*pi/24;rod('K01 basket upright',(kx+.15*cos(a),ky+.15*sin(a),-.06),(kx+.19*cos(a),ky+.19*sin(a),.20),.009,weave,'K01_basket',6)
@@ -195,7 +200,7 @@ hull('V01_boat',(6.4,3.7,-.34),2.4,1.0)
 cube('V01 inferred seat',(6.4,3.7,-.12),(.87,.25,.08),boatwood,'V01_boat')
 rod('V01 windshield bar',(5.97,3.93,.07),(6.83,3.93,.07),.015,dark,'V01_boat')
 # Far boat distance / scale not identified by a single image.
-vx,vy,vz=35,-8,-.34;hull('V02_sailboat',(vx,vy,vz),2.5,.8)
+vx,vy,vz=40,-4,-.34;hull('V02_sailboat',(vx,vy,vz),2.5,.8)
 rod('V02 mast',(vx,vy,0),(vx,vy,3.5),.025,dark,'V02_sailboat')
 prism('V02 sail',[(vx+.015,vy),(vx+.045,vy),(vx+.045,vy+1.30)],.25,.27,sailmat,'V02_sailboat')
 # Replace horizontal placeholder sail with true vertical finite triangular prism.
@@ -210,9 +215,10 @@ def camera(name,loc,target,lens=50):
  bpy.ops.object.camera_add(location=loc);o=bpy.context.object;o.name=name;o.data.lens=lens;o.data.clip_end=1000;aim(o,target);o['role']='inspection' if name.startswith('check') else 'conditional source camera fit';return o
 cams={}
 cams['source_N6318']=camera('source_N6318',(-5.9,-2.1,1.2),(.05,.75,1.55),48)
-cams['source_N4037']=camera('source_N4037',(-4.5,-.2,2.2),(-.1,-.3,1.22),50)
+cams['source_N4037']=camera('source_N4037',(-4.5,-.2,2.65),(-.1,.1,1.22),50)
 cams['source_N2518']=camera('source_N2518',(1.12,-1.12,1.21),(-.04,-.05,.87),44)
-cams['source_N2453']=camera('source_N2453',(3.8,4.0,3.3),(-.02,.95,1.0),52)
+cams['source_N2453']=camera('source_N2453',(3.8,4.0,3.3),(-.4,.95,1.0),58)
+cams['source_N6766']=camera('source_N6766',(1.2,-1.1,.65),(.1,-.05,1.0),35)
 cams['main']=camera('main',(-5.2,-6.4,4.1),(0,1,.65),45)
 for i in range(8):
  a=2*pi*i/8;cams['check_%02d'%i]=camera('check_%02d'%i,(7.5*cos(a),.8+7.5*sin(a),4.1 if i%2 else 3),(0,.8,.6),42)
@@ -240,7 +246,7 @@ for o in objects:
  for m in original[o.name]:o.data.materials.append(m)
 # Exports above are complete even if an optional render fails.
 if args.render!='none':
- keys=['source_N6318','source_N4037','source_N2518','source_N2453'] if args.render=='preview' else list(cams)
+ keys=['source_N6318','source_N4037','source_N2518','source_N2453','source_N6766'] if args.render=='preview' else list(cams)
  for name in keys:
   sc.camera=cams[name];sc.render.resolution_x=960 if args.render=='preview' or name.startswith('check') else 1920;sc.render.resolution_y=540 if args.render=='preview' or name.startswith('check') else 1080;sc.render.filepath=str(QA/(name+'.png'));bpy.ops.render.render(write_still=True)
 (QA/'build-summary.json').write_text(json.dumps({'stage':args.stage,'blender_version':bpy.app.version_string,'mesh_objects':len(objects),'common_geometry_for_all_cameras':True,'units':'model units','material_and_white_share_geometry':True,'native_source_alignment':'conditional manual perspective fit, not calibrated','status':'candidate, source review pending'},indent=2)+'\n')
