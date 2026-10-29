@@ -4,12 +4,14 @@
 
 ## 来源与范围
 
-- BV1GqXMByE1s：<https://www.bilibili.com/video/BV1GqXMByE1s/>。标题、直播日期、实时渲染或预录属性未知。
-- 当前本环境实际物化和查看 1 张原生源：`source/native/BV1GqXMByE1s_t3368.109825_native.png`；1920×1080、4,118,719 字节、SHA256 `74bdf120b0878582cb0a85b7e2934f768f1fa621d5fa389df5d73be7bd81f07f`。
+- BV1GqXMByE1s：<https://www.bilibili.com/video/BV1GqXMByE1s/>。权威采集清单标题为【直播回放】【3D】进来治臆症！2026年03月27日19点场；实时渲染或预录属性未知。
+- 首张来源：`source/native/BV1GqXMByE1s_t3368.109825_native.png`；1920×1080、4,118,719 字节、SHA256 `74bdf120b0878582cb0a85b7e2934f768f1fa621d5fa389df5d73be7bd81f07f`。
 - Library ID `libfile_c0cdef075f28819184fe5049fbcc983e`，当前 Library 版本 0；物化使用当前官方 Library helper，并保存本地身份属性。
 - 采集线程回报：保存前后 currentTime=3368.109825、paused=true、readyState=4、1920×1080 一致；选择 1080P 高清，更高 1080P 高码率有 VIP 限制。本线程没有重做播放器采集，不能声称高码率生效。播放器小数时间不是容器 PTS。
 - 采集线程实际观看证明 3336 秒后全身表演、3600–3650 互动段，以及 3344.776–3345.722 四次连续观察中固定物的连续相对投影变化。这是上游回报，不是本线程新增观看；本图自身也不能证明实时直播渲染。后续其他回放同场验证仍缺。
 - 可见范围：灰色网格砖广场、近景圆树池与树、左草地及球门/网、弯曲红色跑道白线、后方四排主要可见窗的浅灰教学楼立面、右侧有限蓝绿运动面与局部篮架、弧形路灯、长凳、花池。
+
+当前本环境已实际物化、核对字节/SHA/解码并查看全部 **4 张**原生源，均为 1920×1080。后续三图及完整采集清单见 `source/acquisition.json` 和保留原字节的 `source/SOURCE_HANDOFF.md`。全部同 BV，不能充作跨回放同场验证。
 
 ## 制作约束
 
