@@ -1,6 +1,6 @@
 # 海边钢琴外景：2026-10-29 新建候选
 
-**重建候选 / 待来源复核 / 未经用户接受。** 今日在独立`scene/piano-seaside`分支实际新建，不是已有钢琴门廊或海边吧台改名。暂称第17场景候选，不等于新增场景已验收。本轮只作本地制作与验证，没有push、PR或Issue评论。
+**重建候选 / 待来源复核 / 未经用户接受。** 今日在独立`scene/piano-seaside`分支实际新建，不是已有钢琴门廊或海边吧台改名。暂称第17场景候选，不等于新增场景已验收。R01–R06制作阶段仅本地操作；后续按明确授权正常Git发布到当前私库，并建立[Issue #76](https://github.com/Shuang-su/metaxingtong/issues/76)与[Draft PR #77](https://github.com/Shuang-su/metaxingtong/pull/77)。未合并，未改变私有可见性。详见[发布报告](report.md)。
 
 ![R06候选主视角](qa/r06/main.png)
 
