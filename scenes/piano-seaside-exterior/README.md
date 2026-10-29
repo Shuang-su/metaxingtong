@@ -4,13 +4,15 @@
 
 ![R07候选主视角](qa/r07/main.png)
 
+R08仅更新N6766近景相机，几何/有效材质/灯光及其他17机位保持R07；校准仍未通过。[小联系图](qa/r08/N6766-camera-comparison.jpg) · [R08说明与不变项](qa/r08/review.md) · [主图JPEG预览（R07原PNG派生，无缩放）](qa/r08/main_R07_retained_preview.jpg)。其余主图、检查图、GLB保留R07原件，未重渲。
+
 ## 当前候选原文件
 
 | 文件 | 作用 |
 |---|---|
-| [材质BLEND](models/r07/piano_seaside_material.blend) | 可编辑对象、材质、修饰器，木纹PNG已打包 |
+| [材质BLEND](models/r08/piano_seaside_material.blend) | 可编辑对象、材质、修饰器，木纹PNG已打包 |
 | [材质GLB](models/r07/piano_seaside_material.glb) | 实际跨格式导出并回导检查 |
-| [同几何白模BLEND](models/r07/piano_seaside_white.blend) | 仅替换材质的诊断白模 |
+| [同几何白模BLEND](models/r08/piano_seaside_white.blend) | 仅替换材质的诊断白模 |
 | [同几何白模GLB](models/r07/piano_seaside_white.glb) | 实际导出并回导检查 |
 | [5组来源/渲染/直接叠图](qa/r07/source-render-overlay-contact.jpg) | 原生图保持原样；机位为带不确定度的共同几何条件性透视拟合 |
 | [9角检查联系表](qa/r07/inspection-contact.jpg) | 普通检查角度，不充作来源基线 |
