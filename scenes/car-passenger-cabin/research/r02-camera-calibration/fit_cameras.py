@@ -2,7 +2,7 @@
 Manual point/line/ellipse annotations are candidate correspondences, not calibration truth.
 No image warps, principal-point shift, distortion, person dimensions or per-view geometry.
 """
-import numpy as np,json,math
+import numpy as np,json,math,sys
 from scipy.optimize import least_squares
 from scipy.spatial import cKDTree
 from pathlib import Path
@@ -37,7 +37,10 @@ def feature_residual(p,id,name):
  geo=G['states'][str(G['cameras'][id]['state'])];obs=A[id][name];pr=project(p,geo[name])
  if name=='vent_rim':return signed_ellipse_distance(pr[::10],ELL[id])
  if name.endswith('_line') or name=='a_inner_edge':
-  a,b=pr;d=b-a;normal=np.array([-d[1],d[0]])/np.linalg.norm(d);return (np.asarray(obs)-a)@normal
+  # Finite projected support matters: an infinite fitted line can match while
+  # the physical door ends halfway across the source image.
+  a,b=pr;d=b-a;obs=np.asarray(obs);t=np.clip(((obs-a)@d)/(d@d),0,1)
+  return np.ravel(a+t[:,None]*d-obs)
  return pr-np.asarray(obs)
 def residual(p,id,active=TRAIN):
  out=[]
@@ -53,16 +56,17 @@ def summary(p,id):
   if obs is None:continue
   rr=np.ravel(feature_residual(p,id,name));rows[name]={'rms_pixels':float(np.sqrt(np.mean(rr*rr))),'max_abs_pixels':float(abs(rr).max()),'residual_components_pixels':rr.tolist(),'role':'fit' if name in TRAIN else 'held-out'}
  return rows
-lo=[-3.5,-1.7,.60,-1.1,-.55,-.20,14];hi=[.50,1.40,1.95,1.1,.55,.20,70]
-rng=np.random.default_rng(73);results={}
-for id,c in G['cameras'].items():
- p0=np.array(c['position']+c['yaw_pitch_roll']+[c['lens']]);trials=[]
- for k in range(18):
-  seed=p0 if k==0 else np.clip(p0+rng.normal(0,[.3,.25,.14,.15,.10,.03,5]),np.array(lo)+1e-6,np.array(hi)-1e-6)
-  fit=least_squares(residual,seed,args=(id,),bounds=(lo,hi),loss='soft_l1',f_scale=1.5,max_nfev=1800,xtol=1e-10,ftol=1e-10,gtol=1e-10)
-  trials.append(fit)
- best=min(trials,key=lambda x:x.cost);p=best.x
- # Holdout tests above are never used by the optimizer.
- results[id]={'initial_camera':p0.tolist(),'fitted_camera':p.tolist(),'parameter_order':['x','y','z','yaw_radians','pitch_radians','roll_radians','lens_mm'],'door_state':c['state'],'geometry_changed':False,'initial_features':summary(p0,id),'fitted_features':summary(p,id),'normalized_rms_before':float(np.sqrt(np.mean(residual(p0,id)**2))),'normalized_rms_after':float(np.sqrt(np.mean(residual(p,id)**2))),'cost':float(best.cost),'multistart_count':len(trials),'bounds_active':np.where(np.isclose(p,lo,atol=.002)|np.isclose(p,hi,atol=.002))[0].tolist(),'ellipse_manual_fit':ELL[id].tolist()}
-(R/'camera_only_fit.json').write_text(json.dumps({'geometry_sha256':G['geometry_vertex_topology_sha256'],'scope':'Camera position, focal length and orientation only. Fixed principal point/sensor, no warp or distortion. Hard anchors are candidate mesh correspondences, not proof of identity.','results':results},indent=2)+'\n')
-for id,v in results.items():print(id,'camera',np.round(v['fitted_camera'],3),'normalized',round(v['normalized_rms_before'],2),'->',round(v['normalized_rms_after'],2),'features',{n:round(r['rms_pixels'],1) for n,r in v['fitted_features'].items()})
+if __name__=='__main__':
+ lo=[-3.5,-1.7,.60,-1.1,-.55,-.20,14];hi=[.50,1.40,1.95,1.1,.55,.20,70]
+ rng=np.random.default_rng(73);results={}
+ for id,c in G['cameras'].items():
+  p0=np.array(c['position']+c['yaw_pitch_roll']+[c['lens']]);trials=[]
+  for k in range(18):
+   seed=p0 if k==0 else np.clip(p0+rng.normal(0,[.3,.25,.14,.15,.10,.03,5]),np.array(lo)+1e-6,np.array(hi)-1e-6)
+   fit=least_squares(residual,seed,args=(id,),bounds=(lo,hi),loss='linear' if '--balanced' in sys.argv else 'soft_l1',f_scale=1.5,max_nfev=1800,xtol=1e-10,ftol=1e-10,gtol=1e-10)
+   trials.append(fit)
+  best=min(trials,key=lambda x:x.cost);p=best.x
+  # Holdout tests above are never used by the optimizer.
+  results[id]={'initial_camera':p0.tolist(),'fitted_camera':p.tolist(),'parameter_order':['x','y','z','yaw_radians','pitch_radians','roll_radians','lens_mm'],'door_state':c['state'],'geometry_changed':False,'initial_features':summary(p0,id),'fitted_features':summary(p,id),'normalized_rms_before':float(np.sqrt(np.mean(residual(p0,id)**2))),'normalized_rms_after':float(np.sqrt(np.mean(residual(p,id)**2))),'cost':float(best.cost),'multistart_count':len(trials),'bounds_active':np.where(np.isclose(p,lo,atol=.002)|np.isclose(p,hi,atol=.002))[0].tolist(),'ellipse_manual_fit':ELL[id].tolist()}
+ (R/'camera_only_fit.json').write_text(json.dumps({'geometry_sha256':G['geometry_vertex_topology_sha256'],'loss':'linear group-balanced least squares' if '--balanced' in sys.argv else 'soft_l1','scope':'Camera position, focal length and orientation only. Fixed principal point/sensor, no warp or distortion. Hard anchors are candidate mesh correspondences, not proof of identity.','results':results},indent=2)+'\n')
+ for id,v in results.items():print(id,'camera',np.round(v['fitted_camera'],3),'normalized',round(v['normalized_rms_before'],2),'->',round(v['normalized_rms_after'],2),'features',{n:round(r['rms_pixels'],1) for n,r in v['fitted_features'].items()})
