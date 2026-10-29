@@ -2,7 +2,7 @@
 import bpy,bmesh,json,hashlib,sys,math
 from pathlib import Path
 from mathutils import Vector
-ROOT=Path(__file__).resolve().parents[1];stage=sys.argv[-1] if sys.argv[-1].startswith('r') else 'r04';out=ROOT/'qa'/stage;models=ROOT/'models'/stage
+ROOT=Path(__file__).resolve().parents[1];stage=sys.argv[-1] if sys.argv[-1].startswith('r') else 'r06';out=ROOT/'qa'/stage;models=ROOT/'models'/stage
 
 def fingerprint(o):
  me=o.evaluated_get(bpy.context.evaluated_depsgraph_get()).to_mesh();coords=[tuple(round(c,6) for c in o.matrix_world@v.co) for v in me.vertices];faces=[tuple(p.vertices) for p in me.polygons]
@@ -31,6 +31,7 @@ contacts=[]
 for name,pt in [('piano rear caster',(-.31,2.08,0)),('piano front caster L',(-.61,.18,0)),('piano front caster R',(.61,.18,0))]+[(f'bench leg {x} {y}',(x,-1.02+y,0)) for x in [-.42,.42] for y in [-.16,.16]]:
  z=hit_deck(pt[0],pt[1]);contacts.append({'name':name,'point':pt,'deck_hit_z':z,'gap':None if z is None else pt[2]-z,'passes_0.005':z is not None and abs(pt[2]-z)<.005})
 # Material topology and textures available in editable model.
+sand_obj=bpy.data.objects['S01 local sand patch'];boat_obj=bpy.data.objects['V01_boat closed hull shell'];sand_bounds=bounds(sand_obj);boat_bounds=bounds(boat_obj);boat_sand_xy_overlap=all(boat_bounds[0][i]<sand_bounds[1][i] and boat_bounds[1][i]>sand_bounds[0][i] for i in [0,1])
 materials={m.name:{'uses_nodes':m.use_nodes,'textures':[n.image.name for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image] if m.use_nodes else []} for m in bpy.data.materials}
 bpy.ops.wm.open_mainfile(filepath=str(models/'piano_seaside_white.blend'))
 white={o.name:fingerprint(o) for o in bpy.context.scene.objects if o.type=='MESH'}
@@ -45,7 +46,7 @@ for kind in ['material','white']:
   if err>1e-4:bad_bounds.append({'name':o.name,'max_abs_difference':err})
  roundtrips[kind]={'actual_imported':True,'seam_weld_tolerance_model_units':1e-4,'mesh_count':len(imported),'expected_mesh_count':len(base),'bounds_mismatches':bad_bounds,'nonmanifold_after_welding':[r for r in rr if r['nonmanifold_edges']],'zero_area_after_welding':[r for r in rr if r['zero_area_faces']],'negative_volume':[r for r in rr if r['signed_volume']<0],'sample_material_count':len(bpy.data.materials),'report':rr}
  bpy.ops.wm.save_as_mainfile(filepath=str(out/f'reimport_{kind}_diagnostic.blend'))
-result={'stage':stage,'mesh_count':len(base),'material_white_evaluated_geometry_identical':match,'source_meshes':reports,'source_nonmanifold':[r for r in reports if r['nonmanifold_edges']],'source_zero_area':[r for r in reports if r['zero_area_faces']],'source_negative_volume':[r for r in reports if r['signed_volume']<0],'dense_deck_rays':{'count':len(rays),'hits':sum(z is not None for z in rays),'misses':sum(z is None for z in rays),'meaning':'sampling modeled planks only; seams and patch edge misses expected; not water/shore engineering validation'},'support_contacts':contacts,'materials':materials,'glb_roundtrips':roundtrips,'limitations':['No global self-intersection solve or structural engineering analysis.','Open sea and finite sand/deck boundaries are modeling extent, not verified real boundaries.','Manual cameras uncalibrated; source and material fidelity not passed.','Procedural shader components may not survive glTF; compare material render before claiming parity.']}
+result={'stage':stage,'mesh_count':len(base),'material_white_evaluated_geometry_identical':match,'source_meshes':reports,'source_nonmanifold':[r for r in reports if r['nonmanifold_edges']],'source_zero_area':[r for r in reports if r['zero_area_faces']],'source_negative_volume':[r for r in reports if r['signed_volume']<0],'dense_deck_rays':{'count':len(rays),'hits':sum(z is not None for z in rays),'misses':sum(z is None for z in rays),'meaning':'sampling modeled planks only; seams and patch edge misses expected; not water/shore engineering validation'},'support_contacts':contacts,'near_boat_sand_xy_overlap':boat_sand_xy_overlap,'materials':materials,'glb_roundtrips':roundtrips,'limitations':['No global self-intersection solve or structural engineering analysis.','Open sea and finite sand/deck boundaries are modeling extent, not verified real boundaries.','Manual cameras uncalibrated; source and material fidelity not passed.','Procedural shader components may not survive glTF; compare material render before claiming parity.']}
 (out/'geometry-checks.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps({k:v for k,v in result.items() if k not in ['source_meshes','materials','glb_roundtrips']},indent=2))
 print('GLB SUMMARY',json.dumps({k:{x:y for x,y in v.items() if x!='report'} for k,v in roundtrips.items()},indent=2))

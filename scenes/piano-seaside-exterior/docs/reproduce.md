@@ -6,10 +6,10 @@
 
 ```bash
 python scenes/piano-seaside-exterior/scripts/make_textures.py
-blender -b -t 8 --python scenes/piano-seaside-exterior/scripts/build_scene.py -- --stage r05-rerun --render all
-blender -b -t 4 --python scenes/piano-seaside-exterior/scripts/validate_scene.py -- r05-rerun
-blender -b -t 6 --python scenes/piano-seaside-exterior/scripts/render_glb_check.py -- r05-rerun
-python scenes/piano-seaside-exterior/scripts/make_review.py r05-rerun
+blender -b -t 8 --python scenes/piano-seaside-exterior/scripts/build_scene.py -- --stage r06-rerun --render all
+blender -b -t 4 --python scenes/piano-seaside-exterior/scripts/validate_scene.py -- r06-rerun
+blender -b -t 6 --python scenes/piano-seaside-exterior/scripts/render_glb_check.py -- r06-rerun
+python scenes/piano-seaside-exterior/scripts/make_review.py r06-rerun
 ```
 
 所有机位由脚本同时创建，几何/材质/灯光不按机位切换。当前只做共同近似黄昏状态；晚间来源依然使用这套状态显示残差。原生来源图不经过重采样、擦除或生成补图；叠图直接RGB 0.5 blend，同尺寸1920×1080；联系表缩小仅用于展示。模型单位不是米，不使用角色身高定尺度。

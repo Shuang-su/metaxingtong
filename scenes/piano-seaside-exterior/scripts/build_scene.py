@@ -6,7 +6,7 @@ from pathlib import Path
 from mathutils import Vector, Matrix
 from math import sin, cos, pi
 ROOT=Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser(); p.add_argument('--stage',default='r05');p.add_argument('--render',default='preview',choices=['none','preview','all']);args=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
+p=argparse.ArgumentParser(); p.add_argument('--stage',default='r06');p.add_argument('--render',default='preview',choices=['none','preview','all']);args=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
 OUT=ROOT/'models'/args.stage; QA=ROOT/'qa'/args.stage
 OUT.mkdir(parents=True,exist_ok=True);QA.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
@@ -17,7 +17,7 @@ sc.world=bpy.data.worlds.new('Approximate sunset environment');sc.world.use_node
 n=sc.world.node_tree.nodes; l=sc.world.node_tree.links;n.clear()
 out=n.new('ShaderNodeOutputWorld');bg=n.new('ShaderNodeBackground');bg.inputs['Strength'].default_value=.45
 tex=n.new('ShaderNodeTexCoord');sep=n.new('ShaderNodeSeparateXYZ');ramp=n.new('ShaderNodeValToRGB')
-l.new(tex.outputs['Normal'],sep.inputs[0]);l.new(sep.outputs['Z'],ramp.inputs[0]);l.new(ramp.outputs[0],bg.inputs['Color']);l.new(bg.outputs[0],out.inputs[0])
+l.new(tex.outputs['Normal'],sep.inputs[0]);zneg=n.new('ShaderNodeMath');zneg.operation='MULTIPLY';zneg.inputs[1].default_value=-1;l.new(sep.outputs['Z'],zneg.inputs[0]);l.new(zneg.outputs[0],ramp.inputs[0]);l.new(ramp.outputs[0],bg.inputs['Color']);l.new(bg.outputs[0],out.inputs[0])
 ramp.color_ramp.elements[0].position=0;ramp.color_ramp.elements[0].color=(.42,.22,.24,1);ramp.color_ramp.elements[1].position=.65;ramp.color_ramp.elements[1].color=(.025,.055,.13,1)
 def mat(name,color,metal=0,rough=.4,emission=0):
  m=bpy.data.materials.new(name);m.diffuse_color=(*color,1);m.use_nodes=True;s=m.node_tree.nodes.get('Principled BSDF');s.inputs['Base Color'].default_value=(*color,1);s.inputs['Metallic'].default_value=metal;s.inputs['Roughness'].default_value=rough
@@ -196,9 +196,9 @@ def hull(id,center,length,width):
  fs.extend([tuple(range(2*N-1,N-1,-1)),tuple(range(3*N,4*N))]);o=mesh(id+' closed hull shell',vs,fs,boatmat,id)
  for i in range(N):j=(i+1)%N;rod(id+' gunwale',(x+outer[i][0],y+outer[i][1],z+.17),(x+outer[j][0],y+outer[j][1],z+.17),.027,boatwood,id)
  return center
-hull('V01_boat',(6.4,3.7,-.34),2.4,1.0)
-cube('V01 inferred seat',(6.4,3.7,-.12),(.87,.25,.08),boatwood,'V01_boat')
-rod('V01 windshield bar',(5.97,3.93,.07),(6.83,3.93,.07),.015,dark,'V01_boat')
+hull('V01_boat',(10.4,3.7,-.34),2.4,1.0)
+cube('V01 inferred seat',(10.4,3.7,-.12),(.87,.25,.08),boatwood,'V01_boat')
+rod('V01 windshield bar',(9.97,3.93,.07),(10.83,3.93,.07),.015,dark,'V01_boat')
 # Far boat distance / scale not identified by a single image.
 vx,vy,vz=40,-4,-.34;hull('V02_sailboat',(vx,vy,vz),2.5,.8)
 rod('V02 mast',(vx,vy,0),(vx,vy,3.5),.025,dark,'V02_sailboat')
@@ -215,7 +215,7 @@ def camera(name,loc,target,lens=50):
  bpy.ops.object.camera_add(location=loc);o=bpy.context.object;o.name=name;o.data.lens=lens;o.data.clip_end=1000;aim(o,target);o['role']='inspection' if name.startswith('check') else 'conditional source camera fit';return o
 cams={}
 cams['source_N6318']=camera('source_N6318',(-5.9,-2.1,1.2),(.05,.75,1.55),48)
-cams['source_N4037']=camera('source_N4037',(-4.5,-.2,2.65),(-.1,.1,1.22),50)
+cams['source_N4037']=camera('source_N4037',(-4.5,1.6,2.1),(-.1,0,1.22),50)
 cams['source_N2518']=camera('source_N2518',(1.12,-1.12,1.21),(-.04,-.05,.87),44)
 cams['source_N2453']=camera('source_N2453',(3.8,4.0,3.3),(-.4,.95,1.0),58)
 cams['source_N6766']=camera('source_N6766',(1.2,-1.1,.65),(.1,-.05,1.0),35)
