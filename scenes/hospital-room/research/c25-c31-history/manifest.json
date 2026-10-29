@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:37.286989+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:37.432669+00:00",
   "scene": "hospital",
-  "original_snapshot": "097be58b4a9fde7e08e9fc1b694d0f67fa3b3583",
-  "original_snapshot_tree": "474cccafefa9973d5dee474c0ba0e35c7c26a1bb",
+  "original_snapshot": "b7a4f15b9852ba64ed19ccc81faf3428955eb42f",
+  "original_snapshot_tree": "f00913a55e568a6f40212b73a3d836087e202309",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -1138,6 +1138,14 @@
       "sha256": "49dfdedf75ced8dd072899de9eb18a7c9b115835e47e8709ecc4858def395e27"
     },
     {
+      "relative_path": "c29/C29_region_hypotheses_comparison.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/C29_region_hypotheses_comparison.png",
+      "mode": "100644",
+      "git_blob_sha1": "9512ec71936cfd94d395f1f71405bafff448f65c",
+      "bytes": 840496,
+      "sha256": "dcf5c2049a030b97b416b70bc342b92db374e6909bdf819f9c37019a01ccceb4"
+    },
+    {
       "relative_path": "c29/SCOPE.md",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/SCOPE.md",
       "mode": "100644",
@@ -1178,12 +1186,100 @@
       "sha256": "b6058e3cdc3d0f2b0d819c1f8e95f725706be1e5c880ba5b6839a80e950f7e50"
     },
     {
+      "relative_path": "c29/region_metrics_console.txt",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_metrics_console.txt",
+      "mode": "100644",
+      "git_blob_sha1": "40a5e1746603e0c74fcb50848b7945bb0b6baf7d",
+      "bytes": 5200,
+      "sha256": "f968d72c35937043921a487f662753eef38b078344e1811825d8ae56570411d4"
+    },
+    {
+      "relative_path": "c29/region_photometric_metrics.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_photometric_metrics.json",
+      "mode": "100644",
+      "git_blob_sha1": "dd058052a1c36170a3832b82ffa8bde4e785349d",
+      "bytes": 5199,
+      "sha256": "ca542d767178228953bb0777155556a953ab90a09eeef3245bbda29ab3cd1faf"
+    },
+    {
+      "relative_path": "c29/region_render.log",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_render.log",
+      "mode": "100644",
+      "git_blob_sha1": "faa6c199306f84c5870a1d352cf2951bdb1efd8f",
+      "bytes": 326044,
+      "sha256": "e462e09ea36962da19aa8a65ca170cc6d783133e628ded10460aceb0e7c00eda"
+    },
+    {
+      "relative_path": "c29/region_test_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_test_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "3d7014a84b27fc4bb4705785b372089169af2f06",
+      "bytes": 2627,
+      "sha256": "0705590378a0afd158c1be3716d1dd5a6fbdc85a64a66a0cae8e750615eaec9a"
+    },
+    {
+      "relative_path": "c29/region_tests/G_C29_5fold_REGION_ONLY.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_tests/G_C29_5fold_REGION_ONLY.png",
+      "mode": "100644",
+      "git_blob_sha1": "ac78e859c8f67dda57c35bbb70e61280ce6adbe2",
+      "bytes": 1365894,
+      "sha256": "97e3f01a6384a0dccd3a24eebb469711b15c5c929bff95c035de54fc603a0f32"
+    },
+    {
+      "relative_path": "c29/region_tests/G_C29_6fold_REGION_ONLY.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_tests/G_C29_6fold_REGION_ONLY.png",
+      "mode": "100644",
+      "git_blob_sha1": "c85590145a03883b10ea3438eb46e9da5fe4c974",
+      "bytes": 1369982,
+      "sha256": "ff721dbbb1055dc5bd1192d57a3f4b5da869e5dd21c4fcca674ffb0f0089d5c1"
+    },
+    {
+      "relative_path": "c29/region_tests/H_C29_5fold_REGION_ONLY.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_tests/H_C29_5fold_REGION_ONLY.png",
+      "mode": "100644",
+      "git_blob_sha1": "4b67a268f842ccb1982d6c035968b64fad6fe2c1",
+      "bytes": 1510482,
+      "sha256": "4c16052a17f66fb9705d9dfee3e4650f66d93c38a784369594bf91162fbd458a"
+    },
+    {
+      "relative_path": "c29/region_tests/H_C29_6fold_REGION_ONLY.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_tests/H_C29_6fold_REGION_ONLY.png",
+      "mode": "100644",
+      "git_blob_sha1": "85586c580b970f6e5f803b06378d570a07803da3",
+      "bytes": 1511952,
+      "sha256": "e8511c059e5f1e5ac068aef797f519deeb6a3c276b7c1a88a1d3efa6189789f4"
+    },
+    {
+      "relative_path": "c29/region_tests/N642_C29_5fold_REGION_ONLY.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_tests/N642_C29_5fold_REGION_ONLY.png",
+      "mode": "100644",
+      "git_blob_sha1": "272a0ea3e3e4801f7d6c0828078d508c47024aa1",
+      "bytes": 1339355,
+      "sha256": "e7a0ec211db68aa2d2defe9754cf259fdee466bd18ac85e6190cf42a4016f82a"
+    },
+    {
+      "relative_path": "c29/region_tests/N642_C29_6fold_REGION_ONLY.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/region_tests/N642_C29_6fold_REGION_ONLY.png",
+      "mode": "100644",
+      "git_blob_sha1": "648067fe443ec6051fe8591cee93c972fd2cf2e8",
+      "bytes": 1341313,
+      "sha256": "3fb3d55848cbe6e2cf35c4a7168b2bd9d8dd904da06286e638b89932f22a419c"
+    },
+    {
       "relative_path": "c29/scripts/build_test_candidates.py",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/scripts/build_test_candidates.py",
       "mode": "100644",
       "git_blob_sha1": "08319607cfa8c885e21bc02400d974b0a9d2d35b",
       "bytes": 2036,
       "sha256": "571151400233fc008a50739b78daaa922dd70003512d4c65e3876add7dec750d"
+    },
+    {
+      "relative_path": "c29/scripts/evaluate_region_tests.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/scripts/evaluate_region_tests.py",
+      "mode": "100644",
+      "git_blob_sha1": "dfbeec75f71bc821d6825e19ae0be964604db66c",
+      "bytes": 1953,
+      "sha256": "66dd5ed85114da7650ca87a91b8eb613af13dd6dc85148478bda353d8f6ee4ce"
     },
     {
       "relative_path": "c29/scripts/plan_profiles.py",
@@ -3300,6 +3396,18 @@
       "message": "Build reversible C29 five and six fold mesh hypotheses\n",
       "raw_commit_sha256": "d4f2daa6592f2e97cf7ae8f2c0132ab58bb7d48c105a77d5e52eb5bac1989484",
       "changed_files_raw": "A\tc29/build_tests.log\nA\tc29/hospital_C29_TEST_5fold_MATERIAL.blend\nA\tc29/hospital_C29_TEST_6fold_MATERIAL.blend\nA\tc29/scripts/build_test_candidates.py\nA\tc29/scripts/render_regions.py\nA\tc29/test_build_verification.json\n"
+    },
+    {
+      "commit": "b7a4f15b9852ba64ed19ccc81faf3428955eb42f",
+      "parents": [
+        "097be58b4a9fde7e08e9fc1b694d0f67fa3b3583"
+      ],
+      "tree": "f00913a55e568a6f40212b73a3d836087e202309",
+      "author": "Codex <codex@openai.com> 1792410609 +0900",
+      "committer": "Codex <codex@openai.com> 1792410609 +0900",
+      "message": "Record real C29 five/six-cycle trial renders including rejected oversparse option\n",
+      "raw_commit_sha256": "22f0076e8624091b1f5368c86314b56cc54e4a04fd8c04721b631be868d2ad6a",
+      "changed_files_raw": "A\tc29/C29_region_hypotheses_comparison.png\nA\tc29/region_metrics_console.txt\nA\tc29/region_photometric_metrics.json\nA\tc29/region_render.log\nA\tc29/region_test_manifest.json\nA\tc29/region_tests/G_C29_5fold_REGION_ONLY.png\nA\tc29/region_tests/G_C29_6fold_REGION_ONLY.png\nA\tc29/region_tests/H_C29_5fold_REGION_ONLY.png\nA\tc29/region_tests/H_C29_6fold_REGION_ONLY.png\nA\tc29/region_tests/N642_C29_5fold_REGION_ONLY.png\nA\tc29/region_tests/N642_C29_6fold_REGION_ONLY.png\nA\tc29/scripts/evaluate_region_tests.py\n"
     }
   ],
   "historical_only_blobs": [
@@ -3413,6 +3521,27 @@
       "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
     },
     {
+      "git_blob_sha1": "40a5e1746603e0c74fcb50848b7945bb0b6baf7d",
+      "bytes": 5200,
+      "sha256": "f968d72c35937043921a487f662753eef38b078344e1811825d8ae56570411d4",
+      "original_paths": [
+        "c29/region_metrics_console.txt"
+      ],
+      "commits_containing_blob": [
+        "b7a4f15b9852ba64ed19ccc81faf3428955eb42f"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/40a5e1746603e0c74fcb50848b7945bb0b6baf7d",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "40a5e1746603e0c74fcb50848b7945bb0b6baf7d"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
+    {
       "git_blob_sha1": "68818242ad15c8a4ac373f4aa66e799f3a8b1d80",
       "bytes": 1059,
       "sha256": "51337bc16428475eb4e870dbba8f2ed7dea32d8c80da627632a90c813a3a5993",
@@ -3474,6 +3603,27 @@
         "cat-file",
         "blob",
         "7f2e2104d07fb68642358dedf48be3f383b1300e"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
+    {
+      "git_blob_sha1": "9512ec71936cfd94d395f1f71405bafff448f65c",
+      "bytes": 840496,
+      "sha256": "dcf5c2049a030b97b416b70bc342b92db374e6909bdf819f9c37019a01ccceb4",
+      "original_paths": [
+        "c29/C29_region_hypotheses_comparison.png"
+      ],
+      "commits_containing_blob": [
+        "b7a4f15b9852ba64ed19ccc81faf3428955eb42f"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/9512ec71936cfd94d395f1f71405bafff448f65c",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "9512ec71936cfd94d395f1f71405bafff448f65c"
       ],
       "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
     },
@@ -3543,6 +3693,48 @@
         "cat-file",
         "blob",
         "d9b08533519ca5b3a6d035739ebe75ebe18b907f"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
+    {
+      "git_blob_sha1": "dd058052a1c36170a3832b82ffa8bde4e785349d",
+      "bytes": 5199,
+      "sha256": "ca542d767178228953bb0777155556a953ab90a09eeef3245bbda29ab3cd1faf",
+      "original_paths": [
+        "c29/region_photometric_metrics.json"
+      ],
+      "commits_containing_blob": [
+        "b7a4f15b9852ba64ed19ccc81faf3428955eb42f"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/dd058052a1c36170a3832b82ffa8bde4e785349d",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "dd058052a1c36170a3832b82ffa8bde4e785349d"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
+    {
+      "git_blob_sha1": "dfbeec75f71bc821d6825e19ae0be964604db66c",
+      "bytes": 1953,
+      "sha256": "66dd5ed85114da7650ca87a91b8eb613af13dd6dc85148478bda353d8f6ee4ce",
+      "original_paths": [
+        "c29/scripts/evaluate_region_tests.py"
+      ],
+      "commits_containing_blob": [
+        "b7a4f15b9852ba64ed19ccc81faf3428955eb42f"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/dfbeec75f71bc821d6825e19ae0be964604db66c",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "dfbeec75f71bc821d6825e19ae0be964604db66c"
       ],
       "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
     },
