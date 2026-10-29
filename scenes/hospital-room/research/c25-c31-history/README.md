@@ -4,7 +4,7 @@
 
 原README的“未push”等文字属于当时原记录，原样保留。本次归档状态以本说明、manifest和真实当前归档提交为准。新归档提交使用实际执行时间，通过Original-Commit记录对应原研究提交，不能把补录日期当成制作日期。
 
-当前归档快照：[f60d173a3558c40309c06460fff443907750a0a6](https://github.com/Shuang-su/metaxingtong/commit/f60d173a3558c40309c06460fff443907750a0a6)；原记录UTC：2026-10-17T07:37:54+00:00。已保留1个原始提交及28个当前原文件。
+当前归档快照：[b47c0b16f2b0346e8d878514af470998eaa45998](https://github.com/Shuang-su/metaxingtong/commit/b47c0b16f2b0346e8d878514af470998eaa45998)；原记录UTC：2026-10-17T07:40:03+00:00。已保留2个原始提交及42个当前原文件。
 
 ## 当前阶段
 
