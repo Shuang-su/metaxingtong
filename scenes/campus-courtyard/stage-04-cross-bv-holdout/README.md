@@ -6,6 +6,6 @@ New original: BV1fwSEBqEPJ, 96.994858 s, 1920×1080, 3,352,659 bytes. The materi
 
 This is an earlier, unofficial 2025-11-28 episode slice according to the supplied description. It is not a later replay and does not establish identical assets, real-time rendering or hospital connectivity. Dynamic people, captions, heart overlays and watermark remain in the original and are excluded from hard-anchor measurements. Tree planter identity is unresolved.
 
-Current work: camera-only baseline and independent relation checks. Any future geometry edit must start a separate stage and re-run all four base source views plus this view, explicitly giving up this frame's held-out status.
+Completed: six camera-only hypotheses; two native 1920×1080 source/render/direct-50%-overlay groups; six native crop groups for each; failed numeric and rendered trials; saved/reopened frozen-state verification; independent read-only pixel review. None of the tested hypotheses passes. See `qa/REPORT.md` for four fixed-object groups, conflicts and limits; `comparisons/HOLDOUT_source_render_overlay_contact_preview.jpg` for a reduced display preview. Any future geometry edit must start a separate stage and re-run all four base source views plus this view, explicitly giving up this frame's held-out status.
 
 Local only. No push, PR or Library upload attempted in this stage.

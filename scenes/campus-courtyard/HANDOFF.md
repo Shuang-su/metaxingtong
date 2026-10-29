@@ -1,4 +1,4 @@
-> 后续Stage03冻结候选见 `stage-03-contact-qa/HANDOFF.md`；下文保留Stage02当时的交接及401回执，不代表最新文件已跨环境交付。
+> 当前几何仍为Stage03冻结候选，见 `stage-03-contact-qa/HANDOFF.md`。随后Stage04仅新增相机，完成更早跨BV留出失败诊断，见 `stage-04-cross-bv-holdout/qa/REPORT.md`。下文保留Stage02当时的交接及401回执，不代表最新文件已跨环境交付。
 
 # 校园庭院本地候选交接
 

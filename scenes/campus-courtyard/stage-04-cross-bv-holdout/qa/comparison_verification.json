@@ -1,0 +1,79 @@
+{
+  "comparisons": [
+    {
+      "name": "FORWARD_COURT_ORDER_F35",
+      "shape": [
+        1080,
+        1920,
+        3
+      ],
+      "overlay_rule": "uint8 floor((source_uint16 + render_uint16)/2), in native RGB pixel coordinates",
+      "overlay_exact_pixel_verified": true,
+      "source_warp": false,
+      "source_resize_for_native_overlay": false,
+      "overlay_sha256": "a11c4d04e75e4f77c00fbbb4ca96fa68887c969ec686b7b4a599f881f71cae26",
+      "native_triptych_layout": "source | render | direct overlay; 5760x1080, no resizing"
+    },
+    {
+      "name": "REVERSE_TRACK_SIDE_F35",
+      "shape": [
+        1080,
+        1920,
+        3
+      ],
+      "overlay_rule": "uint8 floor((source_uint16 + render_uint16)/2), in native RGB pixel coordinates",
+      "overlay_exact_pixel_verified": true,
+      "source_warp": false,
+      "source_resize_for_native_overlay": false,
+      "overlay_sha256": "87cc62d3c61ba5e14239da2f4b8cab2ceda8b006dc156155397a3c5dc49230b6",
+      "native_triptych_layout": "source | render | direct overlay; 5760x1080, no resizing"
+    }
+  ],
+  "roi_coordinates_native": {
+    "blue_net": [
+      0,
+      390,
+      1430,
+      720
+    ],
+    "central_hoop": [
+      650,
+      0,
+      930,
+      720
+    ],
+    "left_stair": [
+      0,
+      270,
+      320,
+      530
+    ],
+    "right_lamp_benches": [
+      1190,
+      340,
+      1500,
+      675
+    ],
+    "right_track_goal": [
+      1430,
+      390,
+      1920,
+      675
+    ],
+    "green_red_key": [
+      250,
+      715,
+      1430,
+      1080
+    ]
+  },
+  "preview_contact_size": [
+    1920,
+    792
+  ],
+  "six_trial_preview_size": [
+    1920,
+    1152
+  ],
+  "native_images_unchanged": true
+}
