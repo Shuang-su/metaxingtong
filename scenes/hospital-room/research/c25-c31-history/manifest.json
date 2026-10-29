@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:32.788019+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:33.447310+00:00",
   "scene": "hospital",
-  "original_snapshot": "6cabb9339c063014bed92f135b899fcce2db0170",
-  "original_snapshot_tree": "b2b64febc2c220342aa73f692c29fee028a1f904",
+  "original_snapshot": "7c7ed4069e8aa769c4062dfd3e8107dffb7a981d",
+  "original_snapshot_tree": "9def25951e395c152a74c184bbb3da23054f4064",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -312,6 +312,22 @@
       "git_blob_sha1": "683e2ad6c18554e89ac69341d4dbeaea073ca6b5",
       "bytes": 7838,
       "sha256": "0ddd5df1deef03f452b358fca31867affcb06f21319c6b841fae0e44ce8a3d93"
+    },
+    {
+      "relative_path": "scripts/build_c25_v2b.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/scripts/build_c25_v2b.py",
+      "mode": "100644",
+      "git_blob_sha1": "a549e4b34087411229bee8e1b5f07cc8622ce971",
+      "bytes": 9080,
+      "sha256": "b13766a31635504e3a0fdc33f9adf812dfd4da98ac0ede558923a64957a2f6d4"
+    },
+    {
+      "relative_path": "scripts/clean_c25_v2.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/scripts/clean_c25_v2.py",
+      "mode": "100644",
+      "git_blob_sha1": "83be036f68579dbbea400b2e0a8c7f65e6683f4a",
+      "bytes": 1786,
+      "sha256": "a182c5b73d73d940e60357785a5eb8204b96649a3ae36682797f4f50c08b86ce"
     },
     {
       "relative_path": "scripts/make_comparison.py",
@@ -685,9 +701,9 @@
       "relative_path": "v2/STATUS.md",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2/STATUS.md",
       "mode": "100644",
-      "git_blob_sha1": "6de249b97d88f6548bd14f31adb24b1cbd4b960c",
-      "bytes": 78,
-      "sha256": "6c24de5fae9ceb608afa1e3f5a80ced65d54ddffb43fe7a8d216f370c5407ea1"
+      "git_blob_sha1": "406f6ca8f465be0d9f86f47ddd6b2bb2a2d0a44b",
+      "bytes": 138,
+      "sha256": "09fdb6985950a4c238b5f97a82df5cd7ffaf0dbeafada70fd0385661d13725c7"
     },
     {
       "relative_path": "v2/build_manifest.json",
@@ -716,6 +732,102 @@
     {
       "relative_path": "v2/panel_vertex_semantics.json",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2/panel_vertex_semantics.json",
+      "mode": "100644",
+      "git_blob_sha1": "3c1671245fb43d2b9800d02a91422f7eeb8a98e1",
+      "bytes": 265634,
+      "sha256": "d76b18c5d44588ad26274fe80d578b7f4e2867052fb1190b305f7347dd2d5b76"
+    },
+    {
+      "relative_path": "v2_clean/STATUS.md",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2_clean/STATUS.md",
+      "mode": "100644",
+      "git_blob_sha1": "46e34e0ea4075cbfcd7705e58a93efd529439b46",
+      "bytes": 79,
+      "sha256": "c994b7688fb4ee2236e3269c0f668d26e21fc43fdab07530c7be8504add1a478"
+    },
+    {
+      "relative_path": "v2_clean/build_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2_clean/build_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "eeb618511dc334f1a1c71755d2542dfe36c27ad2",
+      "bytes": 1109,
+      "sha256": "2193b4fa5e2346104a844b56ca99da98f63e5be74a162279d0369f8f855eced4"
+    },
+    {
+      "relative_path": "v2_clean/hospital_C25_structural_volume_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2_clean/hospital_C25_structural_volume_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "dcb5088642a77225998c3f1cb9a835e6363f2fc3",
+      "bytes": 13054408,
+      "sha256": "66f74b1fd680b80b0655449ac69e41ce8ef238d1e2418d6c7d72df94a0507300"
+    },
+    {
+      "relative_path": "v2_clean/hospital_C25_white_geometry_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2_clean/hospital_C25_white_geometry_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "e8e9e7b41858df01df4065d2a4458d60cf6abba6",
+      "bytes": 9104947,
+      "sha256": "01b698139f281ba91e9c934a2936cf80c1f1c44c72aa87d716aa3de3a10cc650"
+    },
+    {
+      "relative_path": "v2_clean/numerical_cleanup_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2_clean/numerical_cleanup_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "d3d214c0d399e503d6f57b81b3083d557843017d",
+      "bytes": 1511,
+      "sha256": "cbcd59e5a63de061168f4e5c929f7d23977c5059b9b45012606557b6b786f4e1"
+    },
+    {
+      "relative_path": "v2_clean/panel_vertex_semantics.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2_clean/panel_vertex_semantics.json",
+      "mode": "100644",
+      "git_blob_sha1": "3c1671245fb43d2b9800d02a91422f7eeb8a98e1",
+      "bytes": 265634,
+      "sha256": "d76b18c5d44588ad26274fe80d578b7f4e2867052fb1190b305f7347dd2d5b76"
+    },
+    {
+      "relative_path": "v2b/STATUS.md",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2b/STATUS.md",
+      "mode": "100644",
+      "git_blob_sha1": "197ad79be23a646cdb68ad5b1b2fcf818b4f6c3c",
+      "bytes": 70,
+      "sha256": "40d42a274da8adeadbb90d751e5be338be4a4354270c00b17cac7f21818f619a"
+    },
+    {
+      "relative_path": "v2b/build_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2b/build_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "d47f104e7a2718d3ca991a9fafa0de3d563fbb19",
+      "bytes": 1116,
+      "sha256": "bc0a2c9a6268a741e31442e3d83159590e03116e219c7508d97d6a9d482bc135"
+    },
+    {
+      "relative_path": "v2b/hospital_C25_structural_volume_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2b/hospital_C25_structural_volume_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "b2498e4c21f7b60158d71baa24791e019aaa073e",
+      "bytes": 13053053,
+      "sha256": "1fcda7c30c96bf40c459ab756007f718a2161d656633e3b8c447e43ecc2c79d3"
+    },
+    {
+      "relative_path": "v2b/hospital_C25_white_geometry_CONDITIONAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2b/hospital_C25_white_geometry_CONDITIONAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "1d8551be955d3715a336613947fb840f027272d7",
+      "bytes": 13031348,
+      "sha256": "103433f7bc83f08e9d8a9d9c23c1f28b736f280bf9ee286193101f0354c64df2"
+    },
+    {
+      "relative_path": "v2b/numerical_cleanup_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2b/numerical_cleanup_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "5ec8b6549092d3e5d489f34e1a246d7968b8a205",
+      "bytes": 356,
+      "sha256": "9c2d62b81dc38c8e7ee07ebaf90370502778e16581bb95af6fc101dfbe1ccd59"
+    },
+    {
+      "relative_path": "v2b/panel_vertex_semantics.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/v2b/panel_vertex_semantics.json",
       "mode": "100644",
       "git_blob_sha1": "3c1671245fb43d2b9800d02a91422f7eeb8a98e1",
       "bytes": 265634,
@@ -768,9 +880,42 @@
       "message": "Preserve reviewed C25 v1 and replace upper oval sweep by convex ribbon volume\n",
       "raw_commit_sha256": "7bbb3e2546f60991ca1fb480d6aeccdc9d42b32a145b46c6f3f3a0c2e6162356",
       "changed_files_raw": "A\tinputs/review_renders/665_C23_RAW_1920x1080.png\nA\tinputs/review_renders/C23_render_manifest.json\nA\tinputs/review_renders/G_C23_RAW_1920x1080.png\nA\tscripts/build_c25_v2.py\nM\tv1/STATUS.md\nA\tv1/review_renders/665_C25_RAW_1920x1080.png\nA\tv1/review_renders/665_C25_direct50_1920x1080.png\nA\tv1/review_renders/C25_WHITE_render_manifest.json\nA\tv1/review_renders/C25_native_before_after_sheet.png\nA\tv1/review_renders/C25_render_manifest.json\nA\tv1/review_renders/G_C25_RAW_1920x1080.png\nA\tv1/review_renders/G_C25_direct50_1920x1080.png\nA\tv1/review_renders/H_C25_RAW_1920x1080.png\nA\tv1/review_renders/H_C25_WHITE_RAW_1920x1080.png\nA\tv1/review_renders/H_C25_direct50_1920x1080.png\nA\tv1/review_renders/comparison_manifest.json\nA\tv1/review_renders/direct50_manifest.json\nA\tv1/review_renders/left_transition_inspection4x.png\nA\tv2/STATUS.md\nA\tv2/build_manifest.json\nA\tv2/hospital_C25_structural_volume_CONDITIONAL.blend\nA\tv2/hospital_C25_white_geometry_CONDITIONAL.blend\nA\tv2/panel_vertex_semantics.json\n"
+    },
+    {
+      "commit": "7c7ed4069e8aa769c4062dfd3e8107dffb7a981d",
+      "parents": [
+        "6cabb9339c063014bed92f135b899fcce2db0170"
+      ],
+      "tree": "9def25951e395c152a74c184bbb3da23054f4064",
+      "author": "dot <dot@localhost> 1792223521 +0900",
+      "committer": "dot <dot@localhost> 1792223521 +0900",
+      "message": "Close C25 ribbon backing gap and remove voxel debris without smoothing\n",
+      "raw_commit_sha256": "ae81b595114c4df7f900beb2057dc92e847f6307c43c9ea40340e14f42094301",
+      "changed_files_raw": "A\tscripts/build_c25_v2b.py\nA\tscripts/clean_c25_v2.py\nM\tv2/STATUS.md\nA\tv2_clean/STATUS.md\nA\tv2_clean/build_manifest.json\nA\tv2_clean/hospital_C25_structural_volume_CONDITIONAL.blend\nA\tv2_clean/hospital_C25_white_geometry_CONDITIONAL.blend\nA\tv2_clean/numerical_cleanup_manifest.json\nA\tv2_clean/panel_vertex_semantics.json\nA\tv2b/STATUS.md\nA\tv2b/build_manifest.json\nA\tv2b/hospital_C25_structural_volume_CONDITIONAL.blend\nA\tv2b/hospital_C25_white_geometry_CONDITIONAL.blend\nA\tv2b/numerical_cleanup_manifest.json\nA\tv2b/panel_vertex_semantics.json\n"
     }
   ],
   "historical_only_blobs": [
+    {
+      "git_blob_sha1": "197ad79be23a646cdb68ad5b1b2fcf818b4f6c3c",
+      "bytes": 70,
+      "sha256": "40d42a274da8adeadbb90d751e5be338be4a4354270c00b17cac7f21818f619a",
+      "original_paths": [
+        "v2b/STATUS.md"
+      ],
+      "commits_containing_blob": [
+        "7c7ed4069e8aa769c4062dfd3e8107dffb7a981d"
+      ],
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/historical-blobs/197ad79be23a646cdb68ad5b1b2fcf818b4f6c3c",
+      "extraction_command": [
+        "git",
+        "-C",
+        "/workspace/scratch/fa58bfcf0425/hospital_working",
+        "cat-file",
+        "blob",
+        "197ad79be23a646cdb68ad5b1b2fcf818b4f6c3c"
+      ],
+      "note": "Original superseded/deleted bytes; never overwrite HEAD files with these"
+    },
     {
       "git_blob_sha1": "6de249b97d88f6548bd14f31adb24b1cbd4b960c",
       "bytes": 78,
