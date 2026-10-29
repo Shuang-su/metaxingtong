@@ -1,0 +1,347 @@
+{
+  "scope": "C29 local curtain frequency candidate, not calibrated room acceptance",
+  "final_images": [
+    {
+      "file": "G_C29_MATERIAL_RAW_1920x1080.png",
+      "dimensions": [
+        1080,
+        1920,
+        3
+      ],
+      "direct50_exact": true
+    },
+    {
+      "file": "G_C29_WHITE_RAW_1920x1080.png",
+      "dimensions": [
+        1080,
+        1920,
+        3
+      ],
+      "direct50_exact": true
+    },
+    {
+      "file": "H_C29_MATERIAL_RAW_1920x1080.png",
+      "dimensions": [
+        1080,
+        1920,
+        3
+      ],
+      "direct50_exact": true
+    },
+    {
+      "file": "H_C29_WHITE_RAW_1920x1080.png",
+      "dimensions": [
+        1080,
+        1920,
+        3
+      ],
+      "direct50_exact": true
+    },
+    {
+      "file": "N642_C29_MATERIAL_RAW_1920x1080.png",
+      "dimensions": [
+        1080,
+        1920,
+        3
+      ],
+      "direct50_exact": true
+    }
+  ],
+  "geometry_checks": [
+    "actual exported 65 front/back cross sections: no crossings",
+    "independent closed450-edge sections including endpoint and collinear contacts: no crossings",
+    "29250 vertices,29248 faces,58496 edges; all edge incidences2",
+    "all recorded non-curtain scene and camera state unchanged",
+    "H/G/N642/665 full-row projected convex bounds unchanged; not all-pixel invariant"
+  ],
+  "visual_review": "Full H/G material and H white inspected; lower sampling noise and bright inherited white lighting remain. Interior folds less dense, left phase and right return errors remain. Top connection remains unverified. G white inspected separately before delivery.",
+  "thickness_caveat": "Back shell reconstructed; paired thickness not normal thickness, 0.00254 to0.01862 LOCAL units, world scale1.25, no metric calibration",
+  "photometric": {
+    "H": {
+      "source": {
+        "file": "inputs/hospital-H-window-BV1GqXMByE1s-t1101.728114-native.png",
+        "sha256": "129345eb1e17ff78b3c20e86c9bbfb301730f2c660036b52168ae2214db4fd48",
+        "sample_y": 300,
+        "interval": [
+          1638,
+          1775
+        ],
+        "peaks_x": [
+          1661,
+          1685,
+          1712,
+          1738,
+          1765
+        ],
+        "spacing_px": [
+          24,
+          27,
+          26,
+          27
+        ],
+        "median_spacing_px": 26.5,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      },
+      "C28": {
+        "file": "c28/renders/H_C28_MATERIAL_RAW_1920x1080.png",
+        "sha256": "13c22fe9a60e0abbac12426ff35757697e618ca7ca68d7c0a6b4a30580375f52",
+        "sample_y": 300,
+        "interval": [
+          1638,
+          1775
+        ],
+        "peaks_x": [
+          1650,
+          1667,
+          1684,
+          1702,
+          1720,
+          1739
+        ],
+        "spacing_px": [
+          17,
+          17,
+          18,
+          18,
+          19
+        ],
+        "median_spacing_px": 18.0,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      },
+      "C29": {
+        "file": "c29/renders/H_C29_MATERIAL_RAW_1920x1080.png",
+        "sha256": "f4b1072e2fa2b35d0f20f1635ccc28049212cb576130b733718a226690da5e00",
+        "sample_y": 300,
+        "interval": [
+          1638,
+          1775
+        ],
+        "peaks_x": [
+          1651,
+          1671,
+          1695,
+          1718,
+          1739
+        ],
+        "spacing_px": [
+          20,
+          24,
+          23,
+          21
+        ],
+        "median_spacing_px": 22.0,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      }
+    },
+    "G": {
+      "source": {
+        "file": "inputs/hospital-G-bed-edge-BV1GqXMByE1s-t1116.180816-native.png",
+        "sha256": "5df9bc480c81c8fbcb8ea0ee7292c4799c8106cf5a0d231264215b276e432474",
+        "sample_y": 300,
+        "interval": [
+          1036,
+          1118
+        ],
+        "peaks_x": [
+          1046,
+          1066,
+          1087,
+          1108
+        ],
+        "spacing_px": [
+          20,
+          21,
+          21
+        ],
+        "median_spacing_px": 21.0,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      },
+      "C28": {
+        "file": "c28/renders/G_C28_MATERIAL_RAW_1920x1080.png",
+        "sha256": "73b51fe64efc99c6efc12e8112ad5b5b67e4695b96f61644dc95faea149d8093",
+        "sample_y": 300,
+        "interval": [
+          1036,
+          1118
+        ],
+        "peaks_x": [
+          1048,
+          1062,
+          1076,
+          1091,
+          1106
+        ],
+        "spacing_px": [
+          14,
+          14,
+          15,
+          15
+        ],
+        "median_spacing_px": 14.5,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      },
+      "C29": {
+        "file": "c29/renders/G_C29_MATERIAL_RAW_1920x1080.png",
+        "sha256": "ba424ce6c566a0e790be4055ef014cd68fa62942604b5882cf79432c822469bf",
+        "sample_y": 300,
+        "interval": [
+          1036,
+          1118
+        ],
+        "peaks_x": [
+          1052,
+          1071,
+          1089,
+          1106
+        ],
+        "spacing_px": [
+          19,
+          18,
+          17
+        ],
+        "median_spacing_px": 18.0,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      }
+    },
+    "N642": {
+      "source": {
+        "file": "inputs/BV1GqXMByE1s_642.617525_right_turn_native.png",
+        "sha256": "73a60160a5a74b2184eba295a0e279c5bfd523003fd5452cf05bc16b1bd55522",
+        "sample_y": 180,
+        "interval": [
+          1300,
+          1388
+        ],
+        "peaks_x": [
+          1310,
+          1331,
+          1355,
+          1376
+        ],
+        "spacing_px": [
+          21,
+          24,
+          21
+        ],
+        "median_spacing_px": 21.0,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      },
+      "C28": {
+        "file": "c28/renders/N642_C28_MATERIAL_RAW_1920x1080.png",
+        "sha256": "8ba76adf59f984a422721db78f169d598d5c8af94adb2136b783973b4fd24271",
+        "sample_y": 180,
+        "interval": [
+          1300,
+          1388
+        ],
+        "peaks_x": [
+          1315,
+          1330,
+          1345,
+          1361,
+          1377
+        ],
+        "spacing_px": [
+          15,
+          15,
+          16,
+          16
+        ],
+        "median_spacing_px": 15.5,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      },
+      "C29": {
+        "file": "c29/renders/N642_C29_MATERIAL_RAW_1920x1080.png",
+        "sha256": "7478f6db608767c2cf4910d739866cc98a54d53478cde847fa1e2752a67cb49e",
+        "sample_y": 180,
+        "interval": [
+          1300,
+          1388
+        ],
+        "peaks_x": [
+          1318,
+          1339,
+          1358,
+          1376
+        ],
+        "spacing_px": [
+          21,
+          19,
+          18
+        ],
+        "median_spacing_px": 19.0,
+        "scope": "photometric internal fold frequency, not calibrated 3D feature correspondences"
+      }
+    }
+  },
+  "validation665": {
+    "frozen_roi": [
+      1725,
+      245,
+      1860,
+      256
+    ],
+    "method": "mean RGB and 11 rows; Gaussian sigma1.5; prominence3; distance7",
+    "scope": "Previously viewed 665, excluded from current candidate selection; no parameter refitting",
+    "results": {
+      "source": {
+        "file": "inputs/BV1GqXMByE1s_665.501733_downward_native.png",
+        "sha256": "79bfec7d314c6613f6ff8b7df982ad6f6c3c47f54a49a1bab98bc4f4ba539c83",
+        "peaks_x": [
+          1755,
+          1783,
+          1813,
+          1843
+        ],
+        "gaps_px": [
+          28,
+          30,
+          30
+        ],
+        "median_gap_px": 30.0
+      },
+      "C28": {
+        "file": "c29/validation665/665_C28_REGION_ONLY.png",
+        "sha256": "f1ac1fcd65b8dde2fb4068aac5326e3450ad9a73600f351c49817ea831fa86bb",
+        "peaks_x": [
+          1745,
+          1765,
+          1784,
+          1805,
+          1825,
+          1846
+        ],
+        "gaps_px": [
+          20,
+          19,
+          21,
+          20,
+          21
+        ],
+        "median_gap_px": 20.0,
+        "absolute_median_gap_error_px": 10.0
+      },
+      "C29": {
+        "file": "c29/validation665/665_C29_REGION_ONLY.png",
+        "sha256": "70f48f9998deb42e32479d9b330edfa98525b8028a69f571a2649fe96375565f",
+        "peaks_x": [
+          1746,
+          1770,
+          1797,
+          1822,
+          1846
+        ],
+        "gaps_px": [
+          24,
+          27,
+          25,
+          24
+        ],
+        "median_gap_px": 24.5,
+        "absolute_median_gap_error_px": 5.5
+      }
+    }
+  },
+  "blind_test": false,
+  "failed_trials": "All TEST models rejected; retain for actual reproducibility, not deliverable candidates"
+}
