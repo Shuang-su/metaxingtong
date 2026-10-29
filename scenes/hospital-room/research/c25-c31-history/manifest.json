@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:36.886715+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:37.286989+00:00",
   "scene": "hospital",
-  "original_snapshot": "c43bec42eb64265f6f4f718f4a7d2310b54019b6",
-  "original_snapshot_tree": "f082448f7e2f4665c169dbb6cdeed47da7902e73",
+  "original_snapshot": "097be58b4a9fde7e08e9fc1b694d0f67fa3b3583",
+  "original_snapshot_tree": "474cccafefa9973d5dee474c0ba0e35c7c26a1bb",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -1146,6 +1146,30 @@
       "sha256": "458836efef8375aec9c62a959d46ad37907d1aaa4b4031d50b9b43fb9a7a1ab2"
     },
     {
+      "relative_path": "c29/build_tests.log",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/build_tests.log",
+      "mode": "100644",
+      "git_blob_sha1": "1e206ceb42d3761dbd999cd081ace7b8ec6d27be",
+      "bytes": 618,
+      "sha256": "2c63a483dd8a89b95a815f1f09b2c32430aee54d695246b01db6b6f2fbd72d1d"
+    },
+    {
+      "relative_path": "c29/hospital_C29_TEST_5fold_MATERIAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/hospital_C29_TEST_5fold_MATERIAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "93bb1f5683eae02f452fec82036ce43dd8de8633",
+      "bytes": 13055855,
+      "sha256": "1189d6af81a287c40ec66342df73d001a52e6b68cbf63ba223fc546004db5f18"
+    },
+    {
+      "relative_path": "c29/hospital_C29_TEST_6fold_MATERIAL.blend",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/hospital_C29_TEST_6fold_MATERIAL.blend",
+      "mode": "100644",
+      "git_blob_sha1": "a696ea9fc1171b77f574a9404112629c0b55ba64",
+      "bytes": 13054674,
+      "sha256": "765b39fcf7f5f9dc01922c6a2a11a93cf1eef31654943946a15aa4546a4b05f2"
+    },
+    {
       "relative_path": "c29/profile_candidates.json",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/profile_candidates.json",
       "mode": "100644",
@@ -1154,12 +1178,36 @@
       "sha256": "b6058e3cdc3d0f2b0d819c1f8e95f725706be1e5c880ba5b6839a80e950f7e50"
     },
     {
+      "relative_path": "c29/scripts/build_test_candidates.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/scripts/build_test_candidates.py",
+      "mode": "100644",
+      "git_blob_sha1": "08319607cfa8c885e21bc02400d974b0a9d2d35b",
+      "bytes": 2036,
+      "sha256": "571151400233fc008a50739b78daaa922dd70003512d4c65e3876add7dec750d"
+    },
+    {
       "relative_path": "c29/scripts/plan_profiles.py",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/scripts/plan_profiles.py",
       "mode": "100644",
       "git_blob_sha1": "255fd1eaa13f8ac26275d740794d9cc6bdbc55ca",
       "bytes": 2280,
       "sha256": "c484d2baa72dd26897520c6a0e2d380f53bb3a81f3eea3e42b2ab3149531f482"
+    },
+    {
+      "relative_path": "c29/scripts/render_regions.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/scripts/render_regions.py",
+      "mode": "100644",
+      "git_blob_sha1": "6a58a3cc482795c3eba26409f1b9f8d303bf8474",
+      "bytes": 1737,
+      "sha256": "38242f616c27a300972d701f6d889767b7bd584d0a7656fd9a37f13cc9065903"
+    },
+    {
+      "relative_path": "c29/test_build_verification.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c29/test_build_verification.json",
+      "mode": "100644",
+      "git_blob_sha1": "7e15171daa1556804d77373b68d25bf6670b9ff1",
+      "bytes": 1250638,
+      "sha256": "5074755489ca4c7f0a98a31514a757ef3505d7d69abe99251d8b85505d89d6eb"
     },
     {
       "relative_path": "c29_diagnosis/1801_curtain_native_crop.png",
@@ -3240,6 +3288,18 @@
       "message": "Checkpoint multi-view curtain frequency evidence and bounded profile hypotheses\n",
       "raw_commit_sha256": "965888d8ac08de0fef894398b3116c96ce84c3bd0340d610be538f6925cdbd37",
       "changed_files_raw": "A\tc29/SCOPE.md\nA\tc29/profile_candidates.json\nA\tc29/scripts/plan_profiles.py\nA\tc29_diagnosis/1801_curtain_native_crop.png\nA\tc29_diagnosis/1801_top_tips_annotated_1x.png\nA\tc29_diagnosis/1804_curtain_native_crop.png\nA\tc29_diagnosis/G_curtain_C28_crop.png\nA\tc29_diagnosis/G_curtain_native_crop.png\nA\tc29_diagnosis/G_top_tips_annotated_1x.png\nA\tc29_diagnosis/H_G_N642_ridge_spacing_1x.png\nA\tc29_diagnosis/H_curtain_C28_crop.png\nA\tc29_diagnosis/H_curtain_native_crop.png\nA\tc29_diagnosis/N642_curtain_C28_crop.png\nA\tc29_diagnosis/N642_curtain_native_crop.png\nA\tc29_diagnosis/README_DIAGNOSIS.md\nA\tc29_diagnosis/back_bottom_section_world.csv\nA\tc29_diagnosis/c23_curtain_topology.json\nA\tc29_diagnosis/c28_curtain_actual_geometry.json\nA\tc29_diagnosis/c28_curtain_mesh_readonly.json\nA\tc29_diagnosis/front_bottom_section_world.csv\nA\tc29_diagnosis/inspect.log\nA\tc29_diagnosis/inspect_curtain.py\nA\tc29_diagnosis/make_evidence.py\nA\tc29_diagnosis/pixel_evidence.json\n"
+    },
+    {
+      "commit": "097be58b4a9fde7e08e9fc1b694d0f67fa3b3583",
+      "parents": [
+        "c43bec42eb64265f6f4f718f4a7d2310b54019b6"
+      ],
+      "tree": "474cccafefa9973d5dee474c0ba0e35c7c26a1bb",
+      "author": "Codex <codex@openai.com> 1792410379 +0900",
+      "committer": "Codex <codex@openai.com> 1792410379 +0900",
+      "message": "Build reversible C29 five and six fold mesh hypotheses\n",
+      "raw_commit_sha256": "d4f2daa6592f2e97cf7ae8f2c0132ab58bb7d48c105a77d5e52eb5bac1989484",
+      "changed_files_raw": "A\tc29/build_tests.log\nA\tc29/hospital_C29_TEST_5fold_MATERIAL.blend\nA\tc29/hospital_C29_TEST_6fold_MATERIAL.blend\nA\tc29/scripts/build_test_candidates.py\nA\tc29/scripts/render_regions.py\nA\tc29/test_build_verification.json\n"
     }
   ],
   "historical_only_blobs": [
