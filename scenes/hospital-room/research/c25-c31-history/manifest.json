@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "archive_recorded_utc": "2026-10-29T03:46:40.314727+00:00",
+  "archive_recorded_utc": "2026-10-29T03:46:40.425105+00:00",
   "scene": "hospital",
-  "original_snapshot": "79f921fb3cc9db6786eff19f89c27b2868e4a643",
-  "original_snapshot_tree": "dfdf9f4c72c7ea7cb5ab06b3a29dc953c9b385ea",
+  "original_snapshot": "0790dc4c6cc21f6055dded88477f28619abd2d6e",
+  "original_snapshot_tree": "8350afef551b993ff5e291211d91383dc7f6b398",
   "original_history_branch": "history/hospital-c25-c31-original-20261019",
   "source_accepted": false,
   "current_replaced": false,
@@ -2674,6 +2674,14 @@
       "sha256": "9c65f49829ce4e9397e64a175fbb8f031b3bd27db6a3a9068701455861bb0837"
     },
     {
+      "relative_path": "c31/C31_G_recess_before_after_native1x.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/C31_G_recess_before_after_native1x.png",
+      "mode": "100644",
+      "git_blob_sha1": "a9f5d32cc55adb895b9c21e35ef958e054c92d3d",
+      "bytes": 491928,
+      "sha256": "ca35c60acba17ea42f40f1aff587cd24f7ef2a4e891999feb1a87ff15ad3670f"
+    },
+    {
       "relative_path": "c31/SCOPE.md",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/SCOPE.md",
       "mode": "100644",
@@ -2722,6 +2730,30 @@
       "sha256": "9edacd7e0fb94f97aad199eb6122428b341a2fc815aa631f0fa4d60b22939728"
     },
     {
+      "relative_path": "c31/region_render.log",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/region_render.log",
+      "mode": "100644",
+      "git_blob_sha1": "e088b9688b7195bb8fab15ea60605076e8f03f6c",
+      "bytes": 54929,
+      "sha256": "586a6c0b21a336406b453d3a3b7cda9e9721cc35cb65067f83bebfd778e4da4b"
+    },
+    {
+      "relative_path": "c31/region_render_manifest.json",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/region_render_manifest.json",
+      "mode": "100644",
+      "git_blob_sha1": "e8d02cf989572042536c5620d1d6267816f1e9c6",
+      "bytes": 1070,
+      "sha256": "f897296689733b484efbc438e5cfee71101cf693a8d120e4220b2d009bef3d24"
+    },
+    {
+      "relative_path": "c31/region_tests/G_C31_REGION_ONLY.png",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/region_tests/G_C31_REGION_ONLY.png",
+      "mode": "100644",
+      "git_blob_sha1": "afc70598e58bf000ea122aaf1f1950cf4f091e66",
+      "bytes": 1206898,
+      "sha256": "51d73087e8c9161979ff1468f23c6fa6aac19b648c5226ad551db688bcb5f340"
+    },
+    {
       "relative_path": "c31/scripts/build_candidate.py",
       "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/scripts/build_candidate.py",
       "mode": "100644",
@@ -2736,6 +2768,14 @@
       "git_blob_sha1": "7f7b031bfaf226c5f94b4302a39c609d08db84db",
       "bytes": 1758,
       "sha256": "5532c4ff18c7cedaf515964a1e02ff60fbe756a3bca0874df10f9bdd5dda0a64"
+    },
+    {
+      "relative_path": "c31/scripts/render_final.py",
+      "destination_path": "scenes/hospital-room/research/c25-c31-history/files/c31/scripts/render_final.py",
+      "mode": "100644",
+      "git_blob_sha1": "79c6f27f7b388a2b48ba5f65ce0a0874b5dc2ec5",
+      "bytes": 1661,
+      "sha256": "5ad5495849db9bff8395fb487f74ff8d185f67af667afaab464accd7d6a42658"
     },
     {
       "relative_path": "c31_diagnosis/1801.323_annotated_native1x.png",
@@ -4896,6 +4936,18 @@
       "message": "Build C31 independent central recess and inset proportion candidate from C29\n",
       "raw_commit_sha256": "401d8c4eeea869f6b1204359a1fdc7ce7840b85c7a797cce199f57ae1d9eb71d",
       "changed_files_raw": "A\tc31/SCOPE.md\nA\tc31/build.log\nA\tc31/build_verification.json\nA\tc31/hospital_C31_recess_MATERIAL_CONDITIONAL.blend\nA\tc31/hospital_C31_recess_WHITE_CONDITIONAL.blend\nA\tc31/scripts/build_candidate.py\nA\tc31/scripts/render_G_region.py\n"
+    },
+    {
+      "commit": "0790dc4c6cc21f6055dded88477f28619abd2d6e",
+      "parents": [
+        "79f921fb3cc9db6786eff19f89c27b2868e4a643"
+      ],
+      "tree": "8350afef551b993ff5e291211d91383dc7f6b398",
+      "author": "Codex <codex@openai.com> 1792414189 +0900",
+      "committer": "Codex <codex@openai.com> 1792414189 +0900",
+      "message": "Record C31 actual G region comparison before complete fixed-camera renders\n",
+      "raw_commit_sha256": "71ba92c563d9d5c85c408422ff974ab0ff1d75c7c3c59daffa752c347544fd61",
+      "changed_files_raw": "A\tc31/C31_G_recess_before_after_native1x.png\nA\tc31/region_render.log\nA\tc31/region_render_manifest.json\nA\tc31/region_tests/G_C31_REGION_ONLY.png\nA\tc31/scripts/render_final.py\n"
     }
   ],
   "historical_only_blobs": [
