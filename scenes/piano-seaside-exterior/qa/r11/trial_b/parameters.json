@@ -1,0 +1,55 @@
+{
+  "variant": "b",
+  "core_gain": 8,
+  "panel_watts_base": 1.4,
+  "lamps": [
+    {
+      "id": "L01_lantern",
+      "point_before": [
+        -0.9200000166893005,
+        1.2200000286102295,
+        0.19224999845027924
+      ],
+      "point_after": [
+        -0.9200000166893005,
+        1.2200000286102295,
+        0.2672500014305115
+      ],
+      "point_energy_unchanged": 12.0,
+      "shadow_enabled": true,
+      "area_lights": [
+        "L01_lantern R11 paper exitance front",
+        "L01_lantern R11 paper exitance back",
+        "L01_lantern R11 paper exitance left",
+        "L01_lantern R11 paper exitance right"
+      ],
+      "watts_per_panel": 1.4,
+      "panel_light_purpose": "approximate transmitted paper flux; global fixed rig, not per-camera fill"
+    },
+    {
+      "id": "L02_lantern",
+      "point_before": [
+        7.199999809265137,
+        -5.5,
+        0.12650999426841736
+      ],
+      "point_after": [
+        7.199999809265137,
+        -5.5,
+        0.2015099972486496
+      ],
+      "point_energy_unchanged": 12.960000038146973,
+      "shadow_enabled": true,
+      "area_lights": [
+        "L02_lantern R11 paper exitance front",
+        "L02_lantern R11 paper exitance back",
+        "L02_lantern R11 paper exitance left",
+        "L02_lantern R11 paper exitance right"
+      ],
+      "watts_per_panel": 1.63296,
+      "panel_light_purpose": "approximate transmitted paper flux; global fixed rig, not per-camera fill"
+    }
+  ],
+  "exposure_unchanged": 0.0,
+  "time_state_binding": "none; identical lamp parameters for both existing world states"
+}
