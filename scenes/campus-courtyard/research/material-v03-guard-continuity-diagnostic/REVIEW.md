@@ -1,0 +1,1 @@
+Limited support review identified handrail gaps between flight ends and landing outer guards. Added shared real return tubes and inner handrail connectors in next candidate. This actual interim scene and every completed render remain retained. Render job intentionally stopped for complete shared-state rerender.

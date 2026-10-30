@@ -1,0 +1,1 @@
+East facade now visible. Four-view review shows the almost purely rotational camera guesses cannot explain near-tree versus distant-bench parallax. Next trial includes camera translation. Stair/hoop relationships are still provisional; source constraints not passed. This actual trial remains intact.

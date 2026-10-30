@@ -1,0 +1,430 @@
+{
+  "status": "conditional pose hypotheses, not calibration or asset acceptance",
+  "shared_geometry_commit": "87b37f98911f533605d5aebdd60756edb96fe951",
+  "hypotheses": {
+    "FORWARD_COURT_ORDER": {
+      "location": [
+        19.43220350611671,
+        6.213116414352836,
+        0.4000000000000001
+      ],
+      "target": [
+        10.188601228802382,
+        34.749144070644576,
+        0.900941651475023
+      ],
+      "lens_mm": 19.593543988886918,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0,
+      "roll": 0,
+      "parameters": [
+        19.43220350611671,
+        6.213116414352836,
+        0.4000000000000001,
+        -0.31326149614049703,
+        0.016698831119197115,
+        19.593543988886918
+      ],
+      "fitting_points": [
+        {
+          "name": "blue_near_right",
+          "world": [
+            19.5,
+            9.5,
+            0.11
+          ],
+          "source_xy": [
+            1322,
+            655
+          ],
+          "manual_tolerance_px": 5,
+          "pick_note": "hard blue/red corner",
+          "projection_xy": [
+            1323.0935192868103,
+            655.1985855147014
+          ],
+          "depth": 3.1007547999619187,
+          "error_px": 1.111404803514615
+        },
+        {
+          "name": "blue_far_left",
+          "world": [
+            1.5,
+            22.5,
+            0.11
+          ],
+          "source_xy": [
+            430,
+            552
+          ],
+          "manual_tolerance_px": 20,
+          "pick_note": "partly occluded far boundary estimate",
+          "projection_xy": [
+            361.205740542325,
+            571.8759249515236
+          ],
+          "depth": 21.0125281507436,
+          "error_px": 71.60797809607885
+        },
+        {
+          "name": "blue_far_right",
+          "world": [
+            19.5,
+            22.5,
+            0.11
+          ],
+          "source_xy": [
+            1150,
+            552
+          ],
+          "manual_tolerance_px": 20,
+          "pick_note": "partly occluded far boundary estimate",
+          "projection_xy": [
+            1303.4688274472046,
+            577.0483733220854
+          ],
+          "depth": 15.466366784355005,
+          "error_px": 155.49952412821852
+        },
+        {
+          "name": "net_left_foot",
+          "world": [
+            5.8,
+            18,
+            0.1
+          ],
+          "source_xy": [
+            313,
+            585
+          ],
+          "manual_tolerance_px": 8,
+          "pick_note": "slender upright foot, assembly identity hypothesis",
+          "projection_xy": [
+            326.7485867250723,
+            577.8021806541913
+          ],
+          "depth": 15.407040695334294,
+          "error_px": 15.518770578616492
+        },
+        {
+          "name": "net_right_foot",
+          "world": [
+            18.2,
+            18,
+            0.1
+          ],
+          "source_xy": [
+            1215,
+            585
+          ],
+          "manual_tolerance_px": 8,
+          "pick_note": "padded upright foot, assembly identity hypothesis",
+          "projection_xy": [
+            1181.8748752768436,
+            584.5129030844432
+          ],
+          "depth": 11.586351754044372,
+          "error_px": 33.128705850513
+        }
+      ],
+      "mean_error_px": 55.3732766913883,
+      "weighted_cost": 47.11526782352126,
+      "bounds": {
+        "lower": [
+          -40,
+          -60,
+          0.4,
+          -0.85,
+          -0.6,
+          10
+        ],
+        "upper": [
+          60,
+          85,
+          20,
+          0.85,
+          0.35,
+          120
+        ]
+      },
+      "bound_hits": [
+        2
+      ],
+      "accepted": false
+    },
+    "REVERSE_TRACK_SIDE": {
+      "location": [
+        0.8857643141475489,
+        84.99999999999943,
+        10.703217537755425
+      ],
+      "target": [
+        3.9831613810268225,
+        55.46315389456306,
+        6.4628338813092405
+      ],
+      "lens_mm": 77.26306860684424,
+      "sensor_width_mm": 36,
+      "shift_x": 0,
+      "shift_y": 0,
+      "roll": 0,
+      "parameters": [
+        0.8857643141475489,
+        84.99999999999943,
+        10.703217537755425,
+        3.037108999925051,
+        -0.14182105684071908,
+        77.26306860684424
+      ],
+      "fitting_points": [
+        {
+          "name": "blue_near_right",
+          "world": [
+            1.5,
+            22.5,
+            0.11
+          ],
+          "source_xy": [
+            1322,
+            655
+          ],
+          "manual_tolerance_px": 5,
+          "pick_note": "hard blue/red corner",
+          "projection_xy": [
+            1345.8081429622416,
+            650.4924924490223
+          ],
+          "depth": 63.09582399725886,
+          "error_px": 24.23108118992333
+        },
+        {
+          "name": "blue_far_left",
+          "world": [
+            19.5,
+            9.5,
+            0.11
+          ],
+          "source_xy": [
+            430,
+            552
+          ],
+          "manual_tolerance_px": 20,
+          "pick_note": "partly occluded far boundary estimate",
+          "projection_xy": [
+            396.1897716079037,
+            518.749698470293
+          ],
+          "depth": 77.75356221640885,
+          "error_px": 47.420608344285846
+        },
+        {
+          "name": "blue_far_right",
+          "world": [
+            1.5,
+            9.5,
+            0.11
+          ],
+          "source_xy": [
+            1150,
+            552
+          ],
+          "manual_tolerance_px": 20,
+          "pick_note": "partly occluded far boundary estimate",
+          "projection_xy": [
+            1354.357293697703,
+            532.636261934745
+          ],
+          "depth": 75.89512397628128,
+          "error_px": 205.2726426957792
+        },
+        {
+          "name": "net_left_foot",
+          "world": [
+            18.2,
+            18,
+            0.1
+          ],
+          "source_xy": [
+            313,
+            585
+          ],
+          "manual_tolerance_px": 8,
+          "pick_note": "slender upright foot, assembly identity hypothesis",
+          "projection_xy": [
+            351.15760245251863,
+            588.9697928139163
+          ],
+          "depth": 69.25198207485592,
+          "error_px": 38.36354884405088
+        },
+        {
+          "name": "net_right_foot",
+          "world": [
+            5.8,
+            18,
+            0.1
+          ],
+          "source_xy": [
+            1215,
+            585
+          ],
+          "manual_tolerance_px": 8,
+          "pick_note": "padded upright foot, assembly identity hypothesis",
+          "projection_xy": [
+            1087.3242191711106,
+            600.9738323360841
+          ],
+          "depth": 67.97172462054581,
+          "error_px": 128.67116355177615
+        }
+      ],
+      "mean_error_px": 88.7918089251631,
+      "weighted_cost": 208.06885684457498,
+      "bounds": {
+        "lower": [
+          -40,
+          -60,
+          0.4,
+          2.291592653589793,
+          -0.6,
+          10
+        ],
+        "upper": [
+          60,
+          85,
+          20,
+          3.991592653589793,
+          0.35,
+          120
+        ]
+      },
+      "bound_hits": [
+        1
+      ],
+      "accepted": false
+    }
+  },
+  "all_numeric_trials": [
+    {
+      "hypothesis": "FORWARD_COURT_ORDER",
+      "initial_lens": 15,
+      "x": [
+        19.432203499989107,
+        6.213116340339231,
+        0.40000000000000097,
+        -0.3132614940017458,
+        0.01669883211279542,
+        19.593544030573447
+      ],
+      "cost": 47.11526782352127,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "hypothesis": "FORWARD_COURT_ORDER",
+      "initial_lens": 25,
+      "x": [
+        19.432203503100688,
+        6.2131164143793765,
+        0.4000000000000003,
+        -0.31326149578674906,
+        0.01669883130103863,
+        19.593543967143706
+      ],
+      "cost": 47.11526782352141,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "hypothesis": "FORWARD_COURT_ORDER",
+      "initial_lens": 45,
+      "x": [
+        19.432203497810033,
+        6.213116380181889,
+        0.4000000000000012,
+        -0.31326149420357363,
+        0.016698831729570474,
+        19.59354396260167
+      ],
+      "cost": 47.11526782352137,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "hypothesis": "FORWARD_COURT_ORDER",
+      "initial_lens": 80,
+      "x": [
+        19.43220350611671,
+        6.213116414352836,
+        0.4000000000000001,
+        -0.31326149614049703,
+        0.016698831119197115,
+        19.593543988886918
+      ],
+      "cost": 47.11526782352126,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "hypothesis": "REVERSE_TRACK_SIDE",
+      "initial_lens": 15,
+      "x": [
+        0.8857758660204127,
+        84.99999999992427,
+        10.703213350792232,
+        3.0371091722922205,
+        -0.14182099416207306,
+        77.26305945251953
+      ],
+      "cost": 208.06885684465004,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "hypothesis": "REVERSE_TRACK_SIDE",
+      "initial_lens": 25,
+      "x": [
+        0.8857643141475489,
+        84.99999999999943,
+        10.703217537755425,
+        3.037108999925051,
+        -0.14182105684071908,
+        77.26306860684424
+      ],
+      "cost": 208.06885684457498,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "hypothesis": "REVERSE_TRACK_SIDE",
+      "initial_lens": 45,
+      "x": [
+        0.8857779460557258,
+        84.99999999999999,
+        10.703226120043714,
+        3.0371092032514766,
+        -0.14182118560658286,
+        77.26306052219799
+      ],
+      "cost": 208.06885684459687,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "hypothesis": "REVERSE_TRACK_SIDE",
+      "initial_lens": 80,
+      "x": [
+        0.8858090425073145,
+        84.99999999987506,
+        10.703230414722613,
+        3.0371096677886324,
+        -0.14182125080831137,
+        77.26304127078379
+      ],
+      "cost": 208.06885684500637,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    }
+  ]
+}
