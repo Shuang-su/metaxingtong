@@ -1,0 +1,212 @@
+{
+  "method": "Independent pixel check reads native source + actual rendered PNGs; no mesh-only pass. Sobel after sigma1.4, 90th-percentile with minimum threshold .018, symmetric nearest-edge distance in explicit non-character local ROIs. Different texture/lighting/coverage prevent interpreting as geometric accuracy.",
+  "source_files_unchanged": true,
+  "rows": [
+    {
+      "id": "S01",
+      "source_sha256": "088c4c22287c94ee15ba7289bcf9f4c3ec9e13054f504bf52f8bbfff923b9082",
+      "render_sha256": "abb4ee6de09774333e495cc1b447ddbaf0823d9ac47ad3ba26ac012908293033",
+      "overlay_sha256": "412920de73f9ed0ed1b40c88c096334d1fb796ea5ac12131cd9330ef01e5bc2a",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "direct_blend_verified": true,
+      "rois": {
+        "vent_and_fascia": {
+          "source_box_native_xyxy": [
+            80,
+            620,
+            380,
+            900
+          ],
+          "baseline": {
+            "source_edge_pixels": 6402,
+            "render_edge_pixels": 3251,
+            "source_to_render_mean_px": 26.727305186602646,
+            "render_to_source_mean_px": 13.45425920570308,
+            "source_to_render_p90_px": 48.83646178829912,
+            "render_to_source_p90_px": 28.460498941515414,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          },
+          "camera_only_trial": {
+            "source_edge_pixels": 6402,
+            "render_edge_pixels": 3363,
+            "source_to_render_mean_px": 17.309220681415752,
+            "render_to_source_mean_px": 13.509046287711598,
+            "source_to_render_p90_px": 41.23105625617661,
+            "render_to_source_p90_px": 33.04812800035046,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          }
+        },
+        "dash_corner": {
+          "source_box_native_xyxy": [
+            170,
+            535,
+            350,
+            675
+          ],
+          "baseline": {
+            "source_edge_pixels": 2520,
+            "render_edge_pixels": 2463,
+            "source_to_render_mean_px": 31.88830017748659,
+            "render_to_source_mean_px": 28.506479214864218,
+            "source_to_render_p90_px": 48.507731342539614,
+            "render_to_source_p90_px": 68.87670143089025,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          },
+          "camera_only_trial": {
+            "source_edge_pixels": 2520,
+            "render_edge_pixels": 2106,
+            "source_to_render_mean_px": 18.32461656770513,
+            "render_to_source_mean_px": 21.366264970783245,
+            "source_to_render_p90_px": 31.0,
+            "render_to_source_p90_px": 43.04648650006177,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          }
+        }
+      }
+    },
+    {
+      "id": "S02",
+      "source_sha256": "fe7be15846173dfd6fdd428604fe4a0b35947f685db9dbf7573c798322492bbc",
+      "render_sha256": "212db4172f219a027a6720dde43875b2a689ee0ebe9776611928c5d6ef615a7f",
+      "overlay_sha256": "800ecd15d11819b45ae460453f3e65c2ae546d19cde4f0ebeebe32a8239b1760",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "direct_blend_verified": true,
+      "rois": {
+        "vent_and_fascia": {
+          "source_box_native_xyxy": [
+            120,
+            670,
+            405,
+            940
+          ],
+          "baseline": {
+            "source_edge_pixels": 4900,
+            "render_edge_pixels": 2961,
+            "source_to_render_mean_px": 47.19236946686316,
+            "render_to_source_mean_px": 25.61721783427878,
+            "source_to_render_p90_px": 76.5388789089507,
+            "render_to_source_p90_px": 62.20128616033595,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          },
+          "camera_only_trial": {
+            "source_edge_pixels": 4900,
+            "render_edge_pixels": 5125,
+            "source_to_render_mean_px": 14.358359567367323,
+            "render_to_source_mean_px": 14.927217145198135,
+            "source_to_render_p90_px": 36.40054944640259,
+            "render_to_source_p90_px": 37.8338384140459,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          }
+        },
+        "dash_corner": {
+          "source_box_native_xyxy": [
+            210,
+            590,
+            380,
+            720
+          ],
+          "baseline": {
+            "source_edge_pixels": 1884,
+            "render_edge_pixels": 1464,
+            "source_to_render_mean_px": 18.856467114376894,
+            "render_to_source_mean_px": 19.82897441959913,
+            "source_to_render_p90_px": 36.49657518178932,
+            "render_to_source_p90_px": 55.67311905402384,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          },
+          "camera_only_trial": {
+            "source_edge_pixels": 1884,
+            "render_edge_pixels": 2210,
+            "source_to_render_mean_px": 18.106623814804635,
+            "render_to_source_mean_px": 16.914510081003097,
+            "source_to_render_p90_px": 34.438350715445125,
+            "render_to_source_p90_px": 35.52881928773144,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          }
+        }
+      }
+    },
+    {
+      "id": "S03",
+      "source_sha256": "08f75ad806bb411beaa0e650afe31fdf144f49ad97e79c88fe44c0308d8787e3",
+      "render_sha256": "f373dfac67daefb5ce1ca4d5e0fd2ae84f6ece4e66d5e89a030a3ae67f143dee",
+      "overlay_sha256": "5de833d4e7080288e0a5ba15c97721e903a5f3ed4a8c11b0c616bcaca90207a4",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "direct_blend_verified": true,
+      "rois": {
+        "vent_and_fascia": {
+          "source_box_native_xyxy": [
+            240,
+            565,
+            500,
+            805
+          ],
+          "baseline": {
+            "source_edge_pixels": 6240,
+            "render_edge_pixels": 2897,
+            "source_to_render_mean_px": 36.77991049649399,
+            "render_to_source_mean_px": 14.30426423343587,
+            "source_to_render_p90_px": 69.42981984248013,
+            "render_to_source_p90_px": 32.01562118716424,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          },
+          "camera_only_trial": {
+            "source_edge_pixels": 6240,
+            "render_edge_pixels": 2974,
+            "source_to_render_mean_px": 15.840084680430014,
+            "render_to_source_mean_px": 9.560419537433845,
+            "source_to_render_p90_px": 38.3275357934736,
+            "render_to_source_p90_px": 22.090722034374522,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          }
+        },
+        "dash_corner": {
+          "source_box_native_xyxy": [
+            320,
+            495,
+            480,
+            625
+          ],
+          "baseline": {
+            "source_edge_pixels": 2080,
+            "render_edge_pixels": 1891,
+            "source_to_render_mean_px": 12.487387941686205,
+            "render_to_source_mean_px": 11.352345782999683,
+            "source_to_render_p90_px": 33.75641539744936,
+            "render_to_source_p90_px": 35.510561809129406,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          },
+          "camera_only_trial": {
+            "source_edge_pixels": 2080,
+            "render_edge_pixels": 1985,
+            "source_to_render_mean_px": 17.05475590055175,
+            "render_to_source_mean_px": 21.896744201140788,
+            "source_to_render_p90_px": 31.400636936215164,
+            "render_to_source_p90_px": 41.72529209005013,
+            "status": "local edge diagnostic only; texture, louvers, shadows and missing coverage confound this score"
+          }
+        }
+      }
+    }
+  ],
+  "preview": {
+    "path": "comparisons/camera_study_contact_sheet.jpg",
+    "dimensions": [
+      1920,
+      948
+    ],
+    "each_panel_display_scale": 0.25,
+    "bytes": 314717,
+    "sha256": "47f8a4321d4e135496ba2ae8dd0297bf5588205821ef2648617d659b09a13416",
+    "not_native_source": true
+  }
+}

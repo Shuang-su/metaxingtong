@@ -1,0 +1,128 @@
+[
+  {
+    "source": "S01",
+    "frame": 1,
+    "state": "closed",
+    "camera": "SRC_S01_closed",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "samples": 32,
+    "render": "renders/camera_only_full/S01_render_native.png",
+    "visibility_checks": [
+      {
+        "feature": "dash_top_corner",
+        "expected_object": "D01_dashboard_top",
+        "first_hit_object": "P14_mirror_sail",
+        "target_distance": 1.7971123994654974,
+        "first_hit_distance": 1.7613349885652423,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      },
+      {
+        "feature": "dash_bottom_corner",
+        "expected_object": "D01_dashboard_top",
+        "first_hit_object": "P02_upper_belt",
+        "target_distance": 1.7817728086823195,
+        "first_hit_distance": 1.636619498855685,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      },
+      {
+        "feature": "a_foot",
+        "expected_object": "A01_fixed_A_pillar",
+        "first_hit_object": "D02_dashboard_end_fascia",
+        "target_distance": 1.8957025544853303,
+        "first_hit_distance": 1.4945582560379007,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      }
+    ],
+    "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
+  },
+  {
+    "source": "S02",
+    "frame": 2,
+    "state": "open",
+    "camera": "SRC_S02_open",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "samples": 32,
+    "render": "renders/camera_only_full/S02_render_native.png",
+    "visibility_checks": [
+      {
+        "feature": "dash_top_corner",
+        "expected_object": "D01_dashboard_top",
+        "first_hit_object": null,
+        "target_distance": 2.8586417128216035,
+        "first_hit_distance": null,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      },
+      {
+        "feature": "dash_bottom_corner",
+        "expected_object": "D01_dashboard_top",
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 2.8826091663634887,
+        "first_hit_distance": 2.827356012659815,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      },
+      {
+        "feature": "a_foot",
+        "expected_object": "A01_fixed_A_pillar",
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 2.877732740380786,
+        "first_hit_distance": 2.7310747120910244,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      }
+    ],
+    "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
+  },
+  {
+    "source": "S03",
+    "frame": 1,
+    "state": "closed",
+    "camera": "SRC_S03_closed",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "samples": 32,
+    "render": "renders/camera_only_full/S03_render_native.png",
+    "visibility_checks": [
+      {
+        "feature": "dash_top_corner",
+        "expected_object": "D01_dashboard_top",
+        "first_hit_object": "P14_mirror_sail",
+        "target_distance": 1.6427691753378875,
+        "first_hit_distance": 1.6060729873655661,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      },
+      {
+        "feature": "dash_bottom_corner",
+        "expected_object": "D01_dashboard_top",
+        "first_hit_object": "P02_upper_belt",
+        "target_distance": 1.6259741476688265,
+        "first_hit_distance": 1.4773464493346102,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      },
+      {
+        "feature": "a_foot",
+        "expected_object": "A01_fixed_A_pillar",
+        "first_hit_object": "D02_dashboard_end_fascia",
+        "target_distance": 1.7484140489998132,
+        "first_hit_distance": 1.3574329732537256,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A modeled proxy corner may be obscured; a source visible corner cannot be accepted by projection alone"
+      }
+    ],
+    "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
+  }
+]

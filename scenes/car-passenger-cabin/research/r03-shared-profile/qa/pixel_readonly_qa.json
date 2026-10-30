@@ -1,0 +1,574 @@
+{
+  "method": "Standalone native PNG pixel QA; no fitting functions or model coordinates imported. Gaussian sigma1.4+Sobel, local 90th percentile/min .018 edges, symmetric distances. Explicit unwarped source/render rectangles exclude character for evaluated interior features. Mirror/A ROIs also contain neighboring edges, lighting and texture; these are local image diagnostics, not object-specific geometry scores. Same source data as fitting, not independent evidence. No overall score.",
+  "all_four_native_sources_verified": [
+    {
+      "id": "S01",
+      "sha256": "088c4c22287c94ee15ba7289bcf9f4c3ec9e13054f504bf52f8bbfff923b9082",
+      "bytes": 1898009,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "role": "side_source"
+    },
+    {
+      "id": "S02",
+      "sha256": "fe7be15846173dfd6fdd428604fe4a0b35947f685db9dbf7573c798322492bbc",
+      "bytes": 1656581,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "role": "side_source"
+    },
+    {
+      "id": "S03",
+      "sha256": "08f75ad806bb411beaa0e650afe31fdf144f49ad97e79c88fe44c0308d8787e3",
+      "bytes": 2061911,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "role": "side_source"
+    },
+    {
+      "id": "S04",
+      "sha256": "6caab9fb9d7762553c26f3fc0f603ef6eedbff90b88c843fbe754a794bd81fca",
+      "bytes": 2101227,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "role": "context_only_excluded"
+    }
+  ],
+  "rows": [
+    {
+      "id": "S01",
+      "source_sha256": "088c4c22287c94ee15ba7289bcf9f4c3ec9e13054f504bf52f8bbfff923b9082",
+      "render_sha256": {
+        "B0_original": "0ddd7da09b3a25271473dd1f75f38740d37c972273ed877a27b290e8a37a97c8",
+        "B1_frozen_camera": "f0bb6999fd1f740c0518adbe9b25260bde8ff782d99595af303357380b6d6898",
+        "D1_shared_profile": "e703a0f10313cf93b990d53f195199a460c0a6dcca2cb50a3ce3e37ae480fa2e"
+      },
+      "rois": {
+        "vent_fascia": {
+          "native_xyxy": [
+            80,
+            620,
+            380,
+            900
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 6402,
+              "render_edge_pixels": 3251,
+              "source_to_render_mean_px": 26.727305186602646,
+              "render_to_source_mean_px": 13.45425920570308,
+              "source_to_render_p90_px": 48.83646178829912,
+              "render_to_source_p90_px": 28.460498941515414
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 6402,
+              "render_edge_pixels": 3369,
+              "source_to_render_mean_px": 27.507283493825263,
+              "render_to_source_mean_px": 16.667709403563517,
+              "source_to_render_p90_px": 49.8196748283246,
+              "render_to_source_p90_px": 29.30182633722825
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 6402,
+              "render_edge_pixels": 3801,
+              "source_to_render_mean_px": 16.472244576052045,
+              "render_to_source_mean_px": 7.766947586188494,
+              "source_to_render_p90_px": 40.19078646006157,
+              "render_to_source_p90_px": 21.18962010041709
+            }
+          }
+        },
+        "dash_turn": {
+          "native_xyxy": [
+            170,
+            535,
+            350,
+            675
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 2520,
+              "render_edge_pixels": 2463,
+              "source_to_render_mean_px": 31.88830017748659,
+              "render_to_source_mean_px": 28.506479214864218,
+              "source_to_render_p90_px": 48.507731342539614,
+              "render_to_source_p90_px": 68.87670143089025
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 2520,
+              "render_edge_pixels": 2520,
+              "source_to_render_mean_px": 22.179156779385906,
+              "render_to_source_mean_px": 19.404219166904827,
+              "source_to_render_p90_px": 46.105308610064064,
+              "render_to_source_p90_px": 52.500435198749074
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 2520,
+              "render_edge_pixels": 1953,
+              "source_to_render_mean_px": 8.82530749293809,
+              "render_to_source_mean_px": 2.9377495626115633,
+              "source_to_render_p90_px": 20.593687066585428,
+              "render_to_source_p90_px": 6.324555320336759
+            }
+          }
+        },
+        "heldout_mirror_region": {
+          "native_xyxy": [
+            350,
+            320,
+            800,
+            610
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 13050,
+              "render_edge_pixels": 2892,
+              "source_to_render_mean_px": 64.67734591149514,
+              "render_to_source_mean_px": 32.82458551592011,
+              "source_to_render_p90_px": 159.67999234959134,
+              "render_to_source_p90_px": 69.11077896419171
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 13050,
+              "render_edge_pixels": 1972,
+              "source_to_render_mean_px": 72.64927883422625,
+              "render_to_source_mean_px": 40.70391782724346,
+              "source_to_render_p90_px": 167.11403186090263,
+              "render_to_source_p90_px": 75.8023746329889
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 13050,
+              "render_edge_pixels": 1721,
+              "source_to_render_mean_px": 76.54607655890695,
+              "render_to_source_mean_px": 41.88774502660077,
+              "source_to_render_p90_px": 175.34622891130024,
+              "render_to_source_p90_px": 76.02631123499285
+            }
+          }
+        },
+        "A_region": {
+          "native_xyxy": [
+            200,
+            220,
+            800,
+            580
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 20708,
+              "render_edge_pixels": 5917,
+              "source_to_render_mean_px": 58.998011010843,
+              "render_to_source_mean_px": 28.849644956284124,
+              "source_to_render_p90_px": 151.06851591983795,
+              "render_to_source_p90_px": 71.59748525377812
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 20708,
+              "render_edge_pixels": 4470,
+              "source_to_render_mean_px": 71.12499504465612,
+              "render_to_source_mean_px": 30.506792353366855,
+              "source_to_render_p90_px": 164.14932226482082,
+              "render_to_source_p90_px": 67.4166151627327
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 20708,
+              "render_edge_pixels": 3797,
+              "source_to_render_mean_px": 73.82646735844979,
+              "render_to_source_mean_px": 30.033237544781326,
+              "source_to_render_p90_px": 171.39807466308633,
+              "render_to_source_p90_px": 67.11929677819934
+            }
+          }
+        },
+        "heldout_roof": {
+          "native_xyxy": [
+            1380,
+            140,
+            1780,
+            290
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 2591,
+              "render_edge_pixels": 63,
+              "source_to_render_mean_px": 207.8708521768881,
+              "render_to_source_mean_px": 45.44932898604935,
+              "source_to_render_p90_px": 370.66966425646433,
+              "render_to_source_p90_px": 71.36975946314035
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 2591,
+              "render_edge_pixels": 686,
+              "source_to_render_mean_px": 123.8556735267416,
+              "render_to_source_mean_px": 22.726127800422933,
+              "source_to_render_p90_px": 274.20430339438514,
+              "render_to_source_p90_px": 64.88054971738435
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 2591,
+              "render_edge_pixels": 699,
+              "source_to_render_mean_px": 123.85373431850098,
+              "render_to_source_mean_px": 23.492217602521237,
+              "source_to_render_p90_px": 274.20430339438514,
+              "render_to_source_p90_px": 66.73527623016007
+            }
+          }
+        }
+      },
+      "blends": [
+        {
+          "stage": "B1_frozen_camera",
+          "path": "comparisons/S01_B1_frozen_camera_direct_50percent_native.png",
+          "exact_half_pixel_formula_verified": true,
+          "sha256": "fa27aa83253df838fae1d7b64a29dec68df4ca6028bc47099c5a0986a1f66dd4"
+        },
+        {
+          "stage": "D1_shared_profile",
+          "path": "comparisons/S01_D1_shared_profile_direct_50percent_native.png",
+          "exact_half_pixel_formula_verified": true,
+          "sha256": "d7efa9a9423dbdd573d0621fc411fc1a51572767c5b4dab3bac01381725cf92d"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "source_sha256": "fe7be15846173dfd6fdd428604fe4a0b35947f685db9dbf7573c798322492bbc",
+      "render_sha256": {
+        "B0_original": "4469526c7bd1d0e25177784213862f8b79d15208cca195802decab389fc72ee7",
+        "B1_frozen_camera": "3d5ff665962975ed00f512efa781948f7009bdaa85d2761b5a07a6dae1dcb6d3",
+        "D1_shared_profile": "5daea0b05ae30b950167cc95356520cfb0212282619127321bad1bf3347ecc27"
+      },
+      "rois": {
+        "vent_fascia": {
+          "native_xyxy": [
+            120,
+            670,
+            405,
+            940
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 4900,
+              "render_edge_pixels": 2961,
+              "source_to_render_mean_px": 47.19236946686316,
+              "render_to_source_mean_px": 25.61721783427878,
+              "source_to_render_p90_px": 76.5388789089507,
+              "render_to_source_p90_px": 62.20128616033595
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 4900,
+              "render_edge_pixels": 5151,
+              "source_to_render_mean_px": 16.792164440292773,
+              "render_to_source_mean_px": 19.34595044044249,
+              "source_to_render_p90_px": 48.671338915446775,
+              "render_to_source_p90_px": 46.51881339845203
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 4900,
+              "render_edge_pixels": 6809,
+              "source_to_render_mean_px": 11.521153504183372,
+              "render_to_source_mean_px": 7.656974515427761,
+              "source_to_render_p90_px": 30.59411708155671,
+              "render_to_source_p90_px": 14.422205101855956
+            }
+          }
+        },
+        "dash_turn": {
+          "native_xyxy": [
+            210,
+            590,
+            380,
+            720
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 1884,
+              "render_edge_pixels": 1464,
+              "source_to_render_mean_px": 18.856467114376894,
+              "render_to_source_mean_px": 19.82897441959913,
+              "source_to_render_p90_px": 36.49657518178932,
+              "render_to_source_p90_px": 55.67311905402384
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 1884,
+              "render_edge_pixels": 2210,
+              "source_to_render_mean_px": 21.683820502302794,
+              "render_to_source_mean_px": 18.15169093942778,
+              "source_to_render_p90_px": 42.0,
+              "render_to_source_p90_px": 43.94641508527722
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 1884,
+              "render_edge_pixels": 2210,
+              "source_to_render_mean_px": 9.361663804578873,
+              "render_to_source_mean_px": 7.99512582289435,
+              "source_to_render_p90_px": 29.698484809834994,
+              "render_to_source_p90_px": 17.8996894379985
+            }
+          }
+        },
+        "A_region": {
+          "native_xyxy": [
+            220,
+            270,
+            800,
+            630
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 7011,
+              "render_edge_pixels": 6736,
+              "source_to_render_mean_px": 25.973676691930944,
+              "render_to_source_mean_px": 39.008808274888366,
+              "source_to_render_p90_px": 56.0357029044876,
+              "render_to_source_p90_px": 77.18808089438704
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 7011,
+              "render_edge_pixels": 3812,
+              "source_to_render_mean_px": 44.930406413068724,
+              "render_to_source_mean_px": 31.18415806929304,
+              "source_to_render_p90_px": 80.09993757800315,
+              "render_to_source_p90_px": 64.11941774262958
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 7011,
+              "render_edge_pixels": 3171,
+              "source_to_render_mean_px": 46.158663270316424,
+              "render_to_source_mean_px": 33.900632134691236,
+              "source_to_render_p90_px": 80.05623023850174,
+              "render_to_source_p90_px": 65.37583651472461
+            }
+          }
+        }
+      },
+      "blends": [
+        {
+          "stage": "B1_frozen_camera",
+          "path": "comparisons/S02_B1_frozen_camera_direct_50percent_native.png",
+          "exact_half_pixel_formula_verified": true,
+          "sha256": "d634fc6210503deb8837c68e34396a224f30773cfde86330d291f09e030d57b8"
+        },
+        {
+          "stage": "D1_shared_profile",
+          "path": "comparisons/S02_D1_shared_profile_direct_50percent_native.png",
+          "exact_half_pixel_formula_verified": true,
+          "sha256": "7944fbe67950a55ac34541583c16fd729fe5932630df0f0c2e08e5cc04e64c8b"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "source_sha256": "08f75ad806bb411beaa0e650afe31fdf144f49ad97e79c88fe44c0308d8787e3",
+      "render_sha256": {
+        "B0_original": "ed728419c2de99c848f98e22472418b06e8167c079696ff5f1d9760dd71fa89e",
+        "B1_frozen_camera": "862b18ae65388da1d5a79d21cbf259100a23388244336a65855c0a02f562d76a",
+        "D1_shared_profile": "f8275ba091155f318ac9bf345213823afdf89b8f5f6be4fc0d846ad7206c0f45"
+      },
+      "rois": {
+        "vent_fascia": {
+          "native_xyxy": [
+            240,
+            565,
+            500,
+            805
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 6240,
+              "render_edge_pixels": 2897,
+              "source_to_render_mean_px": 36.77991049649399,
+              "render_to_source_mean_px": 14.30426423343587,
+              "source_to_render_p90_px": 69.42981984248013,
+              "render_to_source_p90_px": 32.01562118716424
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 6240,
+              "render_edge_pixels": 2992,
+              "source_to_render_mean_px": 24.52586644929908,
+              "render_to_source_mean_px": 14.854930495269672,
+              "source_to_render_p90_px": 46.331410760739,
+              "render_to_source_p90_px": 24.0
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 6240,
+              "render_edge_pixels": 3479,
+              "source_to_render_mean_px": 13.448916407151861,
+              "render_to_source_mean_px": 4.989701009339211,
+              "source_to_render_p90_px": 30.0,
+              "render_to_source_p90_px": 15.231546211727817
+            }
+          }
+        },
+        "dash_turn": {
+          "native_xyxy": [
+            320,
+            495,
+            480,
+            625
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 2080,
+              "render_edge_pixels": 1891,
+              "source_to_render_mean_px": 12.487387941686205,
+              "render_to_source_mean_px": 11.352345782999683,
+              "source_to_render_p90_px": 33.75641539744936,
+              "render_to_source_p90_px": 35.510561809129406
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 2080,
+              "render_edge_pixels": 2080,
+              "source_to_render_mean_px": 19.083922114707896,
+              "render_to_source_mean_px": 18.443455906918697,
+              "source_to_render_p90_px": 39.05764498470154,
+              "render_to_source_p90_px": 42.64621196224889
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 2080,
+              "render_edge_pixels": 1689,
+              "source_to_render_mean_px": 7.0441188107400645,
+              "render_to_source_mean_px": 3.044749474935883,
+              "source_to_render_p90_px": 17.282833771126185,
+              "render_to_source_p90_px": 7.0
+            }
+          }
+        },
+        "heldout_mirror_region": {
+          "native_xyxy": [
+            500,
+            320,
+            850,
+            570
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 8750,
+              "render_edge_pixels": 1134,
+              "source_to_render_mean_px": 80.2612359213852,
+              "render_to_source_mean_px": 30.768540404176477,
+              "source_to_render_p90_px": 176.24358131190363,
+              "render_to_source_p90_px": 60.97369806417412
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 8750,
+              "render_edge_pixels": 1377,
+              "source_to_render_mean_px": 45.00817010119612,
+              "render_to_source_mean_px": 37.03924533757404,
+              "source_to_render_p90_px": 101.98235124467014,
+              "render_to_source_p90_px": 72.4582631392214
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 8750,
+              "render_edge_pixels": 1213,
+              "source_to_render_mean_px": 53.576198805319926,
+              "render_to_source_mean_px": 40.80542918915935,
+              "source_to_render_p90_px": 123.58559777106748,
+              "render_to_source_p90_px": 73.24616030891995
+            }
+          }
+        },
+        "A_region": {
+          "native_xyxy": [
+            350,
+            200,
+            840,
+            540
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 16498,
+              "render_edge_pixels": 3083,
+              "source_to_render_mean_px": 67.6021454102902,
+              "render_to_source_mean_px": 27.33495664784033,
+              "source_to_render_p90_px": 162.3884232326923,
+              "render_to_source_p90_px": 54.589376255824725
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 16498,
+              "render_edge_pixels": 3922,
+              "source_to_render_mean_px": 48.95632294602482,
+              "render_to_source_mean_px": 27.85167645294824,
+              "source_to_render_p90_px": 109.80118156556043,
+              "render_to_source_p90_px": 54.55088367255827
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 16498,
+              "render_edge_pixels": 3367,
+              "source_to_render_mean_px": 55.1129554819847,
+              "render_to_source_mean_px": 28.489824552040847,
+              "source_to_render_p90_px": 126.25846485408017,
+              "render_to_source_p90_px": 54.56189146281496
+            }
+          }
+        },
+        "heldout_roof": {
+          "native_xyxy": [
+            1380,
+            140,
+            1780,
+            280
+          ],
+          "stages": {
+            "B0_original": {
+              "source_edge_pixels": 2923,
+              "render_edge_pixels": 654,
+              "source_to_render_mean_px": 182.4700772740627,
+              "render_to_source_mean_px": 45.14433382048724,
+              "source_to_render_p90_px": 305.7243824438872,
+              "render_to_source_p90_px": 97.0
+            },
+            "B1_frozen_camera": {
+              "source_edge_pixels": 2923,
+              "render_edge_pixels": 597,
+              "source_to_render_mean_px": 180.13057359529958,
+              "render_to_source_mean_px": 48.0178318731236,
+              "source_to_render_p90_px": 302.9613788404508,
+              "render_to_source_p90_px": 98.83917622654792
+            },
+            "D1_shared_profile": {
+              "source_edge_pixels": 2923,
+              "render_edge_pixels": 603,
+              "source_to_render_mean_px": 180.13057359529958,
+              "render_to_source_mean_px": 48.156957924137295,
+              "source_to_render_p90_px": 302.9613788404508,
+              "render_to_source_p90_px": 98.94639207551599
+            }
+          }
+        }
+      },
+      "blends": [
+        {
+          "stage": "B1_frozen_camera",
+          "path": "comparisons/S03_B1_frozen_camera_direct_50percent_native.png",
+          "exact_half_pixel_formula_verified": true,
+          "sha256": "e3ca1eb1cf1eaf92337b063348fb1c2aa22f8289a6786c8dbc5eab218a883ebd"
+        },
+        {
+          "stage": "D1_shared_profile",
+          "path": "comparisons/S03_D1_shared_profile_direct_50percent_native.png",
+          "exact_half_pixel_formula_verified": true,
+          "sha256": "5daf01fd0df11e752a9707a411e2e2c1660e3d88cd2332761b5cc078251f4489"
+        }
+      ]
+    }
+  ],
+  "preview": {
+    "path": "comparisons/r03_contact_sheet.jpg",
+    "dimensions": [
+      1920,
+      768
+    ],
+    "panel_scale": 0.2,
+    "bytes": 262003,
+    "sha256": "567215112464668962391f7ed984f17a7b3b0d6b8cd9e0cce0bd9a21465a566c"
+  }
+}

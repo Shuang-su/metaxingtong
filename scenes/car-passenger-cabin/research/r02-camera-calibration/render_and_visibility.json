@@ -1,0 +1,149 @@
+[
+  {
+    "source": "S01",
+    "frame": 1,
+    "state": "closed",
+    "camera": "SRC_S01_closed",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "samples": 32,
+    "render": "renders/camera_only_full/S01_render_native.png",
+    "visibility_checks": [
+      {
+        "feature": "dash_top_corner",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "P14_mirror_sail",
+        "target_distance": 3.3353675760097494,
+        "first_hit_distance": 3.306858384539197,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      },
+      {
+        "feature": "dash_bottom_corner",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "P02_upper_belt",
+        "target_distance": 3.3365430495874784,
+        "first_hit_distance": 3.219841220270283,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      },
+      {
+        "feature": "a_foot",
+        "expected_objects": [
+          "A01_fixed_A_pillar",
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 3.295900424095169,
+        "first_hit_distance": 3.2959068259948148,
+        "surface_visible_within_0_005": true,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      }
+    ],
+    "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
+  },
+  {
+    "source": "S02",
+    "frame": 2,
+    "state": "open",
+    "camera": "SRC_S02_open",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "samples": 32,
+    "render": "renders/camera_only_full/S02_render_native.png",
+    "visibility_checks": [
+      {
+        "feature": "dash_top_corner",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 2.238014105388024,
+        "first_hit_distance": 2.2380139855402943,
+        "surface_visible_within_0_005": true,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      },
+      {
+        "feature": "dash_bottom_corner",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 2.256889563814308,
+        "first_hit_distance": 2.208418243203334,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      },
+      {
+        "feature": "a_foot",
+        "expected_objects": [
+          "A01_fixed_A_pillar",
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 2.208433822978559,
+        "first_hit_distance": 2.208434234569225,
+        "surface_visible_within_0_005": true,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      }
+    ],
+    "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
+  },
+  {
+    "source": "S03",
+    "frame": 1,
+    "state": "closed",
+    "camera": "SRC_S03_closed",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "samples": 32,
+    "render": "renders/camera_only_full/S03_render_native.png",
+    "visibility_checks": [
+      {
+        "feature": "dash_top_corner",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "P14_mirror_sail",
+        "target_distance": 3.459604413261688,
+        "first_hit_distance": 3.431364640728847,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      },
+      {
+        "feature": "dash_bottom_corner",
+        "expected_objects": [
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "P02_upper_belt",
+        "target_distance": 3.4607376888335684,
+        "first_hit_distance": 3.3451419032954433,
+        "surface_visible_within_0_005": false,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      },
+      {
+        "feature": "a_foot",
+        "expected_objects": [
+          "A01_fixed_A_pillar",
+          "D01_dashboard_top"
+        ],
+        "first_hit_object": "D01_dashboard_top",
+        "target_distance": 3.4135337236925207,
+        "first_hit_distance": 3.413540568504735,
+        "surface_visible_within_0_005": true,
+        "interpretation": "A-foot is a nominal pillar/dashboard interface, so the dashboard surface at the same depth is valid. Other modeled proxy corners may be obscured; projection alone is insufficient."
+      }
+    ],
+    "geometry_visibility": "Every baseline mesh retained; no per-camera hide flags or geometry changes"
+  }
+]

@@ -1,0 +1,192 @@
+{
+  "full_frame": [
+    {
+      "source": "sources/native/BV1wwtN6sEwL_t2190.197282_native.png",
+      "render": "renders/source/S01_render_closed.png",
+      "overlay": "renders/source/S01_direct_50percent_overlay.png",
+      "alpha": 0.5,
+      "operation": "PIL.Image.blend(source RGB, render RGB, 0.5), no mask/warp/crop",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "status": "uncalibrated diagnostic; no source fit acceptance",
+      "source_sha256": "088c4c22287c94ee15ba7289bcf9f4c3ec9e13054f504bf52f8bbfff923b9082",
+      "render_sha256": "0ddd7da09b3a25271473dd1f75f38740d37c972273ed877a27b290e8a37a97c8",
+      "overlay_sha256": "9c70a5b744b01950e16c2ce9f16716b7d4552f1e3105332a070d17cbc200fb9c"
+    },
+    {
+      "source": "sources/native/BV1wwtN6sEwL_t610.828893_native.png",
+      "render": "renders/source/S02_render_open.png",
+      "overlay": "renders/source/S02_direct_50percent_overlay.png",
+      "alpha": 0.5,
+      "operation": "PIL.Image.blend(source RGB, render RGB, 0.5), no mask/warp/crop",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "status": "uncalibrated diagnostic; no source fit acceptance",
+      "source_sha256": "fe7be15846173dfd6fdd428604fe4a0b35947f685db9dbf7573c798322492bbc",
+      "render_sha256": "4469526c7bd1d0e25177784213862f8b79d15208cca195802decab389fc72ee7",
+      "overlay_sha256": "179dcc464d2527ee43b7a319f1114f54c461bc50a2d5cb94f9ab9148b280ae5c"
+    },
+    {
+      "source": "sources/native/BV1wwtN6sEwL_t2968.842253_native.png",
+      "render": "renders/source/S03_render_closed.png",
+      "overlay": "renders/source/S03_direct_50percent_overlay.png",
+      "alpha": 0.5,
+      "operation": "PIL.Image.blend(source RGB, render RGB, 0.5), no mask/warp/crop",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "status": "uncalibrated diagnostic; no source fit acceptance",
+      "source_sha256": "08f75ad806bb411beaa0e650afe31fdf144f49ad97e79c88fe44c0308d8787e3",
+      "render_sha256": "ed728419c2de99c848f98e22472418b06e8167c079696ff5f1d9760dd71fa89e",
+      "overlay_sha256": "6bd143dd1a545d91e8f14be866069719880a9b2535aaed6b35881bb36d7fae3d"
+    },
+    {
+      "source": "sources/native/BV1wwtN6sEwL_t605.763813_native.png",
+      "render": "renders/source/S04_context_only_render.png",
+      "overlay": "renders/source/S04_direct_50percent_overlay.png",
+      "alpha": 0.5,
+      "operation": "PIL.Image.blend(source RGB, render RGB, 0.5), no mask/warp/crop",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "status": "uncalibrated diagnostic; no source fit acceptance",
+      "source_sha256": "6caab9fb9d7762553c26f3fc0f603ef6eedbff90b88c843fbe754a794bd81fca",
+      "render_sha256": "55941747833b1f56413aab081fcba04f3a29fefbf8524c7f85a6b73eeac1eba7",
+      "overlay_sha256": "485a298247bd8aec06a78070f29e6e3ed1b6b497a7272fff94cd3bc14d3bfaeb"
+    }
+  ],
+  "object_crops": [
+    {
+      "id": "C01_round_vent",
+      "source": "S03",
+      "box_xyxy_native": [
+        270,
+        600,
+        470,
+        800
+      ],
+      "display_scale": 1,
+      "note": "D02-D06; vent center/diameter remain mismatched",
+      "paths": [
+        "qa/object-crops/C01_round_vent_source.png",
+        "qa/object-crops/C01_round_vent_render.png",
+        "qa/object-crops/C01_round_vent_overlay.png"
+      ],
+      "comparison": "Same image coordinates in native source and corresponding render; no realignment or local warping"
+    },
+    {
+      "id": "C02_pillar_mirror",
+      "source": "S03",
+      "box_xyxy_native": [
+        0,
+        160,
+        860,
+        600
+      ],
+      "display_scale": 1,
+      "note": "A01,P14-P17; pillar inclination and mirror visibility uncalibrated",
+      "paths": [
+        "qa/object-crops/C02_pillar_mirror_source.png",
+        "qa/object-crops/C02_pillar_mirror_render.png",
+        "qa/object-crops/C02_pillar_mirror_overlay.png"
+      ],
+      "comparison": "Same image coordinates in native source and corresponding render; no realignment or local warping"
+    },
+    {
+      "id": "C03_woven_strip",
+      "source": "S03",
+      "box_xyxy_native": [
+        400,
+        555,
+        990,
+        680
+      ],
+      "display_scale": 1,
+      "note": "P02,P03; center occluded by character",
+      "paths": [
+        "qa/object-crops/C03_woven_strip_source.png",
+        "qa/object-crops/C03_woven_strip_render.png",
+        "qa/object-crops/C03_woven_strip_overlay.png"
+      ],
+      "comparison": "Same image coordinates in native source and corresponding render; no realignment or local warping"
+    },
+    {
+      "id": "C04_armrest",
+      "source": "S03",
+      "box_xyxy_native": [
+        460,
+        715,
+        920,
+        880
+      ],
+      "display_scale": 1,
+      "note": "P05,P06; character intersects crop; shape inferred",
+      "paths": [
+        "qa/object-crops/C04_armrest_source.png",
+        "qa/object-crops/C04_armrest_render.png",
+        "qa/object-crops/C04_armrest_overlay.png"
+      ],
+      "comparison": "Same image coordinates in native source and corresponding render; no realignment or local warping"
+    },
+    {
+      "id": "C05_seat_edge",
+      "source": "S01",
+      "box_xyxy_native": [
+        1580,
+        475,
+        1920,
+        1080
+      ],
+      "display_scale": 1,
+      "note": "S01,S02; only visible outer edge, not whole seat",
+      "paths": [
+        "qa/object-crops/C05_seat_edge_source.png",
+        "qa/object-crops/C05_seat_edge_render.png",
+        "qa/object-crops/C05_seat_edge_overlay.png"
+      ],
+      "comparison": "Same image coordinates in native source and corresponding render; no realignment or local warping"
+    },
+    {
+      "id": "C06_opening_sill",
+      "source": "S02",
+      "box_xyxy_native": [
+        900,
+        630,
+        1130,
+        1000
+      ],
+      "display_scale": 1,
+      "note": "B02,P01; door angle and character occlusion unresolved",
+      "paths": [
+        "qa/object-crops/C06_opening_sill_source.png",
+        "qa/object-crops/C06_opening_sill_render.png",
+        "qa/object-crops/C06_opening_sill_overlay.png"
+      ],
+      "comparison": "Same image coordinates in native source and corresponding render; no realignment or local warping"
+    },
+    {
+      "id": "C07_visor",
+      "source": "S01",
+      "box_xyxy_native": [
+        275,
+        0,
+        1020,
+        235
+      ],
+      "display_scale": 1,
+      "note": "A03,A05; visor footprint/thickness uncalibrated",
+      "paths": [
+        "qa/object-crops/C07_visor_source.png",
+        "qa/object-crops/C07_visor_render.png",
+        "qa/object-crops/C07_visor_overlay.png"
+      ],
+      "comparison": "Same image coordinates in native source and corresponding render; no realignment or local warping"
+    }
+  ]
+}
