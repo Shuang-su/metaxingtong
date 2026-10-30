@@ -3,7 +3,7 @@ No material/geometry/lighting changes, no visibility switches; only camera and s
 """
 import bpy,json
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'models/r04';QA=ROOT/'qa/r04'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'models/r05';QA=ROOT/'qa/r05'
 jobs=[]
 for role in ['material','white']:
     bpy.ops.wm.open_mainfile(filepath=str(OUT/f'interview-room-{role}.blend'))

@@ -21,12 +21,12 @@
 - R00：来源下载、哈希/解码核验与范围冻结。
 - 后续阶段与视觉缺口记录于 docs；文件或几何测试通过不等于来源验收。
 
-## 当前候选 R04
+## 当前候选 R05
 
-- [可编辑材质 BLEND](models/r04/interview-room-material.blend) · [同几何白模 BLEND](models/r04/interview-room-white.blend)
-- [材质 GLB](models/r04/interview-room-material.glb) · [白模 GLB](models/r04/interview-room-white.glb)
-- [逐物件属性核验](docs/object-audit.md) · [逐实例 provenance](docs/object-provenance-r04.json)
-- [几何与真实GLB回导](qa/r04/geometry-validation.json) · [桌椅白板三角面穿插检查](qa/r04/furniture-intersections.json)
+- [可编辑材质 BLEND](models/r05/interview-room-material.blend) · [同几何白模 BLEND](models/r05/interview-room-white.blend)
+- [材质 GLB](models/r05/interview-room-material.glb) · [白模 GLB](models/r05/interview-room-white.glb)
+- [逐物件属性核验](docs/object-audit.md) · [逐实例 provenance](docs/object-provenance-r05.json)
+- [几何与真实GLB回导](qa/r05/geometry-validation.json) · [桌椅白板三角面穿插检查](qa/r05/furniture-intersections.json)
 - [阶段与失败记录](docs/stages.md) · [复现](docs/reproduce.md)
 
-R04继承共享相机标定，修正R03椅背/后撑穿过桌后沿的问题；并未解决来源近景桌面遮挡冲突。来源图、失败候选、回导文件均保留普通原文件，不交付ZIP。
+R05继承共享相机标定和R04椅背修正，将左侧凸墙厚度放到已拟合可见面后方，消除踢脚线被墙吞没和墙面共面重叠；并未解决来源近景桌面遮挡冲突。来源图、失败候选、回导文件均保留普通原文件，不交付ZIP。

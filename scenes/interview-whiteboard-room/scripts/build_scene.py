@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 PREVIEW='--preview' in sys.argv
 MODELS_ONLY='--models-only' in sys.argv
 cfg=json.loads((ROOT/'docs/camera-fit-r03.json').read_text()); g=cfg['geometry']
-OUT=ROOT/'models/r04'; QA=ROOT/'qa/r04'; OUT.mkdir(parents=True,exist_ok=True); QA.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'models/r05'; QA=ROOT/'qa/r05'; OUT.mkdir(parents=True,exist_ok=True); QA.mkdir(parents=True,exist_ok=True)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=False)
 for datablocks in (bpy.data.materials,bpy.data.meshes,bpy.data.cameras,bpy.data.lights):
@@ -88,7 +88,7 @@ cube('ROOM.ceiling_INFERRED',(0,(wy+front)/2,H+.06),(2*(wh+.4),wy-front,.12),wal
 cube('ROOM.rear-wall',(0,wy+t/2,H/2),(2*wh,t,H),wall,'ROOM-REAR','observed front surface / inferred thickness','Rear of interview nook, not building rear')
 cube('ROOM.right-wall',(wh+t/2,(wy+front)/2,H/2),(t,wy-front,H),wall,'ROOM-RIGHT','mixed','Front extension unobserved')
 cube('ROOM.left-return',(-wh-t/2,(wy+ry)/2,H/2),(t,wy-ry,H),wall,'ROOM-LEFT-RETURN','observed front surface / inferred thickness','Visible short return at left corner')
-cube('ROOM.left-projecting-face',(-wh-.2,ry-t/2,H/2),(.4,t,H),wall,'ROOM-LEFT-FACE','mixed','Projection face partly visible; outer extent inferred')
+cube('ROOM.left-projecting-face',(-wh-(.4+t)/2,ry+t/2,H/2),(.4-t,t,H),wall,'ROOM-LEFT-FACE','mixed','R05 source-facing plane at return_y; thickness behind it; avoids coplanar overlap with return-wall end cap. Outer extent inferred')
 cube('ROOM.left-side_INFERRED',(-wh-.4-t/2,(ry+front)/2,H/2),(t,ry-front,H),wall,'ROOM-LEFT-CLOSURE','inferred','Unseen continuation')
 cube('ROOM.front-wall_INFERRED',(-.2,front-t/2,H/2),(2*wh+.4,t,H),wall,'ROOM-FRONT-CLOSURE','inferred','Closed shell hypothesis; no evidence of door')
 cube('SKIRT.rear',(0,wy-.012,.07),(2*wh,.024,.14),skirt,'SKIRT-REAR','observed silhouette / inferred profile',bevel=.004)
@@ -199,7 +199,7 @@ def render(cam,path,res=(1920,1080),samples=24):
     s.camera=cam;s.render.resolution_x,s.render.resolution_y=res;s.cycles.samples=samples;s.render.filepath=str(path)
     bpy.ops.render.render(write_still=True)
 
-(ROOT/'docs/object-provenance-r04.json').write_text(json.dumps({'status':'candidate','objects':manifest,'dynamic_person':'excluded, original source remains unchanged','closure':'finite inferred shell, all views shared'},indent=2))
+(ROOT/'docs/object-provenance-r05.json').write_text(json.dumps({'status':'candidate','objects':manifest,'dynamic_person':'excluded, original source remains unchanged','closure':'finite inferred shell, all views shared'},indent=2))
 # Geometry hash material-independent; object transforms included.
 def signature():
     rows=[]

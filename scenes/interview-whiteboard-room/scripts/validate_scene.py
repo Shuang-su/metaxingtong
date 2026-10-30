@@ -5,7 +5,7 @@ import bpy,bmesh,json,math,hashlib
 from pathlib import Path
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'models/r04';QA=ROOT/'qa/r04'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'models/r05';QA=ROOT/'qa/r05'
 report={'status':'candidate; geometry/file checks separate from source fidelity','checks':{},'limitations':[]}
 
 def stats():
