@@ -2,9 +2,17 @@
 
 **重建候选 / 待来源复核 / 未经用户接受。** 今日在独立`scene/piano-seaside`分支实际新建，不是已有钢琴门廊或海边吧台改名。暂称第17场景候选，不等于新增场景已验收。R01–R06制作阶段仅本地操作；后续按明确授权正常Git发布到当前私库，并建立[Issue #76](https://github.com/Shuang-su/metaxingtong/issues/76)与[Draft PR #77](https://github.com/Shuang-su/metaxingtong/pull/77)。未合并，未改变私有可见性。详见[发布报告](report.md)。
 
-![R07候选主视角](qa/r07/main.png)
+![R11 C 纸灯局部修正版候选主视角，来源仍未验收](qa/r11/main.png)
 
 R08仅更新N6766近景相机，几何/有效材质/灯光及其他17机位保持R07；校准仍未通过。[小联系图](qa/r08/N6766-camera-comparison.jpg) · [R08说明与不变项](qa/r08/review.md) · [主图JPEG预览（R07原PNG派生，无缩放）](qa/r08/main_R07_retained_preview.jpg)。其余主图、检查图、GLB保留R07原件，未重渲。
+
+## R11 纸灯发光与接地照明修正
+
+R11 实际排查出两点光源埋在不透明灯芯内：关闭点灯与基线诊断逐像素一致。仅将点灯移出灯芯、调整共享纸面发光，并以固定且带阴影的纸面面积光近似透纸照明；保留 R10 全部 614 个网格、18 相机、天空、海岸、其他物件材质和曝光。纸灯仍是两件，没有添加物理灯具。
+
+[主图 JPEG](qa/r11/main_preview.jpg) · [纸灯前后原像素对照](qa/r11/main-lamp-before-after.jpg) · [来源局部对照及限制](qa/r11/source-lamp-local-comparison.jpg) · [五源/直接叠图](qa/r11/source-render-overlay-contact.jpg) · [九角检查](qa/r11/inspection-contact.jpg) · [报告](qa/r11/review.md) · [独立复核](qa/r11/independent-final-review.md) · [材质 BLEND](models/r11/piano_seaside_material.blend) · [白模 BLEND](models/r11/piano_seaside_white.blend) · [材质 GLB](models/r11/piano_seaside_material.glb) · [白模 GLB](models/r11/piano_seaside_white.glb)。GLB 不含世界和灯光；纸面发光贴图与强度已导出，整场照明以 BLEND 为准。仍为未验收候选。
+
+R10 曾记录的 N6318 灯口“明显变暗”已由原审查者在重读 Git 原始像素后撤回：原裁区最大差只有 1/255，未复现显著变暗。[追加勘误](qa/r11/prior-review-correction.md)，旧报告和旧图原样保留。
 
 ## R10 本地天空窄修正版
 

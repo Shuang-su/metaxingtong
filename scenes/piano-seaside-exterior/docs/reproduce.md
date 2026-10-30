@@ -54,3 +54,28 @@ python scripts/make_sky_review_r10.py
 ```
 
 本次选用 `antialias`；脚本支持的 `rollback` 只是明确回退 R08 世界的备用方案，本次未执行。R10 GLB 仍使用 R09 原件，因为只变世界且原 GLB 不导出世界/灯光/相机。
+
+
+## R11：仅共享纸灯材质和实际灯光
+
+从 R10 已保存 BLEND 读取，不重建旧几何。所有命令从仓库根目录运行，使用已有 Blender/Python/Pillow/NumPy；无需安装。
+
+```bash
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/diagnose_lantern_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/diagnose_lantern_sky_r11.py
+python scenes/piano-seaside-exterior/scripts/make_lantern_emission_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/trial_lantern_r11.py -- a
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/trial_lantern_r11.py -- b
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/trial_lantern_c_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/apply_lantern_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/render_lantern_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/validate_lantern_r11.py
+python scenes/piano-seaside-exterior/scripts/make_lantern_review_r11.py
+python scenes/piano-seaside-exterior/scripts/audit_lantern_r11.py
+```
+
+诊断四图包含刻意关闭点灯阴影的 D 组，仅用于确认遮挡，不进入保存模型。正式 B 组所有点灯/面积光阴影开启。各灯四面面积光是在 EEVEE 中近似纸面出射通量，不是新增物理灯具，不是测得的来源光强。两世界状态使用同一灯参数，无相机绑定。
+
+A 组偏奶白失去琥珀边缘，保留失败图；B 组使用旧自制径向图的线性红通道指数 1.65 与暖色重编码，未使用原始来源像素或 AI。B 的倾斜面积光发光面跨入纸壳并产生斜向明暗界，完整失败图保留于 `qa/r11/trial_b_final/`。正式 `apply_lantern_r11.py` 使用 C：保持 B 材质/灯功率/位置，只使面积发光面平行纸壁。`trial_lantern_c_r11.py` 从本地 Git 固定提交 `d5d348f31bea4afd4597b2655fee5958b7e59ca3` 读取真实 B 模型到临时目录，确保工作树更新为 C 后仍可重做 B→C 试验，不发网络请求。
+
+白模 GLB 是 R09 原字节副本；R11 检查重新导入它。材质 GLB 新导出发光图及 KHR_materials_emissive_strength；世界、相机、所有灯不包含在导出中。回导主图保留 BLEND 世界/灯光，因此不能当作任意外部软件照明一致性验证。

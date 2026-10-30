@@ -1,9 +1,11 @@
 """Only area emitter orientation differs from saved B; no geometry/material edits."""
-import bpy,json
+import bpy,json,subprocess,tempfile
 from pathlib import Path
 from mathutils import Vector
 R=Path(__file__).resolve().parents[1];Q=R/'qa/r11/trial_c';Q.mkdir(parents=True,exist_ok=True)
-bpy.ops.wm.open_mainfile(filepath=str(R/'models/r11/piano_seaside_material.blend'));s=bpy.context.scene;report=[]
+# The input is pinned to the actual B model, even after the working tree becomes C.
+temp=tempfile.TemporaryDirectory(prefix='piano-r11-b-');source=Path(temp.name)/'B.blend';source.write_bytes(subprocess.check_output(['git','cat-file','blob','d5d348f31bea4afd4597b2655fee5958b7e59ca3:scenes/piano-seaside-exterior/models/r11/piano_seaside_material.blend'],cwd=R.parents[1]))
+bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;report=[]
 for o in s.objects:
  if o.type!='LIGHT' or 'R11 paper exitance' not in o.name:continue
  old=list(o.rotation_euler);direction=o.rotation_euler.to_quaternion()@Vector((0,0,-1));direction.z=0;direction.normalize();o.rotation_euler=direction.to_track_quat('-Z','Y').to_euler()
