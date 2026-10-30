@@ -1,0 +1,4 @@
+Visible subsequent edit changed exactly this line:
+OLD: bottom=o.location.z-o.dimensions.z/2;o.dimensions.z=1.02 if suffix=='header' else .98;o.location.z=bottom+o.dimensions.z/2
+NEW: bottom=o.location.z-o.dimensions.z/2;height=1.02 if suffix=='header' else .98;o.dimensions.z=height;o.location.z=bottom+height/2
+Reason documented in conversation: querying dimensions immediately after setter returned stale height; initial render had upper units above board / board over screen. This recovery preserves initial text and the observed fix separately, not falsely claiming an old verified final file hash.
