@@ -13,6 +13,8 @@ def stats():
     for o in sorted([x for x in s.objects if x.type=='MESH'],key=lambda x:x.name):
         ev=o.evaluated_get(dep);me=ev.to_mesh();me.calc_loop_triangles()
         verts=[o.matrix_world@v.co for v in me.vertices]
+        triangles=sorted(tuple(sorted(tuple(round(float(c),6) for c in verts[vi]) for vi in tri.vertices)) for tri in me.loop_triangles)
+        geometry_hash=hashlib.sha256(json.dumps(triangles,separators=(',',':')).encode()).hexdigest()
         bm=bmesh.new();bm.from_mesh(me)
         boundaries=sum(e.is_boundary for e in bm.edges);nonman=sum(not e.is_manifold for e in bm.edges)
         area_zero=sum(f.calc_area()<1e-11 for f in bm.faces)
@@ -20,7 +22,7 @@ def stats():
         rows.append({'name':o.name,'stable_id':o.get('stable_id'),'vertices':len(me.vertices),'triangles':len(me.loop_triangles),
           'boundary_edges':boundaries,'nonmanifold_edges':nonman,'zero_area_faces':area_zero,'signed_volume':volume,
           'bounds_min':[min(v[i] for v in verts) for i in range(3)],'bounds_max':[max(v[i] for v in verts) for i in range(3)],
-          'materials':[m.name for m in me.materials if m]})
+          'materials':[m.name for m in me.materials if m],'world_triangle_coordinates_sha256_round6':geometry_hash})
         ev.to_mesh_clear()
     return rows
 
@@ -93,6 +95,9 @@ for role in ['material','white']:
     r=report[role+'_glb_reimport'];report['checks'][role+'_glb_reimport_geometry']=r['matched_names']==len(original) and r['triangles']==r['original_evaluated_triangles'] and r['max_bounds_delta']<1e-5
 report['checks']['material_glb_includes_textures']=report['material_glb_reimport']['image_count']>=2
 report['checks']['white_glb_single_material']=report['white_glb_reimport']['material_count']==1
+matgeo={r['name']:r['world_triangle_coordinates_sha256_round6'] for r in report['material_glb_reimport']['mesh_objects']}
+whitegeo={r['name']:r['world_triangle_coordinates_sha256_round6'] for r in report['white_glb_reimport']['mesh_objects']}
+report['checks']['actual_material_white_glb_triangle_coordinates_identical']=matgeo==whitegeo
 report['all_listed_checks_pass']=all(report['checks'].values())
 (QA/'geometry-validation.json').write_text(json.dumps(report,indent=2))
 print(json.dumps({'checks':report['checks'],'clearances':report['clearances'],'all_listed_checks_pass':report['all_listed_checks_pass']},indent=2))
