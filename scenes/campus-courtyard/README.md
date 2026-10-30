@@ -2,7 +2,7 @@
 
 **重建候选 / 待来源复核 / 未经用户验收。** 有限校园庭院，与医院独立管理；实时/预录、隐藏延伸及真实尺度未知。
 
-[当前原件与完整版本入口](publication/README.md) · [真实提交历史](publication/history.json) · [原文件大小与SHA清单](publication/originals_manifest.json)
+[归档结果与Issue/PR](publication/PUBLISHED.md) · [当前原件与完整版本入口](publication/README.md) · [真实提交历史](publication/history.json) · [原文件大小与SHA清单](publication/originals_manifest.json)
 
 最新几何为Stage03，冻结提交 `87b37f98911f533605d5aebdd60756edb96fe951`。材质模型、同几何白模、GLB实际回导、四组原生直接叠图、八角检查和逐物件QA均保留。Stage04仅为未注册补源的失败相机诊断，不是更新的几何候选。
 
