@@ -28,5 +28,8 @@
 - [逐物件属性核验](docs/object-audit.md) · [逐实例 provenance](docs/object-provenance-r05.json)
 - [几何与真实GLB回导](qa/r05/geometry-validation.json) · [桌椅白板三角面穿插检查](qa/r05/furniture-intersections.json)
 - [阶段与失败记录](docs/stages.md) · [复现](docs/reproduce.md)
+- [主图 JPEG](qa/r05/main.jpg) · [原尺寸主图 PNG](qa/r05/main.png)
+- [两源直接对照联系图](qa/r05/source-contact.jpg) · [九角度检查联系图](qa/r05/inspection-contact.jpg)
+- [实际像素复核与最严重三项偏差](docs/visual-review.md)
 
 R05继承共享相机标定和R04椅背修正，将左侧凸墙厚度放到已拟合可见面后方，消除踢脚线被墙吞没和墙面共面重叠；并未解决来源近景桌面遮挡冲突。来源图、失败候选、回导文件均保留普通原文件，不交付ZIP。
