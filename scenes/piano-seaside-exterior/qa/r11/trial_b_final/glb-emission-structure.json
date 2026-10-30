@@ -1,0 +1,96 @@
+{
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength"
+  ],
+  "paper_materials": [
+    {
+      "name": "Unmarked score paper",
+      "emissiveFactor": null,
+      "emissiveTexture": null,
+      "extensions": null
+    },
+    {
+      "name": "R09 warm paper bag - emission approximates translucency",
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 3
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 8
+        }
+      }
+    },
+    {
+      "name": "L01_lantern inferred lit interior paper",
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 6
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 4
+        }
+      }
+    },
+    {
+      "name": "L01_lantern inferred back panel warm illumination",
+      "emissiveFactor": [
+        1,
+        0.47999998927116394,
+        0.09000000357627869
+      ],
+      "emissiveTexture": null,
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 4
+        }
+      }
+    },
+    {
+      "name": "R09 thin paper lantern base",
+      "emissiveFactor": null,
+      "emissiveTexture": null,
+      "extensions": null
+    },
+    {
+      "name": "L02_lantern inferred lit interior paper",
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 8
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 4
+        }
+      }
+    },
+    {
+      "name": "L02_lantern inferred back panel warm illumination",
+      "emissiveFactor": [
+        1,
+        0.47999998927116394,
+        0.09000000357627869
+      ],
+      "emissiveTexture": null,
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 4
+        }
+      }
+    }
+  ],
+  "world_lights": "not included; retained BLEND world/light rig required for comparison; GLB standalone lighting not equivalent"
+}
