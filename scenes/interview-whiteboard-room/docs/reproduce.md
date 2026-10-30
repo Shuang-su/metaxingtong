@@ -10,6 +10,7 @@ python3 scenes/interview-whiteboard-room/scripts/fit_cameras.py
 python3 scenes/interview-whiteboard-room/scripts/refine_shared_fit.py
 blender -b -t 4 -P scenes/interview-whiteboard-room/scripts/build_scene.py -- --models-only
 blender -b -t 4 -P scenes/interview-whiteboard-room/scripts/validate_scene.py
+blender -b -t 4 -P scenes/interview-whiteboard-room/scripts/check_intersections.py
 blender -b -t 4 -P scenes/interview-whiteboard-room/scripts/render_deliverables.py
 python3 scenes/interview-whiteboard-room/scripts/make_qa.py
 ```
@@ -22,4 +23,4 @@ python3 scenes/interview-whiteboard-room/scripts/make_qa.py
 
 白板纹理变换仅对源板面作有记录的四角逆透视UV提取；来源/渲染叠图从未透视扭曲。板面源照明仍存在；不得将其看作准确无光照反射率。
 
-初期`export_checkpoint.py`为检查已保存模型而使用，最终产物由`build_scene.py --models-only`正常导出；最终真实回导报告位于qa/r03/geometry-validation.json，两套回导后的BLEND也保留。
+初期`export_checkpoint.py`为检查R03已保存模型而使用，最终R04产物由`build_scene.py --models-only`正常导出；最终真实回导报告位于qa/r04/geometry-validation.json，两套回导后的BLEND也保留。最终相机参数文件沿用camera-fit-r03.json，因为R04只修正椅背与后撑，不修改相机。

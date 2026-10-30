@@ -5,7 +5,7 @@ import json,hashlib,struct,shutil,csv
 from pathlib import Path
 from datetime import datetime,timezone
 from PIL import Image,ImageDraw,ImageFont
-ROOT=Path(__file__).resolve().parents[1];QA=ROOT/'qa/r03'
+ROOT=Path(__file__).resolve().parents[1];QA=ROOT/'qa/r04'
 font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',19)
 small=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',15)
 def label(im,txt,h=34):
@@ -27,7 +27,7 @@ for role,name in source_names.items():
  strip=Image.new('RGB',(1920,394))
  for i,c in enumerate(cells):strip.paste(c,(i*640,0))
  triptychs.append(strip)
-contact=Image.new('RGB',(1920,840),(24,28,32));ImageDraw.Draw(contact).text((14,12),'R03 CANDIDATE — same geometry / materials / lights; source fidelity NOT accepted',font=font,fill='white')
+contact=Image.new('RGB',(1920,840),(24,28,32));ImageDraw.Draw(contact).text((14,12),'R04 CANDIDATE — same geometry / materials / lights; source fidelity NOT accepted',font=font,fill='white')
 for i,strip in enumerate(triptychs):contact.paste(strip,(0,48+i*394))
 jpg_limit(contact,QA/'source-contact.jpg',90)
 record['jpeg_display_scaling'].append({'file':'source-contact.jpg','cell_size':[640,360],'source_size':[1920,1080],'method':'Lanczos display only, no fit warp'})

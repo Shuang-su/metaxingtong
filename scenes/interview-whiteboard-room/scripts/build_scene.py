@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 PREVIEW='--preview' in sys.argv
 MODELS_ONLY='--models-only' in sys.argv
 cfg=json.loads((ROOT/'docs/camera-fit-r03.json').read_text()); g=cfg['geometry']
-OUT=ROOT/'models/r03'; QA=ROOT/'qa/r03'; OUT.mkdir(parents=True,exist_ok=True); QA.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'models/r04'; QA=ROOT/'qa/r04'; OUT.mkdir(parents=True,exist_ok=True); QA.mkdir(parents=True,exist_ok=True)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=False)
 for datablocks in (bpy.data.materials,bpy.data.meshes,bpy.data.cameras,bpy.data.lights):
@@ -155,14 +155,14 @@ for k,x in [('L',tx-tw/2+.065),('R',tx+tw/2-.065)]:
 # Black armless chair, seat/back cushions with modeled volume and metal open support.
 cx=-.04;cy=-.68;seat=.405
 cube('CHAIR.seat-cushion',(cx,cy,seat),(.52,.46,.090),cloth,'CHAIR-SEAT','observed front contour / inferred depth','Upholstery volume, not flat card',.075)
-back=cube('CHAIR.back-cushion',(cx,cy+.23,.585),(.49,.075,.30),cloth,'CHAIR-BACK','partly observed / inferred hidden profile','Back upper arc seen behind table; lower region occluded',.08)
+back=cube('CHAIR.back-cushion',(cx,cy+.34,.585),(.49,.075,.30),cloth,'CHAIR-BACK','partly observed / inferred hidden profile','R04 shared back moved behind table rear edge; lower region occluded',.08)
 back.rotation_euler[0]=math.radians(-7)
 for side,x in [('L',cx-.235),('R',cx+.235)]:
     rod('CHAIR.front-leg-'+side,(x+(-.035 if side=='L' else .035),cy-.30,.009),(x,cy-.18,seat-.028),.025,black,'CHAIR-FRONT-LEG-'+side,'mixed','Front leg silhouettes visible; exact section inferred')
     rod('CHAIR.rear-leg-'+side,(x+(-.015 if side=='L' else .015),cy+.27,.009),(x,cy+.16,seat-.03),.025,black,'CHAIR-REAR-LEG-'+side,'inferred','Occluded rear leg')
     cube('CHAIR.front-foot-cap-'+side,(x+(-.035 if side=='L' else .035),cy-.30,.0045),(.030,.032,.009),rubber,'CHAIR-PAD-F'+side,'inferred','Ground cap closes measured .00584 gap below metal leg',.002)
     cube('CHAIR.rear-foot-cap-'+side,(x+(-.015 if side=='L' else .015),cy+.27,.0045),(.030,.032,.009),rubber,'CHAIR-PAD-B'+side,'inferred','Ground cap closes measured .00619 gap below metal leg',.002)
-    rod('CHAIR.back-post-'+side,(x,cy+.16,seat-.03),(x,cy+.255,.65),.022,black,'CHAIR-BACK-POST-'+side,'inferred','Rear backing support')
+    rod('CHAIR.back-post-'+side,(x,cy+.16,seat-.03),(x,cy+.37,.65),.022,black,'CHAIR-BACK-POST-'+side,'inferred','R04 rear support follows corrected back; shared in all cameras')
     rod('CHAIR.side-stretcher-'+side,(x,cy-.18,.32),(x,cy+.16,.32),.025,black,'CHAIR-SIDE-RAIL-'+side,'inferred','Seat supporting frame')
 rod('CHAIR.front-crossrail',(cx-.24,cy-.18,.32),(cx+.24,cy-.18,.32),.022,black,'CHAIR-FRONT-RAIL','mixed')
 
@@ -199,7 +199,7 @@ def render(cam,path,res=(1920,1080),samples=24):
     s.camera=cam;s.render.resolution_x,s.render.resolution_y=res;s.cycles.samples=samples;s.render.filepath=str(path)
     bpy.ops.render.render(write_still=True)
 
-(ROOT/'docs/object-provenance-r03.json').write_text(json.dumps({'status':'candidate','objects':manifest,'dynamic_person':'excluded, original source remains unchanged','closure':'finite inferred shell, all views shared'},indent=2))
+(ROOT/'docs/object-provenance-r04.json').write_text(json.dumps({'status':'candidate','objects':manifest,'dynamic_person':'excluded, original source remains unchanged','closure':'finite inferred shell, all views shared'},indent=2))
 # Geometry hash material-independent; object transforms included.
 def signature():
     rows=[]

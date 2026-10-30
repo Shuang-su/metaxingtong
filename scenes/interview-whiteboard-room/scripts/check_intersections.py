@@ -4,8 +4,8 @@ Within one assembled object many contacts intentionally overlap; cross-object co
 import bpy,json
 from pathlib import Path
 from mathutils.bvhtree import BVHTree
-ROOT=Path(__file__).resolve().parents[1];QA=ROOT/'qa/r03'
-bpy.ops.wm.open_mainfile(filepath=str(ROOT/'models/r03/interview-room-material.blend'))
+ROOT=Path(__file__).resolve().parents[1];QA=ROOT/'qa/r04'
+bpy.ops.wm.open_mainfile(filepath=str(ROOT/'models/r04/interview-room-material.blend'))
 dep=bpy.context.evaluated_depsgraph_get();items=[]
 for o in bpy.context.scene.objects:
  if o.type!='MESH' or not o.get('stable_id','').startswith(('BOARD','TABLE','CHAIR')):continue
