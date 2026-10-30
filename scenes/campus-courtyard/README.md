@@ -1,53 +1,14 @@
 # 校园庭院 campus-courtyard
 
-状态：**重建候选 / 待来源复核 / 未经用户验收**。本新增场景与医院空间分开，未证连通。仅在本地 `scene/campus-courtyard` 分支制作，不 push、不建 PR。
+**重建候选 / 待来源复核 / 未经用户验收。** 有限校园庭院，与医院独立管理；实时/预录、隐藏延伸及真实尺度未知。
 
-## 来源与范围
+[当前原件与完整版本入口](publication/README.md) · [真实提交历史](publication/history.json) · [原文件大小与SHA清单](publication/originals_manifest.json)
 
-- BV1GqXMByE1s：<https://www.bilibili.com/video/BV1GqXMByE1s/>。权威采集清单标题为【直播回放】【3D】进来治臆症！2026年03月27日19点场；实时渲染或预录属性未知。
-- 首张来源：`source/native/BV1GqXMByE1s_t3368.109825_native.png`；1920×1080、4,118,719 字节、SHA256 `74bdf120b0878582cb0a85b7e2934f768f1fa621d5fa389df5d73be7bd81f07f`。
-- Library ID `libfile_c0cdef075f28819184fe5049fbcc983e`，当前 Library 版本 0；物化使用当前官方 Library helper，并保存本地身份属性。
-- 采集线程回报：保存前后 currentTime=3368.109825、paused=true、readyState=4、1920×1080 一致；选择 1080P 高清，更高 1080P 高码率有 VIP 限制。本线程没有重做播放器采集，不能声称高码率生效。播放器小数时间不是容器 PTS。
-- 采集线程实际观看证明 3336 秒后全身表演、3600–3650 互动段，以及 3344.776–3345.722 四次连续观察中固定物的连续相对投影变化。这是上游回报，不是本线程新增观看；本图自身也不能证明实时直播渲染。后续其他回放同场验证仍缺。
-- 可见范围：灰色网格砖广场、近景圆树池与树、左草地及球门/网、弯曲红色跑道白线、后方四排主要可见窗的浅灰教学楼立面、右侧有限蓝绿运动面与局部篮架、弧形路灯、长凳、花池。
+最新几何为Stage03，冻结提交 `87b37f98911f533605d5aebdd60756edb96fe951`。材质模型、同几何白模、GLB实际回导、四组原生直接叠图、八角检查和逐物件QA均保留。Stage04仅为未注册补源的失败相机诊断，不是更新的几何候选。
 
-基础候选已实际物化、核对字节/SHA/解码并查看全部 **4 张**原生源，均为 1920×1080。后续三图及完整采集清单见 `source/acquisition.json` 和保留原字节的 `source/SOURCE_HANDOFF.md`。四张全部同 BV，不能充作跨回放同场验证。另已读取一张更早 BV 的原生留出图，累计五张；新增图仅进入下述 Stage04 冻结模型诊断，资产身份和更晚回放条件仍未通过。
+- [正常主图](stage-03-contact-qa/renders/MAIN_display_preview.jpg)
+- [材质BLEND](stage-03-contact-qa/campus-courtyard_material.blend)、[白模BLEND](stage-03-contact-qa/campus-courtyard_white.blend)、[GLB](stage-03-contact-qa/campus-courtyard.glb)
+- [四源对照](stage-03-contact-qa/comparison/)与[八角预览](stage-03-contact-qa/inspection_contact_sheet_display_preview.jpg)
+- [更早未注册补源诊断](stage-04-cross-bv-holdout/comparisons/HOLDOUT_source_render_overlay_contact_preview.jpg)
 
-## 制作约束
-
-所有来源相机共用一套静态几何和材质/照明状态。不重建动态角色；不通过角色身高定尺度；单位为模型单位。没有尺度实测。原图自带彩色边缘、模糊、节目处理，保留原字节；不将彩色边缘拆成实体，不 warp。
-
-可见教学楼窗为有进深的独立窗洞及框、玻璃；未知楼后、内部、建筑延伸只给有限推断壳体。树为体积几何近似，不是全场贴图。跑道只建可见弯段，不声称 400 米标准场；右场只建有限运动面，不声称完整标准篮球场。来源主机位初步人工估计，所有直接对比都标为条件性诊断。
-
-## 阶段
-
-1. 来源登记与逐物体证据表。
-2. `stage-01-blockout/`：共享白模初始候选，保留失败与残差。
-3. `stage-02-material-candidate/`：同一几何的材质/白模 BLEND、GLB、正常主图、8 个检查角、来源同机位候选及直接 50% 叠图。
-4. `qa/`：GLB 实际重新导入、几何一致性、原文件 hash、限制与检查原件。
-
-模型可打开、几何检查与 Library/Git 保存分别记录；任何一项都不等同于来源验收。
-
-## Stage02 保留候选入口
-
-- `stage-02-material-candidate/campus-courtyard_material.blend`：材质模型（贴图已打包）。
-- `stage-02-material-candidate/campus-courtyard_white.blend`：同几何白模。
-- `stage-02-material-candidate/campus-courtyard.glb`：跨软件导出；实际回导文件为 `qa/glb_actual_reimport.blend`。
-- `stage-02-material-candidate/renders/MAIN.png`：正常主图；`MAIN_display_preview.jpg` 为未缩放 1920×1080 展示预览，463,706 字节。
-- `stage-02-material-candidate/comparison/`：4 组 1920×1080 直接 50% 叠图、三联展示和 10 组明确像素坐标裁切。
-- `stage-02-material-candidate/renders/CHECK*.png`：8 个内部检查角，均为 1280×720。
-- `qa/REPORT.md`、`qa/object_evidence.csv`：逐组件证据、范围和剩余问题；共 128 组件、72 个候选踏步实例。
-
-Stage02当时仍未来源验收：条件机位约 50–57px 平均手选锚点残差，跨回放同场证据缺失；SRC04 有限地面边缘可见，四张长凳约 0.0126 模型单位接触间隙待修。不得以有限 QA 或文件可打开替代来源门槛。
-
-## 最新冻结候选：Stage03
-
-见 `stage-03-contact-qa/HANDOFF.md`。已完成四源接触/边缘修正、同几何白模/材质/GLB实际回导与四源/八角回归；旧Stage02原件和失败试验保留。主图JPEG和小联系表在该阶段目录。来源与完整几何仍未验收。冻结提交为 `87b37f98911f533605d5aebdd60756edb96fe951`；其模型字节保持不变。
-
-## Stage04：更早跨BV留出诊断，不是新几何候选
-
-最终分类：新帧为**未注册补源**，不能计作已注册同场机位或共享几何约束。场地总体次序相似不足以建立唯一局部身份，也没有直接像素矛盾证明不同资产。本轮完成报告更正后停止；下一步补源由另一任务进行。
-
-2026-10-29实例关系更正：原四图内部的近篮架—三球架—门/台阶—外楼梯组合可高置信串联；更早新图缺共同可辨桥接物，跨2025/2026尚无无歧义单实例对应。“反向视角”降为待验证假说。保持候选冻结，不按新帧改布局或继续自动增加相机试验；等母线程完整来源关系表。详见Stage04的 `qa/correspondence_correction_2026-10-29.md`。
-
-见 `stage-04-cross-bv-holdout/qa/REPORT.md`。已按正式Library流程取得 BV1fwSEBqEPJ 的96.994858秒原图，只新增6个诊断相机。130网格、材质、照明、可见性和原相机实际保存重开核验一致；2组原生源/渲染/直接50%叠图及全部失败试验保留。当前相机/对应假说未能共同解释楼梯、蓝绿场、跑道和灯凳的关系，不宣称资产不同或所有相机无解。该图早于基础来源，仍缺更晚回放同场验证。未push/PR或重试Library。
+原四图均来自BV1GqXMByE1s；较早BV1fwSEBqEPJ缺无歧义跨期固定物对应，不能算同场新机位或更晚回放确认。“反向视角”仅是假说。模型保持冻结，旧阶段、失败方案、来源原件与原始QA均保留；归档不代表通过验收。
