@@ -1,0 +1,150 @@
+{
+  "checks": {
+    "thirteen_completed_render_jobs": true,
+    "all_final_renders_decode_at_recorded_size": true,
+    "front_direct_overlay_exact_pixels": true,
+    "oblique_direct_overlay_exact_pixels": true,
+    "main_png_exact_original_render_bytes": true,
+    "three_display_jpegs_under_900_KiB": true,
+    "nine_separate_diagnostic_angles": true,
+    "source_hash_and_size_pass": true,
+    "listed_geometry_checks_pass": true,
+    "no_cross_furniture_surface_intersections": true,
+    "current_models_present": true,
+    "no_new_zip": true
+  },
+  "all_delivery_checks_pass": true,
+  "images": [
+    {
+      "path": "qa/r05/check-01.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/check-02.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/check-03.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/check-04.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/check-05.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/check-06.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/check-07.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/check-08.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/check-09.png",
+      "size": [
+        1280,
+        720
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/source-front-render.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/source-oblique-render.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/source-front-white.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "decode": "pass"
+    },
+    {
+      "path": "qa/r05/source-oblique-white.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "decode": "pass"
+    }
+  ],
+  "display_jpegs": {
+    "main.jpg": {
+      "bytes": 470154,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    "source-contact.jpg": {
+      "bytes": 232700,
+      "size": [
+        1920,
+        840
+      ]
+    },
+    "inspection-contact.jpg": {
+      "bytes": 388874,
+      "size": [
+        1920,
+        1224
+      ]
+    }
+  },
+  "source_acceptance": false,
+  "user_acceptance": false,
+  "source_fidelity_report": "../../docs/visual-review.md",
+  "limitations": "Successful delivery/geometric checks do not establish whole-scene source fidelity. No external publication or remote-byte claim."
+}

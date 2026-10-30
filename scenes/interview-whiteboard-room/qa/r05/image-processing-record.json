@@ -1,0 +1,124 @@
+{
+  "generated_at_utc": "2026-10-30T01:17:44.022291+00:00",
+  "direct_overlays": [
+    {
+      "source": "BV14ioLBAEDt_1283.813032_front.png",
+      "render": "source-front-render.png",
+      "output": "source-front-overlay50.png",
+      "source_and_output_size": [
+        1920,
+        1080
+      ],
+      "alpha": 0.5,
+      "warp": false,
+      "crop": null,
+      "dynamic_person_removed": false
+    },
+    {
+      "source": "BV14ioLBAEDt_1505.632497_oblique.png",
+      "render": "source-oblique-render.png",
+      "output": "source-oblique-overlay50.png",
+      "source_and_output_size": [
+        1920,
+        1080
+      ],
+      "alpha": 0.5,
+      "warp": false,
+      "crop": null,
+      "dynamic_person_removed": false
+    }
+  ],
+  "crops": [
+    {
+      "source_role": "front",
+      "object_group": "board",
+      "source_coordinates_xyxy": [
+        540,
+        145,
+        1410,
+        710
+      ],
+      "same_rect_used_for_render_overlay": true,
+      "scale_in_png": 1,
+      "camera_alignment": "conditional; not accepted"
+    },
+    {
+      "source_role": "front",
+      "object_group": "table-chair",
+      "source_coordinates_xyxy": [
+        480,
+        645,
+        1420,
+        1080
+      ],
+      "same_rect_used_for_render_overlay": true,
+      "scale_in_png": 1,
+      "camera_alignment": "conditional; not accepted"
+    },
+    {
+      "source_role": "front",
+      "object_group": "left-wall",
+      "source_coordinates_xyxy": [
+        0,
+        0,
+        240,
+        960
+      ],
+      "same_rect_used_for_render_overlay": true,
+      "scale_in_png": 1,
+      "camera_alignment": "conditional; not accepted"
+    },
+    {
+      "source_role": "oblique",
+      "object_group": "board-wall",
+      "source_coordinates_xyxy": [
+        680,
+        0,
+        1920,
+        760
+      ],
+      "same_rect_used_for_render_overlay": true,
+      "scale_in_png": 1,
+      "camera_alignment": "conditional; not accepted"
+    },
+    {
+      "source_role": "oblique",
+      "object_group": "foreground-conflict",
+      "source_coordinates_xyxy": [
+        0,
+        740,
+        900,
+        1080
+      ],
+      "same_rect_used_for_render_overlay": true,
+      "scale_in_png": 1,
+      "camera_alignment": "conditional; not accepted"
+    }
+  ],
+  "jpeg_display_scaling": [
+    {
+      "file": "source-contact.jpg",
+      "cell_size": [
+        640,
+        360
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "method": "Lanczos display only, no fit warp"
+    },
+    {
+      "file": "inspection-contact.jpg",
+      "cell_size": [
+        640,
+        360
+      ],
+      "source_size": [
+        1280,
+        720
+      ],
+      "method": "Lanczos display only"
+    }
+  ]
+}

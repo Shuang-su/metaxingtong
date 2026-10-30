@@ -1,0 +1,67 @@
+{
+  "candidate": "interview-whiteboard-room",
+  "status": "Source-ready candidate, not modeled or accepted",
+  "capture_date_utc": "2026-10-30",
+  "source_url": "https://www.bilibili.com/video/BV14ioLBAEDt/",
+  "title": "【直播回放】【3D】一起去面试！！！ 2026年04月24日19点场",
+  "uploader": "星瞳_Official",
+  "uploader_uid": 401315430,
+  "replay_date": "2026-04-24",
+  "duration_ui": "1:46:35",
+  "quality_ui": "1080P 高清",
+  "capture_method": "Chromium native video context menu: Save video frame as. Original PNG bytes copied unchanged. No canvas, screenshot crop, resizing or processing.",
+  "frames": [
+    {
+      "file": "BV14ioLBAEDt_1283.813032_front.png",
+      "currentTime": 1283.813032,
+      "paused_before": true,
+      "paused_after": true,
+      "readyState_before": 4,
+      "readyState_after": 4,
+      "videoWidth": 1920,
+      "videoHeight": 1080,
+      "png_width": 1920,
+      "png_height": 1080,
+      "bytes": 1147061,
+      "sha256": "e6b3d5a0a73be033387fc66775eca6eabb6849ea45f146c4252c311f1164a7e4",
+      "visually_inspected_native_png": true
+    },
+    {
+      "file": "BV14ioLBAEDt_1505.632497_oblique.png",
+      "currentTime": 1505.632497,
+      "paused_before": true,
+      "paused_after": true,
+      "readyState_before": 4,
+      "readyState_after": 4,
+      "videoWidth": 1920,
+      "videoHeight": 1080,
+      "png_width": 1920,
+      "png_height": 1080,
+      "bytes": 1404403,
+      "sha256": "91ecd4d0c43d80a9f0422356383e4e1a2488d209b31ed8daef2882dd3550baff",
+      "visually_inspected_native_png": true
+    }
+  ],
+  "deduplication": {
+    "existing_classroom_source": "https://www.bilibili.com/video/BV1LC411V7Nh/",
+    "existing_classroom_repo": "https://github.com/Shuang-su/metaxingtong/blob/main/scenes/classroom/01-retain-earliest-binaries/README.md",
+    "reason": "Existing 2024-04-12 classroom has fixed green front-wall blackboard, bookshelves, television/clock, window bands and student desk rows. New interview nook has freestanding black-framed formula whiteboard, single wood rectangular table, black upholstered chair and gray alcove with dark skirting. Not seaside, porch or round-couch lounge.",
+    "scope": "Compared against main 16 scene names plus yesterday piano-seaside-exterior; room remains a reconstruction candidate, not proof of whole unseen building."
+  },
+  "observable_geometry": [
+    "wood rectangular tabletop with gray/black metal square legs",
+    "black upholstered armless chair",
+    "freestanding black-framed whiteboard with side pivot knobs and lower support rails",
+    "gray wall alcove, left projection and both corners",
+    "dark skirting and floor"
+  ],
+  "second_view_evidence": "Oblique frame changes wall-corner/skirting slopes and whiteboard support perspective relative to frontal frame. This is not merely character zoom/crop; character heavily occludes furniture in second view.",
+  "limitations": [
+    "Only frontal wide plus oblique near view saved; no rear/ceiling/door dimensions or unseen layout established.",
+    "Absolute scale and concealed support geometry are unknown.",
+    "Other sofa/recruitment slogan and purple photography set portions of same replay not geometrically linked; do not merge them into this room.",
+    "No official source scene/model files; this is native decoded replay evidence, not lossless master video.",
+    "Upload timestamp shown inconsistently during page hydration; only replay date asserted."
+  ],
+  "download_note": "First frame native export succeeded. Second frame initially produced one completed browser download but waitForEvent/path transfer timed out. A subsequent native export at unchanged paused time succeeded; only transferred and visually inspected PNG is included."
+}

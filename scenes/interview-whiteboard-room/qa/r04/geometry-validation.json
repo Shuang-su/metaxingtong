@@ -1,0 +1,4636 @@
+{
+  "status": "candidate; geometry/file checks separate from source fidelity",
+  "checks": {
+    "solid_manifold_except_explicit_decal": true,
+    "no_zero_area_faces": true,
+    "positive_solid_volume": true,
+    "all_objects_have_provenance": true,
+    "dense_shell_rays_closed": true,
+    "support_pads_touch_floor_1e6": true,
+    "positive_listed_clearances": true,
+    "all_cameras_inside_shell": true,
+    "material_glb_reimport_geometry": true,
+    "white_glb_reimport_geometry": true,
+    "material_glb_includes_textures": true,
+    "white_glb_single_material": true,
+    "actual_material_white_glb_triangle_coordinates_identical": true
+  },
+  "limitations": [
+    "Dense shell rays are samples, not exhaustive topology proof of room union.",
+    "No hidden opening or metric dimensions confirmed by these checks.",
+    "Contact uses evaluated bounds and listed clearances; joined frame overlaps intentional. Not a complete all-pairs collision proof."
+  ],
+  "original_evaluated_objects": [
+    {
+      "name": "BOARD.cross-rail",
+      "stable_id": "BOARD-CROSS-RAIL",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0021561609457081726,
+      "bounds_min": [
+        -1.0499999523162842,
+        0.006500000134110451,
+        0.7031523585319519
+      ],
+      "bounds_max": [
+        1.0499999523162842,
+        0.04349999874830246,
+        0.731152355670929
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "eba345437629e41edf973858614f65e76150e2f616a9d01f0a8206aef97d9aea"
+    },
+    {
+      "name": "BOARD.foot-L",
+      "stable_id": "BOARD-FOOT-L",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0011971219677162253,
+      "bounds_min": [
+        -1.09250009059906,
+        -0.19999998807907104,
+        0.007500000298023224
+      ],
+      "bounds_max": [
+        -1.037500023841858,
+        0.2199999988079071,
+        0.0625
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "643bc1bd6b85cd41d3001e723665fc507b23f6fcf237dc67e7d55cc1447d28ad"
+    },
+    {
+      "name": "BOARD.foot-R",
+      "stable_id": "BOARD-FOOT-R",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0011971219677162253,
+      "bounds_min": [
+        1.037500023841858,
+        -0.19999998807907104,
+        0.007500000298023224
+      ],
+      "bounds_max": [
+        1.09250009059906,
+        0.2199999988079071,
+        0.0625
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "b6935c318ea7ce9f2ac51a35812110afe6c51a34df26c2f609db1e76691ae0a8"
+    },
+    {
+      "name": "BOARD.foot-pad-L0",
+      "stable_id": "BOARD-PAD-L0",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 5.908781896365469e-05,
+      "bounds_min": [
+        -1.0950000286102295,
+        -0.20250000059604645,
+        0.0
+      ],
+      "bounds_max": [
+        -1.0350000858306885,
+        -0.13750000298023224,
+        0.01600000075995922
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "376e3e6667e3adba2d75aa80b8e934f3223dd941880c3ca7af409c755041a276"
+    },
+    {
+      "name": "BOARD.foot-pad-L1",
+      "stable_id": "BOARD-PAD-L1",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 5.908781896365469e-05,
+      "bounds_min": [
+        -1.0950000286102295,
+        0.1574999988079071,
+        0.0
+      ],
+      "bounds_max": [
+        -1.0350000858306885,
+        0.2224999964237213,
+        0.01600000075995922
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "01b662f353759f035c519c659f72e17bfa24050aeedcb5e5d20bbafb397bf30b"
+    },
+    {
+      "name": "BOARD.foot-pad-R0",
+      "stable_id": "BOARD-PAD-R0",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 5.908781896365469e-05,
+      "bounds_min": [
+        1.0350000858306885,
+        -0.20250000059604645,
+        0.0
+      ],
+      "bounds_max": [
+        1.0950000286102295,
+        -0.13750000298023224,
+        0.01600000075995922
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "828e1614b0786f8dea3cea7721d66d950141a5a338ef5b584a11dbe82eafb044"
+    },
+    {
+      "name": "BOARD.foot-pad-R1",
+      "stable_id": "BOARD-PAD-R1",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 5.908781896365469e-05,
+      "bounds_min": [
+        1.0350000858306885,
+        0.1574999988079071,
+        0.0
+      ],
+      "bounds_max": [
+        1.0950000286102295,
+        0.2224999964237213,
+        0.01600000075995922
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "ac543c9dd55b698cbad8c1d393ab47c117894bec02ccd3c09d9c7a00c75bc95e"
+    },
+    {
+      "name": "BOARD.marker-tray-left",
+      "stable_id": "BOARD-TRAY",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0013240059963134723,
+      "bounds_min": [
+        -1.034999966621399,
+        -0.0625,
+        0.7046523690223694
+      ],
+      "bounds_max": [
+        -0.32500001788139343,
+        0.01250000111758709,
+        0.7296523451805115
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "c1547fb9a30e9e01ffff2340d2137fe0032bc99677bfa6048b656b549f0fae36"
+    },
+    {
+      "name": "BOARD.physical-rounded-frame",
+      "stable_id": "BOARD-FRAME",
+      "vertices": 144,
+      "triangles": 288,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.010715949148561298,
+      "bounds_min": [
+        -1.0299999713897705,
+        -0.014999999664723873,
+        0.8621523380279541
+      ],
+      "bounds_max": [
+        1.0299999713897705,
+        0.04500000178813934,
+        1.9750351905822754
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "adf033c86b46f33e764013981947df60290b823e2ab4e317d090f1f2603aecaf"
+    },
+    {
+      "name": "BOARD.pivot-L",
+      "stable_id": "BOARD-PIVOT-L",
+      "vertices": 192,
+      "triangles": 380,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.000190057337407376,
+      "bounds_min": [
+        -1.090000033378601,
+        -0.023000000044703484,
+        1.398593783378601
+      ],
+      "bounds_max": [
+        -1.040000081062317,
+        0.04699999839067459,
+        1.468593716621399
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "5f1522c5aaf10b6d5a1401cba2feee308dcae08d8ad0ca81ad8316c45ea3e89a"
+    },
+    {
+      "name": "BOARD.pivot-R",
+      "stable_id": "BOARD-PIVOT-R",
+      "vertices": 192,
+      "triangles": 380,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.000190057337407376,
+      "bounds_min": [
+        1.040000081062317,
+        -0.023000000044703484,
+        1.398593783378601
+      ],
+      "bounds_max": [
+        1.090000033378601,
+        0.04699999839067459,
+        1.468593716621399
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "a3eb637b9e5c9dda9e52137c845831b3cd07dd5afda3b3e59c4db75879c5f7d2"
+    },
+    {
+      "name": "BOARD.pivot-screw-L",
+      "stable_id": "BOARD-SCREW-L",
+      "vertices": 192,
+      "triangles": 380,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 1.9474444833872527e-05,
+      "bounds_min": [
+        -1.1134999990463257,
+        -0.0040000006556510925,
+        1.4175937175750732
+      ],
+      "bounds_max": [
+        -1.088499903678894,
+        0.02800000086426735,
+        1.4495937824249268
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "68b8c3a4f9f0da174e9d0d1dc5acee83b1edd0745b32fc18138330040cde12c1"
+    },
+    {
+      "name": "BOARD.pivot-screw-R",
+      "stable_id": "BOARD-SCREW-R",
+      "vertices": 192,
+      "triangles": 380,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 1.9474444833872527e-05,
+      "bounds_min": [
+        1.088499903678894,
+        -0.0040000006556510925,
+        1.4175937175750732
+      ],
+      "bounds_max": [
+        1.1134999990463257,
+        0.02800000086426735,
+        1.4495937824249268
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "a3ef16b06f46241e5fcd6441badd8d18ee6ed6c946a83910062f3dac22ebd40e"
+    },
+    {
+      "name": "BOARD.rail-clamp-L",
+      "stable_id": "BOARD-CLAMP-L",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00015634776802903952,
+      "bounds_min": [
+        -1.0880000591278076,
+        -0.03700000047683716,
+        0.6896523833274841
+      ],
+      "bounds_max": [
+        -1.0420000553131104,
+        0.027000002562999725,
+        0.7446523308753967
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "cf40603b1d7390cc0a0ade96fa94edcdf89bae70c30ac22d118b6d9a7a00a73b"
+    },
+    {
+      "name": "BOARD.rail-clamp-R",
+      "stable_id": "BOARD-CLAMP-R",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00015634776802903952,
+      "bounds_min": [
+        1.0420000553131104,
+        -0.03700000047683716,
+        0.6896523833274841
+      ],
+      "bounds_max": [
+        1.0880000591278076,
+        0.027000002562999725,
+        0.7446523308753967
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "da566983d3ed46c87b5beaf26b769e5fcf67cb5a17d6b14a49a088b74ec909fa"
+    },
+    {
+      "name": "BOARD.sandwich-core",
+      "stable_id": "BOARD-CORE",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.09327072264348003,
+      "bounds_min": [
+        -1.00600004196167,
+        0.006000000983476639,
+        0.8861523270606995
+      ],
+      "bounds_max": [
+        1.00600004196167,
+        0.05000000074505806,
+        1.9510352611541748
+      ],
+      "materials": [
+        "BOARD inferred plain reverse"
+      ],
+      "world_triangle_coordinates_sha256_round6": "d9f06c16a1ce9de99f0c3c0c8c912465e646d6e57fc7d26db645b3e94c033bfe"
+    },
+    {
+      "name": "BOARD.source-text-face",
+      "stable_id": "BOARD-TEXT",
+      "vertices": 4,
+      "triangles": 2,
+      "boundary_edges": 4,
+      "nonmanifold_edges": 4,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00035096096672646243,
+      "bounds_min": [
+        -1.0,
+        -0.0005000000237487257,
+        0.8921523690223694
+      ],
+      "bounds_max": [
+        1.0,
+        -0.0005000000237487257,
+        1.9450352191925049
+      ],
+      "materials": [
+        "BOARD photographed front text / baked light retained"
+      ],
+      "world_triangle_coordinates_sha256_round6": "179114d975cab5ff7d70a38fac956a71bd2b2c7e6bfdeff5612fbbb5aa5eed5e"
+    },
+    {
+      "name": "BOARD.upright-L",
+      "stable_id": "BOARD-UPRIGHT-L",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.001735179539746062,
+      "bounds_min": [
+        -1.0810000896453857,
+        0.02500000223517418,
+        0.04500001668930054
+      ],
+      "bounds_max": [
+        -1.0490000247955322,
+        0.06499999761581421,
+        1.4185938835144043
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "c3a2dcd7e99ba9ebb7fccca7ea6fa7a952ddd2287e6030961289c1c63aa00118"
+    },
+    {
+      "name": "BOARD.upright-R",
+      "stable_id": "BOARD-UPRIGHT-R",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.001735179539746062,
+      "bounds_min": [
+        1.0490000247955322,
+        0.02500000223517418,
+        0.04500001668930054
+      ],
+      "bounds_max": [
+        1.0810000896453857,
+        0.06499999761581421,
+        1.4185938835144043
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "f5910b7f0b5f2d8da415b664795de55eb2a320c38f49ea3e98e5584d49d20bf4"
+    },
+    {
+      "name": "CHAIR.back-cushion",
+      "stable_id": "CHAIR-BACK",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00989837893540654,
+      "bounds_min": [
+        -0.2849999964237213,
+        -0.39093080163002014,
+        0.4361180365085602
+      ],
+      "bounds_max": [
+        0.20500001311302185,
+        -0.28906920552253723,
+        0.7338818907737732
+      ],
+      "materials": [
+        "CHAIR black upholstered fabric"
+      ],
+      "world_triangle_coordinates_sha256_round6": "2355eaf264a1a1dc097c5fde504994cd4865e1c2a4278fbfa204509e574468d5"
+    },
+    {
+      "name": "CHAIR.back-post-L",
+      "stable_id": "CHAIR-BACK-POST-L",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0001640061238050489,
+      "bounds_min": [
+        -0.28600001335144043,
+        -0.5275123119354248,
+        0.3695540428161621
+      ],
+      "bounds_max": [
+        -0.2639999985694885,
+        -0.30248764157295227,
+        0.65544593334198
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "563d0a066b0af6d6a4a11d336096602e26d1c5463808c34e56441608a7e55e09"
+    },
+    {
+      "name": "CHAIR.back-post-R",
+      "stable_id": "CHAIR-BACK-POST-R",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0001640061238050489,
+      "bounds_min": [
+        0.18399998545646667,
+        -0.5275123119354248,
+        0.3695540428161621
+      ],
+      "bounds_max": [
+        0.20600000023841858,
+        -0.30248764157295227,
+        0.65544593334198
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "81f07fef66e8af33f0b41b1a0583e7980f247840edd1715a8e7bd456682ef812"
+    },
+    {
+      "name": "CHAIR.front-crossrail",
+      "stable_id": "CHAIR-FRONT-RAIL",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00022764995945954644,
+      "bounds_min": [
+        -0.2800000011920929,
+        -0.8710000514984131,
+        0.3089999854564667
+      ],
+      "bounds_max": [
+        0.20000001788139343,
+        -0.8489999771118164,
+        0.3310000002384186
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "d9d7278b5039ce27d99465155dab5e2bc8c9a2962d37f1cf75902896ceaecf7d"
+    },
+    {
+      "name": "CHAIR.front-foot-cap-L",
+      "stable_id": "CHAIR-PAD-FL",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 8.369619709357415e-06,
+      "bounds_min": [
+        -0.32499998807907104,
+        -0.9959999918937683,
+        0.0
+      ],
+      "bounds_max": [
+        -0.29500001668930054,
+        -0.9640000462532043,
+        0.008999999612569809
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "0a6e7f423fb0e257e0bb2acf84372042496476e28caa8af2d1515af72ab3b4d6"
+    },
+    {
+      "name": "CHAIR.front-foot-cap-R",
+      "stable_id": "CHAIR-PAD-FR",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 8.369619709357415e-06,
+      "bounds_min": [
+        0.2150000035762787,
+        -0.9959999918937683,
+        0.0
+      ],
+      "bounds_max": [
+        0.24500000476837158,
+        -0.9640000462532043,
+        0.008999999612569809
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "3e3b8657fd21cde413db52c9e39d7779cca2c94a021f8bd1d38c6e56de2b181a"
+    },
+    {
+      "name": "CHAIR.front-leg-L",
+      "stable_id": "CHAIR-FRONT-LEG-L",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0002390045163828888,
+      "bounds_min": [
+        -0.3242609202861786,
+        -0.9932225942611694,
+        0.005842253100126982
+      ],
+      "bounds_max": [
+        -0.26073911786079407,
+        -0.8467774391174316,
+        0.3801577687263489
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "43a9401bed88a98c53f8869ee273ccda7b9a310c76af2f45e28433c8b7595841"
+    },
+    {
+      "name": "CHAIR.front-leg-R",
+      "stable_id": "CHAIR-FRONT-LEG-R",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0002390045163828888,
+      "bounds_min": [
+        0.18073908984661102,
+        -0.9932225942611694,
+        0.005842253100126982
+      ],
+      "bounds_max": [
+        0.24426092207431793,
+        -0.8467774391174316,
+        0.3801577687263489
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "7d2ecac10cc69347fe0ca0169dbe58b69fb08a6d229237ad80dc8855c937a22b"
+    },
+    {
+      "name": "CHAIR.rear-foot-cap-L",
+      "stable_id": "CHAIR-PAD-BL",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 8.369619709357415e-06,
+      "bounds_min": [
+        -0.304999977350235,
+        -0.4259999990463257,
+        0.0
+      ],
+      "bounds_max": [
+        -0.2750000059604645,
+        -0.39399999380111694,
+        0.008999999612569809
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "fb47803ce7056d70588d515b700814e2ee8376fd818c5e891aeeb2f384cfd1ad"
+    },
+    {
+      "name": "CHAIR.rear-foot-cap-R",
+      "stable_id": "CHAIR-PAD-BR",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 8.369619709357415e-06,
+      "bounds_min": [
+        0.19499999284744263,
+        -0.4259999990463257,
+        0.0
+      ],
+      "bounds_max": [
+        0.22499999403953552,
+        -0.39399999380111694,
+        0.008999999612569809
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "5eeebe96c1a7b148465b339c40c44f83ede25f99678dcdf3c56a26574efe13fa"
+    },
+    {
+      "name": "CHAIR.rear-leg-L",
+      "stable_id": "CHAIR-REAR-LEG-L",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00023519564244606867,
+      "bounds_min": [
+        -0.30349603295326233,
+        -0.5323236584663391,
+        0.006191151216626167
+      ],
+      "bounds_max": [
+        -0.2615039646625519,
+        -0.3976762890815735,
+        0.3778088390827179
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "8175643457d002178d34f020b19275f035df51f465e0f655f650d6a4d3cb6b19"
+    },
+    {
+      "name": "CHAIR.rear-leg-R",
+      "stable_id": "CHAIR-REAR-LEG-R",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00023519564244606867,
+      "bounds_min": [
+        0.18150395154953003,
+        -0.5323237180709839,
+        0.006191163789480925
+      ],
+      "bounds_max": [
+        0.22349601984024048,
+        -0.3976762294769287,
+        0.3778088390827179
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "4e6679e39c4e32227bfafbc6e089565d5454ff7f4e3be33095078d1886219502"
+    },
+    {
+      "name": "CHAIR.seat-cushion",
+      "stable_id": "CHAIR-SEAT",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.01951639589636582,
+      "bounds_min": [
+        -0.29999998211860657,
+        -0.9100000262260437,
+        0.36000001430511475
+      ],
+      "bounds_max": [
+        0.2199999988079071,
+        -0.44999998807907104,
+        0.44999998807907104
+      ],
+      "materials": [
+        "CHAIR black upholstered fabric"
+      ],
+      "world_triangle_coordinates_sha256_round6": "531c20f3234365f701f015a412b9150c136f02dff7a48cb50d11421ef731f5e9"
+    },
+    {
+      "name": "CHAIR.side-stretcher-L",
+      "stable_id": "CHAIR-SIDE-RAIL-L",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00020903598428477656,
+      "bounds_min": [
+        -0.2874999940395355,
+        -0.8600000143051147,
+        0.3074999749660492
+      ],
+      "bounds_max": [
+        -0.26250001788139343,
+        -0.5199999809265137,
+        0.33250001072883606
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "7c22c6c645d87b94c4520ef67603673f1e4102de723aafd2cfaba2be38ce240a"
+    },
+    {
+      "name": "CHAIR.side-stretcher-R",
+      "stable_id": "CHAIR-SIDE-RAIL-R",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.00020903598428477656,
+      "bounds_min": [
+        0.1824999898672104,
+        -0.8600000143051147,
+        0.3074999749660492
+      ],
+      "bounds_max": [
+        0.20749999582767487,
+        -0.5199999809265137,
+        0.33250001072883606
+      ],
+      "materials": [
+        "BOARD black painted metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "5f3bec86c1ed2c5fb0957b5278c1eb45b533ac52d081f27954c7a08ccea639f5"
+    },
+    {
+      "name": "ROOM.ceiling_INFERRED",
+      "stable_id": "ROOM-CEILING",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 4.548470615714162,
+      "bounds_min": [
+        -2.5942001342773438,
+        -7.0,
+        2.799999952316284
+      ],
+      "bounds_max": [
+        2.5942001342773438,
+        0.3055124282836914,
+        2.919999837875366
+      ],
+      "materials": [
+        "WALL warm gray plaster observed hue / inferred response"
+      ],
+      "world_triangle_coordinates_sha256_round6": "a1740d11ccc1cfef0fa441cbc9cefc1d27d1e6e28fdf356bef98218ddc71480d"
+    },
+    {
+      "name": "ROOM.floor",
+      "stable_id": "ROOM-FLOOR",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 4.548470615714162,
+      "bounds_min": [
+        -2.5942001342773438,
+        -7.0,
+        -0.11999999731779099
+      ],
+      "bounds_max": [
+        2.5942001342773438,
+        0.3055124282836914,
+        0.0
+      ],
+      "materials": [
+        "FLOOR dark gray observed / inferred response"
+      ],
+      "world_triangle_coordinates_sha256_round6": "7fc88f1297f5a40d7e74d430850a249cabe492dd5aff5ae752f183628246ff1c"
+    },
+    {
+      "name": "ROOM.front-wall_INFERRED",
+      "stable_id": "ROOM-FRONT-CLOSURE",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 1.6089023948297005,
+      "bounds_min": [
+        -2.5942001342773438,
+        -7.119999885559082,
+        0.0
+      ],
+      "bounds_max": [
+        2.194200038909912,
+        -7.0,
+        2.799999952316284
+      ],
+      "materials": [
+        "WALL warm gray plaster observed hue / inferred response"
+      ],
+      "world_triangle_coordinates_sha256_round6": "0a209715608fce053806f5c92433f747d13cfe0f58e4b15bb947b9a648e22eee"
+    },
+    {
+      "name": "ROOM.left-projecting-face",
+      "stable_id": "ROOM-LEFT-FACE",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.13439999670982358,
+      "bounds_min": [
+        -2.5942001342773438,
+        -0.2191559374332428,
+        0.0
+      ],
+      "bounds_max": [
+        -2.194200038909912,
+        -0.09915593266487122,
+        2.799999952316284
+      ],
+      "materials": [
+        "WALL warm gray plaster observed hue / inferred response"
+      ],
+      "world_triangle_coordinates_sha256_round6": "0e414ee868e4902cd4bed0dad7962cc5d1953cd692af9959d1690729eff2c95d"
+    },
+    {
+      "name": "ROOM.left-return",
+      "stable_id": "ROOM-LEFT-RETURN",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.13596851385615216,
+      "bounds_min": [
+        -2.3142001628875732,
+        -0.09915593266487122,
+        0.0
+      ],
+      "bounds_max": [
+        -2.194200277328491,
+        0.30551227927207947,
+        2.799999952316284
+      ],
+      "materials": [
+        "WALL warm gray plaster observed hue / inferred response"
+      ],
+      "world_triangle_coordinates_sha256_round6": "a07f3e96c36f5524eee3590832bfeb4285e3cefd7ced27f8bd0e13088cc62847"
+    },
+    {
+      "name": "ROOM.left-side_INFERRED",
+      "stable_id": "ROOM-LEFT-CLOSURE",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 2.3186835253246203,
+      "bounds_min": [
+        -2.714200258255005,
+        -7.0,
+        0.0
+      ],
+      "bounds_max": [
+        -2.594200372695923,
+        -0.09915590286254883,
+        2.799999952316284
+      ],
+      "materials": [
+        "WALL warm gray plaster observed hue / inferred response"
+      ],
+      "world_triangle_coordinates_sha256_round6": "791c141dc6640ee55e4553cf49fe0401beea31a0cd3634c56d677febf6da727f"
+    },
+    {
+      "name": "ROOM.rear-wall",
+      "stable_id": "ROOM-REAR",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 1.474502528296416,
+      "bounds_min": [
+        -2.194200277328491,
+        0.30551227927207947,
+        0.0
+      ],
+      "bounds_max": [
+        2.194200277328491,
+        0.42551228404045105,
+        2.799999952316284
+      ],
+      "materials": [
+        "WALL warm gray plaster observed hue / inferred response"
+      ],
+      "world_triangle_coordinates_sha256_round6": "d03313b3b27ee73389532d124d138796641c4656a1c5b630c20aded6dad9e3b9"
+    },
+    {
+      "name": "ROOM.right-wall",
+      "stable_id": "ROOM-RIGHT",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 2.454652079235092,
+      "bounds_min": [
+        2.194200277328491,
+        -7.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.3142001628875732,
+        0.3055124282836914,
+        2.799999952316284
+      ],
+      "materials": [
+        "WALL warm gray plaster observed hue / inferred response"
+      ],
+      "world_triangle_coordinates_sha256_round6": "81d7ddf350f3213741afd7c0b9364e893d0bef5d68369f3d3c9cac7cd8927b1f"
+    },
+    {
+      "name": "SKIRT.front-closure",
+      "stable_id": "SKIRT-FRONT-CLOSURE",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.016009895174666583,
+      "bounds_min": [
+        -2.5942001342773438,
+        -7.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.194200038909912,
+        -6.97599983215332,
+        0.14000000059604645
+      ],
+      "materials": [
+        "SKIRT charcoal satin"
+      ],
+      "world_triangle_coordinates_sha256_round6": "d5922fde8422edae0a022f945dbe55ff0bf1828f994ea123efd89958c5aef28a"
+    },
+    {
+      "name": "SKIRT.left-closure",
+      "stable_id": "SKIRT-LEFT-CLOSURE",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0230739071222567,
+      "bounds_min": [
+        -2.594200372695923,
+        -7.0,
+        0.0
+      ],
+      "bounds_max": [
+        -2.570200204849243,
+        -0.09915590286254883,
+        0.14000000059604645
+      ],
+      "materials": [
+        "SKIRT charcoal satin"
+      ],
+      "world_triangle_coordinates_sha256_round6": "be013261ef689464388c6725e3a22f560534735b7f957018954a2f5487515ae9"
+    },
+    {
+      "name": "SKIRT.left-face",
+      "stable_id": "SKIRT-LEFT-FACE",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0013350849799393567,
+      "bounds_min": [
+        -2.5942001342773438,
+        -0.12315593659877777,
+        0.0
+      ],
+      "bounds_max": [
+        -2.194200038909912,
+        -0.09915593266487122,
+        0.14000000059604645
+      ],
+      "materials": [
+        "SKIRT charcoal satin"
+      ],
+      "world_triangle_coordinates_sha256_round6": "dd668f2ce6b00a693374bb3986f922641d9809b58a75b2b4c2c1f81317ed76a8"
+    },
+    {
+      "name": "SKIRT.left-return",
+      "stable_id": "SKIRT-LEFT-RETURN",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0013506954535279277,
+      "bounds_min": [
+        -2.194200277328491,
+        -0.09915593266487122,
+        0.0
+      ],
+      "bounds_max": [
+        -2.1702001094818115,
+        0.30551227927207947,
+        0.14000000059604645
+      ],
+      "materials": [
+        "SKIRT charcoal satin"
+      ],
+      "world_triangle_coordinates_sha256_round6": "21e6a46d77366ee2d9d66477696105254948dc88c087cf6c8b42fb9e8702d3db"
+    },
+    {
+      "name": "SKIRT.rear",
+      "stable_id": "SKIRT-REAR",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.014672296451306941,
+      "bounds_min": [
+        -2.194200277328491,
+        0.2815122902393341,
+        0.0
+      ],
+      "bounds_max": [
+        2.194200277328491,
+        0.30551227927207947,
+        0.14000000059604645
+      ],
+      "materials": [
+        "SKIRT charcoal satin"
+      ],
+      "world_triangle_coordinates_sha256_round6": "b926ffc41dd1d6f4b4c104b85ad1199f640073100e7b233b8432c75f9dd814f9"
+    },
+    {
+      "name": "SKIRT.right",
+      "stable_id": "SKIRT-RIGHT",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.024427118535878888,
+      "bounds_min": [
+        2.1702001094818115,
+        -7.0,
+        0.0
+      ],
+      "bounds_max": [
+        2.194200277328491,
+        0.3055124282836914,
+        0.14000000059604645
+      ],
+      "materials": [
+        "SKIRT charcoal satin"
+      ],
+      "world_triangle_coordinates_sha256_round6": "4bd98beb56b2426773a872d0509a4b5878b4c576e1d6b913ddb40238ad9c1920"
+    },
+    {
+      "name": "TABLE.apron-B",
+      "stable_id": "TABLE-APRON-B",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0023631465715635413,
+      "bounds_min": [
+        -0.9967870116233826,
+        -0.48132357001304626,
+        0.5351182222366333
+      ],
+      "bounds_max": [
+        0.8849144577980042,
+        -0.44632354378700256,
+        0.5711182355880737
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "e63a28d04728ac2f2a5791375aad4c669a0537ce30cbfdefa051764d1eb7fa87"
+    },
+    {
+      "name": "TABLE.apron-F",
+      "stable_id": "TABLE-APRON-F",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0023631465715635413,
+      "bounds_min": [
+        -0.9967870116233826,
+        -1.108810305595398,
+        0.5351182222366333
+      ],
+      "bounds_max": [
+        0.8849144577980042,
+        -1.0738102197647095,
+        0.5711182355880737
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "eeb88db03e906aa07d3d536104b9e4e0b858ac5dcc1a4909b9d4b6a75ae4c571"
+    },
+    {
+      "name": "TABLE.leg-LB",
+      "stable_id": "TABLE-LEG-LB",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0010349327439694853,
+      "bounds_min": [
+        -0.9982870221138,
+        -0.48532354831695557,
+        0.010000020265579224
+      ],
+      "bounds_max": [
+        -0.9552870392799377,
+        -0.44232356548309326,
+        0.5711182355880737
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "3bfca0bf09d9192dfea463025902a07f29bdb7d29eb70837957be56ecc0394ea"
+    },
+    {
+      "name": "TABLE.leg-LF",
+      "stable_id": "TABLE-LEG-LF",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0010349327439694853,
+      "bounds_min": [
+        -0.9982870221138,
+        -1.1128102540969849,
+        0.010000020265579224
+      ],
+      "bounds_max": [
+        -0.9552870392799377,
+        -1.0698102712631226,
+        0.5711182355880737
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "47d412db1d8d5b7e7079f112fe41fe8eec9315a11097f75d83ab12f2c5ce690c"
+    },
+    {
+      "name": "TABLE.leg-RB",
+      "stable_id": "TABLE-LEG-RB",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0010349327439694853,
+      "bounds_min": [
+        0.8434144854545593,
+        -0.48532354831695557,
+        0.010000020265579224
+      ],
+      "bounds_max": [
+        0.8864144682884216,
+        -0.44232356548309326,
+        0.5711182355880737
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "5c1da0a85554dad4a8e3e73476da7dd7ba49c7d7a0a53cacf8d01f75479214f7"
+    },
+    {
+      "name": "TABLE.leg-RF",
+      "stable_id": "TABLE-LEG-RF",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0010349327439694853,
+      "bounds_min": [
+        0.8434144854545593,
+        -1.1128102540969849,
+        0.010000020265579224
+      ],
+      "bounds_max": [
+        0.8864144682884216,
+        -1.0698102712631226,
+        0.5711182355880737
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "668affcc08386967a053cddbda839000a17f45057124d02257d30749f3f998d4"
+    },
+    {
+      "name": "TABLE.pad-LB",
+      "stable_id": "TABLE-PAD-LB",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 2.390562221820448e-05,
+      "bounds_min": [
+        -0.9992870092391968,
+        -0.4863235652446747,
+        0.0
+      ],
+      "bounds_max": [
+        -0.954287052154541,
+        -0.44132354855537415,
+        0.012000000104308128
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "d7ffbe89914e6aadfecce703f44c32f9f8f21b4a0fc7e1662b1fec94b675f8dc"
+    },
+    {
+      "name": "TABLE.pad-LF",
+      "stable_id": "TABLE-PAD-LF",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 2.390562221820448e-05,
+      "bounds_min": [
+        -0.9992870092391968,
+        -1.1138103008270264,
+        0.0
+      ],
+      "bounds_max": [
+        -0.954287052154541,
+        -1.068810224533081,
+        0.012000000104308128
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "ce02afbb1d111126399f8364192025ef5da56a21bcb87a1c983942162e6acfb2"
+    },
+    {
+      "name": "TABLE.pad-RB",
+      "stable_id": "TABLE-PAD-RB",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 2.390562221820448e-05,
+      "bounds_min": [
+        0.8424144983291626,
+        -0.4863235652446747,
+        0.0
+      ],
+      "bounds_max": [
+        0.8874144554138184,
+        -0.44132354855537415,
+        0.012000000104308128
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "9a89a95782254f59a74bf5a4cebedce33dc887d2f060c450b2e28242e987bcb3"
+    },
+    {
+      "name": "TABLE.pad-RF",
+      "stable_id": "TABLE-PAD-RF",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 2.390562221820448e-05,
+      "bounds_min": [
+        0.8424144983291626,
+        -1.1138103008270264,
+        0.0
+      ],
+      "bounds_max": [
+        0.8874144554138184,
+        -1.068810224533081,
+        0.012000000104308128
+      ],
+      "materials": [
+        "rubber inferred feet"
+      ],
+      "world_triangle_coordinates_sha256_round6": "987a0800a6cd6b999538536c839db098bef92632b19217606fd7f37c14c9dfaf"
+    },
+    {
+      "name": "TABLE.side-apron-L",
+      "stable_id": "TABLE-SIDE-APRON-L",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0008179969458645888,
+      "bounds_min": [
+        -0.9942870140075684,
+        -1.1033103466033936,
+        0.5351182222366333
+      ],
+      "bounds_max": [
+        -0.9592870473861694,
+        -0.45182353258132935,
+        0.5711182355880737
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "7738ca40f02cf1bf32fc5f1f84199d82f79249fd252905d123ac1e7f84c7d364"
+    },
+    {
+      "name": "TABLE.side-apron-R",
+      "stable_id": "TABLE-SIDE-APRON-R",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.0008179969458645888,
+      "bounds_min": [
+        0.847414493560791,
+        -1.1033103466033936,
+        0.5351182222366333
+      ],
+      "bounds_max": [
+        0.8824144601821899,
+        -0.45182353258132935,
+        0.5711182355880737
+      ],
+      "materials": [
+        "TABLE gray coated metal"
+      ],
+      "world_triangle_coordinates_sha256_round6": "484400065a0378256b7840f5473c35e4b8cd2267a120eac0c8c128fcf7347057"
+    },
+    {
+      "name": "TABLE.wood-top",
+      "stable_id": "TABLE-TOP",
+      "vertices": 96,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "signed_volume": 0.040359124118649434,
+      "bounds_min": [
+        -1.041787028312683,
+        -1.143310308456421,
+        0.571118175983429
+      ],
+      "bounds_max": [
+        0.9299144744873047,
+        -0.4118235409259796,
+        0.599118173122406
+      ],
+      "materials": [
+        "TABLE inferred wood grain"
+      ],
+      "world_triangle_coordinates_sha256_round6": "660ed8cd4556f07f28ea4d02ee206ee58a890fe24add697a78ac19edb25b5d46"
+    }
+  ],
+  "explicit_non_solid_exception": "BOARD-TEXT single bounded UV decal plane backed by solid sandwich;4 boundary edges expected",
+  "shell_rays": {
+    "origins": [
+      [
+        0,
+        -2,
+        1.2
+      ],
+      [
+        0,
+        -5.5,
+        1.3
+      ],
+      [
+        0,
+        0.12,
+        1.0
+      ]
+    ],
+    "rays_per_origin": 2048,
+    "total": 6144,
+    "misses": []
+  },
+  "ground_contact": [
+    {
+      "id": "BOARD-PAD-L0",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "BOARD-PAD-L1",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "BOARD-PAD-R0",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "BOARD-PAD-R1",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "CHAIR-PAD-FL",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "CHAIR-PAD-FR",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "CHAIR-PAD-BL",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "CHAIR-PAD-BR",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "TABLE-PAD-LB",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "TABLE-PAD-LF",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "TABLE-PAD-RB",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    },
+    {
+      "id": "TABLE-PAD-RF",
+      "min_z": 0.0,
+      "max_abs_gap_limit": 1e-06
+    }
+  ],
+  "clearances": {
+    "board_back_to_wall": 0.08301228815229911,
+    "table_left_to_wall": 1.1524131767765677,
+    "table_right_to_wall": 1.2642857306019462,
+    "chair_seat_to_apron_z": 0.08511823415756226
+  },
+  "cameras": [
+    {
+      "name": "SOURCE front 1283.813032",
+      "location": [
+        -0.11589451879262924,
+        -6.337157249450684,
+        1.2401378154754639
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "SOURCE oblique 1505.632497",
+      "location": [
+        0.30508553981781006,
+        -2.0601789951324463,
+        1.001760482788086
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK01 left overview",
+      "location": [
+        -2.0,
+        -3.0,
+        1.7999999523162842
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK02 right overview",
+      "location": [
+        2.0,
+        -3.0,
+        1.7999999523162842
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK03 high interior",
+      "location": [
+        0.30000001192092896,
+        -2.5999999046325684,
+        2.549999952316284
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK04 low support",
+      "location": [
+        1.899999976158142,
+        -2.0,
+        0.30000001192092896
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK05 board rear",
+      "location": [
+        1.7999999523162842,
+        0.17525614798069,
+        1.7000000476837158
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK06 left floor",
+      "location": [
+        -1.7999999523162842,
+        -1.2000000476837158,
+        0.2800000011920929
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK07 front closure",
+      "location": [
+        0.0,
+        -0.20000000298023224,
+        2.0999999046325684
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK08 overhead interior",
+      "location": [
+        -0.10000000149011612,
+        -0.3499999940395355,
+        2.680000066757202
+      ],
+      "inside_conservative_inner_box": true
+    },
+    {
+      "name": "CHECK09 right joint",
+      "location": [
+        1.75,
+        -0.25,
+        1.0499999523162842
+      ],
+      "inside_conservative_inner_box": true
+    }
+  ],
+  "material_glb_reimport": {
+    "file": "interview-room-material.glb",
+    "imported_meshes": 61,
+    "triangles": 10742,
+    "original_evaluated_triangles": 10742,
+    "matched_names": 61,
+    "max_bounds_delta": 5.960464477539063e-08,
+    "material_count": 10,
+    "image_count": 2,
+    "mesh_objects": [
+      {
+        "name": "BOARD.cross-rail",
+        "stable_id": "BOARD-CROSS-RAIL",
+        "vertices": 272,
+        "triangles": 188,
+        "boundary_edges": 310,
+        "nonmanifold_edges": 310,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0021561607463828616,
+        "bounds_min": [
+          -1.0499999523162842,
+          0.006500000134110451,
+          0.7031523585319519
+        ],
+        "bounds_max": [
+          1.0499999523162842,
+          0.04349999874830246,
+          0.731152355670929
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "eba345437629e41edf973858614f65e76150e2f616a9d01f0a8206aef97d9aea"
+      },
+      {
+        "name": "BOARD.foot-L",
+        "stable_id": "BOARD-FOOT-L",
+        "vertices": 282,
+        "triangles": 188,
+        "boundary_edges": 312,
+        "nonmanifold_edges": 312,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0011971090702604975,
+        "bounds_min": [
+          -1.09250009059906,
+          -0.19999998807907104,
+          0.007500000298023224
+        ],
+        "bounds_max": [
+          -1.037500023841858,
+          0.2199999988079071,
+          0.0625
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "643bc1bd6b85cd41d3001e723665fc507b23f6fcf237dc67e7d55cc1447d28ad"
+      },
+      {
+        "name": "BOARD.foot-R",
+        "stable_id": "BOARD-FOOT-R",
+        "vertices": 282,
+        "triangles": 188,
+        "boundary_edges": 312,
+        "nonmanifold_edges": 312,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0011971090702604975,
+        "bounds_min": [
+          1.037500023841858,
+          -0.19999998807907104,
+          0.007500000298023224
+        ],
+        "bounds_max": [
+          1.09250009059906,
+          0.2199999988079071,
+          0.0625
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "b6935c318ea7ce9f2ac51a35812110afe6c51a34df26c2f609db1e76691ae0a8"
+      },
+      {
+        "name": "BOARD.foot-pad-L0",
+        "stable_id": "BOARD-PAD-L0",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 5.908688601919881e-05,
+        "bounds_min": [
+          -1.0950000286102295,
+          -0.20250000059604645,
+          0.0
+        ],
+        "bounds_max": [
+          -1.0350000858306885,
+          -0.13750000298023224,
+          0.01600000075995922
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "376e3e6667e3adba2d75aa80b8e934f3223dd941880c3ca7af409c755041a276"
+      },
+      {
+        "name": "BOARD.foot-pad-L1",
+        "stable_id": "BOARD-PAD-L1",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 5.908688601919881e-05,
+        "bounds_min": [
+          -1.0950000286102295,
+          0.1574999988079071,
+          0.0
+        ],
+        "bounds_max": [
+          -1.0350000858306885,
+          0.2224999964237213,
+          0.01600000075995922
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "01b662f353759f035c519c659f72e17bfa24050aeedcb5e5d20bbafb397bf30b"
+      },
+      {
+        "name": "BOARD.foot-pad-R0",
+        "stable_id": "BOARD-PAD-R0",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 5.908688601919881e-05,
+        "bounds_min": [
+          1.0350000858306885,
+          -0.20250000059604645,
+          0.0
+        ],
+        "bounds_max": [
+          1.0950000286102295,
+          -0.13750000298023224,
+          0.01600000075995922
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "828e1614b0786f8dea3cea7721d66d950141a5a338ef5b584a11dbe82eafb044"
+      },
+      {
+        "name": "BOARD.foot-pad-R1",
+        "stable_id": "BOARD-PAD-R1",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 5.908688601919881e-05,
+        "bounds_min": [
+          1.0350000858306885,
+          0.1574999988079071,
+          0.0
+        ],
+        "bounds_max": [
+          1.0950000286102295,
+          0.2224999964237213,
+          0.01600000075995922
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "ac543c9dd55b698cbad8c1d393ab47c117894bec02ccd3c09d9c7a00c75bc95e"
+      },
+      {
+        "name": "BOARD.marker-tray-left",
+        "stable_id": "BOARD-TRAY",
+        "vertices": 260,
+        "triangles": 188,
+        "boundary_edges": 294,
+        "nonmanifold_edges": 294,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0013240057948275086,
+        "bounds_min": [
+          -1.034999966621399,
+          -0.0625,
+          0.7046523690223694
+        ],
+        "bounds_max": [
+          -0.32500001788139343,
+          0.01250000111758709,
+          0.7296523451805115
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "c1547fb9a30e9e01ffff2340d2137fe0032bc99677bfa6048b656b549f0fae36"
+      },
+      {
+        "name": "BOARD.physical-rounded-frame",
+        "stable_id": "BOARD-FRAME",
+        "vertices": 432,
+        "triangles": 288,
+        "boundary_edges": 432,
+        "nonmanifold_edges": 432,
+        "zero_area_faces": 0,
+        "signed_volume": 0.010715949148561287,
+        "bounds_min": [
+          -1.0299999713897705,
+          -0.014999999664723873,
+          0.8621523380279541
+        ],
+        "bounds_max": [
+          1.0299999713897705,
+          0.04500000178813934,
+          1.9750351905822754
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "adf033c86b46f33e764013981947df60290b823e2ab4e317d090f1f2603aecaf"
+      },
+      {
+        "name": "BOARD.pivot-L",
+        "stable_id": "BOARD-PIVOT-L",
+        "vertices": 419,
+        "triangles": 380,
+        "boundary_edges": 436,
+        "nonmanifold_edges": 436,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00019005733740421173,
+        "bounds_min": [
+          -1.090000033378601,
+          -0.023000000044703484,
+          1.398593783378601
+        ],
+        "bounds_max": [
+          -1.040000081062317,
+          0.04699999839067459,
+          1.468593716621399
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "9fc0849b24414d9234dee15b05b7b9126940feeefa7037216b053c257dbfe5a8"
+      },
+      {
+        "name": "BOARD.pivot-R",
+        "stable_id": "BOARD-PIVOT-R",
+        "vertices": 419,
+        "triangles": 380,
+        "boundary_edges": 436,
+        "nonmanifold_edges": 436,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00019005733740421173,
+        "bounds_min": [
+          1.040000081062317,
+          -0.023000000044703484,
+          1.398593783378601
+        ],
+        "bounds_max": [
+          1.090000033378601,
+          0.04699999839067459,
+          1.468593716621399
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "f836da2695d8a2d4938d0e2ceec052ebb07e92d54d9d688ddba974bf3a0df471"
+      },
+      {
+        "name": "BOARD.pivot-screw-L",
+        "stable_id": "BOARD-SCREW-L",
+        "vertices": 440,
+        "triangles": 380,
+        "boundary_edges": 444,
+        "nonmanifold_edges": 444,
+        "zero_area_faces": 0,
+        "signed_volume": 1.947444483384433e-05,
+        "bounds_min": [
+          -1.1134999990463257,
+          -0.0040000006556510925,
+          1.4175937175750732
+        ],
+        "bounds_max": [
+          -1.088499903678894,
+          0.02800000086426735,
+          1.4495937824249268
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "68b8c3a4f9f0da174e9d0d1dc5acee83b1edd0745b32fc18138330040cde12c1"
+      },
+      {
+        "name": "BOARD.pivot-screw-R",
+        "stable_id": "BOARD-SCREW-R",
+        "vertices": 440,
+        "triangles": 380,
+        "boundary_edges": 444,
+        "nonmanifold_edges": 444,
+        "zero_area_faces": 0,
+        "signed_volume": 1.947444483384433e-05,
+        "bounds_min": [
+          1.088499903678894,
+          -0.0040000006556510925,
+          1.4175937175750732
+        ],
+        "bounds_max": [
+          1.1134999990463257,
+          0.02800000086426735,
+          1.4495937824249268
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "a3ef16b06f46241e5fcd6441badd8d18ee6ed6c946a83910062f3dac22ebd40e"
+      },
+      {
+        "name": "BOARD.rail-clamp-L",
+        "stable_id": "BOARD-CLAMP-L",
+        "vertices": 291,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00015634615588294576,
+        "bounds_min": [
+          -1.0880000591278076,
+          -0.03700000047683716,
+          0.6896523833274841
+        ],
+        "bounds_max": [
+          -1.0420000553131104,
+          0.027000002562999725,
+          0.7446523308753967
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "cf40603b1d7390cc0a0ade96fa94edcdf89bae70c30ac22d118b6d9a7a00a73b"
+      },
+      {
+        "name": "BOARD.rail-clamp-R",
+        "stable_id": "BOARD-CLAMP-R",
+        "vertices": 291,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00015634615588294576,
+        "bounds_min": [
+          1.0420000553131104,
+          -0.03700000047683716,
+          0.6896523833274841
+        ],
+        "bounds_max": [
+          1.0880000591278076,
+          0.027000002562999725,
+          0.7446523308753967
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "da566983d3ed46c87b5beaf26b769e5fcf67cb5a17d6b14a49a088b74ec909fa"
+      },
+      {
+        "name": "BOARD.sandwich-core",
+        "stable_id": "BOARD-CORE",
+        "vertices": 267,
+        "triangles": 188,
+        "boundary_edges": 332,
+        "nonmanifold_edges": 332,
+        "zero_area_faces": 0,
+        "signed_volume": 0.09327067910670751,
+        "bounds_min": [
+          -1.00600004196167,
+          0.006000000983476639,
+          0.8861523270606995
+        ],
+        "bounds_max": [
+          1.00600004196167,
+          0.05000000074505806,
+          1.9510352611541748
+        ],
+        "materials": [
+          "BOARD inferred plain reverse"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d9f06c16a1ce9de99f0c3c0c8c912465e646d6e57fc7d26db645b3e94c033bfe"
+      },
+      {
+        "name": "BOARD.source-text-face",
+        "stable_id": "BOARD-TEXT",
+        "vertices": 4,
+        "triangles": 2,
+        "boundary_edges": 4,
+        "nonmanifold_edges": 4,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00035096096672646243,
+        "bounds_min": [
+          -1.0,
+          -0.0005000000237487257,
+          0.8921523690223694
+        ],
+        "bounds_max": [
+          1.0,
+          -0.0005000000237487257,
+          1.9450352191925049
+        ],
+        "materials": [
+          "BOARD photographed front text / baked light retained"
+        ],
+        "world_triangle_coordinates_sha256_round6": "179114d975cab5ff7d70a38fac956a71bd2b2c7e6bfdeff5612fbbb5aa5eed5e"
+      },
+      {
+        "name": "BOARD.upright-L",
+        "stable_id": "BOARD-UPRIGHT-L",
+        "vertices": 287,
+        "triangles": 188,
+        "boundary_edges": 324,
+        "nonmanifold_edges": 324,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0017351790620964563,
+        "bounds_min": [
+          -1.0810000896453857,
+          0.02500000223517418,
+          0.04500001668930054
+        ],
+        "bounds_max": [
+          -1.0490000247955322,
+          0.06499999761581421,
+          1.4185938835144043
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "c3a2dcd7e99ba9ebb7fccca7ea6fa7a952ddd2287e6030961289c1c63aa00118"
+      },
+      {
+        "name": "BOARD.upright-R",
+        "stable_id": "BOARD-UPRIGHT-R",
+        "vertices": 287,
+        "triangles": 188,
+        "boundary_edges": 324,
+        "nonmanifold_edges": 324,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0017351790620964563,
+        "bounds_min": [
+          1.0490000247955322,
+          0.02500000223517418,
+          0.04500001668930054
+        ],
+        "bounds_max": [
+          1.0810000896453857,
+          0.06499999761581421,
+          1.4185938835144043
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "f5910b7f0b5f2d8da415b664795de55eb2a320c38f49ea3e98e5584d49d20bf4"
+      },
+      {
+        "name": "CHAIR.back-cushion",
+        "stable_id": "CHAIR-BACK",
+        "vertices": 278,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.009897985363931265,
+        "bounds_min": [
+          -0.2849999964237213,
+          -0.39093080163002014,
+          0.4361180365085602
+        ],
+        "bounds_max": [
+          0.20500001311302185,
+          -0.28906920552253723,
+          0.7338818907737732
+        ],
+        "materials": [
+          "CHAIR black upholstered fabric"
+        ],
+        "world_triangle_coordinates_sha256_round6": "1db25bf800543e3f61b2343da903794f31807ea0d28fe862a9336eb0aa42c31b"
+      },
+      {
+        "name": "CHAIR.back-post-L",
+        "stable_id": "CHAIR-BACK-POST-L",
+        "vertices": 243,
+        "triangles": 188,
+        "boundary_edges": 272,
+        "nonmanifold_edges": 272,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00016400592202323085,
+        "bounds_min": [
+          -0.28600001335144043,
+          -0.5275123119354248,
+          0.3695540428161621
+        ],
+        "bounds_max": [
+          -0.2639999985694885,
+          -0.30248767137527466,
+          0.65544593334198
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "24e39521006a4bedef00350d2f4179be35f40694cfc289e2418bb63610f1b076"
+      },
+      {
+        "name": "CHAIR.back-post-R",
+        "stable_id": "CHAIR-BACK-POST-R",
+        "vertices": 243,
+        "triangles": 188,
+        "boundary_edges": 272,
+        "nonmanifold_edges": 272,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00016400592202323085,
+        "bounds_min": [
+          0.18399998545646667,
+          -0.5275123119354248,
+          0.3695540428161621
+        ],
+        "bounds_max": [
+          0.20600000023841858,
+          -0.30248767137527466,
+          0.65544593334198
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "e7a4908c99c67fc700699629c04a6638c4574ba1300fd107a2ee9ef6a97e0e75"
+      },
+      {
+        "name": "CHAIR.front-crossrail",
+        "stable_id": "CHAIR-FRONT-RAIL",
+        "vertices": 283,
+        "triangles": 188,
+        "boundary_edges": 328,
+        "nonmanifold_edges": 328,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00022764975760479535,
+        "bounds_min": [
+          -0.2800000011920929,
+          -0.8709999918937683,
+          0.3089999854564667
+        ],
+        "bounds_max": [
+          0.20000001788139343,
+          -0.8490000367164612,
+          0.3310000002384186
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d9d7278b5039ce27d99465155dab5e2bc8c9a2962d37f1cf75902896ceaecf7d"
+      },
+      {
+        "name": "CHAIR.front-foot-cap-L",
+        "stable_id": "CHAIR-PAD-FL",
+        "vertices": 251,
+        "triangles": 188,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 288,
+        "zero_area_faces": 0,
+        "signed_volume": 8.36956000947739e-06,
+        "bounds_min": [
+          -0.32499998807907104,
+          -0.9959999918937683,
+          0.0
+        ],
+        "bounds_max": [
+          -0.29500001668930054,
+          -0.9640000462532043,
+          0.008999999612569809
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "0a6e7f423fb0e257e0bb2acf84372042496476e28caa8af2d1515af72ab3b4d6"
+      },
+      {
+        "name": "CHAIR.front-foot-cap-R",
+        "stable_id": "CHAIR-PAD-FR",
+        "vertices": 251,
+        "triangles": 188,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 288,
+        "zero_area_faces": 0,
+        "signed_volume": 8.36956000947739e-06,
+        "bounds_min": [
+          0.2150000035762787,
+          -0.9959999918937683,
+          0.0
+        ],
+        "bounds_max": [
+          0.24500000476837158,
+          -0.9640000462532043,
+          0.008999999612569809
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "3e3b8657fd21cde413db52c9e39d7779cca2c94a021f8bd1d38c6e56de2b181a"
+      },
+      {
+        "name": "CHAIR.front-leg-L",
+        "stable_id": "CHAIR-FRONT-LEG-L",
+        "vertices": 292,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00023900431492652325,
+        "bounds_min": [
+          -0.3242609202861786,
+          -0.9932225942611694,
+          0.005842252634465694
+        ],
+        "bounds_max": [
+          -0.26073911786079407,
+          -0.8467774391174316,
+          0.3801577687263489
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "1b938c1173172da5f545cdd083cfabb831eac03dc32961d862446eb874b81007"
+      },
+      {
+        "name": "CHAIR.front-leg-R",
+        "stable_id": "CHAIR-FRONT-LEG-R",
+        "vertices": 292,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00023900431492652325,
+        "bounds_min": [
+          0.18073908984661102,
+          -0.9932225942611694,
+          0.005842252634465694
+        ],
+        "bounds_max": [
+          0.24426092207431793,
+          -0.8467774391174316,
+          0.3801577687263489
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "7d2ecac10cc69347fe0ca0169dbe58b69fb08a6d229237ad80dc8855c937a22b"
+      },
+      {
+        "name": "CHAIR.rear-foot-cap-L",
+        "stable_id": "CHAIR-PAD-BL",
+        "vertices": 251,
+        "triangles": 188,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 288,
+        "zero_area_faces": 0,
+        "signed_volume": 8.36956000947739e-06,
+        "bounds_min": [
+          -0.304999977350235,
+          -0.4259999990463257,
+          0.0
+        ],
+        "bounds_max": [
+          -0.2750000059604645,
+          -0.39399999380111694,
+          0.008999999612569809
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "fb47803ce7056d70588d515b700814e2ee8376fd818c5e891aeeb2f384cfd1ad"
+      },
+      {
+        "name": "CHAIR.rear-foot-cap-R",
+        "stable_id": "CHAIR-PAD-BR",
+        "vertices": 251,
+        "triangles": 188,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 288,
+        "zero_area_faces": 0,
+        "signed_volume": 8.36956000947739e-06,
+        "bounds_min": [
+          0.19499999284744263,
+          -0.4259999990463257,
+          0.0
+        ],
+        "bounds_max": [
+          0.22499999403953552,
+          -0.39399999380111694,
+          0.008999999612569809
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "5eeebe96c1a7b148465b339c40c44f83ede25f99678dcdf3c56a26574efe13fa"
+      },
+      {
+        "name": "CHAIR.rear-leg-L",
+        "stable_id": "CHAIR-REAR-LEG-L",
+        "vertices": 265,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00023519544098970257,
+        "bounds_min": [
+          -0.30349600315093994,
+          -0.5323236584663391,
+          0.006191151682287455
+        ],
+        "bounds_max": [
+          -0.26150399446487427,
+          -0.3976762890815735,
+          0.3778088390827179
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "1a52260b45ecb92ba36ecae69a40a65061ddca314acf5b367897569612e60bfd"
+      },
+      {
+        "name": "CHAIR.rear-leg-R",
+        "stable_id": "CHAIR-REAR-LEG-R",
+        "vertices": 265,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00023519544098970257,
+        "bounds_min": [
+          0.18150395154953003,
+          -0.5323237180709839,
+          0.006191163789480925
+        ],
+        "bounds_max": [
+          0.22349601984024048,
+          -0.3976762294769287,
+          0.3778088390827179
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "4e6679e39c4e32227bfafbc6e089565d5454ff7f4e3be33095078d1886219502"
+      },
+      {
+        "name": "CHAIR.seat-cushion",
+        "stable_id": "CHAIR-SEAT",
+        "vertices": 248,
+        "triangles": 188,
+        "boundary_edges": 316,
+        "nonmanifold_edges": 316,
+        "zero_area_faces": 0,
+        "signed_volume": 0.019515715844694033,
+        "bounds_min": [
+          -0.29999998211860657,
+          -0.9100000262260437,
+          0.36000001430511475
+        ],
+        "bounds_max": [
+          0.2199999988079071,
+          -0.44999998807907104,
+          0.44999998807907104
+        ],
+        "materials": [
+          "CHAIR black upholstered fabric"
+        ],
+        "world_triangle_coordinates_sha256_round6": "531c20f3234365f701f015a412b9150c136f02dff7a48cb50d11421ef731f5e9"
+      },
+      {
+        "name": "CHAIR.side-stretcher-L",
+        "stable_id": "CHAIR-SIDE-RAIL-L",
+        "vertices": 268,
+        "triangles": 188,
+        "boundary_edges": 328,
+        "nonmanifold_edges": 328,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00020903578289239747,
+        "bounds_min": [
+          -0.2875000238418579,
+          -0.8600000143051147,
+          0.3074999749660492
+        ],
+        "bounds_max": [
+          -0.26249998807907104,
+          -0.5199999809265137,
+          0.33250001072883606
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "7c22c6c645d87b94c4520ef67603673f1e4102de723aafd2cfaba2be38ce240a"
+      },
+      {
+        "name": "CHAIR.side-stretcher-R",
+        "stable_id": "CHAIR-SIDE-RAIL-R",
+        "vertices": 268,
+        "triangles": 188,
+        "boundary_edges": 328,
+        "nonmanifold_edges": 328,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00020903578289239747,
+        "bounds_min": [
+          0.1824999749660492,
+          -0.8600000143051147,
+          0.3074999749660492
+        ],
+        "bounds_max": [
+          0.20750001072883606,
+          -0.5199999809265137,
+          0.33250001072883606
+        ],
+        "materials": [
+          "BOARD black painted metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "5f3bec86c1ed2c5fb0957b5278c1eb45b533ac52d081f27954c7a08ccea639f5"
+      },
+      {
+        "name": "ROOM.ceiling_INFERRED",
+        "stable_id": "ROOM-CEILING",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 4.548470615714162,
+        "bounds_min": [
+          -2.5942001342773438,
+          -7.0,
+          2.799999952316284
+        ],
+        "bounds_max": [
+          2.5942001342773438,
+          0.3055124282836914,
+          2.919999837875366
+        ],
+        "materials": [
+          "WALL warm gray plaster observed hue / inferred response"
+        ],
+        "world_triangle_coordinates_sha256_round6": "a1740d11ccc1cfef0fa441cbc9cefc1d27d1e6e28fdf356bef98218ddc71480d"
+      },
+      {
+        "name": "ROOM.floor",
+        "stable_id": "ROOM-FLOOR",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 4.548470615714162,
+        "bounds_min": [
+          -2.5942001342773438,
+          -7.0,
+          -0.11999999731779099
+        ],
+        "bounds_max": [
+          2.5942001342773438,
+          0.3055124282836914,
+          0.0
+        ],
+        "materials": [
+          "FLOOR dark gray observed / inferred response"
+        ],
+        "world_triangle_coordinates_sha256_round6": "7fc88f1297f5a40d7e74d430850a249cabe492dd5aff5ae752f183628246ff1c"
+      },
+      {
+        "name": "ROOM.front-wall_INFERRED",
+        "stable_id": "ROOM-FRONT-CLOSURE",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 1.608902394829701,
+        "bounds_min": [
+          -2.5942001342773438,
+          -7.119999885559082,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200038909912,
+          -7.0,
+          2.799999952316284
+        ],
+        "materials": [
+          "WALL warm gray plaster observed hue / inferred response"
+        ],
+        "world_triangle_coordinates_sha256_round6": "0a209715608fce053806f5c92433f747d13cfe0f58e4b15bb947b9a648e22eee"
+      },
+      {
+        "name": "ROOM.left-projecting-face",
+        "stable_id": "ROOM-LEFT-FACE",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 0.13439999670982358,
+        "bounds_min": [
+          -2.5942001342773438,
+          -0.2191559374332428,
+          0.0
+        ],
+        "bounds_max": [
+          -2.194200038909912,
+          -0.09915593266487122,
+          2.799999952316284
+        ],
+        "materials": [
+          "WALL warm gray plaster observed hue / inferred response"
+        ],
+        "world_triangle_coordinates_sha256_round6": "0e414ee868e4902cd4bed0dad7962cc5d1953cd692af9959d1690729eff2c95d"
+      },
+      {
+        "name": "ROOM.left-return",
+        "stable_id": "ROOM-LEFT-RETURN",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 0.13596851385615216,
+        "bounds_min": [
+          -2.3142001628875732,
+          -0.09915593266487122,
+          0.0
+        ],
+        "bounds_max": [
+          -2.194200277328491,
+          0.30551227927207947,
+          2.799999952316284
+        ],
+        "materials": [
+          "WALL warm gray plaster observed hue / inferred response"
+        ],
+        "world_triangle_coordinates_sha256_round6": "a07f3e96c36f5524eee3590832bfeb4285e3cefd7ced27f8bd0e13088cc62847"
+      },
+      {
+        "name": "ROOM.left-side_INFERRED",
+        "stable_id": "ROOM-LEFT-CLOSURE",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3186835253246207,
+        "bounds_min": [
+          -2.714200258255005,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          -2.594200372695923,
+          -0.09915590286254883,
+          2.799999952316284
+        ],
+        "materials": [
+          "WALL warm gray plaster observed hue / inferred response"
+        ],
+        "world_triangle_coordinates_sha256_round6": "791c141dc6640ee55e4553cf49fe0401beea31a0cd3634c56d677febf6da727f"
+      },
+      {
+        "name": "ROOM.rear-wall",
+        "stable_id": "ROOM-REAR",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 1.474502528296416,
+        "bounds_min": [
+          -2.194200277328491,
+          0.30551227927207947,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200277328491,
+          0.42551228404045105,
+          2.799999952316284
+        ],
+        "materials": [
+          "WALL warm gray plaster observed hue / inferred response"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d03313b3b27ee73389532d124d138796641c4656a1c5b630c20aded6dad9e3b9"
+      },
+      {
+        "name": "ROOM.right-wall",
+        "stable_id": "ROOM-RIGHT",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 2.454652079235092,
+        "bounds_min": [
+          2.194200277328491,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          2.3142001628875732,
+          0.3055124282836914,
+          2.799999952316284
+        ],
+        "materials": [
+          "WALL warm gray plaster observed hue / inferred response"
+        ],
+        "world_triangle_coordinates_sha256_round6": "81d7ddf350f3213741afd7c0b9364e893d0bef5d68369f3d3c9cac7cd8927b1f"
+      },
+      {
+        "name": "SKIRT.front-closure",
+        "stable_id": "SKIRT-FRONT-CLOSURE",
+        "vertices": 269,
+        "triangles": 188,
+        "boundary_edges": 308,
+        "nonmanifold_edges": 308,
+        "zero_area_faces": 0,
+        "signed_volume": 0.016009894695981707,
+        "bounds_min": [
+          -2.5942001342773438,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200038909912,
+          -6.97599983215332,
+          0.14000000059604645
+        ],
+        "materials": [
+          "SKIRT charcoal satin"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d5922fde8422edae0a022f945dbe55ff0bf1828f994ea123efd89958c5aef28a"
+      },
+      {
+        "name": "SKIRT.left-closure",
+        "stable_id": "SKIRT-LEFT-CLOSURE",
+        "vertices": 250,
+        "triangles": 188,
+        "boundary_edges": 312,
+        "nonmanifold_edges": 312,
+        "zero_area_faces": 0,
+        "signed_volume": 0.02307390668630834,
+        "bounds_min": [
+          -2.594200372695923,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          -2.570200204849243,
+          -0.09915590286254883,
+          0.14000000059604645
+        ],
+        "materials": [
+          "SKIRT charcoal satin"
+        ],
+        "world_triangle_coordinates_sha256_round6": "be013261ef689464388c6725e3a22f560534735b7f957018954a2f5487515ae9"
+      },
+      {
+        "name": "SKIRT.left-face",
+        "stable_id": "SKIRT-LEFT-FACE",
+        "vertices": 277,
+        "triangles": 188,
+        "boundary_edges": 318,
+        "nonmanifold_edges": 318,
+        "zero_area_faces": 0,
+        "signed_volume": 0.001335084502375721,
+        "bounds_min": [
+          -2.5942001342773438,
+          -0.12315593659877777,
+          0.0
+        ],
+        "bounds_max": [
+          -2.194200038909912,
+          -0.09915593266487122,
+          0.14000000059604645
+        ],
+        "materials": [
+          "SKIRT charcoal satin"
+        ],
+        "world_triangle_coordinates_sha256_round6": "dd668f2ce6b00a693374bb3986f922641d9809b58a75b2b4c2c1f81317ed76a8"
+      },
+      {
+        "name": "SKIRT.left-return",
+        "stable_id": "SKIRT-LEFT-RETURN",
+        "vertices": 266,
+        "triangles": 188,
+        "boundary_edges": 300,
+        "nonmanifold_edges": 300,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0013506949790194672,
+        "bounds_min": [
+          -2.194200277328491,
+          -0.09915593266487122,
+          0.0
+        ],
+        "bounds_max": [
+          -2.1702001094818115,
+          0.30551227927207947,
+          0.14000000059604645
+        ],
+        "materials": [
+          "SKIRT charcoal satin"
+        ],
+        "world_triangle_coordinates_sha256_round6": "21e6a46d77366ee2d9d66477696105254948dc88c087cf6c8b42fb9e8702d3db"
+      },
+      {
+        "name": "SKIRT.rear",
+        "stable_id": "SKIRT-REAR",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 308,
+        "nonmanifold_edges": 308,
+        "zero_area_faces": 0,
+        "signed_volume": 0.014672295972622068,
+        "bounds_min": [
+          -2.194200277328491,
+          0.2815122902393341,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200277328491,
+          0.30551227927207947,
+          0.14000000059604645
+        ],
+        "materials": [
+          "SKIRT charcoal satin"
+        ],
+        "world_triangle_coordinates_sha256_round6": "b926ffc41dd1d6f4b4c104b85ad1199f640073100e7b233b8432c75f9dd814f9"
+      },
+      {
+        "name": "SKIRT.right",
+        "stable_id": "SKIRT-RIGHT",
+        "vertices": 258,
+        "triangles": 188,
+        "boundary_edges": 312,
+        "nonmanifold_edges": 312,
+        "zero_area_faces": 0,
+        "signed_volume": 0.02442711805719993,
+        "bounds_min": [
+          2.1702001094818115,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200277328491,
+          0.3055124282836914,
+          0.14000000059604645
+        ],
+        "materials": [
+          "SKIRT charcoal satin"
+        ],
+        "world_triangle_coordinates_sha256_round6": "4bd98beb56b2426773a872d0509a4b5878b4c576e1d6b913ddb40238ad9c1920"
+      },
+      {
+        "name": "TABLE.apron-B",
+        "stable_id": "TABLE-APRON-B",
+        "vertices": 322,
+        "triangles": 188,
+        "boundary_edges": 368,
+        "nonmanifold_edges": 368,
+        "zero_area_faces": 0,
+        "signed_volume": 0.002363146511909076,
+        "bounds_min": [
+          -0.9967870116233826,
+          -0.48132357001304626,
+          0.5351182222366333
+        ],
+        "bounds_max": [
+          0.8849144577980042,
+          -0.44632354378700256,
+          0.5711182355880737
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "e63a28d04728ac2f2a5791375aad4c669a0537ce30cbfdefa051764d1eb7fa87"
+      },
+      {
+        "name": "TABLE.apron-F",
+        "stable_id": "TABLE-APRON-F",
+        "vertices": 322,
+        "triangles": 188,
+        "boundary_edges": 368,
+        "nonmanifold_edges": 368,
+        "zero_area_faces": 0,
+        "signed_volume": 0.002363146511909076,
+        "bounds_min": [
+          -0.9967870116233826,
+          -1.108810305595398,
+          0.5351182222366333
+        ],
+        "bounds_max": [
+          0.8849144577980042,
+          -1.0738102197647095,
+          0.5711182355880737
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "eeb88db03e906aa07d3d536104b9e4e0b858ac5dcc1a4909b9d4b6a75ae4c571"
+      },
+      {
+        "name": "TABLE.leg-LB",
+        "stable_id": "TABLE-LEG-LB",
+        "vertices": 271,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0010349326843108156,
+        "bounds_min": [
+          -0.9982870221138,
+          -0.48532354831695557,
+          0.010000020265579224
+        ],
+        "bounds_max": [
+          -0.9552870392799377,
+          -0.44232356548309326,
+          0.5711182355880737
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "3bfca0bf09d9192dfea463025902a07f29bdb7d29eb70837957be56ecc0394ea"
+      },
+      {
+        "name": "TABLE.leg-LF",
+        "stable_id": "TABLE-LEG-LF",
+        "vertices": 271,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0010349326843108156,
+        "bounds_min": [
+          -0.9982870221138,
+          -1.1128102540969849,
+          0.010000020265579224
+        ],
+        "bounds_max": [
+          -0.9552870392799377,
+          -1.0698102712631226,
+          0.5711182355880737
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "47d412db1d8d5b7e7079f112fe41fe8eec9315a11097f75d83ab12f2c5ce690c"
+      },
+      {
+        "name": "TABLE.leg-RB",
+        "stable_id": "TABLE-LEG-RB",
+        "vertices": 271,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0010349326843108156,
+        "bounds_min": [
+          0.8434144854545593,
+          -0.48532354831695557,
+          0.010000020265579224
+        ],
+        "bounds_max": [
+          0.8864144682884216,
+          -0.44232356548309326,
+          0.5711182355880737
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "5c1da0a85554dad4a8e3e73476da7dd7ba49c7d7a0a53cacf8d01f75479214f7"
+      },
+      {
+        "name": "TABLE.leg-RF",
+        "stable_id": "TABLE-LEG-RF",
+        "vertices": 271,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0010349326843108156,
+        "bounds_min": [
+          0.8434144854545593,
+          -1.1128102540969849,
+          0.010000020265579224
+        ],
+        "bounds_max": [
+          0.8864144682884216,
+          -1.0698102712631226,
+          0.5711182355880737
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "668affcc08386967a053cddbda839000a17f45057124d02257d30749f3f998d4"
+      },
+      {
+        "name": "TABLE.pad-LB",
+        "stable_id": "TABLE-PAD-LB",
+        "vertices": 275,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3905562512322213e-05,
+        "bounds_min": [
+          -0.9992870092391968,
+          -0.4863235652446747,
+          0.0
+        ],
+        "bounds_max": [
+          -0.954287052154541,
+          -0.44132354855537415,
+          0.012000000104308128
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d7ffbe89914e6aadfecce703f44c32f9f8f21b4a0fc7e1662b1fec94b675f8dc"
+      },
+      {
+        "name": "TABLE.pad-LF",
+        "stable_id": "TABLE-PAD-LF",
+        "vertices": 275,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3905562512322213e-05,
+        "bounds_min": [
+          -0.9992870092391968,
+          -1.1138103008270264,
+          0.0
+        ],
+        "bounds_max": [
+          -0.954287052154541,
+          -1.068810224533081,
+          0.012000000104308128
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "ce02afbb1d111126399f8364192025ef5da56a21bcb87a1c983942162e6acfb2"
+      },
+      {
+        "name": "TABLE.pad-RB",
+        "stable_id": "TABLE-PAD-RB",
+        "vertices": 275,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3905562512322213e-05,
+        "bounds_min": [
+          0.8424144983291626,
+          -0.4863235652446747,
+          0.0
+        ],
+        "bounds_max": [
+          0.8874144554138184,
+          -0.44132354855537415,
+          0.012000000104308128
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "9a89a95782254f59a74bf5a4cebedce33dc887d2f060c450b2e28242e987bcb3"
+      },
+      {
+        "name": "TABLE.pad-RF",
+        "stable_id": "TABLE-PAD-RF",
+        "vertices": 275,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3905562512322213e-05,
+        "bounds_min": [
+          0.8424144983291626,
+          -1.1138103008270264,
+          0.0
+        ],
+        "bounds_max": [
+          0.8874144554138184,
+          -1.068810224533081,
+          0.012000000104308128
+        ],
+        "materials": [
+          "rubber inferred feet"
+        ],
+        "world_triangle_coordinates_sha256_round6": "987a0800a6cd6b999538536c839db098bef92632b19217606fd7f37c14c9dfaf"
+      },
+      {
+        "name": "TABLE.side-apron-L",
+        "stable_id": "TABLE-SIDE-APRON-L",
+        "vertices": 302,
+        "triangles": 188,
+        "boundary_edges": 352,
+        "nonmanifold_edges": 352,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0008179968862101274,
+        "bounds_min": [
+          -0.9942870140075684,
+          -1.1033103466033936,
+          0.5351182222366333
+        ],
+        "bounds_max": [
+          -0.9592870473861694,
+          -0.45182353258132935,
+          0.5711182355880737
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "7738ca40f02cf1bf32fc5f1f84199d82f79249fd252905d123ac1e7f84c7d364"
+      },
+      {
+        "name": "TABLE.side-apron-R",
+        "stable_id": "TABLE-SIDE-APRON-R",
+        "vertices": 302,
+        "triangles": 188,
+        "boundary_edges": 352,
+        "nonmanifold_edges": 352,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0008179968862101274,
+        "bounds_min": [
+          0.847414493560791,
+          -1.1033103466033936,
+          0.5351182222366333
+        ],
+        "bounds_max": [
+          0.8824144601821899,
+          -0.45182353258132935,
+          0.5711182355880737
+        ],
+        "materials": [
+          "TABLE gray coated metal"
+        ],
+        "world_triangle_coordinates_sha256_round6": "484400065a0378256b7840f5473c35e4b8cd2267a120eac0c8c128fcf7347057"
+      },
+      {
+        "name": "TABLE.wood-top",
+        "stable_id": "TABLE-TOP",
+        "vertices": 291,
+        "triangles": 188,
+        "boundary_edges": 344,
+        "nonmanifold_edges": 344,
+        "zero_area_faces": 0,
+        "signed_volume": 0.04035912391728902,
+        "bounds_min": [
+          -1.041787028312683,
+          -1.143310308456421,
+          0.571118175983429
+        ],
+        "bounds_max": [
+          0.9299144744873047,
+          -0.4118235409259796,
+          0.599118173122406
+        ],
+        "materials": [
+          "TABLE inferred wood grain"
+        ],
+        "world_triangle_coordinates_sha256_round6": "660ed8cd4556f07f28ea4d02ee206ee58a890fe24add697a78ac19edb25b5d46"
+      }
+    ],
+    "source_geometry_signature_status": "bounds/triangles independently checked; not merely header validation"
+  },
+  "white_glb_reimport": {
+    "file": "interview-room-white.glb",
+    "imported_meshes": 61,
+    "triangles": 10742,
+    "original_evaluated_triangles": 10742,
+    "matched_names": 61,
+    "max_bounds_delta": 5.960464477539063e-08,
+    "material_count": 1,
+    "image_count": 0,
+    "mesh_objects": [
+      {
+        "name": "BOARD.cross-rail",
+        "stable_id": "BOARD-CROSS-RAIL",
+        "vertices": 272,
+        "triangles": 188,
+        "boundary_edges": 310,
+        "nonmanifold_edges": 310,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0021561607463828616,
+        "bounds_min": [
+          -1.0499999523162842,
+          0.006500000134110451,
+          0.7031523585319519
+        ],
+        "bounds_max": [
+          1.0499999523162842,
+          0.04349999874830246,
+          0.731152355670929
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "eba345437629e41edf973858614f65e76150e2f616a9d01f0a8206aef97d9aea"
+      },
+      {
+        "name": "BOARD.foot-L",
+        "stable_id": "BOARD-FOOT-L",
+        "vertices": 282,
+        "triangles": 188,
+        "boundary_edges": 312,
+        "nonmanifold_edges": 312,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0011971090702604975,
+        "bounds_min": [
+          -1.09250009059906,
+          -0.19999998807907104,
+          0.007500000298023224
+        ],
+        "bounds_max": [
+          -1.037500023841858,
+          0.2199999988079071,
+          0.0625
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "643bc1bd6b85cd41d3001e723665fc507b23f6fcf237dc67e7d55cc1447d28ad"
+      },
+      {
+        "name": "BOARD.foot-R",
+        "stable_id": "BOARD-FOOT-R",
+        "vertices": 282,
+        "triangles": 188,
+        "boundary_edges": 312,
+        "nonmanifold_edges": 312,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0011971090702604975,
+        "bounds_min": [
+          1.037500023841858,
+          -0.19999998807907104,
+          0.007500000298023224
+        ],
+        "bounds_max": [
+          1.09250009059906,
+          0.2199999988079071,
+          0.0625
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "b6935c318ea7ce9f2ac51a35812110afe6c51a34df26c2f609db1e76691ae0a8"
+      },
+      {
+        "name": "BOARD.foot-pad-L0",
+        "stable_id": "BOARD-PAD-L0",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 5.908688601919881e-05,
+        "bounds_min": [
+          -1.0950000286102295,
+          -0.20250000059604645,
+          0.0
+        ],
+        "bounds_max": [
+          -1.0350000858306885,
+          -0.13750000298023224,
+          0.01600000075995922
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "376e3e6667e3adba2d75aa80b8e934f3223dd941880c3ca7af409c755041a276"
+      },
+      {
+        "name": "BOARD.foot-pad-L1",
+        "stable_id": "BOARD-PAD-L1",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 5.908688601919881e-05,
+        "bounds_min": [
+          -1.0950000286102295,
+          0.1574999988079071,
+          0.0
+        ],
+        "bounds_max": [
+          -1.0350000858306885,
+          0.2224999964237213,
+          0.01600000075995922
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "01b662f353759f035c519c659f72e17bfa24050aeedcb5e5d20bbafb397bf30b"
+      },
+      {
+        "name": "BOARD.foot-pad-R0",
+        "stable_id": "BOARD-PAD-R0",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 5.908688601919881e-05,
+        "bounds_min": [
+          1.0350000858306885,
+          -0.20250000059604645,
+          0.0
+        ],
+        "bounds_max": [
+          1.0950000286102295,
+          -0.13750000298023224,
+          0.01600000075995922
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "828e1614b0786f8dea3cea7721d66d950141a5a338ef5b584a11dbe82eafb044"
+      },
+      {
+        "name": "BOARD.foot-pad-R1",
+        "stable_id": "BOARD-PAD-R1",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 5.908688601919881e-05,
+        "bounds_min": [
+          1.0350000858306885,
+          0.1574999988079071,
+          0.0
+        ],
+        "bounds_max": [
+          1.0950000286102295,
+          0.2224999964237213,
+          0.01600000075995922
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "ac543c9dd55b698cbad8c1d393ab47c117894bec02ccd3c09d9c7a00c75bc95e"
+      },
+      {
+        "name": "BOARD.marker-tray-left",
+        "stable_id": "BOARD-TRAY",
+        "vertices": 260,
+        "triangles": 188,
+        "boundary_edges": 294,
+        "nonmanifold_edges": 294,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0013240057948275086,
+        "bounds_min": [
+          -1.034999966621399,
+          -0.0625,
+          0.7046523690223694
+        ],
+        "bounds_max": [
+          -0.32500001788139343,
+          0.01250000111758709,
+          0.7296523451805115
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "c1547fb9a30e9e01ffff2340d2137fe0032bc99677bfa6048b656b549f0fae36"
+      },
+      {
+        "name": "BOARD.physical-rounded-frame",
+        "stable_id": "BOARD-FRAME",
+        "vertices": 432,
+        "triangles": 288,
+        "boundary_edges": 432,
+        "nonmanifold_edges": 432,
+        "zero_area_faces": 0,
+        "signed_volume": 0.010715949148561287,
+        "bounds_min": [
+          -1.0299999713897705,
+          -0.014999999664723873,
+          0.8621523380279541
+        ],
+        "bounds_max": [
+          1.0299999713897705,
+          0.04500000178813934,
+          1.9750351905822754
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "adf033c86b46f33e764013981947df60290b823e2ab4e317d090f1f2603aecaf"
+      },
+      {
+        "name": "BOARD.pivot-L",
+        "stable_id": "BOARD-PIVOT-L",
+        "vertices": 419,
+        "triangles": 380,
+        "boundary_edges": 436,
+        "nonmanifold_edges": 436,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00019005733740421173,
+        "bounds_min": [
+          -1.090000033378601,
+          -0.023000000044703484,
+          1.398593783378601
+        ],
+        "bounds_max": [
+          -1.040000081062317,
+          0.04699999839067459,
+          1.468593716621399
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "9fc0849b24414d9234dee15b05b7b9126940feeefa7037216b053c257dbfe5a8"
+      },
+      {
+        "name": "BOARD.pivot-R",
+        "stable_id": "BOARD-PIVOT-R",
+        "vertices": 419,
+        "triangles": 380,
+        "boundary_edges": 436,
+        "nonmanifold_edges": 436,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00019005733740421173,
+        "bounds_min": [
+          1.040000081062317,
+          -0.023000000044703484,
+          1.398593783378601
+        ],
+        "bounds_max": [
+          1.090000033378601,
+          0.04699999839067459,
+          1.468593716621399
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "f836da2695d8a2d4938d0e2ceec052ebb07e92d54d9d688ddba974bf3a0df471"
+      },
+      {
+        "name": "BOARD.pivot-screw-L",
+        "stable_id": "BOARD-SCREW-L",
+        "vertices": 440,
+        "triangles": 380,
+        "boundary_edges": 444,
+        "nonmanifold_edges": 444,
+        "zero_area_faces": 0,
+        "signed_volume": 1.947444483384433e-05,
+        "bounds_min": [
+          -1.1134999990463257,
+          -0.0040000006556510925,
+          1.4175937175750732
+        ],
+        "bounds_max": [
+          -1.088499903678894,
+          0.02800000086426735,
+          1.4495937824249268
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "68b8c3a4f9f0da174e9d0d1dc5acee83b1edd0745b32fc18138330040cde12c1"
+      },
+      {
+        "name": "BOARD.pivot-screw-R",
+        "stable_id": "BOARD-SCREW-R",
+        "vertices": 440,
+        "triangles": 380,
+        "boundary_edges": 444,
+        "nonmanifold_edges": 444,
+        "zero_area_faces": 0,
+        "signed_volume": 1.947444483384433e-05,
+        "bounds_min": [
+          1.088499903678894,
+          -0.0040000006556510925,
+          1.4175937175750732
+        ],
+        "bounds_max": [
+          1.1134999990463257,
+          0.02800000086426735,
+          1.4495937824249268
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "a3ef16b06f46241e5fcd6441badd8d18ee6ed6c946a83910062f3dac22ebd40e"
+      },
+      {
+        "name": "BOARD.rail-clamp-L",
+        "stable_id": "BOARD-CLAMP-L",
+        "vertices": 291,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00015634615588294576,
+        "bounds_min": [
+          -1.0880000591278076,
+          -0.03700000047683716,
+          0.6896523833274841
+        ],
+        "bounds_max": [
+          -1.0420000553131104,
+          0.027000002562999725,
+          0.7446523308753967
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "cf40603b1d7390cc0a0ade96fa94edcdf89bae70c30ac22d118b6d9a7a00a73b"
+      },
+      {
+        "name": "BOARD.rail-clamp-R",
+        "stable_id": "BOARD-CLAMP-R",
+        "vertices": 291,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00015634615588294576,
+        "bounds_min": [
+          1.0420000553131104,
+          -0.03700000047683716,
+          0.6896523833274841
+        ],
+        "bounds_max": [
+          1.0880000591278076,
+          0.027000002562999725,
+          0.7446523308753967
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "da566983d3ed46c87b5beaf26b769e5fcf67cb5a17d6b14a49a088b74ec909fa"
+      },
+      {
+        "name": "BOARD.sandwich-core",
+        "stable_id": "BOARD-CORE",
+        "vertices": 267,
+        "triangles": 188,
+        "boundary_edges": 332,
+        "nonmanifold_edges": 332,
+        "zero_area_faces": 0,
+        "signed_volume": 0.09327067910670751,
+        "bounds_min": [
+          -1.00600004196167,
+          0.006000000983476639,
+          0.8861523270606995
+        ],
+        "bounds_max": [
+          1.00600004196167,
+          0.05000000074505806,
+          1.9510352611541748
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d9f06c16a1ce9de99f0c3c0c8c912465e646d6e57fc7d26db645b3e94c033bfe"
+      },
+      {
+        "name": "BOARD.source-text-face",
+        "stable_id": "BOARD-TEXT",
+        "vertices": 4,
+        "triangles": 2,
+        "boundary_edges": 4,
+        "nonmanifold_edges": 4,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00035096096672646243,
+        "bounds_min": [
+          -1.0,
+          -0.0005000000237487257,
+          0.8921523690223694
+        ],
+        "bounds_max": [
+          1.0,
+          -0.0005000000237487257,
+          1.9450352191925049
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "179114d975cab5ff7d70a38fac956a71bd2b2c7e6bfdeff5612fbbb5aa5eed5e"
+      },
+      {
+        "name": "BOARD.upright-L",
+        "stable_id": "BOARD-UPRIGHT-L",
+        "vertices": 287,
+        "triangles": 188,
+        "boundary_edges": 324,
+        "nonmanifold_edges": 324,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0017351790620964563,
+        "bounds_min": [
+          -1.0810000896453857,
+          0.02500000223517418,
+          0.04500001668930054
+        ],
+        "bounds_max": [
+          -1.0490000247955322,
+          0.06499999761581421,
+          1.4185938835144043
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "c3a2dcd7e99ba9ebb7fccca7ea6fa7a952ddd2287e6030961289c1c63aa00118"
+      },
+      {
+        "name": "BOARD.upright-R",
+        "stable_id": "BOARD-UPRIGHT-R",
+        "vertices": 287,
+        "triangles": 188,
+        "boundary_edges": 324,
+        "nonmanifold_edges": 324,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0017351790620964563,
+        "bounds_min": [
+          1.0490000247955322,
+          0.02500000223517418,
+          0.04500001668930054
+        ],
+        "bounds_max": [
+          1.0810000896453857,
+          0.06499999761581421,
+          1.4185938835144043
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "f5910b7f0b5f2d8da415b664795de55eb2a320c38f49ea3e98e5584d49d20bf4"
+      },
+      {
+        "name": "CHAIR.back-cushion",
+        "stable_id": "CHAIR-BACK",
+        "vertices": 278,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.009897985363931265,
+        "bounds_min": [
+          -0.2849999964237213,
+          -0.39093080163002014,
+          0.4361180365085602
+        ],
+        "bounds_max": [
+          0.20500001311302185,
+          -0.28906920552253723,
+          0.7338818907737732
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "1db25bf800543e3f61b2343da903794f31807ea0d28fe862a9336eb0aa42c31b"
+      },
+      {
+        "name": "CHAIR.back-post-L",
+        "stable_id": "CHAIR-BACK-POST-L",
+        "vertices": 243,
+        "triangles": 188,
+        "boundary_edges": 272,
+        "nonmanifold_edges": 272,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00016400592202323085,
+        "bounds_min": [
+          -0.28600001335144043,
+          -0.5275123119354248,
+          0.3695540428161621
+        ],
+        "bounds_max": [
+          -0.2639999985694885,
+          -0.30248767137527466,
+          0.65544593334198
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "24e39521006a4bedef00350d2f4179be35f40694cfc289e2418bb63610f1b076"
+      },
+      {
+        "name": "CHAIR.back-post-R",
+        "stable_id": "CHAIR-BACK-POST-R",
+        "vertices": 243,
+        "triangles": 188,
+        "boundary_edges": 272,
+        "nonmanifold_edges": 272,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00016400592202323085,
+        "bounds_min": [
+          0.18399998545646667,
+          -0.5275123119354248,
+          0.3695540428161621
+        ],
+        "bounds_max": [
+          0.20600000023841858,
+          -0.30248767137527466,
+          0.65544593334198
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "e7a4908c99c67fc700699629c04a6638c4574ba1300fd107a2ee9ef6a97e0e75"
+      },
+      {
+        "name": "CHAIR.front-crossrail",
+        "stable_id": "CHAIR-FRONT-RAIL",
+        "vertices": 283,
+        "triangles": 188,
+        "boundary_edges": 328,
+        "nonmanifold_edges": 328,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00022764975760479535,
+        "bounds_min": [
+          -0.2800000011920929,
+          -0.8709999918937683,
+          0.3089999854564667
+        ],
+        "bounds_max": [
+          0.20000001788139343,
+          -0.8490000367164612,
+          0.3310000002384186
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d9d7278b5039ce27d99465155dab5e2bc8c9a2962d37f1cf75902896ceaecf7d"
+      },
+      {
+        "name": "CHAIR.front-foot-cap-L",
+        "stable_id": "CHAIR-PAD-FL",
+        "vertices": 251,
+        "triangles": 188,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 288,
+        "zero_area_faces": 0,
+        "signed_volume": 8.36956000947739e-06,
+        "bounds_min": [
+          -0.32499998807907104,
+          -0.9959999918937683,
+          0.0
+        ],
+        "bounds_max": [
+          -0.29500001668930054,
+          -0.9640000462532043,
+          0.008999999612569809
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "0a6e7f423fb0e257e0bb2acf84372042496476e28caa8af2d1515af72ab3b4d6"
+      },
+      {
+        "name": "CHAIR.front-foot-cap-R",
+        "stable_id": "CHAIR-PAD-FR",
+        "vertices": 251,
+        "triangles": 188,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 288,
+        "zero_area_faces": 0,
+        "signed_volume": 8.36956000947739e-06,
+        "bounds_min": [
+          0.2150000035762787,
+          -0.9959999918937683,
+          0.0
+        ],
+        "bounds_max": [
+          0.24500000476837158,
+          -0.9640000462532043,
+          0.008999999612569809
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "3e3b8657fd21cde413db52c9e39d7779cca2c94a021f8bd1d38c6e56de2b181a"
+      },
+      {
+        "name": "CHAIR.front-leg-L",
+        "stable_id": "CHAIR-FRONT-LEG-L",
+        "vertices": 292,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00023900431492652325,
+        "bounds_min": [
+          -0.3242609202861786,
+          -0.9932225942611694,
+          0.005842252634465694
+        ],
+        "bounds_max": [
+          -0.26073911786079407,
+          -0.8467774391174316,
+          0.3801577687263489
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "1b938c1173172da5f545cdd083cfabb831eac03dc32961d862446eb874b81007"
+      },
+      {
+        "name": "CHAIR.front-leg-R",
+        "stable_id": "CHAIR-FRONT-LEG-R",
+        "vertices": 292,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00023900431492652325,
+        "bounds_min": [
+          0.18073908984661102,
+          -0.9932225942611694,
+          0.005842252634465694
+        ],
+        "bounds_max": [
+          0.24426092207431793,
+          -0.8467774391174316,
+          0.3801577687263489
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "7d2ecac10cc69347fe0ca0169dbe58b69fb08a6d229237ad80dc8855c937a22b"
+      },
+      {
+        "name": "CHAIR.rear-foot-cap-L",
+        "stable_id": "CHAIR-PAD-BL",
+        "vertices": 251,
+        "triangles": 188,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 288,
+        "zero_area_faces": 0,
+        "signed_volume": 8.36956000947739e-06,
+        "bounds_min": [
+          -0.304999977350235,
+          -0.4259999990463257,
+          0.0
+        ],
+        "bounds_max": [
+          -0.2750000059604645,
+          -0.39399999380111694,
+          0.008999999612569809
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "fb47803ce7056d70588d515b700814e2ee8376fd818c5e891aeeb2f384cfd1ad"
+      },
+      {
+        "name": "CHAIR.rear-foot-cap-R",
+        "stable_id": "CHAIR-PAD-BR",
+        "vertices": 251,
+        "triangles": 188,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 288,
+        "zero_area_faces": 0,
+        "signed_volume": 8.36956000947739e-06,
+        "bounds_min": [
+          0.19499999284744263,
+          -0.4259999990463257,
+          0.0
+        ],
+        "bounds_max": [
+          0.22499999403953552,
+          -0.39399999380111694,
+          0.008999999612569809
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "5eeebe96c1a7b148465b339c40c44f83ede25f99678dcdf3c56a26574efe13fa"
+      },
+      {
+        "name": "CHAIR.rear-leg-L",
+        "stable_id": "CHAIR-REAR-LEG-L",
+        "vertices": 265,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00023519544098970257,
+        "bounds_min": [
+          -0.30349600315093994,
+          -0.5323236584663391,
+          0.006191151682287455
+        ],
+        "bounds_max": [
+          -0.26150399446487427,
+          -0.3976762890815735,
+          0.3778088390827179
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "1a52260b45ecb92ba36ecae69a40a65061ddca314acf5b367897569612e60bfd"
+      },
+      {
+        "name": "CHAIR.rear-leg-R",
+        "stable_id": "CHAIR-REAR-LEG-R",
+        "vertices": 265,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00023519544098970257,
+        "bounds_min": [
+          0.18150395154953003,
+          -0.5323237180709839,
+          0.006191163789480925
+        ],
+        "bounds_max": [
+          0.22349601984024048,
+          -0.3976762294769287,
+          0.3778088390827179
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "4e6679e39c4e32227bfafbc6e089565d5454ff7f4e3be33095078d1886219502"
+      },
+      {
+        "name": "CHAIR.seat-cushion",
+        "stable_id": "CHAIR-SEAT",
+        "vertices": 248,
+        "triangles": 188,
+        "boundary_edges": 316,
+        "nonmanifold_edges": 316,
+        "zero_area_faces": 0,
+        "signed_volume": 0.019515715844694033,
+        "bounds_min": [
+          -0.29999998211860657,
+          -0.9100000262260437,
+          0.36000001430511475
+        ],
+        "bounds_max": [
+          0.2199999988079071,
+          -0.44999998807907104,
+          0.44999998807907104
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "531c20f3234365f701f015a412b9150c136f02dff7a48cb50d11421ef731f5e9"
+      },
+      {
+        "name": "CHAIR.side-stretcher-L",
+        "stable_id": "CHAIR-SIDE-RAIL-L",
+        "vertices": 268,
+        "triangles": 188,
+        "boundary_edges": 328,
+        "nonmanifold_edges": 328,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00020903578289239747,
+        "bounds_min": [
+          -0.2875000238418579,
+          -0.8600000143051147,
+          0.3074999749660492
+        ],
+        "bounds_max": [
+          -0.26249998807907104,
+          -0.5199999809265137,
+          0.33250001072883606
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "7c22c6c645d87b94c4520ef67603673f1e4102de723aafd2cfaba2be38ce240a"
+      },
+      {
+        "name": "CHAIR.side-stretcher-R",
+        "stable_id": "CHAIR-SIDE-RAIL-R",
+        "vertices": 268,
+        "triangles": 188,
+        "boundary_edges": 328,
+        "nonmanifold_edges": 328,
+        "zero_area_faces": 0,
+        "signed_volume": 0.00020903578289239747,
+        "bounds_min": [
+          0.1824999749660492,
+          -0.8600000143051147,
+          0.3074999749660492
+        ],
+        "bounds_max": [
+          0.20750001072883606,
+          -0.5199999809265137,
+          0.33250001072883606
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "5f3bec86c1ed2c5fb0957b5278c1eb45b533ac52d081f27954c7a08ccea639f5"
+      },
+      {
+        "name": "ROOM.ceiling_INFERRED",
+        "stable_id": "ROOM-CEILING",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 4.548470615714162,
+        "bounds_min": [
+          -2.5942001342773438,
+          -7.0,
+          2.799999952316284
+        ],
+        "bounds_max": [
+          2.5942001342773438,
+          0.3055124282836914,
+          2.919999837875366
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "a1740d11ccc1cfef0fa441cbc9cefc1d27d1e6e28fdf356bef98218ddc71480d"
+      },
+      {
+        "name": "ROOM.floor",
+        "stable_id": "ROOM-FLOOR",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 4.548470615714162,
+        "bounds_min": [
+          -2.5942001342773438,
+          -7.0,
+          -0.11999999731779099
+        ],
+        "bounds_max": [
+          2.5942001342773438,
+          0.3055124282836914,
+          0.0
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "7fc88f1297f5a40d7e74d430850a249cabe492dd5aff5ae752f183628246ff1c"
+      },
+      {
+        "name": "ROOM.front-wall_INFERRED",
+        "stable_id": "ROOM-FRONT-CLOSURE",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 1.608902394829701,
+        "bounds_min": [
+          -2.5942001342773438,
+          -7.119999885559082,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200038909912,
+          -7.0,
+          2.799999952316284
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "0a209715608fce053806f5c92433f747d13cfe0f58e4b15bb947b9a648e22eee"
+      },
+      {
+        "name": "ROOM.left-projecting-face",
+        "stable_id": "ROOM-LEFT-FACE",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 0.13439999670982358,
+        "bounds_min": [
+          -2.5942001342773438,
+          -0.2191559374332428,
+          0.0
+        ],
+        "bounds_max": [
+          -2.194200038909912,
+          -0.09915593266487122,
+          2.799999952316284
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "0e414ee868e4902cd4bed0dad7962cc5d1953cd692af9959d1690729eff2c95d"
+      },
+      {
+        "name": "ROOM.left-return",
+        "stable_id": "ROOM-LEFT-RETURN",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 0.13596851385615216,
+        "bounds_min": [
+          -2.3142001628875732,
+          -0.09915593266487122,
+          0.0
+        ],
+        "bounds_max": [
+          -2.194200277328491,
+          0.30551227927207947,
+          2.799999952316284
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "a07f3e96c36f5524eee3590832bfeb4285e3cefd7ced27f8bd0e13088cc62847"
+      },
+      {
+        "name": "ROOM.left-side_INFERRED",
+        "stable_id": "ROOM-LEFT-CLOSURE",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3186835253246207,
+        "bounds_min": [
+          -2.714200258255005,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          -2.594200372695923,
+          -0.09915590286254883,
+          2.799999952316284
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "791c141dc6640ee55e4553cf49fe0401beea31a0cd3634c56d677febf6da727f"
+      },
+      {
+        "name": "ROOM.rear-wall",
+        "stable_id": "ROOM-REAR",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 1.474502528296416,
+        "bounds_min": [
+          -2.194200277328491,
+          0.30551227927207947,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200277328491,
+          0.42551228404045105,
+          2.799999952316284
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d03313b3b27ee73389532d124d138796641c4656a1c5b630c20aded6dad9e3b9"
+      },
+      {
+        "name": "ROOM.right-wall",
+        "stable_id": "ROOM-RIGHT",
+        "vertices": 24,
+        "triangles": 12,
+        "boundary_edges": 24,
+        "nonmanifold_edges": 24,
+        "zero_area_faces": 0,
+        "signed_volume": 2.454652079235092,
+        "bounds_min": [
+          2.194200277328491,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          2.3142001628875732,
+          0.3055124282836914,
+          2.799999952316284
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "81d7ddf350f3213741afd7c0b9364e893d0bef5d68369f3d3c9cac7cd8927b1f"
+      },
+      {
+        "name": "SKIRT.front-closure",
+        "stable_id": "SKIRT-FRONT-CLOSURE",
+        "vertices": 269,
+        "triangles": 188,
+        "boundary_edges": 308,
+        "nonmanifold_edges": 308,
+        "zero_area_faces": 0,
+        "signed_volume": 0.016009894695981707,
+        "bounds_min": [
+          -2.5942001342773438,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200038909912,
+          -6.97599983215332,
+          0.14000000059604645
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d5922fde8422edae0a022f945dbe55ff0bf1828f994ea123efd89958c5aef28a"
+      },
+      {
+        "name": "SKIRT.left-closure",
+        "stable_id": "SKIRT-LEFT-CLOSURE",
+        "vertices": 250,
+        "triangles": 188,
+        "boundary_edges": 312,
+        "nonmanifold_edges": 312,
+        "zero_area_faces": 0,
+        "signed_volume": 0.02307390668630834,
+        "bounds_min": [
+          -2.594200372695923,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          -2.570200204849243,
+          -0.09915590286254883,
+          0.14000000059604645
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "be013261ef689464388c6725e3a22f560534735b7f957018954a2f5487515ae9"
+      },
+      {
+        "name": "SKIRT.left-face",
+        "stable_id": "SKIRT-LEFT-FACE",
+        "vertices": 277,
+        "triangles": 188,
+        "boundary_edges": 318,
+        "nonmanifold_edges": 318,
+        "zero_area_faces": 0,
+        "signed_volume": 0.001335084502375721,
+        "bounds_min": [
+          -2.5942001342773438,
+          -0.12315593659877777,
+          0.0
+        ],
+        "bounds_max": [
+          -2.194200038909912,
+          -0.09915593266487122,
+          0.14000000059604645
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "dd668f2ce6b00a693374bb3986f922641d9809b58a75b2b4c2c1f81317ed76a8"
+      },
+      {
+        "name": "SKIRT.left-return",
+        "stable_id": "SKIRT-LEFT-RETURN",
+        "vertices": 266,
+        "triangles": 188,
+        "boundary_edges": 300,
+        "nonmanifold_edges": 300,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0013506949790194672,
+        "bounds_min": [
+          -2.194200277328491,
+          -0.09915593266487122,
+          0.0
+        ],
+        "bounds_max": [
+          -2.1702001094818115,
+          0.30551227927207947,
+          0.14000000059604645
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "21e6a46d77366ee2d9d66477696105254948dc88c087cf6c8b42fb9e8702d3db"
+      },
+      {
+        "name": "SKIRT.rear",
+        "stable_id": "SKIRT-REAR",
+        "vertices": 273,
+        "triangles": 188,
+        "boundary_edges": 308,
+        "nonmanifold_edges": 308,
+        "zero_area_faces": 0,
+        "signed_volume": 0.014672295972622068,
+        "bounds_min": [
+          -2.194200277328491,
+          0.2815122902393341,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200277328491,
+          0.30551227927207947,
+          0.14000000059604645
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "b926ffc41dd1d6f4b4c104b85ad1199f640073100e7b233b8432c75f9dd814f9"
+      },
+      {
+        "name": "SKIRT.right",
+        "stable_id": "SKIRT-RIGHT",
+        "vertices": 258,
+        "triangles": 188,
+        "boundary_edges": 312,
+        "nonmanifold_edges": 312,
+        "zero_area_faces": 0,
+        "signed_volume": 0.02442711805719993,
+        "bounds_min": [
+          2.1702001094818115,
+          -7.0,
+          0.0
+        ],
+        "bounds_max": [
+          2.194200277328491,
+          0.3055124282836914,
+          0.14000000059604645
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "4bd98beb56b2426773a872d0509a4b5878b4c576e1d6b913ddb40238ad9c1920"
+      },
+      {
+        "name": "TABLE.apron-B",
+        "stable_id": "TABLE-APRON-B",
+        "vertices": 322,
+        "triangles": 188,
+        "boundary_edges": 368,
+        "nonmanifold_edges": 368,
+        "zero_area_faces": 0,
+        "signed_volume": 0.002363146511909076,
+        "bounds_min": [
+          -0.9967870116233826,
+          -0.48132357001304626,
+          0.5351182222366333
+        ],
+        "bounds_max": [
+          0.8849144577980042,
+          -0.44632354378700256,
+          0.5711182355880737
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "e63a28d04728ac2f2a5791375aad4c669a0537ce30cbfdefa051764d1eb7fa87"
+      },
+      {
+        "name": "TABLE.apron-F",
+        "stable_id": "TABLE-APRON-F",
+        "vertices": 322,
+        "triangles": 188,
+        "boundary_edges": 368,
+        "nonmanifold_edges": 368,
+        "zero_area_faces": 0,
+        "signed_volume": 0.002363146511909076,
+        "bounds_min": [
+          -0.9967870116233826,
+          -1.108810305595398,
+          0.5351182222366333
+        ],
+        "bounds_max": [
+          0.8849144577980042,
+          -1.0738102197647095,
+          0.5711182355880737
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "eeb88db03e906aa07d3d536104b9e4e0b858ac5dcc1a4909b9d4b6a75ae4c571"
+      },
+      {
+        "name": "TABLE.leg-LB",
+        "stable_id": "TABLE-LEG-LB",
+        "vertices": 271,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0010349326843108156,
+        "bounds_min": [
+          -0.9982870221138,
+          -0.48532354831695557,
+          0.010000020265579224
+        ],
+        "bounds_max": [
+          -0.9552870392799377,
+          -0.44232356548309326,
+          0.5711182355880737
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "3bfca0bf09d9192dfea463025902a07f29bdb7d29eb70837957be56ecc0394ea"
+      },
+      {
+        "name": "TABLE.leg-LF",
+        "stable_id": "TABLE-LEG-LF",
+        "vertices": 271,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0010349326843108156,
+        "bounds_min": [
+          -0.9982870221138,
+          -1.1128102540969849,
+          0.010000020265579224
+        ],
+        "bounds_max": [
+          -0.9552870392799377,
+          -1.0698102712631226,
+          0.5711182355880737
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "47d412db1d8d5b7e7079f112fe41fe8eec9315a11097f75d83ab12f2c5ce690c"
+      },
+      {
+        "name": "TABLE.leg-RB",
+        "stable_id": "TABLE-LEG-RB",
+        "vertices": 271,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0010349326843108156,
+        "bounds_min": [
+          0.8434144854545593,
+          -0.48532354831695557,
+          0.010000020265579224
+        ],
+        "bounds_max": [
+          0.8864144682884216,
+          -0.44232356548309326,
+          0.5711182355880737
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "5c1da0a85554dad4a8e3e73476da7dd7ba49c7d7a0a53cacf8d01f75479214f7"
+      },
+      {
+        "name": "TABLE.leg-RF",
+        "stable_id": "TABLE-LEG-RF",
+        "vertices": 271,
+        "triangles": 188,
+        "boundary_edges": 304,
+        "nonmanifold_edges": 304,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0010349326843108156,
+        "bounds_min": [
+          0.8434144854545593,
+          -1.1128102540969849,
+          0.010000020265579224
+        ],
+        "bounds_max": [
+          0.8864144682884216,
+          -1.0698102712631226,
+          0.5711182355880737
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "668affcc08386967a053cddbda839000a17f45057124d02257d30749f3f998d4"
+      },
+      {
+        "name": "TABLE.pad-LB",
+        "stable_id": "TABLE-PAD-LB",
+        "vertices": 275,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3905562512322213e-05,
+        "bounds_min": [
+          -0.9992870092391968,
+          -0.4863235652446747,
+          0.0
+        ],
+        "bounds_max": [
+          -0.954287052154541,
+          -0.44132354855537415,
+          0.012000000104308128
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "d7ffbe89914e6aadfecce703f44c32f9f8f21b4a0fc7e1662b1fec94b675f8dc"
+      },
+      {
+        "name": "TABLE.pad-LF",
+        "stable_id": "TABLE-PAD-LF",
+        "vertices": 275,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3905562512322213e-05,
+        "bounds_min": [
+          -0.9992870092391968,
+          -1.1138103008270264,
+          0.0
+        ],
+        "bounds_max": [
+          -0.954287052154541,
+          -1.068810224533081,
+          0.012000000104308128
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "ce02afbb1d111126399f8364192025ef5da56a21bcb87a1c983942162e6acfb2"
+      },
+      {
+        "name": "TABLE.pad-RB",
+        "stable_id": "TABLE-PAD-RB",
+        "vertices": 275,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3905562512322213e-05,
+        "bounds_min": [
+          0.8424144983291626,
+          -0.4863235652446747,
+          0.0
+        ],
+        "bounds_max": [
+          0.8874144554138184,
+          -0.44132354855537415,
+          0.012000000104308128
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "9a89a95782254f59a74bf5a4cebedce33dc887d2f060c450b2e28242e987bcb3"
+      },
+      {
+        "name": "TABLE.pad-RF",
+        "stable_id": "TABLE-PAD-RF",
+        "vertices": 275,
+        "triangles": 188,
+        "boundary_edges": 336,
+        "nonmanifold_edges": 336,
+        "zero_area_faces": 0,
+        "signed_volume": 2.3905562512322213e-05,
+        "bounds_min": [
+          0.8424144983291626,
+          -1.1138103008270264,
+          0.0
+        ],
+        "bounds_max": [
+          0.8874144554138184,
+          -1.068810224533081,
+          0.012000000104308128
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "987a0800a6cd6b999538536c839db098bef92632b19217606fd7f37c14c9dfaf"
+      },
+      {
+        "name": "TABLE.side-apron-L",
+        "stable_id": "TABLE-SIDE-APRON-L",
+        "vertices": 302,
+        "triangles": 188,
+        "boundary_edges": 352,
+        "nonmanifold_edges": 352,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0008179968862101274,
+        "bounds_min": [
+          -0.9942870140075684,
+          -1.1033103466033936,
+          0.5351182222366333
+        ],
+        "bounds_max": [
+          -0.9592870473861694,
+          -0.45182353258132935,
+          0.5711182355880737
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "7738ca40f02cf1bf32fc5f1f84199d82f79249fd252905d123ac1e7f84c7d364"
+      },
+      {
+        "name": "TABLE.side-apron-R",
+        "stable_id": "TABLE-SIDE-APRON-R",
+        "vertices": 302,
+        "triangles": 188,
+        "boundary_edges": 352,
+        "nonmanifold_edges": 352,
+        "zero_area_faces": 0,
+        "signed_volume": 0.0008179968862101274,
+        "bounds_min": [
+          0.847414493560791,
+          -1.1033103466033936,
+          0.5351182222366333
+        ],
+        "bounds_max": [
+          0.8824144601821899,
+          -0.45182353258132935,
+          0.5711182355880737
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "484400065a0378256b7840f5473c35e4b8cd2267a120eac0c8c128fcf7347057"
+      },
+      {
+        "name": "TABLE.wood-top",
+        "stable_id": "TABLE-TOP",
+        "vertices": 291,
+        "triangles": 188,
+        "boundary_edges": 344,
+        "nonmanifold_edges": 344,
+        "zero_area_faces": 0,
+        "signed_volume": 0.04035912391728902,
+        "bounds_min": [
+          -1.041787028312683,
+          -1.143310308456421,
+          0.571118175983429
+        ],
+        "bounds_max": [
+          0.9299144744873047,
+          -0.4118235409259796,
+          0.599118173122406
+        ],
+        "materials": [
+          "WHITE MODEL same geometry"
+        ],
+        "world_triangle_coordinates_sha256_round6": "660ed8cd4556f07f28ea4d02ee206ee58a890fe24add697a78ac19edb25b5d46"
+      }
+    ],
+    "source_geometry_signature_status": "bounds/triangles independently checked; not merely header validation"
+  },
+  "all_listed_checks_pass": true
+}
