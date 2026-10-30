@@ -6,6 +6,7 @@ Axes, principal point and all other geometry remain the R05 assumptions.
 """
 import argparse
 import hashlib
+import itertools
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -200,7 +201,93 @@ def camera_phase():
     print(json.dumps(results['held_out_table'],indent=2))
     print('STATIC ANCHOR GATES',[(v,results[v]['best']['anchors']['manual_anchor_gate_2x_tolerance']) for v in ['front','oblique']])
 
+def clip_polygon(poly, value):
+    """Keep vertices where value >= 0, interpolating actual polygon intersections."""
+    result=[]
+    if len(poly)==0:return np.empty((0,3))
+    for a,b in zip(poly,np.roll(poly,-1,axis=0)):
+        va,vb=value(a),value(b)
+        if va>=0:result.append(a)
+        if (va>=0)!=(vb>=0):result.append(a+(b-a)*va/(va-vb))
+    return np.array(result)
+
+def top_intrusion_fraction(t,c):
+    """Projected top surface only: continuous lower bound on wrong table silhouette."""
+    poly=table_corners(t)[[0,1,3,2]]
+    fw=basis(c)[2]
+    poly=clip_polygon(poly,lambda p:(p-c[:3])@fw-.01)
+    if len(poly)<3:return 0.
+    poly=project(poly,c)
+    x0,y0,x1,y1=EMPTY_RECT
+    for axis,bound,sign in [(0,x0,1),(0,x1,-1),(1,y0,1),(1,y1,-1)]:
+        poly=clip_polygon(poly,lambda p:sign*(p[axis]-bound))
+        if len(poly)<3:return 0.
+    area=abs(np.sum(poly[:,0]*np.roll(poly[:,1],-1)-poly[:,1]*np.roll(poly[:,0],-1)))/2
+    return float(area/((x1-x0)*(y1-y0)))
+
+def table_phase():
+    cameras=json.loads((HERE/'camera-only-results.json').read_text())
+    bounds=[(.30,1.60),(-.25,.25),(-2.20,-.35)]
+    rear_limit=T0[2]+T0[0]/2
+    # Conservative envelope: table rear edge never advances toward the fixed chair
+    # back / whiteboard; legs stay outside fixed chair width. This is not mesh QA.
+    rear=lambda t:rear_limit-(t[2]+t[0]/2)
+    starts=[T0,np.array([.4,-.05,-.9]),np.array([1.2,-.05,-1.4])]
+    results={}
+    for family in ['r05','failed_camera_only']:
+        if family=='r05':cf,co=map(lambda v:np.array(CFG[v]),['front','oblique'])
+        else:cf,co=map(lambda v:np.array(cameras[v]['best']['parameters']),['front','oblique'])
+        def front_rms(t):return float(np.sqrt(np.mean(np.sum((project(table_corners(t),cf)-TABLE_UV)**2,axis=1))))
+        def foot_deficit(t):return float(np.maximum(1080-project(table_feet(t),cf)[:,1],0).max())
+        def objective(t,kind):
+            if kind=='front_only':return front_rms(t)**2
+            if kind=='min_top_intrusion_front6':return top_intrusion_fraction(t,co)
+            if kind=='min_foot_deficit_front6':return foot_deficit(t)
+            if kind=='joint_tradeoff':return (front_rms(t)/6)**2+(foot_deficit(t)/15)**2+(top_intrusion_fraction(t,co)/.1)**2
+            raise ValueError(kind)
+        trials=[]
+        for kind in ['front_only','min_top_intrusion_front6','min_foot_deficit_front6','joint_tradeoff']:
+            constraints=[dict(type='ineq',fun=rear)]
+            if kind in ['min_top_intrusion_front6','min_foot_deficit_front6']:
+                constraints.append(dict(type='ineq',fun=lambda t:6-front_rms(t)))
+            for i,start in enumerate(starts):
+                fit=minimize(lambda t:objective(t,kind),start,method='SLSQP',bounds=bounds,constraints=constraints,options=dict(maxiter=150,ftol=1e-9))
+                t=fit.x
+                stats=table_stats(t,cf,co)
+                trials.append(dict(id=f'{family}-{kind}-{i}',objective=kind,parameters=t.tolist(),success=bool(fit.success),message=fit.message,nit=fit.nit,
+                    cost=float(fit.fun),rear_envelope_clearance=float(rear(t)),front6_feasible=bool(front_rms(t)<=6.001),
+                    oblique_top_intrusion_area_fraction=top_intrusion_fraction(t,co),table=stats))
+        # An explicit coarse grid checks the bounded search shape, not exhaustiveness.
+        # Values include the R05 depth and x/y. All rejected envelope trials retained.
+        grid=[]
+        for d,x,y in itertools.product([.3,.45,.6,float(T0[0]),.9,1.05,1.2,1.4,1.6],[-.25,float(T0[1]),.25],[-2.2,-1.8,-1.4,-1.1,-.9,float(T0[2]),-.65,-.5,-.35]):
+            t=np.array([d,x,y])
+            grid.append(dict(parameters=t.tolist(),rear_envelope_pass=bool(rear(t)>=-1e-8),front_corner_rms_px=front_rms(t),
+                front_foot_deficit_max_px=foot_deficit(t),oblique_top_intrusion_area_fraction=top_intrusion_fraction(t,co)))
+        results[family]=dict(front_camera=cf.tolist(),oblique_camera=co.tolist(),baseline=table_stats(T0,cf,co),
+                            baseline_top_intrusion_fraction=top_intrusion_fraction(T0,co),optimization_trials=trials,coarse_grid=grid)
+    results['method']=dict(recorded_at_utc=datetime.now(timezone.utc).isoformat(),frozen_head=FROZEN_HEAD,
+        shared_parameters=['depth','x','y'],bounds=bounds,constant_dimensions={'width':G['table_width'],'top_z':G['table_z'],'top_thickness':.028},
+        rear_edge_max_y=float(rear_limit),floor_contact='leg length / pads unchanged; bottom z=0 in analytic model',
+        optimizer_budget='2 camera families x 4 objectives x 3 starts, max150 SLSQP iterations; 243 coarse grid trials per family',
+        gate='static frame/stand/wall anchors must pass before model candidate; front corner RMS <=6px is a diagnostic constraint, not acceptance',
+        caveats=['R05 cameras were previously fitted with front tabletop anchors: baseline front corners are not independent evidence',
+                 'all three table parameters shared across views; no width/height change, no per-camera object state',
+                 'top area fraction is lower bound on wrong table silhouette, not full image score; box-ray check includes table frame',
+                 'table-free rectangle is observed wall/skirting/floor, not character region',
+                 'frozen wall/board/stand geometry is itself conditional and static-anchor gates failed; no resulting table may be promoted',
+                 'bounds and pinhole assumptions limit conclusion; no proof that every possible shared scene is impossible',
+                 'analytic no-new-rear-overlap envelope is conservative; no revised mesh was built or collision-certified'])
+    save('shared-table-results.json',results)
+    for family in ['r05','failed_camera_only']:
+        print(family)
+        for kind in ['front_only','min_top_intrusion_front6','min_foot_deficit_front6','joint_tradeoff']:
+            trials=[a for a in results[family]['optimization_trials'] if a['objective']==kind]
+            a=min(trials,key=lambda a:a['cost']);s=a['table']
+            print(kind,'success',a['success'],'params',a['parameters'],'front RMS',round(s['front_corner_rms_px'],3),'foot deficits',s['front_feet_bottom_deficit_px'],'top wrong',round(a['oblique_top_intrusion_area_fraction'],3),'full box wrong',round(s['oblique_wrong_table_fraction'],3))
+
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('phase',choices=['camera'])
+    parser=argparse.ArgumentParser();parser.add_argument('phase',choices=['camera','table'])
     args=parser.parse_args()
-    camera_phase()
+    if args.phase=='camera':camera_phase()
+    else:table_phase()
