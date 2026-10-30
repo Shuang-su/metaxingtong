@@ -4,7 +4,7 @@
 
 ## 证据和来源边界
 
-- S01 = 2190.197282s；S02 = 610.828893s；S03 = 2968.842253s；S04 = 605.763813s。四张原件均 1920×1080，来源尺寸、字节、SHA256、Library 身份见 source-manifest。父线程/采集者提供原生导出记录，本环境通过当前官方 Library helper 物化后逐张解码、核 SHA、实际查看。
+- S01 = 2190.197282s；S02 = 610.828893s；S03 = 2968.842253s；S04 = 605.763813s。四张原件均 1920×1080，来源尺寸、字节、SHA256、Library 身份见 source-manifest。原生导出记录与原件通过官方 Library 流程取得，随后逐张解码、核 SHA、实际查看。
 - 只实际查看以上四张源图与采集清单；没有观看完整 6069 秒回放。6069 是时长。实际选择的是 1080P 高清；本轮未重新检查登录状态、最高可用档位或原生导出过程，因此不宣称最高画质门槛全部通过。
 - S01/S03 是关门、近似同侧构图，S03 只增加有限视角；S02 是开门状态。来源角色不建模、不消除，不凭角色身高定义尺度。角色遮挡后的结构均属推断。
 - 605→615 无 seek 播放给出剧情上下文关联，但没有精确切镜帧，不能称连续 3D 运镜或跨视角完全配准。S04 仅保留条件性前向诊断；模型没有根据它拼出完整仪表台、方向盘或夜路城市。
@@ -42,4 +42,4 @@ GLB 实际导出后清空所有原物件，再调用 Blender glTF 导入器。�
 
 依次在 Blender 4.3.2 执行 scripts/build_geometry.py → scripts/refine_shared_geometry.py → scripts/fix_mirror_support.py；普通 Python 执行 scripts/generate_textures.py；再执行 Blender scripts/apply_materials.py → scripts/update_evidence_metadata.py → scripts/widen_two_check_cameras.py → scripts/qa_geometry.py → scripts/export_roundtrip.py → scripts/render_deliverables.py；普通 Python 执行 scripts/compose_comparisons.py。`refine_shared_geometry.py` 应在新生成白模上只执行一次，避免重复应用位移。脚本不联网、不安装依赖、不使用来源图作建模贴图。
 
-主图 PNG 无损原件与完整 1920×1080 JPEG 展示副本并存；JPEG 小于 900 KiB，未缩放。Git 仅本地 scene/car-passenger-cabin，逐阶段真实当前时间提交，未推送、未新建 Issue/PR、未修改主分支或其他场景。Library 保存状态另在最终交接报告中据实际结果记录。
+主图 PNG 无损原件与完整 1920×1080 JPEG 展示副本并存；JPEG 小于 900 KiB，未缩放。真实阶段提交保留于 `scene/car-passenger-cabin`；本文件为初版检查记录，后续诊断与归档状态见 [发布记录](../PUBLICATION.md)。历史附件保存失败另有原始记录。

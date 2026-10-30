@@ -1,8 +1,8 @@
-# car-passenger-cabin 本地交接
+# car-passenger-cabin 初版交付记录（2026-10-29）
 
 结果：第三个有边界的新局部候选已实际制作；不是完整第三场已验收场景。四张原生来源已经本环境通过当前官方 Library 流程物化、逐张实际查看并核对 1920×1080、字节数和 SHA256。范围是现代汽车副驾门板/窗/镜、A柱/顶棚/遮阳板、仪表台右端风口及有限座椅边缘。前向 S04 仅条件性上下文，不重建整车或未知驾驶台。
 
-工作树：`/workspace/metaxingtong`；分支：`scene/car-passenger-cabin`；基线：`6ad31e4b2fe8398060c33de20fc09f5edad427a7`。没有 push、新建 PR/Issue、修改 main/archive/history、校园或钢琴任务，没有新 ZIP、LFS 或凭据/安全设置变更。
+分支：`scene/car-passenger-cabin`；基线：`6ad31e4b2fe8398060c33de20fc09f5edad427a7`。此处记录初版完成时状态；后续 r02/r03 及归档状态见 [发布记录](PUBLICATION.md)。
 
 真实本地阶段：
 
@@ -29,4 +29,4 @@ JPEG 与 PNG 都是 1920×1080，JPEG 未缩放，约247 KiB。材质 BLEND 已�
 
 来源仍明显未对齐：圆风口手工中心残差约146/133/120px（±15px选点不确定性），A柱斜率、遮阳板范围、门板比例与材质夜景差异继续存在。没有跨BV新角度、完整回放检查、最高可用画质完整证明、完整内舱或连续门运动防碰撞验收。用户未接受。未知玻璃升降状态、厚度、支撑和被角色遮挡部件均标为推断/未见。
 
-阻塞：当前官方 `library_upload.py` 对83个有序交付文件（47,908,595字节）的单次批量保存，在 hosted apps `tools/list` 阶段返回HTTP 401，状态为失败，没有返回任何保存成功或新Library ID；不是自动审批拒绝。未缩批、重试、改走直接create、手工signed URL或扩大权限。来源 read/materialize 成功，不能泛化成账号断连。完整本地文件与Git提交保留；上传状态和目标清单见 qa/library-upload-status.json。父线程可在正常受支持通路恢复后继续协调，不应把清单或本地提交描述为已经上传。
+阻塞：当前官方 `library_upload.py` 对83个有序交付文件（47,908,595字节）的单次批量保存，在 hosted apps `tools/list` 阶段返回HTTP 401，状态为失败，没有返回任何保存成功或新Library ID；不是自动审批拒绝。未缩批、重试、改走直接create、手工signed URL或扩大权限。来源 read/materialize 成功，不能泛化成账号断连。完整本地文件与Git提交保留；上传状态和目标清单见 qa/library-upload-status.json。该次附件保存没有成功。本项目模型原件按后续交付约定只保存于 Git；此历史失败不影响 Git 归档状态。

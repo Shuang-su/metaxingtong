@@ -1,4 +1,4 @@
-# 汽车副驾局部 — 首轮重建候选
+# 汽车副驾局部 — 候选与未采用诊断归档
 
 状态：**有明确边界的局部研究，未通过来源验收，不计作完整汽车或完整前排内舱。**
 
@@ -8,11 +8,11 @@
 
 关门源 2190.197282 / 2968.842253 与开门源 610.828893 对应同一扇门的独立时间状态；开门角度为试验值。所有相机共享几何和材质，状态通过公开帧号选择，不由相机名称触发。605.763813 的前向视野只作条件性上下文，不作为副驾几何硬约束；605→615 的无 seek 播放未记录精确切镜，不证明连续 3D 相机轨迹或完全几何同车关系。
 
-本轮只在本地独立分支 scene/car-passenger-cabin 逐阶段提交，不推送、新建 PR 或 Issue，不改历史、main、校园和钢琴场景。GitHub 搜索 car 分支、汽车及 car Issue 均无命中；本地 README 原已列出汽车副驾来源候选。
+本场景在独立分支 `scene/car-passenger-cabin` 保留真实阶段历史。初版、r02 相机诊断及 r03 共享剖面诊断分开保存；r02/r03 均未采用。归档索引、版本状态与后续缺口见 [发布记录](PUBLICATION.md)。
 
 来源边界：采集清单记载实际选择 1080P 高清，未证明所有更高可用档位已排除；没有跨 BV 后续回放补角，没有观看整部回放。相机未标定，三张侧舱图只有有限视角增量、角色遮挡严重。任何几何/导出检查通过均不能替代来源验收。
 
-## 当前本地交付
+## 归档交付
 
 - [主图 PNG 无损原件](renders/main/car_passenger_cabin_main.png) · [JPEG 展示预览](renders/main/car_passenger_cabin_main.jpg)（完整 1920×1080，不缩放，<900 KiB）
 - [可编辑材质 BLEND](models/car_passenger_cabin_material.blend)（纹理已打包）· [同几何白模](models/car_passenger_cabin_white.blend) · [含门状态动画 GLB](models/car_passenger_cabin.glb)
