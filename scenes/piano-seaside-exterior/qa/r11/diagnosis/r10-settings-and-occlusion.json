@@ -1,0 +1,257 @@
+{
+  "base_commit": "f4138510cde1fd199b49d4fad8bb1a4fc429cb10",
+  "engine": "BLENDER_EEVEE_NEXT",
+  "view_transform": "AgX",
+  "look": "None",
+  "exposure": 0.0,
+  "gamma": 1.0,
+  "lights": [
+    {
+      "name": "Point",
+      "position": [
+        -0.9200000166893005,
+        1.2200000286102295,
+        0.19224999845027924
+      ],
+      "energy": 12.0,
+      "color": [
+        1.0,
+        0.4399999976158142,
+        0.11999999731779099
+      ],
+      "radius": 0.029999999329447746,
+      "use_shadow": true,
+      "rays": [
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "first_hit": "L01_lantern inferred internal emitter",
+          "distance": 0.019875004739880745
+        },
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "first_hit": "L01_lantern inferred internal emitter",
+          "distance": 0.02297919932595391
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "first_hit": "L01_lantern inferred internal emitter",
+          "distance": 0.02297926011928244
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "first_hit": "L01_lantern inferred internal emitter",
+          "distance": 0.027624994620140876
+        },
+        {
+          "direction": [
+            0.4,
+            0,
+            -0.5
+          ],
+          "first_hit": "L01_lantern inferred internal emitter",
+          "distance": 0.026613250715466944
+        }
+      ]
+    },
+    {
+      "name": "Point.001",
+      "position": [
+        7.199999809265137,
+        -5.5,
+        0.12650999426841736
+      ],
+      "energy": 12.960000038146973,
+      "color": [
+        1.0,
+        0.4399999976158142,
+        0.11999999731779099
+      ],
+      "radius": 0.03240000084042549,
+      "use_shadow": true,
+      "rays": [
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "first_hit": "L02_lantern inferred internal emitter",
+          "distance": 0.021465003562528433
+        },
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "first_hit": "L02_lantern inferred internal emitter",
+          "distance": 0.024817467010695062
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "first_hit": "L02_lantern inferred internal emitter",
+          "distance": 0.024817467010695062
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "first_hit": "L02_lantern inferred internal emitter",
+          "distance": 0.029834986067405436
+        },
+        {
+          "direction": [
+            0.4,
+            0,
+            -0.5
+          ],
+          "first_hit": "L02_lantern inferred internal emitter",
+          "distance": 0.028742380749046833
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "L01_lantern inferred back panel warm illumination",
+      "emission_strength": 2.799999952316284,
+      "emission_color": [
+        1.0,
+        0.25999999046325684,
+        0.019999999552965164,
+        1.0
+      ],
+      "images": []
+    },
+    {
+      "name": "L01_lantern inferred lit interior paper",
+      "emission_strength": 2.5999999046325684,
+      "emission_color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "images": [
+        {
+          "name": "paper_color.png",
+          "color_space": "sRGB"
+        },
+        {
+          "name": "paper_emission.png",
+          "color_space": "sRGB"
+        }
+      ]
+    },
+    {
+      "name": "L02_lantern inferred back panel warm illumination",
+      "emission_strength": 2.799999952316284,
+      "emission_color": [
+        1.0,
+        0.25999999046325684,
+        0.019999999552965164,
+        1.0
+      ],
+      "images": []
+    },
+    {
+      "name": "L02_lantern inferred lit interior paper",
+      "emission_strength": 2.5999999046325684,
+      "emission_color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "images": [
+        {
+          "name": "paper_color.png",
+          "color_space": "sRGB"
+        },
+        {
+          "name": "paper_emission.png",
+          "color_space": "sRGB"
+        }
+      ]
+    },
+    {
+      "name": "R09 inferred lantern light source",
+      "emission_strength": 8.0,
+      "emission_color": [
+        1.0,
+        0.47999998927116394,
+        0.12999999523162842,
+        1.0
+      ],
+      "images": []
+    },
+    {
+      "name": "R09 thin paper lantern base",
+      "emission_strength": 0.0,
+      "emission_color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "images": []
+    },
+    {
+      "name": "R09 warm paper bag - emission approximates translucency",
+      "emission_strength": 1.649999976158142,
+      "emission_color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "images": [
+        {
+          "name": "paper_color.png",
+          "color_space": "sRGB"
+        },
+        {
+          "name": "paper_emission.png",
+          "color_space": "sRGB"
+        },
+        {
+          "name": "paper_normal.png",
+          "color_space": "Non-Color"
+        }
+      ]
+    },
+    {
+      "name": "Unmarked score paper",
+      "emission_strength": 0.0,
+      "emission_color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "images": []
+    }
+  ]
+}
