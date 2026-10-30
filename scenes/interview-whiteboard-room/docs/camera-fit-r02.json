@@ -1,0 +1,280 @@
+{
+  "units": "arbitrary model units; outer board width=2.06; no character scale",
+  "geometry_parameter_names": [
+    "board_height",
+    "board_bottom",
+    "table_width",
+    "table_depth",
+    "table_y",
+    "table_z",
+    "wall_y",
+    "wall_half",
+    "return_y",
+    "table_x"
+  ],
+  "geometry": {
+    "board_height": 1.1115180865727683,
+    "board_bottom": 0.8624634163100848,
+    "table_width": 1.9994185114026113,
+    "table_depth": 0.6756994914427682,
+    "table_y": -0.7904511514796824,
+    "table_z": 0.6054474934736471,
+    "wall_y": 0.28526372256671145,
+    "wall_half": 2.1904610840646286,
+    "return_y": -0.11636341619557601,
+    "table_x": -0.07520213071877237
+  },
+  "camera_parameter_names": [
+    "x",
+    "y",
+    "z",
+    "yaw_rad",
+    "pitch_rad",
+    "roll_rad",
+    "focal_pixels"
+  ],
+  "front": [
+    -0.19582588732365577,
+    -6.599999999999999,
+    1.3677362816593108,
+    0.025879228791034114,
+    -0.05462087463612697,
+    0.004116512360416934,
+    2534.360885758706
+  ],
+  "oblique": [
+    0.32018640639539997,
+    -2.059650181321593,
+    1.009241857960206,
+    -0.4983089898423123,
+    -0.035789519462509856,
+    -0.007023978398172898,
+    1593.706920645343
+  ],
+  "front_anchors": [
+    {
+      "id": "board TL",
+      "world": [
+        -1.03,
+        0.0,
+        1.9739815028828531
+      ],
+      "source_px": [
+        573.0,
+        167.0
+      ],
+      "predicted_px": [
+        571.8139730200622,
+        164.30953919596465
+      ],
+      "error_px": 2.940278785283949
+    },
+    {
+      "id": "board TR",
+      "world": [
+        1.03,
+        0.0,
+        1.9739815028828531
+      ],
+      "source_px": [
+        1365.0,
+        167.0
+      ],
+      "predicted_px": [
+        1367.3294020495077,
+        169.48758176829557
+      ],
+      "error_px": 3.407957887387599
+    },
+    {
+      "id": "board BL",
+      "world": [
+        -1.03,
+        0.0,
+        0.8624634163100848
+      ],
+      "source_px": [
+        573.0,
+        595.0
+      ],
+      "predicted_px": [
+        573.6303305745862,
+        594.3320444395893
+      ],
+      "error_px": 0.9184123605123128
+    },
+    {
+      "id": "board BR",
+      "world": [
+        1.03,
+        0.0,
+        0.8624634163100848
+      ],
+      "source_px": [
+        1365.0,
+        595.0
+      ],
+      "predicted_px": [
+        1361.8690094603128,
+        596.019525119263
+      ],
+      "error_px": 3.2928002108265058
+    },
+    {
+      "id": "table rear L",
+      "world": [
+        -1.074911386420078,
+        -0.45260140575829827,
+        0.6054474934736471
+      ],
+      "source_px": [
+        530.0,
+        713.0
+      ],
+      "predicted_px": [
+        531.9385456510297,
+        714.0146608854564
+      ],
+      "error_px": 2.1880347240391838
+    },
+    {
+      "id": "table rear R",
+      "world": [
+        0.9245071249825333,
+        -0.45260140575829827,
+        0.6054474934736471
+      ],
+      "source_px": [
+        1352.0,
+        713.0
+      ],
+      "predicted_px": [
+        1351.6366572347847,
+        714.7725948382497
+      ],
+      "error_px": 1.8094503103494535
+    },
+    {
+      "id": "table front L",
+      "world": [
+        -1.074911386420078,
+        -1.1283008972010664,
+        0.6054474934736471
+      ],
+      "source_px": [
+        489.0,
+        754.0
+      ],
+      "predicted_px": [
+        487.274633079051,
+        752.5153193774258
+      ],
+      "error_px": 2.2762178197510514
+    },
+    {
+      "id": "table front R",
+      "world": [
+        0.9245071249825333,
+        -1.1283008972010664,
+        0.6054474934736471
+      ],
+      "source_px": [
+        1407.0,
+        754.0
+      ],
+      "predicted_px": [
+        1407.3231445767497,
+        753.0061367494648
+      ],
+      "error_px": 1.0450773073065889
+    },
+    {
+      "id": "left rear skirting",
+      "world": [
+        -2.1904610840646286,
+        0.28526372256671145,
+        0.14
+      ],
+      "source_px": [
+        160.0,
+        852.0
+      ],
+      "predicted_px": [
+        159.5247341397386,
+        850.5348401191883
+      ],
+      "error_px": 1.540315264570925
+    },
+    {
+      "id": "right rear skirting",
+      "world": [
+        2.1904610840646286,
+        0.28526372256671145,
+        0.14
+      ],
+      "source_px": [
+        1757.0,
+        852.0
+      ],
+      "predicted_px": [
+        1757.738917114169,
+        849.79990264321
+      ],
+      "error_px": 2.320867700013573
+    },
+    {
+      "id": "left return skirting",
+      "world": [
+        -2.1904610840646286,
+        -0.11636341619557601,
+        0.14
+      ],
+      "source_px": [
+        113.0,
+        875.0
+      ],
+      "predicted_px": [
+        114.0826661612133,
+        878.3045393590179
+      ],
+      "error_px": 3.47737636616095
+    }
+  ],
+  "limitations": [
+    "manual anchors, rounded corner centers approximate",
+    "regularized and underdetermined; not metric reconstruction",
+    "oblique lacks sufficient nonoccluded objects; viewpoint conditional",
+    "no image warping; projection only; dynamic character excluded from fit",
+    "R02 joint fit uses177 matches on ONE static plane; ambiguous geometry remains",
+    "second view not complete object coverage; inferred room closure unchanged between cameras"
+  ],
+  "oblique_features": {
+    "count": 177,
+    "median_error_px": 0.8254109117402727,
+    "max_error_px": 2.9526593700931216,
+    "p95_error_px": 2.2680850880965866,
+    "source": "board-feature-matches.json"
+  },
+  "oblique_wall_corners": {
+    "source_px": [
+      [
+        437,
+        908
+      ],
+      [
+        270,
+        960
+      ]
+    ],
+    "predicted_px": [
+      [
+        436.975064650936,
+        908.1243639931809
+      ],
+      [
+        270.03287298588134,
+        959.9105954312372
+      ]
+    ]
+  }
+}
