@@ -8,7 +8,7 @@ from scipy.optimize import least_squares
 ROOT=Path(__file__).resolve().parents[1]
 # Read existing fit without rerunning it.
 exec((ROOT/'scripts/fit_cameras.py').read_text().split('# Front anchors:')[0].replace('ROOT=Path(__file__).resolve().parents[1]',''))
-cfg=json.loads((ROOT/'docs/camera-fit.json').read_text())
+cfg=json.loads((ROOT/'docs/camera-fit-front-r03.json').read_text())
 feat=json.loads((ROOT/'docs/board-feature-matches.json').read_text())
 names=cfg['geometry_parameter_names'];g0=np.array([cfg['geometry'][n] for n in names]);f0=np.array(cfg['front'])
 front_uv=np.array([a['source_px'] for a in cfg['front_anchors']])
@@ -45,5 +45,5 @@ errs=np.linalg.norm(projection(plane(gg),co)-uv1,axis=1)
 cfg['oblique_features']={'count':len(errs),'median_error_px':float(np.median(errs)),'max_error_px':float(errs.max()),'p95_error_px':float(np.quantile(errs,.95)),'source':'board-feature-matches.json'}
 cfg['oblique_wall_corners']={'source_px':[[437,908],[270,960]],'predicted_px':projection(geom(gg)[[8,10]],co).tolist()}
 cfg['limitations']+=['R02 joint fit uses177 matches on ONE static plane; ambiguous geometry remains','second view not complete object coverage; inferred room closure unchanged between cameras']
-(ROOT/'docs/camera-fit-r02.json').write_text(json.dumps(cfg,indent=2))
+(ROOT/'docs/camera-fit-r03.json').write_text(json.dumps(cfg,indent=2))
 print(json.dumps({k:cfg[k] for k in ['front','oblique','geometry','oblique_features','oblique_wall_corners']},indent=2))

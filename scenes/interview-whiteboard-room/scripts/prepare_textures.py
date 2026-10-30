@@ -19,12 +19,12 @@ for (x,y),(u,v) in zip(out,quad):
 coeff=np.linalg.solve(np.array(A),np.array(b))
 Image.open(src).transform((w,h),Image.Transform.PERSPECTIVE,coeff,Image.Resampling.BICUBIC).save(ROOT/'textures/whiteboard-source-plane.png')
 rng=np.random.default_rng(20261030)
-n=gaussian_filter(rng.normal(size=(256,1024)),sigma=(.8,45))
+n=gaussian_filter(rng.normal(size=(256,1024)),sigma=(.5,60))
 n=n/(n.std()+1e-8)
 y,x=np.mgrid[:256,:1024]
-grain=.045*n+.016*np.sin(y*.65+np.sin(x*.008)*1.8)
-col=np.array([.57,.42,.27])+grain[:,:,None]*np.array([1,.85,.7])
-Image.fromarray(np.uint8(np.clip(col,0,1)*255)).save(ROOT/'textures/wood-inferred.png')
+grain=.018*n+.007*np.sin(y*1.35+np.sin(x*.008)*1.8)
+col=np.array([.62,.50,.38])+grain[:,:,None]*np.array([1,.85,.7])
+Image.fromarray(np.uint8(np.clip(col,0,1)*255)).save(ROOT/'textures/wood-inferred-r03.png')
 record={'source':src.name,'source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),
  'sheet_quad_pixels_TL_TR_BR_BL':quad.tolist(),'output_size':[w,h],
  'method':'Pillow inverse projective mapping solved from 4 sheet corners; bicubic; texture UV only, never source/render overlay warp',

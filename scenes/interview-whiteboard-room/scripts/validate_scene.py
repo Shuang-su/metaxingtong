@@ -5,7 +5,7 @@ import bpy,bmesh,json,math,hashlib
 from pathlib import Path
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'models/r02';QA=ROOT/'qa/r02'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'models/r03';QA=ROOT/'qa/r03'
 report={'status':'candidate; geometry/file checks separate from source fidelity','checks':{},'limitations':[]}
 
 def stats():
@@ -52,10 +52,10 @@ report['shell_rays']={'origins':points,'rays_per_origin':samples,'total':len(poi
 report['checks']['dense_shell_rays_closed']=not miss
 
 # Floor-contact checks are evaluated bounds, no unverified global collision pass.
-ground=[r for r in original if r['stable_id'].startswith(('TABLE-PAD','BOARD-PAD','CHAIR-FRONT-LEG','CHAIR-REAR-LEG'))]
-report['ground_contact']=[{'id':r['stable_id'],'min_z':r['bounds_min'][2],'max_abs_gap_limit':.012} for r in ground]
-report['checks']['support_floor_within_012_units']=all(abs(r['bounds_min'][2])<.012 for r in ground)
-cfg=json.loads((ROOT/'docs/camera-fit-r02.json').read_text());g=cfg['geometry']
+ground=[r for r in original if r['stable_id'].startswith(('TABLE-PAD','BOARD-PAD','CHAIR-PAD'))]
+report['ground_contact']=[{'id':r['stable_id'],'min_z':r['bounds_min'][2],'max_abs_gap_limit':1e-6} for r in ground]
+report['checks']['support_pads_touch_floor_1e6']=all(abs(r['bounds_min'][2])<1e-6 for r in ground)
+cfg=json.loads((ROOT/'docs/camera-fit-r03.json').read_text());g=cfg['geometry']
 ob={r['stable_id']:r for r in original}
 report['clearances']={'board_back_to_wall':g['wall_y']-max(r['bounds_max'][1] for r in original if r['stable_id'].startswith('BOARD-')),
  'table_left_to_wall':min(r['bounds_min'][0] for r in original if r['stable_id'].startswith('TABLE-'))-(-g['wall_half']),

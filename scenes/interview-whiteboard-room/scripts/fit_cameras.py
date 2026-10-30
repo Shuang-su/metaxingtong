@@ -21,7 +21,7 @@ def projection(points, c):
 
 # Front anchors: frame corner rectangle excludes radius, table top, skirting corners.
 front_uv=np.array([[573,167],[1365,167],[573,595],[1365,595],
-                   [530,713],[1352,713],[489,754],[1407,754],
+                   [546,712],[1353,712],[488,750],[1407,750],
                    [160,852],[1757,852],[113,875]],float)
 labels=['board TL','board TR','board BL','board BR','table rear L','table rear R',
         'table front L','table front R','left rear skirting','right rear skirting','left return skirting']
@@ -65,5 +65,5 @@ result={'units':'arbitrary model units; outer board width=2.06; no character sca
         'front_anchors':[{'id':lab,'world':pt,'source_px':uv.tolist(),'predicted_px':pred.tolist(),'error_px':float(np.linalg.norm(uv-pred))} for lab,pt,uv,pred in zip(labels,world,front_uv,front_pred)],
         'oblique_anchors':[{'world':pt,'source_px':uv.tolist(),'predicted_px':pred.tolist(),'weight':float(w),'error_px':float(np.linalg.norm(uv-pred))} for pt,uv,pred,w in zip(ob_world,ob_uv,projection(ob_world,ob.x),ob_weight)],
         'limitations':['manual anchors, rounded corner centers approximate','regularized and underdetermined; not metric reconstruction','oblique lacks sufficient nonoccluded objects; viewpoint conditional','no image warping; projection only; dynamic character excluded from fit']}
-(ROOT/'docs/camera-fit.json').write_text(json.dumps(result,indent=2))
+(ROOT/'docs/camera-fit-front-r03.json').write_text(json.dumps(result,indent=2))
 print(json.dumps(result,indent=2))

@@ -6,8 +6,9 @@ from pathlib import Path
 from mathutils import Vector, Matrix
 ROOT=Path(__file__).resolve().parents[1]
 PREVIEW='--preview' in sys.argv
-cfg=json.loads((ROOT/'docs/camera-fit-r02.json').read_text()); g=cfg['geometry']
-OUT=ROOT/'models/r02'; QA=ROOT/'qa/r02'; OUT.mkdir(parents=True,exist_ok=True); QA.mkdir(parents=True,exist_ok=True)
+MODELS_ONLY='--models-only' in sys.argv
+cfg=json.loads((ROOT/'docs/camera-fit-r03.json').read_text()); g=cfg['geometry']
+OUT=ROOT/'models/r03'; QA=ROOT/'qa/r03'; OUT.mkdir(parents=True,exist_ok=True); QA.mkdir(parents=True,exist_ok=True)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=False)
 for datablocks in (bpy.data.materials,bpy.data.meshes,bpy.data.cameras,bpy.data.lights):
@@ -39,14 +40,14 @@ def material(name,color,rough=.6,metal=0,texture=None):
         m.node_tree.links.new(node.outputs['Color'],p.inputs['Base Color'])
         im.pack()
     return m
-wall=material('WALL warm gray plaster observed hue / inferred response',(.43,.425,.40),.88)
-floor=material('FLOOR dark gray observed / inferred response',(.065,.063,.057),.72)
+wall=material('WALL warm gray plaster observed hue / inferred response',(.48,.475,.44),.88)
+floor=material('FLOOR dark gray observed / inferred response',(.045,.043,.039),.72)
 skirt=material('SKIRT charcoal satin',(.034,.033,.030),.5)
 black=material('BOARD black painted metal',(.025,.025,.023),.36,.45)
-metal=material('TABLE gray coated metal',(.25,.26,.245),.40,.38)
+metal=material('TABLE gray coated metal',(.18,.19,.175),.40,.38)
 rubber=material('rubber inferred feet',(.014,.014,.013),.82)
-cloth=material('CHAIR black upholstered fabric',(.026,.025,.024),.9)
-wood=material('TABLE inferred wood grain',(.5,.35,.2),.47,0,'wood-inferred.png')
+cloth=material('CHAIR black upholstered fabric',(.017,.016,.015),.9)
+wood=material('TABLE inferred wood grain',(.5,.35,.2),.47,0,'wood-inferred-r03.png')
 board=material('BOARD photographed front text / baked light retained',(.8,.8,.8),.72,0,'whiteboard-source-plane.png')
 board.node_tree.nodes['Principled BSDF'].inputs['Specular IOR Level'].default_value=.05
 rearboard=material('BOARD inferred plain reverse',(.55,.54,.50),.7)
@@ -136,7 +137,12 @@ cube('BOARD.marker-tray-left',(-.68,-.025,bb-.145),(.71,.075,.025),metal,'BOARD-
 
 # Single table with true four-legged frame and open knee space.
 tx=g['table_x'];ty=g['table_y'];tw=g['table_width'];td=g['table_depth'];tz=g['table_z'];th=.028
-cube('TABLE.wood-top',(tx,ty,tz-th/2),(tw,td,th),wood,'TABLE-TOP','observed outline / inferred grain and depth',bevel=.003)
+top=cube('TABLE.wood-top',(tx,ty,tz-th/2),(tw,td,th),wood,'TABLE-TOP','observed outline / inferred grain and depth',bevel=.003)
+for face in top.data.polygons:
+    if abs(face.normal.z)>.9:
+        for li in face.loop_indices:
+            co=top.data.vertices[top.data.loops[li].vertex_index].co
+            top.data.uv_layers.active.data[li].uv=(co.x/tw+.5,co.y/td+.5)
 for side,x in [('L',tx-tw/2+.065),('R',tx+tw/2-.065)]:
     for k,y in [('F',ty-td/2+.052),('B',ty+td/2-.052)]:
         cube('TABLE.leg-'+side+k,(x,y,(tz-th-.01)/2+.01),(.043,.043,tz-th-.01),metal,'TABLE-LEG-'+side+k,'mixed','Visible/occluded portions separate; square section inferred',.002)
@@ -154,6 +160,8 @@ back.rotation_euler[0]=math.radians(-7)
 for side,x in [('L',cx-.235),('R',cx+.235)]:
     rod('CHAIR.front-leg-'+side,(x+(-.035 if side=='L' else .035),cy-.30,.009),(x,cy-.18,seat-.028),.025,black,'CHAIR-FRONT-LEG-'+side,'mixed','Front leg silhouettes visible; exact section inferred')
     rod('CHAIR.rear-leg-'+side,(x+(-.015 if side=='L' else .015),cy+.27,.009),(x,cy+.16,seat-.03),.025,black,'CHAIR-REAR-LEG-'+side,'inferred','Occluded rear leg')
+    cube('CHAIR.front-foot-cap-'+side,(x+(-.035 if side=='L' else .035),cy-.30,.0045),(.030,.032,.009),rubber,'CHAIR-PAD-F'+side,'inferred','Ground cap closes measured .00584 gap below metal leg',.002)
+    cube('CHAIR.rear-foot-cap-'+side,(x+(-.015 if side=='L' else .015),cy+.27,.0045),(.030,.032,.009),rubber,'CHAIR-PAD-B'+side,'inferred','Ground cap closes measured .00619 gap below metal leg',.002)
     rod('CHAIR.back-post-'+side,(x,cy+.16,seat-.03),(x,cy+.255,.65),.022,black,'CHAIR-BACK-POST-'+side,'inferred','Rear backing support')
     rod('CHAIR.side-stretcher-'+side,(x,cy-.18,.32),(x,cy+.16,.32),.025,black,'CHAIR-SIDE-RAIL-'+side,'inferred','Seat supporting frame')
 rod('CHAIR.front-crossrail',(cx-.24,cy-.18,.32),(cx+.24,cy-.18,.32),.022,black,'CHAIR-FRONT-RAIL','mixed')
@@ -161,8 +169,8 @@ rod('CHAIR.front-crossrail',(cx-.24,cy-.18,.32),(cx+.24,cy-.18,.32),.022,black,'
 def area(name,loc,target,power,size):
     d=bpy.data.lights.new(name,'AREA');d.energy=power;d.shape='DISK';d.size=size
     o=bpy.data.objects.new(name,d);s.collection.objects.link(o);o.location=loc;o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler()
-area('LIGHT shared broad frontal',(0,-3.2,2.5),(0,0,1),85,4)
-area('LIGHT shared ceiling soft',(-.8,-.8,2.60),(0,0,0),35,2.5)
+area('LIGHT shared broad frontal',(0,-3.2,2.5),(0,0,1),130,4)
+area('LIGHT shared ceiling soft',(-.8,-.8,2.60),(0,0,0),50,2.5)
 
 def camera_from_params(name,params):
     x,y,z,yaw,pitch,roll,f=params
@@ -191,7 +199,7 @@ def render(cam,path,res=(1920,1080),samples=24):
     s.camera=cam;s.render.resolution_x,s.render.resolution_y=res;s.cycles.samples=samples;s.render.filepath=str(path)
     bpy.ops.render.render(write_still=True)
 
-(ROOT/'docs/object-provenance-r02.json').write_text(json.dumps({'status':'candidate','objects':manifest,'dynamic_person':'excluded, original source remains unchanged','closure':'finite inferred shell, all views shared'},indent=2))
+(ROOT/'docs/object-provenance-r03.json').write_text(json.dumps({'status':'candidate','objects':manifest,'dynamic_person':'excluded, original source remains unchanged','closure':'finite inferred shell, all views shared'},indent=2))
 # Geometry hash material-independent; object transforms included.
 def signature():
     rows=[]
@@ -206,9 +214,10 @@ if PREVIEW:
     render(obcam,QA/'oblique-preview.png',(960,540),64)
     print('PREVIEW_COMPLETE');sys.exit(0)
 
-render(frontcam,QA/'source-front-render.png',samples=192)
-render(obcam,QA/'source-oblique-render.png',samples=192)
-for idx,cam in enumerate(checks,1):render(cam,QA/f'check-{idx:02d}.png',(1280,720),80)
+if not MODELS_ONLY:
+    render(frontcam,QA/'source-front-render.png',samples=128)
+    render(obcam,QA/'source-oblique-render.png',samples=96)
+    for idx,cam in enumerate(checks,1):render(cam,QA/f'check-{idx:02d}.png',(1280,720),48)
 s.camera=frontcam;s.render.resolution_x=1920;s.render.resolution_y=1080
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'interview-room-material.blend'))
 bpy.ops.export_scene.gltf(filepath=str(OUT/'interview-room-material.glb'),export_format='GLB',export_apply=True,export_cameras=False,export_lights=False,export_extras=True)
@@ -217,8 +226,9 @@ for o in s.objects:
         o.data.materials.clear();o.data.materials.append(white)
 bpy.context.view_layer.update(); wsig=signature()
 assert sig==wsig, 'White/material geometry mismatch'
-render(frontcam,QA/'source-front-white.png',samples=128)
-render(obcam,QA/'source-oblique-white.png',samples=128)
+if not MODELS_ONLY:
+    render(frontcam,QA/'source-front-white.png',samples=64)
+    render(obcam,QA/'source-oblique-white.png',samples=64)
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'interview-room-white.blend'))
 bpy.ops.export_scene.gltf(filepath=str(OUT/'interview-room-white.glb'),export_format='GLB',export_apply=True,export_cameras=False,export_lights=False,export_extras=True)
 (QA/'geometry-equivalence.json').write_text(json.dumps({'material_hash':sig,'white_hash':wsig,'same_base_geometry_and_transforms':sig==wsig,'mesh_objects':sum(o.type=='MESH' for o in s.objects),'limitations':'signature covers base meshes/transforms; evaluated GLB checked independently'},indent=2))
