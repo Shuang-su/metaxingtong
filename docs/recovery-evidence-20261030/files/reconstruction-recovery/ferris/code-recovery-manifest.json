@@ -1,0 +1,50 @@
+{
+  "scope": "Limited local source-code recovery; no rendering or new geometry; no Git object recreation",
+  "historical_tool_text": "Current visible context contains summaries and paths but no full original geometry-building tool-call source. No code reconstructed from prose.",
+  "files": [
+    {
+      "original_path": "/tmp/cabin_direction_check.py",
+      "candidate_path": "/workspace/scratch/fa58bfcf0425/reconstruction-recovery/ferris/code-candidates/cabin_direction_check.py",
+      "bytes": 927,
+      "sha256_at_recovery": "6496bb2129372ea403cc26127dbe7c021aef9c67c440d08e3ada57fa5f356f4d",
+      "byte_equal_to_surviving_tmp": true,
+      "syntax": "AST parse passed; not executed",
+      "original_recorded_hash_available": false,
+      "classification": "surviving actual diagnostic script; historical bytes unverified; not geometry build source"
+    },
+    {
+      "original_path": "/tmp/ferris_constraint_geometry.py",
+      "candidate_path": "/workspace/scratch/fa58bfcf0425/reconstruction-recovery/ferris/code-candidates/ferris_constraint_geometry.py",
+      "bytes": 643,
+      "sha256_at_recovery": "5b0be10f970173b0af02acd1d1d1427e0ced950aff6b80fafb6343d972a1c25d",
+      "byte_equal_to_surviving_tmp": true,
+      "syntax": "AST parse passed; not executed",
+      "original_recorded_hash_available": false,
+      "classification": "surviving actual diagnostic script; historical bytes unverified; not geometry build source"
+    },
+    {
+      "original_path": "/tmp/ferris_readonly_projection_audit.py",
+      "candidate_path": "/workspace/scratch/fa58bfcf0425/reconstruction-recovery/ferris/code-candidates/ferris_readonly_projection_audit.py",
+      "bytes": 1903,
+      "sha256_at_recovery": "931ad947bcf070bc71375eb8ad0b9df9a75a4dcbe1cab5c4af3827434b038a11",
+      "byte_equal_to_surviving_tmp": true,
+      "syntax": "AST parse passed; not executed",
+      "original_recorded_hash_available": false,
+      "classification": "surviving actual diagnostic script; historical bytes unverified; not geometry build source"
+    }
+  ],
+  "missing_dependencies": [
+    "R07 material BLEND for direction/constraint scripts",
+    "ferris_cabin_material.blend and qa/r05/source-to-3d-landmarks.json for projection audit",
+    "All original geometry-build scripts R01–R09",
+    "Strict aperture/GLB/white/visibility audit scripts and outputs",
+    "Editable BLEND/GLB model assets and local Git object database"
+  ],
+  "status": "7 code candidates recovered; no runnable model pipeline restored; absent shared paths not proof of permanent loss",
+  "additional_child_recovery": {
+    "manifest": "reviewer-code-candidates/recovery-provenance.json",
+    "count": 4,
+    "checked": "Current hashes/lengths verified; three Python candidates AST parsed",
+    "limits": "Historical initial strict base plus two separate patches and R09 generator, not final scripts; no historical hashes or audit outputs; not executed"
+  }
+}

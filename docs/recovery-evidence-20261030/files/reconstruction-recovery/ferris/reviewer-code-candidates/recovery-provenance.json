@@ -1,0 +1,46 @@
+{
+  "recovery_time_utc": "2026-10-30T20:38:00Z",
+  "status": "source_code_candidates_not_historical_hash_verified",
+  "basis": "Full actual tool-call source text remains in current conversation context; not regenerated from summary. No session or credential reads. Original shared files and known /tmp strict/r09 glob candidates not visible.",
+  "old_hashes": null,
+  "limitations": [
+    "Historical hashes unavailable: byte identity to past on-disk files cannot be independently established.",
+    "Initial base plus separately preserved historical patches; no synthetic final script produced.",
+    "No Blender execution, no model regeneration, no Git creation.",
+    "No audit JSON failure coordinates recovered by this operation."
+  ],
+  "files": [
+    {
+      "path": "strict_aperture_audit_initial_historical.py",
+      "current_sha256": "6b6063a65765506117b9450cbc0105cee8a839f294111286ae1056078e4c3505",
+      "bytes": 6325,
+      "source": "Full initial here-doc body from actual exec tool call at 2026-10-30 15:59:12 UTC visible in current context. This is the slow initial interrupted version; it omits fixed_door_jamb_R06 objects. NOT the final audited version.",
+      "old_sha256": null,
+      "classification": "candidate"
+    },
+    {
+      "path": "strict_cache_patch_historical.py",
+      "current_sha256": "788a8d90b5f67df5b27c050879db2c4c24c5ac91cc45d5c6e088e348f4f18562",
+      "bytes": 780,
+      "source": "Exact Python patch body from actual exec call at 16:00:11 UTC, introducing cache. Original target paths preserved; NOT executed during recovery.",
+      "old_sha256": null,
+      "classification": "candidate"
+    },
+    {
+      "path": "strict_filter_patch_historical.sh",
+      "current_sha256": "00597a1d404945f3756e275e23bafc91673da8b33cecf7fcddb536d1152e1cf4",
+      "bytes": 158,
+      "source": "Exact sed command from actual exec call at 16:00:55 UTC correcting fixed_door_jamb_R06 structural inclusion. NOT executed during recovery.",
+      "old_sha256": null,
+      "classification": "candidate"
+    },
+    {
+      "path": "r09_audit_derivation_historical.py",
+      "current_sha256": "10c0f31f1b5a4fde6902c1fe6a3b874c282a20ae5d2f8f35e154f32a759c6b12",
+      "bytes": 1403,
+      "source": "Exact Python derivation body from actual exec call at 16:59:51 UTC; requires final base and shared-width-dependencies.json. NOT executed during recovery; this is generator, not standalone R09 audit.",
+      "old_sha256": null,
+      "classification": "candidate"
+    }
+  ]
+}

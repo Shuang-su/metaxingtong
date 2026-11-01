@@ -1,0 +1,30 @@
+from PIL import Image,ImageDraw
+from pathlib import Path
+import json,hashlib
+D=Path('/workspace/shared/lantern-r02-independent-review');p=Path('/workspace/shared/lantern-petal-stage-source-20261031/BV169Y96rEo1_P2_3586.984973_oblique.png')
+points=[
+ dict(id='URN_L_finial_tip',uv=[229,497],uncertainty_px=7,visibility='visible; source chromatic splitting',semantic='topmost finial silhouette tip, not urn lid',model_requirement='Match actual final finial vertex only after checking the proxy finial profile. Current URN_L highest axial point is a conditional proxy.',training='soft_only',reason='Silhouette tip and proxy geometry are not metrically verified.'),
+ dict(id='URN_L_support_axis_estimate',uv=[280,835],uncertainty_px=15,visibility='base visible, support center inferred from symmetric silhouette',semantic='estimated center of bottom support disc at ground, not left outline',model_requirement='URN_L rotational axis at lowest bottom support plane, NOT an arbitrary mesh rim vertex.',training='soft_only',reason='Axis is inferred; projected ellipse center need not equal projection of physical circle center exactly.'),
+ dict(id='URN_R_finial_tip',uv=[1238,420],uncertainty_px=7,visibility='visible',semantic='topmost finial silhouette tip',model_requirement='URN_R highest axial finial point after source/profile identity check',training='soft_only',reason='Source blur and approximate proxy shape.'),
+ dict(id='URN_R_support_axis_occluded',uv=None,uncertainty_px=None,visibility='actor partly occludes lower base and axis',semantic='ground support axis would be around x1270-1280/y750-760 but cannot be observed exactly',model_requirement='URN_R lowest support-axis point',training='exclude',reason='Do not fit old [1250,712], which is not the base.'),
+ dict(id='COL_R0_structural_top_occluded',uv=None,uncertainty_px=None,visibility='upper structural join hidden behind lantern/ornament',semantic='true shaft/capital structural top',model_requirement='Named actual shaft/capital join, not decoration interior',training='exclude',reason='Old [1578,212] is inside hanging ornament, not a column top. No replacement hard point.'),
+ dict(id='COL_R0_base_support_region',uv=[1570,718],uncertainty_px=15,visibility='base largely visible, finite stepped profile',semantic='approximate support region center, not a known 3D vertex',model_requirement='Named lower base support center and plane; current stepped box geometry differs from source profile',training='diagnostic_only',reason='Use to flag large framing errors, not exact pose fitting until structural profile and corresponding visible corners are audited.'),
+ dict(id='OLD_URN_L_base_234_817',uv=[234,817],uncertainty_px=None,visibility='visible at base side',semantic='old mislabeled axis point',model_requirement=None,training='exclude',reason='Not rotational-axis support center.'),
+ dict(id='OLD_URN_R_base_1250_712',uv=[1250,712],uncertainty_px=None,visibility='occluded/side of lower urn',semantic='old mislabeled ground point',model_requirement=None,training='exclude',reason='Not ground support axis.'),
+ dict(id='OLD_COL_R0_top_1578_212',uv=[1578,212],uncertainty_px=None,visibility='visible ornament',semantic='hanging decorative interior',model_requirement=None,training='exclude',reason='Not structural top.'),
+]
+near=[(200,1057),(400,1050),(600,1039),(800,1023),(1000,1004),(1400,967),(1600,945),(1800,921)]
+far=[(200,924),(400,903),(800,864),(1000,846),(1400,817),(1600,811),(1800,810)]
+data={'source':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'dimensions':[1920,1080],'audit_status':'corrected semantic audit; insufficient reliable exact metric anchors for calibrated pose','points':points,'circle_contours':{'definition':'same uppermost stage lip narrow bright band, approximate band-center contours; not outer pool edge; finite band width and chromatic splitting remain','near_ordered':[{'uv':[x,y],'normal_uncertainty_px':12,'training':'soft_contour_only'} for x,y in near],'far_ordered':[{'uv':[x,y],'normal_uncertainty_px':15,'training':'soft_contour_only'} for x,y in far],'model_entity':'STAGE uppermost lip circle/contour under explicit circularity and coplanarity assumptions. Do NOT attach samples to fixed angular vertices.','excluded':'Actor occlusions around x580-800 and x1080-1300 in far band; cropped left and lower extrema; no invented unseen half-circle.','caveat':'These manually traced centers have large uncertainty. Correlated chromatic fringes must not be treated as many independent high-confidence observations. Some listed far samples adjacent to actor boundaries need uncertainty bands and masking rather than forced exact correspondence.'},'recommended_use':'Keep illustrative camera label. If fitting, use soft contour distances plus only the two visible finials and coarse left support axis with stated uncertainties, report rank/conditioning and broad parameter families; three soft silhouette/axis estimates and one partial circle cannot establish unique accurate camera or validate full scene. Excluded points must not enter residuals. No claim that geometry is inconsistent based on these observations.','third_source_read':False}
+(D/'source2-corrected-anchor-audit.json').write_text(json.dumps(data,indent=2,ensure_ascii=False))
+im=Image.open(p).convert('RGB');draw=ImageDraw.Draw(im)
+for pt in points:
+ if pt['uv'] is None:continue
+ x,y=pt['uv'];color='red' if pt['training']=='exclude' else 'yellow';r=pt['uncertainty_px'] or 9
+ draw.ellipse((x-r,y-r,x+r,y+r),outline=color,width=3);draw.text((x+12,y-15),pt['id'],fill=color)
+for arc,color in [(near,'cyan'),(far,'lime')]:
+ for i,(x,y) in enumerate(arc):
+  draw.ellipse((x-5,y-5,x+5,y+5),outline=color,width=2);draw.text((x+6,y-18),f'{i+1}',fill=color)
+draw.rectangle((0,0,1920,37),fill='black');draw.text((8,9),'DERIVED AUDIT ONLY: yellow=soft/diagnostic, red=excluded; cyan/green=uncertain stage-lip contours; NOT native evidence',fill='white')
+im.save(D/'source2-corrected-anchor-annotations.png')
+print(D/'source2-corrected-anchor-audit.json')
