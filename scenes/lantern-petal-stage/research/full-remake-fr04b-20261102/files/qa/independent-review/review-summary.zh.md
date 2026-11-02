@@ -15,3 +15,6 @@ FR04b材白1247mesh同几何，全部顶点及机位相对FR04未变；两GLB实
 已交25原生台唇软点、29外池—步道金边点、31左右内瓦缘点及遮挡排除。用于拟合即训练，不是独立验证或米制真值。Aug23早于Sep12，不是其后续回放，也未证同网格实例。栏格/炉真镂空/花与散瓣、逐实例、真实相对深度、原生同机位材白/直接50%叠图仍待来源复核。
 
 详细历史和精确模型SHA：`review.zh.md`；可复跑JSON/脚本：`independent-FR03-followup.json`、`independent-winding-audit.json`、`independent-FR04b-final.json`。原生软点和标图在同目录。
+
+
+最终交付图收尾复核见`final-delivery-review.zh.md`：16张检查原图+4张低角已逐张实看；两4K直接50%各全8,294,400像素独立重算误差0。只是图片/算术证明，仍仅Aug23条件机位，Sep12未对齐、来源比例失败。
