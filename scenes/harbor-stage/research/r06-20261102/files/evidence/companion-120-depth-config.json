@@ -1,0 +1,88 @@
+{
+  "source": {
+    "path": "sources/live-companion/BV1gseHzLEuf_120.140741_actual1080.png",
+    "BV": "BV1gseHzLEuf",
+    "url": "https://www.bilibili.com/video/BV1gseHzLEuf/",
+    "time_seconds": 120.140741,
+    "sha256": "6e67491b7f150490d631a50e24ef6794f1a55d0f19837b2cb7e6d4669384dfbc",
+    "role": "same Aug24 event different performance, actual1080 despite initially selected4K",
+    "provenance": "Source manifest native browser export, paused ready4 same time and decoded dimensions before/after; builder independently inspected PNG pixels and bytes"
+  },
+  "output": "depth/companion-120",
+  "mask_classes": {
+    "0": "unlabelled; not certified valid",
+    "1": "screen graphic overlays",
+    "2": "reflective platform / mixed lower stage",
+    "3": "water and distant background / mixed foliage",
+    "4": "strong emissive displays and bloom / mixed frame structure",
+    "5": "dynamic performer, conservative ROI not exact silhouette"
+  },
+  "mask_regions": [
+    {
+      "shape": "rectangle",
+      "coords": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "value": 3
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        288,
+        237,
+        1632,
+        1080
+      ],
+      "value": 4
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        0,
+        777,
+        1920,
+        1080
+      ],
+      "value": 2
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        0,
+        0,
+        441,
+        270
+      ],
+      "value": 1
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        748,
+        248,
+        1094,
+        982
+      ],
+      "value": 5
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        1382,
+        0,
+        1920,
+        172
+      ],
+      "value": 1
+    }
+  ],
+  "limitations": [
+    "All regions remain conservative/excluded; no calibrated confidence or metric scale.",
+    "People, reflective stage, glass, water, emissions and broadcast typography distort monocular depth.",
+    "Cross-frame raw or normalized values are not absolute distances.",
+    "Only fixed-object structural hypotheses are compared; time-specific light state is not shape."
+  ]
+}
