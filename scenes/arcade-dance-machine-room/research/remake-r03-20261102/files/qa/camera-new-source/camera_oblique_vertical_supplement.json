@@ -1,0 +1,80 @@
+{
+  "source": "BV1nxQPBkEGH_P1_2560.507406_high_oblique.png",
+  "source_sha256": "13effea6ab75a37cf756b5e9e2bb7ff4b1a54964509f39a8ee508a3bef6e1def",
+  "native_size": [
+    1920,
+    1080
+  ],
+  "method": "Actual original pixel inspection; read-only RGB-gradient cross-check over five rows around y40 and150, not a camera fit or depth inference. Values rounded to conservative manual interior boundary points.",
+  "edge_identity": "Visible luminous display-content/red patterned bezel boundary, NOT red frame outer silhouette. Candidate model *_display visible straight edge; confirm evaluated mesh edge identity.",
+  "sigma_px": 6,
+  "points_are_not": "NOT rounded corners, no extrapolated intersections, no point-to-point 3D correspondence",
+  "segments": [
+    {
+      "id": "O_display_M02_left",
+      "candidate_model_object": "M02_display",
+      "native_xy": [
+        [
+          318,
+          40
+        ],
+        [
+          329,
+          150
+        ]
+      ],
+      "sigma_px": 6,
+      "use": "conditional point-to-line/finite-visible-segment diagnostic only"
+    },
+    {
+      "id": "O_display_M02_right",
+      "candidate_model_object": "M02_display",
+      "native_xy": [
+        [
+          730,
+          40
+        ],
+        [
+          743,
+          150
+        ]
+      ],
+      "sigma_px": 6,
+      "use": "conditional point-to-line/finite-visible-segment diagnostic only"
+    },
+    {
+      "id": "O_display_M03_left",
+      "candidate_model_object": "M03_display",
+      "native_xy": [
+        [
+          1037,
+          40
+        ],
+        [
+          1050,
+          150
+        ]
+      ],
+      "sigma_px": 6,
+      "use": "conditional point-to-line/finite-visible-segment diagnostic only"
+    },
+    {
+      "id": "O_display_M03_right",
+      "candidate_model_object": "M03_display",
+      "native_xy": [
+        [
+          1374,
+          40
+        ],
+        [
+          1389,
+          150
+        ]
+      ],
+      "sigma_px": 6,
+      "use": "conditional point-to-line/finite-visible-segment diagnostic only"
+    }
+  ],
+  "visibility": "All four selected y40..150 spans are inside frame and away from live foreground; screen top outside frame does not imply a recoverable upper corner.",
+  "limits": "Same plane family adds orientation information but cannot on its own establish metric depth, focal identifiability or source pass.2570 reverse remains unused."
+}
