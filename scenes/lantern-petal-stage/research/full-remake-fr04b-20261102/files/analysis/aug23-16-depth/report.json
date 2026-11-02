@@ -1,0 +1,291 @@
+{
+  "source": {
+    "role": "current_verified_native_frame",
+    "file": "/workspace/scratch/fa58bfcf0425/metaxingtong-lantern-full-remake-20261102/sources/BV1dh8t6SEog_16.241415_4k.png",
+    "sha256": "132e5e81aebb54073485e53b8d040fa5b433ef5424f8459c08c62ae7b6133f45",
+    "dimensions": [
+      3840,
+      2160
+    ],
+    "source_url": "https://www.bilibili.com/video/BV1dh8t6SEog/",
+    "actual_time": 16.241415,
+    "performance_date": "2026-08-23 EARLIER than Sep12 main source",
+    "model_revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "manual_masks": [
+      {
+        "class_id": 1,
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            938,
+            0
+          ],
+          [
+            525,
+            938
+          ],
+          [
+            188,
+            1350
+          ],
+          [
+            0,
+            1406
+          ]
+        ]
+      },
+      {
+        "class_id": 1,
+        "points": [
+          [
+            3281,
+            0
+          ],
+          [
+            3840,
+            0
+          ],
+          [
+            3840,
+            656
+          ],
+          [
+            3638,
+            488
+          ]
+        ]
+      },
+      {
+        "class_id": 2,
+        "points": [
+          [
+            1631,
+            938
+          ],
+          [
+            1931,
+            862
+          ],
+          [
+            2269,
+            956
+          ],
+          [
+            2438,
+            1219
+          ],
+          [
+            2269,
+            1406
+          ],
+          [
+            1875,
+            1444
+          ],
+          [
+            1631,
+            1275
+          ]
+        ]
+      },
+      {
+        "class_id": 3,
+        "points": [
+          [
+            1912,
+            806
+          ],
+          [
+            1988,
+            806
+          ],
+          [
+            1988,
+            975
+          ],
+          [
+            1912,
+            975
+          ]
+        ]
+      },
+      {
+        "class_id": 4,
+        "points": [
+          [
+            150,
+            1406
+          ],
+          [
+            1106,
+            1406
+          ],
+          [
+            1200,
+            2025
+          ],
+          [
+            150,
+            2025
+          ]
+        ]
+      },
+      {
+        "class_id": 4,
+        "points": [
+          [
+            122,
+            38
+          ],
+          [
+            694,
+            38
+          ],
+          [
+            694,
+            403
+          ],
+          [
+            122,
+            403
+          ]
+        ]
+      }
+    ],
+    "mask_semantics": {
+      "0": "unlabelled NOT certified valid",
+      "1": "coarse flower/background or obscured distant content",
+      "2": "reflective stage/pool area; coarse partial mask not exhaustive",
+      "3": "performer and adjacent uncertain occlusion",
+      "4": "baked logo/title card, not 3D geometry"
+    },
+    "mask_notes": "Actually inspected current PNG; coarse manual polygons traced on2048 display then mapped to native3840; blurred light edges/all reflections not exhaustively covered; confidence unknown globally"
+  },
+  "method": {
+    "model": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "device": "cpu",
+    "threads": 2,
+    "dtype": "float32",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_output_shape": [
+      518,
+      924
+    ],
+    "inference_and_output_seconds": 3.3506667613983154
+  },
+  "definition": "relative inverse-depth-like model output, larger generally nearer; not metric distance or luminance",
+  "range": {
+    "min": 0.18712680041790009,
+    "max": 9.146774291992188,
+    "nonfinite_count": 0
+  },
+  "normalization": "per-image (raw-min)/(max-min), larger white=nearer; source-grid image is bicubic resampling only, never native prediction",
+  "confidence": "model provides no calibrated confidence; 255 UNKNOWN everywhere, not high confidence",
+  "mask_semantics": {
+    "0": "unlabelled NOT certified valid",
+    "1": "coarse flower/background or obscured distant content",
+    "2": "reflective stage/pool area; coarse partial mask not exhaustive",
+    "3": "performer and adjacent uncertain occlusion",
+    "4": "baked logo/title card, not 3D geometry"
+  },
+  "limits": [
+    "manual mask labels not exhaustive; label0 is unlabelled, NOT reliable",
+    "reflection/water/sky/particles/characters and hidden structures can fail",
+    "no cross-image metric comparison, real dimensions/contact/unique camera or source acceptance established"
+  ],
+  "outputs": [
+    {
+      "file": "confidence-UNKNOWN-source-grid.png",
+      "bytes": 12775,
+      "sha256": "26db83be78206117158aebbc7b81c50ae3859624b15c159bec4f8465821eb4e7"
+    },
+    {
+      "file": "manual-exclusion-classes-source-grid.png",
+      "bytes": 19230,
+      "sha256": "9cd34ff88c52fa927ce49fcd4c93ecd5c5d13ad8fb9ba8021fa03f21e60560e4"
+    },
+    {
+      "file": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 471273,
+      "sha256": "a52441813b86b801aac0b2729e863b3e6207f39fa731ed1aaa7f143908b7b8fd"
+    },
+    {
+      "file": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 363728,
+      "sha256": "5f905019c336b0d952464e23cf9485c0580a89a28c015620dc2c02ea01765646"
+    },
+    {
+      "file": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "bc39233a7ba31825e8f3ebd3468c9c6635ed9f7f123054b9498c10a1afdfe855"
+    },
+    {
+      "file": "source-and-relative-depth-display.jpg",
+      "bytes": 60797,
+      "sha256": "fc660bbbc964a74e5f882cabea87aac698382e90dbd40f2e449d11b33844d77e"
+    }
+  ]
+}

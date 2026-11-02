@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-02T01:09:06.390756+00:00",
+  "repository": "Shuang-su/metaxingtong",
+  "scope": "colonnade",
+  "base_commit": "6ad31e4b2fe8398060c33de20fc09f5edad427a7",
+  "archive_branch": "archive/colonnade-cp01-20261102",
+  "original_history_branch": "history/colonnade-cp01-original-20261102",
+  "original_tip": "b752755708fad0196306bc4da4e57aeb1b054964",
+  "bundle_input": {
+    "library_file_id": "libfile_5cecd1c0acec819193ee10c9682a27ff",
+    "current_version_number": 0,
+    "file_name": "colonnade-nov2-cp01-b752755.bundle",
+    "size_bytes": 196155,
+    "sha256": "5b00d3e44d96912e194cfb2764c7cc615212c4576b3056708c357e75aaa0928c"
+  },
+  "stages": [
+    {
+      "original_commit": "8c67cd18b94e82485becfef540b99baebc8a6271",
+      "original_parents": [],
+      "original_author_date": "2026-11-02T09:53:39+09:00",
+      "original_committer_date": "2026-11-02T09:53:39+09:00",
+      "original_subject": "Record Nov2 remake code candidate and missing original-source evidence",
+      "upstream_archive_commit": "64836436e0504defd2ba850af60ca214d51cef4c",
+      "files": [
+        {
+          "original_path": ".gitignore",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/.gitignore",
+          "mode": "100644",
+          "bytes": 22,
+          "sha256": "3bb521c0465e956b098b4c68a48be6dee74a7c0a697b8bdf534a658168e0db6e",
+          "git_blob": "95332f741a0c0940f4ec70dc62498171c6e39756"
+        },
+        {
+          "original_path": "README.md",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/README.md",
+          "mode": "100644",
+          "bytes": 1173,
+          "sha256": "95575a03b0eab878df162c98812a3c004856b2da2bec0119d8936dbf93941c8d",
+          "git_blob": "ce7c2006d7ca2a4c4e806ed000d3ad06c1340d86"
+        },
+        {
+          "original_path": "docs/reconstruction-standard-PR92.md",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/docs/reconstruction-standard-PR92.md",
+          "mode": "100644",
+          "bytes": 24445,
+          "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e",
+          "git_blob": "2828618bce769c32621e6220c4b98a28ec637088"
+        },
+        {
+          "original_path": "parameters.json",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/parameters.json",
+          "mode": "100644",
+          "bytes": 626,
+          "sha256": "e8323e38c9de7d63f3d2c5bfa7602b9446c1af179bd2092b7fef3a188b6a995d",
+          "git_blob": "ea4551eb7ebb3a6b2c6f6fade92b9d48bd52a514"
+        },
+        {
+          "original_path": "qa/code-origin.json",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/qa/code-origin.json",
+          "mode": "100644",
+          "bytes": 289,
+          "sha256": "5234244c04371193100873a0b5c8e06060850f360e770c381678f8300702ace8",
+          "git_blob": "25c7fb7babb77b5348c291d171d2ae0876af7e18"
+        },
+        {
+          "original_path": "scripts/rebuild_checkpoint.py",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/scripts/rebuild_checkpoint.py",
+          "mode": "100644",
+          "bytes": 7085,
+          "sha256": "03a1f8b277baf622034c60e6d64ff88824d921929081c30179659611fd609551",
+          "git_blob": "6cd82231ce16639b2d0c21e4c7c243cbec94b3ba"
+        },
+        {
+          "original_path": "sources/expected-originals-NOT-present.json",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/sources/expected-originals-NOT-present.json",
+          "mode": "100644",
+          "bytes": 878,
+          "sha256": "a3b9a604781f6c0464bbd967c2f00ae900384dd942f9c4c7bde5578e753ace8e",
+          "git_blob": "f8d4694d564dee79ac9dc7f0138484762a583738"
+        }
+      ]
+    },
+    {
+      "original_commit": "b752755708fad0196306bc4da4e57aeb1b054964",
+      "original_parents": [
+        "8c67cd18b94e82485becfef540b99baebc8a6271"
+      ],
+      "original_author_date": "2026-11-02T09:54:39+09:00",
+      "original_committer_date": "2026-11-02T09:54:39+09:00",
+      "original_subject": "Save newly generated editable checkpoint before any rendering",
+      "upstream_archive_commit": "035ce29a61821a3bdd62b2cf94c15224d4b6c5c9",
+      "files": [
+        {
+          "original_path": ".gitignore",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/.gitignore",
+          "mode": "100644",
+          "bytes": 22,
+          "sha256": "3bb521c0465e956b098b4c68a48be6dee74a7c0a697b8bdf534a658168e0db6e",
+          "git_blob": "95332f741a0c0940f4ec70dc62498171c6e39756"
+        },
+        {
+          "original_path": "README.md",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/README.md",
+          "mode": "100644",
+          "bytes": 1173,
+          "sha256": "95575a03b0eab878df162c98812a3c004856b2da2bec0119d8936dbf93941c8d",
+          "git_blob": "ce7c2006d7ca2a4c4e806ed000d3ad06c1340d86"
+        },
+        {
+          "original_path": "docs/reconstruction-standard-PR92.md",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/docs/reconstruction-standard-PR92.md",
+          "mode": "100644",
+          "bytes": 24445,
+          "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e",
+          "git_blob": "2828618bce769c32621e6220c4b98a28ec637088"
+        },
+        {
+          "original_path": "models/NOV2_CP01_material.blend",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/models/NOV2_CP01_material.blend",
+          "mode": "100644",
+          "bytes": 1315492,
+          "sha256": "fc8c8249c9e788d568c5d5dcbf9c2790d372553a8271bf13fd94da80453cff95",
+          "git_blob": "3d3241f63c1440ff83b59cc799dc7c25e4acc6f4"
+        },
+        {
+          "original_path": "models/NOV2_CP01_material.glb",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/models/NOV2_CP01_material.glb",
+          "mode": "100644",
+          "bytes": 242000,
+          "sha256": "fd9e1ffceb2cdd752eac1e488c4178d69bbb67b85f3da0aa8b685f4cdc6712f8",
+          "git_blob": "4662cda12daed31af0b62c08a3e0a293d55df5fd"
+        },
+        {
+          "original_path": "models/NOV2_CP01_white.blend",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/models/NOV2_CP01_white.blend",
+          "mode": "100644",
+          "bytes": 1199652,
+          "sha256": "46f0c153ee598da901fa183b75335eab8baf6856bbcc85b7f3c3e6c117cca7a0",
+          "git_blob": "14e3f5af28d57e93cc22a1caea67012f875155d8"
+        },
+        {
+          "original_path": "models/NOV2_CP01_white.glb",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/models/NOV2_CP01_white.glb",
+          "mode": "100644",
+          "bytes": 240880,
+          "sha256": "783813cf3824e05333c8faac68cc2eb3c991ca12bbfb54f847c1347e37501f90",
+          "git_blob": "ea677d4a53138810f3b1b731fb1be50faa0fc685"
+        },
+        {
+          "original_path": "parameters.json",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/parameters.json",
+          "mode": "100644",
+          "bytes": 626,
+          "sha256": "e8323e38c9de7d63f3d2c5bfa7602b9446c1af179bd2092b7fef3a188b6a995d",
+          "git_blob": "ea4551eb7ebb3a6b2c6f6fade92b9d48bd52a514"
+        },
+        {
+          "original_path": "qa/checkpoint-build.log",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/qa/checkpoint-build.log",
+          "mode": "100644",
+          "bytes": 22266,
+          "sha256": "338984c3ce2fc4dfe01135ee2a6be506b4204b54d524ad29af3c25b2da244255",
+          "git_blob": "82e7a50fdcedfdad8d2475ed2281ede587ece46d"
+        },
+        {
+          "original_path": "qa/checkpoint-files.json",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/qa/checkpoint-files.json",
+          "mode": "100644",
+          "bytes": 787,
+          "sha256": "d6f51e6859a00ebae8262a36e58dfe586868f0d66b1cab485bc7de55716d49e0",
+          "git_blob": "db4e68eb2ee1a065131313ed6a352077f5fd54b1"
+        },
+        {
+          "original_path": "qa/code-origin.json",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/qa/code-origin.json",
+          "mode": "100644",
+          "bytes": 289,
+          "sha256": "5234244c04371193100873a0b5c8e06060850f360e770c381678f8300702ace8",
+          "git_blob": "25c7fb7babb77b5348c291d171d2ae0876af7e18"
+        },
+        {
+          "original_path": "qa/object-inventory.json",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/qa/object-inventory.json",
+          "mode": "100644",
+          "bytes": 15545,
+          "sha256": "af7e2b058cb9998f0c44e4f09a098400f7148c480d440ee6ee8eba0262efbb6a",
+          "git_blob": "29cedefdf80989b2f00fe459547178adb0acb32c"
+        },
+        {
+          "original_path": "scripts/rebuild_checkpoint.py",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/scripts/rebuild_checkpoint.py",
+          "mode": "100644",
+          "bytes": 7085,
+          "sha256": "03a1f8b277baf622034c60e6d64ff88824d921929081c30179659611fd609551",
+          "git_blob": "6cd82231ce16639b2d0c21e4c7c243cbec94b3ba"
+        },
+        {
+          "original_path": "sources/expected-originals-NOT-present.json",
+          "archive_path": "scenes/lantern-petal-stage/research/colonnade-remake-cp01-20261102/files/sources/expected-originals-NOT-present.json",
+          "mode": "100644",
+          "bytes": 878,
+          "sha256": "a3b9a604781f6c0464bbd967c2f00ae900384dd942f9c4c7bde5578e753ace8e",
+          "git_blob": "f8d4694d564dee79ac9dc7f0138484762a583738"
+        }
+      ]
+    }
+  ],
+  "final_original_file_count": 14,
+  "summary": "Nov2 廊架 CP01 新制作的有限可编辑检查点；旧 M03 BLEND/原来源仍缺失。4 个材质/白模 BLEND/GLB，不是完整灯笼圆台。GLB 与旧 SHA 相同属于确定构造再生成，不证明旧文件恢复。没有本轮新原生来源对照、深度分析或渲染；全部尺寸、背部连接与材质待来源确认。",
+  "publication_actions": "Byte preservation and ordinary Git archive only. No generation, render, inference, model acceptance, LFS, force-push, merge or Space deletion.",
+  "remote_readback": "Pending at this mapping commit; final batch receipt is published separately after actual remote byte retrieval."
+}

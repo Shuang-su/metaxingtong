@@ -1,0 +1,88 @@
+{
+  "status": "conditional single-circle training diagnostic, NOT calibration or source acceptance",
+  "source": "metaxingtong-lantern-full-remake-20261102/sources/BV1dh8t6SEog_16.241415_4k.png",
+  "source_sha256": "132e5e81aebb54073485e53b8d040fa5b433ef5424f8459c08c62ae7b6133f45",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "fixed_f_pixels": 4000.0,
+  "fixed_principal_point": [
+    1920,
+    1080
+  ],
+  "camera_center": [
+    0.0,
+    -33.04622844687552,
+    33.712191178813235
+  ],
+  "world_to_camera": [
+    [
+      0.9991879960589836,
+      0.04016584028033041,
+      0.0031707737553433083
+    ],
+    [
+      0.03040337055343245,
+      -0.7000070793237843,
+      -0.7134884189358477
+    ],
+    [
+      -0.02643829780116836,
+      0.713005465737227,
+      -0.7006598477422669
+    ]
+  ],
+  "world_azimuth_gauge": "camera x=0,y<0 chosen convention; circle cannot identify global azimuth of roof/columns",
+  "circle_virtual_midline": {
+    "r": 5,
+    "z": 0.34,
+    "entity": "STAGE_UPPER_LIP has finite band r4.965..5.035,z.315..365; midline is not exact visible edge"
+  },
+  "point_count": 25,
+  "all_points_training_no_holdout": true,
+  "normal_distance_approx_px": [
+    1.5369421437405557,
+    4.673539856973173,
+    6.727282427334581,
+    3.1439431180201733,
+    4.331732655439859,
+    6.183981761144777,
+    1.353524485699467,
+    0.5703321800319544,
+    0.7491572198783377,
+    2.5813441419223473,
+    4.378099163741096,
+    5.174906362719268,
+    2.098613950432723,
+    8.717579666717818,
+    2.1403068307625692,
+    0.3970548716371854,
+    0.9293088629558718,
+    0.9104145631424452,
+    5.815664608504196,
+    3.9590098572556194,
+    0.9089034622947318,
+    5.906062914682913,
+    3.675239877254606,
+    3.1615168581488993,
+    0.5474164086825702
+  ],
+  "max_px": 8.717579666717818,
+  "mean_px": 3.22287512996471,
+  "termination": "`xtol` termination condition is satisfied.",
+  "parameters": [
+    3.497907443201198,
+    3.517859527988244,
+    -1.259247167517922,
+    0.9139803345961204,
+    -0.004444014503502826
+  ],
+  "limits": [
+    "working scale radius5 not metres",
+    "f4000 is predefined illustrative condition; no search or focal calibration",
+    "one circle alone leaves azimuth/depth-scale and geometry ambiguities",
+    "finite lip width, source reflections and physical top-vs-band edge unresolved",
+    "all other objects must be judged independently; do not hide poor roof/urn alignment by circle fit"
+  ]
+}

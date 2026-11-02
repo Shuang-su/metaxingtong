@@ -1,0 +1,43 @@
+{
+  "material": {
+    "mesh_count": 1172,
+    "same_as_material_geometry": true,
+    "closed_individual_meshes": true,
+    "bad_edge_meshes": [],
+    "actual_glb_roundtrip": {
+      "mesh_count": 1172,
+      "missing": [],
+      "extra": [],
+      "max_world_bbox_delta": 9.5367431640625e-07
+    }
+  },
+  "white": {
+    "mesh_count": 1172,
+    "same_as_material_geometry": true,
+    "closed_individual_meshes": true,
+    "bad_edge_meshes": [],
+    "actual_glb_roundtrip": {
+      "mesh_count": 1172,
+      "missing": [],
+      "extra": [],
+      "max_world_bbox_delta": 9.5367431640625e-07
+    }
+  },
+  "known_support_gap_audit": [
+    {
+      "row": "IN",
+      "radius": 7.3,
+      "roof_underside_z": 4.429339217376526,
+      "support_top_z": 4.37,
+      "positive_gap": 0.05933921737652614
+    },
+    {
+      "row": "OUT",
+      "radius": 9.2,
+      "roof_underside_z": 4.536395720710352,
+      "support_top_z": 4.37,
+      "positive_gap": 0.16639572071035147
+    }
+  ],
+  "scope": "individual closure and transport are not all contacts/source validation; analytical roof support gap found, requires FR02 repair rather than hiding failure"
+}

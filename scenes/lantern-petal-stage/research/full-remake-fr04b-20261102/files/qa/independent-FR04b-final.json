@@ -1,0 +1,385 @@
+{
+  "scope": "final bounded read-only verification of winding-only FR04b repair; no source acceptance",
+  "targets": [
+    "ROOF_R_thick_curved_solid",
+    "EAVE_R_inner",
+    "EAVE_R_outer",
+    "BEAM_R_inner_curved",
+    "ROOF_L_thick_curved_solid",
+    "EAVE_L_inner",
+    "EAVE_L_outer",
+    "BEAM_L_inner_curved",
+    "ENTRY_R_visible_turn_roof_trial",
+    "ENTRY_R_inner_thick_edge_trial",
+    "ENTRY_R_outer_thick_edge_trial",
+    "ENTRY_R_terminal_thick_edge_trial"
+  ],
+  "material": {
+    "sha256": "527ac120e712609f2b66ffe2af2c4b38e920e4f5d14012f89b0e88b614e6b5a0",
+    "meshes": 1247,
+    "same_material_geometry": true,
+    "changed_vertex_meshes": [],
+    "changed_face_meshes": [
+      "ROOF_R_thick_curved_solid",
+      "EAVE_R_inner",
+      "EAVE_R_outer",
+      "BEAM_R_inner_curved",
+      "ROOF_L_thick_curved_solid",
+      "EAVE_L_inner",
+      "EAVE_L_outer",
+      "BEAM_L_inner_curved",
+      "ENTRY_R_visible_turn_roof_trial",
+      "ENTRY_R_inner_thick_edge_trial",
+      "ENTRY_R_outer_thick_edge_trial",
+      "ENTRY_R_terminal_thick_edge_trial"
+    ],
+    "same_cameras_as_FR04": true,
+    "inconsistent_meshes": [],
+    "nonmanifold_meshes": [],
+    "nonpositive_volume_meshes": [],
+    "target_outward_top_normals": {
+      "ROOF_R_thick_curved_solid": [
+        -0.31591111421585083,
+        0.2995266914367676,
+        0.9002687931060791
+      ],
+      "EAVE_R_inner": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "EAVE_R_outer": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "BEAM_R_inner_curved": [
+        0.0,
+        0.0,
+        0.9999999403953552
+      ],
+      "ROOF_L_thick_curved_solid": [
+        0.10918308049440384,
+        -0.4214201867580414,
+        0.9002689123153687
+      ],
+      "EAVE_L_inner": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "EAVE_L_outer": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "BEAM_L_inner_curved": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "ENTRY_R_visible_turn_roof_trial": [
+        -0.3111852705478668,
+        0.3114975094795227,
+        0.8978490829467773
+      ],
+      "ENTRY_R_inner_thick_edge_trial": [
+        -0.313666433095932,
+        0.3139721751213074,
+        0.8961221575737
+      ],
+      "ENTRY_R_outer_thick_edge_trial": [
+        0.3139496147632599,
+        -0.31369030475616455,
+        0.8961216807365417
+      ],
+      "ENTRY_R_terminal_thick_edge_trial": [
+        -0.11238095909357071,
+        0.43357187509536743,
+        0.8940839171409607
+      ]
+    },
+    "target_signed_volume": {
+      "ROOF_R_thick_curved_solid": 7.1119609078116826,
+      "EAVE_R_inner": 0.4251724791941642,
+      "EAVE_R_outer": 0.6404391186661793,
+      "BEAM_R_inner_curved": 1.2532895492295173,
+      "ROOF_L_thick_curved_solid": 7.111960913063445,
+      "EAVE_L_inner": 0.4251724791941617,
+      "EAVE_L_outer": 0.6404391186661795,
+      "BEAM_L_inner_curved": 1.2532895492295193,
+      "ENTRY_R_visible_turn_roof_trial": 0.46234877911783845,
+      "ENTRY_R_inner_thick_edge_trial": 0.024162617993263656,
+      "ENTRY_R_outer_thick_edge_trial": 0.0590046189721883,
+      "ENTRY_R_terminal_thick_edge_trial": 0.05261538403051781
+    },
+    "actual_glb_reimport": {
+      "sha256": "687d1274e354c3e763f3a432a5063af5dc96a6033166993f3489473de393a4ff",
+      "meshes": 1247,
+      "missing": [],
+      "extra": [],
+      "max_bbox_delta": 9.5367431640625e-07,
+      "target_signed_volume": {
+        "ROOF_R_thick_curved_solid": 7.111960913063529,
+        "EAVE_R_inner": 0.42517247919415957,
+        "EAVE_R_outer": 0.6404391186661658,
+        "BEAM_R_inner_curved": 1.2532895492295244,
+        "ROOF_L_thick_curved_solid": 7.111960907811626,
+        "EAVE_L_inner": 0.4251724791941552,
+        "EAVE_L_outer": 0.6404391186661745,
+        "BEAM_L_inner_curved": 1.2532895492295224,
+        "ENTRY_R_visible_turn_roof_trial": 0.46150424879662155,
+        "ENTRY_R_inner_thick_edge_trial": 0.024158197567714222,
+        "ENTRY_R_outer_thick_edge_trial": 0.058967996415452126,
+        "ENTRY_R_terminal_thick_edge_trial": 0.05251326991751759
+      },
+      "target_first_face_normals": {
+        "ROOF_R_thick_curved_solid": [
+          -0.31591111421585083,
+          0.2995263338088989,
+          0.9002688527107239
+        ],
+        "EAVE_R_inner": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "EAVE_R_outer": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "BEAM_R_inner_curved": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "ROOF_L_thick_curved_solid": [
+          0.10918299108743668,
+          -0.42142027616500854,
+          0.9002688527107239
+        ],
+        "EAVE_L_inner": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "EAVE_L_outer": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "BEAM_L_inner_curved": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "ENTRY_R_visible_turn_roof_trial": [
+          -0.3111899495124817,
+          0.3114950954914093,
+          0.89784836769104
+        ],
+        "ENTRY_R_inner_thick_edge_trial": [
+          -0.31367188692092896,
+          0.3139706254005432,
+          0.8961207270622253
+        ],
+        "ENTRY_R_outer_thick_edge_trial": [
+          0.31395620107650757,
+          -0.3136890232563019,
+          0.8961198329925537
+        ],
+        "ENTRY_R_terminal_thick_edge_trial": [
+          -0.10505540668964386,
+          0.43568354845046997,
+          0.8939480185508728
+        ]
+      },
+      "note": "GLB attribute seams may split vertices, so no claim of topological welded manifold from imported vertex indices"
+    }
+  },
+  "white": {
+    "sha256": "9b5df800ff7f7cc178ed5bb9eb9cdf7023450546d53eb69e41d840eeb94c6c87",
+    "meshes": 1247,
+    "same_material_geometry": true,
+    "changed_vertex_meshes": [],
+    "changed_face_meshes": [
+      "ROOF_R_thick_curved_solid",
+      "EAVE_R_inner",
+      "EAVE_R_outer",
+      "BEAM_R_inner_curved",
+      "ROOF_L_thick_curved_solid",
+      "EAVE_L_inner",
+      "EAVE_L_outer",
+      "BEAM_L_inner_curved",
+      "ENTRY_R_visible_turn_roof_trial",
+      "ENTRY_R_inner_thick_edge_trial",
+      "ENTRY_R_outer_thick_edge_trial",
+      "ENTRY_R_terminal_thick_edge_trial"
+    ],
+    "same_cameras_as_FR04": true,
+    "inconsistent_meshes": [],
+    "nonmanifold_meshes": [],
+    "nonpositive_volume_meshes": [],
+    "target_outward_top_normals": {
+      "ROOF_R_thick_curved_solid": [
+        -0.31591111421585083,
+        0.2995266914367676,
+        0.9002687931060791
+      ],
+      "EAVE_R_inner": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "EAVE_R_outer": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "BEAM_R_inner_curved": [
+        0.0,
+        0.0,
+        0.9999999403953552
+      ],
+      "ROOF_L_thick_curved_solid": [
+        0.10918308049440384,
+        -0.4214201867580414,
+        0.9002689123153687
+      ],
+      "EAVE_L_inner": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "EAVE_L_outer": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "BEAM_L_inner_curved": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "ENTRY_R_visible_turn_roof_trial": [
+        -0.3111852705478668,
+        0.3114975094795227,
+        0.8978490829467773
+      ],
+      "ENTRY_R_inner_thick_edge_trial": [
+        -0.313666433095932,
+        0.3139721751213074,
+        0.8961221575737
+      ],
+      "ENTRY_R_outer_thick_edge_trial": [
+        0.3139496147632599,
+        -0.31369030475616455,
+        0.8961216807365417
+      ],
+      "ENTRY_R_terminal_thick_edge_trial": [
+        -0.11238095909357071,
+        0.43357187509536743,
+        0.8940839171409607
+      ]
+    },
+    "target_signed_volume": {
+      "ROOF_R_thick_curved_solid": 7.1119609078116826,
+      "EAVE_R_inner": 0.4251724791941642,
+      "EAVE_R_outer": 0.6404391186661793,
+      "BEAM_R_inner_curved": 1.2532895492295173,
+      "ROOF_L_thick_curved_solid": 7.111960913063445,
+      "EAVE_L_inner": 0.4251724791941617,
+      "EAVE_L_outer": 0.6404391186661795,
+      "BEAM_L_inner_curved": 1.2532895492295193,
+      "ENTRY_R_visible_turn_roof_trial": 0.46234877911783845,
+      "ENTRY_R_inner_thick_edge_trial": 0.024162617993263656,
+      "ENTRY_R_outer_thick_edge_trial": 0.0590046189721883,
+      "ENTRY_R_terminal_thick_edge_trial": 0.05261538403051781
+    },
+    "actual_glb_reimport": {
+      "sha256": "7c0025454387d266634f9662e06f45e5d8198a773b0c74bb15f488673daea959",
+      "meshes": 1247,
+      "missing": [],
+      "extra": [],
+      "max_bbox_delta": 9.5367431640625e-07,
+      "target_signed_volume": {
+        "ROOF_R_thick_curved_solid": 7.111960913063529,
+        "EAVE_R_inner": 0.42517247919415957,
+        "EAVE_R_outer": 0.6404391186661658,
+        "BEAM_R_inner_curved": 1.2532895492295244,
+        "ROOF_L_thick_curved_solid": 7.111960907811626,
+        "EAVE_L_inner": 0.4251724791941552,
+        "EAVE_L_outer": 0.6404391186661745,
+        "BEAM_L_inner_curved": 1.2532895492295224,
+        "ENTRY_R_visible_turn_roof_trial": 0.46150424879662155,
+        "ENTRY_R_inner_thick_edge_trial": 0.024158197567714222,
+        "ENTRY_R_outer_thick_edge_trial": 0.058967996415452126,
+        "ENTRY_R_terminal_thick_edge_trial": 0.05251326991751759
+      },
+      "target_first_face_normals": {
+        "ROOF_R_thick_curved_solid": [
+          -0.31591111421585083,
+          0.2995263338088989,
+          0.9002688527107239
+        ],
+        "EAVE_R_inner": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "EAVE_R_outer": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "BEAM_R_inner_curved": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "ROOF_L_thick_curved_solid": [
+          0.10918299108743668,
+          -0.42142027616500854,
+          0.9002688527107239
+        ],
+        "EAVE_L_inner": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "EAVE_L_outer": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "BEAM_L_inner_curved": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "ENTRY_R_visible_turn_roof_trial": [
+          -0.3111899495124817,
+          0.3114950954914093,
+          0.89784836769104
+        ],
+        "ENTRY_R_inner_thick_edge_trial": [
+          -0.31367188692092896,
+          0.3139706254005432,
+          0.8961207270622253
+        ],
+        "ENTRY_R_outer_thick_edge_trial": [
+          0.31395620107650757,
+          -0.3136890232563019,
+          0.8961198329925537
+        ],
+        "ENTRY_R_terminal_thick_edge_trial": [
+          -0.10505540668964386,
+          0.43568354845046997,
+          0.8939480185508728
+        ]
+      },
+      "note": "GLB attribute seams may split vertices, so no claim of topological welded manifold from imported vertex indices"
+    }
+  }
+}

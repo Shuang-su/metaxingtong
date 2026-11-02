@@ -1,0 +1,112 @@
+{
+  "scope": "read-only source structural review; no CP02 changes, no new model or render",
+  "inputs": [
+    {
+      "path": "new-source-20261102/lantern-aug23-crossdate/BV1dh8t6SEog_16.241415_4k.png",
+      "sha256": "132e5e81aebb54073485e53b8d040fa5b433ef5424f8459c08c62ae7b6133f45",
+      "bytes": 8351446,
+      "dimensions": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "recovered-source-candidates/lantern/BV169Y96rEo1_P2_3696.908755_wide.png",
+      "sha256": "87dab8e20d8bcd2829e79b9c0c8c4be74bece176e678b2e38ea7e7df79b8e9a9",
+      "bytes": 3165441,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "recovered-source-candidates/lantern/BV169Y96rEo1_P2_3586.984973_oblique.png",
+      "sha256": "eea21e8149a99f110fcfd34400a4113a4f7c33d074ac2d047da1b80671bd1127",
+      "bytes": 3355569,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "reacquired-source-20261102/peony-lantern/BV1mT411V72s_1317.051867_4k.png",
+      "sha256": "6caf498fc6d4f78fa3b0adab017da71addfd1c2c94d7f15992b052cf988cae1b",
+      "bytes": 8902722,
+      "dimensions": [
+        3840,
+        2160
+      ]
+    }
+  ],
+  "date_evidence": {
+    "aug23_performance": "2026-08-23",
+    "basis": "source owner confirms actually read description: 素材：2026年8月23日冰火歌会; not inferred from upload",
+    "uploader_ui_time": "2026-08-23 23:09:49",
+    "relative_to_sep12": "earlier, NOT later validation",
+    "relative_to_2022": "later design-family comparison, NOT proof same mesh/version",
+    "rejected_buffered_timestamps": [
+      18,
+      22
+    ],
+    "only_valid_new_frame_time": 16.241415
+  },
+  "bridge_level": "strong visible design-family/topology bridge; exact object instance/mesh identity unproven",
+  "new_visible_constraints": [
+    {
+      "id": "roof_inner_outer_arcs",
+      "evidence": "two inward-facing roof stretches visibly curve around pool; broad tiles extend outward, eaves have finite edge bands",
+      "allowed_use": "build finite curved roof segments and thickness with visible silhouette constraints; slope/underside and out-of-frame completion remain conditional"
+    },
+    {
+      "id": "front_entry_turn",
+      "evidence": "near right roof/eave changes direction toward front entrance, left near roof also projects inward/crops out",
+      "allowed_use": "separate entrance-turn module from rear curved run, not two straight parallel infinite corridors"
+    },
+    {
+      "id": "pool_platform_layers",
+      "evidence": "central reflective flower disc, several distinct rim bands, broader outer reflective annulus with floating leaves/petals, outer walkway border",
+      "allowed_use": "assign separate edge IDs and height hypotheses; never fit all bright rings as same coplanar circle"
+    },
+    {
+      "id": "column_lamp_adjacency",
+      "evidence": "large round lanterns near visible inward-column/eave locations; small vertical hangers and at least one crossing string behind platform; bronze urn-lamps sit on walkway rather than central disc",
+      "allowed_use": "start local explicit named instances, preserve occluded/unknown positions and no whole-scene count inferred"
+    },
+    {
+      "id": "walkway_separation",
+      "evidence": "floor strip between roof/column line and outer pool edge visibly separates bronze supports from pool",
+      "allowed_use": "continuous floor support plus genuine ring opening; no floating urn feet or photosheet background"
+    }
+  ],
+  "unresolved_differences": [
+    {
+      "item": "lantern string count/depth",
+      "observation": "Aug23 aerial shows fewer clearly exposed crossing layers than Sep12 near front; roof occlusion and viewpoint differ",
+      "conclusion": "not sufficient to declare actual count change or remove layers"
+    },
+    {
+      "item": "stone/wood/gold color",
+      "observation": "Aug23 warm red/brown versus Sep12 pale front columns/red rear; 2022 cool pale appearance",
+      "conclusion": "lighting/material/exposure confounded, no proven material replacement or fixed pale-column instance match"
+    },
+    {
+      "item": "stage center",
+      "observation": "Aug23 and Sep12 have reflective large flower center; 2022 aerial also flower-like reflective circle while 1842 earlier 2022 shot is decorated drum surface",
+      "conclusion": "separate temporal surface states; do not use all stage tops as same asset state"
+    },
+    {
+      "item": "roof and repeated lattice",
+      "observation": "same visual vocabulary, but repeated patterns and high angle conceal landmarks",
+      "conclusion": "no exact per-bay correspondence, true repeat count or common mesh proven"
+    }
+  ],
+  "prohibited_promotions": [
+    "not a new scene",
+    "not later replay validation for Sep12",
+    "not acceptance of CP02 failed camera",
+    "not recovered old full model",
+    "do not transfer depth/camera/meters from one date to another",
+    "do not fill lower-left title-card region or cropped roofs with invented evidence"
+  ],
+  "next_minimum": "Explicitly map one inner-column/urn/round-lantern adjacency across Aug23 and Sep12 using additional stable native views; separate topology hypotheses from unique instance matches."
+}
