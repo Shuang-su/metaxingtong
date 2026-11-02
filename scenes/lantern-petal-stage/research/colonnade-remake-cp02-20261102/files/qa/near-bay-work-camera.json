@@ -1,0 +1,119 @@
+{
+  "status": "single-source four soft axis estimates conditional diagnostic, NOT source calibration",
+  "source": "BV1mT411V72s_1842.088867_4k.png",
+  "source_dimensions": [
+    3840,
+    2160
+  ],
+  "f_pixels_work_assumption": 4000.0,
+  "principal_point_work_assumption": [
+    1920.0,
+    1080.0
+  ],
+  "rotation_world_to_opencv": [
+    [
+      -0.6735032403264792,
+      -0.7390236269725268,
+      -0.01540986846485759
+    ],
+    [
+      -0.031860846879095905,
+      0.049851260237556705,
+      -0.9982483349792648
+    ],
+    [
+      0.7384973064987302,
+      -0.6718325167994617,
+      -0.05712090392335872
+    ]
+  ],
+  "translation_world_to_opencv": [
+    5.023421442386763,
+    2.7041132618465102,
+    15.683548360917095
+  ],
+  "camera_location": [
+    -8.112812263327426,
+    14.114341447897091,
+    3.6726452840056485
+  ],
+  "anchors": [
+    {
+      "name": "near_base_axis",
+      "model": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": [
+        3210.0,
+        1810.0
+      ],
+      "projected": [
+        3201.195129261684,
+        1769.6687406748015
+      ],
+      "residual_px": 41.281184908803965,
+      "uncertainty_px": 20
+    },
+    {
+      "name": "near_cap_axis",
+      "model": [
+        0.0,
+        0.0,
+        4.35
+      ],
+      "source": [
+        3210.0,
+        615.0
+      ],
+      "projected": [
+        3204.4483982596394,
+        655.4430041413677
+      ],
+      "residual_px": 40.82225944092589,
+      "uncertainty_px": 20
+    },
+    {
+      "name": "next_inner_base_axis",
+      "model": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "source": [
+        2580.0,
+        1600.0
+      ],
+      "projected": [
+        2591.0777057009873,
+        1662.9431478655774
+      ],
+      "residual_px": 63.910526729370886,
+      "uncertainty_px": 20
+    },
+    {
+      "name": "next_inner_cap_axis",
+      "model": [
+        3.0,
+        0.0,
+        4.35
+      ],
+      "source": [
+        2580.0,
+        750.0
+      ],
+      "projected": [
+        2585.333693732053,
+        687.0721588881121
+      ],
+      "residual_px": 63.153475564139384,
+      "uncertainty_px": 20
+    }
+  ],
+  "limitations": [
+    "cap/base axis pixels are estimated and source column height not proven same model landmark",
+    "four coplanar estimated axes do not determine unique focal length/physical scale",
+    "no geometry changed; no same-instance cross-source validation; 4000px is fixed illustrative assumption not true calibration"
+  ]
+}
