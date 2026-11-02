@@ -27,7 +27,7 @@ def extrude_xz(n,poly,y,t,m):
  k=len(poly);vs=[(x,y+d,z) for d in(-t/2,t/2) for x,z in poly];fs=[(i,(i+1)%k,(i+1)%k+k,i+k) for i in range(k)]
  pts=[Vector((x,0,z)) for x,z in poly];tris=tessellate_polygon([pts]);lookup={tuple(v):i for i,v in enumerate(pts)}
  for tri in tris:
-  ids=[lookup[tuple(v)] for v in tri];fs.append(tuple(reversed(ids)));fs.append(tuple(i+k for i in ids))
+  ids=[v if isinstance(v,int) else lookup[tuple(v)] for v in tri];fs.append(tuple(reversed(ids)));fs.append(tuple(i+k for i in ids))
  return mesh(n,vs,fs,m)
 def extrude_xy(n,poly,z,t,m):
  o=extrude_xz(n,poly,0,t,m)
