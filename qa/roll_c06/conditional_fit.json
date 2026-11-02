@@ -1,0 +1,1304 @@
+{
+  "stage": "C06 new conditional rolled-cloth candidate, not recovered original shape",
+  "observations": "same upper free-end arc and band regions; view-dependent outline-to-projected-circle distance, never paired outline point triangulation",
+  "fixed_source_cameras": [
+    [
+      1.80367589,
+      -19.6342555,
+      3.75739867,
+      4.62228463,
+      1.29096505,
+      2500
+    ],
+    [
+      6.49251467,
+      -22.2671925,
+      5.63611881,
+      2.17180892,
+      0.136488499,
+      2500
+    ]
+  ],
+  "soft_uncertainty_px": {
+    "upper_arc": 5,
+    "strap_extent": 6,
+    "front_band_midpoint": 8
+  },
+  "working_assumptions": [
+    "circular cross-section straight roll; actual soft cloth differs",
+    "ground lower-cap tangency enforced as inferred support, not observed source contact",
+    "upper/lower strap fractions .77/.25 assumed; not measured",
+    "fixed radius profiles .28/.32/.36, scale arbitrary",
+    "nominal .32 chosen BEFORE viewing resulting source residuals; sensitivity profiles all retained"
+  ],
+  "all_profiles": [
+    {
+      "radius_working": 0.28,
+      "runs": [
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.906456731311907,
+            5.731775301634745,
+            0.36238979362975915,
+            0.9141736952756644,
+            1.6437441603803429
+          ],
+          "cost": 44.76456058841789,
+          "optimizer_success": true,
+          "nfev": 33,
+          "start": [
+            -2.8,
+            6.6,
+            0.2,
+            0.6,
+            1.7
+          ],
+          "bottom_axis_center_working": [
+            -2.906456731311907,
+            5.731775301634745,
+            0.19632411312336792
+          ],
+          "top_axis_center_working": [
+            -2.4817358680064103,
+            6.803186935995884,
+            1.3683241825828818
+          ],
+          "axis": [
+            0.25838623402757593,
+            0.6518116749465606,
+            0.7130063775790552
+          ],
+          "radius_working": 0.28,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                11.310443337409835,
+                5.866551563488197,
+                3.3839916631015448,
+                4.056129356083525,
+                7.106452866292681,
+                9.103591519284114
+              ],
+              "upper_band_outline_distance_px": [
+                14.051149940845596,
+                6.686816919236818
+              ],
+              "upper_soft_front_mid_projected": [
+                209.45308237456845,
+                505.9051678899443
+              ],
+              "upper_soft_mid_residual_px": 11.703884334750933,
+              "lower_band_outline_distance_px": [
+                13.810106318819898,
+                10.322976186141466
+              ],
+              "lower_soft_front_mid_projected": [
+                179.25887582198027,
+                572.7714801827824
+              ],
+              "lower_soft_mid_residual_px": 6.8450441166237
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                7.388506917166815,
+                0.6669470820515789,
+                3.8070699023791117,
+                1.7263136955577347,
+                3.2717388421431344,
+                11.014698519224515
+              ],
+              "upper_band_outline_distance_px": [
+                4.657276636853087,
+                6.833478402551703
+              ],
+              "upper_soft_front_mid_projected": [
+                644.0266630290686,
+                357.66919204211024
+              ],
+              "upper_soft_mid_residual_px": 9.25291177851097,
+              "lower_band_outline_distance_px": [
+                2.3357466470201875,
+                8.774122741715226
+              ],
+              "lower_soft_front_mid_projected": [
+                613.5418417096002,
+                414.99324402411895
+              ],
+              "lower_soft_mid_residual_px": 4.032865292731771
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.9064619721647036,
+            5.731802427836485,
+            0.3623935502774066,
+            0.9141541782430542,
+            1.6437319548633087
+          ],
+          "cost": 44.764560604608235,
+          "optimizer_success": true,
+          "nfev": 31,
+          "start": [
+            -2.9,
+            6.3,
+            0.36,
+            0.93,
+            1.55
+          ],
+          "bottom_axis_center_working": [
+            -2.9064619721647036,
+            5.731802427836485,
+            0.19632241216882365
+          ],
+          "top_axis_center_working": [
+            -2.481736301357335,
+            6.803192209134826,
+            1.3683235983992292
+          ],
+          "axis": [
+            0.25839107742033796,
+            0.6518032201834495,
+            0.7130123514133837
+          ],
+          "radius_working": 0.28,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                11.310490946348715,
+                5.866694763707644,
+                3.3842317345182895,
+                4.056338562233463,
+                7.106471153138276,
+                9.103555341608203
+              ],
+              "upper_band_outline_distance_px": [
+                14.051165790978933,
+                6.686838230382559
+              ],
+              "upper_soft_front_mid_projected": [
+                209.4530025253149,
+                505.9054036126758
+              ],
+              "upper_soft_mid_residual_px": 11.703663630105835,
+              "lower_band_outline_distance_px": [
+                13.810031832414445,
+                10.323094656493504
+              ],
+              "lower_soft_front_mid_projected": [
+                179.25875090695445,
+                572.7716185165726
+              ],
+              "lower_soft_mid_residual_px": 6.844985910629136
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                7.388626606330938,
+                0.6668595662884788,
+                3.806879905548653,
+                1.7262247961094896,
+                3.2716685135182297,
+                11.014722978309162
+              ],
+              "upper_band_outline_distance_px": [
+                4.657379121049153,
+                6.833374118156989
+              ],
+              "upper_soft_front_mid_projected": [
+                644.0266788226024,
+                357.6693437649028
+              ],
+              "upper_soft_mid_residual_px": 9.252782049079006,
+              "lower_band_outline_distance_px": [
+                2.3357186390252203,
+                8.773905480101961
+              ],
+              "lower_soft_front_mid_projected": [
+                613.5419615147564,
+                414.99326284498807
+              ],
+              "lower_soft_mid_residual_px": 4.032832984803285
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.90686450226226,
+            5.734406766446264,
+            0.3623112467737559,
+            0.9129353609404816,
+            1.642709149108421
+          ],
+          "cost": 44.764584590152396,
+          "optimizer_success": true,
+          "nfev": 30,
+          "start": [
+            -2.5,
+            7,
+            0.1,
+            0.3,
+            1.5
+          ],
+          "bottom_axis_center_working": [
+            -2.90686450226226,
+            5.734406766446264,
+            0.19620423925548164
+          ],
+          "top_axis_center_working": [
+            -2.4822526497494835,
+            6.804324353286787,
+            1.368157515047453
+          ],
+          "axis": [
+            0.2584826734198408,
+            0.6513128556088094,
+            0.7134271312898257
+          ],
+          "radius_working": 0.28,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                11.287159604018251,
+                5.8768678156843945,
+                3.4136645847916256,
+                4.094532198416128,
+                7.14188179856165,
+                9.128812499093135
+              ],
+              "upper_band_outline_distance_px": [
+                14.03164567895859,
+                6.71268846258649
+              ],
+              "upper_soft_front_mid_projected": [
+                209.4196033744945,
+                505.91970875645984
+              ],
+              "upper_soft_mid_residual_px": 11.669654132159657,
+              "lower_band_outline_distance_px": [
+                13.801262686623495,
+                10.324894764802927
+              ],
+              "lower_soft_front_mid_projected": [
+                179.24606506472094,
+                572.7705658669947
+              ],
+              "lower_soft_mid_residual_px": 6.832961584560799
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                7.375591419838311,
+                0.6652926992144449,
+                3.787667408164049,
+                1.710086146465352,
+                3.284566965452946,
+                11.026283747802967
+              ],
+              "upper_band_outline_distance_px": [
+                4.652762473220573,
+                6.837479035858936
+              ],
+              "upper_soft_front_mid_projected": [
+                644.0159201841429,
+                357.6736342937943
+              ],
+              "upper_soft_mid_residual_px": 9.244240412218039,
+              "lower_band_outline_distance_px": [
+                2.330802380459553,
+                8.747990111301448
+              ],
+              "lower_soft_front_mid_projected": [
+                613.557229574152,
+                414.98211943478714
+              ],
+              "lower_soft_mid_residual_px": 4.042203592883576
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.9068719197374184,
+            5.734448467675398,
+            0.3623165084459867,
+            0.9128992590254059,
+            1.6426879613448695
+          ],
+          "cost": 44.76458477664806,
+          "optimizer_success": true,
+          "nfev": 37,
+          "start": [
+            -3.1,
+            5.8,
+            0.6,
+            1.3,
+            1.8
+          ],
+          "bottom_axis_center_working": [
+            -2.9068719197374184,
+            5.734448467675398,
+            0.19620102479095605
+          ],
+          "top_axis_center_working": [
+            -2.4822526665351705,
+            6.804326854610784,
+            1.3681577071499356
+          ],
+          "axis": [
+            0.2584905126197015,
+            0.6512973931211351,
+            0.7134384070115776
+          ],
+          "radius_working": 0.28,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                11.287176978506318,
+                5.877051892202922,
+                3.414059175384103,
+                4.094879014528796,
+                7.141928783388952,
+                9.128809668950426
+              ],
+              "upper_band_outline_distance_px": [
+                14.031647167707646,
+                6.712727002111596
+              ],
+              "upper_soft_front_mid_projected": [
+                209.41942965225542,
+                505.9201057320789
+              ],
+              "upper_soft_mid_residual_px": 11.669253920026835,
+              "lower_band_outline_distance_px": [
+                13.80121455705811,
+                10.32508767431269
+              ],
+              "lower_soft_front_mid_projected": [
+                179.24587014582335,
+                572.7708781108677
+              ],
+              "lower_soft_mid_residual_px": 6.832910023099451
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                7.375681106584119,
+                0.6651904189969843,
+                3.7872963021528,
+                1.7098761813184187,
+                3.2845425855094095,
+                11.026400840668392
+              ],
+              "upper_band_outline_distance_px": [
+                4.652846620517669,
+                6.83736766922396
+              ],
+              "upper_soft_front_mid_projected": [
+                644.0158470256549,
+                357.673913650709
+              ],
+              "upper_soft_mid_residual_px": 9.243957011437889,
+              "lower_band_outline_distance_px": [
+                2.3308293801312066,
+                8.747644636170843
+              ],
+              "lower_soft_front_mid_projected": [
+                613.5573878347343,
+                414.9822365937248
+              ],
+              "lower_soft_mid_residual_px": 4.04206980613217
+            }
+          ],
+          "bound_hit": false
+        }
+      ],
+      "selection_within_radius": "minimum declared two-source soft training cost only; no third"
+    },
+    {
+      "radius_working": 0.32,
+      "runs": [
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.9055938410137094,
+            5.743043484565017,
+            0.3784335010824964,
+            0.8236801054446492,
+            1.5634432565848542
+          ],
+          "cost": 22.057209300949044,
+          "optimizer_success": true,
+          "nfev": 26,
+          "start": [
+            -2.8,
+            6.6,
+            0.2,
+            0.6,
+            1.7
+          ],
+          "bottom_axis_center_working": [
+            -2.9055938410137094,
+            5.743043484565017,
+            0.21491291279194727
+          ],
+          "top_axis_center_working": [
+            -2.4672267543492232,
+            6.697172141606285,
+            1.3732857455632317
+          ],
+          "axis": [
+            0.28038567106173345,
+            0.6102739277698143,
+            0.7409113364955787
+          ],
+          "radius_working": 0.32,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                7.203643702048465,
+                4.18554201013506,
+                3.09544291654229,
+                3.420346631010907,
+                4.16134209045558,
+                5.013926463687357
+              ],
+              "upper_band_outline_distance_px": [
+                9.711579358416252,
+                3.0823152179109172
+              ],
+              "upper_soft_front_mid_projected": [
+                209.59588526873688,
+                505.3216327387445
+              ],
+              "upper_soft_mid_residual_px": 12.214880346303817,
+              "lower_band_outline_distance_px": [
+                9.126958190528267,
+                7.580066958918962
+              ],
+              "lower_soft_front_mid_projected": [
+                179.59602690071472,
+                571.0309488262284
+              ],
+              "lower_soft_mid_residual_px": 6.676108623835737
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                3.010585694759417,
+                1.9520078651081485,
+                2.7010287632494827,
+                0.9300304940270374,
+                0.9814344231546085,
+                8.301421571041399
+              ],
+              "upper_band_outline_distance_px": [
+                0.8109197686677692,
+                4.619027557797861
+              ],
+              "upper_soft_front_mid_projected": [
+                643.0013233270171,
+                357.85460446618464
+              ],
+              "upper_soft_mid_residual_px": 8.680749398271791,
+              "lower_band_outline_distance_px": [
+                0.6692744125836579,
+                6.201094876555931
+              ],
+              "lower_soft_front_mid_projected": [
+                613.3759428646331,
+                413.9506947988099
+              ],
+              "lower_soft_mid_residual_px": 5.087723491205864
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.9055955797730477,
+            5.743053714124464,
+            0.37843268923217666,
+            0.823676015529304,
+            1.5634377072922192
+          ],
+          "cost": 22.05720930223767,
+          "optimizer_success": true,
+          "nfev": 24,
+          "start": [
+            -2.9,
+            6.3,
+            0.36,
+            0.93,
+            1.55
+          ],
+          "bottom_axis_center_working": [
+            -2.9055955797730477,
+            5.743053714124464,
+            0.21491238497815535
+          ],
+          "top_axis_center_working": [
+            -2.4672301048760423,
+            6.697176172312139,
+            1.3732834437427397
+          ],
+          "axis": [
+            0.2803856353549437,
+            0.6102721289997267,
+            0.7409128316156669
+          ],
+          "radius_working": 0.32,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                7.203545979523211,
+                4.185773882927501,
+                3.0957845475850516,
+                3.420698999803069,
+                4.161653702412938,
+                5.01402951473961
+              ],
+              "upper_band_outline_distance_px": [
+                9.711473982247119,
+                3.082531917219115
+              ],
+              "upper_soft_front_mid_projected": [
+                209.59563949529866,
+                505.32182039543693
+              ],
+              "upper_soft_mid_residual_px": 12.214574064706168,
+              "lower_band_outline_distance_px": [
+                9.126936826514283,
+                7.580131906852062
+              ],
+              "lower_soft_front_mid_projected": [
+                179.59592453650123,
+                571.030993194324
+              ],
+              "lower_soft_mid_residual_px": 6.676014339256716
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                3.010407164057654,
+                1.9518209449096804,
+                2.7007778859300595,
+                0.9297900145118844,
+                0.981562591514496,
+                8.301387847649284
+              ],
+              "upper_band_outline_distance_px": [
+                0.810761139736811,
+                4.619117921548981
+              ],
+              "upper_soft_front_mid_projected": [
+                643.0011890333656,
+                357.85472897298087
+              ],
+              "upper_soft_mid_residual_px": 8.680586139057146,
+              "lower_band_outline_distance_px": [
+                0.6692710751643999,
+                6.201027758659639
+              ],
+              "lower_soft_front_mid_projected": [
+                613.3759629536435,
+                413.95068925135075
+              ],
+              "lower_soft_mid_residual_px": 5.087726532710874
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.9055929180706115,
+            5.743036712908675,
+            0.3784318955610072,
+            0.8236916364773472,
+            1.5634445165817767
+          ],
+          "cost": 22.05720930248681,
+          "optimizer_success": true,
+          "nfev": 30,
+          "start": [
+            -2.5,
+            7,
+            0.1,
+            0.3,
+            1.5
+          ],
+          "bottom_axis_center_working": [
+            -2.9055929180706115,
+            5.743036712908675,
+            0.21491418927943
+          ],
+          "top_axis_center_working": [
+            -2.4672294772826975,
+            6.697174839609543,
+            1.373282302353148
+          ],
+          "axis": [
+            0.28038311314451136,
+            0.6102794928642169,
+            0.7409077206054654
+          ],
+          "radius_working": 0.32,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                7.203644262245462,
+                4.185730976158376,
+                3.0956195601781507,
+                3.4205693188669706,
+                4.161582768915122,
+                5.01390646979116
+              ],
+              "upper_band_outline_distance_px": [
+                9.711540432286258,
+                3.082489922146975
+              ],
+              "upper_soft_front_mid_projected": [
+                209.59578998124698,
+                505.3216813696418
+              ],
+              "upper_soft_mid_residual_px": 12.214778739368482,
+              "lower_band_outline_distance_px": [
+                9.12692189272076,
+                7.580036224689558
+              ],
+              "lower_soft_front_mid_projected": [
+                179.5960321409733,
+                571.0308061058221
+              ],
+              "lower_soft_mid_residual_px": 6.676091763341258
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                3.0104087577673133,
+                1.9518607805981372,
+                2.7009170457021723,
+                0.9298823476179616,
+                0.9815156404885225,
+                8.301209553544243
+              ],
+              "upper_band_outline_distance_px": [
+                0.810760704333047,
+                4.619143103472801
+              ],
+              "upper_soft_front_mid_projected": [
+                643.0012781863202,
+                357.8546385665244
+              ],
+              "upper_soft_mid_residual_px": 8.68070179384324,
+              "lower_band_outline_distance_px": [
+                0.669316860347655,
+                6.201187766255645
+              ],
+              "lower_soft_front_mid_projected": [
+                613.3759187667807,
+                413.9505940467808
+              ],
+              "lower_soft_mid_residual_px": 5.087826438280108
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.9056244296193454,
+            5.743889230299065,
+            0.37835869808729966,
+            0.8222465805111183,
+            1.5631387051873946
+          ],
+          "cost": 22.0572263193216,
+          "optimizer_success": true,
+          "nfev": 24,
+          "start": [
+            -3.1,
+            5.8,
+            0.6,
+            1.3,
+            1.8
+          ],
+          "bottom_axis_center_working": [
+            -2.9056244296193454,
+            5.743889230299065,
+            0.21473915791034298
+          ],
+          "top_axis_center_working": [
+            -2.4671384870196547,
+            6.696803934592717,
+            1.373655141119794
+          ],
+          "axis": [
+            0.2805163362307783,
+            0.6096162171222117,
+            0.7414031649037287
+          ],
+          "radius_working": 0.32,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                7.187012359738345,
+                4.168965601624096,
+                3.087347881650668,
+                3.4089578254965853,
+                4.1526290630399165,
+                5.033775597787359
+              ],
+              "upper_band_outline_distance_px": [
+                9.703804112342311,
+                3.0764078649829663
+              ],
+              "upper_soft_front_mid_projected": [
+                209.58773879892476,
+                505.317903958135
+              ],
+              "upper_soft_mid_residual_px": 12.21179959542105,
+              "lower_band_outline_distance_px": [
+                9.135624033072434,
+                7.580827913380328
+              ],
+              "lower_soft_front_mid_projected": [
+                179.59334968752603,
+                571.0483556590815
+              ],
+              "lower_soft_mid_residual_px": 6.676174779761819
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                3.0092386607074073,
+                1.963619402791714,
+                2.7034233581094242,
+                0.9349506854984005,
+                0.9895988009385368,
+                8.333487062835074
+              ],
+              "upper_band_outline_distance_px": [
+                0.8168196758210865,
+                4.616968116634554
+              ],
+              "upper_soft_front_mid_projected": [
+                642.9918851446243,
+                357.85154615338274
+              ],
+              "upper_soft_mid_residual_px": 8.680361559812784,
+              "lower_band_outline_distance_px": [
+                0.6594846313846809,
+                6.186886826082419
+              ],
+              "lower_soft_front_mid_projected": [
+                613.3783278582387,
+                413.96264099146606
+              ],
+              "lower_soft_mid_residual_px": 5.0755750445343795
+            }
+          ],
+          "bound_hit": false
+        }
+      ],
+      "selection_within_radius": "minimum declared two-source soft training cost only; no third"
+    },
+    {
+      "radius_working": 0.36,
+      "runs": [
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.9116549036381927,
+            5.774224190905749,
+            0.39908708610650656,
+            0.7184895226631632,
+            1.4926982531006385
+          ],
+          "cost": 11.409462685778273,
+          "optimizer_success": true,
+          "nfev": 22,
+          "start": [
+            -3.1,
+            5.8,
+            0.6,
+            1.3,
+            1.8
+          ],
+          "bottom_axis_center_working": [
+            -2.9116549036381927,
+            5.774224190905749,
+            0.22858225848477046
+          ],
+          "top_axis_center_working": [
+            -2.451432472911107,
+            6.602777672297372,
+            1.3817702386246833
+          ],
+          "axis": [
+            0.30831578302654933,
+            0.5550709794632296,
+            0.7725526426687418
+          ],
+          "radius_working": 0.36,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                3.144721697087535,
+                2.979146172267219,
+                3.1768591373012565,
+                3.2039021098719807,
+                1.7080529506642077,
+                1.0227157927345736
+              ],
+              "upper_band_outline_distance_px": [
+                5.353528400114266,
+                0.18740722369158816
+              ],
+              "upper_soft_front_mid_projected": [
+                209.55313651088045,
+                505.28556576893163
+              ],
+              "upper_soft_mid_residual_px": 12.210549051593556,
+              "lower_band_outline_distance_px": [
+                4.561945779520922,
+                5.843063657878215
+              ],
+              "lower_soft_front_mid_projected": [
+                179.40348698580647,
+                570.2145778278351
+              ],
+              "lower_soft_mid_residual_px": 6.407081178008534
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                0.4556678550566746,
+                1.934525213082217,
+                1.2956274673146835,
+                0.1459161832149495,
+                0.7853425199075486,
+                6.085962106398708
+              ],
+              "upper_band_outline_distance_px": [
+                4.014783930377945,
+                2.5715631227646925
+              ],
+              "upper_soft_front_mid_projected": [
+                641.8910737377727,
+                358.4513790213607
+              ],
+              "upper_soft_mid_residual_px": 7.781891708373147,
+              "lower_band_outline_distance_px": [
+                2.4965652321326828,
+                3.9502310980461326
+              ],
+              "lower_soft_front_mid_projected": [
+                612.9187552946976,
+                413.59365838660585
+              ],
+              "lower_soft_mid_residual_px": 5.513403645069147
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.905049850137918,
+            5.74964752982093,
+            0.39520676503665725,
+            0.7215811351592328,
+            1.4952022650087322
+          ],
+          "cost": 11.419205769542113,
+          "optimizer_success": true,
+          "nfev": 27,
+          "start": [
+            -2.8,
+            6.6,
+            0.2,
+            0.6,
+            1.7
+          ],
+          "bottom_axis_center_working": [
+            -2.905049850137918,
+            5.74964752982093,
+            0.22872045184128176
+          ],
+          "top_axis_center_working": [
+            -2.4487241657017225,
+            6.582821540258838,
+            1.3833709406654517
+          ],
+          "axis": [
+            0.3051932806117908,
+            0.5572316401172933,
+            0.7722369848185233
+          ],
+          "radius_working": 0.36,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                3.1069257577703024,
+                2.9686215545534487,
+                3.1232470321429973,
+                3.1272584123012854,
+                1.6505747706711729,
+                1.0395451846455859
+              ],
+              "upper_band_outline_distance_px": [
+                5.385205646269494,
+                0.26832354546577075
+              ],
+              "upper_soft_front_mid_projected": [
+                209.57126061107806,
+                505.2565324938981
+              ],
+              "upper_soft_mid_residual_px": 12.243967187692002,
+              "lower_band_outline_distance_px": [
+                4.851426373729121,
+                5.767479898646487
+              ],
+              "lower_soft_front_mid_projected": [
+                179.56844142794887,
+                570.3406883658331
+              ],
+              "lower_soft_mid_residual_px": 6.577270813567662
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                0.8303629806923428,
+                1.8184929455528127,
+                1.1699826226132701,
+                0.2534506289259323,
+                0.5651903864225479,
+                6.061737750275678
+              ],
+              "upper_band_outline_distance_px": [
+                4.062863688788586,
+                2.767872814740426
+              ],
+              "upper_soft_front_mid_projected": [
+                641.6787254639172,
+                358.5193881335688
+              ],
+              "upper_soft_mid_residual_px": 7.666659838508266,
+              "lower_band_outline_distance_px": [
+                2.1921394380048804,
+                4.137218889651437
+              ],
+              "lower_soft_front_mid_projected": [
+                612.7883659730373,
+                413.80355227856285
+              ],
+              "lower_soft_mid_residual_px": 5.335834136938958
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.905560710708176,
+            5.751561825417726,
+            0.3955375499149291,
+            0.7228261987023675,
+            1.4952706091472145
+          ],
+          "cost": 11.419325898236044,
+          "optimizer_success": true,
+          "nfev": 20,
+          "start": [
+            -2.9,
+            6.3,
+            0.36,
+            0.93,
+            1.55
+          ],
+          "bottom_axis_center_working": [
+            -2.905560710708176,
+            5.751561825417726,
+            0.22892765587297859
+          ],
+          "top_axis_center_working": [
+            -2.449112485177098,
+            6.5856994081479385,
+            1.3829223287662327
+          ],
+          "axis": [
+            0.3052612836357429,
+            0.5578505841199808,
+            0.7717630948095761
+          ],
+          "radius_working": 0.36,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                3.1258213797427428,
+                2.9657700822267685,
+                3.113106711000322,
+                3.1252880605058366,
+                1.6527838926325045,
+                1.0198825200635135
+              ],
+              "upper_band_outline_distance_px": [
+                5.391608354919514,
+                0.2677713244115298
+              ],
+              "upper_soft_front_mid_projected": [
+                209.58849460944862,
+                505.24192060002576
+              ],
+              "upper_soft_mid_residual_px": 12.266466256945437,
+              "lower_band_outline_distance_px": [
+                4.812256418617904,
+                5.747856901253195
+              ],
+              "lower_soft_front_mid_projected": [
+                179.57236266570942,
+                570.290729947351
+              ],
+              "lower_soft_mid_residual_px": 6.578789775627258
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                0.7881927964609395,
+                1.8443800177593146,
+                1.2047362018073293,
+                0.23600715493514254,
+                0.5976393206546592,
+                6.037678293755563
+              ],
+              "upper_band_outline_distance_px": [
+                4.066586049134013,
+                2.7392177192119385
+              ],
+              "upper_soft_front_mid_projected": [
+                641.72448647698,
+                358.49583032207863
+              ],
+              "upper_soft_mid_residual_px": 7.6997672798807,
+              "lower_band_outline_distance_px": [
+                2.2503394881709853,
+                4.110017036453975
+              ],
+              "lower_soft_front_mid_projected": [
+                612.8180431749249,
+                413.7529551306309
+              ],
+              "lower_soft_mid_residual_px": 5.37852226894287
+            }
+          ],
+          "bound_hit": false
+        },
+        {
+          "parameters_bottomXY_tiltXY_length": [
+            -2.9073099221127077,
+            5.755915960854369,
+            0.3967978404140967,
+            0.7223436325591143,
+            1.4949009394116521
+          ],
+          "cost": 11.419398225462194,
+          "optimizer_success": true,
+          "nfev": 20,
+          "start": [
+            -2.5,
+            7,
+            0.1,
+            0.3,
+            1.5
+          ],
+          "bottom_axis_center_working": [
+            -2.9073099221127077,
+            5.755915960854369,
+            0.22895789270319802
+          ],
+          "top_axis_center_working": [
+            -2.449561589356682,
+            6.589215842566929,
+            1.3825638001303193
+          ],
+          "axis": [
+            0.30620646538370766,
+            0.557428161119841,
+            0.7716938808541693
+          ],
+          "radius_working": 0.36,
+          "details": [
+            {
+              "source": 1,
+              "upper_arc_nearest_distance_px": [
+                3.1364178925085624,
+                2.969178589372701,
+                3.132588536963921,
+                3.1505910089174995,
+                1.6738503160789016,
+                1.0048108742184445
+              ],
+              "upper_band_outline_distance_px": [
+                5.377373757508828,
+                0.23034525498274455
+              ],
+              "upper_soft_front_mid_projected": [
+                209.5790934278034,
+                505.2575718802815
+              ],
+              "upper_soft_mid_residual_px": 12.248709869672986,
+              "lower_band_outline_distance_px": [
+                4.7297683525387,
+                5.8036020611988235
+              ],
+              "lower_soft_front_mid_projected": [
+                179.50363952922407,
+                570.272731898205
+              ],
+              "lower_soft_mid_residual_px": 6.509355560605402
+            },
+            {
+              "source": 2,
+              "upper_arc_nearest_distance_px": [
+                0.7128135828989612,
+                1.862105991933012,
+                1.2190260978145706,
+                0.2262082100803515,
+                0.6289957733975043,
+                6.027558684649785
+              ],
+              "upper_band_outline_distance_px": [
+                4.082951323990994,
+                2.721484202679763
+              ],
+              "upper_soft_front_mid_projected": [
+                641.7547380435254,
+                358.4930198112628
+              ],
+              "upper_soft_mid_residual_px": 7.709335714280986,
+              "lower_band_outline_distance_px": [
+                2.305979048754591,
+                4.115252338497612
+              ],
+              "lower_soft_front_mid_projected": [
+                612.8079799695142,
+                413.7184897405541
+              ],
+              "lower_soft_mid_residual_px": 5.414357060049838
+            }
+          ],
+          "bound_hit": false
+        }
+      ],
+      "selection_within_radius": "minimum declared two-source soft training cost only; no third"
+    }
+  ],
+  "nominal_candidate": {
+    "parameters_bottomXY_tiltXY_length": [
+      -2.9055938410137094,
+      5.743043484565017,
+      0.3784335010824964,
+      0.8236801054446492,
+      1.5634432565848542
+    ],
+    "cost": 22.057209300949044,
+    "optimizer_success": true,
+    "nfev": 26,
+    "start": [
+      -2.8,
+      6.6,
+      0.2,
+      0.6,
+      1.7
+    ],
+    "bottom_axis_center_working": [
+      -2.9055938410137094,
+      5.743043484565017,
+      0.21491291279194727
+    ],
+    "top_axis_center_working": [
+      -2.4672267543492232,
+      6.697172141606285,
+      1.3732857455632317
+    ],
+    "axis": [
+      0.28038567106173345,
+      0.6102739277698143,
+      0.7409113364955787
+    ],
+    "radius_working": 0.32,
+    "details": [
+      {
+        "source": 1,
+        "upper_arc_nearest_distance_px": [
+          7.203643702048465,
+          4.18554201013506,
+          3.09544291654229,
+          3.420346631010907,
+          4.16134209045558,
+          5.013926463687357
+        ],
+        "upper_band_outline_distance_px": [
+          9.711579358416252,
+          3.0823152179109172
+        ],
+        "upper_soft_front_mid_projected": [
+          209.59588526873688,
+          505.3216327387445
+        ],
+        "upper_soft_mid_residual_px": 12.214880346303817,
+        "lower_band_outline_distance_px": [
+          9.126958190528267,
+          7.580066958918962
+        ],
+        "lower_soft_front_mid_projected": [
+          179.59602690071472,
+          571.0309488262284
+        ],
+        "lower_soft_mid_residual_px": 6.676108623835737
+      },
+      {
+        "source": 2,
+        "upper_arc_nearest_distance_px": [
+          3.010585694759417,
+          1.9520078651081485,
+          2.7010287632494827,
+          0.9300304940270374,
+          0.9814344231546085,
+          8.301421571041399
+        ],
+        "upper_band_outline_distance_px": [
+          0.8109197686677692,
+          4.619027557797861
+        ],
+        "upper_soft_front_mid_projected": [
+          643.0013233270171,
+          357.85460446618464
+        ],
+        "upper_soft_mid_residual_px": 8.680749398271791,
+        "lower_band_outline_distance_px": [
+          0.6692744125836579,
+          6.201094876555931
+        ],
+        "lower_soft_front_mid_projected": [
+          613.3759428646331,
+          413.9506947988099
+        ],
+        "lower_soft_mid_residual_px": 5.087723491205864
+      }
+    ],
+    "bound_hit": false
+  },
+  "third_used": false,
+  "source_acceptance": false
+}
