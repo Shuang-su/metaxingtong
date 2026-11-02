@@ -9,6 +9,7 @@ from transformers import AutoImageProcessor, AutoModelForDepthEstimation
 ap=argparse.ArgumentParser()
 ap.add_argument('--config', required=True)
 ap.add_argument('--model-dir', required=True)
+ap.add_argument('--threads',type=int,default=3)
 args=ap.parse_args()
 root=Path(__file__).resolve().parents[1]
 cfg=json.loads((root/args.config).read_text())
@@ -17,7 +18,7 @@ source=root/cfg['source']['path']; out=root/cfg['output']; out.mkdir(parents=Tru
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert sha(source)==cfg['source']['sha256']
 img=Image.open(source).convert('RGB'); img.load()
-torch.set_num_threads(3); torch.set_num_interop_threads(1)
+torch.set_num_threads(args.threads); torch.set_num_interop_threads(1)
 proc=AutoImageProcessor.from_pretrained(model_dir,local_files_only=True,trust_remote_code=False,use_fast=False)
 model=AutoModelForDepthEstimation.from_pretrained(model_dir,local_files_only=True,trust_remote_code=False,use_safetensors=True).eval()
 x=proc(images=img,return_tensors='pt'); t=time.perf_counter()
@@ -39,7 +40,7 @@ report={
     'source':dict(cfg['source'],bytes=source.stat().st_size,dimensions=img.size,effective_crop=[0,0,img.width,img.height]),
     'method':{
         'repo':'depth-anything/Depth-Anything-V2-Small-hf','revision':'5426e4f0f36572d16453bbda7a8389317b1bef99',
-        'weights_sha256':sha(model_dir/'model.safetensors'),'device':'cpu','threads':3,'dtype':'float32',
+        'weights_sha256':sha(model_dir/'model.safetensors'),'device':'cpu','threads':args.threads,'dtype':'float32',
         'versions':{p:md.version(p) for p in ['torch','transformers','safetensors','pillow','numpy']},
         'input_tensor_shape':list(x['pixel_values'].shape),'raw_shape':list(raw.shape),
         'processor_config':json.loads((model_dir/'preprocessor_config.json').read_text()),
