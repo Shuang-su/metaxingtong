@@ -1,0 +1,181 @@
+{
+  "source": "sources/BV1nxQPBkEGH_P1_2522.827654.png",
+  "source_sha256": "b7be5314a9e94276b3ab882331ad8b9573995addd66b30c4faebe396cbba8ffa",
+  "source_time": 2522.827654,
+  "source_anchor_pixels": [
+    [
+      590.0,
+      162.0
+    ],
+    [
+      595.0,
+      257.0
+    ],
+    [
+      1030.0,
+      99.0
+    ],
+    [
+      1055.0,
+      200.0
+    ]
+  ],
+  "working_xz": [
+    [
+      -1.08,
+      3.58
+    ],
+    [
+      -1.08,
+      3.12
+    ],
+    [
+      1.08,
+      3.58
+    ],
+    [
+      1.08,
+      3.12
+    ]
+  ],
+  "H_source_to_working_xz": [
+    [
+      0.006447230293107064,
+      -0.0009323569993668047,
+      -5.039124673404947
+    ],
+    [
+      0.0002792916587255772,
+      -0.0045168873755078165,
+      5.162283556778383
+    ],
+    [
+      0.0003347655111405431,
+      0.0005314817710930966,
+      1.0
+    ]
+  ],
+  "anchor_caveat": "Protruding circular unit approximate centers, NOT measured poster corners; conditional placement only",
+  "actual_R02_panel_working_xz": {
+    "x": [
+      -0.86,
+      0.86
+    ],
+    "z": [
+      2.89,
+      4.43
+    ]
+  },
+  "envelope": [
+    [
+      616,
+      0
+    ],
+    [
+      973,
+      0
+    ],
+    [
+      1005,
+      265
+    ],
+    [
+      643,
+      303
+    ]
+  ],
+  "foreground": [
+    [
+      950,
+      168
+    ],
+    [
+      985,
+      169
+    ],
+    [
+      1008,
+      189
+    ],
+    [
+      1033,
+      213
+    ],
+    [
+      1060,
+      259
+    ],
+    [
+      1061,
+      321
+    ],
+    [
+      1040,
+      380
+    ],
+    [
+      899,
+      383
+    ],
+    [
+      870,
+      355
+    ],
+    [
+      856,
+      310
+    ],
+    [
+      858,
+      277
+    ],
+    [
+      875,
+      235
+    ],
+    [
+      907,
+      199
+    ],
+    [
+      932,
+      180
+    ]
+  ],
+  "mask_legend": {
+    "0": "outside analyzed envelope",
+    "1": "conservatively visible including printed static silhouette",
+    "2": "live foreground exclusion+dilation",
+    "3": "uncertain boundary"
+  },
+  "unknown_top": "Not in frame; physical coverage not identifiable",
+  "derived_resolution": [
+    512,
+    512
+  ],
+  "sampling": "bilinear only when all four native mask neighbors label1; otherwise neutral gray, no inpaint",
+  "variants": [
+    {
+      "name": "BASE",
+      "scale": 1,
+      "dx": 0,
+      "dz": 0,
+      "coverage_of_inferred_R02_panel_only": 0.7739486694335938
+    },
+    {
+      "name": "STRESS_A",
+      "scale": 0.95,
+      "dx": -0.05,
+      "dz": -0.05,
+      "coverage_of_inferred_R02_panel_only": 0.7017250061035156
+    },
+    {
+      "name": "STRESS_B",
+      "scale": 1.05,
+      "dx": 0.05,
+      "dz": 0.05,
+      "coverage_of_inferred_R02_panel_only": 0.8209648132324219
+    }
+  ],
+  "limits": "Source-lit colors, not intrinsic albedo; same original2522 source but newly calculated H for R02 dimensions, not copied old R10 H. Model slot M01 conditional low-left identity. No propagation to other cabinets."
+}
