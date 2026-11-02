@@ -1,0 +1,265 @@
+{
+  "training_edges_world": {
+    "left": [
+      [
+        -0.5049999952316284,
+        1.790000081062317,
+        0.05000000074505806
+      ],
+      [
+        -0.5049999952316284,
+        1.790000081062317,
+        2.559999942779541
+      ]
+    ],
+    "right": [
+      [
+        0.5049999952316284,
+        1.790000081062317,
+        0.05000000074505806
+      ],
+      [
+        0.5049999952316284,
+        1.790000081062317,
+        2.559999942779541
+      ]
+    ],
+    "top": [
+      [
+        -0.5049999952316284,
+        1.790000081062317,
+        2.559999942779541
+      ],
+      [
+        0.5049999952316284,
+        1.790000081062317,
+        2.559999942779541
+      ]
+    ],
+    "bottom": [
+      [
+        -0.5049999952316284,
+        1.790000081062317,
+        0.05000000074505806
+      ],
+      [
+        0.5049999952316284,
+        1.790000081062317,
+        0.05000000074505806
+      ]
+    ]
+  },
+  "rear_leaf_face_y": 1.79,
+  "heldout_edges": [
+    {
+      "name": "cream_bezel_4_1_source_left",
+      "edge_world": [
+        [
+          -1.0549999475479126,
+          1.7549999952316284,
+          1.0360000133514404
+        ],
+        [
+          -1.0549999475479126,
+          1.7549999952316284,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          337,
+          350
+        ],
+        [
+          338,
+          600
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 6
+    },
+    {
+      "name": "cream_bezel_4_1_source_right",
+      "edge_world": [
+        [
+          -0.625,
+          1.7549999952316284,
+          1.0360000133514404
+        ],
+        [
+          -0.625,
+          1.7549999952316284,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          678,
+          350
+        ],
+        [
+          677,
+          600
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 6
+    },
+    {
+      "name": "cream_bezel_4_0_source_left",
+      "edge_world": [
+        [
+          0.625,
+          1.7549999952316284,
+          1.0360000133514404
+        ],
+        [
+          0.625,
+          1.7549999952316284,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          1031,
+          350
+        ],
+        [
+          1030,
+          600
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 6
+    },
+    {
+      "name": "cream_bezel_4_0_source_right",
+      "edge_world": [
+        [
+          1.0549999475479126,
+          1.7549999952316284,
+          1.0360000133514404
+        ],
+        [
+          1.0549999475479126,
+          1.7549999952316284,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          1352,
+          350
+        ],
+        [
+          1351,
+          600
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 6
+    },
+    {
+      "name": "cream_bezel_0_1_source_left",
+      "edge_world": [
+        [
+          0.625,
+          -1.975000023841858,
+          1.0360000133514404
+        ],
+        [
+          0.625,
+          -1.975000023841858,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          1262,
+          350
+        ],
+        [
+          1263,
+          780
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 8
+    },
+    {
+      "name": "cream_bezel_0_1_source_right",
+      "edge_world": [
+        [
+          1.0549999475479126,
+          -1.975000023841858,
+          1.0360000133514404
+        ],
+        [
+          1.0549999475479126,
+          -1.975000023841858,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          1788,
+          350
+        ],
+        [
+          1787,
+          780
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 8
+    }
+  ],
+  "heldout_lamp": {
+    "world": [
+      0,
+      0,
+      2.555
+    ],
+    "source": [
+      854,
+      44
+    ],
+    "uncertainty_px": 12
+  },
+  "baseline_camera": {
+    "location": [
+      0.41999998688697815,
+      -3.549999952316284,
+      1.3899999856948853
+    ],
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.41999998688697815
+      ],
+      [
+        0.0,
+        0.002028420101851225,
+        -0.9999979138374329,
+        -3.549999952316284
+      ],
+      [
+        0.0,
+        0.9999979138374329,
+        0.002028420101851225,
+        1.3899999856948853
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 27.0,
+    "sensor_width": 36.0
+  },
+  "proof": "train endpoint positions located in actual door top/bottom mesh vertices to1e-6; source subsegment endpoints are NOT mapped to these 3D endpoints; fitting uses finite projected edges"
+}

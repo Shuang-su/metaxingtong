@@ -1,0 +1,1053 @@
+{
+  "protocol_file": "preregistered-protocol.json",
+  "profiles": [
+    {
+      "lens_mm": 20,
+      "pose_camera_position_then_world_to_cv_rotvec": [
+        0.3761575672734131,
+        -1.7118510864589476,
+        1.5295179350137609,
+        1.5805876610245635,
+        0.004859016443136379,
+        -0.007846351458352335
+      ],
+      "training": {
+        "mean_px": 0.5435448681234956,
+        "max_px": 0.9224121646580131,
+        "rows": [
+          {
+            "edge": "left",
+            "projected_model_finite_edge": [
+              [
+                702.6553784108538,
+                978.0082754368094
+              ],
+              [
+                699.3636170350733,
+                215.86595587047623
+              ]
+            ],
+            "depths": [
+              3.5231836958396,
+              3.4986026738914817
+            ],
+            "source_subsegment": [
+              [
+                700,
+                280
+              ],
+              [
+                703,
+                920
+              ]
+            ],
+            "residual_px": [
+              0.35937889544308177,
+              0.5951590082937069
+            ]
+          },
+          {
+            "edge": "right",
+            "projected_model_finite_edge": [
+              [
+                1008.5414161784823,
+                978.4560853861738
+              ],
+              [
+                1007.3961223459413,
+                214.53350659314634
+              ]
+            ],
+            "depths": [
+              3.515016078478709,
+              3.4904350565305906
+            ],
+            "source_subsegment": [
+              [
+                1007,
+                280
+              ],
+              [
+                1008,
+                920
+              ]
+            ],
+            "residual_px": [
+              0.49427096580553675,
+              0.4537766905215212
+            ]
+          },
+          {
+            "edge": "top",
+            "projected_model_finite_edge": [
+              [
+                699.3636170350733,
+                215.86595587047623
+              ],
+              [
+                1007.3961223459413,
+                214.53350659314634
+              ]
+            ],
+            "depths": [
+              3.4986026738914817,
+              3.4904350565305906
+            ],
+            "source_subsegment": [
+              [
+                750,
+                215
+              ],
+              [
+                960,
+                215
+              ]
+            ],
+            "residual_px": [
+              0.6469131557052112,
+              0.26147062061902016
+            ]
+          },
+          {
+            "edge": "bottom",
+            "projected_model_finite_edge": [
+              [
+                702.6553784108538,
+                978.0082754368094
+              ],
+              [
+                1008.5414161784823,
+                978.4560853861738
+              ]
+            ],
+            "depths": [
+              3.5231836958396,
+              3.515016078478709
+            ],
+            "source_subsegment": [
+              [
+                750,
+                979
+              ],
+              [
+                960,
+                979
+              ]
+            ],
+            "residual_px": [
+              0.9224121646580131,
+              0.6149774439418738
+            ]
+          }
+        ],
+        "min_depth": 3.4904350565305906
+      },
+      "nfev": 18,
+      "optimizer_success": true,
+      "jacobian_singular_values": [
+        513.0233856635047,
+        479.7808605829664,
+        147.50129767982244,
+        40.839277731734676,
+        5.8009939269301505,
+        3.881722635957996
+      ],
+      "jacobian_rank_relative1e-8": 6,
+      "jacobian_raw_condition": 132.16384419411054,
+      "optimizer_message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "lens_mm": 27,
+      "pose_camera_position_then_world_to_cv_rotvec": [
+        0.4053308794030317,
+        -2.936439320292494,
+        1.5570637886477794,
+        1.5838693800438595,
+        0.008083028468833275,
+        -0.011017313948116335
+      ],
+      "training": {
+        "mean_px": 0.5390375444940971,
+        "max_px": 0.9521793489480646,
+        "rows": [
+          {
+            "edge": "left",
+            "projected_model_finite_edge": [
+              [
+                702.6586139315212,
+                977.9571937861303
+              ],
+              [
+                699.3821066171226,
+                215.89365795331372
+              ]
+            ],
+            "depths": [
+              4.756462391982774,
+              4.72362506438045
+            ],
+            "source_subsegment": [
+              [
+                700,
+                280
+              ],
+              [
+                703,
+                920
+              ]
+            ],
+            "residual_px": [
+              0.3422637279575508,
+              0.5905687161994463
+            ]
+          },
+          {
+            "edge": "right",
+            "projected_model_finite_edge": [
+              [
+                1008.5342343766494,
+                978.5427282877326
+              ],
+              [
+                1007.3810936837168,
+                214.49843815631266
+              ]
+            ],
+            "depths": [
+              4.744191417432463,
+              4.711354089830138
+            ],
+            "source_subsegment": [
+              [
+                1007,
+                280
+              ],
+              [
+                1008,
+                920
+              ]
+            ],
+            "residual_px": [
+              0.4799519563812771,
+              0.44587773144467785
+            ]
+          },
+          {
+            "edge": "top",
+            "projected_model_finite_edge": [
+              [
+                699.3821066171226,
+                215.89365795331372
+              ],
+              [
+                1007.3810936837168,
+                214.49843815631266
+              ]
+            ],
+            "depths": [
+              4.72362506438045,
+              4.711354089830138
+            ],
+            "source_subsegment": [
+              [
+                750,
+                215
+              ],
+              [
+                960,
+                215
+              ]
+            ],
+            "residual_px": [
+              0.6643546460393707,
+              0.2869249474483909
+            ]
+          },
+          {
+            "edge": "bottom",
+            "projected_model_finite_edge": [
+              [
+                702.6586139315212,
+                977.9571937861303
+              ],
+              [
+                1008.5342343766494,
+                978.5427282877326
+              ]
+            ],
+            "depths": [
+              4.756462391982774,
+              4.744191417432463
+            ],
+            "source_subsegment": [
+              [
+                750,
+                979
+              ],
+              [
+                960,
+                979
+              ]
+            ],
+            "residual_px": [
+              0.9521793489480646,
+              0.5501792815339985
+            ]
+          }
+        ],
+        "min_depth": 4.711354089830138
+      },
+      "nfev": 24,
+      "optimizer_success": true,
+      "jacobian_singular_values": [
+        669.1298637415267,
+        609.6150423467375,
+        147.2823919868678,
+        30.157295344664302,
+        3.4321399811043274,
+        2.2109480387908955
+      ],
+      "jacobian_rank_relative1e-8": 6,
+      "jacobian_raw_condition": 302.64386679456055,
+      "optimizer_message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "lens_mm": 35,
+      "pose_camera_position_then_world_to_cv_rotvec": [
+        0.46112330467752727,
+        -4.334333272237864,
+        1.5985390194706215,
+        1.5876202976613822,
+        0.013117250260000813,
+        -0.015932445812678282
+      ],
+      "training": {
+        "mean_px": 0.5279418663965668,
+        "max_px": 1.0008280633695805,
+        "rows": [
+          {
+            "edge": "left",
+            "projected_model_finite_edge": [
+              [
+                702.6742445029959,
+                977.8710892011568
+              ],
+              [
+                699.4096492906717,
+                215.93537611639863
+              ]
+            ],
+            "depths": [
+              6.166358297470016,
+              6.124052536207862
+            ],
+            "source_subsegment": [
+              [
+                700,
+                280
+              ],
+              [
+                703,
+                920
+              ]
+            ],
+            "residual_px": [
+              0.31585606387782317,
+              0.5737051142221306
+            ]
+          },
+          {
+            "edge": "right",
+            "projected_model_finite_edge": [
+              [
+                1008.5134488851821,
+                978.6987907467358
+              ],
+              [
+                1007.3581129605742,
+                214.4414947947696
+              ]
+            ],
+            "depths": [
+              6.147709457523814,
+              6.10540369626166
+            ],
+            "source_subsegment": [
+              [
+                1007,
+                280
+              ],
+              [
+                1008,
+                920
+              ]
+            ],
+            "residual_px": [
+              0.45721793131550154,
+              0.42471281039767533
+            ]
+          },
+          {
+            "edge": "top",
+            "projected_model_finite_edge": [
+              [
+                699.4096492906717,
+                215.93537611639863
+              ],
+              [
+                1007.3581129605742,
+                214.4414947947696
+              ]
+            ],
+            "depths": [
+              6.124052536207862,
+              6.10540369626166
+            ],
+            "source_subsegment": [
+              [
+                750,
+                215
+              ],
+              [
+                960,
+                215
+              ]
+            ],
+            "residual_px": [
+              0.689950375105873,
+              0.32876354393847695
+            ]
+          },
+          {
+            "edge": "bottom",
+            "projected_model_finite_edge": [
+              [
+                702.6742445029959,
+                977.8710892011568
+              ],
+              [
+                1008.5134488851821,
+                978.6987907467358
+              ]
+            ],
+            "depths": [
+              6.166358297470016,
+              6.147709457523814
+            ],
+            "source_subsegment": [
+              [
+                750,
+                979
+              ],
+              [
+                960,
+                979
+              ]
+            ],
+            "residual_px": [
+              1.0008280633695805,
+              0.43250102894547343
+            ]
+          }
+        ],
+        "min_depth": 6.10540369626166
+      },
+      "nfev": 19,
+      "optimizer_success": true,
+      "jacobian_singular_values": [
+        852.6773789125823,
+        765.0420273139817,
+        147.214800958412,
+        23.220284013534744,
+        2.151158665956024,
+        1.3590244648497796
+      ],
+      "jacobian_rank_relative1e-8": 6,
+      "jacobian_raw_condition": 627.4187117057038,
+      "optimizer_message": "`ftol` termination condition is satisfied."
+    }
+  ],
+  "baseline_training": {
+    "mean_px": 33.149624108599426,
+    "max_px": 80.75501551321713,
+    "rows": [
+      {
+        "edge": "left",
+        "projected_model_finite_edge": [
+          [
+            710.6881938105602,
+            898.2449844867829
+          ],
+          [
+            710.4503820400312,
+            221.43183969998864
+          ]
+        ],
+        "depths": [
+          5.342707169024606,
+          5.337615762106533
+        ],
+        "source_subsegment": [
+          [
+            700,
+            280
+          ],
+          [
+            703,
+            920
+          ]
+        ],
+        "residual_px": [
+          10.470960482587483,
+          23.073556814003638
+        ]
+      },
+      {
+        "edge": "right",
+        "projected_model_finite_edge": [
+          [
+            982.9097362337084,
+            898.2449844867829
+          ],
+          [
+            982.9315892097842,
+            221.43183969998864
+          ]
+        ],
+        "depths": [
+          5.342707169024606,
+          5.337615762106533
+        ],
+        "source_subsegment": [
+          [
+            1007,
+            280
+          ],
+          [
+            1008,
+            920
+          ]
+        ],
+        "residual_px": [
+          24.070301829306615,
+          33.208463316486124
+        ]
+      },
+      {
+        "edge": "top",
+        "projected_model_finite_edge": [
+          [
+            710.4503820400312,
+            221.43183969998864
+          ],
+          [
+            982.9315892097842,
+            221.43183969998864
+          ]
+        ],
+        "depths": [
+          5.337615762106533,
+          5.337615762106533
+        ],
+        "source_subsegment": [
+          [
+            750,
+            215
+          ],
+          [
+            960,
+            215
+          ]
+        ],
+        "residual_px": [
+          6.431839699988643,
+          6.431839699988643
+        ]
+      },
+      {
+        "edge": "bottom",
+        "projected_model_finite_edge": [
+          [
+            710.6881938105602,
+            898.2449844867829
+          ],
+          [
+            982.9097362337084,
+            898.2449844867829
+          ]
+        ],
+        "depths": [
+          5.342707169024606,
+          5.342707169024606
+        ],
+        "source_subsegment": [
+          [
+            750,
+            979
+          ],
+          [
+            960,
+            979
+          ]
+        ],
+        "residual_px": [
+          80.75501551321713,
+          80.75501551321713
+        ]
+      }
+    ],
+    "min_depth": 5.337615762106533
+  },
+  "selection_rule": "Select smallest rear-door training mean Euclidean point-to-finite-edge residual; if within0.25px of best choose27, then20,then35. Never select with held-out diagnostic residual. One initial pose per profile, max300 evaluations; no profile expansion.",
+  "selected_lens_mm": 27,
+  "selected_pose": [
+    0.4053308794030317,
+    -2.936439320292494,
+    1.5570637886477794,
+    1.5838693800438595,
+    0.008083028468833275,
+    -0.011017313948116335
+  ],
+  "selected_training": {
+    "mean_px": 0.5390375444940971,
+    "max_px": 0.9521793489480646,
+    "rows": [
+      {
+        "edge": "left",
+        "projected_model_finite_edge": [
+          [
+            702.6586139315212,
+            977.9571937861303
+          ],
+          [
+            699.3821066171226,
+            215.89365795331372
+          ]
+        ],
+        "depths": [
+          4.756462391982774,
+          4.72362506438045
+        ],
+        "source_subsegment": [
+          [
+            700,
+            280
+          ],
+          [
+            703,
+            920
+          ]
+        ],
+        "residual_px": [
+          0.3422637279575508,
+          0.5905687161994463
+        ]
+      },
+      {
+        "edge": "right",
+        "projected_model_finite_edge": [
+          [
+            1008.5342343766494,
+            978.5427282877326
+          ],
+          [
+            1007.3810936837168,
+            214.49843815631266
+          ]
+        ],
+        "depths": [
+          4.744191417432463,
+          4.711354089830138
+        ],
+        "source_subsegment": [
+          [
+            1007,
+            280
+          ],
+          [
+            1008,
+            920
+          ]
+        ],
+        "residual_px": [
+          0.4799519563812771,
+          0.44587773144467785
+        ]
+      },
+      {
+        "edge": "top",
+        "projected_model_finite_edge": [
+          [
+            699.3821066171226,
+            215.89365795331372
+          ],
+          [
+            1007.3810936837168,
+            214.49843815631266
+          ]
+        ],
+        "depths": [
+          4.72362506438045,
+          4.711354089830138
+        ],
+        "source_subsegment": [
+          [
+            750,
+            215
+          ],
+          [
+            960,
+            215
+          ]
+        ],
+        "residual_px": [
+          0.6643546460393707,
+          0.2869249474483909
+        ]
+      },
+      {
+        "edge": "bottom",
+        "projected_model_finite_edge": [
+          [
+            702.6586139315212,
+            977.9571937861303
+          ],
+          [
+            1008.5342343766494,
+            978.5427282877326
+          ]
+        ],
+        "depths": [
+          4.756462391982774,
+          4.744191417432463
+        ],
+        "source_subsegment": [
+          [
+            750,
+            979
+          ],
+          [
+            960,
+            979
+          ]
+        ],
+        "residual_px": [
+          0.9521793489480646,
+          0.5501792815339985
+        ]
+      }
+    ],
+    "min_depth": 4.711354089830138
+  },
+  "training_improved_ge25percent": true,
+  "heldout_not_blind": [
+    {
+      "name": "cream_bezel_4_1_source_left",
+      "edge_world": [
+        [
+          -1.0549999475479126,
+          1.7549999952316284,
+          1.0360000133514404
+        ],
+        [
+          -1.0549999475479126,
+          1.7549999952316284,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          337,
+          350
+        ],
+        [
+          338,
+          600
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 6,
+      "projected_edge": [
+        [
+          531.7414964520926,
+          681.1346849769925
+        ],
+        [
+          529.4022630276388,
+          280.77606923402055
+        ]
+      ],
+      "depths": [
+        4.7152506536413155,
+        4.698138610463295
+      ],
+      "residual_px": [
+        192.80343672587728,
+        193.26414016711257
+      ],
+      "mean_px": 193.03378844649492,
+      "all_front_facing": true
+    },
+    {
+      "name": "cream_bezel_4_1_source_right",
+      "edge_world": [
+        [
+          -0.625,
+          1.7549999952316284,
+          1.0360000133514404
+        ],
+        [
+          -0.625,
+          1.7549999952316284,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          678,
+          350
+        ],
+        [
+          677,
+          600
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 6,
+      "projected_edge": [
+        [
+          662.720783216028,
+          681.0565500281514
+        ],
+        [
+          660.8565429943421,
+          280.25195963293936
+        ]
+      ],
+      "depths": [
+        4.710026377935555,
+        4.692914334757535
+      ],
+      "residual_px": [
+        16.81885987418515,
+        14.656072097214423
+      ],
+      "mean_px": 15.737465985699787,
+      "all_front_facing": true
+    },
+    {
+      "name": "cream_bezel_4_0_source_left",
+      "edge_world": [
+        [
+          0.625,
+          1.7549999952316284,
+          1.0360000133514404
+        ],
+        [
+          0.625,
+          1.7549999952316284,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          1031,
+          350
+        ],
+        [
+          1030,
+          600
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 6,
+      "projected_edge": [
+        [
+          1045.129922540217,
+          680.828426030261
+        ],
+        [
+          1044.6585573392506,
+          278.7217369526021
+        ]
+      ],
+      "depths": [
+        4.694839528101176,
+        4.677727484923156
+      ],
+      "residual_px": [
+        13.74210306748974,
+        15.03516196504349
+      ],
+      "mean_px": 14.388632516266615,
+      "all_front_facing": true
+    },
+    {
+      "name": "cream_bezel_4_0_source_right",
+      "edge_world": [
+        [
+          1.0549999475479126,
+          1.7549999952316284,
+          1.0360000133514404
+        ],
+        [
+          1.0549999475479126,
+          1.7549999952316284,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          1352,
+          350
+        ],
+        [
+          1351,
+          600
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 6,
+      "projected_edge": [
+        [
+          1177.2512043419313,
+          680.7496098307729
+        ],
+        [
+          1177.263178035779,
+          278.19304093089494
+        ]
+      ],
+      "depths": [
+        4.6896152523954155,
+        4.672503209217395
+      ],
+      "residual_px": [
+        174.73895772225876,
+        173.7463937545332
+      ],
+      "mean_px": 174.24267573839597,
+      "all_front_facing": true
+    },
+    {
+      "name": "cream_bezel_0_1_source_left",
+      "edge_world": [
+        [
+          0.625,
+          -1.975000023841858,
+          1.0360000133514404
+        ],
+        [
+          0.625,
+          -1.975000023841858,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          1262,
+          350
+        ],
+        [
+          1263,
+          780
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 8,
+      "projected_edge": [
+        [
+          1306.523084695391,
+          1297.750041701122
+        ],
+        [
+          1308.9147334186127,
+          -674.5639032905465
+        ]
+      ],
+      "depths": [
+        0.9654340518494654,
+        0.9483220086714449
+      ],
+      "residual_px": [
+        45.67230282820689,
+        44.15088140469012
+      ],
+      "mean_px": 44.9115921164485,
+      "all_front_facing": true
+    },
+    {
+      "name": "cream_bezel_0_1_source_right",
+      "edge_world": [
+        [
+          1.0549999475479126,
+          -1.975000023841858,
+          1.0360000133514404
+        ],
+        [
+          1.0549999475479126,
+          -1.975000023841858,
+          2.3440001010894775
+        ]
+      ],
+      "source_subsegment": [
+        [
+          1788,
+          350
+        ],
+        [
+          1787,
+          780
+        ]
+      ],
+      "identity": "conditional visible fixed frame instance, not blind holdout",
+      "source_uncertainty_px": 8,
+      "projected_edge": [
+        [
+          1953.2188210623974,
+          1300.7216329395617
+        ],
+        [
+          1967.357693438927,
+          -682.4639974257225
+        ]
+      ],
+      "depths": [
+        0.9602097761437047,
+        0.9430977329656842
+      ],
+      "residual_px": [
+        171.99250034053375,
+        169.9269219480535
+      ],
+      "mean_px": 170.95971114429364,
+      "all_front_facing": true
+    }
+  ],
+  "lamp": {
+    "projection": [
+      777.2182981216458,
+      30.656756098762514
+    ],
+    "source": [
+      854,
+      44
+    ],
+    "residual_px": 77.93248296534871,
+    "depth": 2.9278402251070585
+  },
+  "status": "conditional camera candidate eligible",
+  "limits": [
+    "Single rear plane does not establish focal-distance uniqueness",
+    "Outer tan panel-to-model whole leaf identification is a conditional hypothesis, not proved door construction",
+    "All source views previously inspected; reserved diagnostics are not blind tests",
+    "Heldout fixed-window widths and front configuration may expose incorrect shared geometry; do not use them to reverse-select focal",
+    "No geometry changes or image warp, no other camera updates"
+  ],
+  "runtime_versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "actual_render_review": "Rear plane training projection improves, but opened foreground door occludes rear door differently from source; front/right fixed frame and fixed rear widths still fail. Training line prediction did not account for foreground visibility. Conditional camera only, not improved whole-scene acceptance."
+}

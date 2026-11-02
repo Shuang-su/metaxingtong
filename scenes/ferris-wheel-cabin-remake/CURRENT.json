@@ -1,0 +1,58 @@
+{
+  "scene": "ferris-wheel-cabin",
+  "new_scene": false,
+  "remake_date": "2026-11-02",
+  "historical_R08b_recovered": false,
+  "geometry": "R04",
+  "front_camera_experiment": "R05 conditional only",
+  "source_acceptance": "FAIL",
+  "user_acceptance": false,
+  "models": {
+    "geometry_checkpoint": [
+      "models/ferris_remake_R04_material.blend",
+      "models/ferris_remake_R04_white.blend",
+      "models/ferris_remake_R04_material.glb",
+      "models/ferris_remake_R04_white.glb"
+    ],
+    "conditional_front_camera": [
+      "models/ferris_remake_R05_material.blend",
+      "models/ferris_remake_R05_white.blend",
+      "models/ferris_remake_R05_material.glb",
+      "models/ferris_remake_R05_white.glb"
+    ]
+  },
+  "main": "qa/R04-main.jpg",
+  "source_views": {
+    "front": {
+      "new_render": "renders/R05_native_material_SRC_front.png",
+      "new_white": "renders/R05_native_white_SRC_front.png",
+      "overlay": "qa/front-camera-diagnostic/R05_native_material_front_direct50.png",
+      "status": "conditional rear-door plane fit, foreground/frame failure remains",
+      "old_unchanged_comparison": "qa/R04-source-contact.jpg"
+    },
+    "bench": {
+      "render": "renders/R04_native_material_SRC_bench.png",
+      "white": "renders/R04_native_white_SRC_bench.png",
+      "overlay": "qa/R04_native_material_bench_direct50.png",
+      "reuse_basis": "R05 geometry and this camera unchanged, not newly rendered R05"
+    },
+    "corner": {
+      "render": "renders/R04_native_material_SRC_corner.png",
+      "white": "renders/R04_native_white_SRC_corner.png",
+      "overlay": "qa/R04_native_material_corner_direct50.png",
+      "reuse_basis": "R05 geometry and this camera unchanged, not newly rendered R05"
+    },
+    "high": {
+      "render": "renders/R04_native_material_SRC_high.png",
+      "white": "renders/R04_native_white_SRC_high.png",
+      "overlay": "qa/R04_native_material_high_direct50.png",
+      "reuse_basis": "R05 geometry and this camera unchanged, not newly rendered R05"
+    }
+  },
+  "inspection_contact": "qa/R04-check-contact-final.jpg",
+  "support_diagnostic": "renders/R04_DIAGNOSTIC_support_fill.png",
+  "depth": "qa/depth/report.json",
+  "next": "Confirm shared fixed-window widths/cabin depth/front door state from real source before new geometry; bounded focal trial complete, no continued blind sweep",
+  "ordinary_git_no_lfs": true,
+  "publication": "Parent normal-Git handoff and remote verification pending; local byte audit is not remote completion"
+}
