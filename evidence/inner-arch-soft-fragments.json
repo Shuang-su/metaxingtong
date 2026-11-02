@@ -1,0 +1,84 @@
+{
+  "status": "soft training contour fragments; NOT confirmed front-face plane / full circle / rigid corresponding vertices",
+  "uncertainty_native_px": {
+    "4k": 30,
+    "front": 18
+  },
+  "source_groups": {
+    "BV1gttHeGE9Z_53.951826_4k.png": {
+      "inner_upper_left_fragment": [
+        [
+          1120,
+          340
+        ],
+        [
+          1250,
+          280
+        ]
+      ],
+      "inner_right_fragment": [
+        [
+          1760,
+          340
+        ],
+        [
+          1860,
+          490
+        ],
+        [
+          1930,
+          650
+        ],
+        [
+          1945,
+          820
+        ]
+      ]
+    },
+    "BV15e4deGE1R_144.009018_1080high.png": {
+      "inner_upper_fragments": [
+        [
+          800,
+          294
+        ],
+        [
+          1040,
+          280
+        ],
+        [
+          1120,
+          307
+        ]
+      ],
+      "inner_right_fragment": [
+        [
+          1298,
+          470
+        ],
+        [
+          1330,
+          560
+        ],
+        [
+          1340,
+          650
+        ]
+      ]
+    }
+  },
+  "excluded": "No left lower connection through main side arc occlusion; no top4K beams; no accent strip; no front-foot assumption; no60s tracing due same-edge visibility ambiguity.",
+  "limitation": "Group identity inner broad marked arch likely consistent. Exact front/back thickness edge correspondence not uniquely established; use parameter candidate and report residuals as conditional. Do not force interpolated edges through gaps.",
+  "post_annotation_review": "4K upper-left samples lie near broad dark face rather than unambiguous external boundary; use ONLY region localisation, exclude as hard edge constraints. All samples remain provisional visual proposals, not calibrated edge trace.",
+  "excluded_from_hard_edge_fit": {
+    "4k_upper_left": [
+      [
+        1120,
+        340
+      ],
+      [
+        1250,
+        280
+      ]
+    ]
+  }
+}
