@@ -1,0 +1,751 @@
+{
+  "method": "world-space closed-mesh BVH overlap plus all-vertex 3-direction odd-ray containment; detects many interpenetrations, not a complete continuous collision proof",
+  "pairs": [
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "PLATFORM_BASE",
+      "triangle_overlap_count": 128,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "PLATFORM_TOP_TRIM",
+      "triangle_overlap_count": 12,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "FRAME_L",
+      "triangle_overlap_count": 13,
+      "interior_vertices": [
+        {
+          "vertices_from": "FRAME_L",
+          "inside_count": 8,
+          "max_depth_model_units": 0.037033677101135254
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "FRAME_R",
+      "triangle_overlap_count": 13,
+      "interior_vertices": [
+        {
+          "vertices_from": "FRAME_R",
+          "inside_count": 8,
+          "max_depth_model_units": 0.037033677101135254
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_L_01_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_L_01_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_L_02_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_L_02_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_L_03_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_L_03_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_R_01_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_R_01_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_R_02_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_R_02_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_R_03_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "INFERRED_CHEVRON_STAND_R_03_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_00",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_01",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_02",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_03",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_04",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_05",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_06",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_07",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_08",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_09",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_10",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_11",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_12",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_13",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_14",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_15",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_MAIN",
+      "b": "BACK_RAIL_POST_16",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "PLATFORM_BASE",
+      "b": "STAIR_FRONT_00",
+      "triangle_overlap_count": 134,
+      "interior_vertices": [
+        {
+          "vertices_from": "PLATFORM_BASE",
+          "inside_count": 25,
+          "max_depth_model_units": 0.1299847513437271
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "STAIR_FRONT_00",
+      "b": "STAIR_FRONT_01",
+      "triangle_overlap_count": 80,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "STAIR_FRONT_00",
+      "b": "OUTER_WING_L",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "STAIR_FRONT_00",
+      "b": "OUTER_WING_R",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "STAIR_FRONT_01",
+      "b": "OUTER_WING_L",
+      "triangle_overlap_count": 7,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "STAIR_FRONT_01",
+      "b": "OUTER_WING_R",
+      "triangle_overlap_count": 6,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "FRAME_L",
+      "b": "CROWN_SAUCER",
+      "triangle_overlap_count": 63,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "FRAME_R",
+      "b": "CROWN_SAUCER",
+      "triangle_overlap_count": 39,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_SAUCER",
+      "b": "CROWN_LOWER_LIP",
+      "triangle_overlap_count": 0,
+      "interior_vertices": [
+        {
+          "vertices_from": "CROWN_LOWER_LIP",
+          "inside_count": 1,
+          "max_depth_model_units": 0.019999980926513672
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_SAUCER",
+      "b": "CROWN_EDGE_TRIM",
+      "triangle_overlap_count": 33,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_MID_DISPLAY_RING",
+      "b": "INFERRED_TIE_MID_0",
+      "triangle_overlap_count": 10,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_MID_0",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005398125504143536
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_MID_DISPLAY_RING",
+      "b": "INFERRED_TIE_MID_1",
+      "triangle_overlap_count": 10,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_MID_1",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005399769870564342
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_MID_DISPLAY_RING",
+      "b": "INFERRED_TIE_MID_2",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_MID_2",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005400633090175688
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_MID_DISPLAY_RING",
+      "b": "INFERRED_TIE_MID_3",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_MID_3",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005400633090175688
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_OUTER_DISPLAY_RING",
+      "b": "INFERRED_TIE_OUTER_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_OUTER_0",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005398125504143536
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_OUTER_DISPLAY_RING",
+      "b": "INFERRED_TIE_OUTER_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_OUTER_1",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005399853107519448
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_OUTER_DISPLAY_RING",
+      "b": "INFERRED_TIE_OUTER_2",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_OUTER_2",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005399769870564342
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_OUTER_DISPLAY_RING",
+      "b": "INFERRED_TIE_OUTER_3",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_OUTER_3",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005398947396315634
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_TOP_DISPLAY_DRUM",
+      "b": "INFERRED_TIE_TOP_0",
+      "triangle_overlap_count": 10,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_TOP_0",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005400633090175688
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_TOP_DISPLAY_DRUM",
+      "b": "INFERRED_TIE_TOP_1",
+      "triangle_overlap_count": 9,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_TOP_1",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005400633090175688
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_TOP_DISPLAY_DRUM",
+      "b": "INFERRED_TIE_TOP_2",
+      "triangle_overlap_count": 10,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_TOP_2",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005400222144089639
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_TOP_DISPLAY_DRUM",
+      "b": "INFERRED_TIE_TOP_3",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_TOP_3",
+          "inside_count": 6,
+          "max_depth_model_units": 0.0005400222144089639
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_CENTRAL_BAR_03",
+      "b": "INFERRED_TIE_MID_0",
+      "triangle_overlap_count": 17,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_MID_0",
+          "inside_count": 6,
+          "max_depth_model_units": 0.016629669815301895
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_CENTRAL_BAR_03",
+      "b": "INFERRED_TIE_OUTER_0",
+      "triangle_overlap_count": 15,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_OUTER_0",
+          "inside_count": 6,
+          "max_depth_model_units": 0.016629835590720177
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_CENTRAL_BAR_09",
+      "b": "INFERRED_TIE_MID_1",
+      "triangle_overlap_count": 16,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_MID_1",
+          "inside_count": 6,
+          "max_depth_model_units": 0.016629768535494804
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_CENTRAL_BAR_09",
+      "b": "INFERRED_TIE_OUTER_1",
+      "triangle_overlap_count": 15,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_OUTER_1",
+          "inside_count": 6,
+          "max_depth_model_units": 0.016629835590720177
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_CENTRAL_BAR_15",
+      "b": "INFERRED_TIE_MID_2",
+      "triangle_overlap_count": 16,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_MID_2",
+          "inside_count": 6,
+          "max_depth_model_units": 0.016629748046398163
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_CENTRAL_BAR_15",
+      "b": "INFERRED_TIE_OUTER_2",
+      "triangle_overlap_count": 14,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_OUTER_2",
+          "inside_count": 6,
+          "max_depth_model_units": 0.016629833728075027
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_CENTRAL_BAR_21",
+      "b": "INFERRED_TIE_MID_3",
+      "triangle_overlap_count": 15,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_MID_3",
+          "inside_count": 6,
+          "max_depth_model_units": 0.016629736870527267
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CROWN_CENTRAL_BAR_21",
+      "b": "INFERRED_TIE_OUTER_3",
+      "triangle_overlap_count": 15,
+      "interior_vertices": [
+        {
+          "vertices_from": "INFERRED_TIE_OUTER_3",
+          "inside_count": 6,
+          "max_depth_model_units": 0.016629833728075027
+        }
+      ],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CHEVRON_L_01",
+      "b": "INFERRED_CHEVRON_STAND_L_01_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CHEVRON_L_02",
+      "b": "INFERRED_CHEVRON_STAND_L_02_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CHEVRON_L_03",
+      "b": "INFERRED_CHEVRON_STAND_L_03_1",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CHEVRON_R_01",
+      "b": "INFERRED_CHEVRON_STAND_R_01_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CHEVRON_R_02",
+      "b": "INFERRED_CHEVRON_STAND_R_02_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "CHEVRON_R_03",
+      "b": "INFERRED_CHEVRON_STAND_R_03_0",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_00",
+      "triangle_overlap_count": 4,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_01",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_02",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_03",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_04",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_05",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_06",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_07",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_08",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_09",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_10",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_11",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_12",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_13",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_14",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_15",
+      "triangle_overlap_count": 8,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    },
+    {
+      "a": "BACK_DISPLAY_RAIL",
+      "b": "BACK_RAIL_POST_16",
+      "triangle_overlap_count": 5,
+      "interior_vertices": [],
+      "classification": "review needed: contact and intentional joints not automatically failures"
+    }
+  ]
+}
