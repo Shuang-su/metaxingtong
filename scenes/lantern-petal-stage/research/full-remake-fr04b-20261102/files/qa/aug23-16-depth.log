@@ -1,0 +1,74 @@
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+Loading weights:   0%|          | 0/287 [00:00<?, ?it/s]Loading weights: 100%|██████████| 287/287 [00:00<00:00, 3794.82it/s]
+{
+  "model": "depth-anything/Depth-Anything-V2-Small-hf",
+  "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+  "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+  "processor_config": {
+    "_valid_processor_keys": [
+      "images",
+      "do_resize",
+      "size",
+      "keep_aspect_ratio",
+      "ensure_multiple_of",
+      "resample",
+      "do_rescale",
+      "rescale_factor",
+      "do_normalize",
+      "image_mean",
+      "image_std",
+      "do_pad",
+      "size_divisor",
+      "return_tensors",
+      "data_format",
+      "input_data_format"
+    ],
+    "do_normalize": true,
+    "do_pad": false,
+    "do_rescale": true,
+    "do_resize": true,
+    "ensure_multiple_of": 14,
+    "image_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "image_processor_type": "DPTImageProcessor",
+    "image_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "keep_aspect_ratio": true,
+    "resample": 3,
+    "rescale_factor": 0.00392156862745098,
+    "size": {
+      "height": 518,
+      "width": 518
+    },
+    "size_divisor": null
+  },
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "transformers": "5.22.1",
+    "safetensors": "0.8.0",
+    "pillow": "13.0.0",
+    "numpy": "2.5.4"
+  },
+  "device": "cpu",
+  "threads": 2,
+  "dtype": "float32",
+  "local_files_only": true,
+  "trust_remote_code": false,
+  "input_tensor_shape": [
+    1,
+    3,
+    518,
+    924
+  ],
+  "raw_output_shape": [
+    518,
+    924
+  ],
+  "inference_and_output_seconds": 3.3506667613983154
+}
