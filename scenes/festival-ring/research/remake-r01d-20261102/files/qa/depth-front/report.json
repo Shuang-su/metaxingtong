@@ -1,0 +1,142 @@
+{
+  "source": {
+    "path": "sources/BV15e4deGE1R_144.009018_1080high.png",
+    "BV": "BV15e4deGE1R",
+    "time_seconds": 144.009018,
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "crop": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "bytes": 2917162,
+    "sha256": "93b76e3057321c3f9c2aab45d2e1088b387a72e22240b061ce7b0a76d156ad69",
+    "quality": "actual1080high,4Ktarget buffering per companion-manifest; not old identical frame"
+  },
+  "model": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "license": "Apache-2.0",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0"
+    },
+    "device": "CPU",
+    "threads": 2,
+    "input_tensor": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "output_grid": [
+      518,
+      924
+    ],
+    "forward_seconds": 2.192580223083496,
+    "dtype": "float32",
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "trust_remote_code": false,
+    "safetensors_only": true,
+    "local_files_only": true
+  },
+  "range": {
+    "min": 0.0,
+    "max": 4.469479084014893,
+    "nonfinite": 0
+  },
+  "definition": "Relative inverse-depth-like learned estimate. Larger/whiter generally near; minmax per image. No absolute scale/meters or unique camera. NOT luminance grayscale.",
+  "display": "Bicubic align_corners=False upscale from model grid to source size only for display; clipped minmax, not native high-res depth; raw high-res float deliberately not duplicated",
+  "masks": {
+    "0": "unlabelled not certified valid",
+    "1": "conservative dynamic character-group rectangle includes background",
+    "2": "screen subtitle/event title uncertain region",
+    "4": "reflective stage/fish/lighting lower region; incomplete conservative exclusion",
+    "confidence-unknown": "255 entire image means no calibrated confidence provided, NOT high confidence",
+    "unmasked_issues": "light beams/sparks throughout, transparent/reflective pieces, thin rods, star identity/state unknown; no exhaustive segmentation"
+  },
+  "limits": "All three are training images from same2024event, not independent replay; source reconstruction and geometry unaccepted",
+  "outputs": [
+    {
+      "file": "confidence-unknown.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+    },
+    {
+      "file": "manual-exclusion-classes.png",
+      "bytes": 2896,
+      "sha256": "fc618f25ee509e724db908eed6716869798ff9b8fd866e16e2b53e2af5a4b086"
+    },
+    {
+      "file": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 589262,
+      "sha256": "5997b189c93aa23020c2b562f54fac035b0d8135e6ebc6fe6d199d5d6f21ca76"
+    },
+    {
+      "file": "relative-inverse-depth-gray8-resampled-display.png",
+      "bytes": 274634,
+      "sha256": "b5d3a5b0421badb5201ef690a9aaaff04588a0db88e39730ffd8eafc6621dba5"
+    },
+    {
+      "file": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "75d7eef8d1f64bc14ff99748877aee183d59b90c20afd0f264f0a096672ec27e"
+    }
+  ],
+  "visual_review": {
+    "actually_opened": true,
+    "finding": "Screen subtitle/performers polluted near depth and thin inner rods weakened; luminous frame boundaries ambiguous.",
+    "acceptance": "Inference output real; geometry/depth accuracy not validated. Per-image range cannot be compared as metric distance."
+  }
+}

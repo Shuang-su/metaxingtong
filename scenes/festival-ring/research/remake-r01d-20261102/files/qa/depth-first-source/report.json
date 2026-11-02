@@ -1,0 +1,176 @@
+{
+  "purpose": "Newly reacquired ring-stage source relative-depth analysis, not recovered original F07 or reconstruction acceptance",
+  "source": {
+    "path": "/workspace/scratch/fa58bfcf0425/metaxingtong-festival-ring-remake-20261102/sources/BV1gttHeGE9Z_53.951826_4k.png",
+    "BV": "BV1gttHeGE9Z",
+    "part": 1,
+    "time_seconds": 53.951826,
+    "size": [
+      3840,
+      2160
+    ],
+    "bytes": 8220477,
+    "sha256": "63a2fd0745a2a7623553ae53fe071511b42441b5a3e92b9c520c496436f00c11",
+    "crop": [
+      0,
+      0,
+      3840,
+      2160
+    ],
+    "provenance": "Current source owner manifest: native paused ready4 before/after same time, actual4K; existing login UI; inspected by build owner"
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "license": "apache-2.0",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "device": "cpu",
+    "threads": 4,
+    "dtype": "float32",
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "raw_shape": [
+      518,
+      924
+    ],
+    "inference_and_output_seconds": 1.884272813796997,
+    "trust_remote_code": false,
+    "weights_format": "safetensors",
+    "local_files_only": true
+  },
+  "value_definition": "Model relative inverse-depth-like prediction: larger generally nearer, not metric distance, no absolute scale/calibration. Gray white=larger/nearer; black=smaller/farther. Orientation is model convention, not image luminance.",
+  "range": {
+    "min": 0.08611806482076645,
+    "max": 7.035098552703857,
+    "nonfinite_count": 0
+  },
+  "normalization": "(raw-min)/(max-min); source-grid derived by bicubic align_corners=False; display clamp to [0,1]. Per-image normalization not cross-image distance.",
+  "mask": {
+    "manual-exclusion-classes-source-grid.png": {
+      "0": "unlabelled, NOT certified valid",
+      "1": "conservative character bounding rectangle includes nearby background",
+      "2": "upper event title uncertain graphic/text region, conservative exclusion",
+      "3": "not assigned; no certified sky segmentation",
+      "4": "conservative stage disc/reflections/projected fish and lighting region, overlaps valid platform; not exact segmentation"
+    },
+    "confidence-unknown-source-grid.png": "255 everywhere means model supplies NO calibrated confidence, not high confidence",
+    "reflection_water_transparency_lights": "Dynamic pink/orange beams cross geometry throughout frame, unsegmented and untrusted. Moving fish/sparks/reflections on stage in conservative mask4; character mask1 excludes dynamic person; all nonzero categories excluded. Star-chain identity/state unknown; no confident static correspondence. Mask coverage incomplete; 0 is not valid certificate.",
+    "occluded_hidden_geometry": "not measurable from this monocular image; no fabricated completion"
+  },
+  "limitations": [
+    "Stylized ring stage, glowing lights and moving overlays are domain-shifted",
+    "No metric truth, hidden geometry, contacts or unique cameras established",
+    "A visually plausible map does not validate object geometry",
+    "No current source reconstruction or new scene delivered by this test"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-source-grid.png",
+      "bytes": 12775,
+      "sha256": "26db83be78206117158aebbc7b81c50ae3859624b15c159bec4f8465821eb4e7",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "manual-exclusion-classes-source-grid.png",
+      "bytes": 10183,
+      "sha256": "78a8a84863836f990523fe01c4d50f26c1a9f5a85b533649e85020989168baee",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 530881,
+      "sha256": "2ce5867d34cf445268027dd4feb0ff5ce30d81b3a2ab5b85c001067aa88dbc1c",
+      "size": [
+        924,
+        518
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 582652,
+      "sha256": "d12255bf0d3b529459a48f30b255b1a6b2e764dd25a3081cfbd82a8fa7d3e575",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "496b28b9cca5bcefc2f8e8f1301327b1307f5e4c13ce710c41e6d155f6b44660",
+      "size": null
+    },
+    {
+      "path": "report.json",
+      "bytes": 5488,
+      "sha256": "af0356016183a5531cbbd4b51614dc720d0687bd9a5743c54ee102f04bda7d05",
+      "size": null
+    }
+  ],
+  "visual_review": {
+    "actual_opened": true,
+    "result": "Broad stage/background separation visible but inner circular base/top layers collapse into a single smooth patch; dark thin star chains partially lost; glowing beams/transparent effects ambiguous. Not reliable for platform step heights or arc section.",
+    "hypothesis_only": "Front huge vertical arc seems before side coarse arc, side arc before center scale arch; must verify original occlusion, not derive metric depth."
+  }
+}
