@@ -1,0 +1,21 @@
+"""Relative inverse depth aid, never metric scale or source acceptance."""
+from pathlib import Path
+import json,hashlib,time,importlib.metadata as md
+import numpy as np
+from PIL import Image,ImageDraw
+import torch
+from transformers import AutoImageProcessor,AutoModelForDepthEstimation
+R=Path(__file__).resolve().parents[1];base=Path('/workspace/scratch/fa58bfcf0425/depth-validation-20261102');out=R/'qa/depth';out.mkdir(exist_ok=True)
+source=R/'sources/BV18C3d66E17_P1_3954.958617_high.png';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(source)=='267720ff04ad31995e1d5ee9e387c9f7451d0c4daecafa2843ce0820c3395c06'
+im=Image.open(source).convert('RGB');torch.set_num_threads(2);torch.set_num_interop_threads(1)
+proc=AutoImageProcessor.from_pretrained(base/'model',local_files_only=True,trust_remote_code=False,use_fast=False);model=AutoModelForDepthEstimation.from_pretrained(base/'model',local_files_only=True,trust_remote_code=False,use_safetensors=True).eval();x=proc(images=im,return_tensors='pt');start=time.time()
+with torch.inference_mode():raw=model(**x).predicted_depth[0].cpu().numpy().astype('float32')
+np.save(out/'relative-inverse-depth-model-grid.npy',raw,allow_pickle=False);valid=np.isfinite(raw);lo=float(raw[valid].min());hi=float(raw[valid].max());Image.fromarray((np.clip((raw-lo)/(hi-lo),0,1)*65535).round().astype('uint16')).save(out/'depth16-model-grid.png')
+res=torch.nn.functional.interpolate(torch.from_numpy(raw)[None,None],size=(1080,1920),mode='bicubic',align_corners=False)[0,0].numpy();Image.fromarray((np.clip((res-lo)/(hi-lo),0,1)*255).round().astype('uint8')).save(out/'depth8-derived-source-grid.png')
+mask=Image.new('L',im.size);d=ImageDraw.Draw(mask)
+# Source-inspected broad windows, uncertain background/reflection; actor foreground overrides.
+rois=[{'class':2,'points':[(0,0),(90,0),(115,490),(0,470)]},{'class':2,'points':[(260,0),(590,0),(590,345),(290,350)]},{'class':2,'points':[(790,0),(1182,0),(1180,410),(790,410)]},{'class':2,'points':[(1315,0),(1834,0),(1835,475),(1310,475)]},{'class':1,'points':[(970,200),(1220,200),(1320,530),(1360,820),(1240,1080),(990,1080),(920,790)]}]
+for r in rois:d.polygon(r['points'],fill=r['class'])
+mask.save(out/'manual-exclusion-source-grid.png');Image.new('L',im.size,255).save(out/'confidence-unknown.png')
+report={'source':{'BV':'BV18C3d66E17','part':1,'time':3954.958617,'sha256':sha(source),'bytes':source.stat().st_size,'size':list(im.size),'crop':[0,0,1920,1080],'quality':'historical actual1080P高码率 recovered exact nativePNG'},'method':{'model':'depth-anything/Depth-Anything-V2-Small-hf','revision':json.loads((base/'model-api.json').read_text())['sha'],'weights_sha256':sha(base/'model/model.safetensors'),'config':json.loads((base/'model/preprocessor_config.json').read_text()),'versions':{k:md.version(k) for k in ['torch','transformers','safetensors','pillow','numpy']},'CPU_threads':2,'tensor_shape':list(x['pixel_values'].shape),'output_shape':list(raw.shape),'dtype':'float32','local_files_only':True,'trust_remote_code':False,'elapsed_seconds':time.time()-start},'range':{'min':lo,'max':hi,'nonfinite':int((~valid).sum())},'definition':'Model relative inverse-depth-like response; white larger/generally nearer, not brightness and not metric. No calibrated confidence.','processing':'Full source resized by logged HF processor. Raw prediction stored. Min-max normalized16bit modelgrid; bicubic align_cornersFalse derived1920x1080 only for display; no new native depth precision.','masks':{'rois':rois,'classes':{'0':'unlabelled NOT certified valid','1':'conservative character/occlusion polygon','2':'window-through exterior/sky/mountain or uncertain transparency/reflection; includes some frame boundary'},'confidence':'255 everywhere UNKNOWN, not confident','limits':'Manual broad masks not complete semantic segmentation; shiny enamel/metal elsewhere remains uncertain; hidden surfaces unobserved'},'analysis_status':'Requires visual inspection; cannot establish camera/absolute scale/contact/hidden geometry. Per-image normalization not comparable across angles.'}
+report['outputs']=[{'file':f.name,'bytes':f.stat().st_size,'sha256':sha(f)} for f in sorted(out.iterdir()) if f.is_file()];(out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report['method'],indent=2))

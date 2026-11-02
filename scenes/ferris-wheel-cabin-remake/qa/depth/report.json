@@ -1,0 +1,254 @@
+{
+  "source": {
+    "BV": "BV18C3d66E17",
+    "part": 1,
+    "time": 3954.958617,
+    "sha256": "267720ff04ad31995e1d5ee9e387c9f7451d0c4daecafa2843ce0820c3395c06",
+    "bytes": 1464302,
+    "size": [
+      1920,
+      1080
+    ],
+    "crop": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "quality": "historical actual1080P高码率 recovered exact nativePNG"
+  },
+  "method": {
+    "model": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "CPU_threads": 2,
+    "tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "output_shape": [
+      518,
+      924
+    ],
+    "dtype": "float32",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "elapsed_seconds": 3.2306199073791504
+  },
+  "range": {
+    "min": 0.0,
+    "max": 6.131716251373291,
+    "nonfinite": 0
+  },
+  "definition": "Model relative inverse-depth-like response; white larger/generally nearer, not brightness and not metric. No calibrated confidence.",
+  "processing": "Full source resized by logged HF processor. Raw prediction stored. Min-max normalized16bit modelgrid; bicubic align_cornersFalse derived1920x1080 only for display; no new native depth precision.",
+  "masks": {
+    "rois": [
+      {
+        "class": 2,
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            90,
+            0
+          ],
+          [
+            115,
+            490
+          ],
+          [
+            0,
+            470
+          ]
+        ]
+      },
+      {
+        "class": 2,
+        "points": [
+          [
+            260,
+            0
+          ],
+          [
+            590,
+            0
+          ],
+          [
+            590,
+            345
+          ],
+          [
+            290,
+            350
+          ]
+        ]
+      },
+      {
+        "class": 2,
+        "points": [
+          [
+            790,
+            0
+          ],
+          [
+            1182,
+            0
+          ],
+          [
+            1180,
+            410
+          ],
+          [
+            790,
+            410
+          ]
+        ]
+      },
+      {
+        "class": 2,
+        "points": [
+          [
+            1315,
+            0
+          ],
+          [
+            1834,
+            0
+          ],
+          [
+            1835,
+            475
+          ],
+          [
+            1310,
+            475
+          ]
+        ]
+      },
+      {
+        "class": 1,
+        "points": [
+          [
+            970,
+            200
+          ],
+          [
+            1220,
+            200
+          ],
+          [
+            1320,
+            530
+          ],
+          [
+            1360,
+            820
+          ],
+          [
+            1240,
+            1080
+          ],
+          [
+            990,
+            1080
+          ],
+          [
+            920,
+            790
+          ]
+        ]
+      }
+    ],
+    "classes": {
+      "0": "unlabelled NOT certified valid",
+      "1": "conservative character/occlusion polygon",
+      "2": "window-through exterior/sky/mountain or uncertain transparency/reflection; includes some frame boundary"
+    },
+    "confidence": "255 everywhere UNKNOWN, not confident",
+    "limits": "Manual broad masks not complete semantic segmentation; shiny enamel/metal elsewhere remains uncertain; hidden surfaces unobserved"
+  },
+  "analysis_status": "Requires visual inspection; cannot establish camera/absolute scale/contact/hidden geometry. Per-image normalization not comparable across angles.",
+  "outputs": [
+    {
+      "file": "confidence-unknown.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+    },
+    {
+      "file": "depth16-model-grid.png",
+      "bytes": 388811,
+      "sha256": "fef6eb719c8f67a555ec231692616ba13c6a34719d23e811f943d5341da4964a"
+    },
+    {
+      "file": "depth8-derived-source-grid.png",
+      "bytes": 133499,
+      "sha256": "cb6107299e9524daf838cc3e661d0fb62aaff055389efe746246f287ac9def69"
+    },
+    {
+      "file": "manual-exclusion-source-grid.png",
+      "bytes": 6008,
+      "sha256": "7ab805c61b83a6119c0c76a5c806337c85d0b2d16cec6f258e8825cd260fc693"
+    },
+    {
+      "file": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "bfe5a0c482c4610dac0cfa36eaa3b536a0cacdfe6bfd7aa815b3e600614a2180"
+    }
+  ]
+}
