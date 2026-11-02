@@ -29,3 +29,6 @@ FR05仅完成可行性分析后**拒绝几何试验**：拟扩池会把固定端
 
 ## 保存状态
 FR01、FR02、FR04b前检查点均已Space正式回读fresh clone核实。最新本地版本和最终bundle的hash以交接清单为准；最终版本还需备份owner正式回读及parent协调普通Git远端归档，不能把本地clone叫远端完成。不得给用户新ZIP。
+
+## 最后独立交付复核
+独立reviewer逐张实际查看修后16CHECK、4LOW及2contact；两张原生direct50各8,294,400像素/24,883,200RGB通道重新计算，最大误差0、异常0。双BLEND SHA与前次独立技术审查完全相同，没有在渲染时换模型。未见旧反面黑块或用整背板遮满充数。此结论仍不解除单Aug23条件机位的比例失败、Sept12未对齐、FR05未执行。详`qa/independent-review/final-delivery-review.zh.md`及可复跑QA脚本。
