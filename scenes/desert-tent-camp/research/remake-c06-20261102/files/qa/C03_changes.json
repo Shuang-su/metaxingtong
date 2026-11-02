@@ -1,0 +1,31 @@
+{
+  "stage": "C03 shared right eave conditional improvement",
+  "semantic": "T2 right OUTER roof eave, not front curtain corner",
+  "training_pixels": [
+    [
+      650,
+      244
+    ],
+    [
+      1038,
+      129
+    ]
+  ],
+  "manual_uncertainty_px": [
+    8,
+    8
+  ],
+  "fixed_source_cameras": "unchanged historical working solution, not calibrated truth",
+  "new_control_world_working_units": [
+    2.004594326019287,
+    8.358255386352539,
+    3.8939225673675537
+  ],
+  "ray_separation_working_units": 0.021894954057468698,
+  "nominal_pixel_residuals": [
+    1.004012499,
+    0.904021814
+  ],
+  "limits": "Two soft correspondences do not validate full roof or unique camera. Left eave retains failed 15/13px joint test, third not used to fit this control. Back roof unverified.",
+  "CHECK_change": "only non-source orbit widened, native source cameras unchanged"
+}
