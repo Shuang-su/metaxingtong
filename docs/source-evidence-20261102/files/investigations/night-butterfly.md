@@ -1,0 +1,4 @@
+# Night Butterfly candidate (dedup pending)
+OfficialBV1uiS7BxEXV, 星瞳_Official UID401315430 with柚恩, title【星瞳 x 柚恩】共赴甜蜜！《夜蝶》迷情！. FinalUI upload2025-11-28 23:53:27 (initialSSR22:53:27), descriptionUE5/mocap, no original live date cited. Highestmenu1080P高码率, actual1920x1080ready4.
+Observed exact pauses:2.255320 establishing front,20.035717/70.074040 frontal medium,179.153877 ceilinglowangle,220.049995 darkwide.
+Fixedfeatures: huge cyan/white star-shaped recessed angularwall; hanging white/transparentglobes surrounding瞳讯有约; right portrait+two arrows; left4 vertical roundedframe neonpictures; circularplatform; circularceilingrings withpinkpetal feature. Suspect oldKTV or dance-studio, publisher requested actual oldsource image. NOT cleared as new.220darkwide not sufficient detailedstructure; not exported as modelsource.
