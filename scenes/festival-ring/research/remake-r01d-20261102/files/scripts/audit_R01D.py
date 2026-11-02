@@ -1,0 +1,8 @@
+import bpy,bmesh,json,hashlib
+from mathutils import Vector
+from pathlib import Path
+r=Path(__file__).resolve().parents[1];o=r/'versions/R01D';bpy.ops.wm.open_mainfile(filepath=str(o/'ring-remake-R01D-material.blend'));rows=[];orig={}
+for x in bpy.context.scene.objects:
+ if x.type!='MESH':continue
+ bm=bmesh.new();bm.from_mesh(x.data);rows.append({'name':x.name,'nonmanifold':sum(not e.is_manifold for e in bm.edges),'zero_faces':sum(f.calc_area()<1e-12 for f in bm.faces),'signed_volume':bm.calc_volume(signed=True)});bm.free();orig[x.name]=[[min((x.matrix_world@Vector(v))[j] for v in x.bound_box) for j in range(3)],[max((x.matrix_world@Vector(v))[j] for v in x.bound_box) for j in range(3)]]
+bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.gltf(filepath=str(o/'ring-remake-R01D-material.glb'));new={x.name:[[min((x.matrix_world@Vector(v))[j] for v in x.bound_box) for j in range(3)],[max((x.matrix_world@Vector(v))[j] for v in x.bound_box) for j in range(3)]] for x in bpy.context.scene.objects if x.type=='MESH'};errs=[abs(orig[n][i][j]-new[n][i][j]) for n in orig if n in new for i in range(2) for j in range(3)];result={'mesh_count':len(rows),'topology':rows,'bad':[x for x in rows if x['nonmanifold'] or x['zero_faces'] or x['signed_volume']<=0],'glb_fresh_import_count':len(new),'missing':list(set(orig)-set(new)),'max_world_bounds_diff':max(errs),'limitations':'Topology/bounds only; source pose, arc foundations and arbitrary cross-object contact not validated'};(r/'qa/R01D-actual-audit.json').write_text(json.dumps(result,indent=2));print(json.dumps({k:v for k,v in result.items() if k!='topology'},indent=2))
