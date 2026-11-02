@@ -1,0 +1,159 @@
+{
+  "params_order": [
+    "azimuth4k",
+    "arch_plane_y",
+    "arch_center_z",
+    "arch_outer_radius",
+    "front_camera_D",
+    "front_camera_elevation",
+    "front_focal_px",
+    "front_principal_y"
+  ],
+  "params": [
+    -0.6758481977692318,
+    7.076022970834442,
+    3.9695685496715942,
+    5.061182005923515,
+    11.379695215569441,
+    0.06952785632511205,
+    1368.8695501891643,
+    997.0430985647835
+  ],
+  "initial": [
+    -0.7,
+    6,
+    3,
+    6,
+    10,
+    0.14,
+    1500,
+    1150
+  ],
+  "success": true,
+  "nfev": 26,
+  "cost": 0.4053552796973402,
+  "observations": {
+    "status": "soft training contour fragments; NOT confirmed front-face plane / full circle / rigid corresponding vertices",
+    "uncertainty_native_px": {
+      "4k": 30,
+      "front": 18
+    },
+    "source_groups": {
+      "BV1gttHeGE9Z_53.951826_4k.png": {
+        "inner_upper_left_fragment": [
+          [
+            1120,
+            340
+          ],
+          [
+            1250,
+            280
+          ]
+        ],
+        "inner_right_fragment": [
+          [
+            1760,
+            340
+          ],
+          [
+            1860,
+            490
+          ],
+          [
+            1930,
+            650
+          ],
+          [
+            1945,
+            820
+          ]
+        ]
+      },
+      "BV15e4deGE1R_144.009018_1080high.png": {
+        "inner_upper_fragments": [
+          [
+            800,
+            294
+          ],
+          [
+            1040,
+            280
+          ],
+          [
+            1120,
+            307
+          ]
+        ],
+        "inner_right_fragment": [
+          [
+            1298,
+            470
+          ],
+          [
+            1330,
+            560
+          ],
+          [
+            1340,
+            650
+          ]
+        ]
+      }
+    },
+    "excluded": "No left lower connection through main side arc occlusion; no top4K beams; no accent strip; no front-foot assumption; no60s tracing due same-edge visibility ambiguity.",
+    "limitation": "Group identity inner broad marked arch likely consistent. Exact front/back thickness edge correspondence not uniquely established; use parameter candidate and report residuals as conditional. Do not force interpolated edges through gaps.",
+    "post_annotation_review": "4K upper-left samples lie near broad dark face rather than unambiguous external boundary; use ONLY region localisation, exclude as hard edge constraints. All samples remain provisional visual proposals, not calibrated edge trace.",
+    "excluded_from_hard_edge_fit": {
+      "4k_upper_left": [
+        [
+          1120,
+          340
+        ],
+        [
+          1250,
+          280
+        ]
+      ]
+    }
+  },
+  "camera4k_fixed_platform": [
+    0.2322899258597054,
+    4061.057475514786,
+    1997.1509148733005,
+    1453.7915603211145,
+    4.230576484921718,
+    0.6982718933197968,
+    0.4355091408196697,
+    0.005188665769993941
+  ],
+  "working_shape": "shared circular upper arc; lower continuation inferred and not used in fitting",
+  "regularization": "weak y6/10,z3/7,R6/8,D10/20,f1500/2500; not source truth",
+  "diagnostics": [
+    {
+      "view": "4k",
+      "source_to_projected_sample_distance_px": [
+        9.239323864008318,
+        12.7663349546981,
+        10.519614250406471,
+        4.647460045461573,
+        1.5935178934655487,
+        3.8118001499945455
+      ],
+      "rms": 8.141198746206339,
+      "not_acceptance": "partial soft silhouette only, correspondence and thickness edge uncertain, no visibility-aware full contour audit"
+    },
+    {
+      "view": "front",
+      "source_to_projected_sample_distance_px": [
+        7.786605251336611,
+        4.403792709601367,
+        4.003846272975022,
+        2.077285841088928,
+        0.1641437244596675,
+        1.4973444530361217
+      ],
+      "rms": 4.136010488901173,
+      "not_acceptance": "partial soft silhouette only, correspondence and thickness edge uncertain, no visibility-aware full contour audit"
+    }
+  ]
+}
