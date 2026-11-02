@@ -1,0 +1,9 @@
+# r06 corrected material candidate — final source suite in progress
+
+Native geometry remains exactly the394-object r04 geometry; source cameras and lighting remain unchanged. R05 corrected four annular displays so letters appear only on the intended facing surfaces, not metal inner walls/caps. R06 maps both curve-band labels longitudinally, with separately chosen left/right direction so neither is mirrored. Generic DejaVu text is source-inspired, not an exact reproduction of the original Chinese artwork.
+
+Five actual low-resolution diagnostics were inspected:main front, left band, right band, crown inner wall and crown outer back. The inner wall is plain metal; outer letters and both curve-band labels read in the correct direction. Eight new elevated diagnostic camera positions avoid the earlier palm-blocked views without hiding any objects; the original/source cameras were not altered. These checks are internal diagnostics, not source/holdout views.
+
+Actual white/material GLB reimport repeated after UV/material changes:394 objects each, no missing/extra, bbox delta0, no nonmanifold or degenerate triangles after declared1e-5 model-unit seam welding for topology diagnostics. The material GLB actually contains the2 image textures2048×512 and2048×256. Native topology also remains closed/nondegenerate. White/material world-geometry hashes match exactly. All earlier failed stages remain preserved.
+
+Final native source renders, direct50% overlays, high-quality eight-angle material/white inspection and local object crops are now being generated from these new r06 files. No older r04/r05 image is relabeled as r06. Source restoration is NOT accepted:all7 frames are training/reconstruction input; no holdout/later independent replay exists. Background props, outer-stage details, precise proportions/sections, hidden support, exact PBR and state-specific lighting retain stated gaps.
