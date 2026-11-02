@@ -1,0 +1,214 @@
+{
+  "status": "PROPOSAL_ONLY_NOT_CALIBRATED",
+  "coordinate_convention": "native 1920x1080 pixels x right y down; manual approximate visible interior straight-edge segments, NOT inferred corner intersections",
+  "identity": {
+    "front": "central=M02 conditional on ordered three-cabinet assembly",
+    "oblique": "left large=M02 right=M03 left cropped=M01; relative adjacency supported, identical repeated design does not independently prove absolute slot"
+  },
+  "training_recommendation": "point-to-projected-evaluated-edge residual, not fabricated 3D point-to-point. First check edge-layer identity against actual evaluated mesh. Noncoplanar reliable points insufficient for a strong new 6DOF camera claim.",
+  "sources": [
+    {
+      "file": "BV1nxQPBkEGH_P1_2490.361500_high.png",
+      "segments": [
+        {
+          "id": "F_display_top",
+          "candidate_model_object": "M02_display",
+          "visible_segment_xy": [
+            [
+              758,
+              128
+            ],
+            [
+              1185,
+              128
+            ]
+          ],
+          "endpoint_uncertainty_px": 5,
+          "visibility": "clear central top straight stretch",
+          "note": "Exclude rounded ends; material screen boundary, not outside red frame.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        },
+        {
+          "id": "F_display_left",
+          "candidate_model_object": "M02_display",
+          "visible_segment_xy": [
+            [
+              721,
+              163
+            ],
+            [
+              721,
+              344
+            ]
+          ],
+          "endpoint_uncertainty_px": 5,
+          "visibility": "left straight edge clear",
+          "note": "Do not extrapolate to rounded upper/lower virtual corners.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        },
+        {
+          "id": "F_display_right",
+          "candidate_model_object": "M02_display",
+          "visible_segment_xy": [
+            [
+              1228,
+              164
+            ],
+            [
+              1228,
+              341
+            ]
+          ],
+          "endpoint_uncertainty_px": 6,
+          "visibility": "right outer straight edge away from central foreground",
+          "note": "Recheck any motion-blurred hand margin before final annotation.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        },
+        {
+          "id": "F_lower_bottom_left",
+          "candidate_model_object": "M02_lower_face",
+          "visible_segment_xy": [
+            [
+              658,
+              831
+            ],
+            [
+              794,
+              831
+            ]
+          ],
+          "endpoint_uncertainty_px": 6,
+          "visibility": "left lower red/gold boundary clear",
+          "note": "Central portion hidden by body/legs; do not bridge occlusion.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        },
+        {
+          "id": "F_lower_bottom_right",
+          "candidate_model_object": "M02_lower_face",
+          "visible_segment_xy": [
+            [
+              1160,
+              831
+            ],
+            [
+              1298,
+              831
+            ]
+          ],
+          "endpoint_uncertainty_px": 6,
+          "visibility": "right lower red/gold boundary clear",
+          "note": "Boundary adjacent gold plinth is not pad rear edge.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        },
+        {
+          "id": "F_plinth_bottom_right",
+          "candidate_model_object": "M02_plinth",
+          "visible_segment_xy": [
+            [
+              1158,
+              865
+            ],
+            [
+              1299,
+              865
+            ]
+          ],
+          "endpoint_uncertainty_px": 8,
+          "visibility": "right gold/base lower boundary",
+          "note": "Thin layered edge, possible shadow blend. Different y-depth from display but assumed depth in model not source-measured.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        }
+      ],
+      "excluded": "Character-covered screen center/bottom, low-panel central pattern and feet; header top outside frame. No physical character scale."
+    },
+    {
+      "file": "BV1nxQPBkEGH_P1_2560.507406_high_oblique.png",
+      "segments": [
+        {
+          "id": "O_M02_display_bottom",
+          "candidate_model_object": "M02_display",
+          "visible_segment_xy": [
+            [
+              367,
+              216
+            ],
+            [
+              704,
+              204
+            ]
+          ],
+          "endpoint_uncertainty_px": 8,
+          "visibility": "visible lower screen straight edge",
+          "note": "Approximate hand selection; needs local close refinement, rounded ends excluded.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        },
+        {
+          "id": "O_M03_display_bottom",
+          "candidate_model_object": "M03_display",
+          "visible_segment_xy": [
+            [
+              1090,
+              198
+            ],
+            [
+              1344,
+              184
+            ]
+          ],
+          "endpoint_uncertainty_px": 8,
+          "visibility": "right screen lower edge clear",
+          "note": "Upper screen partly outside image; no upper virtual corner.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        },
+        {
+          "id": "O_M02_lower_bottom",
+          "candidate_model_object": "M02_lower_face",
+          "visible_segment_xy": [
+            [
+              351,
+              612
+            ],
+            [
+              804,
+              580
+            ]
+          ],
+          "endpoint_uncertainty_px": 10,
+          "visibility": "red/gold boundary under print clear",
+          "note": "Do not confuse thin dark shadow with actual front plane intersection; approximate endpoints.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        },
+        {
+          "id": "O_M03_lower_bottom",
+          "candidate_model_object": "M03_lower_face",
+          "visible_segment_xy": [
+            [
+              1126,
+              550
+            ],
+            [
+              1450,
+              519
+            ]
+          ],
+          "endpoint_uncertainty_px": 10,
+          "visibility": "right red/gold boundary mostly clear",
+          "note": "Left end near foreground occlusion excluded; refine against full native crop before fit.",
+          "use": "candidate_training_line_not_exact_3D_point"
+        }
+      ],
+      "depth_candidate_not_training": {
+        "candidate_model_object": "M02_plinth side / body base ambiguous",
+        "approximate_region_xyxy": [
+          260,
+          575,
+          355,
+          655
+        ],
+        "reason": "Visible left side and gold base suggest depth, but rear junction vs chamfer vs side shadow not yet identified uniquely. Do not invent corner at line extrapolation. Need source close annotation plus evaluated bevel edge identity before accepting as noncoplanar constraint."
+      },
+      "excluded": "Pad rim/glass/rings held out; character occludes between machines and floor; top frame clipped."
+    }
+  ],
+  "holdout": "2570.580591_high_reverse remains excluded from pixel selection/training. Pad outer perimeter and rings in other two images excluded from train; keep for later holdout after layer identity confirmation."
+}

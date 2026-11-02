@@ -1,0 +1,245 @@
+{
+  "notes": "Annotations before optimization; repeated-slot identity conditional. Front held lower half is same edge, not independent geometry; plinth separate. Oblique lower panel edges held out independently from screen boundaries. Pad circles and reverse source not used for fitting.",
+  "views": [
+    {
+      "source": "BV1nxQPBkEGH_P1_2490.361500_high.png",
+      "initial_camera": "SRC_front",
+      "training": [
+        {
+          "id": "F_display_top",
+          "object": "M02_display",
+          "side": "top",
+          "pixels": [
+            [
+              758,
+              128
+            ],
+            [
+              1185,
+              128
+            ]
+          ],
+          "sigma": 5
+        },
+        {
+          "id": "F_display_left",
+          "object": "M02_display",
+          "side": "left",
+          "pixels": [
+            [
+              721,
+              163
+            ],
+            [
+              721,
+              344
+            ]
+          ],
+          "sigma": 5
+        },
+        {
+          "id": "F_display_right",
+          "object": "M02_display",
+          "side": "right",
+          "pixels": [
+            [
+              1228,
+              164
+            ],
+            [
+              1228,
+              341
+            ]
+          ],
+          "sigma": 6
+        },
+        {
+          "id": "F_lower_bottom_left",
+          "object": "M02_lower_face",
+          "side": "bottom",
+          "pixels": [
+            [
+              658,
+              831
+            ],
+            [
+              794,
+              831
+            ]
+          ],
+          "sigma": 6
+        }
+      ],
+      "held_out": [
+        {
+          "id": "F_lower_bottom_right",
+          "object": "M02_lower_face",
+          "side": "bottom",
+          "pixels": [
+            [
+              1160,
+              831
+            ],
+            [
+              1298,
+              831
+            ]
+          ],
+          "sigma": 6
+        },
+        {
+          "id": "F_plinth_bottom_right",
+          "object": "M02_plinth",
+          "side": "bottom",
+          "pixels": [
+            [
+              1158,
+              865
+            ],
+            [
+              1299,
+              865
+            ]
+          ],
+          "sigma": 8
+        }
+      ]
+    },
+    {
+      "source": "BV1nxQPBkEGH_P1_2560.507406_high_oblique.png",
+      "initial_camera": "SRC_oblique",
+      "training": [
+        {
+          "id": "O_M02_display_bottom",
+          "object": "M02_display",
+          "side": "bottom",
+          "pixels": [
+            [
+              367,
+              216
+            ],
+            [
+              704,
+              204
+            ]
+          ],
+          "sigma": 8
+        },
+        {
+          "id": "O_M03_display_bottom",
+          "object": "M03_display",
+          "side": "bottom",
+          "pixels": [
+            [
+              1090,
+              198
+            ],
+            [
+              1344,
+              184
+            ]
+          ],
+          "sigma": 8
+        },
+        {
+          "id": "O_M02_display_left",
+          "object": "M02_display",
+          "side": "left",
+          "pixels": [
+            [
+              318,
+              40
+            ],
+            [
+              329,
+              150
+            ]
+          ],
+          "sigma": 6
+        },
+        {
+          "id": "O_M02_display_right",
+          "object": "M02_display",
+          "side": "right",
+          "pixels": [
+            [
+              730,
+              40
+            ],
+            [
+              743,
+              150
+            ]
+          ],
+          "sigma": 6
+        },
+        {
+          "id": "O_M03_display_left",
+          "object": "M03_display",
+          "side": "left",
+          "pixels": [
+            [
+              1037,
+              40
+            ],
+            [
+              1050,
+              150
+            ]
+          ],
+          "sigma": 6
+        },
+        {
+          "id": "O_M03_display_right",
+          "object": "M03_display",
+          "side": "right",
+          "pixels": [
+            [
+              1374,
+              40
+            ],
+            [
+              1389,
+              150
+            ]
+          ],
+          "sigma": 6
+        }
+      ],
+      "held_out": [
+        {
+          "id": "O_M02_lower_bottom",
+          "object": "M02_lower_face",
+          "side": "bottom",
+          "pixels": [
+            [
+              351,
+              612
+            ],
+            [
+              804,
+              580
+            ]
+          ],
+          "sigma": 10
+        },
+        {
+          "id": "O_M03_lower_bottom",
+          "object": "M03_lower_face",
+          "side": "bottom",
+          "pixels": [
+            [
+              1126,
+              550
+            ],
+            [
+              1450,
+              519
+            ]
+          ],
+          "sigma": 10
+        }
+      ]
+    }
+  ]
+}
