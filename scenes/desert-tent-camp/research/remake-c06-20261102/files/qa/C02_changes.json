@@ -1,0 +1,95 @@
+{
+  "stage": "new remake C02, C01 failures retained",
+  "changes": [
+    "B01 centreY +.25 historical working-box origin correction; body top .456 meets lid base, no sourcecam change",
+    {
+      "object": "T01_roof_0",
+      "apex_vertices_before": 289,
+      "after": 273
+    },
+    {
+      "object": "T01_roof_1",
+      "apex_vertices_before": 289,
+      "after": 273
+    },
+    {
+      "object": "T01_roof_2",
+      "apex_vertices_before": 289,
+      "after": 273
+    },
+    {
+      "object": "T01_roof_3",
+      "apex_vertices_before": 289,
+      "after": 273
+    },
+    {
+      "object": "T01_roof_4",
+      "apex_vertices_before": 289,
+      "after": 273
+    },
+    {
+      "object": "T01_roof_5",
+      "apex_vertices_before": 289,
+      "after": 273
+    },
+    {
+      "object": "C01_side_hem",
+      "fix": "weld existing cap rings; no holes filled"
+    },
+    {
+      "object": "C01_side_hem.001",
+      "fix": "weld existing cap rings; no holes filled"
+    },
+    {
+      "object": "L01_handle",
+      "fix": "weld existing cap rings; no holes filled"
+    },
+    {
+      "object": "T01_guy_rope",
+      "fix": "weld existing cap rings; no holes filled"
+    },
+    {
+      "assembly": "P01",
+      "old_min_z": 0.23195961117744446,
+      "shift_z": -0.23195961117744446
+    },
+    {
+      "object": "C01_cross_A",
+      "lower_cap_centre_z": 0.021081768377456643,
+      "upper_endpoint_unchanged": [
+        -1.3139474391937256,
+        0.6120085716247559,
+        0.4799998998641968
+      ]
+    },
+    {
+      "object": "C01_cross_B",
+      "lower_cap_centre_z": 0.01363620491567989,
+      "upper_endpoint_unchanged": [
+        -1.714707612991333,
+        1.21016526222229,
+        1.119999885559082
+      ]
+    },
+    {
+      "object": "C01_cross_A.001",
+      "lower_cap_centre_z": 0.021081767845195665,
+      "upper_endpoint_unchanged": [
+        -0.566251814365387,
+        1.1129589080810547,
+        0.4799998998641968
+      ]
+    },
+    {
+      "object": "C01_cross_B.001",
+      "lower_cap_centre_z": 0.01363620894313704,
+      "upper_endpoint_unchanged": [
+        -0.9670120477676392,
+        1.7111157178878784,
+        1.119999885559082
+      ]
+    }
+  ],
+  "source_cameras": "unchanged",
+  "source_acceptance": "FAIL/PENDING"
+}
