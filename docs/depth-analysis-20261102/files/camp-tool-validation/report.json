@@ -1,0 +1,175 @@
+{
+  "purpose": "Historical native camp source used ONLY for depth software validation, not Nov2 new scene or reconstruction acceptance",
+  "source": {
+    "path": "/workspace/scratch/fa58bfcf0425/metaxingtong-recovery-20261030/recovered-source-candidates/camp/BV169Y96rEo1_P1_1566.095177.png",
+    "BV": "BV169Y96rEo1",
+    "part": 1,
+    "time_seconds": 1566.095177,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 3202090,
+    "sha256": "947229e1fc963f73b47468f371083fe876f0dcf6458b43f0623fbb7b59c2fc7b",
+    "crop": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "provenance": "Recovered Issue 85-87 native source record; source hash rechecked now, login/decoder evidence historical not repeated"
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "license": "apache-2.0",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "device": "cpu",
+    "threads": 4,
+    "dtype": "float32",
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "raw_shape": [
+      518,
+      924
+    ],
+    "trust_remote_code": false,
+    "weights_format": "safetensors",
+    "local_files_only": true,
+    "inference_and_output_seconds": 1.66668701171875
+  },
+  "value_definition": "Model relative inverse-depth-like prediction: larger generally nearer, not metric distance, no absolute scale/calibration. Gray white=larger/nearer; black=smaller/farther. Orientation is model convention, not image luminance.",
+  "range": {
+    "min": 0.0,
+    "max": 8.15842056274414,
+    "nonfinite_count": 0
+  },
+  "normalization": "(raw-min)/(max-min); source-grid derived by bicubic align_corners=False; display clamp to [0,1]. Per-image normalization not cross-image distance.",
+  "mask": {
+    "manual-exclusion-classes-source-grid.png": {
+      "0": "unlabelled, NOT certified valid",
+      "1": "conservative character bounding rectangle includes nearby background",
+      "2": "subtitle screen overlay rectangle",
+      "3": "approximate sky polygon; manually inspected boundary uncertain"
+    },
+    "confidence-unknown-source-grid.png": "255 everywhere means model supplies NO calibrated confidence, not high confidence",
+    "reflection_water_transparency_lights": "No confidently identified water/reflection region; absence not certified. Tent/canvas/translucency, vegetation boundaries, fog/background and shadows need caution. Manual masks not exhaustive.",
+    "occluded_hidden_geometry": "not measurable from this monocular image; no fabricated completion"
+  },
+  "limitations": [
+    "Stylized rendered landscape is domain-shifted",
+    "No metric truth, hidden geometry, contacts or unique cameras established",
+    "A visually plausible map does not validate object geometry",
+    "No current source reconstruction or new scene delivered by this test"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-source-grid.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "manual-exclusion-classes-source-grid.png",
+      "bytes": 5226,
+      "sha256": "5e3ae393692ed65983f004fd02e49e9425fea52be6275d2f4610285277673d0a",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 424770,
+      "sha256": "ceca4ee1d4d77c6a9cf8088dbfd8e1d39b9b9bcfe95b604b8920ec07e27f7f0e",
+      "size": [
+        924,
+        518
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 145091,
+      "sha256": "92795c41690cc6e5da4d48448b19b27f683cfcd628ade44f23cbf25b27fc6aae",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "e345edb39ff2740317c144e52695d5c147774705d99c4fc2dbf92d3daf57d416",
+      "size": null
+    },
+    {
+      "path": "relative-inverse-depth-resampled-source-grid.npy",
+      "bytes": 8294528,
+      "sha256": "41ab8645d8398561ce463296d63f2e7beaaf049ea65260d0b54bd00e1e08a065",
+      "size": null
+    }
+  ],
+  "visual_review": {
+    "inspected": "actual native source and actual resampled gray output",
+    "finding": "Foreground road generally brighter and far cliffs dark, but far canyon compressed with little depth discrimination; screen subtitle erroneously appears near and character predictions cannot anchor static scene geometry. Tent surface shading not treated as physical depth truth.",
+    "acceptance": "Software inference and output encoding passed; depth accuracy unvalidated without truth and multi-view checks."
+  }
+}
