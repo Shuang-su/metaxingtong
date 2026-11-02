@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/metaxingtong-red-moon-remake-20261102/scripts/build_R01.py", line 47, in <module>
+    stage=extrude_xy('STAGE_shared_rounded_lobes',poly,.13,.24,sand);stage['evidence']='visible rounded lateral lobes, thickness conditional; front tongue and rear connections inferred, no visible frame-edge cap claim'
+  File "/workspace/scratch/fa58bfcf0425/metaxingtong-red-moon-remake-20261102/scripts/build_R01.py", line 33, in extrude_xy
+    o=extrude_xz(n,poly,0,t,m)
+  File "/workspace/scratch/fa58bfcf0425/metaxingtong-red-moon-remake-20261102/scripts/build_R01.py", line 30, in extrude_xz
+    ids=[lookup[tuple(v)] for v in tri];fs.append(tuple(reversed(ids)));fs.append(tuple(i+k for i in ids))
+                ~~~~~^^^
+TypeError: 'int' object is not iterable
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender').
+Blender 4.3.2
+
+Blender quit
