@@ -1,0 +1,30 @@
+{
+  "stage": "R02 frozen assembly desk review, not pixel-fit acceptance",
+  "shelf": {
+    "z_min": 0.8175,
+    "z_max": 0.8625,
+    "y_front": -0.38,
+    "y_back": 0.12
+  },
+  "lower_red_panel": {
+    "z_min": 0.16,
+    "z_max": 0.86,
+    "front_y": -0.085
+  },
+  "new_lower_print": {
+    "front_y": [
+      -0.088,
+      -0.086
+    ],
+    "maximum_z_nominal": 0.804,
+    "top_clearance_to_shelf_bottom_nominal": 0.0135
+  },
+  "prop_support": {
+    "feet_bottom": 0.8625,
+    "shelf_top": 0.8625,
+    "bbox_contact_test": "previous actual Blender audit gap0"
+  },
+  "inference": "New printed marks do not geometrically intersect shelf by nominal z. Shelf overlaps underlying structural panel top intentionally. From high inspection angles the forward overhang can occlude/cast shadow on print. This is not evidence that all source overhang depth is correct.",
+  "source_inspection": "2490.361500 native: prop sits above lower-red-face cap; continuous horizontal ledge exists. Source low/oblique show ledge but precise depth is not metric-measured; character and reflection occlude portions.",
+  "action": "Do not hide shelf, relocate print to expose all, or claim contact audit proves visual layering. Inspect close projection against sources before a justified depth edit. Preserve R02."
+}
