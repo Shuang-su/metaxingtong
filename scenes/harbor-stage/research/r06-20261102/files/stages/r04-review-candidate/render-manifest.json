@@ -1,0 +1,563 @@
+[
+  {
+    "output": "source-renders/preview-front/material.png",
+    "input": "stages/r04-review-candidate/harbor-r04-material.blend",
+    "input_sha256": "6c9fdd89f526a6d5d4d2a7df5de28bd015edb4b937fe6c69476c83c48ca6dccb",
+    "camera": "SOURCE_PREVIEW_FRONT_CONDITIONAL",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "engine": "CYCLES",
+    "samples": 96,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "main source-camera native render; all-input fit, no holdout",
+    "seconds": 95.37828369900035,
+    "bytes": 3399520,
+    "sha256": "7a24b23c4ea24ee124acdc2731e5379e3cbfd8861d6a43ce59b19ddb40daf1f9",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.008695329539477825,
+        -0.9999622106552124,
+        -22.0
+      ],
+      [
+        0.0,
+        0.9999622106552124,
+        0.008695329539477825,
+        3.200000047683716
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 37.0,
+    "shift": [
+      -0.015625,
+      -0.012000000104308128
+    ]
+  },
+  {
+    "output": "checks/white/check-01.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_01_000",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "arbitrary azimuth white geometry inspection; not a source camera",
+    "seconds": 39.472805303000314,
+    "bytes": 726593,
+    "sha256": "4c690f613cb733aa5220e791176a010e1a2e9cb861f36f3b5ff946b0bb78cb23",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        1.0,
+        -2.1168350931703704e-17,
+        5.745695134722347e-17,
+        1.16341447025124e-15
+      ],
+      [
+        6.123234924670329e-17,
+        0.3457053303718567,
+        -0.9383431077003479,
+        -19.0
+      ],
+      [
+        2.7760098085122454e-24,
+        0.9383431077003479,
+        0.3457053303718567,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 38.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/check-02.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_02_045",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "arbitrary azimuth white geometry inspection; not a source camera",
+    "seconds": 13.600508451000678,
+    "bytes": 683856,
+    "sha256": "b17f9209c21833e2ebe7a458f5c6e1de6d445aaee0110cd14f63ff1d8aef8a79",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        0.7071067690849304,
+        -0.2444506585597992,
+        0.6635087728500366,
+        13.435029029846191
+      ],
+      [
+        0.7071067690849304,
+        0.244450643658638,
+        -0.6635087728500366,
+        -13.435029029846191
+      ],
+      [
+        -2.8147741915063307e-09,
+        0.9383431077003479,
+        0.34570541977882385,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 38.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/check-03.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_03_090",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "arbitrary azimuth white geometry inspection; not a source camera",
+    "seconds": 13.597656255000402,
+    "bytes": 680808,
+    "sha256": "8bf1dbf65dcd3c125657858f2723bc8c340fdf065fc151ef2351df19ace98983",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        -2.821299744937278e-07,
+        -0.3457050919532776,
+        0.9383432269096375,
+        19.0
+      ],
+      [
+        1.0,
+        -3.265288484044504e-08,
+        2.8863820489277714e-07,
+        0.0
+      ],
+      [
+        -6.914408601232935e-08,
+        0.9383432269096375,
+        0.3457050919532776,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 38.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/check-04.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_04_135",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "arbitrary azimuth white geometry inspection; not a source camera",
+    "seconds": 13.260952970999824,
+    "bytes": 689208,
+    "sha256": "4a54ea453b3f0673edaa76ab45ff1ba59fb3d2994eae337d8135b92369ac992d",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        -0.7071069478988647,
+        -0.24445044994354248,
+        0.6635086536407471,
+        13.435029029846191
+      ],
+      [
+        0.7071065902709961,
+        -0.24445053935050964,
+        0.6635090112686157,
+        13.435029029846191
+      ],
+      [
+        -2.7590600026883294e-08,
+        0.9383431673049927,
+        0.34570521116256714,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 38.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/check-05.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_05_180",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "arbitrary azimuth white geometry inspection; not a source camera",
+    "seconds": 14.019884483999704,
+    "bytes": 676998,
+    "sha256": "264a280a6d524e6d9ae8174d03ae490c39a158bd68ec7ad74dce0c8507f9f7d0",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        -1.0,
+        4.67521523717096e-08,
+        1.1039166025739178e-07,
+        1.16341447025124e-15
+      ],
+      [
+        8.742277657347586e-08,
+        -0.34570541977882385,
+        0.9383431077003479,
+        19.0
+      ],
+      [
+        8.203255674743559e-08,
+        0.9383431077003479,
+        0.34570541977882385,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 38.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/check-06.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_06_225",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "arbitrary azimuth white geometry inspection; not a source camera",
+    "seconds": 14.595518748000359,
+    "bytes": 676895,
+    "sha256": "30ef47e4f87b08142de792acdfcec1edbf9d36f9ab8fc7b95012fe68a40d1159",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        -0.7071069478988647,
+        0.24445044994354248,
+        -0.6635086536407471,
+        -13.435029029846191
+      ],
+      [
+        -0.7071065902709961,
+        -0.24445053935050964,
+        0.6635090112686157,
+        13.435029029846191
+      ],
+      [
+        2.7590600026883294e-08,
+        0.9383431673049927,
+        0.34570521116256714,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 38.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/check-07.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_07_270",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "arbitrary azimuth white geometry inspection; not a source camera",
+    "seconds": 13.204561302999537,
+    "bytes": 678791,
+    "sha256": "140231ed56246276758f2e8d7cb499fed810af216514ae4dd3edbc318efdd9d2",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        -2.821299744937278e-07,
+        0.3457050919532776,
+        -0.9383432269096375,
+        -19.0
+      ],
+      [
+        -1.0,
+        -3.265288484044504e-08,
+        2.8863820489277714e-07,
+        2.32682894050248e-15
+      ],
+      [
+        6.914408601232935e-08,
+        0.9383432269096375,
+        0.3457050919532776,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 38.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/check-08.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_08_315",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "arbitrary azimuth white geometry inspection; not a source camera",
+    "seconds": 13.531209178999234,
+    "bytes": 699936,
+    "sha256": "86eb261c9ecfbdb6ac6a9cc5b8bdb17b3676ddd7b7ef3bf52d9a6a8905c5a2cc",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        0.7071067690849304,
+        0.2444506585597992,
+        -0.6635087728500366,
+        -13.435029029846191
+      ],
+      [
+        -0.7071067690849304,
+        0.244450643658638,
+        -0.6635087728500366,
+        -13.435029029846191
+      ],
+      [
+        2.8147741915063307e-09,
+        0.9383431077003479,
+        0.34570541977882385,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 38.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/CHECK_LOW_CONTACT.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_LOW_CONTACT",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "extra low/contact or environment diagnostic",
+    "seconds": 12.99762095999995,
+    "bytes": 699919,
+    "sha256": "593378fb7ccb2d5b0f013547376284e5f5b28a59e70b8a869f4a6fb70eccfc8b",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.14026612043380737,
+        -0.9901138544082642,
+        -11.0
+      ],
+      [
+        0.0,
+        0.9901138544082642,
+        -0.14026612043380737,
+        1.100000023841858
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 25.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "output": "checks/white/CHECK_ENVIRONMENT_OVERVIEW.png",
+    "input": "stages/r04-review-candidate/harbor-r04-white.blend",
+    "input_sha256": "d325bf3763ee5e7f84df10b260e0cf82afc24b5f13400cebda8b7abd850bb2da",
+    "camera": "CHECK_ENVIRONMENT_OVERVIEW",
+    "dimensions": [
+      960,
+      600
+    ],
+    "engine": "BLENDER_EEVEE_NEXT",
+    "samples": 32,
+    "blender_threads": 6,
+    "mesa_LP_NUM_THREADS": 6,
+    "role": "extra low/contact or environment diagnostic",
+    "seconds": 11.288680782000483,
+    "bytes": 622163,
+    "sha256": "a00fb412ac1ef0d73f8594c221a2e0f0e9d25264dc9f4a5b86664e8bfa460b27",
+    "geometry_state": "r04; shared all cameras",
+    "lighting_material_state": "canonical teal; same state for every material source camera; white is diagnostic shader replacement",
+    "camera_matrix_world": [
+      [
+        0.8661856055259705,
+        -0.19860048592090607,
+        0.45856335759162903,
+        30.0
+      ],
+      [
+        0.499722421169281,
+        0.3442407548427582,
+        -0.7948432564735413,
+        -44.0
+      ],
+      [
+        6.223825010920336e-08,
+        0.9176361560821533,
+        0.3974215090274811,
+        30.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens": 40.0,
+    "shift": [
+      0.0,
+      0.0
+    ]
+  }
+]

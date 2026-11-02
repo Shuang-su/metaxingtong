@@ -1,7 +1,7 @@
 from PIL import Image,ImageDraw,ImageFont
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];T=R/'textures'
-font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+font=str(T/'fonts/DejaVuSans-Bold.ttf')
 im=Image.new('RGB',(2048,256),(3,115,132));d=ImageDraw.Draw(im)
 for x in range(0,2048,8):d.line((x,0,x,256),fill=(7,140,155),width=1)
 for y in range(0,256,8):d.line((0,y,2048,y),fill=(7,140,155),width=1)
