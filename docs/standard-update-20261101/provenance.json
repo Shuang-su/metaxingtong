@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "prepared_at_utc": "2026-11-01T05:51:18.012103+00:00",
+  "upstream_base_commit": "6ad31e4b2fe8398060c33de20fc09f5edad427a7",
+  "upstream_baseline_blob": "528f758aad5bb7af152c002f88b9d1f9fe62c8b5",
+  "concurrent_upstream_standard_change": false,
+  "independent_history_branch": "history/reconstruction-standard-original-20261101-v3",
+  "independent_history": [
+    {
+      "commit": "7cd82cbff9a6c744a349ddb7a325f8156a799ad7",
+      "tree": "d81c766644e206fe164864eb10f20873b82d13f6",
+      "parents": [],
+      "author_date": "2026-11-01T14:40:38+09:00",
+      "committer_date": "2026-11-01T14:40:38+09:00",
+      "subject": "Record exact remotely read standard as local editing baseline, not upstream history",
+      "raw_commit_sha256": "ea6b051324dabc36b720878e2c17995f4bf58b8d29a02ae7a5e6974005a2f702",
+      "standard_git_blob": "528f758aad5bb7af152c002f88b9d1f9fe62c8b5",
+      "standard_sha256": "9d01c8f08266ab1f7c7c3affdb33e15c2f2ea4520d3fd64c5debe343c3bccb60"
+    },
+    {
+      "commit": "22cf9265fb14b7a14d9d960d4ed950f0bf5e682a",
+      "tree": "04e51ed54ce0539e512f31167cbef1475c29fcb4",
+      "parents": [
+        "7cd82cbff9a6c744a349ddb7a325f8156a799ad7"
+      ],
+      "author_date": "2026-11-01T14:40:55+09:00",
+      "committer_date": "2026-11-01T14:40:55+09:00",
+      "subject": "Add temporary Space model backup, ordinary Git only, and relative-depth evidence requirements",
+      "raw_commit_sha256": "6b40f7b0bf6fba9a43246aec4417c7c5b654f659825ab0b8c54c82fc114084ff",
+      "standard_git_blob": "de92483f9e735bdbc256dfbad58ddc67d539a8d1",
+      "standard_sha256": "da12c4f315084ce7bb6a13b382d858424f2cd15231d0a88e1fd8afe5b1096136"
+    },
+    {
+      "commit": "c64b4e26813dc73f07b2976466950add3c059c4e",
+      "tree": "6dcb26be57efc78c9f8b91c7c1914edbe08178e7",
+      "parents": [
+        "22cf9265fb14b7a14d9d960d4ed950f0bf5e682a"
+      ],
+      "author_date": "2026-11-01T14:41:47+09:00",
+      "committer_date": "2026-11-01T14:41:47+09:00",
+      "subject": "Allow cloud Codex only for authorized file handoff and normal Git publishing; Space optional",
+      "raw_commit_sha256": "7ad1c90c7e8f83bb055507a1dec390a574fd41940e6b357e54ec4acac0748850",
+      "standard_git_blob": "0f1042bc5378d8cba912911ab06b4d6225171664",
+      "standard_sha256": "750e2cc0388f9843061470892649de83b2fdbd901fbccbac21142c78c1437e02"
+    },
+    {
+      "commit": "278332f1d073c1b2201dd2ef92544dca3f768631",
+      "tree": "3851b5730cceafeb709a995985dd277fa650d217",
+      "parents": [
+        "c64b4e26813dc73f07b2976466950add3c059c4e"
+      ],
+      "author_date": "2026-11-01T14:43:01+09:00",
+      "committer_date": "2026-11-01T14:43:01+09:00",
+      "subject": "Use actual Space attachment limits and distinguish remote byte clone from local-only copies",
+      "raw_commit_sha256": "5b790727cd8a7833b8c15c2897fd90e5bb8ce5cdb299e5a1424514263ff02881",
+      "standard_git_blob": "2828618bce769c32621e6220c4b98a28ec637088",
+      "standard_sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e"
+    }
+  ],
+  "inputs": [
+    {
+      "library_file_id": "libfile_95fb30a17f588191a22c99187e7c7120",
+      "file_id": "file_00000000465881f5ad869a842b0b2cb6",
+      "file_name": "metaxingtong-standard-update-20261101-v3.bundle",
+      "expected_size_bytes": 14237,
+      "current_version_number": 0,
+      "actual_size_bytes": 14237,
+      "sha256": "a4958c96bca0729bfba1b19508f6f50324d66e29f79cfe4889ab349fc884bed3",
+      "verified": true
+    },
+    {
+      "library_file_id": "libfile_5ef38936c94c8191aba7faa157cce159",
+      "file_id": "file_0000000061c081f599ddf54d5e5638fa",
+      "file_name": "metaxingtong-standard-update-20261101-v3-manifest.json",
+      "expected_size_bytes": 699,
+      "current_version_number": 0,
+      "actual_size_bytes": 699,
+      "sha256": "234980c063975d50dcbdefdb013d791f0847f166ebda493570381f63e1fd0c2a",
+      "verified": true
+    },
+    {
+      "library_file_id": "libfile_0884350a30ac81919187d9929e05445e",
+      "file_id": "file_0000000004ac81f5a341f83a94b89e4c",
+      "file_name": "metaxingtong-standard-update-20261101-v3.md",
+      "expected_size_bytes": 24445,
+      "current_version_number": 0,
+      "actual_size_bytes": 24445,
+      "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e",
+      "verified": true
+    }
+  ],
+  "normal_upstream_stage_commits": [
+    {
+      "original_independent_commit": "22cf9265fb14b7a14d9d960d4ed950f0bf5e682a",
+      "normal_upstream_commit": "1c13f8ee41d559f3ddfc1f2365c88219c312061e",
+      "standard_sha256": "da12c4f315084ce7bb6a13b382d858424f2cd15231d0a88e1fd8afe5b1096136"
+    },
+    {
+      "original_independent_commit": "c64b4e26813dc73f07b2976466950add3c059c4e",
+      "normal_upstream_commit": "0b3cadf591ddad1fda47f3d0e2ca217c87a7fc11",
+      "standard_sha256": "750e2cc0388f9843061470892649de83b2fdbd901fbccbac21142c78c1437e02"
+    }
+  ],
+  "final_stage_mapping": "the commit containing this provenance file carries Original-Independent-Commit: 278332f1d073c1b2201dd2ef92544dca3f768631",
+  "final_standard_path": "docs/reconstruction-standard.md",
+  "final_standard_bytes": 24445,
+  "final_standard_sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e",
+  "patch_evidence": {
+    "file": "standard-v3-from-original-baseline.patch",
+    "bytes": 9835,
+    "sha256": "1d0aea775ce2690b9b70a4ef57b6a3231690078b311f68db7bc6249d66278efe",
+    "method": "derived using git diff of original independent baseline and v3; exact size/hash matches supplied original manifest, not separately downloaded"
+  },
+  "modeling_rendering_depth_estimation_performed": false,
+  "space_cleanup_performed": false,
+  "lfs_used": false
+}
