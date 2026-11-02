@@ -1,0 +1,22 @@
+{
+  "source_sha256": "1c57b0168550801451a9c3667586125c9e338cbe6fd2dabf640ea4a2221cd20a",
+  "source_size": [
+    3840,
+    2160
+  ],
+  "formula": "floor((source_uint16+render_uint16)/2), every RGB channel every pixel",
+  "results": {
+    "material": {
+      "equal_all_pixels_all_rgb": true,
+      "max_channel_error": 0,
+      "mismatch_channel_count": 0,
+      "tested_pixels": 8294400
+    },
+    "white": {
+      "equal_all_pixels_all_rgb": true,
+      "max_channel_error": 0,
+      "mismatch_channel_count": 0,
+      "tested_pixels": 8294400
+    }
+  }
+}
