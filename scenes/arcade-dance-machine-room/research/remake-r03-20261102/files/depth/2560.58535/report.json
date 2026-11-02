@@ -1,0 +1,216 @@
+{
+  "purpose": "Nov2 remake of historical arcade, NOT a new scene; monocular depth diagnostic only",
+  "source": {
+    "path": "/workspace/scratch/fa58bfcf0425/recovered-source-candidates/arcade/BV1nxQPBkEGH_P1_2560.58535.png",
+    "BV": "BV1nxQPBkEGH",
+    "part": 1,
+    "time_seconds": 2560.58535,
+    "size_wh": [
+      1920,
+      1080
+    ],
+    "sha256": "53091d7dc360b76e0db749671bd29c9dcee7ec9b5710e69359351cce5055a67e",
+    "bytes": 2428514,
+    "crop": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "provenance": "Recovered historical native frame; original source hash checked; no fresh login/quality verification"
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "license": "apache-2.0",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "format": "safetensors",
+    "device": "cpu",
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "torch_threads": 2,
+    "interop_threads": 1,
+    "dtype": "float32",
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "model_grid_hw": [
+      518,
+      924
+    ],
+    "derived_aligned_wh": [
+      1920,
+      1080
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "inference_seconds": 2.913691997528076
+  },
+  "values": {
+    "min": 0.4772772490978241,
+    "max": 7.1775665283203125,
+    "nonfinite": 0,
+    "definition": "relative inverse-depth-like model prediction; white larger generally nearer, not meters or calibrated disparity",
+    "normalization": "Per-image min/max; images not quantitatively comparable. Original model-grid float32 retained. Source-aligned float32/gray derived by bicubic align_corners=False, no extra native detail."
+  },
+  "mask": {
+    "bit1": "manual conservative actor bbox incl background, not instance segmentation",
+    "bit2": "manual reflective dance pads/floor or claw glass; overlap allowed, not exhaustive",
+    "bit4": "manual emissive screens/control regions; screen scene content NOT physical depth",
+    "bit8": "20px frame-edge caution strip; does not represent hidden off-frame geometry",
+    "zero": "unlabelled NOT certified valid",
+    "confidence": "255 everywhere is UNKNOWN; model gives no calibrated confidence",
+    "occluded_hidden": "unknown, not inferred completion; printed static poster silhouette not a moving actor"
+  },
+  "outputs": [
+    {
+      "path": "confidence-UNKNOWN-255-source-grid.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6",
+      "size_wh": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "gray16-model-grid.png",
+      "bytes": 379371,
+      "sha256": "9d92101cbc149f18afced334099aa97d66bf31b2c0cbfbc30263d585269f5792",
+      "size_wh": [
+        924,
+        518
+      ]
+    },
+    {
+      "path": "gray8-derived-source-grid.png",
+      "bytes": 111036,
+      "sha256": "9223b83d047d710cb8fba59e947b845dc8d55e07c8c28ddce6798f4c45c37b0a",
+      "size_wh": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "manual-warning-bitmask-source-grid.png",
+      "bytes": 7219,
+      "sha256": "f0d6e064a2e18e02b9c7198ebf29e1b32d0b6545580d03efb15eb7746fb1719b",
+      "size_wh": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "mask-character-conservative.png",
+      "bytes": 3549,
+      "sha256": "7b7fbd95f20a8f3b9ef2ded05856f94ef9a578d79b56b06ac0d30ef3130f2584",
+      "size_wh": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "mask-emissive-screen-controls.png",
+      "bytes": 3132,
+      "sha256": "7274f5d74cb7ebfc4df3209c0fe3ea5a9c66f14bb510662630adc119f09c4c92",
+      "size_wh": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "mask-frame-border-uncertain.png",
+      "bytes": 4285,
+      "sha256": "22a8aa0047998b17c56274e920d3f90d57f2a7613f461f750332d019449350be",
+      "size_wh": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "mask-reflective-surface.png",
+      "bytes": 5684,
+      "sha256": "0a6d48c120d9691e27c8e2f6fd9a0f31b596652ad93422391ebe0cb940e53fff",
+      "size_wh": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-derived-source-grid.npy",
+      "bytes": 8294528,
+      "sha256": "09c3601f0074a57e2c29b730d702ef97295210d3117555285506b32556881dd3",
+      "size_wh": null
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "87d871ea60007f9dcbe75ddd784b43183a9be883a796f1b6b0167ebc1cf4b4c4",
+      "size_wh": null
+    },
+    {
+      "path": "source-depth-warning-contact.jpg",
+      "bytes": 73718,
+      "sha256": "f476f3f7184e080650b191cffeaa65df0a2570f474e392f2e1f90d1071bbf6bf",
+      "size_wh": [
+        1440,
+        432
+      ]
+    }
+  ]
+}
