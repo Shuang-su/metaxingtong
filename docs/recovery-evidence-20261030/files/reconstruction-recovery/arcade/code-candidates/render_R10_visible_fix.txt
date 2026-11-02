@@ -1,0 +1,4 @@
+Visible later replacement (not executed during recovery):
+OLD: s.cycles.samples=int(os.environ.get('R10_SAMPLES','12'));
+NEW: s.cycles.samples=int(os.environ.get('R10_SAMPLES','12'));s.cycles.samples=max(8,s.cycles.samples//2) if variant in ['WHITE','STRESS_A','STRESS_B'] and os.environ.get('R10_PREFIX')=='final' else s.cycles.samples;
+Observed final run used R10_PERCENT=100 R10_SAMPLES=24 R10_PREFIX=final; WHITE/STRESS therefore 12 samples. BASE/BEFORE 24. Original final-stage file bytes/hash unavailable; keep initial visible script and observed edit separately.

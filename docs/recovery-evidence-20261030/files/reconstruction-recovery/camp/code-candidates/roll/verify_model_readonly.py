@@ -1,0 +1,7 @@
+import bpy,json,hashlib
+from pathlib import Path
+from mathutils import Vector
+r=Path('/workspace/shared/desert-camp-build-20261031/scenes/desert-tent-camp');out=Path(__file__).resolve().parent
+bpy.ops.wm.open_mainfile(filepath=str(r/'models/R07_camp_materials.blend'));bpy.context.view_layer.update();o=bpy.data.objects['P03_rear_crate'];mi=[min(v.co[i] for v in o.data.vertices) for i in range(3)];ma=[max(v.co[i] for v in o.data.vertices) for i in range(3)];actual={'B1':list(o.matrix_world@Vector((mi[0],mi[1],ma[2]))),'B2':list(o.matrix_world@Vector((ma[0],mi[1],ma[2])))}
+def cams():return {n:{'matrix':[list(row) for row in bpy.data.objects[n].matrix_world],'lens':bpy.data.objects[n].data.lens,'sensor_width':bpy.data.objects[n].data.sensor_width} for n in ['SOURCE_CONDITIONAL_1','SOURCE_CONDITIONAL_2']}
+a=cams();record={'read_only':True,'model_sha256':hashlib.sha256((r/'models/R07_camp_materials.blend').read_bytes()).hexdigest(),'actual_mesh_nominal_anchors':actual};j=json.load(open(r/'qa/R07_actual_model_anchor_check.json'));expected={a['id']:a['xyz'] for a in j['anchors']};record['max_anchor_coordinate_difference']=max(abs(v-expected[n][i]) for n,p in actual.items() for i,v in enumerate(p));bpy.ops.wm.open_mainfile(filepath=str(r/'models/R06_camp_materials.blend'));record['source1_source2_cameras_unchanged_vs_R06']=a==cams();record['source1_source2_cameras']=a;(out/'readonly_model_verification.json').write_text(json.dumps(record,indent=2));print(record['max_anchor_coordinate_difference'],record['source1_source2_cameras_unchanged_vs_R06'])
