@@ -1,0 +1,159 @@
+{
+  "purpose": "Nov2 remake source spatial-layer hypothesis aid, NOT new scene or source acceptance",
+  "source": {
+    "path": "sources/BV169Y96rEo1_P1_1570.44087.png",
+    "BV": "BV169Y96rEo1",
+    "part": 1,
+    "time_seconds": 1570.44087,
+    "size": [
+      1920,
+      1080
+    ],
+    "bytes": 3151148,
+    "sha256": "9c9715e240152f88b254353f63918da47104014668667e749a9b1db486d93b02",
+    "crop": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "provenance": "exact recovered old native source; login/decoder evidence historical, not recaptured"
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "device": "cpu",
+    "threads": 2,
+    "dtype": "float32",
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "raw_shape": [
+      518,
+      924
+    ],
+    "runtime_seconds": 2.521428346633911,
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "script_sha256": "e4708c8f7b2ebd727e9f3ec3f6475014a2fb8fe481e63bd22503ae09a5c874b4"
+  },
+  "value_definition": "relative inverse-depth-like, larger usually nearer, near bright; not metric depth or luminance",
+  "range": {
+    "min": 0.0,
+    "max": 6.677347660064697,
+    "nonfinite_count": 0,
+    "resampled_min": -0.23792029917240143,
+    "resampled_max": 6.680363655090332
+  },
+  "normalization": "per-frame (raw-min)/(max-min); gray16 original MODEL grid; source-grid float/gray8 are bicubic align_corners=False resampled derivatives, not independent native-resolution estimates; values across frames not absolute comparable",
+  "mask": {
+    "classes": {
+      "0": "unlabelled NOT certified valid",
+      "1": "conservative character rectangle including background",
+      "2": "subtitle overlay rectangle when present",
+      "3": "approximate sky polygon when confidently located"
+    },
+    "confidence": "255 everywhere means unknown model confidence, NOT high confidence",
+    "geometry": "occluded/hidden surfaces are not measured; vegetation, canvas translucency/shadows, reflective cup/lantern, glowing background and far haze remain unreliable; no water region confidently identified, no claimed absence",
+    "person_roi": [
+      875,
+      325,
+      1240,
+      1055
+    ],
+    "subtitle_roi": null
+  },
+  "limitations": [
+    "Stylized CGI domain shift",
+    "Not unique camera, scale, contact, hidden shape or acceptance evidence",
+    "Manual masks conservative/incomplete; unlabeled pixels are not valid by default",
+    "Reused historical frame; not independent later replay"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-source-grid.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+    },
+    {
+      "path": "manual-exclusion-classes-source-grid.png",
+      "bytes": 3581,
+      "sha256": "24ae197e62519c722aa4820c4937154a78da22e2aa2714189c1face05420ca7d"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 435192,
+      "sha256": "234f7d9abbd7b6f9006627e0c26e785c893168cbbff0ed596366cbb212c4375a"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 153806,
+      "sha256": "f8f1e2f5f49ebe9551e9c315d3f2711843ff6f1b4965d0a4d42b801ea4c6feec"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "c961276fcc4cba73ae324e19bc78d2cadf8d86d73f758fc08d6c5507224b8351"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-source-grid.npy",
+      "bytes": 8294528,
+      "sha256": "ea56dc5bc8e4445e51b42b904e8b5f90d5e627a597ac241f3004bd6e86abbf93"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "purpose": "within-frame layering hypothesis only, not metric depth/contact/hidden geometry or camera truth",
+  "all_three_same_replay": true,
+  "new_scene": false,
+  "confidence": "unknown, not estimated calibrated confidence",
+  "cross_frame_normalized_values_not_comparable": true,
+  "roi_selection": "manual conservative interior samples from named observed objects, not source segmentation or truth",
+  "frames": [
+    {
+      "time": "1541.38851",
+      "source_sha": "a6ade8c81a8bfdb6b0d26e5b8e3ec44496c5e9f95ceb8e16a56c7fe170080b24",
+      "raw_grid_shape": [
+        518,
+        924
+      ],
+      "finite": true,
+      "roi_stats": {
+        "front_box": {
+          "source_grid_roi": [
+            365,
+            690,
+            445,
+            725
+          ],
+          "unlabelled_sample_count": 2800,
+          "median_relative_inverse": 3.371724843978882,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        },
+        "rear_crate": {
+          "source_grid_roi": [
+            375,
+            500,
+            425,
+            560
+          ],
+          "unlabelled_sample_count": 3000,
+          "median_relative_inverse": 2.5280795097351074,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        },
+        "tent_front": {
+          "source_grid_roi": [
+            450,
+            300,
+            535,
+            425
+          ],
+          "unlabelled_sample_count": 10625,
+          "median_relative_inverse": 2.248154640197754,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        }
+      },
+      "ordering_front_rear_tent": true,
+      "files": [
+        {
+          "path": "depth/1541.38851/confidence-unknown-source-grid.png",
+          "bytes": 4270,
+          "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+        },
+        {
+          "path": "depth/1541.38851/manual-exclusion-classes-source-grid.png",
+          "bytes": 4432,
+          "sha256": "965ab638705d156abd1ca7eccf9494c42ef5f925bd6ba4feac6e439e0681abd0"
+        },
+        {
+          "path": "depth/1541.38851/relative-inverse-depth-gray16-model-grid.png",
+          "bytes": 446161,
+          "sha256": "5d5ead50b72f9e976436d7c56e87bd8ef2a7363403d093c5c2b304a5065d8800"
+        },
+        {
+          "path": "depth/1541.38851/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "bytes": 163162,
+          "sha256": "d74df9a8a2f93ff5835c5844745a772a34a02d093409cc8ee85bab2466438030"
+        },
+        {
+          "path": "depth/1541.38851/relative-inverse-depth-model-grid.npy",
+          "bytes": 1914656,
+          "sha256": "7abfa38c4db088a743d99295f4dcb2ddb69590a6338e0f231bfc04017d930735"
+        },
+        {
+          "path": "depth/1541.38851/relative-inverse-depth-resampled-source-grid.npy",
+          "bytes": 8294528,
+          "sha256": "56e69f7df607e921e8608ca78f694cd3e4ca9bc54d556bafd8b76fc602e9a058"
+        },
+        {
+          "path": "depth/1541.38851/report.json",
+          "bytes": 4962,
+          "sha256": "0ebec7c2b9ed15fd5b718d2ec441225266d8f51f71fecce6a0ec8fba20a30ec9"
+        }
+      ],
+      "used_as_geometry_fit": false
+    },
+    {
+      "time": "1570.44087",
+      "source_sha": "9c9715e240152f88b254353f63918da47104014668667e749a9b1db486d93b02",
+      "raw_grid_shape": [
+        518,
+        924
+      ],
+      "finite": true,
+      "roi_stats": {
+        "front_box": {
+          "source_grid_roi": [
+            665,
+            550,
+            735,
+            580
+          ],
+          "unlabelled_sample_count": 2100,
+          "median_relative_inverse": 2.7245607376098633,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        },
+        "rear_crate": {
+          "source_grid_roi": [
+            775,
+            365,
+            810,
+            410
+          ],
+          "unlabelled_sample_count": 1575,
+          "median_relative_inverse": 1.707338571548462,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        },
+        "tent_front": {
+          "source_grid_roi": [
+            890,
+            180,
+            980,
+            285
+          ],
+          "unlabelled_sample_count": 9450,
+          "median_relative_inverse": 1.5785106420516968,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        }
+      },
+      "ordering_front_rear_tent": true,
+      "files": [
+        {
+          "path": "depth/1570.44087/confidence-unknown-source-grid.png",
+          "bytes": 4270,
+          "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+        },
+        {
+          "path": "depth/1570.44087/manual-exclusion-classes-source-grid.png",
+          "bytes": 3581,
+          "sha256": "24ae197e62519c722aa4820c4937154a78da22e2aa2714189c1face05420ca7d"
+        },
+        {
+          "path": "depth/1570.44087/relative-inverse-depth-gray16-model-grid.png",
+          "bytes": 435192,
+          "sha256": "234f7d9abbd7b6f9006627e0c26e785c893168cbbff0ed596366cbb212c4375a"
+        },
+        {
+          "path": "depth/1570.44087/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "bytes": 153806,
+          "sha256": "f8f1e2f5f49ebe9551e9c315d3f2711843ff6f1b4965d0a4d42b801ea4c6feec"
+        },
+        {
+          "path": "depth/1570.44087/relative-inverse-depth-model-grid.npy",
+          "bytes": 1914656,
+          "sha256": "c961276fcc4cba73ae324e19bc78d2cadf8d86d73f758fc08d6c5507224b8351"
+        },
+        {
+          "path": "depth/1570.44087/relative-inverse-depth-resampled-source-grid.npy",
+          "bytes": 8294528,
+          "sha256": "ea56dc5bc8e4445e51b42b904e8b5f90d5e627a597ac241f3004bd6e86abbf93"
+        },
+        {
+          "path": "depth/1570.44087/report.json",
+          "bytes": 4914,
+          "sha256": "c94ebc6f9f8eb096cd1c13f1fa495d9a11c88306997984408bc7c5c273deb000"
+        }
+      ],
+      "used_as_geometry_fit": false
+    },
+    {
+      "time": "1566.095177",
+      "source_sha": "947229e1fc963f73b47468f371083fe876f0dcf6458b43f0623fbb7b59c2fc7b",
+      "raw_grid_shape": [
+        518,
+        924
+      ],
+      "finite": true,
+      "roi_stats": {
+        "front_box": {
+          "source_grid_roi": [
+            195,
+            705,
+            270,
+            740
+          ],
+          "unlabelled_sample_count": 2625,
+          "median_relative_inverse": 3.4986608028411865,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        },
+        "rear_crate": {
+          "source_grid_roi": [
+            90,
+            565,
+            130,
+            615
+          ],
+          "unlabelled_sample_count": 2000,
+          "median_relative_inverse": 3.1014256477355957,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        },
+        "tent_front": {
+          "source_grid_roi": [
+            165,
+            390,
+            240,
+            490
+          ],
+          "unlabelled_sample_count": 7500,
+          "median_relative_inverse": 2.5441417694091797,
+          "limits": "unlabelled is not certified valid; source-grid samples are bicubic derived"
+        }
+      },
+      "ordering_front_rear_tent": true,
+      "files": [
+        {
+          "path": "depth/1566.095177/confidence-unknown-source-grid.png",
+          "bytes": 4270,
+          "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+        },
+        {
+          "path": "depth/1566.095177/manual-exclusion-classes-source-grid.png",
+          "bytes": 5226,
+          "sha256": "5e3ae393692ed65983f004fd02e49e9425fea52be6275d2f4610285277673d0a"
+        },
+        {
+          "path": "depth/1566.095177/relative-inverse-depth-gray16-model-grid.png",
+          "bytes": 424770,
+          "sha256": "ceca4ee1d4d77c6a9cf8088dbfd8e1d39b9b9bcfe95b604b8920ec07e27f7f0e"
+        },
+        {
+          "path": "depth/1566.095177/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "bytes": 145091,
+          "sha256": "92795c41690cc6e5da4d48448b19b27f683cfcd628ade44f23cbf25b27fc6aae"
+        },
+        {
+          "path": "depth/1566.095177/relative-inverse-depth-model-grid.npy",
+          "bytes": 1914656,
+          "sha256": "e345edb39ff2740317c144e52695d5c147774705d99c4fc2dbf92d3daf57d416"
+        },
+        {
+          "path": "depth/1566.095177/relative-inverse-depth-resampled-source-grid.npy",
+          "bytes": 8294528,
+          "sha256": "41ab8645d8398561ce463296d63f2e7beaaf049ea65260d0b54bd00e1e08a065"
+        },
+        {
+          "path": "depth/1566.095177/report.json",
+          "bytes": 5919,
+          "sha256": "e43d496bddd17432042a95dcb278e4b0f2a15030626bfb94030228588dddfa48"
+        }
+      ],
+      "used_as_geometry_fit": false
+    }
+  ]
+}
