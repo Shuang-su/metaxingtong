@@ -1,0 +1,210 @@
+{
+  "status": "Independent native-source visual review only; no camera/model fitting, Blender or production edits.",
+  "date": "2026-11-02",
+  "source_identity": "Same BV169Y96rEo1 P1 replay, same double-strapped rolled cloth object. Not a new/later replay.",
+  "sufficient_for": "Small shared-object conditional silhouette/tilt correction with source cameras and all other objects frozen; test both images simultaneously and retain uncertainty.",
+  "insufficient_for": [
+    "Unique length/radius/3D cap-center",
+    "Measured ground contact",
+    "Rigid vertex triangulation from silhouette extrema or band midpoints",
+    "Independent source acceptance"
+  ],
+  "shared_end_identity": "Upper end is identifiable as the same free rounded end above the upper strap in both frames. Its visible arc is view-dependent, so matching arc samples one-to-one is invalid. Lower end remains partially occluded in both.",
+  "suggested_C06_protocol": "Treat outline distance or region occupancy and broad axis direction as soft evidence, not exact 3D correspondences. Keep cameras/other props fixed. Preserve C05 comparison and report new geometry as a conditional candidate. Avoid restoring an elevated false bottom merely to align top. Ground support is a separate inferred constraint and may require joint center/tilt/length adjustment, not entire-group translation.",
+  "annotation_legend": {
+    "cyan": "visible upper external outline approximate samples ±5px",
+    "yellow": "visible strap extent cues ±6px",
+    "magenta": "soft midpoint cue ±8px and connecting direction, NOT measured axis",
+    "red": "occluded/uncertain lower zone; no true bottom inferred"
+  },
+  "records": [
+    {
+      "time_seconds": 1541.38851,
+      "name": "BV169Y96rEo1_P1_1541.38851.png",
+      "crop": [
+        100,
+        440,
+        280,
+        630
+      ],
+      "upper_outline": [
+        [
+          181,
+          473
+        ],
+        [
+          198,
+          468
+        ],
+        [
+          218,
+          472
+        ],
+        [
+          238,
+          482
+        ],
+        [
+          250,
+          496
+        ],
+        [
+          249,
+          508
+        ]
+      ],
+      "upper_band_visible_endpoints": [
+        [
+          165,
+          501
+        ],
+        [
+          237,
+          528
+        ]
+      ],
+      "upper_band_soft_midpoint": [
+        201,
+        514
+      ],
+      "lower_band_visible_endpoints": [
+        [
+          139,
+          562
+        ],
+        [
+          207,
+          581
+        ]
+      ],
+      "lower_band_soft_midpoint": [
+        173,
+        570
+      ],
+      "lower_visible_cloth_region": [
+        132,
+        565,
+        197,
+        602
+      ],
+      "uncertain_lower_occlusion_zone": [
+        127,
+        584,
+        207,
+        617
+      ],
+      "source_sha256": "a6ade8c81a8bfdb6b0d26e5b8e3ec44496c5e9f95ceb8e16a56c7fe170080b24",
+      "source_size": [
+        1920,
+        1080
+      ],
+      "uncertainty_pixels": {
+        "upper_silhouette_samples": 5,
+        "visible_band_extrema": 6,
+        "soft_midpoints": 8,
+        "lower_region_boundary": 8
+      },
+      "semantics": {
+        "upper_outline": "Hand-observed external soft-cloth silhouette, NOT cap-plane perimeter or material-matched vertices across views. Approximate polyline, not pixel segmentation.",
+        "bands": "Same upper/lower red straps identified across views. Listed endpoints are visible silhouette/curve extrema, NOT identical material points across views.",
+        "soft_midpoints": "2D cue formed from visible band extent, may be biased by perspective/curvature; NOT measured 3D axis projections. Use only low-weight direction/region evidence.",
+        "lower_region": "Visible cloth only. True end-cap center, lowest point and ground contact obscured by grass/chair/rope; unknown, no extrapolated corner."
+      },
+      "annotation": "camp-remake-20261102-source-audit/roll_annotated_1541.38851.png"
+    },
+    {
+      "time_seconds": 1570.44087,
+      "name": "BV169Y96rEo1_P1_1570.44087.png",
+      "crop": [
+        550,
+        305,
+        710,
+        465
+      ],
+      "upper_outline": [
+        [
+          624,
+          333
+        ],
+        [
+          635,
+          329
+        ],
+        [
+          651,
+          334
+        ],
+        [
+          668,
+          343
+        ],
+        [
+          676,
+          354
+        ],
+        [
+          675,
+          365
+        ]
+      ],
+      "upper_band_visible_endpoints": [
+        [
+          614,
+          355
+        ],
+        [
+          667,
+          378
+        ]
+      ],
+      "upper_band_soft_midpoint": [
+        640,
+        366
+      ],
+      "lower_band_visible_endpoints": [
+        [
+          590,
+          408
+        ],
+        [
+          639,
+          430
+        ]
+      ],
+      "lower_band_soft_midpoint": [
+        614,
+        419
+      ],
+      "lower_visible_cloth_region": [
+        584,
+        415,
+        633,
+        443
+      ],
+      "uncertain_lower_occlusion_zone": [
+        579,
+        430,
+        642,
+        456
+      ],
+      "source_sha256": "9c9715e240152f88b254353f63918da47104014668667e749a9b1db486d93b02",
+      "source_size": [
+        1920,
+        1080
+      ],
+      "uncertainty_pixels": {
+        "upper_silhouette_samples": 5,
+        "visible_band_extrema": 6,
+        "soft_midpoints": 8,
+        "lower_region_boundary": 8
+      },
+      "semantics": {
+        "upper_outline": "Hand-observed external soft-cloth silhouette, NOT cap-plane perimeter or material-matched vertices across views. Approximate polyline, not pixel segmentation.",
+        "bands": "Same upper/lower red straps identified across views. Listed endpoints are visible silhouette/curve extrema, NOT identical material points across views.",
+        "soft_midpoints": "2D cue formed from visible band extent, may be biased by perspective/curvature; NOT measured 3D axis projections. Use only low-weight direction/region evidence.",
+        "lower_region": "Visible cloth only. True end-cap center, lowest point and ground contact obscured by grass/chair/rope; unknown, no extrapolated corner."
+      },
+      "annotation": "camp-remake-20261102-source-audit/roll_annotated_1570.44087.png"
+    }
+  ]
+}
