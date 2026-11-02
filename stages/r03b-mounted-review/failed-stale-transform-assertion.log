@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/metaxingtong-harbor-candidate-20261102/scripts/fix_r03b_mounts.py", line 26, in <module>
+    after=snapshot();changed={k for k in before if before[k]!=after[k]};assert changed==allowed,(changed,allowed)
+                                                                               ^^^^^^^^^^^^^^^^
+AssertionError: ({'UMBRELLA_L_POLE', 'UMBRELLA_R_POLE'}, {'SURFBOARD_0', 'UMBRELLA_L_POLE', 'SURFBOARD_2', 'SURFBOARD_1', 'UMBRELLA_R_POLE'})
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/metaxingtong-harbor-candidate-20261102/stages/r03-source-review/harbor-r03-review-white.blend"
+
+Blender quit
