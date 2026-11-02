@@ -1,0 +1,22 @@
+{
+  "stage": "R04 geometry/unaligned-source checkpoint",
+  "new_scene_count": 0,
+  "old_scene_remake": true,
+  "historical_R08b_original_recovered": false,
+  "models": 4,
+  "native_renders_1920x1080": 10,
+  "native_direct50_overlays": 8,
+  "ordinary_inspection_views": 10,
+  "extra_diagnostic_fill_view": 1,
+  "geometry": "conditional engineering checks pass as detailed; subgrid corner seam / untested hinge sweep remain",
+  "source": "FAIL: shared dimensions/instance arrangement and hand cameras mismatch four source frames",
+  "user_accepted": false,
+  "visual_review": {
+    "four_source_contact": "Actual reviewed: front rear-window widths/front-door angle inconsistent; bench/high pillar/window distribution and seating differ; corner wall turn mismatched; gray exterior unbuilt; not hidden by character omissions.",
+    "check_contact": "10 views show finite shell/door/seat/ceiling; 8 directional views meaningful; no per-view geometry hiding.",
+    "support_diagnostic": "Actual rendered with declared added fill; fixed foot touches ground and apron; support shape remains inferred not source truth.",
+    "render_quality": "No OIDN, raw24sample color/12sample white visibly noisy, not upscaled or AI corrected."
+  },
+  "next": "Single preregistered bounded front-camera diagnostic, fixed shared geometry; not a scene calibration promise",
+  "publication": "Local Git only by this owner; remote pending parent normal-Git handoff; Space interim R03 exists"
+}

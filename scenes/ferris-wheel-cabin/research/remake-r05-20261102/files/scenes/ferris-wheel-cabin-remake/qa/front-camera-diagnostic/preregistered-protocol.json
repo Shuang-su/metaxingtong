@@ -1,0 +1,63 @@
+{
+  "stage": "PRE_REGISTERED before optimizer execution",
+  "scope": "One conditional camera-only front diagnosis; R04 shared geometry fixed; no source warp; all frames previously viewed so NOT blind test",
+  "focal_profiles_mm": [
+    20,
+    27,
+    35
+  ],
+  "intrinsic_assumption": "36mm sensor width, fixed principal point960/540 and square pixels; 27 is old hand estimate not verified camera",
+  "selection": "Select smallest rear-door training mean Euclidean point-to-finite-edge residual; if within0.25px of best choose27, then20,then35. Never select with held-out diagnostic residual. One initial pose per profile, max300 evaluations; no profile expansion.",
+  "train_identity_hypothesis": "Visible tan central closed-door panel outer edge corresponds to entire reconstructed rear leaf outer face, not merely an applied trim panel; identity/extent uncertain. No rounded tangent correspondence.",
+  "training_source_subsegments": {
+    "left": [
+      [
+        700,
+        280
+      ],
+      [
+        703,
+        920
+      ]
+    ],
+    "right": [
+      [
+        1007,
+        280
+      ],
+      [
+        1008,
+        920
+      ]
+    ],
+    "top": [
+      [
+        750,
+        215
+      ],
+      [
+        960,
+        215
+      ]
+    ],
+    "bottom": [
+      [
+        750,
+        979
+      ],
+      [
+        960,
+        979
+      ]
+    ]
+  },
+  "source_uncertainty_px": {
+    "left": 4,
+    "right": 4,
+    "top": 4,
+    "bottom": 8
+  },
+  "model_expected_face": "rear door leaf inward visible y1.79; x[-.505,.505],z[.05,2.56], to be verified against actual mesh bounds before fitting",
+  "heldout_not_blind": "Rear fixed cream window visible straight vertical subsegments; front right fixed window edges; ceiling lamp. These will NOT enter training/profile selection. Same-instance assignments conditional; near doorangle and cabin depth inferred.",
+  "acceptance": "Report peredge residual, matrix, Jacobian rank/conditioning and focal/depth ambiguity. Store candidate camera only if training improves by>=25% against current27mm pose and all train projection points remain front-facing; it remains conditional not scene calibration. Independent shared geometry and other3 source cameras untouched."
+}
