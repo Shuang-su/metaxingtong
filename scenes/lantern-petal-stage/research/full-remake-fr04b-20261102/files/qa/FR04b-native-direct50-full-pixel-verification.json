@@ -1,0 +1,31 @@
+{
+  "native_source_sha256": "132e5e81aebb54073485e53b8d040fa5b433ef5424f8459c08c62ae7b6133f45",
+  "size": [
+    3840,
+    2160
+  ],
+  "source_resized_or_warped": false,
+  "model": "FR04b face-winding-corrected material/white",
+  "source_condition": "f4000 fixed illustrative circle training, NOT calibration; scene radial mismatch FAIL",
+  "native_samples": 4,
+  "denoise": false,
+  "exposure": -1.3,
+  "results": {
+    "material": {
+      "pixel_count": 8294400,
+      "formula": "floor((sourceRGB+renderRGB)/2)",
+      "max_error": 0,
+      "mismatch_channels": 0,
+      "render_sha256": "e3b8c2d834e085ae8584c8b0e33da244d6c05be95653172a61235d142460e0bf",
+      "overlay_sha256": "0cfe5697f39adcd452d02cd6b7606311ed458c6df02d3463fc1fde2eb7985658"
+    },
+    "white": {
+      "pixel_count": 8294400,
+      "formula": "floor((sourceRGB+renderRGB)/2)",
+      "max_error": 0,
+      "mismatch_channels": 0,
+      "render_sha256": "50bcf5dbce4ab6e49030461c73517da8879c0e080152cb5556e1e353825e9ca3",
+      "overlay_sha256": "91571e414d1e32880a29f7631fcc420625277b8ba98e91cc0171897ea1a77f3d"
+    }
+  }
+}
