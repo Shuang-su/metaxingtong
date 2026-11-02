@@ -1,0 +1,77 @@
+{
+  "purpose": "supplementary manually marked uncertainty, does not alter or replace original method outputs/hashes",
+  "classes": {
+    "0": "unlabelled, NOT certified safe",
+    "4": "conservative lantern/cup region: possible optical/reflection/material sensitivity, not assertion of transparent or reflective material",
+    "5": "conservative tent-cloth/shadow region: uncertain apparent shape from material/shadows; may include neighboring objects/background"
+  },
+  "basis": "visual inspection of the same native source images; broad image ROIs, not segmentation, not confidence",
+  "water": "no confidently identified water patch; absence not certified",
+  "occlusion": "original character mask excludes person-dominated region; hidden geometry behind any occluder remains unknown and is never estimated as visible evidence",
+  "roi_depth_stats": "existing median samples were only layering hypotheses; these material uncertainty regions further prevent treating them as validated metric/geometry measurements",
+  "files": [
+    {
+      "time": "1541.38851",
+      "source_sha256": "a6ade8c81a8bfdb6b0d26e5b8e3ec44496c5e9f95ceb8e16a56c7fe170080b24",
+      "path": "depth/1541.38851/supplementary-material-uncertainty-source-grid.png",
+      "bytes": 3419,
+      "sha256": "eb2243464d8c93217eaf3997ead395db435064555fd18613a58f5f46b1adbee2",
+      "rectangles": {
+        "small_optical_props": [
+          350,
+          600,
+          445,
+          685
+        ],
+        "cloth_shadow": [
+          0,
+          45,
+          900,
+          625
+        ]
+      }
+    },
+    {
+      "time": "1570.44087",
+      "source_sha256": "9c9715e240152f88b254353f63918da47104014668667e749a9b1db486d93b02",
+      "path": "depth/1570.44087/supplementary-material-uncertainty-source-grid.png",
+      "bytes": 3192,
+      "sha256": "2630b7a8fdf8a6abd4eca73509838b8dd569f3babef9873accf8246e5291dfa3",
+      "rectangles": {
+        "small_optical_props": [
+          650,
+          470,
+          725,
+          545
+        ],
+        "cloth_shadow": [
+          520,
+          0,
+          1250,
+          455
+        ]
+      }
+    },
+    {
+      "time": "1566.095177",
+      "source_sha256": "947229e1fc963f73b47468f371083fe876f0dcf6458b43f0623fbb7b59c2fc7b",
+      "path": "depth/1566.095177/supplementary-material-uncertainty-source-grid.png",
+      "bytes": 3188,
+      "sha256": "40ab2cc569c0ca2678c24169a0a332526059b62c3fa8eda8959120efc0ce1363",
+      "rectangles": {
+        "small_optical_props": [
+          180,
+          620,
+          260,
+          710
+        ],
+        "cloth_shadow": [
+          0,
+          185,
+          430,
+          620
+        ]
+      }
+    }
+  ]
+}
