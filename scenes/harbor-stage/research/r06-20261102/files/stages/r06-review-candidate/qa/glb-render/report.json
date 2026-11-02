@@ -1,0 +1,41 @@
+{
+  "native_source": {
+    "file": "harbor-r06-material.blend",
+    "sha256": "1e264b5ce25677e05e709fee45801f2af6c05952e06754b8b6f3f5714d167287"
+  },
+  "glb_source": {
+    "file": "harbor-r06-material.glb",
+    "sha256": "0a2814244706ef8ec5c139b8c34f7e3eaaa3ffdd903645bf5323a0ecdcd0bed0"
+  },
+  "removed_native_meshes": 394,
+  "native_materials_and_images_cleared_before_import": true,
+  "actual_imported_meshes": 394,
+  "native_camera_and_lights_preserved_exactly": true,
+  "dimensions": [
+    768,
+    432
+  ],
+  "engine": "CYCLES",
+  "samples": 32,
+  "blender_threads": 1,
+  "outputs": [
+    {
+      "file": "native-same-rig.png",
+      "bytes": 637202,
+      "sha256": "eb09e440c5d0c7aa34e8251eeb1b5cfb117ad40e7659c3f9755cba82aa8e69b0"
+    },
+    {
+      "file": "actual-glb-import-same-rig.png",
+      "bytes": 637031,
+      "sha256": "367565e40b99c5919215c7a7a861dc1e1a9feb5fc28ca2503bd103bfaa30af1a"
+    }
+  ],
+  "scope": "geometry/material appearance round trip under supplied native light rig; GLB itself does not embed area lights/world; not source acceptance",
+  "encoded_RGB_pixel_difference_diagnostic": {
+    "mean_absolute_channel_0_255": 0.08543314364711935,
+    "p99_absolute_channel_0_255": 2.0,
+    "max_absolute_channel_0_255": 74,
+    "fraction_pixels_any_channel_above_8": 0.004141348379629629,
+    "interpretation": "Not an acceptance threshold. Float/triangulation/normal/render differences and low-sample noise remain. Images must be reviewed side by side."
+  }
+}

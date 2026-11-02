@@ -1,0 +1,47 @@
+{
+  "blender": "4.3.2",
+  "checks": [
+    {
+      "state": "white",
+      "file": "harbor-r06-white.blend",
+      "bytes": 5140688,
+      "sha256": "5493028155181fcf430df645ee661b166edf96c06929696452333f54614f7abe",
+      "temporary_copy_exact": true,
+      "opened_from_isolated_directory": true,
+      "mesh_count": 394,
+      "images": []
+    },
+    {
+      "state": "material",
+      "file": "harbor-r06-material.blend",
+      "bytes": 6463320,
+      "sha256": "1e264b5ce25677e05e709fee45801f2af6c05952e06754b8b6f3f5714d167287",
+      "temporary_copy_exact": true,
+      "opened_from_isolated_directory": true,
+      "mesh_count": 394,
+      "images": [
+        {
+          "name": "curved-band-led-grid-r06.png",
+          "dimensions": [
+            2048,
+            512
+          ],
+          "packed_bytes": 16953,
+          "packed_sha256": "e1cec5178a7ae7f2f33ecdde6b5d56ddb484bb391da3e382c108f2db431318bb",
+          "pixel_buffer_decoded": true
+        },
+        {
+          "name": "display-teal-2025.png",
+          "dimensions": [
+            2048,
+            256
+          ],
+          "packed_bytes": 19992,
+          "packed_sha256": "5ca551afcd5d18cb265bbbbae73a52760cdc0002923f2d55842b13111781f1dc",
+          "pixel_buffer_decoded": true
+        }
+      ]
+    }
+  ],
+  "scope": "Native files load and packed image buffers decode without adjacent texture files. The temporary directory is not an OS filesystem isolation sandbox; packed payload presence and decode are explicitly checked. Does not claim portability of Blender lights/world through GLB."
+}
