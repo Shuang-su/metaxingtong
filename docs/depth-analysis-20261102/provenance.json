@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-02T01:09:12.379105+00:00",
+  "repository": "Shuang-su/metaxingtong",
+  "scope": "depth",
+  "base_commit": "6ad31e4b2fe8398060c33de20fc09f5edad427a7",
+  "archive_branch": "archive/depth-harbor-20261102",
+  "original_history_branch": "history/depth-harbor-original-20261102",
+  "original_tip": "f20277101571cb47fb770da039aba47f3b7a5c46",
+  "bundle_input": {
+    "library_file_id": "libfile_91cd8e0173208191b901521dec649c01",
+    "current_version_number": 1,
+    "file_name": "depth-analysis-harbor-f202771-20261102.bundle",
+    "size_bytes": 37560182,
+    "sha256": "27217886a0f14af739987c9a4ba27c265935f99b06960b1e8da8d99c155fb1ea"
+  },
+  "stages": [
+    {
+      "original_commit": "c7ca89d7cfeb158f373fcaa644675394919e4ae4",
+      "original_parents": [],
+      "original_author_date": "2026-11-02T09:42:29+09:00",
+      "original_committer_date": "2026-11-02T09:42:29+09:00",
+      "original_subject": "Record actual CPU relative-depth tool validation on historical native camp source",
+      "upstream_archive_commit": "365d8094c18fd8ecb5ef365543b2d2b14d2b1718",
+      "files": [
+        {
+          "original_path": ".gitignore",
+          "archive_path": "docs/depth-analysis-20261102/files/.gitignore",
+          "mode": "100644",
+          "bytes": 43,
+          "sha256": "9b4fb566cce5a27b52d0da28862893a9ed65842c264fdbb0459bb72b38de9be4",
+          "git_blob": "3d21346230dd96f0e51121ccca36a48dec67ea49"
+        },
+        {
+          "original_path": "README.md",
+          "archive_path": "docs/depth-analysis-20261102/files/README.md",
+          "mode": "100644",
+          "bytes": 1648,
+          "sha256": "5b59a30c09055362b95fd391f895a5839a0914f47745ec227b643dc471da2a4d",
+          "git_blob": "2f415ef6fee0d931a3648f4c971be22b4aa0b1a3"
+        },
+        {
+          "original_path": "camp-tool-validation/confidence-unknown-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/confidence-unknown-source-grid.png",
+          "mode": "100644",
+          "bytes": 4270,
+          "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6",
+          "git_blob": "440f0fdba234322ca4b5fad02a177b4ab3e8553f"
+        },
+        {
+          "original_path": "camp-tool-validation/manual-exclusion-classes-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/manual-exclusion-classes-source-grid.png",
+          "mode": "100644",
+          "bytes": 5226,
+          "sha256": "5e3ae393692ed65983f004fd02e49e9425fea52be6275d2f4610285277673d0a",
+          "git_blob": "0f8cd4c82e04104a9867a0f822d02008284f2ea9"
+        },
+        {
+          "original_path": "camp-tool-validation/relative-inverse-depth-gray16-model-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/relative-inverse-depth-gray16-model-grid.png",
+          "mode": "100644",
+          "bytes": 424770,
+          "sha256": "ceca4ee1d4d77c6a9cf8088dbfd8e1d39b9b9bcfe95b604b8920ec07e27f7f0e",
+          "git_blob": "49f024271ae92f111b572bc4664a6f4f65a3a13a"
+        },
+        {
+          "original_path": "camp-tool-validation/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "mode": "100644",
+          "bytes": 145091,
+          "sha256": "92795c41690cc6e5da4d48448b19b27f683cfcd628ade44f23cbf25b27fc6aae",
+          "git_blob": "2e98a690069538399dfaf19ebfcee6231392b26d"
+        },
+        {
+          "original_path": "camp-tool-validation/relative-inverse-depth-model-grid.npy",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/relative-inverse-depth-model-grid.npy",
+          "mode": "100644",
+          "bytes": 1914656,
+          "sha256": "e345edb39ff2740317c144e52695d5c147774705d99c4fc2dbf92d3daf57d416",
+          "git_blob": "95f98ce47e89e6ad0077fed8ac6b809e871e5691"
+        },
+        {
+          "original_path": "camp-tool-validation/relative-inverse-depth-resampled-source-grid.npy",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/relative-inverse-depth-resampled-source-grid.npy",
+          "mode": "100644",
+          "bytes": 8294528,
+          "sha256": "41ab8645d8398561ce463296d63f2e7beaaf049ea65260d0b54bd00e1e08a065",
+          "git_blob": "c23b702ce04ea224778642c1bbc9114dd276040b"
+        },
+        {
+          "original_path": "camp-tool-validation/report.json",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/report.json",
+          "mode": "100644",
+          "bytes": 5919,
+          "sha256": "e43d496bddd17432042a95dcb278e4b0f2a15030626bfb94030228588dddfa48",
+          "git_blob": "8c053d2ff22d1adec102e3294807f3012523a3e1"
+        },
+        {
+          "original_path": "inference.log",
+          "archive_path": "docs/depth-analysis-20261102/files/inference.log",
+          "mode": "100644",
+          "bytes": 2154,
+          "sha256": "c70eb6e2e98171bdbf9d6096b008967b5e1c020aee1b790756856c0db938f465",
+          "git_blob": "5c64c6beeda20087b8163001723d348dbb2f66c6"
+        },
+        {
+          "original_path": "install-torch.log",
+          "archive_path": "docs/depth-analysis-20261102/files/install-torch.log",
+          "mode": "100644",
+          "bytes": 3463,
+          "sha256": "cfd6b12334040176c9a3fe7f8522429196d54bb687275a3a3aa5a18cb12eb586",
+          "git_blob": "433ab61e85a2de7ec4163a24cacaa1f8d2e0f9a9"
+        },
+        {
+          "original_path": "install-transformers.log",
+          "archive_path": "docs/depth-analysis-20261102/files/install-transformers.log",
+          "mode": "100644",
+          "bytes": 8368,
+          "sha256": "768c99326c0687c5bb1de124b78e43a12434df7a8bb9042cd00d1d0ba415aaf0",
+          "git_blob": "f15772b364c72409324332363462fdd358a27133"
+        },
+        {
+          "original_path": "model-api.json",
+          "archive_path": "docs/depth-analysis-20261102/files/model-api.json",
+          "mode": "100644",
+          "bytes": 5283,
+          "sha256": "d47a24cb9152be43f3c185d3863bb2631c35f72de2831bc332e85a31300bf304",
+          "git_blob": "288142fe2d1ef282b328d3c2a732ac523d4a29fc"
+        },
+        {
+          "original_path": "model-artifact-manifest.json",
+          "archive_path": "docs/depth-analysis-20261102/files/model-artifact-manifest.json",
+          "mode": "100644",
+          "bytes": 852,
+          "sha256": "795339ec9e98714fce4f05afaa7db0c15d40f130df3b9bd5571a61376592c3a2",
+          "git_blob": "1858685a2fef76a42050512b6bb5b296fbddf06a"
+        },
+        {
+          "original_path": "model/README.md",
+          "archive_path": "docs/depth-analysis-20261102/files/model/README.md",
+          "mode": "100644",
+          "bytes": 4400,
+          "sha256": "319566441daaac0c5ed83e75a8fd19bae0863f3275e23f147c06fe0906edf6fb",
+          "git_blob": "2beda67327d9ea6b655b1cbae711342038eab576"
+        },
+        {
+          "original_path": "model/config.json",
+          "archive_path": "docs/depth-analysis-20261102/files/model/config.json",
+          "mode": "100644",
+          "bytes": 950,
+          "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+          "git_blob": "9207d3a304e86517dab21638c559d8b3195d41b6"
+        },
+        {
+          "original_path": "model/preprocessor_config.json",
+          "archive_path": "docs/depth-analysis-20261102/files/model/preprocessor_config.json",
+          "mode": "100644",
+          "bytes": 775,
+          "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+          "git_blob": "a7822a90a0e91a14d50d1996953bac8f389a4377"
+        },
+        {
+          "original_path": "packages-freeze.txt",
+          "archive_path": "docs/depth-analysis-20261102/files/packages-freeze.txt",
+          "mode": "100644",
+          "bytes": 575,
+          "sha256": "5a6cd0c4143b75d3b8360609542c01fa352bef120a6b9f4b8c2a026f1577a78a",
+          "git_blob": "7e43efbc1560398ae19bad82b58aefc0bcd97c63"
+        },
+        {
+          "original_path": "run_depth.py",
+          "archive_path": "docs/depth-analysis-20261102/files/run_depth.py",
+          "mode": "100644",
+          "bytes": 5251,
+          "sha256": "f670f4f5d0f084dcabfe89d3f3a67664fa16df766a3f4999ee50ed3be50b8bda",
+          "git_blob": "d2c7b205be3f4f7839080dd1ac6c8d05f7530155"
+        }
+      ]
+    },
+    {
+      "original_commit": "f20277101571cb47fb770da039aba47f3b7a5c46",
+      "original_parents": [
+        "c7ca89d7cfeb158f373fcaa644675394919e4ae4"
+      ],
+      "original_author_date": "2026-11-02T09:47:00+09:00",
+      "original_committer_date": "2026-11-02T09:47:00+09:00",
+      "original_subject": "Analyze first native harbor frame with relative depth and explicit cropped-scene limits",
+      "upstream_archive_commit": "925d007684cb1d9ba7c60cfc7d3961acd33232c0",
+      "files": [
+        {
+          "original_path": ".gitignore",
+          "archive_path": "docs/depth-analysis-20261102/files/.gitignore",
+          "mode": "100644",
+          "bytes": 43,
+          "sha256": "9b4fb566cce5a27b52d0da28862893a9ed65842c264fdbb0459bb72b38de9be4",
+          "git_blob": "3d21346230dd96f0e51121ccca36a48dec67ea49"
+        },
+        {
+          "original_path": "README.md",
+          "archive_path": "docs/depth-analysis-20261102/files/README.md",
+          "mode": "100644",
+          "bytes": 1648,
+          "sha256": "5b59a30c09055362b95fd391f895a5839a0914f47745ec227b643dc471da2a4d",
+          "git_blob": "2f415ef6fee0d931a3648f4c971be22b4aa0b1a3"
+        },
+        {
+          "original_path": "camp-tool-validation/confidence-unknown-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/confidence-unknown-source-grid.png",
+          "mode": "100644",
+          "bytes": 4270,
+          "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6",
+          "git_blob": "440f0fdba234322ca4b5fad02a177b4ab3e8553f"
+        },
+        {
+          "original_path": "camp-tool-validation/manual-exclusion-classes-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/manual-exclusion-classes-source-grid.png",
+          "mode": "100644",
+          "bytes": 5226,
+          "sha256": "5e3ae393692ed65983f004fd02e49e9425fea52be6275d2f4610285277673d0a",
+          "git_blob": "0f8cd4c82e04104a9867a0f822d02008284f2ea9"
+        },
+        {
+          "original_path": "camp-tool-validation/relative-inverse-depth-gray16-model-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/relative-inverse-depth-gray16-model-grid.png",
+          "mode": "100644",
+          "bytes": 424770,
+          "sha256": "ceca4ee1d4d77c6a9cf8088dbfd8e1d39b9b9bcfe95b604b8920ec07e27f7f0e",
+          "git_blob": "49f024271ae92f111b572bc4664a6f4f65a3a13a"
+        },
+        {
+          "original_path": "camp-tool-validation/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "mode": "100644",
+          "bytes": 145091,
+          "sha256": "92795c41690cc6e5da4d48448b19b27f683cfcd628ade44f23cbf25b27fc6aae",
+          "git_blob": "2e98a690069538399dfaf19ebfcee6231392b26d"
+        },
+        {
+          "original_path": "camp-tool-validation/relative-inverse-depth-model-grid.npy",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/relative-inverse-depth-model-grid.npy",
+          "mode": "100644",
+          "bytes": 1914656,
+          "sha256": "e345edb39ff2740317c144e52695d5c147774705d99c4fc2dbf92d3daf57d416",
+          "git_blob": "95f98ce47e89e6ad0077fed8ac6b809e871e5691"
+        },
+        {
+          "original_path": "camp-tool-validation/relative-inverse-depth-resampled-source-grid.npy",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/relative-inverse-depth-resampled-source-grid.npy",
+          "mode": "100644",
+          "bytes": 8294528,
+          "sha256": "41ab8645d8398561ce463296d63f2e7beaaf049ea65260d0b54bd00e1e08a065",
+          "git_blob": "c23b702ce04ea224778642c1bbc9114dd276040b"
+        },
+        {
+          "original_path": "camp-tool-validation/report.json",
+          "archive_path": "docs/depth-analysis-20261102/files/camp-tool-validation/report.json",
+          "mode": "100644",
+          "bytes": 5919,
+          "sha256": "e43d496bddd17432042a95dcb278e4b0f2a15030626bfb94030228588dddfa48",
+          "git_blob": "8c053d2ff22d1adec102e3294807f3012523a3e1"
+        },
+        {
+          "original_path": "harbor-inference.log",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-inference.log",
+          "mode": "100644",
+          "bytes": 2167,
+          "sha256": "f9aaa2caeb194d0a79997bcd068f3bfd7d2f8bddd9b74401bcc6e728a0dcb617",
+          "git_blob": "b8f71c38f0153b999b6b8805db17462c71d6d09d"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/confidence-unknown-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/confidence-unknown-source-grid.png",
+          "mode": "100644",
+          "bytes": 12775,
+          "sha256": "26db83be78206117158aebbc7b81c50ae3859624b15c159bec4f8465821eb4e7",
+          "git_blob": "240b3a8e6b03d73095ffe4e5d2c056136a22ab5c"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/manual-exclusion-classes-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/manual-exclusion-classes-source-grid.png",
+          "mode": "100644",
+          "bytes": 16084,
+          "sha256": "a1f78e63f89aa158fcf9624a246952cd79854a4f2f85eb5e0e7f0b39e12092c7",
+          "git_blob": "08c4914cc8bdf77f1ff8e40c1a8865046cf731e2"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/object-evidence.md",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/object-evidence.md",
+          "mode": "100644",
+          "bytes": 1382,
+          "sha256": "c7faa8de9263a26fad52cc72ed0e5aff66bf1969dc61596d52d45779c65c862c",
+          "git_blob": "093399dbbd555b890421892ed1993327ae28206c"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/relative-inverse-depth-gray16-model-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/relative-inverse-depth-gray16-model-grid.png",
+          "mode": "100644",
+          "bytes": 510490,
+          "sha256": "a070de2abe94cfaedf8b692b4e28586123284d3e988efa79b1125573ce843780",
+          "git_blob": "5629ed3207d43b4125365c75d5df00835f62e1f9"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/relative-inverse-depth-gray8-resampled-source-grid.png",
+          "mode": "100644",
+          "bytes": 516096,
+          "sha256": "8a2e45dba0696e7ffd4d45959b582b32161767c7de7c28c67a3f6bff48b5bc3d",
+          "git_blob": "bfcd7dffd3dcf9ce0129fa8795b18e1ddf161718"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/relative-inverse-depth-model-grid.npy",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/relative-inverse-depth-model-grid.npy",
+          "mode": "100644",
+          "bytes": 1914656,
+          "sha256": "879b36e09b1956b0d0ebc97aa339fa6486b3eb7f6197067b49a155636131f3aa",
+          "git_blob": "8d47f773b32b515b9b1124dcb1cbc9118958e4ce"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/relative-inverse-depth-resampled-source-grid.npy",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/relative-inverse-depth-resampled-source-grid.npy",
+          "mode": "100644",
+          "bytes": 33177728,
+          "sha256": "fab42cd12595915dc34547f750728d0e1f8c1db5daa90b2bbb6536b4645e7578",
+          "git_blob": "da332ef04c775af10d1ad0a046acca821d5bfcfb"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/report.json",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/report.json",
+          "mode": "100644",
+          "bytes": 6365,
+          "sha256": "237837f1d78c3972daeabe7d952dfef5771ecccea616fb428cb529125a74a7a5",
+          "git_blob": "ab5faef520824f14536b909ce6f2e6425577e344"
+        },
+        {
+          "original_path": "harbor-preliminary-analysis/source-manifest-at-first-analysis.json",
+          "archive_path": "docs/depth-analysis-20261102/files/harbor-preliminary-analysis/source-manifest-at-first-analysis.json",
+          "mode": "100644",
+          "bytes": 1727,
+          "sha256": "f8da588c331d4071aff12d560b7109de0a31cda851093b37da16ff744e42b13e",
+          "git_blob": "0557b099bb6f33d612890b4645a0755aa8f3a319"
+        },
+        {
+          "original_path": "inference.log",
+          "archive_path": "docs/depth-analysis-20261102/files/inference.log",
+          "mode": "100644",
+          "bytes": 2154,
+          "sha256": "c70eb6e2e98171bdbf9d6096b008967b5e1c020aee1b790756856c0db938f465",
+          "git_blob": "5c64c6beeda20087b8163001723d348dbb2f66c6"
+        },
+        {
+          "original_path": "install-torch.log",
+          "archive_path": "docs/depth-analysis-20261102/files/install-torch.log",
+          "mode": "100644",
+          "bytes": 3463,
+          "sha256": "cfd6b12334040176c9a3fe7f8522429196d54bb687275a3a3aa5a18cb12eb586",
+          "git_blob": "433ab61e85a2de7ec4163a24cacaa1f8d2e0f9a9"
+        },
+        {
+          "original_path": "install-transformers.log",
+          "archive_path": "docs/depth-analysis-20261102/files/install-transformers.log",
+          "mode": "100644",
+          "bytes": 8368,
+          "sha256": "768c99326c0687c5bb1de124b78e43a12434df7a8bb9042cd00d1d0ba415aaf0",
+          "git_blob": "f15772b364c72409324332363462fdd358a27133"
+        },
+        {
+          "original_path": "model-api.json",
+          "archive_path": "docs/depth-analysis-20261102/files/model-api.json",
+          "mode": "100644",
+          "bytes": 5283,
+          "sha256": "d47a24cb9152be43f3c185d3863bb2631c35f72de2831bc332e85a31300bf304",
+          "git_blob": "288142fe2d1ef282b328d3c2a732ac523d4a29fc"
+        },
+        {
+          "original_path": "model-artifact-manifest.json",
+          "archive_path": "docs/depth-analysis-20261102/files/model-artifact-manifest.json",
+          "mode": "100644",
+          "bytes": 852,
+          "sha256": "795339ec9e98714fce4f05afaa7db0c15d40f130df3b9bd5571a61376592c3a2",
+          "git_blob": "1858685a2fef76a42050512b6bb5b296fbddf06a"
+        },
+        {
+          "original_path": "model/README.md",
+          "archive_path": "docs/depth-analysis-20261102/files/model/README.md",
+          "mode": "100644",
+          "bytes": 4400,
+          "sha256": "319566441daaac0c5ed83e75a8fd19bae0863f3275e23f147c06fe0906edf6fb",
+          "git_blob": "2beda67327d9ea6b655b1cbae711342038eab576"
+        },
+        {
+          "original_path": "model/config.json",
+          "archive_path": "docs/depth-analysis-20261102/files/model/config.json",
+          "mode": "100644",
+          "bytes": 950,
+          "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+          "git_blob": "9207d3a304e86517dab21638c559d8b3195d41b6"
+        },
+        {
+          "original_path": "model/preprocessor_config.json",
+          "archive_path": "docs/depth-analysis-20261102/files/model/preprocessor_config.json",
+          "mode": "100644",
+          "bytes": 775,
+          "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+          "git_blob": "a7822a90a0e91a14d50d1996953bac8f389a4377"
+        },
+        {
+          "original_path": "packages-freeze.txt",
+          "archive_path": "docs/depth-analysis-20261102/files/packages-freeze.txt",
+          "mode": "100644",
+          "bytes": 575,
+          "sha256": "5a6cd0c4143b75d3b8360609542c01fa352bef120a6b9f4b8c2a026f1577a78a",
+          "git_blob": "7e43efbc1560398ae19bad82b58aefc0bcd97c63"
+        },
+        {
+          "original_path": "run_depth.py",
+          "archive_path": "docs/depth-analysis-20261102/files/run_depth.py",
+          "mode": "100644",
+          "bytes": 5251,
+          "sha256": "f670f4f5d0f084dcabfe89d3f3a67664fa16df766a3f4999ee50ed3be50b8bda",
+          "git_blob": "d2c7b205be3f4f7839080dd1ac6c8d05f7530155"
+        },
+        {
+          "original_path": "run_harbor_depth.py",
+          "archive_path": "docs/depth-analysis-20261102/files/run_harbor_depth.py",
+          "mode": "100644",
+          "bytes": 5437,
+          "sha256": "414735f55fc0af533fe901ea824634cc89ef8136531dcedde257d338e19ce5bf",
+          "git_blob": "43fea96bb8735779fda3c7028b6f4c95b1ea6413"
+        },
+        {
+          "original_path": null,
+          "archive_path": "docs/depth-analysis-20261102/files/sources/BV1iteRzHEsK_1.093550_4k_preliminary.png",
+          "mode": "100644",
+          "external_library_input": {
+            "library_file_id": "libfile_4c622c58bfe48191a2e960230cf3c9af",
+            "current_version_number": 0,
+            "file_name": "BV1iteRzHEsK_1.093550_4k_preliminary.png",
+            "size_bytes": 6194386,
+            "sha256": "812cd46f910320ff49755ef28c3ed8bab3b2f4a9f6a4cfa34379336f96af5584"
+          },
+          "bytes": 6194386,
+          "sha256": "812cd46f910320ff49755ef28c3ed8bab3b2f4a9f6a4cfa34379336f96af5584",
+          "git_blob": "573b48b70b7322f2b0e6d905455f6c8cd16fc84b"
+        }
+      ]
+    }
+  ],
+  "final_original_file_count": 31,
+  "summary": "营地旧原生帧上的 CPU 相对逆深度工具验证，以及海港首帧初步分析。官方模型 revision/权重 SHA/配置/脚本/实际原日志保留，99 MB 权重及 venv 不在本批。924×518 为模型网格，1920/3840 显示是派生插值；掩码保留失败与未知，255 置信度掩码表示未知。不是米制测量、几何验收或新场景；海港单张裁切正面尚未达到制作门槛。",
+  "publication_actions": "Byte preservation and ordinary Git archive only. No generation, render, inference, model acceptance, LFS, force-push, merge or Space deletion.",
+  "remote_readback": "Pending at this mapping commit; final batch receipt is published separately after actual remote byte retrieval.",
+  "external_source_dependency": {
+    "repository_commit": "c5858089c4508b6798566f67d911def53738dcd9",
+    "path": "docs/recovery-evidence-20261030/files/recovered-source-candidates/camp/BV169Y96rEo1_P1_1566.095177.png",
+    "bytes": 3202090,
+    "sha256": "947229e1fc963f73b47468f371083fe876f0dcf6458b43f0623fbb7b59c2fc7b",
+    "role": "Historical native camp source, already archived Nov1; not newly captured, not copied into this bundle."
+  },
+  "additional_original_input": {
+    "library_file_id": "libfile_4c622c58bfe48191a2e960230cf3c9af",
+    "current_version_number": 0,
+    "file_name": "BV1iteRzHEsK_1.093550_4k_preliminary.png",
+    "size_bytes": 6194386,
+    "sha256": "812cd46f910320ff49755ef28c3ed8bab3b2f4a9f6a4cfa34379336f96af5584"
+  }
+}
