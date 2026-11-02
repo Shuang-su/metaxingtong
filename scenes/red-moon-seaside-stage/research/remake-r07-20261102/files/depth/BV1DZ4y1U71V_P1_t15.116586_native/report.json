@@ -1,0 +1,308 @@
+{
+  "source": {
+    "role": "current_verified_native_frame",
+    "file": "/workspace/scratch/fa58bfcf0425/metaxingtong-red-moon-remake-20261102/sources/BV1DZ4y1U71V_P1_t15.116586_native.png",
+    "sha256": "a273e7838a6638ab5df7499b5ded3d409b73ca790ac1b08bac48ccf90bb824ca",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 1714710,
+    "BV": "BV1DZ4y1U71V",
+    "part": 1,
+    "currentTime": 15.116586,
+    "crop": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "model_revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "manual_masks": [
+      {
+        "class_id": 1,
+        "points": [
+          [
+            941,
+            367
+          ],
+          [
+            1248,
+            367
+          ],
+          [
+            1248,
+            929
+          ],
+          [
+            941,
+            929
+          ]
+        ]
+      },
+      {
+        "class_id": 2,
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1920,
+            0
+          ],
+          [
+            1920,
+            216
+          ],
+          [
+            0,
+            216
+          ]
+        ]
+      },
+      {
+        "class_id": 3,
+        "points": [
+          [
+            614,
+            346
+          ],
+          [
+            1286,
+            346
+          ],
+          [
+            1286,
+            637
+          ],
+          [
+            614,
+            637
+          ]
+        ]
+      },
+      {
+        "class_id": 4,
+        "points": [
+          [
+            0,
+            216
+          ],
+          [
+            346,
+            216
+          ],
+          [
+            346,
+            702
+          ],
+          [
+            0,
+            702
+          ]
+        ]
+      },
+      {
+        "class_id": 4,
+        "points": [
+          [
+            1478,
+            216
+          ],
+          [
+            1920,
+            216
+          ],
+          [
+            1920,
+            734
+          ],
+          [
+            1478,
+            734
+          ]
+        ]
+      },
+      {
+        "class_id": 5,
+        "points": [
+          [
+            0,
+            626
+          ],
+          [
+            1920,
+            626
+          ],
+          [
+            1920,
+            1080
+          ],
+          [
+            0,
+            1080
+          ]
+        ]
+      },
+      {
+        "class_id": 6,
+        "points": [
+          [
+            1248,
+            864
+          ],
+          [
+            1920,
+            864
+          ],
+          [
+            1920,
+            983
+          ],
+          [
+            1248,
+            983
+          ]
+        ]
+      }
+    ],
+    "mask_semantics": {
+      "0": "unlabelled NOT certified valid",
+      "1": "conservative moving actor bbox",
+      "2": "sky/upper glass/unknown off-frame",
+      "3": "central opening water/dynamic recursive frames/reflections",
+      "4": "side sky/water/floating spheres warning regions, includes static boards conservatively",
+      "5": "reflective floor and hidden contact warning, overlaps actor below; class priority last wins",
+      "6": "baked lyric overlay; watermark in upper sky class2",
+      "all": "manual broad masks from native visual review, not calibrated segmentation or confidence; concealed support unknown"
+    }
+  },
+  "method": {
+    "model": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "device": "cpu",
+    "threads": 1,
+    "dtype": "float32",
+    "local_files_only": true,
+    "trust_remote_code": false,
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_output_shape": [
+      518,
+      924
+    ],
+    "inference_and_output_seconds": 4.248033285140991
+  },
+  "definition": "relative inverse-depth-like model output, larger generally nearer; not metric distance or luminance",
+  "range": {
+    "min": 0.0,
+    "max": 6.867464542388916,
+    "nonfinite_count": 0
+  },
+  "normalization": "per-image (raw-min)/(max-min), larger white=nearer; source-grid image is bicubic resampling only, never native prediction",
+  "confidence": "model provides no calibrated confidence; 255 UNKNOWN everywhere, not high confidence",
+  "mask_semantics": {
+    "0": "unlabelled NOT certified valid",
+    "1": "conservative moving actor bbox",
+    "2": "sky/upper glass/unknown off-frame",
+    "3": "central opening water/dynamic recursive frames/reflections",
+    "4": "side sky/water/floating spheres warning regions, includes static boards conservatively",
+    "5": "reflective floor and hidden contact warning, overlaps actor below; class priority last wins",
+    "6": "baked lyric overlay; watermark in upper sky class2",
+    "all": "manual broad masks from native visual review, not calibrated segmentation or confidence; concealed support unknown"
+  },
+  "limits": [
+    "manual mask labels not exhaustive; label0 is unlabelled, NOT reliable",
+    "reflection/water/sky/particles/characters and hidden structures can fail",
+    "no cross-image metric comparison, real dimensions/contact/unique camera or source acceptance established"
+  ],
+  "outputs": [
+    {
+      "file": "confidence-UNKNOWN-source-grid.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+    },
+    {
+      "file": "manual-exclusion-classes-source-grid.png",
+      "bytes": 4315,
+      "sha256": "a181cb889bd855833e88b91ea88a5ab834c9828be9c6e0bcd8dd0e9aee7800ef"
+    },
+    {
+      "file": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 373458,
+      "sha256": "741f420f57fb01399000f2c286beeac43e4cd179d402521a1f28e96c4a8f1488"
+    },
+    {
+      "file": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 143404,
+      "sha256": "292da52afcebebc96e91099e59f7cd238721aab5a76b0dc564996c1fa4cafca4"
+    },
+    {
+      "file": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "7639ab50ff8e4b2bd1356ec84998714462a4a0857bc47cb926c652c5953efc84"
+    },
+    {
+      "file": "source-and-relative-depth-display.jpg",
+      "bytes": 61943,
+      "sha256": "874eff33616457d9c148807856f023e356b38ad0b039fdee8c9fec1f771daf4f"
+    }
+  ]
+}
