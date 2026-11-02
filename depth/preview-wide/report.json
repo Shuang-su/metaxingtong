@@ -1,0 +1,226 @@
+{
+  "purpose": "Supplemental source relative-depth evidence only; not measured scale or reconstruction acceptance",
+  "source": {
+    "path": "sources/official-preview/BV1uqYvzDEZK_13.767175_1080p60.png",
+    "BV": "BV1uqYvzDEZK",
+    "url": "https://www.bilibili.com/video/BV1uqYvzDEZK/",
+    "time_seconds": 13.767175,
+    "sha256": "46414ea42f33ab97edb47ef6271139113b26a36f6f74edab4a85ac782d43562f",
+    "role": "Official Aug16 promotional CG: fixed module structural bridge only, NOT later independent live replay",
+    "provenance": "Source owner native export manifest: before/after time=13.767175 paused=true readyState=4 actual1920x1080; builder independently decoded pixels/hash only",
+    "bytes": 3448132,
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "effective_crop": [
+      0,
+      0,
+      1920,
+      1080
+    ]
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "device": "cpu",
+    "threads": 3,
+    "dtype": "float32",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "inference_seconds": 1.7508644680001453,
+    "local_files_only": true,
+    "trust_remote_code": false
+  },
+  "values": {
+    "definition": "Relative inverse-depth-like model values; higher conventionally nearer, not metric",
+    "min": 0.0,
+    "max": 5.043179035186768,
+    "nonfinite_count": 0,
+    "normalization": "(raw-min)/(max-min); white=nearer; per-image only; no cross-image absolute comparison",
+    "derived_grid": "bicubic align_corners=False source-grid display, clamped after normalization; not full-resolution prediction"
+  },
+  "masks": {
+    "classes": {
+      "0": "unlabelled; not certified valid",
+      "1": "screen graphic overlays",
+      "2": "reflective platform / mixed lower stage",
+      "3": "water and distant background / mixed foliage",
+      "4": "strong emissive displays and bloom / mixed frame structure"
+    },
+    "regions": [
+      {
+        "shape": "rectangle",
+        "coords": [
+          0,
+          0,
+          1920,
+          650
+        ],
+        "value": 3
+      },
+      {
+        "shape": "rectangle",
+        "coords": [
+          400,
+          500,
+          1850,
+          1080
+        ],
+        "value": 2
+      },
+      {
+        "shape": "rectangle",
+        "coords": [
+          780,
+          265,
+          1400,
+          700
+        ],
+        "value": 4
+      },
+      {
+        "shape": "rectangle",
+        "coords": [
+          0,
+          20,
+          405,
+          245
+        ],
+        "value": 1
+      },
+      {
+        "shape": "rectangle",
+        "coords": [
+          460,
+          795,
+          1460,
+          935
+        ],
+        "value": 1
+      },
+      {
+        "shape": "rectangle",
+        "coords": [
+          1400,
+          910,
+          1919,
+          1079
+        ],
+        "value": 1
+      }
+    ],
+    "confidence": "255 everywhere means unknown: model supplies no calibrated confidence",
+    "limits": "Conservative hand-drawn ROIs include neighboring material; not exact segmentation; zero is unlabelled NOT validated"
+  },
+  "limitations": [
+    "Highly reflective/emissive stylized CG image; conservative masks cover almost entire frame because no region is certified reliable.",
+    "Cannot recover hidden supports, infer all curved-leg instances, confirm physical contacts, or set measured dimensions from this map.",
+    "Preview lighting/display and surroundings differ from Aug24 performance. Only visually bridged fixed module structure may be compared.",
+    "Main upper ring and platform visible; front captions obscure perimeter and steps. No backside source."
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-source-grid.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "manual-exclusion-classes-source-grid.png",
+      "bytes": 4364,
+      "sha256": "51532940e408811a99af807bfab4a3cbae062ba0032bf231582abed01c7251b8",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 464682,
+      "sha256": "5d6657864a25de788b3465eaea6f3fe2d9f0907a98d12d9ce4f9489d5ae3f3d4",
+      "dimensions": [
+        924,
+        518
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-gray8-derived-source-grid.png",
+      "bytes": 203451,
+      "sha256": "eafd2f979c0a2a2a165c6d2be934fee3256b9e9c15491f451a3bc0dd1b9b3c35",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "c7444932ee7067fe1fe5350528a9617de7e6ea7ec3672ec56e9aee8f189764a7",
+      "dimensions": null
+    }
+  ]
+}
