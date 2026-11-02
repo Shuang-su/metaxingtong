@@ -1,0 +1,182 @@
+{
+  "purpose": "New harbor preliminary source depth analysis ONLY; cropped single frame insufficient for scene modeling or acceptance",
+  "source": {
+    "path": "/workspace/scratch/fa58bfcf0425/new-source-20261102/harbor-pavilion-stage/BV1iteRzHEsK_1.093550_4k_preliminary.png",
+    "BV": "BV1iteRzHEsK",
+    "part": 1,
+    "time_seconds": 1.09355,
+    "size": [
+      3840,
+      2160
+    ],
+    "bytes": 6194386,
+    "sha256": "812cd46f910320ff49755ef28c3ed8bab3b2f4a9f6a4cfa34379336f96af5584",
+    "crop": [
+      0,
+      0,
+      3840,
+      2160
+    ],
+    "provenance": "Current source owner manifest: native paused ready4 before/after same time, actual4K; existing login UI; inspected by build owner"
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "license": "apache-2.0",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "device": "cpu",
+    "threads": 4,
+    "dtype": "float32",
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "raw_shape": [
+      518,
+      924
+    ],
+    "inference_and_output_seconds": 2.164642572402954,
+    "trust_remote_code": false,
+    "weights_format": "safetensors",
+    "local_files_only": true
+  },
+  "value_definition": "Model relative inverse-depth-like prediction: larger generally nearer, not metric distance, no absolute scale/calibration. Gray white=larger/nearer; black=smaller/farther. Orientation is model convention, not image luminance.",
+  "range": {
+    "min": 0.0,
+    "max": 4.815495014190674,
+    "nonfinite_count": 0
+  },
+  "normalization": "(raw-min)/(max-min); source-grid derived by bicubic align_corners=False; display clamp to [0,1]. Per-image normalization not cross-image distance.",
+  "mask": {
+    "manual-exclusion-classes-source-grid.png": {
+      "0": "unlabelled, NOT certified valid",
+      "1": "conservative character bounding rectangle includes nearby background",
+      "2": "subtitle screen overlay rectangle",
+      "3": "approximate central sky opening polygon; boundary uncertain",
+      "4": "conservative lower stage/reflective floor/water or unknown screen region; mixed content, not exact segmentation"
+    },
+    "confidence-unknown-source-grid.png": "255 everywhere means model supplies NO calibrated confidence, not high confidence",
+    "reflection_water_transparency_lights": "Reflective stage and horizon/water/ships, translucent-looking mesh bands and sky uncertain. Mask 4 conservatively excludes entire lower mixed region; not source-confirmed water segmentation. Manual masks not exhaustive.",
+    "occluded_hidden_geometry": "not measurable from this monocular image; no fabricated completion"
+  },
+  "limitations": [
+    "Stylized rendered harbor stage is domain-shifted",
+    "No metric truth, hidden geometry, contacts or unique cameras established",
+    "A visually plausible map does not validate object geometry",
+    "No current source reconstruction or new scene delivered by this test"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-source-grid.png",
+      "bytes": 12775,
+      "sha256": "26db83be78206117158aebbc7b81c50ae3859624b15c159bec4f8465821eb4e7",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "manual-exclusion-classes-source-grid.png",
+      "bytes": 16084,
+      "sha256": "a1f78e63f89aa158fcf9624a246952cd79854a4f2f85eb5e0e7f0b39e12092c7",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 510490,
+      "sha256": "a070de2abe94cfaedf8b692b4e28586123284d3e988efa79b1125573ce843780",
+      "size": [
+        924,
+        518
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 516096,
+      "sha256": "8a2e45dba0696e7ffd4d45959b582b32161767c7de7c28c67a3f6bff48b5bc3d",
+      "size": [
+        3840,
+        2160
+      ]
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "879b36e09b1956b0d0ebc97aa339fa6486b3eb7f6197067b49a155636131f3aa",
+      "size": null
+    },
+    {
+      "path": "relative-inverse-depth-resampled-source-grid.npy",
+      "bytes": 33177728,
+      "sha256": "fab42cd12595915dc34547f750728d0e1f8c1db5daa90b2bbb6536b4645e7578",
+      "size": null
+    }
+  ],
+  "visual_review": {
+    "actual_image_inspected": true,
+    "findings": [
+      "Foreground coarse bands larger relative inverse-depth than background boats, consistent with coarse occlusion order only.",
+      "Central figure is predicted very far compared with adjacent stage floor; apparent contact cannot be trusted.",
+      "Top-left broadcast logo and lower-left title card are predicted as physical foreground blobs: definite screen-graphic contamination.",
+      "Reflective stage/vertical front compressed into smooth bright region, no reliable tier/contact recovery.",
+      "Depth map does not determine full-frame crown closure, branch count or frame cross-section."
+    ],
+    "result": "Useful broad ordering hypothesis only; not metric/geometry acceptance. Await wider and oblique actual reference."
+  }
+}
