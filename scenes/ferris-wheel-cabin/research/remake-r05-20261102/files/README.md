@@ -1,2 +1,5 @@
 # Ferris cabin original-remake 2026-11-02
 Existing BV18C3d66E17 P1 cabin, NOT a new scene. Original R08b BLEND/Git objects were not recovered; new implementation based on verified native PNGs and retained historical parameter notes. No claim of byte-identical R08b, historical 232-mesh count, recovered old commits, or accepted reconstruction. R09 width experiment NOT adopted. Private normal Git, no LFS. Source QA remains FAIL/pending: hand-estimated cameras, unknown metric scale, repetitive rails and inferred supports, missing independent later replay, only one highest-bitrate native source angle. Newly written scripts are remake code, not recovered historical text.
+
+## Current frozen candidate
+R04 engineering geometry + R05 conditional front-camera experiment. See scenes/ferris-wheel-cabin-remake/CURRENT.json for exact stage-linked original models and inherited renders. Source acceptance FAIL; new-scene count0. R01–R03 failures/interruptions preserved. R05 only rear door plane training improves; fixed window widths and foreground door occlusion still conflict. No further focal sweep.
