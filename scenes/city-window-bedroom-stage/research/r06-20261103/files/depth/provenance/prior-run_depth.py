@@ -1,0 +1,26 @@
+from pathlib import Path
+import json,hashlib,time,importlib.metadata as md
+import numpy as np
+from PIL import Image,ImageDraw
+import torch
+from transformers import AutoImageProcessor,AutoModelForDepthEstimation
+p=Path(__file__).resolve().parent; source=p.parent/'metaxingtong-recovery-20261030/recovered-source-candidates/camp/BV169Y96rEo1_P1_1566.095177.png';out=p/'camp-tool-validation';out.mkdir(exist_ok=True)
+sha=lambda x:hashlib.sha256(x.read_bytes()).hexdigest()
+assert sha(source)=='947229e1fc963f73b47468f371083fe876f0dcf6458b43f0623fbb7b59c2fc7b'
+img=Image.open(source).convert('RGB');torch.set_num_threads(4);torch.set_num_interop_threads(1)
+proc=AutoImageProcessor.from_pretrained(p/'model',local_files_only=True,trust_remote_code=False,use_fast=False)
+model=AutoModelForDepthEstimation.from_pretrained(p/'model',local_files_only=True,trust_remote_code=False,use_safetensors=True).eval()
+x=proc(images=img,return_tensors='pt');t=time.time()
+with torch.inference_mode(): raw=model(**x).predicted_depth[0].cpu().numpy().astype('float32')
+np.save(out/'relative-inverse-depth-model-grid.npy',raw,allow_pickle=False)
+finite=np.isfinite(raw);lo=float(raw[finite].min());hi=float(raw[finite].max());gray=np.where(finite,np.clip((raw-lo)/(hi-lo),0,1)*65535,0).round().astype('uint16');Image.fromarray(gray).save(out/'relative-inverse-depth-gray16-model-grid.png')
+# Display alignment only; never assert full-resolution independent predictions.
+res=torch.nn.functional.interpolate(torch.from_numpy(raw)[None,None],size=(img.height,img.width),mode='bicubic',align_corners=False)[0,0].numpy();np.save(out/'relative-inverse-depth-resampled-source-grid.npy',res,allow_pickle=False)
+Image.fromarray((np.clip((res-lo)/(hi-lo),0,1)*255).round().astype('uint8')).save(out/'relative-inverse-depth-gray8-resampled-source-grid.png')
+# Conservative, manually inspected exclusion ROIs, not instance segmentation or confidence.
+mask=Image.new('L',img.size);d=ImageDraw.Draw(mask);d.rectangle((845,411,1055,875),fill=1);d.rectangle((706,887,1180,982),fill=2);d.polygon([(550,0),(1260,0),(1204,50),(1195,204),(1081,237),(1065,310),(1010,351),(887,363),(815,339),(808,305),(712,228),(699,26),(656,20),(627,177),(605,190),(600,80)],fill=3);mask.save(out/'manual-exclusion-classes-source-grid.png')
+Image.new('L',img.size,255).save(out/'confidence-unknown-source-grid.png')
+report={'purpose':'Historical native camp source used ONLY for depth software validation, not Nov2 new scene or reconstruction acceptance','source':{'path':str(source),'BV':'BV169Y96rEo1','part':1,'time_seconds':1566.095177,'size':img.size,'bytes':source.stat().st_size,'sha256':sha(source),'crop':[0,0,img.width,img.height],'provenance':'Recovered Issue 85-87 native source record; source hash rechecked now, login/decoder evidence historical not repeated'},'method':{'repo':'depth-anything/Depth-Anything-V2-Small-hf','revision':json.loads((p/'model-api.json').read_text())['sha'],'license':'apache-2.0','weights_sha256':sha(p/'model/model.safetensors'),'versions':{x:md.version(x) for x in ['torch','transformers','safetensors','pillow','numpy']},'device':'cpu','threads':4,'dtype':'float32','input_tensor_shape':list(x['pixel_values'].shape),'processor_config':json.loads((p/'model/preprocessor_config.json').read_text()),'raw_shape':list(raw.shape),'inference_and_output_seconds':time.time()-t,'trust_remote_code':False,'weights_format':'safetensors','local_files_only':True},'value_definition':'Model relative inverse-depth-like prediction: larger generally nearer, not metric distance, no absolute scale/calibration. Gray white=larger/nearer; black=smaller/farther. Orientation is model convention, not image luminance.','range':{'min':lo,'max':hi,'nonfinite_count':int((~finite).sum())},'normalization':'(raw-min)/(max-min); source-grid derived by bicubic align_corners=False; display clamp to [0,1]. Per-image normalization not cross-image distance.','mask':{'manual-exclusion-classes-source-grid.png':{'0':'unlabelled, NOT certified valid','1':'conservative character bounding rectangle includes nearby background','2':'subtitle screen overlay rectangle','3':'approximate sky polygon; manually inspected boundary uncertain'},'confidence-unknown-source-grid.png':'255 everywhere means model supplies NO calibrated confidence, not high confidence','reflection_water_transparency_lights':'No confidently identified water/reflection region; absence not certified. Tent/canvas/translucency, vegetation boundaries, fog/background and shadows need caution. Manual masks not exhaustive.','occluded_hidden_geometry':'not measurable from this monocular image; no fabricated completion'},'limitations':['Stylized rendered landscape is domain-shifted','No metric truth, hidden geometry, contacts or unique cameras established','A visually plausible map does not validate object geometry','No current source reconstruction or new scene delivered by this test']}
+report['outputs']=[{'path':f.name,'bytes':f.stat().st_size,'sha256':sha(f),'size':list(Image.open(f).size) if f.suffix=='.png' else None} for f in sorted(out.iterdir()) if f.is_file()]
+(out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps({k:report[k] for k in ['method','range']},indent=2))
+
