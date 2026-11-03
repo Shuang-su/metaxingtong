@@ -1,0 +1,234 @@
+{
+  "source": {
+    "BV": "BV1ic12BMEk6",
+    "url": "https://www.bilibili.com/video/BV1ic12BMEk6/",
+    "uploader": "星瞳_Official",
+    "title": "【直播回放】【3D】「星·伊甸」星瞳生日会直播 2025年11月07日19点场",
+    "time_seconds": 1308.663295,
+    "sha256": "064d2700b97136dcd85a9a34f7fb526fafdf9e9266806a68bdb7b91a90f22ae0",
+    "capture_record": {
+      "file": "cityroom-native-high-1308.663295.png",
+      "sha256": "064d2700b97136dcd85a9a34f7fb526fafdf9e9266806a68bdb7b91a90f22ae0",
+      "bytes": 814250,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "media_time_seconds": 1308.663295,
+      "observed_before_native_save": {
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "after_save_file_verified": {
+        "PNG": true,
+        "dimensions_match_decode": true
+      },
+      "independent_after_save_media_state": "not separately logged; no playback command issued during native save",
+      "method": "Chrome built-in Save video frame as; download event.path; original PNG copied without resampling"
+    },
+    "quality": "1080P 高码率",
+    "4K_in_menu": false,
+    "dark_rgb_max_threshold": 25,
+    "dark_mask_definition": "255 where all original RGB channels <=25 (8 bit). Low-signal heuristic only, NOT depth or model confidence.",
+    "exclusions": [
+      {
+        "shape": "polygon",
+        "points": [
+          [
+            598,
+            0
+          ],
+          [
+            1498,
+            0
+          ],
+          [
+            1588,
+            511
+          ],
+          [
+            548,
+            572
+          ],
+          [
+            514,
+            302
+          ]
+        ],
+        "class": 3,
+        "description": "Conservative night-city/window region, possible texture/backdrop/reflection, not metric geometry"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          844,
+          307,
+          1134,
+          963
+        ],
+        "class": 1,
+        "description": "Conservative moving performer ROI includes some prop/background; not segmentation"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          660,
+          0,
+          1240,
+          957
+        ],
+        "class": 2,
+        "description": "Conservative volumetric spotlight and bloom ROI; not a solid surface, overlaps other exclusions"
+      }
+    ],
+    "provenance": "Native source capture-manifest.json; original PNG hash and size independently rechecked by depth script. Full source acquisition evidence retained separately.",
+    "path": "/workspace/shared/20261103-source/cityroom-native-high-1308.663295.png",
+    "bytes": 814250,
+    "size": [
+      1920,
+      1080
+    ],
+    "crop": [
+      0,
+      0,
+      1920,
+      1080
+    ]
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 4,
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "weights_format": "safetensors",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "forward_seconds": 1.699596643447876
+  },
+  "range": {
+    "min": 0.3892313539981842,
+    "max": 4.459446430206299,
+    "nonfinite_count": 0
+  },
+  "value_definition": "Relative inverse-depth-like prediction. Larger/white generally nearer, smaller/black generally farther. Not metric distance, not luminance conversion. Per-image min/max normalization is not comparable metric distance across views.",
+  "normalization": "(raw-min)/(max-min); source-grid display is derived bicubic interpolation align_corners=False, not native-resolution independent depth inference.",
+  "mask_definition": {
+    "manual_exclusions": "Conservative incomplete manual ROIs; 0 is unlabelled, NOT valid certification. See source exclusions descriptions.",
+    "confidence_unknown": "255 everywhere means no calibrated model confidence, NEVER high confidence.",
+    "nonfinite_invalid": "255 indicates nonfinite numeric prediction, 0 merely finite; does not certify geometric validity.",
+    "occluded_hidden_regions": "Not observable, no hidden geometry or surface contact inferred as fact."
+  },
+  "limitations": [
+    "Single monocular estimate cannot validate metric geometry, hidden structures, scale, camera calibration, or contact.",
+    "Stylized CG, reflective/translucent surfaces, lighting, characters and screen overlays can be wrong.",
+    "Manual exclusion masks are incomplete and not segmentation.",
+    "This analysis does not replace native multi-view evidence or direct unwarped overlay validation."
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-source-grid.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+    },
+    {
+      "path": "dark-low-signal-caution-source-grid.png",
+      "bytes": 13805,
+      "sha256": "7187da6c5b2734ac4da7a449b9e0b6cea2e98cd194aadcdcbbf6755668b2724e"
+    },
+    {
+      "path": "manual-exclusion-classes-source-grid.png",
+      "bytes": 4924,
+      "sha256": "55efc3786c8ae6fa71196df2bcefa0ee8119928c4c9dbea3434c7fa64a69a829"
+    },
+    {
+      "path": "nonfinite-invalid-model-grid.png",
+      "bytes": 544,
+      "sha256": "caec195e3fd01149b370763e45bfb21517d04ad2f2b52777a7c9286ce3add40c"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 495789,
+      "sha256": "f084a855fc5541b043d0e5758e93e41d8d576ae2662e796f36dd649344bda4d6"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 178295,
+      "sha256": "a9c53f7c9e2627d30792c1d169ec341f0bba70c7e36f5602c71e706cbf556b10"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "a447c32a8b0d1dec59f6f05a6ab3001a934cb1ba31186a8630ae73bb424f347b"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-source-grid.npy",
+      "bytes": 8294528,
+      "sha256": "84bf7ef59c28c506f2470b8ffeebe7a40934edf1b0cb08fab57f083ba13e5e53"
+    }
+  ]
+}
