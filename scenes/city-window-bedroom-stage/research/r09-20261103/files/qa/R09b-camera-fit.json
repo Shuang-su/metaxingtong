@@ -1,0 +1,1756 @@
+{
+  "method_version": "r09b-circle-line-pose-v2-F09-invalidated",
+  "scales_for_jacobian": "Residual / manual pixel uncertainty; parameter increments scaled by [3,3,2,.5,.5,.5] working units/radians. Condition number is local under these chosen scales.",
+  "solver": "scipy least_squares soft_l1 f_scale=1, fixed focal/shift, three documented starts; no geometry change",
+  "circle_hypotheses": {
+    "seat": {
+      "r": 0.315,
+      "z": 0.903
+    },
+    "base": {
+      "r": 0.301,
+      "z": 0
+    },
+    "waist_diagnostic": {
+      "r": 0.098,
+      "z": 0.455
+    }
+  },
+  "results": [
+    {
+      "camera": "SOURCE_D_low",
+      "frame_key": "D",
+      "source_file": "cityroom-native-low-1214.175651.png",
+      "source_sha256": "031ab85b7509dc616d205eb2247b22226dddb74d539e154651d3b60052d85903",
+      "source_time_seconds": 1214.175651,
+      "width": 1920,
+      "height": 1080,
+      "fixed_lens_mm": 28.0,
+      "fixed_focal_px": 1493.3333333333333,
+      "initial": [
+        0.20000000298023224,
+        -3.799999952316284,
+        0.6499999761581421,
+        1.7160384953209948,
+        0.029578076359359898,
+        0.02556150597753154
+      ],
+      "fitted": [
+        -1.4122751991824187,
+        -4.08002064242714,
+        1.4483128225772992,
+        1.6026796306182347,
+        -0.22391307312141115,
+        -0.21245094566457157
+      ],
+      "rotation_matrix": [
+        [
+          0.9620428232985342,
+          -0.013049561035378132,
+          -0.27258634429583817
+        ],
+        [
+          -0.2728955309291684,
+          -0.04132216505649733,
+          -0.961155818727604
+        ],
+        [
+          0.0012788036098548838,
+          0.9990606526291722,
+          -0.04331485922290279
+        ]
+      ],
+      "bounds": {
+        "lower": [
+          -6.3,
+          -6.8,
+          0.2,
+          0.5160384953209949,
+          -1.1704219236406401,
+          -1.1744384940224684
+        ],
+        "upper": [
+          6.3,
+          0.0,
+          5.0,
+          2.916038495320995,
+          1.2295780763593598,
+          1.2255615059775316
+        ]
+      },
+      "runs": [
+        {
+          "start": [
+            0.20000000298023224,
+            -3.799999952316284,
+            0.6499999761581421,
+            1.7160384953209948,
+            0.029578076359359898,
+            0.02556150597753154
+          ],
+          "solution": [
+            -1.421314051317279,
+            -4.008391768315186,
+            0.4144189958937923,
+            1.7886783987674548,
+            -0.2573724786261321,
+            -0.19361441528451506
+          ],
+          "cost": 0.6246062071116163,
+          "success": true,
+          "nfev": 36,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            429.5451081168306,
+            404.3730063490078,
+            67.54340496699803,
+            30.3015135847413,
+            13.553453797858362,
+            8.622320589708018
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 49.817807589937516
+        },
+        {
+          "start": [
+            3.0,
+            -4.0,
+            1.5,
+            1.5400499835188681,
+            0.36355648485788367,
+            0.3635564848578836
+          ],
+          "solution": [
+            -1.4122751991824187,
+            -4.08002064242714,
+            1.4483128225772992,
+            1.6026796306182347,
+            -0.22391307312141115,
+            -0.21245094566457157
+          ],
+          "cost": 0.48456667579721957,
+          "success": true,
+          "nfev": 47,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            456.9724966599806,
+            405.8488835565168,
+            76.22699684725222,
+            31.47228101498417,
+            28.582854725854233,
+            8.222513643320575
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 55.5757663024609
+        },
+        {
+          "start": [
+            -3.0,
+            -4.0,
+            1.5,
+            1.5400499835188681,
+            -0.36355648485788367,
+            -0.3635564848578836
+          ],
+          "solution": [
+            -1.4122751665848272,
+            -4.080020630317286,
+            1.4483129205184373,
+            1.6026796130887975,
+            -0.2239130682062202,
+            -0.21245094506295037
+          ],
+          "cost": 0.48456667580144885,
+          "success": true,
+          "nfev": 30,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            456.97250446401347,
+            405.8488874947352,
+            76.2269985310041,
+            31.47228124845721,
+            28.582852806828214,
+            8.222513385257725
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 55.57576899580689
+        }
+      ],
+      "selected_run": 1,
+      "training": [
+        {
+          "id": "D01",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            875,
+            750
+          ],
+          "sigma_px": 9,
+          "original_names": [
+            "seat_left"
+          ],
+          "before_error_px": 64.59241828456845,
+          "after_error_px": 2.3921684779984167,
+          "before_nearest_projection": [
+            879.0935944289739,
+            685.5374295850706
+          ],
+          "after_nearest_projection": [
+            874.7771571859539,
+            747.6182336161249
+          ]
+        },
+        {
+          "id": "D02",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            1012,
+            751
+          ],
+          "sigma_px": 9,
+          "original_names": [
+            "seat_right"
+          ],
+          "before_error_px": 64.68282320588447,
+          "after_error_px": 0.7000318667427163,
+          "before_nearest_projection": [
+            1009.5049851067436,
+            686.3653148954361
+          ],
+          "after_nearest_projection": [
+            1012.1536658461457,
+            750.3170421519716
+          ]
+        },
+        {
+          "id": "D03",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            942,
+            744
+          ],
+          "sigma_px": 5,
+          "original_names": [
+            "seat_rear"
+          ],
+          "before_error_px": 56.69748716346348,
+          "after_error_px": 1.3067021964963133,
+          "before_nearest_projection": [
+            942.3201322362596,
+            687.3034166284915
+          ],
+          "after_nearest_projection": [
+            941.9877619820929,
+            745.3066448872
+          ]
+        },
+        {
+          "id": "D04",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            942,
+            763
+          ],
+          "sigma_px": 4,
+          "original_names": [
+            "seat_front"
+          ],
+          "before_error_px": 75.69718429206644,
+          "after_error_px": 0.6646187320352496,
+          "before_nearest_projection": [
+            942.4274106331399,
+            687.3040223664576
+          ],
+          "after_nearest_projection": [
+            941.9930732615883,
+            762.3354173646061
+          ]
+        },
+        {
+          "id": "D08",
+          "kind": "curve",
+          "curve": "base",
+          "xy": [
+            847,
+            1009
+          ],
+          "sigma_px": 8,
+          "original_names": [
+            "base_left"
+          ],
+          "before_error_px": 49.10677406725723,
+          "after_error_px": 4.753051504711425,
+          "before_nearest_projection": [
+            864.994391635732,
+            963.3088944218621
+          ],
+          "after_nearest_projection": [
+            851.2220728353191,
+            1006.8169746726846
+          ]
+        },
+        {
+          "id": "D09",
+          "kind": "curve",
+          "curve": "base",
+          "xy": [
+            1019,
+            1009
+          ],
+          "sigma_px": 8,
+          "original_names": [
+            "base_right"
+          ],
+          "before_error_px": 40.94435160765268,
+          "after_error_px": 4.819613031686725,
+          "before_nearest_projection": [
+            1014.0151189166539,
+            968.3602302029651
+          ],
+          "after_nearest_projection": [
+            1014.8358707073825,
+            1006.5733362388726
+          ]
+        },
+        {
+          "id": "D10",
+          "kind": "curve",
+          "curve": "base",
+          "xy": [
+            934,
+            1024
+          ],
+          "sigma_px": 4,
+          "original_names": [
+            "base_front"
+          ],
+          "before_error_px": 52.61835881808918,
+          "after_error_px": 1.5100712019923752,
+          "before_nearest_projection": [
+            935.224846240752,
+            971.3958990534417
+          ],
+          "after_nearest_projection": [
+            934.0085961996958,
+            1025.510046734521
+          ]
+        },
+        {
+          "id": "D12",
+          "kind": "line",
+          "x_world": 1.455,
+          "xy": [
+            1005,
+            100
+          ],
+          "sigma_px": 3,
+          "original_names": [
+            "mullion_right_a"
+          ],
+          "before_error_px": 207.0124308927988,
+          "after_error_px": 0.006932394512576029,
+          "before_nearest_projection": [
+            1211.9433591607062,
+            94.65279106180267
+          ],
+          "after_nearest_projection": [
+            1004.9930676054898,
+            100.00000018444845
+          ]
+        },
+        {
+          "id": "D13",
+          "kind": "line",
+          "x_world": 1.455,
+          "xy": [
+            1005,
+            360
+          ],
+          "sigma_px": 3,
+          "original_names": [
+            "mullion_right_b"
+          ],
+          "before_error_px": 213.72832866732062,
+          "after_error_px": 1.4640592391778325e-05,
+          "before_nearest_projection": [
+            1218.6570161099316,
+            354.47931689673413
+          ],
+          "after_nearest_projection": [
+            1004.9999853594076,
+            360.00000000038955
+          ]
+        },
+        {
+          "id": "D14",
+          "kind": "line",
+          "x_world": 1.455,
+          "xy": [
+            1005,
+            821
+          ],
+          "sigma_px": 4,
+          "original_names": [
+            "mullion_right_c"
+          ],
+          "before_error_px": 225.636132029069,
+          "after_error_px": 0.012251069243011836,
+          "before_nearest_projection": [
+            1230.560846316058,
+            815.171733857901
+          ],
+          "after_nearest_projection": [
+            1005.0122510692387,
+            820.9999996740389
+          ]
+        }
+      ],
+      "all_first_annotations": [
+        {
+          "id": "D01",
+          "name": "seat_left",
+          "xy_native": [
+            875,
+            750
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "partial_contour",
+          "note": "Hand overlaps outer rim; visible endpoint is uncertain.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "D02",
+          "name": "seat_right",
+          "xy_native": [
+            1012,
+            751
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "partial_contour",
+          "note": "Hand overlaps endpoint.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "D03",
+          "name": "seat_rear",
+          "xy_native": [
+            942,
+            744
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "contour",
+          "note": "Visible back rim near screen middle.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "D04",
+          "name": "seat_front",
+          "xy_native": [
+            942,
+            763
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "contour",
+          "note": "Visible front rim.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "D05",
+          "name": "seat_ellipse_center",
+          "xy_native": [
+            943,
+            753
+          ],
+          "uncertainty_radius_px": 10,
+          "constraint_type": "inferred_2d",
+          "note": "Ellipse image-center estimate, NOT guaranteed projected 3D circle center.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "D06",
+          "name": "waist_left",
+          "xy_native": [
+            916,
+            880
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "contour",
+          "note": "Apparent silhouette minimum; not fixed material point.",
+          "use": "not-fitted curve diagnostic; waist-circle approximation, silhouette height view-dependent",
+          "before_error_px": 62.25094363520306,
+          "after_error_px": 0.20876812925506738
+        },
+        {
+          "id": "D07",
+          "name": "waist_right",
+          "xy_native": [
+            954,
+            880
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "contour",
+          "note": "Apparent silhouette minimum.",
+          "use": "not-fitted curve diagnostic; waist-circle approximation, silhouette height view-dependent",
+          "before_error_px": 60.91487778597446,
+          "after_error_px": 0.42429434294598684
+        },
+        {
+          "id": "D08",
+          "name": "base_left",
+          "xy_native": [
+            847,
+            1009
+          ],
+          "uncertainty_radius_px": 8,
+          "constraint_type": "partial_contour",
+          "note": "Left rim partly merged with dark shoe/shadow.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "D09",
+          "name": "base_right",
+          "xy_native": [
+            1019,
+            1009
+          ],
+          "uncertainty_radius_px": 8,
+          "constraint_type": "partial_contour",
+          "note": "Right rear shape contaminated by shoe/shadow.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "D10",
+          "name": "base_front",
+          "xy_native": [
+            934,
+            1024
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "contour",
+          "note": "Bright lower front rim; apparent extremum.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "D11",
+          "name": "base_center_estimate",
+          "xy_native": [
+            934,
+            1008
+          ],
+          "uncertainty_radius_px": 17,
+          "constraint_type": "inferred_2d",
+          "note": "Approximate projected ellipse center; rear rim not fully visible.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "D12",
+          "name": "mullion_right_a",
+          "xy_native": [
+            1005,
+            100
+          ],
+          "uncertainty_radius_px": 3,
+          "constraint_type": "line_only",
+          "note": "Same visible straight edge; no assigned 3D height.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 207.0124308927988,
+          "edge_diagnostic_after_px": 0.006932394512576029,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "D13",
+          "name": "mullion_right_b",
+          "xy_native": [
+            1005,
+            360
+          ],
+          "uncertainty_radius_px": 3,
+          "constraint_type": "line_only",
+          "note": "Same visible straight edge.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 213.72832866732062,
+          "edge_diagnostic_after_px": 1.4640592391778325e-05,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "D14",
+          "name": "mullion_right_c",
+          "xy_native": [
+            1005,
+            821
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "Visible above sill, partly actor-occluded elsewhere.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 225.636132029069,
+          "edge_diagnostic_after_px": 0.012251069243011836,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "D15",
+          "name": "mullion_sill_right",
+          "xy_native": [
+            1005,
+            839
+          ],
+          "uncertainty_radius_px": 6,
+          "constraint_type": "junction_partial",
+          "note": "Visible RIGHT edge at sill, not center of mullion and not wall-floor contact.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "D16",
+          "name": "left_tie_center",
+          "xy_native": [
+            83,
+            381
+          ],
+          "uncertainty_radius_px": 23,
+          "constraint_type": "inferred_2d",
+          "note": "Dark band broad; only low-weight appearance region.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "D17",
+          "name": "wood_seat_center",
+          "xy_native": [
+            1773,
+            740
+          ],
+          "uncertainty_radius_px": 22,
+          "constraint_type": "inferred_2d",
+          "note": "Dark wood seat apparent ellipse center; weak outline.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "D18",
+          "name": "bar_outer_horizontal_tangent",
+          "xy_native": [
+            1420,
+            595
+          ],
+          "uncertainty_radius_px": 28,
+          "constraint_type": "curve_region",
+          "note": "Rounded transition has no unique physical vertex.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "D19",
+          "name": "bar_outer_vertical_tangent",
+          "xy_native": [
+            1360,
+            658
+          ],
+          "uncertainty_radius_px": 25,
+          "constraint_type": "curve_region",
+          "note": "Contour tangent region, not homologous 3D point.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "D20",
+          "name": "bar_inner_horizontal_tangent",
+          "xy_native": [
+            1603,
+            613
+          ],
+          "uncertainty_radius_px": 27,
+          "constraint_type": "curve_region",
+          "note": "Dark inner curve transition, weak.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        }
+      ],
+      "not_marked": [
+        "mullion bottom CENTER obscured/ambiguous; only right visible junction provided",
+        "far wooden stool hidden/off-frame"
+      ],
+      "before_mean_px": 105.07162890281704,
+      "after_mean_px": 1.6165455116011203,
+      "after_max_px": 4.819613031686725,
+      "limits": "Conditional fixed-R08-geometry camera solve. All points seen/manual; no blind validation. Circles are exact named R08 rings, not proof the visible source edge has same physical profile. Line center derived only from visible paired edges. Sigma subjective, not statistical. Multi-start solutions and invalid/ambiguous points retained."
+    },
+    {
+      "camera": "SOURCE_E_oblique",
+      "frame_key": "E",
+      "source_file": "cityroom-native-oblique-1356.934381.png",
+      "source_sha256": "d8c91fccc91be3721c98dfb7aedd8df928a09acbc4b550c0099201e0f198bbec",
+      "source_time_seconds": 1356.934381,
+      "width": 1920,
+      "height": 1080,
+      "fixed_lens_mm": 30.0,
+      "fixed_focal_px": 1600.0,
+      "initial": [
+        -0.800000011920929,
+        -3.5999999046325684,
+        1.25,
+        1.6449120341975583,
+        -0.12906206446779653,
+        -0.11938944287297275
+      ],
+      "fitted": [
+        0.3477669552751525,
+        -3.1307632535093832,
+        1.660437387804845,
+        1.5775885527042781,
+        0.12107127072458061,
+        0.12446720692366221
+      ],
+      "rotation_matrix": [
+        [
+          0.9878352015687969,
+          -0.0013497906449817104,
+          0.15549852927519608
+        ],
+        [
+          0.15547638131285224,
+          -0.010404379916243378,
+          -0.9877848165123915
+        ],
+        [
+          0.002951168479579644,
+          0.9999449619572935,
+          -0.010067952166748884
+        ]
+      ],
+      "bounds": {
+        "lower": [
+          -6.3,
+          -6.8,
+          0.2,
+          0.4449120341975583,
+          -1.3290620644677964,
+          -1.3193894428729727
+        ],
+        "upper": [
+          6.3,
+          0.0,
+          5.0,
+          2.8449120341975584,
+          1.0709379355322035,
+          1.0806105571270272
+        ]
+      },
+      "runs": [
+        {
+          "start": [
+            -0.800000011920929,
+            -3.5999999046325684,
+            1.25,
+            1.6449120341975583,
+            -0.12906206446779653,
+            -0.11938944287297275
+          ],
+          "solution": [
+            0.3477669552751525,
+            -3.1307632535093832,
+            1.660437387804845,
+            1.5775885527042781,
+            0.12107127072458061,
+            0.12446720692366221
+          ],
+          "cost": 0.0,
+          "success": true,
+          "nfev": 26,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            360.9181292010663,
+            338.99109101591176,
+            130.6664981644375,
+            44.59531349203266,
+            12.465032615150545,
+            7.389933966326947
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 48.83915483489159
+        },
+        {
+          "start": [
+            3.0,
+            -4.0,
+            1.5,
+            1.5400499835188681,
+            0.36355648485788367,
+            0.3635564848578836
+          ],
+          "solution": [
+            0.3477668817780358,
+            -3.1307630852926387,
+            1.6604371906706756,
+            1.5775885891115824,
+            0.1210712563501032,
+            0.12446720446464701
+          ],
+          "cost": 7.984723993104126e-13,
+          "success": true,
+          "nfev": 32,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            377.05009378807273,
+            234.8271479162611,
+            109.04632006780308,
+            79.93736780016923,
+            46.838575703994294,
+            5.130136771467003
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 73.49708410995294
+        },
+        {
+          "start": [
+            -3.0,
+            -4.0,
+            1.5,
+            1.5400499835188681,
+            -0.36355648485788367,
+            -0.3635564848578836
+          ],
+          "solution": [
+            0.3477669722397297,
+            -3.130763300675982,
+            1.6604374235471597,
+            1.5775885462812733,
+            0.12107127393265874,
+            0.12446720796196252
+          ],
+          "cost": 1.6431300764452317e-14,
+          "success": true,
+          "nfev": 52,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            359.69554052869523,
+            324.9555434789587,
+            120.92809534310948,
+            44.698909975315544,
+            19.55205952669455,
+            13.711417820713308
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 26.233285662502176
+        }
+      ],
+      "selected_run": 0,
+      "training": [
+        {
+          "id": "E01",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            970,
+            829
+          ],
+          "sigma_px": 8,
+          "original_names": [
+            "seat_left"
+          ],
+          "before_error_px": 42.09440542693038,
+          "after_error_px": 5.397309621899007e-08,
+          "before_nearest_projection": [
+            970.0683652604756,
+            786.9056500889021
+          ],
+          "after_nearest_projection": [
+            969.9999999671219,
+            828.9999999571967
+          ]
+        },
+        {
+          "id": "E02",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            1197,
+            833
+          ],
+          "sigma_px": 7,
+          "original_names": [
+            "seat_right"
+          ],
+          "before_error_px": 133.35130541669145,
+          "after_error_px": 4.092455463823633e-08,
+          "before_nearest_projection": [
+            1074.7270149554342,
+            779.7845155558355
+          ],
+          "after_nearest_projection": [
+            1197.0000000272128,
+            832.9999999694339
+          ]
+        },
+        {
+          "id": "E03",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            1082,
+            815
+          ],
+          "sigma_px": 5,
+          "original_names": [
+            "seat_rear"
+          ],
+          "before_error_px": 35.189527501406985,
+          "after_error_px": 4.8915465034466205e-08,
+          "before_nearest_projection": [
+            1071.9468117063632,
+            781.2770663953303
+          ],
+          "after_nearest_projection": [
+            1081.9999999992544,
+            815.0000000489098
+          ]
+        },
+        {
+          "id": "E04",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            1082,
+            855
+          ],
+          "sigma_px": 6,
+          "original_names": [
+            "seat_front"
+          ],
+          "before_error_px": 74.14380069391495,
+          "after_error_px": 3.141174059727686e-08,
+          "before_nearest_projection": [
+            1068.2220106825214,
+            782.1476136855736
+          ],
+          "after_nearest_projection": [
+            1082.0000000005384,
+            854.9999999685929
+          ]
+        },
+        {
+          "id": "E08+E10",
+          "kind": "line",
+          "x_world": 1.4,
+          "xy": [
+            1429.0,
+            150.0
+          ],
+          "sigma_px": 4,
+          "original_names": [
+            "mullion_left_a",
+            "mullion_right_a"
+          ],
+          "before_error_px": 320.82911245611876,
+          "after_error_px": 2.6017633390541737e-10,
+          "before_nearest_projection": [
+            1108.179579287954,
+            152.3615786090587
+          ],
+          "after_nearest_projection": [
+            1429.0000000002601,
+            150.0
+          ]
+        },
+        {
+          "id": "E09+E11",
+          "kind": "line",
+          "x_world": 1.4,
+          "xy": [
+            1429.0,
+            700.0
+          ],
+          "sigma_px": 4,
+          "original_names": [
+            "mullion_left_b",
+            "mullion_right_b"
+          ],
+          "before_error_px": 316.7806387218034,
+          "after_error_px": 1.2565749447354725e-10,
+          "before_nearest_projection": [
+            1112.2279433430158,
+            702.3317783552816
+          ],
+          "after_nearest_projection": [
+            1428.9999999998743,
+            700.0
+          ]
+        }
+      ],
+      "all_first_annotations": [
+        {
+          "id": "E01",
+          "name": "seat_left",
+          "xy_native": [
+            970,
+            829
+          ],
+          "uncertainty_radius_px": 8,
+          "constraint_type": "contour",
+          "note": "Leftmost apparent rim; boot near but endpoint visible.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "E02",
+          "name": "seat_right",
+          "xy_native": [
+            1197,
+            833
+          ],
+          "uncertainty_radius_px": 7,
+          "constraint_type": "contour",
+          "note": "Rightmost apparent rim.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "E03",
+          "name": "seat_rear",
+          "xy_native": [
+            1082,
+            815
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "contour",
+          "note": "Back rim center region.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "E04",
+          "name": "seat_front",
+          "xy_native": [
+            1082,
+            855
+          ],
+          "uncertainty_radius_px": 6,
+          "constraint_type": "contour",
+          "note": "Front rim dark but discernible.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "E05",
+          "name": "seat_ellipse_center",
+          "xy_native": [
+            1083,
+            835
+          ],
+          "uncertainty_radius_px": 10,
+          "constraint_type": "inferred_2d",
+          "note": "2D ellipse center only; projection does not preserve circle center.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "E06",
+          "name": "waist_left",
+          "xy_native": [
+            1053,
+            997
+          ],
+          "uncertainty_radius_px": 7,
+          "constraint_type": "contour",
+          "note": "Silhouette minimum in dark region.",
+          "use": "not-fitted curve diagnostic; waist-circle approximation, silhouette height view-dependent",
+          "before_error_px": 83.9124901904915,
+          "after_error_px": 4.873730588978344
+        },
+        {
+          "id": "E07",
+          "name": "waist_right",
+          "xy_native": [
+            1096,
+            997
+          ],
+          "uncertainty_radius_px": 8,
+          "constraint_type": "contour",
+          "note": "Silhouette minimum in dark region.",
+          "use": "not-fitted curve diagnostic; waist-circle approximation, silhouette height view-dependent",
+          "before_error_px": 114.78498383295556,
+          "after_error_px": 7.592189562393453
+        },
+        {
+          "id": "E08",
+          "name": "mullion_left_a",
+          "xy_native": [
+            1400,
+            150
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "No 3D height correspondence.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 301.33646729085916,
+          "edge_diagnostic_after_px": 17.454650424941413,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "E09",
+          "name": "mullion_left_b",
+          "xy_native": [
+            1400,
+            700
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "No 3D height correspondence.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 297.5477241774103,
+          "edge_diagnostic_after_px": 17.41459309504587,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "E10",
+          "name": "mullion_right_a",
+          "xy_native": [
+            1458,
+            150
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "No 3D height correspondence.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 340.3400282590786,
+          "edge_diagnostic_after_px": 17.429464901828958,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "E11",
+          "name": "mullion_right_b",
+          "xy_native": [
+            1458,
+            700
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "No 3D height correspondence.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 336.032331426053,
+          "edge_diagnostic_after_px": 17.389320189922646,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "E12",
+          "name": "mullion_sill_left",
+          "xy_native": [
+            1400,
+            938
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "junction_partial",
+          "note": "Sill junction visible but very dark.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "E13",
+          "name": "mullion_sill_right",
+          "xy_native": [
+            1458,
+            944
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "junction_partial",
+          "note": "Sill junction, not floor.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        }
+      ],
+      "not_marked": [
+        "white stool base outside image; NO base center",
+        "left curtain tie obscured by performer and darkness",
+        "wood stool outside frame",
+        "bar rounded corner mostly outside frame"
+      ],
+      "before_mean_px": 153.73146503614433,
+      "after_mean_px": 2.926844838622474e-08,
+      "after_max_px": 5.397309621899007e-08,
+      "limits": "Conditional fixed-R08-geometry camera solve. All points seen/manual; no blind validation. Circles are exact named R08 rings, not proof the visible source edge has same physical profile. Line center derived only from visible paired edges. Sigma subjective, not statistical. Multi-start solutions and invalid/ambiguous points retained."
+    },
+    {
+      "camera": "SOURCE_F_fan4k",
+      "frame_key": "F",
+      "source_file": "fan4k-native-oblique-55.048960.png",
+      "source_sha256": "21db78bec5ede74fff72548bcfbd677efcb8b784c53904e8964be67ce2c578ca",
+      "source_time_seconds": 55.04896,
+      "width": 3840,
+      "height": 2160,
+      "fixed_lens_mm": 32.0,
+      "fixed_focal_px": 3413.3333333333335,
+      "initial": [
+        -2.200000047683716,
+        -3.799999952316284,
+        1.399999976158142,
+        1.586153188845882,
+        -0.3221844079921653,
+        -0.30985953624776796
+      ],
+      "fitted": [
+        2.1379773318989836,
+        -5.032069137415149,
+        1.766340066959288,
+        1.5407428750181444,
+        0.3122785684465951,
+        0.3107226418379626
+      ],
+      "rotation_matrix": [
+        [
+          0.9220333103017113,
+          -0.0005036785834016677,
+          0.3871102181575069
+        ],
+        [
+          0.3871028732719748,
+          0.007495661044737645,
+          -0.9220060631959442
+        ],
+        [
+          -0.0024372522744648406,
+          0.9999717802885174,
+          0.007106224592819399
+        ]
+      ],
+      "bounds": {
+        "lower": [
+          -6.3,
+          -6.8,
+          0.2,
+          0.386153188845882,
+          -1.5221844079921651,
+          -1.509859536247768
+        ],
+        "upper": [
+          6.3,
+          0.0,
+          5.0,
+          2.7861531888458817,
+          0.8778155920078347,
+          0.890140463752232
+        ]
+      },
+      "runs": [
+        {
+          "start": [
+            -2.200000047683716,
+            -3.799999952316284,
+            1.399999976158142,
+            1.586153188845882,
+            -0.3221844079921653,
+            -0.30985953624776796
+          ],
+          "solution": [
+            2.1379773318989836,
+            -5.032069137415149,
+            1.766340066959288,
+            1.5407428750181444,
+            0.3122785684465951,
+            0.3107226418379626
+          ],
+          "cost": 2.0142146453219882,
+          "success": true,
+          "nfev": 48,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            598.759926235428,
+            387.5669810274047,
+            58.03314661252378,
+            34.03119385481811,
+            15.317079030411604,
+            6.209972509590345
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 96.41909449852405
+        },
+        {
+          "start": [
+            3.0,
+            -4.0,
+            1.5,
+            1.5400499835188681,
+            0.36355648485788367,
+            0.3635564848578836
+          ],
+          "solution": [
+            1.6409620588136276,
+            -4.3762242097403705,
+            1.4721126709326806,
+            1.5795362768142676,
+            0.270113582349946,
+            0.2801557509041385
+          ],
+          "cost": 2.085731790919911,
+          "success": true,
+          "nfev": 51,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            594.9702171663257,
+            367.9626925771281,
+            53.29225890580862,
+            34.516173104265754,
+            9.733405468041097,
+            7.98069962460525
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 74.55113525786341
+        },
+        {
+          "start": [
+            -3.0,
+            -4.0,
+            1.5,
+            1.5400499835188681,
+            -0.36355648485788367,
+            -0.3635564848578836
+          ],
+          "solution": [
+            1.6409637753664905,
+            -4.376227128672156,
+            1.4721116720707905,
+            1.5795364919655068,
+            0.27011371807001394,
+            0.2801559105719617
+          ],
+          "cost": 2.0857317908445925,
+          "success": true,
+          "nfev": 50,
+          "bound_hit": false,
+          "normalized_jacobian_singular_values": [
+            594.9704538295964,
+            367.9621925366026,
+            53.29233363008196,
+            34.5162060391521,
+            9.73338692837751,
+            7.980678115019034
+          ],
+          "rank_relative_1e_6": 6,
+          "condition_number": 74.55136584319908
+        }
+      ],
+      "selected_run": 0,
+      "training": [
+        {
+          "id": "F01",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            1963,
+            1500
+          ],
+          "sigma_px": 14,
+          "original_names": [
+            "seat_left"
+          ],
+          "before_error_px": 5.939884371271105,
+          "after_error_px": 33.01168558686243,
+          "before_nearest_projection": [
+            1962.9697470732372,
+            1505.9398073289033
+          ],
+          "after_nearest_projection": [
+            1996.0116630253856,
+            1499.9614048675269
+          ]
+        },
+        {
+          "id": "F02",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            2328,
+            1508
+          ],
+          "sigma_px": 12,
+          "original_names": [
+            "seat_right"
+          ],
+          "before_error_px": 177.74376197696947,
+          "after_error_px": 8.051907876289084,
+          "before_nearest_projection": [
+            2150.9644249001376,
+            1523.8508697170396
+          ],
+          "after_nearest_projection": [
+            2321.1333828625516,
+            1503.7949090930224
+          ]
+        },
+        {
+          "id": "F03",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            2150,
+            1481
+          ],
+          "sigma_px": 9,
+          "original_names": [
+            "seat_rear"
+          ],
+          "before_error_px": 38.36114521334758,
+          "after_error_px": 1.234897146364091,
+          "before_nearest_projection": [
+            2140.314130291233,
+            1518.1182083358603
+          ],
+          "after_nearest_projection": [
+            2149.998669856723,
+            1479.765103570004
+          ]
+        },
+        {
+          "id": "F04",
+          "kind": "curve",
+          "curve": "seat",
+          "xy": [
+            2150,
+            1521
+          ],
+          "sigma_px": 10,
+          "original_names": [
+            "seat_front"
+          ],
+          "before_error_px": 0.8946735330988641,
+          "after_error_px": 0.9823840942984133,
+          "before_nearest_projection": [
+            2149.456956869353,
+            1521.711016799439
+          ],
+          "after_nearest_projection": [
+            2149.9861406966106,
+            1521.9822863271165
+          ]
+        },
+        {
+          "id": "F08",
+          "kind": "curve",
+          "curve": "base",
+          "xy": [
+            2027,
+            1978
+          ],
+          "sigma_px": 10,
+          "original_names": [
+            "base_left"
+          ],
+          "before_error_px": 70.36594623958734,
+          "after_error_px": 6.731850488374059,
+          "before_nearest_projection": [
+            2020.2713568848826,
+            2048.0434989989926
+          ],
+          "after_nearest_projection": [
+            2024.0317924579383,
+            1984.0421482094591
+          ]
+        },
+        {
+          "id": "F10",
+          "kind": "curve",
+          "curve": "base",
+          "xy": [
+            2180,
+            2010
+          ],
+          "sigma_px": 11,
+          "original_names": [
+            "base_front"
+          ],
+          "before_error_px": 82.50936283318788,
+          "after_error_px": 2.669307003547614,
+          "before_nearest_projection": [
+            2132.051404318279,
+            2077.1470559837844
+          ],
+          "after_nearest_projection": [
+            2179.946538595893,
+            2007.3312284178935
+          ]
+        },
+        {
+          "id": "F12+F14",
+          "kind": "line",
+          "x_world": 1.4,
+          "xy": [
+            3066.0,
+            350.0
+          ],
+          "sigma_px": 5,
+          "original_names": [
+            "mullion_left_a",
+            "mullion_right_a"
+          ],
+          "before_error_px": 1185.4957969397124,
+          "after_error_px": 0.019136753598956523,
+          "before_nearest_projection": [
+            1880.504325908359,
+            349.46030403950436
+          ],
+          "after_nearest_projection": [
+            3065.9808632464265,
+            350.0000009827895
+          ]
+        },
+        {
+          "id": "F13+F15",
+          "kind": "line",
+          "x_world": 1.4,
+          "xy": [
+            3066.0,
+            1100.0
+          ],
+          "sigma_px": 5,
+          "original_names": [
+            "mullion_left_b",
+            "mullion_right_b"
+          ],
+          "before_error_px": 1185.8372338063941,
+          "after_error_px": 0.019380339699590386,
+          "before_nearest_projection": [
+            1880.162889077059,
+            1099.460148600659
+          ],
+          "after_nearest_projection": [
+            3066.019380339674,
+            1099.9999990047008
+          ]
+        }
+      ],
+      "all_first_annotations": [
+        {
+          "id": "F01",
+          "name": "seat_left",
+          "xy_native": [
+            1963,
+            1500
+          ],
+          "uncertainty_radius_px": 14,
+          "constraint_type": "partial_contour",
+          "note": "Hand over left end; native coordinates.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "F02",
+          "name": "seat_right",
+          "xy_native": [
+            2328,
+            1508
+          ],
+          "uncertainty_radius_px": 12,
+          "constraint_type": "partial_contour",
+          "note": "Right endpoint visible beyond hand.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "F03",
+          "name": "seat_rear",
+          "xy_native": [
+            2150,
+            1481
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "contour",
+          "note": "Back rim.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "F04",
+          "name": "seat_front",
+          "xy_native": [
+            2150,
+            1521
+          ],
+          "uncertainty_radius_px": 10,
+          "constraint_type": "contour",
+          "note": "Front rim partly hand-occluded to right.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "F05",
+          "name": "seat_ellipse_center",
+          "xy_native": [
+            2147,
+            1502
+          ],
+          "uncertainty_radius_px": 20,
+          "constraint_type": "inferred_2d",
+          "note": "Image ellipse center only, not physical center correspondence.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "F06",
+          "name": "waist_left",
+          "xy_native": [
+            2121,
+            1770
+          ],
+          "uncertainty_radius_px": 7,
+          "constraint_type": "contour",
+          "note": "Apparent silhouette minimum.",
+          "use": "not-fitted curve diagnostic; waist-circle approximation, silhouette height view-dependent",
+          "before_error_px": 110.44642652987065,
+          "after_error_px": 32.62824977064299
+        },
+        {
+          "id": "F07",
+          "name": "waist_right",
+          "xy_native": [
+            2196,
+            1770
+          ],
+          "uncertainty_radius_px": 7,
+          "constraint_type": "contour",
+          "note": "Apparent silhouette minimum.",
+          "use": "not-fitted curve diagnostic; waist-circle approximation, silhouette height view-dependent",
+          "before_error_px": 183.3348319249003,
+          "after_error_px": 31.801408558047815
+        },
+        {
+          "id": "F08",
+          "name": "base_left",
+          "xy_native": [
+            2027,
+            1978
+          ],
+          "uncertainty_radius_px": 10,
+          "constraint_type": "contour",
+          "note": "Visible left end of base.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "F09",
+          "name": "base_right",
+          "xy_native": [
+            2334,
+            2024
+          ],
+          "uncertainty_radius_px": 22,
+          "constraint_type": "partial_contour",
+          "note": "Dark rim merges shadow to right.",
+          "use": "INVALIDATED by original-pixel review: white base/shadow fusion, not a reliable physical endpoint. V1 fit retained separately."
+        },
+        {
+          "id": "F10",
+          "name": "base_front",
+          "xy_native": [
+            2180,
+            2010
+          ],
+          "uncertainty_radius_px": 11,
+          "constraint_type": "contour",
+          "note": "Lower front rim on slanted apparent ellipse, not global y-extremum.",
+          "use": "training input (or paired-line component)"
+        },
+        {
+          "id": "F11",
+          "name": "base_center_estimate",
+          "xy_native": [
+            2180,
+            1989
+          ],
+          "uncertainty_radius_px": 30,
+          "constraint_type": "inferred_2d",
+          "note": "Rear base obscured; rough center only, not strong camera fitting point.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "F12",
+          "name": "mullion_left_a",
+          "xy_native": [
+            3020,
+            350
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "line_only",
+          "note": "Visible edge; no fixed 3D height.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 1157.677307129306,
+          "edge_diagnostic_after_px": 25.244640125221252,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "F13",
+          "name": "mullion_left_b",
+          "xy_native": [
+            3020,
+            1100
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "line_only",
+          "note": "Visible edge.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 1158.1759193162088,
+          "edge_diagnostic_after_px": 25.315487080061462,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "F14",
+          "name": "mullion_right_a",
+          "xy_native": [
+            3112,
+            350
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "line_only",
+          "note": "Visible edge.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 1213.396287521353,
+          "edge_diagnostic_after_px": 25.18992825607992,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "F15",
+          "name": "mullion_right_b",
+          "xy_native": [
+            3112,
+            1100
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "line_only",
+          "note": "Visible edge.",
+          "use": "training input (or paired-line component)",
+          "edge_diagnostic_before_px": 1213.5812583039503,
+          "edge_diagnostic_after_px": 25.183885998286804,
+          "edge_diagnostic_note": "Full original edge checked separately even when only middle line trained."
+        },
+        {
+          "id": "F16",
+          "name": "wood_seat_center",
+          "xy_native": [
+            3404,
+            1655
+          ],
+          "uncertainty_radius_px": 28,
+          "constraint_type": "inferred_2d",
+          "note": "Dark wood seat apparent center; no clean rear boundary.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "F17",
+          "name": "bar_outer_horizontal_tangent",
+          "xy_native": [
+            3075,
+            1266
+          ],
+          "uncertainty_radius_px": 45,
+          "constraint_type": "curve_region",
+          "note": "Blurred rounded transition; no unique 3D corner.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        },
+        {
+          "id": "F18",
+          "name": "bar_outer_vertical_tangent",
+          "xy_native": [
+            2887,
+            1400
+          ],
+          "uncertainty_radius_px": 35,
+          "constraint_type": "curve_region",
+          "note": "Outer contour transition region.",
+          "use": "retained visual diagnostic, no justified fixed 3D correspondence; no fabricated scalar error"
+        }
+      ],
+      "not_marked": [
+        "mullion/sill bottom intersection occluded by red bar",
+        "left tie band too dark to define center reliably",
+        "rear base rim partly occluded; inferred center flagged weak"
+      ],
+      "before_mean_px": 343.39347561419606,
+      "after_mean_px": 6.590068661129279,
+      "after_max_px": 33.01168558686243,
+      "limits": "Conditional fixed-R08-geometry camera solve. All points seen/manual; no blind validation. Circles are exact named R08 rings, not proof the visible source edge has same physical profile. Line center derived only from visible paired edges. Sigma subjective, not statistical. Multi-start solutions and invalid/ambiguous points retained."
+    }
+  ]
+}
