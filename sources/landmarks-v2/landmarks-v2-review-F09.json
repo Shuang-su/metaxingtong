@@ -1,0 +1,93 @@
+{
+  "method": "manual-native-crop-review-v2",
+  "supersedes_without_modifying": {
+    "file": "landmarks-v1.json",
+    "sha256": "5a1a15693289d7ad05a1f57a43b1e0fe95c69d7312b9bb9e0eb7e6a07e1767dd"
+  },
+  "retained_original_point": {
+    "id": "F09",
+    "name": "base_right",
+    "xy_native": [
+      2334,
+      2024
+    ],
+    "uncertainty_radius_px": 22,
+    "constraint_type": "partial_contour",
+    "note": "Dark rim merges shadow to right."
+  },
+  "decision": "DISABLE F09 for solid-base endpoint constraints. No replacement right endpoint asserted.",
+  "reason": "Native 1:1 crop shows old coordinate in the junction where pale base surface fades into cast-shadow/floor region. It does not establish the rightmost extent of the actual stool. V1 uncertainty circle did not make its semantic endpoint label valid.",
+  "review_crop": {
+    "file": "F-base-review-original-crop.png",
+    "native_box_xyxy": [
+      1980,
+      1850,
+      2480,
+      2100
+    ],
+    "processing": "crop only; no rescale or enhancement"
+  },
+  "additional_front_contour_samples": [
+    {
+      "id": "Fv2-front-1",
+      "xy_native": [
+        2050,
+        1986
+      ],
+      "uncertainty_radius_px": 5,
+      "constraint_type": "view_dependent_visible_front_contour",
+      "note": "Visible base-to-dark-floor boundary. Not fixed 3D point, not an endpoint, not projected circle center."
+    },
+    {
+      "id": "Fv2-front-2",
+      "xy_native": [
+        2100,
+        1998
+      ],
+      "uncertainty_radius_px": 5,
+      "constraint_type": "view_dependent_visible_front_contour",
+      "note": "Visible base-to-dark-floor boundary. Not fixed 3D point, not an endpoint, not projected circle center."
+    },
+    {
+      "id": "Fv2-front-3",
+      "xy_native": [
+        2150,
+        2008
+      ],
+      "uncertainty_radius_px": 5,
+      "constraint_type": "view_dependent_visible_front_contour",
+      "note": "Visible base-to-dark-floor boundary. Not fixed 3D point, not an endpoint, not projected circle center."
+    },
+    {
+      "id": "Fv2-front-4",
+      "xy_native": [
+        2200,
+        2017
+      ],
+      "uncertainty_radius_px": 6,
+      "constraint_type": "view_dependent_visible_front_contour",
+      "note": "Visible base-to-dark-floor boundary. Not fixed 3D point, not an endpoint, not projected circle center."
+    },
+    {
+      "id": "Fv2-front-5",
+      "xy_native": [
+        2250,
+        2023
+      ],
+      "uncertainty_radius_px": 8,
+      "constraint_type": "view_dependent_visible_front_contour",
+      "note": "Visible base-to-dark-floor boundary. Not fixed 3D point, not an endpoint, not projected circle center."
+    }
+  ],
+  "ambiguous_region": {
+    "native_box_xyxy": [
+      2280,
+      1980,
+      2360,
+      2040
+    ],
+    "status": "Do not use to force a physical right endpoint. Appearance merges with shadow."
+  },
+  "other_v1_points": "All 51 v1 points remain unchanged. No whole-set revalidation implied. V1 F11 remains a weak inferred base center, not suitable as a hard 3D correspondence.",
+  "evaluation": "Keep original fit and renders. Compare disabled-F09 result separately; do not relabel original fit or select points by fit residual."
+}
