@@ -1,0 +1,26 @@
+{
+  "crop_xyxy": [
+    850,
+    735,
+    1120,
+    1080
+  ],
+  "method": "Same pixel crop rectangle in each original 1920x1080 image, no resizing or warp. Source hands occlude part of rim. Preview is R08 identical model/camera but not final suite image.",
+  "files": [
+    {
+      "label": "Native 1352.177747s",
+      "file": "sources/cityroom-native-1352.177747.png",
+      "sha256": "c272c51473bbbd3f809a8549a64b7552f820f311ad36f5e7ab42012dc544e25f"
+    },
+    {
+      "label": "R06 segmented failure",
+      "file": "renders/R06_material/SOURCE_B.png",
+      "sha256": "0b2f91ed074d1ed292344ed0f312edcdb16aaeee8a578ad8876237c94ee58bee"
+    },
+    {
+      "label": "R08 smooth preview",
+      "file": "renders/R08_profile_preview/SOURCE_B.png",
+      "sha256": "7bd0af9891263c1aa2edc95496c7a20e68a3a8bf0fd5eaf98950e7f371a568b5"
+    }
+  ]
+}
