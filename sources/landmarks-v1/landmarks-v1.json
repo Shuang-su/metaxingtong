@@ -1,0 +1,614 @@
+{
+  "method": "manual-visual-native-pixel-landmarks-v1",
+  "coordinate_system": "origin top-left; x right,y down; native PNG pixels; uncertainties are manual conservative hypotheses, not measured statistical errors",
+  "source_use": "Previously used modeling/diagnostic sources. First annotation set retained in full. Can fit or diagnose, never blind validation.",
+  "warning": "Silhouette extrema and projected ellipse centers are view-dependent. Do not assign identical 3D points across views. Rounded bar tangencies are curve constraints. No brightness transforms applied.",
+  "frames": {
+    "D": {
+      "source_file": "cityroom-native-low-1214.175651.png",
+      "source_sha256": "031ab85b7509dc616d205eb2247b22226dddb74d539e154651d3b60052d85903",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "landmarks": [
+        {
+          "id": "D01",
+          "name": "seat_left",
+          "xy_native": [
+            875,
+            750
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "partial_contour",
+          "note": "Hand overlaps outer rim; visible endpoint is uncertain."
+        },
+        {
+          "id": "D02",
+          "name": "seat_right",
+          "xy_native": [
+            1012,
+            751
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "partial_contour",
+          "note": "Hand overlaps endpoint."
+        },
+        {
+          "id": "D03",
+          "name": "seat_rear",
+          "xy_native": [
+            942,
+            744
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "contour",
+          "note": "Visible back rim near screen middle."
+        },
+        {
+          "id": "D04",
+          "name": "seat_front",
+          "xy_native": [
+            942,
+            763
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "contour",
+          "note": "Visible front rim."
+        },
+        {
+          "id": "D05",
+          "name": "seat_ellipse_center",
+          "xy_native": [
+            943,
+            753
+          ],
+          "uncertainty_radius_px": 10,
+          "constraint_type": "inferred_2d",
+          "note": "Ellipse image-center estimate, NOT guaranteed projected 3D circle center."
+        },
+        {
+          "id": "D06",
+          "name": "waist_left",
+          "xy_native": [
+            916,
+            880
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "contour",
+          "note": "Apparent silhouette minimum; not fixed material point."
+        },
+        {
+          "id": "D07",
+          "name": "waist_right",
+          "xy_native": [
+            954,
+            880
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "contour",
+          "note": "Apparent silhouette minimum."
+        },
+        {
+          "id": "D08",
+          "name": "base_left",
+          "xy_native": [
+            847,
+            1009
+          ],
+          "uncertainty_radius_px": 8,
+          "constraint_type": "partial_contour",
+          "note": "Left rim partly merged with dark shoe/shadow."
+        },
+        {
+          "id": "D09",
+          "name": "base_right",
+          "xy_native": [
+            1019,
+            1009
+          ],
+          "uncertainty_radius_px": 8,
+          "constraint_type": "partial_contour",
+          "note": "Right rear shape contaminated by shoe/shadow."
+        },
+        {
+          "id": "D10",
+          "name": "base_front",
+          "xy_native": [
+            934,
+            1024
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "contour",
+          "note": "Bright lower front rim; apparent extremum."
+        },
+        {
+          "id": "D11",
+          "name": "base_center_estimate",
+          "xy_native": [
+            934,
+            1008
+          ],
+          "uncertainty_radius_px": 17,
+          "constraint_type": "inferred_2d",
+          "note": "Approximate projected ellipse center; rear rim not fully visible."
+        },
+        {
+          "id": "D12",
+          "name": "mullion_right_a",
+          "xy_native": [
+            1005,
+            100
+          ],
+          "uncertainty_radius_px": 3,
+          "constraint_type": "line_only",
+          "note": "Same visible straight edge; no assigned 3D height."
+        },
+        {
+          "id": "D13",
+          "name": "mullion_right_b",
+          "xy_native": [
+            1005,
+            360
+          ],
+          "uncertainty_radius_px": 3,
+          "constraint_type": "line_only",
+          "note": "Same visible straight edge."
+        },
+        {
+          "id": "D14",
+          "name": "mullion_right_c",
+          "xy_native": [
+            1005,
+            821
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "Visible above sill, partly actor-occluded elsewhere."
+        },
+        {
+          "id": "D15",
+          "name": "mullion_sill_right",
+          "xy_native": [
+            1005,
+            839
+          ],
+          "uncertainty_radius_px": 6,
+          "constraint_type": "junction_partial",
+          "note": "Visible RIGHT edge at sill, not center of mullion and not wall-floor contact."
+        },
+        {
+          "id": "D16",
+          "name": "left_tie_center",
+          "xy_native": [
+            83,
+            381
+          ],
+          "uncertainty_radius_px": 23,
+          "constraint_type": "inferred_2d",
+          "note": "Dark band broad; only low-weight appearance region."
+        },
+        {
+          "id": "D17",
+          "name": "wood_seat_center",
+          "xy_native": [
+            1773,
+            740
+          ],
+          "uncertainty_radius_px": 22,
+          "constraint_type": "inferred_2d",
+          "note": "Dark wood seat apparent ellipse center; weak outline."
+        },
+        {
+          "id": "D18",
+          "name": "bar_outer_horizontal_tangent",
+          "xy_native": [
+            1420,
+            595
+          ],
+          "uncertainty_radius_px": 28,
+          "constraint_type": "curve_region",
+          "note": "Rounded transition has no unique physical vertex."
+        },
+        {
+          "id": "D19",
+          "name": "bar_outer_vertical_tangent",
+          "xy_native": [
+            1360,
+            658
+          ],
+          "uncertainty_radius_px": 25,
+          "constraint_type": "curve_region",
+          "note": "Contour tangent region, not homologous 3D point."
+        },
+        {
+          "id": "D20",
+          "name": "bar_inner_horizontal_tangent",
+          "xy_native": [
+            1603,
+            613
+          ],
+          "uncertainty_radius_px": 27,
+          "constraint_type": "curve_region",
+          "note": "Dark inner curve transition, weak."
+        }
+      ],
+      "not_marked": [
+        "mullion bottom CENTER obscured/ambiguous; only right visible junction provided",
+        "far wooden stool hidden/off-frame"
+      ]
+    },
+    "E": {
+      "source_file": "cityroom-native-oblique-1356.934381.png",
+      "source_sha256": "d8c91fccc91be3721c98dfb7aedd8df928a09acbc4b550c0099201e0f198bbec",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "landmarks": [
+        {
+          "id": "E01",
+          "name": "seat_left",
+          "xy_native": [
+            970,
+            829
+          ],
+          "uncertainty_radius_px": 8,
+          "constraint_type": "contour",
+          "note": "Leftmost apparent rim; boot near but endpoint visible."
+        },
+        {
+          "id": "E02",
+          "name": "seat_right",
+          "xy_native": [
+            1197,
+            833
+          ],
+          "uncertainty_radius_px": 7,
+          "constraint_type": "contour",
+          "note": "Rightmost apparent rim."
+        },
+        {
+          "id": "E03",
+          "name": "seat_rear",
+          "xy_native": [
+            1082,
+            815
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "contour",
+          "note": "Back rim center region."
+        },
+        {
+          "id": "E04",
+          "name": "seat_front",
+          "xy_native": [
+            1082,
+            855
+          ],
+          "uncertainty_radius_px": 6,
+          "constraint_type": "contour",
+          "note": "Front rim dark but discernible."
+        },
+        {
+          "id": "E05",
+          "name": "seat_ellipse_center",
+          "xy_native": [
+            1083,
+            835
+          ],
+          "uncertainty_radius_px": 10,
+          "constraint_type": "inferred_2d",
+          "note": "2D ellipse center only; projection does not preserve circle center."
+        },
+        {
+          "id": "E06",
+          "name": "waist_left",
+          "xy_native": [
+            1053,
+            997
+          ],
+          "uncertainty_radius_px": 7,
+          "constraint_type": "contour",
+          "note": "Silhouette minimum in dark region."
+        },
+        {
+          "id": "E07",
+          "name": "waist_right",
+          "xy_native": [
+            1096,
+            997
+          ],
+          "uncertainty_radius_px": 8,
+          "constraint_type": "contour",
+          "note": "Silhouette minimum in dark region."
+        },
+        {
+          "id": "E08",
+          "name": "mullion_left_a",
+          "xy_native": [
+            1400,
+            150
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "No 3D height correspondence."
+        },
+        {
+          "id": "E09",
+          "name": "mullion_left_b",
+          "xy_native": [
+            1400,
+            700
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "No 3D height correspondence."
+        },
+        {
+          "id": "E10",
+          "name": "mullion_right_a",
+          "xy_native": [
+            1458,
+            150
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "No 3D height correspondence."
+        },
+        {
+          "id": "E11",
+          "name": "mullion_right_b",
+          "xy_native": [
+            1458,
+            700
+          ],
+          "uncertainty_radius_px": 4,
+          "constraint_type": "line_only",
+          "note": "No 3D height correspondence."
+        },
+        {
+          "id": "E12",
+          "name": "mullion_sill_left",
+          "xy_native": [
+            1400,
+            938
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "junction_partial",
+          "note": "Sill junction visible but very dark."
+        },
+        {
+          "id": "E13",
+          "name": "mullion_sill_right",
+          "xy_native": [
+            1458,
+            944
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "junction_partial",
+          "note": "Sill junction, not floor."
+        }
+      ],
+      "not_marked": [
+        "white stool base outside image; NO base center",
+        "left curtain tie obscured by performer and darkness",
+        "wood stool outside frame",
+        "bar rounded corner mostly outside frame"
+      ]
+    },
+    "F": {
+      "source_file": "fan4k-native-oblique-55.048960.png",
+      "source_sha256": "21db78bec5ede74fff72548bcfbd677efcb8b784c53904e8964be67ce2c578ca",
+      "native_dimensions": [
+        3840,
+        2160
+      ],
+      "landmarks": [
+        {
+          "id": "F01",
+          "name": "seat_left",
+          "xy_native": [
+            1963,
+            1500
+          ],
+          "uncertainty_radius_px": 14,
+          "constraint_type": "partial_contour",
+          "note": "Hand over left end; native coordinates."
+        },
+        {
+          "id": "F02",
+          "name": "seat_right",
+          "xy_native": [
+            2328,
+            1508
+          ],
+          "uncertainty_radius_px": 12,
+          "constraint_type": "partial_contour",
+          "note": "Right endpoint visible beyond hand."
+        },
+        {
+          "id": "F03",
+          "name": "seat_rear",
+          "xy_native": [
+            2150,
+            1481
+          ],
+          "uncertainty_radius_px": 9,
+          "constraint_type": "contour",
+          "note": "Back rim."
+        },
+        {
+          "id": "F04",
+          "name": "seat_front",
+          "xy_native": [
+            2150,
+            1521
+          ],
+          "uncertainty_radius_px": 10,
+          "constraint_type": "contour",
+          "note": "Front rim partly hand-occluded to right."
+        },
+        {
+          "id": "F05",
+          "name": "seat_ellipse_center",
+          "xy_native": [
+            2147,
+            1502
+          ],
+          "uncertainty_radius_px": 20,
+          "constraint_type": "inferred_2d",
+          "note": "Image ellipse center only, not physical center correspondence."
+        },
+        {
+          "id": "F06",
+          "name": "waist_left",
+          "xy_native": [
+            2121,
+            1770
+          ],
+          "uncertainty_radius_px": 7,
+          "constraint_type": "contour",
+          "note": "Apparent silhouette minimum."
+        },
+        {
+          "id": "F07",
+          "name": "waist_right",
+          "xy_native": [
+            2196,
+            1770
+          ],
+          "uncertainty_radius_px": 7,
+          "constraint_type": "contour",
+          "note": "Apparent silhouette minimum."
+        },
+        {
+          "id": "F08",
+          "name": "base_left",
+          "xy_native": [
+            2027,
+            1978
+          ],
+          "uncertainty_radius_px": 10,
+          "constraint_type": "contour",
+          "note": "Visible left end of base."
+        },
+        {
+          "id": "F09",
+          "name": "base_right",
+          "xy_native": [
+            2334,
+            2024
+          ],
+          "uncertainty_radius_px": 22,
+          "constraint_type": "partial_contour",
+          "note": "Dark rim merges shadow to right."
+        },
+        {
+          "id": "F10",
+          "name": "base_front",
+          "xy_native": [
+            2180,
+            2010
+          ],
+          "uncertainty_radius_px": 11,
+          "constraint_type": "contour",
+          "note": "Lower front rim on slanted apparent ellipse, not global y-extremum."
+        },
+        {
+          "id": "F11",
+          "name": "base_center_estimate",
+          "xy_native": [
+            2180,
+            1989
+          ],
+          "uncertainty_radius_px": 30,
+          "constraint_type": "inferred_2d",
+          "note": "Rear base obscured; rough center only, not strong camera fitting point."
+        },
+        {
+          "id": "F12",
+          "name": "mullion_left_a",
+          "xy_native": [
+            3020,
+            350
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "line_only",
+          "note": "Visible edge; no fixed 3D height."
+        },
+        {
+          "id": "F13",
+          "name": "mullion_left_b",
+          "xy_native": [
+            3020,
+            1100
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "line_only",
+          "note": "Visible edge."
+        },
+        {
+          "id": "F14",
+          "name": "mullion_right_a",
+          "xy_native": [
+            3112,
+            350
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "line_only",
+          "note": "Visible edge."
+        },
+        {
+          "id": "F15",
+          "name": "mullion_right_b",
+          "xy_native": [
+            3112,
+            1100
+          ],
+          "uncertainty_radius_px": 5,
+          "constraint_type": "line_only",
+          "note": "Visible edge."
+        },
+        {
+          "id": "F16",
+          "name": "wood_seat_center",
+          "xy_native": [
+            3404,
+            1655
+          ],
+          "uncertainty_radius_px": 28,
+          "constraint_type": "inferred_2d",
+          "note": "Dark wood seat apparent center; no clean rear boundary."
+        },
+        {
+          "id": "F17",
+          "name": "bar_outer_horizontal_tangent",
+          "xy_native": [
+            3075,
+            1266
+          ],
+          "uncertainty_radius_px": 45,
+          "constraint_type": "curve_region",
+          "note": "Blurred rounded transition; no unique 3D corner."
+        },
+        {
+          "id": "F18",
+          "name": "bar_outer_vertical_tangent",
+          "xy_native": [
+            2887,
+            1400
+          ],
+          "uncertainty_radius_px": 35,
+          "constraint_type": "curve_region",
+          "note": "Outer contour transition region."
+        }
+      ],
+      "not_marked": [
+        "mullion/sill bottom intersection occluded by red bar",
+        "left tie band too dark to define center reliably",
+        "rear base rim partly occluded; inferred center flagged weak"
+      ]
+    }
+  }
+}
