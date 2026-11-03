@@ -9,9 +9,9 @@ for mode in ['material','white']:
  for cam,src in pairs.items():
   subprocess.run(['python','scripts/overlay_native.py',str(D/'sources'/src),str(D/f'renders/R08_{mode}/{cam}.png'),str(O/f'{mode}-{cam}-direct50.png')],cwd=D,check=True)
  # Eight diagnostic cameras: thumbnails are not original source/acceptance frames.
- sheet=Image.new('RGB',(1600,1000),'#17171b');dr=ImageDraw.Draw(sheet)
+ sheet=Image.new('RGB',(1600,2000),'#17171b');dr=ImageDraw.Draw(sheet)
  for i in range(8):
-  im=Image.open(D/f'renders/R08_{mode}/CHECK_{i+1:02}.png').convert('RGB');im.thumbnail((800,225));x=(i%2)*800;y=(i//2)*250
+  im=Image.open(D/f'renders/R08_{mode}/CHECK_{i+1:02}.png').convert('RGB');im.thumbnail((800,450));x=(i%2)*800;y=(i//2)*500
   sheet.paste(im,(x,y+25));dr.text((x+10,y+5),f'R08 {mode} CHECK {i+1:02} - diagnostic view, inferred structure',fill='white')
  sheet.save(O/f'{mode}-8-check-views.jpg',quality=95)
 # Fixed source-B crop rectangles, same exact coordinates on all 3 images. Not warped/aligned.
