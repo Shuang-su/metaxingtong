@@ -1,8 +1,14 @@
 # City-window bedroom stage / 城市拱窗卧室舞台
 
+## 当前增量 R09b（仍未验收）
+
+[增量报告](docs/R09b-report.zh.md) · [R09b材质BLEND](models/R09b_material.blend) · [白模BLEND](models/R09b_white.blend) · [材质GLB](models/R09b_material.glb) · [白模GLB](models/R09b_white.glb)
+
+仅D/E/F相机姿态变化，共享几何未动。含原51点、F09不可靠端点复核、半圈可见性诊断、保留退步和原尺寸叠图。完整重建仍未验收。下列R08段落是已交付基线，不被增量覆盖。
+
 2026-11-03 创建的真正新场景候选，**来源几何/外观未验收**。不是旧卧室改名，也不代表完整标准已通过。
 
-- 当前可编辑原件：[R08 material](models/R08_material.blend)、[R08 white](models/R08_white.blend)
+- R08基线可编辑原件：[R08 material](models/R08_material.blend)、[R08 white](models/R08_white.blend)
 - 导出：[material GLB](models/R08_material.glb)、[white GLB](models/R08_white.glb)
 - [中文报告及未验收项](docs/R08-report.zh.md)
 - [逐物件观察/推断表](docs/object-evidence.md)
