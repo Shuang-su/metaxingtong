@@ -1,0 +1,169 @@
+{
+  "source": {
+    "url": "https://www.bilibili.com/video/BV1ic12BMEk6/",
+    "uploader": "星瞳_Official",
+    "uploader_uid": "401315430",
+    "title": "【直播回放】【3D】「星·伊甸」星瞳生日会直播 2025年11月07日19点场",
+    "capture_date_utc": "2026-11-03",
+    "login_observed": true,
+    "login_evidence": "signed-in avatar and membership-quality access visible in browser; personal UI is not included in model/reference deliverables",
+    "selected_quality": "1080P 高码率",
+    "quality_menu": [
+      "1080P 高码率 大会员",
+      "1080P 高清",
+      "720P 准高清",
+      "480P 标清",
+      "360P 流畅",
+      "自动"
+    ],
+    "4K_in_this_source_menu": false,
+    "quality_evidence": "quality-menu-evidence.png",
+    "decode": "video element metadata 1920x1080 readyState4; native frame PNG dimension independently matches",
+    "higher_quality_other_source": "BV1q711BqE4K P1 same-scene visually confirmed; highest menu4K and 3840x2160 native decode PNG verified. See fan4k-capture-manifest.json. Upstream render resolution/upscaling unknown."
+  },
+  "frames": [
+    {
+      "file": "cityroom-native-1193.600873.png",
+      "sha256": "5d0082c4080d0080b4059600b3ecb84baa8dd81cda691445e8506d2969726ec7",
+      "bytes": 433102,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "media_time_seconds": 1193.600873,
+      "observed_before_native_save": {
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "after_save_file_verified": {
+        "PNG": true,
+        "dimensions_match_decode": true
+      },
+      "independent_after_save_media_state": "not separately logged; no playback command issued during native save",
+      "method": "Chrome built-in Save video frame as; download event.path; original PNG copied without resampling"
+    },
+    {
+      "file": "cityroom-native-1352.177747.png",
+      "sha256": "c272c51473bbbd3f809a8549a64b7552f820f311ad36f5e7ab42012dc544e25f",
+      "bytes": 854022,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "media_time_seconds": 1352.177747,
+      "observed_before_native_save": {
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "after_save_file_verified": {
+        "PNG": true,
+        "dimensions_match_decode": true
+      },
+      "independent_after_save_media_state": "not separately logged; no playback command issued during native save",
+      "method": "Chrome built-in Save video frame as; download event.path; original PNG copied without resampling"
+    },
+    {
+      "file": "cityroom-native-high-1308.663295.png",
+      "sha256": "064d2700b97136dcd85a9a34f7fb526fafdf9e9266806a68bdb7b91a90f22ae0",
+      "bytes": 814250,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "media_time_seconds": 1308.663295,
+      "observed_before_native_save": {
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "after_save_file_verified": {
+        "PNG": true,
+        "dimensions_match_decode": true
+      },
+      "independent_after_save_media_state": "not separately logged; no playback command issued during native save",
+      "method": "Chrome built-in Save video frame as; download event.path; original PNG copied without resampling"
+    },
+    {
+      "file": "cityroom-native-low-1214.175651.png",
+      "sha256": "031ab85b7509dc616d205eb2247b22226dddb74d539e154651d3b60052d85903",
+      "bytes": 882326,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "media_time_seconds": 1214.175651,
+      "observed_before_native_save": {
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "after_save_file_verified": {
+        "PNG": true,
+        "dimensions_match_decode": true
+      },
+      "independent_after_save_media_state": "not separately logged; no playback command issued during native save",
+      "method": "Chrome built-in Save video frame as; download event.path; original PNG copied without resampling"
+    },
+    {
+      "file": "cityroom-native-oblique-1356.934381.png",
+      "sha256": "d8c91fccc91be3721c98dfb7aedd8df928a09acbc4b550c0099201e0f198bbec",
+      "bytes": 701310,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "media_time_seconds": 1356.934381,
+      "observed_before_native_save": {
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "after_save_file_verified": {
+        "PNG": true,
+        "dimensions_match_decode": true
+      },
+      "independent_after_save_media_state": "not separately logged; no playback command issued during native save",
+      "method": "Chrome built-in Save video frame as; download event.path; original PNG copied without resampling"
+    }
+  ],
+  "limitations": [
+    "Depth is separate relative monocular estimation, not metric geometry validation.",
+    "Views remain predominantly front-facing with height and modest azimuth variation; no back/roof/exterior evidence.",
+    "Large dark regions and moving performer occlude furniture and wall boundaries.",
+    "City backdrop may be texture or geometry; not established.",
+    "Later independent replay same-scene validation pending.",
+    "Playback 0.5x used only for late navigation, no frame interpolation or upsampling applied."
+  ],
+  "failed_trials": [
+    {
+      "method": "Native Save video frame without registered download listener",
+      "observed": "menu closes, no downloaded file path obtained; Chrome download page initially empty",
+      "resolution": "register tab.playwright.waitForEvent(download) BEFORE activating native command; obtain returned download.path; supported downloads live at /opt/codex/downloads/<session>/<id> without extension"
+    },
+    {
+      "method": "native Copy video frame then tab.clipboard.read",
+      "observed": "empty array; no image obtained"
+    },
+    {
+      "method": "video locator.downloadMedia",
+      "observed": "download canceled; no media obtained",
+      "permission_denied": false
+    }
+  ],
+  "successful_ui_steps": [
+    "right-click video (Bilibili custom menu)",
+    "right-click unoccluded video area again (native Chrome menu in separate window)",
+    "Home, Down, Down selects Save video frame as",
+    "register download listener before Enter",
+    "await event.path then inspect PNG magic, dimensions and SHA256"
+  ],
+  "preview_policy": "*-viewport*.png are explicitly non-native exploratory screenshots, some may be stale during seeking; not source references, not acceptance evidence; private UI previews must not be published.",
+  "usage": "All five official PNGs were provided to modeling/depth and used in R05; none is a blind validation set."
+}
