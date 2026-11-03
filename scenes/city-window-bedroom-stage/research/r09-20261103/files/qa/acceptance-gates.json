@@ -1,0 +1,59 @@
+{
+  "scene_id": "city-window-bedroom-stage",
+  "candidate": "R08",
+  "recorded_at_utc": "2026-11-03T01:52:16.828370+00:00",
+  "overall_reconstruction_standard_accepted": false,
+  "gates": {
+    "novel_candidate": {
+      "status": "supported",
+      "evidence": "qa/novelty-review.md",
+      "limit": "Finite comparison scope documented"
+    },
+    "native_source_quality": {
+      "status": "supported_with_limits",
+      "evidence": "sources/*capture-manifest.json",
+      "limit": "Official 1920x1080 max; fan 3840x2160 decoded. Fan upstream non-upscaling unknown."
+    },
+    "shared_geometry_and_export": {
+      "status": "technical_pass",
+      "evidence": "qa/R08-independent-model-check.json"
+    },
+    "finite_shell_samples": {
+      "status": "sampled_pass",
+      "evidence": "qa/R08-shell-samples.json",
+      "limit": "54 hits + 4 expected openings; not all-space proof"
+    },
+    "eight_effective_diagnostic_views": {
+      "status": "supported",
+      "evidence": "renders/R08_material/CHECK_01..08 and white equivalents",
+      "limit": "Not eight verified source angles"
+    },
+    "direct50_formula": {
+      "status": "technical_pass",
+      "evidence": "qa/R08-suite-completeness.json",
+      "limit": "Does not establish geometric acceptance"
+    },
+    "source_alignment": {
+      "status": "FAILED",
+      "evidence": "qa/R08-projection-independent.json and comparisons/R08",
+      "limit": "Training point residuals and visible mismatch; D/E/F clearly failed"
+    },
+    "per_object_source_fidelity": {
+      "status": "FAILED_OR_UNRESOLVED",
+      "evidence": "docs/object-evidence.md"
+    },
+    "later_different_date_same_scene_replay": {
+      "status": "MISSING",
+      "evidence": "sources/later-replay-check.json"
+    },
+    "actual_monocular_relative_depth": {
+      "status": "performed_not_geometry_acceptance",
+      "evidence": "depth/ and depth-fan4k/",
+      "limit": "Eight raw model estimates with source-grid derivatives and conservative masks; not metric distances"
+    },
+    "final_remote_git_byte_verification": {
+      "status": "PENDING_EXTERNAL_ARCHIVAL_TASK",
+      "limit": "No local claim of remote completion"
+    }
+  }
+}
