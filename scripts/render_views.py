@@ -3,6 +3,9 @@ import bpy,json,sys
 from pathlib import Path
 args=sys.argv[sys.argv.index('--')+1:]
 model, config, outdir = map(Path,args[:3]); outdir.mkdir(parents=True,exist_ok=True)
+cancel = Path(__file__).resolve().parents[1]/'qa'/('cancel-render-'+model.stem+'.json')
+if cancel.exists():
+    print('CANCELLED before start:', cancel.read_text()); sys.exit(0)
 bpy.ops.wm.open_mainfile(filepath=str(model)); s=bpy.context.scene
 cfg=json.loads(config.read_text()); s.render.engine='CYCLES'
 s.cycles.samples=cfg.get('samples',16); s.cycles.use_denoising=False
