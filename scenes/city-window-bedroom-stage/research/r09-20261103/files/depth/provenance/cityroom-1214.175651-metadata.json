@@ -1,0 +1,90 @@
+{
+  "BV": "BV1ic12BMEk6",
+  "url": "https://www.bilibili.com/video/BV1ic12BMEk6/",
+  "uploader": "星瞳_Official",
+  "title": "【直播回放】【3D】「星·伊甸」星瞳生日会直播 2025年11月07日19点场",
+  "time_seconds": 1214.175651,
+  "sha256": "031ab85b7509dc616d205eb2247b22226dddb74d539e154651d3b60052d85903",
+  "capture_record": {
+    "file": "cityroom-native-low-1214.175651.png",
+    "sha256": "031ab85b7509dc616d205eb2247b22226dddb74d539e154651d3b60052d85903",
+    "bytes": 882326,
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "media_time_seconds": 1214.175651,
+    "observed_before_native_save": {
+      "paused": true,
+      "readyState": 4,
+      "videoWidth": 1920,
+      "videoHeight": 1080
+    },
+    "after_save_file_verified": {
+      "PNG": true,
+      "dimensions_match_decode": true
+    },
+    "independent_after_save_media_state": "not separately logged; no playback command issued during native save",
+    "method": "Chrome built-in Save video frame as; download event.path; original PNG copied without resampling"
+  },
+  "quality": "1080P 高码率",
+  "4K_in_menu": false,
+  "dark_rgb_max_threshold": 25,
+  "dark_mask_definition": "255 where all original RGB channels <=25 (8 bit). Low-signal heuristic only, NOT depth or model confidence.",
+  "exclusions": [
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          350,
+          0
+        ],
+        [
+          1570,
+          0
+        ],
+        [
+          1716,
+          580
+        ],
+        [
+          1348,
+          837
+        ],
+        [
+          176,
+          859
+        ],
+        [
+          141,
+          404
+        ]
+      ],
+      "class": 3,
+      "description": "Conservative night-city/window region, possible texture/backdrop/reflection, not metric geometry"
+    },
+    {
+      "shape": "rectangle",
+      "points": [
+        710,
+        426,
+        1048,
+        969
+      ],
+      "class": 1,
+      "description": "Conservative moving performer ROI includes some prop/background; not segmentation"
+    },
+    {
+      "shape": "rectangle",
+      "points": [
+        528,
+        0,
+        1262,
+        990
+      ],
+      "class": 2,
+      "description": "Conservative volumetric spotlight and bloom ROI; not a solid surface, overlaps other exclusions"
+    }
+  ],
+  "provenance": "Native source capture-manifest.json; original PNG hash and size independently rechecked by depth script. Full source acquisition evidence retained separately."
+}

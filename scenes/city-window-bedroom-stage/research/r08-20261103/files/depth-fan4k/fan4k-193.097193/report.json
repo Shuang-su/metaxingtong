@@ -1,0 +1,252 @@
+{
+  "source": {
+    "BV": "BV1q711BqE4K",
+    "part": 1,
+    "url": "https://www.bilibili.com/video/BV1q711BqE4K/?p=1",
+    "uploader": "-VittorioVeneto-",
+    "source_kind": "independent fan recording of same 2025-11-07 performance, not a later date performance",
+    "time_seconds": 193.097193,
+    "sha256": "58bf733b5c49e044c02a9e95e4b162808e53fb47981ae6daeb894e2dc9229822",
+    "capture_record": {
+      "file": "fan4k-native-wide-193.097193.png",
+      "sha256": "58bf733b5c49e044c02a9e95e4b162808e53fb47981ae6daeb894e2dc9229822",
+      "bytes": 1676276,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "media_time_seconds": 193.097193,
+      "before_save": {
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 3840,
+        "videoHeight": 2160
+      },
+      "after_save_media_state": {
+        "paused": true,
+        "readyState": 4,
+        "videoWidth": 3840,
+        "videoHeight": 2160,
+        "t": 193.097193
+      },
+      "usage": "oblique55 used in modeling/R05; other two captured after R05 started, not supplied as modeling inputs"
+    },
+    "quality": "4K 超高清",
+    "native_decode": "3840x2160 native saved PNG confirmed; upstream render resolution or pre-upload upsampling unknown",
+    "independence": "Same performance, separate upload; not later-date scene validation",
+    "dark_rgb_max_threshold": 25,
+    "dark_mask_definition": "255 where all original RGB channels <=25. Low signal warning only, NOT depth or calibrated confidence.",
+    "exclusions": [
+      {
+        "shape": "polygon",
+        "points": [
+          [
+            1536,
+            0
+          ],
+          [
+            3149,
+            0
+          ],
+          [
+            3379,
+            1210
+          ],
+          [
+            3725,
+            1663
+          ],
+          [
+            1114,
+            1620
+          ],
+          [
+            1152,
+            929
+          ]
+        ],
+        "class": 3,
+        "description": "Conservative night city/window, possible texture/backdrop/reflection; no metric geometry"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          1651,
+          821,
+          2074,
+          1879
+        ],
+        "class": 1,
+        "description": "Conservative moving performer region includes some prop/background; not segmentation"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          0,
+          0,
+          110,
+          65
+        ],
+        "class": 4,
+        "description": "Bilibili live watermark overlay, non-scene graphics"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          1382,
+          0,
+          2419,
+          1944
+        ],
+        "class": 2,
+        "description": "Volumetric spotlight/bloom/ground light conservative region, not solid geometry"
+      }
+    ],
+    "path": "/workspace/shared/20261103-source/fan4k-native-wide-193.097193.png",
+    "bytes": 1676276,
+    "size": [
+      3840,
+      2160
+    ],
+    "crop": [
+      0,
+      0,
+      3840,
+      2160
+    ]
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 4,
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "weights_format": "safetensors",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "forward_seconds": 5.733583211898804
+  },
+  "range": {
+    "min": 0.9659095406532288,
+    "max": 5.617880344390869,
+    "nonfinite_count": 0
+  },
+  "value_definition": "Relative inverse-depth-like prediction. Larger/white generally nearer, smaller/black generally farther. Not metric distance, not luminance conversion. Per-image min/max normalization is not comparable metric distance across views.",
+  "normalization": "(raw-min)/(max-min); source-grid display is derived bicubic interpolation align_corners=False, not native-resolution independent depth inference.",
+  "mask_definition": {
+    "manual_exclusions": "Conservative incomplete manual ROIs; 0 is unlabelled, NOT valid certification. See source exclusions descriptions.",
+    "confidence_unknown": "255 everywhere means no calibrated model confidence, NEVER high confidence.",
+    "nonfinite_invalid": "255 indicates nonfinite numeric prediction, 0 merely finite; does not certify geometric validity.",
+    "occluded_hidden_regions": "Not observable, no hidden geometry or surface contact inferred as fact."
+  },
+  "limitations": [
+    "Single monocular estimate cannot validate metric geometry, hidden structures, scale, camera calibration, or contact.",
+    "Stylized CG, reflective/translucent surfaces, lighting, characters and screen overlays can be wrong.",
+    "Manual exclusion masks are incomplete and not segmentation.",
+    "This analysis does not replace native multi-view evidence or direct unwarped overlay validation."
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-source-grid.png",
+      "bytes": 12775,
+      "sha256": "26db83be78206117158aebbc7b81c50ae3859624b15c159bec4f8465821eb4e7"
+    },
+    {
+      "path": "dark-low-signal-caution-source-grid.png",
+      "bytes": 32568,
+      "sha256": "5e22d06ea64836c3a010befb0a0608c19a1faf155370c11d1ae2603e75742110"
+    },
+    {
+      "path": "manual-exclusion-classes-source-grid.png",
+      "bytes": 15391,
+      "sha256": "4859b5594521ef6ccd889fee6a6776cbdbe5fd0b5652fe9f88b459acaa841eb0"
+    },
+    {
+      "path": "nonfinite-invalid-model-grid.png",
+      "bytes": 544,
+      "sha256": "caec195e3fd01149b370763e45bfb21517d04ad2f2b52777a7c9286ce3add40c"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 421709,
+      "sha256": "7848bbb0df2318d42153923d412adc3906d00b65e7e8116d8d94aefb73a32fc0"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 359562,
+      "sha256": "63c7293df55fb9ff1c741dee5de0c6f7eb28ddaee5576b26210f31605de0a344"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "e804d8a17d6e6885b34ae2a9323ed0f695843b989933917a1dd1f34856e38a15"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-source-grid.npy",
+      "bytes": 33177728,
+      "sha256": "7927d0a5867c2fe10792928b5830ff0f9effcf1dff9107ce6062a1077d6373c2"
+    }
+  ]
+}

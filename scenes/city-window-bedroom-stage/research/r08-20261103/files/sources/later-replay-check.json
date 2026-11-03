@@ -1,0 +1,56 @@
+{
+  "checked_at_utc": "2026-11-03T01:32:00Z",
+  "purpose": "Find a later-date replay reusing the city-window-bedroom scene, distinct from same-day fan upload",
+  "queries": [
+    "星瞳 2025 生日会 椅子舞",
+    "星瞳 2025 11 7 开场 舞蹈",
+    "星瞳 城市 卧室 新场景 2026"
+  ],
+  "result": "No identified later-date candidate matching the gold-arch bed, red rounded bar, white hourglass stool and tied-curtain window combination. Search returned general/unrelated items, not negative proof of scene reuse.",
+  "verified_later_replay": false,
+  "required_next_evidence": "A specific later-date official live replay URL and frame with stable scene identifiers; cannot substitute same-date fan reupload.",
+  "project_impact": "Later-date replay gate remains unverified; this bounded search is evidence only, not a halt to parent modeling/archival or the wider source queue.",
+  "additional_round": {
+    "scope": "Search later scene reuse with fixed arched window, gold arch bed, red U bar, hourglass stool. Do not count upload date alone as performance date.",
+    "web_queries": [
+      "星瞳 卧室 2026 直播",
+      "星瞳 新房间 2025",
+      "星瞳 椅子 生日会 2025 bilibili",
+      "site.bilibili.com 星瞳 2025-11-07 舞",
+      "site.bilibili.com 星瞳 椅子舞",
+      "site.bilibili.com 星瞳 卧室 直播",
+      "site.bilibili.com/video 星瞳 2026 卧室",
+      "site.bilibili.com/video 星瞳 2025年11月 直播回放",
+      "site.bilibili.com/video 星瞳 2025年12月 直播回放"
+    ],
+    "bilibili_queries": [
+      "星瞳 椅子舞",
+      "星瞳 2025 生日会 开场",
+      "星瞳 2026 卧室"
+    ],
+    "inspected": [
+      {
+        "url": "https://www.bilibili.com/video/BV1hPvYBaEc2/",
+        "uploader": "恨也迷人",
+        "title": "舞台很大 大到任我起舞 舞台很小 小到困我一生【星瞳】",
+        "description_date": "2025-12-27 live",
+        "upload_date": "2025-12-30",
+        "visual_result": "Visible closeup dark curved wall and grid backdrop, not the city-window combination. Sampled view only, not exhaustive video exclusion."
+      },
+      {
+        "url": "https://www.bilibili.com/video/BV1JpAKzkEQ3/",
+        "title": "星瞳卧室跳舞",
+        "upload_date": "2026-03-22",
+        "result": "Author declaration explicitly artificial-intelligence synthesis. Excluded as live reconstruction source; no native reference harvested."
+      },
+      {
+        "url": "https://www.bilibili.com/video/BV1iQiLB8EFn/",
+        "upload_date": "2026-01-04",
+        "title": "自己不是校招生所以没有房补只能自费租房",
+        "visual_result": "Visible 2D/cartoon host over yellow sofa and dotted blue wall; not target room. Sampled view only."
+      }
+    ],
+    "result": "No confirmed later-date same-scene replay from these query results and inspected candidates. Not proof that no reuse exists. No new native target-room frame in this round.",
+    "other_candidates": "Prior Paradise mint cutaway box room remains single montage view; giant forest/flower stage not sufficiently deduplicated/multiview documented. No second production-ready scene declared."
+  }
+}

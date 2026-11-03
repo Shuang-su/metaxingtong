@@ -1,0 +1,189 @@
+{
+  "BV": "BV1ic12BMEk6",
+  "url": "https://www.bilibili.com/video/BV1ic12BMEk6/",
+  "uploader": "星瞳_Official",
+  "event": "2025-11-07 birthday stream",
+  "time_seconds": 1193.600873,
+  "sha256": "5d0082c4080d0080b4059600b3ecb84baa8dd81cda691445e8506d2969726ec7",
+  "provenance": "Source agent directly saved native Chrome video frame. Logged in highest menu 1080P high bitrate, no 4K offered; decoded 1920x1080, readyState 4, paused true. No interpolation. See source agent decoder capture for primary evidence.",
+  "dark_rgb_max_threshold": 25,
+  "dark_mask_definition": "255 where all original RGB channels <=25 (8 bit). Merely conservative low-signal warning from source brightness, NOT depth, no confidence estimate. Threshold is heuristic and may flag legitimate dark surfaces.",
+  "exclusions": [
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          934,
+          449
+        ],
+        [
+          1000,
+          448
+        ],
+        [
+          1041,
+          540
+        ],
+        [
+          1039,
+          610
+        ],
+        [
+          1020,
+          638
+        ],
+        [
+          1043,
+          707
+        ],
+        [
+          1072,
+          810
+        ],
+        [
+          1029,
+          818
+        ],
+        [
+          978,
+          733
+        ],
+        [
+          961,
+          696
+        ],
+        [
+          930,
+          743
+        ],
+        [
+          907,
+          794
+        ],
+        [
+          867,
+          802
+        ],
+        [
+          872,
+          754
+        ],
+        [
+          894,
+          686
+        ],
+        [
+          923,
+          610
+        ],
+        [
+          924,
+          530
+        ]
+      ],
+      "class": 1,
+      "description": "Conservative character silhouette, includes overlapping seat/background; not segmentation"
+    },
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          954,
+          0
+        ],
+        [
+          990,
+          0
+        ],
+        [
+          1082,
+          461
+        ],
+        [
+          1084,
+          727
+        ],
+        [
+          848,
+          729
+        ],
+        [
+          851,
+          437
+        ]
+      ],
+      "class": 2,
+      "description": "Volumetric spotlight and its occluded area are not a solid surface"
+    },
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          859,
+          240
+        ],
+        [
+          942,
+          0
+        ],
+        [
+          1121,
+          0
+        ],
+        [
+          1129,
+          714
+        ],
+        [
+          773,
+          702
+        ],
+        [
+          772,
+          500
+        ]
+      ],
+      "class": 3,
+      "description": "City/window view may be skybox/backdrop/reflection; metric distance not inferable"
+    },
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          1148,
+          0
+        ],
+        [
+          1420,
+          0
+        ],
+        [
+          1455,
+          236
+        ],
+        [
+          1515,
+          410
+        ],
+        [
+          1606,
+          498
+        ],
+        [
+          1869,
+          559
+        ],
+        [
+          1869,
+          731
+        ],
+        [
+          1150,
+          717
+        ]
+      ],
+      "class": 3,
+      "description": "City/window distant graphics, unknown true geometry"
+    }
+  ]
+}

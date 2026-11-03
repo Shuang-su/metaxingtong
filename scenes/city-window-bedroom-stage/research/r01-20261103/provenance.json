@@ -1,0 +1,763 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-03T01:13:33.641473+00:00",
+  "repository": "Shuang-su/metaxingtong",
+  "scope": "city-window-bedroom-stage",
+  "library_input": {
+    "library_file_id": "libfile_c625c213a8608191adb20154cbc2ee5e",
+    "file_id": "file_0000000070a481f68be13ffd4228bf25",
+    "version": 0,
+    "filename": "metaxingtong-city-window-20261103.bundle",
+    "bytes": 2931466,
+    "sha256": "a967bd7ab19d9657c92da2fa7cd2049f156201e6239da8bbbb3c921c0fd57e7e",
+    "original_tip": "e773229b81c4f40293c5fb17196aa158d8b9ba8d",
+    "bundle_verify_passed": true,
+    "fsck_passed": true
+  },
+  "base_main": "0ca7ae5be9892e9fc6656142682f7702cf244110",
+  "standard_blob_on_main": "2828618bce769c32621e6220c4b98a28ec637088",
+  "archive_branch": "archive/city-window-bedroom-r01-20261103",
+  "original_history_branch": "history/city-window-bedroom-original-20261103",
+  "original_tip": "e773229b81c4f40293c5fb17196aa158d8b9ba8d",
+  "summary": "城市窗景卧室舞台 R01 首个可编辑候选。独立原审阅实际比较旧卧室及四个相近场景图像，认为不同；发布端未重跑视觉排重，也不是全仓每图穷尽比较。有限房间、隐藏壳体/进深、尺寸/相机/接触及材质均为条件近似，远城为低细节代理。材白BLEND/GLB未审阅；来源对齐、几何与用户质量验收均未完成，尚无主图/直接叠图/8检查角/深度分析。本次只存早期真实原件，后续增量另记。",
+  "stages": [
+    {
+      "original_commit": "c4019343f80ab6992b9daa1e1923652aa2dc45f9",
+      "original_parents": [],
+      "original_author_date": "2026-11-03T09:43:22+09:00",
+      "original_committer_date": "2026-11-03T09:43:22+09:00",
+      "original_subject": "Record current reconstruction standard and scene deduplication preflight",
+      "upstream_archive_commit": "a2088b38bed31c5c56a4acb21455e3b6b66b8854",
+      "files": [
+        {
+          "original_path": "docs/reconstruction-standard.md",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/docs/reconstruction-standard.md",
+          "mode": "100644",
+          "bytes": 24446,
+          "sha256": "42a413668a250aa2f8875178510e5736ea982f94c5ac49c3757994139bb9af57",
+          "git_blob": "dae65f641b73ed5693d0ed4b1644f8384a9492e4"
+        },
+        {
+          "original_path": "qa/preflight-20261103.json",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/preflight-20261103.json",
+          "mode": "100644",
+          "bytes": 5963,
+          "sha256": "3af736d28ffb9c6a2e199a20a8e538dfe8c5e16af5305815b777ad3b06d84f78",
+          "git_blob": "b00c6a14b3e59d8610cbb52d1a1dd15d12f5d964"
+        }
+      ],
+      "removed_from_snapshot": []
+    },
+    {
+      "original_commit": "6568fb2fe7ab8d558c8aa2ff39fec655691df686",
+      "original_parents": [
+        "c4019343f80ab6992b9daa1e1923652aa2dc45f9"
+      ],
+      "original_author_date": "2026-11-03T09:44:50+09:00",
+      "original_committer_date": "2026-11-03T09:44:50+09:00",
+      "original_subject": "Add explicit finite mesh inspection script for upcoming candidate",
+      "upstream_archive_commit": "a278bed46c2d1bed457d7bbbc3f90edf1844e106",
+      "files": [
+        {
+          "original_path": "docs/reconstruction-standard.md",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/docs/reconstruction-standard.md",
+          "mode": "100644",
+          "bytes": 24446,
+          "sha256": "42a413668a250aa2f8875178510e5736ea982f94c5ac49c3757994139bb9af57",
+          "git_blob": "dae65f641b73ed5693d0ed4b1644f8384a9492e4"
+        },
+        {
+          "original_path": "qa/preflight-20261103.json",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/preflight-20261103.json",
+          "mode": "100644",
+          "bytes": 5963,
+          "sha256": "3af736d28ffb9c6a2e199a20a8e538dfe8c5e16af5305815b777ad3b06d84f78",
+          "git_blob": "b00c6a14b3e59d8610cbb52d1a1dd15d12f5d964"
+        },
+        {
+          "original_path": "scripts/audit_blend.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/audit_blend.py",
+          "mode": "100644",
+          "bytes": 1942,
+          "sha256": "efdeb76cec432beeb18e316553aec3a297a61ac2059d9f0d2458515795934bcd",
+          "git_blob": "182d77dc6c9238d0c1a9bc69c28b7f180e5b8e50"
+        }
+      ],
+      "removed_from_snapshot": []
+    },
+    {
+      "original_commit": "d7bdac09033161e552428e02d644ba476f42c0cd",
+      "original_parents": [
+        "6568fb2fe7ab8d558c8aa2ff39fec655691df686"
+      ],
+      "original_author_date": "2026-11-03T09:45:52+09:00",
+      "original_committer_date": "2026-11-03T09:45:52+09:00",
+      "original_subject": "Add fixed-scene camera rendering and direct native overlay verification",
+      "upstream_archive_commit": "df87480a0a760adf55102bd32ba9ed17e8adf8f0",
+      "files": [
+        {
+          "original_path": "docs/reconstruction-standard.md",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/docs/reconstruction-standard.md",
+          "mode": "100644",
+          "bytes": 24446,
+          "sha256": "42a413668a250aa2f8875178510e5736ea982f94c5ac49c3757994139bb9af57",
+          "git_blob": "dae65f641b73ed5693d0ed4b1644f8384a9492e4"
+        },
+        {
+          "original_path": "qa/preflight-20261103.json",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/preflight-20261103.json",
+          "mode": "100644",
+          "bytes": 5963,
+          "sha256": "3af736d28ffb9c6a2e199a20a8e538dfe8c5e16af5305815b777ad3b06d84f78",
+          "git_blob": "b00c6a14b3e59d8610cbb52d1a1dd15d12f5d964"
+        },
+        {
+          "original_path": "scripts/__pycache__/audit_blend.cpython-312.pyc",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/__pycache__/audit_blend.cpython-312.pyc",
+          "mode": "100644",
+          "bytes": 5806,
+          "sha256": "c5014fe3b9a18653ae5ed1030866ce59e69bc6b447d997b5e5a3039dc1ef3368",
+          "git_blob": "c11462440929a1729470cd96edacd0f892555980"
+        },
+        {
+          "original_path": "scripts/__pycache__/overlay_native.cpython-312.pyc",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/__pycache__/overlay_native.cpython-312.pyc",
+          "mode": "100644",
+          "bytes": 2762,
+          "sha256": "7e8c647e2b8cc2148c38bee61a8ed1ba019d1521133021e6a579361bcbf9cf7a",
+          "git_blob": "2215207350fdcb915f8a6bdb292e74b197f3da89"
+        },
+        {
+          "original_path": "scripts/__pycache__/render_views.cpython-312.pyc",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/__pycache__/render_views.cpython-312.pyc",
+          "mode": "100644",
+          "bytes": 2630,
+          "sha256": "91011228a34c05541ec89d54479193ee51ac903b98ac5dd8ae7fe90b27d4af8c",
+          "git_blob": "940ad86dec6892f9db1a5764af7975977e08f187"
+        },
+        {
+          "original_path": "scripts/audit_blend.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/audit_blend.py",
+          "mode": "100644",
+          "bytes": 1942,
+          "sha256": "efdeb76cec432beeb18e316553aec3a297a61ac2059d9f0d2458515795934bcd",
+          "git_blob": "182d77dc6c9238d0c1a9bc69c28b7f180e5b8e50"
+        },
+        {
+          "original_path": "scripts/overlay_native.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/overlay_native.py",
+          "mode": "100644",
+          "bytes": 1123,
+          "sha256": "f7a868e1722e2345ccb1402649a8b346b3fd21b39afa9cfa431791b9392d4854",
+          "git_blob": "c51a59d79d19870e27fe3e413c60feb021497634"
+        },
+        {
+          "original_path": "scripts/render_views.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/render_views.py",
+          "mode": "100644",
+          "bytes": 1071,
+          "sha256": "0740146aeae9b972a3b3c5efebee5eb503d00c7a6fcb57a12161a7f490cad31f",
+          "git_blob": "144adf85fb677fe1fcda531b27c5a375b482d49d"
+        }
+      ],
+      "removed_from_snapshot": []
+    },
+    {
+      "original_commit": "c51b6e0b4755b8341c145723b8dc479ea5ce257e",
+      "original_parents": [
+        "d7bdac09033161e552428e02d644ba476f42c0cd"
+      ],
+      "original_author_date": "2026-11-03T09:45:58+09:00",
+      "original_committer_date": "2026-11-03T09:45:58+09:00",
+      "original_subject": "Exclude generated Python bytecode from current working files",
+      "upstream_archive_commit": "e2efb8052c5976ac7821b59cacb4ba5d372f3503",
+      "files": [
+        {
+          "original_path": ".gitignore",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/.gitignore",
+          "mode": "100644",
+          "bytes": 19,
+          "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+          "git_blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6"
+        },
+        {
+          "original_path": "docs/reconstruction-standard.md",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/docs/reconstruction-standard.md",
+          "mode": "100644",
+          "bytes": 24446,
+          "sha256": "42a413668a250aa2f8875178510e5736ea982f94c5ac49c3757994139bb9af57",
+          "git_blob": "dae65f641b73ed5693d0ed4b1644f8384a9492e4"
+        },
+        {
+          "original_path": "qa/preflight-20261103.json",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/preflight-20261103.json",
+          "mode": "100644",
+          "bytes": 5963,
+          "sha256": "3af736d28ffb9c6a2e199a20a8e538dfe8c5e16af5305815b777ad3b06d84f78",
+          "git_blob": "b00c6a14b3e59d8610cbb52d1a1dd15d12f5d964"
+        },
+        {
+          "original_path": "scripts/audit_blend.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/audit_blend.py",
+          "mode": "100644",
+          "bytes": 1942,
+          "sha256": "efdeb76cec432beeb18e316553aec3a297a61ac2059d9f0d2458515795934bcd",
+          "git_blob": "182d77dc6c9238d0c1a9bc69c28b7f180e5b8e50"
+        },
+        {
+          "original_path": "scripts/overlay_native.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/overlay_native.py",
+          "mode": "100644",
+          "bytes": 1123,
+          "sha256": "f7a868e1722e2345ccb1402649a8b346b3fd21b39afa9cfa431791b9392d4854",
+          "git_blob": "c51a59d79d19870e27fe3e413c60feb021497634"
+        },
+        {
+          "original_path": "scripts/render_views.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/render_views.py",
+          "mode": "100644",
+          "bytes": 1071,
+          "sha256": "0740146aeae9b972a3b3c5efebee5eb503d00c7a6fcb57a12161a7f490cad31f",
+          "git_blob": "144adf85fb677fe1fcda531b27c5a375b482d49d"
+        }
+      ],
+      "removed_from_snapshot": [
+        "scripts/__pycache__/audit_blend.cpython-312.pyc",
+        "scripts/__pycache__/overlay_native.cpython-312.pyc",
+        "scripts/__pycache__/render_views.cpython-312.pyc"
+      ]
+    },
+    {
+      "original_commit": "e773229b81c4f40293c5fb17196aa158d8b9ba8d",
+      "original_parents": [
+        "c51b6e0b4755b8341c145723b8dc479ea5ce257e"
+      ],
+      "original_author_date": "2026-11-03T10:05:15+09:00",
+      "original_committer_date": "2026-11-03T10:05:15+09:00",
+      "original_subject": "Build R01 editable arched-window bedroom-stage candidate from native references",
+      "upstream_archive_commit": "876dde3f7f114ad02f663b1409b57414b44b0260",
+      "files": [
+        {
+          "original_path": ".gitignore",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/.gitignore",
+          "mode": "100644",
+          "bytes": 19,
+          "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+          "git_blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6"
+        },
+        {
+          "original_path": "docs/R01-stage.md",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/docs/R01-stage.md",
+          "mode": "100644",
+          "bytes": 974,
+          "sha256": "49597d836994e6c5817e1a3acc862c1d180df9738daba1bf8cfb6e1a6ac2e98e",
+          "git_blob": "fc71f10cbdaf2e8904d9c02d82efb1a058e44dda"
+        },
+        {
+          "original_path": "docs/reconstruction-standard.md",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/docs/reconstruction-standard.md",
+          "mode": "100644",
+          "bytes": 24446,
+          "sha256": "42a413668a250aa2f8875178510e5736ea982f94c5ac49c3757994139bb9af57",
+          "git_blob": "dae65f641b73ed5693d0ed4b1644f8384a9492e4"
+        },
+        {
+          "original_path": "models/R01_material.blend",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/models/R01_material.blend",
+          "mode": "100644",
+          "bytes": 4894564,
+          "sha256": "d7720baf20f1bba9ebd47a103cc117e3f919fc60012e5a16bdad3048fd865bef",
+          "git_blob": "4d121220b3cc7fa6a6d97256433229cc5407d0d7"
+        },
+        {
+          "original_path": "models/R01_material.glb",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/models/R01_material.glb",
+          "mode": "100644",
+          "bytes": 1733548,
+          "sha256": "c3a7619383cbb37f0500008beb7542f8e4aed0255457f6dc949e522de5ae0795",
+          "git_blob": "6241146c0c49963d63598bbaefc4dadaf77562b9"
+        },
+        {
+          "original_path": "models/R01_white.blend",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/models/R01_white.blend",
+          "mode": "100644",
+          "bytes": 4492388,
+          "sha256": "521ef1f571cb4339dfca8072e460f6acd959951362efa95cb3e4c54a0ab7f899",
+          "git_blob": "cac6c8f9e44a4c049218aac722f25a1e946ceb9d"
+        },
+        {
+          "original_path": "models/R01_white.glb",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/models/R01_white.glb",
+          "mode": "100644",
+          "bytes": 1729180,
+          "sha256": "2143f1a30af65080061d3da003963690fd2e3969373b06c53ba0be1c9f36525f",
+          "git_blob": "41d511dd0edc69de97dca61d3ad66e4b972a3523"
+        },
+        {
+          "original_path": "qa/build-r01.log",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/build-r01.log",
+          "mode": "100644",
+          "bytes": 101366,
+          "sha256": "8e82d025f61853ee3d6dc679bd4f14965dd9e463e77987c65d2db47863f99e3d",
+          "git_blob": "46ee3e02b794881b2bbd8f18566d09d1275732d0"
+        },
+        {
+          "original_path": "qa/novelty-review.md",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/novelty-review.md",
+          "mode": "100644",
+          "bytes": 3532,
+          "sha256": "c16648b361f87b3012f3cf6b45d4c8a29e9601eb8731cb5a914fabf5add4a156",
+          "git_blob": "96dbddc1c9b3bef796ad744f77027ad1c47dfb2a"
+        },
+        {
+          "original_path": "qa/preflight-20261103.json",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/preflight-20261103.json",
+          "mode": "100644",
+          "bytes": 5963,
+          "sha256": "3af736d28ffb9c6a2e199a20a8e538dfe8c5e16af5305815b777ad3b06d84f78",
+          "git_blob": "b00c6a14b3e59d8610cbb52d1a1dd15d12f5d964"
+        },
+        {
+          "original_path": "scripts/audit_blend.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/audit_blend.py",
+          "mode": "100644",
+          "bytes": 1942,
+          "sha256": "efdeb76cec432beeb18e316553aec3a297a61ac2059d9f0d2458515795934bcd",
+          "git_blob": "182d77dc6c9238d0c1a9bc69c28b7f180e5b8e50"
+        },
+        {
+          "original_path": "scripts/build_r01.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/build_r01.py",
+          "mode": "100644",
+          "bytes": 12456,
+          "sha256": "9c398ba8977550729b018a16d48c0ea08dc7c13d1c58bf4cbab4277af69b124a",
+          "git_blob": "185da6500383b70e5c335b45104a8a8f15160a62"
+        },
+        {
+          "original_path": "scripts/overlay_native.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/overlay_native.py",
+          "mode": "100644",
+          "bytes": 1123,
+          "sha256": "f7a868e1722e2345ccb1402649a8b346b3fd21b39afa9cfa431791b9392d4854",
+          "git_blob": "c51a59d79d19870e27fe3e413c60feb021497634"
+        },
+        {
+          "original_path": "scripts/render_views.py",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/render_views.py",
+          "mode": "100644",
+          "bytes": 1071,
+          "sha256": "0740146aeae9b972a3b3c5efebee5eb503d00c7a6fcb57a12161a7f490cad31f",
+          "git_blob": "144adf85fb677fe1fcda531b27c5a375b482d49d"
+        },
+        {
+          "original_path": "sources/cityroom-native-1193.600873.png",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-1193.600873.png",
+          "mode": "100644",
+          "bytes": 433102,
+          "sha256": "5d0082c4080d0080b4059600b3ecb84baa8dd81cda691445e8506d2969726ec7",
+          "git_blob": "3a80f85a4b6c5d31a77c70a57dcc179762295d8b"
+        },
+        {
+          "original_path": "sources/cityroom-native-1352.177747.png",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-1352.177747.png",
+          "mode": "100644",
+          "bytes": 854022,
+          "sha256": "c272c51473bbbd3f809a8549a64b7552f820f311ad36f5e7ab42012dc544e25f",
+          "git_blob": "16460305ffa1e7911829a2417acf689c7cf629dc"
+        },
+        {
+          "original_path": "sources/cityroom-native-high-1308.663295.png",
+          "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-high-1308.663295.png",
+          "mode": "100644",
+          "bytes": 814250,
+          "sha256": "064d2700b97136dcd85a9a34f7fb526fafdf9e9266806a68bdb7b91a90f22ae0",
+          "git_blob": "e19d7d6c1a637ced54a6179ce7112924cedd620d"
+        }
+      ],
+      "removed_from_snapshot": []
+    }
+  ],
+  "final_original_files": [
+    {
+      "original_path": ".gitignore",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/.gitignore",
+      "mode": "100644",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "git_blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6"
+    },
+    {
+      "original_path": "docs/R01-stage.md",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/docs/R01-stage.md",
+      "mode": "100644",
+      "bytes": 974,
+      "sha256": "49597d836994e6c5817e1a3acc862c1d180df9738daba1bf8cfb6e1a6ac2e98e",
+      "git_blob": "fc71f10cbdaf2e8904d9c02d82efb1a058e44dda"
+    },
+    {
+      "original_path": "docs/reconstruction-standard.md",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/docs/reconstruction-standard.md",
+      "mode": "100644",
+      "bytes": 24446,
+      "sha256": "42a413668a250aa2f8875178510e5736ea982f94c5ac49c3757994139bb9af57",
+      "git_blob": "dae65f641b73ed5693d0ed4b1644f8384a9492e4"
+    },
+    {
+      "original_path": "models/R01_material.blend",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/models/R01_material.blend",
+      "mode": "100644",
+      "bytes": 4894564,
+      "sha256": "d7720baf20f1bba9ebd47a103cc117e3f919fc60012e5a16bdad3048fd865bef",
+      "git_blob": "4d121220b3cc7fa6a6d97256433229cc5407d0d7"
+    },
+    {
+      "original_path": "models/R01_material.glb",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/models/R01_material.glb",
+      "mode": "100644",
+      "bytes": 1733548,
+      "sha256": "c3a7619383cbb37f0500008beb7542f8e4aed0255457f6dc949e522de5ae0795",
+      "git_blob": "6241146c0c49963d63598bbaefc4dadaf77562b9"
+    },
+    {
+      "original_path": "models/R01_white.blend",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/models/R01_white.blend",
+      "mode": "100644",
+      "bytes": 4492388,
+      "sha256": "521ef1f571cb4339dfca8072e460f6acd959951362efa95cb3e4c54a0ab7f899",
+      "git_blob": "cac6c8f9e44a4c049218aac722f25a1e946ceb9d"
+    },
+    {
+      "original_path": "models/R01_white.glb",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/models/R01_white.glb",
+      "mode": "100644",
+      "bytes": 1729180,
+      "sha256": "2143f1a30af65080061d3da003963690fd2e3969373b06c53ba0be1c9f36525f",
+      "git_blob": "41d511dd0edc69de97dca61d3ad66e4b972a3523"
+    },
+    {
+      "original_path": "qa/build-r01.log",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/build-r01.log",
+      "mode": "100644",
+      "bytes": 101366,
+      "sha256": "8e82d025f61853ee3d6dc679bd4f14965dd9e463e77987c65d2db47863f99e3d",
+      "git_blob": "46ee3e02b794881b2bbd8f18566d09d1275732d0"
+    },
+    {
+      "original_path": "qa/novelty-review.md",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/novelty-review.md",
+      "mode": "100644",
+      "bytes": 3532,
+      "sha256": "c16648b361f87b3012f3cf6b45d4c8a29e9601eb8731cb5a914fabf5add4a156",
+      "git_blob": "96dbddc1c9b3bef796ad744f77027ad1c47dfb2a"
+    },
+    {
+      "original_path": "qa/preflight-20261103.json",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/qa/preflight-20261103.json",
+      "mode": "100644",
+      "bytes": 5963,
+      "sha256": "3af736d28ffb9c6a2e199a20a8e538dfe8c5e16af5305815b777ad3b06d84f78",
+      "git_blob": "b00c6a14b3e59d8610cbb52d1a1dd15d12f5d964"
+    },
+    {
+      "original_path": "scripts/audit_blend.py",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/audit_blend.py",
+      "mode": "100644",
+      "bytes": 1942,
+      "sha256": "efdeb76cec432beeb18e316553aec3a297a61ac2059d9f0d2458515795934bcd",
+      "git_blob": "182d77dc6c9238d0c1a9bc69c28b7f180e5b8e50"
+    },
+    {
+      "original_path": "scripts/build_r01.py",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/build_r01.py",
+      "mode": "100644",
+      "bytes": 12456,
+      "sha256": "9c398ba8977550729b018a16d48c0ea08dc7c13d1c58bf4cbab4277af69b124a",
+      "git_blob": "185da6500383b70e5c335b45104a8a8f15160a62"
+    },
+    {
+      "original_path": "scripts/overlay_native.py",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/overlay_native.py",
+      "mode": "100644",
+      "bytes": 1123,
+      "sha256": "f7a868e1722e2345ccb1402649a8b346b3fd21b39afa9cfa431791b9392d4854",
+      "git_blob": "c51a59d79d19870e27fe3e413c60feb021497634"
+    },
+    {
+      "original_path": "scripts/render_views.py",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/scripts/render_views.py",
+      "mode": "100644",
+      "bytes": 1071,
+      "sha256": "0740146aeae9b972a3b3c5efebee5eb503d00c7a6fcb57a12161a7f490cad31f",
+      "git_blob": "144adf85fb677fe1fcda531b27c5a375b482d49d"
+    },
+    {
+      "original_path": "sources/cityroom-native-1193.600873.png",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-1193.600873.png",
+      "mode": "100644",
+      "bytes": 433102,
+      "sha256": "5d0082c4080d0080b4059600b3ecb84baa8dd81cda691445e8506d2969726ec7",
+      "git_blob": "3a80f85a4b6c5d31a77c70a57dcc179762295d8b"
+    },
+    {
+      "original_path": "sources/cityroom-native-1352.177747.png",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-1352.177747.png",
+      "mode": "100644",
+      "bytes": 854022,
+      "sha256": "c272c51473bbbd3f809a8549a64b7552f820f311ad36f5e7ab42012dc544e25f",
+      "git_blob": "16460305ffa1e7911829a2417acf689c7cf629dc"
+    },
+    {
+      "original_path": "sources/cityroom-native-high-1308.663295.png",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-high-1308.663295.png",
+      "mode": "100644",
+      "bytes": 814250,
+      "sha256": "064d2700b97136dcd85a9a34f7fb526fafdf9e9266806a68bdb7b91a90f22ae0",
+      "git_blob": "e19d7d6c1a637ced54a6179ce7112924cedd620d"
+    }
+  ],
+  "images": [
+    {
+      "original_path": "sources/cityroom-native-1193.600873.png",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-1193.600873.png",
+      "mode": "100644",
+      "bytes": 433102,
+      "sha256": "5d0082c4080d0080b4059600b3ecb84baa8dd81cda691445e8506d2969726ec7",
+      "git_blob": "3a80f85a4b6c5d31a77c70a57dcc179762295d8b",
+      "width": 1920,
+      "height": 1080,
+      "role": "source PNG; producer provenance only, per-frame capture metadata pending"
+    },
+    {
+      "original_path": "sources/cityroom-native-1352.177747.png",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-1352.177747.png",
+      "mode": "100644",
+      "bytes": 854022,
+      "sha256": "c272c51473bbbd3f809a8549a64b7552f820f311ad36f5e7ab42012dc544e25f",
+      "git_blob": "16460305ffa1e7911829a2417acf689c7cf629dc",
+      "width": 1920,
+      "height": 1080,
+      "role": "source PNG; producer provenance only, per-frame capture metadata pending"
+    },
+    {
+      "original_path": "sources/cityroom-native-high-1308.663295.png",
+      "archive_path": "scenes/city-window-bedroom-stage/research/r01-20261103/files/sources/cityroom-native-high-1308.663295.png",
+      "mode": "100644",
+      "bytes": 814250,
+      "sha256": "064d2700b97136dcd85a9a34f7fb526fafdf9e9266806a68bdb7b91a90f22ae0",
+      "git_blob": "e19d7d6c1a637ced54a6179ce7112924cedd620d",
+      "width": 1920,
+      "height": 1080,
+      "role": "source PNG; producer provenance only, per-frame capture metadata pending"
+    }
+  ],
+  "original_objects": [
+    {
+      "oid": "e773229b81c4f40293c5fb17196aa158d8b9ba8d",
+      "type": "commit",
+      "bytes": 366
+    },
+    {
+      "oid": "c51b6e0b4755b8341c145723b8dc479ea5ce257e",
+      "type": "commit",
+      "bytes": 347
+    },
+    {
+      "oid": "d7bdac09033161e552428e02d644ba476f42c0cd",
+      "type": "commit",
+      "bytes": 358
+    },
+    {
+      "oid": "6568fb2fe7ab8d558c8aa2ff39fec655691df686",
+      "type": "commit",
+      "bytes": 352
+    },
+    {
+      "oid": "c4019343f80ab6992b9daa1e1923652aa2dc45f9",
+      "type": "commit",
+      "bytes": 311
+    },
+    {
+      "oid": "5b953f5b7785c37644157f15d8299a8989c3a49b",
+      "type": "tree",
+      "bytes": 199
+    },
+    {
+      "oid": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+      "type": "blob",
+      "bytes": 19
+    },
+    {
+      "oid": "77575c4545899ccb9bbf9fbf1a721e499ba42a4f",
+      "type": "tree",
+      "bytes": 94
+    },
+    {
+      "oid": "fc71f10cbdaf2e8904d9c02d82efb1a058e44dda",
+      "type": "blob",
+      "bytes": 974
+    },
+    {
+      "oid": "dae65f641b73ed5693d0ed4b1644f8384a9492e4",
+      "type": "blob",
+      "bytes": 24446
+    },
+    {
+      "oid": "69a4806acaee4f8403d4d9e0fe54ec4b75f23d8f",
+      "type": "tree",
+      "bytes": 174
+    },
+    {
+      "oid": "4d121220b3cc7fa6a6d97256433229cc5407d0d7",
+      "type": "blob",
+      "bytes": 4894564
+    },
+    {
+      "oid": "6241146c0c49963d63598bbaefc4dadaf77562b9",
+      "type": "blob",
+      "bytes": 1733548
+    },
+    {
+      "oid": "cac6c8f9e44a4c049218aac722f25a1e946ceb9d",
+      "type": "blob",
+      "bytes": 4492388
+    },
+    {
+      "oid": "41d511dd0edc69de97dca61d3ad66e4b972a3523",
+      "type": "blob",
+      "bytes": 1729180
+    },
+    {
+      "oid": "40346b9b8b813bccb9d56cd365ea175daf34e745",
+      "type": "tree",
+      "bytes": 137
+    },
+    {
+      "oid": "46ee3e02b794881b2bbd8f18566d09d1275732d0",
+      "type": "blob",
+      "bytes": 101366
+    },
+    {
+      "oid": "96dbddc1c9b3bef796ad744f77027ad1c47dfb2a",
+      "type": "blob",
+      "bytes": 3532
+    },
+    {
+      "oid": "b00c6a14b3e59d8610cbb52d1a1dd15d12f5d964",
+      "type": "blob",
+      "bytes": 5963
+    },
+    {
+      "oid": "5e51f81aaaad0de24ae0f68af22854f6e00b892f",
+      "type": "tree",
+      "bytes": 170
+    },
+    {
+      "oid": "182d77dc6c9238d0c1a9bc69c28b7f180e5b8e50",
+      "type": "blob",
+      "bytes": 1942
+    },
+    {
+      "oid": "185da6500383b70e5c335b45104a8a8f15160a62",
+      "type": "blob",
+      "bytes": 12456
+    },
+    {
+      "oid": "c51a59d79d19870e27fe3e413c60feb021497634",
+      "type": "blob",
+      "bytes": 1123
+    },
+    {
+      "oid": "144adf85fb677fe1fcda531b27c5a375b482d49d",
+      "type": "blob",
+      "bytes": 1071
+    },
+    {
+      "oid": "4f7341cf86e7c0d166a3b6b3a83340544dea39b1",
+      "type": "tree",
+      "bytes": 182
+    },
+    {
+      "oid": "3a80f85a4b6c5d31a77c70a57dcc179762295d8b",
+      "type": "blob",
+      "bytes": 433102
+    },
+    {
+      "oid": "16460305ffa1e7911829a2417acf689c7cf629dc",
+      "type": "blob",
+      "bytes": 854022
+    },
+    {
+      "oid": "e19d7d6c1a637ced54a6179ce7112924cedd620d",
+      "type": "blob",
+      "bytes": 814250
+    },
+    {
+      "oid": "b146a395440524198482e3f9a5014542bc102803",
+      "type": "tree",
+      "bytes": 132
+    },
+    {
+      "oid": "db341feee8e30eb350354e8d783cadc89c8b7ab7",
+      "type": "tree",
+      "bytes": 54
+    },
+    {
+      "oid": "5832402e738d60aa59a89659d008195b3af346fd",
+      "type": "tree",
+      "bytes": 51
+    },
+    {
+      "oid": "c815217c20dde87c86de562e75ecada8f62dd09c",
+      "type": "tree",
+      "bytes": 130
+    },
+    {
+      "oid": "b540953b59479de01af1ee488b9fd75689f2d456",
+      "type": "tree",
+      "bytes": 94
+    },
+    {
+      "oid": "7cdff363d587eed8cdf2710ca3f99de5c9489b7a",
+      "type": "tree",
+      "bytes": 168
+    },
+    {
+      "oid": "e3545a6d1dcad3b1a04088f3e785d39bea51f45e",
+      "type": "tree",
+      "bytes": 169
+    },
+    {
+      "oid": "c11462440929a1729470cd96edacd0f892555980",
+      "type": "blob",
+      "bytes": 5806
+    },
+    {
+      "oid": "2215207350fdcb915f8a6bdb292e74b197f3da89",
+      "type": "blob",
+      "bytes": 2762
+    },
+    {
+      "oid": "940ad86dec6892f9db1a5764af7975977e08f187",
+      "type": "blob",
+      "bytes": 2630
+    },
+    {
+      "oid": "06fffb97f4ec235c69f7149af1f2ec60358e5828",
+      "type": "tree",
+      "bytes": 94
+    },
+    {
+      "oid": "9a599a3d95df8ecc73a10d25e395644643c345fa",
+      "type": "tree",
+      "bytes": 42
+    },
+    {
+      "oid": "6864a608c89600c4423f19681ba1450b13f6b332",
+      "type": "tree",
+      "bytes": 60
+    }
+  ],
+  "history_boundary": "Original objects, identity, parents and true dates retained on dedicated history ref; new upstream commits have current archive times.",
+  "remote_verification": "Pending at this metadata commit; a later receipt will record actual remote byte checks.",
+  "space_cleanup": "Not authorized in this checkpoint batch; frozen input remains unchanged."
+}
