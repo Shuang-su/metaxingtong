@@ -1,0 +1,113 @@
+{
+  "source": "/workspace/scratch/fa58bfcf0425/source-newscene-20261104/forest-native-3050.458712.png",
+  "sha256": "9de843817fc899a28f2dfc4233c31ffdcc61a6f439e90fc17449cde149c1efcc",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "method": "Independent human visual review of full native image; approximate pixel centers, not fitted landmarks or proven cross-view object identity",
+  "clear_large_cup_candidates": [
+    {
+      "xy": [
+        775,
+        375
+      ],
+      "color": "pink"
+    },
+    {
+      "xy": [
+        825,
+        354
+      ],
+      "color": "pale white"
+    },
+    {
+      "xy": [
+        1075,
+        318
+      ],
+      "color": "pale white"
+    },
+    {
+      "xy": [
+        1200,
+        340
+      ],
+      "color": "pink"
+    },
+    {
+      "xy": [
+        1430,
+        420
+      ],
+      "color": "pale white"
+    },
+    {
+      "xy": [
+        1460,
+        490
+      ],
+      "color": "pink"
+    },
+    {
+      "xy": [
+        1440,
+        635
+      ],
+      "color": "pink"
+    },
+    {
+      "xy": [
+        1465,
+        748
+      ],
+      "color": "lilac"
+    },
+    {
+      "xy": [
+        830,
+        920
+      ],
+      "color": "pale white"
+    },
+    {
+      "xy": [
+        590,
+        770
+      ],
+      "color": "lilac"
+    },
+    {
+      "xy": [
+        645,
+        535
+      ],
+      "color": "pink"
+    }
+  ],
+  "uncertain_independent_large_cups": [
+    {
+      "xy": [
+        870,
+        367
+      ],
+      "reason": "Small lilac crown beside pale white cup; identity and giant scale require adjacent frame confirmation"
+    },
+    {
+      "xy": [
+        1355,
+        450
+      ],
+      "reason": "Pale form overlaps right-upper white/foliage cluster; independent cup versus existing petal unresolved"
+    }
+  ],
+  "excluded": "Dense small pink/blue/yellow flower clusters and bottom-edge red rose cluster are not giant cups",
+  "r01_script_count": 9,
+  "r01_material_counts": {
+    "pink": 4,
+    "pale": 2,
+    "blue": 1,
+    "lilac": 2
+  },
+  "conclusion": "At least 11 visually distinguishable large cup candidates in this frame versus 9 scripted stems. Count/layout correspondence incomplete; exact canonical instance count and cross-view IDs unverified. Color alone cannot identify corresponding objects. Do not silently merge uncertain forms or arbitrarily match by color."
+}
