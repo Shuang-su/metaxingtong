@@ -1,0 +1,3 @@
+import pathlib,json,math
+from triangle_distance import point_triangle2,tests
+D=pathlib.Path(__file__).resolve().parent;j=json.load(open(D/'small-triangulation-witness.json'));p=j['root_world_vertex'];v=j['quad_vertices'];actual=min(math.sqrt(point_triangle2(p,*[v[str(i)] for i in f])) for f in j['actual_loop_triangles']);alternate=math.sqrt(point_triangle2(p,*[v[str(i)] for i in j['alternate_polygon_triangle']]));assert abs(actual-.05333253112061621)<1e-12;assert abs(alternate-.05272584299909738)<1e-12;print(json.dumps({'actual_loop_distance':actual,'alternate_quad_diagonal_distance':alternate,'tests':tests()},indent=2))
