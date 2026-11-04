@@ -1,0 +1,133 @@
+{
+  "model_sha256": "f02849ba5b78c7e1561d6bf27fae54da5a9b53394bfdfbed14fb8e5e149bb8dd",
+  "method": "triangle feature/edge-face Euclidean minimum; AABB squared lower-bound pruning; float64; no model changes",
+  "unit_tests": [
+    {
+      "name": "parallel_gap",
+      "distance": 0.25,
+      "expected": 0.25,
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "coplanar_overlap",
+      "distance": 0.0,
+      "expected": 0.0,
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "edge_through_face",
+      "distance": 0.0,
+      "expected": 0.0,
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "separate_parallel",
+      "distance": 1.0,
+      "expected": 1.0,
+      "symmetry_error": 0.0
+    }
+  ],
+  "limitations": [
+    "Numerical surface distance, not observed/source distance",
+    "Zero surface intersection not Boolean union, stable load path or full collision acceptance",
+    "Containment without surface intersection requires separate classification"
+  ],
+  "results": [
+    {
+      "object": "TREE_main_buttress_00",
+      "main_trunk_min_surface_distance": 0.07034303646021069,
+      "triangle_pair": [
+        544,
+        253
+      ],
+      "tested_pairs": 2542,
+      "object_triangles": 800,
+      "trunk_triangles": 4224,
+      "early_exit_on_exact_zero": false
+    },
+    {
+      "object": "TREE_main_buttress_01",
+      "main_trunk_min_surface_distance": 0.029665805104409512,
+      "triangle_pair": [
+        560,
+        311
+      ],
+      "tested_pairs": 2030,
+      "object_triangles": 800,
+      "trunk_triangles": 4224,
+      "early_exit_on_exact_zero": false
+    },
+    {
+      "object": "TREE_main_buttress_02",
+      "main_trunk_min_surface_distance": 0.05333253112061621,
+      "triangle_pair": [
+        546,
+        406
+      ],
+      "tested_pairs": 1772,
+      "object_triangles": 800,
+      "trunk_triangles": 4224,
+      "early_exit_on_exact_zero": false
+    },
+    {
+      "object": "TREE_main_buttress_03",
+      "main_trunk_min_surface_distance": 0.01556358860817514,
+      "triangle_pair": [
+        544,
+        502
+      ],
+      "tested_pairs": 2122,
+      "object_triangles": 800,
+      "trunk_triangles": 4224,
+      "early_exit_on_exact_zero": false
+    },
+    {
+      "object": "TREE_main_buttress_04",
+      "main_trunk_min_surface_distance": 0.0,
+      "triangle_pair": [
+        544,
+        635
+      ],
+      "tested_pairs": 1390,
+      "object_triangles": 800,
+      "trunk_triangles": 4224,
+      "early_exit_on_exact_zero": true
+    },
+    {
+      "object": "TREE_main_buttress_05",
+      "main_trunk_min_surface_distance": 0.07906157477544837,
+      "triangle_pair": [
+        526,
+        728
+      ],
+      "tested_pairs": 3374,
+      "object_triangles": 800,
+      "trunk_triangles": 4224,
+      "early_exit_on_exact_zero": false
+    },
+    {
+      "object": "TREE_main_buttress_06",
+      "main_trunk_min_surface_distance": 0.034993189955534625,
+      "triangle_pair": [
+        544,
+        58
+      ],
+      "tested_pairs": 2114,
+      "object_triangles": 800,
+      "trunk_triangles": 4224,
+      "early_exit_on_exact_zero": false
+    },
+    {
+      "object": "TREE_main_buttress_07",
+      "main_trunk_min_surface_distance": 0.03789370262984111,
+      "triangle_pair": [
+        545,
+        157
+      ],
+      "tested_pairs": 2262,
+      "object_triangles": 800,
+      "trunk_triangles": 4224,
+      "early_exit_on_exact_zero": false
+    }
+  ]
+}
