@@ -1,0 +1,94 @@
+{
+  "source": "dreamfold-source-20261104/reta2-7.img",
+  "sha256": "18aaedb0defe7320a223f0c16fccc4da484362dea8d542119be3abb75a04636b",
+  "size": [
+    1080,
+    603
+  ],
+  "coordinates": "full original image x right/y down; manual approximate not calibrated, not blind holdout",
+  "points": [
+    {
+      "id": "C1",
+      "xy": [
+        826,
+        505
+      ],
+      "meaning": "upper large circular lens-like dark region center",
+      "subjective_error_px": 5,
+      "occlusion": "white floating particle partly crosses circle; do not fit silhouette through particle"
+    },
+    {
+      "id": "C2",
+      "xy": [
+        822,
+        546
+      ],
+      "meaning": "lower large circular lens-like dark region center",
+      "subjective_error_px": 4,
+      "occlusion": "grass/blur affects lower extent"
+    },
+    {
+      "id": "Psmall",
+      "xy": [
+        831,
+        462
+      ],
+      "meaning": "small dark circular dot on pale field near division, function unknown",
+      "subjective_error_px": 4,
+      "not": "not a third camera or display control proved by pixels"
+    }
+  ],
+  "lines": [
+    {
+      "id": "division",
+      "endpoints": [
+        [
+          670,
+          478
+        ],
+        [
+          861,
+          471
+        ]
+      ],
+      "meaning": "approximate shallow slanted boundary between pale upper field and dark lower field",
+      "subjective_error_px": 6,
+      "not": "not proven hinge or screen edge; left/right partly blurred"
+    },
+    {
+      "id": "top_luminous_trim",
+      "endpoints": [
+        [
+          690,
+          337
+        ],
+        [
+          881,
+          317
+        ]
+      ],
+      "meaning": "approximate visible bright top trim centerline",
+      "subjective_error_px": 6,
+      "not": "bloom width is not mechanical thickness"
+    }
+  ],
+  "unknown": [
+    "rear/inner screen surface",
+    "exact model and real-world dimensions",
+    "precise opening angle",
+    "panel thickness and hidden hinges",
+    "grass-obscured base and support",
+    "purpose of small dot",
+    "whether dark lower rectangle is functional display glass"
+  ],
+  "crop": {
+    "path": "source7-phone-crop.png",
+    "box": [
+      630,
+      300,
+      960,
+      603
+    ],
+    "resized": false
+  }
+}

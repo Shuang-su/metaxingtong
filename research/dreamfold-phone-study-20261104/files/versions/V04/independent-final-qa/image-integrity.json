@@ -1,0 +1,305 @@
+{
+  "manifest_exact": true,
+  "records": [
+    {
+      "path": "renders/material-side.png",
+      "sha256": "d77d0cd3f4081a0b3be866d134d6610f91581aa6e4319ac17bd96e639a73ce14",
+      "bytes": 509420,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        327,
+        92,
+        787,
+        541
+      ]
+    },
+    {
+      "path": "renders/material-source7-direct50.png",
+      "sha256": "c3e6e272be8f0adf8997d2e50d735e275e6af68219976f1079b58637cd9121fa",
+      "bytes": 632981,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "renders/material-source7.png",
+      "sha256": "df494d93824998d6242329439953da67760f4612c3e79d7bef30626516eaaf34",
+      "bytes": 393828,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        656,
+        310,
+        946,
+        577
+      ]
+    },
+    {
+      "path": "renders/white-side.png",
+      "sha256": "b58c759f7291b022a8ff88ac1b1ce8fb2523bbd3af362d21cefc3e4a417bc9ee",
+      "bytes": 394466,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        327,
+        92,
+        787,
+        541
+      ]
+    },
+    {
+      "path": "renders/white-source7-direct50.png",
+      "sha256": "c9de66342ede74b9809ed733c837938eec54f129397825e8a6e0be32fde3dad0",
+      "bytes": 639683,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "renders/white-source7.png",
+      "sha256": "88616048dc50dc0c59eb0da80bea19b5b41eb765a366af3010183c7952ea2815",
+      "bytes": 346930,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        656,
+        310,
+        946,
+        577
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "variant": "material",
+      "max_error": 0
+    },
+    {
+      "variant": "white",
+      "max_error": 0
+    }
+  ],
+  "states": [
+    {
+      "file": "renders/material-source7.png",
+      "model_hash_matches": true,
+      "camera_matrix_matches_saved_state": true,
+      "camera_lens_matches": true,
+      "actual_state": {
+        "file": "renders/material-source7.png",
+        "blend_sha256": "a1548dd671f8dc563fb38f7266075449d61f6d954e97f0f62058ae909a0e6fa7",
+        "camera": "SOURCE7_CONDITIONAL_NOT_CALIBRATED",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 33.33333206176758,
+        "resolution": [
+          1080,
+          603
+        ],
+        "percentage": 100,
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "samples": 16,
+        "denoising": false,
+        "threads": 4,
+        "role": "conditional source hypothesis"
+      }
+    },
+    {
+      "file": "renders/material-side.png",
+      "model_hash_matches": true,
+      "camera_matrix_matches_saved_state": true,
+      "camera_lens_matches": true,
+      "actual_state": {
+        "file": "renders/material-side.png",
+        "blend_sha256": "a1548dd671f8dc563fb38f7266075449d61f6d954e97f0f62058ae909a0e6fa7",
+        "camera": "DIAGNOSTIC_side",
+        "matrix_world": [
+          [
+            -4.371138828673793e-08,
+            4.371138828673793e-08,
+            1.0,
+            5.6073174476623535
+          ],
+          [
+            1.0,
+            1.910685676922942e-15,
+            4.371138828673793e-08,
+            -0.7317714691162109
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            -4.681953430175781
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 48.0,
+        "resolution": [
+          1080,
+          603
+        ],
+        "percentage": 100,
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "samples": 16,
+        "denoising": false,
+        "threads": 4,
+        "role": "artificial diagnostic only"
+      }
+    },
+    {
+      "file": "renders/white-source7.png",
+      "model_hash_matches": true,
+      "camera_matrix_matches_saved_state": true,
+      "camera_lens_matches": true,
+      "actual_state": {
+        "file": "renders/white-source7.png",
+        "blend_sha256": "d6955d766413db2d801cc04836869fcdba98fe78cf5b9be2390cb56e2c427d8e",
+        "camera": "SOURCE7_CONDITIONAL_NOT_CALIBRATED",
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 33.33333206176758,
+        "resolution": [
+          1080,
+          603
+        ],
+        "percentage": 100,
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "samples": 16,
+        "denoising": false,
+        "threads": 4,
+        "role": "conditional source hypothesis"
+      }
+    },
+    {
+      "file": "renders/white-side.png",
+      "model_hash_matches": true,
+      "camera_matrix_matches_saved_state": true,
+      "camera_lens_matches": true,
+      "actual_state": {
+        "file": "renders/white-side.png",
+        "blend_sha256": "d6955d766413db2d801cc04836869fcdba98fe78cf5b9be2390cb56e2c427d8e",
+        "camera": "DIAGNOSTIC_side",
+        "matrix_world": [
+          [
+            -4.371138828673793e-08,
+            4.371138828673793e-08,
+            1.0,
+            5.6073174476623535
+          ],
+          [
+            1.0,
+            1.910685676922942e-15,
+            4.371138828673793e-08,
+            -0.7317714691162109
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            -4.681953430175781
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 48.0,
+        "resolution": [
+          1080,
+          603
+        ],
+        "percentage": 100,
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "samples": 16,
+        "denoising": false,
+        "threads": 4,
+        "role": "artificial diagnostic only"
+      }
+    }
+  ]
+}
