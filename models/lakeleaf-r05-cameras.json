@@ -1,0 +1,591 @@
+{
+  "source_blend": "lakeleaf-r05-material.blend",
+  "role": "Lossless camera sidecar, necessary for the top source camera off-axis projection that standard glTF omits",
+  "cameras": [
+    {
+      "name": "SOURCE_092142973_SIDE",
+      "matrix_world": [
+        [
+          0.9971888065338135,
+          -0.07492971420288086,
+          8.766089520939602e-10,
+          0.0
+        ],
+        [
+          -0.0002341635845368728,
+          -0.0031163364183157682,
+          -0.9999951124191284,
+          -16.0
+        ],
+        [
+          0.07492934912443161,
+          0.9971839189529419,
+          -0.003125121584162116,
+          2.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 44.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 3840,
+        "source_height": 2160,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "SOURCE_100762992_TOP",
+      "matrix_world": [
+        [
+          0.19944971799850464,
+          -0.9799080491065979,
+          0.0,
+          0.0
+        ],
+        [
+          0.9799080491065979,
+          0.19944971799850464,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          70.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 43.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": -0.00800000037997961,
+        "shift_y": -0.02199999988079071,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 3840,
+        "source_height": 2160,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "SOURCE_108755584_OBLIQUE",
+      "matrix_world": [
+        [
+          0.923496663570404,
+          6.635787741515742e-08,
+          0.3836064338684082,
+          1.5
+        ],
+        [
+          0.3836064338684082,
+          -1.4885313248669263e-07,
+          -0.923496663570404,
+          -6.5
+        ],
+        [
+          -4.180263246666982e-09,
+          1.0,
+          -1.6292068494294654e-07,
+          1.7000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 38.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 3840,
+        "source_height": 2160,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "AUX_006585758_REAR",
+      "matrix_world": [
+        [
+          0.4047470688819885,
+          -0.18781831860542297,
+          0.8949324488639832,
+          4.099999904632568
+        ],
+        [
+          0.9144286513328552,
+          0.08313272893428802,
+          -0.39611759781837463,
+          -2.700000047683716
+        ],
+        [
+          -3.63967522787334e-08,
+          0.978679358959198,
+          0.2053941786289215,
+          2.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 3840,
+        "source_height": 2160,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "HERO",
+      "matrix_world": [
+        [
+          0.9901811480522156,
+          0.008128413930535316,
+          -0.13955377042293549,
+          -2.4000000953674316
+        ],
+        [
+          -0.13979029655456543,
+          0.057576294988393784,
+          -0.9885057806968689,
+          -15.0
+        ],
+        [
+          4.939468389864032e-09,
+          0.998308002948761,
+          0.058147232979536057,
+          3.5999999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 43.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1600,
+        "source_height": 900,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "CHECK_01",
+      "matrix_world": [
+        [
+          7.549790126404332e-08,
+          -0.2599734663963318,
+          0.9656157493591309,
+          13.0
+        ],
+        [
+          1.0,
+          -1.267497662382766e-08,
+          -8.159877040725405e-08,
+          0.0
+        ],
+        [
+          3.345267174381661e-08,
+          0.9656157493591309,
+          0.2599734663963318,
+          4.199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1280,
+        "source_height": 720,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "CHECK_02",
+      "matrix_world": [
+        [
+          -0.7071069478988647,
+          -0.3638032376766205,
+          0.6063389778137207,
+          9.192388534545898
+        ],
+        [
+          0.7071065902709961,
+          -0.3638033866882324,
+          0.6063392758369446,
+          9.192388534545898
+        ],
+        [
+          -4.2391729238033804e-08,
+          0.8574930429458618,
+          0.5144955515861511,
+          8.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1280,
+        "source_height": 720,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "CHECK_03",
+      "matrix_world": [
+        [
+          -1.0,
+          4.225932315193859e-08,
+          1.6775004496594192e-07,
+          7.960204409454693e-16
+        ],
+        [
+          1.5099580252808664e-07,
+          -0.2599732279777527,
+          0.9656158089637756,
+          13.0
+        ],
+        [
+          8.441679000270597e-08,
+          0.9656158089637756,
+          0.2599732279777527,
+          4.199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1280,
+        "source_height": 720,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "CHECK_04",
+      "matrix_world": [
+        [
+          -0.7071069478988647,
+          0.3638032376766205,
+          -0.6063389778137207,
+          -9.192388534545898
+        ],
+        [
+          -0.7071065902709961,
+          -0.3638033866882324,
+          0.6063392758369446,
+          9.192388534545898
+        ],
+        [
+          4.2391729238033804e-08,
+          0.8574930429458618,
+          0.5144955515861511,
+          8.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1280,
+        "source_height": 720,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "CHECK_05",
+      "matrix_world": [
+        [
+          7.549790126404332e-08,
+          0.2599734663963318,
+          -0.9656157493591309,
+          -13.0
+        ],
+        [
+          -1.0,
+          -1.267497662382766e-08,
+          -8.159877040725405e-08,
+          1.5920408818909386e-15
+        ],
+        [
+          -3.345267174381661e-08,
+          0.9656157493591309,
+          0.2599734663963318,
+          4.199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1280,
+        "source_height": 720,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "CHECK_06",
+      "matrix_world": [
+        [
+          0.7071067094802856,
+          0.3638034164905548,
+          -0.6063392162322998,
+          -9.192388534545898
+        ],
+        [
+          -0.70710688829422,
+          0.36380335688591003,
+          -0.6063389778137207,
+          -9.192388534545898
+        ],
+        [
+          4.7648292422763916e-08,
+          0.857492983341217,
+          0.5144956707954407,
+          8.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1280,
+        "source_height": 720,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "CHECK_07",
+      "matrix_world": [
+        [
+          1.0,
+          4.7756349532185444e-17,
+          -1.7738072966987946e-16,
+          -2.3880611640177303e-15
+        ],
+        [
+          -1.8369701465288538e-16,
+          0.2599734663963318,
+          -0.9656157493591309,
+          -13.0
+        ],
+        [
+          -2.4122814279024886e-25,
+          0.9656157493591309,
+          0.2599734663963318,
+          4.199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1280,
+        "source_height": 720,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    },
+    {
+      "name": "CHECK_08",
+      "matrix_world": [
+        [
+          0.7071067094802856,
+          -0.3638034164905548,
+          0.6063392162322998,
+          9.192388534545898
+        ],
+        [
+          0.70710688829422,
+          0.36380335688591003,
+          -0.6063389778137207,
+          -9.192388534545898
+        ],
+        [
+          -4.7648292422763916e-08,
+          0.857492983341217,
+          0.5144956707954407,
+          8.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "data": {
+        "type": "PERSP",
+        "lens": 48.0,
+        "sensor_fit": "AUTO",
+        "sensor_width": 36.0,
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 300.0
+      },
+      "custom": {
+        "source_width": 1280,
+        "source_height": 720,
+        "calibration": "Initial visual hypothesis, not solved or accepted"
+      }
+    }
+  ]
+}
