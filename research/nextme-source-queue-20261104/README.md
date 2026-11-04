@@ -1,0 +1,20 @@
+# NEXT ME independent unbuilt source queue; public covers, corrected dates and bounded dedup, non-native
+
+Independent unbuilt NEXT ME source queue. One real root commit preserves three cover-byte variants representing two near-coaxial contents, identity records, corrected dates and bounded dedup text. No native frames, sufficient independent structural views, full deduplication, new models or new-scene acceptance are claimed.
+
+Original HEAD: `cd75941c9a182fc5be2bb3b1869b4e5c1f1b48a2`
+Original history: `refs/heads/history/nextme-source-queue-original-20261104`
+
+`files/` preserves all 9 original files without modification. `provenance.json` records bytes, SHA256, Git blobs and every original commit/object.
+
+- Independent NEXT ME unbuilt source queue only: one real root commit and nine original files. It contains three JPEG byte variants representing two distinct near-coaxial cover contents, frozen identity/query records, bounded dedup text and date corrections. No model, native decoded video frame or complete new scene is delivered.
+- All original paths, bytes and history are preserved without alteration. The source tree already has a files/ directory, retained beneath the archive files/ container. Its nested manifest covers six files; the payload manifest covers eight files; each excludes itself. The consumer manifest includes all nine original files.
+- Three actual JPEG files have distinct SHA256 values and verified dimensions: anniv22-0 and loveshot-official are1008x630; anniv22-1 is480x360. The two Love Shot size versions are recorded as the same image content and do not establish a second independent view. Titles saying4K do not establish actual decoded quality of these cover files.
+- Frozen metadata records official BV1Fr4y157xq and BV1hd4y1U7nm as July30,2022 livestream material. Their upload dates remain distinct from event dates. All files are public covers, with unknown within-video times and no native/highest-quality decode, adequate two-angle structural coverage or later same-scene replay verification.
+- The coverage report corrects the initial unverified2024 birthday date/name to November2,2024 Star Expedition and the2022 first-anniversary date to July30 rather than August6. It distinguishes an AcFun repost author/date from official event identity. These are retained source-research records, not live external revalidation by the archive worker.
+- The identity file preserves18explicit query strings; the report also describes additional normal queries. Unrelated X calendar, new-outfit portrait, reservation images and birthday publicity images are excluded as structural views. The observed17173 JavaScript anti-bot challenge is recorded only as a limitation; no challenge page/script is included or executed, and blocked routes are not retried.
+- The bounded visual comparison covers only the old festival SOURCE column and old neon Reference_B image as reported. Those old comparison pixels are external to this frozen package and are not claimed reverified here. The visible difference is a limited lead, not full-repository novelty, complete deduplication or accepted room geometry. Occlusion and nearly coaxial close views remain limiting.
+- A new independent archive/history pair is created from the latest verified archive tree solely to preserve prior paths. All preexisting paths and remote refs, including main and previous studies, remain unchanged. Only the new independent archive receives its payload and verification receipt; original history remains separate.
+- Only official Library reception, ordinary Git and integrity verification are performed. No modeling/rendering, production-tree changes, credentials copied, security changes, LFS, force pushes, deleted history, Issues or PRs. The previously denied source-screening-increment receipt remains paused. Library version0 remains retained for parent confirmation; no Space deletion or permanent attachment is performed.
+
+Remote verification is appended under `publication-verification/remote_verification.json`.

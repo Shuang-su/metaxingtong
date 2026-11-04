@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-04T23:46:24.343012+00:00",
+  "label": "NEXT ME independent unbuilt source queue; public covers, corrected dates and bounded dedup, non-native",
+  "status": "INDEPENDENT_UNBUILT_SOURCE_QUEUE_NON_NATIVE_LIMITED_DEDUP",
+  "input": {
+    "library_file_id": "libfile_0ce27f350f188191b0ae782a02dd075c",
+    "file_id": "file_00000000a5f881fda430ab46dcdf7c74",
+    "filename": "nextme-source-queue-20261104.bundle",
+    "size_bytes": 237618,
+    "sha256": "5d6d91a35e5a87c3b4e7b7986f88039e9e1d09b519bafe4994096680118721ef",
+    "version": 0,
+    "materialized_and_verified": true,
+    "bundle_refs": [
+      {
+        "commit": "cd75941c9a182fc5be2bb3b1869b4e5c1f1b48a2",
+        "ref": "refs/heads/research/nextme-source-queue-20261104"
+      },
+      {
+        "commit": "cd75941c9a182fc5be2bb3b1869b4e5c1f1b48a2",
+        "ref": "HEAD"
+      }
+    ],
+    "bundle_prerequisites": [],
+    "checkout": "cd75941c9a182fc5be2bb3b1869b4e5c1f1b48a2",
+    "space_retained": true
+  },
+  "original_head": "cd75941c9a182fc5be2bb3b1869b4e5c1f1b48a2",
+  "original_commits": [
+    "cd75941c9a182fc5be2bb3b1869b4e5c1f1b48a2"
+  ],
+  "original_objects": [
+    {
+      "object": "cd75941c9a182fc5be2bb3b1869b4e5c1f1b48a2",
+      "type": "commit",
+      "size_bytes": 201,
+      "sha256": "8490d6ee56ec498e414a0ac3ee18f1881d5480d6dcd1e856c77a89560b4f250e"
+    },
+    {
+      "object": "9958c8d970dc663ae96bfc4e6ae9ae91fbf8d65c",
+      "type": "tree",
+      "size_bytes": 123,
+      "sha256": "1bf509da6d93566085158d27a06e281fe71954a9ecc94e01806c45a296f9e8c0"
+    },
+    {
+      "object": "db1a0c82167d7b827073dfc8a3481c2c10ca7856",
+      "type": "blob",
+      "size_bytes": 1998,
+      "sha256": "21d0f245ea2985e708ca3d532720155915a976e7636295729c13c249aa712472"
+    },
+    {
+      "object": "4d1772025679ee119c1a837ef0e8b9d251de8af9",
+      "type": "tree",
+      "size_bytes": 304,
+      "sha256": "e2ca949abe1180b4be19c7165653f263ea6d52729e830287cb1a7eb73252ff15"
+    },
+    {
+      "object": "a995c9a397b952e133c6822990e11031b540c688",
+      "type": "blob",
+      "size_bytes": 113960,
+      "sha256": "99bee1e7c96155376fce710ae60da37fd9783082c818a4f8f89bb337720c3ba8"
+    },
+    {
+      "object": "8444748a6b734bf33719f71ec6baa3aa2357e603",
+      "type": "blob",
+      "size_bytes": 35415,
+      "sha256": "6a74da26790d6c4fc307fca4a5a11f990c74e4f3da5f2eab080c3cbb19299ec2"
+    },
+    {
+      "object": "45a414cf1060f839f4a31cff6d8fda1d515a518d",
+      "type": "blob",
+      "size_bytes": 793,
+      "sha256": "e71814936fa73a76e520033bc49071fd106a1fc80e69c8fe072131f32e1c3c9b"
+    },
+    {
+      "object": "cba27d55b86d4a0148c2f213914939f203314ffd",
+      "type": "blob",
+      "size_bytes": 2890,
+      "sha256": "910dc5e4ab9798a82631880522367e7860edb9a3772af4ef34e07cc7a37c62dd"
+    },
+    {
+      "object": "9ec376331e4a11b28d5d9b277f2ead24922d8d31",
+      "type": "blob",
+      "size_bytes": 1052,
+      "sha256": "6303bf9ea39ea49991a711c68e194fb92e602def93ba377487c7582659b3794d"
+    },
+    {
+      "object": "d6302571e553bbeff9547b46074954a17bf96bc7",
+      "type": "blob",
+      "size_bytes": 84282,
+      "sha256": "afaaa9c69a2bfa887e0e134102fd7085b751fd8be2a18c8ef4654529c6ea6bef"
+    },
+    {
+      "object": "7c1c002049421ff0325781d685fd0449bb7fb122",
+      "type": "blob",
+      "size_bytes": 845,
+      "sha256": "8ba6f5069e7519784cd5674ec397b72b1e32c61a4f82d99d1ceb7c48d3073847"
+    },
+    {
+      "object": "a046a901603d6722d60d15892659ad8a163b9144",
+      "type": "blob",
+      "size_bytes": 1168,
+      "sha256": "1566ed23b7c117c137060fdea83577614bd943b62482298f1cbfa876aa3b2ca5"
+    }
+  ],
+  "stages": [
+    {
+      "commit": "cd75941c9a182fc5be2bb3b1869b4e5c1f1b48a2",
+      "tree": "9958c8d970dc663ae96bfc4e6ae9ae91fbf8d65c",
+      "parents": [],
+      "file_count": 9,
+      "files": [
+        {
+          "path": "coverage.zh.md",
+          "mode": "100644",
+          "blob": "db1a0c82167d7b827073dfc8a3481c2c10ca7856",
+          "size_bytes": 1998,
+          "sha256": "21d0f245ea2985e708ca3d532720155915a976e7636295729c13c249aa712472"
+        },
+        {
+          "path": "files/anniv22-0.jpg",
+          "mode": "100644",
+          "blob": "a995c9a397b952e133c6822990e11031b540c688",
+          "size_bytes": 113960,
+          "sha256": "99bee1e7c96155376fce710ae60da37fd9783082c818a4f8f89bb337720c3ba8"
+        },
+        {
+          "path": "files/anniv22-1.jpg",
+          "mode": "100644",
+          "blob": "8444748a6b734bf33719f71ec6baa3aa2357e603",
+          "size_bytes": 35415,
+          "sha256": "6a74da26790d6c4fc307fca4a5a11f990c74e4f3da5f2eab080c3cbb19299ec2"
+        },
+        {
+          "path": "files/bounded-dedup.zh.md",
+          "mode": "100644",
+          "blob": "45a414cf1060f839f4a31cff6d8fda1d515a518d",
+          "size_bytes": 793,
+          "sha256": "e71814936fa73a76e520033bc49071fd106a1fc80e69c8fe072131f32e1c3c9b"
+        },
+        {
+          "path": "files/identity.json",
+          "mode": "100644",
+          "blob": "cba27d55b86d4a0148c2f213914939f203314ffd",
+          "size_bytes": 2890,
+          "sha256": "910dc5e4ab9798a82631880522367e7860edb9a3772af4ef34e07cc7a37c62dd"
+        },
+        {
+          "path": "files/images.json",
+          "mode": "100644",
+          "blob": "9ec376331e4a11b28d5d9b277f2ead24922d8d31",
+          "size_bytes": 1052,
+          "sha256": "6303bf9ea39ea49991a711c68e194fb92e602def93ba377487c7582659b3794d"
+        },
+        {
+          "path": "files/loveshot-official.jpg",
+          "mode": "100644",
+          "blob": "d6302571e553bbeff9547b46074954a17bf96bc7",
+          "size_bytes": 84282,
+          "sha256": "afaaa9c69a2bfa887e0e134102fd7085b751fd8be2a18c8ef4654529c6ea6bef"
+        },
+        {
+          "path": "files/tree-manifest.json",
+          "mode": "100644",
+          "blob": "7c1c002049421ff0325781d685fd0449bb7fb122",
+          "size_bytes": 845,
+          "sha256": "8ba6f5069e7519784cd5674ec397b72b1e32c61a4f82d99d1ceb7c48d3073847"
+        },
+        {
+          "path": "payload-manifest.json",
+          "mode": "100644",
+          "blob": "a046a901603d6722d60d15892659ad8a163b9144",
+          "size_bytes": 1168,
+          "sha256": "1566ed23b7c117c137060fdea83577614bd943b62482298f1cbfa876aa3b2ca5"
+        }
+      ]
+    }
+  ],
+  "history_ref": "refs/heads/history/nextme-source-queue-original-20261104",
+  "archive_ref": "refs/heads/archive/nextme-source-queue-20261104",
+  "base_commit": "bd4d7bf6e81b757397442e80959bd8931a29de26",
+  "archive_prefix": "research/nextme-source-queue-20261104",
+  "file_count": 9,
+  "total_file_bytes": 242403,
+  "files": [
+    {
+      "path": "coverage.zh.md",
+      "mode": "100644",
+      "blob": "db1a0c82167d7b827073dfc8a3481c2c10ca7856",
+      "size_bytes": 1998,
+      "sha256": "21d0f245ea2985e708ca3d532720155915a976e7636295729c13c249aa712472"
+    },
+    {
+      "path": "files/anniv22-0.jpg",
+      "mode": "100644",
+      "blob": "a995c9a397b952e133c6822990e11031b540c688",
+      "size_bytes": 113960,
+      "sha256": "99bee1e7c96155376fce710ae60da37fd9783082c818a4f8f89bb337720c3ba8"
+    },
+    {
+      "path": "files/anniv22-1.jpg",
+      "mode": "100644",
+      "blob": "8444748a6b734bf33719f71ec6baa3aa2357e603",
+      "size_bytes": 35415,
+      "sha256": "6a74da26790d6c4fc307fca4a5a11f990c74e4f3da5f2eab080c3cbb19299ec2"
+    },
+    {
+      "path": "files/bounded-dedup.zh.md",
+      "mode": "100644",
+      "blob": "45a414cf1060f839f4a31cff6d8fda1d515a518d",
+      "size_bytes": 793,
+      "sha256": "e71814936fa73a76e520033bc49071fd106a1fc80e69c8fe072131f32e1c3c9b"
+    },
+    {
+      "path": "files/identity.json",
+      "mode": "100644",
+      "blob": "cba27d55b86d4a0148c2f213914939f203314ffd",
+      "size_bytes": 2890,
+      "sha256": "910dc5e4ab9798a82631880522367e7860edb9a3772af4ef34e07cc7a37c62dd"
+    },
+    {
+      "path": "files/images.json",
+      "mode": "100644",
+      "blob": "9ec376331e4a11b28d5d9b277f2ead24922d8d31",
+      "size_bytes": 1052,
+      "sha256": "6303bf9ea39ea49991a711c68e194fb92e602def93ba377487c7582659b3794d"
+    },
+    {
+      "path": "files/loveshot-official.jpg",
+      "mode": "100644",
+      "blob": "d6302571e553bbeff9547b46074954a17bf96bc7",
+      "size_bytes": 84282,
+      "sha256": "afaaa9c69a2bfa887e0e134102fd7085b751fd8be2a18c8ef4654529c6ea6bef"
+    },
+    {
+      "path": "files/tree-manifest.json",
+      "mode": "100644",
+      "blob": "7c1c002049421ff0325781d685fd0449bb7fb122",
+      "size_bytes": 845,
+      "sha256": "8ba6f5069e7519784cd5674ec397b72b1e32c61a4f82d99d1ceb7c48d3073847"
+    },
+    {
+      "path": "payload-manifest.json",
+      "mode": "100644",
+      "blob": "a046a901603d6722d60d15892659ad8a163b9144",
+      "size_bytes": 1168,
+      "sha256": "1566ed23b7c117c137060fdea83577614bd943b62482298f1cbfa876aa3b2ca5"
+    }
+  ],
+  "limitations": [
+    "Independent NEXT ME unbuilt source queue only: one real root commit and nine original files. It contains three JPEG byte variants representing two distinct near-coaxial cover contents, frozen identity/query records, bounded dedup text and date corrections. No model, native decoded video frame or complete new scene is delivered.",
+    "All original paths, bytes and history are preserved without alteration. The source tree already has a files/ directory, retained beneath the archive files/ container. Its nested manifest covers six files; the payload manifest covers eight files; each excludes itself. The consumer manifest includes all nine original files.",
+    "Three actual JPEG files have distinct SHA256 values and verified dimensions: anniv22-0 and loveshot-official are1008x630; anniv22-1 is480x360. The two Love Shot size versions are recorded as the same image content and do not establish a second independent view. Titles saying4K do not establish actual decoded quality of these cover files.",
+    "Frozen metadata records official BV1Fr4y157xq and BV1hd4y1U7nm as July30,2022 livestream material. Their upload dates remain distinct from event dates. All files are public covers, with unknown within-video times and no native/highest-quality decode, adequate two-angle structural coverage or later same-scene replay verification.",
+    "The coverage report corrects the initial unverified2024 birthday date/name to November2,2024 Star Expedition and the2022 first-anniversary date to July30 rather than August6. It distinguishes an AcFun repost author/date from official event identity. These are retained source-research records, not live external revalidation by the archive worker.",
+    "The identity file preserves18explicit query strings; the report also describes additional normal queries. Unrelated X calendar, new-outfit portrait, reservation images and birthday publicity images are excluded as structural views. The observed17173 JavaScript anti-bot challenge is recorded only as a limitation; no challenge page/script is included or executed, and blocked routes are not retried.",
+    "The bounded visual comparison covers only the old festival SOURCE column and old neon Reference_B image as reported. Those old comparison pixels are external to this frozen package and are not claimed reverified here. The visible difference is a limited lead, not full-repository novelty, complete deduplication or accepted room geometry. Occlusion and nearly coaxial close views remain limiting.",
+    "A new independent archive/history pair is created from the latest verified archive tree solely to preserve prior paths. All preexisting paths and remote refs, including main and previous studies, remain unchanged. Only the new independent archive receives its payload and verification receipt; original history remains separate.",
+    "Only official Library reception, ordinary Git and integrity verification are performed. No modeling/rendering, production-tree changes, credentials copied, security changes, LFS, force pushes, deleted history, Issues or PRs. The previously denied source-screening-increment receipt remains paused. Library version0 remains retained for parent confirmation; no Space deletion or permanent attachment is performed."
+  ],
+  "producer_manifest_verification": {
+    "source_history_commits": 1,
+    "source_history_root_parent_count": 0,
+    "original_files": 9,
+    "producer_payload_manifest_entries_checked": 8,
+    "nested_tree_manifest_entries_checked": 6,
+    "consumer_full_manifest_includes_payload_manifest_itself": true,
+    "actual_archived_JPEG_files": [
+      {
+        "path": "files/anniv22-0.jpg",
+        "bytes": 113960,
+        "sha256": "99bee1e7c96155376fce710ae60da37fd9783082c818a4f8f89bb337720c3ba8",
+        "dimensions": [
+          1008,
+          630
+        ]
+      },
+      {
+        "path": "files/anniv22-1.jpg",
+        "bytes": 35415,
+        "sha256": "6a74da26790d6c4fc307fca4a5a11f990c74e4f3da5f2eab080c3cbb19299ec2",
+        "dimensions": [
+          480,
+          360
+        ]
+      },
+      {
+        "path": "files/loveshot-official.jpg",
+        "bytes": 84282,
+        "sha256": "afaaa9c69a2bfa887e0e134102fd7085b751fd8be2a18c8ef4654529c6ea6bef",
+        "dimensions": [
+          1008,
+          630
+        ]
+      }
+    ],
+    "distinct_JPEG_byte_hashes": 3,
+    "unique_near_coaxial_cover_contents_as_recorded": 2,
+    "Love_Shot_size_variants_not_independent_views": true,
+    "official_identity_as_frozen_metadata": [
+      {
+        "url": "https://www.bilibili.com/video/BV1Fr4y157xq/",
+        "author": "星瞳_Official",
+        "published_date": "2022-08-02T10:30:56.000Z",
+        "description": "* Home\n\n* Upload\n\n# [4K Pure Enjoyment | Love Shot] Super Cool SOLO, Star Pupil Covers Boy Group Dance\n\n191.7K\n\n847\n\n2022-08-02 18:30:56\n\nReproduction without the author's authorization is prohibited\n\n您当前的浏览器不支持 HTML5 播放器\n\n请更换浏览器再试试哦~\n\n15.4K\n\n9715\n\n3276\n\n1715\n\nPerformance/Appearance: XingTong\nEditing: tool man\nScene: self-made\nSoftware: self-developed based on UE4\nMotion: motion capture\nFootage: livestream on July 30, 2022\nBGM:\n“LOVE SHOT” — EXO\n\n",
+        "image_url": "https://i2.hdslb.com/bfs/archive/b9c75d6951e3a0f99aa03e1048cab95d480fbb77.jpg@1200w_630h"
+      },
+      {
+        "url": "https://www.bilibili.com/video/BV1hd4y1U7nm/",
+        "author": "星瞳_Official",
+        "published_date": "2022-07-31T10:33:37.000Z",
+        "description": "* Home\n\n* Upload\n\n# [4K Pure Enjoyment] X.Ting's Treasured-Level Stage Performance! The Quadruple Jump Destined to Go Down in Virtual Idol History!\n\n1.1M\n\n6527\n\n2022-07-31 18:33:37\n\nReproduction without the author's authorization is prohibited\n\n您当前的浏览器不支持 HTML5 播放器\n\n请更换浏览器再试试哦~\n\n78.9K\n\n44.1K\n\n22.4K\n\n14.8K\n\nPerformance/Appearance: XT / Backup Dancers\nEditing: Tool Person\nScene: Self-made\nSoftware: Self-developed based on UE4\nMotion: Motion capture\nFootage: July 30, 2022 livestream\nBGM:\n《FIESTA》—IZONE\n《NEXT LEVEL》—AESPA\n《I'm Not Cool》—HyunA\n《TRUE COLORS》—Zedd/Grey\n\n",
+        "image_url": "https://i2.hdslb.com/bfs/archive/6ccbfb3be7e4c6f60906643eaa6f676faf958011.jpg@1200w_630h"
+      }
+    ],
+    "explicit_frozen_query_count": 18,
+    "reported_event_date_corrections": {
+      "2024_birthday": "2024-11-02 Star Expedition, rather than unverified November 8/Travel Star name",
+      "2022_first_anniversary": "2022-07-30, rather than unverified August 6"
+    },
+    "upload_or_repost_date_not_substituted_for_event_date": true,
+    "reported_visual_comparison_scope": "Only old festival SOURCE column and old neon Reference_B image; external comparison pixels are not in this frozen bundle",
+    "full_repository_deduplication": false,
+    "new_models": 0,
+    "new_scene_delivery": false,
+    "native_decoded_frames": 0,
+    "clip_time": null,
+    "video_highest_decoded_quality_verified": false,
+    "later_same_scene_replay_verified": false,
+    "two_wide_independent_structural_views_available": false,
+    "unrelated_calendar_portrait_reservation_images_included": false,
+    "JS_challenge_page_included_or_executed": false,
+    "archive_worker_external_search_or_access_retry": false,
+    "archive_worker_modeling_rendering_or_producer_script_execution": false
+  },
+  "archive_branch_created_from": "refs/heads/archive/stargarden-source-queue-20261104"
+}
