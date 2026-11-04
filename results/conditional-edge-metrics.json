@@ -1,0 +1,246 @@
+{
+  "note": "No metric is a geometry acceptance score. Source17/21 give limited shortening signal; source20 bottom mismatch persists. No training or grid search.",
+  "groups": {
+    "17": [
+      13,
+      14,
+      15
+    ],
+    "20": [
+      10,
+      11,
+      12
+    ],
+    "21": [
+      21,
+      22,
+      23
+    ]
+  },
+  "native_crop_xyxy": {
+    "17": [
+      140,
+      240,
+      440,
+      490
+    ],
+    "20": [
+      80,
+      485,
+      300,
+      671
+    ],
+    "21": [
+      660,
+      280,
+      820,
+      440
+    ]
+  },
+  "trials": [
+    {
+      "trial": "baseline",
+      "ratio": 1.0,
+      "top_black_below_white_world_gap": 0.7981626987457275,
+      "bottom_fixed_max_error": 0.0,
+      "sources": {
+        "17": {
+          "baseline_screen_region_representative_ids": [
+            13,
+            14,
+            15
+          ],
+          "top_box_mean_y": 252.27180788914362,
+          "bottom_box_mean_y": 449.30285982290906,
+          "source_rough_visible_top_band": [
+            337,
+            341
+          ],
+          "source_rough_visible_bottom_band": [
+            445,
+            451
+          ],
+          "conditional_top_delta_to_source_band_mid": -86.72819211085638,
+          "conditional_bottom_delta_to_source_band_mid": 1.3028598229090562,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        },
+        "20": {
+          "baseline_screen_region_representative_ids": [
+            10,
+            11,
+            12
+          ],
+          "top_box_mean_y": 506.15985560417175,
+          "bottom_box_mean_y": 660.6761417121937,
+          "source_rough_visible_top_band": [
+            532,
+            535
+          ],
+          "source_rough_visible_bottom_band": [
+            589,
+            600
+          ],
+          "conditional_top_delta_to_source_band_mid": -27.340144395828247,
+          "conditional_bottom_delta_to_source_band_mid": 66.17614171219373,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        },
+        "21": {
+          "baseline_screen_region_representative_ids": [
+            21,
+            22,
+            23
+          ],
+          "top_box_mean_y": 305.80884224176407,
+          "bottom_box_mean_y": 398.66802208622295,
+          "source_rough_visible_top_band": [
+            350,
+            357
+          ],
+          "source_rough_visible_bottom_band": [
+            406,
+            414
+          ],
+          "conditional_top_delta_to_source_band_mid": -47.69115775823593,
+          "conditional_bottom_delta_to_source_band_mid": -11.331977913777052,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        }
+      }
+    },
+    {
+      "trial": "height060",
+      "ratio": 0.6,
+      "top_black_below_white_world_gap": 0.465592622756958,
+      "bottom_fixed_max_error": 0.0,
+      "sources": {
+        "17": {
+          "baseline_screen_region_representative_ids": [
+            13,
+            14,
+            15
+          ],
+          "top_box_mean_y": 328.0876191854477,
+          "bottom_box_mean_y": 449.30285982290906,
+          "source_rough_visible_top_band": [
+            337,
+            341
+          ],
+          "source_rough_visible_bottom_band": [
+            445,
+            451
+          ],
+          "conditional_top_delta_to_source_band_mid": -10.912380814552307,
+          "conditional_bottom_delta_to_source_band_mid": 1.3028598229090562,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        },
+        "20": {
+          "baseline_screen_region_representative_ids": [
+            10,
+            11,
+            12
+          ],
+          "top_box_mean_y": 564.3248685946068,
+          "bottom_box_mean_y": 660.6761417121937,
+          "source_rough_visible_top_band": [
+            532,
+            535
+          ],
+          "source_rough_visible_bottom_band": [
+            589,
+            600
+          ],
+          "conditional_top_delta_to_source_band_mid": 30.824868594606755,
+          "conditional_bottom_delta_to_source_band_mid": 66.17614171219373,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        },
+        "21": {
+          "baseline_screen_region_representative_ids": [
+            21,
+            22,
+            23
+          ],
+          "top_box_mean_y": 340.4812286396821,
+          "bottom_box_mean_y": 398.66802208622295,
+          "source_rough_visible_top_band": [
+            350,
+            357
+          ],
+          "source_rough_visible_bottom_band": [
+            406,
+            414
+          ],
+          "conditional_top_delta_to_source_band_mid": -13.018771360317885,
+          "conditional_bottom_delta_to_source_band_mid": -11.331977913777052,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        }
+      }
+    },
+    {
+      "trial": "height082",
+      "ratio": 0.82,
+      "top_black_below_white_world_gap": 0.6485061645507812,
+      "bottom_fixed_max_error": 0.0,
+      "sources": {
+        "17": {
+          "baseline_screen_region_representative_ids": [
+            13,
+            14,
+            15
+          ],
+          "top_box_mean_y": 286.3822351892789,
+          "bottom_box_mean_y": 449.30285982290906,
+          "source_rough_visible_top_band": [
+            337,
+            341
+          ],
+          "source_rough_visible_bottom_band": [
+            445,
+            451
+          ],
+          "conditional_top_delta_to_source_band_mid": -52.6177648107211,
+          "conditional_bottom_delta_to_source_band_mid": 1.3028598229090562,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        },
+        "20": {
+          "baseline_screen_region_representative_ids": [
+            10,
+            11,
+            12
+          ],
+          "top_box_mean_y": 531.9394500851631,
+          "bottom_box_mean_y": 660.6761417121937,
+          "source_rough_visible_top_band": [
+            532,
+            535
+          ],
+          "source_rough_visible_bottom_band": [
+            589,
+            600
+          ],
+          "conditional_top_delta_to_source_band_mid": -1.5605499148368835,
+          "conditional_bottom_delta_to_source_band_mid": 66.17614171219373,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        },
+        "21": {
+          "baseline_screen_region_representative_ids": [
+            21,
+            22,
+            23
+          ],
+          "top_box_mean_y": 321.49510339895886,
+          "bottom_box_mean_y": 398.66802208622295,
+          "source_rough_visible_top_band": [
+            350,
+            357
+          ],
+          "source_rough_visible_bottom_band": [
+            406,
+            414
+          ],
+          "conditional_top_delta_to_source_band_mid": -32.00489660104114,
+          "conditional_bottom_delta_to_source_band_mid": -11.331977913777052,
+          "warning": "geometry bbox vs source visible edge, same-screen region only, not identity or silhouette correspondence"
+        }
+      }
+    }
+  ]
+}
