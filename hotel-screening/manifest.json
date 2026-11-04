@@ -1,0 +1,111 @@
+{
+  "source_page": "https://wiki.biligame.com/xt/%E6%B2%99%E7%9B%92/%E6%B2%99%E7%9B%92/%E6%84%A4%E6%80%92%E6%84%A4%E6%80%92!",
+  "kind": "Wiki mirror of official public dynamics; images fetched from exact returned public new_dyn URLs",
+  "video_native": false,
+  "decoded_quality": null,
+  "clip_time": null,
+  "files": [
+    {
+      "file": "031.jpg",
+      "url": "https://i0.hdslb.com/bfs/new_dyn/2839863ab5bf04bd0d91796286362e85401315430.jpg",
+      "sha256": "fa2668b671bbafee7aac625b28ca1e4632304960cad09ef903ffe4d5a60af01e",
+      "bytes": 518615,
+      "size": [
+        1928,
+        1080
+      ]
+    },
+    {
+      "file": "032.jpg",
+      "url": "https://i0.hdslb.com/bfs/new_dyn/d56df3ae661406552b4bba31bdd1540b401315430.jpg",
+      "sha256": "9b5dd51e40e4846b8af7f12606b4accc1b66b37e4344f729d74515d2b8da197d",
+      "bytes": 511980,
+      "size": [
+        1928,
+        1080
+      ]
+    },
+    {
+      "file": "033.jpg",
+      "url": "https://i0.hdslb.com/bfs/new_dyn/3cdc182bfb6c9c399489a6f8bb0c5489401315430.jpg",
+      "sha256": "2e907078a7ad0ec00c492c1a6dc5f6d8f7987ce6851da543abb762a337b40f7f",
+      "bytes": 518916,
+      "size": [
+        1928,
+        1080
+      ]
+    },
+    {
+      "file": "090.jpg",
+      "url": "https://i0.hdslb.com/bfs/new_dyn/6a1e0a820b3d5883a742e221b43f16f7401315430.jpg",
+      "sha256": "c0681cc931cc6ca0a8498eea971d5cc2ddda4bcf6cdf361193726f9f100ab900",
+      "bytes": 345657,
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "file": "097.jpg",
+      "url": "https://i0.hdslb.com/bfs/new_dyn/ef4219f4e61a7126457b83456f657ea8401315430.jpg",
+      "sha256": "b2658725184f40e7cf690ceb436a469846c753827dba9931ee57e1e5839e6b4a",
+      "bytes": 62669,
+      "size": [
+        1280,
+        724
+      ]
+    }
+  ],
+  "findings": {
+    "031-033": "Red spotlight piano with leaf particles. Same camera axis, changed performer pose. No complete room/wall evidence. Date/performance unbridged.",
+    "090": "Seaside bar counter, bottles, wood barrel, hanging leaf stringlights. Existing seaside-bar category; not counted new.",
+    "097": "Snow mountains beyond reflective floor, hanging lanterns, left angled wall. Page image adjacency explicitly associates with 2022-09-10 00:10 late-night hotel stay after beach live; not assigned to NEW ME. Only single low close angle, figure legs occlude left geometry. No usable wide or second view."
+  },
+  "blockers": [
+    {
+      "url": "https://g.nga.cn/read.php?tid=36510962",
+      "action": "TinyFish public fetch",
+      "result": "HTTP 403; stopped, no mirror-domain bypass"
+    },
+    {
+      "url": "https://www.jpbeta.net/yingshi/2022/1106/57330.html",
+      "result": "Parent previously observed target_unreachable; not retried"
+    },
+    {
+      "url": "https://www.bilibili.com/read/cv27376615/",
+      "result": "Normal fetch returned login shell and zero images; no bypass"
+    },
+    {
+      "url": "https://www.bilibili.com/blackboard/live/activity-q6MA5MxkZs.html",
+      "result": "Returned live-page shell with three old decorative asset links, no historical performance image series"
+    }
+  ],
+  "production_recommendation": "Insufficient new multiview scene. Do not model from isolated image or title.",
+  "screening_counts": {
+    "public_urls": 103,
+    "files_received": 101,
+    "full_decode_success": 98,
+    "missing_numbers": [
+      51,
+      81
+    ],
+    "incomplete_files": [
+      {
+        "file": "009.jpg",
+        "error": "image file is truncated (3 bytes not processed)",
+        "bytes": 1048576
+      },
+      {
+        "file": "054.jpg",
+        "error": "image file is truncated (1 bytes not processed)",
+        "bytes": 1048576
+      },
+      {
+        "file": "065.jpg",
+        "error": "image file is truncated (3 bytes not processed)",
+        "bytes": 1048576
+      }
+    ],
+    "failed_reason": "Missing URL download errors not persisted; 3 received JPGs truncated at 1 MiB. No retries or partial-image completion claims."
+  }
+}
