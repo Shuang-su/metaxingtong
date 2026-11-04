@@ -1,0 +1,450 @@
+{
+  "base": "models/R07_twistframe_hall_white.blend",
+  "base_sha256": "5a3ad3f25f66c32dd911d6ca8e03b185abc5d8f872b6eaf612b6e98c179641ed",
+  "geometry_changed": false,
+  "visibility_changed": false,
+  "source_cameras_changed": false,
+  "saved_in_original": false,
+  "diagnostic_blend": "models/R07_diagnostic_views_ONLY.blend",
+  "description": "Reproducible render-only diagnostic camera/light overrides, not source views; complete geometry remains visible.",
+  "resolution": [
+    800,
+    440
+  ],
+  "engine": "CYCLES CPU",
+  "samples": 128,
+  "threads": 6,
+  "view_transform": "AgX",
+  "exposure": -1.0,
+  "world_strength": 0.35,
+  "fixed_additional_diagnostic_lights": [
+    {
+      "name": "DIAG rear fill",
+      "location": [
+        10,
+        17,
+        10
+      ],
+      "target": [
+        0,
+        11,
+        3
+      ],
+      "power": 1800,
+      "size": 7,
+      "color": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DIAG interior fill",
+      "location": [
+        2.7,
+        12.5,
+        4.9
+      ],
+      "target": [
+        0,
+        8.5,
+        3
+      ],
+      "power": 160,
+      "size": 2,
+      "color": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "DIAG_rear_side_junction",
+      "location": [
+        12.0,
+        20.0,
+        9.0
+      ],
+      "target": [
+        1.8,
+        10.5,
+        2.8
+      ],
+      "lens": 34.0,
+      "sensor_width": 36.0,
+      "sensor_fit": "AUTO",
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "pixel_aspect": [
+        1.0,
+        1.0
+      ],
+      "rotation_euler": [
+        1.1522737741470337,
+        1.3782465657641296e-07,
+        2.320676565170288
+      ],
+      "matrix_world": [
+        [
+          -0.6815510988235474,
+          -0.297399640083313,
+          0.6686116456985474,
+          12.0
+        ],
+        [
+          0.7317705154418945,
+          -0.27698975801467896,
+          0.6227267384529114,
+          20.0
+        ],
+        [
+          -1.3782465657641296e-07,
+          0.9136903882026672,
+          0.40641096234321594,
+          9.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "renders/R07/DIAG_rear_side_junction_white_800x440.png",
+      "bytes": 283495,
+      "sha256": "ee0900262621f9c7b73f66a110c80e49e8a8627888a9113fa115ef13964c9992",
+      "sensor_height": 24.0
+    },
+    {
+      "name": "DIAG_inside_upper_mounts",
+      "location": [
+        3.299999952316284,
+        13.800000190734863,
+        4.199999809265137
+      ],
+      "target": [
+        0,
+        8.0,
+        3.6
+      ],
+      "lens": 24.0,
+      "sensor_width": 36.0,
+      "sensor_fit": "AUTO",
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "pixel_aspect": [
+        1.0,
+        1.0
+      ],
+      "rotation_euler": [
+        1.4811238050460815,
+        7.031389515077535e-08,
+        2.624305248260498
+      ],
+      "matrix_world": [
+        [
+          -0.8691638112068176,
+          -0.04428589344024658,
+          0.49253731966018677,
+          3.299999952316284
+        ],
+        [
+          0.4945242702960968,
+          -0.07783566415309906,
+          0.8656716346740723,
+          13.800000190734863
+        ],
+        [
+          -7.031389515077535e-08,
+          0.9959821105003357,
+          0.0895523950457573,
+          4.199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "renders/R07/DIAG_inside_upper_mounts_white_800x440.png",
+      "bytes": 426929,
+      "sha256": "47b78491badd839971b76c6b6245e232ccf1f84b788aa8ed2ba4a458fd2f3e71",
+      "sensor_height": 24.0
+    }
+  ],
+  "actual_all_fixed_diagnostic_lights": [
+    {
+      "name": "DIAG interior fill",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "energy": 160.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": 2.0,
+      "size_y": 0.25,
+      "location": [
+        2.700000047683716,
+        12.5,
+        4.900000095367432
+      ],
+      "matrix_world": [
+        [
+          -0.828848659992218,
+          -0.20495402812957764,
+          0.5205801725387573,
+          2.700000047683716
+        ],
+        [
+          0.5594728589057922,
+          -0.3036355674266815,
+          0.7712299227714539,
+          12.5
+        ],
+        [
+          -2.418900413303504e-09,
+          0.930483341217041,
+          0.3663341701030731,
+          4.900000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "DIAG rear fill",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "energy": 1800.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": 7.0,
+      "size_y": 0.25,
+      "location": [
+        10.0,
+        17.0,
+        10.0
+      ],
+      "matrix_world": [
+        [
+          -0.5144959688186646,
+          -0.4413088262081146,
+          0.7352145314216614,
+          10.0
+        ],
+        [
+          0.8574928045272827,
+          -0.2647853195667267,
+          0.44112902879714966,
+          17.0
+        ],
+        [
+          -1.0895708157931949e-07,
+          0.8574002981185913,
+          0.5146501064300537,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "large neutral front key",
+      "type": "AREA",
+      "shape": "DISK",
+      "energy": 1900.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": 7.0,
+      "size_y": 0.25,
+      "location": [
+        0.0,
+        -4.0,
+        8.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.612571656703949,
+          -0.7904150485992432,
+          -4.0
+        ],
+        [
+          0.0,
+          0.7904150485992432,
+          0.612571656703949,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "soft left warm fill",
+      "type": "AREA",
+      "shape": "DISK",
+      "energy": 850.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": 4.0,
+      "size_y": 0.25,
+      "location": [
+        -7.0,
+        -1.0,
+        5.0
+      ],
+      "matrix_world": [
+        [
+          0.7071067690849304,
+          0.27617231011390686,
+          -0.6509445905685425,
+          -7.0
+        ],
+        [
+          -0.7071067690849304,
+          0.2761722505092621,
+          -0.6509445905685425,
+          -1.0
+        ],
+        [
+          -2.130981613390759e-08,
+          0.9205746650695801,
+          0.3905665874481201,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "soft right cool fill",
+      "type": "AREA",
+      "shape": "DISK",
+      "energy": 600.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": 4.0,
+      "size_y": 0.25,
+      "location": [
+        7.0,
+        -1.0,
+        4.0
+      ],
+      "matrix_world": [
+        [
+          0.7071067690849304,
+          -0.1924501359462738,
+          0.6804138422012329,
+          7.0
+        ],
+        [
+          0.7071067690849304,
+          0.1924499273300171,
+          -0.6804138422012329,
+          -1.0
+        ],
+        [
+          1.4633032208166696e-07,
+          0.9622504711151123,
+          0.272165447473526,
+          4.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "upper facade wash",
+      "type": "AREA",
+      "shape": "DISK",
+      "energy": 850.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": 4.0,
+      "size_y": 0.25,
+      "location": [
+        0.0,
+        2.5,
+        7.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.7525767087936401,
+          -0.6585046052932739,
+          2.5
+        ],
+        [
+          0.0,
+          0.6585046052932739,
+          0.7525767087936401,
+          7.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "correction": {
+    "prior_failure": "R07_extra_diagnostic_manifest_PREPARE_ONLY_MATRIX_FAILURE.json",
+    "reason": "prepare-only builder read stale unit matrices before dependency graph update; rendered images and saved diagnostic blend had actual camera transforms.",
+    "evidence_source": "Read from actual saved R07_diagnostic_views_ONLY.blend after view-layer update; no image or model edit.",
+    "diagnostic_blend_sha256": "969f6e453e45e1d858b6fd8af4b805079cadf9ec19df17c3e934b0eeca8c7f7b"
+  }
+}

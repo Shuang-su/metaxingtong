@@ -1,0 +1,98 @@
+{
+  "scene": "redwhite twisted-square-frame hall",
+  "current_version": "R07",
+  "status": "CONDITIONAL / source FAILED / user acceptance absent",
+  "files": [
+    {
+      "path": "models/R07_twistframe_hall.blend",
+      "bytes": 2073060,
+      "sha256": "746fee5d0005637c013e83ca89dfeb1d6435381b4b4ea1571409a90aa849a5dd"
+    },
+    {
+      "path": "models/R07_twistframe_hall_white.blend",
+      "bytes": 1817552,
+      "sha256": "5a3ad3f25f66c32dd911d6ca8e03b185abc5d8f872b6eaf612b6e98c179641ed"
+    },
+    {
+      "path": "models/R07_twistframe_hall.glb",
+      "bytes": 1300520,
+      "sha256": "4137f543b1e888b49f8904b800692607ac499ead76ad4f773261d936889232d8"
+    },
+    {
+      "path": "models/R07_twistframe_hall_white.glb",
+      "bytes": 1298432,
+      "sha256": "bfa61bf90a6780eefbc4853c999bb4bf7f623e82284d17278612d7c02f4fd751"
+    },
+    {
+      "path": "renders/R07/MAIN_material_960x528.png",
+      "bytes": 936860,
+      "sha256": "9134cd3c1b31f7acbb0a3771e44d1040d63c1b2d106514c6dffd4499c774c431"
+    },
+    {
+      "path": "renders/R07/SOURCE_MATERIAL_DIRECT50_contact.png",
+      "bytes": 934281,
+      "sha256": "6af8e73aeff2c613cb8bf4b05896a38f1d4ce904cf9391381ceaa98ba49001cb"
+    },
+    {
+      "path": "renders/R07/CHECK_contact_1.png",
+      "bytes": 940822,
+      "sha256": "a3e08acbe51d4f290a6a0c0fdef1747f319d927c0ba806176682e0800fb40f1e"
+    },
+    {
+      "path": "renders/R07/CHECK_contact_2.png",
+      "bytes": 1076099,
+      "sha256": "0c2311789b84e09f2d17776123417774fdc37003ee399d25a9cf82e6efc09b98"
+    },
+    {
+      "path": "docs/R07-final-report.zh.md",
+      "bytes": 8442,
+      "sha256": "3870907921f11901bf18705c51e8e1c6136772ba284017c63e63f6b294c32d6f"
+    },
+    {
+      "path": "qa/R07_per_object_source_table.csv",
+      "bytes": 96628,
+      "sha256": "02216f695051319ea212e77e562b5a5873ebfddfb3e2945346ced610cec70e08"
+    },
+    {
+      "path": "models/R07_diagnostic_views_ONLY.blend",
+      "bytes": 1830248,
+      "sha256": "969f6e453e45e1d858b6fd8af4b805079cadf9ec19df17c3e934b0eeca8c7f7b"
+    },
+    {
+      "path": "renders/R07/EFFECTIVE_CHECK_contact_1.png",
+      "bytes": 936482,
+      "sha256": "4b964f3bc2160c28f8befb2916cfdf2265d441cdb172b612042307f93e76e5ea"
+    },
+    {
+      "path": "renders/R07/EFFECTIVE_CHECK_contact_2.png",
+      "bytes": 1099277,
+      "sha256": "fd90dba289578bf3d93e67d62a7e53a9518dfb0fef400643b57d3738c90ce916"
+    },
+    {
+      "path": "qa/R07_extra_diagnostic_manifest.json",
+      "bytes": 8907,
+      "sha256": "4e3e972c0b352c7b484b232b0cfeb2fe3e0bc47f90395462d96fef5ab375dda8"
+    },
+    {
+      "path": "qa/R07_effective_check_manifest.json",
+      "bytes": 2258,
+      "sha256": "60d90332d434410fbc60ea63b8b3d5169fe3326dde836fc86a8e951fcae35736"
+    },
+    {
+      "path": "qa/independent/R07-independent-final-review.zh.md",
+      "bytes": 11038,
+      "sha256": "5dc227311b3d30883b3d94bcc04102911f0c10ad3c1b61094e23dc137487e2f9"
+    }
+  ],
+  "check_coverage": {
+    "effective": 8,
+    "limited_preserved": 1,
+    "failed_preserved": 1,
+    "description": "6 original saved-camera check directions +2 additional reproducible diagnostic-only directions; not source angles."
+  },
+  "camera_scope": {
+    "four_originals": 11,
+    "diagnostic_only_blend": 13,
+    "same_original_geometry_and_camera_subset": true
+  }
+}
