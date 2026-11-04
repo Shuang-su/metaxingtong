@@ -1,0 +1,79 @@
+{
+  "model_sha256": "8bf0d5036babd6db0a0fbd3c19ea020b38b1e6136156342355c136a284c645ee",
+  "method": "Full scene ray_cast at every actual camera pixel center, nearest visible mesh, same camera 1192x671. Mask is categorical object ID, NOT depth.",
+  "limitation": "No subpixel antialiasing, reflection/refraction, indirect illumination or all-sample visibility proof; zero hits would not prove completely invisible. These are new R07 probes, not reused R06 images.",
+  "sources": [
+    {
+      "source": 17,
+      "resolution": [
+        1192,
+        671
+      ],
+      "sample_count": 799832,
+      "counts": [
+        {
+          "object": "inferred-low-bridge-central-step",
+          "id": 1,
+          "pixel_center_first_hits": 0,
+          "bbox_xyxy": null
+        },
+        {
+          "object": "inferred-low-bridge-step-outer",
+          "id": 2,
+          "pixel_center_first_hits": 0,
+          "bbox_xyxy": null
+        }
+      ],
+      "seconds": 27.32456567400368,
+      "mask_sha256": "0e541d61ae91e26c0cc39448e084372235f3e404f99f3d3dffada52f036109af"
+    },
+    {
+      "source": 20,
+      "resolution": [
+        1192,
+        671
+      ],
+      "sample_count": 799832,
+      "counts": [
+        {
+          "object": "inferred-low-bridge-central-step",
+          "id": 1,
+          "pixel_center_first_hits": 0,
+          "bbox_xyxy": null
+        },
+        {
+          "object": "inferred-low-bridge-step-outer",
+          "id": 2,
+          "pixel_center_first_hits": 0,
+          "bbox_xyxy": null
+        }
+      ],
+      "seconds": 27.624780632999318,
+      "mask_sha256": "0e541d61ae91e26c0cc39448e084372235f3e404f99f3d3dffada52f036109af"
+    },
+    {
+      "source": 21,
+      "resolution": [
+        1192,
+        671
+      ],
+      "sample_count": 799832,
+      "counts": [
+        {
+          "object": "inferred-low-bridge-central-step",
+          "id": 1,
+          "pixel_center_first_hits": 0,
+          "bbox_xyxy": null
+        },
+        {
+          "object": "inferred-low-bridge-step-outer",
+          "id": 2,
+          "pixel_center_first_hits": 0,
+          "bbox_xyxy": null
+        }
+      ],
+      "seconds": 27.165603697001643,
+      "mask_sha256": "0e541d61ae91e26c0cc39448e084372235f3e404f99f3d3dffada52f036109af"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+AUDIT inferred-low-bridge-central-step {'vertices': 385, 'triangles': 768, 'nonmanifold': 4, 'degenerate': 0, 'signed_volume': 0.12582498430669117} UNEXPECTED [] NEIGHBORS [{'object': 'stage-central-solid', 'bvh_pairs': 620, 'boolean_intersection': {'volume': 2.6318066509364724, 'faces': 192}}, {'object': 'stage-step-ring', 'bvh_pairs': 736, 'boolean_intersection': {'volume': 12.764561870557046, 'faces': 864}}, {'object': 'stage-outer-floor', 'bvh_pairs': 0, 'boolean_intersection': {'volume': 0.0, 'faces': 0}}, {'object': 'inferred-low-bridge-step-outer', 'bvh_pairs': 0, 'boolean_intersection': {'volume': 0.0, 'faces': 0}}]
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/keyring-underbridge-r07-20261104/scripts/test_bridges.py", line 42, in <module>
+    assert not unexpected and audit['nonmanifold']==0 and audit['degenerate']==0 and audit['signed_volume']>0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/keyring-underbridge-r07-20261104/inputs/keyring-material.blend"
+
+Blender quit
