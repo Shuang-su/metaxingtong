@@ -1,0 +1,62 @@
+{
+  "files": [
+    {
+      "file": "versions/V03/renders/white-diagnostic-side.png",
+      "sha256": "a70a3cae4f5b3d986fa642524157f27eb68cdaa6db78593a2bf85d8318527ee5",
+      "bytes": 363197,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGBA",
+      "record_matches": true,
+      "alpha_bbox": [
+        327,
+        92,
+        787,
+        492
+      ],
+      "alpha_bbox_record_matches": true
+    },
+    {
+      "file": "versions/V03/renders/white-source7-direct-50pct.png",
+      "sha256": "0fbff6fe336b2d3af192ca92fe00251037e80aaf4596bb9045e967ea4e13f80e",
+      "bytes": 640159,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGB",
+      "record_matches": true
+    },
+    {
+      "file": "versions/V03/renders/white-source7.png",
+      "sha256": "d34bab5a8857543c2cbe569dea119b4d9490e935ec49ddf4a3c32b5d24ff117a",
+      "bytes": 347586,
+      "size": [
+        1080,
+        603
+      ],
+      "mode": "RGBA",
+      "record_matches": true,
+      "alpha_bbox": [
+        656,
+        310,
+        916,
+        587
+      ],
+      "alpha_bbox_record_matches": true
+    }
+  ],
+  "direct50": {
+    "max_channel_error": 0,
+    "different_channels": 0,
+    "formula": "floor((sourceRGB + RGBA render alpha-composited over black RGB)/2), native full arrays, no warp/rescale"
+  },
+  "source_sha256": "18aaedb0defe7320a223f0c16fccc4da484362dea8d542119be3abb75a04636b",
+  "model_sha256": "327aa2447e5e3b94461b3a7a9596872d22af47da736eff44fd7fe74f86a36cf9",
+  "scripts": {
+    "versions/V03/scripts/render-white-checks.py": "68cb07348caf5f1e899e5a4aac9c697dd501bad02363d20d42d0b98a23e5e725",
+    "versions/V03/scripts/white-overlay.py": "901df89c242d2afb98324522d92e01d07a66378c7013ead7d27994fa6e5456dd"
+  }
+}
