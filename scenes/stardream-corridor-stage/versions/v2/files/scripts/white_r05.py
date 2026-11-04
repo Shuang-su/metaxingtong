@@ -1,0 +1,5 @@
+import bpy,pathlib,json,hashlib,shutil
+P=pathlib.Path(__file__).resolve().parents[1];records={}
+for ext in ['blend','glb']:
+ a=P/'models'/f'R04_material.{ext}';b=P/'models'/f'R05_material.{ext}';shutil.copyfile(a,b);records['material_'+ext]={'source':str(a.relative_to(P)),'target':str(b.relative_to(P)),'sha256':hashlib.sha256(b.read_bytes()).hexdigest(),'change':'NONE, exact R04 material bytes retained as alias for R05 pair'}
+bpy.ops.wm.open_mainfile(filepath=str(P/'models/R04_white.blend'));m=bpy.data.materials['WHITE_clay'];m.diffuse_color=(.35,.35,.35,1);m.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value=(.35,.35,.35,1);m['purpose']='Uniform neutral clay lowered from linear.7 to.35 for closed-room diagnostic contrast; not source material';bpy.ops.wm.save_as_mainfile(filepath=str(P/'models/R05_white.blend'));bpy.ops.export_scene.gltf(filepath=str(P/'models/R05_white.glb'),export_format='GLB',export_cameras=True,export_extras=True);records['white']={'change':'Only uniform clay Base Color .7 to .35; roughness and all lights/world/cameras/geometry unchanged'};(P/'qa/R05-change.json').write_text(json.dumps(records,indent=2))
