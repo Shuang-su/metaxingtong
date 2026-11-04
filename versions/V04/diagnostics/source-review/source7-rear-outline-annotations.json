@@ -1,0 +1,92 @@
+{
+  "source": "dreamfold-phone-study-20261104/sources/reta2-7.img",
+  "sha256": "18aaedb0defe7320a223f0c16fccc4da484362dea8d542119be3abb75a04636b",
+  "size": [
+    1080,
+    603
+  ],
+  "roi_box": [
+    740,
+    250,
+    1080,
+    603
+  ],
+  "coordinate_convention": "full original image x right/y down; subjective manual, not calibrated or blind holdout",
+  "front_four_points": "unchanged; not re-labelled",
+  "camera": "unchanged; no fit performed",
+  "usable_conditional_outline": [
+    {
+      "id": "rear_side_mid_upper",
+      "xy": [
+        901,
+        375
+      ],
+      "subjective_error_px": 6,
+      "semantic": "thin bright right-side sloping boundary candidate; not confirmed physical edge identity"
+    },
+    {
+      "id": "rear_side_mid",
+      "xy": [
+        910,
+        425
+      ],
+      "subjective_error_px": 6,
+      "semantic": "same visible boundary; not independent structural feature"
+    },
+    {
+      "id": "rear_side_mid_lower",
+      "xy": [
+        917,
+        465
+      ],
+      "subjective_error_px": 7,
+      "semantic": "same boundary before logo occlusion; endpoint not physical corner"
+    }
+  ],
+  "excluded_or_unknown": [
+    {
+      "id": "top_hinge_corner",
+      "xy": null,
+      "region_xyxy": [
+        876,
+        312,
+        905,
+        364
+      ],
+      "reason": "rounded corner, bright floating particle and glare overlap; no reliable common hinge vertex"
+    },
+    {
+      "id": "rear_bottom_corner",
+      "xy": null,
+      "region_xyxy": [
+        904,
+        474,
+        995,
+        557
+      ],
+      "reason": "SAMSUNG/event logo and grass occlude expected rear edge/corner; do not use text boundary"
+    },
+    {
+      "id": "ascending_lower_line",
+      "approx_segment": [
+        [
+          927,
+          470
+        ],
+        [
+          972,
+          445
+        ]
+      ],
+      "subjective_error_px": 8,
+      "usable_for_fit": false,
+      "reason": "visible oblique light band, identity unresolved between device lower edge/reflection/grass/background; not a verified rear lower edge"
+    },
+    {
+      "id": "rear_ground_contact",
+      "xy": null,
+      "reason": "grass and logo occlusion, no reliable contact point"
+    }
+  ],
+  "interpretation": "Three samples describe one uncertain visible line only. They cannot establish 3D fold angle, rear panel size/thickness, functional screen side, or ground contact."
+}
