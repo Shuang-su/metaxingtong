@@ -6,6 +6,17 @@ if 'lakeleaf-r04-' in bpy.data.filepath and 'checks' in a.output:
  print('R04 remaining inspection suite intentionally stopped: real 4K QA exposed overlong first branch pair; preserved source renders, superseded by R05 repair.');raise SystemExit(42)
 out=pathlib.Path(a.output).resolve();out.mkdir(parents=True,exist_ok=True)
 s.render.engine='CYCLES';s.cycles.samples=a.samples;s.cycles.use_denoising=False;s.render.threads_mode='FIXED';s.render.threads=a.threads;s.render.image_settings.file_format='PNG';s.render.image_settings.color_mode='RGB';s.render.resolution_percentage=a.percentage
+# Blender's -t CLI override can cap the RNA thread setter. On a NEW call only,
+# relaunch before rendering if the requested budget cannot be applied in-process.
+budgetfile=pathlib.Path(__file__).resolve().parents[1]/'qa/render-threads.json'
+desired=int(json.loads(budgetfile.read_text())['threads']) if budgetfile.exists() else a.threads
+s.render.threads=desired
+if s.render.threads != desired:
+ import os
+ print('CLI thread override detected; relaunching this new render call before any image, at',desired,'threads.',flush=True)
+ os.environ['OMP_NUM_THREADS']=str(desired)
+ argv=[bpy.app.binary_path,'-b',bpy.data.filepath,'-t',str(desired),'--python-exit-code','10','--python',str(pathlib.Path(__file__).resolve()),'--','--output',a.output,'--cameras',*a.cameras,'--samples',str(a.samples),'--threads',str(desired),'--percentage',str(a.percentage)]
+ os.execv(bpy.app.binary_path,argv)
 for name in a.cameras:
  budget=pathlib.Path(__file__).resolve().parents[1]/'qa/render-threads.json'
  if budget.exists():s.render.threads=int(json.loads(budget.read_text())['threads'])

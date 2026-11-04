@@ -1,6 +1,6 @@
 # 湖面叶舟：R06重建候选（未获来源/用户验收）
 
-当前可编辑模型：models/lakeleaf-r06-material.blend；同几何白模：models/lakeleaf-r06-white.blend；跨软件导出：models/lakeleaf-r06.glb。所有纹理在textures/，保持相对目录。CURRENT.json给出当前入口。正式图证仍在制作，完成后以实际文件清单更新，不把预览数量冒充验收。
+当前可编辑模型：models/lakeleaf-r06-material.blend；同几何白模：models/lakeleaf-r06-white.blend；跨软件导出：models/lakeleaf-r06.glb 与 models/lakeleaf-r06-white.glb。所有纹理在textures/，保持相对目录。CURRENT.json给出当前入口。R06 已完成 26 张正式套图和 1 张附加低仰诊断，另有 8 张原尺寸直接50%叠图。最终清单与限制见 docs/R06-final-evidence.zh.md；图证完成不代表来源验收。
 
 ## 来源和新场景边界
 官方 星瞳_Official：https://www.bilibili.com/video/BV1JqCeBMEAb/ 。表演2025-11-07，投稿2025-11-17，不是后续独立日期回放。4张3840×2160原生PNG，登录/4K实际解码/暂停readyState4/保存前后时间与SHA在sources/capture-manifest.json。主要参考92.142973侧全、100.762992俯视、108.755584斜局部；6.585758背近仅辅助，不是第四独立完整验证。夜景切换单独反证，不混入白天拟合。逐图已实看，不声称完整观看全回放。
@@ -16,9 +16,11 @@ qa/r06/delivery-validation.json记录材白同geometry、13相机、2704网格�
 标准glTF不保存离轴lens shift。raw GLB保留13机位pose，但俯视投影需models/lakeleaf-r06-cameras.json恢复；scripts/restore_glb_cameras_r06.py已实际执行，生成独立camera-restored-check.blend并另做矩阵核验。raw重导和恢复后的重导分开，不混称raw GLB完全等价。AREA光、Blender世界/AgX色彩管理也不是标准GLB完整渲染状态。完整可编辑照明仍在原BLEND。
 
 ## 图证和当前状态
-计划同4个实际来源机位的材质/白模各3840×2160渲染及直接50%叠图，另有材白各8真实检查角及主图。所有源机位共用几何、材质和白天照明，禁止按相机隐物或改形。内部检查角不是新来源；辅助背近不是第四完整基线。相机为联合条件性估计，未完全标定。
+同4个实际来源机位的材质/白模各3840×2160渲染及直接50%叠图已经完成，另有材白各8真实检查角及各1主图。额外低仰图只有1张，不计来源或成对白模角。所有源机位共用几何、材质和白天照明，禁止按相机隐物或改形。内部检查角不是新来源；辅助背近不是第四完整基线。相机为联合条件性估计，未完全标定。
 
 R04真实4K近斜发现越界细刺，R05只修第一对支脉并做原像素预检；R06再补已见第二岸林方向，联合4视角小图+两张原像素交界ROI预检后才启动全套。失败模型/图片/日志和真实Git阶段全部保留。叶舟曲率、两尖、岸线/植物实例、水反射等仍有来源残差，修刺/补林不代表来源验收。
 
 ## 历史与保存
 R01至R06的真实模型、脚本、原件和失败预览按阶段保存，见docs/。普通Git、无LFS、无强推，不删失败。每个.blend/.glb按实际字节检查小于100MiB；临时Space/私有Git归档由父任务协调，本文不冒称远端保存已完成。用户验收未取得。
+
+逐类拓扑边界见docs/R06-topology-scope.zh.md：515植物薄面+1水面+2有限岸面为518开边mesh，主叶舟壳与19脉管闭合；不宣传全场水密或岸下厚度已验。独立技术复核原文在qa/r06/independent/，正式图证技术核验通过与来源验收失败明确分开。

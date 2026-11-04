@@ -1,0 +1,99 @@
+{
+  "created_at": "2026-11-04T02:57:02.593330+00:00",
+  "scope": "3 primary source-fit hypotheses + 1 auxiliary view, all actual 3840x2160 source PNGs; same saved geometry/material/lighting. No image warping or local edits.",
+  "source_accepted": false,
+  "overlays": [
+    {
+      "source": "sources/lakeleaf-native-92.142973.png",
+      "render": "renders/r06/source/SOURCE_092142973_SIDE.png",
+      "overlay": "qa/r06/SOURCE_092142973_SIDE-overlay50.png",
+      "role": "source fit hypothesis",
+      "size": [
+        3840,
+        2160
+      ],
+      "source_sha256": "7690235e89a447f6d386ea60d393939e20c2614932bbb0a46f0951342a50c6bb",
+      "render_sha256": "57582803a7268e99b4ca6b4e0a3404b8635cce2fb87b4f6b612d3015d014f1f2",
+      "overlay_sha256": "4d83f039c8a6321d7c93d54b2249f1f5f50ffef956df07a6ad3182a848e71821",
+      "operation": "Pillow Image.blend(source.convert(RGB), render.convert(RGB), 0.5), no warp/crop/resize",
+      "calibration": "Unsolved, conditional visual estimate"
+    },
+    {
+      "source": "sources/lakeleaf-native-100.762992.png",
+      "render": "renders/r06/source/SOURCE_100762992_TOP.png",
+      "overlay": "qa/r06/SOURCE_100762992_TOP-overlay50.png",
+      "role": "source fit hypothesis",
+      "size": [
+        3840,
+        2160
+      ],
+      "source_sha256": "39e85830d71e7f801b50d543727ea1e548f09b162844ab5f9fc4933cf9dd750f",
+      "render_sha256": "4ac2982df55556a5f846519ed8a2f64bea3df1237b7828535965a009a67fea85",
+      "overlay_sha256": "893b5a526a2e9f9b43a9ec59ba268beaeb185b72f8fec428e52e3ebb346178dc",
+      "operation": "Pillow Image.blend(source.convert(RGB), render.convert(RGB), 0.5), no warp/crop/resize",
+      "calibration": "Unsolved, conditional visual estimate"
+    },
+    {
+      "source": "sources/lakeleaf-native-108.755584.png",
+      "render": "renders/r06/source/SOURCE_108755584_OBLIQUE.png",
+      "overlay": "qa/r06/SOURCE_108755584_OBLIQUE-overlay50.png",
+      "role": "partial source fit hypothesis",
+      "size": [
+        3840,
+        2160
+      ],
+      "source_sha256": "702a1f22b0eb686f16082987fea7ed353e61d0675e8fcd927e864ad52b3d08c8",
+      "render_sha256": "044ead82883c04cf8d9a68f87fc843c295e53a06f4cade8db8e747dd037295da",
+      "overlay_sha256": "f9aa156229c1d4ff41aaf770a879ab3c39da8483ebfe2b9eeec6216468835c21",
+      "operation": "Pillow Image.blend(source.convert(RGB), render.convert(RGB), 0.5), no warp/crop/resize",
+      "calibration": "Unsolved, conditional visual estimate"
+    },
+    {
+      "source": "sources/lakeleaf-native-6.585758.png",
+      "render": "renders/r06/source/AUX_006585758_REAR.png",
+      "overlay": "qa/r06/AUX_006585758_REAR-overlay50.png",
+      "role": "auxiliary close rear only; not an additional independent fit baseline",
+      "size": [
+        3840,
+        2160
+      ],
+      "source_sha256": "91bee152e5cd0954dfc6b80e075c5a349bd5ae597e01d3dcbc3c9874d30b2674",
+      "render_sha256": "f95a080b6c7a5d8f69bc8b8a07afa10505abd70a8bdd5c1427fbe0b1326ec4cf",
+      "overlay_sha256": "9b9ca499250069c8826cfc25238e6915b84f531e537bbc1e67fd5e92fdc64af9",
+      "operation": "Pillow Image.blend(source.convert(RGB), render.convert(RGB), 0.5), no warp/crop/resize",
+      "calibration": "Unsolved, conditional visual estimate"
+    }
+  ],
+  "display_derivatives": [
+    {
+      "camera": "SOURCE_092142973_SIDE",
+      "crop_xyxy": [
+        380,
+        910,
+        3340,
+        1890
+      ],
+      "kind": "exact same pixel-coordinate crop for source/render/overlay, no warp, not a new source view"
+    },
+    {
+      "camera": "SOURCE_100762992_TOP",
+      "crop_xyxy": [
+        1760,
+        600,
+        2120,
+        1390
+      ],
+      "kind": "exact same pixel-coordinate crop for source/render/overlay, no warp, not a new source view"
+    },
+    {
+      "camera": "SOURCE_108755584_OBLIQUE",
+      "crop_xyxy": [
+        0,
+        820,
+        1800,
+        2160
+      ],
+      "kind": "exact same pixel-coordinate crop for source/render/overlay, no warp, not a new source view"
+    }
+  ]
+}
