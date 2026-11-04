@@ -1,40 +1,49 @@
 {
   "scene": "Stardream backstage corridor",
-  "stage": "R07",
-  "status": "UNACCEPTED CANDIDATE; local coplanar grid repair verified; sources FAILED; remote increment pending",
+  "stage": "R08",
+  "status": "UNACCEPTED CANDIDATE; installation cap contacts verified; sources FAILED; remote increment pending",
   "production_date_beijing": "2026-11-05",
   "source_date": "2024-08-03",
   "originals": [
     {
-      "path": "models/R07_material.blend",
-      "bytes": 4187932,
-      "sha256": "492168988d7e42535015c2124946d72b165a561d707f0a2a6595e09b3d200fec"
+      "path": "models/R08_material.blend",
+      "bytes": 4197412,
+      "sha256": "f836768fd9f233241d8b4c19b3862575e178713abb0caa1193a67268b1e32def"
     },
     {
-      "path": "models/R07_material.glb",
-      "bytes": 2876292,
-      "sha256": "3ff28ee34b4d53a9d2f6f0c152a03cfb30f0a2e11f345718e59490f80b1d7906"
+      "path": "models/R08_material.glb",
+      "bytes": 2877056,
+      "sha256": "c6554588c17520d3f94d5f4192ac588bbe3e424d42209e0fe854bb4f16c1ce2d"
     },
     {
-      "path": "models/R07_white.blend",
-      "bytes": 1861128,
-      "sha256": "e87ae93a51211d4631f8966bcdeafbd092a009d2271806ecea68bcdbd6f97e9b"
+      "path": "models/R08_white.blend",
+      "bytes": 1870608,
+      "sha256": "0a483e59176cebb4ae53944ef7344508fe1a1c4c938a5686526e22a883fbfa09"
     },
     {
-      "path": "models/R07_white.glb",
-      "bytes": 632440,
-      "sha256": "f7d459f700dcb9d8fc2ee2cea05f2b860bbb22dd76fcbe96ef12bed45583bd2c"
+      "path": "models/R08_white.glb",
+      "bytes": 633200,
+      "sha256": "2f0cdf14ef8f676a4b2b3e4613e0ad3fa97e172aad37c712040ab0f35c3a5433"
     }
   ],
-  "render_count": 4,
-  "direct50_count": 2,
-  "model_check_angles_per_variant": 1,
+  "render_count": 2,
+  "direct50_count": 0,
+  "model_check_angles_per_variant": {
+    "material": 0,
+    "white": 2
+  },
   "source_quality": "1192x671 article images; not native video frames; timestamps unknown",
-  "source_views_per_variant": 1,
+  "source_views_per_variant": 0,
   "historical_r06_suite": {
     "render_count": 24,
     "direct50_count": 6,
     "model_check_angles_per_variant": 8,
     "not_r07_renders": true
+  },
+  "comparison_baseline_r07_render_count": 2,
+  "historical_r07_increment": {
+    "render_count": 4,
+    "direct50_count": 2,
+    "not_r08_renders": true
   }
 }

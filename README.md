@@ -1,4 +1,4 @@
-# 星梦游后台走廊：未验收候选，最新R07局部技术修正
+# 星梦游后台走廊：未验收候选，最新R08安装端技术修正
 
 制作日期为北京时间2026-11-05。官方2024-08-03回放 [BV11E4m1R716](https://www.bilibili.com/video/BV11E4m1R716/) 与官方片 [BV1NT421r72q](https://www.bilibili.com/video/BV1NT421r72q/) 身份链已核。几何参考当前仅DD报道三张1192×671图片，不是原生导帧；片内时刻、登录后最高可解码质量和后续其他日期同场验证未完成。独立实际与旧列车舱及宴会厅排重不同，不冒称全库逐图穷尽。
 
@@ -17,3 +17,7 @@ R01–R06六个真实模型阶段保留：R01初始壳及错误数量、R02数�
 ## R07最新增量
 
 当前原件为models/R07_material.blend、R07_white.blend及对应GLB，精确hash见CURRENT.json。只六横梁去重复中央体积，联合空间占据不变，同像素黑块消失；其他181mesh/12cam及源状态不改。新渲染仅CHECK05与SOURCE08各材白4张、2直接叠图，不将上述R06历史24套移称R07；来源仍FAILED。完整增量范围与实际QA见docs/R07-status.zh.md。
+
+## R08最新增量
+
+models/R08_material.blend、R08_white.blend及GLB为当前原件。只22安装端/背面延长，原可见前/底不改；187mesh、原12camera不动并新增2诊断cam。指定灯圈/灯面/牌背/字体接触已实核，非物理承载/来源验收。新图仅R08两白macro，另两R07同机位基线；不把历史24图、8角或来源叠图移称新渲。详docs/R08-status.zh.md；所有来源FAILED仍在。
