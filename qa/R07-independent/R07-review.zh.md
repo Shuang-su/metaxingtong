@@ -15,3 +15,7 @@ R07两GLB实际空场景回导各231mesh/5camera，无缺失/新增。1192×671�
 - R07_white.glb `f6cf73e7bf90bb58983ceb69662cf82414136a0b4fac3df9d7fc5719abfc87ad`
 
 证据：R07-diff-check.json、R07-glb-projection-check.json、R07-executed-state-check.json及对应脚本/日志；旧camera-aspect-diagnosis和mixed-aspect-rejected失败均保留。
+
+
+## 线程表述更正（追加真实版本，旧报告/JSON保留）
+上文写6固定线程是脚本意图，原独立检查进程使用CLI -t1，机器记录实际两者为1，不能据旧JSON声称实际6。新独立三次读取证明：无CLI -t时保存态/执行态均FIXED6；-t1均1；-t6均6，其他所比RNA状态分别一致。CLI覆盖导致读取差别，不是模型/图被改。新无覆盖证据支持规范保存6及状态复用；不得把旧-t1测试冒称6。详../../R09-thread-correction/R07-thread-correction-addendum.zh.md及三份新JSON/log，旧原文另存R07-original-report-before-thread-correction.zh.md。
