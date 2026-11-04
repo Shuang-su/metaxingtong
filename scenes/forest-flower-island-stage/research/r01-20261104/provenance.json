@@ -1,0 +1,811 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-04T01:07:16.924291+00:00",
+  "repository": "Shuang-su/metaxingtong",
+  "visibility": "private",
+  "status": "UNACCEPTED_EARLY_WHITE_CANDIDATE",
+  "scope": "File reception, ordinary Git archival and integrity verification only. No modeling, rendering, source script execution, acceptance or source alignment claim.",
+  "input": {
+    "library_file_id": "libfile_5baf8a59b308819193a60a0fbc3db949",
+    "version": 0,
+    "file_id": "file_0000000098688230a924e32386469678",
+    "filename": "metaxingtong-forest-flower-island-20261104.bundle",
+    "size_bytes": 15040738,
+    "sha256": "b7b5cae032aea7007711216122103291180ec15bd4ea5f80a8b115ca266caef0",
+    "materialized_with": "Current Library resolved-reference helper; Library identity xattr applied and checked",
+    "bundle_complete": true,
+    "bundle_prerequisites": [],
+    "source_ref": "refs/heads/scene/new-candidate-20261104",
+    "source_head": "55b89e69fa461f365913353cf9b7a5f49368d12a",
+    "space_retained": true
+  },
+  "base_commit": "0ca7ae5be9892e9fc6656142682f7702cf244110",
+  "history_branch": "history/forest-flower-island-original-20261104",
+  "archive_branch": "archive/forest-flower-island-r01-20261104",
+  "archive_prefix": "scenes/forest-flower-island-stage/research/r01-20261104",
+  "files": [
+    {
+      "path": "docs/R01-stage.zh.md",
+      "mode": "100644",
+      "blob": "6c336aca220efe5d74852d3f5bd6e8ddf5729f8a",
+      "size_bytes": 1598,
+      "sha256": "cbf36af4844bc66204d7478f389a2a8078af34df5982d6a58e2b82b65fcbfd4d"
+    },
+    {
+      "path": "docs/forest-observation-initial.zh.md",
+      "mode": "100644",
+      "blob": "df49f900596d9ddc55f8c420394235536dc831b4",
+      "size_bytes": 1528,
+      "sha256": "9e6d721f36546a45d6e260c8b3eb175c6e97a82c6c7d1a0c1568773e345d155e"
+    },
+    {
+      "path": "docs/forest-source-search-20261104.md",
+      "mode": "100644",
+      "blob": "59bc65df1a11810bb9e5cb12b1579b3c67ecf744",
+      "size_bytes": 1803,
+      "sha256": "50958f8414e9df1f4113c57e745117b33e69daaa16e110089b218351fcc047e6"
+    },
+    {
+      "path": "docs/production-plan.zh.md",
+      "mode": "100644",
+      "blob": "512e387619a36e71b8cff9bdf99dab349517057d",
+      "size_bytes": 1227,
+      "sha256": "ce60e7c3c59726e5b519346de878b801e9552f315aa38a8bfb28908c4ea1b2c5"
+    },
+    {
+      "path": "docs/reconstruction-standard.md",
+      "mode": "100644",
+      "blob": "2828618bce769c32621e6220c4b98a28ec637088",
+      "size_bytes": 24445,
+      "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e"
+    },
+    {
+      "path": "models/R01_white.blend",
+      "mode": "100644",
+      "blob": "894d0461ffd846669e3b65620e89f90f5185469b",
+      "size_bytes": 3387632,
+      "sha256": "354a74aaafa7682acd8472362915ecd7c4ceef1e8a2a5fc1752d872f979eba4d"
+    },
+    {
+      "path": "models/R01_white.glb",
+      "mode": "100644",
+      "blob": "494a106eb6209b54f88dbc2e9109b8a9ffd99e67",
+      "size_bytes": 1165872,
+      "sha256": "1bac15fbd2f95e48e91828370e23411cbcce8414a0ab5d87be87816b6b4a65fa"
+    },
+    {
+      "path": "qa/R01-audit.log",
+      "mode": "100644",
+      "blob": "b5993e4b4871091e07217055efde5b31cd3edc7a",
+      "size_bytes": 136,
+      "sha256": "4dcdeefc9b79572bc72881108e8302dfb20a371ccfe70f338586fc33b6e1f27e"
+    },
+    {
+      "path": "qa/R01-build.log",
+      "mode": "100644",
+      "blob": "c28ee7c6169357dcd40b6a6db9fbc72f9e994046",
+      "size_bytes": 18427,
+      "sha256": "b33d05ce96c5fdb4c5e5edfe461f70225da34014e0d5afc95157dc28fea58b81"
+    },
+    {
+      "path": "qa/R01-render-denoise-failed.log",
+      "mode": "100644",
+      "blob": "a26fcd63e150cff49654fd66e2a1cd2965ecd647",
+      "size_bytes": 24789,
+      "sha256": "b5570936d4119d8ca0d4eefee7e91ec6d7e80fcac7fb2813ed7bffd243a305f7"
+    },
+    {
+      "path": "qa/R01-render.log",
+      "mode": "100644",
+      "blob": "97040006270522b9b04e491968e792513c1f8c66",
+      "size_bytes": 57017,
+      "sha256": "22ece06cfb2a84cf94e1bdae184701ce271e80cd632d75eb0d2d5274ec0cc6e8"
+    },
+    {
+      "path": "qa/R01-white-audit.json",
+      "mode": "100644",
+      "blob": "611cd050dada8dc58900049428e83a9ed869553b",
+      "size_bytes": 161203,
+      "sha256": "f973611a647bb1a1f64dc70418c535f8f7b57b70ca3c8eddec55e07fd0f6adc6"
+    },
+    {
+      "path": "qa/existing-issues-snapshot.json",
+      "mode": "100644",
+      "blob": "66f75b97ebb6779b09f76ef5908582b77f5fb23a",
+      "size_bytes": 135185,
+      "sha256": "76f254855f386d625c268ffd201607f1bd83994eb3bd36f10ad09b4a3f7a4657"
+    },
+    {
+      "path": "qa/novelty-review.md",
+      "mode": "100644",
+      "blob": "87b04ef677fcf885cd267320ec3c951b6598453a",
+      "size_bytes": 5466,
+      "sha256": "a5d5993fc8633ec9d920c1827b1316c0b47c13ddbb7907c720b1255c67f53843"
+    },
+    {
+      "path": "renders/R01_white/SOURCE_A_high.json",
+      "mode": "100644",
+      "blob": "f4353409e3de3ccbf37b764ae62dfdfc38613035",
+      "size_bytes": 764,
+      "sha256": "021c354314891087257adc93c0c2cb1383b4db6fe1aa6fbaeb9e4cc74d0f48ae"
+    },
+    {
+      "path": "renders/R01_white/SOURCE_A_high.png",
+      "mode": "100644",
+      "blob": "ab7102b2deedc40208c0908b885361cd6f4a1ed6",
+      "size_bytes": 575047,
+      "sha256": "53cf28acb6a6fe83b0c004b0e72448d25433919a6abc568151c39d9ce523f936"
+    },
+    {
+      "path": "renders/R01_white/SOURCE_B_side.json",
+      "mode": "100644",
+      "blob": "d41791386bbbd421403b50946b929ce5385362c5",
+      "size_bytes": 850,
+      "sha256": "debfc8489397a1d6964fa40b1828cf264efa0229a985e60b320f4e27e1463833"
+    },
+    {
+      "path": "renders/R01_white/SOURCE_B_side.png",
+      "mode": "100644",
+      "blob": "743d0683f264b0c18cef1d9bcfc9b5761cdfd8a5",
+      "size_bytes": 569487,
+      "sha256": "e29c6e29d8c73202e989c7b87ef97a72c7d14b87c9a62734e08e414ea52a22c9"
+    },
+    {
+      "path": "scripts/audit_scene.py",
+      "mode": "100644",
+      "blob": "8cdf201c05d792f860d4b9bac94002339c19eaa2",
+      "size_bytes": 2486,
+      "sha256": "fa592dd9d0d9e61b44eafb29d641474f56424b75134c355199117b6c418084ca"
+    },
+    {
+      "path": "scripts/build_forest_r01.py",
+      "mode": "100644",
+      "blob": "1d8e820dd2c39059ac8dee5762d147b7a5c6ea77",
+      "size_bytes": 9454,
+      "sha256": "778e16231f6593c3a1a9014d2864785ed0509160f522c5de658956997e2bb829"
+    },
+    {
+      "path": "scripts/freeze_bundle.py",
+      "mode": "100644",
+      "blob": "b552aee320b4879e080d33403817575fc6a6d159",
+      "size_bytes": 1568,
+      "sha256": "26af1ea1479ab1615ceafa5a34f8d8e707364f4fc43a966a1b5054dd5490bd2e"
+    },
+    {
+      "path": "scripts/render_cameras.py",
+      "mode": "100644",
+      "blob": "f8150b68f7155bd21bca294255e634c715c6e6d1",
+      "size_bytes": 1638,
+      "sha256": "9cf71abbfdffabaa612315ef300a68ecfa1ca00c0b95ce8fc86abff55e13c6ba"
+    },
+    {
+      "path": "sources/forest-native-2956.48091.json",
+      "mode": "100644",
+      "blob": "ecf8dd20b0d7dfbd67cd07864e123314e088c5a1",
+      "size_bytes": 319,
+      "sha256": "bfe423595b9e3f1d90085201613bfef003aec613e607045dc2daa8f64985a2f2"
+    },
+    {
+      "path": "sources/forest-native-2956.48091.png",
+      "mode": "100644",
+      "blob": "4e3a9d076394a33778afafb96db3becf58de635c",
+      "size_bytes": 2987856,
+      "sha256": "f187029b56d05f68a569593bbbfc0d3332bb638b88f426f4635c07292f615a87"
+    },
+    {
+      "path": "sources/forest-native-2966.475632.json",
+      "mode": "100644",
+      "blob": "40c6d05d37c52857b0ba3154379d3332e31b8c93",
+      "size_bytes": 321,
+      "sha256": "34bbfdcfcd41016c9d3f50ba809a90bcf18afba41f5b2514280551538251be2b"
+    },
+    {
+      "path": "sources/forest-native-2966.475632.png",
+      "mode": "100644",
+      "blob": "aeddfcf2668b9914e8fd2738594028662325997a",
+      "size_bytes": 3135459,
+      "sha256": "cd186b992cc7255f32217d0fab1cb1290a0b4a49325534e238d98d48f128668e"
+    },
+    {
+      "path": "sources/forest-native-2972.9533.json",
+      "mode": "100644",
+      "blob": "32a0b3e5c0b1bcc5f38d4a1c8e90e42b4faa7de3",
+      "size_bytes": 317,
+      "sha256": "89fb6835a8bcf184063570f03d25f4235d8fd8bab60887da99f2752ba9aa3e0f"
+    },
+    {
+      "path": "sources/forest-native-2972.9533.png",
+      "mode": "100644",
+      "blob": "8eac98223166862fcee9f55e6a7f3a3a9a693cc3",
+      "size_bytes": 3551168,
+      "sha256": "3d84b5f6104086cbc05c2c833784a3015df38fa271ff447d6cc9ee7a6e9cc787"
+    },
+    {
+      "path": "sources/forest-native-2988.177427.json",
+      "mode": "100644",
+      "blob": "9760bb79eb196e29b3d7e8ea649c07631a5686db",
+      "size_bytes": 321,
+      "sha256": "e4114cee97bf08f46bee48246fbf63815c2193fc473e01189309093729eafa4c"
+    },
+    {
+      "path": "sources/forest-native-2988.177427.png",
+      "mode": "100644",
+      "blob": "b9dc35f6b6cc5a6ef191416ac6c808badfaa0201",
+      "size_bytes": 3145558,
+      "sha256": "6ed645d9fc7109340bafa11f33cf6e564aa5df6d4e36ee85ebb6edfd5cf196ee"
+    }
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "original_commit": "e52989df541ce4d7bc37e4d910427d5acb4bc0fd",
+      "original_tree": "8849f43f08b6616f2cbeae025122a86b00f700a8",
+      "original_subject": "Record November 4 source inventory and local production gates",
+      "original_author": "MetaXingtong reconstruction <reconstruction@users.noreply.github.com>",
+      "original_author_time": "2026-11-04T09:40:06+09:00",
+      "original_committer_time": "2026-11-04T09:40:06+09:00",
+      "original_parents": [],
+      "archive_commit": "d24868d3eb0cc17e4347e0df127de9909b5738dd",
+      "archive_tree": "bf8b6260cd9c3cd460d9d63a3300edb73ce48ad1",
+      "files": [
+        {
+          "path": "docs/production-plan.zh.md",
+          "mode": "100644",
+          "blob": "512e387619a36e71b8cff9bdf99dab349517057d",
+          "size_bytes": 1227,
+          "sha256": "ce60e7c3c59726e5b519346de878b801e9552f315aa38a8bfb28908c4ea1b2c5"
+        },
+        {
+          "path": "docs/reconstruction-standard.md",
+          "mode": "100644",
+          "blob": "2828618bce769c32621e6220c4b98a28ec637088",
+          "size_bytes": 24445,
+          "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e"
+        },
+        {
+          "path": "qa/existing-issues-snapshot.json",
+          "mode": "100644",
+          "blob": "66f75b97ebb6779b09f76ef5908582b77f5fb23a",
+          "size_bytes": 135185,
+          "sha256": "76f254855f386d625c268ffd201607f1bd83994eb3bd36f10ad09b4a3f7a4657"
+        },
+        {
+          "path": "scripts/freeze_bundle.py",
+          "mode": "100644",
+          "blob": "b552aee320b4879e080d33403817575fc6a6d159",
+          "size_bytes": 1568,
+          "sha256": "26af1ea1479ab1615ceafa5a34f8d8e707364f4fc43a966a1b5054dd5490bd2e"
+        },
+        {
+          "path": "scripts/render_cameras.py",
+          "mode": "100644",
+          "blob": "60ff2a04f33f5557372a749ee72aea7e1078f4b0",
+          "size_bytes": 1621,
+          "sha256": "cbde339f4ced11ed6e6708ca3ec067e507ab001ff7eddf064db43f7904319a15"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "original_commit": "7e873847f60dc3b47bb6e611f2296ca6838ed4a7",
+      "original_tree": "e6d1df1b0d3c8a05d38be0c2805ec48355767dc1",
+      "original_subject": "Add evaluated geometry and dependency audit with explicit limits",
+      "original_author": "MetaXingtong reconstruction <reconstruction@users.noreply.github.com>",
+      "original_author_time": "2026-11-04T09:40:37+09:00",
+      "original_committer_time": "2026-11-04T09:40:37+09:00",
+      "original_parents": [
+        "e52989df541ce4d7bc37e4d910427d5acb4bc0fd"
+      ],
+      "archive_commit": "4ce489bd9cfaf508d91869604865607481797031",
+      "archive_tree": "846c01b28fedecb699c508342fb1e0acca89b672",
+      "files": [
+        {
+          "path": "docs/production-plan.zh.md",
+          "mode": "100644",
+          "blob": "512e387619a36e71b8cff9bdf99dab349517057d",
+          "size_bytes": 1227,
+          "sha256": "ce60e7c3c59726e5b519346de878b801e9552f315aa38a8bfb28908c4ea1b2c5"
+        },
+        {
+          "path": "docs/reconstruction-standard.md",
+          "mode": "100644",
+          "blob": "2828618bce769c32621e6220c4b98a28ec637088",
+          "size_bytes": 24445,
+          "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e"
+        },
+        {
+          "path": "qa/existing-issues-snapshot.json",
+          "mode": "100644",
+          "blob": "66f75b97ebb6779b09f76ef5908582b77f5fb23a",
+          "size_bytes": 135185,
+          "sha256": "76f254855f386d625c268ffd201607f1bd83994eb3bd36f10ad09b4a3f7a4657"
+        },
+        {
+          "path": "scripts/audit_scene.py",
+          "mode": "100644",
+          "blob": "8cdf201c05d792f860d4b9bac94002339c19eaa2",
+          "size_bytes": 2486,
+          "sha256": "fa592dd9d0d9e61b44eafb29d641474f56424b75134c355199117b6c418084ca"
+        },
+        {
+          "path": "scripts/freeze_bundle.py",
+          "mode": "100644",
+          "blob": "b552aee320b4879e080d33403817575fc6a6d159",
+          "size_bytes": 1568,
+          "sha256": "26af1ea1479ab1615ceafa5a34f8d8e707364f4fc43a966a1b5054dd5490bd2e"
+        },
+        {
+          "path": "scripts/render_cameras.py",
+          "mode": "100644",
+          "blob": "60ff2a04f33f5557372a749ee72aea7e1078f4b0",
+          "size_bytes": 1621,
+          "sha256": "cbde339f4ced11ed6e6708ca3ec067e507ab001ff7eddf064db43f7904319a15"
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "original_commit": "4bf5294146c89f1b0b7995c57a8f404c235325fc",
+      "original_tree": "1f32ffdf7d50c868c1aad105730128b631494784",
+      "original_subject": "Record bounded forest replay search and same-day source caveats",
+      "original_author": "MetaXingtong reconstruction <reconstruction@users.noreply.github.com>",
+      "original_author_time": "2026-11-04T09:41:25+09:00",
+      "original_committer_time": "2026-11-04T09:41:25+09:00",
+      "original_parents": [
+        "7e873847f60dc3b47bb6e611f2296ca6838ed4a7"
+      ],
+      "archive_commit": "88cf3ea6e29eeeacde0725c9d2043aae90226a0c",
+      "archive_tree": "304a7f4126144ca3ed8431265e5961de4cb0d8ee",
+      "files": [
+        {
+          "path": "docs/forest-source-search-20261104.md",
+          "mode": "100644",
+          "blob": "06f3714819f49e96b0b5abde269ee5ef74e710aa",
+          "size_bytes": 1564,
+          "sha256": "d6d3d9274a8ed051efc0e06278689c8b361e02a1f9a0b8e1d3702bb691a57f7b"
+        },
+        {
+          "path": "docs/production-plan.zh.md",
+          "mode": "100644",
+          "blob": "512e387619a36e71b8cff9bdf99dab349517057d",
+          "size_bytes": 1227,
+          "sha256": "ce60e7c3c59726e5b519346de878b801e9552f315aa38a8bfb28908c4ea1b2c5"
+        },
+        {
+          "path": "docs/reconstruction-standard.md",
+          "mode": "100644",
+          "blob": "2828618bce769c32621e6220c4b98a28ec637088",
+          "size_bytes": 24445,
+          "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e"
+        },
+        {
+          "path": "qa/existing-issues-snapshot.json",
+          "mode": "100644",
+          "blob": "66f75b97ebb6779b09f76ef5908582b77f5fb23a",
+          "size_bytes": 135185,
+          "sha256": "76f254855f386d625c268ffd201607f1bd83994eb3bd36f10ad09b4a3f7a4657"
+        },
+        {
+          "path": "scripts/audit_scene.py",
+          "mode": "100644",
+          "blob": "8cdf201c05d792f860d4b9bac94002339c19eaa2",
+          "size_bytes": 2486,
+          "sha256": "fa592dd9d0d9e61b44eafb29d641474f56424b75134c355199117b6c418084ca"
+        },
+        {
+          "path": "scripts/freeze_bundle.py",
+          "mode": "100644",
+          "blob": "b552aee320b4879e080d33403817575fc6a6d159",
+          "size_bytes": 1568,
+          "sha256": "26af1ea1479ab1615ceafa5a34f8d8e707364f4fc43a966a1b5054dd5490bd2e"
+        },
+        {
+          "path": "scripts/render_cameras.py",
+          "mode": "100644",
+          "blob": "60ff2a04f33f5557372a749ee72aea7e1078f4b0",
+          "size_bytes": 1621,
+          "sha256": "cbde339f4ced11ed6e6708ca3ec067e507ab001ff7eddf064db43f7904319a15"
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "original_commit": "c23a4ab14321eb514042151bec74b9674706cfbf",
+      "original_tree": "d298eb775be66b1f8a142f33e515248f3a858325",
+      "original_subject": "Keep failed public collection lookup and avoid guessed source URLs",
+      "original_author": "MetaXingtong reconstruction <reconstruction@users.noreply.github.com>",
+      "original_author_time": "2026-11-04T09:42:09+09:00",
+      "original_committer_time": "2026-11-04T09:42:09+09:00",
+      "original_parents": [
+        "4bf5294146c89f1b0b7995c57a8f404c235325fc"
+      ],
+      "archive_commit": "92f74deb90ddfa32d793b30351a91b6de763e2dc",
+      "archive_tree": "9a459f0c7c513c02fb7e735d251948663dd12f49",
+      "files": [
+        {
+          "path": "docs/forest-source-search-20261104.md",
+          "mode": "100644",
+          "blob": "59bc65df1a11810bb9e5cb12b1579b3c67ecf744",
+          "size_bytes": 1803,
+          "sha256": "50958f8414e9df1f4113c57e745117b33e69daaa16e110089b218351fcc047e6"
+        },
+        {
+          "path": "docs/production-plan.zh.md",
+          "mode": "100644",
+          "blob": "512e387619a36e71b8cff9bdf99dab349517057d",
+          "size_bytes": 1227,
+          "sha256": "ce60e7c3c59726e5b519346de878b801e9552f315aa38a8bfb28908c4ea1b2c5"
+        },
+        {
+          "path": "docs/reconstruction-standard.md",
+          "mode": "100644",
+          "blob": "2828618bce769c32621e6220c4b98a28ec637088",
+          "size_bytes": 24445,
+          "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e"
+        },
+        {
+          "path": "qa/existing-issues-snapshot.json",
+          "mode": "100644",
+          "blob": "66f75b97ebb6779b09f76ef5908582b77f5fb23a",
+          "size_bytes": 135185,
+          "sha256": "76f254855f386d625c268ffd201607f1bd83994eb3bd36f10ad09b4a3f7a4657"
+        },
+        {
+          "path": "scripts/audit_scene.py",
+          "mode": "100644",
+          "blob": "8cdf201c05d792f860d4b9bac94002339c19eaa2",
+          "size_bytes": 2486,
+          "sha256": "fa592dd9d0d9e61b44eafb29d641474f56424b75134c355199117b6c418084ca"
+        },
+        {
+          "path": "scripts/freeze_bundle.py",
+          "mode": "100644",
+          "blob": "b552aee320b4879e080d33403817575fc6a6d159",
+          "size_bytes": 1568,
+          "sha256": "26af1ea1479ab1615ceafa5a34f8d8e707364f4fc43a966a1b5054dd5490bd2e"
+        },
+        {
+          "path": "scripts/render_cameras.py",
+          "mode": "100644",
+          "blob": "60ff2a04f33f5557372a749ee72aea7e1078f4b0",
+          "size_bytes": 1621,
+          "sha256": "cbde339f4ced11ed6e6708ca3ec067e507ab001ff7eddf064db43f7904319a15"
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "original_commit": "bccf479d6d3f03dbffe3df3cbef705a5c5aa7514",
+      "original_tree": "f3bfdd9688af804174476428aaab59cc1190c48b",
+      "original_subject": "Preserve first native forest references and explicit premodel observations",
+      "original_author": "MetaXingtong reconstruction <reconstruction@users.noreply.github.com>",
+      "original_author_time": "2026-11-04T09:44:14+09:00",
+      "original_committer_time": "2026-11-04T09:44:14+09:00",
+      "original_parents": [
+        "c23a4ab14321eb514042151bec74b9674706cfbf"
+      ],
+      "archive_commit": "4f02d8cc757366121c7b087139c85e79f9aa036b",
+      "archive_tree": "b5b1e235cec304a2e645e42af9a73fd2aa4e2da0",
+      "files": [
+        {
+          "path": "docs/forest-observation-initial.zh.md",
+          "mode": "100644",
+          "blob": "df49f900596d9ddc55f8c420394235536dc831b4",
+          "size_bytes": 1528,
+          "sha256": "9e6d721f36546a45d6e260c8b3eb175c6e97a82c6c7d1a0c1568773e345d155e"
+        },
+        {
+          "path": "docs/forest-source-search-20261104.md",
+          "mode": "100644",
+          "blob": "59bc65df1a11810bb9e5cb12b1579b3c67ecf744",
+          "size_bytes": 1803,
+          "sha256": "50958f8414e9df1f4113c57e745117b33e69daaa16e110089b218351fcc047e6"
+        },
+        {
+          "path": "docs/production-plan.zh.md",
+          "mode": "100644",
+          "blob": "512e387619a36e71b8cff9bdf99dab349517057d",
+          "size_bytes": 1227,
+          "sha256": "ce60e7c3c59726e5b519346de878b801e9552f315aa38a8bfb28908c4ea1b2c5"
+        },
+        {
+          "path": "docs/reconstruction-standard.md",
+          "mode": "100644",
+          "blob": "2828618bce769c32621e6220c4b98a28ec637088",
+          "size_bytes": 24445,
+          "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e"
+        },
+        {
+          "path": "qa/existing-issues-snapshot.json",
+          "mode": "100644",
+          "blob": "66f75b97ebb6779b09f76ef5908582b77f5fb23a",
+          "size_bytes": 135185,
+          "sha256": "76f254855f386d625c268ffd201607f1bd83994eb3bd36f10ad09b4a3f7a4657"
+        },
+        {
+          "path": "scripts/audit_scene.py",
+          "mode": "100644",
+          "blob": "8cdf201c05d792f860d4b9bac94002339c19eaa2",
+          "size_bytes": 2486,
+          "sha256": "fa592dd9d0d9e61b44eafb29d641474f56424b75134c355199117b6c418084ca"
+        },
+        {
+          "path": "scripts/freeze_bundle.py",
+          "mode": "100644",
+          "blob": "b552aee320b4879e080d33403817575fc6a6d159",
+          "size_bytes": 1568,
+          "sha256": "26af1ea1479ab1615ceafa5a34f8d8e707364f4fc43a966a1b5054dd5490bd2e"
+        },
+        {
+          "path": "scripts/render_cameras.py",
+          "mode": "100644",
+          "blob": "60ff2a04f33f5557372a749ee72aea7e1078f4b0",
+          "size_bytes": 1621,
+          "sha256": "cbde339f4ced11ed6e6708ca3ec067e507ab001ff7eddf064db43f7904319a15"
+        },
+        {
+          "path": "sources/forest-native-2956.48091.json",
+          "mode": "100644",
+          "blob": "ecf8dd20b0d7dfbd67cd07864e123314e088c5a1",
+          "size_bytes": 319,
+          "sha256": "bfe423595b9e3f1d90085201613bfef003aec613e607045dc2daa8f64985a2f2"
+        },
+        {
+          "path": "sources/forest-native-2956.48091.png",
+          "mode": "100644",
+          "blob": "4e3a9d076394a33778afafb96db3becf58de635c",
+          "size_bytes": 2987856,
+          "sha256": "f187029b56d05f68a569593bbbfc0d3332bb638b88f426f4635c07292f615a87"
+        },
+        {
+          "path": "sources/forest-native-2972.9533.json",
+          "mode": "100644",
+          "blob": "32a0b3e5c0b1bcc5f38d4a1c8e90e42b4faa7de3",
+          "size_bytes": 317,
+          "sha256": "89fb6835a8bcf184063570f03d25f4235d8fd8bab60887da99f2752ba9aa3e0f"
+        },
+        {
+          "path": "sources/forest-native-2972.9533.png",
+          "mode": "100644",
+          "blob": "8eac98223166862fcee9f55e6a7f3a3a9a693cc3",
+          "size_bytes": 3551168,
+          "sha256": "3d84b5f6104086cbc05c2c833784a3015df38fa271ff447d6cc9ee7a6e9cc787"
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "original_commit": "55b89e69fa461f365913353cf9b7a5f49368d12a",
+      "original_tree": "1bbb85d03fb62cdfdd2cbb2e1e135b45641c6cad",
+      "original_subject": "Build first open forest flower-island white candidate and retain failed denoiser trial",
+      "original_author": "MetaXingtong reconstruction <reconstruction@users.noreply.github.com>",
+      "original_author_time": "2026-11-04T09:50:36+09:00",
+      "original_committer_time": "2026-11-04T09:50:36+09:00",
+      "original_parents": [
+        "bccf479d6d3f03dbffe3df3cbef705a5c5aa7514"
+      ],
+      "archive_commit": "458924c190f352367d98ce316b608107cdb02de0",
+      "archive_tree": "fc8b706272a5f021ef6847576fa85150992ed206",
+      "files": [
+        {
+          "path": "docs/R01-stage.zh.md",
+          "mode": "100644",
+          "blob": "6c336aca220efe5d74852d3f5bd6e8ddf5729f8a",
+          "size_bytes": 1598,
+          "sha256": "cbf36af4844bc66204d7478f389a2a8078af34df5982d6a58e2b82b65fcbfd4d"
+        },
+        {
+          "path": "docs/forest-observation-initial.zh.md",
+          "mode": "100644",
+          "blob": "df49f900596d9ddc55f8c420394235536dc831b4",
+          "size_bytes": 1528,
+          "sha256": "9e6d721f36546a45d6e260c8b3eb175c6e97a82c6c7d1a0c1568773e345d155e"
+        },
+        {
+          "path": "docs/forest-source-search-20261104.md",
+          "mode": "100644",
+          "blob": "59bc65df1a11810bb9e5cb12b1579b3c67ecf744",
+          "size_bytes": 1803,
+          "sha256": "50958f8414e9df1f4113c57e745117b33e69daaa16e110089b218351fcc047e6"
+        },
+        {
+          "path": "docs/production-plan.zh.md",
+          "mode": "100644",
+          "blob": "512e387619a36e71b8cff9bdf99dab349517057d",
+          "size_bytes": 1227,
+          "sha256": "ce60e7c3c59726e5b519346de878b801e9552f315aa38a8bfb28908c4ea1b2c5"
+        },
+        {
+          "path": "docs/reconstruction-standard.md",
+          "mode": "100644",
+          "blob": "2828618bce769c32621e6220c4b98a28ec637088",
+          "size_bytes": 24445,
+          "sha256": "45de199daf186e74b1a16185f4c1831a6fee2e5cb91da68cb4cb721d31826e2e"
+        },
+        {
+          "path": "models/R01_white.blend",
+          "mode": "100644",
+          "blob": "894d0461ffd846669e3b65620e89f90f5185469b",
+          "size_bytes": 3387632,
+          "sha256": "354a74aaafa7682acd8472362915ecd7c4ceef1e8a2a5fc1752d872f979eba4d"
+        },
+        {
+          "path": "models/R01_white.glb",
+          "mode": "100644",
+          "blob": "494a106eb6209b54f88dbc2e9109b8a9ffd99e67",
+          "size_bytes": 1165872,
+          "sha256": "1bac15fbd2f95e48e91828370e23411cbcce8414a0ab5d87be87816b6b4a65fa"
+        },
+        {
+          "path": "qa/R01-audit.log",
+          "mode": "100644",
+          "blob": "b5993e4b4871091e07217055efde5b31cd3edc7a",
+          "size_bytes": 136,
+          "sha256": "4dcdeefc9b79572bc72881108e8302dfb20a371ccfe70f338586fc33b6e1f27e"
+        },
+        {
+          "path": "qa/R01-build.log",
+          "mode": "100644",
+          "blob": "c28ee7c6169357dcd40b6a6db9fbc72f9e994046",
+          "size_bytes": 18427,
+          "sha256": "b33d05ce96c5fdb4c5e5edfe461f70225da34014e0d5afc95157dc28fea58b81"
+        },
+        {
+          "path": "qa/R01-render-denoise-failed.log",
+          "mode": "100644",
+          "blob": "a26fcd63e150cff49654fd66e2a1cd2965ecd647",
+          "size_bytes": 24789,
+          "sha256": "b5570936d4119d8ca0d4eefee7e91ec6d7e80fcac7fb2813ed7bffd243a305f7"
+        },
+        {
+          "path": "qa/R01-render.log",
+          "mode": "100644",
+          "blob": "97040006270522b9b04e491968e792513c1f8c66",
+          "size_bytes": 57017,
+          "sha256": "22ece06cfb2a84cf94e1bdae184701ce271e80cd632d75eb0d2d5274ec0cc6e8"
+        },
+        {
+          "path": "qa/R01-white-audit.json",
+          "mode": "100644",
+          "blob": "611cd050dada8dc58900049428e83a9ed869553b",
+          "size_bytes": 161203,
+          "sha256": "f973611a647bb1a1f64dc70418c535f8f7b57b70ca3c8eddec55e07fd0f6adc6"
+        },
+        {
+          "path": "qa/existing-issues-snapshot.json",
+          "mode": "100644",
+          "blob": "66f75b97ebb6779b09f76ef5908582b77f5fb23a",
+          "size_bytes": 135185,
+          "sha256": "76f254855f386d625c268ffd201607f1bd83994eb3bd36f10ad09b4a3f7a4657"
+        },
+        {
+          "path": "qa/novelty-review.md",
+          "mode": "100644",
+          "blob": "87b04ef677fcf885cd267320ec3c951b6598453a",
+          "size_bytes": 5466,
+          "sha256": "a5d5993fc8633ec9d920c1827b1316c0b47c13ddbb7907c720b1255c67f53843"
+        },
+        {
+          "path": "renders/R01_white/SOURCE_A_high.json",
+          "mode": "100644",
+          "blob": "f4353409e3de3ccbf37b764ae62dfdfc38613035",
+          "size_bytes": 764,
+          "sha256": "021c354314891087257adc93c0c2cb1383b4db6fe1aa6fbaeb9e4cc74d0f48ae"
+        },
+        {
+          "path": "renders/R01_white/SOURCE_A_high.png",
+          "mode": "100644",
+          "blob": "ab7102b2deedc40208c0908b885361cd6f4a1ed6",
+          "size_bytes": 575047,
+          "sha256": "53cf28acb6a6fe83b0c004b0e72448d25433919a6abc568151c39d9ce523f936"
+        },
+        {
+          "path": "renders/R01_white/SOURCE_B_side.json",
+          "mode": "100644",
+          "blob": "d41791386bbbd421403b50946b929ce5385362c5",
+          "size_bytes": 850,
+          "sha256": "debfc8489397a1d6964fa40b1828cf264efa0229a985e60b320f4e27e1463833"
+        },
+        {
+          "path": "renders/R01_white/SOURCE_B_side.png",
+          "mode": "100644",
+          "blob": "743d0683f264b0c18cef1d9bcfc9b5761cdfd8a5",
+          "size_bytes": 569487,
+          "sha256": "e29c6e29d8c73202e989c7b87ef97a72c7d14b87c9a62734e08e414ea52a22c9"
+        },
+        {
+          "path": "scripts/audit_scene.py",
+          "mode": "100644",
+          "blob": "8cdf201c05d792f860d4b9bac94002339c19eaa2",
+          "size_bytes": 2486,
+          "sha256": "fa592dd9d0d9e61b44eafb29d641474f56424b75134c355199117b6c418084ca"
+        },
+        {
+          "path": "scripts/build_forest_r01.py",
+          "mode": "100644",
+          "blob": "1d8e820dd2c39059ac8dee5762d147b7a5c6ea77",
+          "size_bytes": 9454,
+          "sha256": "778e16231f6593c3a1a9014d2864785ed0509160f522c5de658956997e2bb829"
+        },
+        {
+          "path": "scripts/freeze_bundle.py",
+          "mode": "100644",
+          "blob": "b552aee320b4879e080d33403817575fc6a6d159",
+          "size_bytes": 1568,
+          "sha256": "26af1ea1479ab1615ceafa5a34f8d8e707364f4fc43a966a1b5054dd5490bd2e"
+        },
+        {
+          "path": "scripts/render_cameras.py",
+          "mode": "100644",
+          "blob": "f8150b68f7155bd21bca294255e634c715c6e6d1",
+          "size_bytes": 1638,
+          "sha256": "9cf71abbfdffabaa612315ef300a68ecfa1ca00c0b95ce8fc86abff55e13c6ba"
+        },
+        {
+          "path": "sources/forest-native-2956.48091.json",
+          "mode": "100644",
+          "blob": "ecf8dd20b0d7dfbd67cd07864e123314e088c5a1",
+          "size_bytes": 319,
+          "sha256": "bfe423595b9e3f1d90085201613bfef003aec613e607045dc2daa8f64985a2f2"
+        },
+        {
+          "path": "sources/forest-native-2956.48091.png",
+          "mode": "100644",
+          "blob": "4e3a9d076394a33778afafb96db3becf58de635c",
+          "size_bytes": 2987856,
+          "sha256": "f187029b56d05f68a569593bbbfc0d3332bb638b88f426f4635c07292f615a87"
+        },
+        {
+          "path": "sources/forest-native-2966.475632.json",
+          "mode": "100644",
+          "blob": "40c6d05d37c52857b0ba3154379d3332e31b8c93",
+          "size_bytes": 321,
+          "sha256": "34bbfdcfcd41016c9d3f50ba809a90bcf18afba41f5b2514280551538251be2b"
+        },
+        {
+          "path": "sources/forest-native-2966.475632.png",
+          "mode": "100644",
+          "blob": "aeddfcf2668b9914e8fd2738594028662325997a",
+          "size_bytes": 3135459,
+          "sha256": "cd186b992cc7255f32217d0fab1cb1290a0b4a49325534e238d98d48f128668e"
+        },
+        {
+          "path": "sources/forest-native-2972.9533.json",
+          "mode": "100644",
+          "blob": "32a0b3e5c0b1bcc5f38d4a1c8e90e42b4faa7de3",
+          "size_bytes": 317,
+          "sha256": "89fb6835a8bcf184063570f03d25f4235d8fd8bab60887da99f2752ba9aa3e0f"
+        },
+        {
+          "path": "sources/forest-native-2972.9533.png",
+          "mode": "100644",
+          "blob": "8eac98223166862fcee9f55e6a7f3a3a9a693cc3",
+          "size_bytes": 3551168,
+          "sha256": "3d84b5f6104086cbc05c2c833784a3015df38fa271ff447d6cc9ee7a6e9cc787"
+        },
+        {
+          "path": "sources/forest-native-2988.177427.json",
+          "mode": "100644",
+          "blob": "9760bb79eb196e29b3d7e8ea649c07631a5686db",
+          "size_bytes": 321,
+          "sha256": "e4114cee97bf08f46bee48246fbf63815c2193fc473e01189309093729eafa4c"
+        },
+        {
+          "path": "sources/forest-native-2988.177427.png",
+          "mode": "100644",
+          "blob": "b9dc35f6b6cc5a6ef191416ac6c808badfaa0201",
+          "size_bytes": 3145558,
+          "sha256": "6ed645d9fc7109340bafa11f33cf6e564aa5df6d4e36ee85ebb6edfd5cf196ee"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Early coarse white model is not accepted.",
+    "Floating state, rising/rotation/camera orbit and time changes remain under research.",
+    "Fixed island height is an initial assumption, not measured.",
+    "Preserved production audit is not rerun by archive executor.",
+    "Independent GLB reimport, complete detail, materials, eight diagnostic views and native-size comparisons remain pending per production record.",
+    "Two 960x540 low-sample white previews and failed denoiser logs are historical production inputs, not new archive-executor renders."
+  ]
+}
