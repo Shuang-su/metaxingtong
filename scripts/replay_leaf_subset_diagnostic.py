@@ -72,6 +72,7 @@ checkpoint=models/('leaf-only-r06-diagnostic-replay.blend' if proof['main_shell_
 s['diagnostic_only']='20 leaf meshes replayed from source code. Not original BLEND recovery or full-scene candidate.'
 bpy.ops.wm.save_as_mainfile(filepath=str(checkpoint))
 baseline={o.name:[v.co.copy() for v in o.data.vertices] for o in s.objects}
+baseline_hashes={o.name:geometry_hash(o) for o in s.objects}
 archived={r['id']:r for r in json.loads((R/'upstream/qa/r06/finite-vein-footprint-tests.json').read_text())['rows']}
 
 def width(u):return 1.58*max(0,1-u*u)**.72*(1+.06*sin(3*pi*u))
@@ -84,6 +85,7 @@ def test(params):
         row=dict(name=o.name,boundary_edges=sum(e.is_boundary for e in bm.edges),nonmanifold_edges=sum(not e.is_manifold for e in bm.edges),
             zero_area_faces=sum(f.calc_area()<1e-12 for f in bm.faces),volume=bm.calc_volume(signed=True),geometry_sha256=geometry_hash(o))
         bm.free();assert not row['boundary_edges'] and not row['nonmanifold_edges'] and not row['zero_area_faces'];topology.append(row)
+        if params==Parameters():assert row['geometry_sha256']==baseline_hashes[o.name]
         if o.name.startswith(('LEAF_002','LEAF_003')):
             m=o.data;points=[o.matrix_world@v.co for v in m.vertices]
             probes=points+[(points[e.vertices[0]]+points[e.vertices[1]])*.5 for e in m.edges]+[sum((points[k] for k in f.vertices),Vector())/len(f.vertices) for f in m.polygons]

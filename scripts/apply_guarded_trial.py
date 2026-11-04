@@ -75,6 +75,7 @@ bpy.context.view_layer.update();after=snapshot()
 assert set(before['meshes'])==set(after['meshes'])
 changed=[k for k in before['meshes'] if before['meshes'][k]!=after['meshes'][k]]
 assert set(changed)<=set(TARGETS)
+if params==Parameters():assert not changed,'Zero-parameter baseline unexpectedly changed a mesh.'
 for k in ['cameras','lights','visibility','collections']:assert before[k]==after[k]
 assert max(inverse_errors)<1e-10
 topology=[]
