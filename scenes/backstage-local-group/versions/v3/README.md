@@ -1,0 +1,22 @@
+# Backstage local R07 canonical saved render state and GLB aspect repair, source FAILED
+
+Frozen local object group only, NOT a whole room or complete new scene. Source FAILED; no source/model or eight-angle acceptance.
+
+Original HEAD: `f0ffcf66e14867f58f45bef8d958f6b7a7091307`
+Original history: `refs/heads/history/backstage-local-original-20261105`
+Previous original HEAD: `01b22238723f580065e7223054ed71379e6ffffd`
+
+`files/` preserves all 302 current original files without modification. Input Library version 1; archive revision 3. `versions/v2/` preserves the preceding current archive directory including its receipt. All older snapshots remain unchanged without recursive duplication. All 8 real original commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs, original objects and every stage.
+
+- Backstage local object group only, not a whole room, complete new scene or accepted reconstruction. Eight true original commits preserve seven saved model stages and the earlier R04 metadata correction. All 302 original files and all failures are retained.
+- The three original 1192x671 article images are not native video frames; exact clip times, calibrated cameras, continuous same-state linkage and complete-room boundaries remain unknown. Source matching remains FAILED. Reported mannequin-category evidence does not recover unseen backs, depth, scale, garment construction or whole-room layout.
+- R05 adds sixteen finite mannequin proxy meshes to the previous 215 objects and one artificial diagnostic camera to the previous four. R06 changes only the two lower-garment top rings to conceal protruding caps. Current producer records report 231 meshes and five cameras. Inferred pose, garment shape, unmodeled feet/base and unknown support remain; no whole-scene acceptance follows.
+- R07 records no further geometry or camera-pose change. It saves the prior preview execution settings: 1192x671 at 100 percent, 64 samples, no denoising, active MANNEQUIN_local, then reexports GLB. Supplied independent QA reports actual GLB reimport and bounded matching camera directions at this aspect. The archive worker does not run Blender, geometry validation, producer scripts or rendering.
+- Twenty-eight original model files and twenty-six actual cumulative historical previews are preserved. R07 has zero new renders and explicitly reuses the two actual R06 material/white images with their original names and R06 model-hash bindings. The two R05/R06 same-pixel crop comparisons are derived images, not additional rendered viewpoints. There is only one added artificial diagnostic direction and no native-source overlay or eight-angle acceptance.
+- R05/R06 saved-aspect 960x640 versus executed-preview 1192x671 mismatch, original bad exports, mixed-aspect rejected tests, metadata errors and failed API log remain in original history and current files. R07 normalization does not establish arbitrary future aspect equivalence or full Blender material/light/World equivalence in GLB.
+- Supplied R07-review prose says six fixed threads, while R07-executed-state-check.json records threads=1 for both R06 and R07, material and white. Both original records are preserved without correction. JSON equality is recorded as supplied evidence, not proof of six-thread execution or independent rerender equivalence.
+- All 178 prior files other than CURRENT.json are byte-for-byte unchanged since the archived R04 correction. All earlier original model/image bytes remain. The previous current archive, provenance and receipt are preserved as versions/v2, with older v0/v1 snapshots unchanged.
+- Finite component contact and solid-angle cap probes in supplied QA are limited technical evidence, not complete occlusion, clothing manufacture, load-bearing support, calibrated source position or accepted scene geometry. Old umbrella-rib boundary failures and unexamined old objects are not validated by the mannequin checks.
+- Only official file reception, ordinary Git fast-forward archival and fresh-remote byte/object/tree verification are performed. No production-tree edits, main writes, LFS, force push, credential copying, security changes, Issues or PRs. The denied source-screening-increment receipt remains paused. Temporary Library inputs are retained for dot and permanent attachments remain untouched.
+
+Current remote verification is appended under `publication-verification/remote_verification.json`.
