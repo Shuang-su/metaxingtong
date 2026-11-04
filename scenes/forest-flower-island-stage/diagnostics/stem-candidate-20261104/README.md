@@ -1,16 +1,16 @@
-# Forest R12 inferred-stem structural candidate, frozen version 1
+# Forest R13 inferred grass-root structural candidate, frozen version 2
 
 Frozen diagnostic stage, not source acceptance or original-byte recovery.
 
-Original HEAD: `cc10bec07df4c0db1eaad57bafcf6ec5dc584516`
+Original HEAD: `f19f9e2a0b73e9605be96d2be52554b81906d5c4`
 Original history: `refs/heads/history/forest-stem-candidate-original-20261104`
-Previous original HEAD: `6adaaa4457e37ff398791961a223eda414620d5c`
+Previous original HEAD: `cc10bec07df4c0db1eaad57bafcf6ec5dc584516`
 
-`files/` preserves all 146 version 1 original files without modification. `versions/v0/` preserves the entire preceding archive directory including its receipt. All original diagnostic commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs and every original commit/object.
+`files/` preserves all 176 version 2 original files without modification. `versions/v1/` preserves the preceding current archive directory including its receipt; the existing `versions/v0/` stays unchanged and is not recursively duplicated. All five real original diagnostic commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs and every original commit/object.
 
-- Frozen R12 inferred-stem candidate on replayed diagnostic geometry; includes independent QA and preserved R10/R11 failures, but is not recovery of original model bytes or source acceptance
-- Producer records material/white models with 634 meshes: original 625 meshes unchanged relative to replay baseline plus nine inferred stem groups; 17 replay object hashes still differ from archived originals
-- 627 inferred stems are hidden-structure assumptions; limited contact checks are not Boolean union, full collision validation or physical support acceptance
+- Frozen R13 grass-root candidate on replayed diagnostic geometry; includes independent QA and preserved R10-R12 originals/failures, but is not recovery of original model bytes or source acceptance
+- Producer records material/white models with 634 meshes and changes only the base Z of 3627 selected grass leaves; archived 17 replay object hash differences are not resolved by this local change
+- 18 grass-base representative rays miss the bedding and two micro-gap cases remain unmodified; do not claim all grass is grounded, complete collision validation or physical/source acceptance
 - Retains failed source matching and rejected far-ring diagnostic; this archive does not model, render or execute production scripts
 
 Current remote verification is appended under `publication-verification/remote_verification.json`.

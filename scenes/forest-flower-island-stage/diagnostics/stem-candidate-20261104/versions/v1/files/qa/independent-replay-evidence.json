@@ -1,0 +1,168 @@
+{
+  "model_sha256_matches_audit": true,
+  "same_mesh_count": 625,
+  "same_geometry_hash": 608,
+  "different_meshes": [
+    {
+      "name": "FLOWER_00_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": -1.0842021724855044e-17
+    },
+    {
+      "name": "FLOWER_01_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": -5.421010862427522e-18
+    },
+    {
+      "name": "FLOWER_02_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": -2.168404344971009e-19
+    },
+    {
+      "name": "FLOWER_03_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": -2.8189256484623115e-18
+    },
+    {
+      "name": "FLOWER_04_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 1.3010426069826053e-18
+    },
+    {
+      "name": "FLOWER_05_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 2.6020852139652106e-18
+    },
+    {
+      "name": "FLOWER_06_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": -3.0357660829594124e-18
+    },
+    {
+      "name": "FLOWER_07_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": -6.505213034913027e-19
+    },
+    {
+      "name": "FLOWER_08_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 8.673617379884035e-19
+    },
+    {
+      "name": "FLOWER_09_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 2.168404344971009e-19
+    },
+    {
+      "name": "FLOWER_10_centre",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 6.505213034913027e-19
+    },
+    {
+      "name": "ROCK_00",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "ROCK_01",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 4.440892098500626e-16
+    },
+    {
+      "name": "ROCK_02",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": -1.1102230246251565e-16
+    },
+    {
+      "name": "ROCK_03",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 7.771561172376096e-16
+    },
+    {
+      "name": "ROCK_04",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": -5.551115123125783e-17
+    },
+    {
+      "name": "ROCK_05",
+      "count_equal": true,
+      "bounds_exact_equal": true,
+      "volume_difference": 2.220446049250313e-16
+    }
+  ],
+  "trial_recounts": [
+    {
+      "scale": 1.0,
+      "counts_match": true,
+      "far_hits_beyond_hypothesis": []
+    },
+    {
+      "scale": 1.25,
+      "counts_match": true,
+      "far_hits_beyond_hypothesis": []
+    },
+    {
+      "scale": 1.5,
+      "counts_match": true,
+      "far_hits_beyond_hypothesis": []
+    },
+    {
+      "scale": 2.0,
+      "counts_match": true,
+      "far_hits_beyond_hypothesis": []
+    }
+  ],
+  "terrain_recounts": [
+    {
+      "scale": 1,
+      "no_hit": 0,
+      "recorded": 0
+    },
+    {
+      "scale": 1.25,
+      "no_hit": 2,
+      "recorded": 2
+    },
+    {
+      "scale": 1.5,
+      "no_hit": 9,
+      "recorded": 9
+    },
+    {
+      "scale": 2,
+      "no_hit": 20,
+      "recorded": 20
+    }
+  ],
+  "evidence_hashes": {
+    "scripts/render_ring_diagnostic.py": "62a308da2ad97edb3ff57e5e4d52b1ec7e8c9e1bc4f420fca803dd00d8322dc2",
+    "scripts/check_ring_terrain.py": "c0f5458a14bec8dc4cd8b3be4e73aee510c92fbeceaf9f0ba1080f4aebe6509e",
+    "scripts/diagnose_far_tree_visibility.py": "76c2b653371e34ca1513fa02807ed234ebfa7e2992e28844c66d5b0a5e2eef72",
+    "qa/far-ring-sensitivity.json": "6c9da53ff7a5f00e14bc05ec2e62b7fb9211697892cc21b06a5782415bfd0d31",
+    "qa/far-ring-terrain-check.json": "a5dcfad2c87d24713b1bf3cba52f979b808a46464add2fcf90b37a1da639af12",
+    "qa/archived-R07-material-audit.json": "bf278c98c78f3cbd017acc3c072168feca26dabca441e6bea3e4bb2c774275bc",
+    "qa/replay-R09-audit.json": "3e3cb3b49b5937239731e6df6bab5ffd4a9b0aae300e391b31f6be1ac2129830",
+    "renders/ring-diagnostic/1_SOURCE_E_under.png": "c329499bd0be0c5a75ab600bf7b4c52730d4603ac7716f8ed0778d4ff7d4dcb8",
+    "renders/ring-diagnostic/2_SOURCE_G_4K_top.png": "712ca61d488498c6d64bdcb9f732df571309e5194743723c9a792f32fa83c679",
+    "renders/ring-diagnostic/1_SOURCE_G_4K_top.png": "f263654d053795274b46656227a9d327f43f1986fdabcddce6b74fd2623972cc",
+    "renders/ring-diagnostic/2_SOURCE_B_side.png": "cb2173e968ed585d7104dfabad4194403e7de1edb08072a4c88c6fe99a25fcf5",
+    "renders/ring-diagnostic/1_SOURCE_B_side.png": "0818b3cfb1165d8971ca5e869c45627963b9aa25a76425c2386f9a3bfeb3650b",
+    "renders/ring-diagnostic/2_SOURCE_E_under.png": "5b32242538ee47c6bc188c47571fe57c174f8c71d3d95a1069108c61610022e3"
+  }
+}
