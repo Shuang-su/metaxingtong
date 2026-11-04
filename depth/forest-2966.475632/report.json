@@ -1,0 +1,252 @@
+{
+  "source": {
+    "BV": "BV1ic12BMEk6",
+    "url": "https://www.bilibili.com/video/BV1ic12BMEk6/",
+    "uploader": "星瞳_Official",
+    "time_seconds": 2966.475632,
+    "sha256": "cd186b992cc7255f32217d0fab1cb1290a0b4a49325534e238d98d48f128668e",
+    "capture_record": {
+      "before": {
+        "h": 1080,
+        "paused": true,
+        "ready": 4,
+        "time": 2966.475632,
+        "w": 1920
+      },
+      "after": {
+        "h": 1080,
+        "paused": true,
+        "ready": 4,
+        "time": 2966.475632,
+        "w": 1920
+      },
+      "source": "BV1ic12BMEk6",
+      "method": "Chrome Save video frame as",
+      "quality": "1080P 高码率"
+    },
+    "quality": "1080P 高码率, official highest offered; no4K",
+    "exclusions": [
+      {
+        "shape": "rectangle",
+        "points": [
+          606,
+          337,
+          740,
+          580
+        ],
+        "class": 1,
+        "description": "Conservative moving-performer ROI; includes background, not segmentation"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          762,
+          289,
+          917,
+          538
+        ],
+        "class": 1,
+        "description": "Conservative moving-performer ROI; includes background, not segmentation"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          820,
+          395,
+          976,
+          685
+        ],
+        "class": 1,
+        "description": "Conservative moving-performer ROI; includes background, not segmentation"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          999,
+          300,
+          1129,
+          551
+        ],
+        "class": 1,
+        "description": "Conservative moving-performer ROI; includes background, not segmentation"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          1114,
+          357,
+          1280,
+          609
+        ],
+        "class": 1,
+        "description": "Conservative moving-performer ROI; includes background, not segmentation"
+      },
+      {
+        "shape": "rectangle",
+        "points": [
+          786,
+          367,
+          1004,
+          659
+        ],
+        "class": 2,
+        "description": "Character luminous wing/effects, not static geometry"
+      }
+    ],
+    "scene_cautions": [
+      "Floating flower island visible in low/wide views, no actual stem/pillar contact observed",
+      "Screen overlap with ground vegetation is NOT support or contact",
+      "Dark inverted root/soil cone detail unresolved; monocular depth cannot fill hidden surfaces",
+      "Unknown animation translation/rotation, cannot numerically infer from selected frames",
+      "Volumetric light/fog and thin foliage alpha boundaries can fail"
+    ],
+    "dark_rgb_max_threshold": 25,
+    "path": "/workspace/scratch/fa58bfcf0425/source-newscene-20261104/forest-native-2966.475632.png",
+    "bytes": 3135459,
+    "size": [
+      1920,
+      1080
+    ],
+    "crop": [
+      0,
+      0,
+      1920,
+      1080
+    ]
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 4,
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "weights_format": "safetensors",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "safetensors": "0.8.0",
+      "pillow": "13.0.0",
+      "numpy": "2.5.4"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "forward_seconds": 1.8057899475097656
+  },
+  "range": {
+    "min": 0.18154656887054443,
+    "max": 4.114813804626465,
+    "nonfinite_count": 0
+  },
+  "value_definition": "Relative inverse-depth-like prediction: larger/white generally nearer, smaller/black generally farther. Not metric distance or ordinary image luminance. Per-image normalized numbers cannot be compared as distance across images.",
+  "normalization": "(raw-min)/(max-min); source-grid output is explicitly derived bicubic interpolation align_corners=False, not native-resolution independent prediction.",
+  "masks": {
+    "manual_exclusions": "Conservative incomplete manually inspected ROIs, later drawn classes overwrite overlap, 0 unlabelled NOT certified valid.",
+    "confidence_unknown": "255 everywhere means NO calibrated confidence, NEVER high confidence.",
+    "nonfinite": "255 nonfinite numerical output; 0 merely finite, NOT geometry validity.",
+    "dark_low_signal": "255 where all original RGB channels <= threshold (default25), heuristic low-signal caution only; this brightness mask is NOT the depth algorithm.",
+    "occluded_hidden": "Unobserved hidden surfaces cannot be inferred as fact."
+  },
+  "dark_low_signal_fraction": 0.5086848958333333,
+  "limitations": [
+    "Single monocular depth is not metric geometry, scale, contact or camera calibration",
+    "Stylized CG, character motion, reflections, transparency, shadows and light can invalidate predictions",
+    "No replacement for native multiview references and direct unwarped overlays"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-source-grid.png",
+      "bytes": 4270,
+      "sha256": "6ae2cfa8276a1bd642b45a5401579b8a93bc9506299ae41171573adff763f9f6"
+    },
+    {
+      "path": "dark-low-signal-caution-source-grid.png",
+      "bytes": 89401,
+      "sha256": "71a03d8d2aaa9b865b236843dd6f84ad3574e1bfc6def33ecca67ea65219c476"
+    },
+    {
+      "path": "manual-exclusion-classes-source-grid.png",
+      "bytes": 2996,
+      "sha256": "2d6926bb6f5b92fdde6905ba13f5d5ae134d66a8b201a7a781b987e6b7a2c683"
+    },
+    {
+      "path": "nonfinite-invalid-model-grid.png",
+      "bytes": 544,
+      "sha256": "caec195e3fd01149b370763e45bfb21517d04ad2f2b52777a7c9286ce3add40c"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 582827,
+      "sha256": "d08101adf02199da2f395ef8e95498e7afd503cb5a7ba7b8f53062e2171b9916"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-source-grid.png",
+      "bytes": 232304,
+      "sha256": "09dbe73da5b39a650d64a3651ac71d499eba17cd685435014f5a25f3180e00e9"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "8752f5e73941f97856bbca217b2638e0eac4dcfe77406e5d998e917606a96f07"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-source-grid.npy",
+      "bytes": 8294528,
+      "sha256": "44921789b9a69e708ff559146816534959b94ae6dc4d753d4cef7506178c21e3"
+    }
+  ]
+}
