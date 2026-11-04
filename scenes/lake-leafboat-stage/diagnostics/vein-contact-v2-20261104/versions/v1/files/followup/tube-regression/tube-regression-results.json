@@ -1,0 +1,5786 @@
+{
+  "created_at_utc": "2026-11-04T14:16:00.588802+00:00",
+  "scope": "Nonincident triangle self-intersections for 19 tubes and intersections for 153 distinct branch pairs. Shared-vertex self-pairs are excluded; adjacent-fold intersections remain untested. Central-branch overlap is intentionally outside this check and was checked as junction contact in VD2. Float32 BVH candidates and float64 feature distance <=1e-9 tolerance, not exact arithmetic.",
+  "records": [
+    {
+      "label": "before",
+      "path": "/workspace/scratch/fa58bfcf0425/lakeleaf-vein-contact-audit-20261104/inputs/leaf-only-r06-nonexact-diagnostic-replay.blend",
+      "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c",
+      "nonincident_self": [
+        {
+          "name": "LEAF_002_CentralMidrib",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_00_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_00_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_01_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_01_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        }
+      ],
+      "branch_pair_tests": [
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_00_R",
+          "candidate_pairs": 24,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              363,
+              360
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              361
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_01_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_01_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_01_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_01_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_01_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              360
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              361
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 26,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              360
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              361
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              360
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              361
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              360
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              361
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              362
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              360,
+              8
+            ],
+            [
+              360,
+              363
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              363
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              8,
+              361
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              362
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              360,
+              8
+            ],
+            [
+              360,
+              363
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              363
+            ],
+            [
+              8,
+              361
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_07_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              362
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              360,
+              8
+            ],
+            [
+              360,
+              363
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              363
+            ],
+            [
+              8,
+              361
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_07_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_07_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_07_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_07_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_08_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              362
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              360,
+              363
+            ],
+            [
+              360,
+              8
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              8,
+              363
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              361
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "after",
+      "path": "/workspace/scratch/fa58bfcf0425/lakeleaf-vein-contact-audit-20261104/models/leaf-only-contact-candidate-v2.blend",
+      "sha256": "537f5e9fdd9042858939739a714d875c3624deff317fe855b462374fb7ca93d3",
+      "nonincident_self": [
+        {
+          "name": "LEAF_002_CentralMidrib",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_00_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_00_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_01_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_01_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "name": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        }
+      ],
+      "branch_pair_tests": [
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_00_R",
+          "candidate_pairs": 24,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              363,
+              360
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              361
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_01_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_01_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_01_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_01_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_00_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_01_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              360
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              361
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_02_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_01_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_02_R",
+          "candidate_pairs": 26,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              360
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              361
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_03_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_02_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_03_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              360
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              361
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_04_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_03_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_04_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              362,
+              2
+            ],
+            [
+              362,
+              363
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              360
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              363
+            ],
+            [
+              2,
+              362
+            ],
+            [
+              2,
+              361
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_05_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_04_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_05_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              362
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              360,
+              8
+            ],
+            [
+              360,
+              363
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              363
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              8,
+              361
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_06_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_05_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_06_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              362
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              360,
+              8
+            ],
+            [
+              360,
+              363
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              363
+            ],
+            [
+              8,
+              361
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_R",
+          "b": "LEAF_003_Branch_07_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_R",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_06_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_07_L",
+          "b": "LEAF_003_Branch_07_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              362
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              360,
+              8
+            ],
+            [
+              360,
+              363
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              363
+            ],
+            [
+              8,
+              361
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "a": "LEAF_003_Branch_07_L",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_07_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_07_R",
+          "b": "LEAF_003_Branch_08_L",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_07_R",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 0,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": []
+        },
+        {
+          "a": "LEAF_003_Branch_08_L",
+          "b": "LEAF_003_Branch_08_R",
+          "candidate_pairs": 25,
+          "skipped_shared_vertex_pairs": 0,
+          "intersecting_pairs": [
+            [
+              363,
+              363
+            ],
+            [
+              363,
+              362
+            ],
+            [
+              362,
+              362
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              360,
+              363
+            ],
+            [
+              360,
+              8
+            ],
+            [
+              8,
+              360
+            ],
+            [
+              8,
+              363
+            ],
+            [
+              8,
+              8
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              361
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              10,
+              9
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "centerline_slope_changes": [
+    {
+      "name": "LEAF_002_CentralMidrib",
+      "max_segment_direction_change_degrees": 0.07401874669521497,
+      "max_bend_before_degrees": 1.5743311762095533,
+      "max_bend_after_degrees": 1.6356615792012135,
+      "max_bend_change_degrees": 0.08853942204575804,
+      "segment_length_ratio_range": [
+        0.9990603354073596,
+        1.0004814828198727
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_00_L",
+      "max_segment_direction_change_degrees": 1.0191399965770074,
+      "max_bend_before_degrees": 2.9634581445362143,
+      "max_bend_after_degrees": 3.1162127640026105,
+      "max_bend_change_degrees": 0.1972479658237405,
+      "segment_length_ratio_range": [
+        0.9832144955838596,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_00_R",
+      "max_segment_direction_change_degrees": 0.995832829807985,
+      "max_bend_before_degrees": 2.917455966702532,
+      "max_bend_after_degrees": 3.040021150037472,
+      "max_bend_change_degrees": 0.14504568377097948,
+      "segment_length_ratio_range": [
+        0.9836692780709159,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_01_L",
+      "max_segment_direction_change_degrees": 0.7855917631096176,
+      "max_bend_before_degrees": 3.3720846703593934,
+      "max_bend_after_degrees": 3.446396701642309,
+      "max_bend_change_degrees": 0.24866413579171542,
+      "segment_length_ratio_range": [
+        0.9921344339371553,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_01_R",
+      "max_segment_direction_change_degrees": 0.7553697768578979,
+      "max_bend_before_degrees": 3.488126596150148,
+      "max_bend_after_degrees": 3.6957573032859545,
+      "max_bend_change_degrees": 0.22757059064401197,
+      "segment_length_ratio_range": [
+        0.9920585345323506,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_02_L",
+      "max_segment_direction_change_degrees": 0.7176430135339209,
+      "max_bend_before_degrees": 4.642369015170477,
+      "max_bend_after_degrees": 4.688679405290456,
+      "max_bend_change_degrees": 0.4041202017965577,
+      "segment_length_ratio_range": [
+        0.9944391501342872,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_02_R",
+      "max_segment_direction_change_degrees": 0.71189402196518,
+      "max_bend_before_degrees": 4.63447160894265,
+      "max_bend_after_degrees": 4.6501264025203195,
+      "max_bend_change_degrees": 0.38940178446541496,
+      "segment_length_ratio_range": [
+        0.9951063125515559,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_03_L",
+      "max_segment_direction_change_degrees": 0.6584911740832304,
+      "max_bend_before_degrees": 6.116607717796607,
+      "max_bend_after_degrees": 6.186085682694447,
+      "max_bend_change_degrees": 0.284394989774168,
+      "segment_length_ratio_range": [
+        0.9953366881016041,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_03_R",
+      "max_segment_direction_change_degrees": 0.6122975375093763,
+      "max_bend_before_degrees": 5.728168456395635,
+      "max_bend_after_degrees": 5.625666099973961,
+      "max_bend_change_degrees": 0.27096064800698727,
+      "segment_length_ratio_range": [
+        0.9957492926787118,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_04_L",
+      "max_segment_direction_change_degrees": 0.7707558985412624,
+      "max_bend_before_degrees": 5.352694601586641,
+      "max_bend_after_degrees": 5.477686209624228,
+      "max_bend_change_degrees": 0.2095896907671304,
+      "segment_length_ratio_range": [
+        0.994945279761153,
+        1.0006176624369483
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_04_R",
+      "max_segment_direction_change_degrees": 0.7922884434256977,
+      "max_bend_before_degrees": 5.9619368033811995,
+      "max_bend_after_degrees": 5.897076046362289,
+      "max_bend_change_degrees": 0.25721894772715626,
+      "segment_length_ratio_range": [
+        0.9952221056158594,
+        1.0006035773542445
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_05_L",
+      "max_segment_direction_change_degrees": 0.9464671039731889,
+      "max_bend_before_degrees": 7.819063958047197,
+      "max_bend_after_degrees": 6.775665477415831,
+      "max_bend_change_degrees": 1.0433984806313656,
+      "segment_length_ratio_range": [
+        0.9956317317843189,
+        1.0006859760640905
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_05_R",
+      "max_segment_direction_change_degrees": 1.0631205451380714,
+      "max_bend_before_degrees": 10.885242598171702,
+      "max_bend_after_degrees": 9.583715900879923,
+      "max_bend_change_degrees": 1.301526697291779,
+      "segment_length_ratio_range": [
+        0.994395094931516,
+        1.0013277297035743
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_06_L",
+      "max_segment_direction_change_degrees": 0.7582139103169735,
+      "max_bend_before_degrees": 6.897650521558144,
+      "max_bend_after_degrees": 6.730009504795705,
+      "max_bend_change_degrees": 0.6202023075349026,
+      "segment_length_ratio_range": [
+        0.9949896923626957,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_06_R",
+      "max_segment_direction_change_degrees": 0.6513203825892162,
+      "max_bend_before_degrees": 5.190860526279181,
+      "max_bend_after_degrees": 5.194747330803741,
+      "max_bend_change_degrees": 0.5887752197814986,
+      "segment_length_ratio_range": [
+        0.9971625505873551,
+        1.0
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_07_L",
+      "max_segment_direction_change_degrees": 0.8254310825995383,
+      "max_bend_before_degrees": 5.385651118105598,
+      "max_bend_after_degrees": 5.2907247221339375,
+      "max_bend_change_degrees": 0.43450846046588487,
+      "segment_length_ratio_range": [
+        0.9971438646257421,
+        1.000279187624848
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_07_R",
+      "max_segment_direction_change_degrees": 0.8047857152552641,
+      "max_bend_before_degrees": 4.776472949334508,
+      "max_bend_after_degrees": 4.748956251602642,
+      "max_bend_change_degrees": 0.41128368285372585,
+      "segment_length_ratio_range": [
+        0.9974724287116301,
+        1.0002205291756519
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_08_L",
+      "max_segment_direction_change_degrees": 0.8600281251797686,
+      "max_bend_before_degrees": 2.601206255299894,
+      "max_bend_after_degrees": 2.5653669720643677,
+      "max_bend_change_degrees": 0.6306870747976953,
+      "segment_length_ratio_range": [
+        1.0,
+        1.003121293732227
+      ]
+    },
+    {
+      "name": "LEAF_003_Branch_08_R",
+      "max_segment_direction_change_degrees": 0.8775956918901587,
+      "max_bend_before_degrees": 3.4267413382017167,
+      "max_bend_after_degrees": 3.4555875749442078,
+      "max_bend_change_degrees": 0.561776602570349,
+      "segment_length_ratio_range": [
+        0.999590220510469,
+        1.003268377188154
+      ]
+    }
+  ],
+  "self_pair_changes": [
+    {
+      "name": "LEAF_002_CentralMidrib",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_00_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_00_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_01_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_01_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_02_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_02_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_03_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_03_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "name": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    }
+  ],
+  "branch_pair_changes": [
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_00_R",
+      "before": 24,
+      "after": 24,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_01_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_01_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_02_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_02_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_03_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_03_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_01_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_01_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_02_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_02_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_03_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_03_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_00_R",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_01_R",
+      "before": 25,
+      "after": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_02_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_02_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_03_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_03_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_02_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_02_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_03_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_03_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_01_R",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_02_R",
+      "before": 26,
+      "after": 26,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_03_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_03_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_03_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_03_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_02_R",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_03_R",
+      "before": 25,
+      "after": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_04_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_03_R",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_04_R",
+      "before": 25,
+      "after": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_R",
+      "b": "LEAF_003_Branch_05_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_R",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_R",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_R",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_R",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_R",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_R",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_04_R",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_L",
+      "b": "LEAF_003_Branch_05_R",
+      "before": 25,
+      "after": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_L",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_L",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_L",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_L",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_L",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_R",
+      "b": "LEAF_003_Branch_06_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_R",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_R",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_R",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_R",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_05_R",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_L",
+      "b": "LEAF_003_Branch_06_R",
+      "before": 25,
+      "after": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_L",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_L",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_L",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_R",
+      "b": "LEAF_003_Branch_07_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_R",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_R",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_06_R",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_07_L",
+      "b": "LEAF_003_Branch_07_R",
+      "before": 25,
+      "after": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_07_L",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_07_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_07_R",
+      "b": "LEAF_003_Branch_08_L",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_07_R",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 0,
+      "after": 0,
+      "added": [],
+      "removed": []
+    },
+    {
+      "a": "LEAF_003_Branch_08_L",
+      "b": "LEAF_003_Branch_08_R",
+      "before": 25,
+      "after": 25,
+      "added": [],
+      "removed": []
+    }
+  ],
+  "model_modified": false,
+  "source_accepted": false
+}

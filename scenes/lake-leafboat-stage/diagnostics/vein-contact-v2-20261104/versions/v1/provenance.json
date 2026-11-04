@@ -1,0 +1,2416 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-04T14:31:46.486934+00:00",
+  "label": "Lake leafboat VD2 bounded contact candidate with read-only tube regressions",
+  "status": "FROZEN_DIAGNOSTIC_STAGE_NOT_ACCEPTED",
+  "input": {
+    "library_file_id": "libfile_39bc3048f5b481918a2fdbb22bc809da",
+    "file_id": "file_0000000018a081f5a5f8ff6de7ce3fdd",
+    "filename": "lakeleaf-vein-contact-v3-20261104.bundle",
+    "size_bytes": 7318891,
+    "sha256": "331ff45c1642687bdc8f5bfe3ddce456c3799851718ebf610822d651d7459b4f",
+    "version": 1,
+    "materialized_and_verified": true,
+    "bundle_refs": [
+      {
+        "commit": "c4d2720206a1be0339ba3bf4ce78388d86ffcfbf",
+        "ref": "refs/heads/diagnostics/leaf-vein-support-20261104"
+      },
+      {
+        "commit": "c4d2720206a1be0339ba3bf4ce78388d86ffcfbf",
+        "ref": "HEAD"
+      }
+    ],
+    "bundle_prerequisites": [],
+    "checkout": "c4d2720206a1be0339ba3bf4ce78388d86ffcfbf",
+    "space_retained": true
+  },
+  "original_head": "c4d2720206a1be0339ba3bf4ce78388d86ffcfbf",
+  "original_commits": [
+    "231768fb86de97202eb98c97474eb0f1e5ec7474",
+    "c17fc247da1d5bf25bce98f713129094f5b36b50",
+    "3d7c43e1afb6b89393114f99e3c14f002b32eba5",
+    "c4d2720206a1be0339ba3bf4ce78388d86ffcfbf"
+  ],
+  "original_objects": [
+    {
+      "object": "c4d2720206a1be0339ba3bf4ce78388d86ffcfbf",
+      "type": "commit",
+      "size_bytes": 261,
+      "sha256": "54199beb0e309060fd5274aecd7a077dbfd6adc64552b8f770ad53ebc2ea7a45"
+    },
+    {
+      "object": "3d7c43e1afb6b89393114f99e3c14f002b32eba5",
+      "type": "commit",
+      "size_bytes": 267,
+      "sha256": "6f757e5e59cc7f693971873ab36a6197da2edd44591a127fd32bb2cb3f7fe411"
+    },
+    {
+      "object": "c17fc247da1d5bf25bce98f713129094f5b36b50",
+      "type": "commit",
+      "size_bytes": 271,
+      "sha256": "fc7652b39b5a6913f9931e552f1e6c0041fe630b80b446542b8c5a602f0f5f80"
+    },
+    {
+      "object": "231768fb86de97202eb98c97474eb0f1e5ec7474",
+      "type": "commit",
+      "size_bytes": 215,
+      "sha256": "5c1e1204d7f32f58d28aedd2f8724fbb7cd72996671a9ea502de4e0be9648e7d"
+    },
+    {
+      "object": "5a616cea5c2bea34fc97db483df7ea096652cd4a",
+      "type": "tree",
+      "size_bytes": 315,
+      "sha256": "0d846efea61617784cfdd25a75e6f4ff31572d334d1e08481da8416c9196c03d"
+    },
+    {
+      "object": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+      "type": "blob",
+      "size_bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "object": "d65cef77d9cf96cdf70b28a1dfb725b925b168ef",
+      "type": "blob",
+      "size_bytes": 1496,
+      "sha256": "773c467a1b7e47dd6ad39ace7762ef6f31415a5f0ccfecd7d721019b243b72b3"
+    },
+    {
+      "object": "258d885e1a2d86e1163cb3d149bad5900bc69fff",
+      "type": "blob",
+      "size_bytes": 5822,
+      "sha256": "66e08d844c7555bbc65fc1fb083c1d1a83127aef2f74ac4bb10d84346191e731"
+    },
+    {
+      "object": "2892ed57e88b9a3951a06a92c10d896718a30c81",
+      "type": "tree",
+      "size_bytes": 42,
+      "sha256": "f02ffa8a60ecb4db7f1699628f53f1e44126e704084515568190abbf11ea8433"
+    },
+    {
+      "object": "fdadf24c026f05873679bda3e9fded94cbb286a6",
+      "type": "tree",
+      "size_bytes": 382,
+      "sha256": "648c01074ba91381cc6ca15adc85b34e87363804eb5a3c6f6d73324d2e28ce6c"
+    },
+    {
+      "object": "88dbb18e6eaaf9c64e1edd2168237bdaa716d3ed",
+      "type": "blob",
+      "size_bytes": 1685,
+      "sha256": "63b0fe45a2470cca0b13dc3a2fa61da440b5dabaa291c6c1d12c86ce6bd7359b"
+    },
+    {
+      "object": "c281374bee1e8d2ed889acbc60cba898cae6503f",
+      "type": "blob",
+      "size_bytes": 2168,
+      "sha256": "c0b48de28c5006cf6b3eb222121d8114ca2e27bdeecde33fde51351c2a464579"
+    },
+    {
+      "object": "e6875aabf85c562644d0f4d6104d3cdcb170124c",
+      "type": "blob",
+      "size_bytes": 4309,
+      "sha256": "9e2b8e5d28903db927ec98c80b01856298d3d899d4bc17ec73b0b0733bbfeb5a"
+    },
+    {
+      "object": "d3f221ec94c5057eb6a5ea3d6e0275e444693e37",
+      "type": "tree",
+      "size_bytes": 251,
+      "sha256": "c298eb24e2f5687a63349f602520d900d57203756de567b0c5bf9ff1a1ab0f6d"
+    },
+    {
+      "object": "632124e42674a99d48b46dac08a6aabd37de8458",
+      "type": "blob",
+      "size_bytes": 1158,
+      "sha256": "1f66ec470cbe079dae524f8e6166bd7d1e3a6d49365d9b8a8d430912a7269dae"
+    },
+    {
+      "object": "68f735703c2cc3d7950014d227fd6831df05e62e",
+      "type": "blob",
+      "size_bytes": 4344,
+      "sha256": "d070df073ec1b89e898360c6d0ac6122d9215f29978d2bb4c8485f4011060f7f"
+    },
+    {
+      "object": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+      "type": "blob",
+      "size_bytes": 3186,
+      "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+    },
+    {
+      "object": "be41eed673b145cdeacca366dff757b9f6e8c890",
+      "type": "blob",
+      "size_bytes": 134566,
+      "sha256": "b72cabe05968b329834de15e2a98350faf542f8fcdb1fd9123f97c31b0bc4734"
+    },
+    {
+      "object": "d3564aee0c5c647c2bbd314ec05ee136ee0f7e8e",
+      "type": "tree",
+      "size_bytes": 164,
+      "sha256": "fa61bb9b016330be75ac9bf86b2e85874e7c041e397db4d4b46661e07ceaa9db"
+    },
+    {
+      "object": "f4db77a49e2db9716d5aa01b2ff2e89ebfed5d1d",
+      "type": "blob",
+      "size_bytes": 1508,
+      "sha256": "1583e640a17c511e0e7985c28e955c48c987457604a9fc27b912782b6d05d194"
+    },
+    {
+      "object": "81f31830ff020d989951d4d2a1083e47932711da",
+      "type": "blob",
+      "size_bytes": 1629,
+      "sha256": "00fd9a209b300e972711d74f51548654448bd570c54238f68b3fe8fd24787bb4"
+    },
+    {
+      "object": "662aa895a4f44bdaf694e8fc1a2555187663c48e",
+      "type": "blob",
+      "size_bytes": 278,
+      "sha256": "f1a5b2dfb269854ea78e433fab58d285ffe0e9ab155929e6131a8ed895a5e9fd"
+    },
+    {
+      "object": "93831efbfb68c579dbb45c48bdb66c52d9ae6d4b",
+      "type": "blob",
+      "size_bytes": 134566,
+      "sha256": "feefed30fbfaa045b6c9b06d977e84402b8c826c85e10bb5ee3e83a817002c6b"
+    },
+    {
+      "object": "ccc39d1450dbe9f712b3f9b0fef7472dba8be82f",
+      "type": "blob",
+      "size_bytes": 11922,
+      "sha256": "a707eafb1174297c3c7c387e40eea75e49ca26a5411b238660ad33a1e63cddd1"
+    },
+    {
+      "object": "a42e07c4948afc8221cb7a54753d7c5b8acbfa6c",
+      "type": "tree",
+      "size_bytes": 187,
+      "sha256": "4f4e40afdcf348bd49477847b5ccd38b5dcfcabb794fe3c12d8afef639c45275"
+    },
+    {
+      "object": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+      "type": "blob",
+      "size_bytes": 13224,
+      "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+    },
+    {
+      "object": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+      "type": "blob",
+      "size_bytes": 5183724,
+      "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+    },
+    {
+      "object": "97fb194700bcb2533943659c2067bba7e13f9670",
+      "type": "blob",
+      "size_bytes": 1573,
+      "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+    },
+    {
+      "object": "5f70156f18ff36c945d336b621f4539e0f14da69",
+      "type": "tree",
+      "size_bytes": 126,
+      "sha256": "4e18bfd74b892d1b69c0044682d681ff8cf94d61d03007baff94b6a27dee1d4a"
+    },
+    {
+      "object": "724452f46eb18652c87c7e156992f1b80749fc8f",
+      "type": "blob",
+      "size_bytes": 5184080,
+      "sha256": "537f5e9fdd9042858939739a714d875c3624deff317fe855b462374fb7ca93d3"
+    },
+    {
+      "object": "0e28cb0ba205b04d1141e1688075fcc2b09c98e2",
+      "type": "blob",
+      "size_bytes": 1971772,
+      "sha256": "4ffbb9fd351f5be26572284a6a2434ca54650446e9ad4f2fded085ab32cb232a"
+    },
+    {
+      "object": "4911aa9b9203895b471270dd52d0e5c32d497146",
+      "type": "tree",
+      "size_bytes": 1195,
+      "sha256": "9fcf0e6dd2062b09be4e407e2b46993d5078cb1d2aa9997f0d3db713404a71fa"
+    },
+    {
+      "object": "69e5f2ce05101bc63474be1a77b707659d5a6d08",
+      "type": "blob",
+      "size_bytes": 4144,
+      "sha256": "6a6a58096c3a1d7724f1f9c9d90b1622d77e91baa4b6e133da2e7605552a8ab1"
+    },
+    {
+      "object": "fa912df2beb7f470a225eb517a07db6ffbbadae7",
+      "type": "blob",
+      "size_bytes": 1212,
+      "sha256": "9c9991969b94f53a5b54cca372aed7f52891fd7833661e70b868c4ae0fe05dcf"
+    },
+    {
+      "object": "19b8f64e9bbae893c2504305f17c4c89a04b2edd",
+      "type": "blob",
+      "size_bytes": 633,
+      "sha256": "7d7cb4d554600b08a40a80472c7318f8633373097b36b05ddf276a35e034fc88"
+    },
+    {
+      "object": "2465b8575860a8b5698f8d1bb5bb1ead9d08e2de",
+      "type": "blob",
+      "size_bytes": 647201,
+      "sha256": "84797ff0cc7826383446ca328a2248994a783c2168afca91eb41571ba6732cfa"
+    },
+    {
+      "object": "04a0724bb48da1f40f52740e588224e38cce3a41",
+      "type": "blob",
+      "size_bytes": 991867,
+      "sha256": "883b3660960d69cc3c8db3e14f4d7b4a996a900543ff52ddc085ee8c55ba3a27"
+    },
+    {
+      "object": "eab650120382a89360aa7934e121919a10fcac05",
+      "type": "blob",
+      "size_bytes": 4163,
+      "sha256": "2398ebf0af860a86249f2c84db430525e951558c752b26997ff7f63d28817ed9"
+    },
+    {
+      "object": "73648f05d0ac6cefe0cdaa785ffb0d14e9133861",
+      "type": "tree",
+      "size_bytes": 81,
+      "sha256": "b782c06d036bca18d2ef5bb1848cc902b7144216aaaf66b0b1a7b55f8d886bc3"
+    },
+    {
+      "object": "ab470600274ff68e3ef7f90d11659145d16c516c",
+      "type": "blob",
+      "size_bytes": 1776,
+      "sha256": "08a21ccb358e6d424b425889b912f0681b8062170dcf5647d417408bb32c68d8"
+    },
+    {
+      "object": "41cfd3cf4c91809b7d8aa99d030f12fd16b441b1",
+      "type": "blob",
+      "size_bytes": 2254,
+      "sha256": "4c0fec716deda3fc418d7ed8b3becb5d7c101bd68ca33cec3fbfa705db68a567"
+    },
+    {
+      "object": "dc042d2ba385c4f6ecf4726431a03a96eb1a937d",
+      "type": "blob",
+      "size_bytes": 1489,
+      "sha256": "f6e65a2c6079e77980077e545bc0e6fa99c2e02fc74b72ca4a12cc051198f26d"
+    },
+    {
+      "object": "75b673caf95da90ec2850b277946bcb288d2d17e",
+      "type": "blob",
+      "size_bytes": 1431,
+      "sha256": "e75d63a44eb6b21e0e03394ccabc7999b36dcce9e8c64cab5189e17ca4c9ccbf"
+    },
+    {
+      "object": "3669cc9929b8609ee8654e0112dcf3aea402a4c3",
+      "type": "blob",
+      "size_bytes": 3371,
+      "sha256": "346124efdd35404fc11dbb6f0535de0e6f2f96a80651ca6be1b32d8c2e90f7d8"
+    },
+    {
+      "object": "bb87d36b602329c87a9673d44d5301c86197d6b7",
+      "type": "blob",
+      "size_bytes": 15413,
+      "sha256": "3c2357dd7649125837c6003c8caf8d6c0e0a2831eb887394cee49a2f74e23816"
+    },
+    {
+      "object": "243ea79b57598722f204e8f62d21d79ca120ad76",
+      "type": "blob",
+      "size_bytes": 15383,
+      "sha256": "b1f0de1559e93a0de4a6bad1dd985096d87415fb23778c328e7fe48dfce44787"
+    },
+    {
+      "object": "f9097627dda5bc76be04eed56a2d11845e560523",
+      "type": "blob",
+      "size_bytes": 1986881,
+      "sha256": "3f118149f8859e6f3f68f6d7f878b50b224a5f730f533924d70701458860f96c"
+    },
+    {
+      "object": "3caad102538fc7cd2690ff8d6825cfc5c53fa12d",
+      "type": "blob",
+      "size_bytes": 245603,
+      "sha256": "206af931520c2657bf0ba49b8e3f254452ed365ecb143808cf809f2e0d31908f"
+    },
+    {
+      "object": "615a2e80baa5e9849290c0e6dd16bd5e2e8f7a11",
+      "type": "blob",
+      "size_bytes": 147727,
+      "sha256": "c7ed0bd8c5871f878f9b436c35ccad6816fd9ad38153920599eabfb86e1107dc"
+    },
+    {
+      "object": "18827d20c4e828aeb9f0e9fd5f68ebd75342614f",
+      "type": "blob",
+      "size_bytes": 1076,
+      "sha256": "10af000f121a31313fffca93098e960f0cdec2397e3283b828d954c1ca7b6d45"
+    },
+    {
+      "object": "44dea3f4226abe25d2739ec7f281b557babb5800",
+      "type": "blob",
+      "size_bytes": 6925,
+      "sha256": "8342b5c18f6fc19c140942f4ecf5735f67b5f00e747e4f1026dc340f0fdc058f"
+    },
+    {
+      "object": "83e4504076f62c8783418c26ce92c87e0b968d7b",
+      "type": "blob",
+      "size_bytes": 671,
+      "sha256": "b368615a6b58513a7db88d38ad8fc689edea47948e93e9e7dd039a664c29dd55"
+    },
+    {
+      "object": "5d26ce585c021cffe23e8929d04f957d8e05800c",
+      "type": "blob",
+      "size_bytes": 9890693,
+      "sha256": "00cb69475be0cc3c5091dd2046c20181cd6c980473f536f5c144f001b5707c89"
+    },
+    {
+      "object": "3e9fbf0857c845fbf6cf6acad587afbf36fab18b",
+      "type": "blob",
+      "size_bytes": 192,
+      "sha256": "771e574519e2227870b2ace7aea1680c392c42e17adea15c66958dd49bd2de7b"
+    },
+    {
+      "object": "8885d906939c636e020ee7124724763357058760",
+      "type": "blob",
+      "size_bytes": 3544,
+      "sha256": "cc48a33526d776331e57459904f7c6ed7bd12f9aa6e9ea3948a32395c9c04649"
+    },
+    {
+      "object": "47b2ef60b30fe25465b211f1eb20f3058ebdc709",
+      "type": "tree",
+      "size_bytes": 150,
+      "sha256": "cd488abf100b586b047e8203403b249387f25f1f0169036e6109cefd85865125"
+    },
+    {
+      "object": "00802aca7c7d0d911780d7e0748512163622d678",
+      "type": "tree",
+      "size_bytes": 109,
+      "sha256": "3910e16af873c652c68204886bacbefa8f7a69e79a365479f28d95d29ea637b5"
+    },
+    {
+      "object": "64da178138d9ec1d1d0dd4ccc3856b4db843d601",
+      "type": "blob",
+      "size_bytes": 774419,
+      "sha256": "2471337f9925c6ae33140eb87c01a38113e5a7bf3715f900113ba28c8c6af5a9"
+    },
+    {
+      "object": "53886e5948f4b21d583ac2f43234208a4ce942e8",
+      "type": "blob",
+      "size_bytes": 791587,
+      "sha256": "2e1835ef458dafaf9b0b1ff533aead044025f56f9e61197b5926e2dd5ca28c92"
+    },
+    {
+      "object": "a83cc0c77eef431b243ae864400d1cecff126486",
+      "type": "blob",
+      "size_bytes": 499200,
+      "sha256": "94b2f0d49655015ec0cfe29e60aa86bf2b55a2d1c7adc805a9951b080d3acf8b"
+    },
+    {
+      "object": "48e4334950a322182e0170ba3812b50b68294055",
+      "type": "blob",
+      "size_bytes": 519890,
+      "sha256": "f7b47e4ce0eb0c6fe86a3bae53bf5bddd0f8c1ef231ac9bf4733eb6692811777"
+    },
+    {
+      "object": "9a00611cedb60fdea6e1f35f3425f2fee085a362",
+      "type": "tree",
+      "size_bytes": 545,
+      "sha256": "8721bb291de0a2c8c6ed336b592e5078847b615460e87e11e2d125c3fdae988c"
+    },
+    {
+      "object": "1f5cbcf89719168d215f4e079796aa2792a7cc04",
+      "type": "blob",
+      "size_bytes": 3861,
+      "sha256": "7aac7b9b39b0d650d0e57efaa3feccf92a200e9378703e9467aa4e2d8c68e1e4"
+    },
+    {
+      "object": "b76f6c656cc370f817b8611f56b4fdf66b36036b",
+      "type": "blob",
+      "size_bytes": 6668,
+      "sha256": "4f1131fad7f4d1a43c6178a31743e1ccabc6c3c721687fe1749be3cbe485b1ce"
+    },
+    {
+      "object": "1bc8a7b4cb5802bef2004e6310ecffc310a3e0af",
+      "type": "blob",
+      "size_bytes": 2260,
+      "sha256": "fbe4352ba3834a18088a9b139932c94bfce4494171f187490df07e4a097d7dc8"
+    },
+    {
+      "object": "472dd584bd6db0351a3785a09a0864b39367be22",
+      "type": "blob",
+      "size_bytes": 2159,
+      "sha256": "5a0888a3f80c72a2765e386dc42208c0c148aa5cd507328e9b43053e5d4b8d5f"
+    },
+    {
+      "object": "760f63edc59fdbc1bb87bcb9540cdbfa90a63c20",
+      "type": "blob",
+      "size_bytes": 3287,
+      "sha256": "5f8a609496aae235ac493061cc85abd1deac23cf94b65bfc6d6d47f82956b4e7"
+    },
+    {
+      "object": "f23b0031338aba7307fe0fd4fe8b3d69e3a66b08",
+      "type": "blob",
+      "size_bytes": 1719,
+      "sha256": "c63fca872546abf3c66465924b8cf5eeb57e436d38534bb99dd32349b327fac2"
+    },
+    {
+      "object": "8dc5ec9040d6125c317d74c42ea9eb380fce589c",
+      "type": "blob",
+      "size_bytes": 3901,
+      "sha256": "2edbb2f1c03aa11ae9fdebd3fd28c10160f497cee4e2e6d2ed91daeafa209b9b"
+    },
+    {
+      "object": "5f4816221cfb304343e6033dbd6170137a9afba6",
+      "type": "blob",
+      "size_bytes": 2764,
+      "sha256": "305b684a40b0c04e5c998f4e3d0bad19a2b88d6e96c11de18f5d64a315989369"
+    },
+    {
+      "object": "3acde393596937493b932a0030a29c4d930127e2",
+      "type": "blob",
+      "size_bytes": 4756,
+      "sha256": "4485de3894aa860f24a11f87912d7e08c0b665a9ed8aac8fee75a3009c85bab0"
+    },
+    {
+      "object": "bfc61de910a31c0da61a91d264324dd90e4ab809",
+      "type": "tree",
+      "size_bytes": 280,
+      "sha256": "4a521bdb8e04ce00af73903a5dba3b709b57a7a2ecffd5db129fd3d804911981"
+    },
+    {
+      "object": "3267f3141ffe900a91d021292e0206719257b788",
+      "type": "tree",
+      "size_bytes": 280,
+      "sha256": "cdc2dd877cd98add0a7048838fa4c4a818ee75a0eb83b91439c6f140d0ffe21d"
+    },
+    {
+      "object": "0181b6df6540138224893b0e2bac92cf52e15420",
+      "type": "blob",
+      "size_bytes": 5486,
+      "sha256": "d3a656cf8bea5a478e2af6e3ce4abf4584cfe4832ed73ac8292deb5ac04ade3b"
+    },
+    {
+      "object": "541ff7bfb9931011fb6dd8d5cd04053bef0767b2",
+      "type": "tree",
+      "size_bytes": 1157,
+      "sha256": "5f962eb075116485bce23921c33607b1c17052787a14197fd6e6557d482f7cf1"
+    },
+    {
+      "object": "90bbbfb83245559c6ae7027b9d97a46c01814989",
+      "type": "tree",
+      "size_bytes": 173,
+      "sha256": "a4fff560108c83f1cfcf7bc7a1c2bffdab8998383b5b0766ab8d7ab16d41c1af"
+    },
+    {
+      "object": "738f5573db7e54415ce63ada0e3b6efbef9281c4",
+      "type": "tree",
+      "size_bytes": 330,
+      "sha256": "664b1e985fab24356cd8778d99285cc19482a6726e4778b10fb1fadd24ffcc8f"
+    },
+    {
+      "object": "342b11d1e6979cf72026a9c4b21bbe5c175d4d8f",
+      "type": "tree",
+      "size_bytes": 212,
+      "sha256": "b3b8ecc48c8609ffb6c89ded5900197bddc6590039985eb146703b6c1078cc41"
+    }
+  ],
+  "stages": [
+    {
+      "commit": "231768fb86de97202eb98c97474eb0f1e5ec7474",
+      "tree": "90bbbfb83245559c6ae7027b9d97a46c01814989",
+      "parents": [],
+      "file_count": 15,
+      "files": [
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+          "size_bytes": 19,
+          "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+        },
+        {
+          "path": "BASELINE.md",
+          "mode": "100644",
+          "blob": "d65cef77d9cf96cdf70b28a1dfb725b925b168ef",
+          "size_bytes": 1496,
+          "sha256": "773c467a1b7e47dd6ad39ace7762ef6f31415a5f0ccfecd7d721019b243b72b3"
+        },
+        {
+          "path": "inputs/archived-r06-cameras.json",
+          "mode": "100644",
+          "blob": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+          "size_bytes": 13224,
+          "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+        },
+        {
+          "path": "inputs/leaf-only-r06-nonexact-diagnostic-replay.blend",
+          "mode": "100644",
+          "blob": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+          "size_bytes": 5183724,
+          "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+        },
+        {
+          "path": "inputs/prior-nonexact-replay-proof.json",
+          "mode": "100644",
+          "blob": "97fb194700bcb2533943659c2067bba7e13f9670",
+          "size_bytes": 1573,
+          "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+        },
+        {
+          "path": "qa/audit-support.log",
+          "mode": "100644",
+          "blob": "69e5f2ce05101bc63474be1a77b707659d5a6d08",
+          "size_bytes": 4144,
+          "sha256": "6a6a58096c3a1d7724f1f9c9d90b1622d77e91baa4b6e133da2e7605552a8ab1"
+        },
+        {
+          "path": "qa/terminal-triangle-distances.json",
+          "mode": "100644",
+          "blob": "615a2e80baa5e9849290c0e6dd16bd5e2e8f7a11",
+          "size_bytes": 147727,
+          "sha256": "c7ed0bd8c5871f878f9b436c35ccad6816fd9ad38153920599eabfb86e1107dc"
+        },
+        {
+          "path": "qa/terminal-triangle-distances.log",
+          "mode": "100644",
+          "blob": "18827d20c4e828aeb9f0e9fd5f68ebd75342614f",
+          "size_bytes": 1076,
+          "sha256": "10af000f121a31313fffca93098e960f0cdec2397e3283b828d954c1ca7b6d45"
+        },
+        {
+          "path": "qa/tip-multiple-ray-intervals.json",
+          "mode": "100644",
+          "blob": "44dea3f4226abe25d2739ec7f281b557babb5800",
+          "size_bytes": 6925,
+          "sha256": "8342b5c18f6fc19c140942f4ecf5735f67b5f00e747e4f1026dc340f0fdc058f"
+        },
+        {
+          "path": "qa/tip-multiple-ray.log",
+          "mode": "100644",
+          "blob": "83e4504076f62c8783418c26ce92c87e0b968d7b",
+          "size_bytes": 671,
+          "sha256": "b368615a6b58513a7db88d38ad8fc689edea47948e93e9e7dd039a664c29dd55"
+        },
+        {
+          "path": "qa/vein-shell-support-samples.json",
+          "mode": "100644",
+          "blob": "5d26ce585c021cffe23e8929d04f957d8e05800c",
+          "size_bytes": 9890693,
+          "sha256": "00cb69475be0cc3c5091dd2046c20181cd6c980473f536f5c144f001b5707c89"
+        },
+        {
+          "path": "scripts/audit_vein_support.py",
+          "mode": "100644",
+          "blob": "1f5cbcf89719168d215f4e079796aa2792a7cc04",
+          "size_bytes": 3861,
+          "sha256": "7aac7b9b39b0d650d0e57efaa3feccf92a200e9378703e9467aa4e2d8c68e1e4"
+        },
+        {
+          "path": "scripts/check_tip_ray_intervals.py",
+          "mode": "100644",
+          "blob": "472dd584bd6db0351a3785a09a0864b39367be22",
+          "size_bytes": 2159,
+          "sha256": "5a0888a3f80c72a2765e386dc42208c0c148aa5cd507328e9b43053e5d4b8d5f"
+        },
+        {
+          "path": "scripts/confirm_terminal_triangle_gaps.py",
+          "mode": "100644",
+          "blob": "760f63edc59fdbc1bb87bcb9540cdbfa90a63c20",
+          "size_bytes": 3287,
+          "sha256": "5f8a609496aae235ac493061cc85abd1deac23cf94b65bfc6d6d47f82956b4e7"
+        },
+        {
+          "path": "scripts/triangle_distance.py",
+          "mode": "100644",
+          "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+          "size_bytes": 3186,
+          "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+        }
+      ]
+    },
+    {
+      "commit": "c17fc247da1d5bf25bce98f713129094f5b36b50",
+      "tree": "3267f3141ffe900a91d021292e0206719257b788",
+      "parents": [
+        "231768fb86de97202eb98c97474eb0f1e5ec7474"
+      ],
+      "file_count": 42,
+      "files": [
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+          "size_bytes": 19,
+          "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+        },
+        {
+          "path": "BASELINE.md",
+          "mode": "100644",
+          "blob": "d65cef77d9cf96cdf70b28a1dfb725b925b168ef",
+          "size_bytes": 1496,
+          "sha256": "773c467a1b7e47dd6ad39ace7762ef6f31415a5f0ccfecd7d721019b243b72b3"
+        },
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "0181b6df6540138224893b0e2bac92cf52e15420",
+          "size_bytes": 5486,
+          "sha256": "d3a656cf8bea5a478e2af6e3ce4abf4584cfe4832ed73ac8292deb5ac04ade3b"
+        },
+        {
+          "path": "inputs/archived-r06-cameras.json",
+          "mode": "100644",
+          "blob": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+          "size_bytes": 13224,
+          "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+        },
+        {
+          "path": "inputs/leaf-only-r06-nonexact-diagnostic-replay.blend",
+          "mode": "100644",
+          "blob": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+          "size_bytes": 5183724,
+          "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+        },
+        {
+          "path": "inputs/prior-nonexact-replay-proof.json",
+          "mode": "100644",
+          "blob": "97fb194700bcb2533943659c2067bba7e13f9670",
+          "size_bytes": 1573,
+          "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+        },
+        {
+          "path": "models/leaf-only-contact-candidate-v2.blend",
+          "mode": "100644",
+          "blob": "724452f46eb18652c87c7e156992f1b80749fc8f",
+          "size_bytes": 5184080,
+          "sha256": "537f5e9fdd9042858939739a714d875c3624deff317fe855b462374fb7ca93d3"
+        },
+        {
+          "path": "models/leaf-only-contact-candidate-v2.glb",
+          "mode": "100644",
+          "blob": "0e28cb0ba205b04d1141e1688075fcc2b09c98e2",
+          "size_bytes": 1971772,
+          "sha256": "4ffbb9fd351f5be26572284a6a2434ca54650446e9ad4f2fded085ab32cb232a"
+        },
+        {
+          "path": "qa/audit-support.log",
+          "mode": "100644",
+          "blob": "69e5f2ce05101bc63474be1a77b707659d5a6d08",
+          "size_bytes": 4144,
+          "sha256": "6a6a58096c3a1d7724f1f9c9d90b1622d77e91baa4b6e133da2e7605552a8ab1"
+        },
+        {
+          "path": "qa/build-support-candidate-v2.log",
+          "mode": "100644",
+          "blob": "fa912df2beb7f470a225eb517a07db6ffbbadae7",
+          "size_bytes": 1212,
+          "sha256": "9c9991969b94f53a5b54cca372aed7f52891fd7833661e70b868c4ae0fe05dcf"
+        },
+        {
+          "path": "qa/check-embedded-ring-parity.log",
+          "mode": "100644",
+          "blob": "19b8f64e9bbae893c2504305f17c4c89a04b2edd",
+          "size_bytes": 633,
+          "sha256": "7d7cb4d554600b08a40a80472c7318f8633373097b36b05ddf276a35e034fc88"
+        },
+        {
+          "path": "qa/embedded-ring-five-ray-parity.json",
+          "mode": "100644",
+          "blob": "2465b8575860a8b5698f8d1bb5bb1ead9d08e2de",
+          "size_bytes": 647201,
+          "sha256": "84797ff0cc7826383446ca328a2248994a783c2168afca91eb41571ba6732cfa"
+        },
+        {
+          "path": "qa/embedded-ring-winding-verification.json",
+          "mode": "100644",
+          "blob": "04a0724bb48da1f40f52740e588224e38cce3a41",
+          "size_bytes": 991867,
+          "sha256": "883b3660960d69cc3c8db3e14f4d7b4a996a900543ff52ddc085ee8c55ba3a27"
+        },
+        {
+          "path": "qa/export-partial-glb.log",
+          "mode": "100644",
+          "blob": "eab650120382a89360aa7934e121919a10fcac05",
+          "size_bytes": 4163,
+          "sha256": "2398ebf0af860a86249f2c84db430525e951558c752b26997ff7f63d28817ed9"
+        },
+        {
+          "path": "qa/macro-render-manifest-exposure-fixed.json",
+          "mode": "100644",
+          "blob": "dc042d2ba385c4f6ecf4726431a03a96eb1a937d",
+          "size_bytes": 1489,
+          "sha256": "f6e65a2c6079e77980077e545bc0e6fa99c2e02fc74b72ca4a12cc051198f26d"
+        },
+        {
+          "path": "qa/macro-render-manifest.json",
+          "mode": "100644",
+          "blob": "75b673caf95da90ec2850b277946bcb288d2d17e",
+          "size_bytes": 1431,
+          "sha256": "e75d63a44eb6b21e0e03394ccabc7999b36dcce9e8c64cab5189e17ca4c9ccbf"
+        },
+        {
+          "path": "qa/partial-glb-roundtrip.json",
+          "mode": "100644",
+          "blob": "3669cc9929b8609ee8654e0112dcf3aea402a4c3",
+          "size_bytes": 3371,
+          "sha256": "346124efdd35404fc11dbb6f0535de0e6f2f96a80651ca6be1b32d8c2e90f7d8"
+        },
+        {
+          "path": "qa/render-attachment-macro-exposure-fixed.log",
+          "mode": "100644",
+          "blob": "bb87d36b602329c87a9673d44d5301c86197d6b7",
+          "size_bytes": 15413,
+          "sha256": "3c2357dd7649125837c6003c8caf8d6c0e0a2831eb887394cee49a2f74e23816"
+        },
+        {
+          "path": "qa/render-attachment-macro.log",
+          "mode": "100644",
+          "blob": "243ea79b57598722f204e8f62d21d79ca120ad76",
+          "size_bytes": 15383,
+          "sha256": "b1f0de1559e93a0de4a6bad1dd985096d87415fb23778c328e7fe48dfce44787"
+        },
+        {
+          "path": "qa/support-candidate-continuous-checks.json",
+          "mode": "100644",
+          "blob": "f9097627dda5bc76be04eed56a2d11845e560523",
+          "size_bytes": 1986881,
+          "sha256": "3f118149f8859e6f3f68f6d7f878b50b224a5f730f533924d70701458860f96c"
+        },
+        {
+          "path": "qa/support-candidate-v2.json",
+          "mode": "100644",
+          "blob": "3caad102538fc7cd2690ff8d6825cfc5c53fa12d",
+          "size_bytes": 245603,
+          "sha256": "206af931520c2657bf0ba49b8e3f254452ed365ecb143808cf809f2e0d31908f"
+        },
+        {
+          "path": "qa/terminal-triangle-distances.json",
+          "mode": "100644",
+          "blob": "615a2e80baa5e9849290c0e6dd16bd5e2e8f7a11",
+          "size_bytes": 147727,
+          "sha256": "c7ed0bd8c5871f878f9b436c35ccad6816fd9ad38153920599eabfb86e1107dc"
+        },
+        {
+          "path": "qa/terminal-triangle-distances.log",
+          "mode": "100644",
+          "blob": "18827d20c4e828aeb9f0e9fd5f68ebd75342614f",
+          "size_bytes": 1076,
+          "sha256": "10af000f121a31313fffca93098e960f0cdec2397e3283b828d954c1ca7b6d45"
+        },
+        {
+          "path": "qa/tip-multiple-ray-intervals.json",
+          "mode": "100644",
+          "blob": "44dea3f4226abe25d2739ec7f281b557babb5800",
+          "size_bytes": 6925,
+          "sha256": "8342b5c18f6fc19c140942f4ecf5735f67b5f00e747e4f1026dc340f0fdc058f"
+        },
+        {
+          "path": "qa/tip-multiple-ray.log",
+          "mode": "100644",
+          "blob": "83e4504076f62c8783418c26ce92c87e0b968d7b",
+          "size_bytes": 671,
+          "sha256": "b368615a6b58513a7db88d38ad8fc689edea47948e93e9e7dd039a664c29dd55"
+        },
+        {
+          "path": "qa/vein-shell-support-samples.json",
+          "mode": "100644",
+          "blob": "5d26ce585c021cffe23e8929d04f957d8e05800c",
+          "size_bytes": 9890693,
+          "sha256": "00cb69475be0cc3c5091dd2046c20181cd6c980473f536f5c144f001b5707c89"
+        },
+        {
+          "path": "qa/verify-inside-winding.log",
+          "mode": "100644",
+          "blob": "3e9fbf0857c845fbf6cf6acad587afbf36fab18b",
+          "size_bytes": 192,
+          "sha256": "771e574519e2227870b2ace7aea1680c392c42e17adea15c66958dd49bd2de7b"
+        },
+        {
+          "path": "qa/verify-support-candidate.log",
+          "mode": "100644",
+          "blob": "8885d906939c636e020ee7124724763357058760",
+          "size_bytes": 3544,
+          "sha256": "cc48a33526d776331e57459904f7c6ed7bd12f9aa6e9ea3948a32395c9c04649"
+        },
+        {
+          "path": "renders/exposure-fixed/vein-tip-contact-after.png",
+          "mode": "100644",
+          "blob": "64da178138d9ec1d1d0dd4ccc3856b4db843d601",
+          "size_bytes": 774419,
+          "sha256": "2471337f9925c6ae33140eb87c01a38113e5a7bf3715f900113ba28c8c6af5a9"
+        },
+        {
+          "path": "renders/exposure-fixed/vein-tip-contact-before.png",
+          "mode": "100644",
+          "blob": "53886e5948f4b21d583ac2f43234208a4ce942e8",
+          "size_bytes": 791587,
+          "sha256": "2e1835ef458dafaf9b0b1ff533aead044025f56f9e61197b5926e2dd5ca28c92"
+        },
+        {
+          "path": "renders/vein-tip-contact-after.png",
+          "mode": "100644",
+          "blob": "a83cc0c77eef431b243ae864400d1cecff126486",
+          "size_bytes": 499200,
+          "sha256": "94b2f0d49655015ec0cfe29e60aa86bf2b55a2d1c7adc805a9951b080d3acf8b"
+        },
+        {
+          "path": "renders/vein-tip-contact-before.png",
+          "mode": "100644",
+          "blob": "48e4334950a322182e0170ba3812b50b68294055",
+          "size_bytes": 519890,
+          "sha256": "f7b47e4ce0eb0c6fe86a3bae53bf5bddd0f8c1ef231ac9bf4733eb6692811777"
+        },
+        {
+          "path": "scripts/audit_vein_support.py",
+          "mode": "100644",
+          "blob": "1f5cbcf89719168d215f4e079796aa2792a7cc04",
+          "size_bytes": 3861,
+          "sha256": "7aac7b9b39b0d650d0e57efaa3feccf92a200e9378703e9467aa4e2d8c68e1e4"
+        },
+        {
+          "path": "scripts/build_support_candidate.py",
+          "mode": "100644",
+          "blob": "b76f6c656cc370f817b8611f56b4fdf66b36036b",
+          "size_bytes": 6668,
+          "sha256": "4f1131fad7f4d1a43c6178a31743e1ccabc6c3c721687fe1749be3cbe485b1ce"
+        },
+        {
+          "path": "scripts/check_embedded_ring_parity.py",
+          "mode": "100644",
+          "blob": "1bc8a7b4cb5802bef2004e6310ecffc310a3e0af",
+          "size_bytes": 2260,
+          "sha256": "fbe4352ba3834a18088a9b139932c94bfce4494171f187490df07e4a097d7dc8"
+        },
+        {
+          "path": "scripts/check_tip_ray_intervals.py",
+          "mode": "100644",
+          "blob": "472dd584bd6db0351a3785a09a0864b39367be22",
+          "size_bytes": 2159,
+          "sha256": "5a0888a3f80c72a2765e386dc42208c0c148aa5cd507328e9b43053e5d4b8d5f"
+        },
+        {
+          "path": "scripts/confirm_terminal_triangle_gaps.py",
+          "mode": "100644",
+          "blob": "760f63edc59fdbc1bb87bcb9540cdbfa90a63c20",
+          "size_bytes": 3287,
+          "sha256": "5f8a609496aae235ac493061cc85abd1deac23cf94b65bfc6d6d47f82956b4e7"
+        },
+        {
+          "path": "scripts/export_check_contact_candidate.py",
+          "mode": "100644",
+          "blob": "f23b0031338aba7307fe0fd4fe8b3d69e3a66b08",
+          "size_bytes": 1719,
+          "sha256": "c63fca872546abf3c66465924b8cf5eeb57e436d38534bb99dd32349b327fac2"
+        },
+        {
+          "path": "scripts/render_attachment_macro.py",
+          "mode": "100644",
+          "blob": "8dc5ec9040d6125c317d74c42ea9eb380fce589c",
+          "size_bytes": 3901,
+          "sha256": "2edbb2f1c03aa11ae9fdebd3fd28c10160f497cee4e2e6d2ed91daeafa209b9b"
+        },
+        {
+          "path": "scripts/triangle_distance.py",
+          "mode": "100644",
+          "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+          "size_bytes": 3186,
+          "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+        },
+        {
+          "path": "scripts/verify_inside_winding.py",
+          "mode": "100644",
+          "blob": "5f4816221cfb304343e6033dbd6170137a9afba6",
+          "size_bytes": 2764,
+          "sha256": "305b684a40b0c04e5c998f4e3d0bad19a2b88d6e96c11de18f5d64a315989369"
+        },
+        {
+          "path": "scripts/verify_support_candidate.py",
+          "mode": "100644",
+          "blob": "3acde393596937493b932a0030a29c4d930127e2",
+          "size_bytes": 4756,
+          "sha256": "4485de3894aa860f24a11f87912d7e08c0b665a9ed8aac8fee75a3009c85bab0"
+        }
+      ]
+    },
+    {
+      "commit": "3d7c43e1afb6b89393114f99e3c14f002b32eba5",
+      "tree": "bfc61de910a31c0da61a91d264324dd90e4ab809",
+      "parents": [
+        "c17fc247da1d5bf25bce98f713129094f5b36b50"
+      ],
+      "file_count": 44,
+      "files": [
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+          "size_bytes": 19,
+          "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+        },
+        {
+          "path": "BASELINE.md",
+          "mode": "100644",
+          "blob": "d65cef77d9cf96cdf70b28a1dfb725b925b168ef",
+          "size_bytes": 1496,
+          "sha256": "773c467a1b7e47dd6ad39ace7762ef6f31415a5f0ccfecd7d721019b243b72b3"
+        },
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "258d885e1a2d86e1163cb3d149bad5900bc69fff",
+          "size_bytes": 5822,
+          "sha256": "66e08d844c7555bbc65fc1fb083c1d1a83127aef2f74ac4bb10d84346191e731"
+        },
+        {
+          "path": "inputs/archived-r06-cameras.json",
+          "mode": "100644",
+          "blob": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+          "size_bytes": 13224,
+          "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+        },
+        {
+          "path": "inputs/leaf-only-r06-nonexact-diagnostic-replay.blend",
+          "mode": "100644",
+          "blob": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+          "size_bytes": 5183724,
+          "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+        },
+        {
+          "path": "inputs/prior-nonexact-replay-proof.json",
+          "mode": "100644",
+          "blob": "97fb194700bcb2533943659c2067bba7e13f9670",
+          "size_bytes": 1573,
+          "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+        },
+        {
+          "path": "models/leaf-only-contact-candidate-v2.blend",
+          "mode": "100644",
+          "blob": "724452f46eb18652c87c7e156992f1b80749fc8f",
+          "size_bytes": 5184080,
+          "sha256": "537f5e9fdd9042858939739a714d875c3624deff317fe855b462374fb7ca93d3"
+        },
+        {
+          "path": "models/leaf-only-contact-candidate-v2.glb",
+          "mode": "100644",
+          "blob": "0e28cb0ba205b04d1141e1688075fcc2b09c98e2",
+          "size_bytes": 1971772,
+          "sha256": "4ffbb9fd351f5be26572284a6a2434ca54650446e9ad4f2fded085ab32cb232a"
+        },
+        {
+          "path": "qa/audit-support.log",
+          "mode": "100644",
+          "blob": "69e5f2ce05101bc63474be1a77b707659d5a6d08",
+          "size_bytes": 4144,
+          "sha256": "6a6a58096c3a1d7724f1f9c9d90b1622d77e91baa4b6e133da2e7605552a8ab1"
+        },
+        {
+          "path": "qa/build-support-candidate-v2.log",
+          "mode": "100644",
+          "blob": "fa912df2beb7f470a225eb517a07db6ffbbadae7",
+          "size_bytes": 1212,
+          "sha256": "9c9991969b94f53a5b54cca372aed7f52891fd7833661e70b868c4ae0fe05dcf"
+        },
+        {
+          "path": "qa/check-embedded-ring-parity.log",
+          "mode": "100644",
+          "blob": "19b8f64e9bbae893c2504305f17c4c89a04b2edd",
+          "size_bytes": 633,
+          "sha256": "7d7cb4d554600b08a40a80472c7318f8633373097b36b05ddf276a35e034fc88"
+        },
+        {
+          "path": "qa/embedded-ring-five-ray-parity.json",
+          "mode": "100644",
+          "blob": "2465b8575860a8b5698f8d1bb5bb1ead9d08e2de",
+          "size_bytes": 647201,
+          "sha256": "84797ff0cc7826383446ca328a2248994a783c2168afca91eb41571ba6732cfa"
+        },
+        {
+          "path": "qa/embedded-ring-winding-verification.json",
+          "mode": "100644",
+          "blob": "04a0724bb48da1f40f52740e588224e38cce3a41",
+          "size_bytes": 991867,
+          "sha256": "883b3660960d69cc3c8db3e14f4d7b4a996a900543ff52ddc085ee8c55ba3a27"
+        },
+        {
+          "path": "qa/export-partial-glb.log",
+          "mode": "100644",
+          "blob": "eab650120382a89360aa7934e121919a10fcac05",
+          "size_bytes": 4163,
+          "sha256": "2398ebf0af860a86249f2c84db430525e951558c752b26997ff7f63d28817ed9"
+        },
+        {
+          "path": "qa/independent/evidence.json",
+          "mode": "100644",
+          "blob": "ab470600274ff68e3ef7f90d11659145d16c516c",
+          "size_bytes": 1776,
+          "sha256": "08a21ccb358e6d424b425889b912f0681b8062170dcf5647d417408bb32c68d8"
+        },
+        {
+          "path": "qa/independent/review.zh.md",
+          "mode": "100644",
+          "blob": "41cfd3cf4c91809b7d8aa99d030f12fd16b441b1",
+          "size_bytes": 2254,
+          "sha256": "4c0fec716deda3fc418d7ed8b3becb5d7c101bd68ca33cec3fbfa705db68a567"
+        },
+        {
+          "path": "qa/macro-render-manifest-exposure-fixed.json",
+          "mode": "100644",
+          "blob": "dc042d2ba385c4f6ecf4726431a03a96eb1a937d",
+          "size_bytes": 1489,
+          "sha256": "f6e65a2c6079e77980077e545bc0e6fa99c2e02fc74b72ca4a12cc051198f26d"
+        },
+        {
+          "path": "qa/macro-render-manifest.json",
+          "mode": "100644",
+          "blob": "75b673caf95da90ec2850b277946bcb288d2d17e",
+          "size_bytes": 1431,
+          "sha256": "e75d63a44eb6b21e0e03394ccabc7999b36dcce9e8c64cab5189e17ca4c9ccbf"
+        },
+        {
+          "path": "qa/partial-glb-roundtrip.json",
+          "mode": "100644",
+          "blob": "3669cc9929b8609ee8654e0112dcf3aea402a4c3",
+          "size_bytes": 3371,
+          "sha256": "346124efdd35404fc11dbb6f0535de0e6f2f96a80651ca6be1b32d8c2e90f7d8"
+        },
+        {
+          "path": "qa/render-attachment-macro-exposure-fixed.log",
+          "mode": "100644",
+          "blob": "bb87d36b602329c87a9673d44d5301c86197d6b7",
+          "size_bytes": 15413,
+          "sha256": "3c2357dd7649125837c6003c8caf8d6c0e0a2831eb887394cee49a2f74e23816"
+        },
+        {
+          "path": "qa/render-attachment-macro.log",
+          "mode": "100644",
+          "blob": "243ea79b57598722f204e8f62d21d79ca120ad76",
+          "size_bytes": 15383,
+          "sha256": "b1f0de1559e93a0de4a6bad1dd985096d87415fb23778c328e7fe48dfce44787"
+        },
+        {
+          "path": "qa/support-candidate-continuous-checks.json",
+          "mode": "100644",
+          "blob": "f9097627dda5bc76be04eed56a2d11845e560523",
+          "size_bytes": 1986881,
+          "sha256": "3f118149f8859e6f3f68f6d7f878b50b224a5f730f533924d70701458860f96c"
+        },
+        {
+          "path": "qa/support-candidate-v2.json",
+          "mode": "100644",
+          "blob": "3caad102538fc7cd2690ff8d6825cfc5c53fa12d",
+          "size_bytes": 245603,
+          "sha256": "206af931520c2657bf0ba49b8e3f254452ed365ecb143808cf809f2e0d31908f"
+        },
+        {
+          "path": "qa/terminal-triangle-distances.json",
+          "mode": "100644",
+          "blob": "615a2e80baa5e9849290c0e6dd16bd5e2e8f7a11",
+          "size_bytes": 147727,
+          "sha256": "c7ed0bd8c5871f878f9b436c35ccad6816fd9ad38153920599eabfb86e1107dc"
+        },
+        {
+          "path": "qa/terminal-triangle-distances.log",
+          "mode": "100644",
+          "blob": "18827d20c4e828aeb9f0e9fd5f68ebd75342614f",
+          "size_bytes": 1076,
+          "sha256": "10af000f121a31313fffca93098e960f0cdec2397e3283b828d954c1ca7b6d45"
+        },
+        {
+          "path": "qa/tip-multiple-ray-intervals.json",
+          "mode": "100644",
+          "blob": "44dea3f4226abe25d2739ec7f281b557babb5800",
+          "size_bytes": 6925,
+          "sha256": "8342b5c18f6fc19c140942f4ecf5735f67b5f00e747e4f1026dc340f0fdc058f"
+        },
+        {
+          "path": "qa/tip-multiple-ray.log",
+          "mode": "100644",
+          "blob": "83e4504076f62c8783418c26ce92c87e0b968d7b",
+          "size_bytes": 671,
+          "sha256": "b368615a6b58513a7db88d38ad8fc689edea47948e93e9e7dd039a664c29dd55"
+        },
+        {
+          "path": "qa/vein-shell-support-samples.json",
+          "mode": "100644",
+          "blob": "5d26ce585c021cffe23e8929d04f957d8e05800c",
+          "size_bytes": 9890693,
+          "sha256": "00cb69475be0cc3c5091dd2046c20181cd6c980473f536f5c144f001b5707c89"
+        },
+        {
+          "path": "qa/verify-inside-winding.log",
+          "mode": "100644",
+          "blob": "3e9fbf0857c845fbf6cf6acad587afbf36fab18b",
+          "size_bytes": 192,
+          "sha256": "771e574519e2227870b2ace7aea1680c392c42e17adea15c66958dd49bd2de7b"
+        },
+        {
+          "path": "qa/verify-support-candidate.log",
+          "mode": "100644",
+          "blob": "8885d906939c636e020ee7124724763357058760",
+          "size_bytes": 3544,
+          "sha256": "cc48a33526d776331e57459904f7c6ed7bd12f9aa6e9ea3948a32395c9c04649"
+        },
+        {
+          "path": "renders/exposure-fixed/vein-tip-contact-after.png",
+          "mode": "100644",
+          "blob": "64da178138d9ec1d1d0dd4ccc3856b4db843d601",
+          "size_bytes": 774419,
+          "sha256": "2471337f9925c6ae33140eb87c01a38113e5a7bf3715f900113ba28c8c6af5a9"
+        },
+        {
+          "path": "renders/exposure-fixed/vein-tip-contact-before.png",
+          "mode": "100644",
+          "blob": "53886e5948f4b21d583ac2f43234208a4ce942e8",
+          "size_bytes": 791587,
+          "sha256": "2e1835ef458dafaf9b0b1ff533aead044025f56f9e61197b5926e2dd5ca28c92"
+        },
+        {
+          "path": "renders/vein-tip-contact-after.png",
+          "mode": "100644",
+          "blob": "a83cc0c77eef431b243ae864400d1cecff126486",
+          "size_bytes": 499200,
+          "sha256": "94b2f0d49655015ec0cfe29e60aa86bf2b55a2d1c7adc805a9951b080d3acf8b"
+        },
+        {
+          "path": "renders/vein-tip-contact-before.png",
+          "mode": "100644",
+          "blob": "48e4334950a322182e0170ba3812b50b68294055",
+          "size_bytes": 519890,
+          "sha256": "f7b47e4ce0eb0c6fe86a3bae53bf5bddd0f8c1ef231ac9bf4733eb6692811777"
+        },
+        {
+          "path": "scripts/audit_vein_support.py",
+          "mode": "100644",
+          "blob": "1f5cbcf89719168d215f4e079796aa2792a7cc04",
+          "size_bytes": 3861,
+          "sha256": "7aac7b9b39b0d650d0e57efaa3feccf92a200e9378703e9467aa4e2d8c68e1e4"
+        },
+        {
+          "path": "scripts/build_support_candidate.py",
+          "mode": "100644",
+          "blob": "b76f6c656cc370f817b8611f56b4fdf66b36036b",
+          "size_bytes": 6668,
+          "sha256": "4f1131fad7f4d1a43c6178a31743e1ccabc6c3c721687fe1749be3cbe485b1ce"
+        },
+        {
+          "path": "scripts/check_embedded_ring_parity.py",
+          "mode": "100644",
+          "blob": "1bc8a7b4cb5802bef2004e6310ecffc310a3e0af",
+          "size_bytes": 2260,
+          "sha256": "fbe4352ba3834a18088a9b139932c94bfce4494171f187490df07e4a097d7dc8"
+        },
+        {
+          "path": "scripts/check_tip_ray_intervals.py",
+          "mode": "100644",
+          "blob": "472dd584bd6db0351a3785a09a0864b39367be22",
+          "size_bytes": 2159,
+          "sha256": "5a0888a3f80c72a2765e386dc42208c0c148aa5cd507328e9b43053e5d4b8d5f"
+        },
+        {
+          "path": "scripts/confirm_terminal_triangle_gaps.py",
+          "mode": "100644",
+          "blob": "760f63edc59fdbc1bb87bcb9540cdbfa90a63c20",
+          "size_bytes": 3287,
+          "sha256": "5f8a609496aae235ac493061cc85abd1deac23cf94b65bfc6d6d47f82956b4e7"
+        },
+        {
+          "path": "scripts/export_check_contact_candidate.py",
+          "mode": "100644",
+          "blob": "f23b0031338aba7307fe0fd4fe8b3d69e3a66b08",
+          "size_bytes": 1719,
+          "sha256": "c63fca872546abf3c66465924b8cf5eeb57e436d38534bb99dd32349b327fac2"
+        },
+        {
+          "path": "scripts/render_attachment_macro.py",
+          "mode": "100644",
+          "blob": "8dc5ec9040d6125c317d74c42ea9eb380fce589c",
+          "size_bytes": 3901,
+          "sha256": "2edbb2f1c03aa11ae9fdebd3fd28c10160f497cee4e2e6d2ed91daeafa209b9b"
+        },
+        {
+          "path": "scripts/triangle_distance.py",
+          "mode": "100644",
+          "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+          "size_bytes": 3186,
+          "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+        },
+        {
+          "path": "scripts/verify_inside_winding.py",
+          "mode": "100644",
+          "blob": "5f4816221cfb304343e6033dbd6170137a9afba6",
+          "size_bytes": 2764,
+          "sha256": "305b684a40b0c04e5c998f4e3d0bad19a2b88d6e96c11de18f5d64a315989369"
+        },
+        {
+          "path": "scripts/verify_support_candidate.py",
+          "mode": "100644",
+          "blob": "3acde393596937493b932a0030a29c4d930127e2",
+          "size_bytes": 4756,
+          "sha256": "4485de3894aa860f24a11f87912d7e08c0b665a9ed8aac8fee75a3009c85bab0"
+        }
+      ]
+    },
+    {
+      "commit": "c4d2720206a1be0339ba3bf4ce78388d86ffcfbf",
+      "tree": "5a616cea5c2bea34fc97db483df7ea096652cd4a",
+      "parents": [
+        "3d7c43e1afb6b89393114f99e3c14f002b32eba5"
+      ],
+      "file_count": 58,
+      "files": [
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+          "size_bytes": 19,
+          "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+        },
+        {
+          "path": "BASELINE.md",
+          "mode": "100644",
+          "blob": "d65cef77d9cf96cdf70b28a1dfb725b925b168ef",
+          "size_bytes": 1496,
+          "sha256": "773c467a1b7e47dd6ad39ace7762ef6f31415a5f0ccfecd7d721019b243b72b3"
+        },
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "258d885e1a2d86e1163cb3d149bad5900bc69fff",
+          "size_bytes": 5822,
+          "sha256": "66e08d844c7555bbc65fc1fb083c1d1a83127aef2f74ac4bb10d84346191e731"
+        },
+        {
+          "path": "followup/tube-regression/README.zh.md",
+          "mode": "100644",
+          "blob": "88dbb18e6eaaf9c64e1edd2168237bdaa716d3ed",
+          "size_bytes": 1685,
+          "sha256": "63b0fe45a2470cca0b13dc3a2fa61da440b5dabaa291c6c1d12c86ce6bd7359b"
+        },
+        {
+          "path": "followup/tube-regression/check-tube-regressions.log",
+          "mode": "100644",
+          "blob": "c281374bee1e8d2ed889acbc60cba898cae6503f",
+          "size_bytes": 2168,
+          "sha256": "c0b48de28c5006cf6b3eb222121d8114ca2e27bdeecde33fde51351c2a464579"
+        },
+        {
+          "path": "followup/tube-regression/check_tube_regressions.py",
+          "mode": "100644",
+          "blob": "e6875aabf85c562644d0f4d6104d3cdcb170124c",
+          "size_bytes": 4309,
+          "sha256": "9e2b8e5d28903db927ec98c80b01856298d3d899d4bc17ec73b0b0733bbfeb5a"
+        },
+        {
+          "path": "followup/tube-regression/first-execution/README.zh.md",
+          "mode": "100644",
+          "blob": "632124e42674a99d48b46dac08a6aabd37de8458",
+          "size_bytes": 1158,
+          "sha256": "1f66ec470cbe079dae524f8e6166bd7d1e3a6d49365d9b8a8d430912a7269dae"
+        },
+        {
+          "path": "followup/tube-regression/first-execution/check-tube-regressions.log",
+          "mode": "100644",
+          "blob": "c281374bee1e8d2ed889acbc60cba898cae6503f",
+          "size_bytes": 2168,
+          "sha256": "c0b48de28c5006cf6b3eb222121d8114ca2e27bdeecde33fde51351c2a464579"
+        },
+        {
+          "path": "followup/tube-regression/first-execution/check_tube_regressions.py",
+          "mode": "100644",
+          "blob": "68f735703c2cc3d7950014d227fd6831df05e62e",
+          "size_bytes": 4344,
+          "sha256": "d070df073ec1b89e898360c6d0ac6122d9215f29978d2bb4c8485f4011060f7f"
+        },
+        {
+          "path": "followup/tube-regression/first-execution/triangle_distance.py",
+          "mode": "100644",
+          "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+          "size_bytes": 3186,
+          "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+        },
+        {
+          "path": "followup/tube-regression/first-execution/tube-regression-results.json",
+          "mode": "100644",
+          "blob": "be41eed673b145cdeacca366dff757b9f6e8c890",
+          "size_bytes": 134566,
+          "sha256": "b72cabe05968b329834de15e2a98350faf542f8fcdb1fd9123f97c31b0bc4734"
+        },
+        {
+          "path": "followup/tube-regression/independent/regression-followup-review.zh.md",
+          "mode": "100644",
+          "blob": "f4db77a49e2db9716d5aa01b2ff2e89ebfed5d1d",
+          "size_bytes": 1508,
+          "sha256": "1583e640a17c511e0e7985c28e955c48c987457604a9fc27b912782b6d05d194"
+        },
+        {
+          "path": "followup/tube-regression/independent/regression-self-bvh-fixture.json",
+          "mode": "100644",
+          "blob": "81f31830ff020d989951d4d2a1083e47932711da",
+          "size_bytes": 1629,
+          "sha256": "00fd9a209b300e972711d74f51548654448bd570c54238f68b3fe8fd24787bb4"
+        },
+        {
+          "path": "followup/tube-regression/independent/test_bvh_self.py",
+          "mode": "100644",
+          "blob": "662aa895a4f44bdaf694e8fc1a2555187663c48e",
+          "size_bytes": 278,
+          "sha256": "f1a5b2dfb269854ea78e433fab58d285ffe0e9ab155929e6131a8ed895a5e9fd"
+        },
+        {
+          "path": "followup/tube-regression/triangle_distance.py",
+          "mode": "100644",
+          "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+          "size_bytes": 3186,
+          "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+        },
+        {
+          "path": "followup/tube-regression/tube-regression-results.json",
+          "mode": "100644",
+          "blob": "93831efbfb68c579dbb45c48bdb66c52d9ae6d4b",
+          "size_bytes": 134566,
+          "sha256": "feefed30fbfaa045b6c9b06d977e84402b8c826c85e10bb5ee3e83a817002c6b"
+        },
+        {
+          "path": "followup/tube-regression/v2-file-invariance.json",
+          "mode": "100644",
+          "blob": "ccc39d1450dbe9f712b3f9b0fef7472dba8be82f",
+          "size_bytes": 11922,
+          "sha256": "a707eafb1174297c3c7c387e40eea75e49ca26a5411b238660ad33a1e63cddd1"
+        },
+        {
+          "path": "inputs/archived-r06-cameras.json",
+          "mode": "100644",
+          "blob": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+          "size_bytes": 13224,
+          "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+        },
+        {
+          "path": "inputs/leaf-only-r06-nonexact-diagnostic-replay.blend",
+          "mode": "100644",
+          "blob": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+          "size_bytes": 5183724,
+          "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+        },
+        {
+          "path": "inputs/prior-nonexact-replay-proof.json",
+          "mode": "100644",
+          "blob": "97fb194700bcb2533943659c2067bba7e13f9670",
+          "size_bytes": 1573,
+          "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+        },
+        {
+          "path": "models/leaf-only-contact-candidate-v2.blend",
+          "mode": "100644",
+          "blob": "724452f46eb18652c87c7e156992f1b80749fc8f",
+          "size_bytes": 5184080,
+          "sha256": "537f5e9fdd9042858939739a714d875c3624deff317fe855b462374fb7ca93d3"
+        },
+        {
+          "path": "models/leaf-only-contact-candidate-v2.glb",
+          "mode": "100644",
+          "blob": "0e28cb0ba205b04d1141e1688075fcc2b09c98e2",
+          "size_bytes": 1971772,
+          "sha256": "4ffbb9fd351f5be26572284a6a2434ca54650446e9ad4f2fded085ab32cb232a"
+        },
+        {
+          "path": "qa/audit-support.log",
+          "mode": "100644",
+          "blob": "69e5f2ce05101bc63474be1a77b707659d5a6d08",
+          "size_bytes": 4144,
+          "sha256": "6a6a58096c3a1d7724f1f9c9d90b1622d77e91baa4b6e133da2e7605552a8ab1"
+        },
+        {
+          "path": "qa/build-support-candidate-v2.log",
+          "mode": "100644",
+          "blob": "fa912df2beb7f470a225eb517a07db6ffbbadae7",
+          "size_bytes": 1212,
+          "sha256": "9c9991969b94f53a5b54cca372aed7f52891fd7833661e70b868c4ae0fe05dcf"
+        },
+        {
+          "path": "qa/check-embedded-ring-parity.log",
+          "mode": "100644",
+          "blob": "19b8f64e9bbae893c2504305f17c4c89a04b2edd",
+          "size_bytes": 633,
+          "sha256": "7d7cb4d554600b08a40a80472c7318f8633373097b36b05ddf276a35e034fc88"
+        },
+        {
+          "path": "qa/embedded-ring-five-ray-parity.json",
+          "mode": "100644",
+          "blob": "2465b8575860a8b5698f8d1bb5bb1ead9d08e2de",
+          "size_bytes": 647201,
+          "sha256": "84797ff0cc7826383446ca328a2248994a783c2168afca91eb41571ba6732cfa"
+        },
+        {
+          "path": "qa/embedded-ring-winding-verification.json",
+          "mode": "100644",
+          "blob": "04a0724bb48da1f40f52740e588224e38cce3a41",
+          "size_bytes": 991867,
+          "sha256": "883b3660960d69cc3c8db3e14f4d7b4a996a900543ff52ddc085ee8c55ba3a27"
+        },
+        {
+          "path": "qa/export-partial-glb.log",
+          "mode": "100644",
+          "blob": "eab650120382a89360aa7934e121919a10fcac05",
+          "size_bytes": 4163,
+          "sha256": "2398ebf0af860a86249f2c84db430525e951558c752b26997ff7f63d28817ed9"
+        },
+        {
+          "path": "qa/independent/evidence.json",
+          "mode": "100644",
+          "blob": "ab470600274ff68e3ef7f90d11659145d16c516c",
+          "size_bytes": 1776,
+          "sha256": "08a21ccb358e6d424b425889b912f0681b8062170dcf5647d417408bb32c68d8"
+        },
+        {
+          "path": "qa/independent/review.zh.md",
+          "mode": "100644",
+          "blob": "41cfd3cf4c91809b7d8aa99d030f12fd16b441b1",
+          "size_bytes": 2254,
+          "sha256": "4c0fec716deda3fc418d7ed8b3becb5d7c101bd68ca33cec3fbfa705db68a567"
+        },
+        {
+          "path": "qa/macro-render-manifest-exposure-fixed.json",
+          "mode": "100644",
+          "blob": "dc042d2ba385c4f6ecf4726431a03a96eb1a937d",
+          "size_bytes": 1489,
+          "sha256": "f6e65a2c6079e77980077e545bc0e6fa99c2e02fc74b72ca4a12cc051198f26d"
+        },
+        {
+          "path": "qa/macro-render-manifest.json",
+          "mode": "100644",
+          "blob": "75b673caf95da90ec2850b277946bcb288d2d17e",
+          "size_bytes": 1431,
+          "sha256": "e75d63a44eb6b21e0e03394ccabc7999b36dcce9e8c64cab5189e17ca4c9ccbf"
+        },
+        {
+          "path": "qa/partial-glb-roundtrip.json",
+          "mode": "100644",
+          "blob": "3669cc9929b8609ee8654e0112dcf3aea402a4c3",
+          "size_bytes": 3371,
+          "sha256": "346124efdd35404fc11dbb6f0535de0e6f2f96a80651ca6be1b32d8c2e90f7d8"
+        },
+        {
+          "path": "qa/render-attachment-macro-exposure-fixed.log",
+          "mode": "100644",
+          "blob": "bb87d36b602329c87a9673d44d5301c86197d6b7",
+          "size_bytes": 15413,
+          "sha256": "3c2357dd7649125837c6003c8caf8d6c0e0a2831eb887394cee49a2f74e23816"
+        },
+        {
+          "path": "qa/render-attachment-macro.log",
+          "mode": "100644",
+          "blob": "243ea79b57598722f204e8f62d21d79ca120ad76",
+          "size_bytes": 15383,
+          "sha256": "b1f0de1559e93a0de4a6bad1dd985096d87415fb23778c328e7fe48dfce44787"
+        },
+        {
+          "path": "qa/support-candidate-continuous-checks.json",
+          "mode": "100644",
+          "blob": "f9097627dda5bc76be04eed56a2d11845e560523",
+          "size_bytes": 1986881,
+          "sha256": "3f118149f8859e6f3f68f6d7f878b50b224a5f730f533924d70701458860f96c"
+        },
+        {
+          "path": "qa/support-candidate-v2.json",
+          "mode": "100644",
+          "blob": "3caad102538fc7cd2690ff8d6825cfc5c53fa12d",
+          "size_bytes": 245603,
+          "sha256": "206af931520c2657bf0ba49b8e3f254452ed365ecb143808cf809f2e0d31908f"
+        },
+        {
+          "path": "qa/terminal-triangle-distances.json",
+          "mode": "100644",
+          "blob": "615a2e80baa5e9849290c0e6dd16bd5e2e8f7a11",
+          "size_bytes": 147727,
+          "sha256": "c7ed0bd8c5871f878f9b436c35ccad6816fd9ad38153920599eabfb86e1107dc"
+        },
+        {
+          "path": "qa/terminal-triangle-distances.log",
+          "mode": "100644",
+          "blob": "18827d20c4e828aeb9f0e9fd5f68ebd75342614f",
+          "size_bytes": 1076,
+          "sha256": "10af000f121a31313fffca93098e960f0cdec2397e3283b828d954c1ca7b6d45"
+        },
+        {
+          "path": "qa/tip-multiple-ray-intervals.json",
+          "mode": "100644",
+          "blob": "44dea3f4226abe25d2739ec7f281b557babb5800",
+          "size_bytes": 6925,
+          "sha256": "8342b5c18f6fc19c140942f4ecf5735f67b5f00e747e4f1026dc340f0fdc058f"
+        },
+        {
+          "path": "qa/tip-multiple-ray.log",
+          "mode": "100644",
+          "blob": "83e4504076f62c8783418c26ce92c87e0b968d7b",
+          "size_bytes": 671,
+          "sha256": "b368615a6b58513a7db88d38ad8fc689edea47948e93e9e7dd039a664c29dd55"
+        },
+        {
+          "path": "qa/vein-shell-support-samples.json",
+          "mode": "100644",
+          "blob": "5d26ce585c021cffe23e8929d04f957d8e05800c",
+          "size_bytes": 9890693,
+          "sha256": "00cb69475be0cc3c5091dd2046c20181cd6c980473f536f5c144f001b5707c89"
+        },
+        {
+          "path": "qa/verify-inside-winding.log",
+          "mode": "100644",
+          "blob": "3e9fbf0857c845fbf6cf6acad587afbf36fab18b",
+          "size_bytes": 192,
+          "sha256": "771e574519e2227870b2ace7aea1680c392c42e17adea15c66958dd49bd2de7b"
+        },
+        {
+          "path": "qa/verify-support-candidate.log",
+          "mode": "100644",
+          "blob": "8885d906939c636e020ee7124724763357058760",
+          "size_bytes": 3544,
+          "sha256": "cc48a33526d776331e57459904f7c6ed7bd12f9aa6e9ea3948a32395c9c04649"
+        },
+        {
+          "path": "renders/exposure-fixed/vein-tip-contact-after.png",
+          "mode": "100644",
+          "blob": "64da178138d9ec1d1d0dd4ccc3856b4db843d601",
+          "size_bytes": 774419,
+          "sha256": "2471337f9925c6ae33140eb87c01a38113e5a7bf3715f900113ba28c8c6af5a9"
+        },
+        {
+          "path": "renders/exposure-fixed/vein-tip-contact-before.png",
+          "mode": "100644",
+          "blob": "53886e5948f4b21d583ac2f43234208a4ce942e8",
+          "size_bytes": 791587,
+          "sha256": "2e1835ef458dafaf9b0b1ff533aead044025f56f9e61197b5926e2dd5ca28c92"
+        },
+        {
+          "path": "renders/vein-tip-contact-after.png",
+          "mode": "100644",
+          "blob": "a83cc0c77eef431b243ae864400d1cecff126486",
+          "size_bytes": 499200,
+          "sha256": "94b2f0d49655015ec0cfe29e60aa86bf2b55a2d1c7adc805a9951b080d3acf8b"
+        },
+        {
+          "path": "renders/vein-tip-contact-before.png",
+          "mode": "100644",
+          "blob": "48e4334950a322182e0170ba3812b50b68294055",
+          "size_bytes": 519890,
+          "sha256": "f7b47e4ce0eb0c6fe86a3bae53bf5bddd0f8c1ef231ac9bf4733eb6692811777"
+        },
+        {
+          "path": "scripts/audit_vein_support.py",
+          "mode": "100644",
+          "blob": "1f5cbcf89719168d215f4e079796aa2792a7cc04",
+          "size_bytes": 3861,
+          "sha256": "7aac7b9b39b0d650d0e57efaa3feccf92a200e9378703e9467aa4e2d8c68e1e4"
+        },
+        {
+          "path": "scripts/build_support_candidate.py",
+          "mode": "100644",
+          "blob": "b76f6c656cc370f817b8611f56b4fdf66b36036b",
+          "size_bytes": 6668,
+          "sha256": "4f1131fad7f4d1a43c6178a31743e1ccabc6c3c721687fe1749be3cbe485b1ce"
+        },
+        {
+          "path": "scripts/check_embedded_ring_parity.py",
+          "mode": "100644",
+          "blob": "1bc8a7b4cb5802bef2004e6310ecffc310a3e0af",
+          "size_bytes": 2260,
+          "sha256": "fbe4352ba3834a18088a9b139932c94bfce4494171f187490df07e4a097d7dc8"
+        },
+        {
+          "path": "scripts/check_tip_ray_intervals.py",
+          "mode": "100644",
+          "blob": "472dd584bd6db0351a3785a09a0864b39367be22",
+          "size_bytes": 2159,
+          "sha256": "5a0888a3f80c72a2765e386dc42208c0c148aa5cd507328e9b43053e5d4b8d5f"
+        },
+        {
+          "path": "scripts/confirm_terminal_triangle_gaps.py",
+          "mode": "100644",
+          "blob": "760f63edc59fdbc1bb87bcb9540cdbfa90a63c20",
+          "size_bytes": 3287,
+          "sha256": "5f8a609496aae235ac493061cc85abd1deac23cf94b65bfc6d6d47f82956b4e7"
+        },
+        {
+          "path": "scripts/export_check_contact_candidate.py",
+          "mode": "100644",
+          "blob": "f23b0031338aba7307fe0fd4fe8b3d69e3a66b08",
+          "size_bytes": 1719,
+          "sha256": "c63fca872546abf3c66465924b8cf5eeb57e436d38534bb99dd32349b327fac2"
+        },
+        {
+          "path": "scripts/render_attachment_macro.py",
+          "mode": "100644",
+          "blob": "8dc5ec9040d6125c317d74c42ea9eb380fce589c",
+          "size_bytes": 3901,
+          "sha256": "2edbb2f1c03aa11ae9fdebd3fd28c10160f497cee4e2e6d2ed91daeafa209b9b"
+        },
+        {
+          "path": "scripts/triangle_distance.py",
+          "mode": "100644",
+          "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+          "size_bytes": 3186,
+          "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+        },
+        {
+          "path": "scripts/verify_inside_winding.py",
+          "mode": "100644",
+          "blob": "5f4816221cfb304343e6033dbd6170137a9afba6",
+          "size_bytes": 2764,
+          "sha256": "305b684a40b0c04e5c998f4e3d0bad19a2b88d6e96c11de18f5d64a315989369"
+        },
+        {
+          "path": "scripts/verify_support_candidate.py",
+          "mode": "100644",
+          "blob": "3acde393596937493b932a0030a29c4d930127e2",
+          "size_bytes": 4756,
+          "sha256": "4485de3894aa860f24a11f87912d7e08c0b665a9ed8aac8fee75a3009c85bab0"
+        }
+      ]
+    }
+  ],
+  "history_ref": "refs/heads/history/lakeleaf-vein-contact-original-20261104",
+  "archive_ref": "refs/heads/archive/lake-leafboat-r01-20261104",
+  "base_commit": "8016d3f293785dfc2e246ddfa638b741c567d39d",
+  "archive_prefix": "scenes/lake-leafboat-stage/diagnostics/vein-contact-v2-20261104",
+  "file_count": 58,
+  "total_file_bytes": 29261689,
+  "files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+      "size_bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "BASELINE.md",
+      "mode": "100644",
+      "blob": "d65cef77d9cf96cdf70b28a1dfb725b925b168ef",
+      "size_bytes": 1496,
+      "sha256": "773c467a1b7e47dd6ad39ace7762ef6f31415a5f0ccfecd7d721019b243b72b3"
+    },
+    {
+      "path": "README.zh.md",
+      "mode": "100644",
+      "blob": "258d885e1a2d86e1163cb3d149bad5900bc69fff",
+      "size_bytes": 5822,
+      "sha256": "66e08d844c7555bbc65fc1fb083c1d1a83127aef2f74ac4bb10d84346191e731"
+    },
+    {
+      "path": "followup/tube-regression/README.zh.md",
+      "mode": "100644",
+      "blob": "88dbb18e6eaaf9c64e1edd2168237bdaa716d3ed",
+      "size_bytes": 1685,
+      "sha256": "63b0fe45a2470cca0b13dc3a2fa61da440b5dabaa291c6c1d12c86ce6bd7359b"
+    },
+    {
+      "path": "followup/tube-regression/check-tube-regressions.log",
+      "mode": "100644",
+      "blob": "c281374bee1e8d2ed889acbc60cba898cae6503f",
+      "size_bytes": 2168,
+      "sha256": "c0b48de28c5006cf6b3eb222121d8114ca2e27bdeecde33fde51351c2a464579"
+    },
+    {
+      "path": "followup/tube-regression/check_tube_regressions.py",
+      "mode": "100644",
+      "blob": "e6875aabf85c562644d0f4d6104d3cdcb170124c",
+      "size_bytes": 4309,
+      "sha256": "9e2b8e5d28903db927ec98c80b01856298d3d899d4bc17ec73b0b0733bbfeb5a"
+    },
+    {
+      "path": "followup/tube-regression/first-execution/README.zh.md",
+      "mode": "100644",
+      "blob": "632124e42674a99d48b46dac08a6aabd37de8458",
+      "size_bytes": 1158,
+      "sha256": "1f66ec470cbe079dae524f8e6166bd7d1e3a6d49365d9b8a8d430912a7269dae"
+    },
+    {
+      "path": "followup/tube-regression/first-execution/check-tube-regressions.log",
+      "mode": "100644",
+      "blob": "c281374bee1e8d2ed889acbc60cba898cae6503f",
+      "size_bytes": 2168,
+      "sha256": "c0b48de28c5006cf6b3eb222121d8114ca2e27bdeecde33fde51351c2a464579"
+    },
+    {
+      "path": "followup/tube-regression/first-execution/check_tube_regressions.py",
+      "mode": "100644",
+      "blob": "68f735703c2cc3d7950014d227fd6831df05e62e",
+      "size_bytes": 4344,
+      "sha256": "d070df073ec1b89e898360c6d0ac6122d9215f29978d2bb4c8485f4011060f7f"
+    },
+    {
+      "path": "followup/tube-regression/first-execution/triangle_distance.py",
+      "mode": "100644",
+      "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+      "size_bytes": 3186,
+      "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+    },
+    {
+      "path": "followup/tube-regression/first-execution/tube-regression-results.json",
+      "mode": "100644",
+      "blob": "be41eed673b145cdeacca366dff757b9f6e8c890",
+      "size_bytes": 134566,
+      "sha256": "b72cabe05968b329834de15e2a98350faf542f8fcdb1fd9123f97c31b0bc4734"
+    },
+    {
+      "path": "followup/tube-regression/independent/regression-followup-review.zh.md",
+      "mode": "100644",
+      "blob": "f4db77a49e2db9716d5aa01b2ff2e89ebfed5d1d",
+      "size_bytes": 1508,
+      "sha256": "1583e640a17c511e0e7985c28e955c48c987457604a9fc27b912782b6d05d194"
+    },
+    {
+      "path": "followup/tube-regression/independent/regression-self-bvh-fixture.json",
+      "mode": "100644",
+      "blob": "81f31830ff020d989951d4d2a1083e47932711da",
+      "size_bytes": 1629,
+      "sha256": "00fd9a209b300e972711d74f51548654448bd570c54238f68b3fe8fd24787bb4"
+    },
+    {
+      "path": "followup/tube-regression/independent/test_bvh_self.py",
+      "mode": "100644",
+      "blob": "662aa895a4f44bdaf694e8fc1a2555187663c48e",
+      "size_bytes": 278,
+      "sha256": "f1a5b2dfb269854ea78e433fab58d285ffe0e9ab155929e6131a8ed895a5e9fd"
+    },
+    {
+      "path": "followup/tube-regression/triangle_distance.py",
+      "mode": "100644",
+      "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+      "size_bytes": 3186,
+      "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+    },
+    {
+      "path": "followup/tube-regression/tube-regression-results.json",
+      "mode": "100644",
+      "blob": "93831efbfb68c579dbb45c48bdb66c52d9ae6d4b",
+      "size_bytes": 134566,
+      "sha256": "feefed30fbfaa045b6c9b06d977e84402b8c826c85e10bb5ee3e83a817002c6b"
+    },
+    {
+      "path": "followup/tube-regression/v2-file-invariance.json",
+      "mode": "100644",
+      "blob": "ccc39d1450dbe9f712b3f9b0fef7472dba8be82f",
+      "size_bytes": 11922,
+      "sha256": "a707eafb1174297c3c7c387e40eea75e49ca26a5411b238660ad33a1e63cddd1"
+    },
+    {
+      "path": "inputs/archived-r06-cameras.json",
+      "mode": "100644",
+      "blob": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+      "size_bytes": 13224,
+      "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+    },
+    {
+      "path": "inputs/leaf-only-r06-nonexact-diagnostic-replay.blend",
+      "mode": "100644",
+      "blob": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+      "size_bytes": 5183724,
+      "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+    },
+    {
+      "path": "inputs/prior-nonexact-replay-proof.json",
+      "mode": "100644",
+      "blob": "97fb194700bcb2533943659c2067bba7e13f9670",
+      "size_bytes": 1573,
+      "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+    },
+    {
+      "path": "models/leaf-only-contact-candidate-v2.blend",
+      "mode": "100644",
+      "blob": "724452f46eb18652c87c7e156992f1b80749fc8f",
+      "size_bytes": 5184080,
+      "sha256": "537f5e9fdd9042858939739a714d875c3624deff317fe855b462374fb7ca93d3"
+    },
+    {
+      "path": "models/leaf-only-contact-candidate-v2.glb",
+      "mode": "100644",
+      "blob": "0e28cb0ba205b04d1141e1688075fcc2b09c98e2",
+      "size_bytes": 1971772,
+      "sha256": "4ffbb9fd351f5be26572284a6a2434ca54650446e9ad4f2fded085ab32cb232a"
+    },
+    {
+      "path": "qa/audit-support.log",
+      "mode": "100644",
+      "blob": "69e5f2ce05101bc63474be1a77b707659d5a6d08",
+      "size_bytes": 4144,
+      "sha256": "6a6a58096c3a1d7724f1f9c9d90b1622d77e91baa4b6e133da2e7605552a8ab1"
+    },
+    {
+      "path": "qa/build-support-candidate-v2.log",
+      "mode": "100644",
+      "blob": "fa912df2beb7f470a225eb517a07db6ffbbadae7",
+      "size_bytes": 1212,
+      "sha256": "9c9991969b94f53a5b54cca372aed7f52891fd7833661e70b868c4ae0fe05dcf"
+    },
+    {
+      "path": "qa/check-embedded-ring-parity.log",
+      "mode": "100644",
+      "blob": "19b8f64e9bbae893c2504305f17c4c89a04b2edd",
+      "size_bytes": 633,
+      "sha256": "7d7cb4d554600b08a40a80472c7318f8633373097b36b05ddf276a35e034fc88"
+    },
+    {
+      "path": "qa/embedded-ring-five-ray-parity.json",
+      "mode": "100644",
+      "blob": "2465b8575860a8b5698f8d1bb5bb1ead9d08e2de",
+      "size_bytes": 647201,
+      "sha256": "84797ff0cc7826383446ca328a2248994a783c2168afca91eb41571ba6732cfa"
+    },
+    {
+      "path": "qa/embedded-ring-winding-verification.json",
+      "mode": "100644",
+      "blob": "04a0724bb48da1f40f52740e588224e38cce3a41",
+      "size_bytes": 991867,
+      "sha256": "883b3660960d69cc3c8db3e14f4d7b4a996a900543ff52ddc085ee8c55ba3a27"
+    },
+    {
+      "path": "qa/export-partial-glb.log",
+      "mode": "100644",
+      "blob": "eab650120382a89360aa7934e121919a10fcac05",
+      "size_bytes": 4163,
+      "sha256": "2398ebf0af860a86249f2c84db430525e951558c752b26997ff7f63d28817ed9"
+    },
+    {
+      "path": "qa/independent/evidence.json",
+      "mode": "100644",
+      "blob": "ab470600274ff68e3ef7f90d11659145d16c516c",
+      "size_bytes": 1776,
+      "sha256": "08a21ccb358e6d424b425889b912f0681b8062170dcf5647d417408bb32c68d8"
+    },
+    {
+      "path": "qa/independent/review.zh.md",
+      "mode": "100644",
+      "blob": "41cfd3cf4c91809b7d8aa99d030f12fd16b441b1",
+      "size_bytes": 2254,
+      "sha256": "4c0fec716deda3fc418d7ed8b3becb5d7c101bd68ca33cec3fbfa705db68a567"
+    },
+    {
+      "path": "qa/macro-render-manifest-exposure-fixed.json",
+      "mode": "100644",
+      "blob": "dc042d2ba385c4f6ecf4726431a03a96eb1a937d",
+      "size_bytes": 1489,
+      "sha256": "f6e65a2c6079e77980077e545bc0e6fa99c2e02fc74b72ca4a12cc051198f26d"
+    },
+    {
+      "path": "qa/macro-render-manifest.json",
+      "mode": "100644",
+      "blob": "75b673caf95da90ec2850b277946bcb288d2d17e",
+      "size_bytes": 1431,
+      "sha256": "e75d63a44eb6b21e0e03394ccabc7999b36dcce9e8c64cab5189e17ca4c9ccbf"
+    },
+    {
+      "path": "qa/partial-glb-roundtrip.json",
+      "mode": "100644",
+      "blob": "3669cc9929b8609ee8654e0112dcf3aea402a4c3",
+      "size_bytes": 3371,
+      "sha256": "346124efdd35404fc11dbb6f0535de0e6f2f96a80651ca6be1b32d8c2e90f7d8"
+    },
+    {
+      "path": "qa/render-attachment-macro-exposure-fixed.log",
+      "mode": "100644",
+      "blob": "bb87d36b602329c87a9673d44d5301c86197d6b7",
+      "size_bytes": 15413,
+      "sha256": "3c2357dd7649125837c6003c8caf8d6c0e0a2831eb887394cee49a2f74e23816"
+    },
+    {
+      "path": "qa/render-attachment-macro.log",
+      "mode": "100644",
+      "blob": "243ea79b57598722f204e8f62d21d79ca120ad76",
+      "size_bytes": 15383,
+      "sha256": "b1f0de1559e93a0de4a6bad1dd985096d87415fb23778c328e7fe48dfce44787"
+    },
+    {
+      "path": "qa/support-candidate-continuous-checks.json",
+      "mode": "100644",
+      "blob": "f9097627dda5bc76be04eed56a2d11845e560523",
+      "size_bytes": 1986881,
+      "sha256": "3f118149f8859e6f3f68f6d7f878b50b224a5f730f533924d70701458860f96c"
+    },
+    {
+      "path": "qa/support-candidate-v2.json",
+      "mode": "100644",
+      "blob": "3caad102538fc7cd2690ff8d6825cfc5c53fa12d",
+      "size_bytes": 245603,
+      "sha256": "206af931520c2657bf0ba49b8e3f254452ed365ecb143808cf809f2e0d31908f"
+    },
+    {
+      "path": "qa/terminal-triangle-distances.json",
+      "mode": "100644",
+      "blob": "615a2e80baa5e9849290c0e6dd16bd5e2e8f7a11",
+      "size_bytes": 147727,
+      "sha256": "c7ed0bd8c5871f878f9b436c35ccad6816fd9ad38153920599eabfb86e1107dc"
+    },
+    {
+      "path": "qa/terminal-triangle-distances.log",
+      "mode": "100644",
+      "blob": "18827d20c4e828aeb9f0e9fd5f68ebd75342614f",
+      "size_bytes": 1076,
+      "sha256": "10af000f121a31313fffca93098e960f0cdec2397e3283b828d954c1ca7b6d45"
+    },
+    {
+      "path": "qa/tip-multiple-ray-intervals.json",
+      "mode": "100644",
+      "blob": "44dea3f4226abe25d2739ec7f281b557babb5800",
+      "size_bytes": 6925,
+      "sha256": "8342b5c18f6fc19c140942f4ecf5735f67b5f00e747e4f1026dc340f0fdc058f"
+    },
+    {
+      "path": "qa/tip-multiple-ray.log",
+      "mode": "100644",
+      "blob": "83e4504076f62c8783418c26ce92c87e0b968d7b",
+      "size_bytes": 671,
+      "sha256": "b368615a6b58513a7db88d38ad8fc689edea47948e93e9e7dd039a664c29dd55"
+    },
+    {
+      "path": "qa/vein-shell-support-samples.json",
+      "mode": "100644",
+      "blob": "5d26ce585c021cffe23e8929d04f957d8e05800c",
+      "size_bytes": 9890693,
+      "sha256": "00cb69475be0cc3c5091dd2046c20181cd6c980473f536f5c144f001b5707c89"
+    },
+    {
+      "path": "qa/verify-inside-winding.log",
+      "mode": "100644",
+      "blob": "3e9fbf0857c845fbf6cf6acad587afbf36fab18b",
+      "size_bytes": 192,
+      "sha256": "771e574519e2227870b2ace7aea1680c392c42e17adea15c66958dd49bd2de7b"
+    },
+    {
+      "path": "qa/verify-support-candidate.log",
+      "mode": "100644",
+      "blob": "8885d906939c636e020ee7124724763357058760",
+      "size_bytes": 3544,
+      "sha256": "cc48a33526d776331e57459904f7c6ed7bd12f9aa6e9ea3948a32395c9c04649"
+    },
+    {
+      "path": "renders/exposure-fixed/vein-tip-contact-after.png",
+      "mode": "100644",
+      "blob": "64da178138d9ec1d1d0dd4ccc3856b4db843d601",
+      "size_bytes": 774419,
+      "sha256": "2471337f9925c6ae33140eb87c01a38113e5a7bf3715f900113ba28c8c6af5a9"
+    },
+    {
+      "path": "renders/exposure-fixed/vein-tip-contact-before.png",
+      "mode": "100644",
+      "blob": "53886e5948f4b21d583ac2f43234208a4ce942e8",
+      "size_bytes": 791587,
+      "sha256": "2e1835ef458dafaf9b0b1ff533aead044025f56f9e61197b5926e2dd5ca28c92"
+    },
+    {
+      "path": "renders/vein-tip-contact-after.png",
+      "mode": "100644",
+      "blob": "a83cc0c77eef431b243ae864400d1cecff126486",
+      "size_bytes": 499200,
+      "sha256": "94b2f0d49655015ec0cfe29e60aa86bf2b55a2d1c7adc805a9951b080d3acf8b"
+    },
+    {
+      "path": "renders/vein-tip-contact-before.png",
+      "mode": "100644",
+      "blob": "48e4334950a322182e0170ba3812b50b68294055",
+      "size_bytes": 519890,
+      "sha256": "f7b47e4ce0eb0c6fe86a3bae53bf5bddd0f8c1ef231ac9bf4733eb6692811777"
+    },
+    {
+      "path": "scripts/audit_vein_support.py",
+      "mode": "100644",
+      "blob": "1f5cbcf89719168d215f4e079796aa2792a7cc04",
+      "size_bytes": 3861,
+      "sha256": "7aac7b9b39b0d650d0e57efaa3feccf92a200e9378703e9467aa4e2d8c68e1e4"
+    },
+    {
+      "path": "scripts/build_support_candidate.py",
+      "mode": "100644",
+      "blob": "b76f6c656cc370f817b8611f56b4fdf66b36036b",
+      "size_bytes": 6668,
+      "sha256": "4f1131fad7f4d1a43c6178a31743e1ccabc6c3c721687fe1749be3cbe485b1ce"
+    },
+    {
+      "path": "scripts/check_embedded_ring_parity.py",
+      "mode": "100644",
+      "blob": "1bc8a7b4cb5802bef2004e6310ecffc310a3e0af",
+      "size_bytes": 2260,
+      "sha256": "fbe4352ba3834a18088a9b139932c94bfce4494171f187490df07e4a097d7dc8"
+    },
+    {
+      "path": "scripts/check_tip_ray_intervals.py",
+      "mode": "100644",
+      "blob": "472dd584bd6db0351a3785a09a0864b39367be22",
+      "size_bytes": 2159,
+      "sha256": "5a0888a3f80c72a2765e386dc42208c0c148aa5cd507328e9b43053e5d4b8d5f"
+    },
+    {
+      "path": "scripts/confirm_terminal_triangle_gaps.py",
+      "mode": "100644",
+      "blob": "760f63edc59fdbc1bb87bcb9540cdbfa90a63c20",
+      "size_bytes": 3287,
+      "sha256": "5f8a609496aae235ac493061cc85abd1deac23cf94b65bfc6d6d47f82956b4e7"
+    },
+    {
+      "path": "scripts/export_check_contact_candidate.py",
+      "mode": "100644",
+      "blob": "f23b0031338aba7307fe0fd4fe8b3d69e3a66b08",
+      "size_bytes": 1719,
+      "sha256": "c63fca872546abf3c66465924b8cf5eeb57e436d38534bb99dd32349b327fac2"
+    },
+    {
+      "path": "scripts/render_attachment_macro.py",
+      "mode": "100644",
+      "blob": "8dc5ec9040d6125c317d74c42ea9eb380fce589c",
+      "size_bytes": 3901,
+      "sha256": "2edbb2f1c03aa11ae9fdebd3fd28c10160f497cee4e2e6d2ed91daeafa209b9b"
+    },
+    {
+      "path": "scripts/triangle_distance.py",
+      "mode": "100644",
+      "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+      "size_bytes": 3186,
+      "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+    },
+    {
+      "path": "scripts/verify_inside_winding.py",
+      "mode": "100644",
+      "blob": "5f4816221cfb304343e6033dbd6170137a9afba6",
+      "size_bytes": 2764,
+      "sha256": "305b684a40b0c04e5c998f4e3d0bad19a2b88d6e96c11de18f5d64a315989369"
+    },
+    {
+      "path": "scripts/verify_support_candidate.py",
+      "mode": "100644",
+      "blob": "3acde393596937493b932a0030a29c4d930127e2",
+      "size_bytes": 4756,
+      "sha256": "4485de3894aa860f24a11f87912d7e08c0b665a9ed8aac8fee75a3009c85bab0"
+    }
+  ],
+  "previous_source_head": "3d7c43e1afb6b89393114f99e3c14f002b32eba5",
+  "previous_archive_commit": "8016d3f293785dfc2e246ddfa638b741c567d39d",
+  "previous_version_snapshot_prefix": "scenes/lake-leafboat-stage/diagnostics/vein-contact-v2-20261104/versions/v0",
+  "older_version_snapshot_paths_preserved": 0,
+  "limitations": [
+    "Independent nonexact 20-body technical fixture; not original production model byte recovery, a full lake scene, source fitting or complete geometry acceptance. Original R06 source fitting remains FAILED.",
+    "This stage only adds 14 files under followup/tube-regression. All preceding 44 original files, models and previews remain byte-identical; real original history advances from 3d7c43e1afb6b89393114f99e3c14f002b32eba5 without reconstruction or rewriting.",
+    "Producer records zero non-shared-vertex triangle self-intersection pairs in 19 tubes before/after; 153 branch pairs retain the same 225 intersecting triangle pairs across nine paired roots. Shared-vertex pairs and intended main-vein/branch junctions are excluded.",
+    "Maximum ring-center polyline segment-direction change is 1.0631205 degrees, bend-angle change 1.3015267 degrees and segment-length ratios 0.98321450-1.00326838. These are discrete regression measures, not continuous curvature, source error or manufacturing tolerances.",
+    "Float32 BVH candidates and distance tolerance are numerical tests, not exact arithmetic proof. Unchanged intersecting triangle-pair sets do not establish unchanged penetration depth/contact area or full collision safety.",
+    "Portable producer rerun matches all original-run JSON fields except timestamp; the first run and independent short review are preserved. Independent QA tested the self-BVH fixture and reviewed records but did not rerun the full tube regression.",
+    "Earlier bounded-contact limitations and failed evidence remain in README.zh.md and the original history. Archive worker did not model, render or execute source scripts."
+  ],
+  "prior_source_file_invariance": {
+    "previous_source_head": "3d7c43e1afb6b89393114f99e3c14f002b32eba5",
+    "current_source_head": "c4d2720206a1be0339ba3bf4ce78388d86ffcfbf",
+    "byte_identical_prior_files": 44,
+    "added_files": [
+      "followup/tube-regression/README.zh.md",
+      "followup/tube-regression/check-tube-regressions.log",
+      "followup/tube-regression/check_tube_regressions.py",
+      "followup/tube-regression/first-execution/README.zh.md",
+      "followup/tube-regression/first-execution/check-tube-regressions.log",
+      "followup/tube-regression/first-execution/check_tube_regressions.py",
+      "followup/tube-regression/first-execution/triangle_distance.py",
+      "followup/tube-regression/first-execution/tube-regression-results.json",
+      "followup/tube-regression/independent/regression-followup-review.zh.md",
+      "followup/tube-regression/independent/regression-self-bvh-fixture.json",
+      "followup/tube-regression/independent/test_bvh_self.py",
+      "followup/tube-regression/triangle_distance.py",
+      "followup/tube-regression/tube-regression-results.json",
+      "followup/tube-regression/v2-file-invariance.json"
+    ],
+    "files": [
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+        "size_bytes": 19,
+        "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+      },
+      {
+        "path": "BASELINE.md",
+        "mode": "100644",
+        "blob": "d65cef77d9cf96cdf70b28a1dfb725b925b168ef",
+        "size_bytes": 1496,
+        "sha256": "773c467a1b7e47dd6ad39ace7762ef6f31415a5f0ccfecd7d721019b243b72b3"
+      },
+      {
+        "path": "README.zh.md",
+        "mode": "100644",
+        "blob": "258d885e1a2d86e1163cb3d149bad5900bc69fff",
+        "size_bytes": 5822,
+        "sha256": "66e08d844c7555bbc65fc1fb083c1d1a83127aef2f74ac4bb10d84346191e731"
+      },
+      {
+        "path": "inputs/archived-r06-cameras.json",
+        "mode": "100644",
+        "blob": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+        "size_bytes": 13224,
+        "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+      },
+      {
+        "path": "inputs/leaf-only-r06-nonexact-diagnostic-replay.blend",
+        "mode": "100644",
+        "blob": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+        "size_bytes": 5183724,
+        "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+      },
+      {
+        "path": "inputs/prior-nonexact-replay-proof.json",
+        "mode": "100644",
+        "blob": "97fb194700bcb2533943659c2067bba7e13f9670",
+        "size_bytes": 1573,
+        "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+      },
+      {
+        "path": "models/leaf-only-contact-candidate-v2.blend",
+        "mode": "100644",
+        "blob": "724452f46eb18652c87c7e156992f1b80749fc8f",
+        "size_bytes": 5184080,
+        "sha256": "537f5e9fdd9042858939739a714d875c3624deff317fe855b462374fb7ca93d3"
+      },
+      {
+        "path": "models/leaf-only-contact-candidate-v2.glb",
+        "mode": "100644",
+        "blob": "0e28cb0ba205b04d1141e1688075fcc2b09c98e2",
+        "size_bytes": 1971772,
+        "sha256": "4ffbb9fd351f5be26572284a6a2434ca54650446e9ad4f2fded085ab32cb232a"
+      },
+      {
+        "path": "qa/audit-support.log",
+        "mode": "100644",
+        "blob": "69e5f2ce05101bc63474be1a77b707659d5a6d08",
+        "size_bytes": 4144,
+        "sha256": "6a6a58096c3a1d7724f1f9c9d90b1622d77e91baa4b6e133da2e7605552a8ab1"
+      },
+      {
+        "path": "qa/build-support-candidate-v2.log",
+        "mode": "100644",
+        "blob": "fa912df2beb7f470a225eb517a07db6ffbbadae7",
+        "size_bytes": 1212,
+        "sha256": "9c9991969b94f53a5b54cca372aed7f52891fd7833661e70b868c4ae0fe05dcf"
+      },
+      {
+        "path": "qa/check-embedded-ring-parity.log",
+        "mode": "100644",
+        "blob": "19b8f64e9bbae893c2504305f17c4c89a04b2edd",
+        "size_bytes": 633,
+        "sha256": "7d7cb4d554600b08a40a80472c7318f8633373097b36b05ddf276a35e034fc88"
+      },
+      {
+        "path": "qa/embedded-ring-five-ray-parity.json",
+        "mode": "100644",
+        "blob": "2465b8575860a8b5698f8d1bb5bb1ead9d08e2de",
+        "size_bytes": 647201,
+        "sha256": "84797ff0cc7826383446ca328a2248994a783c2168afca91eb41571ba6732cfa"
+      },
+      {
+        "path": "qa/embedded-ring-winding-verification.json",
+        "mode": "100644",
+        "blob": "04a0724bb48da1f40f52740e588224e38cce3a41",
+        "size_bytes": 991867,
+        "sha256": "883b3660960d69cc3c8db3e14f4d7b4a996a900543ff52ddc085ee8c55ba3a27"
+      },
+      {
+        "path": "qa/export-partial-glb.log",
+        "mode": "100644",
+        "blob": "eab650120382a89360aa7934e121919a10fcac05",
+        "size_bytes": 4163,
+        "sha256": "2398ebf0af860a86249f2c84db430525e951558c752b26997ff7f63d28817ed9"
+      },
+      {
+        "path": "qa/independent/evidence.json",
+        "mode": "100644",
+        "blob": "ab470600274ff68e3ef7f90d11659145d16c516c",
+        "size_bytes": 1776,
+        "sha256": "08a21ccb358e6d424b425889b912f0681b8062170dcf5647d417408bb32c68d8"
+      },
+      {
+        "path": "qa/independent/review.zh.md",
+        "mode": "100644",
+        "blob": "41cfd3cf4c91809b7d8aa99d030f12fd16b441b1",
+        "size_bytes": 2254,
+        "sha256": "4c0fec716deda3fc418d7ed8b3becb5d7c101bd68ca33cec3fbfa705db68a567"
+      },
+      {
+        "path": "qa/macro-render-manifest-exposure-fixed.json",
+        "mode": "100644",
+        "blob": "dc042d2ba385c4f6ecf4726431a03a96eb1a937d",
+        "size_bytes": 1489,
+        "sha256": "f6e65a2c6079e77980077e545bc0e6fa99c2e02fc74b72ca4a12cc051198f26d"
+      },
+      {
+        "path": "qa/macro-render-manifest.json",
+        "mode": "100644",
+        "blob": "75b673caf95da90ec2850b277946bcb288d2d17e",
+        "size_bytes": 1431,
+        "sha256": "e75d63a44eb6b21e0e03394ccabc7999b36dcce9e8c64cab5189e17ca4c9ccbf"
+      },
+      {
+        "path": "qa/partial-glb-roundtrip.json",
+        "mode": "100644",
+        "blob": "3669cc9929b8609ee8654e0112dcf3aea402a4c3",
+        "size_bytes": 3371,
+        "sha256": "346124efdd35404fc11dbb6f0535de0e6f2f96a80651ca6be1b32d8c2e90f7d8"
+      },
+      {
+        "path": "qa/render-attachment-macro-exposure-fixed.log",
+        "mode": "100644",
+        "blob": "bb87d36b602329c87a9673d44d5301c86197d6b7",
+        "size_bytes": 15413,
+        "sha256": "3c2357dd7649125837c6003c8caf8d6c0e0a2831eb887394cee49a2f74e23816"
+      },
+      {
+        "path": "qa/render-attachment-macro.log",
+        "mode": "100644",
+        "blob": "243ea79b57598722f204e8f62d21d79ca120ad76",
+        "size_bytes": 15383,
+        "sha256": "b1f0de1559e93a0de4a6bad1dd985096d87415fb23778c328e7fe48dfce44787"
+      },
+      {
+        "path": "qa/support-candidate-continuous-checks.json",
+        "mode": "100644",
+        "blob": "f9097627dda5bc76be04eed56a2d11845e560523",
+        "size_bytes": 1986881,
+        "sha256": "3f118149f8859e6f3f68f6d7f878b50b224a5f730f533924d70701458860f96c"
+      },
+      {
+        "path": "qa/support-candidate-v2.json",
+        "mode": "100644",
+        "blob": "3caad102538fc7cd2690ff8d6825cfc5c53fa12d",
+        "size_bytes": 245603,
+        "sha256": "206af931520c2657bf0ba49b8e3f254452ed365ecb143808cf809f2e0d31908f"
+      },
+      {
+        "path": "qa/terminal-triangle-distances.json",
+        "mode": "100644",
+        "blob": "615a2e80baa5e9849290c0e6dd16bd5e2e8f7a11",
+        "size_bytes": 147727,
+        "sha256": "c7ed0bd8c5871f878f9b436c35ccad6816fd9ad38153920599eabfb86e1107dc"
+      },
+      {
+        "path": "qa/terminal-triangle-distances.log",
+        "mode": "100644",
+        "blob": "18827d20c4e828aeb9f0e9fd5f68ebd75342614f",
+        "size_bytes": 1076,
+        "sha256": "10af000f121a31313fffca93098e960f0cdec2397e3283b828d954c1ca7b6d45"
+      },
+      {
+        "path": "qa/tip-multiple-ray-intervals.json",
+        "mode": "100644",
+        "blob": "44dea3f4226abe25d2739ec7f281b557babb5800",
+        "size_bytes": 6925,
+        "sha256": "8342b5c18f6fc19c140942f4ecf5735f67b5f00e747e4f1026dc340f0fdc058f"
+      },
+      {
+        "path": "qa/tip-multiple-ray.log",
+        "mode": "100644",
+        "blob": "83e4504076f62c8783418c26ce92c87e0b968d7b",
+        "size_bytes": 671,
+        "sha256": "b368615a6b58513a7db88d38ad8fc689edea47948e93e9e7dd039a664c29dd55"
+      },
+      {
+        "path": "qa/vein-shell-support-samples.json",
+        "mode": "100644",
+        "blob": "5d26ce585c021cffe23e8929d04f957d8e05800c",
+        "size_bytes": 9890693,
+        "sha256": "00cb69475be0cc3c5091dd2046c20181cd6c980473f536f5c144f001b5707c89"
+      },
+      {
+        "path": "qa/verify-inside-winding.log",
+        "mode": "100644",
+        "blob": "3e9fbf0857c845fbf6cf6acad587afbf36fab18b",
+        "size_bytes": 192,
+        "sha256": "771e574519e2227870b2ace7aea1680c392c42e17adea15c66958dd49bd2de7b"
+      },
+      {
+        "path": "qa/verify-support-candidate.log",
+        "mode": "100644",
+        "blob": "8885d906939c636e020ee7124724763357058760",
+        "size_bytes": 3544,
+        "sha256": "cc48a33526d776331e57459904f7c6ed7bd12f9aa6e9ea3948a32395c9c04649"
+      },
+      {
+        "path": "renders/exposure-fixed/vein-tip-contact-after.png",
+        "mode": "100644",
+        "blob": "64da178138d9ec1d1d0dd4ccc3856b4db843d601",
+        "size_bytes": 774419,
+        "sha256": "2471337f9925c6ae33140eb87c01a38113e5a7bf3715f900113ba28c8c6af5a9"
+      },
+      {
+        "path": "renders/exposure-fixed/vein-tip-contact-before.png",
+        "mode": "100644",
+        "blob": "53886e5948f4b21d583ac2f43234208a4ce942e8",
+        "size_bytes": 791587,
+        "sha256": "2e1835ef458dafaf9b0b1ff533aead044025f56f9e61197b5926e2dd5ca28c92"
+      },
+      {
+        "path": "renders/vein-tip-contact-after.png",
+        "mode": "100644",
+        "blob": "a83cc0c77eef431b243ae864400d1cecff126486",
+        "size_bytes": 499200,
+        "sha256": "94b2f0d49655015ec0cfe29e60aa86bf2b55a2d1c7adc805a9951b080d3acf8b"
+      },
+      {
+        "path": "renders/vein-tip-contact-before.png",
+        "mode": "100644",
+        "blob": "48e4334950a322182e0170ba3812b50b68294055",
+        "size_bytes": 519890,
+        "sha256": "f7b47e4ce0eb0c6fe86a3bae53bf5bddd0f8c1ef231ac9bf4733eb6692811777"
+      },
+      {
+        "path": "scripts/audit_vein_support.py",
+        "mode": "100644",
+        "blob": "1f5cbcf89719168d215f4e079796aa2792a7cc04",
+        "size_bytes": 3861,
+        "sha256": "7aac7b9b39b0d650d0e57efaa3feccf92a200e9378703e9467aa4e2d8c68e1e4"
+      },
+      {
+        "path": "scripts/build_support_candidate.py",
+        "mode": "100644",
+        "blob": "b76f6c656cc370f817b8611f56b4fdf66b36036b",
+        "size_bytes": 6668,
+        "sha256": "4f1131fad7f4d1a43c6178a31743e1ccabc6c3c721687fe1749be3cbe485b1ce"
+      },
+      {
+        "path": "scripts/check_embedded_ring_parity.py",
+        "mode": "100644",
+        "blob": "1bc8a7b4cb5802bef2004e6310ecffc310a3e0af",
+        "size_bytes": 2260,
+        "sha256": "fbe4352ba3834a18088a9b139932c94bfce4494171f187490df07e4a097d7dc8"
+      },
+      {
+        "path": "scripts/check_tip_ray_intervals.py",
+        "mode": "100644",
+        "blob": "472dd584bd6db0351a3785a09a0864b39367be22",
+        "size_bytes": 2159,
+        "sha256": "5a0888a3f80c72a2765e386dc42208c0c148aa5cd507328e9b43053e5d4b8d5f"
+      },
+      {
+        "path": "scripts/confirm_terminal_triangle_gaps.py",
+        "mode": "100644",
+        "blob": "760f63edc59fdbc1bb87bcb9540cdbfa90a63c20",
+        "size_bytes": 3287,
+        "sha256": "5f8a609496aae235ac493061cc85abd1deac23cf94b65bfc6d6d47f82956b4e7"
+      },
+      {
+        "path": "scripts/export_check_contact_candidate.py",
+        "mode": "100644",
+        "blob": "f23b0031338aba7307fe0fd4fe8b3d69e3a66b08",
+        "size_bytes": 1719,
+        "sha256": "c63fca872546abf3c66465924b8cf5eeb57e436d38534bb99dd32349b327fac2"
+      },
+      {
+        "path": "scripts/render_attachment_macro.py",
+        "mode": "100644",
+        "blob": "8dc5ec9040d6125c317d74c42ea9eb380fce589c",
+        "size_bytes": 3901,
+        "sha256": "2edbb2f1c03aa11ae9fdebd3fd28c10160f497cee4e2e6d2ed91daeafa209b9b"
+      },
+      {
+        "path": "scripts/triangle_distance.py",
+        "mode": "100644",
+        "blob": "ef4449b758de8ad8ccec9edc5a6d6521cae22557",
+        "size_bytes": 3186,
+        "sha256": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f"
+      },
+      {
+        "path": "scripts/verify_inside_winding.py",
+        "mode": "100644",
+        "blob": "5f4816221cfb304343e6033dbd6170137a9afba6",
+        "size_bytes": 2764,
+        "sha256": "305b684a40b0c04e5c998f4e3d0bad19a2b88d6e96c11de18f5d64a315989369"
+      },
+      {
+        "path": "scripts/verify_support_candidate.py",
+        "mode": "100644",
+        "blob": "3acde393596937493b932a0030a29c4d930127e2",
+        "size_bytes": 4756,
+        "sha256": "4485de3894aa860f24a11f87912d7e08c0b665a9ed8aac8fee75a3009c85bab0"
+      }
+    ]
+  }
+}

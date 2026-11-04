@@ -1,0 +1,16 @@
+vertical crossings 4 inside votes [True, True, True, True, True]
+.. method:: find_nearest_range(origin, distance=1.84467e+19)
+
+   Find the nearest elements (typically face index) to a point in the distance range.
+
+   :arg co: Find nearest elements to this point.
+   :type co: :class:`Vector`
+   :arg distance: Maximum distance threshold.
+   :type distance: float
+   :return: Returns a list of tuples (position, normal, index, distance)
+   :rtype: list[tuple[:class:`Vector`, :class:`Vector`, int, float]]
+
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/lakeleaf-vein-contact-audit-20261104/inputs/leaf-only-r06-nonexact-diagnostic-replay.blend"
+
+Blender quit

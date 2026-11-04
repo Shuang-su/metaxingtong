@@ -1,0 +1,70 @@
+{
+  "unit_tests_rerun": [
+    {
+      "name": "edge_only_flat",
+      "extent": 0.0,
+      "expected_overlap": false,
+      "observed_overlap": false,
+      "mode": "coplanar_clip",
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "shared_edge_coplanar_overlap",
+      "extent": 0.5,
+      "expected_overlap": true,
+      "observed_overlap": true,
+      "mode": "coplanar_clip",
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "edge_only_fold",
+      "extent": 0.0,
+      "expected_overlap": false,
+      "observed_overlap": false,
+      "mode": "edge_plane",
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "vertex_only",
+      "extent": 0.0,
+      "expected_overlap": false,
+      "observed_overlap": false,
+      "mode": "coplanar_clip",
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "shared_vertex_piercing",
+      "extent": 0.7071067811865476,
+      "expected_overlap": true,
+      "observed_overlap": true,
+      "mode": "edge_plane",
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "vertex_coplanar_overlap",
+      "extent": 0.5099019513592784,
+      "expected_overlap": true,
+      "observed_overlap": true,
+      "mode": "coplanar_clip",
+      "symmetry_error": 1.1102230246251565e-16
+    }
+  ],
+  "additional_nonparallel_inplane_edge": {
+    "forward": [
+      1.0,
+      "edge_plane",
+      3
+    ],
+    "reverse": [
+      1.0,
+      "edge_plane",
+      3
+    ],
+    "expected_extent": 1.0
+  },
+  "hashes": {
+    "lakeleaf-adjacent-regression-20261104/adjacent_triangle_overlap.py": "bb184a6b77a3697cc81a13202668f80a9745bb445c85a2eb51dc0698f5f87737",
+    "lakeleaf-adjacent-regression-20261104/check_adjacent_faces_topology.py": "42e9700138b397dfc5d378235b04c048c0f15205bf0dd9ca38435632e58c656d",
+    "lakeleaf-adjacent-regression-20261104/adjacent-face-topology-results.json": "4f4f0503421382052e80956bae53fc131018b7abe41707930c70064e2dd5fe66"
+  }
+}

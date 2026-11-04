@@ -1,19 +1,19 @@
-# Lake leafboat VD2 bounded contact candidate with read-only tube regressions
+# Lake leafboat VD2 final bounded adjacent-face regression closure
 
 Frozen diagnostic stage, not source acceptance or original-byte recovery.
 
-Original HEAD: `c4d2720206a1be0339ba3bf4ce78388d86ffcfbf`
+Original HEAD: `629756a4e7f108678a21cad96c06a262d3030d02`
 Original history: `refs/heads/history/lakeleaf-vein-contact-original-20261104`
-Previous original HEAD: `3d7c43e1afb6b89393114f99e3c14f002b32eba5`
+Previous original HEAD: `c4d2720206a1be0339ba3bf4ce78388d86ffcfbf`
 
-`files/` preserves all 58 current original files without modification. Input Library version 1; archive revision 1. `versions/v0/` preserves the preceding current archive directory including its receipt. All older snapshots remain unchanged without recursive duplication. All 4 real original commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs, original objects and every stage.
+`files/` preserves all 76 current original files without modification. Input Library version 2; archive revision 2. `versions/v1/` preserves the preceding current archive directory including its receipt. All older snapshots remain unchanged without recursive duplication. All 5 real original commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs, original objects and every stage.
 
-- Independent nonexact 20-body technical fixture; not original production model byte recovery, a full lake scene, source fitting or complete geometry acceptance. Original R06 source fitting remains FAILED.
-- This stage only adds 14 files under followup/tube-regression. All preceding 44 original files, models and previews remain byte-identical; real original history advances from 3d7c43e1afb6b89393114f99e3c14f002b32eba5 without reconstruction or rewriting.
-- Producer records zero non-shared-vertex triangle self-intersection pairs in 19 tubes before/after; 153 branch pairs retain the same 225 intersecting triangle pairs across nine paired roots. Shared-vertex pairs and intended main-vein/branch junctions are excluded.
-- Maximum ring-center polyline segment-direction change is 1.0631205 degrees, bend-angle change 1.3015267 degrees and segment-length ratios 0.98321450-1.00326838. These are discrete regression measures, not continuous curvature, source error or manufacturing tolerances.
-- Float32 BVH candidates and distance tolerance are numerical tests, not exact arithmetic proof. Unchanged intersecting triangle-pair sets do not establish unchanged penetration depth/contact area or full collision safety.
-- Portable producer rerun matches all original-run JSON fields except timestamp; the first run and independent short review are preserved. Independent QA tested the self-BVH fixture and reviewed records but did not rerun the full tube regression.
-- Earlier bounded-contact limitations and failed evidence remain in README.zh.md and the original history. Archive worker did not model, render or execute source scripts.
+- Final bounded numerical regression on the same nonexact 20-body technical fixture; not production model byte recovery, a full scene, source acceptance, complete geometry acceptance or a new scene. Original source FAILED and previous bounded-contact limitations remain.
+- Adds only 18 files under followup/adjacent-faces. All previous v3 58 files, model binaries and images remain byte-identical; all five real original commits and previous failed records are retained.
+- First BVH adjacency attempt tested zero pairs and is explicitly retained as no coverage, not a pass. The later direct index-topology enumeration tests 50,182 shared-vertex triangle pairs per input across 19 tubes.
+- Producer records no overlap beyond the common edge/vertex exceeding 1e-6 arbitrary model units under the specified numerical criteria; maximum residual is about 1.718990734e-10. This is not exact-arithmetic, strict topology/global embedding, continuous-surface or manufacturing proof.
+- Independent finite QA reran six unit fixtures plus one additional noncoplanar shared-point counterexample and reviewed method/records; it did not independently rerun the complete model enumeration. Absolute/mixed tolerances retain small-gap, near-degenerate and scale limits.
+- Old/new normal comparisons do not prove global injectivity. A wave-formula upper bound and model-coordinate comparison are not real water-mesh intersections, water contact, nonpenetration or buoyancy verification.
+- Scope closes at this frozen finite regression; archive worker did not expand statistics, model, render or execute source scripts. Original scope report, prior QA, models and previews remain unchanged.
 
 Current remote verification is appended under `publication-verification/remote_verification.json`.

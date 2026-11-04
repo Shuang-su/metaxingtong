@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "parallel_gap",
+      "distance": 0.25,
+      "expected": 0.25,
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "coplanar_overlap",
+      "distance": 0.0,
+      "expected": 0.0,
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "edge_through_face",
+      "distance": 0.0,
+      "expected": 0.0,
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "separate_parallel",
+      "distance": 1.0,
+      "expected": 1.0,
+      "symmetry_error": 0.0
+    },
+    {
+      "name": "shared_vertex",
+      "distance": 0.0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "name": "coplanar_edge_cross",
+      "distance": 0.0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "name": "tiny_parallel_gap",
+      "distance": 1e-06,
+      "expected": 1e-06,
+      "pass": true
+    }
+  ],
+  "sha256": {
+    "lakeleaf-vein-contact-audit-20261104/scripts/triangle_distance.py": "289af428f693fb1a0205f7c9a366088934e0ebb9b611aaa35603bd271065d93f",
+    "lakeleaf-vein-contact-audit-20261104/qa/support-candidate-continuous-checks.json": "3f118149f8859e6f3f68f6d7f878b50b224a5f730f533924d70701458860f96c",
+    "lakeleaf-vein-contact-audit-20261104/qa/embedded-ring-winding-verification.json": "883b3660960d69cc3c8db3e14f4d7b4a996a900543ff52ddc085ee8c55ba3a27",
+    "lakeleaf-vein-contact-audit-20261104/qa/support-candidate-v2.json": "206af931520c2657bf0ba49b8e3f254452ed365ecb143808cf809f2e0d31908f",
+    "lakeleaf-vein-contact-audit-20261104/renders/exposure-fixed/vein-tip-contact-before.png": "2e1835ef458dafaf9b0b1ff533aead044025f56f9e61197b5926e2dd5ca28c92",
+    "lakeleaf-vein-contact-audit-20261104/renders/exposure-fixed/vein-tip-contact-after.png": "2471337f9925c6ae33140eb87c01a38113e5a7bf3715f900113ba28c8c6af5a9"
+  }
+}
