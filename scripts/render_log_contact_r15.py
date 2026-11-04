@@ -1,0 +1,8 @@
+import bpy,pathlib,json,hashlib
+from mathutils import Vector
+R=pathlib.Path(__file__).resolve().parents[1];D=R/'qa/remaining-support-study';out=R/'renders/log-contact';out.mkdir(exist_ok=True);rows=[]
+for version in ['R14_anchor-diagnostic_white','R15_log-contact-diagnostic_white']:
+ p=R/('models/'+version+'.blend');bpy.ops.wm.open_mainfile(filepath=str(p));loc=Vector((-6.183115,3.971026,.56));target=Vector((-6.183115,5.271026,-.04));bpy.ops.object.camera_add(location=loc);c=bpy.context.object;c.rotation_euler=(target-loc).to_track_quat('-Z','Y').to_euler();c.data.lens=45;s=bpy.context.scene;s.camera=c
+ lp=Vector((-6.18,4.1,.65));bpy.ops.object.light_add(type='AREA',location=lp);l=bpy.context.object;l.rotation_euler=(target-lp).to_track_quat('-Z','Y').to_euler();l.data.energy=45;l.data.size=1
+ s.cycles.samples=32;s.cycles.use_denoising=False;s.render.resolution_x=800;s.render.resolution_y=600;s.render.resolution_percentage=100;s.render.threads_mode='FIXED';s.render.threads=2;png=out/(version+'.png');s.render.filepath=str(png);bpy.ops.render.render(write_still=True);rows.append({'version':version,'png_sha256':hashlib.sha256(png.read_bytes()).hexdigest(),'camera':{'loc':list(loc),'target':list(target),'lens':45},'diagnostic_light':{'loc':list(lp),'watts':45,'size':1},'samples':32,'size':[800,600],'model_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'saved_models_unchanged':True})
+(out/'comparison-records.json').write_text(json.dumps({'role':'same synthetic camera and same added diagnostic light, not source view or source illumination','variants':rows},indent=2))
