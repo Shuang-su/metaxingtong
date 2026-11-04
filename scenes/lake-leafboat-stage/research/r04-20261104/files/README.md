@@ -17,3 +17,10 @@
 - 深度不能验收曲率：俯视舟体压平、侧面水面伪坡度、近斜人物和舟融合。原数值、raw518×924、4K重采样派生和未知置信度均分开标注。
 - GLB AREA light不支持，Blender与GLB照明可能不同；跨软件重导入核验待做。当前模型几何/来源/交付门槛未混为一谈。
 - 只做本地普通Git真版本，无LFS，无强推，无外部Issue/PR操作。远端归档/Space备份由父任务协调。
+
+
+## 当前模型入口：R04（正式图证仍在制作）
+- models/lakeleaf-r04-material.blend 与 models/lakeleaf-r04-white.blend，models/lakeleaf-r04.glb。
+- models/lakeleaf-r04-glb-reimport-check.blend 是真实空场景GLB重导结果。
+- qa/r04/delivery-validation.json 与逐物件网格inventory记录实际技术核验；docs/R04-stage.zh.md记录限制。
+- R01/R02/R03真实模型及失败预览全部保留。上文R01首阶段描述保留历史，不作当前完成状态。
