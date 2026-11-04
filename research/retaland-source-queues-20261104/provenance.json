@@ -1,0 +1,970 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-04T21:40:44.303017+00:00",
+  "label": "RetaLand distinct Heineken and Samsung Dreamfold unbuilt source queues; no model or new-scene delivery",
+  "status": "FROZEN_UNBUILT_SOURCE_QUEUES_NOT_SCENE_DELIVERY",
+  "input": {
+    "library_file_id": "libfile_12abab5145788191a8ce194e93398571",
+    "file_id": "file_00000000e22081fd8a0dc4618ac2473a",
+    "filename": "retaland-source-queues-v2-20261104.bundle",
+    "size_bytes": 2270554,
+    "sha256": "370cfa0f5342bd92dff7d6174e01200fe774e521a8ec259cf875d3ae0103c84b",
+    "version": 1,
+    "materialized_and_verified": true,
+    "bundle_refs": [
+      {
+        "commit": "6577e24dbb2bfca19b6f086f293df5548946a07c",
+        "ref": "refs/heads/evidence/heineken-source-queue-20261104"
+      },
+      {
+        "commit": "6577e24dbb2bfca19b6f086f293df5548946a07c",
+        "ref": "HEAD"
+      }
+    ],
+    "bundle_prerequisites": [],
+    "checkout": "6577e24dbb2bfca19b6f086f293df5548946a07c",
+    "space_retained": true
+  },
+  "original_head": "6577e24dbb2bfca19b6f086f293df5548946a07c",
+  "original_commits": [
+    "62d4541836961a60ee52a4e44bfc9b3ef27cddb0",
+    "6577e24dbb2bfca19b6f086f293df5548946a07c"
+  ],
+  "original_objects": [
+    {
+      "object": "6577e24dbb2bfca19b6f086f293df5548946a07c",
+      "type": "commit",
+      "size_bytes": 296,
+      "sha256": "a43df04b2b38f47faf6b29562b18d63db6355c3e51d81ae0ec3cf38f6574ac33"
+    },
+    {
+      "object": "62d4541836961a60ee52a4e44bfc9b3ef27cddb0",
+      "type": "commit",
+      "size_bytes": 243,
+      "sha256": "e3049825e5454989e69f3b515fcde96e392d3cd9b42ca447e5333881831028af"
+    },
+    {
+      "object": "f6da0ba7733bfe3968baeeb669a21dd2c38318b2",
+      "type": "tree",
+      "size_bytes": 139,
+      "sha256": "e1206e79bfe15a169fe95c86fd6c8ab0b672672a1758627b7194b6e95af725e3"
+    },
+    {
+      "object": "76e929f5e813bb561234e6dc558cc30ac8202182",
+      "type": "blob",
+      "size_bytes": 935,
+      "sha256": "6d81a239dd8adfc3ae161dbc1622445a0d536a5f6c9367f42fb4e6af656e22bd"
+    },
+    {
+      "object": "d1d5f60fa972efe123cb818708163abfd12aa746",
+      "type": "tree",
+      "size_bytes": 63,
+      "sha256": "ee3c71e9c031e802f6df222ce932fff0a2858a988a6d7e0006bdfceb543b15f9"
+    },
+    {
+      "object": "1c46aa084a1c6235f1f1bee86eb8af500bc13b3b",
+      "type": "tree",
+      "size_bytes": 88,
+      "sha256": "c03801a93893c508be40ba3105e7dec2dca0fcd459bc1c679b1e635d048cb642"
+    },
+    {
+      "object": "d8645d20c654ac24903d6e03390ce5c5b849b0ed",
+      "type": "blob",
+      "size_bytes": 3446,
+      "sha256": "25b8038097dd751185243f43278c86a8d49166e77306cb480a851396a1fe9e48"
+    },
+    {
+      "object": "3e73563cfa49d2fe403207489b8c90250fbf90d3",
+      "type": "blob",
+      "size_bytes": 1015,
+      "sha256": "c3eaa84a395aa2a66ea1d19d43a222c9ebf0d75fdefb13fed88465499b55a9b9"
+    },
+    {
+      "object": "0af975c00d737a7db16c1c70e36108ffb385a38e",
+      "type": "tree",
+      "size_bytes": 303,
+      "sha256": "119f728b4d9fd6b80c669d3f198ec5ea6467a400952a61fb01b379ae16f1e73f"
+    },
+    {
+      "object": "a56183ff2f0d2f5e09d1511ddcb4cf22ee5d8535",
+      "type": "blob",
+      "size_bytes": 886,
+      "sha256": "f4560369433a093e903cce47005e0636bcb00551b3d11072ee6b6a750d36bf96"
+    },
+    {
+      "object": "c6381b691379174b85c4d9bffb4ea639e1258c3f",
+      "type": "blob",
+      "size_bytes": 898,
+      "sha256": "21bc3a60d77457cd645a1406f269f10d1b411003cc117deb1cfa4d7205f10cb3"
+    },
+    {
+      "object": "656ced9c2682c148aafbee052ffa1a074953ea8e",
+      "type": "blob",
+      "size_bytes": 283154,
+      "sha256": "18aaedb0defe7320a223f0c16fccc4da484362dea8d542119be3abb75a04636b"
+    },
+    {
+      "object": "940fff05b6d7f529acacf65400b2ef1ab18581ae",
+      "type": "blob",
+      "size_bytes": 303025,
+      "sha256": "5b831edcb998ff3ddd6aefa952b081ef0dc80db424039f64b19583481802e580"
+    },
+    {
+      "object": "8fb5bdf6729fc8b27473fa3ab841a43f4d8740a2",
+      "type": "blob",
+      "size_bytes": 209183,
+      "sha256": "277b3e80b1ff96738793c875849e5797e1c3c6ce2e0eca9114fda2f58c339e6b"
+    },
+    {
+      "object": "cd8bb938cd566e16143b03ebd77100ca429535d6",
+      "type": "blob",
+      "size_bytes": 1334,
+      "sha256": "d31647c9a82a129bf535e0a6ec78dbff8e74c558be0d29b9b2c1f36d93b2ffb0"
+    },
+    {
+      "object": "6f19d6750e87a43b40b5f74dd69f2cac67a4bd36",
+      "type": "blob",
+      "size_bytes": 845,
+      "sha256": "df7a0ca592f449e770dd9889e0fa3549b0e84005138f647f884244b704a4d176"
+    },
+    {
+      "object": "674b4cbb8bb311fc984282819f55b06f0e0d8b07",
+      "type": "tree",
+      "size_bytes": 192,
+      "sha256": "1416a290f61e740a97b48e282b2a9676056777d4ba0fbeed2c0517a7c64590f3"
+    },
+    {
+      "object": "55db0b8adcc1f4da39e0430ea331c5614be741b6",
+      "type": "blob",
+      "size_bytes": 2746,
+      "sha256": "8733137fd2c7b8b192e39a3a3b606f5c33a97a1314c7c98b649548205837df01"
+    },
+    {
+      "object": "a6df6240a23622c523e4a8f637472918b9fc32d2",
+      "type": "blob",
+      "size_bytes": 5129,
+      "sha256": "b475ee513bf8398c7eb23233e948d1e20416b6dad7e40cf76659ae87fbe977e2"
+    },
+    {
+      "object": "d9af484f0e4885816e934d061c77aa2307f0e867",
+      "type": "blob",
+      "size_bytes": 1398,
+      "sha256": "fdb525b3cba66077072fbce41d8134a5d97c1e666d93d3556503a2ee5e0e60cb"
+    },
+    {
+      "object": "70eb6ffbe59fa5d6b3ab4992f102701ca3dfbfee",
+      "type": "blob",
+      "size_bytes": 752,
+      "sha256": "d898f0b44c13beec931d25a09ea8c212e77a0d5a190e6d18ee1703baecda3d58"
+    },
+    {
+      "object": "05b221bdfd2d3d92811c178a590e44455da7a152",
+      "type": "tree",
+      "size_bytes": 378,
+      "sha256": "3aa7d5e495e689b5edda18d7ff715363d3a19086e0f56b3e7fcb4cc99348216b"
+    },
+    {
+      "object": "d483722b53f8c3f720798308ccc845a2a8d75e8a",
+      "type": "blob",
+      "size_bytes": 1841,
+      "sha256": "90829b9dd3bd4c8915328b57c3f047e7f62b741bc50b487001b504525d6d9909"
+    },
+    {
+      "object": "28fe5cb85f5bba323c833d541262daaa4bbedaf9",
+      "type": "blob",
+      "size_bytes": 41554,
+      "sha256": "65c021103a36dad3c226e7978b1296dd399c3b6cf0e3d7fa9165032778a156e3"
+    },
+    {
+      "object": "3f7b0a38bb4e1aa1711a17bf8a398db061745bc4",
+      "type": "blob",
+      "size_bytes": 658248,
+      "sha256": "3af85d06f25ad7c401f411562baaf7f11f3b7c7ce43823a07f509c8fe7e568e6"
+    },
+    {
+      "object": "a2139ed494dccd80f6a9352624141976d526e955",
+      "type": "blob",
+      "size_bytes": 69828,
+      "sha256": "187d8e7e1fd56c0c83898cf36175a2c4e923aa0770b3d303a0f88bbad75f431d"
+    },
+    {
+      "object": "512a023950d91b85feab9c23582226ae3d2331bb",
+      "type": "blob",
+      "size_bytes": 246129,
+      "sha256": "97b7e7d88d1b1131b768a63c4b6d0da8fabf72cbda951a8d9ceb28115d6c6f6a"
+    },
+    {
+      "object": "8b377e29693965f4e682575d006c8cba90213552",
+      "type": "blob",
+      "size_bytes": 178045,
+      "sha256": "d5a8c223c8f4df8381fe8a6101d9a3b8755211e77c78efdad824914b7dddbad8"
+    },
+    {
+      "object": "186af36a262453a54a6de0fd0eb02b9a71763a15",
+      "type": "blob",
+      "size_bytes": 269693,
+      "sha256": "67def8ab07d2c6a82e39b21db975836b48cb03bd7d984df6719611bb3709ba2c"
+    },
+    {
+      "object": "f437fc460631f4693141f45a4aa1baf4744fda26",
+      "type": "blob",
+      "size_bytes": 3526,
+      "sha256": "9bfec75cfa7aa1949206efdb396f451071400a3841bcfbf4ddc1d97daf78e23a"
+    },
+    {
+      "object": "faf4014360e819aabd370d96fe48a7b4d34de009",
+      "type": "blob",
+      "size_bytes": 1120,
+      "sha256": "e1c0b6ba5806f8206e7946c88c0a3e6b1803999fe10458fd006d1a6251c71e9d"
+    },
+    {
+      "object": "087c8936e3b6459a81a42ac0a6c26b9c258e428e",
+      "type": "tree",
+      "size_bytes": 103,
+      "sha256": "d4c4c66945f68ec04024368f98e2b360d406ae1171e6dd2b19a6386ede1fb6e3"
+    },
+    {
+      "object": "241716c6f8143ab88418ce553e1cde46793528d1",
+      "type": "blob",
+      "size_bytes": 543,
+      "sha256": "fb6f5317c8c76ae859176f940a1319c438ff10704c1020060ede8f65d39a46d1"
+    }
+  ],
+  "stages": [
+    {
+      "commit": "62d4541836961a60ee52a4e44bfc9b3ef27cddb0",
+      "tree": "087c8936e3b6459a81a42ac0a6c26b9c258e428e",
+      "parents": [],
+      "file_count": 14,
+      "files": [
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "241716c6f8143ab88418ce553e1cde46793528d1",
+          "size_bytes": 543,
+          "sha256": "fb6f5317c8c76ae859176f940a1319c438ff10704c1020060ede8f65d39a46d1"
+        },
+        {
+          "path": "qa/review-v1-preserved.zh.md",
+          "mode": "100644",
+          "blob": "55db0b8adcc1f4da39e0430ea331c5614be741b6",
+          "size_bytes": 2746,
+          "sha256": "8733137fd2c7b8b192e39a3a3b606f5c33a97a1314c7c98b649548205837df01"
+        },
+        {
+          "path": "qa/review.zh.md",
+          "mode": "100644",
+          "blob": "a6df6240a23622c523e4a8f637472918b9fc32d2",
+          "size_bytes": 5129,
+          "sha256": "b475ee513bf8398c7eb23233e948d1e20416b6dad7e40cf76659ae87fbe977e2"
+        },
+        {
+          "path": "qa/reviewed-pixels-v2.json",
+          "mode": "100644",
+          "blob": "d9af484f0e4885816e934d061c77aa2307f0e867",
+          "size_bytes": 1398,
+          "sha256": "fdb525b3cba66077072fbce41d8134a5d97c1e666d93d3556503a2ee5e0e60cb"
+        },
+        {
+          "path": "qa/reviewed-pixels.json",
+          "mode": "100644",
+          "blob": "70eb6ffbe59fa5d6b3ab4992f102701ca3dfbfee",
+          "size_bytes": 752,
+          "sha256": "d898f0b44c13beec931d25a09ea8c212e77a0d5a190e6d18ee1703baecda3d58"
+        },
+        {
+          "path": "sources/README.zh.md",
+          "mode": "100644",
+          "blob": "d483722b53f8c3f720798308ccc845a2a8d75e8a",
+          "size_bytes": 1841,
+          "sha256": "90829b9dd3bd4c8915328b57c3f047e7f62b741bc50b487001b504525d6d9909"
+        },
+        {
+          "path": "sources/heineken-1.img",
+          "mode": "100644",
+          "blob": "28fe5cb85f5bba323c833d541262daaa4bbedaf9",
+          "size_bytes": 41554,
+          "sha256": "65c021103a36dad3c226e7978b1296dd399c3b6cf0e3d7fa9165032778a156e3"
+        },
+        {
+          "path": "sources/heineken-2.img",
+          "mode": "100644",
+          "blob": "3f7b0a38bb4e1aa1711a17bf8a398db061745bc4",
+          "size_bytes": 658248,
+          "sha256": "3af85d06f25ad7c401f411562baaf7f11f3b7c7ce43823a07f509c8fe7e568e6"
+        },
+        {
+          "path": "sources/heineken-5.img",
+          "mode": "100644",
+          "blob": "a2139ed494dccd80f6a9352624141976d526e955",
+          "size_bytes": 69828,
+          "sha256": "187d8e7e1fd56c0c83898cf36175a2c4e923aa0770b3d303a0f88bbad75f431d"
+        },
+        {
+          "path": "sources/reta2-10.img",
+          "mode": "100644",
+          "blob": "512a023950d91b85feab9c23582226ae3d2331bb",
+          "size_bytes": 246129,
+          "sha256": "97b7e7d88d1b1131b768a63c4b6d0da8fabf72cbda951a8d9ceb28115d6c6f6a"
+        },
+        {
+          "path": "sources/reta2-3.img",
+          "mode": "100644",
+          "blob": "8b377e29693965f4e682575d006c8cba90213552",
+          "size_bytes": 178045,
+          "sha256": "d5a8c223c8f4df8381fe8a6101d9a3b8755211e77c78efdad824914b7dddbad8"
+        },
+        {
+          "path": "sources/reta2-4.img",
+          "mode": "100644",
+          "blob": "186af36a262453a54a6de0fd0eb02b9a71763a15",
+          "size_bytes": 269693,
+          "sha256": "67def8ab07d2c6a82e39b21db975836b48cb03bd7d984df6719611bb3709ba2c"
+        },
+        {
+          "path": "sources/source-manifest.json",
+          "mode": "100644",
+          "blob": "f437fc460631f4693141f45a4aa1baf4744fda26",
+          "size_bytes": 3526,
+          "sha256": "9bfec75cfa7aa1949206efdb396f451071400a3841bcfbf4ddc1d97daf78e23a"
+        },
+        {
+          "path": "sources/tree-manifest.json",
+          "mode": "100644",
+          "blob": "faf4014360e819aabd370d96fe48a7b4d34de009",
+          "size_bytes": 1120,
+          "sha256": "e1c0b6ba5806f8206e7946c88c0a3e6b1803999fe10458fd006d1a6251c71e9d"
+        }
+      ]
+    },
+    {
+      "commit": "6577e24dbb2bfca19b6f086f293df5548946a07c",
+      "tree": "f6da0ba7733bfe3968baeeb669a21dd2c38318b2",
+      "parents": [
+        "62d4541836961a60ee52a4e44bfc9b3ef27cddb0"
+      ],
+      "file_count": 23,
+      "files": [
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "76e929f5e813bb561234e6dc558cc30ac8202182",
+          "size_bytes": 935,
+          "sha256": "6d81a239dd8adfc3ae161dbc1622445a0d536a5f6c9367f42fb4e6af656e22bd"
+        },
+        {
+          "path": "dreamfold/qa/review.zh.md",
+          "mode": "100644",
+          "blob": "d8645d20c654ac24903d6e03390ce5c5b849b0ed",
+          "size_bytes": 3446,
+          "sha256": "25b8038097dd751185243f43278c86a8d49166e77306cb480a851396a1fe9e48"
+        },
+        {
+          "path": "dreamfold/qa/reviewed-pixels.json",
+          "mode": "100644",
+          "blob": "3e73563cfa49d2fe403207489b8c90250fbf90d3",
+          "size_bytes": 1015,
+          "sha256": "c3eaa84a395aa2a66ea1d19d43a222c9ebf0d75fdefb13fed88465499b55a9b9"
+        },
+        {
+          "path": "dreamfold/sources/README.zh.md",
+          "mode": "100644",
+          "blob": "a56183ff2f0d2f5e09d1511ddcb4cf22ee5d8535",
+          "size_bytes": 886,
+          "sha256": "f4560369433a093e903cce47005e0636bcb00551b3d11072ee6b6a750d36bf96"
+        },
+        {
+          "path": "dreamfold/sources/identity-and-limits.json",
+          "mode": "100644",
+          "blob": "c6381b691379174b85c4d9bffb4ea639e1258c3f",
+          "size_bytes": 898,
+          "sha256": "21bc3a60d77457cd645a1406f269f10d1b411003cc117deb1cfa4d7205f10cb3"
+        },
+        {
+          "path": "dreamfold/sources/reta2-7.img",
+          "mode": "100644",
+          "blob": "656ced9c2682c148aafbee052ffa1a074953ea8e",
+          "size_bytes": 283154,
+          "sha256": "18aaedb0defe7320a223f0c16fccc4da484362dea8d542119be3abb75a04636b"
+        },
+        {
+          "path": "dreamfold/sources/reta2-8.img",
+          "mode": "100644",
+          "blob": "940fff05b6d7f529acacf65400b2ef1ab18581ae",
+          "size_bytes": 303025,
+          "sha256": "5b831edcb998ff3ddd6aefa952b081ef0dc80db424039f64b19583481802e580"
+        },
+        {
+          "path": "dreamfold/sources/reta2-9.img",
+          "mode": "100644",
+          "blob": "8fb5bdf6729fc8b27473fa3ab841a43f4d8740a2",
+          "size_bytes": 209183,
+          "sha256": "277b3e80b1ff96738793c875849e5797e1c3c6ce2e0eca9114fda2f58c339e6b"
+        },
+        {
+          "path": "dreamfold/sources/source-manifest.json",
+          "mode": "100644",
+          "blob": "cd8bb938cd566e16143b03ebd77100ca429535d6",
+          "size_bytes": 1334,
+          "sha256": "d31647c9a82a129bf535e0a6ec78dbff8e74c558be0d29b9b2c1f36d93b2ffb0"
+        },
+        {
+          "path": "dreamfold/sources/tree-manifest.json",
+          "mode": "100644",
+          "blob": "6f19d6750e87a43b40b5f74dd69f2cac67a4bd36",
+          "size_bytes": 845,
+          "sha256": "df7a0ca592f449e770dd9889e0fa3549b0e84005138f647f884244b704a4d176"
+        },
+        {
+          "path": "qa/review-v1-preserved.zh.md",
+          "mode": "100644",
+          "blob": "55db0b8adcc1f4da39e0430ea331c5614be741b6",
+          "size_bytes": 2746,
+          "sha256": "8733137fd2c7b8b192e39a3a3b606f5c33a97a1314c7c98b649548205837df01"
+        },
+        {
+          "path": "qa/review.zh.md",
+          "mode": "100644",
+          "blob": "a6df6240a23622c523e4a8f637472918b9fc32d2",
+          "size_bytes": 5129,
+          "sha256": "b475ee513bf8398c7eb23233e948d1e20416b6dad7e40cf76659ae87fbe977e2"
+        },
+        {
+          "path": "qa/reviewed-pixels-v2.json",
+          "mode": "100644",
+          "blob": "d9af484f0e4885816e934d061c77aa2307f0e867",
+          "size_bytes": 1398,
+          "sha256": "fdb525b3cba66077072fbce41d8134a5d97c1e666d93d3556503a2ee5e0e60cb"
+        },
+        {
+          "path": "qa/reviewed-pixels.json",
+          "mode": "100644",
+          "blob": "70eb6ffbe59fa5d6b3ab4992f102701ca3dfbfee",
+          "size_bytes": 752,
+          "sha256": "d898f0b44c13beec931d25a09ea8c212e77a0d5a190e6d18ee1703baecda3d58"
+        },
+        {
+          "path": "sources/README.zh.md",
+          "mode": "100644",
+          "blob": "d483722b53f8c3f720798308ccc845a2a8d75e8a",
+          "size_bytes": 1841,
+          "sha256": "90829b9dd3bd4c8915328b57c3f047e7f62b741bc50b487001b504525d6d9909"
+        },
+        {
+          "path": "sources/heineken-1.img",
+          "mode": "100644",
+          "blob": "28fe5cb85f5bba323c833d541262daaa4bbedaf9",
+          "size_bytes": 41554,
+          "sha256": "65c021103a36dad3c226e7978b1296dd399c3b6cf0e3d7fa9165032778a156e3"
+        },
+        {
+          "path": "sources/heineken-2.img",
+          "mode": "100644",
+          "blob": "3f7b0a38bb4e1aa1711a17bf8a398db061745bc4",
+          "size_bytes": 658248,
+          "sha256": "3af85d06f25ad7c401f411562baaf7f11f3b7c7ce43823a07f509c8fe7e568e6"
+        },
+        {
+          "path": "sources/heineken-5.img",
+          "mode": "100644",
+          "blob": "a2139ed494dccd80f6a9352624141976d526e955",
+          "size_bytes": 69828,
+          "sha256": "187d8e7e1fd56c0c83898cf36175a2c4e923aa0770b3d303a0f88bbad75f431d"
+        },
+        {
+          "path": "sources/reta2-10.img",
+          "mode": "100644",
+          "blob": "512a023950d91b85feab9c23582226ae3d2331bb",
+          "size_bytes": 246129,
+          "sha256": "97b7e7d88d1b1131b768a63c4b6d0da8fabf72cbda951a8d9ceb28115d6c6f6a"
+        },
+        {
+          "path": "sources/reta2-3.img",
+          "mode": "100644",
+          "blob": "8b377e29693965f4e682575d006c8cba90213552",
+          "size_bytes": 178045,
+          "sha256": "d5a8c223c8f4df8381fe8a6101d9a3b8755211e77c78efdad824914b7dddbad8"
+        },
+        {
+          "path": "sources/reta2-4.img",
+          "mode": "100644",
+          "blob": "186af36a262453a54a6de0fd0eb02b9a71763a15",
+          "size_bytes": 269693,
+          "sha256": "67def8ab07d2c6a82e39b21db975836b48cb03bd7d984df6719611bb3709ba2c"
+        },
+        {
+          "path": "sources/source-manifest.json",
+          "mode": "100644",
+          "blob": "f437fc460631f4693141f45a4aa1baf4744fda26",
+          "size_bytes": 3526,
+          "sha256": "9bfec75cfa7aa1949206efdb396f451071400a3841bcfbf4ddc1d97daf78e23a"
+        },
+        {
+          "path": "sources/tree-manifest.json",
+          "mode": "100644",
+          "blob": "faf4014360e819aabd370d96fe48a7b4d34de009",
+          "size_bytes": 1120,
+          "sha256": "e1c0b6ba5806f8206e7946c88c0a3e6b1803999fe10458fd006d1a6251c71e9d"
+        }
+      ]
+    }
+  ],
+  "history_ref": "refs/heads/history/retaland-source-queues-original-20261104",
+  "archive_ref": "refs/heads/archive/retaland-source-queues-20261104",
+  "base_commit": "25ec0b6490da04ca52976e3e059247fbe55ee980",
+  "archive_prefix": "research/retaland-source-queues-20261104",
+  "file_count": 23,
+  "total_file_bytes": 2284730,
+  "files": [
+    {
+      "path": "README.zh.md",
+      "mode": "100644",
+      "blob": "76e929f5e813bb561234e6dc558cc30ac8202182",
+      "size_bytes": 935,
+      "sha256": "6d81a239dd8adfc3ae161dbc1622445a0d536a5f6c9367f42fb4e6af656e22bd"
+    },
+    {
+      "path": "dreamfold/qa/review.zh.md",
+      "mode": "100644",
+      "blob": "d8645d20c654ac24903d6e03390ce5c5b849b0ed",
+      "size_bytes": 3446,
+      "sha256": "25b8038097dd751185243f43278c86a8d49166e77306cb480a851396a1fe9e48"
+    },
+    {
+      "path": "dreamfold/qa/reviewed-pixels.json",
+      "mode": "100644",
+      "blob": "3e73563cfa49d2fe403207489b8c90250fbf90d3",
+      "size_bytes": 1015,
+      "sha256": "c3eaa84a395aa2a66ea1d19d43a222c9ebf0d75fdefb13fed88465499b55a9b9"
+    },
+    {
+      "path": "dreamfold/sources/README.zh.md",
+      "mode": "100644",
+      "blob": "a56183ff2f0d2f5e09d1511ddcb4cf22ee5d8535",
+      "size_bytes": 886,
+      "sha256": "f4560369433a093e903cce47005e0636bcb00551b3d11072ee6b6a750d36bf96"
+    },
+    {
+      "path": "dreamfold/sources/identity-and-limits.json",
+      "mode": "100644",
+      "blob": "c6381b691379174b85c4d9bffb4ea639e1258c3f",
+      "size_bytes": 898,
+      "sha256": "21bc3a60d77457cd645a1406f269f10d1b411003cc117deb1cfa4d7205f10cb3"
+    },
+    {
+      "path": "dreamfold/sources/reta2-7.img",
+      "mode": "100644",
+      "blob": "656ced9c2682c148aafbee052ffa1a074953ea8e",
+      "size_bytes": 283154,
+      "sha256": "18aaedb0defe7320a223f0c16fccc4da484362dea8d542119be3abb75a04636b"
+    },
+    {
+      "path": "dreamfold/sources/reta2-8.img",
+      "mode": "100644",
+      "blob": "940fff05b6d7f529acacf65400b2ef1ab18581ae",
+      "size_bytes": 303025,
+      "sha256": "5b831edcb998ff3ddd6aefa952b081ef0dc80db424039f64b19583481802e580"
+    },
+    {
+      "path": "dreamfold/sources/reta2-9.img",
+      "mode": "100644",
+      "blob": "8fb5bdf6729fc8b27473fa3ab841a43f4d8740a2",
+      "size_bytes": 209183,
+      "sha256": "277b3e80b1ff96738793c875849e5797e1c3c6ce2e0eca9114fda2f58c339e6b"
+    },
+    {
+      "path": "dreamfold/sources/source-manifest.json",
+      "mode": "100644",
+      "blob": "cd8bb938cd566e16143b03ebd77100ca429535d6",
+      "size_bytes": 1334,
+      "sha256": "d31647c9a82a129bf535e0a6ec78dbff8e74c558be0d29b9b2c1f36d93b2ffb0"
+    },
+    {
+      "path": "dreamfold/sources/tree-manifest.json",
+      "mode": "100644",
+      "blob": "6f19d6750e87a43b40b5f74dd69f2cac67a4bd36",
+      "size_bytes": 845,
+      "sha256": "df7a0ca592f449e770dd9889e0fa3549b0e84005138f647f884244b704a4d176"
+    },
+    {
+      "path": "qa/review-v1-preserved.zh.md",
+      "mode": "100644",
+      "blob": "55db0b8adcc1f4da39e0430ea331c5614be741b6",
+      "size_bytes": 2746,
+      "sha256": "8733137fd2c7b8b192e39a3a3b606f5c33a97a1314c7c98b649548205837df01"
+    },
+    {
+      "path": "qa/review.zh.md",
+      "mode": "100644",
+      "blob": "a6df6240a23622c523e4a8f637472918b9fc32d2",
+      "size_bytes": 5129,
+      "sha256": "b475ee513bf8398c7eb23233e948d1e20416b6dad7e40cf76659ae87fbe977e2"
+    },
+    {
+      "path": "qa/reviewed-pixels-v2.json",
+      "mode": "100644",
+      "blob": "d9af484f0e4885816e934d061c77aa2307f0e867",
+      "size_bytes": 1398,
+      "sha256": "fdb525b3cba66077072fbce41d8134a5d97c1e666d93d3556503a2ee5e0e60cb"
+    },
+    {
+      "path": "qa/reviewed-pixels.json",
+      "mode": "100644",
+      "blob": "70eb6ffbe59fa5d6b3ab4992f102701ca3dfbfee",
+      "size_bytes": 752,
+      "sha256": "d898f0b44c13beec931d25a09ea8c212e77a0d5a190e6d18ee1703baecda3d58"
+    },
+    {
+      "path": "sources/README.zh.md",
+      "mode": "100644",
+      "blob": "d483722b53f8c3f720798308ccc845a2a8d75e8a",
+      "size_bytes": 1841,
+      "sha256": "90829b9dd3bd4c8915328b57c3f047e7f62b741bc50b487001b504525d6d9909"
+    },
+    {
+      "path": "sources/heineken-1.img",
+      "mode": "100644",
+      "blob": "28fe5cb85f5bba323c833d541262daaa4bbedaf9",
+      "size_bytes": 41554,
+      "sha256": "65c021103a36dad3c226e7978b1296dd399c3b6cf0e3d7fa9165032778a156e3"
+    },
+    {
+      "path": "sources/heineken-2.img",
+      "mode": "100644",
+      "blob": "3f7b0a38bb4e1aa1711a17bf8a398db061745bc4",
+      "size_bytes": 658248,
+      "sha256": "3af85d06f25ad7c401f411562baaf7f11f3b7c7ce43823a07f509c8fe7e568e6"
+    },
+    {
+      "path": "sources/heineken-5.img",
+      "mode": "100644",
+      "blob": "a2139ed494dccd80f6a9352624141976d526e955",
+      "size_bytes": 69828,
+      "sha256": "187d8e7e1fd56c0c83898cf36175a2c4e923aa0770b3d303a0f88bbad75f431d"
+    },
+    {
+      "path": "sources/reta2-10.img",
+      "mode": "100644",
+      "blob": "512a023950d91b85feab9c23582226ae3d2331bb",
+      "size_bytes": 246129,
+      "sha256": "97b7e7d88d1b1131b768a63c4b6d0da8fabf72cbda951a8d9ceb28115d6c6f6a"
+    },
+    {
+      "path": "sources/reta2-3.img",
+      "mode": "100644",
+      "blob": "8b377e29693965f4e682575d006c8cba90213552",
+      "size_bytes": 178045,
+      "sha256": "d5a8c223c8f4df8381fe8a6101d9a3b8755211e77c78efdad824914b7dddbad8"
+    },
+    {
+      "path": "sources/reta2-4.img",
+      "mode": "100644",
+      "blob": "186af36a262453a54a6de0fd0eb02b9a71763a15",
+      "size_bytes": 269693,
+      "sha256": "67def8ab07d2c6a82e39b21db975836b48cb03bd7d984df6719611bb3709ba2c"
+    },
+    {
+      "path": "sources/source-manifest.json",
+      "mode": "100644",
+      "blob": "f437fc460631f4693141f45a4aa1baf4744fda26",
+      "size_bytes": 3526,
+      "sha256": "9bfec75cfa7aa1949206efdb396f451071400a3841bcfbf4ddc1d97daf78e23a"
+    },
+    {
+      "path": "sources/tree-manifest.json",
+      "mode": "100644",
+      "blob": "faf4014360e819aabd370d96fe48a7b4d34de009",
+      "size_bytes": 1120,
+      "sha256": "e1c0b6ba5806f8206e7946c88c0a3e6b1803999fe10458fd006d1a6251c71e9d"
+    }
+  ],
+  "limitations": [
+    "This archive is independent source-queue research only. Six Heineken-related public stage images and three Samsung Dreamfold images remain in separate original directories. There are no models, render tasks, production scene deliverables or new-scene counts; neither queue is accepted or ready for complete-scene reconstruction.",
+    "The supplied2023-01-04 secondary report associates Xingtong and Xing Yin Li with Heineken. The earlier preview associates Wei Yi with Samsung Dreamfold. Official performance-pixel identity has not been established for Heineken; the earlier lineup omission does not prove nonappearance. Samsung Wei Yi material cannot be used to bridge Heineken. The archive worker preserves these reported claims without independently re-browsing or settling their conflict.",
+    "Heineken remains short of a second complete unobstructed wide side/high view of a demonstrably same version. Near-front images, cropped seating and the two-panel identity collage do not supply that baseline. The requested original heineken-2 stage image itself includes an interactive treasure-box UI; it is retained unchanged and distinguished from YOUKU broadcast screenshots. No unrelated UI/social capture is added, and interactive/video versions are not merged as one same-state geometry.",
+    "Samsung Dreamfold has only one full wide view (reta2-8); reta2-7 is a phone-side partial view and reta2-9 is a moving-blimp/phone partial view. The reported performer/lyrics/preview link is stronger than a brand name alone, but is not a native official clip/time bridge. Blimps, hearts, glow and screen video are not fixed geometric landmarks. Missing phone hinge/support, screen-foot and terrain side evidence remains explicit.",
+    "All nine public images are non-native media references with unknown precise clip times and unverified highest decode quality. Publication dates are not substituted for performance/frame timestamps. No image is resized, renamed by guessed format, recaptured, edited or used to fabricate geometry during archival.",
+    "Supplied deduplication is bounded: the reports describe source-panel comparisons with old Issue6 and Issue90 plus a29-record text snapshot, not exhaustive current repository pixel deduplication. Two referenced old comparison images are outside this23-file freeze: old-neon-Reference_B_crop.jpg and old-festival-three-source-comparison-derived.jpg. Their recorded hashes and citations are preserved, but their bytes are not claimed included or independently inspected by this archive worker. No missing research attachment is fetched or reconstructed.",
+    "The initial62d4541 commit and successor6577e24 commit are preserved unchanged. Thirteen of the initial14 files remain byte-identical; only the root README changes and nine Dreamfold files are appended. Source manifests, both scoped tree manifests and the included-image QA hash/dimension records are checked against actual archived bytes. The earlier Heineken review and updated identity/version limitations remain intact.",
+    "A new independent archive branch is based on the unchanged verified redwhite archive commit solely to preserve all12024 old paths. Every210 preexisting advertised ref, including main, HEAD, managed PR refs and all scene/research refs, remains unchanged. Only two new archive/history branches are created by ordinary Git; all source objects and both commit trees are verified from a fresh independent remote repository.",
+    "This is distinct from the denied source-screening-increment receipt, which remains paused and is never retried. No modeling/rendering, production tree edits, LFS, force pushes, history deletion, credential copying, security changes, Issues or PRs. Library version1 remains retained, and consumption confirmation is given only after the new verification receipt is committed and independently read back. No permanent attachment is created or modified."
+  ],
+  "producer_manifest_verification": {
+    "original_commits": 2,
+    "initial_source_file_count": 14,
+    "final_source_file_count": 23,
+    "initial_files_unchanged": 13,
+    "initial_changed_paths": [
+      "README.zh.md"
+    ],
+    "new_dreamfold_files": [
+      "dreamfold/qa/review.zh.md",
+      "dreamfold/qa/reviewed-pixels.json",
+      "dreamfold/sources/README.zh.md",
+      "dreamfold/sources/identity-and-limits.json",
+      "dreamfold/sources/reta2-7.img",
+      "dreamfold/sources/reta2-8.img",
+      "dreamfold/sources/reta2-9.img",
+      "dreamfold/sources/source-manifest.json",
+      "dreamfold/sources/tree-manifest.json"
+    ],
+    "heineken_public_stage_images": 6,
+    "dreamfold_public_stage_images": 3,
+    "verified_included_image_bytes_and_dimensions": [
+      {
+        "path": "sources/heineken-1.img",
+        "bytes": 41554,
+        "sha256": "65c021103a36dad3c226e7978b1296dd399c3b6cf0e3d7fa9165032778a156e3",
+        "dimensions": [
+          1080,
+          608
+        ],
+        "format": "JPEG",
+        "native": false
+      },
+      {
+        "path": "sources/heineken-2.img",
+        "bytes": 658248,
+        "sha256": "3af85d06f25ad7c401f411562baaf7f11f3b7c7ce43823a07f509c8fe7e568e6",
+        "dimensions": [
+          1080,
+          623
+        ],
+        "format": "PNG",
+        "native": false
+      },
+      {
+        "path": "sources/heineken-5.img",
+        "bytes": 69828,
+        "sha256": "187d8e7e1fd56c0c83898cf36175a2c4e923aa0770b3d303a0f88bbad75f431d",
+        "dimensions": [
+          1080,
+          608
+        ],
+        "format": "JPEG",
+        "native": false
+      },
+      {
+        "path": "sources/reta2-3.img",
+        "bytes": 178045,
+        "sha256": "d5a8c223c8f4df8381fe8a6101d9a3b8755211e77c78efdad824914b7dddbad8",
+        "dimensions": [
+          1080,
+          605
+        ],
+        "format": "PNG",
+        "native": false
+      },
+      {
+        "path": "sources/reta2-4.img",
+        "bytes": 269693,
+        "sha256": "67def8ab07d2c6a82e39b21db975836b48cb03bd7d984df6719611bb3709ba2c",
+        "dimensions": [
+          1080,
+          606
+        ],
+        "format": "PNG",
+        "native": false
+      },
+      {
+        "path": "sources/reta2-10.img",
+        "bytes": 246129,
+        "sha256": "97b7e7d88d1b1131b768a63c4b6d0da8fabf72cbda951a8d9ceb28115d6c6f6a",
+        "dimensions": [
+          1080,
+          605
+        ],
+        "format": "PNG",
+        "native": false
+      },
+      {
+        "path": "dreamfold/sources/reta2-7.img",
+        "bytes": 283154,
+        "sha256": "18aaedb0defe7320a223f0c16fccc4da484362dea8d542119be3abb75a04636b",
+        "dimensions": [
+          1080,
+          603
+        ],
+        "format": "PNG",
+        "native": false
+      },
+      {
+        "path": "dreamfold/sources/reta2-8.img",
+        "bytes": 303025,
+        "sha256": "5b831edcb998ff3ddd6aefa952b081ef0dc80db424039f64b19583481802e580",
+        "dimensions": [
+          1080,
+          605
+        ],
+        "format": "PNG",
+        "native": false
+      },
+      {
+        "path": "dreamfold/sources/reta2-9.img",
+        "bytes": 209183,
+        "sha256": "277b3e80b1ff96738793c875849e5797e1c3c6ce2e0eca9114fda2f58c339e6b",
+        "dimensions": [
+          1080,
+          458
+        ],
+        "format": "PNG",
+        "native": false
+      }
+    ],
+    "scoped_tree_manifest_file_count": 14,
+    "scoped_tree_manifest_verification": [
+      {
+        "path": "sources/README.zh.md",
+        "bytes": 1841,
+        "sha256": "90829b9dd3bd4c8915328b57c3f047e7f62b741bc50b487001b504525d6d9909"
+      },
+      {
+        "path": "sources/heineken-1.img",
+        "bytes": 41554,
+        "sha256": "65c021103a36dad3c226e7978b1296dd399c3b6cf0e3d7fa9165032778a156e3"
+      },
+      {
+        "path": "sources/heineken-2.img",
+        "bytes": 658248,
+        "sha256": "3af85d06f25ad7c401f411562baaf7f11f3b7c7ce43823a07f509c8fe7e568e6"
+      },
+      {
+        "path": "sources/heineken-5.img",
+        "bytes": 69828,
+        "sha256": "187d8e7e1fd56c0c83898cf36175a2c4e923aa0770b3d303a0f88bbad75f431d"
+      },
+      {
+        "path": "sources/reta2-10.img",
+        "bytes": 246129,
+        "sha256": "97b7e7d88d1b1131b768a63c4b6d0da8fabf72cbda951a8d9ceb28115d6c6f6a"
+      },
+      {
+        "path": "sources/reta2-3.img",
+        "bytes": 178045,
+        "sha256": "d5a8c223c8f4df8381fe8a6101d9a3b8755211e77c78efdad824914b7dddbad8"
+      },
+      {
+        "path": "sources/reta2-4.img",
+        "bytes": 269693,
+        "sha256": "67def8ab07d2c6a82e39b21db975836b48cb03bd7d984df6719611bb3709ba2c"
+      },
+      {
+        "path": "sources/source-manifest.json",
+        "bytes": 3526,
+        "sha256": "9bfec75cfa7aa1949206efdb396f451071400a3841bcfbf4ddc1d97daf78e23a"
+      },
+      {
+        "path": "dreamfold/sources/README.zh.md",
+        "bytes": 886,
+        "sha256": "f4560369433a093e903cce47005e0636bcb00551b3d11072ee6b6a750d36bf96"
+      },
+      {
+        "path": "dreamfold/sources/identity-and-limits.json",
+        "bytes": 898,
+        "sha256": "21bc3a60d77457cd645a1406f269f10d1b411003cc117deb1cfa4d7205f10cb3"
+      },
+      {
+        "path": "dreamfold/sources/reta2-7.img",
+        "bytes": 283154,
+        "sha256": "18aaedb0defe7320a223f0c16fccc4da484362dea8d542119be3abb75a04636b"
+      },
+      {
+        "path": "dreamfold/sources/reta2-8.img",
+        "bytes": 303025,
+        "sha256": "5b831edcb998ff3ddd6aefa952b081ef0dc80db424039f64b19583481802e580"
+      },
+      {
+        "path": "dreamfold/sources/reta2-9.img",
+        "bytes": 209183,
+        "sha256": "277b3e80b1ff96738793c875849e5797e1c3c6ce2e0eca9114fda2f58c339e6b"
+      },
+      {
+        "path": "dreamfold/sources/source-manifest.json",
+        "bytes": 1334,
+        "sha256": "d31647c9a82a129bf535e0a6ec78dbff8e74c558be0d29b9b2c1f36d93b2ffb0"
+      }
+    ],
+    "included_QA_image_record_bindings": [
+      {
+        "record": "qa/reviewed-pixels-v2.json",
+        "path": "sources/heineken-1.img"
+      },
+      {
+        "record": "qa/reviewed-pixels-v2.json",
+        "path": "sources/heineken-2.img"
+      },
+      {
+        "record": "qa/reviewed-pixels-v2.json",
+        "path": "sources/heineken-5.img"
+      },
+      {
+        "record": "qa/reviewed-pixels-v2.json",
+        "path": "sources/reta2-3.img"
+      },
+      {
+        "record": "qa/reviewed-pixels-v2.json",
+        "path": "sources/reta2-4.img"
+      },
+      {
+        "record": "qa/reviewed-pixels-v2.json",
+        "path": "sources/reta2-10.img"
+      },
+      {
+        "record": "qa/reviewed-pixels.json",
+        "recorded_path": "technical-scene-source-20261104/heineken-1.img",
+        "path": "sources/heineken-1.img"
+      },
+      {
+        "record": "qa/reviewed-pixels.json",
+        "recorded_path": "technical-scene-source-20261104/heineken-2.img",
+        "path": "sources/heineken-2.img"
+      },
+      {
+        "record": "qa/reviewed-pixels.json",
+        "recorded_path": "technical-scene-source-20261104/heineken-5.img",
+        "path": "sources/heineken-5.img"
+      },
+      {
+        "record": "dreamfold/qa/reviewed-pixels.json",
+        "recorded_path": "dreamfold-source-20261104/reta2-7.img",
+        "path": "dreamfold/sources/reta2-7.img"
+      },
+      {
+        "record": "dreamfold/qa/reviewed-pixels.json",
+        "recorded_path": "dreamfold-source-20261104/reta2-8.img",
+        "path": "dreamfold/sources/reta2-8.img"
+      },
+      {
+        "record": "dreamfold/qa/reviewed-pixels.json",
+        "recorded_path": "dreamfold-source-20261104/reta2-9.img",
+        "path": "dreamfold/sources/reta2-9.img"
+      }
+    ],
+    "referenced_old_dedup_images_outside_freeze": [
+      {
+        "record": "qa/reviewed-pixels.json",
+        "recorded_path": "independent-heineken-dedup-20261104/old-neon-Reference_B_crop.jpg",
+        "recorded_sha256": "eb530a9190bcb344ba8451646ec1a31dc494e91e0a72c5601c024028b01bf6cd",
+        "included_in_frozen_tree": false,
+        "bytes_independently_verified_here": false
+      },
+      {
+        "record": "dreamfold/qa/reviewed-pixels.json",
+        "recorded_path": "independent-dreamfold-dedup-20261104/old-festival-three-source-comparison-derived.jpg",
+        "recorded_sha256": "45b793b697a9cb825cfc9d56e86b670bdfeb832f48c0d3ee9bc88b1c095e8c9a",
+        "included_in_frozen_tree": false,
+        "bytes_independently_verified_here": false
+      }
+    ],
+    "heineken_interactive_UI_inside_requested_original_stage_image_preserved": true,
+    "separate_candidate_directories_preserved": true,
+    "model_files": 0,
+    "new_scene_deliveries": 0,
+    "source_identity_accepted": false,
+    "official_native_pixel_bridge_verified": false,
+    "whole_repository_pixel_dedup_claimed": false,
+    "archiver_researched_remote_sources": false,
+    "production_scripts_modeling_rendering_executed": false
+  },
+  "archive_branch_created_from": "refs/heads/archive/redwhite-twistframe-r01-20261104"
+}
