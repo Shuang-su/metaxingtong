@@ -1,0 +1,10 @@
+{
+  "correction": "A possible floating-point roundtrip risk was initially described too definitively. Actual audit finds no such zero-parameter mutation in this fixture.",
+  "evidence": "qa/zero-trial-saved-subset-audit.json",
+  "tested_meshes": 20,
+  "exact_same_world_hashes": 20,
+  "changed_hashes": 0,
+  "algorithm_changed": false,
+  "additional_guard": "Zero-parameter identity assertion added to both production-preparation and subset harness.",
+  "production_scene_loaded": false
+}

@@ -1,0 +1,94 @@
+{
+  "stage": "r06",
+  "source_accepted": false,
+  "material_mesh_count": 2704,
+  "material_camera_count": 13,
+  "camera_roles": "3 source-fit hypotheses + 1 auxiliary close rear + 1 hero + 8 real inspection cameras",
+  "material_white_geometry_identical": true,
+  "camera_sets_identical": true,
+  "all_external_images_exist": true,
+  "dependencies": [
+    {
+      "image": "lake-colour-hypothesis.png",
+      "declared": "//../textures/lake-colour-hypothesis.png",
+      "resolved": "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/models/../textures/lake-colour-hypothesis.png",
+      "exists": true,
+      "packed": false,
+      "sha256": "cf52a9539ad16006e8470ac4c730f7f78e3a8bb748d098422b29dbe9ed5540ae"
+    },
+    {
+      "image": "leaf-tissue-albedo.png",
+      "declared": "//../textures/leaf-tissue-albedo.png",
+      "resolved": "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/models/../textures/leaf-tissue-albedo.png",
+      "exists": true,
+      "packed": false,
+      "sha256": "7d21c052985779c3d2f9b8def2edc1fef3c108f61cf7e9efa0587b438161ff13"
+    },
+    {
+      "image": "leaf-tissue-roughness.png",
+      "declared": "//../textures/leaf-tissue-roughness.png",
+      "resolved": "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/models/../textures/leaf-tissue-roughness.png",
+      "exists": true,
+      "packed": false,
+      "sha256": "916eb52640114f91b729648d6b989898acba9a11629305474ca73d479f2aa367"
+    },
+    {
+      "image": "water-wave-normal.png",
+      "declared": "//../textures/water-wave-normal.png",
+      "resolved": "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/models/../textures/water-wave-normal.png",
+      "exists": true,
+      "packed": false,
+      "sha256": "108427a05b8f5ea094e90d837a5bbced785bd986aa815721ae787dc97ee842b3"
+    }
+  ],
+  "all_model_visibility_stable": true,
+  "main_shell": {
+    "geometry_sha256": "6a4c282b46784f01aeecf2041a4c78906c5245c4355f371ffc84506ed395c19b",
+    "vertices": 41826,
+    "faces": 41824,
+    "bounds": [
+      [
+        -4.67203950881958,
+        4.668676853179932
+      ],
+      [
+        -1.656112790107727,
+        1.6550352573394775
+      ],
+      [
+        0.005628600716590881,
+        2.3300373554229736
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "zero_length_edges": 0,
+    "zero_area_faces": 0,
+    "volume": 0.8599759910276352,
+    "visible": true,
+    "inference": "Observed elongated pointed outline and concave leaf. Thickness 0.035 model units, depth and underside inferred. Shared across all cameras."
+  },
+  "glb_reimport_mesh_count": 2704,
+  "glb_reimport_camera_count": 13,
+  "glb_missing_meshes": [],
+  "glb_bound_errors_gt_1e4": [],
+  "glb_embedded_image_count": 4,
+  "shell_ray_first_hits": 1717,
+  "shell_ray_double_hits": 1717,
+  "intentional_open_surfaces": [
+    "lake surface",
+    "finite shore surface",
+    "individual foliage sheets"
+  ],
+  "unsupported_export": [
+    "AREA light absent from GLB; colour/view transform and render engine not portable"
+  ],
+  "not_tested": [
+    "full-scene triangle-triangle collision sweep",
+    "all vegetation supports and contacts",
+    "true metric thickness",
+    "source photometric acceptance",
+    "independent later replay",
+    "dynamic drift/water/birds/performer"
+  ]
+}

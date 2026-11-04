@@ -1,32 +1,46 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-11-04T13:34:59.714960+00:00",
-  "label": "Lake leafboat independent technical fixture diagnostic",
+  "created_at_utc": "2026-11-04T13:52:28.244644+00:00",
+  "label": "Lake leafboat water-surface counterexample diagnostic, frozen version 1",
   "status": "FROZEN_DIAGNOSTIC_STAGE_NOT_ACCEPTED",
   "input": {
     "library_file_id": "libfile_e545f0eb6108819198d2fbbd9146afcd",
-    "file_id": "file_00000000073881fdb2c5eecabc4fc127",
-    "filename": "lakeleaf-diagnostic-prep-20261104.bundle",
-    "size_bytes": 1723888,
-    "sha256": "4b0848c903ec10d1811b3a8742dbc38a5e17249e2206649ee3703ea88b0d9a66",
-    "version": 0,
+    "file_id": "file_00000000f9b481f59b37d0c85bce75e5",
+    "filename": "lakeleaf-diagnostic-prep-20261104-v1.bundle",
+    "size_bytes": 1729956,
+    "sha256": "ea9a01478529ef6d3cb0a7dd13d88fa85bba64e18eb6cd01e9014d8f81b3a787",
+    "version": 1,
     "materialized_and_verified": true,
     "bundle_refs": [
       {
-        "commit": "662e4d89c6e8bde6610a798130103257373bd550",
+        "commit": "a49de80a07131d8fedf2d5dc082e393d8a75c6ac",
         "ref": "refs/heads/diagnostic/lakeleaf-local-warp-20261104"
       }
     ],
     "bundle_prerequisites": [],
-    "checkout": "662e4d89c6e8bde6610a798130103257373bd550",
+    "checkout": "a49de80a07131d8fedf2d5dc082e393d8a75c6ac",
     "space_retained": true
   },
-  "original_head": "662e4d89c6e8bde6610a798130103257373bd550",
+  "original_head": "a49de80a07131d8fedf2d5dc082e393d8a75c6ac",
   "original_commits": [
     "41ec9d122a12d6741ed22d3037026168442ea804",
-    "662e4d89c6e8bde6610a798130103257373bd550"
+    "662e4d89c6e8bde6610a798130103257373bd550",
+    "2ff925d21f3c86473d65cb497f3137accef5e863",
+    "a49de80a07131d8fedf2d5dc082e393d8a75c6ac"
   ],
   "original_objects": [
+    {
+      "object": "a49de80a07131d8fedf2d5dc082e393d8a75c6ac",
+      "type": "commit",
+      "size_bytes": 280,
+      "sha256": "601a5bb3f0a146e9b47bff3a15a8c1802b0acb6802065f3d3bc75297d44d124d"
+    },
+    {
+      "object": "2ff925d21f3c86473d65cb497f3137accef5e863",
+      "type": "commit",
+      "size_bytes": 288,
+      "sha256": "181785374e246b7fa54756b3bc6392bd5a7cbf05c00d00b9757be6f7be70e1cd"
+    },
     {
       "object": "662e4d89c6e8bde6610a798130103257373bd550",
       "type": "commit",
@@ -40,10 +54,10 @@
       "sha256": "ce30d4605d38e67041d8e0bf7ce1f0ce09a20f98639893c417896e8bd2a3ea94"
     },
     {
-      "object": "4ceafc03d1063307bafb4492c0bf09f3b6110c49",
+      "object": "d3baba6280f8ce62007f0b108366b7ee1d54c168",
       "type": "tree",
-      "size_bytes": 720,
-      "sha256": "d0f857305ed1cdd58fe658528ca5ddce36b881900aa3066debfa1416d1884771"
+      "size_bytes": 783,
+      "sha256": "ae438e1f8e6c4315f92ef080760ea41273a2bb868c418ac1be27b7459d30dd63"
     },
     {
       "object": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
@@ -52,16 +66,22 @@
       "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
     },
     {
-      "object": "5ff5f8c755f84d0d66a959e8d1fb8b8117ec99f9",
+      "object": "496346e0c7326e617af1dde513e6b427611844d9",
       "type": "blob",
-      "size_bytes": 4567,
-      "sha256": "a0370a1438b8ce65cc09d43ab926c9f2e4e6b6841f026e648e41e045326ad880"
+      "size_bytes": 5133,
+      "sha256": "a5d91bac215afd344cf1eae127859edf68eb6646a18dac13e42f9e9d95e445a0"
     },
     {
       "object": "0fe5ef3d82ca385d1d356f30d04e231ca44d9768",
       "type": "blob",
       "size_bytes": 4438,
       "sha256": "ed46b446e827ff91d1f3fee90ec1ed36e2fd95aa4343781ec63d2ae0d5f27f74"
+    },
+    {
+      "object": "0a4af6035c91d4cc13fa993407f6a57402ba71c4",
+      "type": "blob",
+      "size_bytes": 532,
+      "sha256": "12eff26b4e9e5563f12fa255909e380d237ddd56324aee723a594b0050b6197b"
     },
     {
       "object": "ecfa13e6bff60032dffe554d4628a50cfc6bcada",
@@ -124,10 +144,16 @@
       "sha256": "badd16201f3f98448ee95e9e06c61cefc14bd21782487538b0ea13186f37ca08"
     },
     {
-      "object": "dcac1c7ebd782791ba18501fdfe2f6ca17ec339e",
+      "object": "03bce93baeeb2d32c2d492ee4e0b2dc6bad7c31c",
       "type": "tree",
-      "size_bytes": 518,
-      "sha256": "2f6f48e09e92fceb9638092c9014c215e49298c72eb14030994ec8a7291a7aec"
+      "size_bytes": 582,
+      "sha256": "cd69bd067479d811295cd00764d6421d67f409f49643236b8861bdd7d1f3e27c"
+    },
+    {
+      "object": "34c6734375dc64c3b5e0699152577d6df5e87261",
+      "type": "blob",
+      "size_bytes": 19148,
+      "sha256": "7eefbb28f5dd91a5e4d2759e91dbe2902c60920f72aa47cee5497960cb27ef5e"
     },
     {
       "object": "c03353f500088e3d5a896f7b4a1b3b28141a64be",
@@ -178,10 +204,10 @@
       "sha256": "8d8b62a9ef57f7d7428f37161353ac2bc13409f46f5900c67c4f0fc0d71171fb"
     },
     {
-      "object": "f18dd7905513bf666af7fd711bd238e5c7e94bc4",
+      "object": "0d09abfd818d8219ee9d18e92a550041fceca45c",
       "type": "tree",
-      "size_bytes": 335,
-      "sha256": "513724d42908ba83da6bc6d51ed103c758fc32b5f05bb0a11ef2fb7c5ebe62fa"
+      "size_bytes": 397,
+      "sha256": "72444819ba54bed63156bfe905847af0f375a38a8bb2c09408ad700994e08276"
     },
     {
       "object": "84c12f0ba11c781c1d091998573c5fd37b0b6185",
@@ -208,6 +234,12 @@
       "sha256": "ca443773e4b4694b01fea68ec9bd68cd9c14d7987269bc22dfc55b4bc761d323"
     },
     {
+      "object": "c17557d4a771232a4d4a2e9f5a2a080fc067269e",
+      "type": "blob",
+      "size_bytes": 2958,
+      "sha256": "66b0c8065ee9e6782bd9d67fa245fc0976ab0f7b21deb3a27018ec52789cef1b"
+    },
+    {
       "object": "2bb9826c7e0c5ed7fc0ddbf61044ed10f8c3d670",
       "type": "blob",
       "size_bytes": 8954,
@@ -220,10 +252,10 @@
       "sha256": "426884a9fb363ce5a5c1f59cba43d558a9c8abcaec123f8ac6413263eeea10f1"
     },
     {
-      "object": "b49bf640a65dce62e3d9a7c9dd82755919bbf4c7",
+      "object": "0253b15ed3aa625ff3e12d38e4803401264b39dd",
       "type": "blob",
-      "size_bytes": 1661,
-      "sha256": "769c6eb1a0b3d28cbf222663e0e9547beb47872271098b673524cdcbe013f5ae"
+      "size_bytes": 2195,
+      "sha256": "1517c9b09d2323ad22f8593c49485e1d9926a76d5ef011359bce58f9527c6ad1"
     },
     {
       "object": "66d94c0fdb36758893f2810a009dc86605269f84",
@@ -326,6 +358,66 @@
       "type": "blob",
       "size_bytes": 188,
       "sha256": "332dd2c011ae0516a34e940107c5a7d6c72b4e33fb9f3cb279ef3564c6fb46d2"
+    },
+    {
+      "object": "02ea2f24041c15c1a3fa42f29fe870ab3af8cf53",
+      "type": "tree",
+      "size_bytes": 783,
+      "sha256": "e84e8c7870e1337934602d49b9ee25a8f722fa944444ce70b9ebaf9bf859dbba"
+    },
+    {
+      "object": "d2a58b0af9b6e7a5cd765e2131af0deb562f819b",
+      "type": "tree",
+      "size_bytes": 582,
+      "sha256": "91d2f19db970b64135684164eab3bd2f60fecb40df8e4bff587022626f21b93c"
+    },
+    {
+      "object": "67ee37af1b8684eacc0c8a0e16e1c9b8a9257057",
+      "type": "blob",
+      "size_bytes": 18924,
+      "sha256": "c7fed1f63639c6d4b95301036deb03497508c528de041a3a3dd605e0ca0c46d9"
+    },
+    {
+      "object": "84d3ad1ba9024492232f436aad41593e9fcdcf61",
+      "type": "tree",
+      "size_bytes": 397,
+      "sha256": "128f98a5c89092d998542cfa71b05e07b280d756df651f68c46154daa7f4abab"
+    },
+    {
+      "object": "ef4d17d8746f18321be839ecefb17361d8b09281",
+      "type": "blob",
+      "size_bytes": 2598,
+      "sha256": "8115b7923763742cd4ea0c2c488afdadb46b2fcc7b6bed1c7c8b5c195ecaad7d"
+    },
+    {
+      "object": "4ceafc03d1063307bafb4492c0bf09f3b6110c49",
+      "type": "tree",
+      "size_bytes": 720,
+      "sha256": "d0f857305ed1cdd58fe658528ca5ddce36b881900aa3066debfa1416d1884771"
+    },
+    {
+      "object": "5ff5f8c755f84d0d66a959e8d1fb8b8117ec99f9",
+      "type": "blob",
+      "size_bytes": 4567,
+      "sha256": "a0370a1438b8ce65cc09d43ab926c9f2e4e6b6841f026e648e41e045326ad880"
+    },
+    {
+      "object": "dcac1c7ebd782791ba18501fdfe2f6ca17ec339e",
+      "type": "tree",
+      "size_bytes": 518,
+      "sha256": "2f6f48e09e92fceb9638092c9014c215e49298c72eb14030994ec8a7291a7aec"
+    },
+    {
+      "object": "f18dd7905513bf666af7fd711bd238e5c7e94bc4",
+      "type": "tree",
+      "size_bytes": 335,
+      "sha256": "513724d42908ba83da6bc6d51ed103c758fc32b5f05bb0a11ef2fb7c5ebe62fa"
+    },
+    {
+      "object": "b49bf640a65dce62e3d9a7c9dd82755919bbf4c7",
+      "type": "blob",
+      "size_bytes": 1661,
+      "sha256": "769c6eb1a0b3d28cbf222663e0e9547beb47872271098b673524cdcbe013f5ae"
     },
     {
       "object": "ff5b8f5e7adbf3879b0c681a0b6aa166276f9961",
@@ -900,14 +992,622 @@
           "sha256": "332dd2c011ae0516a34e940107c5a7d6c72b4e33fb9f3cb279ef3564c6fb46d2"
         }
       ]
+    },
+    {
+      "commit": "2ff925d21f3c86473d65cb497f3137accef5e863",
+      "tree": "02ea2f24041c15c1a3fa42f29fe870ab3af8cf53",
+      "parents": [
+        "662e4d89c6e8bde6610a798130103257373bd550"
+      ],
+      "file_count": 42,
+      "files": [
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+          "size_bytes": 19,
+          "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+        },
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "blob": "496346e0c7326e617af1dde513e6b427611844d9",
+          "size_bytes": 5133,
+          "sha256": "a5d91bac215afd344cf1eae127859edf68eb6646a18dac13e42f9e9d95e445a0"
+        },
+        {
+          "path": "fetch-manifest.json",
+          "mode": "100644",
+          "blob": "0fe5ef3d82ca385d1d356f30d04e231ca44d9768",
+          "size_bytes": 4438,
+          "sha256": "ed46b446e827ff91d1f3fee90ec1ed36e2fd95aa4343781ec63d2ae0d5f27f74"
+        },
+        {
+          "path": "fixed-water-grid-contact-probes.log",
+          "mode": "100644",
+          "blob": "0a4af6035c91d4cc13fa993407f6a57402ba71c4",
+          "size_bytes": 532,
+          "sha256": "12eff26b4e9e5563f12fa255909e380d237ddd56324aee723a594b0050b6197b"
+        },
+        {
+          "path": "guard-tests/missing-original.log",
+          "mode": "100644",
+          "blob": "63a21038039d5824ce133f43ade3a7445be3b0f4",
+          "size_bytes": 471,
+          "sha256": "4aaf801ad7c48d059bd10da662ed9b4ee1ecd582e91e31f703c8790940c28a98"
+        },
+        {
+          "path": "guard-tests/wrong-sha.log",
+          "mode": "100644",
+          "blob": "91e09ee28bb57e1913eda1adfa5456e1040bd572",
+          "size_bytes": 509,
+          "sha256": "ca09b7fd1de3107b2c88558e987bd225d1dbed9dbe225eb3092a420f1bbfa431"
+        },
+        {
+          "path": "leaf-subset-replay-attempt1.log",
+          "mode": "100644",
+          "blob": "31915ebe92b55eda4b694d843729ca58a31e2a6f",
+          "size_bytes": 607,
+          "sha256": "8bdc482489c3f42b6ecb7e3ac184980e5584e00a88f40977233b3ee392063b14"
+        },
+        {
+          "path": "leaf-subset-replay-attempt2.log",
+          "mode": "100644",
+          "blob": "aad572f4b44bb064665b7ed4b216221617d75f11",
+          "size_bytes": 607,
+          "sha256": "776e04256c77b597fd2a4b38500e91c98a2f61427198e5e21997600a063f8c9e"
+        },
+        {
+          "path": "leaf-subset-replay-attempt3.log",
+          "mode": "100644",
+          "blob": "f6466396c99d2322afaf68e28abb1add2444b5d1",
+          "size_bytes": 300,
+          "sha256": "59fb5aec000ae64f3b51f23e1f28e0525824b3eee78b25e84d7324fca0974657"
+        },
+        {
+          "path": "leaf-subset-replay.log",
+          "mode": "100644",
+          "blob": "31915ebe92b55eda4b694d843729ca58a31e2a6f",
+          "size_bytes": 607,
+          "sha256": "8bdc482489c3f42b6ecb7e3ac184980e5584e00a88f40977233b3ee392063b14"
+        },
+        {
+          "path": "models/leaf-only-r06-nonexact-diagnostic-replay.blend",
+          "mode": "100644",
+          "blob": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+          "size_bytes": 5183724,
+          "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+        },
+        {
+          "path": "projection-sensitivity.log",
+          "mode": "100644",
+          "blob": "97855096c321fb9f5a65cc219c9e4cec9815757e",
+          "size_bytes": 228,
+          "sha256": "080c236d472a5988af49945d572fed4d2a96388ee4721719f056aa19f016201b"
+        },
+        {
+          "path": "qa-warp-test.log",
+          "mode": "100644",
+          "blob": "1578c798dcea591f52a060d8b35bb4d7df395ffc",
+          "size_bytes": 1109,
+          "sha256": "badd16201f3f98448ee95e9e06c61cefc14bd21782487538b0ea13186f37ca08"
+        },
+        {
+          "path": "qa/fixed-water-grid-contact-probes.json",
+          "mode": "100644",
+          "blob": "67ee37af1b8684eacc0c8a0e16e1c9b8a9257057",
+          "size_bytes": 18924,
+          "sha256": "c7fed1f63639c6d4b95301036deb03497508c528de041a3a3dd605e0ca0c46d9"
+        },
+        {
+          "path": "qa/guard-test-results.json",
+          "mode": "100644",
+          "blob": "c03353f500088e3d5a896f7b4a1b3b28141a64be",
+          "size_bytes": 330,
+          "sha256": "18e8fe6b2566e41f1b504892f17583c8900d10fe28d8be84226dec901e189539"
+        },
+        {
+          "path": "qa/leaf-subset-replay-proof-attempt1.json",
+          "mode": "100644",
+          "blob": "74e5411b2987dd63ca8d3aa76e4b6b218238cb4b",
+          "size_bytes": 458,
+          "sha256": "035a555069ef19d59962db655aaf4a42f5d389c59b1e5b8b4c16290f22511a45"
+        },
+        {
+          "path": "qa/leaf-subset-replay-proof-attempt2.json",
+          "mode": "100644",
+          "blob": "f4c73033aa159aa6b1f523c9fee121145cda48bd",
+          "size_bytes": 1283,
+          "sha256": "93ccc0023937388fd01766a172e21807b6710450e795670312605ab40dfc8c6b"
+        },
+        {
+          "path": "qa/leaf-subset-replay-proof.json",
+          "mode": "100644",
+          "blob": "97fb194700bcb2533943659c2067bba7e13f9670",
+          "size_bytes": 1573,
+          "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+        },
+        {
+          "path": "qa/leaf-subset-warp-tests.json",
+          "mode": "100644",
+          "blob": "484c94caaa5d7eb8fe951e05bde172f6e449fb1f",
+          "size_bytes": 46942,
+          "sha256": "9132cc27370738cbd46079040dad9a33937106dddda808a7fea888879116202a"
+        },
+        {
+          "path": "qa/numerical-risk-correction.json",
+          "mode": "100644",
+          "blob": "7b5bef779cfacd535079987eae44f63bc84a14e9",
+          "size_bytes": 489,
+          "sha256": "73b15d75ea5d40cac484a8412b64d130f83de77baa0d23a4701af200cc33c18e"
+        },
+        {
+          "path": "qa/projection-sensitivity.json",
+          "mode": "100644",
+          "blob": "e750b8f779b8bec5c115e5f5d6c843eba56f4997",
+          "size_bytes": 39615,
+          "sha256": "80e1d07dafa8248bd5cbe49a6b978f539fda3e8f28356d8ef436fa75a87ecb41"
+        },
+        {
+          "path": "qa/warp-unit-tests.json",
+          "mode": "100644",
+          "blob": "1578c798dcea591f52a060d8b35bb4d7df395ffc",
+          "size_bytes": 1109,
+          "sha256": "badd16201f3f98448ee95e9e06c61cefc14bd21782487538b0ea13186f37ca08"
+        },
+        {
+          "path": "qa/zero-trial-saved-subset-audit.json",
+          "mode": "100644",
+          "blob": "63ab77681f3559ad847bff30a5653cfd515ca411",
+          "size_bytes": 5343,
+          "sha256": "8d8b62a9ef57f7d7428f37161353ac2bc13409f46f5900c67c4f0fc0d71171fb"
+        },
+        {
+          "path": "scripts/apply_guarded_trial.py",
+          "mode": "100644",
+          "blob": "84c12f0ba11c781c1d091998573c5fd37b0b6185",
+          "size_bytes": 9812,
+          "sha256": "20e63d7686d5d6100110d8ec8181ad8501e659cb53ef05eded9131785da2e54c"
+        },
+        {
+          "path": "scripts/check_zero_trial_against_saved_subset.py",
+          "mode": "100644",
+          "blob": "7328c103279a914385b234bdecec0894015743aa",
+          "size_bytes": 1151,
+          "sha256": "8d7e6641356853853d0d336f5d56f525a59b7494011a571430a284e81215784b"
+        },
+        {
+          "path": "scripts/evaluate_landmark_sensitivity.py",
+          "mode": "100644",
+          "blob": "4f11ae55ba9f733e616058ae4a44118ea7e3c13c",
+          "size_bytes": 3126,
+          "sha256": "f71a33a1d1eb412ec6ccfa37f3fc26bd2b249082155f0eb80a1cab55b0c83a06"
+        },
+        {
+          "path": "scripts/leaf_local_warp.py",
+          "mode": "100644",
+          "blob": "b6662a02650549f3c08a734bd2b022edc78ffbdb",
+          "size_bytes": 1671,
+          "sha256": "ca443773e4b4694b01fea68ec9bd68cd9c14d7987269bc22dfc55b4bc761d323"
+        },
+        {
+          "path": "scripts/probe_fixed_water_grid_contacts.py",
+          "mode": "100644",
+          "blob": "ef4d17d8746f18321be839ecefb17361d8b09281",
+          "size_bytes": 2598,
+          "sha256": "8115b7923763742cd4ea0c2c488afdadb46b2fcc7b6bed1c7c8b5c195ecaad7d"
+        },
+        {
+          "path": "scripts/replay_leaf_subset_diagnostic.py",
+          "mode": "100644",
+          "blob": "2bb9826c7e0c5ed7fc0ddbf61044ed10f8c3d670",
+          "size_bytes": 8954,
+          "sha256": "0aaee829c0cdc346b6e0beb3f247da729bb12e67ece6f0b6abf183f60af5999d"
+        },
+        {
+          "path": "scripts/test_leaf_local_warp.py",
+          "mode": "100644",
+          "blob": "cb6fef8aef8c718fc124223a2d6f1b89f2e4b3a7",
+          "size_bytes": 1240,
+          "sha256": "426884a9fb363ce5a5c1f59cba43d558a9c8abcaec123f8ac6413263eeea10f1"
+        },
+        {
+          "path": "trial-plan.json",
+          "mode": "100644",
+          "blob": "0253b15ed3aa625ff3e12d38e4803401264b39dd",
+          "size_bytes": 2195,
+          "sha256": "1517c9b09d2323ad22f8593c49485e1d9926a76d5ef011359bce58f9527c6ad1"
+        },
+        {
+          "path": "upstream/models/lakeleaf-r06-cameras.json",
+          "mode": "100644",
+          "blob": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+          "size_bytes": 13224,
+          "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+        },
+        {
+          "path": "upstream/qa/r06/conditional-landmarks.json",
+          "mode": "100644",
+          "blob": "6d763cf9920d5a31dec0a58e44d75df8fd2fc4be",
+          "size_bytes": 1494,
+          "sha256": "5c388eac7a5e1071d5902b1902816a0ce745feb7f22061fe6eb5a701a0d494b3"
+        },
+        {
+          "path": "upstream/qa/r06/delivery-validation.json",
+          "mode": "100644",
+          "blob": "09d74ce87ed047f5effa1fd1a00c57e138dc407d",
+          "size_bytes": 3309,
+          "sha256": "068f6dc41f77ee6c22bb18b06e138cea7b0680109c4cee7b5a1184bd67549d6e"
+        },
+        {
+          "path": "upstream/qa/r06/finite-vein-footprint-tests.json",
+          "mode": "100644",
+          "blob": "7def4d4aff95f0b7e74dfc44a31e80e7cad8dfdc",
+          "size_bytes": 5757,
+          "sha256": "10c89602109e89d45fc3b45667f517a23c57a858191b199853cb3af006b6156e"
+        },
+        {
+          "path": "upstream/qa/r06/independent/lakeleaf-R06-final-visual-review.md",
+          "mode": "100644",
+          "blob": "2b98f77f4217af540019333d737c01c84edcb100",
+          "size_bytes": 3591,
+          "sha256": "4d5f3c032be105925b4194cf5874197a0493e594b76a6ea93a04a4b39f87a847"
+        },
+        {
+          "path": "upstream/qa/r06/shell-ray-probes.json",
+          "mode": "100644",
+          "blob": "c793f5ab1a0fb1c7e1dcf2b0a082a124d4740b17",
+          "size_bytes": 587402,
+          "sha256": "d1b709541e4c9e7eeacfd4e0f12428f5b0aef7dd91cc3dab96bc0b88dbf3dfc4"
+        },
+        {
+          "path": "upstream/scripts/add_visible_bank_r06.py",
+          "mode": "100644",
+          "blob": "fbae4f8ecc5be6d3a3a0b176ac81003f17e55919",
+          "size_bytes": 3392,
+          "sha256": "dd538ab3e960bdf6cd28d8bc5184f68c9eef35341fec6b98902312f91eb669ad"
+        },
+        {
+          "path": "upstream/scripts/build_lakeleaf_r04.py",
+          "mode": "100644",
+          "blob": "fca911c556414fa1f7d46a08cb193234fdae2f31",
+          "size_bytes": 17297,
+          "sha256": "2abf08dd9590ad42016bd5dcabdfd53dea078dcb910e7df869451689e7fb76bf"
+        },
+        {
+          "path": "upstream/scripts/repair_leaf_veins_r05.py",
+          "mode": "100644",
+          "blob": "d9b9344a8766c2210f44ee76abd9871f8bb5c09b",
+          "size_bytes": 3025,
+          "sha256": "b8196ae492e66fcfa7bf0ef8a4b6ba591c488ba6d45e7b1fab01c2cb006a2de8"
+        },
+        {
+          "path": "upstream/scripts/verify_vein_footprints_r06.py",
+          "mode": "100644",
+          "blob": "c6c52c937f1238538b01b5a38c5c14b015354418",
+          "size_bytes": 1556,
+          "sha256": "9d12d14539fd06fc85b9e7a3816e9509c48ee38de5e0f7765c2a3edc7b9d2a67"
+        },
+        {
+          "path": "zero-trial-saved-subset-audit.log",
+          "mode": "100644",
+          "blob": "d46bfc9b48f4b6b5e88a6acbe047e6b372d5fbff",
+          "size_bytes": 188,
+          "sha256": "332dd2c011ae0516a34e940107c5a7d6c72b4e33fb9f3cb279ef3564c6fb46d2"
+        }
+      ]
+    },
+    {
+      "commit": "a49de80a07131d8fedf2d5dc082e393d8a75c6ac",
+      "tree": "d3baba6280f8ce62007f0b108366b7ee1d54c168",
+      "parents": [
+        "2ff925d21f3c86473d65cb497f3137accef5e863"
+      ],
+      "file_count": 42,
+      "files": [
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+          "size_bytes": 19,
+          "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+        },
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "blob": "496346e0c7326e617af1dde513e6b427611844d9",
+          "size_bytes": 5133,
+          "sha256": "a5d91bac215afd344cf1eae127859edf68eb6646a18dac13e42f9e9d95e445a0"
+        },
+        {
+          "path": "fetch-manifest.json",
+          "mode": "100644",
+          "blob": "0fe5ef3d82ca385d1d356f30d04e231ca44d9768",
+          "size_bytes": 4438,
+          "sha256": "ed46b446e827ff91d1f3fee90ec1ed36e2fd95aa4343781ec63d2ae0d5f27f74"
+        },
+        {
+          "path": "fixed-water-grid-contact-probes.log",
+          "mode": "100644",
+          "blob": "0a4af6035c91d4cc13fa993407f6a57402ba71c4",
+          "size_bytes": 532,
+          "sha256": "12eff26b4e9e5563f12fa255909e380d237ddd56324aee723a594b0050b6197b"
+        },
+        {
+          "path": "guard-tests/missing-original.log",
+          "mode": "100644",
+          "blob": "63a21038039d5824ce133f43ade3a7445be3b0f4",
+          "size_bytes": 471,
+          "sha256": "4aaf801ad7c48d059bd10da662ed9b4ee1ecd582e91e31f703c8790940c28a98"
+        },
+        {
+          "path": "guard-tests/wrong-sha.log",
+          "mode": "100644",
+          "blob": "91e09ee28bb57e1913eda1adfa5456e1040bd572",
+          "size_bytes": 509,
+          "sha256": "ca09b7fd1de3107b2c88558e987bd225d1dbed9dbe225eb3092a420f1bbfa431"
+        },
+        {
+          "path": "leaf-subset-replay-attempt1.log",
+          "mode": "100644",
+          "blob": "31915ebe92b55eda4b694d843729ca58a31e2a6f",
+          "size_bytes": 607,
+          "sha256": "8bdc482489c3f42b6ecb7e3ac184980e5584e00a88f40977233b3ee392063b14"
+        },
+        {
+          "path": "leaf-subset-replay-attempt2.log",
+          "mode": "100644",
+          "blob": "aad572f4b44bb064665b7ed4b216221617d75f11",
+          "size_bytes": 607,
+          "sha256": "776e04256c77b597fd2a4b38500e91c98a2f61427198e5e21997600a063f8c9e"
+        },
+        {
+          "path": "leaf-subset-replay-attempt3.log",
+          "mode": "100644",
+          "blob": "f6466396c99d2322afaf68e28abb1add2444b5d1",
+          "size_bytes": 300,
+          "sha256": "59fb5aec000ae64f3b51f23e1f28e0525824b3eee78b25e84d7324fca0974657"
+        },
+        {
+          "path": "leaf-subset-replay.log",
+          "mode": "100644",
+          "blob": "31915ebe92b55eda4b694d843729ca58a31e2a6f",
+          "size_bytes": 607,
+          "sha256": "8bdc482489c3f42b6ecb7e3ac184980e5584e00a88f40977233b3ee392063b14"
+        },
+        {
+          "path": "models/leaf-only-r06-nonexact-diagnostic-replay.blend",
+          "mode": "100644",
+          "blob": "8b79c5e0384b6350b5d325ef88a403b8be279ef0",
+          "size_bytes": 5183724,
+          "sha256": "46f45501671a3e768be6d376860b7af7cf6b8f9be1630a7898572b5ef1fa737c"
+        },
+        {
+          "path": "projection-sensitivity.log",
+          "mode": "100644",
+          "blob": "97855096c321fb9f5a65cc219c9e4cec9815757e",
+          "size_bytes": 228,
+          "sha256": "080c236d472a5988af49945d572fed4d2a96388ee4721719f056aa19f016201b"
+        },
+        {
+          "path": "qa-warp-test.log",
+          "mode": "100644",
+          "blob": "1578c798dcea591f52a060d8b35bb4d7df395ffc",
+          "size_bytes": 1109,
+          "sha256": "badd16201f3f98448ee95e9e06c61cefc14bd21782487538b0ea13186f37ca08"
+        },
+        {
+          "path": "qa/fixed-water-grid-contact-probes.json",
+          "mode": "100644",
+          "blob": "34c6734375dc64c3b5e0699152577d6df5e87261",
+          "size_bytes": 19148,
+          "sha256": "7eefbb28f5dd91a5e4d2759e91dbe2902c60920f72aa47cee5497960cb27ef5e"
+        },
+        {
+          "path": "qa/guard-test-results.json",
+          "mode": "100644",
+          "blob": "c03353f500088e3d5a896f7b4a1b3b28141a64be",
+          "size_bytes": 330,
+          "sha256": "18e8fe6b2566e41f1b504892f17583c8900d10fe28d8be84226dec901e189539"
+        },
+        {
+          "path": "qa/leaf-subset-replay-proof-attempt1.json",
+          "mode": "100644",
+          "blob": "74e5411b2987dd63ca8d3aa76e4b6b218238cb4b",
+          "size_bytes": 458,
+          "sha256": "035a555069ef19d59962db655aaf4a42f5d389c59b1e5b8b4c16290f22511a45"
+        },
+        {
+          "path": "qa/leaf-subset-replay-proof-attempt2.json",
+          "mode": "100644",
+          "blob": "f4c73033aa159aa6b1f523c9fee121145cda48bd",
+          "size_bytes": 1283,
+          "sha256": "93ccc0023937388fd01766a172e21807b6710450e795670312605ab40dfc8c6b"
+        },
+        {
+          "path": "qa/leaf-subset-replay-proof.json",
+          "mode": "100644",
+          "blob": "97fb194700bcb2533943659c2067bba7e13f9670",
+          "size_bytes": 1573,
+          "sha256": "7e4f671dec454ef5aee08b298097b87c2b80cc97691ed1c5c442a3a7666b019c"
+        },
+        {
+          "path": "qa/leaf-subset-warp-tests.json",
+          "mode": "100644",
+          "blob": "484c94caaa5d7eb8fe951e05bde172f6e449fb1f",
+          "size_bytes": 46942,
+          "sha256": "9132cc27370738cbd46079040dad9a33937106dddda808a7fea888879116202a"
+        },
+        {
+          "path": "qa/numerical-risk-correction.json",
+          "mode": "100644",
+          "blob": "7b5bef779cfacd535079987eae44f63bc84a14e9",
+          "size_bytes": 489,
+          "sha256": "73b15d75ea5d40cac484a8412b64d130f83de77baa0d23a4701af200cc33c18e"
+        },
+        {
+          "path": "qa/projection-sensitivity.json",
+          "mode": "100644",
+          "blob": "e750b8f779b8bec5c115e5f5d6c843eba56f4997",
+          "size_bytes": 39615,
+          "sha256": "80e1d07dafa8248bd5cbe49a6b978f539fda3e8f28356d8ef436fa75a87ecb41"
+        },
+        {
+          "path": "qa/warp-unit-tests.json",
+          "mode": "100644",
+          "blob": "1578c798dcea591f52a060d8b35bb4d7df395ffc",
+          "size_bytes": 1109,
+          "sha256": "badd16201f3f98448ee95e9e06c61cefc14bd21782487538b0ea13186f37ca08"
+        },
+        {
+          "path": "qa/zero-trial-saved-subset-audit.json",
+          "mode": "100644",
+          "blob": "63ab77681f3559ad847bff30a5653cfd515ca411",
+          "size_bytes": 5343,
+          "sha256": "8d8b62a9ef57f7d7428f37161353ac2bc13409f46f5900c67c4f0fc0d71171fb"
+        },
+        {
+          "path": "scripts/apply_guarded_trial.py",
+          "mode": "100644",
+          "blob": "84c12f0ba11c781c1d091998573c5fd37b0b6185",
+          "size_bytes": 9812,
+          "sha256": "20e63d7686d5d6100110d8ec8181ad8501e659cb53ef05eded9131785da2e54c"
+        },
+        {
+          "path": "scripts/check_zero_trial_against_saved_subset.py",
+          "mode": "100644",
+          "blob": "7328c103279a914385b234bdecec0894015743aa",
+          "size_bytes": 1151,
+          "sha256": "8d7e6641356853853d0d336f5d56f525a59b7494011a571430a284e81215784b"
+        },
+        {
+          "path": "scripts/evaluate_landmark_sensitivity.py",
+          "mode": "100644",
+          "blob": "4f11ae55ba9f733e616058ae4a44118ea7e3c13c",
+          "size_bytes": 3126,
+          "sha256": "f71a33a1d1eb412ec6ccfa37f3fc26bd2b249082155f0eb80a1cab55b0c83a06"
+        },
+        {
+          "path": "scripts/leaf_local_warp.py",
+          "mode": "100644",
+          "blob": "b6662a02650549f3c08a734bd2b022edc78ffbdb",
+          "size_bytes": 1671,
+          "sha256": "ca443773e4b4694b01fea68ec9bd68cd9c14d7987269bc22dfc55b4bc761d323"
+        },
+        {
+          "path": "scripts/probe_fixed_water_grid_contacts.py",
+          "mode": "100644",
+          "blob": "c17557d4a771232a4d4a2e9f5a2a080fc067269e",
+          "size_bytes": 2958,
+          "sha256": "66b0c8065ee9e6782bd9d67fa245fc0976ab0f7b21deb3a27018ec52789cef1b"
+        },
+        {
+          "path": "scripts/replay_leaf_subset_diagnostic.py",
+          "mode": "100644",
+          "blob": "2bb9826c7e0c5ed7fc0ddbf61044ed10f8c3d670",
+          "size_bytes": 8954,
+          "sha256": "0aaee829c0cdc346b6e0beb3f247da729bb12e67ece6f0b6abf183f60af5999d"
+        },
+        {
+          "path": "scripts/test_leaf_local_warp.py",
+          "mode": "100644",
+          "blob": "cb6fef8aef8c718fc124223a2d6f1b89f2e4b3a7",
+          "size_bytes": 1240,
+          "sha256": "426884a9fb363ce5a5c1f59cba43d558a9c8abcaec123f8ac6413263eeea10f1"
+        },
+        {
+          "path": "trial-plan.json",
+          "mode": "100644",
+          "blob": "0253b15ed3aa625ff3e12d38e4803401264b39dd",
+          "size_bytes": 2195,
+          "sha256": "1517c9b09d2323ad22f8593c49485e1d9926a76d5ef011359bce58f9527c6ad1"
+        },
+        {
+          "path": "upstream/models/lakeleaf-r06-cameras.json",
+          "mode": "100644",
+          "blob": "3dceebd85c13768d6ab0cc29a47e241a72fe491e",
+          "size_bytes": 13224,
+          "sha256": "869bee1a1adcfd91946c7038cc160b4eed4ae61d8f570fb0f8ce602b481728f7"
+        },
+        {
+          "path": "upstream/qa/r06/conditional-landmarks.json",
+          "mode": "100644",
+          "blob": "6d763cf9920d5a31dec0a58e44d75df8fd2fc4be",
+          "size_bytes": 1494,
+          "sha256": "5c388eac7a5e1071d5902b1902816a0ce745feb7f22061fe6eb5a701a0d494b3"
+        },
+        {
+          "path": "upstream/qa/r06/delivery-validation.json",
+          "mode": "100644",
+          "blob": "09d74ce87ed047f5effa1fd1a00c57e138dc407d",
+          "size_bytes": 3309,
+          "sha256": "068f6dc41f77ee6c22bb18b06e138cea7b0680109c4cee7b5a1184bd67549d6e"
+        },
+        {
+          "path": "upstream/qa/r06/finite-vein-footprint-tests.json",
+          "mode": "100644",
+          "blob": "7def4d4aff95f0b7e74dfc44a31e80e7cad8dfdc",
+          "size_bytes": 5757,
+          "sha256": "10c89602109e89d45fc3b45667f517a23c57a858191b199853cb3af006b6156e"
+        },
+        {
+          "path": "upstream/qa/r06/independent/lakeleaf-R06-final-visual-review.md",
+          "mode": "100644",
+          "blob": "2b98f77f4217af540019333d737c01c84edcb100",
+          "size_bytes": 3591,
+          "sha256": "4d5f3c032be105925b4194cf5874197a0493e594b76a6ea93a04a4b39f87a847"
+        },
+        {
+          "path": "upstream/qa/r06/shell-ray-probes.json",
+          "mode": "100644",
+          "blob": "c793f5ab1a0fb1c7e1dcf2b0a082a124d4740b17",
+          "size_bytes": 587402,
+          "sha256": "d1b709541e4c9e7eeacfd4e0f12428f5b0aef7dd91cc3dab96bc0b88dbf3dfc4"
+        },
+        {
+          "path": "upstream/scripts/add_visible_bank_r06.py",
+          "mode": "100644",
+          "blob": "fbae4f8ecc5be6d3a3a0b176ac81003f17e55919",
+          "size_bytes": 3392,
+          "sha256": "dd538ab3e960bdf6cd28d8bc5184f68c9eef35341fec6b98902312f91eb669ad"
+        },
+        {
+          "path": "upstream/scripts/build_lakeleaf_r04.py",
+          "mode": "100644",
+          "blob": "fca911c556414fa1f7d46a08cb193234fdae2f31",
+          "size_bytes": 17297,
+          "sha256": "2abf08dd9590ad42016bd5dcabdfd53dea078dcb910e7df869451689e7fb76bf"
+        },
+        {
+          "path": "upstream/scripts/repair_leaf_veins_r05.py",
+          "mode": "100644",
+          "blob": "d9b9344a8766c2210f44ee76abd9871f8bb5c09b",
+          "size_bytes": 3025,
+          "sha256": "b8196ae492e66fcfa7bf0ef8a4b6ba591c488ba6d45e7b1fab01c2cb006a2de8"
+        },
+        {
+          "path": "upstream/scripts/verify_vein_footprints_r06.py",
+          "mode": "100644",
+          "blob": "c6c52c937f1238538b01b5a38c5c14b015354418",
+          "size_bytes": 1556,
+          "sha256": "9d12d14539fd06fc85b9e7a3816e9509c48ee38de5e0f7765c2a3edc7b9d2a67"
+        },
+        {
+          "path": "zero-trial-saved-subset-audit.log",
+          "mode": "100644",
+          "blob": "d46bfc9b48f4b6b5e88a6acbe047e6b372d5fbff",
+          "size_bytes": 188,
+          "sha256": "332dd2c011ae0516a34e940107c5a7d6c72b4e33fb9f3cb279ef3564c6fb46d2"
+        }
+      ]
     }
   ],
   "history_ref": "refs/heads/history/lakeleaf-diagnostic-prep-original-20261104",
   "archive_ref": "refs/heads/archive/lake-leafboat-r01-20261104",
-  "base_commit": "5286859fe67e8c200e152b96d7ee38c80f8691d2",
+  "base_commit": "1ccd1f5458b64e01814c25dd5ec7d3394925704a",
   "archive_prefix": "scenes/lake-leafboat-stage/diagnostics/technical-prep-20261104",
-  "file_count": 39,
-  "total_file_bytes": 5962178,
+  "file_count": 42,
+  "total_file_bytes": 5985916,
   "files": [
     {
       "path": ".gitignore",
@@ -919,9 +1619,9 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "blob": "5ff5f8c755f84d0d66a959e8d1fb8b8117ec99f9",
-      "size_bytes": 4567,
-      "sha256": "a0370a1438b8ce65cc09d43ab926c9f2e4e6b6841f026e648e41e045326ad880"
+      "blob": "496346e0c7326e617af1dde513e6b427611844d9",
+      "size_bytes": 5133,
+      "sha256": "a5d91bac215afd344cf1eae127859edf68eb6646a18dac13e42f9e9d95e445a0"
     },
     {
       "path": "fetch-manifest.json",
@@ -929,6 +1629,13 @@
       "blob": "0fe5ef3d82ca385d1d356f30d04e231ca44d9768",
       "size_bytes": 4438,
       "sha256": "ed46b446e827ff91d1f3fee90ec1ed36e2fd95aa4343781ec63d2ae0d5f27f74"
+    },
+    {
+      "path": "fixed-water-grid-contact-probes.log",
+      "mode": "100644",
+      "blob": "0a4af6035c91d4cc13fa993407f6a57402ba71c4",
+      "size_bytes": 532,
+      "sha256": "12eff26b4e9e5563f12fa255909e380d237ddd56324aee723a594b0050b6197b"
     },
     {
       "path": "guard-tests/missing-original.log",
@@ -992,6 +1699,13 @@
       "blob": "1578c798dcea591f52a060d8b35bb4d7df395ffc",
       "size_bytes": 1109,
       "sha256": "badd16201f3f98448ee95e9e06c61cefc14bd21782487538b0ea13186f37ca08"
+    },
+    {
+      "path": "qa/fixed-water-grid-contact-probes.json",
+      "mode": "100644",
+      "blob": "34c6734375dc64c3b5e0699152577d6df5e87261",
+      "size_bytes": 19148,
+      "sha256": "7eefbb28f5dd91a5e4d2759e91dbe2902c60920f72aa47cee5497960cb27ef5e"
     },
     {
       "path": "qa/guard-test-results.json",
@@ -1085,6 +1799,13 @@
       "sha256": "ca443773e4b4694b01fea68ec9bd68cd9c14d7987269bc22dfc55b4bc761d323"
     },
     {
+      "path": "scripts/probe_fixed_water_grid_contacts.py",
+      "mode": "100644",
+      "blob": "c17557d4a771232a4d4a2e9f5a2a080fc067269e",
+      "size_bytes": 2958,
+      "sha256": "66b0c8065ee9e6782bd9d67fa245fc0976ab0f7b21deb3a27018ec52789cef1b"
+    },
+    {
       "path": "scripts/replay_leaf_subset_diagnostic.py",
       "mode": "100644",
       "blob": "2bb9826c7e0c5ed7fc0ddbf61044ed10f8c3d670",
@@ -1101,9 +1822,9 @@
     {
       "path": "trial-plan.json",
       "mode": "100644",
-      "blob": "b49bf640a65dce62e3d9a7c9dd82755919bbf4c7",
-      "size_bytes": 1661,
-      "sha256": "769c6eb1a0b3d28cbf222663e0e9547beb47872271098b673524cdcbe013f5ae"
+      "blob": "0253b15ed3aa625ff3e12d38e4803401264b39dd",
+      "size_bytes": 2195,
+      "sha256": "1517c9b09d2323ad22f8593c49485e1d9926a76d5ef011359bce58f9527c6ad1"
     },
     {
       "path": "upstream/models/lakeleaf-r06-cameras.json",
@@ -1183,10 +1904,14 @@
       "sha256": "332dd2c011ae0516a34e940107c5a7d6c72b4e33fb9f3cb279ef3564c6fb46d2"
     }
   ],
+  "previous_source_head": "662e4d89c6e8bde6610a798130103257373bd550",
+  "previous_archive_commit": "1ccd1f5458b64e01814c25dd5ec7d3394925704a",
+  "previous_version_snapshot_prefix": "scenes/lake-leafboat-stage/diagnostics/technical-prep-20261104/versions/v0",
   "limitations": [
     "Independent 20-mesh technical fixture and script tests with zero renders; not a restored production model or accepted reconstruction",
     "Main shell complete world geometry hash still differs; no equivalence or acceptance claimed",
-    "Bundle has no usable default HEAD; source checkout is explicitly pinned to 662e4d89c6e8bde6610a798130103257373bd550",
+    "Source checkout explicitly pinned to a49de80a07131d8fedf2d5dc082e393d8a75c6ac; all previous independent diagnostic commits retained",
+    "Nine fixed-water mesh-coordinate probes exclude belly -0.08: water lies above the inner surface at 3 of 9 samples; the float32 storage correction is preserved in history; -0.02 avoiding this at nine samples does not prove whole-scene validity or real waterline acceptance",
     "Original lake production history and prior archives remain unchanged; archive worker does not model, render or execute production scripts"
   ]
 }

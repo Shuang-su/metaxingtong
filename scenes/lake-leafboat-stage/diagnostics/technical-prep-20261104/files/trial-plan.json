@@ -3,15 +3,37 @@
   "basis_material_sha256": "4af868869ee7f7eebf0c8569b16cef356143c5425c888e98a4f56dee25449a12",
   "status": "Prepared, not run on original geometry; original BLEND and source PNG restoration pending",
   "preflight_order": [
-    {"trial": "baseline", "belly_dz": 0, "shoulder_fraction": 0},
-    {"trial": "belly_up_008", "belly_dz": 0.08, "shoulder_fraction": 0},
-    {"trial": "belly_down_008", "belly_dz": -0.08, "shoulder_fraction": 0},
-    {"trial": "shoulder_wider_008", "belly_dz": 0, "shoulder_fraction": 0.08}
+    {
+      "trial": "baseline",
+      "belly_dz": 0,
+      "shoulder_fraction": 0
+    },
+    {
+      "trial": "belly_up_008",
+      "belly_dz": 0.08,
+      "shoulder_fraction": 0
+    },
+    {
+      "trial": "shoulder_wider_008",
+      "belly_dz": 0,
+      "shoulder_fraction": 0.08
+    }
   ],
   "gate_before_rendering": "View actual restored source pixels and sign source-edge errors. Run only relevant one-factor trials, not the whole list automatically.",
   "fixed": "All original cameras, lights, water, shoreline and forest. Only primary shell and 19 veins may change through one shared transform.",
   "render_budget": "Four 960x540 frames per retained trial, 6 samples, 2 CPU, no denoise. No final suite.",
   "success": "Target edge error improves beyond annotation uncertainty; no primary-view or auxiliary regression beyond uncertainty; technical shell and vein tests hold. Low previews only screen trials; confirm chosen local boundary at native pixel resolution.",
   "stop": "No supported source edge, improvement depends on one view/camera compensation, cross-view regression, wrong input SHA, missing dependencies, geometry/visibility change outside 20 targets, or topology failure.",
-  "unproven": "Actual source fit, full mesh collision, normal thickness, water contact, hidden underside, exact metric scale. Analytic reversibility is not proof of those."
+  "unproven": "Actual source fit, full mesh collision, normal thickness, water contact, hidden underside, exact metric scale. Analytic reversibility is not proof of those.",
+  "rejected_before_source_preview": [
+    {
+      "trial": "belly_down_008",
+      "reason": "On the nonexact leaf subset replay, the fixed modeled water recipe is above the inner leaf upper surface at 3 of 9 tested grid vertices; center gap is -0.0393744. Not a source buoyancy claim.",
+      "evidence": "qa/fixed-water-grid-contact-probes.json"
+    }
+  ],
+  "additional_limited_probe": {
+    "trial": "belly_down_002",
+    "status": "Only 9 local water-grid samples; 0 crossings there. Not selected and not full-scene validated."
+  }
 }
