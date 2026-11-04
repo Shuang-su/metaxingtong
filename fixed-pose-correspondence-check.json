@@ -1,0 +1,668 @@
+{
+  "method": "same provisional IDs, fixed stored conditional F/G cameras and intrinsics; linear closest rays then normalized nonlinear reprojection, no model edit",
+  "source_inputs": [
+    {
+      "path": "/workspace/scratch/fa58bfcf0425/forest-multiview-study-20261104/inputs/R05-camera-training.json",
+      "sha256": "6201a50a78828dde5c2ca7e6d340142c89ff539481d6ffd9e0ac5c0cb395b978",
+      "source_image_sha256": "9de843817fc899a28f2dfc4233c31ffdcc61a6f439e90fc17449cde149c1efcc"
+    },
+    {
+      "path": "/workspace/scratch/fa58bfcf0425/forest-multiview-study-20261104/inputs/R09-4k-camera-training.json",
+      "sha256": "5c2a448bd206bc7ad3e9fc4d9f4981469439ef5b9673a905b970bb9d34a92299",
+      "source_image_sha256": "6e245ecc46dc746297691f0e8dec308be25c265938a68a7d77c9707c8f996337"
+    }
+  ],
+  "annotation_scales_px": [
+    20,
+    40
+  ],
+  "scale_note": "subjective approximate annotation scales from prior reports, NOT statistical confidence",
+  "rows": [
+    {
+      "id": "FLOWER_00",
+      "raw_manual_pixels": [
+        [
+          775.0,
+          375.0
+        ],
+        [
+          1770.0,
+          755.0
+        ]
+      ],
+      "ray_parallax_deg": 5.979465307921596,
+      "closest_ray_parameters": [
+        18.06350428913634,
+        36.66988913375932
+      ],
+      "closest_ray_gap_working_units": 0.01775896588680019,
+      "ray_system_condition_number": 19.146784881392644,
+      "conditional_world_point_not_applied": [
+        -2.729314243342073,
+        0.9328940394568248,
+        5.447485826366953
+      ],
+      "original_world_hypothesis": [
+        -2.8,
+        1.0,
+        5.35
+      ],
+      "displacement_not_applied": [
+        0.07068575665792665,
+        -0.06710596054317519,
+        0.09748582636695335
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 6.461938835576861,
+          "conditional_fit_error_px": 0.5132679822879218,
+          "residual_px": [
+            0.019224525432491646,
+            -0.5129078272592551
+          ],
+          "positive_depth": 17.987102176514643
+        },
+        {
+          "view": "G",
+          "original_error_px": 8.989114317151378,
+          "conditional_fit_error_px": 2.0884015986810445,
+          "residual_px": [
+            -0.18665541476866565,
+            2.0800435076005215
+          ],
+          "positive_depth": 36.589754096890665
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_01",
+      "raw_manual_pixels": [
+        [
+          825.0,
+          354.0
+        ],
+        [
+          1825.0,
+          735.0
+        ]
+      ],
+      "ray_parallax_deg": 5.498515931372611,
+      "closest_ray_parameters": [
+        17.725276251509392,
+        36.365886726511896
+      ],
+      "closest_ray_gap_working_units": 0.035173614856817983,
+      "ray_system_condition_number": 20.824455316722403,
+      "conditional_world_point_not_applied": [
+        -2.2963457271688767,
+        0.9914561766223023,
+        5.678757847625317
+      ],
+      "original_world_hypothesis": [
+        -2.45,
+        1.8,
+        5.3
+      ],
+      "displacement_not_applied": [
+        0.15365427283112343,
+        -0.8085438233776977,
+        0.37875784762531683
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 65.54318195631166,
+          "conditional_fit_error_px": 1.0188810408541364,
+          "residual_px": [
+            0.08565586987037932,
+            -1.0152741734963797
+          ],
+          "positive_depth": 17.664521955536824
+        },
+        {
+          "view": "G",
+          "original_error_px": 53.75446288636514,
+          "conditional_fit_error_px": 4.1877716592283605,
+          "residual_px": [
+            -0.5698532136912036,
+            4.1488189626304575
+          ],
+          "positive_depth": 36.29119963726844
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_02",
+      "raw_manual_pixels": [
+        [
+          1200.0,
+          340.0
+        ],
+        [
+          2190.0,
+          750.0
+        ]
+      ],
+      "ray_parallax_deg": 1.5229124324458334,
+      "closest_ray_parameters": [
+        16.695328772793367,
+        35.48326946019934
+      ],
+      "closest_ray_gap_working_units": 0.018899817320800278,
+      "ray_system_condition_number": 75.24057854214445,
+      "conditional_world_point_not_applied": [
+        0.1806356401198771,
+        1.7645806189537938,
+        5.984214102319078
+      ],
+      "original_world_hypothesis": [
+        -1.4,
+        2.6,
+        5.5
+      ],
+      "displacement_not_applied": [
+        1.5806356401198771,
+        -0.8354193810462063,
+        0.48421410231907824
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 124.15130565258313,
+          "conditional_fit_error_px": 0.5486252282072387,
+          "residual_px": [
+            -0.22102081613024893,
+            0.5021348821408083
+          ],
+          "positive_depth": 16.60076114028068
+        },
+        {
+          "view": "G",
+          "original_error_px": 128.07568347097651,
+          "conditional_fit_error_px": 2.344573612928507,
+          "residual_px": [
+            1.0584310650319821,
+            -2.092068141102459
+          ],
+          "positive_depth": 35.38775733901866
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_03",
+      "raw_manual_pixels": [
+        [
+          1430.0,
+          420.0
+        ],
+        [
+          2410.0,
+          850.0
+        ]
+      ],
+      "ray_parallax_deg": 1.0798457618211361,
+      "closest_ray_parameters": [
+        20.746787167227694,
+        39.537853212237316
+      ],
+      "closest_ray_gap_working_units": 0.10025917932386623,
+      "ray_system_condition_number": 106.11530933992685,
+      "conditional_world_point_not_applied": [
+        -0.6491674696968118,
+        6.05680926242459,
+        3.279561829205607
+      ],
+      "original_world_hypothesis": [
+        1.1,
+        2.7,
+        5.4
+      ],
+      "displacement_not_applied": [
+        -1.749167469696812,
+        3.3568092624245898,
+        -2.1204381707943933
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 33.50339442051593,
+          "conditional_fit_error_px": 2.788474823913821,
+          "residual_px": [
+            -0.7062876786226298,
+            2.6975450985344196
+          ],
+          "positive_depth": 21.21691238527602
+        },
+        {
+          "view": "G",
+          "original_error_px": 48.981408863781404,
+          "conditional_fit_error_px": 10.564889243693825,
+          "residual_px": [
+            3.21599984491786,
+            -10.063509811641552
+          ],
+          "positive_depth": 40.14245445294516
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_04",
+      "raw_manual_pixels": [
+        [
+          1460.0,
+          490.0
+        ],
+        [
+          2420.0,
+          910.0
+        ]
+      ],
+      "ray_parallax_deg": 1.833279383267255,
+      "closest_ray_parameters": [
+        16.992390368440102,
+        35.77476188166362
+      ],
+      "closest_ray_gap_working_units": 0.07606387081336842,
+      "ray_system_condition_number": 62.50099324993801,
+      "conditional_world_point_not_applied": [
+        1.5503123303808428,
+        2.5652495171488243,
+        4.890175771283016
+      ],
+      "original_world_hypothesis": [
+        2.7,
+        1.1,
+        5.45
+      ],
+      "displacement_not_applied": [
+        -1.1496876696191574,
+        1.4652495171488242,
+        -0.5598242287169839
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 87.5191037685582,
+          "conditional_fit_error_px": 2.1959455175075995,
+          "residual_px": [
+            -1.2789658003957811,
+            1.7850555165819628
+          ],
+          "positive_depth": 16.870296036488377
+        },
+        {
+          "view": "G",
+          "original_error_px": 64.97958470760092,
+          "conditional_fit_error_px": 9.348459442140463,
+          "residual_px": [
+            5.845667759375829,
+            -7.295331547526757
+          ],
+          "positive_depth": 35.76767448891842
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_05",
+      "raw_manual_pixels": [
+        [
+          1465.0,
+          748.0
+        ],
+        [
+          2415.0,
+          1120.0
+        ]
+      ],
+      "ray_parallax_deg": 4.4548843979171115,
+      "closest_ray_parameters": [
+        15.084920670833233,
+        33.80186976662143
+      ],
+      "closest_ray_gap_working_units": 0.01962062172691181,
+      "ray_system_condition_number": 25.709718439125247,
+      "conditional_world_point_not_applied": [
+        2.826377210212297,
+        0.34451128788504365,
+        4.6658497592291175
+      ],
+      "original_world_hypothesis": [
+        2.95,
+        0.1,
+        5.15
+      ],
+      "displacement_not_applied": [
+        -0.12362278978770336,
+        0.24451128788504364,
+        -0.48415024077088287
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 46.82057180385076,
+          "conditional_fit_error_px": 0.5715835343110262,
+          "residual_px": [
+            0.530325702101436,
+            -0.21321910417714207
+          ],
+          "positive_depth": 14.781386023318618
+        },
+        {
+          "view": "G",
+          "original_error_px": 45.15654488744453,
+          "conditional_fit_error_px": 2.6218075538980337,
+          "residual_px": [
+            -2.4793451463165184,
+            0.8524802021827327
+          ],
+          "positive_depth": 33.6614097787384
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_06",
+      "raw_manual_pixels": [
+        [
+          830.0,
+          920.0
+        ],
+        [
+          1820.0,
+          1220.0
+        ]
+      ],
+      "ray_parallax_deg": 8.54892161114313,
+      "closest_ray_parameters": [
+        14.960840667067329,
+        33.46010467437731
+      ],
+      "closest_ray_gap_working_units": 0.24282330236324728,
+      "ray_system_condition_number": 13.3793351244153,
+      "conditional_world_point_not_applied": [
+        0.2108519974123458,
+        -2.185554335469404,
+        4.1113643772465105
+      ],
+      "original_world_hypothesis": [
+        1.1,
+        -2.65,
+        5.05
+      ],
+      "displacement_not_applied": [
+        -0.8891480025876543,
+        0.4644456645305959,
+        -0.9386356227534893
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 67.0442530623813,
+          "conditional_fit_error_px": 7.164910950113466,
+          "residual_px": [
+            -5.17018466189279,
+            -4.960356790089236
+          ],
+          "positive_depth": 14.887773700671225
+        },
+        {
+          "view": "G",
+          "original_error_px": 95.84159308913136,
+          "conditional_fit_error_px": 32.333453012011205,
+          "residual_px": [
+            22.265936077504193,
+            23.445261232761595
+          ],
+          "positive_depth": 33.53301347006699
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_07",
+      "raw_manual_pixels": [
+        [
+          590.0,
+          770.0
+        ],
+        [
+          1640.0,
+          1110.0
+        ]
+      ],
+      "ray_parallax_deg": 9.729208269609563,
+      "closest_ray_parameters": [
+        15.159986920139174,
+        33.56562322384709
+      ],
+      "closest_ray_gap_working_units": 0.02961846545347333,
+      "ray_system_condition_number": 11.749782300443739,
+      "conditional_world_point_not_applied": [
+        -1.0554666799278025,
+        -2.6068375903490564,
+        4.887909357493328
+      ],
+      "original_world_hypothesis": [
+        -0.95,
+        -2.7,
+        5.0
+      ],
+      "displacement_not_applied": [
+        -0.10546667992780256,
+        0.0931624096509438,
+        -0.11209064250667211
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 2.614739598651891,
+          "conditional_fit_error_px": 0.877226651045797,
+          "residual_px": [
+            0.4000141667213484,
+            0.7807145853173552
+          ],
+          "positive_depth": 14.962580504871708
+        },
+        {
+          "view": "G",
+          "original_error_px": 8.46092052321586,
+          "conditional_fit_error_px": 3.9301586179970167,
+          "residual_px": [
+            -1.6213589783635598,
+            -3.5801315375131253
+          ],
+          "positive_depth": 33.51954032484129
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_08",
+      "raw_manual_pixels": [
+        [
+          645.0,
+          535.0
+        ],
+        [
+          1640.0,
+          900.0
+        ]
+      ],
+      "ray_parallax_deg": 7.611583514165161,
+      "closest_ray_parameters": [
+        17.75441632198561,
+        36.249322276057335
+      ],
+      "closest_ray_gap_working_units": 0.04982526598829498,
+      "ray_system_condition_number": 15.032743138974379,
+      "conditional_world_point_not_applied": [
+        -2.9245797413675465,
+        -0.27654862401662866,
+        4.757117810075728
+      ],
+      "original_world_hypothesis": [
+        -2.6,
+        -1.2,
+        5.2
+      ],
+      "displacement_not_applied": [
+        -0.3245797413675464,
+        0.9234513759833713,
+        -0.44288218992427186
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 77.4977510247236,
+          "conditional_fit_error_px": 1.4478728826332259,
+          "residual_px": [
+            -0.2894276480503777,
+            -1.418649893669567
+          ],
+          "positive_depth": 17.636956393400087
+        },
+        {
+          "view": "G",
+          "original_error_px": 53.06267521304923,
+          "conditional_fit_error_px": 5.93846266674632,
+          "residual_px": [
+            0.8930916304439052,
+            5.870922089754799
+          ],
+          "positive_depth": 36.1859792198251
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_09",
+      "raw_manual_pixels": [
+        [
+          1075.0,
+          318.0
+        ],
+        [
+          2080.0,
+          715.0
+        ]
+      ],
+      "ray_parallax_deg": 2.9614501888402587,
+      "closest_ray_parameters": [
+        16.3782335889716,
+        35.13633861749546
+      ],
+      "closest_ray_gap_working_units": 0.04485010124775591,
+      "ray_system_condition_number": 38.68579214379172,
+      "conditional_world_point_not_applied": [
+        -0.30886119808937196,
+        1.155762131745298,
+        6.29385427753395
+      ],
+      "original_world_hypothesis": [
+        -0.25,
+        2.85,
+        5.4
+      ],
+      "displacement_not_applied": [
+        -0.05886119808937196,
+        -1.6942378682547021,
+        0.8938542775339497
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 167.81946377428426,
+          "conditional_fit_error_px": 1.3081108515021278,
+          "residual_px": [
+            0.39338581026640895,
+            -1.2475582567955144
+          ],
+          "positive_depth": 16.331219069253354
+        },
+        {
+          "view": "G",
+          "original_error_px": 150.69673134817197,
+          "conditional_fit_error_px": 5.6265547627062125,
+          "residual_px": [
+            -1.976215163744655,
+            5.268082395361489
+          ],
+          "positive_depth": 35.06664819789032
+        }
+      ],
+      "solver_success": true
+    },
+    {
+      "id": "FLOWER_10",
+      "raw_manual_pixels": [
+        [
+          1440.0,
+          635.0
+        ],
+        [
+          2425.0,
+          1030.0
+        ]
+      ],
+      "ray_parallax_deg": 2.9335075399874357,
+      "closest_ray_parameters": [
+        17.232118099767817,
+        35.98723362350156
+      ],
+      "closest_ray_gap_working_units": 0.16112621045054543,
+      "ray_system_condition_number": 39.054450715890525,
+      "conditional_world_point_not_applied": [
+        1.5163593467594838,
+        2.438119996468787,
+        3.901160163229297
+      ],
+      "original_world_hypothesis": [
+        2.65,
+        -1.15,
+        5.45
+      ],
+      "displacement_not_applied": [
+        -1.133640653240516,
+        3.588119996468787,
+        -1.548839836770703
+      ],
+      "errors": [
+        {
+          "view": "F",
+          "original_error_px": 189.7457068619328,
+          "conditional_fit_error_px": 4.645253197438466,
+          "residual_px": [
+            4.144276024575447,
+            -2.0984169033920352
+          ],
+          "positive_depth": 17.285209738548925
+        },
+        {
+          "view": "G",
+          "original_error_px": 178.25078010892952,
+          "conditional_fit_error_px": 19.580241972197577,
+          "residual_px": [
+            -17.9024939046285,
+            7.9301064106698504
+          ],
+          "positive_depth": 36.18144791234748
+        }
+      ],
+      "solver_success": true
+    }
+  ],
+  "limits": [
+    "Source frames not restored locally; identities and annotations not independently re-read in this run",
+    "F/G different timestamps/edit timelines, same rigid world state NOT proved",
+    "Cameras already trained on same eleven hypotheses, all data in-sample",
+    "Computed points are diagnostics only, never applied to scene, not measured geometry",
+    "No visibility, occlusion or material/shape acceptance; former G tree occlusion remains",
+    "Depth/units arbitrary; no physical metric inference"
+  ]
+}
