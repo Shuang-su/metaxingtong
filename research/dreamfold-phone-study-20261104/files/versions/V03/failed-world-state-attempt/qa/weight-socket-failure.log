@@ -1,0 +1,27 @@
+06:51:08 | INFO: Data are loaded, start creating Blender stuff
+06:51:08 | INFO: Blender create Mesh node Cube.001
+06:51:08 | INFO: Blender create Mesh node Cube.002
+06:51:08 | INFO: Blender create Mesh node Cube.003
+06:51:08 | INFO: Blender create Mesh node Cube.004
+06:51:08 | INFO: Blender create Mesh node Cylinder
+06:51:08 | INFO: Blender create Mesh node Cylinder.001
+06:51:08 | INFO: Blender create Mesh node Cylinder.002
+06:51:08 | INFO: Blender create Mesh node Cylinder.003
+06:51:08 | INFO: Blender create Mesh node Cylinder.004
+06:51:08 | INFO: Blender create Mesh node Cylinder.005
+06:51:08 | INFO: glTF import finished in 0.01s
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/dreamfold-phone-study-20261104/versions/V03/scripts/verify-camera-roundtrip.py", line 30, in <module>
+    sys.argv=['verify','--',variant];runpy.run_path(str(V/'scripts/restore-state.py'),run_name='__main__');c=state();out[variant]={'blend':a,'native_glb_import':b,'restored_glb_import':c,'native_projection_max_error_pixels':compare(a,b),'restored_projection_max_error_pixels':compare(a,c),'restored_world_nodes':{'nodes':[{'name':n.name,'type':n.bl_idname,'inputs':{i.name:list(i.default_value) if hasattr(i.default_value,'__len__') else i.default_value for i in n.inputs if hasattr(i,'default_value')}} for n in bpy.context.scene.world.node_tree.nodes],'links':[[l.from_node.name,l.from_socket.name,l.to_node.name,l.to_socket.name] for l in bpy.context.scene.world.node_tree.links]},'note':'Fresh import has world None before restoration. No render performed. Projection comparison at fixed1080x603. Native glTF lacks area/world illumination; restored import reconstructs archived lighting.'}
+                                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/scratch/fa58bfcf0425/dreamfold-phone-study-20261104/versions/V03/scripts/restore-state.py", line 20, in <module>
+    for key,val in nd['inputs'].items():node.inputs[key].default_value=val
+                                        ~~~~~~~~~~~^^^^^
+KeyError: 'bpy_prop_collection[key]: key "Weight" not found'
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/dreamfold-phone-study-20261104/versions/V03/models/phone-material.blend"
+
+Blender quit
