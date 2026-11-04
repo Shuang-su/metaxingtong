@@ -15,3 +15,13 @@
 models/phone-{material,white}.{blend,glb}各含10mesh、5camera。sidecar与restore-state.py延续V03真实World节点/相机/AREA灯恢复，GLB原生不含AREA灯/world。新文件必须独立按新SHA核验，不借旧V03导回结果。本首冻结阶段正式渲染/新保存态独立QA尚待完成。
 
 诊断原始脚本与原日志保持历史原字节，内含当时云端相对布局；正式生成与恢复入口在scripts/。旧V03根目录及versions/V03原件均未改。
+
+## 正式渲染执行态
+从两份新V04保存BLEND加载，分别激活已保存source7与side机位，共4张材/白图，16sample/4CPU/无去噪、1080×603/100%、HORIZONTAL。每张实际相机矩阵、lens、源BLEND SHA、画幅与采样写入qa/actual-render-states.json；没有改变灯光或用不同机位移动物件。两源叠图直接使用原图与透明渲染在固定纯黑底合成后的50%RGB混合，未warp、裁切或局部美化。
+
+白源高光偏亮低对比、侧内面采样噪声和硬边仍在；材质后片的亮面与源深色面不相符也未调整，本轮严格仅单角。新图已实际查看，不以好看或局部边残差下降替代完整来源验收。
+
+## 新保存态及图像独立复验
+独立最终报告在independent-final-qa/review.zh.md。两新BLEND的10mesh共享几何/UV/visibility，仅P04世界几何改变，所有local几何/材质node以及原5camera/灯/World与V03相同。保存P04与45°期望矩阵最大5.96e-8；两新GLB真实空场回导含10mesh/5camera，全顶点最大差1.686e-7。fresh-world恢复World/render/view等状态相同，灯/相机矩阵有5.96e-8/9.69e-8浮点差，不称字节exact。
+
+四正式图和两直接叠图逐图查看；六图manifest全部匹配，四图模型SHA及机位执行记录吻合；两叠全数组复算最大误差0。无实质技术阻塞，仅有限保存态/导出/图像方法通过；来源整体仍FAILED。未改变对下端未知、亮面材质不符、同一边非独立多地标与真实角未恢复的限制。
