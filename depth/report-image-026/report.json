@@ -1,0 +1,286 @@
+{
+  "source": {
+    "path": "/workspace/scratch/fa58bfcf0425/stardream-report-20261104/026.png",
+    "sha256": "c4e7a7910788a4412b9889335e58eb4c10a237fc8c5b02c2abe5cf1c0a098b91",
+    "output_name": "report-image-026",
+    "capture_type": "third-party article screenshot, NOT native decoded video frame",
+    "article_url": "https://www.bilibili.com/opus/961640175446786069",
+    "article_publication_date": "2024-08-04",
+    "performance_date": "2024-08-03",
+    "video_time_seconds": null,
+    "decode_size": null,
+    "login_quality_verified": false,
+    "official_replay": "https://www.bilibili.com/video/BV11E4m1R716/",
+    "role": "side-wall close view, NOT reverse full-room",
+    "exclusions": [
+      {
+        "class": 2,
+        "description": "Floor reflections/low-signal ground caution, not evidence of surface relief",
+        "points": [
+          [
+            0,
+            529
+          ],
+          [
+            1192,
+            529
+          ],
+          [
+            1192,
+            671
+          ],
+          [
+            0,
+            671
+          ]
+        ]
+      },
+      {
+        "class": 4,
+        "description": "Dynamic colored illumination and bloom on real surfaces, color does not change geometry",
+        "points": [
+          [
+            726,
+            0
+          ],
+          [
+            1192,
+            0
+          ],
+          [
+            1192,
+            529
+          ],
+          [
+            726,
+            529
+          ]
+        ]
+      },
+      {
+        "class": 1,
+        "description": "Conservative performer/bear character obscuration, includes background, not exact segmentation",
+        "points": [
+          [
+            539,
+            134
+          ],
+          [
+            718,
+            134
+          ],
+          [
+            761,
+            379
+          ],
+          [
+            705,
+            671
+          ],
+          [
+            600,
+            671
+          ],
+          [
+            547,
+            398
+          ]
+        ]
+      }
+    ],
+    "dimensions": [
+      1192,
+      671
+    ],
+    "bytes": 427526,
+    "crop": [
+      0,
+      0,
+      1192,
+      671
+    ],
+    "official_clip": "https://www.bilibili.com/video/BV1NT421r72q/",
+    "official_identity_evidence": "sources/official-identity.json, public page metadata only; no playback/decode",
+    "image_url": "https://i0.hdslb.com/bfs/new_dyn/6388978fb1103052e7092f3009ce826f695870138.png@1192w",
+    "verified_article_source": {
+      "index": 25,
+      "url": "https://i0.hdslb.com/bfs/new_dyn/6388978fb1103052e7092f3009ce826f695870138.png@1192w",
+      "file": "report/26.png",
+      "sha256": "c4e7a7910788a4412b9889335e58eb4c10a237fc8c5b02c2abe5cf1c0a098b91",
+      "bytes": 427526,
+      "size": [
+        1192,
+        671
+      ],
+      "decode": "PASS",
+      "article_number_1based": 26,
+      "role": "side-wall local view only, not a complete reverse-room baseline",
+      "classification": "website article screenshot, not native decoded frame",
+      "clip_time": null,
+      "actual_decode_resolution": null,
+      "login_quality_evidence": "NOT AVAILABLE; existing login handoff untouched",
+      "state": "unknown exact time; common architecture clue, light and fixture layout may differ"
+    },
+    "same_state_validation": "NOT VERIFIED; fixture count/layout and lighting may differ",
+    "subsequent_date_reuse": "NOT VERIFIED; no independent pixel evidence"
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "artifacts": [
+      {
+        "path": "README.md",
+        "bytes": 4400,
+        "sha256": "319566441daaac0c5ed83e75a8fd19bae0863f3275e23f147c06fe0906edf6fb",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/README.md"
+      },
+      {
+        "path": "config.json",
+        "bytes": 950,
+        "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 99173660,
+        "sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/model.safetensors"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "bytes": 775,
+        "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/preprocessor_config.json"
+      }
+    ],
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0",
+      "safetensors": "0.8.0"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 1,
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "forward_seconds": 3.7519025802612305
+  },
+  "range": {
+    "min": 0.8501423001289368,
+    "max": 5.423309803009033,
+    "nonfinite_count": 0
+  },
+  "definition": "Relative inverse-depth-like prediction; larger/white generally nearer, smaller/black farther; NOT image luminance, metric distance or geometry acceptance. Per-image normalization not cross-view scale.",
+  "resampling": "Bicubic align_corners=False from model grid to screenshot grid, NOT independent full-resolution depth; no source interpolation claimed.",
+  "masks": {
+    "manual": "Conservative incomplete ROIs, later drawn overwrite;0 unlabelled NOT certified valid.",
+    "confidence_unknown": "255 everywhere means NO calibrated confidence, NOT high confidence.",
+    "nonfinite": "255 numerical nonfinite;0 only finite, not valid geometry.",
+    "dark": "All original RGB<=25 heuristic caution, NOT depth algorithm.",
+    "occlusion": "Hidden geometry unknown; do not fill as fact."
+  },
+  "limitations": [
+    "Article screenshot is NOT logged-in highest-quality decoded native video frame",
+    "Video timestamp/decoder/native dimensions unverified",
+    "Stylized CGI, compositing, reflection, transparency, light, shadows and characters may break predictions",
+    "No camera, distance, dimensions, contact, hidden surfaces, subsequent replay or geometry acceptance established"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-screenshot-grid.png",
+      "bytes": 2266,
+      "sha256": "837322956fc87c927a090a3ec95f39c3353747c004785960c8cd8680eccea48d"
+    },
+    {
+      "path": "dark-low-signal-caution-screenshot-grid.png",
+      "bytes": 886,
+      "sha256": "653280bc3ba453a38cc847fb42940c1fc895f9f255169b1b8a13b01192eabcd1"
+    },
+    {
+      "path": "manual-exclusion-classes-screenshot-grid.png",
+      "bytes": 2834,
+      "sha256": "2f26ace1719f6a09947dd0aeda5ed93974423bd5611b1a2a3c98b7cf5da5822b"
+    },
+    {
+      "path": "nonfinite-invalid-model-grid.png",
+      "bytes": 544,
+      "sha256": "caec195e3fd01149b370763e45bfb21517d04ad2f2b52777a7c9286ce3add40c"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 323674,
+      "sha256": "29aa0f207f083971bc0c40ff47c048f9e28e7aaf507f646b4026259b4b7e3857"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-screenshot-grid.png",
+      "bytes": 41679,
+      "sha256": "799b526e475b7aa4ead91e2f493674ee4f4b6132c27bfba1e3be0930bae173df"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "29b9c885bbf913fd62696434106167084b39faf96f7f458d153462d3e5fca437"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-screenshot-grid.npy",
+      "bytes": 3199456,
+      "sha256": "57e651740bd1ff0758eeaa9544efe7428ad5c4fac174598e1a8c793537216ba8"
+    }
+  ]
+}
