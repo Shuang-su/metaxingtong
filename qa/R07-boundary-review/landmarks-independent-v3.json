@@ -1,0 +1,213 @@
+{
+  "version": "independent_semantic_v3",
+  "supersedes_old_coordinates": false,
+  "old_points_preserved": true,
+  "purpose": "Boundary semantic diagnosis only, not source acceptance or authorized geometry mutation",
+  "images": [
+    {
+      "source": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/13.png",
+      "sha256": "7aae6650cb748b947d85fa1027752bfecf0ebf930744ce2f126a8ba626d9eab1",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "source_type": "article screenshot, not native; clip time unknown",
+      "old_concave_points": [
+        {
+          "id": "C1",
+          "old_xy": [
+            540,
+            439
+          ],
+          "old_pixel_uncertainty_px": 4,
+          "review_class": "probable_inner_loop",
+          "reason": "银亮竖带右下端接中央暗孔侧细线，不能与外周左端混用。",
+          "uniform_outer_loop_fit_allowed": false
+        },
+        {
+          "id": "C2",
+          "old_xy": [
+            626,
+            423
+          ],
+          "old_pixel_uncertainty_px": 4,
+          "review_class": "probable_inner_loop",
+          "reason": "后方银带下缘与中央暗孔侧细线相接，人物及阴影邻近。",
+          "uniform_outer_loop_fit_allowed": false
+        },
+        {
+          "id": "C3",
+          "old_xy": [
+            687,
+            470
+          ],
+          "old_pixel_uncertainty_px": 4,
+          "review_class": "probable_outer_loop",
+          "reason": "右侧带右上角与右外尖方向边缘相接。",
+          "uniform_outer_loop_fit_allowed": false
+        },
+        {
+          "id": "C4",
+          "old_xy": [
+            567,
+            499
+          ],
+          "old_pixel_uncertainty_px": 4,
+          "review_class": "probable_outer_loop",
+          "reason": "前带下侧角与前外尖方向边缘相接。",
+          "uniform_outer_loop_fit_allowed": false
+        }
+      ],
+      "new_inner_tip_candidates": [
+        {
+          "id": "I1",
+          "xy": [
+            542,
+            386
+          ],
+          "meaning": "candidate inner dark-opening tip corresponding to old outer S1",
+          "visibility": "visible approximate junction",
+          "subjective_uncertainty_px": 6,
+          "use": "diagnostic only; not a blinded point, no strict planar/edge-parallel claim"
+        },
+        {
+          "id": "I2",
+          "xy": [
+            749,
+            421
+          ],
+          "meaning": "candidate inner dark-opening tip corresponding to old outer S2",
+          "visibility": "visible approximate junction",
+          "subjective_uncertainty_px": 6,
+          "use": "diagnostic only; not a blinded point, no strict planar/edge-parallel claim"
+        },
+        {
+          "id": "I3",
+          "xy": [
+            692,
+            555
+          ],
+          "meaning": "candidate inner dark-opening tip corresponding to old outer S3",
+          "visibility": "visible approximate junction",
+          "subjective_uncertainty_px": 6,
+          "use": "diagnostic only; not a blinded point, no strict planar/edge-parallel claim",
+          "review_history": [
+            {
+              "xy": [
+                698,
+                555
+              ],
+              "status": "initial independent guess, superseded after original-pixel closeup; right of actual visible bright endpoint"
+            },
+            {
+              "xy": [
+                690,
+                563
+              ],
+              "status": "producer suggestion, not adopted; below visible endpoint in dark region"
+            }
+          ]
+        },
+        {
+          "id": "I4",
+          "xy": [
+            423,
+            492
+          ],
+          "meaning": "candidate inner dark-opening tip corresponding to old outer S4",
+          "visibility": "visible approximate junction",
+          "subjective_uncertainty_px": 6,
+          "use": "diagnostic only; not a blinded point, no strict planar/edge-parallel claim"
+        }
+      ]
+    },
+    {
+      "source": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/21.png",
+      "sha256": "63eb021f730f3803048fb899ddec923accfcd143b1fec9d7f3c8fb9e89f04bdd",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "source_type": "article screenshot, not native; clip time unknown",
+      "old_concave_points": [
+        {
+          "id": "C1",
+          "old_xy": [
+            521,
+            336
+          ],
+          "old_pixel_uncertainty_px": 5,
+          "review_class": "probable_outer_loop_partly_occluded",
+          "reason": "左侧外凹角近裙边，内孔侧对应角被裙遮。",
+          "uniform_outer_loop_fit_allowed": false
+        },
+        {
+          "id": "C2",
+          "old_xy": [
+            594,
+            308
+          ],
+          "old_pixel_uncertainty_px": 5,
+          "review_class": "probable_inner_loop",
+          "reason": "后带下缘中央凹角，非外周上缘。",
+          "uniform_outer_loop_fit_allowed": false
+        },
+        {
+          "id": "C4",
+          "old_xy": [
+            594,
+            367
+          ],
+          "old_pixel_uncertainty_px": 5,
+          "review_class": "ambiguous_band_interior",
+          "reason": "精确旧点红十字落在模糊带中部；上下边缘仅隔数像素，不能可靠指定内外。",
+          "uniform_outer_loop_fit_allowed": false
+        }
+      ],
+      "new_inner_tip_candidates": [
+        {
+          "id": "I1",
+          "xy": [
+            495,
+            290
+          ],
+          "meaning": "candidate inner dark-opening tip corresponding to old outer S1",
+          "visibility": "visible approximate junction",
+          "subjective_uncertainty_px": 8,
+          "use": "diagnostic only; not a blinded point, no strict planar/edge-parallel claim"
+        },
+        {
+          "id": "I2",
+          "xy": [
+            686,
+            290
+          ],
+          "meaning": "candidate inner dark-opening tip corresponding to old outer S2",
+          "visibility": "visible approximate junction",
+          "subjective_uncertainty_px": 8,
+          "use": "diagnostic only; not a blinded point, no strict planar/edge-parallel claim"
+        },
+        {
+          "id": "I3",
+          "xy": null,
+          "meaning": "candidate inner dark-opening tip corresponding to old outer S3",
+          "visibility": "occluded by foreground character",
+          "subjective_uncertainty_px": null,
+          "use": "diagnostic only; not a blinded point, no strict planar/edge-parallel claim"
+        },
+        {
+          "id": "I4",
+          "xy": [
+            470,
+            390
+          ],
+          "meaning": "candidate inner dark-opening tip corresponding to old outer S4",
+          "visibility": "visible approximate junction",
+          "subjective_uncertainty_px": 8,
+          "use": "diagnostic only; not a blinded point, no strict planar/edge-parallel claim"
+        }
+      ]
+    }
+  ],
+  "outer_new_points": "No replacement outer-loop points accepted; producer candidates C1[523,436],C2[625,415] retained as unconfirmed alternate-band-edge hypotheses, not used for fitting."
+}
