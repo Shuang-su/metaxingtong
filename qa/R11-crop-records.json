@@ -1,0 +1,54 @@
+[
+  {
+    "output": "renders/R11-comparisons/material_R09_R10_R11_same_pixel_front.png",
+    "sha256": "3ee73401579dd539361b726a49aa857149cc51255dca13556ec8bd0e18e9edc1",
+    "sources": [
+      {
+        "path": "renders/R10/R09_material_DIAG_device_front.png",
+        "sha256": "d55662a3e0a214f03e4e9010e3a1a41236e62d3f2010a72c618c97d593393a85"
+      },
+      {
+        "path": "renders/R10/R10_material_DIAG_device_front.png",
+        "sha256": "0c64c0033310e1c891a29bb1f5f60ce418c0f4742cc03b970c8198a00cf95bd6"
+      },
+      {
+        "path": "renders/R11/R11_material_DIAG_device_front.png",
+        "sha256": "9fa29cdf6f4ceb3e83f49fcd894cfee82389328a522b1ef3ddef6e785f7b6a53"
+      }
+    ],
+    "crop_box": [
+      130,
+      130,
+      1020,
+      671
+    ],
+    "order": "top R09 baseline, middle failed R10 physical panels, bottom R11 diagram on unchanged body surface",
+    "method": "same original pixels, no resizing/retouch; one artificial diagnostic camera, not source registration"
+  },
+  {
+    "output": "renders/R11-comparisons/white_R09_R10_R11_same_pixel_front.png",
+    "sha256": "df88fc4c0c03050e59c4d61b9dcf455610af2d2e0f6864dfb1332c3eaf2dea5c",
+    "sources": [
+      {
+        "path": "renders/R10/R09_white_DIAG_device_front.png",
+        "sha256": "ae5193cca24d66d3223201595dad80a8983a6d966bd872c8c946f1d137a61e93"
+      },
+      {
+        "path": "renders/R10/R10_white_DIAG_device_front.png",
+        "sha256": "952b6c1405f2a76ef82ac6fd59163967b2b4c48c765a359fa5eec9106a5846de"
+      },
+      {
+        "path": "renders/R11/R11_white_DIAG_device_front.png",
+        "sha256": "22d5440f4650643eb813324f815a383614243cbf6ba45a00e25a5628bcc6a507"
+      }
+    ],
+    "crop_box": [
+      130,
+      130,
+      1020,
+      671
+    ],
+    "order": "top R09 baseline, middle failed R10 physical panels, bottom R11 diagram on unchanged body surface",
+    "method": "same original pixels, no resizing/retouch; one artificial diagnostic camera, not source registration"
+  }
+]

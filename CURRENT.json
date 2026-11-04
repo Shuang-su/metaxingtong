@@ -1,35 +1,37 @@
 {
-  "stage": "R10",
+  "stage": "R11",
   "scope": "local assemblage study, NOT a whole room or accepted scene",
-  "mesh_count": 243,
+  "mesh_count": 236,
   "diagnostic_cameras": 8,
-  "source_matching": "FAILED; probable radio/audio-device front categories only, not calibrated",
+  "source_matching": "FAILED; source009 device category only, unknown full layout/identity/physical dimensions",
   "originals": [
     {
-      "path": "models/R10_material.blend",
-      "bytes": 3025208,
-      "sha256": "2297c3b8e2c262a1cdd08087c303ccae1bdadc4dab89ae9552249ca5f829a775"
+      "path": "models/R11_material.blend",
+      "bytes": 3017140,
+      "sha256": "54d6e8b3b204ed11e32b22cb457f13d94f7e344695ad14583bd837e5178dd6dd"
     },
     {
-      "path": "models/R10_material.glb",
-      "bytes": 1109376,
-      "sha256": "4d3787db7fb0eacf983bc425774c907a6d2695381389805bcb51758f193ea619"
+      "path": "models/R11_material.glb",
+      "bytes": 1101860,
+      "sha256": "4248c4e4cedfa51ce4521f073f73282261b8a8f0df47beeb6be0bcb57d77458b"
     },
     {
-      "path": "models/R10_white.blend",
-      "bytes": 2770360,
-      "sha256": "f891832de7f1f33b0f4f72d76d91b4902f3138411c66cc745f154f8fa04750bd"
+      "path": "models/R11_white.blend",
+      "bytes": 2729268,
+      "sha256": "cab03e3a6d5c703504b96a56b97c1015856a14967f33cdd305c9fd412854e4b0"
     },
     {
-      "path": "models/R10_white.glb",
-      "bytes": 1110180,
-      "sha256": "560b786afcc0b7974171703caab343c2138a1d735306ccce43e667d538a07d6e"
+      "path": "models/R11_white.glb",
+      "bytes": 1097744,
+      "sha256": "f49646190fc6b3e271b68ce0b1da22e33a906564f8c0083208976c85938d179e"
     }
   ],
   "rendered_distinct_diagnostic_angles": 1,
-  "status": "two proxy handle root contacts repaired; source FAILED; case/table gap and other collisions retained",
+  "status": "device front appearance candidate on unchanged body surface plus five finite controls; limited technical QA complete; all source matching FAILED; old tabletop gaps/collisions retained",
   "new_render_count": 2,
   "reused_render_count": 0,
-  "comparison_baseline_render_count": 2,
-  "R10_status": "early editable candidate; final technical/image QA pending"
+  "comparison_baseline_render_count": 4,
+  "finalized_utc": "2026-11-04T20:33:57.900753+00:00",
+  "failed_stage": "R10 seven physical panels introduced new bottle intersections and five coplanar front corners; retained",
+  "texture": "textures/R11_device_front_proxy.png; diagrammatic generated regions, not scan or source pixels"
 }
