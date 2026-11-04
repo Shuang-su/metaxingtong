@@ -1,0 +1,805 @@
+AUDIT inferred-low-bridge-central-step {'vertices': 384, 'triangles': 768, 'nonmanifold': 0, 'degenerate': 0, 'signed_volume': 0.1258249843066911} UNEXPECTED [] NEIGHBORS [{'object': 'stage-central-solid', 'bvh_pairs': 620, 'boolean_intersection': {'volume': 0.015680894926036498, 'faces': 384}}, {'object': 'stage-step-ring', 'bvh_pairs': 736, 'boolean_intersection': {'volume': 0.03155080570390385, 'faces': 384}}, {'object': 'stage-outer-floor', 'bvh_pairs': 0, 'boolean_intersection': {'volume': 0.0, 'faces': 0}}, {'object': 'inferred-low-bridge-step-outer', 'bvh_pairs': 0, 'boolean_intersection': {'volume': 0.0, 'faces': 0}}]
+AUDIT inferred-low-bridge-step-outer {'vertices': 388, 'triangles': 772, 'nonmanifold': 0, 'degenerate': 0, 'signed_volume': 0.09966047337403759} UNEXPECTED [] NEIGHBORS [{'object': 'stage-step-ring', 'bvh_pairs': 638, 'boolean_intersection': {'volume': 0.015282961307197463, 'faces': 322}}, {'object': 'stage-outer-floor', 'bvh_pairs': 738, 'boolean_intersection': {'volume': 0.024977276158646103, 'faces': 386}}, {'object': 'inferred-low-bridge-central-step', 'bvh_pairs': 0, 'boolean_intersection': {'volume': 0.0, 'faces': 0}}]
+{
+  "input_sha256": "591c0347a4ab63be9f7c6028058874d846fb16e3ba10c5e4c18775a40ed06d06",
+  "parameters": [
+    {
+      "name": "inferred-low-bridge-central-step",
+      "ri": 4.99,
+      "ro": 5.03,
+      "z": -0.35,
+      "h": 0.1,
+      "a": -3.141592653589793,
+      "b": 3.141592653589793,
+      "N": 96,
+      "targets": [
+        "stage-central-solid",
+        "stage-step-ring"
+      ]
+    },
+    {
+      "name": "inferred-low-bridge-step-outer",
+      "ri": 5.99,
+      "ro": 6.03,
+      "z": -0.45,
+      "h": 0.1,
+      "a": -2.0734511513692637,
+      "b": 2.0734511513692637,
+      "N": 96,
+      "targets": [
+        "stage-step-ring",
+        "stage-outer-floor"
+      ]
+    }
+  ],
+  "original_mesh_count": 162,
+  "original_11_cameras_unchanged": true,
+  "original_162_meshes_unchanged": true,
+  "original_mesh_state_sha256": "2a55ff980bbc28fd5412134135626203c4866037ace5d9198986bde1a73d83e1",
+  "new_meshes": {
+    "inferred-low-bridge-central-step": {
+      "audit": {
+        "vertices": 384,
+        "triangles": 768,
+        "nonmanifold": 0,
+        "degenerate": 0,
+        "signed_volume": 0.1258249843066911
+      },
+      "aabb_candidates": [
+        {
+          "object": "stage-central-solid",
+          "bvh_pairs": 620,
+          "boolean_intersection": {
+            "volume": 0.015680894926036498,
+            "faces": 384
+          }
+        },
+        {
+          "object": "stage-step-ring",
+          "bvh_pairs": 736,
+          "boolean_intersection": {
+            "volume": 0.03155080570390385,
+            "faces": 384
+          }
+        },
+        {
+          "object": "stage-outer-floor",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        },
+        {
+          "object": "inferred-low-bridge-step-outer",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        }
+      ],
+      "unexpected_surface_or_volume_overlap": [],
+      "state_sha256": "9a69871eca0e7b556adaaf4f39cefa790156349232fa92571034b8bea3c61969"
+    },
+    "inferred-low-bridge-step-outer": {
+      "audit": {
+        "vertices": 388,
+        "triangles": 772,
+        "nonmanifold": 0,
+        "degenerate": 0,
+        "signed_volume": 0.09966047337403759
+      },
+      "aabb_candidates": [
+        {
+          "object": "stage-step-ring",
+          "bvh_pairs": 638,
+          "boolean_intersection": {
+            "volume": 0.015282961307197463,
+            "faces": 322
+          }
+        },
+        {
+          "object": "stage-outer-floor",
+          "bvh_pairs": 738,
+          "boolean_intersection": {
+            "volume": 0.024977276158646103,
+            "faces": 386
+          }
+        },
+        {
+          "object": "inferred-low-bridge-central-step",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        }
+      ],
+      "unexpected_surface_or_volume_overlap": [],
+      "state_sha256": "c3daad78c06d4da2555b72c88c5a2666f0ef99fd62ccf612e8ac12d3c88ce351"
+    }
+  },
+  "source_status": "FAILED; only hidden-connector hypothesis",
+  "mechanical_load_acceptance": "NOT TESTED",
+  "bridge2_outside_angle_probe": {
+    "samples": 124,
+    "hit_angles": []
+  },
+  "saved_candidate_model": false
+}
+Info: Saved "r07-material.blend"
+ERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so
+07:51:24 | INFO: Starting glTF 2.0 export
+07:51:24 | INFO: Extracting primitive: stage-central-solid
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: stage-step-ring
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: stage-outer-floor
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: inner-luminous-rim
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: key-pink-ring
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: four-point-concave-floor-inlay
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace--1-0
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge--1-0
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace--1-1
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge--1-1
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace--1-2
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge--1-2
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace-1-0
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge-1-0
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace-1-1
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge-1-1
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace-1-2
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge-1-2
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: finite-media-surface-unresolved
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-02
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-05
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-08
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-11
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-14
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-17
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-20
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: piano-body-rim
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: piano-soundboard
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: piano-open-lid
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: inferred-low-bridge-central-step
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: inferred-low-bridge-step-outer
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.001
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.002
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.003
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.004
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.005
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.006
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.007
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.008
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.009
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.010
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.011
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.012
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.013
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.014
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.015
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.016
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.017
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.018
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.019
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.020
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.021
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.022
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.023
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.024
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.025
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.026
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.027
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.028
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.029
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.030
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.031
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.032
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.033
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.034
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.035
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.036
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.037
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.038
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.039
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.040
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.041
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.042
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.043
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.044
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.045
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.046
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.047
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.048
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.049
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.050
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.051
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.052
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.053
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.054
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.055
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.056
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.057
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.058
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.059
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.060
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.061
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.062
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.063
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.064
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.065
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.066
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.067
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.068
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.069
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.070
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.071
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.072
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.073
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.074
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.075
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.076
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.077
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.078
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.079
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.080
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.081
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.082
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.083
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.084
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.085
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.086
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.087
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.088
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.089
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.090
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.091
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.092
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.093
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.094
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.095
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.096
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.097
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.098
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.099
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.100
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.101
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.102
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.103
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.104
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.105
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.106
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.107
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.108
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.109
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.110
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.111
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.112
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.113
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.114
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.115
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.116
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.117
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.118
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.119
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.120
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.121
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.122
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.123
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.124
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.125
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.126
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.127
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.128
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.129
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.130
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.131
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.132
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.133
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | WARNING: Unsupported light source AREA
+07:51:24 | WARNING: Unsupported light source AREA
+07:51:24 | WARNING: Unsupported light source AREA
+07:51:24 | INFO: Finished glTF 2.0 export in 0.21291136741638184 s
+
+Info: Saved "r07-white.blend"
+07:51:24 | INFO: Starting glTF 2.0 export
+07:51:24 | INFO: Extracting primitive: stage-central-solid
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: stage-step-ring
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: stage-outer-floor
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: inner-luminous-rim
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: key-pink-ring
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: four-point-concave-floor-inlay
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace--1-0
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge--1-0
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace--1-1
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge--1-1
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace--1-2
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge--1-2
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace-1-0
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge-1-0
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace-1-1
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge-1-1
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-terrace-1-2
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: upper-edge-1-2
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: finite-media-surface-unresolved
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-02
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-05
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-08
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-11
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-14
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-17
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: media-grid-lat-20
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: piano-body-rim
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: piano-soundboard
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: piano-open-lid
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: inferred-low-bridge-central-step
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: inferred-low-bridge-step-outer
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.001
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.002
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.003
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.004
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.005
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.006
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.007
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.008
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.009
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.010
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.011
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.012
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.013
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.014
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.015
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.016
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.017
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.018
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.019
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.020
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.021
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.022
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.023
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.024
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.025
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.026
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.027
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.028
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.029
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.030
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.031
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.032
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.033
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.034
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.035
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.036
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.037
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.038
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.039
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.040
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.041
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.042
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.043
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.044
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.045
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.046
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.047
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.048
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.049
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.050
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.051
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.052
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.053
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.054
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.055
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.056
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.057
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.058
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.059
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.060
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.061
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.062
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.063
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.064
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.065
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.066
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.067
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.068
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.069
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.070
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.071
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.072
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.073
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.074
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.075
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.076
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.077
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.078
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.079
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.080
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.081
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.082
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.083
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.084
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.085
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.086
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.087
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.088
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.089
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.090
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.091
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.092
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.093
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.094
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.095
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.096
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.097
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.098
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.099
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.100
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.101
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.102
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.103
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.104
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.105
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.106
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.107
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.108
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.109
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.110
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.111
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.112
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.113
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.114
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.115
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.116
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.117
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.118
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.119
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.120
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.121
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.122
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.123
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.124
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.125
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.126
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.127
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.128
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.129
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.130
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.131
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.132
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | INFO: Extracting primitive: Cube.133
+07:51:24 | INFO: Primitives created: 1
+07:51:24 | WARNING: Unsupported light source AREA
+07:51:24 | WARNING: Unsupported light source AREA
+07:51:24 | WARNING: Unsupported light source AREA
+07:51:24 | INFO: Finished glTF 2.0 export in 0.16595864295959473 s
+
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/keyring-underbridge-r07-20261104/inputs/keyring-material.blend"
+
+Blender quit

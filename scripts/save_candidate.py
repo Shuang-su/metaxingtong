@@ -1,0 +1,14 @@
+import bpy,runpy,json
+from pathlib import Path
+from mathutils import Vector
+R=Path(__file__).resolve().parents[1];g=runpy.run_path(str(R/'scripts/test_bridges.py'));s=bpy.context.scene;d=json.loads((R/'docs/diagnostic-configuration.json').read_text());C=d['camera']
+bpy.ops.object.camera_add(location=C['location']);c=bpy.context.object;c.name=C['name'];c.data.lens=C['lens'];c.data.sensor_width=C['sensor_width'];c.rotation_euler=(Vector(C['target'])-c.location).to_track_quat('-Z','Y').to_euler();c['role']='additional artificial underside diagnostic, not source'
+s.camera=s.objects['source21-conditional'];bpy.context.view_layer.update();s.render.resolution_percentage=100;s.render.threads_mode='FIXED';s.render.threads=6;s.cycles.use_denoising=False
+side=json.loads((R/'inputs/r06-sidecar.json').read_text());side['cameras']=[{'name':o.name,'matrix_world':[list(r) for r in o.matrix_world],'lens':o.data.lens,'sensor_width':o.data.sensor_width,'sensor_height':o.data.sensor_height,'sensor_fit':o.data.sensor_fit,'shift_x':o.data.shift_x,'shift_y':o.data.shift_y,'clip_start':o.data.clip_start,'clip_end':o.data.clip_end,'role':'additional artificial underside diagnostic' if o.name==C['name'] else 'unchanged R06 camera, not proof of new R07 image coverage'} for o in s.objects if o.type=='CAMERA'];side['extra_diagnostic_light_saved_in_scene']=False;side['diagnostic_light_restore']='See diagnostic-configuration.json and scripts/render_diagnostic.py; identical extra light for before/after only, not for source cameras.';side['restore']='Use exact BLEND or scripts/restore_glb_lighting.py with this sidecar. GLB does not contain AREA/World equivalently.'
+(R/'docs/render-sidecar.json').write_text(json.dumps(side,indent=2));(R/'docs/new-objects-ledger.json').write_text(json.dumps({'original_162_meshes':'unchanged exact; reference R06 recorded SHA','original_11_cameras':'unchanged exact; 1 artificial diagnostic camera added','new_meshes':g['PARAMS'],'status':'All two connectors hidden-construction inference. Work units not measurement. Do not claim visible groove source-confirmed, mechanical load path, full collision or source acceptance.'},indent=2))
+bpy.ops.wm.save_as_mainfile(filepath=str(R/'models/r07-material.blend'));bpy.ops.export_scene.gltf(filepath=str(R/'models/r07-material.glb'),export_format='GLB',export_cameras=True,export_lights=True,export_apply=True)
+with bpy.data.libraries.load(str(R/'inputs/keyring-white.blend'),link=False) as (fr,to):to.materials=['diagnostic-white']
+wm=to.materials[0]
+for o in s.objects:
+ if o.type=='MESH':o.data.materials.clear();o.data.materials.append(wm)
+bpy.ops.wm.save_as_mainfile(filepath=str(R/'models/r07-white.blend'));bpy.ops.export_scene.gltf(filepath=str(R/'models/r07-white.glb'),export_format='GLB',export_cameras=True,export_lights=True,export_apply=True)
