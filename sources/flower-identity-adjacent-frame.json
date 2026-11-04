@@ -1,0 +1,60 @@
+{
+  "source_frame": "forest-native-3051.127112.png",
+  "reference_frame": "forest-native-3050.458712.png",
+  "coordinates": "native1920x1080 approximate visual flower centers, not geometric ground truth",
+  "observations": [
+    {
+      "target": "right-middle pink",
+      "reference_xy": [
+        1440,
+        635
+      ],
+      "new_xy": [
+        1620,
+        815
+      ],
+      "finding": "Independent flower corolla clearly separate from adjacent white/purple corolla near1550,835.",
+      "confidence": "high"
+    },
+    {
+      "target": "upper white",
+      "reference_xy": [
+        1075,
+        318
+      ],
+      "new_xy": [
+        1110,
+        540
+      ],
+      "finding": "Independent pale corolla; new shot partly hidden by hand/forearm. Center not fully visible.",
+      "confidence": "moderate-high"
+    },
+    {
+      "target": "upper-left purple",
+      "reference_xy": [
+        870,
+        367
+      ],
+      "new_xy": [
+        820,
+        600
+      ],
+      "finding": "Distinct small purple corolla alongside larger white; should not assume same size class as large flowers.",
+      "confidence": "high for distinct visible corolla, uncertain absolute scale"
+    },
+    {
+      "target": "upper-right white",
+      "reference_xy": [
+        1355,
+        450
+      ],
+      "new_xy": [
+        1590,
+        715
+      ],
+      "finding": "Side-facing folded pale petals; partial occlusion. Do not split individual bright petals into separate flowers.",
+      "confidence": "moderate"
+    }
+  ],
+  "limitations": "No exact total flower count asserted. Neighbor frame used for modeling input, not blind holdout. 3055sunset frame confirms different subsequent state, not a fixed-height forest validation."
+}
