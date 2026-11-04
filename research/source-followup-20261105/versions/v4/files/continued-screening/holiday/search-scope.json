@@ -1,0 +1,50 @@
+{
+  "utc": "2026-11-04T18:24:00Z",
+  "scope": "2023/2024 official birthday, Mid-Autumn and New Year public source expansion. Existing backstage R04/corridor R06 excluded from new candidates.",
+  "queries": [
+    "\"DD日报\" \"星瞳\" \"新年\"",
+    "\"星瞳\" \"中秋\" \"特刊\"",
+    "\"星瞳\" \"生日会\" \"2023\" \"DD\"",
+    "\"星瞳\" \"新年\" \"2024\" \"专栏\"",
+    "\"星瞳\" \"12.30\" \"DD日报\"",
+    "\"星瞳\" \"跨年\" \"特刊\"",
+    "\"星瞳\" \"中秋\" \"DD日报\"",
+    "\"星瞳生日会\" \"流离之人\"",
+    "\"星瞳\" \"中秋\" \"2024\" 直播 图文",
+    "\"星瞳\" \"星月夜\" 图文",
+    "星瞳 跨年 舞台 2023 12 30",
+    "\"星瞳\" \"花月成双\" \"2024\"",
+    "星瞳 DD日报 page1"
+  ],
+  "findings": [
+    {
+      "url": "https://www.bilibili.com/read/cv27376615/",
+      "title": "DD日报.特刊 10.29 星瞳生日会",
+      "observed": "Indexed search excerpt confirms 2023-10-29 20:00 and castle performance; prior TinyFish shell, this pass normal web.open returns zero readable lines.",
+      "status": "Technical public-content retrieval insufficient, not a new multi-angle source. No retry or login attempted."
+    },
+    {
+      "url": "https://www.bilibili.com/opus/854795841640071188",
+      "observed": "Official public search excerpt identifies 2023-10-29 20:00 princess castle event; no extracted scene pixels.",
+      "status": "Identity-only; existing castle dedup still required if future imagery found."
+    },
+    {
+      "url": "https://bbs.nga.cn/read.php?tid=29621538&page=70",
+      "observed": "Search mentions 星月夜 and screenshot collection; not opened due unresolved prior forum access restrictions.",
+      "status": "Uninspected lead, not evidence; no domain or endpoint workaround."
+    },
+    {
+      "url": "https://music.bilibili.com/h5-music-detail?music_id=MA406620132547250544&na_close_hide=1&position_id=4&source=109",
+      "observed": "Search names official 花月成双 clip without a newly identified performance date or image.",
+      "status": "Do not confuse with already-insufficient 2021 moon-island sources."
+    }
+  ],
+  "new_source_pixels": 0,
+  "qualified_new_multiview_candidates": 0,
+  "excluded": [
+    "Search results about real performer identity/private-account exposure were unrelated and not followed or retained.",
+    "Unrelated commercial/game search hits not treated as scenery evidence.",
+    "No re-download of old 39 images; no Chrome access or frozen production modification."
+  ],
+  "remaining_requirement": "An accessible public article/photo set or authorized decoded playback with at least two genuinely distinct structural viewpoints; identities or promotional closeups alone do not satisfy."
+}
