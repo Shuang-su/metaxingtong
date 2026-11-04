@@ -1,0 +1,132 @@
+{
+  "material": {
+    "images": [
+      {
+        "name": "stone_normal",
+        "sha256": "83caba5167633778ede6f0f3f399b24c49f61405d4f9b09d8628cbca2749644c",
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "range": [
+          108,
+          254
+        ]
+      },
+      {
+        "name": "stone_diffuse",
+        "sha256": "1810bf6ee845410314dc2122a2d6f1e3215ca956c8bb673e8665f8b7028cc687",
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "range": [
+          28,
+          85
+        ]
+      },
+      {
+        "name": "stone_roughness",
+        "sha256": "cde9a6e30c06272ae12123f98894e3efad5f0673c59229a1494b2dc320ae85b4",
+        "shape": [
+          1024,
+          1024,
+          3
+        ],
+        "range": [
+          121,
+          255
+        ]
+      }
+    ],
+    "floor_material": {
+      "doubleSided": true,
+      "extras": {
+        "evidence": "Synthetic periodic stone proxy, not source texture recovery. Not accepted."
+      },
+      "name": "Stone_floor_proxy",
+      "normalTexture": {
+        "index": 0,
+        "scale": 0.5
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    },
+    "floor_attributes": {
+      "POSITION": 0,
+      "NORMAL": 1,
+      "TEXCOORD_0": 2
+    },
+    "texture_pixel_checks": {
+      "color": {
+        "present": true,
+        "max_pixel_difference": 0,
+        "different_channels": 0,
+        "entry": {
+          "index": 1
+        }
+      },
+      "rough": {
+        "present": true,
+        "max_pixel_difference": 0,
+        "different_channels": 0,
+        "entry": {
+          "index": 2
+        }
+      },
+      "normal": {
+        "present": true,
+        "max_pixel_difference": 0,
+        "different_channels": 0,
+        "entry": {
+          "index": 0,
+          "scale": 0.5
+        }
+      }
+    },
+    "external_uris": []
+  },
+  "white": {
+    "images": [],
+    "floor_material": {
+      "doubleSided": true,
+      "name": "WHITE_clay",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.800000011920929
+      }
+    },
+    "floor_attributes": {
+      "POSITION": 0,
+      "NORMAL": 1,
+      "TEXCOORD_0": 2
+    },
+    "texture_pixel_checks": {
+      "color": {
+        "present": false
+      },
+      "rough": {
+        "present": false
+      },
+      "normal": {
+        "present": false
+      }
+    },
+    "external_uris": []
+  }
+}
