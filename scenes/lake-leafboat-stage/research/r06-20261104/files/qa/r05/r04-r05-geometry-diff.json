@@ -1,0 +1,33 @@
+{
+  "only_meshes_changed": [
+    "LEAF_003_Branch_00_L",
+    "LEAF_003_Branch_00_R"
+  ],
+  "remaining_meshes_identical": 1368,
+  "repaired_vein_tests": [
+    {
+      "id": "LEAF_003_Branch_00_L",
+      "u_range": [
+        -0.96,
+        -0.7
+      ],
+      "max_abs_v": 0.9,
+      "centerline_domain_test_pass": true,
+      "closed_mesh": true,
+      "zero_area_faces": 0
+    },
+    {
+      "id": "LEAF_003_Branch_00_R",
+      "u_range": [
+        -0.96,
+        -0.7
+      ],
+      "max_abs_v": 0.9,
+      "centerline_domain_test_pass": true,
+      "closed_mesh": true,
+      "zero_area_faces": 0
+    }
+  ],
+  "no_old_render_reuse": true,
+  "note": "Analytic centerline domain test verifies the repaired two branches remain inside the shared leaf parameter domain; not source acceptance."
+}

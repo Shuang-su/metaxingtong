@@ -1,0 +1,7 @@
+import bpy,pathlib,json,hashlib
+from PIL import Image
+R=pathlib.Path(__file__).resolve().parents[1];bpy.ops.wm.open_mainfile(filepath=str(R/'models/lakeleaf-r05-material.blend'));s=bpy.context.scene;s.camera=bpy.data.objects['SOURCE_108755584_OBLIQUE'];s.render.engine='CYCLES';s.cycles.samples=16;s.cycles.use_denoising=False;s.render.threads_mode='FIXED';s.render.threads=2;s.render.resolution_x=3840;s.render.resolution_y=2160;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG';s.render.image_settings.color_mode='RGB'
+roi=(250,600,900,1300);x0,y0,x1,y1=roi;s.render.use_border=True;s.render.use_crop_to_border=True;s.render.border_min_x=x0/3840;s.render.border_max_x=x1/3840;s.render.border_min_y=1-y1/2160;s.render.border_max_y=1-y0/2160
+out=R/'qa/r05/native-pixel-tip-preflight.png';s.render.filepath=str(out);bpy.ops.render.render(write_still=True)
+a=Image.open(R/'renders/r04/source/SOURCE_108755584_OBLIQUE.png');a.crop(roi).save(R/'qa/r05/r04-failed-tip-same-roi.png')
+d={'camera':'SOURCE_108755584_OBLIQUE','full_render_grid':[3840,2160],'requested_top_origin_roi':roi,'actual_image_size':list(Image.open(out).size),'method':'Blender render border at original source pixel grid; full geometry/shading retained; no camera/geometry hiding or image upscale','samples':16,'threads':2,'denoising':False,'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'original_failed_model':'r04','current_repaired_model':'r05'};(R/'qa/r05/native-pixel-tip-preflight.json').write_text(json.dumps(d,indent=2)+'\n')
