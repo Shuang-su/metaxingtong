@@ -22,7 +22,7 @@ objs.append(box('P01_front_shell_thickness_INFERRED',(0,0,-.025),(1,1.2,.05),sil
 objs.append(box('P02_upper_finish_not_hinge',(0,.235,.001),(.96,.69,.004),silver))
 objs.append(box('P03_lower_finish_boundary_not_hinge',(0,-.365,.001),(.96,.49,.004),dark))
 # rear panel hinge at y=.6; depth and fold angle wholly inferred
-b=box('P04_rear_leaf_unseen_geometry_INFERRED',(0,.03,-.30),(1,1.2,.05),silver);b.rotation_euler.x=math.radians(25);objs.append(b)
+b=box('P04_rear_leaf_unseen_geometry_INFERRED',(0,.6-.6*math.cos(math.radians(25)),-.025-.6*math.sin(math.radians(25))),(1,1.2,.05),silver);b.rotation_euler.x=math.radians(25);objs.append(b)
 objs.append(cyl('P05_top_hinge_axis_INFERRED',(0,.6,-.025),.035,1.02,silver,(0,math.pi/2,0)))
 for i,y in enumerate([-.30,-.51],1):
  objs.append(cyl(f'P06_lens{i}_rim',(.33,y,.011),.087,.022,silver))
