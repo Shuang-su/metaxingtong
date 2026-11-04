@@ -25,7 +25,7 @@ for i,p in enumerate(files):
  if i==0:sheet=Image.new('RGB',(1600,4*474),(24,27,30));d=ImageDraw.Draw(sheet)
  sheet.paste(im,(x,y+24));d.text((x+10,y+5),p.stem+' | actual shared-scene inspection render; not source',fill='white')
 sheet.save(Q/'eight-inspection-views-contact.jpg',quality=91)
-inv=json.loads((Q/'material-mesh-inventory.json').read_text());objects=[]
+inv=json.loads((Q/'material-mesh-inventory.json').read_text());transforms=json.loads((Q/'object-transform-inventory.json').read_text());objects=[]
 for name,data in inv.items():
  if name.startswith('LEAF_001'):observed='Thin concave elongated double-pointed green leaf outline seen in 92s and 100s';inferred='0.035 model-unit shell thickness; hidden underside; exact curvature and scale';evidence=['92.142973','100.762992','108.755584']
  elif name.startswith('LEAF_002'):observed='Single main vein seen in 100s and 108s';inferred='Vein radius and attachment; exact curve';evidence=['100.762992','108.755584']
@@ -33,7 +33,7 @@ for name,data in inv.items():
  elif name.startswith('LAKE'):observed='Reflective lake water around leaf';inferred='Extent, wave phase, reflection/colour pattern; not lakebed';evidence=['92.142973','100.762992','108.755584','6.585758']
  elif name.startswith('ROCK') or name.startswith('OUTCROP'):observed='One planted rocky corner seen in top source';inferred='Placement, count and hidden geometry uncertain';evidence=['100.762992']
  else:observed='Tropical forest/shore class visible, no reliable individual-instance correspondence';inferred='Each generated instance location, scale, branch topology, count and obscured connections';evidence=['92.142973','108.755584','6.585758']
- objects.append({'id':name,'observed':observed,'inferred':inferred,'source_times_seconds':evidence,'source_bv':'BV1JqCeBMEAb','attributes':{'silhouette':'conditional candidate','metric_scale':'unknown','thickness':'inferred unless intentionally open leaf sheet','support_contact':'not source-confirmed','material':'procedural proxy','lighting':'shared daylight hypothesis'},'world_bounds':data['bounds'],'geometry_sha256':data['geometry_sha256'],'acceptance':'not accepted'})
+ objects.append({'id':name,'observed':observed,'inferred':inferred,'source_times_seconds':evidence,'source_bv':'BV1JqCeBMEAb','attributes':{'silhouette':'conditional candidate','metric_scale':'unknown','thickness':'inferred unless intentionally open leaf sheet','support_contact':'not source-confirmed','material':'procedural proxy','lighting':'shared daylight hypothesis'},'world_bounds':data['bounds'],'object_transform':transforms[name],'geometry_sha256':data['geometry_sha256'],'acceptance':'not accepted'})
 (Q/'per-object-review.json').write_text(json.dumps({'policy':'Stable IDs are generated model instances, not claimed video matches. No per-camera object hiding. All source correspondence conditional.','objects':objects},ensure_ascii=False,indent=2)+'\n')
 (Q/'comparison-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 print('Assembled 4 direct full-resolution overlays, 3 object crop triplets, 8-angle contact, and per-object review.')

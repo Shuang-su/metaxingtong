@@ -1,0 +1,263 @@
+{
+  "file": "models/lakeleaf-r06.glb",
+  "glb_sha256": "2eff1ebd1e9b3d96dc3788a6f0c3c75e082b8ab126d4c6cd0b84575be81b4fa7",
+  "material_count": 12,
+  "embedded_images": [
+    {
+      "index": 0,
+      "name": "leaf-tissue-albedo",
+      "size": [
+        1024,
+        512
+      ],
+      "encoded_bytes": 383861,
+      "sha256": "7d21c052985779c3d2f9b8def2edc1fef3c108f61cf7e9efa0587b438161ff13",
+      "rgb_mean": [
+        49.401540756225586,
+        106.8908462524414,
+        11.64940071105957
+      ]
+    },
+    {
+      "index": 1,
+      "name": "leaf-tissue-roughness",
+      "size": [
+        1024,
+        512
+      ],
+      "encoded_bytes": 346355,
+      "sha256": "7e7ad1776d7cec39989b23cb6edc9e8a22233a3154d283ea651600f80040f813",
+      "rgb_mean": [
+        255.0,
+        111.5650691986084,
+        255.0
+      ]
+    },
+    {
+      "index": 2,
+      "name": "water-wave-normal",
+      "size": [
+        512,
+        512
+      ],
+      "encoded_bytes": 113040,
+      "sha256": "108427a05b8f5ea094e90d837a5bbced785bd986aa815721ae787dc97ee842b3",
+      "rgb_mean": [
+        126.99347305297852,
+        126.99833679199219,
+        254.0
+      ]
+    },
+    {
+      "index": 3,
+      "name": "lake-colour-hypothesis",
+      "size": [
+        1024,
+        1024
+      ],
+      "encoded_bytes": 318440,
+      "sha256": "cf52a9539ad16006e8470ac4c730f7f78e3a8bb748d098422b29dbe9ed5540ae",
+      "rgb_mean": [
+        4.091573715209961,
+        61.93519973754883,
+        82.51370429992676
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "LEAF_ObservedGreen_TissueHypothesis",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 1,
+      "baseColorTexture": {
+        "index": 0
+      },
+      "metallicRoughnessTexture": {
+        "index": 1
+      },
+      "normalTexture": null
+    },
+    {
+      "name": "VEIN_YellowGreen_ObservedBranching",
+      "baseColorFactor": [
+        0.3199999928474426,
+        0.47999998927116394,
+        0.054999999701976776,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.4300000071525574,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "WATER_ReflectiveTurquoise_Hypothesis",
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 0.3199999928474426,
+      "roughnessFactor": 0.1599999964237213,
+      "baseColorTexture": {
+        "index": 3
+      },
+      "metallicRoughnessTexture": null,
+      "normalTexture": {
+        "index": 2,
+        "scale": 0.6000000238418579,
+        "texCoord": 1
+      }
+    },
+    {
+      "name": "SHORE_MossSoilHypothesis",
+      "baseColorFactor": [
+        0.07500000298023224,
+        0.10499999672174454,
+        0.03400000184774399,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.949999988079071,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "ROCK_GreyMossHypothesis",
+      "baseColorFactor": [
+        0.12999999523162842,
+        0.1599999964237213,
+        0.10000000149011612,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.8999999761581421,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "BARK_DarkWarm",
+      "baseColorFactor": [
+        0.07500000298023224,
+        0.061000000685453415,
+        0.03500000014901161,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.8500000238418579,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "FOLIAGE_1",
+      "baseColorFactor": [
+        0.03999999910593033,
+        0.17000000178813934,
+        0.05000000074505806,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.6200000047683716,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "FOLIAGE_2",
+      "baseColorFactor": [
+        0.10000000149011612,
+        0.23999999463558197,
+        0.06499999761581421,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.6200000047683716,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "FOLIAGE_5",
+      "baseColorFactor": [
+        0.12999999523162842,
+        0.28999999165534973,
+        0.15000000596046448,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.6200000047683716,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "FOLIAGE_4",
+      "baseColorFactor": [
+        0.05999999865889549,
+        0.20000000298023224,
+        0.12999999523162842,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.6200000047683716,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "FOLIAGE_3",
+      "baseColorFactor": [
+        0.18000000715255737,
+        0.3100000023841858,
+        0.07999999821186066,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.6200000047683716,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    },
+    {
+      "name": "FOLIAGE_0",
+      "baseColorFactor": [
+        0.02500000037252903,
+        0.10000000149011612,
+        0.03500000014901161,
+        1
+      ],
+      "metallicFactor": 0,
+      "roughnessFactor": 0.6200000047683716,
+      "baseColorTexture": null,
+      "metallicRoughnessTexture": null,
+      "normalTexture": null
+    }
+  ],
+  "leaf_base_colour_validation": {
+    "material": "LEAF_ObservedGreen_TissueHypothesis",
+    "embedded_image_index": 0,
+    "green_channel_mean_above_red_blue": true,
+    "embedded_pixels_exactly_equal_original_albedo": true,
+    "rgba_constant_only": false,
+    "not_default_white": true
+  },
+  "shader_source": "Image textures connected to supported Principled PBR inputs, plus constant PBR foliage/vein/shore colours. No unbaked Noise or procedural Bump nodes drive material appearance. Water normal is an actual image and WaveUV texture coordinate.",
+  "limits": [
+    "Blender AREA light is omitted from raw GLB",
+    "Blender world/AgX/exposure not portable unchanged",
+    "top camera offaxis shift needs explicit sidecar restoration",
+    "Material parameter/export validity is not source photometric agreement"
+  ],
+  "source_accepted": false
+}

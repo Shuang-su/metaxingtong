@@ -1,0 +1,70 @@
+{
+  "camera": "DIAG_LOW_09",
+  "matrix_world": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -0.0527835488319397,
+      -0.9986059665679932,
+      -14.0
+    ],
+    [
+      0.0,
+      0.9986059665679932,
+      -0.0527835488319397,
+      0.05999999865889549
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "location": [
+    0.0,
+    -14.0,
+    0.05999999865889549
+  ],
+  "target": [
+    0,
+    0,
+    0.8
+  ],
+  "type": "PERSP",
+  "lens": 48.0,
+  "sensor_width": 36.0,
+  "sensor_height": 24.0,
+  "sensor_fit": "HORIZONTAL",
+  "shift_x": 0.0,
+  "shift_y": 0.0,
+  "clip_start": 0.009999999776482582,
+  "clip_end": 200.0,
+  "resolution": [
+    1280,
+    720
+  ],
+  "resolution_percentage": 100,
+  "samples": 12,
+  "threads": 6,
+  "denoising": false,
+  "model": "models/lakeleaf-r06-material.blend",
+  "model_sha256": "4af868869ee7f7eebf0c8569b16cef356143c5425c888e98a4f56dee25449a12",
+  "role": "Supplemental low grazing camera, not a source camera or a complete underside validation",
+  "reproduction": "blender -b models/lakeleaf-r06-material.blend -t 6 --python-exit-code 10 --python scripts/render_low_diagnostic_r06.py",
+  "scene_saved": false,
+  "geometry_visibility_or_lighting_changed": false,
+  "limits": [
+    "Camera z=0.06 is above water maximum z=0.0269931, but above the lowest shell z=0.0056286 too.",
+    "Overlapping global z ranges alone do not prove local intersection, buoyancy or exact water contact.",
+    "Water and shell occlusion prevent a clear complete underside view. No object is hidden."
+  ],
+  "rendered_at": "2026-11-04T03:14:52.206939+00:00",
+  "sha256": "4d4777e4f0809bc9b89539612738e6391519c0ea36487a37409e215e827594a4",
+  "bytes": 1893185
+}

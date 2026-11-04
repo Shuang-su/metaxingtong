@@ -1,0 +1,2 @@
+import bpy,pathlib,json,sys
+p=pathlib.Path(__file__).resolve().parents[1]/'qa/render-threads.json';print('SCRIPT_FILE',__file__,'CWD',pathlib.Path.cwd(),'BUDGET',p,p.exists(),p.read_text() if p.exists() else None);print('THREAD_BEFORE',bpy.context.scene.render.threads);bpy.context.scene.render.threads_mode='FIXED';bpy.context.scene.render.threads=6;print('THREAD_AFTER_ASSIGN6',bpy.context.scene.render.threads)
