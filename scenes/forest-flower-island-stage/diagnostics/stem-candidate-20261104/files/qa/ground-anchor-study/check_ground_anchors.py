@@ -1,0 +1,11 @@
+import bpy,pathlib,json,hashlib,re
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+R=pathlib.Path('/workspace/scratch/fa58bfcf0425/forest-diagnostic-replay-20261104');OUT=pathlib.Path(__file__).resolve().parent;model=R/'models/R13_root-diagnostic_material.blend';bpy.ops.wm.open_mainfile(filepath=str(model));terrain=bpy.data.objects['TERRAIN_finite_working_domain'];bt=BVHTree.FromPolygons([terrain.matrix_world@v.co for v in terrain.data.vertices],[p.vertices[:] for p in terrain.data.polygons]);rows=[]
+for ob in bpy.context.scene.objects:
+ name=ob.name
+ selected=name=='TREE_main_trunk' or name.startswith(('TREE_main_buttress_','TREE_background_','ROCK_','LOG_left')) or re.fullmatch('FAR_TREE_[0-9][0-9]',name)
+ if ob.type!='MESH' or not selected:continue
+ vs=[ob.matrix_world@v.co for v in ob.data.vertices];tree=BVHTree.FromPolygons(vs,[p.vertices[:] for p in ob.data.polygons]);pairs=tree.overlap(bt);low=min(v.z for v in vs);bottom=[v for v in vs if v.z<low+.05];centre=sum(bottom,Vector())/len(bottom);hit,normal,idx,dist=bt.ray_cast(Vector((centre.x,centre.y,100)),Vector((0,0,-1)),200)
+ rows.append({'object':name,'terrain_triangle_intersection_pairs':len(pairs),'surface_intersects_terrain':bool(pairs),'minimum_z':low,'basal_sample_xy':[centre.x,centre.y],'terrain_below_sample_z':hit.z if hit is not None else None,'minimum_minus_sample_terrain_z':low-hit.z if hit is not None else None})
+(OUT/'ground-anchor-check.json').write_text(json.dumps({'model':str(model),'sha256':hashlib.sha256(model.read_bytes()).hexdigest(),'method':'actual world triangle BVH overlap with finite terrain for selected ground-root trunks, buttresses, rocks and fallen log; representative low-vertex centroid vertical ray','limits':['Intersection is not Boolean union or source/physical acceptance','Any surface intersection does not prove complete root footprint support','Terrain is inferred finite domain; foliage, other-object collisions and all hidden contacts not covered'],'objects':rows},indent=2));print('checked',len(rows),'intersect',sum(x['surface_intersects_terrain'] for x in rows));print('nonintersecting',[(x['object'],x['minimum_minus_sample_terrain_z']) for x in rows if not x['surface_intersects_terrain']])
