@@ -1,40 +1,47 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-11-04T19:55:05.341973+00:00",
-  "label": "Anniversary source manifest completeness correction, original embed result supplied, no new frames",
+  "created_at_utc": "2026-11-04T20:37:22.081626+00:00",
+  "label": "Expanded public event source screening, non-native images and no qualified new multiview scene",
   "status": "FROZEN_SOURCE_RESEARCH_NO_QUALIFIED_NEW_SCENE",
   "input": {
-    "library_file_id": "libfile_30a95f9df0f481919b2718c5a776ef8e",
-    "file_id": "file_00000000c5c081fd93f6c3f2ad0da78b",
-    "filename": "source-anniversary-corrected-20261105.bundle",
-    "size_bytes": 3507630,
-    "sha256": "8544d3f724deff939e48a4d8fa3cbc93f1566622cbd68ac1a36af2b7213602f2",
-    "version": 3,
+    "library_file_id": "libfile_4c2fb43a12cc819192cd532b5e6de94f",
+    "file_id": "file_00000000ee2c81fd809ba94977ea3d32",
+    "filename": "source-expanded-events-20261105.bundle",
+    "size_bytes": 7200912,
+    "sha256": "a32dcf6faadce94b2513457d73a59d7af730259838cab74d029518de1f35b3c8",
+    "version": 0,
     "materialized_and_verified": true,
     "bundle_refs": [
       {
-        "commit": "4fe24ac7fccfdc7835dca6783fafebe94b11a55b",
+        "commit": "2d158d7b5c41848c5b7854eb1cc9086566ec7c13",
         "ref": "refs/heads/evidence/source-followup-20261105"
       },
       {
-        "commit": "4fe24ac7fccfdc7835dca6783fafebe94b11a55b",
+        "commit": "2d158d7b5c41848c5b7854eb1cc9086566ec7c13",
         "ref": "HEAD"
       }
     ],
     "bundle_prerequisites": [],
-    "checkout": "4fe24ac7fccfdc7835dca6783fafebe94b11a55b",
+    "checkout": "2d158d7b5c41848c5b7854eb1cc9086566ec7c13",
     "space_retained": true
   },
-  "original_head": "4fe24ac7fccfdc7835dca6783fafebe94b11a55b",
+  "original_head": "2d158d7b5c41848c5b7854eb1cc9086566ec7c13",
   "original_commits": [
     "db4a7b6d8585684a15a100d67cdc0562d7d8ad83",
     "cafb4d25cce8e69882b412a15edc1b7c6b7baae5",
     "df7882527fa6bfd90793f30212b44a30a1f020b7",
     "bbac9cedecf1754dca0aaaea1be9f5e4ea70e784",
     "c3e9295d34e7cf6e1a4b732cda3c37ce8b8e92cc",
-    "4fe24ac7fccfdc7835dca6783fafebe94b11a55b"
+    "4fe24ac7fccfdc7835dca6783fafebe94b11a55b",
+    "2d158d7b5c41848c5b7854eb1cc9086566ec7c13"
   ],
   "original_objects": [
+    {
+      "object": "2d158d7b5c41848c5b7854eb1cc9086566ec7c13",
+      "type": "commit",
+      "size_bytes": 270,
+      "sha256": "8a306ffd53703060a9d9cb7387353677f5db090edce1fcb5ccf5e269ed51ba21"
+    },
     {
       "object": "4fe24ac7fccfdc7835dca6783fafebe94b11a55b",
       "type": "commit",
@@ -72,10 +79,10 @@
       "sha256": "c4e7fbbb5702ec0e265ea885461bd094ff6730f7113cc2dc65735714f9fc92fe"
     },
     {
-      "object": "4ca550b4923f73a092b4ca644bbd29e9b2ddca89",
+      "object": "a8f5909f1bf1c92a8813acd3737a36cfe3d526be",
       "type": "tree",
-      "size_bytes": 208,
-      "sha256": "54d5772c3c88909be3b78f238e1cfafe4b0d9f5af9baf8e337c1a0fd60c5a143"
+      "size_bytes": 259,
+      "sha256": "88d41afc951f1d97d77db69c0a8f7be628aa25a3b479142c4aa7240d7fe19692"
     },
     {
       "object": "6e56b53d894a894fbd1631d3631beea95c336d97",
@@ -384,6 +391,144 @@
       "sha256": "894f61839c6b2affeb3304332ae12a4aa2eee349b7c4a46e79b2833fd56e1913"
     },
     {
+      "object": "89bca6eec993bb906584fd0a696b1c88b5a5ee8c",
+      "type": "tree",
+      "size_bytes": 661,
+      "sha256": "70f118d635241d2bd42d5dae62bf5d8752aa788b01e53128b5c0ef99265b910f"
+    },
+    {
+      "object": "450e02640f11f59df6be2136e41ece9c6ecef3fd",
+      "type": "blob",
+      "size_bytes": 1753,
+      "sha256": "5166ca0632d8b05369db74b0910da447b5a6c2a04dab854c304ffa4c8d21feb6"
+    },
+    {
+      "object": "8e9f0bc8d9cf8bc58f0568051b251b55c0f546c7",
+      "type": "blob",
+      "size_bytes": 76667,
+      "sha256": "7fa118043643b6f7de15c437579bfe76acb258edf0a727a99a6fd901ad6cde48"
+    },
+    {
+      "object": "a665bb3d89e23b67617795464fb18f8c6f431ca3",
+      "type": "blob",
+      "size_bytes": 78478,
+      "sha256": "adca6a88fecb6964fe8e3771bd3adbeb57814c1952388892182a1f7a991e3222"
+    },
+    {
+      "object": "004445c0a85c87be9b58140f60f1924079292bd7",
+      "type": "blob",
+      "size_bytes": 109721,
+      "sha256": "39e6733f77cd6596c5ef11613d69c6fccfe8ceba7e63c6cdcf661e2c1dd3d698"
+    },
+    {
+      "object": "f1c7602030a22717c09f7ee248298adf4fb2c563",
+      "type": "blob",
+      "size_bytes": 50192,
+      "sha256": "43703182cc508d2fbe24a490363e070bebe08ad60954a5b64773b61ab33d0144"
+    },
+    {
+      "object": "f47923d6112e1ebe8b56869a951d4deffea3b673",
+      "type": "blob",
+      "size_bytes": 3403,
+      "sha256": "302a4ecbd7d6fc6860ae79a6b54534059f8c5769ad88914177987cd92cd35a86"
+    },
+    {
+      "object": "d255b7b73ebc0593c768b6a931360f778401d366",
+      "type": "blob",
+      "size_bytes": 4087,
+      "sha256": "7d2f2b2098f5b64d94d8f63dbd965c83f6a5b1c272f1cd6f99a86dd5a9646f8f"
+    },
+    {
+      "object": "8a67448069ed946806fce426d156782a54a68029",
+      "type": "blob",
+      "size_bytes": 18577,
+      "sha256": "5556752046f0f25cf065b9ba9d5744ceb2b80200b1956d53a83142b6f4437513"
+    },
+    {
+      "object": "a39f8de399348e2c3218d828cb1366b8409b4b3e",
+      "type": "blob",
+      "size_bytes": 17445,
+      "sha256": "f86d0785bcda33c31b3a9b8cb148563b4e1b392f02c906ee76ba68de5efaa286"
+    },
+    {
+      "object": "b8d193d635783ca41c8ab1a9d429ff99783bb819",
+      "type": "blob",
+      "size_bytes": 3264352,
+      "sha256": "22ff87bf88e58a483ac3f33def97ce1a56e004cfd206c1518d7df6bc5e4c8d06"
+    },
+    {
+      "object": "bf5c3fc66940e68ec62dcf9195b93e5c3734c9dd",
+      "type": "tree",
+      "size_bytes": 40,
+      "sha256": "50577e9895cfe98e4592b144442b72b2f2e31f0329c727520072a6ca902117c7"
+    },
+    {
+      "object": "f0564bdad2a214867cc62a6205f57a852b2b2eca",
+      "type": "blob",
+      "size_bytes": 1126,
+      "sha256": "3e2755d96da66945ba1311eb9720c91e0020e8cc198ee6147e8260e8c32b2bf2"
+    },
+    {
+      "object": "67ec16654c86648c94f64d0bbf0549925895c965",
+      "type": "blob",
+      "size_bytes": 996,
+      "sha256": "2c45803e154741c06b12475e4a9fd5c76eb1ed4f60d876db32f16bac8e8a349f"
+    },
+    {
+      "object": "d43a2a4af307242ca1807793ee876c13dbb52b60",
+      "type": "blob",
+      "size_bytes": 5320,
+      "sha256": "2582cf36b6d1d5ddc253572d17da7fd1fbbf53ef100206c1f3023fe07e1a2802"
+    },
+    {
+      "object": "61a40fc24f15e9a130c965124b8341317967303a",
+      "type": "tree",
+      "size_bytes": 183,
+      "sha256": "ec3cb44ba84134a68c60cf85fe09809d13b6f6b2d391fe70292c52731e0a2e38"
+    },
+    {
+      "object": "25d7f6a005b4393d87e00b804501cf4006691615",
+      "type": "blob",
+      "size_bytes": 39035,
+      "sha256": "680ef126d08d01e6b8d6309031bb3944fc72ae8a06b96ad65f78dd6548a30827"
+    },
+    {
+      "object": "a05fae23c44acca2ce110a6e5b1a1c8cdadc63f7",
+      "type": "blob",
+      "size_bytes": 33651,
+      "sha256": "7f01a2dbf2b307a1a837086e7d9cbe9aae4856e0c3935f299a80913e1734faf8"
+    },
+    {
+      "object": "9f47c632a1578bd1e369a4de66d5bf6570834362",
+      "type": "blob",
+      "size_bytes": 680,
+      "sha256": "8d65344bba58f121f4cd58caeff7b8cbda777a47026c7b3b5379f6608794f61a"
+    },
+    {
+      "object": "cc1153f4b2691ee3d44b3dd2d59c3a023095cf5f",
+      "type": "blob",
+      "size_bytes": 1591,
+      "sha256": "7766f146bbb93dd1e8d14c3fbdf0228e5582bc7d33a1b7d4b2a22f26df0769d4"
+    },
+    {
+      "object": "001981d94c3ae9e5caa13122b051351372788cb4",
+      "type": "blob",
+      "size_bytes": 1001,
+      "sha256": "da05e7d1be475e00a3797f095c8712d28b07615e71ff32d2b3c2b377dd711f2a"
+    },
+    {
+      "object": "3f4804201ae2e97983f183693cbc0507b61272a1",
+      "type": "blob",
+      "size_bytes": 1629,
+      "sha256": "9e25ea4b100b3a165556a37eb8a851b9e4640741dc7caa25fb96ecf4d134a6ee"
+    },
+    {
+      "object": "9f1c5b32cc04d6fda84cb501bf82c3fd62111e88",
+      "type": "blob",
+      "size_bytes": 1806,
+      "sha256": "bda313effb3154d2bf18432d012a0c0b7c7049523fcc1d3b0673020da23acb6d"
+    },
+    {
       "object": "8c8405b917edf4b154b50084310065fb8fbce32d",
       "type": "tree",
       "size_bytes": 256,
@@ -454,6 +599,12 @@
       "type": "blob",
       "size_bytes": 450425,
       "sha256": "ed37092ff2934a03e1bfbf7a78d336c2c618fb5a5c9bebc77b30e48ecb3b8c1e"
+    },
+    {
+      "object": "4ca550b4923f73a092b4ca644bbd29e9b2ddca89",
+      "type": "tree",
+      "size_bytes": 208,
+      "sha256": "54d5772c3c88909be3b78f238e1cfafe4b0d9f5af9baf8e337c1a0fd60c5a143"
     },
     {
       "object": "0462419a4e69c4c6bf7ada313aab5e188b64d4ed",
@@ -2319,14 +2470,549 @@
           "sha256": "ed37092ff2934a03e1bfbf7a78d336c2c618fb5a5c9bebc77b30e48ecb3b8c1e"
         }
       ]
+    },
+    {
+      "commit": "2d158d7b5c41848c5b7854eb1cc9086566ec7c13",
+      "tree": "a8f5909f1bf1c92a8813acd3737a36cfe3d526be",
+      "parents": [
+        "4fe24ac7fccfdc7835dca6783fafebe94b11a55b"
+      ],
+      "file_count": 75,
+      "files": [
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "6e56b53d894a894fbd1631d3631beea95c336d97",
+          "size_bytes": 741,
+          "sha256": "f6a92d4d6e0d338f815d76c7e25b5eec882b6bff35b1c425e029f9e15acc1b7f"
+        },
+        {
+          "path": "anniversary-2025/LIMITS.zh.md",
+          "mode": "100644",
+          "blob": "7a498fb3b3b832d7797baa97ad93195c5688e0e9",
+          "size_bytes": 487,
+          "sha256": "f46c87489cdabb71e1d7a86cd1ab0637fb85630ff84ce8cba9d457000de756fb"
+        },
+        {
+          "path": "anniversary-2025/assessment.zh.md",
+          "mode": "100644",
+          "blob": "80ff0d3478d5752cbd34e0ac27560e264b98a31d",
+          "size_bytes": 1681,
+          "sha256": "6a15d21a7d3e81b3e861042769c27ec9c0a03f96548a93acd8a11801819e81aa"
+        },
+        {
+          "path": "anniversary-2025/continuation-1907.zh.md",
+          "mode": "100644",
+          "blob": "0985fbe0efd3714d38116284299e3c78cda0e1df",
+          "size_bytes": 989,
+          "sha256": "8d5af06b5bd248664aa964e627841a331be77f67c6c8a269be079ac697d4b75d"
+        },
+        {
+          "path": "anniversary-2025/continuation-1909.json",
+          "mode": "100644",
+          "blob": "51b5fd1a7666db57e75e5a7911cdad757e3d1119",
+          "size_bytes": 1448,
+          "sha256": "e92b106679fa873a9764129114f27bfc3641a7bfae53779fb86c6f2276018305"
+        },
+        {
+          "path": "anniversary-2025/cowboy-identity.json",
+          "mode": "100644",
+          "blob": "e974cfb483e0c670d1baf1937bd3489450e40f0e",
+          "size_bytes": 1189,
+          "sha256": "28ef96151b95f298091c7f88f99817c849dc443235896f415b6cef9132f73173"
+        },
+        {
+          "path": "anniversary-2025/cowboy.jpg",
+          "mode": "100644",
+          "blob": "fbf25f64e2d540f8b0ccb914654d2b5f42953c0d",
+          "size_bytes": 119161,
+          "sha256": "d2e831057ee36ed903c08719d83764db8ef36ad1a2f1bf07eb33e0eecb6ee383"
+        },
+        {
+          "path": "anniversary-2025/fan-0802.jpg",
+          "mode": "100644",
+          "blob": "731f4f72f903b6feb6343e61625a76e45ff8c435",
+          "size_bytes": 70882,
+          "sha256": "451ed76a6784f8cb50aa8e206e048c73a453af173c59d42a24c0c8423b95d548"
+        },
+        {
+          "path": "anniversary-2025/frozen-manifest-1909.json",
+          "mode": "100644",
+          "blob": "047f2bb242a108eabfe7c943da7675b04519255f",
+          "size_bytes": 1964,
+          "sha256": "16ae95277ce6edf59418798f3cf109e07bce9fbdf28120e43069c4d042ea86bb"
+        },
+        {
+          "path": "anniversary-2025/frozen-manifest-1910.json",
+          "mode": "100644",
+          "blob": "b3874c108003b051f5088d764a0696765f1e182f",
+          "size_bytes": 2281,
+          "sha256": "ab5b72b4dfa685736c1d3509e93877fc6130aeac2c4d96f0ab78ab8e1412d198"
+        },
+        {
+          "path": "anniversary-2025/goddess.jpg",
+          "mode": "100644",
+          "blob": "282273ca3c3a8ae3cb387672dc38f851f353b680",
+          "size_bytes": 90274,
+          "sha256": "bbeb40fd4f267ba9322693e7e6cc2e8a959bc63e802fa57559d1075c78c7aaa1"
+        },
+        {
+          "path": "anniversary-2025/identity.json",
+          "mode": "100644",
+          "blob": "4b06ea5d42e58e79fef6b677b1b8d5dcd13d174a",
+          "size_bytes": 2598,
+          "sha256": "b09edc79c8b1bf5234f829feff8ed55aba8f2304fa643b1ea54953c3bd73079e"
+        },
+        {
+          "path": "anniversary-2025/independent/sunset-evidence.json",
+          "mode": "100644",
+          "blob": "ef9c751314511797a9d46a58994ab96305a08d1a",
+          "size_bytes": 448,
+          "sha256": "1c7735893c78760041e1a7d971a963dc2c9ffcaaa8a98a33f262fa61a229b2fd"
+        },
+        {
+          "path": "anniversary-2025/independent/sunset-review.zh.md",
+          "mode": "100644",
+          "blob": "87548f23bb9933d3e2620a1940564939a281e0df",
+          "size_bytes": 1554,
+          "sha256": "51359ee77ba8227b83c0057be2670d59fea453bb8c60c00c999e46a431408ac3"
+        },
+        {
+          "path": "anniversary-2025/independent/witch-limited-screening.json",
+          "mode": "100644",
+          "blob": "e6f1fac17ccef2c3d88300154a319f7f3ace8562",
+          "size_bytes": 383,
+          "sha256": "f4b65949df144fda5aef94ef36bec73a054ad28e6c4fea1cd6513526f195285e"
+        },
+        {
+          "path": "anniversary-2025/independent/witch-limited-screening.zh.md",
+          "mode": "100644",
+          "blob": "b789a0890d3e0b949017d1e92c8cac67304e35c4",
+          "size_bytes": 1231,
+          "sha256": "338b156c269ecfad79073ad63e8f96271f42b75dce8364146dfe07f8aababe69"
+        },
+        {
+          "path": "anniversary-2025/manifest-completeness-correction.json",
+          "mode": "100644",
+          "blob": "be1ffb3ef7791290c3e64b42b2ee1e0bcdbc4e7a",
+          "size_bytes": 1397,
+          "sha256": "d8a98066300fc816ebc899c53ad6daba3f673f6429c27339b02430de750695bb"
+        },
+        {
+          "path": "anniversary-2025/manifest-v2.json",
+          "mode": "100644",
+          "blob": "fb838156df297adec9e12dc40b7c754ea9fcb1b4",
+          "size_bytes": 1189,
+          "sha256": "d35c5116d0a5fe6ea603b3d508bd3901fcb3e6941b56cd8efe2e5ac7b16456aa"
+        },
+        {
+          "path": "anniversary-2025/manifest.json",
+          "mode": "100644",
+          "blob": "173b1384c40a1a3b7e7f6c0a6a427a5c79bebceb",
+          "size_bytes": 713,
+          "sha256": "c365dc5c37f8a36b991b97397eb8906f51cbfd3450c2046d0408ffd192b2e0fd"
+        },
+        {
+          "path": "anniversary-2025/playback-capability-and-targeted-search.json",
+          "mode": "100644",
+          "blob": "b2c09b2e54e4bd4e748337e774a86b0c784a9c25",
+          "size_bytes": 1010,
+          "sha256": "ec7ab1dba9ba01e248c0a64ed10d011cae51e5e7a0f55d0f777dd4a54124853a"
+        },
+        {
+          "path": "anniversary-2025/post-event-dynamics-1921.json",
+          "mode": "100644",
+          "blob": "811f692f1f364d86240b711905911cd45bdb1d4e",
+          "size_bytes": 1556,
+          "sha256": "73af47d6439018d70b439d50c0b51f1b0d33daa72faa17a23b474dbd01d2c2ea"
+        },
+        {
+          "path": "anniversary-2025/public-embed-result.json",
+          "mode": "100644",
+          "blob": "a259467bd80079440a4c9536ac7bb3ae3a11ca3f",
+          "size_bytes": 980,
+          "sha256": "ebeffe162d2094308cb8a58057d27c7b90328955360f635093df8fb5334676b8"
+        },
+        {
+          "path": "anniversary-2025/replay.jpg",
+          "mode": "100644",
+          "blob": "6545a8380c1826b05dded7d714a98993556349e2",
+          "size_bytes": 39667,
+          "sha256": "50140019b810b626a02ddeff3ec8d8524d9d81c061db602a02a5c3e8e8f740d8"
+        },
+        {
+          "path": "anniversary-2025/sunset-identity.json",
+          "mode": "100644",
+          "blob": "5ac1fc591598fd0988cfb3676195001ff993cecf",
+          "size_bytes": 1258,
+          "sha256": "ebcc9df26659708d8df3c8bf41b96d59a6d6083bcb4eb76db167cfe7e4218279"
+        },
+        {
+          "path": "anniversary-2025/sunset.jpg",
+          "mode": "100644",
+          "blob": "7490c9bc8992e9cfa1acd72ea1caf493986c0f15",
+          "size_bytes": 136046,
+          "sha256": "b8fe28234b70eb954229d87c9c40d88c4f76a4c5ebdbaa01f7ec33f014f8d059"
+        },
+        {
+          "path": "anniversary-2025/witch.jpg",
+          "mode": "100644",
+          "blob": "b907cef879110dfe5d1744ca089a1a8d38a28953",
+          "size_bytes": 124372,
+          "sha256": "c45cb7c282fecc7c9abbff6ac263ff9909904859421338cb282826d38230e927"
+        },
+        {
+          "path": "continued-screening/README.md",
+          "mode": "100644",
+          "blob": "5b91881d781bb41c7610eb6151028818760ca8c2",
+          "size_bytes": 1094,
+          "sha256": "e58e2de6716a2a00141dd5ac4407bbf3a39731d2a4b7ff23c04e2611767f206b"
+        },
+        {
+          "path": "continued-screening/corridor/search-scope.json",
+          "mode": "100644",
+          "blob": "d659075174b76ac401732a4a7a7949c25275474e",
+          "size_bytes": 2325,
+          "sha256": "41a4e83e34b4813718a159097efd3e4b3decff5cdfe538b1de2f6aa06fc4ebb0"
+        },
+        {
+          "path": "continued-screening/events/00.jpg",
+          "mode": "100644",
+          "blob": "4c08671bfcdaf5a19e7a56a30d7182d576614cac",
+          "size_bytes": 16992,
+          "sha256": "c74ef6aedef9a2d57bfdd85981fc20aef733c275a6fcf7f8f27c0944c9f3fb66"
+        },
+        {
+          "path": "continued-screening/events/01.jpg",
+          "mode": "100644",
+          "blob": "62b813c6667558f5d59af275c5748bce60b968b9",
+          "size_bytes": 18218,
+          "sha256": "e7673a87fd71274063d9c5ba690c5c68e5c7bdae8a042777439fe0f1f36ed6c5"
+        },
+        {
+          "path": "continued-screening/events/02.jpg",
+          "mode": "100644",
+          "blob": "b2dc5c3899f9c06364cce5b31c0da91f5efdba38",
+          "size_bytes": 14824,
+          "sha256": "ecb66450490a84432505c28ed805c8ff7e57a80abbe89c5bd76d25414bbd27ec"
+        },
+        {
+          "path": "continued-screening/events/03.jpg",
+          "mode": "100644",
+          "blob": "92d2c1915ae72322cb8a826ab2dd1c00dfd5b072",
+          "size_bytes": 12671,
+          "sha256": "46f7f769d204a56a7acbf3578a07d8316f691e81bb35df916bc39da3fa0df879"
+        },
+        {
+          "path": "continued-screening/events/04.jpg",
+          "mode": "100644",
+          "blob": "5a198cf9f07065555b54e0c0e10e1f7275b801fe",
+          "size_bytes": 16999,
+          "sha256": "9e2820867f9bb75c811167c62473a994d79dc288c9bf53ccaa43a86a4aabc8a7"
+        },
+        {
+          "path": "continued-screening/events/05.jpg",
+          "mode": "100644",
+          "blob": "4cd5de26dffa78fb4ea4cdbfdc3f44bb096647ad",
+          "size_bytes": 17525,
+          "sha256": "af01b3753eefa2df6ef8c90c36819377e719e0af23f32aa14a6c8140a10a7e4f"
+        },
+        {
+          "path": "continued-screening/events/06.jpg",
+          "mode": "100644",
+          "blob": "7e03d7e379f26135e9b6f85b2a2c84f33ca60f37",
+          "size_bytes": 87240,
+          "sha256": "baf4d1ed407ac9acd5116b5fb16abe09591677dead340ed936cf0d1f57e1c39d"
+        },
+        {
+          "path": "continued-screening/events/07.jpg",
+          "mode": "100644",
+          "blob": "f3d31571a0749ec191e04979be52bce2cc6b3d5e",
+          "size_bytes": 66786,
+          "sha256": "c3ad2f3fa163d0befb2052f51489e85a181652520996d61f6a7813186a7e7f0d"
+        },
+        {
+          "path": "continued-screening/events/08.jpg",
+          "mode": "100644",
+          "blob": "0275be8909745556faced6d32f9fcebf5467135a",
+          "size_bytes": 107304,
+          "sha256": "5d0ed4bc541069ebe77f6308c2b1cb65054a45b4701e46d9bba617edc78ea516"
+        },
+        {
+          "path": "continued-screening/events/assessment.zh.md",
+          "mode": "100644",
+          "blob": "d8d9a434a6bd36204662cacf98bf68836a8e1fca",
+          "size_bytes": 1043,
+          "sha256": "2447e33cb05857e2571d5ec2fc78c4a37ff176d1111ebbbb4c34f78eae0a08f8"
+        },
+        {
+          "path": "continued-screening/events/contact.jpg",
+          "mode": "100644",
+          "blob": "206b1f3ab01440844816d877078faa26353c21ad",
+          "size_bytes": 118938,
+          "sha256": "62ef56f0a620d0280993a7968bd07399d4a37c615241c62c9c1a3b96f7f9fdb2"
+        },
+        {
+          "path": "continued-screening/events/images.json",
+          "mode": "100644",
+          "blob": "fe8d6b8ca3e44266a245558315b27077bab2259f",
+          "size_bytes": 877,
+          "sha256": "a98d57858c1cabd77293938a23ee629afe530e771ea8beb1997557146de561fc"
+        },
+        {
+          "path": "continued-screening/events/thumbnail-manifest.json",
+          "mode": "100644",
+          "blob": "008ee87792b1dc53a1e7118208013e65db938047",
+          "size_bytes": 3218,
+          "sha256": "e152b97be256790e406bb4de01d209af6bc8ed7b4e5a7f44fb1033b32a334df0"
+        },
+        {
+          "path": "continued-screening/holiday/continuation-1828.json",
+          "mode": "100644",
+          "blob": "725bca26e16ddce92602223ce3b0d7d841a625c9",
+          "size_bytes": 2184,
+          "sha256": "3e7ef40c56b5f217024bb6f0491740ce6d18e6950eaec7b97b72bb159448705c"
+        },
+        {
+          "path": "continued-screening/holiday/cv27376615-supported-fetch.json",
+          "mode": "100644",
+          "blob": "23f3772b8aa4100147b91b1e30b9adcd2adba6b6",
+          "size_bytes": 2486,
+          "sha256": "f5bacebc539904f2d28f57977396c179f6e8acba906bce29d68449ed57b6255c"
+        },
+        {
+          "path": "continued-screening/holiday/official-2023-birthday-poster.jpg",
+          "mode": "100644",
+          "blob": "94cd83bb7621ffa97f3239d172fb07f7cbe250c0",
+          "size_bytes": 50103,
+          "sha256": "effa7a016eac9fbefd23d3f3a392591eb81fe354fd753bbb14b6caa6f63a6457"
+        },
+        {
+          "path": "continued-screening/holiday/search-scope.json",
+          "mode": "100644",
+          "blob": "0dbdc84081d4fdeed77218f8c84fbf3e00de407b",
+          "size_bytes": 2744,
+          "sha256": "894f61839c6b2affeb3304332ae12a4aa2eee349b7c4a46e79b2833fd56e1913"
+        },
+        {
+          "path": "expanded-events-20261104/assessment.zh.md",
+          "mode": "100644",
+          "blob": "450e02640f11f59df6be2136e41ece9c6ecef3fd",
+          "size_bytes": 1753,
+          "sha256": "5166ca0632d8b05369db74b0910da447b5a6c2a04dab854c304ffa4c8d21feb6"
+        },
+        {
+          "path": "expanded-events-20261104/clip-0.jpg",
+          "mode": "100644",
+          "blob": "8e9f0bc8d9cf8bc58f0568051b251b55c0f546c7",
+          "size_bytes": 76667,
+          "sha256": "7fa118043643b6f7de15c437579bfe76acb258edf0a727a99a6fd901ad6cde48"
+        },
+        {
+          "path": "expanded-events-20261104/clip-1.jpg",
+          "mode": "100644",
+          "blob": "a665bb3d89e23b67617795464fb18f8c6f431ca3",
+          "size_bytes": 78478,
+          "sha256": "adca6a88fecb6964fe8e3771bd3adbeb57814c1952388892182a1f7a991e3222"
+        },
+        {
+          "path": "expanded-events-20261104/clip-2.jpg",
+          "mode": "100644",
+          "blob": "004445c0a85c87be9b58140f60f1924079292bd7",
+          "size_bytes": 109721,
+          "sha256": "39e6733f77cd6596c5ef11613d69c6fccfe8ceba7e63c6cdcf661e2c1dd3d698"
+        },
+        {
+          "path": "expanded-events-20261104/clip-3.jpg",
+          "mode": "100644",
+          "blob": "f1c7602030a22717c09f7ee248298adf4fb2c563",
+          "size_bytes": 50192,
+          "sha256": "43703182cc508d2fbe24a490363e070bebe08ad60954a5b64773b61ab33d0144"
+        },
+        {
+          "path": "expanded-events-20261104/clip-links.json",
+          "mode": "100644",
+          "blob": "f47923d6112e1ebe8b56869a951d4deffea3b673",
+          "size_bytes": 3403,
+          "sha256": "302a4ecbd7d6fc6860ae79a6b54534059f8c5769ad88914177987cd92cd35a86"
+        },
+        {
+          "path": "expanded-events-20261104/clip-manifest.json",
+          "mode": "100644",
+          "blob": "d255b7b73ebc0593c768b6a931360f778401d366",
+          "size_bytes": 4087,
+          "sha256": "7d2f2b2098f5b64d94d8f63dbd965c83f6a5b1c272f1cd6f99a86dd5a9646f8f"
+        },
+        {
+          "path": "expanded-events-20261104/hecoos-0.png",
+          "mode": "100644",
+          "blob": "8a67448069ed946806fce426d156782a54a68029",
+          "size_bytes": 18577,
+          "sha256": "5556752046f0f25cf065b9ba9d5744ceb2b80200b1956d53a83142b6f4437513"
+        },
+        {
+          "path": "expanded-events-20261104/hecoos-1.png",
+          "mode": "100644",
+          "blob": "a39f8de399348e2c3218d828cb1366b8409b4b3e",
+          "size_bytes": 17445,
+          "sha256": "f86d0785bcda33c31b3a9b8cb148563b4e1b392f02c906ee76ba68de5efaa286"
+        },
+        {
+          "path": "expanded-events-20261104/hecoos-2.png",
+          "mode": "100644",
+          "blob": "b8d193d635783ca41c8ab1a9d429ff99783bb819",
+          "size_bytes": 3264352,
+          "sha256": "22ff87bf88e58a483ac3f33def97ce1a56e004cfd206c1518d7df6bc5e4c8d06"
+        },
+        {
+          "path": "expanded-events-20261104/independent-hecoos/review.zh.md",
+          "mode": "100644",
+          "blob": "f0564bdad2a214867cc62a6205f57a852b2b2eca",
+          "size_bytes": 1126,
+          "sha256": "3e2755d96da66945ba1311eb9720c91e0020e8cc198ee6147e8260e8c32b2bf2"
+        },
+        {
+          "path": "expanded-events-20261104/manifest.json",
+          "mode": "100644",
+          "blob": "67ec16654c86648c94f64d0bbf0549925895c965",
+          "size_bytes": 996,
+          "sha256": "2c45803e154741c06b12475e4a9fd5c76eb1ed4f60d876db32f16bac8e8a349f"
+        },
+        {
+          "path": "expanded-events-20261104/provenance.json",
+          "mode": "100644",
+          "blob": "d43a2a4af307242ca1807793ee876c13dbb52b60",
+          "size_bytes": 5320,
+          "sha256": "2582cf36b6d1d5ddc253572d17da7fd1fbbf53ef100206c1f3023fe07e1a2802"
+        },
+        {
+          "path": "expanded-events-20261104/public-ed/0.jpg",
+          "mode": "100644",
+          "blob": "25d7f6a005b4393d87e00b804501cf4006691615",
+          "size_bytes": 39035,
+          "sha256": "680ef126d08d01e6b8d6309031bb3944fc72ae8a06b96ad65f78dd6548a30827"
+        },
+        {
+          "path": "expanded-events-20261104/public-ed/1.jpg",
+          "mode": "100644",
+          "blob": "a05fae23c44acca2ce110a6e5b1a1c8cdadc63f7",
+          "size_bytes": 33651,
+          "sha256": "7f01a2dbf2b307a1a837086e7d9cbe9aae4856e0c3935f299a80913e1734faf8"
+        },
+        {
+          "path": "expanded-events-20261104/public-ed/links.json",
+          "mode": "100644",
+          "blob": "9f47c632a1578bd1e369a4de66d5bf6570834362",
+          "size_bytes": 680,
+          "sha256": "8d65344bba58f121f4cd58caeff7b8cbda777a47026c7b3b5379f6608794f61a"
+        },
+        {
+          "path": "expanded-events-20261104/public-ed/manifest.json",
+          "mode": "100644",
+          "blob": "cc1153f4b2691ee3d44b3dd2d59c3a023095cf5f",
+          "size_bytes": 1591,
+          "sha256": "7766f146bbb93dd1e8d14c3fbdf0228e5582bc7d33a1b7d4b2a22f26df0769d4"
+        },
+        {
+          "path": "expanded-events-20261104/public-ed/scope.json",
+          "mode": "100644",
+          "blob": "001981d94c3ae9e5caa13122b051351372788cb4",
+          "size_bytes": 1001,
+          "sha256": "da05e7d1be475e00a3797f095c8712d28b07615e71ff32d2b3c2b377dd711f2a"
+        },
+        {
+          "path": "expanded-events-20261104/search-scope.json",
+          "mode": "100644",
+          "blob": "3f4804201ae2e97983f183693cbc0507b61272a1",
+          "size_bytes": 1629,
+          "sha256": "9e25ea4b100b3a165556a37eb8a851b9e4640741dc7caa25fb96ecf4d134a6ee"
+        },
+        {
+          "path": "expanded-events-20261104/tree-manifest.json",
+          "mode": "100644",
+          "blob": "9f1c5b32cc04d6fda84cb501bf82c3fd62111e88",
+          "size_bytes": 1806,
+          "sha256": "bda313effb3154d2bf18432d012a0c0b7c7049523fcc1d3b0673020da23acb6d"
+        },
+        {
+          "path": "hotel-screening/031.jpg",
+          "mode": "100644",
+          "blob": "52e188a1de73814801eff0f853266860b74cd9a6",
+          "size_bytes": 518615,
+          "sha256": "fa2668b671bbafee7aac625b28ca1e4632304960cad09ef903ffe4d5a60af01e"
+        },
+        {
+          "path": "hotel-screening/032.jpg",
+          "mode": "100644",
+          "blob": "7238fe1a41610013327491382447360f1985dacf",
+          "size_bytes": 511980,
+          "sha256": "9b5dd51e40e4846b8af7f12606b4accc1b66b37e4344f729d74515d2b8da197d"
+        },
+        {
+          "path": "hotel-screening/033.jpg",
+          "mode": "100644",
+          "blob": "0331f54167c69dcb037c1d0f4d19330ff70b9778",
+          "size_bytes": 518916,
+          "sha256": "2e907078a7ad0ec00c492c1a6dc5f6d8f7987ce6851da543abb762a337b40f7f"
+        },
+        {
+          "path": "hotel-screening/090.jpg",
+          "mode": "100644",
+          "blob": "64eb4c3dd17653fdd9b858ee2634793e20caa5bc",
+          "size_bytes": 345657,
+          "sha256": "c0681cc931cc6ca0a8498eea971d5cc2ddda4bcf6cdf361193726f9f100ab900"
+        },
+        {
+          "path": "hotel-screening/097.jpg",
+          "mode": "100644",
+          "blob": "2b0e96a490d94bcc62c9e2063dcc2efc65d4407d",
+          "size_bytes": 62669,
+          "sha256": "b2658725184f40e7cf690ceb436a469846c753827dba9931ee57e1e5839e6b4a"
+        },
+        {
+          "path": "hotel-screening/README.zh.md",
+          "mode": "100644",
+          "blob": "f6577cdc4f5af2e1a2d67a764c897e87de29e7e8",
+          "size_bytes": 1549,
+          "sha256": "73949ad14b5689eef91a60d0ba7ed05c13908ca25815f68f744324a0a181a53b"
+        },
+        {
+          "path": "hotel-screening/manifest.json",
+          "mode": "100644",
+          "blob": "73205c0615cfad8be9f527492d4b90d918f3a308",
+          "size_bytes": 3985,
+          "sha256": "f31829c5d65bf2c7e60db06bd633ed97656706ef133a98f9c2cdef4eba0f9e41"
+        },
+        {
+          "path": "moonisland/README.zh.md",
+          "mode": "100644",
+          "blob": "4fec071dff2e1a59d8ba60ed00439194fdbac952",
+          "size_bytes": 1334,
+          "sha256": "40fb3de65c8615bce488757f86bfe7e123faab71ce6adf3b5fdeebdfc0eb5eb3"
+        },
+        {
+          "path": "moonisland/manifest.json",
+          "mode": "100644",
+          "blob": "940285270fdabd15b1107b12e31dd15db1806b7d",
+          "size_bytes": 952,
+          "sha256": "65e362e1f50cfa0bae169800b6867c84c93034b86d304e6cbd6e3016ac270e52"
+        },
+        {
+          "path": "moonisland/yanwuxie-interview-still.png",
+          "mode": "100644",
+          "blob": "5c15dbb5485fb4079cacdd0f51a2999cd2132a34",
+          "size_bytes": 450425,
+          "sha256": "ed37092ff2934a03e1bfbf7a78d336c2c618fb5a5c9bebc77b30e48ecb3b8c1e"
+        }
+      ]
     }
   ],
   "history_ref": "refs/heads/history/source-followup-original-20261105",
   "archive_ref": "refs/heads/archive/source-followup-20261105",
-  "base_commit": "4f0b8582af58d1e97e37778988a226a3a85f5a2a",
+  "base_commit": "d965f1ed49b72189e6be37421527f70437cc9aeb",
   "archive_prefix": "research/source-followup-20261105",
-  "file_count": 55,
-  "total_file_bytes": 3565152,
+  "file_count": 75,
+  "total_file_bytes": 7276662,
   "files": [
     {
       "path": "README.zh.md",
@@ -2644,6 +3330,146 @@
       "sha256": "894f61839c6b2affeb3304332ae12a4aa2eee349b7c4a46e79b2833fd56e1913"
     },
     {
+      "path": "expanded-events-20261104/assessment.zh.md",
+      "mode": "100644",
+      "blob": "450e02640f11f59df6be2136e41ece9c6ecef3fd",
+      "size_bytes": 1753,
+      "sha256": "5166ca0632d8b05369db74b0910da447b5a6c2a04dab854c304ffa4c8d21feb6"
+    },
+    {
+      "path": "expanded-events-20261104/clip-0.jpg",
+      "mode": "100644",
+      "blob": "8e9f0bc8d9cf8bc58f0568051b251b55c0f546c7",
+      "size_bytes": 76667,
+      "sha256": "7fa118043643b6f7de15c437579bfe76acb258edf0a727a99a6fd901ad6cde48"
+    },
+    {
+      "path": "expanded-events-20261104/clip-1.jpg",
+      "mode": "100644",
+      "blob": "a665bb3d89e23b67617795464fb18f8c6f431ca3",
+      "size_bytes": 78478,
+      "sha256": "adca6a88fecb6964fe8e3771bd3adbeb57814c1952388892182a1f7a991e3222"
+    },
+    {
+      "path": "expanded-events-20261104/clip-2.jpg",
+      "mode": "100644",
+      "blob": "004445c0a85c87be9b58140f60f1924079292bd7",
+      "size_bytes": 109721,
+      "sha256": "39e6733f77cd6596c5ef11613d69c6fccfe8ceba7e63c6cdcf661e2c1dd3d698"
+    },
+    {
+      "path": "expanded-events-20261104/clip-3.jpg",
+      "mode": "100644",
+      "blob": "f1c7602030a22717c09f7ee248298adf4fb2c563",
+      "size_bytes": 50192,
+      "sha256": "43703182cc508d2fbe24a490363e070bebe08ad60954a5b64773b61ab33d0144"
+    },
+    {
+      "path": "expanded-events-20261104/clip-links.json",
+      "mode": "100644",
+      "blob": "f47923d6112e1ebe8b56869a951d4deffea3b673",
+      "size_bytes": 3403,
+      "sha256": "302a4ecbd7d6fc6860ae79a6b54534059f8c5769ad88914177987cd92cd35a86"
+    },
+    {
+      "path": "expanded-events-20261104/clip-manifest.json",
+      "mode": "100644",
+      "blob": "d255b7b73ebc0593c768b6a931360f778401d366",
+      "size_bytes": 4087,
+      "sha256": "7d2f2b2098f5b64d94d8f63dbd965c83f6a5b1c272f1cd6f99a86dd5a9646f8f"
+    },
+    {
+      "path": "expanded-events-20261104/hecoos-0.png",
+      "mode": "100644",
+      "blob": "8a67448069ed946806fce426d156782a54a68029",
+      "size_bytes": 18577,
+      "sha256": "5556752046f0f25cf065b9ba9d5744ceb2b80200b1956d53a83142b6f4437513"
+    },
+    {
+      "path": "expanded-events-20261104/hecoos-1.png",
+      "mode": "100644",
+      "blob": "a39f8de399348e2c3218d828cb1366b8409b4b3e",
+      "size_bytes": 17445,
+      "sha256": "f86d0785bcda33c31b3a9b8cb148563b4e1b392f02c906ee76ba68de5efaa286"
+    },
+    {
+      "path": "expanded-events-20261104/hecoos-2.png",
+      "mode": "100644",
+      "blob": "b8d193d635783ca41c8ab1a9d429ff99783bb819",
+      "size_bytes": 3264352,
+      "sha256": "22ff87bf88e58a483ac3f33def97ce1a56e004cfd206c1518d7df6bc5e4c8d06"
+    },
+    {
+      "path": "expanded-events-20261104/independent-hecoos/review.zh.md",
+      "mode": "100644",
+      "blob": "f0564bdad2a214867cc62a6205f57a852b2b2eca",
+      "size_bytes": 1126,
+      "sha256": "3e2755d96da66945ba1311eb9720c91e0020e8cc198ee6147e8260e8c32b2bf2"
+    },
+    {
+      "path": "expanded-events-20261104/manifest.json",
+      "mode": "100644",
+      "blob": "67ec16654c86648c94f64d0bbf0549925895c965",
+      "size_bytes": 996,
+      "sha256": "2c45803e154741c06b12475e4a9fd5c76eb1ed4f60d876db32f16bac8e8a349f"
+    },
+    {
+      "path": "expanded-events-20261104/provenance.json",
+      "mode": "100644",
+      "blob": "d43a2a4af307242ca1807793ee876c13dbb52b60",
+      "size_bytes": 5320,
+      "sha256": "2582cf36b6d1d5ddc253572d17da7fd1fbbf53ef100206c1f3023fe07e1a2802"
+    },
+    {
+      "path": "expanded-events-20261104/public-ed/0.jpg",
+      "mode": "100644",
+      "blob": "25d7f6a005b4393d87e00b804501cf4006691615",
+      "size_bytes": 39035,
+      "sha256": "680ef126d08d01e6b8d6309031bb3944fc72ae8a06b96ad65f78dd6548a30827"
+    },
+    {
+      "path": "expanded-events-20261104/public-ed/1.jpg",
+      "mode": "100644",
+      "blob": "a05fae23c44acca2ce110a6e5b1a1c8cdadc63f7",
+      "size_bytes": 33651,
+      "sha256": "7f01a2dbf2b307a1a837086e7d9cbe9aae4856e0c3935f299a80913e1734faf8"
+    },
+    {
+      "path": "expanded-events-20261104/public-ed/links.json",
+      "mode": "100644",
+      "blob": "9f47c632a1578bd1e369a4de66d5bf6570834362",
+      "size_bytes": 680,
+      "sha256": "8d65344bba58f121f4cd58caeff7b8cbda777a47026c7b3b5379f6608794f61a"
+    },
+    {
+      "path": "expanded-events-20261104/public-ed/manifest.json",
+      "mode": "100644",
+      "blob": "cc1153f4b2691ee3d44b3dd2d59c3a023095cf5f",
+      "size_bytes": 1591,
+      "sha256": "7766f146bbb93dd1e8d14c3fbdf0228e5582bc7d33a1b7d4b2a22f26df0769d4"
+    },
+    {
+      "path": "expanded-events-20261104/public-ed/scope.json",
+      "mode": "100644",
+      "blob": "001981d94c3ae9e5caa13122b051351372788cb4",
+      "size_bytes": 1001,
+      "sha256": "da05e7d1be475e00a3797f095c8712d28b07615e71ff32d2b3c2b377dd711f2a"
+    },
+    {
+      "path": "expanded-events-20261104/search-scope.json",
+      "mode": "100644",
+      "blob": "3f4804201ae2e97983f183693cbc0507b61272a1",
+      "size_bytes": 1629,
+      "sha256": "9e25ea4b100b3a165556a37eb8a851b9e4640741dc7caa25fb96ecf4d134a6ee"
+    },
+    {
+      "path": "expanded-events-20261104/tree-manifest.json",
+      "mode": "100644",
+      "blob": "9f1c5b32cc04d6fda84cb501bf82c3fd62111e88",
+      "size_bytes": 1806,
+      "sha256": "bda313effb3154d2bf18432d012a0c0b7c7049523fcc1d3b0673020da23acb6d"
+    },
+    {
       "path": "hotel-screening/031.jpg",
       "mode": "100644",
       "blob": "52e188a1de73814801eff0f853266860b74cd9a6",
@@ -2714,159 +3540,637 @@
       "sha256": "ed37092ff2934a03e1bfbf7a78d336c2c618fb5a5c9bebc77b30e48ecb3b8c1e"
     }
   ],
-  "previous_source_head": "c3e9295d34e7cf6e1a4b732cda3c37ce8b8e92cc",
-  "previous_archive_commit": "4f0b8582af58d1e97e37778988a226a3a85f5a2a",
-  "previous_version_snapshot_prefix": "research/source-followup-20261105/versions/v4",
-  "older_version_snapshot_paths_preserved": 155,
+  "previous_source_head": "4fe24ac7fccfdc7835dca6783fafebe94b11a55b",
+  "previous_archive_commit": "d965f1ed49b72189e6be37421527f70437cc9aeb",
+  "previous_version_snapshot_prefix": "research/source-followup-20261105/versions/v5",
+  "older_version_snapshot_paths_preserved": 211,
   "limitations": [
-    "True source-content completeness correction only, not a model stage, new scene, new source image or accepted reconstruction. Six true original research commits preserve all 55 supplied files. All prior 53 files are byte-for-byte unchanged; only public-embed-result.json and manifest-completeness-correction.json are added.",
-    "The complete ordinary Git bundle has no prerequisite. Its exact source HEAD 4fe24ac7fccfdc7835dca6783fafebe94b11a55b normally descends directly from archived c3e9295d34e7cf6e1a4b732cda3c37ce8b8e92cc. Original commits and their missing-file historical stages remain reachable without rewriting.",
-    "The formerly missing anniversary-2025/public-embed-result.json is now actually present: 980 bytes, SHA256 ebeffe162d2094308cb8a58057d27c7b90328955360f635093df8fb5334676b8, exactly matching the original frozen-manifest-1910.json declaration. All sixteen declared paths, sizes and SHA256 values independently verify in this current tree. Earlier missing-file findings were correct for those historical trees and are retained in their receipts and version snapshots.",
-    "The supplied embed result records an unsupported HTML5 player response with a static h5.png error-image link and no iframe links. It is not a decoded video frame, restored playback capability or model/source acceptance. The archive worker preserves the recorded response and does not call the URL, use login, browse or retry failed playback.",
-    "Prior six cover images, official identity records, finite pixel screening, bounded queries and their occlusion/single-view/non-native limitations remain unchanged. The completeness fix does not create a qualified multiview scene or resolve unknown clip time, geometry, same-room identity or unseen structure.",
-    "This advances existing source-followup archive/history refs by normal Git fast-forward. The preceding current directory, provenance and receipt are preserved as versions/v4; all earlier snapshots, old errors and missing-file evidence remain unchanged. The previously denied source-screening-increment receipt stays paused with no retry.",
-    "Only official Library reception, ordinary Git archival and fresh-remote byte/object/commit-tree verification are performed. No modeling, rendering, producer-script execution, production-tree edits, LFS, force pushes, main edits, credential copying, security changes, Issues or PRs. All current Space inputs remain for dot; permanent attachments are untouched."
+    "Source-screening evidence only, with seven true original research commits and zero model stages. All prior 55 files remain byte-for-byte unchanged; exactly 20 files are added under expanded-events-20261104. The original directory date is preserved despite the bundle filename carrying 20261105.",
+    "Nine new image files comprise three hecoos webpage images (two logos and one 1791x860 stage image), four official-clip cover images and two unofficial Steam ED preview images. None are decoded native video frames. Clip times and highest decoded quality remain unverified; no qualified new multiview scene is established.",
+    "The hecoos stage image is a suspected duplicate of prior Issue97 harbor, based on visible object combinations. The supplied independent review explicitly lacked the old actual source image, so it did not perform old/new pixel comparison or independently confirm same-scene identity. No new scene or model is claimed.",
+    "FOREVER clip cover is a bounded identity clue for the existing observatory, with substantial character/text occlusion. The 2024-12-28 page publication timestamp is not proof of the performance date or a later livestream. The hecoos 2026-07-28 page date is likewise not an event date. Unofficial ED titles do not establish official video identities.",
+    "Supplied tree-manifest.json intentionally covers thirteen top-level payload files, not the later independent review/public-ed subtree or itself. All thirteen declared entries and all nine image-manifest entries are verified; the archive full-tree manifest separately covers every one of the 75 originals.",
+    "Historical failed access attempts, capability limits, queries, old source-content gaps and the later exact embed-result correction remain preserved. The archive worker does not replay URLs, browse, log in, independently acquire source images or act on instructions within these source records.",
+    "The full ordinary Git bundle has no prerequisites and normally descends from 4fe24ac7fccfdc7835dca6783fafebe94b11a55b. Existing source-followup archive/history refs advance normally; prior current archive and receipt are preserved under versions/v5 and older snapshots remain unchanged. All advertised remote refs, including managed PR refs and HEAD, are compared before/after except the two authorized targets.",
+    "Work is only official Library reception, ordinary Git and integrity verification. No modeling/rendering, producer-script execution, production-tree writes, LFS, force pushes, credential copying, security changes, main edits, Issues or PRs. The separately denied source-screening-increment receipt remains paused with no retry. Space files remain for dot; permanent attachments are untouched."
   ],
   "contents_summary": {
     "model_stages": 0,
     "models": 0,
-    "research_commits": 6,
-    "previous_source_files_unchanged": 53,
-    "new_text_paths": [
-      "anniversary-2025/manifest-completeness-correction.json",
-      "anniversary-2025/public-embed-result.json"
+    "research_commits": 7,
+    "previous_all_source_files_unchanged": 55,
+    "new_original_files": [
+      "expanded-events-20261104/assessment.zh.md",
+      "expanded-events-20261104/clip-0.jpg",
+      "expanded-events-20261104/clip-1.jpg",
+      "expanded-events-20261104/clip-2.jpg",
+      "expanded-events-20261104/clip-3.jpg",
+      "expanded-events-20261104/clip-links.json",
+      "expanded-events-20261104/clip-manifest.json",
+      "expanded-events-20261104/hecoos-0.png",
+      "expanded-events-20261104/hecoos-1.png",
+      "expanded-events-20261104/hecoos-2.png",
+      "expanded-events-20261104/independent-hecoos/review.zh.md",
+      "expanded-events-20261104/manifest.json",
+      "expanded-events-20261104/provenance.json",
+      "expanded-events-20261104/public-ed/0.jpg",
+      "expanded-events-20261104/public-ed/1.jpg",
+      "expanded-events-20261104/public-ed/links.json",
+      "expanded-events-20261104/public-ed/manifest.json",
+      "expanded-events-20261104/public-ed/scope.json",
+      "expanded-events-20261104/search-scope.json",
+      "expanded-events-20261104/tree-manifest.json"
     ],
-    "new_frame_or_image_count": 0,
-    "declared_manifest_entries_verified": [
+    "new_original_file_count": 20,
+    "new_public_image_count": 9,
+    "hecoos_images_including_two_logos": 3,
+    "official_clip_cover_images": 4,
+    "unofficial_ED_preview_images": 2,
+    "image_manifest_bindings_verified": [
       {
-        "path": "anniversary-2025/assessment.zh.md",
-        "size_bytes": 1681,
-        "sha256": "6a15d21a7d3e81b3e861042769c27ec9c0a03f96548a93acd8a11801819e81aa",
-        "verified": true
+        "path": "expanded-events-20261104/hecoos-0.png",
+        "size_bytes": 18577,
+        "sha256": "5556752046f0f25cf065b9ba9d5744ceb2b80200b1956d53a83142b6f4437513",
+        "dimensions": [
+          1005,
+          168
+        ]
       },
       {
-        "path": "anniversary-2025/continuation-1907.zh.md",
-        "size_bytes": 989,
-        "sha256": "8d5af06b5bd248664aa964e627841a331be77f67c6c8a269be079ac697d4b75d",
-        "verified": true
+        "path": "expanded-events-20261104/hecoos-1.png",
+        "size_bytes": 17445,
+        "sha256": "f86d0785bcda33c31b3a9b8cb148563b4e1b392f02c906ee76ba68de5efaa286",
+        "dimensions": [
+          699,
+          241
+        ]
       },
       {
-        "path": "anniversary-2025/continuation-1909.json",
-        "size_bytes": 1448,
-        "sha256": "e92b106679fa873a9764129114f27bfc3641a7bfae53779fb86c6f2276018305",
-        "verified": true
+        "path": "expanded-events-20261104/hecoos-2.png",
+        "size_bytes": 3264352,
+        "sha256": "22ff87bf88e58a483ac3f33def97ce1a56e004cfd206c1518d7df6bc5e4c8d06",
+        "dimensions": [
+          1791,
+          860
+        ]
       },
       {
-        "path": "anniversary-2025/cowboy-identity.json",
-        "size_bytes": 1189,
-        "sha256": "28ef96151b95f298091c7f88f99817c849dc443235896f415b6cef9132f73173",
-        "verified": true
+        "path": "expanded-events-20261104/clip-0.jpg",
+        "size_bytes": 76667,
+        "sha256": "7fa118043643b6f7de15c437579bfe76acb258edf0a727a99a6fd901ad6cde48",
+        "dimensions": [
+          1007,
+          630
+        ]
       },
       {
-        "path": "anniversary-2025/cowboy.jpg",
-        "size_bytes": 119161,
-        "sha256": "d2e831057ee36ed903c08719d83764db8ef36ad1a2f1bf07eb33e0eecb6ee383",
-        "verified": true
+        "path": "expanded-events-20261104/clip-1.jpg",
+        "size_bytes": 78478,
+        "sha256": "adca6a88fecb6964fe8e3771bd3adbeb57814c1952388892182a1f7a991e3222",
+        "dimensions": [
+          1007,
+          630
+        ]
       },
       {
-        "path": "anniversary-2025/fan-0802.jpg",
-        "size_bytes": 70882,
-        "sha256": "451ed76a6784f8cb50aa8e206e048c73a453af173c59d42a24c0c8423b95d548",
-        "verified": true
+        "path": "expanded-events-20261104/clip-2.jpg",
+        "size_bytes": 109721,
+        "sha256": "39e6733f77cd6596c5ef11613d69c6fccfe8ceba7e63c6cdcf661e2c1dd3d698",
+        "dimensions": [
+          1007,
+          630
+        ]
       },
       {
-        "path": "anniversary-2025/goddess.jpg",
-        "size_bytes": 90274,
-        "sha256": "bbeb40fd4f267ba9322693e7e6cc2e8a959bc63e802fa57559d1075c78c7aaa1",
-        "verified": true
+        "path": "expanded-events-20261104/clip-3.jpg",
+        "size_bytes": 50192,
+        "sha256": "43703182cc508d2fbe24a490363e070bebe08ad60954a5b64773b61ab33d0144",
+        "dimensions": [
+          1080,
+          607
+        ]
       },
       {
-        "path": "anniversary-2025/identity.json",
-        "size_bytes": 2598,
-        "sha256": "b09edc79c8b1bf5234f829feff8ed55aba8f2304fa643b1ea54953c3bd73079e",
-        "verified": true
+        "path": "expanded-events-20261104/public-ed/0.jpg",
+        "size_bytes": 39035,
+        "sha256": "680ef126d08d01e6b8d6309031bb3944fc72ae8a06b96ad65f78dd6548a30827",
+        "dimensions": [
+          637,
+          358
+        ]
       },
       {
-        "path": "anniversary-2025/manifest-v2.json",
-        "size_bytes": 1189,
-        "sha256": "d35c5116d0a5fe6ea603b3d508bd3901fcb3e6941b56cd8efe2e5ac7b16456aa",
-        "verified": true
-      },
-      {
-        "path": "anniversary-2025/manifest.json",
-        "size_bytes": 713,
-        "sha256": "c365dc5c37f8a36b991b97397eb8906f51cbfd3450c2046d0408ffd192b2e0fd",
-        "verified": true
-      },
-      {
-        "path": "anniversary-2025/playback-capability-and-targeted-search.json",
-        "size_bytes": 1010,
-        "sha256": "ec7ab1dba9ba01e248c0a64ed10d011cae51e5e7a0f55d0f777dd4a54124853a",
-        "verified": true
-      },
-      {
-        "path": "anniversary-2025/public-embed-result.json",
-        "size_bytes": 980,
-        "sha256": "ebeffe162d2094308cb8a58057d27c7b90328955360f635093df8fb5334676b8",
-        "verified": true
-      },
-      {
-        "path": "anniversary-2025/replay.jpg",
-        "size_bytes": 39667,
-        "sha256": "50140019b810b626a02ddeff3ec8d8524d9d81c061db602a02a5c3e8e8f740d8",
-        "verified": true
-      },
-      {
-        "path": "anniversary-2025/sunset-identity.json",
-        "size_bytes": 1258,
-        "sha256": "ebcc9df26659708d8df3c8bf41b96d59a6d6083bcb4eb76db167cfe7e4218279",
-        "verified": true
-      },
-      {
-        "path": "anniversary-2025/sunset.jpg",
-        "size_bytes": 136046,
-        "sha256": "b8fe28234b70eb954229d87c9c40d88c4f76a4c5ebdbaa01f7ec33f014f8d059",
-        "verified": true
-      },
-      {
-        "path": "anniversary-2025/witch.jpg",
-        "size_bytes": 124372,
-        "sha256": "c45cb7c282fecc7c9abbff6ac263ff9909904859421338cb282826d38230e927",
-        "verified": true
+        "path": "expanded-events-20261104/public-ed/1.jpg",
+        "size_bytes": 33651,
+        "sha256": "7f01a2dbf2b307a1a837086e7d9cbe9aae4856e0c3935f299a80913e1734faf8",
+        "dimensions": [
+          637,
+          358
+        ]
       }
     ],
-    "verified_manifest_entry_count": 16,
-    "raw_embed_result_delivered": true,
-    "raw_embed_result_bytes": 980,
-    "raw_embed_result_sha256": "ebeffe162d2094308cb8a58057d27c7b90328955360f635093df8fb5334676b8",
-    "current_missing_declared_manifest_entries": [],
-    "current_content_gap_count": 0,
-    "historical_missing_file_stage_and_receipts_preserved": true,
-    "historical_content_gap_verification": {
+    "bounded_top_level_manifest_entries_verified": [
+      "expanded-events-20261104/assessment.zh.md",
+      "expanded-events-20261104/clip-0.jpg",
+      "expanded-events-20261104/clip-1.jpg",
+      "expanded-events-20261104/clip-2.jpg",
+      "expanded-events-20261104/clip-3.jpg",
+      "expanded-events-20261104/clip-links.json",
+      "expanded-events-20261104/clip-manifest.json",
+      "expanded-events-20261104/hecoos-0.png",
+      "expanded-events-20261104/hecoos-1.png",
+      "expanded-events-20261104/hecoos-2.png",
+      "expanded-events-20261104/manifest.json",
+      "expanded-events-20261104/provenance.json",
+      "expanded-events-20261104/search-scope.json"
+    ],
+    "bounded_top_level_manifest_entry_count": 13,
+    "full_archive_tree_manifest_file_count": 75,
+    "previous_completeness_correction_reverified": {
       "model_stages": 0,
       "models": 0,
-      "research_commits": 5,
-      "previous_source_files_unchanged": 52,
+      "research_commits": 6,
+      "previous_source_files_unchanged": 53,
       "new_text_paths": [
-        "anniversary-2025/post-event-dynamics-1921.json"
+        "anniversary-2025/manifest-completeness-correction.json",
+        "anniversary-2025/public-embed-result.json"
       ],
-      "new_text_bytes": 1556,
       "new_frame_or_image_count": 0,
-      "recorded_postevent_queries": 12,
-      "recorded_new_multiview_candidate_count": 0,
-      "exact_post_identity_established": false,
-      "previous_content_verification": {
+      "declared_manifest_entries_verified": [
+        {
+          "path": "anniversary-2025/assessment.zh.md",
+          "size_bytes": 1681,
+          "sha256": "6a15d21a7d3e81b3e861042769c27ec9c0a03f96548a93acd8a11801819e81aa",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/continuation-1907.zh.md",
+          "size_bytes": 989,
+          "sha256": "8d5af06b5bd248664aa964e627841a331be77f67c6c8a269be079ac697d4b75d",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/continuation-1909.json",
+          "size_bytes": 1448,
+          "sha256": "e92b106679fa873a9764129114f27bfc3641a7bfae53779fb86c6f2276018305",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/cowboy-identity.json",
+          "size_bytes": 1189,
+          "sha256": "28ef96151b95f298091c7f88f99817c849dc443235896f415b6cef9132f73173",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/cowboy.jpg",
+          "size_bytes": 119161,
+          "sha256": "d2e831057ee36ed903c08719d83764db8ef36ad1a2f1bf07eb33e0eecb6ee383",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/fan-0802.jpg",
+          "size_bytes": 70882,
+          "sha256": "451ed76a6784f8cb50aa8e206e048c73a453af173c59d42a24c0c8423b95d548",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/goddess.jpg",
+          "size_bytes": 90274,
+          "sha256": "bbeb40fd4f267ba9322693e7e6cc2e8a959bc63e802fa57559d1075c78c7aaa1",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/identity.json",
+          "size_bytes": 2598,
+          "sha256": "b09edc79c8b1bf5234f829feff8ed55aba8f2304fa643b1ea54953c3bd73079e",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/manifest-v2.json",
+          "size_bytes": 1189,
+          "sha256": "d35c5116d0a5fe6ea603b3d508bd3901fcb3e6941b56cd8efe2e5ac7b16456aa",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/manifest.json",
+          "size_bytes": 713,
+          "sha256": "c365dc5c37f8a36b991b97397eb8906f51cbfd3450c2046d0408ffd192b2e0fd",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/playback-capability-and-targeted-search.json",
+          "size_bytes": 1010,
+          "sha256": "ec7ab1dba9ba01e248c0a64ed10d011cae51e5e7a0f55d0f777dd4a54124853a",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/public-embed-result.json",
+          "size_bytes": 980,
+          "sha256": "ebeffe162d2094308cb8a58057d27c7b90328955360f635093df8fb5334676b8",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/replay.jpg",
+          "size_bytes": 39667,
+          "sha256": "50140019b810b626a02ddeff3ec8d8524d9d81c061db602a02a5c3e8e8f740d8",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/sunset-identity.json",
+          "size_bytes": 1258,
+          "sha256": "ebcc9df26659708d8df3c8bf41b96d59a6d6083bcb4eb76db167cfe7e4218279",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/sunset.jpg",
+          "size_bytes": 136046,
+          "sha256": "b8fe28234b70eb954229d87c9c40d88c4f76a4c5ebdbaa01f7ec33f014f8d059",
+          "verified": true
+        },
+        {
+          "path": "anniversary-2025/witch.jpg",
+          "size_bytes": 124372,
+          "sha256": "c45cb7c282fecc7c9abbff6ac263ff9909904859421338cb282826d38230e927",
+          "verified": true
+        }
+      ],
+      "verified_manifest_entry_count": 16,
+      "raw_embed_result_delivered": true,
+      "raw_embed_result_bytes": 980,
+      "raw_embed_result_sha256": "ebeffe162d2094308cb8a58057d27c7b90328955360f635093df8fb5334676b8",
+      "current_missing_declared_manifest_entries": [],
+      "current_content_gap_count": 0,
+      "historical_missing_file_stage_and_receipts_preserved": true,
+      "historical_content_gap_verification": {
         "model_stages": 0,
         "models": 0,
-        "research_commits": 4,
-        "previous_source_files_unchanged": 50,
+        "research_commits": 5,
+        "previous_source_files_unchanged": 52,
         "new_text_paths": [
-          "anniversary-2025/frozen-manifest-1910.json",
-          "anniversary-2025/playback-capability-and-targeted-search.json"
+          "anniversary-2025/post-event-dynamics-1921.json"
         ],
+        "new_text_bytes": 1556,
         "new_frame_or_image_count": 0,
-        "new_recorded_queries": 3,
-        "present_manifest_entries_verified": 15,
+        "recorded_postevent_queries": 12,
+        "recorded_new_multiview_candidate_count": 0,
+        "exact_post_identity_established": false,
+        "previous_content_verification": {
+          "model_stages": 0,
+          "models": 0,
+          "research_commits": 4,
+          "previous_source_files_unchanged": 50,
+          "new_text_paths": [
+            "anniversary-2025/frozen-manifest-1910.json",
+            "anniversary-2025/playback-capability-and-targeted-search.json"
+          ],
+          "new_frame_or_image_count": 0,
+          "new_recorded_queries": 3,
+          "present_manifest_entries_verified": 15,
+          "missing_declared_manifest_entries": [
+            {
+              "path": "anniversary-2025/public-embed-result.json",
+              "declared_bytes": 980,
+              "declared_sha256": "ebeffe162d2094308cb8a58057d27c7b90328955360f635093df8fb5334676b8",
+              "status": "absent from supplied frozen Git tree; not delivered"
+            }
+          ],
+          "content_gap_count": 1,
+          "content_gap_not_a_transfer_or_git_integrity_failure": true,
+          "raw_embed_result_delivered": false,
+          "playback_summary_delivered": true,
+          "prior_content_verification": {
+            "model_stages": 0,
+            "models": 0,
+            "research_commits": 3,
+            "previous_source_files_unchanged": 30,
+            "new_source_files": [
+              "anniversary-2025/LIMITS.zh.md",
+              "anniversary-2025/assessment.zh.md",
+              "anniversary-2025/continuation-1907.zh.md",
+              "anniversary-2025/continuation-1909.json",
+              "anniversary-2025/cowboy-identity.json",
+              "anniversary-2025/cowboy.jpg",
+              "anniversary-2025/fan-0802.jpg",
+              "anniversary-2025/frozen-manifest-1909.json",
+              "anniversary-2025/goddess.jpg",
+              "anniversary-2025/identity.json",
+              "anniversary-2025/independent/sunset-evidence.json",
+              "anniversary-2025/independent/sunset-review.zh.md",
+              "anniversary-2025/independent/witch-limited-screening.json",
+              "anniversary-2025/independent/witch-limited-screening.zh.md",
+              "anniversary-2025/manifest-v2.json",
+              "anniversary-2025/manifest.json",
+              "anniversary-2025/replay.jpg",
+              "anniversary-2025/sunset-identity.json",
+              "anniversary-2025/sunset.jpg",
+              "anniversary-2025/witch.jpg"
+            ],
+            "new_public_covers": 6,
+            "new_cover_bytes": 580402,
+            "frozen_manifest_entries_verified": 14,
+            "images": [
+              {
+                "path": "anniversary-2025/cowboy.jpg",
+                "bytes": 119161,
+                "sha256": "d2e831057ee36ed903c08719d83764db8ef36ad1a2f1bf07eb33e0eecb6ee383",
+                "dimensions": [
+                  1120,
+                  630
+                ],
+                "format": "JPEG"
+              },
+              {
+                "path": "anniversary-2025/fan-0802.jpg",
+                "bytes": 70882,
+                "sha256": "451ed76a6784f8cb50aa8e206e048c73a453af173c59d42a24c0c8423b95d548",
+                "dimensions": [
+                  1120,
+                  630
+                ],
+                "format": "JPEG"
+              },
+              {
+                "path": "anniversary-2025/goddess.jpg",
+                "bytes": 90274,
+                "sha256": "bbeb40fd4f267ba9322693e7e6cc2e8a959bc63e802fa57559d1075c78c7aaa1",
+                "dimensions": [
+                  1120,
+                  630
+                ],
+                "format": "JPEG"
+              },
+              {
+                "path": "anniversary-2025/replay.jpg",
+                "bytes": 39667,
+                "sha256": "50140019b810b626a02ddeff3ec8d8524d9d81c061db602a02a5c3e8e8f740d8",
+                "dimensions": [
+                  704,
+                  396
+                ],
+                "format": "JPEG"
+              },
+              {
+                "path": "anniversary-2025/sunset.jpg",
+                "bytes": 136046,
+                "sha256": "b8fe28234b70eb954229d87c9c40d88c4f76a4c5ebdbaa01f7ec33f014f8d059",
+                "dimensions": [
+                  1120,
+                  630
+                ],
+                "format": "JPEG"
+              },
+              {
+                "path": "anniversary-2025/witch.jpg",
+                "bytes": 124372,
+                "sha256": "c45cb7c282fecc7c9abbff6ac263ff9909904859421338cb282826d38230e927",
+                "dimensions": [
+                  1120,
+                  630
+                ],
+                "format": "JPEG"
+              }
+            ],
+            "new_recorded_queries": 9,
+            "limited_screening_evidence": [
+              {
+                "path": "anniversary-2025/independent/sunset-evidence.json",
+                "packaged_cover_hash_verified": true,
+                "other_referenced_files_not_in_this_package": {
+                  "desert-r08-library-staging/MetaXingtong-Desert-Camp-R08-Source-Render-Direct50-Comparison.jpg": "bd425e9ae8e2c315bf686227cdacf3caad9f28487b987589b31d35aa4115da6d",
+                  "desert-r08-library-staging/MetaXingtong-Desert-Camp-R08-Review-Not-Accepted.md": "c4ccaeea6a067fa0e266b341f9398728836dc05b9f8bf7e9c231012282a4fb0b"
+                }
+              },
+              {
+                "path": "anniversary-2025/independent/witch-limited-screening.json",
+                "packaged_cover_hash_verified": true,
+                "other_referenced_files_not_in_this_package": {
+                  "independent-observatory-dedup-20261104/Match_B_crop.png": "c2cadbb98048bd40728b3b8d69a832a6054d7ea9a0608226de000473ed7348d9",
+                  "observatory-candidate-20261104/sources/report/14.png": "e1ea768ef1e9d6be532d6c226c7146659964f648e5944b8a89b20ea5b1ed4e01"
+                }
+              }
+            ],
+            "prior_content_verification": {
+              "model_stages": 0,
+              "models": 0,
+              "research_commits": 2,
+              "previous_source_files_unchanged": 11,
+              "new_source_files": [
+                "continued-screening/README.md",
+                "continued-screening/corridor/search-scope.json",
+                "continued-screening/events/00.jpg",
+                "continued-screening/events/01.jpg",
+                "continued-screening/events/02.jpg",
+                "continued-screening/events/03.jpg",
+                "continued-screening/events/04.jpg",
+                "continued-screening/events/05.jpg",
+                "continued-screening/events/06.jpg",
+                "continued-screening/events/07.jpg",
+                "continued-screening/events/08.jpg",
+                "continued-screening/events/assessment.zh.md",
+                "continued-screening/events/contact.jpg",
+                "continued-screening/events/images.json",
+                "continued-screening/events/thumbnail-manifest.json",
+                "continued-screening/holiday/continuation-1828.json",
+                "continued-screening/holiday/cv27376615-supported-fetch.json",
+                "continued-screening/holiday/official-2023-birthday-poster.jpg",
+                "continued-screening/holiday/search-scope.json"
+              ],
+              "manifest_image_entries_verified": 16,
+              "preserved_prior_source_images": 6,
+              "new_promotional_thumbnails": 9,
+              "new_single_angle_poster": 1,
+              "images": [
+                {
+                  "path": "hotel-screening/031.jpg",
+                  "bytes": 518615,
+                  "sha256": "fa2668b671bbafee7aac625b28ca1e4632304960cad09ef903ffe4d5a60af01e",
+                  "dimensions": [
+                    1928,
+                    1080
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "hotel-screening/032.jpg",
+                  "bytes": 511980,
+                  "sha256": "9b5dd51e40e4846b8af7f12606b4accc1b66b37e4344f729d74515d2b8da197d",
+                  "dimensions": [
+                    1928,
+                    1080
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "hotel-screening/033.jpg",
+                  "bytes": 518916,
+                  "sha256": "2e907078a7ad0ec00c492c1a6dc5f6d8f7987ce6851da543abb762a337b40f7f",
+                  "dimensions": [
+                    1928,
+                    1080
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "hotel-screening/090.jpg",
+                  "bytes": 345657,
+                  "sha256": "c0681cc931cc6ca0a8498eea971d5cc2ddda4bcf6cdf361193726f9f100ab900",
+                  "dimensions": [
+                    1920,
+                    1080
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "hotel-screening/097.jpg",
+                  "bytes": 62669,
+                  "sha256": "b2658725184f40e7cf690ceb436a469846c753827dba9931ee57e1e5839e6b4a",
+                  "dimensions": [
+                    1280,
+                    724
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "moonisland/yanwuxie-interview-still.png",
+                  "bytes": 450425,
+                  "sha256": "ed37092ff2934a03e1bfbf7a78d336c2c618fb5a5c9bebc77b30e48ecb3b8c1e",
+                  "dimensions": [
+                    864,
+                    478
+                  ],
+                  "format": "PNG"
+                },
+                {
+                  "path": "continued-screening/events/00.jpg",
+                  "bytes": 16992,
+                  "sha256": "c74ef6aedef9a2d57bfdd85981fc20aef733c275a6fcf7f8f27c0944c9f3fb66",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "continued-screening/events/01.jpg",
+                  "bytes": 18218,
+                  "sha256": "e7673a87fd71274063d9c5ba690c5c68e5c7bdae8a042777439fe0f1f36ed6c5",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "continued-screening/events/02.jpg",
+                  "bytes": 14824,
+                  "sha256": "ecb66450490a84432505c28ed805c8ff7e57a80abbe89c5bd76d25414bbd27ec",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "continued-screening/events/03.jpg",
+                  "bytes": 12671,
+                  "sha256": "46f7f769d204a56a7acbf3578a07d8316f691e81bb35df916bc39da3fa0df879",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "continued-screening/events/04.jpg",
+                  "bytes": 16999,
+                  "sha256": "9e2820867f9bb75c811167c62473a994d79dc288c9bf53ccaa43a86a4aabc8a7",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "continued-screening/events/05.jpg",
+                  "bytes": 17525,
+                  "sha256": "af01b3753eefa2df6ef8c90c36819377e719e0af23f32aa14a6c8140a10a7e4f",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "JPEG"
+                },
+                {
+                  "path": "continued-screening/events/06.jpg",
+                  "bytes": 87240,
+                  "sha256": "baf4d1ed407ac9acd5116b5fb16abe09591677dead340ed936cf0d1f57e1c39d",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "PNG"
+                },
+                {
+                  "path": "continued-screening/events/07.jpg",
+                  "bytes": 66786,
+                  "sha256": "c3ad2f3fa163d0befb2052f51489e85a181652520996d61f6a7813186a7e7f0d",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "PNG"
+                },
+                {
+                  "path": "continued-screening/events/08.jpg",
+                  "bytes": 107304,
+                  "sha256": "5d0ed4bc541069ebe77f6308c2b1cb65054a45b4701e46d9bba617edc78ea516",
+                  "dimensions": [
+                    264,
+                    264
+                  ],
+                  "format": "PNG"
+                },
+                {
+                  "path": "continued-screening/holiday/official-2023-birthday-poster.jpg",
+                  "bytes": 50103,
+                  "sha256": "effa7a016eac9fbefd23d3f3a392591eb81fe354fd753bbb14b6caa6f63a6457",
+                  "dimensions": [
+                    314,
+                    560
+                  ],
+                  "format": "JPEG"
+                }
+              ],
+              "derived_contact_image": {
+                "path": "continued-screening/events/contact.jpg",
+                "bytes": 118938,
+                "sha256": "62ef56f0a620d0280993a7968bd07399d4a37c615241c62c9c1a3b96f7f9fdb2",
+                "dimensions": [
+                  840,
+                  900
+                ],
+                "format": "JPEG",
+                "derived_review_image_not_new_viewpoint": true
+              },
+              "producer_recorded_query_counts": {
+                "corridor": 8,
+                "holiday": 13,
+                "additional_followup": 10
+              },
+              "producer_recorded_qualified_new_multiview_candidates": 0,
+              "source_claims_independently_researched_by_archive_worker": false,
+              "native_video_frames": false,
+              "new_scene_acceptance": false
+            },
+            "native_video_frames": false,
+            "new_scene_acceptance": false,
+            "producer_recorded_qualified_new_multiview_candidate": false,
+            "source_claims_independently_researched_by_archive_worker": false
+          },
+          "native_video_frames": false,
+          "new_scene_acceptance": false,
+          "source_claims_independently_researched_by_archive_worker": false
+        },
         "missing_declared_manifest_entries": [
           {
             "path": "anniversary-2025/public-embed-result.json",
@@ -2878,358 +4182,21 @@
         "content_gap_count": 1,
         "content_gap_not_a_transfer_or_git_integrity_failure": true,
         "raw_embed_result_delivered": false,
-        "playback_summary_delivered": true,
-        "prior_content_verification": {
-          "model_stages": 0,
-          "models": 0,
-          "research_commits": 3,
-          "previous_source_files_unchanged": 30,
-          "new_source_files": [
-            "anniversary-2025/LIMITS.zh.md",
-            "anniversary-2025/assessment.zh.md",
-            "anniversary-2025/continuation-1907.zh.md",
-            "anniversary-2025/continuation-1909.json",
-            "anniversary-2025/cowboy-identity.json",
-            "anniversary-2025/cowboy.jpg",
-            "anniversary-2025/fan-0802.jpg",
-            "anniversary-2025/frozen-manifest-1909.json",
-            "anniversary-2025/goddess.jpg",
-            "anniversary-2025/identity.json",
-            "anniversary-2025/independent/sunset-evidence.json",
-            "anniversary-2025/independent/sunset-review.zh.md",
-            "anniversary-2025/independent/witch-limited-screening.json",
-            "anniversary-2025/independent/witch-limited-screening.zh.md",
-            "anniversary-2025/manifest-v2.json",
-            "anniversary-2025/manifest.json",
-            "anniversary-2025/replay.jpg",
-            "anniversary-2025/sunset-identity.json",
-            "anniversary-2025/sunset.jpg",
-            "anniversary-2025/witch.jpg"
-          ],
-          "new_public_covers": 6,
-          "new_cover_bytes": 580402,
-          "frozen_manifest_entries_verified": 14,
-          "images": [
-            {
-              "path": "anniversary-2025/cowboy.jpg",
-              "bytes": 119161,
-              "sha256": "d2e831057ee36ed903c08719d83764db8ef36ad1a2f1bf07eb33e0eecb6ee383",
-              "dimensions": [
-                1120,
-                630
-              ],
-              "format": "JPEG"
-            },
-            {
-              "path": "anniversary-2025/fan-0802.jpg",
-              "bytes": 70882,
-              "sha256": "451ed76a6784f8cb50aa8e206e048c73a453af173c59d42a24c0c8423b95d548",
-              "dimensions": [
-                1120,
-                630
-              ],
-              "format": "JPEG"
-            },
-            {
-              "path": "anniversary-2025/goddess.jpg",
-              "bytes": 90274,
-              "sha256": "bbeb40fd4f267ba9322693e7e6cc2e8a959bc63e802fa57559d1075c78c7aaa1",
-              "dimensions": [
-                1120,
-                630
-              ],
-              "format": "JPEG"
-            },
-            {
-              "path": "anniversary-2025/replay.jpg",
-              "bytes": 39667,
-              "sha256": "50140019b810b626a02ddeff3ec8d8524d9d81c061db602a02a5c3e8e8f740d8",
-              "dimensions": [
-                704,
-                396
-              ],
-              "format": "JPEG"
-            },
-            {
-              "path": "anniversary-2025/sunset.jpg",
-              "bytes": 136046,
-              "sha256": "b8fe28234b70eb954229d87c9c40d88c4f76a4c5ebdbaa01f7ec33f014f8d059",
-              "dimensions": [
-                1120,
-                630
-              ],
-              "format": "JPEG"
-            },
-            {
-              "path": "anniversary-2025/witch.jpg",
-              "bytes": 124372,
-              "sha256": "c45cb7c282fecc7c9abbff6ac263ff9909904859421338cb282826d38230e927",
-              "dimensions": [
-                1120,
-                630
-              ],
-              "format": "JPEG"
-            }
-          ],
-          "new_recorded_queries": 9,
-          "limited_screening_evidence": [
-            {
-              "path": "anniversary-2025/independent/sunset-evidence.json",
-              "packaged_cover_hash_verified": true,
-              "other_referenced_files_not_in_this_package": {
-                "desert-r08-library-staging/MetaXingtong-Desert-Camp-R08-Source-Render-Direct50-Comparison.jpg": "bd425e9ae8e2c315bf686227cdacf3caad9f28487b987589b31d35aa4115da6d",
-                "desert-r08-library-staging/MetaXingtong-Desert-Camp-R08-Review-Not-Accepted.md": "c4ccaeea6a067fa0e266b341f9398728836dc05b9f8bf7e9c231012282a4fb0b"
-              }
-            },
-            {
-              "path": "anniversary-2025/independent/witch-limited-screening.json",
-              "packaged_cover_hash_verified": true,
-              "other_referenced_files_not_in_this_package": {
-                "independent-observatory-dedup-20261104/Match_B_crop.png": "c2cadbb98048bd40728b3b8d69a832a6054d7ea9a0608226de000473ed7348d9",
-                "observatory-candidate-20261104/sources/report/14.png": "e1ea768ef1e9d6be532d6c226c7146659964f648e5944b8a89b20ea5b1ed4e01"
-              }
-            }
-          ],
-          "prior_content_verification": {
-            "model_stages": 0,
-            "models": 0,
-            "research_commits": 2,
-            "previous_source_files_unchanged": 11,
-            "new_source_files": [
-              "continued-screening/README.md",
-              "continued-screening/corridor/search-scope.json",
-              "continued-screening/events/00.jpg",
-              "continued-screening/events/01.jpg",
-              "continued-screening/events/02.jpg",
-              "continued-screening/events/03.jpg",
-              "continued-screening/events/04.jpg",
-              "continued-screening/events/05.jpg",
-              "continued-screening/events/06.jpg",
-              "continued-screening/events/07.jpg",
-              "continued-screening/events/08.jpg",
-              "continued-screening/events/assessment.zh.md",
-              "continued-screening/events/contact.jpg",
-              "continued-screening/events/images.json",
-              "continued-screening/events/thumbnail-manifest.json",
-              "continued-screening/holiday/continuation-1828.json",
-              "continued-screening/holiday/cv27376615-supported-fetch.json",
-              "continued-screening/holiday/official-2023-birthday-poster.jpg",
-              "continued-screening/holiday/search-scope.json"
-            ],
-            "manifest_image_entries_verified": 16,
-            "preserved_prior_source_images": 6,
-            "new_promotional_thumbnails": 9,
-            "new_single_angle_poster": 1,
-            "images": [
-              {
-                "path": "hotel-screening/031.jpg",
-                "bytes": 518615,
-                "sha256": "fa2668b671bbafee7aac625b28ca1e4632304960cad09ef903ffe4d5a60af01e",
-                "dimensions": [
-                  1928,
-                  1080
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "hotel-screening/032.jpg",
-                "bytes": 511980,
-                "sha256": "9b5dd51e40e4846b8af7f12606b4accc1b66b37e4344f729d74515d2b8da197d",
-                "dimensions": [
-                  1928,
-                  1080
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "hotel-screening/033.jpg",
-                "bytes": 518916,
-                "sha256": "2e907078a7ad0ec00c492c1a6dc5f6d8f7987ce6851da543abb762a337b40f7f",
-                "dimensions": [
-                  1928,
-                  1080
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "hotel-screening/090.jpg",
-                "bytes": 345657,
-                "sha256": "c0681cc931cc6ca0a8498eea971d5cc2ddda4bcf6cdf361193726f9f100ab900",
-                "dimensions": [
-                  1920,
-                  1080
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "hotel-screening/097.jpg",
-                "bytes": 62669,
-                "sha256": "b2658725184f40e7cf690ceb436a469846c753827dba9931ee57e1e5839e6b4a",
-                "dimensions": [
-                  1280,
-                  724
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "moonisland/yanwuxie-interview-still.png",
-                "bytes": 450425,
-                "sha256": "ed37092ff2934a03e1bfbf7a78d336c2c618fb5a5c9bebc77b30e48ecb3b8c1e",
-                "dimensions": [
-                  864,
-                  478
-                ],
-                "format": "PNG"
-              },
-              {
-                "path": "continued-screening/events/00.jpg",
-                "bytes": 16992,
-                "sha256": "c74ef6aedef9a2d57bfdd85981fc20aef733c275a6fcf7f8f27c0944c9f3fb66",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "continued-screening/events/01.jpg",
-                "bytes": 18218,
-                "sha256": "e7673a87fd71274063d9c5ba690c5c68e5c7bdae8a042777439fe0f1f36ed6c5",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "continued-screening/events/02.jpg",
-                "bytes": 14824,
-                "sha256": "ecb66450490a84432505c28ed805c8ff7e57a80abbe89c5bd76d25414bbd27ec",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "continued-screening/events/03.jpg",
-                "bytes": 12671,
-                "sha256": "46f7f769d204a56a7acbf3578a07d8316f691e81bb35df916bc39da3fa0df879",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "continued-screening/events/04.jpg",
-                "bytes": 16999,
-                "sha256": "9e2820867f9bb75c811167c62473a994d79dc288c9bf53ccaa43a86a4aabc8a7",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "continued-screening/events/05.jpg",
-                "bytes": 17525,
-                "sha256": "af01b3753eefa2df6ef8c90c36819377e719e0af23f32aa14a6c8140a10a7e4f",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "JPEG"
-              },
-              {
-                "path": "continued-screening/events/06.jpg",
-                "bytes": 87240,
-                "sha256": "baf4d1ed407ac9acd5116b5fb16abe09591677dead340ed936cf0d1f57e1c39d",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "PNG"
-              },
-              {
-                "path": "continued-screening/events/07.jpg",
-                "bytes": 66786,
-                "sha256": "c3ad2f3fa163d0befb2052f51489e85a181652520996d61f6a7813186a7e7f0d",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "PNG"
-              },
-              {
-                "path": "continued-screening/events/08.jpg",
-                "bytes": 107304,
-                "sha256": "5d0ed4bc541069ebe77f6308c2b1cb65054a45b4701e46d9bba617edc78ea516",
-                "dimensions": [
-                  264,
-                  264
-                ],
-                "format": "PNG"
-              },
-              {
-                "path": "continued-screening/holiday/official-2023-birthday-poster.jpg",
-                "bytes": 50103,
-                "sha256": "effa7a016eac9fbefd23d3f3a392591eb81fe354fd753bbb14b6caa6f63a6457",
-                "dimensions": [
-                  314,
-                  560
-                ],
-                "format": "JPEG"
-              }
-            ],
-            "derived_contact_image": {
-              "path": "continued-screening/events/contact.jpg",
-              "bytes": 118938,
-              "sha256": "62ef56f0a620d0280993a7968bd07399d4a37c615241c62c9c1a3b96f7f9fdb2",
-              "dimensions": [
-                840,
-                900
-              ],
-              "format": "JPEG",
-              "derived_review_image_not_new_viewpoint": true
-            },
-            "producer_recorded_query_counts": {
-              "corridor": 8,
-              "holiday": 13,
-              "additional_followup": 10
-            },
-            "producer_recorded_qualified_new_multiview_candidates": 0,
-            "source_claims_independently_researched_by_archive_worker": false,
-            "native_video_frames": false,
-            "new_scene_acceptance": false
-          },
-          "native_video_frames": false,
-          "new_scene_acceptance": false,
-          "producer_recorded_qualified_new_multiview_candidate": false,
-          "source_claims_independently_researched_by_archive_worker": false
-        },
         "native_video_frames": false,
         "new_scene_acceptance": false,
         "source_claims_independently_researched_by_archive_worker": false
       },
-      "missing_declared_manifest_entries": [
-        {
-          "path": "anniversary-2025/public-embed-result.json",
-          "declared_bytes": 980,
-          "declared_sha256": "ebeffe162d2094308cb8a58057d27c7b90328955360f635093df8fb5334676b8",
-          "status": "absent from supplied frozen Git tree; not delivered"
-        }
-      ],
-      "content_gap_count": 1,
-      "content_gap_not_a_transfer_or_git_integrity_failure": true,
-      "raw_embed_result_delivered": false,
+      "stored_embed_response_reports_unsupported_html5": true,
+      "external_playback_retried_by_archive_worker": false,
       "native_video_frames": false,
       "new_scene_acceptance": false,
       "source_claims_independently_researched_by_archive_worker": false
     },
-    "stored_embed_response_reports_unsupported_html5": true,
-    "external_playback_retried_by_archive_worker": false,
+    "hecoos_same_scene_pixel_comparison_completed": false,
+    "hecoos_same_scene_identity_confirmed": false,
+    "FOREVER_publication_date_not_performance_date": true,
     "native_video_frames": false,
+    "new_qualified_multiview_candidates": 0,
     "new_scene_acceptance": false,
     "source_claims_independently_researched_by_archive_worker": false
   }
