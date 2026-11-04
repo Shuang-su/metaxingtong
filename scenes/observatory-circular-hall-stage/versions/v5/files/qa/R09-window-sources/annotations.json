@@ -1,0 +1,815 @@
+{
+  "method": "Manual inspection of source pixels only, no model/render consulted. Original x,y coordinates. Bounding boxes enclose visible fragments, not inferred full objects. Subjective errors are not calibrated probabilities. Center for mostly visible windows is bbox midpoint, not 3D geometric center. No cross-image instance correspondence asserted.",
+  "limits": [
+    "All sources are public report screenshots 1192x671, not native decoded video; within-video time unknown.",
+    "Per-image counts are lower bounds, cannot be added across images or extrapolated around full circumference.",
+    "D1/D2 same door assembly, decorative arch is not extra window.",
+    "No metric scale from characters, no hidden symmetric completion, no mirror duplication."
+  ],
+  "images": [
+    {
+      "id": "13",
+      "source_path": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/13.png",
+      "sha256": "7aae6650cb748b947d85fa1027752bfecf0ebf930744ce2f126a8ba626d9eab1",
+      "size": [
+        1192,
+        671
+      ],
+      "video_time": null,
+      "visible_count_lower_bounds": {
+        "windows": 4,
+        "window_whole_or_mostly": 0,
+        "rib_support_groups": 5,
+        "door_groups": 1
+      },
+      "objects": [
+        {
+          "id": "W1",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            0,
+            0,
+            99,
+            213
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            49.5,
+            106.5
+          ],
+          "visibility": "partial",
+          "subjective_error_px": 5,
+          "notes": "左及顶部裁切，亮色窗身+圆弧底明确；全窗中心未知。"
+        },
+        {
+          "id": "W2",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            602,
+            0,
+            679,
+            175
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            640.5,
+            87.5
+          ],
+          "visibility": "partial",
+          "subjective_error_px": 5,
+          "notes": "顶部裁切，暗窗身及下圆弧明确。"
+        },
+        {
+          "id": "W3",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            761,
+            0,
+            835,
+            183
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            798.0,
+            91.5
+          ],
+          "visibility": "partial",
+          "subjective_error_px": 5,
+          "notes": "顶部裁切，底部亮反射不另算窗。"
+        },
+        {
+          "id": "W4",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            934,
+            0,
+            1035,
+            194
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            984.5,
+            97.0
+          ],
+          "visibility": "partial",
+          "subjective_error_px": 5,
+          "notes": "顶部裁切，窗内装饰圆和下端同属一窗。"
+        },
+        {
+          "id": "D1",
+          "kind": "main_door_visible_opening",
+          "visible_bbox_xyxy": [
+            275,
+            67,
+            388,
+            237
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            331.5,
+            152.0
+          ],
+          "visibility": "partial",
+          "subjective_error_px": 7,
+          "notes": "可见拱洞，外侧高框与内侧通行孔有层次，中心因下部栏杆/台阶不确定；不计窗。"
+        },
+        {
+          "id": "C1",
+          "kind": "ribbed_wall_support",
+          "visible_bbox_xyxy": [
+            104,
+            0,
+            208,
+            282
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            156.0,
+            141.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 7,
+          "notes": "一组竖肋墙柱，不把每根槽线计柱。"
+        },
+        {
+          "id": "C2",
+          "kind": "ribbed_wall_support",
+          "visible_bbox_xyxy": [
+            473,
+            0,
+            574,
+            245
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            523.5,
+            122.5
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 7,
+          "notes": "门右较宽暗色竖肋组，低对比。"
+        },
+        {
+          "id": "C3",
+          "kind": "ribbed_wall_support",
+          "visible_bbox_xyxy": [
+            692,
+            0,
+            738,
+            257
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            715.0,
+            128.5
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 5,
+          "notes": "W2/W3间。"
+        },
+        {
+          "id": "C4",
+          "kind": "ribbed_wall_support",
+          "visible_bbox_xyxy": [
+            844,
+            0,
+            909,
+            274
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            876.5,
+            137.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 6,
+          "notes": "W3/W4间。"
+        },
+        {
+          "id": "C5",
+          "kind": "ribbed_wall_support",
+          "visible_bbox_xyxy": [
+            1031,
+            0,
+            1127,
+            301
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            1079.0,
+            150.5
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 7,
+          "notes": "W4右侧组，边界斜。"
+        },
+        {
+          "id": "U1",
+          "kind": "unclassified_edge_fragment",
+          "visible_bbox_xyxy": [
+            1142,
+            0,
+            1191,
+            310
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            1166.5,
+            155.0
+          ],
+          "visibility": "ambiguous",
+          "subjective_error_px": 12,
+          "notes": "最右极窄暗亮片段，不足确认另一个完整窗或柱，不计下界。"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "source_path": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/14.png",
+      "sha256": "e1ea768ef1e9d6be532d6c226c7146659964f648e5944b8a89b20ea5b1ed4e01",
+      "size": [
+        1192,
+        671
+      ],
+      "video_time": null,
+      "visible_count_lower_bounds": {
+        "windows": 2,
+        "window_whole_or_mostly": 0,
+        "rib_support_groups": 2,
+        "door_groups": 1
+      },
+      "objects": [
+        {
+          "id": "W1",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            0,
+            0,
+            96,
+            349
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            48.0,
+            174.5
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 4,
+          "notes": "左与顶出画，窗底弧可见。"
+        },
+        {
+          "id": "W2",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            1090,
+            0,
+            1191,
+            348
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            1140.5,
+            174.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 4,
+          "notes": "右与顶出画，完整窗中心未知。"
+        },
+        {
+          "id": "D1",
+          "kind": "main_door_outer_high_arch",
+          "visible_bbox_xyxy": [
+            432,
+            0,
+            759,
+            430
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            595.5,
+            215.0
+          ],
+          "visibility": "cropped_and_occluded",
+          "subjective_error_px": 5,
+          "notes": "高外拱顶出画、人物及光束遮；与下面内拱不是两个门。"
+        },
+        {
+          "id": "D2",
+          "kind": "main_door_inner_portal",
+          "visible_bbox_xyxy": [
+            470,
+            95,
+            718,
+            425
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            594.0,
+            260.0
+          ],
+          "visibility": "occluded",
+          "subjective_error_px": 5,
+          "notes": "内侧深色拱顶约593,95；门底由人物/舞台遮挡。与D1属于同一门组。"
+        },
+        {
+          "id": "C1",
+          "kind": "ribbed_wall_support",
+          "visible_bbox_xyxy": [
+            173,
+            0,
+            240,
+            470
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            206.5,
+            235.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 4,
+          "notes": "左明确竖肋组。"
+        },
+        {
+          "id": "C2",
+          "kind": "ribbed_wall_support",
+          "visible_bbox_xyxy": [
+            943,
+            0,
+            1014,
+            483
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            978.5,
+            241.5
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 4,
+          "notes": "右明确竖肋组。"
+        },
+        {
+          "id": "U1",
+          "kind": "door_side_decorative_panel",
+          "visible_bbox_xyxy": [
+            240,
+            0,
+            431,
+            443
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            335.5,
+            221.5
+          ],
+          "visibility": "occluded",
+          "subjective_error_px": 6,
+          "notes": "门左圆纹线板，不是窗。"
+        },
+        {
+          "id": "U2",
+          "kind": "door_side_decorative_panel",
+          "visible_bbox_xyxy": [
+            760,
+            0,
+            944,
+            446
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            852.0,
+            223.0
+          ],
+          "visibility": "occluded",
+          "subjective_error_px": 6,
+          "notes": "门右圆纹线板，不是窗。"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "source_path": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/15.png",
+      "sha256": "5b3a7ea9130c46c867f5b337468156105b33803348901724943d9fc6706fcfca",
+      "size": [
+        1192,
+        671
+      ],
+      "video_time": null,
+      "visible_count_lower_bounds": {
+        "windows": 6,
+        "window_whole_or_mostly": 4,
+        "rib_support_groups": 2,
+        "door_groups": 1
+      },
+      "objects": [
+        {
+          "id": "W1",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            516,
+            421,
+            527,
+            519
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            521.5,
+            470.0
+          ],
+          "visibility": "narrow_oblique_fragment",
+          "subjective_error_px": 4,
+          "notes": "左侧压缩细片，窗头亮圆弧与长竖身仍可分辨。其完整二维形状中心不可靠。"
+        },
+        {
+          "id": "W2",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            532,
+            421,
+            552,
+            526
+          ],
+          "whole_object_center_xy": [
+            542,
+            474
+          ],
+          "visible_fragment_center_xy": [
+            542.0,
+            473.5
+          ],
+          "visibility": "mostly_visible",
+          "subjective_error_px": 3,
+          "notes": "完整头与长窗底可见，中心为轮廓bbox中心，不是三维中心投影。"
+        },
+        {
+          "id": "W3",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            563,
+            425,
+            600,
+            536
+          ],
+          "whole_object_center_xy": [
+            581.5,
+            480.5
+          ],
+          "visible_fragment_center_xy": [
+            581.5,
+            480.5
+          ],
+          "visibility": "mostly_visible",
+          "subjective_error_px": 3,
+          "notes": "门左最近清晰长窗。"
+        },
+        {
+          "id": "W4",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            760,
+            426,
+            793,
+            541
+          ],
+          "whole_object_center_xy": [
+            776.5,
+            483.5
+          ],
+          "visible_fragment_center_xy": [
+            776.5,
+            483.5
+          ],
+          "visibility": "mostly_visible",
+          "subjective_error_px": 3,
+          "notes": "门右最近长窗；斜纹/反射不是附加窗。"
+        },
+        {
+          "id": "W5",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            805,
+            422,
+            831,
+            536
+          ],
+          "whole_object_center_xy": [
+            818,
+            479
+          ],
+          "visible_fragment_center_xy": [
+            818.0,
+            479.0
+          ],
+          "visibility": "mostly_visible",
+          "subjective_error_px": 3,
+          "notes": "第二右窗。"
+        },
+        {
+          "id": "W6",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            837,
+            419,
+            848,
+            526
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            842.5,
+            472.5
+          ],
+          "visibility": "narrow_oblique_fragment",
+          "subjective_error_px": 4,
+          "notes": "最右狭长片可辨窗头及竖身，受侧边墙/支撑遮挡。"
+        },
+        {
+          "id": "D1",
+          "kind": "main_door_high_decorative_arch",
+          "visible_bbox_xyxy": [
+            632,
+            404,
+            719,
+            545
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            675.5,
+            474.5
+          ],
+          "visibility": "occluded",
+          "subjective_error_px": 4,
+          "notes": "高装饰拱+星饰；不另计窗；下缘被外洞口/前景拱遮。"
+        },
+        {
+          "id": "D2",
+          "kind": "main_door_opening_outer_frame",
+          "visible_bbox_xyxy": [
+            630,
+            446,
+            720,
+            541
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            675.0,
+            493.5
+          ],
+          "visibility": "occluded",
+          "subjective_error_px": 3,
+          "notes": "真正通行洞口深框，门脚不可见。与D1为同一门组。"
+        },
+        {
+          "id": "C1",
+          "kind": "door_left_wall_pilaster",
+          "visible_bbox_xyxy": [
+            605,
+            404,
+            634,
+            548
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            619.5,
+            476.0
+          ],
+          "visibility": "occluded",
+          "subjective_error_px": 4,
+          "notes": "中央门左饰星柱面，底被前拱/台基叠挡。"
+        },
+        {
+          "id": "C2",
+          "kind": "door_right_wall_pilaster",
+          "visible_bbox_xyxy": [
+            716,
+            404,
+            748,
+            550
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            732.0,
+            477.0
+          ],
+          "visibility": "occluded",
+          "subjective_error_px": 4,
+          "notes": "中央门右饰星柱面。"
+        },
+        {
+          "id": "C3",
+          "kind": "outer_left_wall_edge_support",
+          "visible_bbox_xyxy": [
+            497,
+            408,
+            512,
+            524
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            504.5,
+            466.0
+          ],
+          "visibility": "partial",
+          "subjective_error_px": 5,
+          "notes": "极侧深色墙边，是否独立柱不确；不算明确柱下界。"
+        },
+        {
+          "id": "C4",
+          "kind": "outer_right_wall_edge_support",
+          "visible_bbox_xyxy": [
+            846,
+            408,
+            861,
+            525
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            853.5,
+            466.5
+          ],
+          "visibility": "partial",
+          "subjective_error_px": 5,
+          "notes": "极侧边界与外撑分开，是否独立柱未知。"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "source_path": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/21.png",
+      "sha256": "63eb021f730f3803048fb899ddec923accfcd143b1fec9d7f3c8fb9e89f04bdd",
+      "size": [
+        1192,
+        671
+      ],
+      "video_time": null,
+      "visible_count_lower_bounds": {
+        "windows": 3,
+        "window_whole_or_mostly": 0,
+        "rib_support_groups": 4,
+        "door_groups": 0
+      },
+      "objects": [
+        {
+          "id": "W1",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            365,
+            0,
+            450,
+            72
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            407.5,
+            36.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 6,
+          "notes": "只见窗下端，头部在画外；亮窗底不视为镜像独立窗。"
+        },
+        {
+          "id": "W2",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            539,
+            0,
+            616,
+            69
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            577.5,
+            34.5
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 6,
+          "notes": "顶部裁切，暗窗身和圆弧底。"
+        },
+        {
+          "id": "W3",
+          "kind": "keyhole_long_window",
+          "visible_bbox_xyxy": [
+            712,
+            0,
+            793,
+            73
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            752.5,
+            36.5
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 6,
+          "notes": "顶部裁切，白亮下端。"
+        },
+        {
+          "id": "C1",
+          "kind": "wall_support",
+          "visible_bbox_xyxy": [
+            307,
+            0,
+            352,
+            136
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            329.5,
+            68.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 7,
+          "notes": "左窗左侧深粉柱组，上端画外。"
+        },
+        {
+          "id": "C2",
+          "kind": "wall_support",
+          "visible_bbox_xyxy": [
+            468,
+            0,
+            505,
+            143
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            486.5,
+            71.5
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 6,
+          "notes": "W1/W2间。"
+        },
+        {
+          "id": "C3",
+          "kind": "wall_support",
+          "visible_bbox_xyxy": [
+            644,
+            0,
+            684,
+            152
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            664.0,
+            76.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 6,
+          "notes": "W2/W3间。"
+        },
+        {
+          "id": "C4",
+          "kind": "wall_support",
+          "visible_bbox_xyxy": [
+            806,
+            0,
+            850,
+            162
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            828.0,
+            81.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 7,
+          "notes": "W3右侧。"
+        },
+        {
+          "id": "U1",
+          "kind": "left_unclassified_opening",
+          "visible_bbox_xyxy": [
+            0,
+            0,
+            213,
+            155
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            106.5,
+            77.5
+          ],
+          "visibility": "cropped_and_overlay",
+          "subjective_error_px": 15,
+          "notes": "左上疑开口/外景受字幕和裁切，不称主门或新增窗。"
+        },
+        {
+          "id": "U2",
+          "kind": "right_unclassified_opening",
+          "visible_bbox_xyxy": [
+            945,
+            0,
+            1157,
+            172
+          ],
+          "whole_object_center_xy": null,
+          "visible_fragment_center_xy": [
+            1051.0,
+            86.0
+          ],
+          "visibility": "cropped",
+          "subjective_error_px": 12,
+          "notes": "右上宽暗开口与外景，无法确认是主门还是其他开口；不计主门下界。"
+        }
+      ]
+    }
+  ]
+}

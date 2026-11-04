@@ -1,0 +1,496 @@
+{
+  "source": {
+    "path": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/15.png",
+    "sha256": "5b3a7ea9130c46c867f5b337468156105b33803348901724943d9fc6706fcfca",
+    "width": 1192,
+    "height": 671,
+    "type": "public report screenshot, not decoded native frame",
+    "video_time": null
+  },
+  "method": "Independent manual source-pixel inspection only. No model/render consulted. Coordinates original pixels x right y down; subjective errors are not statistically calibrated. Polyline samples describe visible image contours, not guaranteed known 3D point correspondences.",
+  "exclusions": [
+    "Planet silhouette and luminous orbit loops excluded from building geometry.",
+    "No scale from character.",
+    "No hidden symmetric completion.",
+    "Do not mix exterior decorative portal arch with entrance opening."
+  ],
+  "annotations": [
+    {
+      "id": "P01",
+      "semantic": "中央实体屋尖顶",
+      "kind": "point",
+      "pixels": [
+        674,
+        282
+      ],
+      "subjective_error_px": 3,
+      "notes": "尖端抗锯齿且背后星云，非大行星最高点。"
+    },
+    {
+      "id": "L01",
+      "semantic": "左侧屋面实体外轮廓",
+      "kind": "polyline",
+      "pixels": [
+        [
+          674,
+          282
+        ],
+        [
+          662,
+          313
+        ],
+        [
+          643,
+          328
+        ],
+        [
+          601,
+          333
+        ],
+        [
+          564,
+          344
+        ],
+        [
+          528,
+          359
+        ],
+        [
+          517,
+          367
+        ]
+      ],
+      "subjective_error_px": 5,
+      "notes": "屋尖至坡顶部分被装饰光环穿过；643,328附近实体/环线交叠，不宜作硬同点。"
+    },
+    {
+      "id": "L02",
+      "semantic": "右侧屋面实体外轮廓",
+      "kind": "polyline",
+      "pixels": [
+        [
+          674,
+          282
+        ],
+        [
+          687,
+          314
+        ],
+        [
+          706,
+          332
+        ],
+        [
+          747,
+          341
+        ],
+        [
+          792,
+          353
+        ],
+        [
+          833,
+          365
+        ],
+        [
+          845,
+          374
+        ]
+      ],
+      "subjective_error_px": 5,
+      "notes": "706,332附近白色绕环不是屋面，取暗色实体边，仍有歧义。"
+    },
+    {
+      "id": "L03",
+      "semantic": "屋檐下方外沿左可见段",
+      "kind": "polyline",
+      "pixels": [
+        [
+          515,
+          374
+        ],
+        [
+          546,
+          377
+        ],
+        [
+          585,
+          378
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "外侧水平撑臂遮住更低檐边，禁止把撑臂最左端当圆厅半径。"
+    },
+    {
+      "id": "L04",
+      "semantic": "屋檐下方外沿右可见段",
+      "kind": "polyline",
+      "pixels": [
+        [
+          780,
+          379
+        ],
+        [
+          815,
+          378
+        ],
+        [
+          845,
+          376
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "檐圈和撑臂近水平重叠，此段较短。"
+    },
+    {
+      "id": "L05",
+      "semantic": "圆厅左墙体剪影可见段",
+      "kind": "polyline",
+      "pixels": [
+        [
+          502,
+          409
+        ],
+        [
+          499,
+          445
+        ],
+        [
+          498,
+          483
+        ],
+        [
+          499,
+          521
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "取墙体而不是更外侧细弯支撑；端部被底台连接遮。"
+    },
+    {
+      "id": "L06",
+      "semantic": "圆厅右墙体剪影可见段",
+      "kind": "polyline",
+      "pixels": [
+        [
+          851,
+          410
+        ],
+        [
+          853,
+          447
+        ],
+        [
+          854,
+          484
+        ],
+        [
+          854,
+          523
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "右侧另有外置弯支撑到x874，不混同。"
+    },
+    {
+      "id": "L07",
+      "semantic": "上部高装饰拱外轮廓",
+      "kind": "polyline",
+      "pixels": [
+        [
+          634,
+          448
+        ],
+        [
+          642,
+          430
+        ],
+        [
+          655,
+          415
+        ],
+        [
+          675,
+          405
+        ],
+        [
+          696,
+          414
+        ],
+        [
+          710,
+          431
+        ],
+        [
+          717,
+          449
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "这是通行洞口上方装饰门面，不是实际开口顶部；中心星形饰物遮挡局部。"
+    },
+    {
+      "id": "L08",
+      "semantic": "主通行洞口深色框外轮廓",
+      "kind": "polyline",
+      "pixels": [
+        [
+          630,
+          539
+        ],
+        [
+          632,
+          496
+        ],
+        [
+          637,
+          474
+        ],
+        [
+          650,
+          456
+        ],
+        [
+          675,
+          446
+        ],
+        [
+          698,
+          456
+        ],
+        [
+          713,
+          474
+        ],
+        [
+          720,
+          498
+        ],
+        [
+          720,
+          540
+        ]
+      ],
+      "subjective_error_px": 3,
+      "notes": "外深框一条连续边；下方被独立近前拱遮挡，所列两端只是最后可见处，不是门脚。"
+    },
+    {
+      "id": "L09",
+      "semantic": "主通行洞口内边",
+      "kind": "polyline",
+      "pixels": [
+        [
+          644,
+          536
+        ],
+        [
+          643,
+          497
+        ],
+        [
+          649,
+          476
+        ],
+        [
+          660,
+          465
+        ],
+        [
+          675,
+          458
+        ],
+        [
+          691,
+          465
+        ],
+        [
+          703,
+          479
+        ],
+        [
+          709,
+          497
+        ],
+        [
+          708,
+          536
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "内边与室内结构/透视暗部局部低对比，不能和L08交替拟合同一拱。"
+    },
+    {
+      "id": "L10",
+      "semantic": "近前拱最外上轮廓",
+      "kind": "polyline",
+      "pixels": [
+        [
+          600,
+          624
+        ],
+        [
+          611,
+          589
+        ],
+        [
+          632,
+          560
+        ],
+        [
+          653,
+          545
+        ],
+        [
+          677,
+          541
+        ],
+        [
+          700,
+          546
+        ],
+        [
+          724,
+          563
+        ],
+        [
+          741,
+          588
+        ],
+        [
+          752,
+          621
+        ]
+      ],
+      "subjective_error_px": 3,
+      "notes": "独立前景拱；不是厅主门、不是舞台环。下端出画/与第二层叠合。"
+    },
+    {
+      "id": "L11",
+      "semantic": "近前拱内轮廓可见上弧",
+      "kind": "polyline",
+      "pixels": [
+        [
+          625,
+          604
+        ],
+        [
+          642,
+          580
+        ],
+        [
+          659,
+          567
+        ],
+        [
+          678,
+          561
+        ],
+        [
+          698,
+          567
+        ],
+        [
+          715,
+          581
+        ],
+        [
+          730,
+          604
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "内侧另有更低第二道拱与暗部，底端不标。"
+    },
+    {
+      "id": "L12",
+      "semantic": "底台阶上部左外沿可见弧",
+      "kind": "polyline",
+      "pixels": [
+        [
+          489,
+          526
+        ],
+        [
+          501,
+          543
+        ],
+        [
+          527,
+          556
+        ],
+        [
+          559,
+          568
+        ],
+        [
+          596,
+          576
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "选墙脚外台阶最上侧可见亮暗界；不是最外地面金环。中央被前拱遮。"
+    },
+    {
+      "id": "L13",
+      "semantic": "底台阶上部右外沿可见弧",
+      "kind": "polyline",
+      "pixels": [
+        [
+          756,
+          579
+        ],
+        [
+          789,
+          571
+        ],
+        [
+          819,
+          558
+        ],
+        [
+          850,
+          543
+        ],
+        [
+          869,
+          526
+        ]
+      ],
+      "subjective_error_px": 4,
+      "notes": "与L12是否严格同高同半径仍条件假说；右端多层台阶融合。"
+    },
+    {
+      "id": "N01",
+      "semantic": "主门左实体门脚",
+      "kind": "unknown",
+      "pixels": null,
+      "subjective_error_px": null,
+      "notes": "被近前拱遮挡，不外推。"
+    },
+    {
+      "id": "N02",
+      "semantic": "主门右实体门脚",
+      "kind": "unknown",
+      "pixels": null,
+      "subjective_error_px": null,
+      "notes": "被近前拱遮挡，不外推。"
+    },
+    {
+      "id": "N03",
+      "semantic": "完整圆厅底台正前中心",
+      "kind": "unknown",
+      "pixels": null,
+      "subjective_error_px": null,
+      "notes": "被近前拱、前景金星叠挡，不按对称造点。"
+    },
+    {
+      "id": "N04",
+      "semantic": "屋檐完整椭圆背半部",
+      "kind": "unknown",
+      "pixels": null,
+      "subjective_error_px": null,
+      "notes": "实体屋面遮挡，不能凭环状外观重建观测。"
+    }
+  ],
+  "fit_limit": "Camera-only fitting may use contours only after correct model semantic correspondence is separately established. Neither camera calibration nor geometric acceptance is claimed. Roof shoulder and base-ring semantic ambiguity must remain visible; do not discard poor-fit points silently."
+}
