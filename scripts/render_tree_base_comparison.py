@@ -1,0 +1,8 @@
+import bpy,pathlib,json,hashlib
+from mathutils import Vector
+R=pathlib.Path(__file__).resolve().parents[1];out=R/'renders/tree-base';j=json.load(open(out/'camera.json'));records=[]
+for version in ['R13_root-diagnostic_white','R14_anchor-diagnostic_white']:
+ model=R/('models/'+version+'.blend');bpy.ops.wm.open_mainfile(filepath=str(model));s=bpy.context.scene;loc=Vector(j['location']);target=Vector(j['target']);bpy.ops.object.camera_add(location=loc);c=bpy.context.object;c.name='DIAG_tree03_ground_contact';c.rotation_euler=(target-loc).to_track_quat('-Z','Y').to_euler();c.data.lens=j['lens'];s.camera=c
+ lp=Vector((9.5,6.9,1.2));bpy.ops.object.light_add(type='AREA',location=lp);light=bpy.context.object;light.name='DIAGNOSTIC_FILL_NOT_SOURCE_LIGHT';light.rotation_euler=(target-lp).to_track_quat('-Z','Y').to_euler();light.data.energy=60;light.data.size=1
+ s.cycles.samples=32;s.cycles.use_denoising=False;s.render.resolution_x=800;s.render.resolution_y=600;s.render.resolution_percentage=100;s.render.threads_mode='FIXED';s.render.threads=2;p=out/(version+'_diagnostic-fill.png');s.render.filepath=str(p);bpy.ops.render.render(write_still=True);records.append({'path':str(p.relative_to(R)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'model':str(model.relative_to(R)),'model_sha256':hashlib.sha256(model.read_bytes()).hexdigest(),'samples':32,'size':[800,600],'role':'synthetic local contact inspection with identical added diagnostic fill, NOT source view','camera':j,'diagnostic_fill':{'position':list(lp),'target':list(target),'type':'AREA','size':1,'energy_W':60},'saved_models_unchanged':True})
+(out/'comparison-render-records.json').write_text(json.dumps(records,indent=2))
