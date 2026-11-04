@@ -3,7 +3,7 @@ from mathutils import Vector
 ROOT=pathlib.Path(__file__).resolve().parents[1];random.seed(110402)
 bpy.ops.wm.open_mainfile(filepath=str(ROOT/'models/R01_white.blend'))
 # Import helper definitions only, without reinitializing or rebuilding prior objects.
-source=(ROOT/'scripts/build_forest_r01.py').read_text();start=source.index('def mesh(');end=source.index('# Finite uneven earth')
+source=(ROOT/'scripts/build_forest_r01.py').read_text();start=source.index('def material(');end=source.index('# Finite uneven earth')
 exec(source[start:end]); soil=bpy.data.materials['Moss_and_earth'];bark=bpy.data.materials['Bark'];leaf=bpy.data.materials['Leaf'];pink=bpy.data.materials['Petal_pink'];blue=bpy.data.materials['Petal_blue'];pale=bpy.data.materials['Petal_pale'];yellow=bpy.data.materials['Pollen'];lilac=bpy.data.materials['Petal_lilac'];white=bpy.data.materials['WHITE_clay']
 for o in bpy.context.scene.objects:
  if o.type=='MESH':

@@ -1,0 +1,9 @@
+# R01 independent technical audit and later-state evidence
+
+R01 blend SHA256: 354a74aaafa7682acd8472362915ecd7c4ceef1e8a2a5fc1752d872f979eba4d. Read-only Blender 4.3.2, one thread. 191 meshes checked independently: no nonmanifold edges, zero-area faces, nonpositive signed local volumes, negative world transforms or hidden mesh objects. 11 camera objects. External linked libraries: []. This is per-mesh topology only, not a full-scene collision/seam, GLB roundtrip, rendered-source fidelity or acceptance test. GLB roundtrip deliberately deferred until the final candidate to avoid duplicate export checks.
+
+R01 low-resolution A/B previews were visually reviewed. Sparse foliage, schematic tree/root forms and incomplete environmental density are obvious; source fidelity remains FAILED/not accepted. SOURCE_C is an unverified reverse-camera initial guess, not rendered or accepted. Failed denoise trial is preserved by producer.
+
+Later native frame 2992.479275 (1920x1080), SHA256 a4d5293db0ef59cd9282aca64386eb9f91d4ffa69324dedbb1462d2d82cb301b, was independently visually reviewed. The flower island is separated from the surrounding scene by a visible gap and has a dark pointed underside. No central supporting column is visible. Dense vegetation and distant pixel scale prevent determination of exact soil/rock/root materials or unseen support geometry. Freeze this timestamp state explicitly for the later candidate. Earlier high/low views must not be forced into one unchanged island height without temporal registration evidence. These stills do not establish the animation mechanism or confirm physical rise/rotation.
+
+The earlier warning against filling observed open hanging branches with an arbitrary smooth solid platform remains relevant to those frames; this later frame adds evidence for a dark clustered underside, not a measured solid shape.
