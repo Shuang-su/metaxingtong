@@ -1,0 +1,873 @@
+{
+  "version": 2,
+  "usage": "Diagnostic/fitting input, not blinded validation; no asserted 3D correspondences for apparent centers. All first points retained.",
+  "images": [
+    {
+      "source": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/13.png",
+      "sha256": "7aae6650cb748b947d85fa1027752bfecf0ebf930744ce2f126a8ba626d9eab1",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "classification": "report screenshot; not native decoded frame; clip time unknown",
+      "coordinate_system": "original 1192x671 image, origin upper-left, x right y down; approximate manual points",
+      "notes": "俯斜内景，四外尖均见；金属带有宽度，标外边界尖，不是内孔尖。后凹角近人物脚但不使用人物为地标。只见壁的一部分，不推全圆窗柱数。",
+      "landmarks": [
+        {
+          "id": "S1",
+          "xy": [
+            523,
+            353
+          ],
+          "label": "四尖星上左外尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "S2",
+          "xy": [
+            801,
+            410
+          ],
+          "label": "四尖星上右外尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "S3",
+          "xy": [
+            744,
+            614
+          ],
+          "label": "四尖星下右外尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "S4",
+          "xy": [
+            344,
+            510
+          ],
+          "label": "四尖星下左外尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "C1",
+          "xy": [
+            540,
+            439
+          ],
+          "label": "左凹角",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "C2",
+          "xy": [
+            626,
+            423
+          ],
+          "label": "后凹角，附近人物遮挡",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "C3",
+          "xy": [
+            687,
+            470
+          ],
+          "label": "右凹角",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "C4",
+          "xy": [
+            567,
+            499
+          ],
+          "label": "前凹角",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "D1",
+          "xy": [
+            322,
+            155
+          ],
+          "label": "左后拱门可见开口",
+          "visibility": "partly_occluded",
+          "pixel_uncertainty_px": 8
+        },
+        {
+          "id": "W1",
+          "xy": [
+            30,
+            100
+          ],
+          "label": "左边裁切长窗/装饰面",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 8
+        },
+        {
+          "id": "W2",
+          "xy": [
+            639,
+            84
+          ],
+          "label": "后壁长窗/装饰面",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 8
+        },
+        {
+          "id": "W3",
+          "xy": [
+            802,
+            83
+          ],
+          "label": "后壁长窗/装饰面",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 8
+        },
+        {
+          "id": "W4",
+          "xy": [
+            985,
+            97
+          ],
+          "label": "右后壁长窗/装饰面",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 8
+        },
+        {
+          "id": "P1",
+          "xy": [
+            150,
+            133
+          ],
+          "label": "可见柱带中段；不是该柱3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        },
+        {
+          "id": "P2",
+          "xy": [
+            472,
+            124
+          ],
+          "label": "可见柱带中段；不是该柱3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        },
+        {
+          "id": "P3",
+          "xy": [
+            708,
+            139
+          ],
+          "label": "可见柱带中段；不是该柱3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        },
+        {
+          "id": "P4",
+          "xy": [
+            880,
+            148
+          ],
+          "label": "可见柱带中段；不是该柱3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        },
+        {
+          "id": "P5",
+          "xy": [
+            1084,
+            166
+          ],
+          "label": "可见柱带中段；不是该柱3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        }
+      ],
+      "ring_constraints": [],
+      "ring_constraints_notes": "No additional ring points: image13 outer metallic arcs are intermittent specular highlights and front rim clipped; cannot safely assert full same physical centerline. Image15 eave front edge merges with two external supports/fascia, platform rim interrupted by arches/steps; no unambiguous same plane circle point set beyond existing visible silhouette extrema. Image14 crop/occlusion insufficient."
+    },
+    {
+      "source": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/21.png",
+      "sha256": "63eb021f730f3803048fb899ddec923accfcd143b1fec9d7f3c8fb9e89f04bdd",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "classification": "report screenshot; not native decoded frame; clip time unknown",
+      "coordinate_system": "original 1192x671 image, origin upper-left, x right y down; approximate manual points",
+      "notes": "四尖而非五星。右凹角被粉发人物遮不标。三后窗只见下段；人物遮挡地面，不由对称补点。画面有字幕/水印及运动模糊，图像质量与13不同，风格差不能直接认定几何变更。",
+      "landmarks": [
+        {
+          "id": "S1",
+          "xy": [
+            461,
+            280
+          ],
+          "label": "四尖星上左外尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "S2",
+          "xy": [
+            723,
+            277
+          ],
+          "label": "四尖星上右外尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "S3",
+          "xy": [
+            779,
+            410
+          ],
+          "label": "四尖星下右外尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "S4",
+          "xy": [
+            421,
+            414
+          ],
+          "label": "四尖星下左外尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "C1",
+          "xy": [
+            521,
+            336
+          ],
+          "label": "左凹角",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "C2",
+          "xy": [
+            594,
+            308
+          ],
+          "label": "后凹角",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "C4",
+          "xy": [
+            594,
+            367
+          ],
+          "label": "前凹角",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "W1",
+          "xy": [
+            401,
+            41
+          ],
+          "label": "后壁长窗可见下端，顶被图边裁切",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 9
+        },
+        {
+          "id": "W2",
+          "xy": [
+            585,
+            37
+          ],
+          "label": "后壁长窗可见下端，顶被图边裁切",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 9
+        },
+        {
+          "id": "W3",
+          "xy": [
+            749,
+            40
+          ],
+          "label": "后壁长窗可见下端，顶被图边裁切",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 9
+        },
+        {
+          "id": "P1",
+          "xy": [
+            296,
+            72
+          ],
+          "label": "窗间柱带可见中段，不是3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        },
+        {
+          "id": "P2",
+          "xy": [
+            492,
+            63
+          ],
+          "label": "窗间柱带可见中段，不是3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        },
+        {
+          "id": "P3",
+          "xy": [
+            667,
+            66
+          ],
+          "label": "窗间柱带可见中段，不是3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        },
+        {
+          "id": "P4",
+          "xy": [
+            822,
+            72
+          ],
+          "label": "窗间柱带可见中段，不是3D中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 10
+        },
+        {
+          "id": "D1",
+          "xy": [
+            94,
+            111
+          ],
+          "label": "左后开口可见片段",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 15
+        },
+        {
+          "id": "D2",
+          "xy": [
+            1080,
+            94
+          ],
+          "label": "右后开口可见片段",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 15
+        }
+      ],
+      "ring_constraints": [
+        {
+          "ring_id": "21_outer_gold_band_center_dark_trace",
+          "identity": "图21舞台偏外侧同一金色窄带的暗色中线。其外仍有蓝色灯具环带；不是舞台实体最外边，不是星周围内细圈。",
+          "coplanarity": "Visual design hypothesis; small metal band thickness/height unknown. Do not assert measured floor radius.",
+          "sampling_method": "Manual image inspection followed by local intensity minimum within +/-12 px of manually chosen seed; every output marker inspected on original image. No ellipse used to generate samples.",
+          "points": [
+            {
+              "id": "G1",
+              "xy": [
+                136,
+                410
+              ],
+              "pixel_uncertainty_px": 4,
+              "visibility": "visible"
+            },
+            {
+              "id": "G2",
+              "xy": [
+                137,
+                450
+              ],
+              "pixel_uncertainty_px": 4,
+              "visibility": "visible"
+            },
+            {
+              "id": "G3",
+              "xy": [
+                155,
+                490
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G4",
+              "xy": [
+                200,
+                538
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G5",
+              "xy": [
+                300,
+                593
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G6",
+              "xy": [
+                400,
+                624
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G7",
+              "xy": [
+                500,
+                640
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G8",
+              "xy": [
+                600,
+                644
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G9",
+              "xy": [
+                700,
+                639
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G10",
+              "xy": [
+                800,
+                622
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G11",
+              "xy": [
+                900,
+                590
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G12",
+              "xy": [
+                1000,
+                530
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G13",
+              "xy": [
+                1035,
+                490
+              ],
+              "pixel_uncertainty_px": 3,
+              "visibility": "visible"
+            },
+            {
+              "id": "G14",
+              "xy": [
+                1052,
+                450
+              ],
+              "pixel_uncertainty_px": 4,
+              "visibility": "visible"
+            },
+            {
+              "id": "G15",
+              "xy": [
+                1054,
+                410
+              ],
+              "pixel_uncertainty_px": 4,
+              "visibility": "visible"
+            }
+          ],
+          "excluded_regions": "Rear half hidden by performers, spotlights and blur; unmarked. Left upper arc near character and right upper arc near character unmarked.",
+          "fitting_warning": "Same ring pixel loci only, not equal-angle 3D correspondences. Radius must be fitted relative to star as unknown. Do not force this band to known platform outer radius4.75 without separate identification."
+        }
+      ]
+    },
+    {
+      "source": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/14.png",
+      "sha256": "e1ea768ef1e9d6be532d6c226c7146659964f648e5944b8a89b20ea5b1ed4e01",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "classification": "report screenshot; not native decoded frame; clip time unknown",
+      "coordinate_system": "original 1192x671 image, origin upper-left, x right y down; approximate manual points",
+      "notes": "正面近景，人物及翼光遮拱下部。只见左右各1裁切面；无法由此计全窗数。星仅左右尖清楚，前尖出画、后尖被人物遮。",
+      "landmarks": [
+        {
+          "id": "D1",
+          "xy": [
+            595,
+            264
+          ],
+          "label": "中心后方多层拱门，人物及发光翼遮挡",
+          "visibility": "partly_occluded",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "A1",
+          "xy": [
+            594,
+            97
+          ],
+          "label": "后大拱内沿顶点",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "A2",
+          "xy": [
+            594,
+            129
+          ],
+          "label": "套层拱内沿顶点",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "W1",
+          "xy": [
+            19,
+            175
+          ],
+          "label": "左裁切长窗/装饰面",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "W2",
+          "xy": [
+            1169,
+            166
+          ],
+          "label": "右裁切长窗/装饰面",
+          "visibility": "cropped",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "P1",
+          "xy": [
+            207,
+            237
+          ],
+          "label": "左柱带中段",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "P2",
+          "xy": [
+            989,
+            235
+          ],
+          "label": "右柱带中段",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "S1",
+          "xy": [
+            77,
+            619
+          ],
+          "label": "地面四尖星左尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "S2",
+          "xy": [
+            1121,
+            619
+          ],
+          "label": "地面四尖星右尖",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 6
+        }
+      ],
+      "ring_constraints": [],
+      "ring_constraints_notes": "No additional ring points: image13 outer metallic arcs are intermittent specular highlights and front rim clipped; cannot safely assert full same physical centerline. Image15 eave front edge merges with two external supports/fascia, platform rim interrupted by arches/steps; no unambiguous same plane circle point set beyond existing visible silhouette extrema. Image14 crop/occlusion insufficient."
+    },
+    {
+      "source": "/workspace/scratch/fa58bfcf0425/observatory-candidate-20261104/sources/report/15.png",
+      "sha256": "5b3a7ea9130c46c867f5b337468156105b33803348901724943d9fc6706fcfca",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "classification": "report screenshot; not native decoded frame; clip time unknown",
+      "coordinate_system": "original 1192x671 image, origin upper-left, x right y down; approximate manual points",
+      "notes": "前半实体可辨6条长窗：内侧四条较完整、最外两条窄残片。左右更外的黑拱缝另列不计窗；正门1。后半不可见，不推12窗或固定总分区。屋顶放射脊可见但大量重叠，不数全肋；中央尖顶上方/周围细环可见，不能凭单图判断是否独立悬浮。明确2侧外撑；前景3个独立拱组，远侧不可见。",
+      "landmarks": [
+        {
+          "id": "W1",
+          "xy": [
+            521,
+            475
+          ],
+          "label": "最左窄窗残片，中上至下部可见",
+          "visibility": "foreshortened_partial",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "W2",
+          "xy": [
+            542,
+            476
+          ],
+          "label": "左中长窗可见体中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "W3",
+          "xy": [
+            582,
+            482
+          ],
+          "label": "左内长窗可见体中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "W4",
+          "xy": [
+            775,
+            485
+          ],
+          "label": "右内长窗可见体中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "W5",
+          "xy": [
+            817,
+            481
+          ],
+          "label": "右中窄长窗可见体中心",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "W6",
+          "xy": [
+            842,
+            477
+          ],
+          "label": "最右窄窗残片",
+          "visibility": "foreshortened_partial",
+          "pixel_uncertainty_px": 7
+        },
+        {
+          "id": "D1",
+          "xy": [
+            675,
+            502
+          ],
+          "label": "正门可见开口中心，底被前景门环遮",
+          "visibility": "partly_occluded",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "D2",
+          "xy": [
+            499,
+            481
+          ],
+          "label": "左侧边拱形细缝；开口性质待核",
+          "visibility": "uncertain",
+          "pixel_uncertainty_px": 8
+        },
+        {
+          "id": "D3",
+          "xy": [
+            866,
+            489
+          ],
+          "label": "右侧边拱形细缝；开口性质待核",
+          "visibility": "uncertain",
+          "pixel_uncertainty_px": 8
+        },
+        {
+          "id": "P1",
+          "xy": [
+            612,
+            473
+          ],
+          "label": "正门左宽竖柱带可见中段",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "P2",
+          "xy": [
+            733,
+            476
+          ],
+          "label": "正门右宽竖柱带可见中段",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "R1",
+          "xy": [
+            675,
+            280
+          ],
+          "label": "屋顶中央尖顶",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 3
+        },
+        {
+          "id": "R2",
+          "xy": [
+            517,
+            374
+          ],
+          "label": "主屋顶檐左极限",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "R3",
+          "xy": [
+            845,
+            375
+          ],
+          "label": "主屋顶檐右极限",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "B1",
+          "xy": [
+            462,
+            391
+          ],
+          "label": "左外撑上转折圆节",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "B2",
+          "xy": [
+            423,
+            430
+          ],
+          "label": "左外撑中折节",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "B3",
+          "xy": [
+            405,
+            598
+          ],
+          "label": "左外撑底部主脚",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 6
+        },
+        {
+          "id": "B4",
+          "xy": [
+            902,
+            392
+          ],
+          "label": "右外撑上转折圆节",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "B5",
+          "xy": [
+            946,
+            426
+          ],
+          "label": "右外撑中折节",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 5
+        },
+        {
+          "id": "B6",
+          "xy": [
+            981,
+            615
+          ],
+          "label": "右外撑底部主脚",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 7
+        },
+        {
+          "id": "A1",
+          "xy": [
+            678,
+            563
+          ],
+          "label": "前景独立多层拱上顶",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "A2",
+          "xy": [
+            344,
+            445
+          ],
+          "label": "左远平台独立拱顶",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        },
+        {
+          "id": "A3",
+          "xy": [
+            1060,
+            452
+          ],
+          "label": "右远平台独立拱顶",
+          "visibility": "visible",
+          "pixel_uncertainty_px": 4
+        }
+      ],
+      "ring_constraints": [],
+      "ring_constraints_notes": "No additional ring points: image13 outer metallic arcs are intermittent specular highlights and front rim clipped; cannot safely assert full same physical centerline. Image15 eave front edge merges with two external supports/fascia, platform rim interrupted by arches/steps; no unambiguous same plane circle point set beyond existing visible silhouette extrema. Image14 crop/occlusion insufficient."
+    }
+  ],
+  "parent_v1_sha256": "e801a4c84675b5f6d7eec923ca5f0895d2d0759a5dc3e165ea7bdaeb1cf15516",
+  "revision": "All 66 v1 points retained unchanged. Added same gold-ring dark centerline samples only in image21; no extrapolated points."
+}
