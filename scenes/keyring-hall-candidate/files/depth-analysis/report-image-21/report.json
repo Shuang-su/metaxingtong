@@ -1,0 +1,290 @@
+{
+  "source": {
+    "url": "https://i0.hdslb.com/bfs/article/b8406beae84c6521d50b651e6eba01be2a115127.png@1192w.webp",
+    "file": "21.webp",
+    "page": "https://www.bilibili.com/opus/800724230600654921",
+    "sha256": "e8c4d4b66b8f89df6e0f2ded7b5c34bc42be2d14d253aec2a669228aecbaee80",
+    "size": [
+      1192,
+      671
+    ],
+    "source_class": "report-webp-not-native",
+    "video_time": null,
+    "event_date": "2023-05-27",
+    "native_decode": false,
+    "path": "/workspace/scratch/fa58bfcf0425/keyring-hall-source-20261104/21.webp",
+    "output_name": "report-image-21",
+    "video_time_seconds": null,
+    "decode_size": null,
+    "login_quality_verified": false,
+    "scene_scope": "Key-ring dome hall candidate; no real key count, geometry, suspension height or metric distance established",
+    "exclusions": [
+      {
+        "class": 3,
+        "description": "Dome video face/sky imagery and light beams; NOT real face geometry or distance",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1192,
+            0
+          ],
+          [
+            1192,
+            341
+          ],
+          [
+            0,
+            341
+          ]
+        ]
+      },
+      {
+        "class": 2,
+        "description": "Reflective stage and light-beam region, conservative incomplete",
+        "points": [
+          [
+            0,
+            432
+          ],
+          [
+            1192,
+            432
+          ],
+          [
+            1192,
+            671
+          ],
+          [
+            0,
+            671
+          ]
+        ]
+      },
+      {
+        "class": 4,
+        "description": "Subtitle/chapter/watermark;2028 is chapter graphic NOT event date",
+        "points": [
+          [
+            968,
+            549
+          ],
+          [
+            1180,
+            549
+          ],
+          [
+            1180,
+            661
+          ],
+          [
+            968,
+            661
+          ]
+        ]
+      },
+      {
+        "class": 1,
+        "description": "Performer plus suspension-wire/occlusion caution; not depth-measured rigging",
+        "points": [
+          [
+            524,
+            0
+          ],
+          [
+            599,
+            0
+          ],
+          [
+            599,
+            330
+          ],
+          [
+            627,
+            419
+          ],
+          [
+            539,
+            426
+          ],
+          [
+            522,
+            370
+          ]
+        ]
+      }
+    ],
+    "dimensions": [
+      1192,
+      671
+    ],
+    "bytes": 57442,
+    "crop": [
+      0,
+      0,
+      1192,
+      671
+    ]
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "artifacts": [
+      {
+        "path": "README.md",
+        "bytes": 4400,
+        "sha256": "319566441daaac0c5ed83e75a8fd19bae0863f3275e23f147c06fe0906edf6fb",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/README.md"
+      },
+      {
+        "path": "config.json",
+        "bytes": 950,
+        "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 99173660,
+        "sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/model.safetensors"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "bytes": 775,
+        "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/preprocessor_config.json"
+      }
+    ],
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0",
+      "safetensors": "0.8.0"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 1,
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "forward_seconds": 3.7956979274749756
+  },
+  "range": {
+    "min": 0.4277263581752777,
+    "max": 3.7971620559692383,
+    "nonfinite_count": 0
+  },
+  "definition": "Relative inverse-depth-like prediction; larger/white generally nearer, smaller/black farther; NOT image luminance, metric distance or geometry acceptance. Per-image normalization not cross-view scale.",
+  "resampling": "Bicubic align_corners=False from model grid to screenshot grid, NOT independent full-resolution depth; no source interpolation claimed.",
+  "masks": {
+    "manual": "Conservative incomplete ROIs, later drawn overwrite;0 unlabelled NOT certified valid.",
+    "confidence_unknown": "255 everywhere means NO calibrated confidence, NOT high confidence.",
+    "nonfinite": "255 numerical nonfinite;0 only finite, not valid geometry.",
+    "dark": "All original RGB<=25 heuristic caution, NOT depth algorithm.",
+    "occlusion": "Hidden geometry unknown; do not fill as fact."
+  },
+  "limitations": [
+    "Article screenshot is NOT logged-in highest-quality decoded native video frame",
+    "Video timestamp/decoder/native dimensions unverified",
+    "Stylized CGI, compositing, reflection, transparency, light, shadows and characters may break predictions",
+    "No camera, distance, dimensions, contact, hidden surfaces, subsequent replay or geometry acceptance established"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-screenshot-grid.png",
+      "bytes": 2266,
+      "sha256": "837322956fc87c927a090a3ec95f39c3353747c004785960c8cd8680eccea48d"
+    },
+    {
+      "path": "dark-low-signal-caution-screenshot-grid.png",
+      "bytes": 861,
+      "sha256": "c62a1a9b2c7a35f7e616c175e2dc35a576646a7f148294f8bb02bd6b28c00a8b"
+    },
+    {
+      "path": "manual-exclusion-classes-screenshot-grid.png",
+      "bytes": 2451,
+      "sha256": "aef0e5da91dff5b9eaa73541a7d344a7949877e549242bb03f4c06fc7deb0ef7"
+    },
+    {
+      "path": "nonfinite-invalid-model-grid.png",
+      "bytes": 544,
+      "sha256": "caec195e3fd01149b370763e45bfb21517d04ad2f2b52777a7c9286ce3add40c"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 569693,
+      "sha256": "0fc17764982ddb1f8ffc78132872f523464b48dfe3abaa8bd9a6f909aed598b4"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-screenshot-grid.png",
+      "bytes": 81718,
+      "sha256": "6162e53fc488bcd16611881b95b7f56169a4082f2bd618262d38406d064c13f8"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "4a0cc5ac47ce182cdef859bba1f3e6c1fe0a67f271bd11551cddd0f205213196"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-screenshot-grid.npy",
+      "bytes": 3199456,
+      "sha256": "0aed1d0fd87292a84ff87b9079db663b612b87fbf1802a2994c730bf3a586ff6"
+    }
+  ]
+}

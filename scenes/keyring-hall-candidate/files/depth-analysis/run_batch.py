@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,subprocess
+p=Path(__file__).resolve().parent;s=p.parent/'keyring-hall-source-20261104';man=json.loads((s/'source-manifest.json').read_text())
+regions={'17':[(3,[(0,0),(800,0),(800,225),(0,225)]),(2,[(0,334),(800,334),(800,450),(0,450)]),(4,[(650,366),(780,366),(780,423),(650,423)]),(1,[(294,84),(465,84),(487,381),(420,434),(326,380)])],'20':[(3,[(0,0),(800,0),(800,144),(573,295),(573,344),(0,344)]),(2,[(0,402),(800,402),(800,450),(0,450)]),(4,[(34,403),(202,403),(202,449),(34,449)]),(4,[(652,366),(787,366),(787,425),(652,425)]),(1,[(289,192),(365,192),(399,450),(254,450)])],'21':[(3,[(0,0),(800,0),(800,229),(0,229)]),(2,[(0,290),(800,290),(800,450),(0,450)]),(4,[(650,368),(792,368),(792,443),(650,443)]),(1,[(352,0),(402,0),(402,221),(421,281),(362,286),(350,248)])]}
+labels={1:'Performer plus suspension-wire/occlusion caution; not depth-measured rigging',2:'Reflective stage and light-beam region, conservative incomplete',3:'Dome video face/sky imagery and light beams; NOT real face geometry or distance',4:'Subtitle/chapter/watermark;2028 is chapter graphic NOT event date'}
+for n,rs in regions.items():
+ m=next(x.copy() for x in man if x['file']==n+'.webp');m.update(path=str(s/m['file']),output_name=f'report-image-{n}',video_time_seconds=None,decode_size=None,login_quality_verified=False,scene_scope='Key-ring dome hall candidate; no real key count, geometry, suspension height or metric distance established',exclusions=[{'class':cls,'description':labels[cls],'points':[[round(x*1192/800),round(y*671/450)] for x,y in pts]} for cls,pts in rs]);meta=p/'provenance'/f'{n}-metadata.json';meta.write_text(json.dumps(m,ensure_ascii=False,indent=2))
+ with (p/'provenance'/f'{n}-inference.log').open('w') as log:subprocess.run([str(p.parent/'depth-observatory-20261104/venv/bin/python'),str(p/'run_depth.py'),'--metadata',str(meta)],stdout=log,stderr=subprocess.STDOUT,check=True)
+ print(n,'complete',flush=True)
