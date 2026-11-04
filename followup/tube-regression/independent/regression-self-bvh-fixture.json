@@ -1,0 +1,79 @@
+{
+  "executed_utc": "2026-11-04T14:15:36+00:00",
+  "engine": "Blender 4.3.2",
+  "threads": 1,
+  "command": "blender -b -t 1 --python independent-leaf-contact-qa-20261104/test_bvh_self.py",
+  "scope": "Two synthetic crossing triangles with disjoint vertex indices. API sanity fixture only; not the full candidate mesh.",
+  "vertices": [
+    [
+      -1,
+      -1,
+      0
+    ],
+    [
+      1,
+      -1,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -0.5,
+      -1
+    ],
+    [
+      0,
+      -0.5,
+      1
+    ],
+    [
+      0,
+      0.5,
+      0
+    ]
+  ],
+  "faces": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      3,
+      4,
+      5
+    ]
+  ],
+  "same_tree_result": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "clone_tree_result": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "exit_code": 0,
+  "observed_stdout": "SAME_TREE [(1, 0), (0, 1)]\nCLONE_TREE [(1, 0), (0, 1)]\nBlender 4.3.2\n\nBlender quit\n",
+  "sha256_at_packaging": {
+    "lakeleaf-contact-regression-next-20261104/check_tube_regressions.py": "d070df073ec1b89e898360c6d0ac6122d9215f29978d2bb4c8485f4011060f7f",
+    "lakeleaf-contact-regression-next-20261104/tube-regression-results.json": "b72cabe05968b329834de15e2a98350faf542f8fcdb1fd9123f97c31b0bc4734",
+    "independent-leaf-contact-qa-20261104/test_bvh_self.py": "f1a5b2dfb269854ea78e433fab58d285ffe0e9ab155929e6131a8ed895a5e9fd"
+  },
+  "note": "Result transcribed from actual successful tool output; no rerun needed. Source report may have since been rerun with updated timestamp, hash here records current packaged input."
+}
