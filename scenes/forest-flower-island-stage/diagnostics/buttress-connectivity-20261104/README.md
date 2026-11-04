@@ -1,18 +1,17 @@
-# Forest buttress connectivity and triangulation read-only diagnostic evidence
+# Forest buttress report erratum with R15 transfer explicitly unconfirmed
 
 Frozen diagnostic stage, not source acceptance or original-byte recovery.
 
-Original HEAD: `99b51154c6d34ec15b2d7094df75356f12f1644a`
+Original HEAD: `c48e21cf4988af6f03ac116f8dd241d0d89bd2a2`
 Original history: `refs/heads/history/forest-buttress-connectivity-original-20261104`
+Previous original HEAD: `99b51154c6d34ec15b2d7094df75356f12f1644a`
 
-`files/` preserves all 16 original files without modification. `provenance.json` records bytes, SHA256, Git blobs and every original commit/object.
+`files/` preserves all 17 current original files without modification. Input Library version 0; archive revision 1. `versions/v0/` preserves the preceding current archive directory including its receipt. All older snapshots remain unchanged without recursive duplication. All 2 real original commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs, original objects and every stage.
 
-- Independent read-only diagnostic history with 16 evidence/script/log files and no new model. Not an R15 split, substitute, model correction, new scene, original-byte recovery, complete support validation or source acceptance.
-- Producer reports actual-loop triangle distance checks for eight buttresses and representative single-vertex winding values; the independent review only resolves the specific buttress-02 discrepancy, not the full eight-root result, physical support or source-scene disconnection.
-- The observed polygon-BVH versus actual-loop distance difference is attributed to different diagonals of the same nonplanar quad. Distances for distinct triangulated surfaces cannot be combined as bounds on one surface; both old and new evidence are retained.
-- The small witness preserves one query point, four quad vertices and source-model hash, with an offline reproduction script and recorded output. It does not contain the full model or independently reproduce the complete scene.
-- REPORT.zh.md refers to an archived R15 model. R15 transfer/delivery remains unconfirmed in the parent task; this worker did not receive or archive R15. That original wording is preserved verbatim and must not be treated as evidence of R15 delivery.
-- Existing viewport occlusion does not establish the number, shape or connection of source roots. Original frames, source-view identity, support and source-geometry acceptance gaps remain.
-- Archive worker only receives files, preserves real history, commits, pushes and checks remote integrity; no modeling, rendering, witness-script execution, production-script execution, R15 transfer, or expansion of research.
+- Report-only correction on the independent read-only buttress diagnostic history. No model is included, created or modified; this is not R15 model delivery, a split or substitute of R15, a new scene, support acceptance or source acceptance.
+- The producer erratum records that at 14:47 UTC the R15 upload timed out, its outcome remained uncertain and remote archival was not confirmed. Neither success nor failure of that transfer is inferred from this small evidence package.
+- Only REPORT.zh.md changes and ERRATA-20261104.zh.md is added. The previous commit, original erroneous report, all numeric evidence and source-model hashes are retained; the other 15 prior files remain byte-identical.
+- The diagnostic concerns distinct triangulations of a nonplanar quad and the specific buttress-02 distance discrepancy; representative points, finite numerical results and independent scope do not prove whole-scene support or source geometry.
+- This archive records the correction without executing source scripts, modeling, rendering, receiving R15, changing main or creating issues/pull requests. Earlier archive content and old version snapshot are preserved.
 
-Remote verification is appended under `publication-verification/remote_verification.json`.
+Current remote verification is appended under `publication-verification/remote_verification.json`.
