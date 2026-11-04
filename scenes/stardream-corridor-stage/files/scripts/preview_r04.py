@@ -1,0 +1,4 @@
+import bpy,pathlib,json,hashlib
+P=pathlib.Path(__file__).resolve().parents[1];out=P/'renders/R04-preview';out.mkdir(exist_ok=True);rec=[]
+for mode in ['material','white']:
+ p=P/'models'/f'R04_{mode}.blend';bpy.ops.wm.open_mainfile(filepath=str(p));s=bpy.context.scene;s.cycles.samples=16;s.render.resolution_percentage=60;s.render.threads_mode='FIXED';s.render.threads=6;s.camera=bpy.data.objects['MAIN_corridor'];f=out/f'{mode}_MAIN_preview.png';s.render.filepath=str(f);bpy.ops.render.render(write_still=True);rec.append({'file':str(f.relative_to(P)),'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'model_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'camera':'MAIN_corridor','samples':16,'percentage':60,'purpose':'reduced preview, not formal source comparison'});(P/'qa/R04-preview-records.json').write_text(json.dumps(rec,indent=2))
