@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,subprocess
+p=Path(__file__).resolve().parent;s=p.parent/'source-newscene-20261104';man=json.loads((s/'official4k-capture-manifest.json').read_text())
+regions={'501.149406':[(3,[(0,130),(350,130),(350,530),(0,530)]),(4,[(385,213),(935,213),(790,354),(649,451),(557,414),(484,336)]),(3,[(0,0),(595,0),(595,170),(379,240),(0,150)]),(1,[(600,94),(686,94),(686,203),(600,203)])],'503.06141':[(3,[(0,0),(960,0),(960,155),(665,155),(646,371),(310,371),(310,170),(0,170)]),(3,[(0,170),(310,170),(310,540),(0,540)]),(3,[(646,155),(960,155),(960,540),(646,540)]),(3,[(310,371),(646,371),(646,540),(310,540)]),(2,[(410,181),(490,181),(490,281),(410,281)]),(1,[(437,203),(480,203),(480,273),(437,273)])]}
+labels={1:'Conservative performer ROI, not segmentation',2:'Possible luminous wing/light effects overlap near performer, not solid geometry',3:'Conservative forest foliage occlusion and volumetric haze/light caution, incomplete',4:'Dark continuous inverted underside, unresolved material/shape, NOT void or absent structure'}
+for t,ro in regions.items():
+ cap=next(x for x in man['frames'] if str(x['before']['time'])==t);src=s/cap['file'];meta={**cap,'BV':'BV11jCEBiEwE','uploader':man['uploader'],'url':man['source_url'],'time_seconds':float(t),'capture_record':cap,'source_manifest':man,'exclusions':[{'shape':'polygon','points':[[x*4,y*4] for x,y in pts],'class':cls,'description':labels[cls]} for cls,pts in ro],'dark_rgb_max_threshold':25,'scene_cautions':['Same2025-11-07 performance, NOT later-date replay','Native3840x2160 does NOT imply model4K depth','Hidden island structure cannot be reconstructed as fact from this prediction']}
+ name=f'forest-official4k-{t}';m=p/'provenance'/f'{name}-metadata.json';m.write_text(json.dumps(meta,ensure_ascii=False,indent=2))
+ with (p/'provenance'/f'{name}.log').open('w') as log:subprocess.run([str(p/'venv/bin/python'),str(p/'run_depth_frame_cpu1.py'),'--source',str(src),'--metadata',str(m),'--out',str(p/name)],stdout=log,stderr=subprocess.STDOUT,check=True)
+ print(name,'complete',flush=True)
