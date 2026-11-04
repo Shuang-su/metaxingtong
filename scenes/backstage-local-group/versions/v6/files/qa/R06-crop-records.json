@@ -1,0 +1,52 @@
+[
+  {
+    "output": "renders/R06-comparisons/material_hip_same_pixel_before_after.png",
+    "sha256": "610c3b056069e23c32a0548369950f00ecccabaf30527541e07f7bfd8ab43bb6",
+    "sources": [
+      {
+        "path": "renders/R05/material_MANNEQUIN_local.png",
+        "sha256": "1db3248a2f87924637800aa6dad3ce4320e88c8d0e949825a3d1bbb22541e7d0"
+      },
+      {
+        "path": "renders/R06/material_MANNEQUIN_local.png",
+        "sha256": "ab074615b65a89ea49cf4def5cfc1742319b583c58ba7db3e0f23c6271090b09"
+      }
+    ],
+    "crop_box": [
+      650,
+      315,
+      855,
+      430
+    ],
+    "order": [
+      "R05 failed",
+      "R06 candidate"
+    ],
+    "method": "same native pixels, no resizing or image retouch; diagnostic angle not source registration"
+  },
+  {
+    "output": "renders/R06-comparisons/white_hip_same_pixel_before_after.png",
+    "sha256": "8250c269abb1a2eb76d365bcc5a9299c8a9e7677fcb10e52a997a38b3dd33ec4",
+    "sources": [
+      {
+        "path": "renders/R05/white_MANNEQUIN_local.png",
+        "sha256": "2350ed8ade951d7d052fc29cbd2e1e4f61d60345e5146ad2e708a683987e7a26"
+      },
+      {
+        "path": "renders/R06/white_MANNEQUIN_local.png",
+        "sha256": "9cbb0c947b212fdca7fd335535e062d00d975954aa52de2290c213d4c629c16d"
+      }
+    ],
+    "crop_box": [
+      650,
+      315,
+      855,
+      430
+    ],
+    "order": [
+      "R05 failed",
+      "R06 candidate"
+    ],
+    "method": "same native pixels, no resizing or image retouch; diagnostic angle not source registration"
+  }
+]

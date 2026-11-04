@@ -1,0 +1,46 @@
+[
+  {
+    "output": "renders/R12-comparisons/material_left_cluster_same_pixel_before_after.png",
+    "sha256": "cb1d876f9bcef8c40c4168055eb3ba5919edb27c20454921ec8c6cd1f9582574",
+    "sources": [
+      {
+        "path": "renders/R12/R11_material_TABLE_high.png",
+        "sha256": "220adac0eee43c0601656aa2a11829752a932928b865f62ad6d1772b68755394"
+      },
+      {
+        "path": "renders/R12/R12_material_TABLE_high.png",
+        "sha256": "2c603c9c3161bab923659bf00a31b9fa320631611954802f3aee07fcb6bd0b0b"
+      }
+    ],
+    "crop_box": [
+      120,
+      280,
+      600,
+      671
+    ],
+    "order": "top R11 baseline; bottom R12 XY-only candidate",
+    "scope": "exact same pixels without scale/retouch; not source registration; nearest bottles are cropped by original camera so cannot visually count all nine"
+  },
+  {
+    "output": "renders/R12-comparisons/white_left_cluster_same_pixel_before_after.png",
+    "sha256": "a1f2f90c82cf54b54d802e30704bab794b641a45288c57789750a0e64d2953fc",
+    "sources": [
+      {
+        "path": "renders/R12/R11_white_TABLE_high.png",
+        "sha256": "ebf7414cc5e8c51e760dabd51d755ad57285d9c9c20201f7676c3cb78d51eb42"
+      },
+      {
+        "path": "renders/R12/R12_white_TABLE_high.png",
+        "sha256": "d05bf17f5b291e075a34ef69e66afc176c1e01ebd991a481c84355b3b40057df"
+      }
+    ],
+    "crop_box": [
+      120,
+      280,
+      600,
+      671
+    ],
+    "order": "top R11 baseline; bottom R12 XY-only candidate",
+    "scope": "exact same pixels without scale/retouch; not source registration; nearest bottles are cropped by original camera so cannot visually count all nine"
+  }
+]

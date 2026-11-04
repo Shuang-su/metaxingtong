@@ -1,0 +1,10 @@
+/workspace/scratch/fa58bfcf0425/independent-backstage-layout-qa-20261104/check_r12_saved.py:16: SyntaxWarning: invalid decimal literal
+  out['minimum_AABB_distance_lower_bound']=min((math.sqrt(sum(max(0,B[o][i][0]-B[n][i][1],B[n][i][0]-B[o][i][1])**2for i in range(3))),n,o)for n in N for o in other);out['table_xy_min_margin']=min(min(B[n][i][0]-table[i][0],table[i][1]-B[n][i][1])for n in N for i in range(2));out['body_table_gap']={n:B[n][2][0]-table[2][1]for n in N if 'bottle' in n};out['body_cap_min_nearestvertex_surface']={n: min(T[n.replace('bottle','cap')].find_nearest(p)[3]for p in V[n])for n in N if 'bottle' in n};R[mode]=out
+DONE
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/backstage-local-study-20261105/models/R11_material.blend"
+Read blend: "/workspace/scratch/fa58bfcf0425/backstage-local-study-20261105/models/R12_material.blend"
+Read blend: "/workspace/scratch/fa58bfcf0425/backstage-local-study-20261105/models/R11_white.blend"
+Read blend: "/workspace/scratch/fa58bfcf0425/backstage-local-study-20261105/models/R12_white.blend"
+
+Blender quit
