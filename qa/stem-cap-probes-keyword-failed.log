@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/forest-diagnostic-replay-20261104/scripts/probe_stem_caps.py", line 16, in <module>
+    probes=[Vector((c.x,c.y,c.z+offset+.00001))]+[Vector(v)+Vector((0,0,.00001)) for v in vs[8:]];uncovered=sum(head.ray_cast(p,Vector((0,0,1)),distance=.1)[0] is None for p in probes)
+                                                                                                            ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/fa58bfcf0425/forest-diagnostic-replay-20261104/scripts/probe_stem_caps.py", line 16, in <genexpr>
+    probes=[Vector((c.x,c.y,c.z+offset+.00001))]+[Vector(v)+Vector((0,0,.00001)) for v in vs[8:]];uncovered=sum(head.ray_cast(p,Vector((0,0,1)),distance=.1)[0] is None for p in probes)
+                                                                                                                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BVHTree.ray_cast() takes no keyword arguments
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/forest-diagnostic-replay-20261104/models/R11_support-diagnostic_material.blend"
+
+Blender quit
