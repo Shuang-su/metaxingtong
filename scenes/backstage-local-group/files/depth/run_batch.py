@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,subprocess
+p=Path(__file__).resolve().parent;s=p.parent/'new-event-source-20261104';man=json.loads((s/'backstage-manifest.json').read_text())
+regions={'009':[(2,[(0,0),(800,0),(800,173),(0,192)]),(1,[(300,45),(650,45),(650,450),(430,450),(427,302),(278,295),(278,245)])],'011':[(2,[(0,0),(141,0),(141,450),(0,450)]),(4,[(276,0),(557,0),(557,177),(484,209),(343,196),(279,115)]),(2,[(140,397),(305,397),(305,450),(140,450)]),(1,[(411,91),(585,91),(634,297),(592,450),(321,450),(292,355),(408,286)])],'012':[(4,[(0,0),(275,0),(323,62),(286,158),(201,193),(70,184),(0,132)]),(1,[(344,166),(417,166),(452,450),(327,450),(327,314)])]}
+labels={1:'Conservative character occlusion ROI, not precise segmentation',2:'Mirror or reflective tabletop/very dark rear region caution; reflected objects not duplicate geometry',4:'Lit photographic umbrella, bloom/translucency; physical silhouette visible but radiance not depth'}
+for n,rs in regions.items():
+ f=s/f'backstage-{n}.png';m=next(x.copy() for x in man if x['file']==f.name);m.update(path=str(f),output_name=f'report-image-{n}',article_url='https://www.bilibili.com/opus/961640175446786069',official_replay='https://www.bilibili.com/video/BV11E4m1R716/',performance_date='2024-08-03',video_time_seconds=None,decode_size=None,login_quality_verified=False,scene_scope='Local backstage study only, room layout and cross-image umbrella identity unverified',exclusions=[{'class':cls,'description':labels[cls],'points':[[round(x*1192/800),round(y*671/450)] for x,y in pts]} for cls,pts in rs]);meta=p/'provenance'/f'{n}-metadata.json';meta.write_text(json.dumps(m,ensure_ascii=False,indent=2))
+ with (p/'provenance'/f'{n}-inference.log').open('w') as log:subprocess.run([str(p.parent/'depth-observatory-20261104/venv/bin/python'),str(p/'run_depth.py'),'--metadata',str(meta)],stdout=log,stderr=subprocess.STDOUT,check=True)
+ print(n,'complete',flush=True)
