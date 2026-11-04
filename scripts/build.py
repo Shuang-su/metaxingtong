@@ -5,7 +5,7 @@ R=Path(__file__).resolve().parents[1]
 bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=False)
 s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=64;s.cycles.use_denoising=False;s.render.threads_mode='FIXED';s.render.threads=6
 s.render.resolution_x=1192;s.render.resolution_y=671;s.render.resolution_percentage=100
-s.world.color=(.035,.035,.07);s.view_settings.view_transform='AgX'
+s.world.use_nodes=True;s.world.color=(.035,.035,.07);s.world.node_tree.nodes['Background'].inputs['Color'].default_value=(.035,.035,.07,1);s.world.node_tree.nodes['Background'].inputs['Strength'].default_value=.45;s.view_settings.view_transform='AgX'
 objects=[]
 def mat(n,c,metal=0,emit=0):
  m=bpy.data.materials.new(n);m.diffuse_color=(*c,1);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*c,1);p.inputs['Metallic'].default_value=metal;p.inputs['Roughness'].default_value=.32
@@ -38,13 +38,13 @@ arc('key-pink-ring',8.3,8.38,-.18,.08,-1.9,1.9,pink)
 pts=[]
 for i in range(128):
  t=2*math.pi*i/128;pts.append((4.8*math.cos(t)**3,4.8*math.sin(t)**3,.012))
-v=pts+[(x,y,.002) for x,y,z in pts];f=[tuple(range(128)),tuple(range(255,127,-1))]+[(i,(i+1)%128,(i+1)%128+128,i+128) for i in range(128)]
+v=pts+[(x,y,0) for x,y,z in pts];f=[tuple(range(128)),tuple(range(255,127,-1))]+[(i,(i+1)%128,(i+1)%128+128,i+128) for i in range(128)]
 mesh('four-point-concave-floor-inlay',v,f,star)
 for i in range(37):
  a=-1.85+i*3.7/36;x,y=9.05*math.sin(a),9.05*math.cos(a)
- o=cube(f'white-key-{i:02}',(x,y,1.05),(.69,.26,2.3),white,-a);o.rotation_euler.x=math.radians(-12)
+ o=cube(f'white-key-{i:02}',(x,y,.901906),(.69,.26,2.3),white,-a);o.rotation_euler.x=math.radians(-12)
  if i%7 not in (2,6):
-  a+=.038;o=cube(f'black-key-{i:02}',(8.72*math.sin(a),8.72*math.cos(a),.61),(.38,.42,1.45),black,-a);o.rotation_euler.x=math.radians(-12)
+  a+=.038;o=cube(f'black-key-{i:02}',(8.72*math.sin(a),8.72*math.cos(a),.502823),(.38,.42,1.45),black,-a);o.rotation_euler.x=math.radians(-12)
 for side in [-1,1]:
  for j in range(3):
   a,b=(1.05,1.97) if side==1 else (-1.97,-1.05)
@@ -68,15 +68,15 @@ cx,cy=3.0,-1.8
 poly=[(-1.05,-.65),(1.05,-.65),(1.05,.4),(.75,1.65),(.3,2.05),(-.25,1.95),(-.75,1.15),(-1.05,.3)]
 def prism(n,poly,z,h,m):
  v=[(cx+x,cy+y,z) for x,y in poly]+[(cx+x,cy+y,z+h) for x,y in poly];k=len(poly);return mesh(n,v,[tuple(range(k-1,-1,-1)),tuple(range(k,2*k))]+[(i,(i+1)%k,(i+1)%k+k,i+k) for i in range(k)],m)
-prism('piano-body-rim',poly,1.05,.3,piano);prism('piano-soundboard',[(x*.88,y*.9) for x,y in poly],1.354,.025,black)
+prism('piano-body-rim',poly,1.05,.3,piano);prism('piano-soundboard',[(x*.88,y*.9) for x,y in poly],1.35,.025,black)
 # opened lid shares shape and hinge, plausible not exact
-lid=prism('piano-open-lid',poly,1.42,.065,piano)
+lid=prism('piano-open-lid',poly,1.35,.065,piano)
 for v in lid.data.vertices:
  v.co.z += (v.co.x-(cx-1.05))*.68
 for i,(x,y) in enumerate([(-.86,-.4),(.86,-.4),(.35,1.5)]):cube(f'piano-leg-{i}',(cx+x,cy+y,.525),(.14,.14,1.05),piano)
 cube('piano-keyboard-bed',(cx,cy-.79,1.12),(2.2,.45,.13),piano)
 for i in range(35):
- x=cx-1+i*2/35;cube(f'piano-white-{i}',(x,cy-.83,1.205),(.053,.36,.025),piano)
+ x=cx-1+i*2/35;cube(f'piano-white-{i}',(x,cy-.83,1.1975),(.053,.36,.025),piano)
  if i%7 not in (2,6):cube(f'piano-black-{i}',(x+.026,cy-.72,1.24),(.029,.19,.05),black)
 cube('bench-seat',(cx,cy-1.62,.65),(1.3,.66,.19),piano)
 for i,(x,y) in enumerate([(-.53,-.23),(.53,-.23),(-.53,.23),(.53,.23)]):cube(f'bench-leg-{i}',(cx+x,cy-1.62+y,.28),(.09,.09,.56),piano)
@@ -97,11 +97,11 @@ for obj in s.objects:
   bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(obj.data);bm.free();obj.data.update()
 
 (R/'docs/objects.json').write_text(json.dumps(objects,indent=2))
-(R/'docs/render-sidecar.json').write_text(json.dumps({'engine':'CYCLES','samples':64,'denoising':False,'threads':6,'resolution':[1192,671],'world_use_nodes':s.world.use_nodes,'world_color':list(s.world.color),'view_transform':'AgX','lights':[{'name':o.name,'type':o.data.type,'energy':o.data.energy,'color':list(o.data.color),'size':o.data.size,'matrix_world':[list(r) for r in o.matrix_world]} for o in s.objects if o.type=='LIGHT'],'restore':'Use scripts/build.py or exact BLEND; GLB Area lights and World are not equivalent. All materials are Principled nodes.'},indent=2))
+(R/'docs/render-sidecar.json').write_text(json.dumps({'engine':'CYCLES','samples':64,'denoising':False,'threads':6,'resolution':[1192,671],'world_background_rgba':list(s.world.node_tree.nodes['Background'].inputs['Color'].default_value),'world_background_strength':s.world.node_tree.nodes['Background'].inputs['Strength'].default_value,'world_use_nodes':s.world.use_nodes,'world_color':list(s.world.color),'view_transform':'AgX','lights':[{'name':o.name,'type':o.data.type,'energy':o.data.energy,'color':list(o.data.color),'size':o.data.size,'matrix_world':[list(r) for r in o.matrix_world]} for o in s.objects if o.type=='LIGHT'],'restore':'Use scripts/build.py or exact BLEND; GLB Area lights and World are not equivalent. All materials are Principled nodes.'},indent=2))
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'models/keyring-material.blend'))
-bpy.ops.export_scene.gltf(filepath=str(R/'models/keyring-material.glb'),export_format='GLB',export_cameras=True,export_lights=True)
+bpy.ops.export_scene.gltf(filepath=str(R/'models/keyring-material.glb'),export_format='GLB',export_cameras=True,export_lights=True,export_apply=True)
 wm=mat('diagnostic-white',(.7,.7,.7))
 for o in s.objects:
  if o.type=='MESH':o.data.materials.clear();o.data.materials.append(wm)
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'models/keyring-white.blend'))
-bpy.ops.export_scene.gltf(filepath=str(R/'models/keyring-white.glb'),export_format='GLB',export_cameras=True,export_lights=True)
+bpy.ops.export_scene.gltf(filepath=str(R/'models/keyring-white.glb'),export_format='GLB',export_cameras=True,export_lights=True,export_apply=True)
