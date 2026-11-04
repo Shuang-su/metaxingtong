@@ -1,0 +1,10 @@
+Sampled rings 451 five-ray inside 448
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/lakeleaf-vein-contact-audit-20261104/scripts/check_embedded_ring_parity.py", line 29, in <module>
+    print('Sampled rings',len(rows),'five-ray inside',sum(r['all_inside'] for r in rows),flush=True);assert out['all_inside']
+                                                                                                            ~~~^^^^^^^^^^^^^^
+AssertionError
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/lakeleaf-vein-contact-audit-20261104/models/leaf-only-contact-candidate-v2.blend"
+
+Blender quit
