@@ -1,0 +1,120 @@
+{
+  "BV": "BV1JqCeBMEAb",
+  "url": "https://www.bilibili.com/video/BV1JqCeBMEAb/",
+  "uploader": "星瞳_Official",
+  "time_seconds": 108.755584,
+  "sha256": "702a1f22b0eb686f16082987fea7ed353e61d0675e8fcd927e864ad52b3d08c8",
+  "capture_record": {
+    "before": {
+      "h": 2160,
+      "paused": true,
+      "ready": 4,
+      "time": 108.755584,
+      "w": 3840
+    },
+    "after": {
+      "h": 2160,
+      "paused": true,
+      "ready": 4,
+      "time": 108.755584,
+      "w": 3840
+    },
+    "source": "BV1JqCeBMEAb",
+    "method": "Chrome Save video frame as",
+    "quality": "4K 超高清"
+  },
+  "quality": "4K 超高清, highest offered and actual decoded3840x2160; upstream upscale history unknown",
+  "exclusions": [
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          3840,
+          0
+        ],
+        [
+          3840,
+          1047
+        ],
+        [
+          0,
+          1047
+        ]
+      ],
+      "class": 3,
+      "description": "Background foliage/fog, alpha boundaries and occlusion; not certified solid surface"
+    },
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          0,
+          1047
+        ],
+        [
+          299,
+          1005
+        ],
+        [
+          1479,
+          1578
+        ],
+        [
+          3408,
+          2160
+        ],
+        [
+          3840,
+          2160
+        ],
+        [
+          3840,
+          1047
+        ]
+      ],
+      "class": 2,
+      "description": "Dynamic water/reflection or reflected forest; not reliable solid geometry"
+    },
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          1330,
+          648
+        ],
+        [
+          1928,
+          648
+        ],
+        [
+          1928,
+          2152
+        ],
+        [
+          1330,
+          2152
+        ]
+      ],
+      "class": 1,
+      "description": "Moving performer conservative ROI, includes background, not precise segmentation"
+    }
+  ],
+  "mask_classes": {
+    "1": "Moving performer conservative ROI, includes background, not precise segmentation",
+    "2": "Dynamic water/reflection or reflected forest; not reliable solid geometry",
+    "3": "Background foliage/fog, alpha boundaries and occlusion; not certified solid surface",
+    "4": "Dark continuous inverted island underside silhouette; material and local shape unresolved, NOT empty roots or absence of surface"
+  },
+  "scene_cautions": [
+    "Conservative incomplete manual ROIs, unlabelled does not imply valid",
+    "Dark continuous underside does not imply void; bright canopy is not floor",
+    "Water reflections and screen overlap cannot establish contact",
+    "Native4K is not raw4K depth; raw grid924x518",
+    "No absolute distance, hidden geometry or motion inference; no later-date replay verification"
+  ],
+  "dark_rgb_max_threshold": 25
+}
