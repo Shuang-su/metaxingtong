@@ -3,7 +3,7 @@ from mathutils import Vector
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
 bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=False)
-s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=16;s.cycles.use_denoising=False;s.render.threads_mode='FIXED';s.render.threads=6
+s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=64;s.cycles.use_denoising=False;s.render.threads_mode='FIXED';s.render.threads=6
 s.render.resolution_x=1192;s.render.resolution_y=671;s.render.resolution_percentage=100
 s.world.color=(.035,.035,.07);s.view_settings.view_transform='AgX'
 objects=[]
@@ -37,7 +37,7 @@ arc('key-pink-ring',8.3,8.38,-.18,.08,-1.9,1.9,pink)
 # Four concave points; curve sampled, center filled, small finite thickness.
 pts=[]
 for i in range(128):
- t=2*math.pi*i/128;r=1.7+3.1*abs(math.cos(2*t))**5;pts.append((r*math.cos(t),r*math.sin(t),.012))
+ t=2*math.pi*i/128;pts.append((4.8*math.cos(t)**3,4.8*math.sin(t)**3,.012))
 v=pts+[(x,y,.002) for x,y,z in pts];f=[tuple(range(128)),tuple(range(255,127,-1))]+[(i,(i+1)%128,(i+1)%128+128,i+128) for i in range(128)]
 mesh('four-point-concave-floor-inlay',v,f,star)
 for i in range(37):
@@ -82,14 +82,14 @@ cube('bench-seat',(cx,cy-1.62,.65),(1.3,.66,.19),piano)
 for i,(x,y) in enumerate([(-.53,-.23),(.53,-.23),(-.53,.23),(.53,.23)]):cube(f'bench-leg-{i}',(cx+x,cy-1.62+y,.28),(.09,.09,.56),piano)
 def cam(n,loc,targ,lens):
  bpy.ops.object.camera_add(location=loc);o=bpy.context.object;o.name=n;o.rotation_euler=(Vector(targ)-o.location).to_track_quat('-Z','Y').to_euler();o.data.lens=lens;o.data.sensor_width=36;o.data['aspect']=1192/671;return o
-cams=[cam('source17-conditional',(0,-7.8,2.3),(0,2.5,2),37),cam('source20-conditional',(-.8,-7.8,.95),(0,3,4.0),26),cam('source21-conditional',(0,-11.0,10),(0,2.4,2),25)]
+cams=[cam('source17-conditional',(0,-5.5,1.9),(0,4,2.2),50),cam('source20-conditional',(-.8,-7.8,.95),(0,3,4.0),26),cam('source21-conditional',(0,-11.0,10),(0,2.4,4),25)]
 for i in range(8):
  a=2*math.pi*i/8;cams.append(cam(f'inspection-{i+1:02}',(18*math.sin(a),18*math.cos(a),12 if i%2==0 else 7),(0,0,2),27))
 for n,loc,power,col,size in [('key',(0,-5,10),2200,(.55,.7,1),9),('fill',(-6,0,6),1700,(.3,.45,1),7),('rim',(5,5,8),2400,(1,.2,.65),6)]:
  bpy.ops.object.light_add(type='AREA',location=loc);o=bpy.context.object;o.name=n;o.data.energy=power;o.data.color=col;o.data.shape='DISK';o.data.size=size;o.rotation_euler=(Vector((0,0,0))-o.location).to_track_quat('-Z','Y').to_euler()
 s.camera=cams[2]
 (R/'docs/objects.json').write_text(json.dumps(objects,indent=2))
-(R/'docs/render-sidecar.json').write_text(json.dumps({'engine':'CYCLES','samples':16,'denoising':False,'threads':6,'resolution':[1192,671],'world_color':list(s.world.color),'view_transform':'AgX','lights':[{'name':o.name,'type':o.data.type,'energy':o.data.energy,'color':list(o.data.color),'size':o.data.size,'matrix_world':[list(r) for r in o.matrix_world]} for o in s.objects if o.type=='LIGHT'],'restore':'Use scripts/build.py or exact BLEND; GLB Area lights and World are not equivalent. All materials are Principled nodes.'},indent=2))
+(R/'docs/render-sidecar.json').write_text(json.dumps({'engine':'CYCLES','samples':64,'denoising':False,'threads':6,'resolution':[1192,671],'world_color':list(s.world.color),'view_transform':'AgX','lights':[{'name':o.name,'type':o.data.type,'energy':o.data.energy,'color':list(o.data.color),'size':o.data.size,'matrix_world':[list(r) for r in o.matrix_world]} for o in s.objects if o.type=='LIGHT'],'restore':'Use scripts/build.py or exact BLEND; GLB Area lights and World are not equivalent. All materials are Principled nodes.'},indent=2))
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'models/keyring-material.blend'))
 bpy.ops.export_scene.gltf(filepath=str(R/'models/keyring-material.glb'),export_format='GLB',export_cameras=True,export_lights=True)
 wm=mat('diagnostic-white',(.7,.7,.7))
