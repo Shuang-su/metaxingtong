@@ -1,0 +1,450 @@
+{
+  "schema": "manual-visible-curve-candidates-v1",
+  "coordinate_system": "source raster pixels; origin top-left; x right, y down; no resize/crop in annotations",
+  "method": "Manual visual inspection of original images and enlarged crops; no thresholding, ellipse fitting, interpolation or inferred hidden points. Points are sparse visible curve samples, not physical point correspondences.",
+  "subjective_error_definition": "Each radius_px is a subjective isotropic pick-tolerance in source pixels, not calibrated confidence, statistical sigma, or a measurement of source accuracy.",
+  "camera_status": "Uncalibrated; source publication rasters, native acquisition resolution and timestamp unknown.",
+  "images": [
+    {
+      "source_id": 17,
+      "source_path": "/workspace/scratch/fa58bfcf0425/keyring-hall-source-20261104/17.webp",
+      "preserved_copy": "source-17.webp",
+      "sha256": "147d027ef7afe05cab9d699f84aeb805abdefeb624ae68ff9394c2244b2798df",
+      "width": 1192,
+      "height": 671,
+      "segments": [
+        {
+          "segment_id": "17-BL",
+          "category": "blue_white_dotted_band",
+          "selected_edge": "screen-upper envelope of the visible cyan/white dotted band; not lower sparkle fade",
+          "points": [
+            {
+              "id": 1,
+              "x": 60,
+              "y": 520,
+              "subjective_radius_px": 3
+            },
+            {
+              "id": 2,
+              "x": 180,
+              "y": 508,
+              "subjective_radius_px": 3
+            },
+            {
+              "id": 3,
+              "x": 300,
+              "y": 501,
+              "subjective_radius_px": 3
+            },
+            {
+              "id": 4,
+              "x": 420,
+              "y": 496,
+              "subjective_radius_px": 3
+            }
+          ],
+          "limitations": "Blurred bright envelope; no individual LED correspondence. Stop before hair/body.",
+          "cross_image_identity": null
+        },
+        {
+          "segment_id": "17-BR",
+          "category": "blue_white_dotted_band",
+          "selected_edge": "same screen-upper envelope, separate right visible segment",
+          "points": [
+            {
+              "id": 5,
+              "x": 760,
+              "y": 497,
+              "subjective_radius_px": 3
+            },
+            {
+              "id": 6,
+              "x": 880,
+              "y": 502,
+              "subjective_radius_px": 3
+            },
+            {
+              "id": 7,
+              "x": 1000,
+              "y": 510,
+              "subjective_radius_px": 3
+            },
+            {
+              "id": 8,
+              "x": 1120,
+              "y": 520,
+              "subjective_radius_px": 3
+            }
+          ],
+          "limitations": "Separated by actor occlusion; no hidden join sampled.",
+          "cross_image_identity": null
+        },
+        {
+          "segment_id": "17-SL",
+          "category": "central_concave_pattern_outline",
+          "selected_edge": "screen-upper/background-facing edge of thin magenta outline, NOT the lower filled-purple boundary",
+          "points": [
+            {
+              "id": 9,
+              "x": 200,
+              "y": 600,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 10,
+              "x": 300,
+              "y": 586,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 11,
+              "x": 400,
+              "y": 568,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 12,
+              "x": 450,
+              "y": 558,
+              "subjective_radius_px": 4
+            }
+          ],
+          "limitations": "Thin band and adjacent glow make exact edge subjective; central join concealed by hair/body. Not classified as pink outer ring.",
+          "cross_image_identity": null
+        },
+        {
+          "segment_id": "17-SR",
+          "category": "central_concave_pattern_outline",
+          "selected_edge": "screen-upper/background-facing edge of thin magenta outline",
+          "points": [
+            {
+              "id": 13,
+              "x": 750,
+              "y": 567,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 14,
+              "x": 850,
+              "y": 584,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 15,
+              "x": 950,
+              "y": 597,
+              "subjective_radius_px": 4
+            }
+          ],
+          "limitations": "Avoid lower-right watermark and central hair. Outline identity versus 21 remains hypothetical.",
+          "cross_image_identity": null
+        }
+      ],
+      "unidentified": [
+        {
+          "category": "pink_outer_ring",
+          "points": null,
+          "reason": "No independent outer pink ring can be reliably distinguished from the foreground concave-pattern magenta outlines in this image. Do not equate those with image21 outer pink ring."
+        },
+        {
+          "category": "central_pattern_exact_tips",
+          "points": null,
+          "reason": "Rear/upward tip hidden by performer; lateral endpoints out of frame/uncertain; bottom tip cropped. No guessed tip coordinates."
+        }
+      ]
+    },
+    {
+      "source_id": 20,
+      "source_path": "/workspace/scratch/fa58bfcf0425/keyring-hall-source-20261104/20.webp",
+      "preserved_copy": "source-20.webp",
+      "sha256": "b85513715a12075347129d874701e2423d155b6c06a92a88ac294df8526f6fca",
+      "width": 1192,
+      "height": 671,
+      "segments": [
+        {
+          "segment_id": "20-BL",
+          "category": "blue_white_dotted_band",
+          "selected_edge": "screen-upper bright envelope of thin blue/white far band",
+          "points": [
+            {
+              "id": 1,
+              "x": 280,
+              "y": 601,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 2,
+              "x": 330,
+              "y": 599,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 3,
+              "x": 380,
+              "y": 597,
+              "subjective_radius_px": 4
+            }
+          ],
+          "limitations": "Only short left span after subtitle, before hair. Severe flattening and blur. Not the low foreground pale curve.",
+          "cross_image_identity": null
+        },
+        {
+          "segment_id": "20-BR",
+          "category": "blue_white_dotted_band",
+          "selected_edge": "screen-upper envelope of same apparent far blue/white band class",
+          "points": [
+            {
+              "id": 4,
+              "x": 640,
+              "y": 596,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 5,
+              "x": 700,
+              "y": 598,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 6,
+              "x": 760,
+              "y": 600,
+              "subjective_radius_px": 4
+            }
+          ],
+          "limitations": "Stops before piano bench. Avoid separate curved white outline below and specular line inside platform.",
+          "cross_image_identity": null
+        }
+      ],
+      "unidentified": [
+        {
+          "category": "pink_outer_ring",
+          "points": null,
+          "reason": "No confidently separable pink ring edge in the low-angle visible stage area."
+        },
+        {
+          "category": "central_pattern_tips_and_edges",
+          "points": null,
+          "reason": "Pale curved lines and stage surface visible, but low angle, costume, piano/bench and cropping prevent reliable same-pattern edge/tip identity. Unassigned, not force-matched."
+        }
+      ]
+    },
+    {
+      "source_id": 21,
+      "source_path": "/workspace/scratch/fa58bfcf0425/keyring-hall-source-20261104/21.webp",
+      "preserved_copy": "source-21.webp",
+      "sha256": "e8c4d4b66b8f89df6e0f2ded7b5c34bc42be2d14d253aec2a669228aecbaee80",
+      "width": 1192,
+      "height": 671,
+      "segments": [
+        {
+          "segment_id": "21-B",
+          "category": "blue_white_dotted_band",
+          "selected_edge": "screen-upper/outer envelope of INNERMOST blue-white dotted band around center motif; NOT the separate darker blue dotted band farther back",
+          "points": [
+            {
+              "id": 1,
+              "x": 320,
+              "y": 611,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 2,
+              "x": 370,
+              "y": 574,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 3,
+              "x": 420,
+              "y": 548,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 4,
+              "x": 470,
+              "y": 531,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 5,
+              "x": 520,
+              "y": 523,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 6,
+              "x": 570,
+              "y": 521,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 7,
+              "x": 620,
+              "y": 524,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 8,
+              "x": 670,
+              "y": 537,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 9,
+              "x": 710,
+              "y": 551,
+              "subjective_radius_px": 4
+            }
+          ],
+          "limitations": "Long left/rear arc; stop before piano. Outer envelope is not inferred physical top surface. Other blue ring deliberately unmarked.",
+          "cross_image_identity": null
+        },
+        {
+          "segment_id": "21-P",
+          "category": "pink_outer_ring",
+          "selected_edge": "screen-upper/background-facing edge of outer magenta dotted band, not its lower glow",
+          "points": [
+            {
+              "id": 10,
+              "x": 160,
+              "y": 535,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 11,
+              "x": 260,
+              "y": 491,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 12,
+              "x": 360,
+              "y": 462,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 13,
+              "x": 460,
+              "y": 444,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 14,
+              "x": 560,
+              "y": 439,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 15,
+              "x": 660,
+              "y": 444,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 16,
+              "x": 760,
+              "y": 460,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 17,
+              "x": 860,
+              "y": 486,
+              "subjective_radius_px": 4
+            },
+            {
+              "id": 18,
+              "x": 960,
+              "y": 526,
+              "subjective_radius_px": 4
+            }
+          ],
+          "limitations": "Glow, light beams and low resolution; selected intervals avoid brightest crossing beams and watermark. No bridge across masked right foreground.",
+          "cross_image_identity": null
+        },
+        {
+          "segment_id": "21-SL",
+          "category": "central_concave_pattern_outline",
+          "selected_edge": "upper/background-facing fine pale-purple outline of left concave branch, NOT lower solid-filled purple boundary",
+          "points": [
+            {
+              "id": 19,
+              "x": 340,
+              "y": 636,
+              "subjective_radius_px": 5
+            },
+            {
+              "id": 20,
+              "x": 400,
+              "y": 632,
+              "subjective_radius_px": 5
+            },
+            {
+              "id": 21,
+              "x": 460,
+              "y": 617,
+              "subjective_radius_px": 5
+            },
+            {
+              "id": 22,
+              "x": 520,
+              "y": 592,
+              "subjective_radius_px": 5
+            },
+            {
+              "id": 23,
+              "x": 555,
+              "y": 564,
+              "subjective_radius_px": 5
+            }
+          ],
+          "limitations": "Fine diffuse outline; multiple adjacent purple boundaries. Retain separately from filled patch.",
+          "cross_image_identity": null
+        },
+        {
+          "segment_id": "21-ST",
+          "category": "central_pattern_tip_region",
+          "selected_edge": "visible narrow upward convergence of outline; approximate tip region only",
+          "points": [
+            {
+              "id": 24,
+              "x": 582,
+              "y": 537,
+              "subjective_radius_px": 7
+            }
+          ],
+          "limitations": "Fine line tapers into dotted band; exact mathematical tip not identifiable. Do not treat as precise four-cusped-curve vertex.",
+          "cross_image_identity": null
+        },
+        {
+          "segment_id": "21-SLT",
+          "category": "central_pattern_tip_region",
+          "selected_edge": "leftward convergence region of thin outlines",
+          "points": [
+            {
+              "id": 25,
+              "x": 323,
+              "y": 639,
+              "subjective_radius_px": 7
+            }
+          ],
+          "limitations": "Several thin strokes merge near blue band. Approximate visible convergence, not proof of exact cusp or planar geometry.",
+          "cross_image_identity": null
+        }
+      ],
+      "unidentified": [
+        {
+          "category": "central_pattern_right_and_bottom_tips",
+          "points": null,
+          "reason": "Right tip occluded by piano; lower tip out of frame. No completion by symmetry."
+        },
+        {
+          "category": "central_pattern_right_branch",
+          "points": null,
+          "reason": "Short partly exposed right-side strokes not chosen: piano occlusion and multiple nearby fill/outline boundaries make stronger identity claim unwarranted."
+        }
+      ]
+    }
+  ]
+}
