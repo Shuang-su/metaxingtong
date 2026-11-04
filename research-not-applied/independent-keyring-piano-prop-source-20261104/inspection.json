@@ -1,0 +1,134 @@
+{
+  "sources": [
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/keyring-hall-source-20261104/20.webp",
+      "sha256": "b85513715a12075347129d874701e2423d155b6c06a92a88ac294df8526f6fca",
+      "bytes": 38186,
+      "width": 1192,
+      "height": 671,
+      "native_resolution_verified": false
+    },
+    {
+      "file": "/workspace/scratch/fa58bfcf0425/keyring-hall-source-20261104/21.webp",
+      "sha256": "e8c4d4b66b8f89df6e0f2ded7b5c34bc42be2d14d253aec2a669228aecbaee80",
+      "bytes": 57442,
+      "width": 1192,
+      "height": 671,
+      "native_resolution_verified": false
+    }
+  ],
+  "coordinate_convention": "原图左上为(0,0)，x向右/y向下；点为人工近似定位，不是亚像素测量。crop boxes为left,top,right,bottom，右下不含。",
+  "observations": {
+    "20": {
+      "points": {
+        "P1": [
+          1125,
+          286
+        ],
+        "P2": [
+          1153,
+          319
+        ],
+        "P3": [
+          1191,
+          364
+        ],
+        "P4": [
+          968,
+          439
+        ]
+      },
+      "bright_line_visible_segment": [
+        "P1",
+        "P3"
+      ],
+      "crosses_lid_silhouette_near": "P2",
+      "P3_is_crop_boundary_not_physical_endpoint": true,
+      "dark_diagonal": [
+        "P1",
+        "P4"
+      ],
+      "point_uncertainty_px": 3,
+      "bright_line_width_px_estimate": [
+        2,
+        5
+      ],
+      "width_definition": "含抗锯齿/压缩过渡的约略法向可见宽度；亮核心约2–3px；非真实杆径",
+      "occlusion": "P1处小暗接触区；P2附近亮线跨过蓝色盖轮廓并继续；下端在右边界截断，琴体连接不可见。",
+      "physical_support_evidence": "moderate",
+      "interpretation": "独立细杆（琴盖撑杆）为较合理候选；盖缘/装饰线较不符合跨轮廓连续性。光效不能绝对排除。",
+      "dark_line_identity": null
+    },
+    "21": {
+      "points": {
+        "Q1": [
+          760,
+          589
+        ],
+        "Q2": [
+          768,
+          619
+        ],
+        "Q3": [
+          775,
+          644
+        ]
+      },
+      "point_uncertainty_px": 3,
+      "line_width_px_estimate": [
+        1,
+        3
+      ],
+      "occlusion": "Q1在琴盖前右下缘处；细线沿开口右侧至Q3附近与琴体边缘/暗部混合，无法分清终端接头。",
+      "physical_support_evidence": "limited_corroboration",
+      "interpretation": "可见盖下至琴体侧的细线，有限佐证撑杆类实体；其两端与琴盖/琴体的实际连接及与20的同一性不能确认。"
+    }
+  },
+  "reconstruction_candidate": {
+    "label": "琴盖细撑杆候选",
+    "existence_confidence": "moderate",
+    "mandatory_model_addition": false,
+    "same_component_across_images": null,
+    "true_diameter": null,
+    "true_length": null,
+    "endpoints_3d": null,
+    "attachment_points_3d": null,
+    "lid_angle_measured": null,
+    "camera_calibrated": false,
+    "recommendation": "可列为可开关/待核验的有限候选；不可声称实测构件，不据此强加杆。"
+  },
+  "analysis_crops": {
+    "20-lid-crop.png": [
+      860,
+      220,
+      1192,
+      460
+    ],
+    "20-line-nearest-6x.png": [
+      1080,
+      260,
+      1192,
+      390
+    ],
+    "21-piano-crop.png": [
+      640,
+      540,
+      820,
+      671
+    ],
+    "21-piano-nearest-5x.png": [
+      640,
+      540,
+      820,
+      671
+    ]
+  },
+  "constraints": [
+    "原WEBP字节不改动",
+    "只分析提供图，不称其为原生分辨率",
+    "并非相机校准/三维实测",
+    "并非多时态验证",
+    "不检查不相关琴脚/凳腿",
+    "不修改模型、不渲染、不外部发布"
+  ]
+}
