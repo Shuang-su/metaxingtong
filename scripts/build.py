@@ -1,4 +1,4 @@
-import bpy, math, json, os
+import bpy, math, json, os, bmesh
 from mathutils import Vector
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
@@ -29,7 +29,7 @@ def arc(n,ri,ro,z,h,a,b,m,N=96):
   fs += [(i,i+1,k+i+1,k+i),(2*k+i,3*k+i,3*k+i+1,2*k+i+1),(i,2*k+i,2*k+i+1,i+1),(k+i,k+i+1,3*k+i+1,3*k+i)]
  fs += [(0,k,3*k,2*k),(N,2*k+N,3*k+N,k+N)]
  return mesh(n,vs,fs,m)
-arc('stage-central-solid',0.001,5.0,-.3,.3,-math.pi,math.pi,navy)
+arc('stage-central-solid',0,5.0,-.3,.3,-math.pi,math.pi,navy)
 arc('stage-step-ring',5.02,6.0,-.42,.22,-math.pi,math.pi,navy)
 arc('stage-outer-floor',6.02,10,-.5,.25,-math.pi*.66,math.pi*.66,navy)
 arc('inner-luminous-rim',4.96,5.01,.002,.035,-math.pi,math.pi,silver)
@@ -82,14 +82,22 @@ cube('bench-seat',(cx,cy-1.62,.65),(1.3,.66,.19),piano)
 for i,(x,y) in enumerate([(-.53,-.23),(.53,-.23),(-.53,.23),(.53,.23)]):cube(f'bench-leg-{i}',(cx+x,cy-1.62+y,.28),(.09,.09,.56),piano)
 def cam(n,loc,targ,lens):
  bpy.ops.object.camera_add(location=loc);o=bpy.context.object;o.name=n;o.rotation_euler=(Vector(targ)-o.location).to_track_quat('-Z','Y').to_euler();o.data.lens=lens;o.data.sensor_width=36;o.data['aspect']=1192/671;return o
-cams=[cam('source17-conditional',(0,-5.5,1.9),(0,4,2.2),50),cam('source20-conditional',(-.8,-7.8,.95),(0,3,4.0),26),cam('source21-conditional',(0,-11.0,10),(0,2.4,4),25)]
+cams=[cam('source17-conditional',(0,-3.5,1.9),(0,5,1.3),30),cam('source20-conditional',(-.8,-7.8,.95),(0,3,4.0),26),cam('source21-conditional',(0,-11.0,10),(0,2.4,4),25)]
 for i in range(8):
  a=2*math.pi*i/8;cams.append(cam(f'inspection-{i+1:02}',(18*math.sin(a),18*math.cos(a),12 if i%2==0 else 7),(0,0,2),27))
 for n,loc,power,col,size in [('key',(0,-5,10),2200,(.55,.7,1),9),('fill',(-6,0,6),1700,(.3,.45,1),7),('rim',(5,5,8),2400,(1,.2,.65),6)]:
  bpy.ops.object.light_add(type='AREA',location=loc);o=bpy.context.object;o.name=n;o.data.energy=power;o.data.color=col;o.data.shape='DISK';o.data.size=size;o.rotation_euler=(Vector((0,0,0))-o.location).to_track_quat('-Z','Y').to_euler()
 s.camera=cams[2]
+# Weld actual shared endpoints and top-pole singularities, remove zero-area faces.
+for obj in s.objects:
+ if obj.type=='MESH':
+  bm=bmesh.new();bm.from_mesh(obj.data);bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-6)
+  bad=[f for f in bm.faces if f.calc_area()<1e-10]
+  if bad:bmesh.ops.delete(bm,geom=bad,context='FACES_ONLY')
+  bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(obj.data);bm.free();obj.data.update()
+
 (R/'docs/objects.json').write_text(json.dumps(objects,indent=2))
-(R/'docs/render-sidecar.json').write_text(json.dumps({'engine':'CYCLES','samples':64,'denoising':False,'threads':6,'resolution':[1192,671],'world_color':list(s.world.color),'view_transform':'AgX','lights':[{'name':o.name,'type':o.data.type,'energy':o.data.energy,'color':list(o.data.color),'size':o.data.size,'matrix_world':[list(r) for r in o.matrix_world]} for o in s.objects if o.type=='LIGHT'],'restore':'Use scripts/build.py or exact BLEND; GLB Area lights and World are not equivalent. All materials are Principled nodes.'},indent=2))
+(R/'docs/render-sidecar.json').write_text(json.dumps({'engine':'CYCLES','samples':64,'denoising':False,'threads':6,'resolution':[1192,671],'world_use_nodes':s.world.use_nodes,'world_color':list(s.world.color),'view_transform':'AgX','lights':[{'name':o.name,'type':o.data.type,'energy':o.data.energy,'color':list(o.data.color),'size':o.data.size,'matrix_world':[list(r) for r in o.matrix_world]} for o in s.objects if o.type=='LIGHT'],'restore':'Use scripts/build.py or exact BLEND; GLB Area lights and World are not equivalent. All materials are Principled nodes.'},indent=2))
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'models/keyring-material.blend'))
 bpy.ops.export_scene.gltf(filepath=str(R/'models/keyring-material.glb'),export_format='GLB',export_cameras=True,export_lights=True)
 wm=mat('diagnostic-white',(.7,.7,.7))
