@@ -1,20 +1,22 @@
-# Backstage local object group R01 early freeze, NOT a complete room or accepted scene
+# Backstage local object group final R04 limited technical candidate, NOT a whole room or accepted scene
 
-Early R01 local object group only; NOT a whole room or complete new scene. Source NOT VALIDATED / FAILED. Later model diagnostic images and independent model QA are not included. All initial limitations and failures remain preserved.
+Frozen local object group only, NOT a whole room or complete new scene. Source FAILED; no source/model or eight-angle acceptance.
 
-Original HEAD: `494dc0c750854b2fb22af7884886dadfbcbe9531`
+Original HEAD: `5ccdf3eae5c11e64791ca5c4d909458e9a500e2d`
 Original history: `refs/heads/history/backstage-local-original-20261105`
+Previous original HEAD: `494dc0c750854b2fb22af7884886dadfbcbe9531`
 
-`files/` preserves all 66 original files without modification. `provenance.json` records bytes, SHA256, Git blobs and every original commit/object.
+`files/` preserves all 178 current original files without modification. Input Library version 1; archive revision 1. `versions/v0/` preserves the preceding current archive directory including its receipt. All older snapshots remain unchanged without recursive duplication. All 4 real original commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs, original objects and every stage.
 
-- Frozen R01 local backstage vanity, photographic umbrella and clothes-rack object group only. It is NOT a complete room, complete new scene, daily-new-scene acceptance, or accepted reconstruction. All 66 original files and one real original commit are preserved unchanged.
-- Three 1192x671 reported images 009/011/012 are not native video frames. Official BV/article links are producer-recorded source identity evidence; exact clip times, highest decoded quality, continuous cross-view identity and later-date reuse remain unknown. The archive worker does not independently browse or validate these sources.
-- Producer records 210 meshes and four diagnostic cameras with editable material/white BLEND and GLB. Counts are recorded claims; archive checks validate file integrity, not geometric accuracy. No unknown whole-room walls, floor, ceiling or adjoining rooms are established.
-- Source matching remains NOT VALIDATED / FAILED. Object counts, hidden supports, thicknesses, camera parameters, umbrella position and static inter-object relations are hypotheses. Mirror reflections must not be counted as additional physical lights or a new source viewpoint.
-- Three actual relative inverse-depth output sets, numerical arrays, masks, logs and failed interpretations are preserved. They are not metric depth, calibrated confidence, source-camera acceptance or validated geometry. Emissive umbrellas, mirrors and dark areas remain unreliable; image 012 bright lower-left depth rectangle is not evidence for inventing a box.
-- Later model diagnostic images and independent model QA are absent from this early freeze. The included novelty review is limited source-screening evidence, not model QA or exhaustive repository deduplication. No direct source overlays or completed eight-angle/main-image suite are claimed.
-- All preexisting archive paths and 112 preexisting remote branch refs are preserved. New independent archive/history refs isolate the local group; production worktree and producer branch are untouched.
-- Archive work is supported Library materialization, ordinary Git original-history preservation and remote integrity verification only. No modeling, rendering, source-script execution, LFS, force pushes, credential copying, security changes, main edits, Issues or PRs.
-- The previously denied source-screening-increment receipt stays paused and is not retried or included. Space temporary file and permanent attachments are retained for dot to manage.
+- Final frozen R04 backstage local object group only: vanity, photographic umbrella and clothes rack. This is NOT a whole room, complete new scene, second complete scene, or source/model acceptance. Four real original commits contain four model stages R01-R04; all 178 original files are preserved unchanged.
+- Three 1192x671 reported images 009/011/012 are not native video frames. Official BV/article links are producer-recorded identity evidence. Precise clip times, highest decoded quality, cross-view static layout and later-date reuse remain unknown. All source matching remains FAILED / not calibrated.
+- Producer and supplied independent QA report 215 meshes and four cameras. R04 changes 15 old objects and adds five inferred rings, leaving 195 old objects unchanged. It narrows clothing and hanger proxies to remove specific intersections and connect specified surfaces; it is not source garment proportions, recovered physical hooks, Boolean welding, load-bearing validation or full-scene collision acceptance.
+- Prior R01-R03 model bytes and failures remain in the original history and current tree. Prior R01 archive directory, provenance and receipt are additionally preserved as versions/v0. Eight outer umbrella-rib projection boundary failures remain; local garment contact findings do not resolve them.
+- Twenty-two cumulative historical preview PNGs are retained, of which six belong to current R04: three diagnostic angles times material/white variants, at 16 samples. Four stored cameras are not four rendered angles. There is no eight-angle standard, calibrated source overlay, complete-room coverage or accepted main-image suite. Cropped umbrella/rack, occlusion, low contrast and noise remain.
+- R02/R03 execution mistakenly shared the R01 preview-record filename. Original erroneous scripts, misnamed records, actual PNGs and logs remain. Explicit posthoc inventories correct metadata from existing bytes and are not fabricated contemporaneous logs. Corrected scripts are not retroactively claimed to have run.
+- Three actual relative inverse-depth result sets, masks, numerical arrays, metadata and failures are preserved. They are not metric depth or calibrated confidence; emissive umbrellas, mirror reflections and dark regions remain unreliable. Missing geometry or supports are not established by these outputs.
+- The included independent QA is limited technical evidence. Archive worker verifies bytes, recorded hashes and Git objects/commit trees only; it does not rerun geometry checks, production scripts or rendering and does not independently validate source content.
+- Ordinary fast-forward archive/history updates preserve all unrelated old paths and 112 other preexisting refs. No production-worktree edits, main writes, LFS, force pushes, credential copying, security changes, Issues or PRs.
+- The denied source-screening-increment receipt remains paused and is not retried. This Library version remains frozen for dot to manage after receipt confirmation; no new permanent attachments are created or removed.
 
-Remote verification is appended under `publication-verification/remote_verification.json`.
+Current remote verification is appended under `publication-verification/remote_verification.json`.
