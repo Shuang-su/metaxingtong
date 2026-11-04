@@ -1,34 +1,37 @@
 {
-  "stage": "R09",
+  "stage": "R11",
   "scope": "local assemblage study, NOT a whole room or accepted scene",
-  "mesh_count": 231,
-  "diagnostic_cameras": 7,
-  "source_matching": "FAILED / not calibrated; missing native source and full-room evidence",
+  "mesh_count": 236,
+  "diagnostic_cameras": 8,
+  "source_matching": "FAILED; source009 device category only, unknown full layout/identity/physical dimensions",
   "originals": [
     {
-      "path": "models/R09_material.blend",
-      "bytes": 2919560,
-      "sha256": "c8b3cc51e321438e3a1439efaa4ee3ea163cb483e5212d96f774d09105971627"
+      "path": "models/R11_material.blend",
+      "bytes": 3017140,
+      "sha256": "54d6e8b3b204ed11e32b22cb457f13d94f7e344695ad14583bd837e5178dd6dd"
     },
     {
-      "path": "models/R09_material.glb",
-      "bytes": 1078292,
-      "sha256": "f1ec1e0154f0830a1a5372d68e1f5420cd0596218eb38795793ae828bdb5149e"
+      "path": "models/R11_material.glb",
+      "bytes": 1101860,
+      "sha256": "4248c4e4cedfa51ce4521f073f73282261b8a8f0df47beeb6be0bcb57d77458b"
     },
     {
-      "path": "models/R09_white.blend",
-      "bytes": 2687880,
-      "sha256": "25523c6b24acc44ec1d9cfa326f399a7a5fe7790a3ec5fcec2a72b9935fcb6b2"
+      "path": "models/R11_white.blend",
+      "bytes": 2729268,
+      "sha256": "cab03e3a6d5c703504b96a56b97c1015856a14967f33cdd305c9fd412854e4b0"
     },
     {
-      "path": "models/R09_white.glb",
-      "bytes": 1079324,
-      "sha256": "ddefb968fd9e8ec2852cc58a11c5870dd08b606bd952e84c40b78cd8678577ca"
+      "path": "models/R11_white.glb",
+      "bytes": 1097744,
+      "sha256": "f49646190fc6b3e271b68ce0b1da22e33a906564f8c0083208976c85938d179e"
     }
   ],
   "rendered_distinct_diagnostic_angles": 1,
-  "status": "two proxy handle root contacts repaired; source FAILED; case/table gap and other collisions retained",
+  "status": "device front appearance candidate on unchanged body surface plus five finite controls; limited technical QA complete; all source matching FAILED; old tabletop gaps/collisions retained",
   "new_render_count": 2,
   "reused_render_count": 0,
-  "comparison_baseline_render_count": 2
+  "comparison_baseline_render_count": 4,
+  "finalized_utc": "2026-11-04T20:33:57.900753+00:00",
+  "failed_stage": "R10 seven physical panels introduced new bottle intersections and five coplanar front corners; retained",
+  "texture": "textures/R11_device_front_proxy.png; diagrammatic generated regions, not scan or source pixels"
 }

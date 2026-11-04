@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/independent-backstage-mannequin-qa-20261104/check_render_state.py", line 21, in <module>
+    D[ver]={'render':snap_rna(s.render),'image_settings':snap_rna(s.render.image_settings),'cycles':snap_rna(s.cycles),'view_settings':snap_rna(s.view_settings),'display_settings':snap_rna(s.display_settings),'world_name':s.world.name,'camera':s.camera.name,'frame':[s.frame_current,s.frame_subframe],'use_nodes':s.use_nodes}
+                     ~~~~~~~~^^^^^^^^^^
+  File "/workspace/scratch/fa58bfcf0425/independent-backstage-mannequin-qa-20261104/check_render_state.py", line 11, in snap_rna
+    elif p.is_array:v=list(v)
+         ^^^^^^^^^^
+AttributeError: 'EnumProperty' object has no attribute 'is_array'
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/backstage-local-study-20261105/models/R06_material.blend"
+
+Blender quit
