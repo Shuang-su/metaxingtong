@@ -16,7 +16,7 @@ for n,obj,box in crops:
  for i,im in enumerate([src,ren,over]):sheet.paste(im.crop(box),(w*i,0))
  sheet.save(out/f'crop-{n}-{obj}-source-render-overlay.png')
 (R/'docs/comparison-manifest.json').write_text(json.dumps({'model_commit':'130b5632b838729af6b97059849972d60640b924','material_blend_sha256':'591c0347a4ab63be9f7c6028058874d846fb16e3ba10c5e4c18775a40ed06d06','white_blend_sha256':'0c50e2b00305eb6335fed61bb163377e5754e8f905f17daf98fbdf929b48ea66','sources':'report WebP, not native; times unknown','records':records,'crops':[{'source':n,'object':obj,'xyxy':b,'resized':False} for n,obj,b in crops]},indent=2))
-shutil.copyfile(R/'renders/source21-conditional.png',R/'renders/main-material.png')
+shutil.copyfile(R/'renders/inspection-05.png',R/'renders/main-material.png')
 # Contact sheets are explicitly scaled diagnostic derivatives, originals retained.
 for variant in ['material','white']:
  sheet=Image.new('RGB',(596*4,360*2));d=ImageDraw.Draw(sheet)

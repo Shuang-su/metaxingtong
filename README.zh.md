@@ -6,3 +6,6 @@
 models下材质/白模BLEND与GLB同几何，11个真实相机；源机位是条件性手工候选未标定。8检查相机是模型检查不是来源角。GLB不携带Blender Area灯/World完整效果，正确节点与灯光配置见docs/render-sidecar.json和scripts/build.py，BLEND可精确恢复原场景；不声称跨软件渲染等价。无外部纹理依赖，无AI外部生成器，仅/usr/bin/blender 4.3.2，Cycles CPU6、无denoise。
 
 早期可编辑阶段。所有试验、失败与后续修正保留真实Git历史。尚未完成几何接缝/射线/导入/叠图与8角有效性核验；可打开不代表验收。
+
+## 当前入口更正
+CURRENT.json指向versions/R06，是当前有限候选。根models保留R04中间原件，不是当前。R01至R06真实历史、失败原因和逐次修复见docs/stage-history.zh.md。R06正式图进行中；材白每种3来源条件机位、8检查机位，全部1192×671，源材/白各直接50%叠图；正常主图为R06 source21原始材质渲染。检查机位不是来源。当前World为显式Background节点(.035,.035,.07,1)、strength .45，Area灯矩阵在求值后记录。
