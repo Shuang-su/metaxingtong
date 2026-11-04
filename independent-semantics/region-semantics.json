@@ -1,0 +1,84 @@
+{
+  "source": "sources/report/15.png",
+  "coordinate_convention": "original1192x671 x-right y-down; boxes locate semantic regions, not measured contour points",
+  "regions": [
+    {
+      "id": "R_spire",
+      "box": [
+        658,
+        278,
+        694,
+        334
+      ],
+      "class": "distinct central tapered ornament/spire; not smooth roof dome",
+      "status": "diagnostic_only",
+      "limits": "orbit bright lines overlap lower portion; tip and body not a roof-radius observation"
+    },
+    {
+      "id": "R_left_ribbed_shoulder",
+      "box": [
+        551,
+        328,
+        649,
+        359
+      ],
+      "class": "repeated raised rib/fin-like silhouettes and valleys",
+      "status": "no_single_smooth_profile",
+      "limits": "do not connect peaks as proven continuous roof surface or use every ridge as independent source angle"
+    },
+    {
+      "id": "R_right_shoulder",
+      "box": [
+        753,
+        339,
+        831,
+        366
+      ],
+      "class": "building aggregate upper envelope candidate",
+      "status": "conditional_2D_segment_only",
+      "subjective_boundary_uncertainty_px": [
+        4,
+        7
+      ],
+      "limits": "possible raised ribs; not identified underside/base roof surface, not fixed 3D correspondence"
+    },
+    {
+      "id": "R_left_outer_return",
+      "box": [
+        513,
+        351,
+        555,
+        375
+      ],
+      "class": "roof/eaves turn at left",
+      "status": "ambiguous_layer",
+      "limits": "roof shoulder joins repeated eave bands; do not equate with original model eave ring"
+    },
+    {
+      "id": "R_front_eave_band",
+      "box": [
+        514,
+        363,
+        849,
+        405
+      ],
+      "class": "multiple horizontal curved bands with foreground brace overlap",
+      "status": "layer_unresolved",
+      "limits": "L03/L04 retained as image observations, not identified 3D edge"
+    },
+    {
+      "id": "R_orbits",
+      "box": [
+        613,
+        300,
+        763,
+        341
+      ],
+      "class": "bright elliptical orbit decoration / media-like effect",
+      "status": "excluded_from_roof_profile",
+      "limits": "cannot use bright loop as solid roof outline; actual thickness/persistence unknown"
+    }
+  ],
+  "new_3d_constraints": false,
+  "old_points_modified": false
+}
