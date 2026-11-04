@@ -1,0 +1,370 @@
+{
+  "source": {
+    "file": "reta2-8.img",
+    "url": "https://p5.itc.cn/q_70/images03/20230102/2f5c99372ee948e8af28ddf1fae3c1f7.png",
+    "sha256": "5b831edcb998ff3ddd6aefa952b081ef0dc80db424039f64b19583481802e580",
+    "size": [
+      1080,
+      605
+    ],
+    "frames": 1,
+    "article": "https://www.sohu.com/a/623951374_121124366",
+    "publisher": "SD科技制造",
+    "article_date": "2023-01-02",
+    "native": false,
+    "frame_time": null,
+    "path": "/workspace/scratch/fa58bfcf0425/dreamfold-source-20261104/reta2-8.img",
+    "output_name": "report-image-8",
+    "capture_type": "website article image, NOT live-video native frame",
+    "video_time_seconds": null,
+    "decode_size": null,
+    "login_quality_verified": false,
+    "scope": "Single visible phone front-side proxy study; NOT complete new scene; no calibrated physical fold angle",
+    "exclusions": [
+      {
+        "class": 3,
+        "description": "Airship/sky/glowing particles/heart effect or field with dynamic obscuration; incomplete conservative caution",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1080,
+            0
+          ],
+          [
+            1080,
+            120
+          ],
+          [
+            851,
+            285
+          ],
+          [
+            792,
+            287
+          ],
+          [
+            691,
+            288
+          ],
+          [
+            0,
+            271
+          ]
+        ]
+      },
+      {
+        "class": 3,
+        "description": "Airship/sky/glowing particles/heart effect or field with dynamic obscuration; incomplete conservative caution",
+        "points": [
+          [
+            385,
+            222
+          ],
+          [
+            668,
+            222
+          ],
+          [
+            678,
+            348
+          ],
+          [
+            608,
+            418
+          ],
+          [
+            459,
+            418
+          ],
+          [
+            432,
+            326
+          ]
+        ]
+      },
+      {
+        "class": 4,
+        "description": "Logo/subtitle/watermark or large screen overlay; not phone geometry",
+        "points": [
+          [
+            112,
+            417
+          ],
+          [
+            304,
+            417
+          ],
+          [
+            304,
+            500
+          ],
+          [
+            112,
+            500
+          ]
+        ]
+      },
+      {
+        "class": 4,
+        "description": "Logo/subtitle/watermark or large screen overlay; not phone geometry",
+        "points": [
+          [
+            835,
+            489
+          ],
+          [
+            1017,
+            489
+          ],
+          [
+            1017,
+            591
+          ],
+          [
+            835,
+            591
+          ]
+        ]
+      },
+      {
+        "class": 4,
+        "description": "Logo/subtitle/watermark or large screen overlay; not phone geometry",
+        "points": [
+          [
+            846,
+            118
+          ],
+          [
+            1079,
+            118
+          ],
+          [
+            1079,
+            282
+          ],
+          [
+            855,
+            278
+          ]
+        ]
+      },
+      {
+        "class": 2,
+        "description": "Phone reflective/emissive face, no brightness-to-fold-angle inference",
+        "points": [
+          [
+            715,
+            292
+          ],
+          [
+            775,
+            290
+          ],
+          [
+            766,
+            370
+          ],
+          [
+            706,
+            372
+          ]
+        ]
+      },
+      {
+        "class": 1,
+        "description": "Moving performer/occluded ground conservative ROI",
+        "points": [
+          [
+            500,
+            357
+          ],
+          [
+            565,
+            357
+          ],
+          [
+            578,
+            494
+          ],
+          [
+            500,
+            494
+          ]
+        ]
+      }
+    ],
+    "dimensions": [
+      1080,
+      605
+    ],
+    "bytes": 303025,
+    "crop": [
+      0,
+      0,
+      1080,
+      605
+    ]
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "artifacts": [
+      {
+        "path": "README.md",
+        "bytes": 4400,
+        "sha256": "319566441daaac0c5ed83e75a8fd19bae0863f3275e23f147c06fe0906edf6fb",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/README.md"
+      },
+      {
+        "path": "config.json",
+        "bytes": 950,
+        "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 99173660,
+        "sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/model.safetensors"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "bytes": 775,
+        "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/preprocessor_config.json"
+      }
+    ],
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0",
+      "safetensors": "0.8.0"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 1,
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "forward_seconds": 3.777144193649292
+  },
+  "range": {
+    "min": 0.0,
+    "max": 6.024199485778809,
+    "nonfinite_count": 0
+  },
+  "definition": "Relative inverse-depth-like prediction; larger/white generally nearer, smaller/black farther; NOT image luminance, metric distance or geometry acceptance. Per-image normalization not cross-view scale.",
+  "resampling": "Bicubic align_corners=False from model grid to screenshot grid, NOT independent full-resolution depth; no source interpolation claimed.",
+  "masks": {
+    "manual": "Conservative incomplete ROIs, later drawn overwrite;0 unlabelled NOT certified valid.",
+    "confidence_unknown": "255 everywhere means NO calibrated confidence, NOT high confidence.",
+    "nonfinite": "255 numerical nonfinite;0 only finite, not valid geometry.",
+    "dark": "All original RGB<=25 heuristic caution, NOT depth algorithm.",
+    "occlusion": "Hidden geometry unknown; do not fill as fact."
+  },
+  "limitations": [
+    "Article screenshot is NOT logged-in highest-quality decoded native video frame",
+    "Video timestamp/decoder/native dimensions unverified",
+    "Stylized CGI, compositing, reflection, transparency, light, shadows and characters may break predictions",
+    "No camera, distance, dimensions, contact, hidden surfaces, subsequent replay or geometry acceptance established"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-screenshot-grid.png",
+      "bytes": 1902,
+      "sha256": "56332acccfafdc2f72e6082d02554c2bd8211ef4258ed8b93b50405ad0dc834f"
+    },
+    {
+      "path": "dark-low-signal-caution-screenshot-grid.png",
+      "bytes": 3896,
+      "sha256": "d69909dda5830b2b4d35f759cfd289e7cc1bf06ed76742d8ae58dc547e210e63"
+    },
+    {
+      "path": "manual-exclusion-classes-screenshot-grid.png",
+      "bytes": 2642,
+      "sha256": "6de354782e950c66df4733062b12ff97f59592afdd1d4b339f58d690b050ef26"
+    },
+    {
+      "path": "nonfinite-invalid-model-grid.png",
+      "bytes": 544,
+      "sha256": "caec195e3fd01149b370763e45bfb21517d04ad2f2b52777a7c9286ce3add40c"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 359056,
+      "sha256": "b3131db9c2c9d8c85b2255f4d07233c8d13c057f7ae8390a07a270b7d96fd74e"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-screenshot-grid.png",
+      "bytes": 60768,
+      "sha256": "6fc19d0de68aa4bf31e5fcbfc61d2d52562e3f1b504f6f5c037710e8487a1fd8"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "af265b71e7b35de60e678718b6cd90323857b2792e1ed3632a3542ea6e4f22b4"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-screenshot-grid.npy",
+      "bytes": 2613728,
+      "sha256": "bfd17b196e8fee26eaa2326adcacd534a5fbdd013013526faca9bfd63f3ec89d"
+    }
+  ]
+}
