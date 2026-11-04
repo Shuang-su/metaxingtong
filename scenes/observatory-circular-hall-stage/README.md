@@ -1,21 +1,22 @@
-# Observatory circular hall final R07 local star-band candidate, source FAILED and not accepted
+# Observatory R08 conditional exterior camera-only candidate, source FAILED and not accepted
 
 Frozen structural candidate, not source or model acceptance.
 
-Original HEAD: `9bc31378c03325d59355c12e0203adbd3efc09e4`
+Original HEAD: `03ab1322847df51198809785cc75b958268511f9`
 Original history: `refs/heads/history/observatory-original-20261104`
-Previous original HEAD: `a62f5f4c1607e83e18d1387169d55bc62dc2ddd2`
+Previous original HEAD: `9bc31378c03325d59355c12e0203adbd3efc09e4`
 
-`files/` preserves all 349 current original files without modification. Input Library version 1; archive revision 3. `versions/v2/` preserves the preceding current archive directory including its receipt. All older snapshots remain unchanged without recursive duplication. All 9 real original commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs, original objects and every stage.
+`files/` preserves all 423 current original files without modification. Input Library version 0; archive revision 4. `versions/v3/` preserves the preceding current archive directory including its receipt. All older snapshots remain unchanged without recursive duplication. All 10 real original commits remain reachable. `provenance.json` records bytes, SHA256, Git blobs, original objects and every stage.
 
-- R07 is a frozen local star-band structural candidate on the existing observatory scene, not a new scene or model/source acceptance. Nine real original commits contain seven model stages plus completion/QA records; the final QA commit leaves the four R07 model files unchanged.
-- Only the inner-hole 16 vertices XY of FLOOR_four_point_inlay were changed according to producer and independent QA. The outer contour, thickness, other 214 mesh objects and 13 cameras were retained. Archive worker checks original bytes and records; it does not execute geometry or rendering checks.
-- The shared parallel-line inset of 0.151908 arbitrary units is conditional. Independent QA distinguishes supporting-line distance from distance to finite edge segments; corner endpoint distances differ, so full true equal width is not established.
-- All seven new inner-tip points were observed and used for training, not blind validation. Conditional errors improved but several exceed subjective marking bounds; original mixed inner/outer boundary fits and earlier judgments remain preserved as failed evidence.
-- R07 has four new source-camera images, four failed direct 50-percent overlays and two unscaled local before/after comparison images. No new full eight-angle suite or main-image render is claimed. R06 historical 28 renders and eight overlays stay unchanged and are not reclassified as R07 images.
-- All overall source views remain FAILED. References remain non-native article screenshots, exact clip times and highest decodable quality are unknown, and later-date cover evidence supports only local reuse. Full-scene geometry, source position, materials and hidden structures remain unaccepted.
-- No new external texture dependency is reported; GLB does not preserve complete Blender light/World behavior. Finite ray, topology and reimport checks do not establish whole-scene contact, all-image visibility or source acceptance.
-- R01-R06 originals, all failed trials and previous version snapshots are preserved with their real history. Archive worker only performs supported materialization, ordinary Git archival and integrity readback; no modeling, rendering, source-script execution, production-worktree changes, credential copying, force push, LFS, main changes, Issues or PRs.
-- The separately blocked source-screening-increment receipt stays paused and is neither retried nor included in this publication. Space temporaries and permanent attachments are not deleted.
+- R08 is a conditional exterior camera-only stage of the existing observatory, not a new scene or accepted reconstruction. Ten original commits preserve eight saved model stages and their completion/QA records. This R08 commit includes new saved model/export files and camera/diagnostic evidence.
+- Producer and supplied independent QA report only SOURCE_15_exterior position/orientation matrix changed, retaining the original 18mm lens. All 215 meshes, UVs, material nodes, other 12 cameras, lights, World and visibility remain unchanged. Total cameras remain 13. These are supplied limited QA findings; the archive worker does not run Blender or geometry checks.
+- All source matching remains FAILED. Source15 remains a 1192x671 article screenshot, not a native decoded frame; exact clip time/highest quality are unknown. Later-date cover evidence establishes only bounded local reuse, not complete same-geometry proof.
+- Camera fitting is conditional: assumed central axis, finite proxy for roof tip, subjective 4/3px residual scales, one start per tested lens and non-smooth silhouette-edge switches. Lowest training-cost 12mm regressed independent front-arch diagnostics, so 18mm was retained. All five fits and 12/18/35mm previews/failures are preserved. This does not prove physical calibration, global optimum, blind validation or correct source correspondence.
+- Four new comparison renders consist of two R07 baseline images and only two current R08 images, material/white at one SOURCE15 direction. Four direct 50-percent overlays likewise include both versions. There is no new eight-angle or main-image suite; R06/R07 historical output is not relabeled as R08.
+- Local framing/arch errors improve conditionally but remain beyond subjective annotation bounds. Roof curves/ribs, windows, decorative high arch, deep outer frame, supports and stepped platforms remain mismatched or missing. Changed platform cropping does not establish overall improvement or source acceptance.
+- Independent QA includes actual GLB reimport and finite model-point projection/ray checks. Twenty-five discrete model correspondences do not establish visibility along original source-pixel rays or whole-arc visibility. GLB does not guarantee complete Blender material/light/World rendering equivalence; no new texture dependency is reported.
+- All 348 old R07 files other than CURRENT.json remain byte-for-byte unchanged, including every original model, render, failed trial and source record. R07 current archive/provenance/receipt is preserved as versions/v3; all prior versions remain unchanged and true original history stays reachable.
+- Archive work is only official file reception, ordinary Git fast-forward archival and fresh-remote byte/object/tree verification. No modeling, rendering, producer-worktree edits, source-script execution, LFS, force pushes, credential copying, security changes, main writes, Issues or PRs.
+- The previously denied source-screening-increment receipt stays paused and is not retried. This temporary Library file remains for dot to manage after full receipt readback. No new permanent attachments are created, and existing permanent attachments are untouched.
 
 Current remote verification is appended under `publication-verification/remote_verification.json`.
