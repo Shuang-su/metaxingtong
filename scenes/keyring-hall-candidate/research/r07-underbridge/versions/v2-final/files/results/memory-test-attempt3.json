@@ -1,0 +1,4870 @@
+{
+  "input_sha256": "591c0347a4ab63be9f7c6028058874d846fb16e3ba10c5e4c18775a40ed06d06",
+  "parameters": [
+    {
+      "name": "inferred-low-bridge-central-step",
+      "ri": 4.99,
+      "ro": 5.03,
+      "z": -0.35,
+      "h": 0.1,
+      "a": -3.141592653589793,
+      "b": 3.141592653589793,
+      "N": 96,
+      "targets": [
+        "stage-central-solid",
+        "stage-step-ring"
+      ]
+    },
+    {
+      "name": "inferred-low-bridge-step-outer",
+      "ri": 5.99,
+      "ro": 6.03,
+      "z": -0.45,
+      "h": 0.1,
+      "a": -2.0734511513692637,
+      "b": 2.0734511513692637,
+      "N": 96,
+      "targets": [
+        "stage-step-ring",
+        "stage-outer-floor"
+      ]
+    }
+  ],
+  "original_mesh_count": 162,
+  "original_11_cameras_unchanged": true,
+  "original_162_meshes_unchanged": true,
+  "original_mesh_state_sha256": "2a55ff980bbc28fd5412134135626203c4866037ace5d9198986bde1a73d83e1",
+  "new_meshes": {
+    "inferred-low-bridge-central-step": {
+      "audit": {
+        "vertices": 384,
+        "triangles": 768,
+        "nonmanifold": 0,
+        "degenerate": 0,
+        "signed_volume": 0.1258249843066911
+      },
+      "aabb_candidates": [
+        {
+          "object": "stage-central-solid",
+          "bvh_pairs": 620,
+          "boolean_intersection": {
+            "volume": 0.015680894926036498,
+            "faces": 384
+          }
+        },
+        {
+          "object": "stage-step-ring",
+          "bvh_pairs": 736,
+          "boolean_intersection": {
+            "volume": 0.03155080570390385,
+            "faces": 384
+          }
+        },
+        {
+          "object": "stage-outer-floor",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        },
+        {
+          "object": "inferred-low-bridge-step-outer",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        }
+      ],
+      "unexpected_surface_or_volume_overlap": [],
+      "state_sha256": "9a69871eca0e7b556adaaf4f39cefa790156349232fa92571034b8bea3c61969"
+    },
+    "inferred-low-bridge-step-outer": {
+      "audit": {
+        "vertices": 388,
+        "triangles": 772,
+        "nonmanifold": 0,
+        "degenerate": 0,
+        "signed_volume": 0.09966047337403759
+      },
+      "aabb_candidates": [
+        {
+          "object": "stage-step-ring",
+          "bvh_pairs": 638,
+          "boolean_intersection": {
+            "volume": 0.015282961307197463,
+            "faces": 322
+          }
+        },
+        {
+          "object": "stage-outer-floor",
+          "bvh_pairs": 738,
+          "boolean_intersection": {
+            "volume": 0.024977276158646103,
+            "faces": 386
+          }
+        },
+        {
+          "object": "inferred-low-bridge-central-step",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        }
+      ],
+      "unexpected_surface_or_volume_overlap": [],
+      "state_sha256": "c3daad78c06d4da2555b72c88c5a2666f0ef99fd62ccf612e8ac12d3c88ce351"
+    }
+  },
+  "source_status": "FAILED; only hidden-connector hypothesis",
+  "mechanical_load_acceptance": "NOT TESTED",
+  "floor_rays": {
+    "central": {
+      "samples": 1861,
+      "before_hits": 1861,
+      "after_hits": 1861,
+      "regressed_samples": []
+    },
+    "step_mid": {
+      "samples": 181,
+      "before_hits": 181,
+      "after_hits": 181,
+      "regressed_samples": []
+    },
+    "outer_mid": {
+      "samples": 181,
+      "before_hits": 181,
+      "after_hits": 181,
+      "regressed_samples": []
+    },
+    "gap_central_step": {
+      "samples": 181,
+      "before_hits": 0,
+      "after_hits": 181,
+      "regressed_samples": [],
+      "rows": [
+        {
+          "xy": [
+            -6.135480463728239e-16,
+            -5.01
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.17484647847953072,
+            -5.00694804336567
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.3494799334580689,
+            -4.997795891801719
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.5236876009709451,
+            -4.982554695795049
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.6972572358099294,
+            -4.961243024395267
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.8699773701113206,
+            -4.933886842591162
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.041637570996974,
+            -4.900519479676366
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.2120286969543352,
+            -4.861181588642742
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.3809431526431661,
+            -4.815921096650977
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.548175141818487,
+            -4.764793146638719
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.7135209180616011,
+            -4.7078600301374
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.8767790330137202,
+            -4.645191111379604
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.03775058180976,
+            -4.576862742789429
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.196239445413279,
+            -4.502958171958825
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.3520525295573123,
+            -4.423567440223224
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.5049999999999994,
+            -4.338787272960038
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.6548955138083565,
+            -4.248720961743694
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.801556446388442,
+            -4.1534782385007585
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.944804113985291,
+            -4.053175141818486
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.0844639913815484,
+            -3.9479338755696767
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.220365924529563,
+            -3.837882660026079
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.3523443378578803,
+            -3.723155575641744
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.4802384359995773,
+            -3.603892399696641
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.6038923996966417,
+            -3.480238435999577
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.723155575641745,
+            -3.3523443378578794
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.8378826600260796,
+            -3.220365924529562
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.947933875569677,
+            -3.084463991381548
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.053175141818486,
+            -2.9448041139852896
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.1534782385007585,
+            -2.8015564463884406
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.248720961743694,
+            -2.654895513808356
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.338787272960037,
+            -2.5050000000000012
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.423567440223224,
+            -2.3520525295573114
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.502958171958826,
+            -2.196239445413278
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.576862742789431,
+            -2.037750581809758
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.645191111379605,
+            -1.8767790330137182
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.707860030137401,
+            -1.7135209180616002
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.76479314663872,
+            -1.5481751418184861
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.815921096650977,
+            -1.3809431526431653
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500009536743164
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.861181588642742,
+            -1.2120286969543355
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.900519479676366,
+            -1.0416375709969743
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.933886842591162,
+            -0.8699773701113208
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.961243024395267,
+            -0.6972572358099285
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.9825546957950495,
+            -0.5236876009709431
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.997795891801719,
+            -0.3494799334580679
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.00694804336567,
+            -0.17484647847952978
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.01,
+            3.0677402318641195e-16
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.00694804336567,
+            0.1748464784795293
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.997795891801719,
+            0.3494799334580685
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.982554695795049,
+            0.5236876009709438
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.961243024395268,
+            0.6972572358099279
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.933886842591162,
+            0.8699773701113214
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.900519479676366,
+            1.0416375709969736
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.861181588642742,
+            1.2120286969543361
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.815921096650977,
+            1.3809431526431657
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.764793146638719,
+            1.5481751418184866
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.7078600301374,
+            1.7135209180616007
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.645191111379604,
+            1.87677903301372
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.57686274278943,
+            2.037750581809759
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.502958171958826,
+            2.196239445413279
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.423567440223224,
+            2.352052529557312
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.338787272960038,
+            2.5049999999999994
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.248720961743694,
+            2.6548955138083565
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.1534782385007585,
+            2.8015564463884415
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.053175141818486,
+            2.94480411398529
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.9479338755696767,
+            3.084463991381548
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.837882660026079,
+            3.220365924529563
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.7231555756417443,
+            3.3523443378578803
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.603892399696643,
+            3.4802384359995755
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.480238435999575,
+            3.603892399696643
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.3523443378578803,
+            3.7231555756417443
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.220365924529562,
+            3.8378826600260796
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.084463991381548,
+            3.9479338755696767
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.94480411398529,
+            4.053175141818486
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.8015564463884415,
+            4.1534782385007585
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.6548955138083565,
+            4.248720961743694
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.504999999999999,
+            4.338787272960038
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.3520525295573136,
+            4.4235674402232235
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.1962394454132768,
+            4.502958171958827
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.0377505818097594,
+            4.57686274278943
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.8767790330137197,
+            4.645191111379605
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.7135209180616005,
+            4.7078600301374
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.5481751418184864,
+            4.764793146638719
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.3809431526431677,
+            4.815921096650977
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500009536743164
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.2120286969543348,
+            4.861181588642742
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.0416375709969734,
+            4.900519479676366
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.8699773701113199,
+            4.933886842591162
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.6972572358099288,
+            4.961243024395267
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.5236876009709446,
+            4.982554695795049
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.3494799334580682,
+            4.997795891801719
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.17484647847952786,
+            5.00694804336567
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.0,
+            5.01
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.17484647847953008,
+            5.00694804336567
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.349479933458066,
+            4.99779589180172
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.5236876009709424,
+            4.9825546957950495
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.6972572358099288,
+            4.961243024395267
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.8699773701113221,
+            4.933886842591162
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.0416375709969734,
+            4.900519479676366
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.2120286969543348,
+            4.861181588642742
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.3809431526431655,
+            4.815921096650977
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.5481751418184886,
+            4.764793146638718
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.7135209180616005,
+            4.7078600301374
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.8767790330137197,
+            4.645191111379605
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.0377505818097577,
+            4.576862742789431
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.1962394454132768,
+            4.502958171958827
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.3520525295573136,
+            4.4235674402232235
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.5050000000000012,
+            4.338787272960037
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.6548955138083565,
+            4.248720961743694
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.8015564463884415,
+            4.1534782385007585
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.94480411398529,
+            4.053175141818486
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.084463991381546,
+            3.9479338755696785
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.220365924529562,
+            3.8378826600260796
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.3523443378578803,
+            3.7231555756417443
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.480238435999577,
+            3.603892399696641
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.603892399696641,
+            3.4802384359995773
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.7231555756417443,
+            3.3523443378578803
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.837882660026079,
+            3.220365924529563
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.9479338755696776,
+            3.084463991381546
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.053175141818486,
+            2.94480411398529
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.153478238500758,
+            2.8015564463884437
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.248720961743694,
+            2.6548955138083565
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.338787272960037,
+            2.5050000000000017
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.423567440223224,
+            2.352052529557312
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.502958171958826,
+            2.196239445413279
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.576862742789431,
+            2.0377505818097577
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.645191111379604,
+            1.87677903301372
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.7078600301374,
+            1.713520918061603
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.764793146638719,
+            1.5481751418184866
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.815921096650978,
+            1.3809431526431637
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500009536743164
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.861181588642742,
+            1.212028696954335
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.900519479676365,
+            1.0416375709969758
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.933886842591162,
+            0.8699773701113204
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.961243024395268,
+            0.6972572358099247
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.9825546957950495,
+            0.5236876009709427
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.997795891801719,
+            0.3494799334580685
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.00694804336567,
+            0.17484647847953264
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.01,
+            3.0677402318641195e-16
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.00694804336567,
+            -0.174846478479532
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.997795891801719,
+            -0.3494799334580679
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.9825546957950495,
+            -0.523687600970942
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.961243024395267,
+            -0.6972572358099285
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.933886842591162,
+            -0.8699773701113197
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.900519479676367,
+            -1.041637570996971
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.861181588642742,
+            -1.2120286969543344
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.815921096650977,
+            -1.3809431526431675
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.76479314663872,
+            -1.5481751418184861
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.707860030137401,
+            -1.713520918061598
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.645191111379605,
+            -1.8767790330137193
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.576862742789429,
+            -2.037750581809761
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.502958171958826,
+            -2.196239445413278
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.423567440223224,
+            -2.3520525295573114
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.338787272960037,
+            -2.5050000000000012
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.248720961743694,
+            -2.654895513808356
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.15347823850076,
+            -2.8015564463884393
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.053175141818486,
+            -2.9448041139852896
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.9479338755696753,
+            -3.0844639913815497
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.8378826600260796,
+            -3.220365924529562
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.723155575641746,
+            -3.352344337857878
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.6038923996966443,
+            -3.4802384359995733
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.4802384359995773,
+            -3.603892399696641
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.3523443378578786,
+            -3.7231555756417456
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.220365924529563,
+            -3.837882660026079
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.08446399138155,
+            -3.947933875569675
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.944804113985291,
+            -4.053175141818486
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.8015564463884437,
+            -4.153478238500758
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.6548955138083605,
+            -4.248720961743691
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.5050000000000017,
+            -4.338787272960037
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.3520525295573123,
+            -4.423567440223224
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.196239445413275,
+            -4.502958171958828
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.037750581809758,
+            -4.576862742789431
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.8767790330137202,
+            -4.645191111379604
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.7135209180615991,
+            -4.707860030137401
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.548175141818487,
+            -4.764793146638719
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.3809431526431684,
+            -4.8159210966509765
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500009536743164
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.2120286969543352,
+            -4.861181588642742
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.0416375709969763,
+            -4.900519479676365
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.8699773701113249,
+            -4.9338868425911615
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.6972572358099294,
+            -4.961243024395267
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.5236876009709429,
+            -4.9825546957950495
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.34947993345806444,
+            -4.99779589180172
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.25
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.1748464784795285,
+            -5.00694804336567
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2499995231628418
+            }
+          ]
+        },
+        {
+          "xy": [
+            6.135480463728239e-16,
+            -5.01
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-central-step",
+              "z": -0.2500004768371582
+            }
+          ]
+        }
+      ]
+    },
+    "gap_step_outer": {
+      "samples": 181,
+      "before_hits": 0,
+      "after_hits": 181,
+      "regressed_samples": [],
+      "rows": [
+        {
+          "xy": [
+            -5.464877535222347,
+            -2.5010424876483257
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.519102385952788,
+            -2.3789932436579635
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.570601866181434,
+            -2.255769236534606
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.619350545112757,
+            -2.1314313151356683
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.6653243503157205,
+            -2.0060408783770485
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.708500579610915,
+            -1.8796598449139263
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.748857912281044,
+            -1.7523506225649146
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.78637641959924,
+            -1.6241760774946397
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.821037574670014,
+            -1.495199503170006
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.852824261577952,
+            -1.3654845891054535
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.881720783839681,
+            -1.2350953894126284
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.907712872154889,
+            -1.1040962911700374
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.930787691452616,
+            -0.972551982628258
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.9509338472292885,
+            -0.8405274212664433
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.968141391175412,
+            -0.7080878017158717
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.982401826088107,
+            -0.5752985235663977
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.993708110067091,
+            -0.4422251590716781
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -6.002054659992015,
+            -0.30893342076915487
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -6.007437354279445,
+            -0.17548912903074576
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -6.0098535349181335,
+            -0.04195817956029842
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -6.009302008781555,
+            0.09159348914615485
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -6.005783048217088,
+            0.22509992836128656
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.999298390911526,
+            0.3584952116923961
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.989851239032991,
+            0.49171346763632257
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.977446257649689,
+            0.624688912107238
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.962089572426261,
+            0.7573558809212817
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.943788766598889,
+            0.8896488622219781
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.922552877230645,
+            1.0215025288304487
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.898392390748928,
+            1.1528517705044083
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.871319237767186,
+            1.2836317260900592
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.84134678719351,
+            1.413777815550965
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.808489839628964,
+            1.5432257718581182
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.7727646200589575,
+            1.6719116727254342
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.734188769841228,
+            1.7997719721750167
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.692781337994422,
+            1.926743531916597
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.64856277179156,
+            2.052763652525652
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.60155490666303,
+            2.1777701044048086
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.551780955414109,
+            2.3017011585132425
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.499265496762312,
+            2.4244956168489074
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.444034463200261,
+            2.5460928426685165
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.3861151281900375,
+            2.6664327904303935
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.325536092695365,
+            2.78545603544536
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.262327271058253,
+            2.9031038032210628
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.196519876227094,
+            3.0193179984852123
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.128146404343495,
+            3.134041233873429
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -5.057240618695458,
+            3.24721685826752
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.9838375330448415,
+            3.358788984770181
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.907973394337323,
+            3.468702518302337
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.829685664803411,
+            3.5769031828094584
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.7490130034593365,
+            3.683337548063458
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.665995247016969,
+            3.7879530560469
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.580673390212176,
+            3.8906980469065036
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.49308956556134,
+            3.991521784463139
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.403287022556035,
+            4.0903744812656955
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.311310106306132,
+            4.187207323176464
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.217204235641878,
+            4.281972493475897
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.121015880685775,
+            4.374623196474829
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -4.022792539905302,
+            4.465113680622505
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.922582716657859,
+            4.553399261099014
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.8204358952394752,
+            4.639436341880955
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.71640251644912,
+            4.723182437269457
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.6105339526806928,
+            4.804596192869899
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.5028824825549925,
+            4.883637406012999
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.393501265104163,
+            4.960267045607166
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.2824443135214088,
+            5.034447271412321
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.1697664684889117,
+            5.1061414527256614
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -3.0555233710971197,
+            5.1753141864701595
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.939771435368802,
+            5.2419313146768385
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.822567820401417,
+            5.305959941352214
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.7039704021415574,
+            5.36736844872256
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.584037744805417,
+            5.426126512846981
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.4628290719593733,
+            5.482205118591581
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.340404237274989,
+            5.535576573957339
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.2168236949728635,
+            5.586214523754602
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -2.0921484699699167,
+            5.634093962617462
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.9664401277448744,
+            5.679191247351573
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.8397607439368135,
+            5.721484108609327
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.7121728736917825,
+            5.760951661886604
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.5837395207726452,
+            5.79757441783569
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.454524106447396,
+            5.831334291889241
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.3245904381712954,
+            5.862214613190579
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.1940026780783175,
+            5.8902001328258615
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -1.0628253112974524,
+            5.915277031354108
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.9311231141094993,
+            5.937432925631331
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.7989611219601074,
+            5.956656874925418
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.6664045973448177,
+            5.972939386318741
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.5335189975820014,
+            5.986272419395821
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.4003699424895918,
+            5.996649390213745
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.26702318198156166,
+            6.004065174553358
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            -0.1335445636001702,
+            6.008516110449637
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.0,
+            6.01
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.1335445636001702,
+            6.008516110449637
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.26702318198156033,
+            6.004065174553358
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.4003699424895931,
+            5.996649390213745
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.5335189975820027,
+            5.986272419395821
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.6664045973448177,
+            5.972939386318741
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.7989611219601074,
+            5.956656874925418
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            0.9311231141094993,
+            5.937432925631331
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.062825311297451,
+            5.915277031354108
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.1940026780783188,
+            5.8902001328258615
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.3245904381712954,
+            5.862214613190579
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.454524106447396,
+            5.831334291889241
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.5837395207726452,
+            5.79757441783569
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.7121728736917814,
+            5.760951661886605
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.8397607439368122,
+            5.721484108609327
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            1.9664401277448758,
+            5.679191247351572
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.0921484699699167,
+            5.634093962617462
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.2168236949728635,
+            5.586214523754602
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.340404237274989,
+            5.535576573957339
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.462829071959372,
+            5.482205118591581
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.584037744805418,
+            5.42612651284698
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.7039704021415583,
+            5.3673684487225595
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.822567820401417,
+            5.305959941352214
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            2.939771435368802,
+            5.2419313146768385
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.0555233710971192,
+            5.17531418647016
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.1697664684889104,
+            5.106141452725662
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.28244431352141,
+            5.03444727141232
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.393501265104163,
+            4.960267045607166
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.5028824825549925,
+            4.883637406012999
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.6105339526806928,
+            4.804596192869899
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.7164025164491186,
+            4.7231824372694575
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.820435895239476,
+            4.639436341880955
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            3.9225827166578604,
+            4.553399261099013
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.022792539905302,
+            4.465113680622505
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.121015880685775,
+            4.374623196474829
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.217204235641878,
+            4.281972493475897
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.311310106306131,
+            4.187207323176464
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.403287022556036,
+            4.090374481265695
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.49308956556134,
+            3.991521784463139
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.580673390212176,
+            3.8906980469065036
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.665995247016969,
+            3.7879530560469
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.7490130034593365,
+            3.6833375480634594
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.82968566480341,
+            3.576903182809459
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.907973394337324,
+            3.4687025183023357
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            4.9838375330448415,
+            3.358788984770181
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.057240618695458,
+            3.24721685826752
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.128146404343495,
+            3.134041233873429
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.196519876227094,
+            3.0193179984852123
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.262327271058253,
+            2.9031038032210614
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.325536092695365,
+            2.78545603544536
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.3861151281900375,
+            2.6664327904303935
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.444034463200261,
+            2.5460928426685165
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.499265496762312,
+            2.4244956168489074
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.551780955414109,
+            2.301701158513244
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.60155490666303,
+            2.1777701044048072
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.64856277179156,
+            2.052763652525652
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.692781337994422,
+            1.926743531916597
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.734188769841228,
+            1.7997719721750167
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.7727646200589575,
+            1.6719116727254342
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.8084898396289635,
+            1.5432257718581195
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.84134678719351,
+            1.413777815550965
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.871319237767186,
+            1.2836317260900592
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.898392390748928,
+            1.1528517705044083
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.922552877230645,
+            1.0215025288304487
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.943788766598889,
+            0.8896488622219794
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.962089572426261,
+            0.7573558809212804
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.977446257649689,
+            0.624688912107238
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.989851239032991,
+            0.49171346763632257
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.999298390911526,
+            0.3584952116923961
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            6.005783048217088,
+            0.22509992836128656
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            6.009302008781555,
+            0.09159348914615618
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            6.0098535349181335,
+            -0.04195817956029975
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            6.007437354279445,
+            -0.17548912903074576
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            6.002054659992015,
+            -0.30893342076915487
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.993708110067091,
+            -0.4422251590716781
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.982401826088107,
+            -0.5752985235663963
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.968141391175412,
+            -0.7080878017158729
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.9509338472292885,
+            -0.8405274212664433
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.930787691452616,
+            -0.972551982628258
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.907712872154889,
+            -1.1040962911700374
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.881720783839681,
+            -1.2350953894126284
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.852824261577953,
+            -1.3654845891054521
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.35000038146972656
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.821037574670014,
+            -1.4951995031700074
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.78637641959924,
+            -1.6241760774946397
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.748857912281044,
+            -1.7523506225649146
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.708500579610915,
+            -1.8796598449139263
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.665324350315721,
+            -2.006040878377047
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.619350545112757,
+            -2.131431315135667
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.570601866181434,
+            -2.2557692365346074
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.519102385952788,
+            -2.3789932436579635
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999942779541016
+            }
+          ]
+        },
+        {
+          "xy": [
+            5.464877535222347,
+            -2.5010424876483257
+          ],
+          "before": [],
+          "after": [
+            {
+              "object": "inferred-low-bridge-step-outer",
+              "z": -0.34999990463256836
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "bridge2_outside_angle_probe": {
+    "samples": 124,
+    "hit_angles": []
+  },
+  "saved_candidate_model": false
+}

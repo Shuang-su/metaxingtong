@@ -1,0 +1,52 @@
+{
+  "camera": {
+    "name": "diagnostic-underbridge-fixed",
+    "location": [
+      5.01,
+      0,
+      -1.2
+    ],
+    "target": [
+      5.46,
+      0,
+      -0.3
+    ],
+    "lens": 28,
+    "sensor_width": 36,
+    "purpose": "artificial underside close view, not source; original 11 cameras unchanged",
+    "label": "under-gap-b",
+    "roll_degrees": 90
+  },
+  "light": {
+    "name": "diagnostic-only-underfill",
+    "location": [
+      5.5,
+      -1,
+      -2
+    ],
+    "target": [
+      5.5,
+      0,
+      -0.4
+    ],
+    "energy": 500,
+    "color": [
+      1,
+      1,
+      1
+    ],
+    "size": 2,
+    "purpose": "same extra AREA for before and after only; never added to source scene or final production BLEND",
+    "shape": "SQUARE",
+    "scope": "ONLY artificial before/after underside pair; not saved in model and not used for source or normal-main images"
+  },
+  "preview_resolution_percentage": 40,
+  "nominal_resolution": [
+    1192,
+    671
+  ],
+  "denoising": false,
+  "preview_samples": 8,
+  "final_samples": 32,
+  "final_resolution_percentage": 100
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "R07, diagnostic camera B",
+  "model_commit": "81d1ee6c93730ff3a5bff9974bef8e7e4348a449",
+  "material_blend": "models/r07b-material.blend",
+  "white_blend": "models/r07b-white.blend",
+  "material_glb": "models/r07b-material.glb",
+  "white_glb": "models/r07b-white.glb",
+  "source_lighting_sidecar": "docs/render-sidecar-b.json",
+  "diagnostic_only_configuration": "docs/diagnostic-configuration-b.json",
+  "normal_main_expected": "renders/main-material.png",
+  "source_acceptance": "FAILED / unaccepted",
+  "inferred_additions": ["inferred-low-bridge-central-step", "inferred-low-bridge-step-outer"],
+  "older_A_models": "models/r07-* preserved; A camera does not show inner-bridge bottom",
+  "r06_unchanged": "Original frozen R06 is separate; original 162 meshes and 11 cameras preserved in R07, plus 2 inferred meshes and 1 artificial camera"
+}

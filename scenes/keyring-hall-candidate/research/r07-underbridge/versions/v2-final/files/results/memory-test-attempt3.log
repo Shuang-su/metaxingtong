@@ -1,0 +1,134 @@
+AUDIT inferred-low-bridge-central-step {'vertices': 384, 'triangles': 768, 'nonmanifold': 0, 'degenerate': 0, 'signed_volume': 0.1258249843066911} UNEXPECTED [] NEIGHBORS [{'object': 'stage-central-solid', 'bvh_pairs': 620, 'boolean_intersection': {'volume': 0.015680894926036498, 'faces': 384}}, {'object': 'stage-step-ring', 'bvh_pairs': 736, 'boolean_intersection': {'volume': 0.03155080570390385, 'faces': 384}}, {'object': 'stage-outer-floor', 'bvh_pairs': 0, 'boolean_intersection': {'volume': 0.0, 'faces': 0}}, {'object': 'inferred-low-bridge-step-outer', 'bvh_pairs': 0, 'boolean_intersection': {'volume': 0.0, 'faces': 0}}]
+AUDIT inferred-low-bridge-step-outer {'vertices': 388, 'triangles': 772, 'nonmanifold': 0, 'degenerate': 0, 'signed_volume': 0.09966047337403759} UNEXPECTED [] NEIGHBORS [{'object': 'stage-step-ring', 'bvh_pairs': 638, 'boolean_intersection': {'volume': 0.015282961307197463, 'faces': 322}}, {'object': 'stage-outer-floor', 'bvh_pairs': 738, 'boolean_intersection': {'volume': 0.024977276158646103, 'faces': 386}}, {'object': 'inferred-low-bridge-central-step', 'bvh_pairs': 0, 'boolean_intersection': {'volume': 0.0, 'faces': 0}}]
+{
+  "input_sha256": "591c0347a4ab63be9f7c6028058874d846fb16e3ba10c5e4c18775a40ed06d06",
+  "parameters": [
+    {
+      "name": "inferred-low-bridge-central-step",
+      "ri": 4.99,
+      "ro": 5.03,
+      "z": -0.35,
+      "h": 0.1,
+      "a": -3.141592653589793,
+      "b": 3.141592653589793,
+      "N": 96,
+      "targets": [
+        "stage-central-solid",
+        "stage-step-ring"
+      ]
+    },
+    {
+      "name": "inferred-low-bridge-step-outer",
+      "ri": 5.99,
+      "ro": 6.03,
+      "z": -0.45,
+      "h": 0.1,
+      "a": -2.0734511513692637,
+      "b": 2.0734511513692637,
+      "N": 96,
+      "targets": [
+        "stage-step-ring",
+        "stage-outer-floor"
+      ]
+    }
+  ],
+  "original_mesh_count": 162,
+  "original_11_cameras_unchanged": true,
+  "original_162_meshes_unchanged": true,
+  "original_mesh_state_sha256": "2a55ff980bbc28fd5412134135626203c4866037ace5d9198986bde1a73d83e1",
+  "new_meshes": {
+    "inferred-low-bridge-central-step": {
+      "audit": {
+        "vertices": 384,
+        "triangles": 768,
+        "nonmanifold": 0,
+        "degenerate": 0,
+        "signed_volume": 0.1258249843066911
+      },
+      "aabb_candidates": [
+        {
+          "object": "stage-central-solid",
+          "bvh_pairs": 620,
+          "boolean_intersection": {
+            "volume": 0.015680894926036498,
+            "faces": 384
+          }
+        },
+        {
+          "object": "stage-step-ring",
+          "bvh_pairs": 736,
+          "boolean_intersection": {
+            "volume": 0.03155080570390385,
+            "faces": 384
+          }
+        },
+        {
+          "object": "stage-outer-floor",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        },
+        {
+          "object": "inferred-low-bridge-step-outer",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        }
+      ],
+      "unexpected_surface_or_volume_overlap": [],
+      "state_sha256": "9a69871eca0e7b556adaaf4f39cefa790156349232fa92571034b8bea3c61969"
+    },
+    "inferred-low-bridge-step-outer": {
+      "audit": {
+        "vertices": 388,
+        "triangles": 772,
+        "nonmanifold": 0,
+        "degenerate": 0,
+        "signed_volume": 0.09966047337403759
+      },
+      "aabb_candidates": [
+        {
+          "object": "stage-step-ring",
+          "bvh_pairs": 638,
+          "boolean_intersection": {
+            "volume": 0.015282961307197463,
+            "faces": 322
+          }
+        },
+        {
+          "object": "stage-outer-floor",
+          "bvh_pairs": 738,
+          "boolean_intersection": {
+            "volume": 0.024977276158646103,
+            "faces": 386
+          }
+        },
+        {
+          "object": "inferred-low-bridge-central-step",
+          "bvh_pairs": 0,
+          "boolean_intersection": {
+            "volume": 0.0,
+            "faces": 0
+          }
+        }
+      ],
+      "unexpected_surface_or_volume_overlap": [],
+      "state_sha256": "c3daad78c06d4da2555b72c88c5a2666f0ef99fd62ccf612e8ac12d3c88ce351"
+    }
+  },
+  "source_status": "FAILED; only hidden-connector hypothesis",
+  "mechanical_load_acceptance": "NOT TESTED",
+  "bridge2_outside_angle_probe": {
+    "samples": 124,
+    "hit_angles": []
+  },
+  "saved_candidate_model": false
+}
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/keyring-underbridge-r07-20261104/inputs/keyring-material.blend"
+
+Blender quit
