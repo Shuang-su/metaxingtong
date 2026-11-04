@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/scripts/verify_restored_cameras.py", line 5, in <module>
+    a=cams(R/'models/lakeleaf-r04-material.blend');b=cams(R/'models/lakeleaf-r04-glb-camera-restored-check.blend');rows=[]
+                                                     ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/scripts/verify_restored_cameras.py", line 4, in cams
+    bpy.ops.wm.open_mainfile(filepath=str(path));dg=bpy.context.evaluated_depsgraph_get();return {o.name:{'world':[list(row) for row in o.matrix_world],'projection':[list(row) for row in o.calc_matrix_camera(dg,x=3840,y=2160,scale_x=1,scale_y=1)],'lens':o.data.lens,'sensor_fit':o.data.sensor_fit} for o in bpy.context.scene.objects if o.type=='CAMERA'}
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/share/blender/scripts/modules/bpy/ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+RuntimeError: Error: Cannot read file "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/models/lakeleaf-r04-glb-camera-restored-check.blend": No such file or directory
+
+Error: Cannot read file "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/models/lakeleaf-r04-glb-camera-restored-check.blend": No such file or directory
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/lakeleaf-production-20261104/models/lakeleaf-r04-material.blend"
+
+Blender quit

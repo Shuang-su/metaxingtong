@@ -1,0 +1,26 @@
+# 湖面叶舟：2026-11-04新重建候选
+
+状态：重建候选，未获来源或用户验收。独立排重支持在已检29 Issue范围内为新场景，不是全部历史像素穷尽证明。
+
+官方来源：星瞳_Official https://www.bilibili.com/video/BV1JqCeBMEAb/ 。表演日期2025-11-07，投稿2025-11-17，不是后续日期独立回放。登录后4K实解码4张3840×2160原生帧，完整侧面92.142973、俯视100.762992、近斜108.755584，背近6.585758仅辅助。实际采集证据见 sources/capture-manifest.json。夜景切换图单独保存为反证，不进入白天拟合。
+
+## 已制作
+- 本dot云电脑 /usr/bin/blender 4.3.2，2 CPU，无OIDN，denoising=False。
+- 真实薄壳双尖叶舟，中心主脉和18条分叉、湖面、可见岸林假说。没有把人物/鸟当静态实体，没有把反射色块建成湖底。
+- models/lakeleaf-r01-material.blend 可编辑材质模型，models/lakeleaf-r01-white.blend 同几何白模，models/lakeleaf-r01.glb 含13相机。
+- 原创过程纹理、完整生成脚本，原生来源保留原字节。深度目录为独立实际估计原件副本。
+
+## 明确未完成或未证
+- 本阶段为首个可编辑冻结阶段，源机位仍为初估，渲染/叠图/至少8检查角尚在制作。
+- 岸线全貌、隐蔽岸后结构、每棵树实例位置、舟体厚度和水面接触均不具测量真值。模型单位不是米制。
+- 角色、白鸟、水波相位和舟漂移是动态/未测状态；未重建角色和鸟，不用隐藏来源来假装一致。
+- 深度不能验收曲率：俯视舟体压平、侧面水面伪坡度、近斜人物和舟融合。原数值、raw518×924、4K重采样派生和未知置信度均分开标注。
+- GLB AREA light不支持，Blender与GLB照明可能不同；跨软件重导入核验待做。当前模型几何/来源/交付门槛未混为一谈。
+- 只做本地普通Git真版本，无LFS，无强推，无外部Issue/PR操作。远端归档/Space备份由父任务协调。
+
+
+## 当前模型入口：R04（正式图证仍在制作）
+- models/lakeleaf-r04-material.blend 与 models/lakeleaf-r04-white.blend，models/lakeleaf-r04.glb。
+- models/lakeleaf-r04-glb-reimport-check.blend 是真实空场景GLB重导结果。
+- qa/r04/delivery-validation.json 与逐物件网格inventory记录实际技术核验；docs/R04-stage.zh.md记录限制。
+- R01/R02/R03真实模型及失败预览全部保留。上文R01首阶段描述保留历史，不作当前完成状态。

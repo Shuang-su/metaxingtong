@@ -1,0 +1,144 @@
+{
+  "BV": "BV1JqCeBMEAb",
+  "url": "https://www.bilibili.com/video/BV1JqCeBMEAb/",
+  "uploader": "星瞳_Official",
+  "time_seconds": 92.142973,
+  "sha256": "7690235e89a447f6d386ea60d393939e20c2614932bbb0a46f0951342a50c6bb",
+  "capture_record": {
+    "before": {
+      "h": 2160,
+      "paused": true,
+      "ready": 4,
+      "time": 92.142973,
+      "w": 3840
+    },
+    "after": {
+      "h": 2160,
+      "paused": true,
+      "ready": 4,
+      "time": 92.142973,
+      "w": 3840
+    },
+    "source": "BV1JqCeBMEAb",
+    "method": "Chrome Save video frame as",
+    "quality": "4K 超高清"
+  },
+  "quality": "4K 超高清, highest offered and actual decoded3840x2160; upstream upscale history unknown",
+  "exclusions": [
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          1629,
+          947
+        ],
+        [
+          1986,
+          947
+        ],
+        [
+          1986,
+          1686
+        ],
+        [
+          1629,
+          1686
+        ]
+      ],
+      "class": 1,
+      "description": "Moving performer conservative ROI, includes background, not precise segmentation"
+    },
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          3840,
+          0
+        ],
+        [
+          3840,
+          1379
+        ],
+        [
+          3242,
+          1371
+        ],
+        [
+          1779,
+          1520
+        ],
+        [
+          632,
+          1196
+        ],
+        [
+          0,
+          1329
+        ]
+      ],
+      "class": 3,
+      "description": "Background foliage/fog, alpha boundaries and occlusion; not certified solid surface"
+    },
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          0,
+          1412
+        ],
+        [
+          640,
+          1296
+        ],
+        [
+          806,
+          1612
+        ],
+        [
+          1779,
+          1886
+        ],
+        [
+          2784,
+          1753
+        ],
+        [
+          3308,
+          1495
+        ],
+        [
+          3840,
+          1537
+        ],
+        [
+          3840,
+          2160
+        ],
+        [
+          0,
+          2160
+        ]
+      ],
+      "class": 2,
+      "description": "Dynamic water/reflection or reflected forest; not reliable solid geometry"
+    }
+  ],
+  "mask_classes": {
+    "1": "Moving performer conservative ROI, includes background, not precise segmentation",
+    "2": "Dynamic water/reflection or reflected forest; not reliable solid geometry",
+    "3": "Background foliage/fog, alpha boundaries and occlusion; not certified solid surface",
+    "4": "Dark continuous inverted island underside silhouette; material and local shape unresolved, NOT empty roots or absence of surface"
+  },
+  "scene_cautions": [
+    "Conservative incomplete manual ROIs, unlabelled does not imply valid",
+    "Dark continuous underside does not imply void; bright canopy is not floor",
+    "Water reflections and screen overlap cannot establish contact",
+    "Native4K is not raw4K depth; raw grid924x518",
+    "No absolute distance, hidden geometry or motion inference; no later-date replay verification"
+  ],
+  "dark_rgb_max_threshold": 25
+}
