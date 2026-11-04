@@ -1,0 +1,89 @@
+{
+  "BV": "BV1ic12BMEk6",
+  "url": "https://www.bilibili.com/video/BV1ic12BMEk6/",
+  "uploader": "星瞳_Official",
+  "time_seconds": 3050.458712,
+  "sha256": "9de843817fc899a28f2dfc4233c31ffdcc61a6f439e90fc17449cde149c1efcc",
+  "capture_record": {
+    "before": {
+      "h": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 3050.458712,
+      "w": 1920
+    },
+    "after": {
+      "h": 1080,
+      "paused": true,
+      "ready": 4,
+      "time": 3050.458712,
+      "w": 1920
+    },
+    "source": "BV1ic12BMEk6",
+    "method": "Chrome Save video frame as",
+    "quality": "1080P 高码率"
+  },
+  "quality": "1080P 高码率, highest offered official source",
+  "exclusions": [
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          960,
+          345
+        ],
+        [
+          1176,
+          345
+        ],
+        [
+          1176,
+          690
+        ],
+        [
+          960,
+          690
+        ]
+      ],
+      "class": 1,
+      "description": "Moving performer conservative ROI, includes background, not precise segmentation"
+    },
+    {
+      "shape": "polygon",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          524,
+          0
+        ],
+        [
+          524,
+          1080
+        ],
+        [
+          0,
+          1080
+        ]
+      ],
+      "class": 3,
+      "description": "Background foliage/fog, alpha boundaries and occlusion; not certified solid surface"
+    }
+  ],
+  "mask_classes": {
+    "1": "Moving performer conservative ROI, includes background, not precise segmentation",
+    "2": "Dynamic water/reflection or reflected forest; not reliable solid geometry",
+    "3": "Background foliage/fog, alpha boundaries and occlusion; not certified solid surface",
+    "4": "Dark continuous inverted island underside silhouette; material and local shape unresolved, NOT empty roots or absence of surface"
+  },
+  "scene_cautions": [
+    "Conservative incomplete manual ROIs, unlabelled does not imply valid",
+    "Dark continuous underside does not imply void; bright canopy is not floor",
+    "Water reflections and screen overlap cannot establish contact",
+    "Native4K is not raw4K depth; raw grid924x518",
+    "No absolute distance, hidden geometry or motion inference; no later-date replay verification"
+  ],
+  "dark_rgb_max_threshold": 25
+}
