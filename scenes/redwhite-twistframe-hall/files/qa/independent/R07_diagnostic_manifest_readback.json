@@ -1,0 +1,22 @@
+{
+  "manifest_sha256": "4e3e972c0b352c7b484b232b0cfeb2fe3e0bc47f90395462d96fef5ab375dda8",
+  "diagnostic_sha256": "969f6e453e45e1d858b6fd8af4b805079cadf9ec19df17c3e934b0eeca8c7f7b",
+  "cameras": [
+    {
+      "name": "DIAG_rear_side_junction",
+      "matrix_max_abs_error": 0.0,
+      "lens_error": 0.0
+    },
+    {
+      "name": "DIAG_inside_upper_mounts",
+      "matrix_max_abs_error": 0.0,
+      "lens_error": 0.0
+    }
+  ],
+  "correction_note": {
+    "prior_failure": "R07_extra_diagnostic_manifest_PREPARE_ONLY_MATRIX_FAILURE.json",
+    "reason": "prepare-only builder read stale unit matrices before dependency graph update; rendered images and saved diagnostic blend had actual camera transforms.",
+    "evidence_source": "Read from actual saved R07_diagnostic_views_ONLY.blend after view-layer update; no image or model edit.",
+    "diagnostic_blend_sha256": "969f6e453e45e1d858b6fd8af4b805079cadf9ec19df17c3e934b0eeca8c7f7b"
+  }
+}

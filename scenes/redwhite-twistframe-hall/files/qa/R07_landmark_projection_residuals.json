@@ -1,0 +1,692 @@
+{
+  "manual_definition": {
+    "version": "R06 fixed before projection; no subsequent fitting",
+    "image_size": [
+      320,
+      176
+    ],
+    "coordinates": "original source pixels x,y from top-left",
+    "selection": "12 named feature hypotheses per image, all shown; null means outside crop or not confidently identifiable; not excluded for residual size. Repeated inner rings intentionally not assigned stable IDs because unknown.",
+    "uncertainty": "Manual subjective reading of compressed 320px GIF. Typical placement ambiguity 2\u20135 px, larger at occlusion; not a calibrated confidence interval. Corner identity itself remains a hypothesis.",
+    "source_status": "FAILED / no native capture or complete source acceptance",
+    "views": {
+      "a15_f110": {
+        "outer_upper": [
+          176,
+          25
+        ],
+        "outer_left": [
+          48,
+          65
+        ],
+        "outer_right": [
+          199,
+          89
+        ],
+        "white_upper": [
+          110,
+          32
+        ],
+        "white_left": [
+          66,
+          103
+        ],
+        "white_right": [
+          192,
+          77
+        ],
+        "pier_left_base": [
+          17,
+          126
+        ],
+        "pier_right_base": [
+          219,
+          118
+        ],
+        "pier_left_top": null,
+        "pier_right_top": [
+          223,
+          27
+        ],
+        "disc_center": [
+          202,
+          111
+        ],
+        "gift00_center": [
+          241,
+          118
+        ]
+      },
+      "a16_f027": {
+        "outer_upper": [
+          196,
+          53
+        ],
+        "outer_left": [
+          104,
+          91
+        ],
+        "outer_right": [
+          220,
+          112
+        ],
+        "white_upper": [
+          146,
+          63
+        ],
+        "white_left": [
+          113,
+          115
+        ],
+        "white_right": [
+          215,
+          104
+        ],
+        "pier_left_base": [
+          82,
+          132
+        ],
+        "pier_right_base": [
+          240,
+          135
+        ],
+        "pier_left_top": [
+          82,
+          53
+        ],
+        "pier_right_top": [
+          240,
+          53
+        ],
+        "disc_center": [
+          214,
+          126
+        ],
+        "gift00_center": [
+          258,
+          135
+        ]
+      },
+      "a16_f107": {
+        "outer_upper": null,
+        "outer_left": [
+          102,
+          43
+        ],
+        "outer_right": [
+          297,
+          88
+        ],
+        "white_upper": [
+          169,
+          4
+        ],
+        "white_left": [
+          118,
+          84
+        ],
+        "white_right": [
+          286,
+          65
+        ],
+        "pier_left_base": [
+          78,
+          103
+        ],
+        "pier_right_base": null,
+        "pier_left_top": null,
+        "pier_right_top": null,
+        "disc_center": [
+          299,
+          123
+        ],
+        "gift00_center": null
+      }
+    }
+  },
+  "world_points": {
+    "outer_upper": [
+      1.8826682567596436,
+      4.699999809265137,
+      5.665159702301025
+    ],
+    "outer_left": [
+      -4.037395000457764,
+      4.699999809265137,
+      3.8120946884155273
+    ],
+    "outer_right": [
+      4.037395000457764,
+      4.699999809265137,
+      0.5739052295684814
+    ],
+    "white_upper": [
+      -0.7865343689918518,
+      4.949999809265137,
+      5.048503875732422
+    ],
+    "white_left": [
+      -3.7003531455993652,
+      4.949999809265137,
+      1.1897804737091064
+    ],
+    "white_right": [
+      3.7003531455993652,
+      4.949999809265137,
+      2.542619466781616
+    ],
+    "pier_left_base": [
+      -5.391926288604736,
+      4.3028388023376465,
+      0.0
+    ],
+    "pier_left_top": [
+      -5.391926288604736,
+      4.3028388023376465,
+      5.418000221252441
+    ],
+    "pier_right_base": [
+      5.391926288604736,
+      4.3028388023376465,
+      0.0
+    ],
+    "pier_right_top": [
+      5.391926288604736,
+      4.3028388023376465,
+      5.418000221252441
+    ],
+    "disc_center": [
+      3.799999952316284,
+      3.3000006675720215,
+      0.6832401752471924
+    ],
+    "gift00_center": [
+      5.349999904632568,
+      3.4000000953674316,
+      0.257999986410141
+    ]
+  },
+  "projection": "Blender world_to_camera_view, exact stored camera at320x176; NO image alignment/warping or postfit",
+  "views": {
+    "a15_f110": {
+      "points": [
+        {
+          "id": "outer_upper",
+          "manual_source_xy": [
+            176,
+            25
+          ],
+          "model_projected_xy": [
+            162.98933029174805,
+            34.19862461090088
+          ],
+          "error_px": 15.933995763445411,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "outer_left",
+          "manual_source_xy": [
+            48,
+            65
+          ],
+          "model_projected_xy": [
+            60.69774627685547,
+            63.25932598114014
+          ],
+          "error_px": 12.816501338170674,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "outer_right",
+          "manual_source_xy": [
+            199,
+            89
+          ],
+          "model_projected_xy": [
+            194.7580909729004,
+            116.5443787574768
+          ],
+          "error_px": 27.869097461696327,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_upper",
+          "manual_source_xy": [
+            110,
+            32
+          ],
+          "model_projected_xy": [
+            118.69508743286133,
+            43.15492343902588
+          ],
+          "error_px": 14.143438846179947,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_left",
+          "manual_source_xy": [
+            66,
+            103
+          ],
+          "model_projected_xy": [
+            67.33165264129639,
+            110.87168550491333
+          ],
+          "error_px": 7.98352875897208,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_right",
+          "manual_source_xy": [
+            192,
+            77
+          ],
+          "model_projected_xy": [
+            188.32822799682617,
+            85.4596300125122
+          ],
+          "error_px": 9.222106570187119,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_left_base",
+          "manual_source_xy": [
+            17,
+            126
+          ],
+          "model_projected_xy": [
+            34.37201738357544,
+            136.16423678398132
+          ],
+          "error_px": 20.12706380414407,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_right_base",
+          "manual_source_xy": [
+            219,
+            118
+          ],
+          "model_projected_xy": [
+            216.6513442993164,
+            125.33427858352661
+          ],
+          "error_px": 7.701157441653213,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_left_top",
+          "manual_source_xy": null,
+          "model_projected_xy": [
+            33.03782939910889,
+            31.099933624267578
+          ],
+          "error_px": null,
+          "status": "not identifiable / out of crop"
+        },
+        {
+          "id": "pier_right_top",
+          "manual_source_xy": [
+            223,
+            27
+          ],
+          "model_projected_xy": [
+            217.1394920349121,
+            39.99758052825928
+          ],
+          "error_px": 14.257722581024058,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "disc_center",
+          "manual_source_xy": [
+            202,
+            111
+          ],
+          "model_projected_xy": [
+            201.80871963500977,
+            117.60935544967651
+          ],
+          "error_px": 6.612122778518214,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "gift00_center",
+          "manual_source_xy": [
+            241,
+            118
+          ],
+          "model_projected_xy": [
+            223.7010383605957,
+            123.25887537002563
+          ],
+          "error_px": 18.080648327951177,
+          "status": "manual correspondence hypothesis"
+        }
+      ],
+      "visible_count": 11,
+      "excluded_null_count": 1,
+      "rmse_px": 15.320757020268328,
+      "mean_error_px": 14.067943970176572,
+      "max_error_px": 27.869097461696327,
+      "acceptance": "FAILED; sparse manual features cannot establish full-image fit"
+    },
+    "a16_f027": {
+      "points": [
+        {
+          "id": "outer_upper",
+          "manual_source_xy": [
+            196,
+            53
+          ],
+          "model_projected_xy": [
+            189.57584381103516,
+            51.293169021606445
+          ],
+          "error_px": 6.647033528501207,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "outer_left",
+          "manual_source_xy": [
+            104,
+            91
+          ],
+          "model_projected_xy": [
+            107.84384727478027,
+            77.04494094848633
+          ],
+          "error_px": 14.474765455891484,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "outer_right",
+          "manual_source_xy": [
+            220,
+            112
+          ],
+          "model_projected_xy": [
+            218.67197036743164,
+            121.4606237411499
+          ],
+          "error_px": 9.553379730576443,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_upper",
+          "manual_source_xy": [
+            146,
+            63
+          ],
+          "model_projected_xy": [
+            152.66305923461914,
+            60.09992694854736
+          ],
+          "error_px": 7.266827510530659,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_left",
+          "manual_source_xy": [
+            113,
+            115
+          ],
+          "model_projected_xy": [
+            113.50992202758789,
+            112.3512225151062
+          ],
+          "error_px": 2.6974140651186023,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_right",
+          "manual_source_xy": [
+            215,
+            104
+          ],
+          "model_projected_xy": [
+            213.70031356811523,
+            94.28888463973999
+          ],
+          "error_px": 9.79770107532901,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_left_base",
+          "manual_source_xy": [
+            82,
+            132
+          ],
+          "model_projected_xy": [
+            88.53413581848145,
+            130.0605263710022
+          ],
+          "error_px": 6.8158997096450955,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_right_base",
+          "manual_source_xy": [
+            240,
+            135
+          ],
+          "model_projected_xy": [
+            238.74866485595703,
+            130.49830722808838
+          ],
+          "error_px": 4.672373856552831,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_left_top",
+          "manual_source_xy": [
+            82,
+            53
+          ],
+          "model_projected_xy": [
+            87.30900764465332,
+            54.445319175720215
+          ],
+          "error_px": 5.502227702548483,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_right_top",
+          "manual_source_xy": [
+            240,
+            53
+          ],
+          "model_projected_xy": [
+            240.10919570922852,
+            54.29970169067383
+          ],
+          "error_px": 1.3042807165845571,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "disc_center",
+          "manual_source_xy": [
+            214,
+            126
+          ],
+          "model_projected_xy": [
+            219.60474014282227,
+            123.73086023330688
+          ],
+          "error_px": 6.046660842924087,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "gift00_center",
+          "manual_source_xy": [
+            258,
+            135
+          ],
+          "model_projected_xy": [
+            242.07233428955078,
+            129.69683933258057
+          ],
+          "error_px": 16.787318071934074,
+          "status": "manual correspondence hypothesis"
+        }
+      ],
+      "visible_count": 12,
+      "excluded_null_count": 0,
+      "rmse_px": 8.75445650635533,
+      "mean_error_px": 7.6304901888447105,
+      "max_error_px": 16.787318071934074,
+      "acceptance": "FAILED; sparse manual features cannot establish full-image fit"
+    },
+    "a16_f107": {
+      "points": [
+        {
+          "id": "outer_upper",
+          "manual_source_xy": null,
+          "model_projected_xy": [
+            243.2772445678711,
+            -10.280797958374023
+          ],
+          "error_px": null,
+          "status": "not identifiable / out of crop"
+        },
+        {
+          "id": "outer_left",
+          "manual_source_xy": [
+            102,
+            43
+          ],
+          "model_projected_xy": [
+            109.27680969238281,
+            32.98322582244873
+          ],
+          "error_px": 12.380941976409321,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "outer_right",
+          "manual_source_xy": [
+            297,
+            88
+          ],
+          "model_projected_xy": [
+            279.3065643310547,
+            100.02535438537598
+          ],
+          "error_px": 21.39314875994152,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_upper",
+          "manual_source_xy": [
+            169,
+            4
+          ],
+          "model_projected_xy": [
+            182.04282760620117,
+            4.3722381591796875
+          ],
+          "error_px": 13.048138304456804,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_left",
+          "manual_source_xy": [
+            118,
+            84
+          ],
+          "model_projected_xy": [
+            119.34964179992676,
+            89.19502639770508
+          ],
+          "error_px": 5.367479134655499,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "white_right",
+          "manual_source_xy": [
+            286,
+            65
+          ],
+          "model_projected_xy": [
+            274.04773712158203,
+            59.17715835571289
+          ],
+          "error_px": 13.295189834269099,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_left_base",
+          "manual_source_xy": [
+            78,
+            103
+          ],
+          "model_projected_xy": [
+            81.8948745727539,
+            118.53006792068481
+          ],
+          "error_px": 16.011029247321,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "pier_right_base",
+          "manual_source_xy": null,
+          "model_projected_xy": [
+            309.2967224121094,
+            113.20697832107544
+          ],
+          "error_px": null,
+          "status": "not identifiable / out of crop"
+        },
+        {
+          "id": "pier_left_top",
+          "manual_source_xy": null,
+          "model_projected_xy": [
+            73.40169429779053,
+            -6.178855895996094
+          ],
+          "error_px": null,
+          "status": "not identifiable / out of crop"
+        },
+        {
+          "id": "pier_right_top",
+          "manual_source_xy": null,
+          "model_projected_xy": [
+            324.57149505615234,
+            -4.673648834228516
+          ],
+          "error_px": null,
+          "status": "not identifiable / out of crop"
+        },
+        {
+          "id": "disc_center",
+          "manual_source_xy": [
+            299,
+            123
+          ],
+          "model_projected_xy": [
+            289.53561782836914,
+            106.5222692489624
+          ],
+          "error_px": 19.002371972845236,
+          "status": "manual correspondence hypothesis"
+        },
+        {
+          "id": "gift00_center",
+          "manual_source_xy": null,
+          "model_projected_xy": [
+            320.7528305053711,
+            114.20053100585938
+          ],
+          "error_px": null,
+          "status": "not identifiable / out of crop"
+        }
+      ],
+      "visible_count": 7,
+      "excluded_null_count": 5,
+      "rmse_px": 15.138520188312386,
+      "mean_error_px": 14.356899889985497,
+      "max_error_px": 21.39314875994152,
+      "acceptance": "FAILED; sparse manual features cannot establish full-image fit"
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "base": "models/R07_twistframe_hall_white.blend",
+  "base_sha256": "5a3ad3f25f66c32dd911d6ca8e03b185abc5d8f872b6eaf612b6e98c179641ed",
+  "geometry_changed": false,
+  "visibility_changed": false,
+  "source_cameras_changed": false,
+  "saved_in_original": false,
+  "diagnostic_blend": "models/R07_diagnostic_views_ONLY.blend",
+  "description": "Reproducible render-only diagnostic camera/light overrides, not source views; complete geometry remains visible.",
+  "resolution": [
+    800,
+    440
+  ],
+  "engine": "CYCLES CPU",
+  "samples": 128,
+  "threads": 6,
+  "view_transform": "AgX",
+  "exposure": -1.0,
+  "world_strength": 0.35,
+  "fixed_additional_diagnostic_lights": [
+    {
+      "name": "DIAG rear fill",
+      "location": [
+        10,
+        17,
+        10
+      ],
+      "target": [
+        0,
+        11,
+        3
+      ],
+      "power": 1800,
+      "size": 7,
+      "color": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DIAG interior fill",
+      "location": [
+        2.7,
+        12.5,
+        4.9
+      ],
+      "target": [
+        0,
+        8.5,
+        3
+      ],
+      "power": 160,
+      "size": 2,
+      "color": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "views": [
+    {
+      "name": "DIAG_rear_side_junction",
+      "location": [
+        12,
+        20,
+        9
+      ],
+      "target": [
+        1.8,
+        10.5,
+        2.8
+      ],
+      "lens": 34,
+      "sensor_width": 36,
+      "sensor_fit": "AUTO",
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "pixel_aspect": [
+        1.0,
+        1.0
+      ],
+      "rotation_euler": [
+        1.1522737741470337,
+        1.3782465657641296e-07,
+        2.320676565170288
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "renders/R07/DIAG_rear_side_junction_white_800x440.png",
+      "bytes": 283495,
+      "sha256": "ee0900262621f9c7b73f66a110c80e49e8a8627888a9113fa115ef13964c9992"
+    },
+    {
+      "name": "DIAG_inside_upper_mounts",
+      "location": [
+        3.3,
+        13.8,
+        4.2
+      ],
+      "target": [
+        0,
+        8.0,
+        3.6
+      ],
+      "lens": 24,
+      "sensor_width": 36,
+      "sensor_fit": "AUTO",
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0,
+      "pixel_aspect": [
+        1.0,
+        1.0
+      ],
+      "rotation_euler": [
+        1.4811238050460815,
+        7.031389515077535e-08,
+        2.624305248260498
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "image": "renders/R07/DIAG_inside_upper_mounts_white_800x440.png",
+      "bytes": 426929,
+      "sha256": "47b78491badd839971b76c6b6245e232ccf1f84b788aa8ed2ba4a458fd2f3e71"
+    }
+  ]
+}

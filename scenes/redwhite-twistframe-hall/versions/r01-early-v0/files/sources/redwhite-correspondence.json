@@ -1,0 +1,137 @@
+{
+  "status": "limited structural candidate; no native/date/replay acceptance",
+  "freeze": "a16 frame27 red exterior and dark tunnel",
+  "frames": [
+    {
+      "file": "key-a15-frame110.png",
+      "gif": "a15.img",
+      "frame_index": 110,
+      "gif_elapsed_ms": 8800,
+      "duration_ms": 80,
+      "dimensions": [
+        320,
+        176
+      ],
+      "sha256": "1a32e5bf9467de9be11b02b0d169ab57fef5b13c63ede90d91d7f4e2690ac076",
+      "role": "oblique wide with dark tunnel",
+      "not_native": true,
+      "video_time": null
+    },
+    {
+      "file": "key-a16-frame027.png",
+      "gif": "a16.img",
+      "frame_index": 27,
+      "gif_elapsed_ms": 2160,
+      "duration_ms": 80,
+      "dimensions": [
+        320,
+        176
+      ],
+      "sha256": "4de17abe0e406330016f9b4c630455d55fbe406ad62fd665906de58d01b95994",
+      "role": "frontal widest dark tunnel",
+      "not_native": true,
+      "video_time": null
+    },
+    {
+      "file": "key-a16-frame107.png",
+      "gif": "a16.img",
+      "frame_index": 107,
+      "gif_elapsed_ms": 8560,
+      "duration_ms": 80,
+      "dimensions": [
+        320,
+        176
+      ],
+      "sha256": "c273a7dc9f080cd8ede5d42b84afdcd213ff438865a0fd9ebe9ca617c6ce194a",
+      "role": "high oblique dark tunnel",
+      "not_native": true,
+      "video_time": null
+    },
+    {
+      "file": "key-a18-frame000.png",
+      "gif": "a18.img",
+      "frame_index": 0,
+      "gif_elapsed_ms": 0,
+      "duration_ms": 60,
+      "dimensions": [
+        320,
+        176
+      ],
+      "sha256": "1bf17ffbcc1042e39367322c5296dce6324c88ad91b300df51e40b26a88a0419",
+      "role": "wide bright tunnel state",
+      "not_native": true,
+      "video_time": null
+    },
+    {
+      "file": "key-a18-frame080.png",
+      "gif": "a18.img",
+      "frame_index": 80,
+      "gif_elapsed_ms": 4800,
+      "duration_ms": 60,
+      "dimensions": [
+        320,
+        176
+      ],
+      "sha256": "96dd73deb166dbd3befb5edb04ab666339911c86dd8a70fed1a925c928177e23",
+      "role": "side wide bright tunnel state",
+      "not_native": true,
+      "video_time": null
+    }
+  ],
+  "correspondences": [
+    {
+      "component": "中央错转矩形框序列",
+      "a15": "可见前大框及缩小后框，人物遮中部",
+      "a16": "前大框及后续框清晰，宽27和高斜107变化不只是人物运动",
+      "a18": "外框相同组合，后框透白亮背景；内部深浅/几何运动未校准",
+      "strength": "strong shared motif; exact per-frame inner-frame registration unproven"
+    },
+    {
+      "component": "白色竖柱与红壁面",
+      "a15": "宽110可见右柱及左壁边",
+      "a16": "宽27两侧柱及红壁；高斜107左右透视比例改变",
+      "a18": "宽0同布局",
+      "strength": "strong structural correspondence; unseen back circumference unknown"
+    },
+    {
+      "component": "上方白色弧形檐带与高位窗格/透明区",
+      "a15": "110部分可见",
+      "a16": "27最完整，非仅变焦显示的宽空间关系",
+      "a18": "0可见更明亮上区",
+      "strength": "shared curvature; total roof/cap not observed"
+    },
+    {
+      "component": "右前倾斜红圆盘（疑伞面）",
+      "a15": "110同前框右侧",
+      "a16": "27/107均在前框右侧近柱，投影宽比改变",
+      "a18": "0及80同侧红盘",
+      "strength": "strong; exact支撑/背面 unknown"
+    },
+    {
+      "component": "右前红色礼盒白色条带",
+      "a15": "110可见小块",
+      "a16": "27明确，与红盘分离且近右柱",
+      "a18": "0同侧可见",
+      "strength": "moderate due320px"
+    },
+    {
+      "component": "红色地缘枝叶/饰物",
+      "a15": "局部",
+      "a16": "27左右可见",
+      "a18": "0左右可见",
+      "strength": "weak detail, do not infer individual leaves"
+    }
+  ],
+  "temporal_limits": [
+    "a15中换装与景别切换，不以连续GIF强认单直播无剪辑",
+    "a16约27帧切更宽且换黑紫衣，内框序列是否有动画未经逐像素注册；冻结一个瞬时状态",
+    "a18白亮洞不能拿去强拟合同黑洞材质/光照",
+    "GIFelapsed不是视频片内时刻；报道日期不是演出日期"
+  ],
+  "camera_evidence": "a16宽27与高斜107：顶檐露出量、地面面积、侧柱与红盘投影相对比例均变。支持不同视角而非仅同轴裁切；尚无相机标定。",
+  "a05": {
+    "identity": "邻接HTML明确星瞳热舞，具体GIF URL精确匹配",
+    "same_scene": "possible shared base rotated-square portal and curved shell, not proven same immutable geometry",
+    "role": "auxiliary identity/family only; exclude red frozen fit"
+  }
+}
