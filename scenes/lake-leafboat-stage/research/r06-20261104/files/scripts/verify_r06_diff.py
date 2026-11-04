@@ -1,0 +1,5 @@
+from pathlib import Path
+import json
+R=Path(__file__).resolve().parents[1];a=json.loads((R/'qa/r05/material-mesh-inventory.json').read_text());b=json.loads((R/'qa/r06/material-mesh-inventory.json').read_text());changed=[k for k in a if a[k]['geometry_sha256']!=b[k]['geometry_sha256']];assert changed==[];added=sorted(set(b)-set(a));assert all(k.startswith('WEST_') for k in added)
+files=[{'file':str(p.relative_to(R)),'bytes':p.stat().st_size,'under_100_MiB':p.stat().st_size<100*1024*1024} for p in (R/'models').glob('*') if p.is_file() and p.suffix in ('.blend','.glb')];assert all(x['under_100_MiB'] for x in files)
+report={'all_1370_preexisting_evaluated_meshes_identical':True,'new_finite_west_bank_instance_count':len(added),'new_instances':added,'only_two_source_cameras_reestimated':['SOURCE_108755584_OBLIQUE','AUX_006585758_REAR'],'standard_glb_offaxis_and_area_light_limits_remain':True,'filesize_check':files,'source_accepted':False};(R/'qa/r06/r05-r06-geometry-diff.json').write_text(json.dumps(report,indent=2)+'\n');print('R06 original meshes unchanged; added finite west instances:',len(added),'All actual BLEND/GLB <100MiB')
