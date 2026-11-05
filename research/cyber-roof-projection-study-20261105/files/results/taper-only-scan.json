@@ -1,0 +1,5853 @@
+{
+  "input_sha256": "57af46b19e8ace266c0d1ea1f4c2522f9d79ca52a26c3bbbf38a4d03e7d651df",
+  "hypothesis": "ONLY h in continuous whole-group x field; t=clamp(abs((world_y-5.5)/3),0,1); x_new=x*(h+(1-h)*t)/(.74+.26*t); y,z unchanged. This approximates authored hip/taper on actual thick mesh, including cross sections. No production mesh saved.",
+  "h_values": [
+    0.5,
+    0.55,
+    0.57,
+    0.6,
+    0.65,
+    0.7,
+    0.74,
+    0.78,
+    0.82
+  ],
+  "other_degrees_of_freedom": "NONE: all cameras/lights/non-main objects fixed; no z, sx or free fit",
+  "front_back_invariant_caution": "authored t=\u00b11 centerlines exactly fixed. Thick tube vertices at abs(t)<1 can move slightly; explicit continuous-field hypothesis, not falsely called perfectly invariant whole bevel.",
+  "parameter_range_reason": "declared bounded hypothesis 0.50..0.82 around original0.74; no automatic optimizer and no extension to evade residual",
+  "source_semantics": "/workspace/scratch/fa58bfcf0425/cyber-roof-main-projection-study-20261105/sources/independent-contour/annotations-v1.json",
+  "nulls_preserved": {
+    "source10": [
+      "ridge outside image",
+      "both swept high endpoints outside image",
+      "roof upper shape outside image",
+      "actor hair obscures lower band around x535..615",
+      "diagonal beam crossing left x140..215 and middle x500..660",
+      "no full-width finite eave ends"
+    ],
+    "source11": [
+      "far/back roof silhouette and depth",
+      "continuous entire front gold eave line",
+      "one exact lowest eave point",
+      "right swept endpoint and bright outer-right edge",
+      "center ridge under bloom",
+      "exact rib index correspondence"
+    ]
+  },
+  "rows": [
+    {
+      "h": 0.5,
+      "baseline": false,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 3,
+          "world": [
+            -5.803724144007653,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            355.74502886785945,
+            107.16916449950037
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            27.745028867859446,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                357.8209933699161,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                360.41273564943447,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                357.02938313758574,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                355.74502886785945,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                357.2871088208543,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                360.7713774531372,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                358.07701531998936,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                356.8691794696206,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 515,
+          "world": [
+            5.803724144007653,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            836.2549711321406,
+            107.16916449950037
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            -27.745028867859446,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                834.1790066300839,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                831.5872643505654,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                834.9706168624143,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                836.2549711321406,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                834.7128911791457,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                831.2286225468629,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                833.9229846800107,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                835.1308205303794,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -5.699999912365063,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            360.8450796114343,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            20.8450796114343,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            5.699999912365063,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            831.1549203885656,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            -17.845079611434358,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.92404597196594,
+                "world_edge_intersection": [
+                  -4.377088216202932,
+                  8.493770642214267,
+                  5.881179604782588
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.995832178674,
+                "world_edge_intersection": [
+                  -3.1069675797422174,
+                  8.493759847255625,
+                  5.880256547289166
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.00295713121956,
+                "world_edge_intersection": [
+                  -1.836824528429214,
+                  8.493758352825234,
+                  5.8801649025539025
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.00314734394165,
+                "world_edge_intersection": [
+                  1.2245496943397667,
+                  8.493758201599121,
+                  5.880162448430093
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.0018547342022,
+                "world_edge_intersection": [
+                  2.4295585742172014,
+                  8.493759155273438,
+                  5.880179120683186
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.98150686545613,
+                "world_edge_intersection": [
+                  3.6345620652402615,
+                  8.493762411478183,
+                  5.880440776696244
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90089426516775,
+                "world_edge_intersection": [
+                  4.546431944258882,
+                  8.493773816168863,
+                  5.8814772763814425
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52296704743678,
+                "world_edge_intersection": [
+                  5.686134935913665,
+                  8.493824157134766,
+                  5.886336205693229
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.27052954620943,
+                "world_edge_intersection": [
+                  6.825321178359924,
+                  8.493984133470407,
+                  5.902436081117009
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.93771143371868,
+                "world_edge_intersection": [
+                  -7.205027690765465,
+                  2.505914505584669,
+                  5.912721666116093
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.937711433718675,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.81186136064915,
+                "world_edge_intersection": [
+                  -6.237256392265621,
+                  2.5061179643038223,
+                  5.892128475670954
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.811861360649146,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.16414335830436,
+                "world_edge_intersection": [
+                  -5.268459162194931,
+                  2.5062018808853828,
+                  5.883826588998774
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.16414335830436,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.3178410253862,
+                "world_edge_intersection": [
+                  -2.759767367221496,
+                  2.5062409042001637,
+                  5.8802035017383165
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.3178410253862,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.034212006243259804,
+                  2.5062415599823,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.3175998694544,
+                "world_edge_intersection": [
+                  2.828191194880109,
+                  2.5062408583860183,
+                  5.880209182692349
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.3175998694544,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.29799959414666,
+                "world_edge_intersection": [
+                  3.968572762430902,
+                  2.5062352152168605,
+                  5.880671402515278
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.29799959414666,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.97230062730404,
+                "world_edge_intersection": [
+                  5.906798235662611,
+                  2.5061559794364836,
+                  5.888347779254101
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.97230062730404,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.84509438915083,
+                "world_edge_intersection": [
+                  7.841469609428547,
+                  2.505662893606713,
+                  5.938449146691276
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2199,
+                  2200
+                ],
+                "signed_outside_band": 31.84509438915083,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.446828842163086,
+          11.446828842163086
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    },
+    {
+      "h": 0.55,
+      "baseline": false,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 3,
+          "world": [
+            -6.352114920318621,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            333.04346572279513,
+            107.16916449950037
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            5.043465722795133,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                334.9387135939942,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                336.85400921437787,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                334.0710519620634,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                333.04346572279513,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                334.3535378090148,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                337.2485151984508,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                335.21933202707925,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                334.2738367109657,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 515,
+          "world": [
+            6.352114920318621,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            858.9565342772049,
+            107.16916449950037
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            -5.0434657227950765,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                857.0612864060058,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                855.1459907856221,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                857.9289480379366,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                858.9565342772049,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                857.6464621909853,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                854.7514848015492,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                856.7806679729207,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                857.7261632890343,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -6.26999990360157,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            337.32958757257774,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            -2.6704124274222636,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            6.26999990360157,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            854.6704124274222,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            5.670412427422207,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.92410815468885,
+                "world_edge_intersection": [
+                  -4.37708823662939,
+                  8.493770633689389,
+                  5.881178805270787
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.99583662375892,
+                "world_edge_intersection": [
+                  -3.1069675807330768,
+                  8.493759846389406,
+                  5.880256490118731
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.0029573278738,
+                "world_edge_intersection": [
+                  -1.8368245284053684,
+                  8.493758352312986,
+                  5.880164899992661
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.00314735723168,
+                "world_edge_intersection": [
+                  1.2245496943411152,
+                  8.493758201599121,
+                  5.8801624482593375
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.00185541965666,
+                "world_edge_intersection": [
+                  2.429558574355234,
+                  8.493759155273438,
+                  5.88017911187622
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.98152514281293,
+                "world_edge_intersection": [
+                  3.6345620703254777,
+                  8.493762409452579,
+                  5.880440541726258
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90095882102366,
+                "world_edge_intersection": [
+                  4.546431966285286,
+                  8.493773807318673,
+                  5.8814764463600655
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52325755396109,
+                "world_edge_intersection": [
+                  5.686135060086859,
+                  8.493824117951938,
+                  5.8863324707861455
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.2718727505372,
+                "world_edge_intersection": [
+                  6.825321871816973,
+                  8.493983963516657,
+                  5.902418816191671
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.938736552486,
+                "world_edge_intersection": [
+                  -7.205029396263509,
+                  2.50591474212675,
+                  5.912697521792764
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.938736552486006,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.81221750115932,
+                "world_edge_intersection": [
+                  -6.237256905687456,
+                  2.5061180484871013,
+                  5.892120083703449
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.812217501159324,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.16424225365077,
+                "world_edge_intersection": [
+                  -5.268459282745223,
+                  2.50620190495278,
+                  5.883824258107801
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.16424225365077,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.3178420380486,
+                "world_edge_intersection": [
+                  -2.7597673678633967,
+                  2.506240904392546,
+                  5.8802034778828425
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.31784203804861,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.034212006243259666,
+                  2.5062415599823,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.31760090721718,
+                "world_edge_intersection": [
+                  2.828191195554228,
+                  2.5062408585831695,
+                  5.880209158245584
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.317600907217184,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.2980183005314,
+                "world_edge_intersection": [
+                  3.9685727796609385,
+                  2.506235220190902,
+                  5.880670961483581
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.298018300531396,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.97253918223785,
+                "world_edge_intersection": [
+                  5.906798561430214,
+                  2.506156036197109,
+                  5.88834215751959
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.97253918223785,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.84695772978017,
+                "world_edge_intersection": [
+                  7.841472981692655,
+                  2.5056633202266196,
+                  5.938405282899057
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2199,
+                  2200
+                ],
+                "signed_outside_band": 31.846957729780172,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.446828842163086,
+          11.446828842163086
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    },
+    {
+      "h": 0.57,
+      "baseline": false,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 3,
+          "world": [
+            -6.571471230843006,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            323.9628404647696,
+            107.16916449950037
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            -4.037159535230387,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                325.7858016836255,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                327.4305186403553,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                324.88771949185457,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                323.9628404647696,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                325.18010940427916,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                327.83937029657636,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                326.07625870991535,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                325.23569960750393,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 515,
+          "world": [
+            6.571471230843006,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            868.0371595352304,
+            107.16916449950037
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            4.037159535230444,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                866.2141983163746,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                864.5694813596447,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                867.1122805081454,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                868.0371595352304,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                866.8198905957208,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                864.1606297034236,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                865.9237412900848,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                866.764300392496,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -6.497999900096171,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            327.9233907570352,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            -12.076609242964821,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            6.497999900096171,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            864.0766092429649,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            15.076609242964878,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.92413302420874,
+                "world_edge_intersection": [
+                  -4.3770882447988,
+                  8.493770630279926,
+                  5.881178485511956
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.9958384015341,
+                "world_edge_intersection": [
+                  -3.1069675811293616,
+                  8.493759846042968,
+                  5.880256467253885
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.00295740652405,
+                "world_edge_intersection": [
+                  -1.8368245283958307,
+                  8.493758352108117,
+                  5.880164898968314
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.00314736254693,
+                "world_edge_intersection": [
+                  1.224549694341654,
+                  8.493758201599121,
+                  5.8801624481910455
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.00185569379849,
+                "world_edge_intersection": [
+                  2.4295585744104393,
+                  8.493759155273438,
+                  5.880179108353948
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.98153245269415,
+                "world_edge_intersection": [
+                  3.6345620723592686,
+                  8.493762408642455,
+                  5.88044044775191
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90098463966056,
+                "world_edge_intersection": [
+                  4.546431975094581,
+                  8.493773803779105,
+                  5.881476114399155
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52337374078347,
+                "world_edge_intersection": [
+                  5.686135109749391,
+                  8.493824102280936,
+                  5.886330977026237
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.2724099788108,
+                "world_edge_intersection": [
+                  6.825322149172232,
+                  8.49398389554191,
+                  5.902411910907671
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.9391465669682,
+                "world_edge_intersection": [
+                  -7.205030078408006,
+                  2.505914836735994,
+                  5.912687864838055
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.93914656696819,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.8123599397527,
+                "world_edge_intersection": [
+                  -6.237257111030825,
+                  2.506118082156254,
+                  5.892116727331034
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.812359939752696,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.1642818062663,
+                "world_edge_intersection": [
+                  -5.26845933095861,
+                  2.506201914578395,
+                  5.883823325881554
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.1642818062663,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.31784244305456,
+                "world_edge_intersection": [
+                  -2.7597673681201202,
+                  2.506240904469488,
+                  5.880203468342043
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.31784244305456,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.03421200624325976,
+                  2.5062415599823,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.31760132226182,
+                "world_edge_intersection": [
+                  2.8281911958238353,
+                  2.5062408586620184,
+                  5.880209148468303
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.31760132226182,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.2980257820046,
+                "world_edge_intersection": [
+                  3.9685727865519564,
+                  2.5062352221802313,
+                  5.88067078509638
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.2980257820046,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.9726345917131,
+                "world_edge_intersection": [
+                  5.906798691720198,
+                  2.5061560588983873,
+                  5.888339909120145
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.9726345917131,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.84770304970678,
+                "world_edge_intersection": [
+                  7.8414743305695636,
+                  2.505663490870947,
+                  5.938387737755906
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2199,
+                  2200
+                ],
+                "signed_outside_band": 31.84770304970678,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.446828842163086,
+          11.446828842163086
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    },
+    {
+      "h": 0.6,
+      "baseline": false,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 3,
+          "world": [
+            -6.900505696629587,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            310.34190257773093,
+            107.16916449950037
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            -17.658097422269066,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                312.0564338180724,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                313.2952827793213,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                311.11272078654105,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                310.34190257773093,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                311.4199667971755,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                313.7256529437646,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                312.3616487341693,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                311.67849395231104,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 515,
+          "world": [
+            6.900505696629587,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            881.6580974222691,
+            107.16916449950037
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            17.658097422269066,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                879.9435661819275,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                878.7047172206787,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                880.887279213459,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                881.6580974222691,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                880.5800332028246,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                878.2743470562355,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                879.6383512658308,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                880.321506047689,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -6.8399998948380745,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            313.81409553372123,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            -26.18590446627877,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            6.8399998948380745,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            878.1859044662787,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            29.185904466278657,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.92417032466516,
+                "world_edge_intersection": [
+                  -4.37708825705166,
+                  8.493770625166258,
+                  5.881178005922868
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.99584106791966,
+                "world_edge_intersection": [
+                  -3.1069675817237283,
+                  8.493759845523368,
+                  5.880256432960181
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.00295752448713,
+                "world_edge_intersection": [
+                  -1.8368245283815274,
+                  8.493758351800842,
+                  5.880164897431952
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.00314737051895,
+                "world_edge_intersection": [
+                  1.2245496943424632,
+                  8.493758201599121,
+                  5.880162448088619
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.00185610496841,
+                "world_edge_intersection": [
+                  2.4295585744932384,
+                  8.493759155273438,
+                  5.880179103071089
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.9815434163789,
+                "world_edge_intersection": [
+                  3.634562075409639,
+                  8.493762407427397,
+                  5.880440306805006
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90102336364654,
+                "world_edge_intersection": [
+                  4.546431988307173,
+                  8.493773798470297,
+                  5.881475616508824
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52354800410534,
+                "world_edge_intersection": [
+                  5.686135184235962,
+                  8.493824078776713,
+                  5.886328736603752
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.27321576395342,
+                "world_edge_intersection": [
+                  6.825322565175598,
+                  8.493983793587027,
+                  5.902401553716713
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.93976155331185,
+                "world_edge_intersection": [
+                  -7.205031101566137,
+                  2.505914978641729,
+                  5.912673380235848
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.939761553311854,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.81257357877737,
+                "world_edge_intersection": [
+                  -6.237257419018707,
+                  2.5061181326555286,
+                  5.892111693216532
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.812573578777375,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.16434112927325,
+                "world_edge_intersection": [
+                  -5.268459403271478,
+                  2.5062019290153787,
+                  5.883821927681598
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.164341129273254,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.31784305050024,
+                "world_edge_intersection": [
+                  -2.759767368505165,
+                  2.5062409045848892,
+                  5.880203454032335
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.317843050500244,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.03421200624325978,
+                  2.5062415599823,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.317601944764,
+                "world_edge_intersection": [
+                  2.8281911962282087,
+                  2.50624085878028,
+                  5.880209133803906
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.31760194476399,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.29803700305675,
+                "world_edge_intersection": [
+                  3.96857279688742,
+                  2.506235225163918,
+                  5.880670520542871
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.29803700305675,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.97277769253748,
+                "world_edge_intersection": [
+                  5.906798887136901,
+                  2.5061560929471205,
+                  5.888336536836299
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.97277769253748,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.8487031998611,
+                "world_edge_intersection": [
+                  7.841476140735883,
+                  2.505663720253592,
+                  5.938364193692267
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2198,
+                  2199
+                ],
+                "signed_outside_band": 31.84870319986109,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.446828842163086,
+          11.446828842163086
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    },
+    {
+      "h": 0.65,
+      "baseline": false,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 3,
+          "world": [
+            -7.448896472940553,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            287.6403394326668,
+            107.16916449950037
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            -40.35966056733321,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                289.17415404215046,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                289.7365563442648,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                288.15438961101876,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                287.6403394326668,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                288.486395785336,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                290.20279068907826,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                289.50396544125925,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                289.08315119365625,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 515,
+          "world": [
+            7.448896472940553,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            904.3596605673332,
+            107.16916449950037
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            40.35966056733321,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                902.8258459578495,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                902.2634436557353,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                903.8456103889812,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                904.3596605673332,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                903.513604214664,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                901.7972093109217,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                902.4960345587407,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                902.9168488063438,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -7.409999886074582,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            290.29860349486466,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            -49.701396505135335,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            7.409999886074582,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            901.7013965051353,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            52.701396505135335,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.92423248189878,
+                "world_edge_intersection": [
+                  -4.3770882774697455,
+                  8.493770616644873,
+                  5.881177206738779
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.99584551115649,
+                "world_edge_intersection": [
+                  -3.106967582714176,
+                  8.493759844657507,
+                  5.880256375813514
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.00295772105956,
+                "world_edge_intersection": [
+                  -1.8368245283576912,
+                  8.49375835128881,
+                  5.8801648948717755
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.00314738380345,
+                "world_edge_intersection": [
+                  1.2245496943438121,
+                  8.493758201599121,
+                  5.880162447917934
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.0018567901375,
+                "world_edge_intersection": [
+                  2.4295585746312147,
+                  8.493759155273438,
+                  5.88017909426779
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.98156168615523,
+                "world_edge_intersection": [
+                  3.634562080492747,
+                  8.493762405402634,
+                  5.880440071932472
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90108789304043,
+                "world_edge_intersection": [
+                  4.5464320103245495,
+                  8.493773789623734,
+                  5.881474786827664
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52383839788594,
+                "world_edge_intersection": [
+                  5.686135308360974,
+                  8.49382403960909,
+                  5.886325003145837
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.27455858649876,
+                "world_edge_intersection": [
+                  6.825323258435825,
+                  8.493983623681515,
+                  5.902384293691615
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.9407864362165,
+                "world_edge_intersection": [
+                  -7.205032806673386,
+                  2.50591521512961,
+                  5.912649241444871
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.940786436216513,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.81292959351995,
+                "world_edge_intersection": [
+                  -6.2372579322594035,
+                  2.506118216809107,
+                  5.89210330420981
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.812929593519954,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.16443998517772,
+                "world_edge_intersection": [
+                  -5.268459523773702,
+                  2.5062019530731794,
+                  5.883819597720029
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.16443998517772,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.31784406274116,
+                "world_edge_intersection": [
+                  -2.7597673691468,
+                  2.506240904777192,
+                  5.880203430186791
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.31784406274116,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.034212006243259645,
+                  2.5062415599823002,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.31760298209485,
+                "world_edge_intersection": [
+                  2.828191196902049,
+                  2.5062408589773493,
+                  5.880209109367317
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.317602982094854,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.29805570172385,
+                "world_edge_intersection": [
+                  3.9685728141103476,
+                  2.506235230135907,
+                  5.880670079693121
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.298055701723854,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.97301615821544,
+                "world_edge_intersection": [
+                  5.906799212782689,
+                  2.5061561496865212,
+                  5.888330917203933
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.973016158215444,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.85012352901225,
+                "world_edge_intersection": [
+                  7.84147871161249,
+                  2.5056640469244917,
+                  5.938330758138512
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2198,
+                  2199
+                ],
+                "signed_outside_band": 31.85012352901225,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.44686876789204,
+          11.44686876789204
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    },
+    {
+      "h": 0.7,
+      "baseline": false,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 3,
+          "world": [
+            -7.99728724925152,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            264.93877628760254,
+            107.16916449950037
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            -63.061223712397464,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                266.29187426622866,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                266.17782990920824,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                265.1960584354964,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                264.93877628760254,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                265.55282477349664,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                266.679928434392,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                266.64628214834926,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                266.4878084350014,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 515,
+          "world": [
+            7.99728724925152,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            927.0612237123974,
+            107.16916449950037
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            63.06122371239735,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                925.7081257337712,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                925.8221700907917,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                926.8039415645036,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                927.0612237123974,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                926.4471752265033,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                925.3200715656079,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                925.3537178516508,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                925.5121915649986,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -7.979999877311088,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            266.78311145600804,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            -73.21688854399196,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            7.979999877311088,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            925.216888543992,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            76.21688854399201,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.92429462639365,
+                "world_edge_intersection": [
+                  -4.377088297883645,
+                  8.493770608125235,
+                  5.881176407718471
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.99584995346969,
+                "world_edge_intersection": [
+                  -3.1069675837044173,
+                  8.49375984379183,
+                  5.880256318678727
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.0029579175911,
+                "world_edge_intersection": [
+                  -1.8368245283338605,
+                  8.49375835077688,
+                  5.8801648923121315
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.00314739708519,
+                "world_edge_intersection": [
+                  1.2245496943451601,
+                  8.493758201599121,
+                  5.880162447747285
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.00185747516394,
+                "world_edge_intersection": [
+                  2.4295585747691617,
+                  8.493759155273438,
+                  5.880179085466324
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.98157995214311,
+                "world_edge_intersection": [
+                  3.6345620855747987,
+                  8.49376240337829,
+                  5.88043983710864
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90115240920937,
+                "world_edge_intersection": [
+                  4.546432032337414,
+                  8.493773780778985,
+                  5.881473957316535
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52412873531931,
+                "world_edge_intersection": [
+                  5.686135432461909,
+                  8.493824000449065,
+                  5.8863212704121874
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.27590121821393,
+                "world_edge_intersection": [
+                  6.8253239515976745,
+                  8.493983453800112,
+                  5.902367036115855
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.94181120122036,
+                "world_edge_intersection": [
+                  -7.205034511585291,
+                  2.505915451590398,
+                  5.912625105419357
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.94181120122036,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.81328554540366,
+                "world_edge_intersection": [
+                  -6.237258445409562,
+                  2.5061183009478407,
+                  5.8920949166828915
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.81328554540366,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.16453882137003,
+                "world_edge_intersection": [
+                  -5.2684596442519025,
+                  2.5062019771261843,
+                  5.883817268222955
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.16453882137003,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.3178450747714,
+                "world_edge_intersection": [
+                  -2.7597673697882996,
+                  2.506240904969455,
+                  5.880203406346209
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.31784507477141,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.034212006243259756,
+                  2.5062415599823,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.31760401920985,
+                "world_edge_intersection": [
+                  2.8281911975757517,
+                  2.506240859174377,
+                  5.880209084935812
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.31760401920985,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.29807439653393,
+                "world_edge_intersection": [
+                  3.9685728313297246,
+                  2.5062352351068715,
+                  5.880669638934303
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.298074396533934,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.97325457928426,
+                "world_edge_intersection": [
+                  5.906799538367595,
+                  2.506156206415314,
+                  5.888325298622197
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.97325457928426,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.85154374632904,
+                "world_edge_intersection": [
+                  7.841481282288353,
+                  2.5056643735698843,
+                  5.938297325195494
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2198,
+                  2199
+                ],
+                "signed_outside_band": 31.851543746329043,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.452272993791862,
+          11.452272993791862
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    },
+    {
+      "h": 0.74,
+      "baseline": true,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 3,
+          "world": [
+            -8.435999870300293,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            246.77752577155124,
+            107.16916449950037
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            -81.22247422844876,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                247.98605044549112,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                247.33084876116297,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                246.82939349507856,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                246.77752577155124,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                247.2059679640251,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                247.86163863064297,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                248.36013551402124,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                248.41153422807764,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 515,
+          "world": [
+            8.435999870300293,
+            5.414999961853027,
+            8.619999885559082
+          ],
+          "projected": [
+            945.2224742284487,
+            107.16916449950037
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            81.22247422844873,
+            31.16916449950037
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                944.0139495545089,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                944.669151238837,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                945.1706065049215,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                945.2224742284487,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                944.794032035975,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                944.138361369357,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                943.6398644859788,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                943.5884657719224,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -8.435999870300293,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            247.97071782492281,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            -92.02928217507719,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            8.435999870300293,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            944.0292821750771,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            95.02928217507713,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.92434433282025,
+                "world_edge_intersection": [
+                  -4.377088314211754,
+                  8.493770601310782,
+                  5.881175768620113
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.99585350665544,
+                "world_edge_intersection": [
+                  -3.1069675844964615,
+                  8.493759843099415,
+                  5.880256272979446
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.0029580747869,
+                "world_edge_intersection": [
+                  -1.836824528314799,
+                  8.493758350367413,
+                  5.880164890264799
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.00314740770857,
+                "world_edge_intersection": [
+                  1.224549694346237,
+                  8.493758201599121,
+                  5.880162447610793
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.00185802308245,
+                "world_edge_intersection": [
+                  2.4295585748794974,
+                  8.493759155273438,
+                  5.880179078426471
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.9815945622065,
+                "world_edge_intersection": [
+                  3.6345620896396813,
+                  8.493762401759117,
+                  5.880439649284632
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90120401262534,
+                "world_edge_intersection": [
+                  4.546432049944456,
+                  8.49377377370449,
+                  5.881473293830018
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52436096470701,
+                "world_edge_intersection": [
+                  5.686135531725324,
+                  8.493823969126511,
+                  5.886318284746601
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.27697518621567,
+                "world_edge_intersection": [
+                  6.825324506056333,
+                  8.493983317912347,
+                  5.90235323181842
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.9426309283485,
+                "world_edge_intersection": [
+                  -7.205035875374188,
+                  2.5059156407395236,
+                  5.912605798589759
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.942630928348507,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.81357026166344,
+                "world_edge_intersection": [
+                  -6.2372588558645194,
+                  2.506118368248142,
+                  5.892088207726552
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.813570261663443,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.1646178761351,
+                "world_edge_intersection": [
+                  -5.268459740617171,
+                  2.506201996365136,
+                  5.883815404959637
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.16461787613511,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.317845884244,
+                "world_edge_intersection": [
+                  -2.7597673703014034,
+                  2.506240905123236,
+                  5.880203387277315
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.31784588424401,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.0342120062432597,
+                  2.5062415599822994,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.31760484874647,
+                "world_edge_intersection": [
+                  2.828191198114607,
+                  2.50624085933197,
+                  5.8802090653942685
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.31760484874647,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.29808934960576,
+                "world_edge_intersection": [
+                  3.9685728451026705,
+                  2.5062352390829044,
+                  5.8806692863927
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.29808934960576,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.97344528402917,
+                "world_edge_intersection": [
+                  5.906799798791697,
+                  2.5061562517907126,
+                  5.888320804513064
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.97344528402917,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.85267983967066,
+                "world_edge_intersection": [
+                  7.841483338684527,
+                  2.505664634867835,
+                  5.938270580720606
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2198,
+                  2199
+                ],
+                "signed_outside_band": 31.852679839670657,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.460465431213379,
+          11.460465431213379
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    },
+    {
+      "h": 0.78,
+      "baseline": false,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 2,
+          "world": [
+            -8.879740494994115,
+            5.439896106719971,
+            8.68010425567627
+          ],
+          "projected": [
+            228.46272855466063,
+            104.5186675167322
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            -99.53727144533937,
+            28.518667516732194
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                229.68022662475363,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                228.4838676131177,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                228.46272855466063,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                228.61627525549983,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                228.85911115455346,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                229.04334882689392,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                230.07398887969313,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                230.33526002115374,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 514,
+          "world": [
+            8.879740494994115,
+            5.439896106719971,
+            8.68010425567627
+          ],
+          "projected": [
+            963.5372714453393,
+            104.5186675167322
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            99.53727144533934,
+            28.518667516732194
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                962.3197733752464,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                963.5161323868823,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                963.5372714453393,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                963.3837247445002,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                963.1408888454466,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                962.956651173106,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                961.9260111203068,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                961.6647399788462,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -8.891999863289499,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            229.15832419383756,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            -110.84167580616244,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            8.891999863289499,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            962.8416758061624,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            113.84167580616236,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.92439403109857,
+                "world_edge_intersection": [
+                  -4.377088330537186,
+                  8.493770594497446,
+                  5.881175129626517
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.9958570592504,
+                "world_edge_intersection": [
+                  -3.106967585288375,
+                  8.493759842407119,
+                  5.8802562272877665
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.00295823195655,
+                "world_edge_intersection": [
+                  -1.8368245282957412,
+                  8.493758349958014,
+                  5.880164888217808
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.0031474183302,
+                "world_edge_intersection": [
+                  1.2245496943473169,
+                  8.493758201599121,
+                  5.880162447474322
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.00185857090973,
+                "world_edge_intersection": [
+                  2.429558574989816,
+                  8.493759155273438,
+                  5.880179071387788
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.98160916984664,
+                "world_edge_intersection": [
+                  3.6345620937038916,
+                  8.493762400140213,
+                  5.880439461491775
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90125560758203,
+                "world_edge_intersection": [
+                  4.546432067548612,
+                  8.493773766631156,
+                  5.88147263045226
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52459315805136,
+                "world_edge_intersection": [
+                  5.686135630973339,
+                  8.493823937808822,
+                  5.886315299544301
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.27804903213296,
+                "world_edge_intersection": [
+                  6.8253250604520534,
+                  8.493983182040008,
+                  5.902339429087961
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.9434505800436,
+                "world_edge_intersection": [
+                  -7.205037239038101,
+                  2.5059158298713156,
+                  5.91258649352951
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.94345058004359,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.81385493771273,
+                "world_edge_intersection": [
+                  -6.237259266261563,
+                  2.506118435538948,
+                  5.892081499716836
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.813854937712733,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.16469691829124,
+                "world_edge_intersection": [
+                  -5.268459836967074,
+                  2.50620201560102,
+                  5.883813541993435
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.16469691829124,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.31784669358186,
+                "world_edge_intersection": [
+                  -2.7597673708144224,
+                  2.506240905276992,
+                  5.880203368211595
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.317846693581856,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.034212006243259645,
+                  2.5062415599823,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.317605678145,
+                "world_edge_intersection": [
+                  2.828191198653378,
+                  2.5062408594895373,
+                  5.880209045855978
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.317605678144986,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.29810430021044,
+                "world_edge_intersection": [
+                  3.9685728588733395,
+                  2.5062352430582817,
+                  5.88066893390926
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.29810430021044,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.97363596023865,
+                "world_edge_intersection": [
+                  5.9068000591768515,
+                  2.506156297159326,
+                  5.888316311075995
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.97363596023865,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.8538158614535,
+                "world_edge_intersection": [
+                  7.841485394952254,
+                  2.5056648961494647,
+                  5.938243837916238
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2198,
+                  2199
+                ],
+                "signed_outside_band": 31.853815861453512,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.46964159343775,
+          11.46964159343775
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    },
+    {
+      "h": 0.82,
+      "baseline": false,
+      "points": [
+        {
+          "source_id": "RIDGE_L_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 1,
+          "world": [
+            -9.347999856278703,
+            5.5,
+            8.704999923706055
+          ],
+          "projected": [
+            209.63688646507254,
+            103.10428141875872
+          ],
+          "source_xy": [
+            328,
+            76
+          ],
+          "residual_xy": [
+            -118.36311353492746,
+            27.104281418758717
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 0,
+              "projection": [
+                211.37440280401606,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 1,
+              "projection": [
+                209.63688646507254,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 2,
+              "projection": [
+                210.09606361424278,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 3,
+              "projection": [
+                210.4550247394485,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 4,
+              "projection": [
+                210.51225434508189,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 5,
+              "projection": [
+                210.22505902314495,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 6,
+              "projection": [
+                211.78784224536508,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 7,
+              "projection": [
+                212.25898581423004,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_R_OUTER_CAP",
+          "model_object": "ROOF_MAIN gold ridge",
+          "actual_vertex_index": 513,
+          "world": [
+            9.347999856278703,
+            5.5,
+            8.704999923706055
+          ],
+          "projected": [
+            982.3631135349275,
+            103.10428141875872
+          ],
+          "source_xy": [
+            864,
+            76
+          ],
+          "residual_xy": [
+            118.36311353492749,
+            27.104281418758717
+          ],
+          "semantic_caution": "model round tube-end extremum vs observed decorated cap; conditional, not homologous precise feature",
+          "entire_end_ring": [
+            {
+              "vertex": 512,
+              "projection": [
+                980.6255971959839,
+                103.75173914044426
+              ]
+            },
+            {
+              "vertex": 513,
+              "projection": [
+                982.3631135349275,
+                103.10428141875872
+              ]
+            },
+            {
+              "vertex": 514,
+              "projection": [
+                981.9039363857571,
+                104.5186675167322
+              ]
+            },
+            {
+              "vertex": 515,
+              "projection": [
+                981.5449752605515,
+                107.16916449950037
+              ]
+            },
+            {
+              "vertex": 516,
+              "projection": [
+                981.4877456549181,
+                109.49476997399681
+              ]
+            },
+            {
+              "vertex": 517,
+              "projection": [
+                981.7749409768551,
+                110.13044617545744
+              ]
+            },
+            {
+              "vertex": 518,
+              "projection": [
+                980.212157754635,
+                108.71219994120008
+              ]
+            },
+            {
+              "vertex": 519,
+              "projection": [
+                979.7410141857699,
+                106.07348459154721
+              ]
+            }
+          ]
+        },
+        {
+          "source_id": "RIDGE_L_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1040,
+          "world": [
+            -9.347999856278703,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            210.3459305627524,
+            111.57434786726849
+          ],
+          "source_xy": [
+            340,
+            94
+          ],
+          "residual_xy": [
+            -129.6540694372476,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "RIDGE_R_SLOPE_JUNCTION",
+          "model_object": "ROOF_MAIN closed shell",
+          "actual_vertex_index": 1104,
+          "world": [
+            9.347999856278703,
+            5.5,
+            8.5
+          ],
+          "projected": [
+            981.6540694372477,
+            111.57434786726849
+          ],
+          "source_xy": [
+            849,
+            94
+          ],
+          "residual_xy": [
+            132.6540694372477,
+            17.574347867268486
+          ],
+          "semantic_caution": "saved roof ridge-end vertex vs bar-under-slope junction; model has no separate extended end cap, correspondence conditional"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "front_candidate",
+          "world_centerline": [
+            -11.4,
+            2.5,
+            6.9
+          ],
+          "projected": [
+            91.18516700238759,
+            203.5734277766839
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            7.185167002387587,
+            105.5734277766839
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        },
+        {
+          "source_id": "LEFT_SWEPT_GOLD_TIP",
+          "candidate": "back_candidate",
+          "world_centerline": [
+            -11.4,
+            8.5,
+            6.9
+          ],
+          "projected": [
+            167.2757277383966,
+            153.74605973629454
+          ],
+          "source_xy": [
+            84,
+            98
+          ],
+          "residual_xy": [
+            83.2757277383966,
+            55.74605973629454
+          ],
+          "use_fit": false,
+          "reason": "front/back/side correspondence unresolved; neither selected by best loss"
+        }
+      ],
+      "lower_envelopes": {
+        "10": [
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+            "source_x_interval": [
+              260,
+              455
+            ],
+            "source_y_interval": [
+              80,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 260,
+                "y": 95.9244437212306,
+                "world_edge_intersection": [
+                  -4.377088346859942,
+                  8.493770587685226,
+                  5.881174490737656
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4244,
+                  4245
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 357.5,
+                "y": 95.99586061125473,
+                "world_edge_intersection": [
+                  -3.106967586080156,
+                  8.493759841714937,
+                  5.8802561816036825
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4248,
+                  4249
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 455,
+                "y": 96.00295838910006,
+                "world_edge_intersection": [
+                  -1.836824528276687,
+                  8.493758349548685,
+                  5.8801648861711575
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4251,
+                  4252
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+            "source_x_interval": [
+              690,
+              875
+            ],
+            "source_y_interval": [
+              79,
+              101
+            ],
+            "three_samples": [
+              {
+                "x": 690,
+                "y": 96.00314742895006,
+                "world_edge_intersection": [
+                  1.2245496943483942,
+                  8.493758201599121,
+                  5.880162447337874
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4260,
+                  4261
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 782.5,
+                "y": 96.00185911864581,
+                "world_edge_intersection": [
+                  2.429558575100116,
+                  8.493759155273438,
+                  5.880179064350278
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4263,
+                  4264
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 875,
+                "y": 95.98162377506411,
+                "world_edge_intersection": [
+                  3.634562097767427,
+                  8.493762398521579,
+                  5.880439273730064
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4267,
+                  4268
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_VISIBLE_RIGHT",
+            "source_x_interval": [
+              945,
+              1120
+            ],
+            "source_y_interval": [
+              77,
+              102
+            ],
+            "three_samples": [
+              {
+                "x": 945,
+                "y": 95.90130719408153,
+                "world_edge_intersection": [
+                  4.546432085149883,
+                  8.49377375955898,
+                  5.881471967183235
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4269,
+                  4270
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1032.5,
+                "y": 95.52482531536076,
+                "world_edge_intersection": [
+                  5.686135730205952,
+                  8.49382390649599,
+                  5.886312314805182
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4272,
+                  4273
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 1120,
+                "y": 94.27912275598659,
+                "world_edge_intersection": [
+                  6.8253256147848465,
+                  8.49398304618309,
+                  5.902325627924212
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  4276,
+                  4277
+                ],
+                "signed_outside_band": 0,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ],
+        "11": [
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_LEFT",
+            "source_x_interval": [
+              280,
+              365
+            ],
+            "source_y_interval": [
+              185,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 280,
+                "y": 245.94427015631598,
+                "world_edge_intersection": [
+                  -7.20503860257705,
+                  2.505916018985775,
+                  5.912567190238367
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2156,
+                  2157
+                ],
+                "signed_outside_band": 30.94427015631598,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 322.5,
+                "y": 246.81413957356006,
+                "world_edge_intersection": [
+                  -6.237259676600704,
+                  2.50611850282026,
+                  5.892074792653542
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2159,
+                  2160
+                ],
+                "signed_outside_band": 31.814139573560055,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 365,
+                "y": 247.16477594784138,
+                "world_edge_intersection": [
+                  -5.268459933301614,
+                  2.5062020348338367,
+                  5.88381167932428
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2162,
+                  2163
+                ],
+                "signed_outside_band": 32.16477594784138,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_MID",
+            "source_x_interval": [
+              475,
+              720
+            ],
+            "source_y_interval": [
+              190,
+              215
+            ],
+            "three_samples": [
+              {
+                "x": 475,
+                "y": 247.317847502785,
+                "world_edge_intersection": [
+                  -2.7597673713273565,
+                  2.506240905430722,
+                  5.880203349149049
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2169,
+                  2170
+                ],
+                "signed_outside_band": 32.317847502785014,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 597.5,
+                "y": 247.31958907927284,
+                "world_edge_intersection": [
+                  0.03421200624325959,
+                  2.5062415599823,
+                  5.880162239074707
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2177,
+                  2178
+                ],
+                "signed_outside_band": 32.319589079272845,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 720,
+                "y": 247.3176065074055,
+                "world_edge_intersection": [
+                  2.828191199192056,
+                  2.506240859647078,
+                  5.880209026320939
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2184,
+                  2185
+                ],
+                "signed_outside_band": 32.317606507405486,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          },
+          {
+            "source_band_id": "LOWER_ROOF_ENVELOPE_RIGHT",
+            "source_x_interval": [
+              770,
+              940
+            ],
+            "source_y_interval": [
+              185,
+              213
+            ],
+            "three_samples": [
+              {
+                "x": 770,
+                "y": 247.29811924834863,
+                "world_edge_intersection": [
+                  3.968572872641743,
+                  2.506235247033003,
+                  5.8806685814839685
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2188,
+                  2189
+                ],
+                "signed_outside_band": 34.29811924834863,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 855.0,
+                "y": 246.97382660791908,
+                "world_edge_intersection": [
+                  5.906800319523073,
+                  2.5061563425211553,
+                  5.888311818310839
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2193,
+                  2194
+                ],
+                "signed_outside_band": 33.97382660791908,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              },
+              {
+                "x": 940,
+                "y": 244.85495181168437,
+                "world_edge_intersection": [
+                  7.841487451091544,
+                  2.5056651574147746,
+                  5.938217096782233
+                ],
+                "edge_object_and_vertex_ids": [
+                  "ROOF_MAIN closed shell",
+                  2198,
+                  2199
+                ],
+                "signed_outside_band": 31.854951811684373,
+                "semantics": "max projected shell+rib triangle edge; gold beam excluded; not first-hit against other objects or exact source scallop correspondence"
+              }
+            ]
+          }
+        ]
+      },
+      "full_group_world_bounds": [
+        [
+          -11.478817755662115,
+          11.478817755662115
+        ],
+        [
+          2.4149999618530273,
+          8.585000038146973
+        ],
+        [
+          5.880162239074707,
+          8.704999923706055
+        ]
+      ]
+    }
+  ]
+}
