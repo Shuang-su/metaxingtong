@@ -1,0 +1,1 @@
+R14仅将原32珠统一Z接桌；源匹配FAILED。材白各236mesh，其中其余204mesh和9相机不变。4对原珠间穿插保留。表面点接触非焊接；非全链修复或源验收。原R13完整历史保留。独立保存态QA和同机位前后材白4图待完成。输出原件/GLB，画幅1192×671；GLB相机恢复和World节点/输入/链接分别在qa/R14_*_camera_restore.json和environment_restore.json。
