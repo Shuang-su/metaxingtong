@@ -1,0 +1,20 @@
+# Observatory roof read-only evidence, NOT_APPLIED_NO_R10; source FAILED
+
+Independent read-only observatory roof evidence. One real root commit preserves inspection records, bounded semantic review and two existing original-pixel crops. NOT_APPLIED_NO_R10: no model, render, applied change or source acceptance.
+
+Original HEAD: `9238056dd62a4e0b34bad958b7fee0f71e42afe5`
+Original history: `refs/heads/history/observatory-roof-not-applied-evidence-original-20261104`
+
+`files/` preserves all 12 original files without modification. `provenance.json` records bytes, SHA256, Git blobs and every original commit/object.
+
+- Status NOT_APPLIED_NO_R10; source validation remains FAILED. This independent evidence repository contains twelve original files and one real root commit. No model, new model stage, candidate, new render or R10 exists. The existing observatory production/history/archive branches and original annotations remain unchanged.
+- The internal manifest binds eleven files and excludes itself. The consumer manifest binds all twelve files, with exact bytes, SHA256 and Git blob IDs. The original bundle names its independent source branch main; it is imported only into the new designated history ref, never pushed to repository main.
+- Two included405x155ROI files are existing source/render crops. The term native-crop means unchanged original pixels, not a native video frame. Each ROI is checked pixel-for-pixel against the corresponding existing1192x671archived source15 or R09material image at box470,260,875,415. No new crop or image is generated and no source video is decoded.
+- The original R09model and full images are intentionally not duplicated in this small bundle. Their hashes and producer viewing records remain in actual-roof.json, viewed-files.json and reviewed-pixels.json. The consumer reads only the two already archived full images needed to validate the supplied ROIs; it does not rerun the model inspection or claim a new geometry/visual QA pass.
+- Supplied read-only inspection records221meshes,13cameras and29roof objects:24radial ribs plus dome/drum/cornice/apex cap/spire. Camera and geometry records are preserved as evidence. Raw un-clipped vertex projections cross camera planes and include negative depths; they are not visible contours, screen coverage, ray visibility or candidate regression results.
+- Both reports reject treating source15roof discrepancy as an identified single smooth profile/height parameter. Raised ribs, base shell, eave layers, independent spire, foreground braces and bright orbit effects must not be conflated. The right shoulder is only a conditional2Daggregate-envelope segment with subjective4–7pixel uncertainty, not a fixed base-shell3Dcorrespondence or statistical calibration.
+- Interior source13/14/21images do not establish additional external roof views. Original exterior camera remains conditional and source material non-native with unknown clip time. Missing native exterior detail and another structural exterior angle prevent unique roof-profile/scale recovery. No new constraint points, applied hypothesis or candidate regression acceptance is claimed.
+- A new independent research archive/history pair is based on the verified NEXT ME archive tree solely to preserve existing paths. Every preexisting remote ref, including all observatory and phone refs and main, remains unchanged. All old paths are compared by exact mode/blob identity; only the new independent branches receive source history, payload and verification receipt.
+- Only official Library reception, ordinary Git and archival integrity checks are performed. No modeling/rendering, production-tree changes, credential copying, security changes, LFS, force push, history deletion, Issues or PRs. The old denied source-screening-increment receipt stays paused. Library version0 remains retained for parent confirmation; no Space deletion or permanent attachment is performed.
+
+Remote verification is appended under `publication-verification/remote_verification.json`.
