@@ -1,0 +1,216 @@
+{
+  "material": {
+    "images": [
+      {
+        "name": "outer-band-emission",
+        "sha256": "da8d0b4421dd81c58856ac6afc92796a922adddf786514c94c3f0238e1919562",
+        "external_exact": [
+          "outer-band-emission.png"
+        ],
+        "size": [
+          8192,
+          256
+        ]
+      },
+      {
+        "name": "outer-band-basecolor",
+        "sha256": "53f3e575f1ddeb03f45de71086af73c087d573fbf7ace8aac09c584936e2a9de",
+        "external_exact": [
+          "outer-band-basecolor.png"
+        ],
+        "size": [
+          8192,
+          256
+        ]
+      }
+    ],
+    "materials": [
+      {
+        "doubleSided": true,
+        "name": "Dark purple reflective platform",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.026000000536441803,
+            0.00800000037997961,
+            0.07100000232458115,
+            1
+          ],
+          "metallicFactor": 0.6800000071525574,
+          "roughnessFactor": 0.23000000417232513
+        }
+      },
+      {
+        "doubleSided": true,
+        "emissiveFactor": [
+          0.14117646347280213,
+          1,
+          0.6941175967351803
+        ],
+        "extensions": {
+          "KHR_materials_emissive_strength": {
+            "emissiveStrength": 1.7000000476837158
+          }
+        },
+        "name": "Jade luminous edge",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.11999999731779099,
+            0.8500000238418579,
+            0.5899999737739563,
+            1
+          ],
+          "metallicFactor": 0.20000000298023224,
+          "roughnessFactor": 0.30000001192092896
+        }
+      },
+      {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 0
+        },
+        "extensions": {
+          "KHR_materials_emissive_strength": {
+            "emissiveStrength": 9.124373435974121
+          }
+        },
+        "name": "Outer LED matrix author surface experiment",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicFactor": 0.20000000298023224,
+          "roughnessFactor": 0.30000001192092896
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Raised jade ribs",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.07999999821186066,
+            0.4699999988079071,
+            0.3700000047683716,
+            1
+          ],
+          "metallicFactor": 0.5,
+          "roughnessFactor": 0.30000001192092896
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Purple inset",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.25999999046325684,
+            0.03999999910593033,
+            0.49000000953674316,
+            1
+          ],
+          "metallicFactor": 0.4000000059604645,
+          "roughnessFactor": 0.30000001192092896
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Teal ceramic hypothesis",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.006000000052154064,
+            0.1899999976158142,
+            0.1599999964237213,
+            1
+          ],
+          "metallicFactor": 0.6499999761581421,
+          "roughnessFactor": 0.25
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Warm gold trim",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.8500000238418579,
+            0.49000000953674316,
+            0.07999999821186066,
+            1
+          ],
+          "metallicFactor": 0.6499999761581421,
+          "roughnessFactor": 0.25
+        }
+      }
+    ],
+    "has_external_buffers": false
+  },
+  "white": {
+    "images": [],
+    "materials": [
+      {
+        "doubleSided": true,
+        "name": "White LED surface technical",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.6600000262260437,
+            0.6600000262260437,
+            0.6600000262260437,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.699999988079071
+        }
+      }
+    ],
+    "has_external_buffers": false
+  },
+  "mean": {
+    "linear_rgb": [
+      0.02633528408874589,
+      0.1862627692551658,
+      0.12973852100725985
+    ],
+    "actual_strength": 9.124373435974121,
+    "actual_rgb": [
+      0.24029296656818494,
+      1.699531063902812,
+      1.1837827147012123
+    ],
+    "luminance_ratio": 1.0000000100565913,
+    "recipe_linear_max_error": 0.0
+  },
+  "renders": [
+    {
+      "path": "/workspace/scratch/fa58bfcf0425/cyber-ring-emissive-band-study-20261105/renders/v3-material-source11-8s.png",
+      "size": [
+        1192,
+        671
+      ],
+      "sha_match": true,
+      "model_sha_match": true,
+      "script_sha_match": true,
+      "actual_strength_match": true,
+      "alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "path": "/workspace/scratch/fa58bfcf0425/cyber-ring-emissive-band-study-20261105/renders/v3-material-close-8s.png",
+      "size": [
+        1192,
+        671
+      ],
+      "sha_match": true,
+      "model_sha_match": true,
+      "script_sha_match": true,
+      "actual_strength_match": true,
+      "alpha_range": [
+        255,
+        255
+      ]
+    }
+  ]
+}
