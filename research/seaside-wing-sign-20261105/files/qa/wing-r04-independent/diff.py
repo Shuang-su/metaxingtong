@@ -1,0 +1,13 @@
+import bpy,json
+from pathlib import Path
+Q=Path(__file__).parent
+
+def snap():
+ s=bpy.context.scene
+ return {'meshes':{o.name:{'v':[tuple(v.co)for v in o.data.vertices],'f':[tuple(p.vertices)for p in o.data.polygons],'matrix':[list(r)for r in o.matrix_world],'uv':[tuple(x.uv)for x in o.data.uv_layers.active.data]if o.data.uv_layers.active else None,'hide':[o.hide_render,o.hide_viewport]}for o in s.objects if o.type=='MESH'},'cams':{o.name:{'matrix':[list(r)for r in o.matrix_world],'params':{k:getattr(o.data,k)for k in ['lens','type','sensor_fit','sensor_width','sensor_height','clip_start','clip_end','shift_x','shift_y','ortho_scale']}}for o in s.objects if o.type=='CAMERA'},'view':{k:getattr(s.view_settings,k)for k in ['view_transform','look','exposure','gamma']},'display':s.display_settings.display_device,'libraries':[l.filepath for l in bpy.data.libraries],'images':[i.name for i in bpy.data.images if i.source=='FILE'],'lights':{o.name:{'matrix':[list(r)for r in o.matrix_world],'params':[o.data.energy,list(o.data.color),o.data.size,o.data.shape]}for o in s.objects if o.type=='LIGHT'}}
+
+oldpath=Q.parent/'independent-seaside-r03-qa-20261105/frozen/models/material.blend'
+bpy.ops.wm.open_mainfile(filepath=str(oldpath));a=snap();bpy.ops.wm.open_mainfile(filepath=str(Q/'frozen/models/material.blend'));b=snap();result={'old_count':len(a['meshes']),'new_count':len(b['meshes']),'old_mesh_differences':{n:[k for k in a['meshes'][n] if a['meshes'][n][k]!=b['meshes'][n][k]] for n in a['meshes'] if a['meshes'][n]!=b['meshes'][n]},'old_cameras_equal':all(v==b['cams'][n] for n,v in a['cams'].items()),'added_cameras':sorted(b['cams'].keys()-a['cams'].keys()),'lights_equal':a['lights']==b['lights'],'view_equal':a['view']==b['view'],'restored':{}}
+for mode in ['material','white']:
+ bpy.ops.wm.open_mainfile(filepath=str(Q/f'frozen/models/{mode}.blend'));a=snap();bpy.ops.wm.open_mainfile(filepath=str(Q/f'restored-{mode}.blend'));b=snap();result['restored'][mode]={'camera_parameter_diffs':{n:{k:[a['cams'][n]['params'][k],b['cams'][n]['params'][k]] for k in a['cams'][n]['params'] if a['cams'][n]['params'][k]!=b['cams'][n]['params'][k]} for n in a['cams']},'view_equal':a['view']==b['view'],'display_equal':a['display']==b['display'],'libraries':a['libraries'],'file_images':a['images'],'light_props_equal':all(a['lights'][n]['params']==b['lights'][n]['params'] for n in a['lights']),'light_matrix_max':max(abs(a['lights'][n]['matrix'][i][j]-b['lights'][n]['matrix'][i][j]) for n in a['lights'] for i in range(4) for j in range(4))}
+(Q/'diff.json').write_text(json.dumps(result,indent=2))

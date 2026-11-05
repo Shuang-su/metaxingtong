@@ -1,0 +1,6 @@
+import bpy,bmesh,os,json
+r=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));report={}
+for mode in ['material','white']:
+ bpy.ops.wm.open_mainfile(filepath=r+'/models/'+mode+'.blend');o=bpy.data.objects['SIGN_QQ炫舞_font_proxy'];b=bmesh.new();b.from_mesh(o.data);before={'vertices':len(b.verts),'faces':len(b.faces),'nonmanifold':sum(not e.is_manifold for e in b.edges),'volume':b.calc_volume(signed=True)};bad=[f for f in b.faces if f.calc_area()<1e-12];areas=[f.calc_area() for f in bad]
+ bmesh.ops.dissolve_faces(b,faces=bad,use_verts=False);bmesh.ops.dissolve_degenerate(b,dist=1e-6,edges=list(b.edges));bmesh.ops.recalc_face_normals(b,faces=list(b.faces));after={'vertices':len(b.verts),'faces':len(b.faces),'nonmanifold':sum(not e.is_manifold for e in b.edges),'zeroarea':sum(f.calc_area()<1e-12 for f in b.faces),'volume':b.calc_volume(signed=True)};b.to_mesh(o.data);b.free();report[mode]={'before':before,'dissolved_areas':areas,'after':after};bpy.ops.wm.save_as_mainfile(filepath=r+'/models/'+mode+'.blend');bpy.ops.export_scene.gltf(filepath=r+'/models/'+mode+'.glb',export_format='GLB',export_cameras=True,export_lights=False)
+json.dump(report,open(r+'/qa/sign-repair-slivers-r01.json','w'),indent=2);print(report)

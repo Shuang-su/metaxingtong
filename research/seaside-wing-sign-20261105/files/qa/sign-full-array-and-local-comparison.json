@@ -1,0 +1,96 @@
+[
+  {
+    "source": "source/03.webp",
+    "render": "renders/sign-material-SOURCE03-32s.png",
+    "overlay": "renders/sign-material-SOURCE03-direct50.png",
+    "formula": "floor((sourceRGB+renderRGB)/2), uint16 addition, no crop/warp/resample/mask",
+    "dimensions": [
+      1192,
+      671
+    ],
+    "values_checked": 2399496,
+    "mismatches": 0,
+    "source_sha256": "f10adbe9e519e9868608a93cda9c858360b18d45078e4eac6dc35433ccdda80e",
+    "render_sha256": "9340724880e4eded217486e67dd30646c27d44ab2aa9d51af2d4598d5dcae36a",
+    "overlay_sha256": "91943eb5a7a32340de3360db50849ef33618549a598921364cf6117d1dc55df4"
+  },
+  {
+    "source": "source/04.webp",
+    "render": "renders/sign-material-SOURCE04-32s.png",
+    "overlay": "renders/sign-material-SOURCE04-direct50.png",
+    "formula": "floor((sourceRGB+renderRGB)/2), uint16 addition, no crop/warp/resample/mask",
+    "dimensions": [
+      1192,
+      671
+    ],
+    "values_checked": 2399496,
+    "mismatches": 0,
+    "source_sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613",
+    "render_sha256": "0cd7c434518227690c4c23a95418cc340fd9c292131d18af1297b1360bfc2e64",
+    "overlay_sha256": "0144c7cc28167708476841fd03c0e07ab8cc30e8665f1ae32d1c767a03a31ded"
+  },
+  {
+    "source": "source/03.webp",
+    "render": "renders/sign-white-SOURCE03-32s.png",
+    "overlay": "renders/sign-white-SOURCE03-direct50.png",
+    "formula": "floor((sourceRGB+renderRGB)/2), uint16 addition, no crop/warp/resample/mask",
+    "dimensions": [
+      1192,
+      671
+    ],
+    "values_checked": 2399496,
+    "mismatches": 0,
+    "source_sha256": "f10adbe9e519e9868608a93cda9c858360b18d45078e4eac6dc35433ccdda80e",
+    "render_sha256": "039da7fde463ca69115676edb71730948337b9ae5672a2903a0f5fb6f3d836e9",
+    "overlay_sha256": "e783b276d9841255d359b7113f06be6a0dc1d87aff9e5054db9bff5494fd2996"
+  },
+  {
+    "source": "source/04.webp",
+    "render": "renders/sign-white-SOURCE04-32s.png",
+    "overlay": "renders/sign-white-SOURCE04-direct50.png",
+    "formula": "floor((sourceRGB+renderRGB)/2), uint16 addition, no crop/warp/resample/mask",
+    "dimensions": [
+      1192,
+      671
+    ],
+    "values_checked": 2399496,
+    "mismatches": 0,
+    "source_sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613",
+    "render_sha256": "e919b134bc4fb40297d8c83f00f3a4e1989c6edc3cae0930ff92bc25981f8cc3",
+    "overlay_sha256": "60947cf38f5002daf869e8d1fa8ff091121cdd694a7fa499b161fb858c1889b6"
+  },
+  {
+    "diagnostic": "renders/sign-SOURCE03-native-size-before-after.png",
+    "source_crop_xyxy": [
+      430,
+      280,
+      720,
+      400
+    ],
+    "per_panel_size": [
+      290,
+      120
+    ],
+    "resampling": false,
+    "before": "base a65 original actual32s image, not a new render",
+    "after": "current added-sign32s actual image",
+    "warning": "Native-size means original screenshot-pixel crop, not native video decoding"
+  },
+  {
+    "diagnostic": "renders/sign-SOURCE04-native-size-before-after.png",
+    "source_crop_xyxy": [
+      270,
+      145,
+      650,
+      270
+    ],
+    "per_panel_size": [
+      380,
+      125
+    ],
+    "resampling": false,
+    "before": "base a65 original actual32s image, not a new render",
+    "after": "current added-sign32s actual image",
+    "warning": "Native-size means original screenshot-pixel crop, not native video decoding"
+  }
+]

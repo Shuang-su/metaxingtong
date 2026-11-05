@@ -1,0 +1,10 @@
+import bpy,bmesh,os,json
+from mathutils.kdtree import KDTree
+r=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));report={}
+for mode in ['material','white']:
+ bpy.ops.wm.open_mainfile(filepath=r+'/models/'+mode+'.blend');o=bpy.data.objects['SIGN_QQ炫舞_font_proxy'];old=[v.co.copy() for v in o.data.vertices];o.data.calc_loop_triangles();badpolys={t.polygon_index for t in o.data.loop_triangles if ((o.data.vertices[t.vertices[1]].co-o.data.vertices[t.vertices[0]].co).cross(o.data.vertices[t.vertices[2]].co-o.data.vertices[t.vertices[0]].co)).length<2e-12};b=bmesh.new();b.from_mesh(o.data);b.faces.ensure_lookup_table();bmesh.ops.triangulate(b,faces=[b.faces[i] for i in badpolys],quad_method='BEAUTY',ngon_method='BEAUTY');bmesh.ops.recalc_face_normals(b,faces=list(b.faces));bmstats={'v':len(b.verts),'e':len(b.edges),'f':len(b.faces),'nonmanifold':sum(not e.is_manifold for e in b.edges),'zeroarea':sum(f.calc_area()<1e-12 for f in b.faces),'volume':b.calc_volume(signed=True)};b.to_mesh(o.data);b.free();o.data.calc_loop_triangles();areas=[((o.data.vertices[t.vertices[1]].co-o.data.vertices[t.vertices[0]].co).cross(o.data.vertices[t.vertices[2]].co-o.data.vertices[t.vertices[0]].co)).length/2 for t in o.data.loop_triangles];k=KDTree(len(old))
+ for i,v in enumerate(old):k.insert(v,i)
+ k.balance();maxnew=max(k.find(v.co)[2] for v in o.data.vertices);k2=KDTree(len(o.data.vertices))
+ for i,v in enumerate(o.data.vertices):k2.insert(v.co,i)
+ k2.balance();maxold=max(k2.find(v)[2] for v in old);report[mode]={'targeted_old_polygon_indices':sorted(badpolys),'method':'BEAUTY triangulation of exact collinear-output polygon only, no coordinate movement','stats':bmstats,'actual_loop_triangles':len(areas),'actual_zero_triangles':sum(a<1e-12 for a in areas),'min_triangle_area':min(areas),'bidirectional_vertex_set_distance':[maxnew,maxold]};bpy.ops.wm.save_as_mainfile(filepath=r+'/models/'+mode+'.blend');bpy.ops.export_scene.gltf(filepath=r+'/models/'+mode+'.glb',export_format='GLB',export_cameras=True,export_lights=False)
+json.dump(report,open(r+'/qa/sign-last-triangle-r03.json','w'),indent=2);print(report)

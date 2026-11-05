@@ -1,0 +1,9 @@
+import bpy,bmesh,os,json
+r=os.path.dirname(os.path.dirname(os.path.abspath(__file__)));report={}
+for mode in ['material','white']:
+ bpy.ops.wm.open_mainfile(filepath=r+'/models/'+mode+'.blend');s=bpy.context.scene;old=bpy.data.objects['SIGN_QQ炫舞_font_proxy'];mats=list(old.data.materials);bpy.data.objects.remove(old,do_unlink=True);font=bpy.data.fonts.load(r+'/fonts/NotoSansCJK-Regular.ttc');cu=bpy.data.curves.new('QQ炫舞_font_proxy_repaired','FONT');cu.body='QQ炫舞';cu.font=font;cu.align_x='CENTER';cu.align_y='BOTTOM_BASELINE';cu.size=1;cu.extrude=.025;cu.bevel_depth=0;cu.resolution_u=8;o=bpy.data.objects.new('SIGN_QQ炫舞_font_proxy',cu);s.collection.objects.link(o);bpy.ops.object.select_all(action='DESELECT');bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.convert(target='MESH');o.select_set(False);o=bpy.context.view_layer.objects.active;vs=[v.co for v in o.data.vertices];mn=[min(v[i] for v in vs) for i in range(3)];mx=[max(v[i] for v in vs) for i in range(3)]
+ for v in o.data.vertices:
+  x=-1.5+(v.co.x-mn[0])/(mx[0]-mn[0])*3;z=2.76+(v.co.y-mn[1])/(mx[1]-mn[1])*.79;y=3.18-v.co.z;v.co=(x,y,z)
+ for m in mats:o.data.materials.append(m)
+ b=bmesh.new();b.from_mesh(o.data);bmesh.ops.remove_doubles(b,verts=list(b.verts),dist=1e-5);bmesh.ops.dissolve_degenerate(b,dist=1e-6,edges=list(b.edges));bmesh.ops.recalc_face_normals(b,faces=list(b.faces));report[mode]={'v':len(b.verts),'f':len(b.faces),'nonmanifold':sum(not e.is_manifold for e in b.edges),'degenerate':sum(f.calc_area()<1e-12 for f in b.faces),'volume':b.calc_volume(signed=True)};b.to_mesh(o.data);b.free();bpy.ops.wm.save_as_mainfile(filepath=r+'/models/'+mode+'.blend');bpy.ops.export_scene.gltf(filepath=r+'/models/'+mode+'.glb',export_format='GLB',export_cameras=True,export_lights=False)
+json.dump(report,open(r+'/qa/sign-text-rebuild-r02.json','w'),indent=2);print(report)
