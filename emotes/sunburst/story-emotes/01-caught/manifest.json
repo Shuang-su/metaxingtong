@@ -1,0 +1,170 @@
+{
+  "title": "接住了",
+  "file": "caught.gif",
+  "method": "Sunburst 原生 768 像素 GIF 的完整帧，加上同模型编辑的完整动作画面，白底硬切并重设停顿。",
+  "format": "GIF",
+  "size": [
+    768,
+    768
+  ],
+  "loop": 0,
+  "frames": 10,
+  "different_frames": 10,
+  "total_ms": 2800,
+  "sha256": "c07f7e37c4e5a35f0ee7240f7e24060c50ab94f3267cff58a5d694137dec7624",
+  "frame_durations_ms": [
+    130,
+    420,
+    320,
+    190,
+    160,
+    310,
+    510,
+    330,
+    300,
+    130
+  ],
+  "native_request": "sources/duo-native.json",
+  "edits": {
+    "open-palm": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "duo-native.gif 第 4 帧在白底合成的 RGB 图",
+      "prompt": "Make one complete clean preceding animation cel of the attached exact drawing, using it as a registration sheet. Keep BOTH heads, body silhouettes, costume seams, eye and face features, outlines, hairpins and hair flowers, scale, screen coordinates and framing exactly aligned; Xingtong on LEFT, Nailü on RIGHT. Square, identical white background, full drawing, no text. Draw the moment BEFORE any flower appears. Remove the hand-held lily and stem completely; keep the fixed hair ornaments. The silver-haired girl smiles expectantly toward her friend and raises the palm of her OWN RIGHT hand to ask for a high five. Critical anatomy: we see the silver girl's RIGHT navy sleeve come from the FAR LEFT edge of this picture, then run DIAGONALLY across the FRONT OF her chest from bottom left toward center (exactly follow the same sleeve that ALREADY grips the flower in the input). That hand becomes an empty vertical open palm, fingers held together pointing upward, at x=45%, y=64%. The silver girl's LEFT elbow and other hand stay low, out of shot. Right girl's eyes look at that palm, both of her own arms lowered, hands low. Plain pure white. Never switch sleeves. An image edit, retain the crisp subtle shaded cel style.",
+      "sha256": "90417263c0b2c6d6c652b9c4571bf9837eecb1c73538494efbda904448100784"
+    },
+    "offer": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "duo-native.gif 第 4 帧在白底合成的 RGB 图",
+      "prompt": "Draw ONE full animation cel immediately before the attached pose, same style, faces, scale, location and fixed camera. Exactly these TWO girls, same outfits, on solid WHITE. LEFT silver-haired girl has NOT yet received the lily. Her RIGHT forearm (navy sleeve from FAR LEFT SIDE of picture/the near left edge, running DIAGONALLY across the front of her sailor blouse, the SAME forearm that holds flower in the reference) reaches across her chest, ends in an EMPTY upright open high-five hand near center. Her other arm stays down. She looks expectantly at her friend. RIGHT green-haired girl is holding out the single creamy lily toward that palm, with her own RIGHT hand, which is the GREEN sleeve nearest the CENTER DIVIDE, at the LEFT SIDE OF HER TORSO. Her opposite outer arm stays lowered. Leave visible air between the two separate hands: silver girl's palm left of center, right girl's fingers gripping the stem RIGHT of center. The lily is still to the right of their hands' meeting point. Its flower head has same cream, orange stamens and long green stalk as reference. Keep both small flowers pinned in her hair. Trace character faces and outfit outlines with same registration as input, no pan or zoom, no speed marks or type. New fully drawn pose.",
+      "sha256": "6e2a279158859d471849adc05b653a3616b1e44bce017b62a9ac9b5661b9bca5"
+    },
+    "handoff-white": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "touch.png，源自 offer.png 的交接姿势；前次生成带暗底，另附提示词和图像供溯源",
+      "prompt": "Repaint ONLY the dark purple/brown gradient background of this illustration to a perfectly plain flat solid opaque pure paper WHITE (#FFFFFF, RGB 255 255 255). Specifically ALL upper area above the girls, the outside margins and negative spaces between the two girls must be pure featureless white. Deliver a white-background character illustration with no glow, vignette, gray, shadow, frame, text or other graphic elements. The entire drawing of the two girls and the one shared lily in their hands is traced unchanged: do not re-pose anything. They hold ONE stalk at stacked heights. Preserve the exact framing, positions, gesture and scale. A clean white studio sticker sheet background.",
+      "sha256": "270880bec03be44a1b131bb88e82137e36e503956c5ee4a9c5d7d3bda96fa8ef"
+    },
+    "lower": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "duo-native.gif 第 8 帧在白底合成的 RGB 图",
+      "prompt": "Edit this exact full drawing into the next complete animation pose. Both girls hold their bow. Preserve their exact registration, heads, outlines, cropping, negative space, sailor collar and green costume, do not zoom. The one portable lily held by the silver-haired girl is being lowered OFF THE BOTTOM of the frame as her forearms lower, never let it reappear in the other girl's hand. Show JUST two tiny tips of the ivory lily peeking up from the BOTTOM EDGE at x=28%; the center, stem, leaves and her hand are entirely below frame. Keep her right navy sleeve falling toward that position. Keep both of the other girl's head ornaments fixed. Crisp, solid white background, no special effects, no added symbols, no border, same square composition.",
+      "sha256": "e7ebd7692711a0beaf8ee20ae7c4c7cafe34d19df4f8eaaeb896e74c90d5d976"
+    }
+  },
+  "preparation": {
+    "background": "white",
+    "uniform_crop_per_edge_px": 8,
+    "canvas_px": 768,
+    "resample": "Lanczos",
+    "palette": "per-frame median cut",
+    "disposal": 1
+  },
+  "frame_review": [
+    {
+      "index": 1,
+      "source": 9,
+      "duration_ms": 130,
+      "review": "低位开场，双人视线朝下，双方手都低于画面下沿；百合在画外。",
+      "file": "frames/01.png",
+      "sha256": "5ca879afa623f85974c0a9f182e7ed5f474ccaf2288ba33f557006157418803c",
+      "pixel_sha256": "721051638bc070d51cc4e7b72878579fe88760de00cb439bd80530f98894abc2"
+    },
+    {
+      "index": 2,
+      "source": "open-palm",
+      "duration_ms": 420,
+      "review": "星瞳右前臂横过水手领，空掌立起看奶绿；另一手在下方。奶绿双手放低。",
+      "file": "frames/02.png",
+      "sha256": "0dda66c304d4b343aafb44e1ae051fb2465bd4773bdfacc9163b514d0129e2b5",
+      "pixel_sha256": "8fcd1483b7f6db2e166300c04e31871890097f1c0bdc2b3c0aa6f1d02ac450b0"
+    },
+    {
+      "index": 3,
+      "source": "offer",
+      "duration_ms": 320,
+      "review": "奶绿右手执百合，左臂向下，望向中间。星瞳仍张同一只右手。两人的手之间留有白缝。",
+      "file": "frames/03.png",
+      "sha256": "c321fa99f3a5bdedd3fb140624f04333b652a40d205921df938ced735d68d50b",
+      "pixel_sha256": "473c88bd05b9f349d158c2991e12e624b6ec9aea40284f432c2eb37c4b6f7da3"
+    },
+    {
+      "index": 4,
+      "source": "handoff-white",
+      "duration_ms": 190,
+      "review": "同一枝百合上下两处着手，奶绿握上段，星瞳握下段，两只手各接回自己的袖子。",
+      "file": "frames/04.png",
+      "sha256": "7d49146c5964eb9dbf870047222d882b6da8f82c06a35a08d5a6d9ec637aa61d",
+      "pixel_sha256": "fe20bf383e03a393bd7346354d71e06420cbc749af5d3b2852e909cc5adf92b9"
+    },
+    {
+      "index": 5,
+      "source": 4,
+      "duration_ms": 160,
+      "review": "星瞳右手独持花，奶绿右手敞开后撤，眼神留在两人之间。",
+      "file": "frames/05.png",
+      "sha256": "de33483896892b875ddb464b7709809bf66e908ff2da38ee4016ea5f3e9963e2",
+      "pixel_sha256": "e25a68e5aab8b8df6e5b9eb22ce9080c92fad9500e0fb662ca172adc4a0daacb"
+    },
+    {
+      "index": 6,
+      "source": 5,
+      "duration_ms": 310,
+      "review": "星瞳低眼看花，惊讶张小口；奶绿两手空着拢在胸前。",
+      "file": "frames/06.png",
+      "sha256": "f84216428e077ef8c2621432a7c4b85d5abcfd77b8543f26d2fcfb97ba68408d",
+      "pixel_sha256": "ae0d655f4ea9874ec4cfa37db1a47d62cd29d12e66800eb3c6c6634d286ec5f9"
+    },
+    {
+      "index": 7,
+      "source": 6,
+      "duration_ms": 510,
+      "review": "星瞳仍持花，眉眼转向奶绿，停半拍；奶绿回望。",
+      "file": "frames/07.png",
+      "sha256": "d0653401aeae095e47b3c580cfab46985c9f5777080290e6179e4376819336e7",
+      "pixel_sha256": "e74e3bb8a272b5a0040450605b61f4a55a7a22e08e3a853e2ed1072506457bb8"
+    },
+    {
+      "index": 8,
+      "source": 7,
+      "duration_ms": 330,
+      "review": "星瞳转向观众笑，持花到胸前；奶绿闭眼笑，双手仍拢起。",
+      "file": "frames/08.png",
+      "sha256": "0aa0159600f81e19c8c375522e3c45090efb8c4d0143095d55f31313e2e4e03d",
+      "pixel_sha256": "43c27ed18c187b30731a546f838041aca6433f94f4a4aa2d132dd24ebac907a5"
+    },
+    {
+      "index": 9,
+      "source": 8,
+      "duration_ms": 300,
+      "review": "两人低头回礼，奶绿双臂下降，百合跟星瞳落到左下沿。",
+      "file": "frames/09.png",
+      "sha256": "305bc044f7c0d85af7e06b91c08c65c6d98cc087a9b8ddea3d5afcf84b030403",
+      "pixel_sha256": "4dd7df74969413e5dc4a6855232593554aca4f00055b3aebd13b1a17f5b6a102"
+    },
+    {
+      "index": 10,
+      "source": "lower",
+      "duration_ms": 130,
+      "review": "双人维持低位，手降到边下，百合降出下沿；下一圈仍从鞠躬姿势开始。",
+      "file": "frames/10.png",
+      "sha256": "49e61ef42dfbb4cc248e9ebcb195100711db3d3bff17a2a86f5bd87e4896b650",
+      "pixel_sha256": "ab851764e5aff2627cfffda6942cafa30222459025f303574f962a7c08b2f705"
+    }
+  ]
+}
