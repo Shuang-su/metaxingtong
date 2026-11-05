@@ -2,7 +2,7 @@
 
 参考素材和前两轮产物见 [Issue #102](https://github.com/Shuang-su/metaxingtong/issues/102)。本批使用 OpenAI Images Playground 的 `gpt-image-2.6-sunburst`，输出目标为 512×512 原生循环 GIF。
 
-当前正式方向为「动作参考 B 站，脸按六宫格」，见[逐样本复核](../../docs/changes/20261105-sunburst-emotes/references.md)。
+两组原生 GIF 各有独立入口。最新的[原表情包脸型版](original-pack-gifs/README.md)沿用对应来源的造型；先前的[聊天六宫格脸型版](six-panel-gifs/README.md)保留四个同名动作。可结合[逐样本复核](../../docs/changes/20261105-sunburst-emotes/references.md)对照。
 
 ## 拍手初稿的原件与验收
 
