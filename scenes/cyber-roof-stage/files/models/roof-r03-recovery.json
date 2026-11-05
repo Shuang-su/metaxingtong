@@ -1,0 +1,9322 @@
+{
+  "schema": 2,
+  "source_state": "11 fixed; 10 auxiliary different dynamic state",
+  "blender": "4.3.2",
+  "render": {
+    "engine": "CYCLES",
+    "samples": 24,
+    "denoise": false,
+    "resolution": [
+      1192,
+      671
+    ],
+    "percentage": 100,
+    "pixel_aspect": [
+      1.0,
+      1.0
+    ],
+    "view_transform": "AgX",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "world": {
+    "background": [
+      0.004,
+      0.008,
+      0.025,
+      1
+    ],
+    "strength": 0.4
+  },
+  "objects": [
+    {
+      "name": "STAGE_OUTER finite annulus hidden rear inferred",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "STAGE_OUTER LED front full circumference inferred",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "STAGE_INNER annulus",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.1200000047683716,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.1200000047683716,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "STAGE_INNER silver band",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.1200000047683716,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.1200000047683716,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "STAGE_INNER thin edge",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.1200000047683716,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.1200000047683716,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN closed shell",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 00",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 01",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 02",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 03",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 04",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 05",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 06",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 07",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 08",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 09",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 10",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 11",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 12",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 13",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 14",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 15",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 16",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 17",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 18",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 19",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 20",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 21",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 22",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 23",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 24",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 25",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 26",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 27",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 28",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 29",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 30",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 31",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 32",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 33",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 34",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 35",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 36",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 37",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 38",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 39",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 40",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 41",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 42",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 43",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN rib 44",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN gold ridge",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN gold front eave",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN gold back eave inferred",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN swept gable",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_MAIN swept gable.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT closed shell",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 00",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 01",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 02",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 03",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 04",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 05",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 06",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 07",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 08",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 09",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 10",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 11",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 12",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 13",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 14",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 15",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 16",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 17",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 18",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 19",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 20",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 21",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 22",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 23",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 24",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 25",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 26",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 27",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 28",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 29",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 30",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 31",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 32",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 33",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 34",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 35",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 36",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 37",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 38",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 39",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 40",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 41",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 42",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 43",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT rib 44",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT gold ridge",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT gold front eave",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT gold back eave inferred",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT swept gable",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT swept gable.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT closed shell",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 00",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 01",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 02",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 03",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 04",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 05",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 06",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 07",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 08",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 09",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 10",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 11",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 12",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 13",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 14",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 15",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 16",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 17",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 18",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 19",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 20",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 21",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 22",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 23",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 24",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 25",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 26",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 27",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 28",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 29",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 30",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 31",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 32",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 33",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 34",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 35",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 36",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 37",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 38",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 39",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 40",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 41",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 42",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 43",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT rib 44",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT gold ridge",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT gold front eave",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT gold back eave inferred",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT swept gable",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT swept gable.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy closed shell",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 00",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 01",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 02",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 03",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 04",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 05",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 06",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 07",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 08",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 09",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 10",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 11",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 12",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 13",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 14",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 15",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 16",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 17",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 18",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 19",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 20",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 21",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 22",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 23",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 24",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 25",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 26",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 27",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 28",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 29",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 30",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 31",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 32",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 33",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 34",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 35",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 36",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 37",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 38",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 39",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 40",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 41",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 42",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 43",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy rib 44",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy gold ridge",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy gold front eave",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy gold back eave inferred",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy swept gable",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_LEFT_REAR fragment proxy swept gable.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy closed shell",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 00",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 01",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 02",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 03",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 04",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 05",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 06",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 07",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 08",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 09",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 10",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 11",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 12",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 13",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 14",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 15",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 16",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 17",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 18",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 19",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 20",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 21",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 22",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 23",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 24",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 25",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 26",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 27",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 28",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 29",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 30",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 31",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 32",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 33",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 34",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 35",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 36",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 37",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 38",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 39",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 40",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 41",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 42",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 43",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy rib 44",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy gold ridge",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy gold front eave",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy gold back eave inferred",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy swept gable",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "ROOF_RIGHT_REAR fragment proxy swept gable.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_0 silhouette decorative proxy",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_0 spiral proxy",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_0 spiral proxy.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_1 silhouette decorative proxy",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_1 spiral proxy",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_1 spiral proxy.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_2 silhouette decorative proxy",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_2 spiral proxy",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "CLOUD_2 spiral proxy.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "STAGE_INNER central disk",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.1200000047683716,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.1200000047683716,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.475000023841858
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "DJ11 body inferred depth",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.319999933242798
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "DJ11 top",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.9700000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "DJ11 front stripe",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.049999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "DJ11 front stripe.001",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.430000066757202
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "DJ11 front stripe.002",
+      "type": "MESH",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {
+        "evidence_status": "inferred dimensions / hidden surfaces"
+      }
+    },
+    {
+      "name": "SOURCE11 conditional camera",
+      "type": "CAMERA",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.3089490532875061,
+          -0.9510785937309265,
+          -29.0
+        ],
+        [
+          0.0,
+          0.9510785937309265,
+          0.3089490532875061,
+          14.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {},
+      "camera": {
+        "lens": 43.0,
+        "sensor_width": 36.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0,
+        "sensor_fit": "AUTO",
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "type": "PERSP"
+      }
+    },
+    {
+      "name": "SOURCE10 auxiliary different state",
+      "type": "CAMERA",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.11130403727293015,
+          -0.9937863945960999,
+          -9.0
+        ],
+        [
+          0.0,
+          0.9937863945960999,
+          0.11130403727293015,
+          4.699999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {},
+      "camera": {
+        "lens": 40.0,
+        "sensor_width": 36.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0,
+        "sensor_fit": "AUTO",
+        "sensor_height": 24.0,
+        "shift_x": 0.0,
+        "shift_y": 0.0,
+        "type": "PERSP"
+      }
+    },
+    {
+      "name": "Key",
+      "type": "LIGHT",
+      "matrix_world": [
+        [
+          0.8087360858917236,
+          0.4218613803386688,
+          -0.4098523259162903,
+          -8.0
+        ],
+        [
+          -0.5881717205047607,
+          0.580059289932251,
+          -0.5635470151901245,
+          -8.0
+        ],
+        [
+          -7.437502347329428e-08,
+          0.6968243718147278,
+          0.7172418236732483,
+          17.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {},
+      "light": {
+        "type": "AREA",
+        "energy": 1925.0,
+        "color": [
+          0.6000000238418579,
+          0.8500000238418579,
+          1.0
+        ],
+        "size": 10.0,
+        "shape": "DISK"
+      }
+    },
+    {
+      "name": "Gold",
+      "type": "LIGHT",
+      "matrix_world": [
+        [
+          0.5299988389015198,
+          -0.5853465795516968,
+          0.6135720014572144,
+          8.0
+        ],
+        [
+          0.8479983806610107,
+          0.36584147810935974,
+          -0.383482426404953,
+          -2.0
+        ],
+        [
+          3.6174341744299454e-08,
+          0.7235532999038696,
+          0.6902685165405273,
+          12.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {},
+      "light": {
+        "type": "AREA",
+        "energy": 1375.0,
+        "color": [
+          1.0,
+          0.6499999761581421,
+          0.30000001192092896
+        ],
+        "size": 8.0,
+        "shape": "DISK"
+      }
+    },
+    {
+      "name": "Rim",
+      "type": "LIGHT",
+      "matrix_world": [
+        [
+          -1.0,
+          -1.5260113173098944e-07,
+          4.0736502171512257e-08,
+          0.0
+        ],
+        [
+          1.5099580252808664e-07,
+          -0.8479982018470764,
+          0.5299990773200989,
+          8.0
+        ],
+        [
+          -4.633397665543271e-08,
+          0.5299990773200989,
+          0.8479982018470764,
+          11.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "properties": {},
+      "light": {
+        "type": "AREA",
+        "energy": 2200.0,
+        "color": [
+          0.20000000298023224,
+          1.0,
+          0.6499999761581421
+        ],
+        "size": 10.0,
+        "shape": "DISK"
+      }
+    }
+  ],
+  "active_camera": "SOURCE11 conditional camera",
+  "source_blend": "roof-r03.blend",
+  "glb": "roof-r03.glb"
+}

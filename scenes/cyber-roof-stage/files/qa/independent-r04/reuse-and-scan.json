@@ -1,0 +1,230 @@
+{
+  "shared_material_nodes_r03_r04": true,
+  "shared_white_nodes_r03_r04": true,
+  "world_same": true,
+  "original_source_cameras_same": true,
+  "render_recipe_camera_checks": [
+    {
+      "name": "SOURCE11 conditional camera",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "SOURCE10 auxiliary different state",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "CHECK 01-front-oblique",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "CHECK 02-right-oblique",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "CHECK 03-left-profile",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "CHECK 04-right-profile",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "CHECK 05-rear-roof-hypothesis",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "CHECK 06-top-layout",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "CHECK 07-low-thickness",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    },
+    {
+      "name": "CHECK 08-underside-unknown-support",
+      "matrix_max_difference": 0.0,
+      "lens_equal": true,
+      "sensor_fit_equal": true
+    }
+  ],
+  "scan": [
+    {
+      "z": 8,
+      "residuals": {
+        "inner_left_extreme": [
+          -29.65784803692455,
+          63.33980381985418
+        ],
+        "inner_right_extreme": [
+          34.657848036924634,
+          61.33980381985418
+        ],
+        "inner_front_lower": [
+          -1.1368683772161603e-13,
+          83.14400805621142
+        ]
+      },
+      "coordinate_component_RMSE": 52.864894994976,
+      "reported_RMSE_difference": 6.798020017129147e-06,
+      "min_forward_depth": 22.696541530408936
+    },
+    {
+      "z": 9,
+      "residuals": {
+        "inner_left_extreme": [
+          -26.8300160372373,
+          68.11904205783333
+        ],
+        "inner_right_extreme": [
+          31.83001603723733,
+          66.11904205783333
+        ],
+        "inner_front_lower": [
+          -1.1368683772161603e-13,
+          97.45487522272265
+        ]
+      },
+      "coordinate_component_RMSE": 58.08382448336776,
+      "reported_RMSE_difference": -3.430586424002513e-05,
+      "min_forward_depth": 22.95231268938237
+    },
+    {
+      "z": 10,
+      "residuals": {
+        "inner_left_extreme": [
+          -23.652677487550932,
+          72.46191272620905
+        ],
+        "inner_right_extreme": [
+          28.652677487550932,
+          70.46191272620905
+        ],
+        "inner_front_lower": [
+          -1.1368683772161603e-13,
+          110.6000627620158
+        ]
+      },
+      "coordinate_component_RMSE": 63.019056513981255,
+      "reported_RMSE_difference": 1.552059592313526e-05,
+      "min_forward_depth": 23.246035121155437
+    },
+    {
+      "z": 11,
+      "residuals": {
+        "inner_left_extreme": [
+          -20.156453060230945,
+          76.35919835423636
+        ],
+        "inner_right_extreme": [
+          25.156453060231,
+          74.35919835423636
+        ],
+        "inner_front_lower": [
+          -1.1368683772161603e-13,
+          122.5399725558276
+        ]
+      },
+      "coordinate_component_RMSE": 67.59584819315232,
+      "reported_RMSE_difference": 1.252873488510886e-06,
+      "min_forward_depth": 23.576616024261675
+    },
+    {
+      "z": 12,
+      "residuals": {
+        "inner_left_extreme": [
+          -16.37425275735916,
+          74.08464676609873
+        ],
+        "inner_right_extreme": [
+          21.374252757359272,
+          72.08464676609873
+        ],
+        "inner_front_lower": [
+          -1.1368683772161603e-13,
+          133.2570462969071
+        ]
+      },
+      "coordinate_component_RMSE": 69.72224227595794,
+      "reported_RMSE_difference": -1.2103690764320163e-05,
+      "min_forward_depth": 23.94285130322905
+    },
+    {
+      "z": 13,
+      "residuals": {
+        "inner_left_extreme": [
+          -12.409873502221103,
+          76.68373678775481
+        ],
+        "inner_right_extreme": [
+          17.409873502221103,
+          74.68373678775481
+        ],
+        "inner_front_lower": [
+          -1.1368683772161603e-13,
+          142.752788860696
+        ]
+      },
+      "coordinate_component_RMSE": 73.36384601369537,
+      "reported_RMSE_difference": -1.3250653964291814e-05,
+      "min_forward_depth": 24.3434546044002
+    },
+    {
+      "z": 14,
+      "residuals": {
+        "inner_left_extreme": [
+          -8.226712062480999,
+          78.87948326773221
+        ],
+        "inner_right_extreme": [
+          13.226712062481056,
+          76.87948326773221
+        ],
+        "inner_front_lower": [
+          -1.1368683772161603e-13,
+          151.04722151464432
+        ]
+      },
+      "coordinate_component_RMSE": 76.58363147428518,
+      "reported_RMSE_difference": -9.790200678594374e-06,
+      "min_forward_depth": 24.77706280283749
+    },
+    {
+      "z": 15,
+      "residuals": {
+        "inner_left_extreme": [
+          -3.8561540528676232,
+          80.68405563580166
+        ],
+        "inner_right_extreme": [
+          8.856154052867623,
+          78.68405563580166
+        ],
+        "inner_front_lower": [
+          -1.1368683772161603e-13,
+          158.17453292295215
+        ]
+      },
+      "coordinate_component_RMSE": 79.38679749515524,
+      "reported_RMSE_difference": 1.5816415611880075e-05,
+      "min_forward_depth": 25.24227118762169
+    }
+  ]
+}
