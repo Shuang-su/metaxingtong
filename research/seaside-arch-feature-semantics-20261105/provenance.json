@@ -1,0 +1,1055 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-05T03:49:22.165707+00:00",
+  "label": "Seaside six-feature semantic audit; NO REFIT and NOT APPLIED; source FAILED",
+  "status": "INDEPENDENT_SEMANTIC_STUDY_NO_REFIT_NOT_APPLIED",
+  "input": {
+    "library_file_id": "libfile_8dfa64c2a05081918541828a57909354",
+    "file_id": "file_00000000711481fd8b0c2d51fd9eb4b3",
+    "filename": "seaside-arch-feature-semantics-final.bundle",
+    "size_bytes": 339891,
+    "sha256": "061d7779cb029ac8ae3c0601fe66ecab26590c4c03b11490ed6754a01ecf7cd5",
+    "version": 0,
+    "materialized_and_verified": true,
+    "bundle_refs": [
+      {
+        "commit": "9b84507d8c91d1f8a0c2f363921efa550da66044",
+        "ref": "refs/heads/study/seaside-source04-feature-semantics"
+      },
+      {
+        "commit": "9b84507d8c91d1f8a0c2f363921efa550da66044",
+        "ref": "HEAD"
+      }
+    ],
+    "bundle_prerequisites": [],
+    "checkout": "9b84507d8c91d1f8a0c2f363921efa550da66044",
+    "space_retained": true
+  },
+  "original_head": "9b84507d8c91d1f8a0c2f363921efa550da66044",
+  "original_commits": [
+    "40ac2d93b946a89bd7d5b017d9a93d1b17acbecb",
+    "094d30901f24dbf0e27c66eac67fecacb3a63fb4",
+    "9b84507d8c91d1f8a0c2f363921efa550da66044"
+  ],
+  "original_objects": [
+    {
+      "object": "9b84507d8c91d1f8a0c2f363921efa550da66044",
+      "type": "commit",
+      "size_bytes": 251,
+      "sha256": "4227d1395e3619fdb88aabd39b8b6844c694157114db4b42c60ad615d9fd78f3"
+    },
+    {
+      "object": "094d30901f24dbf0e27c66eac67fecacb3a63fb4",
+      "type": "commit",
+      "size_bytes": 270,
+      "sha256": "311be2549b58405a407f5396ad252d86b1ef74e6acec558be65661045db729a0"
+    },
+    {
+      "object": "40ac2d93b946a89bd7d5b017d9a93d1b17acbecb",
+      "type": "commit",
+      "size_bytes": 231,
+      "sha256": "45ebb2d21d85213c3ebf7e556e328f16259235be9d60bb4acab3cca5e8b5ef88"
+    },
+    {
+      "object": "a6da72b85dc407b6b958b9d4c8762cb319b57f77",
+      "type": "tree",
+      "size_bytes": 136,
+      "sha256": "2286ac5a8b2afcc24d76a8bbfdb80d93874c50c801d0227b99e216de3ab89736"
+    },
+    {
+      "object": "7472b8999b73a38bc200150c5374dd5ee690e508",
+      "type": "blob",
+      "size_bytes": 5497,
+      "sha256": "af09252ce61691d68b9fa9161f40254f4cb4f4b40d39bb99f036bb4a9ba4870e"
+    },
+    {
+      "object": "bff5c8c3cbe20fb702bb3e93b45928d986a3fcf2",
+      "type": "tree",
+      "size_bytes": 282,
+      "sha256": "8b77d48f9eb37c0188346639060c0db8146ead236ce182ec98edc5eb87bdf83b"
+    },
+    {
+      "object": "5191b156df4a6e43d630cd96d46c17a8f91661d2",
+      "type": "blob",
+      "size_bytes": 15448,
+      "sha256": "b5a25afba6791d89b72cb3156411868022bee0a58a2b7901afd2d83d71621c22"
+    },
+    {
+      "object": "716e88bfd4b9091fc98b798d9bbc8f1356d0c8a4",
+      "type": "blob",
+      "size_bytes": 128,
+      "sha256": "703b5c86a51431b4238a08d9967c4b1d65bc5d8ebe698445cb0394a89ca7895c"
+    },
+    {
+      "object": "47a30011e89e3cfc28ea00fcce464ab56a714c1c",
+      "type": "blob",
+      "size_bytes": 21575,
+      "sha256": "c267b08c2acbed7cc6e5c1c49ae33e9b2b369ac1de8feb00f7778ac1a43d6403"
+    },
+    {
+      "object": "484353e117664dc27116c9d6f4b48ae64824697a",
+      "type": "blob",
+      "size_bytes": 149,
+      "sha256": "cdd9ad30633f3e39b6bbf03ec1ec61a38bbebfbe8ede2c9e7c65e230596d892c"
+    },
+    {
+      "object": "3aa2bdc98468981228680048c371707fd6be0b3b",
+      "type": "blob",
+      "size_bytes": 5666,
+      "sha256": "755f69e68d6628bda3665ebdb0a2c7995036f8b7272bc938194e796f4e6ce1cd"
+    },
+    {
+      "object": "442276ab01c1581cc99850bf308975130133e8cf",
+      "type": "tree",
+      "size_bytes": 300,
+      "sha256": "dffc9369f796c3b0988e899d84bb4a99a259e0bd3062221d4bcecf9a458f8b85"
+    },
+    {
+      "object": "2d8676ac25c8f0118a8083a960a13f433e3ee93b",
+      "type": "blob",
+      "size_bytes": 15333,
+      "sha256": "e71a31349a38719e9ccd33d37f7c1723fd425a6d82da5451975234bd05ae5399"
+    },
+    {
+      "object": "11eb84f9a5f4fdda841f6644d7341a147852b6ab",
+      "type": "blob",
+      "size_bytes": 163,
+      "sha256": "e8483546d5925537df099b48007c66f2f2d71b901cdef848257cf72b45e8cce6"
+    },
+    {
+      "object": "311fdff4e9b7099e64585a838bfb364e44a821af",
+      "type": "blob",
+      "size_bytes": 3046,
+      "sha256": "d71cd9345f9fa0d98233327113b1f1869145ae3954ff143b0e6764548f29e782"
+    },
+    {
+      "object": "1c117743c7b2f611cbb8206451f8886e03cc2c6d",
+      "type": "blob",
+      "size_bytes": 1111,
+      "sha256": "873964acbe55f861e6ae5a1dd6967b71199cac7d8aa4906a60d77aeb1bfcc1b7"
+    },
+    {
+      "object": "a3135516e8b3aafd6c2750b786e0849dc57ba684",
+      "type": "blob",
+      "size_bytes": 9050,
+      "sha256": "e50ee7ddd288a96cdfc2642dfc9b8750782503a93d5ee7da5ed44220c32f5b5f"
+    },
+    {
+      "object": "702fcfa275c67a07cfff75a5cc69bbf8edc50638",
+      "type": "blob",
+      "size_bytes": 3066,
+      "sha256": "c0272019f29f97bc42fb533013eaa0162e1017e27ed87790a0145719df004321"
+    },
+    {
+      "object": "6574d5853d5daac397d8e4f4c8b07b3e757a8cf9",
+      "type": "blob",
+      "size_bytes": 254851,
+      "sha256": "05c748ce0573f137aaa643b9f875c226a214d60cca94f846fe0a7b49b7e22dc4"
+    },
+    {
+      "object": "037cb729799f8e243914fec45de0638b1e4bbc39",
+      "type": "tree",
+      "size_bytes": 94,
+      "sha256": "c72ec9fd3ef086b75df394b33f31375770c24927e15802d3b0575c8a4fc9e67c"
+    },
+    {
+      "object": "618dcabf725277fba8148255c29de96deff20ea0",
+      "type": "blob",
+      "size_bytes": 3893,
+      "sha256": "a45f0118addd98ac0702efbe4dab2eef0e03ab5311ec4f26df409b1a8373a49e"
+    },
+    {
+      "object": "f4f148a682b5b048c862fd453ae08405ef55726c",
+      "type": "blob",
+      "size_bytes": 1618,
+      "sha256": "e9c88e762aae421ea968bd2c03923bf07035064a625a3d1abc8bb09ca0999101"
+    },
+    {
+      "object": "d4001a732c666a1b074211122f3b951a6ef004eb",
+      "type": "tree",
+      "size_bytes": 87,
+      "sha256": "d72da07f40f512d117446d83d76c5ef5a98b4eeeec3ed9788b70b8c969116caa"
+    },
+    {
+      "object": "667db39651377f6d69593f2b2656d4fee630f409",
+      "type": "blob",
+      "size_bytes": 63274,
+      "sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613"
+    },
+    {
+      "object": "e611c6969a4da95031d6b636438ff0b41794aeb8",
+      "type": "blob",
+      "size_bytes": 3157,
+      "sha256": "2b7761bfa62e682b95ba48877c5886333388f58c3f360f8e79035d7ec31a4f13"
+    },
+    {
+      "object": "f3d7a520bec3283a1f7adc4ed550edc9ddb91a73",
+      "type": "tree",
+      "size_bytes": 136,
+      "sha256": "c189601f6eb279ec161586096d3f785305e8fa33a74fdc6c9c81fd563dd84605"
+    },
+    {
+      "object": "8098781ea1d199fd47748a06dff4f05de0019900",
+      "type": "blob",
+      "size_bytes": 5260,
+      "sha256": "9051a7d02554c87b2b786dd9f4da062d0703c410ebd4808abf6d45e66bfc01e9"
+    },
+    {
+      "object": "d65226b8316c9cc93a7983efb0a2ae6ffc38073e",
+      "type": "tree",
+      "size_bytes": 136,
+      "sha256": "fb0a0d015a1e38581213e614f27043a4605aae8aa544620aaf4a1adaf327973a"
+    },
+    {
+      "object": "005bb19bd0672213a1e7b8750b012ebf5db9dc5c",
+      "type": "blob",
+      "size_bytes": 4820,
+      "sha256": "544800d2527c82922a54c00ba103e865c112245f82741d991eda22d9f5f39e7a"
+    },
+    {
+      "object": "7f9657ad3b2596250b0c8ad88adfdb3f80673dd0",
+      "type": "tree",
+      "size_bytes": 244,
+      "sha256": "0304caefbefd975e2ac4ace34082804163789dbd42ccb0c3edffef59ff832a36"
+    }
+  ],
+  "stages": [
+    {
+      "commit": "40ac2d93b946a89bd7d5b017d9a93d1b17acbecb",
+      "tree": "d65226b8316c9cc93a7983efb0a2ae6ffc38073e",
+      "parents": [],
+      "file_count": 10,
+      "files": [
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "005bb19bd0672213a1e7b8750b012ebf5db9dc5c",
+          "size_bytes": 4820,
+          "sha256": "544800d2527c82922a54c00ba103e865c112245f82741d991eda22d9f5f39e7a"
+        },
+        {
+          "path": "qa/adjacent-face-probes.json",
+          "mode": "100644",
+          "blob": "5191b156df4a6e43d630cd96d46c17a8f91661d2",
+          "size_bytes": 15448,
+          "sha256": "b5a25afba6791d89b72cb3156411868022bee0a58a2b7901afd2d83d71621c22"
+        },
+        {
+          "path": "qa/adjacent-face-probes.log",
+          "mode": "100644",
+          "blob": "716e88bfd4b9091fc98b798d9bbc8f1356d0c8a4",
+          "size_bytes": 128,
+          "sha256": "703b5c86a51431b4238a08d9967c4b1d65bc5d8ebe698445cb0394a89ca7895c"
+        },
+        {
+          "path": "qa/features.json",
+          "mode": "100644",
+          "blob": "47a30011e89e3cfc28ea00fcce464ab56a714c1c",
+          "size_bytes": 21575,
+          "sha256": "c267b08c2acbed7cc6e5c1c49ae33e9b2b369ac1de8feb00f7778ac1a43d6403"
+        },
+        {
+          "path": "qa/features.log",
+          "mode": "100644",
+          "blob": "484353e117664dc27116c9d6f4b48ae64824697a",
+          "size_bytes": 149,
+          "sha256": "cdd9ad30633f3e39b6bbf03ec1ec61a38bbebfbe8ede2c9e7c65e230596d892c"
+        },
+        {
+          "path": "qa/final-originals-unchanged.json",
+          "mode": "100644",
+          "blob": "3aa2bdc98468981228680048c371707fd6be0b3b",
+          "size_bytes": 5666,
+          "sha256": "755f69e68d6628bda3665ebdb0a2c7995036f8b7272bc938194e796f4e6ce1cd"
+        },
+        {
+          "path": "scripts/map_features.py",
+          "mode": "100644",
+          "blob": "618dcabf725277fba8148255c29de96deff20ea0",
+          "size_bytes": 3893,
+          "sha256": "a45f0118addd98ac0702efbe4dab2eef0e03ab5311ec4f26df409b1a8373a49e"
+        },
+        {
+          "path": "scripts/probe_adjacent_faces.py",
+          "mode": "100644",
+          "blob": "f4f148a682b5b048c862fd453ae08405ef55726c",
+          "size_bytes": 1618,
+          "sha256": "e9c88e762aae421ea968bd2c03923bf07035064a625a3d1abc8bb09ca0999101"
+        },
+        {
+          "path": "source/04.webp",
+          "mode": "100644",
+          "blob": "667db39651377f6d69593f2b2656d4fee630f409",
+          "size_bytes": 63274,
+          "sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613"
+        },
+        {
+          "path": "source/old-fit04-unchanged.json",
+          "mode": "100644",
+          "blob": "e611c6969a4da95031d6b636438ff0b41794aeb8",
+          "size_bytes": 3157,
+          "sha256": "2b7761bfa62e682b95ba48877c5886333388f58c3f360f8e79035d7ec31a4f13"
+        }
+      ]
+    },
+    {
+      "commit": "094d30901f24dbf0e27c66eac67fecacb3a63fb4",
+      "tree": "f3d7a520bec3283a1f7adc4ed550edc9ddb91a73",
+      "parents": [
+        "40ac2d93b946a89bd7d5b017d9a93d1b17acbecb"
+      ],
+      "file_count": 17,
+      "files": [
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "8098781ea1d199fd47748a06dff4f05de0019900",
+          "size_bytes": 5260,
+          "sha256": "9051a7d02554c87b2b786dd9f4da062d0703c410ebd4808abf6d45e66bfc01e9"
+        },
+        {
+          "path": "qa/adjacent-face-probes.json",
+          "mode": "100644",
+          "blob": "5191b156df4a6e43d630cd96d46c17a8f91661d2",
+          "size_bytes": 15448,
+          "sha256": "b5a25afba6791d89b72cb3156411868022bee0a58a2b7901afd2d83d71621c22"
+        },
+        {
+          "path": "qa/adjacent-face-probes.log",
+          "mode": "100644",
+          "blob": "716e88bfd4b9091fc98b798d9bbc8f1356d0c8a4",
+          "size_bytes": 128,
+          "sha256": "703b5c86a51431b4238a08d9967c4b1d65bc5d8ebe698445cb0394a89ca7895c"
+        },
+        {
+          "path": "qa/features.json",
+          "mode": "100644",
+          "blob": "47a30011e89e3cfc28ea00fcce464ab56a714c1c",
+          "size_bytes": 21575,
+          "sha256": "c267b08c2acbed7cc6e5c1c49ae33e9b2b369ac1de8feb00f7778ac1a43d6403"
+        },
+        {
+          "path": "qa/features.log",
+          "mode": "100644",
+          "blob": "484353e117664dc27116c9d6f4b48ae64824697a",
+          "size_bytes": 149,
+          "sha256": "cdd9ad30633f3e39b6bbf03ec1ec61a38bbebfbe8ede2c9e7c65e230596d892c"
+        },
+        {
+          "path": "qa/final-originals-unchanged.json",
+          "mode": "100644",
+          "blob": "3aa2bdc98468981228680048c371707fd6be0b3b",
+          "size_bytes": 5666,
+          "sha256": "755f69e68d6628bda3665ebdb0a2c7995036f8b7272bc938194e796f4e6ce1cd"
+        },
+        {
+          "path": "qa/independent/check.json",
+          "mode": "100644",
+          "blob": "2d8676ac25c8f0118a8083a960a13f433e3ee93b",
+          "size_bytes": 15333,
+          "sha256": "e71a31349a38719e9ccd33d37f7c1723fd425a6d82da5451975234bd05ae5399"
+        },
+        {
+          "path": "qa/independent/check.log",
+          "mode": "100644",
+          "blob": "11eb84f9a5f4fdda841f6644d7341a147852b6ab",
+          "size_bytes": 163,
+          "sha256": "e8483546d5925537df099b48007c66f2f2d71b901cdef848257cf72b45e8cce6"
+        },
+        {
+          "path": "qa/independent/check.py",
+          "mode": "100644",
+          "blob": "311fdff4e9b7099e64585a838bfb364e44a821af",
+          "size_bytes": 3046,
+          "sha256": "d71cd9345f9fa0d98233327113b1f1869145ae3954ff143b0e6764548f29e782"
+        },
+        {
+          "path": "qa/independent/manifest.json",
+          "mode": "100644",
+          "blob": "1c117743c7b2f611cbb8206451f8886e03cc2c6d",
+          "size_bytes": 1111,
+          "sha256": "873964acbe55f861e6ae5a1dd6967b71199cac7d8aa4906a60d77aeb1bfcc1b7"
+        },
+        {
+          "path": "qa/independent/originals-recheck.json",
+          "mode": "100644",
+          "blob": "a3135516e8b3aafd6c2750b786e0849dc57ba684",
+          "size_bytes": 9050,
+          "sha256": "e50ee7ddd288a96cdfc2642dfc9b8750782503a93d5ee7da5ed44220c32f5b5f"
+        },
+        {
+          "path": "qa/independent/review.zh.md",
+          "mode": "100644",
+          "blob": "702fcfa275c67a07cfff75a5cc69bbf8edc50638",
+          "size_bytes": 3066,
+          "sha256": "c0272019f29f97bc42fb533013eaa0162e1017e27ed87790a0145719df004321"
+        },
+        {
+          "path": "qa/independent/upper-source04-native-crop.png",
+          "mode": "100644",
+          "blob": "6574d5853d5daac397d8e4f4c8b07b3e757a8cf9",
+          "size_bytes": 254851,
+          "sha256": "05c748ce0573f137aaa643b9f875c226a214d60cca94f846fe0a7b49b7e22dc4"
+        },
+        {
+          "path": "scripts/map_features.py",
+          "mode": "100644",
+          "blob": "618dcabf725277fba8148255c29de96deff20ea0",
+          "size_bytes": 3893,
+          "sha256": "a45f0118addd98ac0702efbe4dab2eef0e03ab5311ec4f26df409b1a8373a49e"
+        },
+        {
+          "path": "scripts/probe_adjacent_faces.py",
+          "mode": "100644",
+          "blob": "f4f148a682b5b048c862fd453ae08405ef55726c",
+          "size_bytes": 1618,
+          "sha256": "e9c88e762aae421ea968bd2c03923bf07035064a625a3d1abc8bb09ca0999101"
+        },
+        {
+          "path": "source/04.webp",
+          "mode": "100644",
+          "blob": "667db39651377f6d69593f2b2656d4fee630f409",
+          "size_bytes": 63274,
+          "sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613"
+        },
+        {
+          "path": "source/old-fit04-unchanged.json",
+          "mode": "100644",
+          "blob": "e611c6969a4da95031d6b636438ff0b41794aeb8",
+          "size_bytes": 3157,
+          "sha256": "2b7761bfa62e682b95ba48877c5886333388f58c3f360f8e79035d7ec31a4f13"
+        }
+      ]
+    },
+    {
+      "commit": "9b84507d8c91d1f8a0c2f363921efa550da66044",
+      "tree": "a6da72b85dc407b6b958b9d4c8762cb319b57f77",
+      "parents": [
+        "094d30901f24dbf0e27c66eac67fecacb3a63fb4"
+      ],
+      "file_count": 17,
+      "files": [
+        {
+          "path": "README.zh.md",
+          "mode": "100644",
+          "blob": "7472b8999b73a38bc200150c5374dd5ee690e508",
+          "size_bytes": 5497,
+          "sha256": "af09252ce61691d68b9fa9161f40254f4cb4f4b40d39bb99f036bb4a9ba4870e"
+        },
+        {
+          "path": "qa/adjacent-face-probes.json",
+          "mode": "100644",
+          "blob": "5191b156df4a6e43d630cd96d46c17a8f91661d2",
+          "size_bytes": 15448,
+          "sha256": "b5a25afba6791d89b72cb3156411868022bee0a58a2b7901afd2d83d71621c22"
+        },
+        {
+          "path": "qa/adjacent-face-probes.log",
+          "mode": "100644",
+          "blob": "716e88bfd4b9091fc98b798d9bbc8f1356d0c8a4",
+          "size_bytes": 128,
+          "sha256": "703b5c86a51431b4238a08d9967c4b1d65bc5d8ebe698445cb0394a89ca7895c"
+        },
+        {
+          "path": "qa/features.json",
+          "mode": "100644",
+          "blob": "47a30011e89e3cfc28ea00fcce464ab56a714c1c",
+          "size_bytes": 21575,
+          "sha256": "c267b08c2acbed7cc6e5c1c49ae33e9b2b369ac1de8feb00f7778ac1a43d6403"
+        },
+        {
+          "path": "qa/features.log",
+          "mode": "100644",
+          "blob": "484353e117664dc27116c9d6f4b48ae64824697a",
+          "size_bytes": 149,
+          "sha256": "cdd9ad30633f3e39b6bbf03ec1ec61a38bbebfbe8ede2c9e7c65e230596d892c"
+        },
+        {
+          "path": "qa/final-originals-unchanged.json",
+          "mode": "100644",
+          "blob": "3aa2bdc98468981228680048c371707fd6be0b3b",
+          "size_bytes": 5666,
+          "sha256": "755f69e68d6628bda3665ebdb0a2c7995036f8b7272bc938194e796f4e6ce1cd"
+        },
+        {
+          "path": "qa/independent/check.json",
+          "mode": "100644",
+          "blob": "2d8676ac25c8f0118a8083a960a13f433e3ee93b",
+          "size_bytes": 15333,
+          "sha256": "e71a31349a38719e9ccd33d37f7c1723fd425a6d82da5451975234bd05ae5399"
+        },
+        {
+          "path": "qa/independent/check.log",
+          "mode": "100644",
+          "blob": "11eb84f9a5f4fdda841f6644d7341a147852b6ab",
+          "size_bytes": 163,
+          "sha256": "e8483546d5925537df099b48007c66f2f2d71b901cdef848257cf72b45e8cce6"
+        },
+        {
+          "path": "qa/independent/check.py",
+          "mode": "100644",
+          "blob": "311fdff4e9b7099e64585a838bfb364e44a821af",
+          "size_bytes": 3046,
+          "sha256": "d71cd9345f9fa0d98233327113b1f1869145ae3954ff143b0e6764548f29e782"
+        },
+        {
+          "path": "qa/independent/manifest.json",
+          "mode": "100644",
+          "blob": "1c117743c7b2f611cbb8206451f8886e03cc2c6d",
+          "size_bytes": 1111,
+          "sha256": "873964acbe55f861e6ae5a1dd6967b71199cac7d8aa4906a60d77aeb1bfcc1b7"
+        },
+        {
+          "path": "qa/independent/originals-recheck.json",
+          "mode": "100644",
+          "blob": "a3135516e8b3aafd6c2750b786e0849dc57ba684",
+          "size_bytes": 9050,
+          "sha256": "e50ee7ddd288a96cdfc2642dfc9b8750782503a93d5ee7da5ed44220c32f5b5f"
+        },
+        {
+          "path": "qa/independent/review.zh.md",
+          "mode": "100644",
+          "blob": "702fcfa275c67a07cfff75a5cc69bbf8edc50638",
+          "size_bytes": 3066,
+          "sha256": "c0272019f29f97bc42fb533013eaa0162e1017e27ed87790a0145719df004321"
+        },
+        {
+          "path": "qa/independent/upper-source04-native-crop.png",
+          "mode": "100644",
+          "blob": "6574d5853d5daac397d8e4f4c8b07b3e757a8cf9",
+          "size_bytes": 254851,
+          "sha256": "05c748ce0573f137aaa643b9f875c226a214d60cca94f846fe0a7b49b7e22dc4"
+        },
+        {
+          "path": "scripts/map_features.py",
+          "mode": "100644",
+          "blob": "618dcabf725277fba8148255c29de96deff20ea0",
+          "size_bytes": 3893,
+          "sha256": "a45f0118addd98ac0702efbe4dab2eef0e03ab5311ec4f26df409b1a8373a49e"
+        },
+        {
+          "path": "scripts/probe_adjacent_faces.py",
+          "mode": "100644",
+          "blob": "f4f148a682b5b048c862fd453ae08405ef55726c",
+          "size_bytes": 1618,
+          "sha256": "e9c88e762aae421ea968bd2c03923bf07035064a625a3d1abc8bb09ca0999101"
+        },
+        {
+          "path": "source/04.webp",
+          "mode": "100644",
+          "blob": "667db39651377f6d69593f2b2656d4fee630f409",
+          "size_bytes": 63274,
+          "sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613"
+        },
+        {
+          "path": "source/old-fit04-unchanged.json",
+          "mode": "100644",
+          "blob": "e611c6969a4da95031d6b636438ff0b41794aeb8",
+          "size_bytes": 3157,
+          "sha256": "2b7761bfa62e682b95ba48877c5886333388f58c3f360f8e79035d7ec31a4f13"
+        }
+      ]
+    }
+  ],
+  "history_ref": "refs/heads/history/seaside-arch-feature-semantics-original-20261105",
+  "archive_ref": "refs/heads/archive/seaside-arch-feature-semantics-20261105",
+  "base_commit": "0aef126719fd90122b51749164f738ba85e0902c",
+  "archive_prefix": "research/seaside-arch-feature-semantics-20261105",
+  "file_count": 17,
+  "total_file_bytes": 407025,
+  "files": [
+    {
+      "path": "README.zh.md",
+      "mode": "100644",
+      "blob": "7472b8999b73a38bc200150c5374dd5ee690e508",
+      "size_bytes": 5497,
+      "sha256": "af09252ce61691d68b9fa9161f40254f4cb4f4b40d39bb99f036bb4a9ba4870e"
+    },
+    {
+      "path": "qa/adjacent-face-probes.json",
+      "mode": "100644",
+      "blob": "5191b156df4a6e43d630cd96d46c17a8f91661d2",
+      "size_bytes": 15448,
+      "sha256": "b5a25afba6791d89b72cb3156411868022bee0a58a2b7901afd2d83d71621c22"
+    },
+    {
+      "path": "qa/adjacent-face-probes.log",
+      "mode": "100644",
+      "blob": "716e88bfd4b9091fc98b798d9bbc8f1356d0c8a4",
+      "size_bytes": 128,
+      "sha256": "703b5c86a51431b4238a08d9967c4b1d65bc5d8ebe698445cb0394a89ca7895c"
+    },
+    {
+      "path": "qa/features.json",
+      "mode": "100644",
+      "blob": "47a30011e89e3cfc28ea00fcce464ab56a714c1c",
+      "size_bytes": 21575,
+      "sha256": "c267b08c2acbed7cc6e5c1c49ae33e9b2b369ac1de8feb00f7778ac1a43d6403"
+    },
+    {
+      "path": "qa/features.log",
+      "mode": "100644",
+      "blob": "484353e117664dc27116c9d6f4b48ae64824697a",
+      "size_bytes": 149,
+      "sha256": "cdd9ad30633f3e39b6bbf03ec1ec61a38bbebfbe8ede2c9e7c65e230596d892c"
+    },
+    {
+      "path": "qa/final-originals-unchanged.json",
+      "mode": "100644",
+      "blob": "3aa2bdc98468981228680048c371707fd6be0b3b",
+      "size_bytes": 5666,
+      "sha256": "755f69e68d6628bda3665ebdb0a2c7995036f8b7272bc938194e796f4e6ce1cd"
+    },
+    {
+      "path": "qa/independent/check.json",
+      "mode": "100644",
+      "blob": "2d8676ac25c8f0118a8083a960a13f433e3ee93b",
+      "size_bytes": 15333,
+      "sha256": "e71a31349a38719e9ccd33d37f7c1723fd425a6d82da5451975234bd05ae5399"
+    },
+    {
+      "path": "qa/independent/check.log",
+      "mode": "100644",
+      "blob": "11eb84f9a5f4fdda841f6644d7341a147852b6ab",
+      "size_bytes": 163,
+      "sha256": "e8483546d5925537df099b48007c66f2f2d71b901cdef848257cf72b45e8cce6"
+    },
+    {
+      "path": "qa/independent/check.py",
+      "mode": "100644",
+      "blob": "311fdff4e9b7099e64585a838bfb364e44a821af",
+      "size_bytes": 3046,
+      "sha256": "d71cd9345f9fa0d98233327113b1f1869145ae3954ff143b0e6764548f29e782"
+    },
+    {
+      "path": "qa/independent/manifest.json",
+      "mode": "100644",
+      "blob": "1c117743c7b2f611cbb8206451f8886e03cc2c6d",
+      "size_bytes": 1111,
+      "sha256": "873964acbe55f861e6ae5a1dd6967b71199cac7d8aa4906a60d77aeb1bfcc1b7"
+    },
+    {
+      "path": "qa/independent/originals-recheck.json",
+      "mode": "100644",
+      "blob": "a3135516e8b3aafd6c2750b786e0849dc57ba684",
+      "size_bytes": 9050,
+      "sha256": "e50ee7ddd288a96cdfc2642dfc9b8750782503a93d5ee7da5ed44220c32f5b5f"
+    },
+    {
+      "path": "qa/independent/review.zh.md",
+      "mode": "100644",
+      "blob": "702fcfa275c67a07cfff75a5cc69bbf8edc50638",
+      "size_bytes": 3066,
+      "sha256": "c0272019f29f97bc42fb533013eaa0162e1017e27ed87790a0145719df004321"
+    },
+    {
+      "path": "qa/independent/upper-source04-native-crop.png",
+      "mode": "100644",
+      "blob": "6574d5853d5daac397d8e4f4c8b07b3e757a8cf9",
+      "size_bytes": 254851,
+      "sha256": "05c748ce0573f137aaa643b9f875c226a214d60cca94f846fe0a7b49b7e22dc4"
+    },
+    {
+      "path": "scripts/map_features.py",
+      "mode": "100644",
+      "blob": "618dcabf725277fba8148255c29de96deff20ea0",
+      "size_bytes": 3893,
+      "sha256": "a45f0118addd98ac0702efbe4dab2eef0e03ab5311ec4f26df409b1a8373a49e"
+    },
+    {
+      "path": "scripts/probe_adjacent_faces.py",
+      "mode": "100644",
+      "blob": "f4f148a682b5b048c862fd453ae08405ef55726c",
+      "size_bytes": 1618,
+      "sha256": "e9c88e762aae421ea968bd2c03923bf07035064a625a3d1abc8bb09ca0999101"
+    },
+    {
+      "path": "source/04.webp",
+      "mode": "100644",
+      "blob": "667db39651377f6d69593f2b2656d4fee630f409",
+      "size_bytes": 63274,
+      "sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613"
+    },
+    {
+      "path": "source/old-fit04-unchanged.json",
+      "mode": "100644",
+      "blob": "e611c6969a4da95031d6b636438ff0b41794aeb8",
+      "size_bytes": 3157,
+      "sha256": "2b7761bfa62e682b95ba48877c5886333388f58c3f360f8e79035d7ec31a4f13"
+    }
+  ],
+  "limitations": [
+    "Independent three-commit semantic-diagnostic history only:17files,407,025bytes, including one unchanged non-native report source image and one original-size report crop. No new model, model stage or rendered image. Final third commit adds only the README clarification about the word native in the existing crop filename.",
+    "NO REFIT and NOT APPLIED. Old six source/world records and old fit bytes are preserved. Three exterior-edge observations do not justify the author-centre representative world points as hard calibration constraints; the right upper circle centre is source-occluded. Two clearer upper-circle centres do not constrain all original camera degrees of freedom/focal length. Front/back edge candidates remain listed without selecting by smaller residual.",
+    "Supplied independent QA reports17candidate projection rows with zero pixel differences, seven mesh-vertex check rows (six distinct vertex identities) with zero world-coordinate differences, and four64-boundary-vertex cap means with zero differences. Cap centres are defined surface means, not invented mesh vertices. This worker compares stored JSON records and original-byte bindings, not a new Blender or geometry execution.",
+    "Supplied independent24adjacent-face probes reproduce14visible and10occluded classifications using first-hit versus target distance with1e-4model-unit tolerance. Maximum recorded world-coordinate discrepancy is retained. Same object name does not establish that a rear target point is visible; exact boundary ray misses are not proof of absent geometry. These are limited model probes, not24independent source constraints or continuous silhouette certification.",
+    "The additional lower-circle front-cap feature remains outside the old six-point fit, with about41.35pxconditional discrepancy and frame03first-hit occlusion. It is not silently inserted into a new fit. Source interpretation, hidden geometry, complete support and source acceptance remain FAILED/unverified.",
+    "Source04is unchanged1192x671report WebP, not native video. upper-source04-native-crop.png is only the original-size report pixel crop at(100,55)-(800,340),700x285pixels, with no resize. Both original filename and explicit README limitation are preserved; the name does not confer native video provenance.",
+    "The36model/environment/render hashes are rebound to exact production source a65ef897a53f6fc51e5fb764376227d3a93b9322 by rehashing retained Git blobs previously fetched and verified from GitHub. Those objects and production archive paths stay unchanged and are not copied into the research payload. The old fit and source04bytes in this package are independently compared with the same frozen production originals.",
+    "Only new independent research archive/history refs are created. All existing production and earlier research refs, model CURRENT, old paths and failure histories remain unchanged. No modeling, rendering, producer-script execution, credentials copying, LFS, force push, history deletion, main/security changes, Issues or PRs. Previously denied source-screening-increment receipt remains paused. Spaceversion0 is retained pending parent consumption confirmation."
+  ],
+  "producer_manifest_verification": {
+    "source_commits": 3,
+    "original_files": 17,
+    "source_stage_file_counts": [
+      10,
+      17,
+      17
+    ],
+    "last_commit_only_README_provenance_clarification": true,
+    "producer_QA_manifest_entries_verified": 6,
+    "new_models": 0,
+    "new_model_stages": 0,
+    "new_rendered_images": 0,
+    "archived_image_files": [
+      {
+        "path": "qa/independent/upper-source04-native-crop.png",
+        "bytes": 254851,
+        "sha256": "05c748ce0573f137aaa643b9f875c226a214d60cca94f846fe0a7b49b7e22dc4"
+      },
+      {
+        "path": "source/04.webp",
+        "bytes": 63274,
+        "sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613"
+      }
+    ],
+    "source_image_dimensions": [
+      1192,
+      671
+    ],
+    "original_size_report_crop_rectangle": [
+      100,
+      55,
+      800,
+      340
+    ],
+    "original_size_crop_dimensions": [
+      700,
+      285
+    ],
+    "crop_RGB_array_equals_original_report_region": true,
+    "native_video_provenance": false,
+    "status": "NO REFIT / NOT APPLIED / source FAILED",
+    "bound_production_source_head": "a65ef897a53f6fc51e5fb764376227d3a93b9322",
+    "production_inputs_rehashed_from_previously_remote_verified_original_Git_objects": [
+      {
+        "path": "models/environment.json",
+        "mode": "100644",
+        "blob": "1ed9090353ccf1de78554351b4b54450c7f62916",
+        "size_bytes": 10629,
+        "sha256": "3d513cf0323b5d51819ac0e469bb0eea9ab5a05cf1ccddbc8f75f975a920ad92",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/models/environment.json"
+      },
+      {
+        "path": "models/material.blend",
+        "mode": "100644",
+        "blob": "0f4f5fea53aa8cbc6ef45b83180dbb9157fcd0c3",
+        "size_bytes": 1856636,
+        "sha256": "c281133471f332850dcbb4785257e7b1202c7be9e2fbdb88cf4d738cbf617b6d",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/models/material.blend"
+      },
+      {
+        "path": "models/material.glb",
+        "mode": "100644",
+        "blob": "771c169313d2b1b04cb4e149d66c0f425a27f079",
+        "size_bytes": 658908,
+        "sha256": "aa502109e4dd1b99dfeb5919dc4fff28ead681bd1c68b435f461972b81003064",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/models/material.glb"
+      },
+      {
+        "path": "models/white.blend",
+        "mode": "100644",
+        "blob": "d0fe0f7ff40e843b1f61501cc6458372c08bf99b",
+        "size_bytes": 1578620,
+        "sha256": "7acfa448079097c0c9ab3ce44050e676993293843ad5545f9300722383c5d59a",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/models/white.blend"
+      },
+      {
+        "path": "models/white.glb",
+        "mode": "100644",
+        "blob": "902a5e1a256c8fd203fc1a03d3206464f61de45f",
+        "size_bytes": 655860,
+        "sha256": "f55705e5de76153f8295bfd2e39e646f5cdef6f9b139dc7b70a5eb21b919debc",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/models/white.glb"
+      },
+      {
+        "path": "renders/low-material03.png",
+        "mode": "100644",
+        "blob": "d4f42446a85a5972fcf8a313e14e49224a5da6bc",
+        "size_bytes": 402263,
+        "sha256": "e4703e1ba9babde60f7b1c8d55580abc2c3c4a97623f8757633a1d0ac403b4c0",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/low-material03.png"
+      },
+      {
+        "path": "renders/material-CHECK00.png",
+        "mode": "100644",
+        "blob": "b73eeeeec589005f93e6f0eb009ee15dec299ab7",
+        "size_bytes": 1540244,
+        "sha256": "657589c711595d4e651b5c9d2456afed9622f46a31d875463d01aefba58c0798",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-CHECK00.png"
+      },
+      {
+        "path": "renders/material-CHECK01.png",
+        "mode": "100644",
+        "blob": "cb1da41aa9b841cf7eb48d7429066c4334e4b861",
+        "size_bytes": 1501961,
+        "sha256": "f570a691892b227f2ceac690b67cd003baaafd0440a26d15230a74349f746b98",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-CHECK01.png"
+      },
+      {
+        "path": "renders/material-CHECK02.png",
+        "mode": "100644",
+        "blob": "bb7c01f7ee51e3868d223aa455f7e3f6367e9633",
+        "size_bytes": 1358465,
+        "sha256": "5e5ea07cfa628c99e97947cda3a688d4c5d3e3ee36f4cbe1592d84ed981dae4b",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-CHECK02.png"
+      },
+      {
+        "path": "renders/material-CHECK03.png",
+        "mode": "100644",
+        "blob": "9969a9139cb5b32f871c834ef20c94f3f20fdded",
+        "size_bytes": 1346946,
+        "sha256": "7b52e30e285dc2cf51168253dca2dce53e02f5658d8ff08b41abded205071d72",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-CHECK03.png"
+      },
+      {
+        "path": "renders/material-CHECK04.png",
+        "mode": "100644",
+        "blob": "bf741bd1ebc674ae0ba950c4f16c103ee1fc208e",
+        "size_bytes": 1328448,
+        "sha256": "4181d07a40ce8eb4247a0859ee96e57937319507520a1a691e93027445cd34fe",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-CHECK04.png"
+      },
+      {
+        "path": "renders/material-CHECK05.png",
+        "mode": "100644",
+        "blob": "550687eafdad97305aab1e9b1e16e098014f1fcc",
+        "size_bytes": 1682675,
+        "sha256": "f13d8c99ee8cf50588b0979304c9633bb38ad4616599fb06e2d666a1d056c5c6",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-CHECK05.png"
+      },
+      {
+        "path": "renders/material-CHECK06.png",
+        "mode": "100644",
+        "blob": "794c5b21c8cebfc01cc3ae7596ad59b0fe1241ad",
+        "size_bytes": 1718701,
+        "sha256": "8c3c74df0ad77358d9b19b208741f7223bb9ec13252aea7e30e60deb5ad61244",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-CHECK06.png"
+      },
+      {
+        "path": "renders/material-CHECK07.png",
+        "mode": "100644",
+        "blob": "771f1ea18b2f734945f8f42d9922561dab5297f9",
+        "size_bytes": 1521079,
+        "sha256": "fa58b30b5906d87882f354af66fb50e7793afa254e27c8335b681ba5e57b671b",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-CHECK07.png"
+      },
+      {
+        "path": "renders/material-SOURCE03-direct50.png",
+        "mode": "100644",
+        "blob": "11a1710642e239fbd7949968643d1d81f8db8c13",
+        "size_bytes": 1023492,
+        "sha256": "e108769a4b6ea2a13e2fde7b8df923c606e320eab56b32f0f8396eb9535116c1",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-SOURCE03-direct50.png"
+      },
+      {
+        "path": "renders/material-SOURCE03.png",
+        "mode": "100644",
+        "blob": "b1634aa0eac89b5d37df50790d2346d48a4807c8",
+        "size_bytes": 1318404,
+        "sha256": "35cec2bdb1d71ed73444422f5d17dcf4f9a9defe23c77ef921e90b1061e17b6c",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-SOURCE03.png"
+      },
+      {
+        "path": "renders/material-SOURCE04-direct50.png",
+        "mode": "100644",
+        "blob": "dfb0188456fc8a23191056962b2f63da3b0d3656",
+        "size_bytes": 1213411,
+        "sha256": "0128e7d129026a4115b1d3a381337a0d508cf0dfc688f3a5251a6afc0a2693d0",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-SOURCE04-direct50.png"
+      },
+      {
+        "path": "renders/material-SOURCE04.png",
+        "mode": "100644",
+        "blob": "3568d9181487906e9acddb1e2dbafee7b0820ef6",
+        "size_bytes": 1567629,
+        "sha256": "30cb36892c2dec747dfcdd7137f785e75520e25c82972d216c1df70ef4a57c71",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-SOURCE04.png"
+      },
+      {
+        "path": "renders/material-contact-sheet.jpg",
+        "mode": "100644",
+        "blob": "6b04727385fb267dcfe8475c0752529221569e20",
+        "size_bytes": 236959,
+        "sha256": "3ae6ff840adbee5b0b0fd5b97d06bf82a7e18cb50232821d620e923ef873b13a",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-contact-sheet.jpg"
+      },
+      {
+        "path": "renders/material-source04-camera-fit-low.png",
+        "mode": "100644",
+        "blob": "c3439afd2b02265bf3f42c8518e0689069dc99b5",
+        "size_bytes": 496859,
+        "sha256": "1fda12a53c768b3845f51e705e2ee05e25ecf5192e48298f55d4392c46bf36c3",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/material-source04-camera-fit-low.png"
+      },
+      {
+        "path": "renders/restored-material03-low.png",
+        "mode": "100644",
+        "blob": "cb684df0d8a6765de05b6fba268df9d61d1b65b9",
+        "size_bytes": 402145,
+        "sha256": "00ba60c31017a964d09751bae0cba3b75dd7fb6bd73f440df6c3713c14f789b6",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/restored-material03-low.png"
+      },
+      {
+        "path": "renders/restored-white03-low.png",
+        "mode": "100644",
+        "blob": "03395673d62f4080b3dbf59f5ebb69e90c064320",
+        "size_bytes": 388375,
+        "sha256": "46a7acfb0165a30df043770a98428bf77987d8fa2ecc2448ac3bbfb881a4c5a3",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/restored-white03-low.png"
+      },
+      {
+        "path": "renders/white-CHECK00.png",
+        "mode": "100644",
+        "blob": "43abfbd6fa256ff7d39258714a2fa61641f7d1f3",
+        "size_bytes": 1377544,
+        "sha256": "5d3d6d8ad19a45c1be9eec80285785f5fb9489b1fba79f3c24b4de4939e6bbd4",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-CHECK00.png"
+      },
+      {
+        "path": "renders/white-CHECK01.png",
+        "mode": "100644",
+        "blob": "11e7f71c3a0e0e6dae1656dd904d5798af118fef",
+        "size_bytes": 1385084,
+        "sha256": "9493d55881c14f90fe88f91a884a7a14db6c46651b414bf25ea0d90ebe6e2934",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-CHECK01.png"
+      },
+      {
+        "path": "renders/white-CHECK02.png",
+        "mode": "100644",
+        "blob": "b39bcf0629d8e47c635ea3fe877cf49f9052e2ad",
+        "size_bytes": 1305765,
+        "sha256": "ce1d4cb49133fae7600c21ffdb8685818487b306042275e49e7cf630a4fdfa22",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-CHECK02.png"
+      },
+      {
+        "path": "renders/white-CHECK03.png",
+        "mode": "100644",
+        "blob": "4f493ce89dcc7fc6d7fc10d971b7dcd5458f6876",
+        "size_bytes": 1360064,
+        "sha256": "eb18484df95b642dcd2572abf2b1c3e73766cdc5746f6ced7a9f4d4f85b49a84",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-CHECK03.png"
+      },
+      {
+        "path": "renders/white-CHECK04.png",
+        "mode": "100644",
+        "blob": "3aee9738bea556312bef81699eaf2fddc8e80cf4",
+        "size_bytes": 1528601,
+        "sha256": "204324f6c76c0d4d3509bcf0f9f3e02b436b69dad7332f1204c3a47c3e4a83ca",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-CHECK04.png"
+      },
+      {
+        "path": "renders/white-CHECK05.png",
+        "mode": "100644",
+        "blob": "7ed8eb335d0cffc242a71353acfe9b1c7078672e",
+        "size_bytes": 1491424,
+        "sha256": "b54f533b4ed913a889ce409c1aead022ad796ba74f3c7536252dc61bea115a61",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-CHECK05.png"
+      },
+      {
+        "path": "renders/white-CHECK06.png",
+        "mode": "100644",
+        "blob": "0921b8ca03af538a5b0034184a651e945d618d5a",
+        "size_bytes": 1555081,
+        "sha256": "9e58395cac944fe8d4fb9053a4cb763bde661260a5246f620b195fbda61f3aaf",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-CHECK06.png"
+      },
+      {
+        "path": "renders/white-CHECK07.png",
+        "mode": "100644",
+        "blob": "82ce99c151d9acfc11d4bcf3378ab0aae8b71e1a",
+        "size_bytes": 1429565,
+        "sha256": "e892383741dce377a5192bace98d75e6805b84b9e8f208039a5a930de6f2fa0a",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-CHECK07.png"
+      },
+      {
+        "path": "renders/white-SOURCE03-direct50.png",
+        "mode": "100644",
+        "blob": "317e32ff53c07be2646468dd2540555075e92a1f",
+        "size_bytes": 971732,
+        "sha256": "8bbe66675f5d3ff251a9b9fc5d41ff8bc9e7965144a6f0c91787865b11836291",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-SOURCE03-direct50.png"
+      },
+      {
+        "path": "renders/white-SOURCE03.png",
+        "mode": "100644",
+        "blob": "2e804556650e5442424b1dfd5ab1c1fdbbf1a9a1",
+        "size_bytes": 1208888,
+        "sha256": "cb877ef7d75c79901576b87722538de0f9478446bea2427ab83b8c0e7d38440c",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-SOURCE03.png"
+      },
+      {
+        "path": "renders/white-SOURCE04-direct50.png",
+        "mode": "100644",
+        "blob": "bc748567234246499532cb5c3cfff918073750e0",
+        "size_bytes": 1138609,
+        "sha256": "162e71602a4fb04f21b0064bfd5c20f89b96e69045108ff5f2b8ff9b0bb1922d",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-SOURCE04-direct50.png"
+      },
+      {
+        "path": "renders/white-SOURCE04.png",
+        "mode": "100644",
+        "blob": "907d14c74463812371f36947f7de8a04cf087e98",
+        "size_bytes": 1416554,
+        "sha256": "1584896531dc6b7a557aba3cd9271bd75b19ba401630cec293d25e60da52afb9",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-SOURCE04.png"
+      },
+      {
+        "path": "renders/white-contact-sheet.jpg",
+        "mode": "100644",
+        "blob": "bb0cce2b431e2d3ff3400a4b3342a9ae825e96d8",
+        "size_bytes": 197357,
+        "sha256": "6cb434094d46f0d44a231bb49cd6875373b1fbd4d4938d36d06f3a08db82b1c3",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-contact-sheet.jpg"
+      },
+      {
+        "path": "renders/white-source04-camera-fit-low.png",
+        "mode": "100644",
+        "blob": "d2c84adfb3e9836832724a2c7eedf0bc0f68d978",
+        "size_bytes": 478359,
+        "sha256": "b344854deaf9f8432e13ac1c906435ec4ef121d3f42db7a1efdac3ee774f7f87",
+        "unchanged_archive_path": "scenes/seaside-arch-stage/files/renders/white-source04-camera-fit-low.png"
+      }
+    ],
+    "old_fit_and_source_bytes_equal_exact_production_files": [
+      {
+        "path": "source/04.webp",
+        "production_path": "source/04.webp",
+        "bytes": 63274,
+        "sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613",
+        "blob": "667db39651377f6d69593f2b2656d4fee630f409"
+      },
+      {
+        "path": "source/old-fit04-unchanged.json",
+        "production_path": "qa/camera-fit04.json",
+        "bytes": 3157,
+        "sha256": "2b7761bfa62e682b95ba48877c5886333388f58c3f360f8e79035d7ec31a4f13",
+        "blob": "e611c6969a4da95031d6b636438ff0b41794aeb8"
+      }
+    ],
+    "old_six_source_world_records_unchanged": true,
+    "supplied_candidate_projection_records_consistent": 17,
+    "supplied_mesh_vertex_zero_difference_rows": 7,
+    "distinct_mesh_vertices_in_those_rows": 6,
+    "supplied_cap_mean_zero_difference_records": 4,
+    "supplied_cap_boundary_vertex_count": 64,
+    "supplied_probe_classifications_consistent": 24,
+    "supplied_visible_probe_count": 14,
+    "supplied_occluded_probe_count": 10,
+    "supplied_max_probe_world_difference": 2.384185791015625e-07,
+    "archive_worker_recomputed_geometry_or_ran_producer_scripts": false,
+    "modeling": false,
+    "rendering": false
+  },
+  "archive_branch_created_from": "refs/heads/archive/seaside-arch-local-panel-study-20261105"
+}
