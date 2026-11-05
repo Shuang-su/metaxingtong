@@ -1,0 +1,1054 @@
+{
+  "title": "给你的",
+  "file": "for-you-long.gif",
+  "comparison": "../../03-for-you/manifest.json",
+  "size": [
+    768,
+    768
+  ],
+  "frames": 51,
+  "different_frames": 51,
+  "new_drawings": 41,
+  "total_ms": 4570,
+  "mean_distinct_fps": 11.16,
+  "frame_durations_ms": [
+    240,
+    60,
+    60,
+    60,
+    60,
+    140,
+    70,
+    70,
+    70,
+    70,
+    180,
+    70,
+    70,
+    70,
+    70,
+    280,
+    60,
+    60,
+    60,
+    60,
+    60,
+    180,
+    70,
+    70,
+    70,
+    70,
+    330,
+    70,
+    70,
+    70,
+    70,
+    130,
+    70,
+    70,
+    70,
+    70,
+    110,
+    60,
+    60,
+    60,
+    60,
+    110,
+    70,
+    70,
+    70,
+    70,
+    170,
+    60,
+    60,
+    60,
+    60
+  ],
+  "loop": 0,
+  "sha256": "029aaac5afc52624e86b624a282588c8c67d079f3ba9d27ef027a5b255befa8e",
+  "chat_file": "for-you-320.gif",
+  "chat_bytes": 2857342,
+  "chat_sha256": "916b62a52edd37d8223e8c81f465398c0e5d234a5c8b38f96660d7a1ac8ee92c",
+  "renderer": "完整画面硬切；沿用原画 768，六格原图的中间画单格 512，独立补画 1024。交付画布 768，320 分享版与 112 回看版时值相同。",
+  "sources": [
+    {
+      "id": "gift-01",
+      "file": "sheets/gift-01.png",
+      "sha256": "602b16258ac0f86e5ad437b08e696bf53e3091d40f5d8aa91fc0a34388f1ba5e",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 1 帧，第二行三格为上版第 2 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "136a2c090e696485931a2a575488b881e303b6fc2209074b1981303b724293dd",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Opaque white ground. Foreground bouquet and both hands pull back slightly from viewer for wrapping. The face stays hidden. Same three ivory lilies at fixed relative positions in pink wrapping. Corners gradually reveal hair."
+    },
+    {
+      "id": "gift-02",
+      "file": "sheets/gift-02.png",
+      "sha256": "3d40ad1e7a7d2c67181af7cc8b1562061fc313f2848536ad34c15701622c274c",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 2 帧，第二行三格为上版第 3 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "05769511fd392c1dfc770252b76988995e23b554a09029a350efa5f68b86be9f",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Both hands bring corners of blush paper toward the bouquet center, crimping and gathering the paper cone while her face stays hidden. THREE large cream lilies."
+    },
+    {
+      "id": "gift-03",
+      "file": "sheets/gift-03.png",
+      "sha256": "f212fa1dd55012e232fc2adefc30b59f927eefe64b15bbf0cb21534e863bcd70",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 3 帧，第二行三格为上版第 4 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "4ca0392a3e970c490cd2364cc6bc121370123521b5408fd9f94f235b356ba1aa",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Pull pink ribbon ends and finish tying a pink bow at base. Both hands stay attached to their wrists, bundle remains same, flower heads stable. Girl still behind her work."
+    },
+    {
+      "id": "gift-04",
+      "file": "sheets/gift-04.png",
+      "sha256": "7eda5dc5f38a0846c201b7a0c5acbf18d9b2205c3b854221fe66b0c8f9ce331a",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 4 帧，第二行三格为上版第 5 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "9c08b4c8210408897fe3e4ace137f3ab7060c3523fef2b1b07329a4ffa081cc7",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Florist slowly peeks diagonally toward screen left over pink paper edge, eyes and fringe emerge first. Her two hands hold the wrapped bouquet steady. No moving hair ornaments onto bouquet."
+    },
+    {
+      "id": "gift-04-bridge",
+      "file": "sheets/gift-04-bridge.png",
+      "sha256": "1d68dfac099ff32426dcfa27248c3da75e15ab28c63c2076f5cee369e12d7a72",
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": [
+        1024,
+        1024
+      ],
+      "quality": "high",
+      "layout": "single",
+      "reference": "gift-04 的第 3、4 格，左右排列作一张 1024×512 参考图",
+      "reference_sha256": "9dabbdda3d51b18d4b7ca2a97751032cdb25c0f8dfe86eef5958d28315d56758",
+      "actual_prompt": "Output ONE square, completely finished animation cel, not a sheet. My attachment shows TWO consecutive key poses side by side, each an entire square frame, for reference. Draw the single precise HALFWAY posture between them, while tracing the same character design, outlines, proportions, clothes, fixed camera and solid white background. Match the crop and scale of ONE original square frame, without duplicating characters. This inbetween is a full redrawn picture, no fades or overlapping outlines. She is just barely peeking out. From center-front and wholly hidden, the girl's head has shifted only a little toward the upper LEFT of the bouquet. ONE of her warm olive eyes and a narrow bit of forehead peek out from behind the upper LEFT pink paper point. Her OTHER eye and ENTIRE mouth are still COVERED by the central lily. The large single bouquet of exactly three ivory lilies, pale gold stamens, green leaves, rose paper and pink tied bow is centered in front of her chest. Her hands hold pink paper and ribbon at bottom as before. Flower size and fixed camera match input."
+    },
+    {
+      "id": "gift-05",
+      "file": "sheets/gift-05.png",
+      "sha256": "0767347115eadeeb4bae58042f7cf4ebd41f6bb4d2b287e662479a1542bbf0fd",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 5 帧，第二行三格为上版第 6 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "2789fdba068da699b472c3b4fdb99874a5f650240b236ec3468ffe373dd6d3e3",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: She lowers package to chest, lets whole gently smiling face emerge, looks directly at viewer, head tilts a little. Three lilies in pink paper. Temple clips stay on head."
+    },
+    {
+      "id": "gift-06",
+      "file": "sheets/gift-06.png",
+      "sha256": "766407c98b1f363f9be30b37c2f1c278a7f1b627a3f714a41248f11ba8ff65cb",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 6 帧，第二行三格为上版第 7 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "48fc758ea294620b8aa3f2f67bc720c099cdf239e4ee7d04b277668ca30f9d98",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Little offering anticipation: fingers adjust grip to the outer paper, small closed smile becomes an open joyful smile, shoulders come forward starting the reach."
+    },
+    {
+      "id": "gift-07",
+      "file": "sheets/gift-07.png",
+      "sha256": "d2f2c01329c2a6639bfb94082f8312ee446eb27ad29ca35a3f3f10e2248b0354",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 7 帧，第二行三格为上版第 8 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "41e029ee57ae2e3cc4e855aafe47e84eb66de0577d4b0995492c7eacd93f9c74",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Extend both forearms toward audience, same bouquet grows a little in foreground and rises to hide mouth. ONE fixed camera. Hands each grip paper on opposite side."
+    },
+    {
+      "id": "gift-08",
+      "file": "sheets/gift-08.png",
+      "sha256": "fb34e79f37307ccff379349e4478781c73be593ec846a370ba7ceff3774ef8ef",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 8 帧，第二行三格为上版第 9 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "c4f038851ead78ec71745f64b44bb709cb60e34b37993afa2de6430a6c232a25",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Continue offering, pushing same flowers higher and closer until nose then lower cheeks are occluded and only eyes remain visible."
+    },
+    {
+      "id": "gift-09",
+      "file": "sheets/gift-09.png",
+      "sha256": "e98656401142b0ca4c948eeb71fd2512830ad1292795d5570014f6e49a53baf6",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 9 帧，第二行三格为上版第 10 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "3dd2805cf73e5ef5e60339479f448225c094d3d4e7dc9dfd7eed629376419a52",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Same bouquet keeps coming straight to lens until three pale lilies hide all of her eyes and face. Keep layout and blossom arrangement consistent, see only strips of hair or sleeve at outside edges."
+    },
+    {
+      "id": "gift-10",
+      "file": "sheets/gift-10.png",
+      "sha256": "fbb2940bba36eedf53cb3b22f0d4c058c01558b62c783d47b7dacca509880414",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2.6-sunburst",
+      "size": [
+        1536,
+        1024
+      ],
+      "quality": "high",
+      "layout": "3x2",
+      "cell_px": 512,
+      "reference": "第一行三格为上版第 10 帧，第二行三格为上版第 1 帧。各自缩到 512 像素，拼成 1536×1024。",
+      "reference_sha256": "1939b26c8850284c00af688f62c0277a84baffbcb47a17659c9660af33da6c6a",
+      "actual_prompt": "Produce a professional 2D animation INBETWEEN SHEET for an existing Chinese chibi GIF, in the EXACT layout of attached image: full 1536x1024 landscape sheet, 3 columns by 2 rows, SIX SQUARE 512x512 borderless panels, read left-to-right top row then bottom row. Use all six equal tiles each filled by a complete waist-up scene on pure uniform opaque white. Preserve the input's exact framing and fixed character positions individually in each panel. The input is a layout of only two existing extreme drawings: repeats of earlier drawing on top row, repeats of later drawing on bottom row. Replace the repeated drawings with SIX distinct clean sequential poses spanning the gap. Panel 1 is the earlier reference pose, panel 6 is the later reference pose, panels 2,3,4,5 show respectively 20%,40%,60%,80% progress between them. Draw fresh, fully opaque art, clean silhouette and one set of features per frame, no blur, translucent overlapping, double outlines, mesh tugging, duplicate props, captions, writing, panel numbers or grid lines. Keep original art/eye shape/costume/line thickness. The character size, crop and persistent static features should match the endpoints; do not center or shrink figures to expose more body. Even paced motion with clean gesture arcs; this is six frames of ONE small motion, not six alternate expressions. Exact action for THIS sheet: Settle into the extreme close view of flowers and two hands, all of face hidden. Size and arrangement of three lilies nearly unchanged. Very gentle motion."
+    }
+  ],
+  "frame_review": [
+    {
+      "frame": 1,
+      "duration_ms": 240,
+      "source": {
+        "old_frame": 1
+      },
+      "pixel_sha256": "110925f105c8f19d9a62d355e00d1685ab66e96883f1f659c115036861b5b030",
+      "file": "frames/01.png",
+      "sha256": "2fdba92cf510fa8c286bfd7cd96c8e24ed5ad103d610788601845f0e1dda9e3e"
+    },
+    {
+      "frame": 2,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-01",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "56b48351ba94a68e7932a3ab330a24641d4eff76b7be8e4f4b8f88747b531043",
+      "file": "frames/02.png",
+      "sha256": "42fd45f67e56376c5be2cb6fe0d5de99943e7312d96ab27a7c4ac19bb45104b1"
+    },
+    {
+      "frame": 3,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-01",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "251246df6a4cf3c731792e098e01449b3002e87e44c903218f8ffba0b389230e",
+      "file": "frames/03.png",
+      "sha256": "8954281e6620c269b2c125267bee6bc1d47478c4d1ea61ac2a151dafa4968c6c"
+    },
+    {
+      "frame": 4,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-01",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "49afa52763ab0748e9e8c1039e68f7d3b26dec7bbe418e100909612bdc34d788",
+      "file": "frames/04.png",
+      "sha256": "ae8e00a19d23a28e215b40ee14ce3843bec78404f8c6fbe687249f86b4728a90"
+    },
+    {
+      "frame": 5,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-01",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "52e25fd0b62c2b2ebc35e9825d9244f974d54ec9635498bdc398c8ad83545a5d",
+      "file": "frames/05.png",
+      "sha256": "77ec3d29df60e6b6c3b8d166225a493968b530a9f7f34eaebe139aa46629eafd"
+    },
+    {
+      "frame": 6,
+      "duration_ms": 140,
+      "source": {
+        "old_frame": 2
+      },
+      "pixel_sha256": "285a6178cf11c79e8470e9c0acabb7e9da8cc15a65c8f8d7f20b0ebc05b83a9e",
+      "file": "frames/06.png",
+      "sha256": "ef40363c9cbc6047e60caeaac2938961ffa39c0873489ebd81468f3bc497dc31"
+    },
+    {
+      "frame": 7,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-02",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "f81c8e232cd27528966ac15b5693ea896e99ea991f955d591616a1af28f4bd0b",
+      "file": "frames/07.png",
+      "sha256": "a2c417dc4ebd1d0a8b33d5de680ba58aebf90c6cfe38fe3b4c0092d5624992ee"
+    },
+    {
+      "frame": 8,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-02",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "3c00aa4895bd0f0d1c3a1004738680b04d366ac509ce804eb67a251f682d4d31",
+      "file": "frames/08.png",
+      "sha256": "eda7b7d81d4dbf1056493fbebdeb484102389fb054244753c5ce5284439246fc"
+    },
+    {
+      "frame": 9,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-02",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "cb9eb897831f179616de20e6e4fa2fb851a3962ebbfc6c097cd24fde8ac0b8d3",
+      "file": "frames/09.png",
+      "sha256": "f4b449e7d4dd2f1dfc017e7f21b0d48924101517d392a06a9235cec599385f79"
+    },
+    {
+      "frame": 10,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-02",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "7cef4654d908f8dfa5112ad400eadcf7c72b6e671f7d54f24d44ab9f7baa81f1",
+      "file": "frames/10.png",
+      "sha256": "9837a003fdf5ea92c5ee668417668f60b2592cee37792cc26fc837e3f4d81218"
+    },
+    {
+      "frame": 11,
+      "duration_ms": 180,
+      "source": {
+        "old_frame": 3
+      },
+      "pixel_sha256": "4221c3830dc1c54bb106372d472250be083a830b49ff619d28fd25fed5681db5",
+      "file": "frames/11.png",
+      "sha256": "1619a50ed49c4a94e23241bee68acbbe1bf0b98115017db6ff24bd35805a631f"
+    },
+    {
+      "frame": 12,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-03",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "f4492b5eb8e9960fb49c1e940f629fdf2d71ef6926309ef22d24ba159f5c64fb",
+      "file": "frames/12.png",
+      "sha256": "4bef7cf5698b2026074f9acc6e76812fb6fa823d977eebd1e38913b1cbdadcba"
+    },
+    {
+      "frame": 13,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-03",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "853476ec9c5f5212ca7b82a2292e7e7808a3b030e5c9278f0a42e003fec150a0",
+      "file": "frames/13.png",
+      "sha256": "bea05cee3e5636f72d84159e2c38bf08acb65359b65372b569943c61c65ca92d"
+    },
+    {
+      "frame": 14,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-03",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "6ca1911bc89b7984747ba2c6a4fec919720391cf7233f87016389346e980a50e",
+      "file": "frames/14.png",
+      "sha256": "ba9f93d9461b515271f71bde8b3fda2a37dfbba299f14b01e6323fe99a69821e"
+    },
+    {
+      "frame": 15,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-03",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "f42f17131c70db293afa742c1d3230801611c5ded076ee3f353a9fbd922bf15f",
+      "file": "frames/15.png",
+      "sha256": "ee170362ff02c123bb267e327652f08f86af224418e97c91572e6eca6bd1b788"
+    },
+    {
+      "frame": 16,
+      "duration_ms": 280,
+      "source": {
+        "old_frame": 4
+      },
+      "pixel_sha256": "b3b48b95fcb36b1fe9b37fc8a57c3018c39a1b538d732ec4d96e8af9307e9b38",
+      "file": "frames/16.png",
+      "sha256": "3b460095ab266f0dc687d1d6203d0071fcc9865e8367b51a67f2d5970a9d5f32"
+    },
+    {
+      "frame": 17,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-04",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "5bac139a143ef6df6f01d1f973519cfbf35acf74c5f41f143023be3fd0220d72",
+      "file": "frames/17.png",
+      "sha256": "318b91fbc0ca186b33a54791079d8860f2f24d72387a855900b3bf443435c37c"
+    },
+    {
+      "frame": 18,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-04",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "3c27a7de45e443a8e38113e31205ce003a53a404e953fa22c2fbb773938be2c3",
+      "file": "frames/18.png",
+      "sha256": "6ee1c44956183e288cd0448b821d2a7ad688825d955d21ce116a83cdb51194be"
+    },
+    {
+      "frame": 19,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-04-bridge",
+        "cell": 1
+      },
+      "pixel_sha256": "b105be008d305267a0544d85b311c8579822531181f8b6c7608ca4fac3938643",
+      "file": "frames/19.png",
+      "sha256": "04495c7218d348bc33b9c9962eaf1fe86d6411ecfbd20f6b3af08cb4b707adbc"
+    },
+    {
+      "frame": 20,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-04",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "2f07727eb3f5701bb4b23de71765ce9ec834c035b1269f4f9c1fb41421f11ec7",
+      "file": "frames/20.png",
+      "sha256": "535168b49934cfe18fa56055bc6e3509e7919a1ae46d3fea6a7e0bc0ba56c8eb"
+    },
+    {
+      "frame": 21,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-04",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "3e190de3699f180c3baee67af3c2cca0f6787e50dd70d0847eb32d7cb320dfc7",
+      "file": "frames/21.png",
+      "sha256": "619d7bd47e6ad04930006b4e3bd8d5bca365776b19e4f50250235d5e654ce1bb"
+    },
+    {
+      "frame": 22,
+      "duration_ms": 180,
+      "source": {
+        "old_frame": 5
+      },
+      "pixel_sha256": "d4aec28e5400958e060fc77939abf41be3a0cd865e8b5c9e2eea3492afdee857",
+      "file": "frames/22.png",
+      "sha256": "0efe6ac5c1fd927b788fc9f878091240bc87e39e50e9cbc284434d7ba15d0663"
+    },
+    {
+      "frame": 23,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-05",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "520df34ec4ea0c43aad4c880a86e5814763095f68b740255c2b13626e4f0eb39",
+      "file": "frames/23.png",
+      "sha256": "be06e5cf068d739cd6ef97edea13f6456144f37bbfdf3cf687bf914cfab427d5"
+    },
+    {
+      "frame": 24,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-05",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "2ff789800cd99979749d7b61d32829bc59c6f714bb0a92028b6708a2edfed391",
+      "file": "frames/24.png",
+      "sha256": "110f68e39f32662c349f7b16fdf30fa28d1050dbcbb9bc6a09163721a746c2e9"
+    },
+    {
+      "frame": 25,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-05",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "f9cfe2d2b68d2ab98d9b1ef28ea1c3ba82e48dddb66c522301ec28083f7d4462",
+      "file": "frames/25.png",
+      "sha256": "8dc1a31881fd6168e62e5b91a05e1b0838fdca4eb37800ddf84d2e9675695bac"
+    },
+    {
+      "frame": 26,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-05",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "b9218552b76d83f57f59daae4aae2b3ed101a5a7b82312f587fb13cfccae044a",
+      "file": "frames/26.png",
+      "sha256": "dfd3ba593a10c829e90257826ebf77ed75b6b706a78ae1f9093b32e0eb66da3e"
+    },
+    {
+      "frame": 27,
+      "duration_ms": 330,
+      "source": {
+        "old_frame": 6
+      },
+      "pixel_sha256": "5a8e7da19efd80e324808397fa7046d2354baaea431f6c081ce4f74413db66fe",
+      "file": "frames/27.png",
+      "sha256": "873e64d510df88936f5379ffc5a86672a415fc00b02c0be06ad88397687f9039"
+    },
+    {
+      "frame": 28,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-06",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "dd7e792cac41f0e645b8ca223aa6a7473150dc367cc3924f8738281b055d4017",
+      "file": "frames/28.png",
+      "sha256": "f29c4bf24285836820e3d0097668b84cc7a204a51b292fbd5378b5ab6e9b2275"
+    },
+    {
+      "frame": 29,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-06",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "dd30e1cde7698498ec1b02c9125bfd8812a8de559e771cadc5f51d81214c6913",
+      "file": "frames/29.png",
+      "sha256": "2a175757868132a20b862719cb29b7eab86c0104b85ce2a984a893bbc2908892"
+    },
+    {
+      "frame": 30,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-06",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "359be6fc80e14f6339f821de49ffd51779d1381b1c530a9daf831b00f02352cb",
+      "file": "frames/30.png",
+      "sha256": "8083897cb4f99f559700aaccb3432a1239b05f11515bb8fe9ed8919bbcd82e02"
+    },
+    {
+      "frame": 31,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-06",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "02b7425802414cfcb0c8e3347b11a0dfd451256c2bd720c341ba8dfbd770e848",
+      "file": "frames/31.png",
+      "sha256": "7fcef88c970ff0045840de9aa521d525c46dddc32043c99849900d36aa4d90e9"
+    },
+    {
+      "frame": 32,
+      "duration_ms": 130,
+      "source": {
+        "old_frame": 7
+      },
+      "pixel_sha256": "23811f3ba38eea709b1ab9c18755f2aae858553ec9f45701f76a6b2c33b015d7",
+      "file": "frames/32.png",
+      "sha256": "ac27406c2922bfe8fb9c3b86f0377811a3436208f77f17c576e13234287683e4"
+    },
+    {
+      "frame": 33,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-07",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "8a90fddee512096521b49f3aa2332ce609c8f3aa58d78180c763a1ecc77fdc2d",
+      "file": "frames/33.png",
+      "sha256": "3792146b99ea54d11b9ea3199a51cae296e8be27a292c8f0516459154662eb4c"
+    },
+    {
+      "frame": 34,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-07",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "059b5c85835a4bcb11045d21baaf871097efc5018294dd783e4ae68ca9f12936",
+      "file": "frames/34.png",
+      "sha256": "7cd2483ec5841ca08a94cc6c03f1f4ab67bee3bc59c8a781f350af872d813d80"
+    },
+    {
+      "frame": 35,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-07",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "350cfccf31895eee7089b69dd10abe79f28f58f81e20f04529d37efa6256fa70",
+      "file": "frames/35.png",
+      "sha256": "240d412900e4f6e3292467e979b5e422281ada6ed0c10cdde9da89b3f1e3bfa8"
+    },
+    {
+      "frame": 36,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-07",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "a7527593c72950a888056b9800295a8a417b5989839d794ae742af4fe805715d",
+      "file": "frames/36.png",
+      "sha256": "cdd158e28e9ce2346cb6dc513b60ee6137aa3ec4032516d0aa0fabef8a082006"
+    },
+    {
+      "frame": 37,
+      "duration_ms": 110,
+      "source": {
+        "old_frame": 8
+      },
+      "pixel_sha256": "7477c0838734a242b5451e921c2ae38ebc70230b1ad8c4f658fec4e858e022dc",
+      "file": "frames/37.png",
+      "sha256": "983ba594a4b7833b103d451d12be8a546dbdc746c2f4d3fe846f88c0615d90de"
+    },
+    {
+      "frame": 38,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-08",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "dc13bcda46d3b80927d2f11dfcfb1b858100cf3ed28dea22c2dc860211855b85",
+      "file": "frames/38.png",
+      "sha256": "469f092446d101ef6db15d886b00e2f4a7c935897afae81ebd6a2c6463206721"
+    },
+    {
+      "frame": 39,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-08",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "8759614b7777b0d82ca5c79a6e8524474b8ba931d25ae512b4c456ee1c218065",
+      "file": "frames/39.png",
+      "sha256": "d3d9d77b91344d47d58bdebe6010b044ae89f0b397124d17342231335b3104e0"
+    },
+    {
+      "frame": 40,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-08",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "f4d903d0818ea9932dc119c9450dbdce1ba02fa7ed0fca8968cd8f77549950b7",
+      "file": "frames/40.png",
+      "sha256": "e4937018728e2c3f980e4a7c7bc69c8641dc173c1c03c7d21e65cfd93efdb747"
+    },
+    {
+      "frame": 41,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-08",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "2ff31a67005c24b70fd828ea592b4f41e3de19d38d126a393335af46a23ae378",
+      "file": "frames/41.png",
+      "sha256": "5112730ec3fdd9baa644eadbf588877ce938bf490c68580799e6c97ca956d7a2"
+    },
+    {
+      "frame": 42,
+      "duration_ms": 110,
+      "source": {
+        "old_frame": 9
+      },
+      "pixel_sha256": "ef0fe563cb20778a40bb1ed28b7a5b058df0abb62f4687fc06295dfaec81c0b9",
+      "file": "frames/42.png",
+      "sha256": "41f4890ac6fcb1104d02cc3fb3c5a8606379f3eba2cf81f2357430e6dd6c26fe"
+    },
+    {
+      "frame": 43,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-09",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "d9bb47adb0901cba1a40f92fd9d2329e45625795ebe9bbbb18a9fa706769296d",
+      "file": "frames/43.png",
+      "sha256": "504cc918912ab5072b2231b462e92fabe8e26919390def0e850e4a9c4ce4f7c3"
+    },
+    {
+      "frame": 44,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-09",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "eab308668b41ca7fb7183a8788be4ca9760525a318d2597a670f4b1e58251137",
+      "file": "frames/44.png",
+      "sha256": "9de73ef3e11728160239281b5c2eabbd8b83c1d9b555cae25dd07e9235849b9a"
+    },
+    {
+      "frame": 45,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-09",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "335624f8a1cfe84eafb5816a11bc88363f56de2a2aaf8f5b3e56ca29b633147e",
+      "file": "frames/45.png",
+      "sha256": "5a4b55b93123d0432402b6c3f82bbce4c21536dbbb423875576aba331b1973ec"
+    },
+    {
+      "frame": 46,
+      "duration_ms": 70,
+      "source": {
+        "sheet": "gift-09",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "c792d410d0c78da3ebb0afffda18a5182fc405cd2faa9b2797fd3223481b413b",
+      "file": "frames/46.png",
+      "sha256": "3854a6675542129c87c4aa4badd6b06e69cedb471ece1f51dec8f7a8bc9088c3"
+    },
+    {
+      "frame": 47,
+      "duration_ms": 170,
+      "source": {
+        "old_frame": 10
+      },
+      "pixel_sha256": "9dd0942e68afce8a3fd7f7fdb6dd2f2bc0b53a6c3787c00912008108b6f6e6e3",
+      "file": "frames/47.png",
+      "sha256": "9ab0a372cb8cbaa7b62b6bd6c02eda9783d5face7e818a1cbed1dc48a8c3a73f"
+    },
+    {
+      "frame": 48,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-10",
+        "cell": 2,
+        "crop_px": [
+          514,
+          2,
+          1022,
+          510
+        ]
+      },
+      "pixel_sha256": "77c6483fbd5afe962e2b823633816a236a2e4e1443c0ddfb6043ac92846cd8ee",
+      "file": "frames/48.png",
+      "sha256": "b1c9e3218e3a17d40ff22330676a4e626eea8a44da54c09c7a89bf65f1fe81ea"
+    },
+    {
+      "frame": 49,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-10",
+        "cell": 3,
+        "crop_px": [
+          1026,
+          2,
+          1534,
+          510
+        ]
+      },
+      "pixel_sha256": "96422ceb8f14fa2b7b7378cd29d7a8f29c0789a3e7aa9e56e93042c3db86e82e",
+      "file": "frames/49.png",
+      "sha256": "187c4a15a888592cf6df509f8de0425c62f627728cb6387a5296d5cd8c494dad"
+    },
+    {
+      "frame": 50,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-10",
+        "cell": 4,
+        "crop_px": [
+          2,
+          514,
+          510,
+          1022
+        ]
+      },
+      "pixel_sha256": "f062cc7c637ae0bd439176ffd82700d1fba1c02b72fee254562dbd5dc87dbfe6",
+      "file": "frames/50.png",
+      "sha256": "153f4544218e5a6864e98f80cec2ca89e5a21fd87502771907313d9c1eedba58"
+    },
+    {
+      "frame": 51,
+      "duration_ms": 60,
+      "source": {
+        "sheet": "gift-10",
+        "cell": 5,
+        "crop_px": [
+          514,
+          514,
+          1022,
+          1022
+        ]
+      },
+      "pixel_sha256": "294d027da0d105adbc8ae018fe01bb00215907ddee77928f5b88581488e4138e",
+      "file": "frames/51.png",
+      "sha256": "650b69af6a4b941caa4cebe54e651ea2631122c1061f206f4df06406b7ad9047"
+    }
+  ]
+}
