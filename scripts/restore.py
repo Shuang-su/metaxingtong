@@ -17,7 +17,14 @@ for a in d['cameras']:
  if not o:
   o=bpy.data.objects.new(a['name'],bpy.data.cameras.new(a['name']));s.collection.objects.link(o)
  o.matrix_world=Matrix(a['matrix_world']);o.data.lens=a['lens'];o.data.sensor_width=a['sensor_width'];o.data.sensor_fit=a['sensor_fit']
-s.camera=bpy.data.objects['SOURCE03 conditional'];s.view_settings.view_transform='AgX'
+for a in d['cameras']:
+ o=bpy.data.objects[a['name']]
+ for k in ['type','sensor_height','clip_start','clip_end','shift_x','shift_y','ortho_scale']:
+  if k in a:setattr(o.data,k,a[k])
+for k,v in d.get('render',{}).items():setattr(s.render,k,v)
+for k,v in d.get('view',{}).items():setattr(s.view_settings,k,v)
+s.display_settings.display_device=d.get('display_device','sRGB')
+s.camera=bpy.data.objects[d.get('active_camera','SOURCE03 conditional')]
 meshes=[o for o in s.objects if o.type=='MESH']
 report={'mode':mode,'factory_empty':True,'mesh_count':len(meshes),'vertices':sum(len(o.data.vertices) for o in meshes),'lights':len([o for o in s.objects if o.type=='LIGHT']),'cameras':len([o for o in s.objects if o.type=='CAMERA']),'resolution':[s.render.resolution_x,s.render.resolution_y],'denoising':s.cycles.use_denoising,'nonfinite_vertices':sum(not all(__import__('math').isfinite(x) for x in v.co) for o in meshes for v in o.data.vertices)}
 json.dump(report,open(root+'/qa/restore-'+mode+'.json','w'),indent=2)

@@ -123,6 +123,7 @@ for o in s.objects:
  if o.name.startswith('U01'):o.dimensions.z+=.6;o.location.z+=.3;bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);o.select_set(False)
 for o,target in [(cams[0],(0,2,3.15)),(cams[1],(.9,2.5,2.85))]:o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler()
 s.camera=cams[0]
+bpy.context.view_layer.update()
 state={'resolution':[1192,671],'sensor_fit':'HORIZONTAL','world':{'color':[.11,.055,.16,1],'strength':.65},'lights':[],'cameras':[],'unit':'arbitrary model unit, not metres','status':'FAILED source gates; conditional finite candidate'}
 for o in s.objects:
  if o.type=='LIGHT':state['lights'].append({'name':o.name,'type':o.data.type,'energy':o.data.energy,'color':list(o.data.color),'size':o.data.size,'shape':o.data.shape,'matrix_world':[list(r) for r in o.matrix_world]})
