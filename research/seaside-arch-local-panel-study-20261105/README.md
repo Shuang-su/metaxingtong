@@ -1,0 +1,16 @@
+# Seaside local panel X-only rejected study; NOT APPLIED and source FAILED
+
+Original HEAD: `a27d4d7a9b444c5fd98766890dd839f71e328c5b`
+Original history: `refs/heads/history/seaside-arch-local-panel-study-original-20261105`
+
+files/ preserves all 18 original files unchanged; provenance.json records bytes, SHA256, blobs, original objects and every real commit tree.
+
+- Independent two-commit diagnostic history only,18text/script/JSONfiles and137,888bytes. No model or image bytes are included, no new model stage, and nothing is applied to the production scene. The original root study commit and later independent QA commit are preserved exactly.
+- NOT APPLIED: fixed SOURCE04camera and circle, only two local objects moved along worldX in the producer in-memory study. Opening the circle is technically possible at tested locations but worsens the neighbouring frame/pink-inset conditional source alignment. This rejects this particular one-axis hypothesis, not every possible rearrangement.
+- Producer data contain15discrete shifts. Independent supplied QA recomputes only0,-.23,-.25,-.28, with138mesh AABB/BVH surface-pair checks and4321circle first-hit samples each. At-.23all samples see the circle while10triangle surface pairs remain; at-.28there are4pairs with neighbour frame02. Visibility samples do not prove no interference, continuous boundary safety, containment freedom or mechanical support.
+- Five y-scanlines400/410/420/430/435 for two objects at0and-.25 match between supplied independent and producer JSON records, including matching null rows. The failed null-handling comparison script is preserved. Archive worker only checks stored bytes, hashes and JSON consistency, and does not rerun geometry, Blender, scripts or rendering.
+- Source bands are subjective non-native original-image pixel observations with±5pxbounds, not per-row exact measurements, statistical sigma, proven instance identity or calibrated geometry. The unchanged circle centre retains about40.23pxconditional residual. Source remains FAILED and full support/geometry is not accepted.
+- The36model/environment/render hashes are bound to exact production source a65ef897a53f6fc51e5fb764376227d3a93b9322, whose bytes were independently fetched and verified in the preceding archive task. This task rehashes those retained original Git blobs and compares their unchanged production archive blob identities. They remain in the production history and are not duplicated into this research payload. Source04annotations bind the same frozen source image. Earlier source/review.zh.md narrative mentions preliminary diagnostic files and a crop outside this18-file package; no missing pixels are fabricated.
+- New independent research archive/history refs only. Existing seaside production archive/history refs and CURRENT remain fixed; every preexisting archive path and remote ref is unchanged. No LFS, force push, history deletion, security/main changes, credential copying, Issues or PRs. Previously denied source-screening-increment receipt is not retried. Spaceversion0 remains retained pending parent consumption confirmation.
+
+Remote verification is appended at publication-verification/remote_verification.json.
