@@ -1,6 +1,6 @@
 {
   "stage": "R14",
-  "status": "frozen limited pearl-to-table surface-contact candidate; saved-state independent QA and render pending",
+  "status": "final limited pearl-to-table surface-contact candidate; saved-state, fresh GLB restoration and four-image independent QA complete; source FAILED",
   "source_matching": "FAILED; source009 supports tabletop-resting semantics only, not bead count/layout/physical dimensions",
   "mesh_count": 236,
   "changed_meshes": 32,
@@ -901,5 +901,14 @@
       "dependencies": [],
       "camera_count": 9
     }
-  }
+  },
+  "formal_render_count": 4,
+  "formal_render_threads": 4,
+  "formal_render_samples": 64,
+  "formal_render_resolution": [
+    1192,
+    671
+  ],
+  "independent_qa": "qa/R14-independent-final/review.zh.md",
+  "image_qa": "qa/R14-independent-final/image-addendum.zh.md"
 }
