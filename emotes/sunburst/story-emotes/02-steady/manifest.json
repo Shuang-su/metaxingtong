@@ -1,0 +1,160 @@
+{
+  "title": "稳住了",
+  "file": "steady.gif",
+  "method": "Sunburst 原生完整帧与重画的完整姿势按动作重新定时，固定白底。",
+  "format": "GIF",
+  "size": [
+    768,
+    768
+  ],
+  "loop": 0,
+  "frames": 10,
+  "different_frames": 10,
+  "total_ms": 2370,
+  "sha256": "959c3fdd6234c33b09557c09a650329e9c831d78fdc4382baaf4cd7a23cd055a",
+  "frame_durations_ms": [
+    220,
+    320,
+    140,
+    170,
+    350,
+    230,
+    420,
+    160,
+    190,
+    170
+  ],
+  "native_request": "sources/hat-native.json",
+  "edits": {
+    "hat-fall": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "hat-native.gif 第 4 帧白底画面",
+      "prompt": "Edit this entire animation cel very faithfully. SAME composition, head, single midair red beret at image RIGHT, direction of gaze, face, outfit, pure opaque white #FFFFFF background. Only restage her arms for the next catch. Her nearer RIGHT shoulder is the large white sleeve seen at screen left on the left side of her bodice; make THAT forearm reach diagonally ACROSS THE FRONT of her red vest, from far LEFT to lower RIGHT. This near right sleeve must visibly cross and cover the red torso. The right hand emerging from this sleeve opens palm up immediately under the red beret at image right. Her OTHER arm (the far/left arm coming from behind the body) stays low, out of shot. Only ONE arm is reaching. Make this one anatomically natural clean complete pose. Keep the hat floating visibly above palm, follow the original exactly otherwise, do not add a hat on her head or redraw the face.",
+      "sha256": "f5a6406f03ccd6bd0d2e5ea490f0c1a81e540a602f30558e6088af57e30a624d"
+    },
+    "hat-catch": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "hat-native.gif 第 5 帧白底画面",
+      "prompt": "Redraw one complete key pose at the exact moment of the catch as in the attached drawing, same registration and facial design. Plain solid pure opaque white background. Change only which sleeve reaches out to catch: The silver-haired girl's NEAR RIGHT ARM comes from the big white shoulder at the left side of her red bodice (screen LEFT), bends its elbow, passes diagonally ACROSS THE FRONT of the red bodice to screen RIGHT. Show the broad WHITE CUFF covering part of the RED torso on this diagonal. The hand at the end of THAT right sleeve cradles the ONLY red beret at screen RIGHT below her face. Her other arm rests low, should not help catch anything. Near shoulder, entire crossed forearm, wrist, only one upturned hand, one single red hat, in a clear silhouette. She is bareheaded, looking at hat, surprised. Keep same camera, white field, position, size, clothes, soft cel inks and face as attached frame.",
+      "sha256": "0ca93ce0449b98599c4bf58dec87eee0bec5c879cd1c6798e8dbfd45ecefd1e5"
+    },
+    "hat-return": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "hat-native.gif 第 8 帧白底画面",
+      "prompt": "Minimal edit to the attached cel. KEEP THE EXISTING VISIBLE RAISED ARM EXACTLY ON THE LEFT HALF OF THE CANVAS, as in the input. It emerges at the bottom-left corner; its white sleeve and hand remain at screen LEFT x=0.18 of the page. Lower this same hand and its red beret together by a very small distance outward to the LEFT of her silver bangs. Draw the beret centered at x=0.20, y=0.35 with the fingers holding its brim on the LEFT of the picture; her face is at x=0.60. The entire rightmost third of the picture is empty white background except for the right ends of silver hair. The arm on the right of the picture stays down, the arm on the left of the picture stays raised. Hat at left edge tilted on its side, barely off her hair, about to return to head. Original proportions, crop, scale, ink lines, expression, pristine solid white field, only one hat, please keep the rest unchanged. Do not flip the pose.",
+      "sha256": "1091a9889cb3af83a155d9ba6be21569b6108b288ae4dcf226a3eef54b17f94c"
+    }
+  },
+  "preparation": {
+    "background": "white",
+    "uniform_crop_per_edge_px": 3,
+    "canvas_px": 768,
+    "resample": "Lanczos",
+    "palette": "per-frame median cut",
+    "disposal": 1
+  },
+  "frame_review": [
+    {
+      "index": 1,
+      "source": 1,
+      "duration_ms": 220,
+      "review": "戴一顶红贝雷，略侧身回望，双手低。",
+      "file": "frames/01.png",
+      "sha256": "2fc2b1f572c81a8c68f0e99c5a54910bc085aec02ce9c2e71f6fbd700e215db3",
+      "pixel_sha256": "d574d70bab05a25dd72742e075e54966132ead4b9af37e436b60797abc2e4a5b"
+    },
+    {
+      "index": 2,
+      "source": 2,
+      "duration_ms": 320,
+      "review": "转向正面伸手亮相；贝雷仍在发顶。",
+      "file": "frames/02.png",
+      "sha256": "f836a08469676582a3486a547ad8f89fbe30e24dbb99d34a5ff81dfd21b53ce0",
+      "pixel_sha256": "a1e3499427c746938f3ccb7b5d99f4892e3f7d9a5dd02df71c256468bfbc8b62"
+    },
+    {
+      "index": 3,
+      "source": 3,
+      "duration_ms": 140,
+      "review": "帽沿滑到一侧；眼睛先跟帽移动。",
+      "file": "frames/03.png",
+      "sha256": "9e8a90d74aa6655ccdc74dfdfe9735cc51b146ef5afde3fc7b224e420bd86871",
+      "pixel_sha256": "09bd0cac0ee855f394980f57bdd1ea1d88e79fab9c7ef3c297a0eb6ade8b61ed"
+    },
+    {
+      "index": 4,
+      "source": "hat-fall",
+      "duration_ms": 170,
+      "review": "帽已离开发顶，空手追到帽子下方；视线落在帽上。",
+      "file": "frames/04.png",
+      "sha256": "63a3d8ac7a602df8b4f2677084003975fcee37ec3f23e2cba417d00eba5ffdb0",
+      "pixel_sha256": "48c3a96a7257631f2fa6ccbcd259ac18870a10e1ffa476f44d7d0e307f1fd3dc"
+    },
+    {
+      "index": 5,
+      "source": "hat-catch",
+      "duration_ms": 350,
+      "review": "右手托住唯一一顶帽，头顶露出银发。",
+      "file": "frames/05.png",
+      "sha256": "d535206c567c99456b1fab3b2fcec5945fd3c03512c0edfa6726dd4e01e454cd",
+      "pixel_sha256": "799ec8dc8d38ef3335103bbc7b34586fc892310cf6af9a1565ac904601adda90"
+    },
+    {
+      "index": 6,
+      "source": 6,
+      "duration_ms": 230,
+      "review": "帽子收回胸前，星瞳从惊讶转为微笑。",
+      "file": "frames/06.png",
+      "sha256": "203602c14d0502d4bdff384eb74e186d2f8b228bbcd8a0f4067bb99e57320cf6",
+      "pixel_sha256": "f8120b273dec68f27e4512caf60dbb81bc52dd76e9c7b5872ba20a3143e2ca11"
+    },
+    {
+      "index": 7,
+      "source": 7,
+      "duration_ms": 420,
+      "review": "持帽行礼，头与躯干一同向前，目光向下。",
+      "file": "frames/07.png",
+      "sha256": "f88b6e3d4a9beb77e0fdc404634494322d36bab91ce5f8702e0b6e9a1649acd9",
+      "pixel_sha256": "e01464f9e5c080b8a15bc3584e4b920099e534203ffb8b483e256f15360ed361"
+    },
+    {
+      "index": 8,
+      "source": "hat-return",
+      "duration_ms": 160,
+      "review": "起身把红帽托回头侧，抬眼微笑。",
+      "file": "frames/08.png",
+      "sha256": "19f924f24dceac0bebd1f5de97a0b280b1e4215cd28cb2fe980fb70049680b9e",
+      "pixel_sha256": "66eaecf898504fba48d8763f352f20443ede86eea1329b87d20ad231d389c23d"
+    },
+    {
+      "index": 9,
+      "source": 8,
+      "duration_ms": 190,
+      "review": "右手把红帽放回发顶。",
+      "file": "frames/09.png",
+      "sha256": "ccdf4bf06de1eaa4c80070066134e36f078c8fe98a330c792f504c803adc10de",
+      "pixel_sha256": "8afdb0f5b17e9a492566f6805a3d4c4264610f773a99bdeff31f5153c2f0488a"
+    },
+    {
+      "index": 10,
+      "source": 9,
+      "duration_ms": 170,
+      "review": "转回开场的侧身位置，红帽已戴好。",
+      "file": "frames/10.png",
+      "sha256": "85f861bf3b82704b292b5365f51e15c8878cddc9f1fb0860ddab5714c5904057",
+      "pixel_sha256": "a105387101eae5870823bf19a0640e7abd9d79dfa2c9318ef8502fefff629106"
+    }
+  ]
+}

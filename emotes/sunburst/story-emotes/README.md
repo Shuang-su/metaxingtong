@@ -2,4 +2,10 @@
 
 先查[三位人物档案](characters.md)，再查[按用途归类的六个来源](sources.md)和[绿瞳双人二创索引](green-duo.md)。三条原创分镜中，星瞳处理舞台意外，明前奶绿包花、送花，大肥鱼的成品用于研究怎样用道具讲清一个笑点。[分镜](storyboards.md)
 
-首片[《接住了》](01-caught/README.md)收录可播放 GIF、逐帧 PNG、原始请求及 112 px 的浏览器回放记录。
+| 顺序 | GIF | 这一圈的动作 | 逐帧核对 |
+|---|---|---|---|
+| 1 | [接住了](01-caught/caught.gif) | 等击掌，意外接到百合，顺势谢幕 | [交接手和视线](01-caught/README.md) |
+| 2 | [稳住了](02-steady/steady.gif) | 红帽滑落，接住后拿帽行礼 | [帽子和手的连续性](02-steady/README.md) |
+| 3 | [给你的](03-for-you/for-you.gif) | 包花，从花后探头，把花送到观众面前 | [花束遮挡与复位](03-for-you/README.md) |
+
+每个目录保存单张 GIF、逐帧 PNG、112 px 连续三圈的实播截屏、原生 GIF 和 Sunburst 的实际提示词。最终分发的 GIF 以整张动作画面硬切，停顿直接保留该画面。

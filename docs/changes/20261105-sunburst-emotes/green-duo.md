@@ -10,3 +10,5 @@
 | [oops—Little Mix、Charlie Puth](https://www.bilibili.com/video/BV1ZU6JBQETY/) | 鱼龙灯昼QAQ，2026-01-31，203 秒 | 标题标作「绿/瞳 AI 伪手书」，此轮登记了作者与类型，未用作画面依据。 | 可作音乐二创索引。 |
 
 这些作品用于观察二创中的人物站位和反应节奏。之后制作时，两个人物的脸型分别使用已核对的星瞳与奶绿附件；星瞳×扇宝的粉发角色仅出现在其自身参考索引里。
+
+续作已将《夜蝶》、两条《绿瞳警备区》、复刻切片、两种 lltthhb 语境和待考题材另列，并制作了原创双人试片《接住了》。[新增双人二创索引](../../../emotes/sunburst/story-emotes/green-duo.md) · [样片与逐帧图](../../../emotes/sunburst/story-emotes/01-caught/README.md)

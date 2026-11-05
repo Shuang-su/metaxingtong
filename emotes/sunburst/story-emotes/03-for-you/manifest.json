@@ -1,0 +1,150 @@
+{
+  "title": "给你的",
+  "file": "for-you.gif",
+  "method": "Sunburst 原生包花、探头、递花完整帧；补画两张花束遮住脸的完整近景，按节奏重新定时。",
+  "format": "GIF",
+  "size": [
+    768,
+    768
+  ],
+  "loop": 0,
+  "frames": 10,
+  "different_frames": 10,
+  "total_ms": 2380,
+  "sha256": "a678d24a2b630651098b4719b2223547f38a47bb8bcce0a684aaf11cdb4e2aa8",
+  "frame_durations_ms": [
+    260,
+    150,
+    240,
+    360,
+    220,
+    360,
+    240,
+    190,
+    180,
+    180
+  ],
+  "native_request": "sources/bouquet-native.json",
+  "edits": {
+    "bouquet-close": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "bouquet-native.gif 第 1 帧白底画面",
+      "prompt": "One complete end-of-loop pose of this exact bouquet and florist, on plain opaque WHITE #FFFFFF. The same three ivory lilies with gold stamens (one at the top, one bottom left, one bottom right) and sage leaves in the exact same rose pink paper are held much closer to the viewer, so they now COMPLETELY conceal the girl, her head, ALL hair, ALL head ornaments, cowlick and body. What is visible is only the big beautiful three-lily bouquet and her two small natural hands holding the paper from its outer sides near the bottom; a hint of white ruffled cuffs if necessary. Keep the flower heads themselves complete and pleasing exactly as styled in reference; color, stamen counts, arrangement, paper folds, fine cel shading and ink style remain true to reference. Place bouquet large enough left-to-right to occlude her figure and keep a small clean white margin around the top of the flower petals. BOTH hands cradle the same one bouquet. Crop at the lower pink paper cone so the bow or the point where the bunch is tied sits BELOW the bottom edge, hidden by framing. No faces, eyes, hair wisps, standalone leaves in corners, ribbons above the bottom edge, type or effects. This goes between the end of a gift being pushed toward the viewer and the start of a close wrapping shot.",
+      "sha256": "9ff5a86d31bf7d81cffc9e8c17c537723851c43e147306fa1eb9b019c90de320"
+    },
+    "bouquet-near": {
+      "model": "gpt-image-2.6-sunburst",
+      "endpoint": "/v1/images/edits",
+      "size": "1024x1024",
+      "quality": "high",
+      "output_format": "png",
+      "input": "bouquet-native.gif 第 8 帧白底画面",
+      "prompt": "The very next full animation cel: keep the camera absolutely locked. The florist has thrust the SAME three-lily bouquet an extra few inches toward us and up so it now hides her entire face and eyes, while narrow strips of her original taupe twin tails are still visible only in the outside corners. The bouquet of three cream lilies and sage leaves should appear SLIGHTLY BIGGER than the input and reach the top of the frame, its flower heads together span at least 85 percent of the WIDTH. Arrange the same three blooms like a triangle, one top center, one bottom left, one bottom right. The wrapping paper remains the same pink. Both cupping hands as in the input, each now pushed near the lower outer corners; the pink bow knot is below the bottom edge because the flowers have come closer. Keep a narrow WHITE margin at sides and pure white background. Only a tiny sliver of taupe crown can show from behind the upper left flowers. No new flowers, no camera zoom or change of angle, no text. Straight-on audience perspective. This full pose goes between the pose with only the eyes visible and the following tight view of the bouquet and hands only.",
+      "sha256": "f76924d2f4d56fb617477e800a800c739eca24a76b832fe796c3c912f6e8b10f"
+    }
+  },
+  "preparation": {
+    "background": "white",
+    "uniform_crop_per_edge_px": 3,
+    "canvas_px": 768,
+    "resample": "Lanczos",
+    "palette": "per-frame median cut",
+    "disposal": 1
+  },
+  "frame_review": [
+    {
+      "index": 1,
+      "source": "bouquet-close",
+      "duration_ms": 260,
+      "review": "花束和包装占据正中，双手从下方握住花纸，整张脸藏在花后。",
+      "file": "frames/01.png",
+      "sha256": "6adb45c4ce5ccff176e9693e49d7159df42fb3dc4b1d142edc9cfc65672c9cd2",
+      "pixel_sha256": "f184b57b6f82be4762cc45cf2e0182a5257e43aaf060fd6f9984be9c6dd722af"
+    },
+    {
+      "index": 2,
+      "source": 1,
+      "duration_ms": 150,
+      "review": "两手握玫瑰色纸，脸仍全被百合挡住，从两侧开始看到头发。",
+      "file": "frames/02.png",
+      "sha256": "6b7956eb93a12f33109090d0f841138334c31733afae6644fafc373447758ebb",
+      "pixel_sha256": "46fa0601df95c3e9b382580baa69a01b2567eb6cc20b3141f714058b6b087e7b"
+    },
+    {
+      "index": 3,
+      "source": 2,
+      "duration_ms": 240,
+      "review": "双手捏折包纸，花头仍在正前方。",
+      "file": "frames/03.png",
+      "sha256": "84dbcb589af0cdc87ccc4e08d4fc165ed75a51f291cf9c83f01f9abb682aa3a3",
+      "pixel_sha256": "300817a3b7db20cb66fd8faf60b0db282036833eba6b89bd1efb97aeb3147b1c"
+    },
+    {
+      "index": 4,
+      "source": 3,
+      "duration_ms": 360,
+      "review": "一手牵缎带，另一手稳住花束，头还藏在花后。",
+      "file": "frames/04.png",
+      "sha256": "d7c9945b5cfc88f28c3f64c9520057735d1588e0472b02b6197c4aaab87f6942",
+      "pixel_sha256": "2d53ba629430466cbaf4711c7bc67c383eb1066379beaac95358eb9f3e7d11b8"
+    },
+    {
+      "index": 5,
+      "source": 4,
+      "duration_ms": 220,
+      "review": "歪头从花后露出眼睛，视线向观众，手仍在包装下沿。",
+      "file": "frames/05.png",
+      "sha256": "2a5471d608b339aa9937871a4fa1d424fab3a1ed5803e43d3ec93cbb86189006",
+      "pixel_sha256": "a32c25594ee74cdbc160d98fb9019e818380a7799907f6683093852d35eb6e2f"
+    },
+    {
+      "index": 6,
+      "source": 5,
+      "duration_ms": 360,
+      "review": "露出笑脸，花束落在胸前；两朵发花与手中鲜花分开。",
+      "file": "frames/06.png",
+      "sha256": "2b98d1293309b670cc2bbad95be7e805c564fef98d9aca941b9fd40f1e8d495b",
+      "pixel_sha256": "c98bba22cca554227353505b58710fb6df8ef9b9270859930c1ecb021db8af6a"
+    },
+    {
+      "index": 7,
+      "source": 6,
+      "duration_ms": 240,
+      "review": "张口笑，双臂把同一束花往前送。",
+      "file": "frames/07.png",
+      "sha256": "22c576760c97fe79be611368b8829c873911f31fe1e6f53bdcf205d5822157a5",
+      "pixel_sha256": "f02adfb8ad1d2e5ba089313086c700dfaf64f0025906e07de5b8fc30fd39a31d"
+    },
+    {
+      "index": 8,
+      "source": 7,
+      "duration_ms": 190,
+      "review": "双手托着花纸前伸，近处的百合先挡住嘴。",
+      "file": "frames/08.png",
+      "sha256": "044ff49c220a4d5bc733a3bf4d42e847abc131b08e1b4fce5d18249312ca956c",
+      "pixel_sha256": "d5bbe6866496cc2b5786ab2c7ff8643bda932ceb620fbabe8c19df2284ecbff5"
+    },
+    {
+      "index": 9,
+      "source": 8,
+      "duration_ms": 180,
+      "review": "花束更近，脸只剩眼睛，双手在包装两侧。",
+      "file": "frames/09.png",
+      "sha256": "b3a243022947595211d9e242a8c40e310eb358f2a381686651951316cfa59ca7",
+      "pixel_sha256": "3d446a34dd3b3f427b32d7dbf3301fd9bd1ec27aacedbdee512c1b88c1a6f1bc"
+    },
+    {
+      "index": 10,
+      "source": "bouquet-near",
+      "duration_ms": 180,
+      "review": "花束递到镜头前，眼睛完全遮住，两个手仍握花纸。脸藏好后接下一圈的包花近景。",
+      "file": "frames/10.png",
+      "sha256": "82a63cee762a781d3a511e63154d152ef08d81092355a4fef8fc9ede53247edd",
+      "pixel_sha256": "70006d596e5a8fa7154040dc97a1b9948cd5c4de2299a3a1654c9a5ef9e137f2"
+    }
+  ]
+}
