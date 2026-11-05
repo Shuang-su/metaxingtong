@@ -53,7 +53,7 @@ for i,r in enumerate([5.5,3.85,2.85]):
 upper=curved('W01 upper curved shell',7.7,3.55,2.15,1.55,.3,blue)
 for i,x in enumerate([-1.85,0,1.85]):
  yy=3.55+.035*x*x
- disc=cyl('W02 round diffuser %d'%i,(x,yy-.19,2.2),.225,.07,lamp);disc.rotation_euler[0]=pi/2
+ disc=cyl('W02 round diffuser %d'%i,(x,yy-.18,2.2),.225,.07,lamp);disc.rotation_euler[0]=pi/2
 curved('W03 upper coping',7.95,3.55,2.97,.15,.49,cyan)
 curved('W04 lower facade',13.7,2.95,.68,1.3,.4,blue,curve=.013)
 curved('W05 lower coping',14,2.95,1.38,.17,.62,cyan,curve=.013)
@@ -62,7 +62,7 @@ for i,x in enumerate([-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6]):
  box('W06 panel surround %02d'%i,(x,yy-.245,.68),(.72,.12,.9),navy)
  box('W07 pink inset %02d'%i,(x,yy-.318,.68),(.52,.035,.70),pink)
 for i,x in enumerate([-2.65,2.65]):
- d=cyl('W08 lower circle %d'%i,(x,2.55+.013*x*x,.72),.22,.08,lamp);d.rotation_euler[0]=pi/2
+ d=cyl('W08 lower circle %d'%i,(x,2.72+.013*x*x,.72),.22,.08,lamp);d.rotation_euler[0]=pi/2
 beam('R01 top rail',(-6.4,2.61,1.94),(6.4,2.61,1.94),.045,rail)
 for i in range(15):
  x=-6.4+i*12.8/14;beam('R02 baluster %02d'%i,(x,2.61,1.4),(x,2.61,1.94),.035,rail)
@@ -96,7 +96,7 @@ for xx in [5.35,6.25]:
 cyl('T04 cup',(5.9,-.25,1.01),.09,.24,white)
 # Eight-piece solid umbrella canopy with scalloped skirt.
 ux,uy=6.4,1.15
-cyl('U01 umbrella pole',(ux,uy,1.65),.035,3.3,white)
+cyl('U01 umbrella pole',(ux,uy,1.825),.035,3.65,white)
 for k in range(8):
  a=k*pi/4;b=(k+1)*pi/4;verts=[(ux,uy,3.65),(ux+2*cos(a),uy+2*sin(a),3.13),(ux+2*cos(b),uy+2*sin(b),3.13),(ux+2*cos(b),uy+2*sin(b),2.91),(ux+2*cos(a),uy+2*sin(a),2.91)]
  mesh=bpy.data.meshes.new('canopy');mesh.from_pydata(verts,[],[(0,1,2),(1,4,3,2)]);mesh.update();o=bpy.data.objects.new('U02 canopy segment %d'%k,mesh);s.collection.objects.link(o);finish(o,o.name,cyan if k%2 else blue);mod=o.modifiers.new('fabric thickness','SOLIDIFY');mod.thickness=.018;bpy.context.view_layer.objects.active=o;bpy.ops.object.modifier_apply(modifier=mod.name)
