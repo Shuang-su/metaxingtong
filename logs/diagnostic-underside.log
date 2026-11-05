@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/cyber-roof-stage-20261105/scripts/diagnostic_underside.py", line 8, in <module>
+    o=bpy.data.objects[name];pts=[world_to_camera_view(s,s.camera,o.matrix_world@v.co) for v in o.data.vertices]
+      ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "ROOF_MAIN front eave" not found'
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/cyber-roof-stage-20261105/models/roof-r03.blend"
+
+Blender quit
