@@ -1,0 +1,819 @@
+{
+  "model_sha256": "c281133471f332850dcbb4785257e7b1202c7be9e2fbdb88cf4d738cbf617b6d",
+  "camera_unchanged": true,
+  "geometry_unchanged": true,
+  "fit_performed": false,
+  "old_source_and_world_records_verbatim": [
+    {
+      "name": "middle_apex",
+      "source_pixel": [
+        465,
+        78
+      ],
+      "model_world": [
+        0,
+        4.32,
+        4.23
+      ],
+      "render_pixel": [
+        547.0256795883179,
+        231.7434663772583
+      ],
+      "residual_pixels": 174.25632145096068
+    },
+    {
+      "name": "round_left",
+      "source_pixel": [
+        321,
+        301
+      ],
+      "model_world": [
+        -1.85,
+        3.4897875,
+        2.2
+      ],
+      "render_pixel": [
+        400.23955821990967,
+        381.5870718359947
+      ],
+      "residual_pixels": 113.01851058117084
+    },
+    {
+      "name": "round_middle",
+      "source_pixel": [
+        449,
+        300
+      ],
+      "model_world": [
+        0,
+        3.37,
+        2.2
+      ],
+      "render_pixel": [
+        535.5829608440399,
+        383.2633703947067
+      ],
+      "residual_pixels": 120.12242903807213
+    },
+    {
+      "name": "round_right",
+      "source_pixel": [
+        579,
+        303
+      ],
+      "model_world": [
+        1.85,
+        3.4897875,
+        2.2
+      ],
+      "render_pixel": [
+        677.8199381828308,
+        383.7839016318321
+      ],
+      "residual_pixels": 127.63784292019366
+    },
+    {
+      "name": "upper_left",
+      "source_pixel": [
+        130,
+        230
+      ],
+      "model_world": [
+        -3.85,
+        4.0687875,
+        2.97
+      ],
+      "render_pixel": [
+        272.3251003026962,
+        322.8727080821991
+      ],
+      "residual_pixels": 169.94638590653793
+    },
+    {
+      "name": "upper_right",
+      "source_pixel": [
+        752,
+        235
+      ],
+      "model_world": [
+        3.85,
+        4.0687875,
+        2.97
+      ],
+      "render_pixel": [
+        831.5105047225952,
+        324.0128374695778
+      ],
+      "residual_pixels": 119.35328062364816
+    }
+  ],
+  "features": [
+    {
+      "old_name": "middle_apex",
+      "old_source_pixel": [
+        465,
+        78
+      ],
+      "old_world": [
+        0,
+        4.32,
+        4.23
+      ],
+      "old_world_under_current_camera": {
+        "label": "old author representative point",
+        "object": null,
+        "mesh_vertex_index": null,
+        "world": [
+          0.0,
+          4.320000171661377,
+          4.230000019073486
+        ],
+        "projected_pixel": [
+          451.1669018268585,
+          120.82355904579163
+        ],
+        "positive_depth": true,
+        "depth": 13.987434387207031,
+        "source_pixel_unchanged": [
+          465,
+          78
+        ],
+        "conditional_euclidean_residual": 45.00235343197255,
+        "first_hit": "A01 vertical arch solid",
+        "first_hit_distance": 14.147316928061324,
+        "target_distance": 14.35786925480139,
+        "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+      },
+      "actual_mesh_candidates": [
+        {
+          "label": "actual outer-radius maximum world-z vertex; front/back distinguished by world-y",
+          "object": "A01 vertical arch solid",
+          "mesh_vertex_index": 145,
+          "world": [
+            2.495217978685892e-16,
+            4.110000133514404,
+            4.454999923706055
+          ],
+          "projected_pixel": [
+            449.47608399391174,
+            102.51061820983887
+          ],
+          "positive_depth": true,
+          "depth": 13.735702514648438,
+          "source_pixel_unchanged": [
+            465,
+            78
+          ],
+          "conditional_euclidean_residual": 29.013141387870565,
+          "first_hit": "A01 vertical arch solid",
+          "first_hit_distance": 14.145927282298803,
+          "target_distance": 14.145927282298803,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        },
+        {
+          "label": "actual outer-radius maximum world-z vertex; front/back distinguished by world-y",
+          "object": "A01 vertical arch solid",
+          "mesh_vertex_index": 339,
+          "world": [
+            2.495217978685892e-16,
+            4.53000020980835,
+            4.454999923706055
+          ],
+          "projected_pixel": [
+            451.85412073135376,
+            102.40203255414963
+          ],
+          "positive_depth": true,
+          "depth": 14.145936012268066,
+          "source_pixel_unchanged": [
+            465,
+            78
+          ],
+          "conditional_euclidean_residual": 27.717744037341877,
+          "first_hit": null,
+          "first_hit_distance": null,
+          "target_distance": 14.564891598286463,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        },
+        {
+          "label": "actual vertex with smallest projected image-y for this camera; view-dependent silhouette feature",
+          "object": "A01 vertical arch solid",
+          "mesh_vertex_index": 339,
+          "world": [
+            2.495217978685892e-16,
+            4.53000020980835,
+            4.454999923706055
+          ],
+          "projected_pixel": [
+            451.85412073135376,
+            102.40203255414963
+          ],
+          "positive_depth": true,
+          "depth": 14.145936012268066,
+          "source_pixel_unchanged": [
+            465,
+            78
+          ],
+          "conditional_euclidean_residual": 27.717744037341877,
+          "first_hit": null,
+          "first_hit_distance": null,
+          "target_distance": 14.564891598286463,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        }
+      ]
+    },
+    {
+      "old_name": "round_left",
+      "old_source_pixel": [
+        321,
+        301
+      ],
+      "old_world": [
+        -1.85,
+        3.4897875,
+        2.2
+      ],
+      "old_world_under_current_camera": {
+        "label": "old author representative point",
+        "object": null,
+        "mesh_vertex_index": null,
+        "world": [
+          -1.850000023841858,
+          3.4897875785827637,
+          2.200000047683716
+        ],
+        "projected_pixel": [
+          296.7613718509674,
+          293.5098669528961
+        ],
+        "positive_depth": true,
+        "depth": 13.495067596435547,
+        "source_pixel_unchanged": [
+          321,
+          301
+        ],
+        "conditional_euclidean_residual": 25.369532664406588,
+        "first_hit": "W02 round diffuser 0",
+        "first_hit_distance": 13.943148080101441,
+        "target_distance": 13.979419976946314,
+        "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+      },
+      "actual_mesh_candidates": [
+        {
+          "label": "front cap geometric centre (mean of actual cap boundary; a surface point, not fabricated mesh vertex)",
+          "object": "W02 round diffuser 0",
+          "mesh_vertex_index": null,
+          "world": [
+            -1.8500001430511475,
+            3.4547879695892334,
+            2.1999998092651367
+          ],
+          "projected_pixel": [
+            296.1652374267578,
+            294.004481613636
+          ],
+          "positive_depth": true,
+          "depth": 13.460882186889648,
+          "source_pixel_unchanged": [
+            321,
+            301
+          ],
+          "conditional_euclidean_residual": 25.80121527299184,
+          "first_hit": "W02 round diffuser 0",
+          "first_hit_distance": 13.945647419986834,
+          "target_distance": 13.945649129613912,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        }
+      ],
+      "front_cap_boundary_vertex_indices": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        83,
+        85,
+        87,
+        89,
+        91,
+        93,
+        95,
+        97,
+        99,
+        101,
+        103,
+        105,
+        107,
+        109,
+        111,
+        113,
+        115,
+        117,
+        119,
+        121,
+        123,
+        125,
+        127
+      ]
+    },
+    {
+      "old_name": "round_middle",
+      "old_source_pixel": [
+        449,
+        300
+      ],
+      "old_world": [
+        0,
+        3.37,
+        2.2
+      ],
+      "old_world_under_current_camera": {
+        "label": "old author representative point",
+        "object": null,
+        "mesh_vertex_index": null,
+        "world": [
+          0.0,
+          3.369999885559082,
+          2.200000047683716
+        ],
+        "projected_pixel": [
+          450.15747690200806,
+          293.72607839107513
+        ],
+        "positive_depth": true,
+        "depth": 13.4801025390625,
+        "source_pixel_unchanged": [
+          449,
+          300
+        ],
+        "conditional_euclidean_residual": 6.379799772219857,
+        "first_hit": "W02 round diffuser 1",
+        "first_hit_distance": 13.568064598438605,
+        "target_distance": 13.603676462420736,
+        "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+      },
+      "actual_mesh_candidates": [
+        {
+          "label": "front cap geometric centre (mean of actual cap boundary; a surface point, not fabricated mesh vertex)",
+          "object": "W02 round diffuser 1",
+          "mesh_vertex_index": null,
+          "world": [
+            -7.566995918750763e-09,
+            3.3350021839141846,
+            2.1999998092651367
+          ],
+          "projected_pixel": [
+            449.95072507858276,
+            294.2217329144478
+          ],
+          "positive_depth": true,
+          "depth": 13.445919036865234,
+          "source_pixel_unchanged": [
+            449,
+            300
+          ],
+          "conditional_euclidean_residual": 5.855958391845206,
+          "first_hit": "W02 round diffuser 1",
+          "first_hit_distance": 13.569279070800574,
+          "target_distance": 13.569281416457804,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        }
+      ],
+      "front_cap_boundary_vertex_indices": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        83,
+        85,
+        87,
+        89,
+        91,
+        93,
+        95,
+        97,
+        99,
+        101,
+        103,
+        105,
+        107,
+        109,
+        111,
+        113,
+        115,
+        117,
+        119,
+        121,
+        123,
+        125,
+        127
+      ]
+    },
+    {
+      "old_name": "round_right",
+      "old_source_pixel": [
+        579,
+        303
+      ],
+      "old_world": [
+        1.85,
+        3.4897875,
+        2.2
+      ],
+      "old_world_under_current_camera": {
+        "label": "old author representative point",
+        "object": null,
+        "mesh_vertex_index": null,
+        "world": [
+          1.850000023841858,
+          3.4897875785827637,
+          2.200000047683716
+        ],
+        "projected_pixel": [
+          602.6575508117676,
+          290.6088101863861
+        ],
+        "positive_depth": true,
+        "depth": 13.699141502380371,
+        "source_pixel_unchanged": [
+          579,
+          303
+        ],
+        "conditional_euclidean_residual": 26.70620331324491,
+        "first_hit": "W02 round diffuser 2",
+        "first_hit_distance": 13.674854856275246,
+        "target_distance": 13.710427075310461,
+        "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+      },
+      "actual_mesh_candidates": [
+        {
+          "label": "front cap geometric centre (mean of actual cap boundary; a surface point, not fabricated mesh vertex)",
+          "object": "W02 round diffuser 2",
+          "mesh_vertex_index": null,
+          "world": [
+            1.8499999046325684,
+            3.4547879695892334,
+            2.1999998092651367
+          ],
+          "projected_pixel": [
+            602.8355989456177,
+            291.0887867808342
+          ],
+          "positive_depth": true,
+          "depth": 13.664956092834473,
+          "source_pixel_unchanged": [
+            579,
+            303
+          ],
+          "conditional_euclidean_residual": 26.646064952423288,
+          "first_hit": "W02 round diffuser 2",
+          "first_hit_distance": 13.675990290761627,
+          "target_distance": 13.67599199923164,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        }
+      ],
+      "front_cap_boundary_vertex_indices": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73,
+        75,
+        77,
+        79,
+        81,
+        83,
+        85,
+        87,
+        89,
+        91,
+        93,
+        95,
+        97,
+        99,
+        101,
+        103,
+        105,
+        107,
+        109,
+        111,
+        113,
+        115,
+        117,
+        119,
+        121,
+        123,
+        125,
+        127
+      ]
+    },
+    {
+      "old_name": "upper_left",
+      "old_source_pixel": [
+        130,
+        230
+      ],
+      "old_world": [
+        -3.85,
+        4.0687875,
+        2.97
+      ],
+      "old_world_under_current_camera": {
+        "label": "old author representative point",
+        "object": null,
+        "mesh_vertex_index": null,
+        "world": [
+          -3.8499999046325684,
+          4.068787574768066,
+          2.9700000286102295
+        ],
+        "projected_pixel": [
+          138.67436277866364,
+          225.53572642803192
+        ],
+        "positive_depth": true,
+        "depth": 13.790763854980469,
+        "source_pixel_unchanged": [
+          130,
+          230
+        ],
+        "conditional_euclidean_residual": 9.755732065879922,
+        "first_hit": "W03 upper coping",
+        "first_hit_distance": 14.675192915836043,
+        "target_distance": 14.961872774775166,
+        "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+      },
+      "actual_mesh_candidates": [
+        {
+          "label": "actual coping extreme-x top-z vertex, front/back candidate not uniquely identified in source",
+          "object": "W03 upper coping",
+          "mesh_vertex_index": 98,
+          "world": [
+            -3.9749999046325684,
+            3.8580219745635986,
+            3.0450000762939453
+          ],
+          "projected_pixel": [
+            121.66916739940643,
+            221.35087925195694
+          ],
+          "positive_depth": true,
+          "depth": 13.562466621398926,
+          "source_pixel_unchanged": [
+            130,
+            230
+          ],
+          "conditional_euclidean_residual": 12.00874937424133,
+          "first_hit": "W03 upper coping",
+          "first_hit_distance": 14.797886114005252,
+          "target_distance": 14.797888498531433,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        },
+        {
+          "label": "actual coping extreme-x top-z vertex, front/back candidate not uniquely identified in source",
+          "object": "W03 upper coping",
+          "mesh_vertex_index": 147,
+          "world": [
+            -3.9749999046325684,
+            4.348021984100342,
+            3.0450000762939453
+          ],
+          "projected_pixel": [
+            135.6379618048668,
+            217.1724712252617
+          ],
+          "positive_depth": true,
+          "depth": 14.041071891784668,
+          "source_pixel_unchanged": [
+            130,
+            230
+          ],
+          "conditional_euclidean_residual": 14.01185597199301,
+          "first_hit": null,
+          "first_hit_distance": null,
+          "target_distance": 15.257735346429614,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        }
+      ]
+    },
+    {
+      "old_name": "upper_right",
+      "old_source_pixel": [
+        752,
+        235
+      ],
+      "old_world": [
+        3.85,
+        4.0687875,
+        2.97
+      ],
+      "old_world_under_current_camera": {
+        "label": "old author representative point",
+        "object": null,
+        "mesh_vertex_index": null,
+        "world": [
+          3.8499999046325684,
+          4.068787574768066,
+          2.9700000286102295
+        ],
+        "projected_pixel": [
+          756.8704676628113,
+          221.7484667301178
+        ],
+        "positive_depth": true,
+        "depth": 14.215458869934082,
+        "source_pixel_unchanged": [
+          752,
+          235
+        ],
+        "conditional_euclidean_residual": 14.118236053320729,
+        "first_hit": "W03 upper coping",
+        "first_hit_distance": 14.168898121547969,
+        "target_distance": 14.434575416311636,
+        "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+      },
+      "actual_mesh_candidates": [
+        {
+          "label": "actual coping extreme-x top-z vertex, front/back candidate not uniquely identified in source",
+          "object": "W03 upper coping",
+          "mesh_vertex_index": 146,
+          "world": [
+            3.9749999046325684,
+            3.8580219745635986,
+            3.0450000762939453
+          ],
+          "projected_pixel": [
+            770.24809217453,
+            217.51178640127182
+          ],
+          "positive_depth": true,
+          "depth": 14.000950813293457,
+          "source_pixel_unchanged": [
+            752,
+            235
+          ],
+          "conditional_euclidean_residual": 25.275096100408508,
+          "first_hit": null,
+          "first_hit_distance": null,
+          "target_distance": 14.246879177339732,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        },
+        {
+          "label": "actual coping extreme-x top-z vertex, front/back candidate not uniquely identified in source",
+          "object": "W03 upper coping",
+          "mesh_vertex_index": 195,
+          "world": [
+            3.9749999046325684,
+            4.348021984100342,
+            3.0450000762939453
+          ],
+          "projected_pixel": [
+            762.355785369873,
+            213.58682489395142
+          ],
+          "positive_depth": true,
+          "depth": 14.4795560836792,
+          "source_pixel_unchanged": [
+            752,
+            235
+          ],
+          "conditional_euclidean_residual": 23.78584366275822,
+          "first_hit": null,
+          "first_hit_distance": null,
+          "target_distance": 14.723944790049819,
+          "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+        }
+      ]
+    }
+  ],
+  "additional_source_feature_not_in_old_fit": {
+    "label": "lower circle0 exact front cap centre; source04 full circular outline independently annotated",
+    "object": "W08 lower circle 0",
+    "mesh_vertex_index": null,
+    "world": [
+      -2.6500000953674316,
+      2.7712912559509277,
+      0.7200000286102295
+    ],
+    "projected_pixel": [
+      221.77356898784637,
+      429.5914303958416
+    ],
+    "positive_depth": true,
+    "depth": 13.055782318115234,
+    "source_pixel_unchanged": [
+      262,
+      420
+    ],
+    "conditional_euclidean_residual": 41.354096399435804,
+    "first_hit": "W06 panel surround 03",
+    "first_hit_distance": 13.801704537813759,
+    "target_distance": 13.8117543705394,
+    "boundary_ray_caution": "Exact edge/vertex rays are numerically ambiguous; first hit is a finite test, not continuous visible silhouette proof."
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "parameters": [
+    1.0065368869459166,
+    -10.000000000000002,
+    4.499999999999999,
+    1.712390289990613,
+    1.8485785987945866,
+    33.76042769462861
+  ],
+  "method": "scipy least_squares conditional 6DOF camera, weak same-state near-frontal observations, no geometry change",
+  "source_points": [
+    {
+      "name": "middle_apex",
+      "source_pixel": [
+        465,
+        78
+      ],
+      "model_world": [
+        0,
+        4.32,
+        4.23
+      ],
+      "render_pixel": [
+        547.0256795883179,
+        231.7434663772583
+      ],
+      "residual_pixels": 174.25632145096068
+    },
+    {
+      "name": "round_left",
+      "source_pixel": [
+        321,
+        301
+      ],
+      "model_world": [
+        -1.85,
+        3.4897875,
+        2.2
+      ],
+      "render_pixel": [
+        400.23955821990967,
+        381.5870718359947
+      ],
+      "residual_pixels": 113.01851058117084
+    },
+    {
+      "name": "round_middle",
+      "source_pixel": [
+        449,
+        300
+      ],
+      "model_world": [
+        0,
+        3.37,
+        2.2
+      ],
+      "render_pixel": [
+        535.5829608440399,
+        383.2633703947067
+      ],
+      "residual_pixels": 120.12242903807213
+    },
+    {
+      "name": "round_right",
+      "source_pixel": [
+        579,
+        303
+      ],
+      "model_world": [
+        1.85,
+        3.4897875,
+        2.2
+      ],
+      "render_pixel": [
+        677.8199381828308,
+        383.7839016318321
+      ],
+      "residual_pixels": 127.63784292019366
+    },
+    {
+      "name": "upper_left",
+      "source_pixel": [
+        130,
+        230
+      ],
+      "model_world": [
+        -3.85,
+        4.0687875,
+        2.97
+      ],
+      "render_pixel": [
+        272.3251003026962,
+        322.8727080821991
+      ],
+      "residual_pixels": 169.94638590653793
+    },
+    {
+      "name": "upper_right",
+      "source_pixel": [
+        752,
+        235
+      ],
+      "model_world": [
+        3.85,
+        4.0687875,
+        2.97
+      ],
+      "render_pixel": [
+        831.5105047225952,
+        324.0128374695778
+      ],
+      "residual_pixels": 119.35328062364816
+    }
+  ],
+  "predicted": [
+    [
+      451.1668860782621,
+      120.82320050826075
+    ],
+    [
+      296.7613250630771,
+      293.509562963873
+    ],
+    [
+      450.1574671531661,
+      293.7257564695525
+    ],
+    [
+      602.6575646982958,
+      290.6085075235958
+    ],
+    [
+      138.67429877208826,
+      225.53539876571986
+    ],
+    [
+      756.8704735419903,
+      221.74811499162718
+    ]
+  ],
+  "rms_pixels": 17.60030056499104,
+  "bounds": {
+    "parameters": [
+      "location_x",
+      "location_y",
+      "location_z",
+      "target_x",
+      "target_z",
+      "lens_mm"
+    ],
+    "lower": [
+      0,
+      -20,
+      2,
+      -1,
+      1,
+      30
+    ],
+    "upper": [
+      4,
+      -10,
+      4.5,
+      3,
+      4,
+      65
+    ]
+  },
+  "boundary_warning": "location_y=-10 and location_z=4.5 hit bounds; fit is conditional, not calibrated or independently constrained",
+  "rejected_trial": "wide bounds camera fit drove camera y=-5,z6.69; rejected as strong compensation for shared geometry mismatch"
+}
