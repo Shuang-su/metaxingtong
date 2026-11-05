@@ -1,0 +1,239 @@
+{
+  "candidate": "2024-08-03 cold butterfly finite front-stage",
+  "revision": "R04D",
+  "status": "FINITE_CANDIDATE_SOURCE_FAILED",
+  "scope": "four main wing visible fronts and vein tubes, finite tower arc fragments, visible central rail proxy and foreground stage crop; no city/full backside recovery",
+  "source_model_freeze": "2317e3dec04a7204e17a0a20eb381a5fe992af7f",
+  "inspection_model_freeze": "119d928c37fb7ddfdb4aefce73c5882fcb0194e1",
+  "mesh_count": 117,
+  "vertices": 36500,
+  "triangles": 72600,
+  "cameras": 11,
+  "mesh_units": "unmeasured relative working units, not metres",
+  "models": [
+    {
+      "path": "models/R04D_material.blend",
+      "bytes": 4114236,
+      "sha256": "4f6e82a4806fcaaaedb1829cfb44d337d4c242f4d31c63c12ef45b0f5cce305f"
+    },
+    {
+      "path": "models/R04D_material.glb",
+      "bytes": 1341772,
+      "sha256": "a7a435d8740e6b6d5f3ed6fb68e123c1054f65b9c233b724072ba033b2fe1c6c"
+    },
+    {
+      "path": "models/R04D_white.blend",
+      "bytes": 3890336,
+      "sha256": "fc68571760eab72e63ccdb50e0fa95d049b006a36fd970f57817bd273ce13368"
+    },
+    {
+      "path": "models/R04D_white.glb",
+      "bytes": 1307436,
+      "sha256": "16390389188115580361b54284525af30c0f7a04c1e805c59c4e5482c2e59f2e"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "dependencies/R04D-environment-sidecar.json",
+      "bytes": 11708,
+      "sha256": "72e4bdd9367aab908c479f5170aa47371425e2ee84fd2bcb183e3233ecbbe286"
+    },
+    {
+      "path": "dependencies/R04-generated-color-regions.png",
+      "bytes": 32282,
+      "sha256": "80a00b1f19e37b946e051a4b43dda1764b66fe3c0cd13fbc66229aaa467823d3"
+    },
+    {
+      "path": "scripts/restore_r04d.py",
+      "bytes": 3735,
+      "sha256": "8f0352ad9b0ece8fea1ec2f0c838b8001f8d38cbff9a69f64dced7221b88f19f"
+    }
+  ],
+  "source_renders": [
+    {
+      "path": "renders/R04_source/material_SOURCE02_conditional_front.png",
+      "bytes": 1421045,
+      "sha256": "ae7e2185dd20badc9d519e34ae7a16400772605cccb89ff2d58c52639919b801"
+    },
+    {
+      "path": "renders/R04_source/material_SOURCE05_alternate_tilt_diagnostic.png",
+      "bytes": 1600484,
+      "sha256": "f39121511b60ad1980744034dd41bdb74b3a2dc75e12adb93920bdd2e4b2c597"
+    },
+    {
+      "path": "renders/R04_source/white_SOURCE02_conditional_front.png",
+      "bytes": 1235757,
+      "sha256": "4f6e9374f5df4e0c5339d5c1c945638ff8af564096ba9c7e9cb92ddde5458533"
+    },
+    {
+      "path": "renders/R04_source/white_SOURCE05_alternate_tilt_diagnostic.png",
+      "bytes": 1294360,
+      "sha256": "965a59e1fda6adb05e138f51ecb6f9fbe12cff161c0df06d4d2492bf6a267580"
+    }
+  ],
+  "formal_inspection_renders": [
+    {
+      "path": "renders/R04D_checks/white_CHECK01_left_front.png",
+      "bytes": 1104681,
+      "sha256": "ba332e9c60e99ad71d485222bba060e56c31eec2536d3ce139b2f3ddbaa0aff9"
+    },
+    {
+      "path": "renders/R04D_checks/white_CHECK02_right_front.png",
+      "bytes": 1104089,
+      "sha256": "225d2434bb1fe2ea5932ab66e4a1cc13cbb2210b0049c83889f976e06f2326fb"
+    },
+    {
+      "path": "renders/R04D_checks/white_CHECK03_left_profile.png",
+      "bytes": 950857,
+      "sha256": "d883f75f82cb01db9ebe1a2b9b562c77797ad455ae3c0a0676f8162bff9364a0"
+    },
+    {
+      "path": "renders/R04D_checks/white_CHECK04_right_profile.png",
+      "bytes": 937178,
+      "sha256": "0c735491b4d766c5235cfd969a322e27fefcfe06a90ec04ff1e56ecaa4729e13"
+    },
+    {
+      "path": "renders/R04D_checks/white_CHECK05_rear_left.png",
+      "bytes": 1046884,
+      "sha256": "4d619363ade8eb8ae4edee3f6fa7990e692ccdb23b51c0246b22721e2e1a25c1"
+    },
+    {
+      "path": "renders/R04D_checks/white_CHECK06_rear_right.png",
+      "bytes": 1079150,
+      "sha256": "35f1be31884edfb47cb3a083dea6bfad054ae92901b98018b655783ce3ff14f6"
+    },
+    {
+      "path": "renders/R04D_checks/white_CHECK07_high_front.png",
+      "bytes": 1111273,
+      "sha256": "4f335795f48516465f877a4192d61819764c800555ec3bdce4e24f49489e331e"
+    },
+    {
+      "path": "renders/R04D_checks/white_CHECK08_low_front.png",
+      "bytes": 1047377,
+      "sha256": "b0497f13ea73495b9df09fbb8c5a5051e0f52bea703e57a01d5cbbf4d5118139"
+    },
+    {
+      "path": "renders/R04D_checks/material_CHECK01_left_front.png",
+      "bytes": 1248522,
+      "sha256": "b84f8491a46f3681845c638e500684473b8bd93a7db15d8ac5fca52dfccd81cc"
+    },
+    {
+      "path": "renders/R04D_checks/material_CHECK02_right_front.png",
+      "bytes": 1228837,
+      "sha256": "3a60ccd5f47ee24123625efe53e2b7218ad311092edc4a4ff7012c93f02092e4"
+    },
+    {
+      "path": "renders/R04D_checks/material_CHECK03_left_profile.png",
+      "bytes": 1015554,
+      "sha256": "b2d23e15ef0edca4e0a51a2c8984acf7f04f34abeedf2eeed5b42b5270f0c0d4"
+    },
+    {
+      "path": "renders/R04D_checks/material_CHECK04_right_profile.png",
+      "bytes": 962143,
+      "sha256": "4ff62b77c5558f7c3d6d67c92c231f54d97a92895ec174ca05c81a4c366daf4b"
+    },
+    {
+      "path": "renders/R04D_checks/material_CHECK05_rear_left.png",
+      "bytes": 1078943,
+      "sha256": "2448df8a7be3ef5559c7bcf2e8d1a437ddec9cd5432a9496587eee894f921c75"
+    },
+    {
+      "path": "renders/R04D_checks/material_CHECK06_rear_right.png",
+      "bytes": 1097444,
+      "sha256": "88ce82a8db838325dd10a32270a88aa5efb6d741dcc8728e84aca7ca3fa46ca3"
+    },
+    {
+      "path": "renders/R04D_checks/material_CHECK07_high_front.png",
+      "bytes": 1221945,
+      "sha256": "6236a34c7cfeb047ddc54dfe9ace8df3cc3aab06ba5d1b949b36f6d0894de647"
+    },
+    {
+      "path": "renders/R04D_checks/material_CHECK08_low_front.png",
+      "bytes": 1129128,
+      "sha256": "2f7c6c4638ceaa9ec32b0ca631828d44bab5fe3d9ece39625278c2676a42af54"
+    }
+  ],
+  "direct50": [
+    {
+      "path": "renders/R04_direct_comparison/source02_material_direct50.png",
+      "bytes": 1260414,
+      "sha256": "3de083b8c3c91318eb6bfcb385b0c92bfa854c614219a3ad1132b986160da1ad"
+    },
+    {
+      "path": "renders/R04_direct_comparison/source02_white_direct50.png",
+      "bytes": 1175219,
+      "sha256": "94898147501bbd4da3221a07e1e76ca4e961570504553fe650a569a5ab6f4116"
+    },
+    {
+      "path": "renders/R04_direct_comparison/source05_material_direct50.png",
+      "bytes": 1311956,
+      "sha256": "0bf5fd7ccac8dde7c99425668e44f5e7133de7bce4d72596716274b18041e9cf"
+    },
+    {
+      "path": "renders/R04_direct_comparison/source05_white_direct50.png",
+      "bytes": 1130874,
+      "sha256": "e49eea96634fd07b81685b317a8c34807e61a85092fe0a00c931bc292d9f78d2"
+    }
+  ],
+  "render_count_definition": "20 main originals = 4 actual R04 source-condition renders reused with independently proven D equivalence + 16 actual D inspection renders. One separate GLB+sidecar probe. Main preview alias and contact boards are NOT extra renders. Earlier real previews and failures retained.",
+  "main_preview": {
+    "path": "renders/R04D_summary/main-preview-finite-sourceFAILED.png",
+    "bytes": 1248522,
+    "sha256": "b84f8491a46f3681845c638e500684473b8bd93a7db15d8ac5fca52dfccd81cc"
+  },
+  "white_eight_board": {
+    "path": "renders/R04D_summary/white-eight-checks.zh.jpg",
+    "bytes": 304347,
+    "sha256": "a08e7d79eeaf8b88c8bef4f1d7b89bc36da8d28b53cc0a1b3337b00137d8c7f4"
+  },
+  "material_eight_board": {
+    "path": "renders/R04D_summary/material-eight-checks.zh.jpg",
+    "bytes": 346716,
+    "sha256": "7e8e5df07c8be8c24dd52637dec98cbec982f986328fb396667b540843de01df"
+  },
+  "roundtrip_probe": {
+    "path": "qa/R04D-roundtrip-render/material_SOURCE02_glb_sidecar.png",
+    "bytes": 1420782,
+    "sha256": "b93b8ec2de0bca1c0427487398cd79622165f753c4a6b1d6ffc06a1d90c776a9"
+  },
+  "technical_scope": "117 meshes manifold/nondegenerate/positive-volume on tested checks; shared material/white surface; GLB reimport zero measured vertex error; packed/external/GLB generated texture exact. Not full self-intersection/engineering acceptance.",
+  "vein_contact_scope": "2126 of 2136 existing section rings have section-edge/membrane crossing; 10 unchanged rings remain. Does not prove all inter-ring tube surface, support or collision validity.",
+  "source_grade": {
+    "report_dimensions": [
+      1192,
+      671
+    ],
+    "official_cover_dimensions": [
+      1007,
+      630
+    ],
+    "native_video_decoded": false,
+    "in_video_time": null,
+    "highest_decode_quality": null,
+    "primary": [
+      "report-02",
+      "report-05"
+    ],
+    "excluded_geometry_state": "report-06 warm/crystal state"
+  },
+  "unresolved": [
+    "source05 S-rail shape and layer-depth residuals",
+    "true wing thickness/depth/material/back connections",
+    "full tower depth/turn count/back/crown/support",
+    "foreground original boundary/under-stage architecture",
+    "city omitted",
+    "third independent effective source structural angle",
+    "later replay/reuse evidence",
+    "exhaustive old-scene pixel deduplication"
+  ],
+  "reports": [
+    "docs/finite-candidate-status.zh.md",
+    "docs/R04D-camera-and-reuse.zh.md",
+    "docs/roundtrip-probe.zh.md",
+    "qa/R04-source-posthoc-binding.json",
+    "qa/R04D-formal-input-freeze-binding.json",
+    "qa/independent-R04D/review.zh.md",
+    "qa/independent-images/final-image-review.zh.md"
+  ],
+  "git_policy": "Ordinary Git retains real failed revisions; no LFS, ZIP, force push. External archive and Space protection verified separately."
+}

@@ -1,0 +1,3258 @@
+{
+  "nonmanifold": {
+    "WING_L_LOWER_finite_outer_shell": [
+      {
+        "verts": [
+          180,
+          182
+        ],
+        "coordinates": [
+          [
+            -8.613039016723633,
+            0.7350879907608032,
+            4.106729030609131
+          ],
+          [
+            -8.653377532958984,
+            0.7345489263534546,
+            4.041146755218506
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          179,
+          182
+        ],
+        "coordinates": [
+          [
+            -8.693705558776855,
+            0.7339667677879333,
+            3.9755699634552
+          ],
+          [
+            -8.653377532958984,
+            0.7345489263534546,
+            4.041146755218506
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          384,
+          386
+        ],
+        "coordinates": [
+          [
+            -8.613039016723633,
+            0.8050879836082458,
+            4.106729030609131
+          ],
+          [
+            -8.653377532958984,
+            0.8045489192008972,
+            4.041146755218506
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          383,
+          386
+        ],
+        "coordinates": [
+          [
+            -8.693705558776855,
+            0.803966760635376,
+            3.9755699634552
+          ],
+          [
+            -8.653377532958984,
+            0.8045489192008972,
+            4.041146755218506
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          179,
+          383
+        ],
+        "coordinates": [
+          [
+            -8.693705558776855,
+            0.7339667677879333,
+            3.9755699634552
+          ],
+          [
+            -8.693705558776855,
+            0.803966760635376,
+            3.9755699634552
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          180,
+          384
+        ],
+        "coordinates": [
+          [
+            -8.613039016723633,
+            0.7350879907608032,
+            4.106729030609131
+          ],
+          [
+            -8.613039016723633,
+            0.8050879836082458,
+            4.106729030609131
+          ]
+        ],
+        "linked_faces": 3
+      }
+    ],
+    "WING_R_LOWER_finite_outer_shell": [
+      {
+        "verts": [
+          180,
+          182
+        ],
+        "coordinates": [
+          [
+            8.613039016723633,
+            0.7350879907608032,
+            4.106729030609131
+          ],
+          [
+            8.653377532958984,
+            0.7345489263534546,
+            4.041146755218506
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          179,
+          182
+        ],
+        "coordinates": [
+          [
+            8.693705558776855,
+            0.7339667677879333,
+            3.9755699634552
+          ],
+          [
+            8.653377532958984,
+            0.7345489263534546,
+            4.041146755218506
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          384,
+          386
+        ],
+        "coordinates": [
+          [
+            8.613039016723633,
+            0.8050879836082458,
+            4.106729030609131
+          ],
+          [
+            8.653377532958984,
+            0.8045489192008972,
+            4.041146755218506
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          383,
+          386
+        ],
+        "coordinates": [
+          [
+            8.693705558776855,
+            0.803966760635376,
+            3.9755699634552
+          ],
+          [
+            8.653377532958984,
+            0.8045489192008972,
+            4.041146755218506
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          179,
+          383
+        ],
+        "coordinates": [
+          [
+            8.693705558776855,
+            0.7339667677879333,
+            3.9755699634552
+          ],
+          [
+            8.693705558776855,
+            0.803966760635376,
+            3.9755699634552
+          ]
+        ],
+        "linked_faces": 3
+      },
+      {
+        "verts": [
+          180,
+          384
+        ],
+        "coordinates": [
+          [
+            8.613039016723633,
+            0.7350879907608032,
+            4.106729030609131
+          ],
+          [
+            8.613039016723633,
+            0.8050879836082458,
+            4.106729030609131
+          ]
+        ],
+        "linked_faces": 3
+      }
+    ]
+  },
+  "relations": {
+    "WING_L_UPPER_finite_outer_shell": {
+      "aabb_candidates": [
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04",
+        "VEIN_L_major_05",
+        "VEIN_L_major_06",
+        "VEIN_L_major_07",
+        "VEIN_L_major_08"
+      ],
+      "surface_overlap_pairs": {}
+    },
+    "VEIN_L_UPPER_outer_boundary": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04",
+        "VEIN_L_major_05",
+        "VEIN_L_major_06",
+        "VEIN_L_major_07",
+        "VEIN_L_major_08",
+        "VEIN_L_major_09"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_UPPER_visible_pale_panel": 114,
+        "VEIN_L_LOWER_outer_boundary": 248,
+        "WING_L_INNER_UPPER_finite_shell": 402,
+        "VEIN_L_INNER_UPPER_boundary": 74,
+        "VEIN_L_major_00": 204,
+        "VEIN_L_major_04": 44,
+        "VEIN_L_major_07": 80
+      }
+    },
+    "WING_L_UPPER_visible_pale_panel": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "VEIN_L_UPPER_pale_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04",
+        "VEIN_L_major_05",
+        "VEIN_L_major_06"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_UPPER_outer_boundary": 114,
+        "VEIN_L_LOWER_outer_boundary": 21,
+        "WING_L_INNER_UPPER_finite_shell": 80,
+        "VEIN_L_INNER_UPPER_boundary": 112,
+        "VEIN_L_major_00": 362,
+        "VEIN_L_major_01": 915,
+        "VEIN_L_major_02": 311,
+        "VEIN_L_major_03": 336
+      }
+    },
+    "VEIN_L_UPPER_pale_boundary": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04",
+        "VEIN_L_major_05",
+        "VEIN_L_major_06"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_INNER_UPPER_boundary": 96,
+        "VEIN_L_major_00": 38,
+        "VEIN_L_major_01": 32,
+        "VEIN_L_major_03": 98
+      }
+    },
+    "WING_L_LOWER_finite_outer_shell": {
+      "aabb_candidates": [
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_07",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_13",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "STAGE_finite_reflective_oval": 24
+      }
+    },
+    "VEIN_L_LOWER_outer_boundary": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "WING_L_LOWER_finite_outer_shell",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_03",
+        "VEIN_L_major_07",
+        "VEIN_L_major_08",
+        "VEIN_L_major_09",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_13",
+        "VEIN_L_major_14",
+        "VEIN_L_major_15",
+        "BODY_lower_diamond_1",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_UPPER_outer_boundary": 248,
+        "WING_L_UPPER_visible_pale_panel": 21,
+        "WING_L_PENDANT_finite_shell": 202,
+        "VEIN_L_PENDANT_boundary": 74,
+        "VEIN_L_major_00": 36,
+        "VEIN_L_major_07": 42,
+        "VEIN_L_major_10": 50,
+        "VEIN_L_major_14": 34,
+        "VEIN_L_major_15": 38,
+        "STAGE_finite_reflective_oval": 82
+      }
+    },
+    "WING_L_LOWER_visible_pale_panel": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_07",
+        "VEIN_L_major_08",
+        "VEIN_L_major_09",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_13",
+        "VEIN_L_major_14",
+        "VEIN_L_major_15"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_major_07": 250,
+        "VEIN_L_major_08": 378,
+        "VEIN_L_major_09": 283,
+        "VEIN_L_major_10": 42,
+        "VEIN_L_major_11": 242,
+        "VEIN_L_major_13": 325
+      }
+    },
+    "VEIN_L_LOWER_pale_boundary": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_07",
+        "VEIN_L_major_08",
+        "VEIN_L_major_09",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_13",
+        "VEIN_L_major_14",
+        "VEIN_L_major_15",
+        "WING_L_central_eye",
+        "BODY_spine_1"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_major_07": 70,
+        "VEIN_L_major_08": 34,
+        "VEIN_L_major_10": 31,
+        "VEIN_L_major_11": 44
+      }
+    },
+    "WING_L_PENDANT_finite_shell": {
+      "aabb_candidates": [
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_07",
+        "VEIN_L_major_09",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_14",
+        "VEIN_L_major_15",
+        "WING_L_central_eye",
+        "VEIN_L_central_eye_border",
+        "BODY_spine_1",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_LOWER_outer_boundary": 202,
+        "VEIN_L_PENDANT_boundary": 708,
+        "VEIN_L_major_14": 260,
+        "VEIN_L_major_15": 227,
+        "STAGE_finite_reflective_oval": 12
+      }
+    },
+    "VEIN_L_PENDANT_boundary": {
+      "aabb_candidates": [
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_major_07",
+        "VEIN_L_major_09",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_14",
+        "VEIN_L_major_15",
+        "WING_L_central_eye",
+        "VEIN_L_central_eye_border",
+        "BODY_spine_1",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_LOWER_outer_boundary": 74,
+        "WING_L_PENDANT_finite_shell": 708,
+        "VEIN_L_major_14": 96,
+        "STAGE_finite_reflective_oval": 80
+      }
+    },
+    "WING_L_INNER_UPPER_finite_shell": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_UPPER_outer_boundary": 402,
+        "WING_L_UPPER_visible_pale_panel": 80,
+        "VEIN_L_INNER_UPPER_boundary": 612,
+        "VEIN_L_major_00": 250,
+        "VEIN_L_major_03": 82,
+        "VEIN_L_major_04": 206
+      }
+    },
+    "VEIN_L_INNER_UPPER_boundary": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_UPPER_outer_boundary": 74,
+        "WING_L_UPPER_visible_pale_panel": 112,
+        "VEIN_L_UPPER_pale_boundary": 96,
+        "WING_L_INNER_UPPER_finite_shell": 612,
+        "VEIN_L_major_00": 198,
+        "VEIN_L_major_03": 132
+      }
+    },
+    "VEIN_L_major_00": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04",
+        "VEIN_L_major_07",
+        "VEIN_L_major_08"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_UPPER_outer_boundary": 204,
+        "WING_L_UPPER_visible_pale_panel": 362,
+        "VEIN_L_UPPER_pale_boundary": 38,
+        "VEIN_L_LOWER_outer_boundary": 36,
+        "WING_L_INNER_UPPER_finite_shell": 250,
+        "VEIN_L_INNER_UPPER_boundary": 198,
+        "VEIN_L_major_01": 219,
+        "VEIN_L_major_03": 144,
+        "VEIN_L_major_04": 11,
+        "VEIN_L_major_07": 21
+      }
+    },
+    "VEIN_L_major_01": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_UPPER_visible_pale_panel": 915,
+        "VEIN_L_UPPER_pale_boundary": 32,
+        "VEIN_L_major_00": 219,
+        "VEIN_L_major_03": 121
+      }
+    },
+    "VEIN_L_major_02": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_03",
+        "VEIN_L_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_UPPER_visible_pale_panel": 311
+      }
+    },
+    "VEIN_L_major_03": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_UPPER_visible_pale_panel": 336,
+        "VEIN_L_UPPER_pale_boundary": 98,
+        "WING_L_INNER_UPPER_finite_shell": 82,
+        "VEIN_L_INNER_UPPER_boundary": 132,
+        "VEIN_L_major_00": 144,
+        "VEIN_L_major_01": 121
+      }
+    },
+    "VEIN_L_major_04": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary",
+        "WING_L_INNER_UPPER_finite_shell",
+        "VEIN_L_INNER_UPPER_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_01",
+        "VEIN_L_major_02",
+        "VEIN_L_major_03"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_UPPER_outer_boundary": 44,
+        "WING_L_INNER_UPPER_finite_shell": 206,
+        "VEIN_L_major_00": 11
+      }
+    },
+    "VEIN_L_major_05": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary"
+      ],
+      "surface_overlap_pairs": {}
+    },
+    "VEIN_L_major_06": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_UPPER_visible_pale_panel",
+        "VEIN_L_UPPER_pale_boundary"
+      ],
+      "surface_overlap_pairs": {}
+    },
+    "VEIN_L_major_07": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_08",
+        "VEIN_L_major_09",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_13",
+        "VEIN_L_major_14",
+        "BODY_lower_diamond_1"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_UPPER_outer_boundary": 80,
+        "VEIN_L_LOWER_outer_boundary": 42,
+        "WING_L_LOWER_visible_pale_panel": 250,
+        "VEIN_L_LOWER_pale_boundary": 70,
+        "VEIN_L_major_00": 21,
+        "VEIN_L_major_10": 82
+      }
+    },
+    "VEIN_L_major_08": {
+      "aabb_candidates": [
+        "WING_L_UPPER_finite_outer_shell",
+        "VEIN_L_UPPER_outer_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "VEIN_L_major_00",
+        "VEIN_L_major_07",
+        "VEIN_L_major_09",
+        "VEIN_L_major_13"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_LOWER_visible_pale_panel": 378,
+        "VEIN_L_LOWER_pale_boundary": 34,
+        "VEIN_L_major_13": 42
+      }
+    },
+    "VEIN_L_major_09": {
+      "aabb_candidates": [
+        "VEIN_L_UPPER_outer_boundary",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_07",
+        "VEIN_L_major_08",
+        "VEIN_L_major_10",
+        "VEIN_L_major_13"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_LOWER_visible_pale_panel": 283
+      }
+    },
+    "VEIN_L_major_10": {
+      "aabb_candidates": [
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_07",
+        "VEIN_L_major_09",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_13",
+        "VEIN_L_major_14",
+        "VEIN_L_major_15",
+        "WING_L_central_eye",
+        "VEIN_L_central_eye_border",
+        "BODY_spine_1"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_LOWER_outer_boundary": 50,
+        "WING_L_LOWER_visible_pale_panel": 42,
+        "VEIN_L_LOWER_pale_boundary": 31,
+        "VEIN_L_major_07": 82
+      }
+    },
+    "VEIN_L_major_11": {
+      "aabb_candidates": [
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_07",
+        "VEIN_L_major_10",
+        "VEIN_L_major_12",
+        "VEIN_L_major_13",
+        "VEIN_L_major_14",
+        "VEIN_L_major_15"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_LOWER_visible_pale_panel": 242,
+        "VEIN_L_LOWER_pale_boundary": 44
+      }
+    },
+    "VEIN_L_major_12": {
+      "aabb_candidates": [
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_14",
+        "VEIN_L_major_15"
+      ],
+      "surface_overlap_pairs": {}
+    },
+    "VEIN_L_major_13": {
+      "aabb_candidates": [
+        "WING_L_LOWER_finite_outer_shell",
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "VEIN_L_major_07",
+        "VEIN_L_major_08",
+        "VEIN_L_major_09",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_LOWER_visible_pale_panel": 325,
+        "VEIN_L_major_08": 42
+      }
+    },
+    "VEIN_L_major_14": {
+      "aabb_candidates": [
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_07",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_15",
+        "WING_L_central_eye",
+        "VEIN_L_central_eye_border",
+        "BODY_spine_1",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_LOWER_outer_boundary": 34,
+        "WING_L_PENDANT_finite_shell": 260,
+        "VEIN_L_PENDANT_boundary": 96,
+        "STAGE_finite_reflective_oval": 18
+      }
+    },
+    "VEIN_L_major_15": {
+      "aabb_candidates": [
+        "VEIN_L_LOWER_outer_boundary",
+        "WING_L_LOWER_visible_pale_panel",
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_10",
+        "VEIN_L_major_11",
+        "VEIN_L_major_12",
+        "VEIN_L_major_14"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_LOWER_outer_boundary": 38,
+        "WING_L_PENDANT_finite_shell": 227
+      }
+    },
+    "WING_L_central_eye": {
+      "aabb_candidates": [
+        "VEIN_L_LOWER_pale_boundary",
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_10",
+        "VEIN_L_major_14",
+        "VEIN_L_central_eye_border",
+        "BODY_spine_1"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_L_central_eye_border": 318
+      }
+    },
+    "VEIN_L_central_eye_border": {
+      "aabb_candidates": [
+        "WING_L_PENDANT_finite_shell",
+        "VEIN_L_PENDANT_boundary",
+        "VEIN_L_major_10",
+        "VEIN_L_major_14",
+        "WING_L_central_eye",
+        "BODY_spine_1"
+      ],
+      "surface_overlap_pairs": {
+        "WING_L_central_eye": 318
+      }
+    },
+    "WING_R_UPPER_finite_outer_shell": {
+      "aabb_candidates": [
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04",
+        "VEIN_R_major_05",
+        "VEIN_R_major_06",
+        "VEIN_R_major_07",
+        "VEIN_R_major_08"
+      ],
+      "surface_overlap_pairs": {}
+    },
+    "VEIN_R_UPPER_outer_boundary": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04",
+        "VEIN_R_major_05",
+        "VEIN_R_major_06",
+        "VEIN_R_major_07",
+        "VEIN_R_major_08",
+        "VEIN_R_major_09"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_UPPER_visible_pale_panel": 112,
+        "VEIN_R_LOWER_outer_boundary": 250,
+        "WING_R_INNER_UPPER_finite_shell": 402,
+        "VEIN_R_INNER_UPPER_boundary": 88,
+        "VEIN_R_major_00": 196,
+        "VEIN_R_major_04": 50,
+        "VEIN_R_major_07": 72
+      }
+    },
+    "WING_R_UPPER_visible_pale_panel": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "VEIN_R_UPPER_pale_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04",
+        "VEIN_R_major_05",
+        "VEIN_R_major_06"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_UPPER_outer_boundary": 112,
+        "VEIN_R_LOWER_outer_boundary": 21,
+        "WING_R_INNER_UPPER_finite_shell": 80,
+        "VEIN_R_INNER_UPPER_boundary": 114,
+        "VEIN_R_major_00": 362,
+        "VEIN_R_major_01": 916,
+        "VEIN_R_major_02": 311,
+        "VEIN_R_major_03": 334
+      }
+    },
+    "VEIN_R_UPPER_pale_boundary": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04",
+        "VEIN_R_major_05",
+        "VEIN_R_major_06"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_INNER_UPPER_boundary": 88,
+        "VEIN_R_major_00": 32,
+        "VEIN_R_major_01": 30,
+        "VEIN_R_major_03": 86
+      }
+    },
+    "WING_R_LOWER_finite_outer_shell": {
+      "aabb_candidates": [
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_07",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_13",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "STAGE_finite_reflective_oval": 26
+      }
+    },
+    "VEIN_R_LOWER_outer_boundary": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "WING_R_LOWER_finite_outer_shell",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_03",
+        "VEIN_R_major_07",
+        "VEIN_R_major_08",
+        "VEIN_R_major_09",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_13",
+        "VEIN_R_major_14",
+        "VEIN_R_major_15",
+        "BODY_lower_diamond_-1",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_UPPER_outer_boundary": 250,
+        "WING_R_UPPER_visible_pale_panel": 21,
+        "WING_R_PENDANT_finite_shell": 200,
+        "VEIN_R_PENDANT_boundary": 64,
+        "VEIN_R_major_00": 40,
+        "VEIN_R_major_07": 38,
+        "VEIN_R_major_10": 44,
+        "VEIN_R_major_14": 30,
+        "VEIN_R_major_15": 30,
+        "STAGE_finite_reflective_oval": 82
+      }
+    },
+    "WING_R_LOWER_visible_pale_panel": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_07",
+        "VEIN_R_major_08",
+        "VEIN_R_major_09",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_13",
+        "VEIN_R_major_14",
+        "VEIN_R_major_15"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_major_07": 251,
+        "VEIN_R_major_08": 381,
+        "VEIN_R_major_09": 284,
+        "VEIN_R_major_10": 39,
+        "VEIN_R_major_11": 243,
+        "VEIN_R_major_13": 326
+      }
+    },
+    "VEIN_R_LOWER_pale_boundary": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_07",
+        "VEIN_R_major_08",
+        "VEIN_R_major_09",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_13",
+        "VEIN_R_major_14",
+        "VEIN_R_major_15",
+        "WING_R_central_eye",
+        "BODY_spine_-1"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_major_07": 50,
+        "VEIN_R_major_08": 32,
+        "VEIN_R_major_10": 38,
+        "VEIN_R_major_11": 38
+      }
+    },
+    "WING_R_PENDANT_finite_shell": {
+      "aabb_candidates": [
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_07",
+        "VEIN_R_major_09",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_14",
+        "VEIN_R_major_15",
+        "WING_R_central_eye",
+        "VEIN_R_central_eye_border",
+        "BODY_spine_-1",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_LOWER_outer_boundary": 200,
+        "VEIN_R_PENDANT_boundary": 708,
+        "VEIN_R_major_14": 260,
+        "VEIN_R_major_15": 227,
+        "STAGE_finite_reflective_oval": 12
+      }
+    },
+    "VEIN_R_PENDANT_boundary": {
+      "aabb_candidates": [
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_major_07",
+        "VEIN_R_major_09",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_14",
+        "VEIN_R_major_15",
+        "WING_R_central_eye",
+        "VEIN_R_central_eye_border",
+        "BODY_spine_-1",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_LOWER_outer_boundary": 64,
+        "WING_R_PENDANT_finite_shell": 708,
+        "VEIN_R_major_14": 95,
+        "STAGE_finite_reflective_oval": 80
+      }
+    },
+    "WING_R_INNER_UPPER_finite_shell": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_UPPER_outer_boundary": 402,
+        "WING_R_UPPER_visible_pale_panel": 80,
+        "VEIN_R_INNER_UPPER_boundary": 612,
+        "VEIN_R_major_00": 252,
+        "VEIN_R_major_03": 78,
+        "VEIN_R_major_04": 206
+      }
+    },
+    "VEIN_R_INNER_UPPER_boundary": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_UPPER_outer_boundary": 88,
+        "WING_R_UPPER_visible_pale_panel": 114,
+        "VEIN_R_UPPER_pale_boundary": 88,
+        "WING_R_INNER_UPPER_finite_shell": 612,
+        "VEIN_R_major_00": 190,
+        "VEIN_R_major_03": 136
+      }
+    },
+    "VEIN_R_major_00": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04",
+        "VEIN_R_major_07",
+        "VEIN_R_major_08"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_UPPER_outer_boundary": 196,
+        "WING_R_UPPER_visible_pale_panel": 362,
+        "VEIN_R_UPPER_pale_boundary": 32,
+        "VEIN_R_LOWER_outer_boundary": 40,
+        "WING_R_INNER_UPPER_finite_shell": 252,
+        "VEIN_R_INNER_UPPER_boundary": 190,
+        "VEIN_R_major_01": 216,
+        "VEIN_R_major_03": 148,
+        "VEIN_R_major_04": 10,
+        "VEIN_R_major_07": 22
+      }
+    },
+    "VEIN_R_major_01": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_UPPER_visible_pale_panel": 916,
+        "VEIN_R_UPPER_pale_boundary": 30,
+        "VEIN_R_major_00": 216,
+        "VEIN_R_major_03": 121
+      }
+    },
+    "VEIN_R_major_02": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_03",
+        "VEIN_R_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_UPPER_visible_pale_panel": 311
+      }
+    },
+    "VEIN_R_major_03": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_04"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_UPPER_visible_pale_panel": 334,
+        "VEIN_R_UPPER_pale_boundary": 86,
+        "WING_R_INNER_UPPER_finite_shell": 78,
+        "VEIN_R_INNER_UPPER_boundary": 136,
+        "VEIN_R_major_00": 148,
+        "VEIN_R_major_01": 121
+      }
+    },
+    "VEIN_R_major_04": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary",
+        "WING_R_INNER_UPPER_finite_shell",
+        "VEIN_R_INNER_UPPER_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_01",
+        "VEIN_R_major_02",
+        "VEIN_R_major_03"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_UPPER_outer_boundary": 50,
+        "WING_R_INNER_UPPER_finite_shell": 206,
+        "VEIN_R_major_00": 10
+      }
+    },
+    "VEIN_R_major_05": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary"
+      ],
+      "surface_overlap_pairs": {}
+    },
+    "VEIN_R_major_06": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_UPPER_visible_pale_panel",
+        "VEIN_R_UPPER_pale_boundary"
+      ],
+      "surface_overlap_pairs": {}
+    },
+    "VEIN_R_major_07": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_08",
+        "VEIN_R_major_09",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_13",
+        "VEIN_R_major_14",
+        "BODY_lower_diamond_-1"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_UPPER_outer_boundary": 72,
+        "VEIN_R_LOWER_outer_boundary": 38,
+        "WING_R_LOWER_visible_pale_panel": 251,
+        "VEIN_R_LOWER_pale_boundary": 50,
+        "VEIN_R_major_00": 22,
+        "VEIN_R_major_10": 80
+      }
+    },
+    "VEIN_R_major_08": {
+      "aabb_candidates": [
+        "WING_R_UPPER_finite_outer_shell",
+        "VEIN_R_UPPER_outer_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "VEIN_R_major_00",
+        "VEIN_R_major_07",
+        "VEIN_R_major_09",
+        "VEIN_R_major_13"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_LOWER_visible_pale_panel": 381,
+        "VEIN_R_LOWER_pale_boundary": 32,
+        "VEIN_R_major_13": 41
+      }
+    },
+    "VEIN_R_major_09": {
+      "aabb_candidates": [
+        "VEIN_R_UPPER_outer_boundary",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_07",
+        "VEIN_R_major_08",
+        "VEIN_R_major_10",
+        "VEIN_R_major_13"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_LOWER_visible_pale_panel": 284
+      }
+    },
+    "VEIN_R_major_10": {
+      "aabb_candidates": [
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_07",
+        "VEIN_R_major_09",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_13",
+        "VEIN_R_major_14",
+        "VEIN_R_major_15",
+        "WING_R_central_eye",
+        "VEIN_R_central_eye_border",
+        "BODY_spine_-1"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_LOWER_outer_boundary": 44,
+        "WING_R_LOWER_visible_pale_panel": 39,
+        "VEIN_R_LOWER_pale_boundary": 38,
+        "VEIN_R_major_07": 80
+      }
+    },
+    "VEIN_R_major_11": {
+      "aabb_candidates": [
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_07",
+        "VEIN_R_major_10",
+        "VEIN_R_major_12",
+        "VEIN_R_major_13",
+        "VEIN_R_major_14",
+        "VEIN_R_major_15"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_LOWER_visible_pale_panel": 243,
+        "VEIN_R_LOWER_pale_boundary": 38
+      }
+    },
+    "VEIN_R_major_12": {
+      "aabb_candidates": [
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_14",
+        "VEIN_R_major_15"
+      ],
+      "surface_overlap_pairs": {}
+    },
+    "VEIN_R_major_13": {
+      "aabb_candidates": [
+        "WING_R_LOWER_finite_outer_shell",
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "VEIN_R_major_07",
+        "VEIN_R_major_08",
+        "VEIN_R_major_09",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_LOWER_visible_pale_panel": 326,
+        "VEIN_R_major_08": 41
+      }
+    },
+    "VEIN_R_major_14": {
+      "aabb_candidates": [
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_07",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_15",
+        "WING_R_central_eye",
+        "VEIN_R_central_eye_border",
+        "BODY_spine_-1",
+        "STAGE_finite_reflective_oval",
+        "STAGE_finite_front_pale_band"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_LOWER_outer_boundary": 30,
+        "WING_R_PENDANT_finite_shell": 260,
+        "VEIN_R_PENDANT_boundary": 95,
+        "STAGE_finite_reflective_oval": 19
+      }
+    },
+    "VEIN_R_major_15": {
+      "aabb_candidates": [
+        "VEIN_R_LOWER_outer_boundary",
+        "WING_R_LOWER_visible_pale_panel",
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_10",
+        "VEIN_R_major_11",
+        "VEIN_R_major_12",
+        "VEIN_R_major_14"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_LOWER_outer_boundary": 30,
+        "WING_R_PENDANT_finite_shell": 227
+      }
+    },
+    "WING_R_central_eye": {
+      "aabb_candidates": [
+        "VEIN_R_LOWER_pale_boundary",
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_10",
+        "VEIN_R_major_14",
+        "VEIN_R_central_eye_border",
+        "BODY_spine_-1"
+      ],
+      "surface_overlap_pairs": {
+        "VEIN_R_central_eye_border": 318
+      }
+    },
+    "VEIN_R_central_eye_border": {
+      "aabb_candidates": [
+        "WING_R_PENDANT_finite_shell",
+        "VEIN_R_PENDANT_boundary",
+        "VEIN_R_major_10",
+        "VEIN_R_major_14",
+        "WING_R_central_eye",
+        "BODY_spine_-1"
+      ],
+      "surface_overlap_pairs": {
+        "WING_R_central_eye": 318
+      }
+    }
+  },
+  "bounds": {
+    "WING_L_UPPER_finite_outer_shell": [
+      [
+        -14.255956649780273,
+        -0.1698158234357834
+      ],
+      [
+        0.3891054689884186,
+        0.9966217875480652
+      ],
+      [
+        5.154937267303467,
+        14.582803726196289
+      ]
+    ],
+    "VEIN_L_UPPER_outer_boundary": [
+      [
+        -14.275437355041504,
+        -0.13661664724349976
+      ],
+      [
+        0.31584030389785767,
+        0.9199086427688599
+      ],
+      [
+        5.122091293334961,
+        14.60954761505127
+      ]
+    ],
+    "WING_L_UPPER_visible_pale_panel": [
+      [
+        -9.009499549865723,
+        -1.818488359451294
+      ],
+      [
+        0.3697666525840759,
+        0.7385750412940979
+      ],
+      [
+        6.081060886383057,
+        12.416128158569336
+      ]
+    ],
+    "VEIN_L_UPPER_pale_boundary": [
+      [
+        -9.039652824401855,
+        -1.7765419483184814
+      ],
+      [
+        0.291726291179657,
+        0.6916173100471497
+      ],
+      [
+        6.042074680328369,
+        12.450196266174316
+      ]
+    ],
+    "WING_L_LOWER_finite_outer_shell": [
+      [
+        -9.4100341796875,
+        -1.212724208831787
+      ],
+      [
+        0.3385518193244934,
+        0.8525694608688354
+      ],
+      [
+        0.2703707814216614,
+        4.248204231262207
+      ]
+    ],
+    "VEIN_L_LOWER_outer_boundary": [
+      [
+        -9.434711456298828,
+        -0.11505426466464996
+      ],
+      [
+        0.2652648687362671,
+        0.7789520621299744
+      ],
+      [
+        0.24398574233055115,
+        6.100094795227051
+      ]
+    ],
+    "WING_L_LOWER_visible_pale_panel": [
+      [
+        -6.471621036529541,
+        -1.1136438846588135
+      ],
+      [
+        0.28358355164527893,
+        0.53516685962677
+      ],
+      [
+        1.610942006111145,
+        5.439629554748535
+      ]
+    ],
+    "VEIN_L_LOWER_pale_boundary": [
+      [
+        -6.504519462585449,
+        -1.0724294185638428
+      ],
+      [
+        0.20554131269454956,
+        0.4882091283798218
+      ],
+      [
+        1.5772677659988403,
+        5.481343746185303
+      ]
+    ],
+    "WING_L_PENDANT_finite_shell": [
+      [
+        -3.0166356563568115,
+        -1.0808106660842896
+      ],
+      [
+        0.15150333940982819,
+        0.3796825706958771
+      ],
+      [
+        0.37135592103004456,
+        4.6621551513671875
+      ]
+    ],
+    "VEIN_L_PENDANT_boundary": [
+      [
+        -3.0490994453430176,
+        -1.0449182987213135
+      ],
+      [
+        0.08824610710144043,
+        0.34296876192092896
+      ],
+      [
+        0.34195056557655334,
+        4.6982645988464355
+      ]
+    ],
+    "WING_L_INNER_UPPER_finite_shell": [
+      [
+        -4.328422546386719,
+        -0.6785855293273926
+      ],
+      [
+        0.35279762744903564,
+        0.48421087861061096
+      ],
+      [
+        5.50946044921875,
+        11.882153511047363
+      ]
+    ],
+    "VEIN_L_INNER_UPPER_boundary": [
+      [
+        -4.359747409820557,
+        -0.644367516040802
+      ],
+      [
+        0.28951436281204224,
+        0.4474978744983673
+      ],
+      [
+        5.476010322570801,
+        11.913086891174316
+      ]
+    ],
+    "VEIN_L_major_00": [
+      [
+        -2.9839468002319336,
+        -0.17279070615768433
+      ],
+      [
+        0.268317848443985,
+        0.47794094681739807
+      ],
+      [
+        5.205095291137695,
+        8.864859580993652
+      ]
+    ],
+    "VEIN_L_major_01": [
+      [
+        -5.506843090057373,
+        -1.952682375907898
+      ],
+      [
+        0.3562476933002472,
+        0.5664535164833069
+      ],
+      [
+        6.622720718383789,
+        10.403539657592773
+      ]
+    ],
+    "VEIN_L_major_02": [
+      [
+        -5.049220085144043,
+        -2.529006004333496
+      ],
+      [
+        0.3820056617259979,
+        0.5783770680427551
+      ],
+      [
+        6.996482849121094,
+        8.201364517211914
+      ]
+    ],
+    "VEIN_L_major_03": [
+      [
+        -4.9582295417785645,
+        -1.3443423509597778
+      ],
+      [
+        0.32193875312805176,
+        0.4767007529735565
+      ],
+      [
+        5.896330833435059,
+        11.274091720581055
+      ]
+    ],
+    "VEIN_L_major_04": [
+      [
+        -3.745042562484741,
+        -1.5082927942276
+      ],
+      [
+        0.33619365096092224,
+        0.4407002329826355
+      ],
+      [
+        6.371567726135254,
+        11.068517684936523
+      ]
+    ],
+    "VEIN_L_major_05": [
+      [
+        -11.730975151062012,
+        -5.920073986053467
+      ],
+      [
+        0.42096787691116333,
+        0.6630839109420776
+      ],
+      [
+        11.969335556030273,
+        14.193264961242676
+      ]
+    ],
+    "VEIN_L_major_06": [
+      [
+        -11.87582778930664,
+        -8.96435546875
+      ],
+      [
+        0.6788051128387451,
+        0.8143602013587952
+      ],
+      [
+        9.953326225280762,
+        11.819592475891113
+      ]
+    ],
+    "VEIN_L_major_07": [
+      [
+        -3.353156805038452,
+        -0.16104957461357117
+      ],
+      [
+        0.2663137912750244,
+        0.4181668758392334
+      ],
+      [
+        3.815080165863037,
+        5.24085807800293
+      ]
+    ],
+    "VEIN_L_major_08": [
+      [
+        -4.502213478088379,
+        -1.0831756591796875
+      ],
+      [
+        0.28934726119041443,
+        0.5141621232032776
+      ],
+      [
+        4.852492332458496,
+        5.241737365722656
+      ]
+    ],
+    "VEIN_L_major_09": [
+      [
+        -4.113550186157227,
+        -1.977461338043213
+      ],
+      [
+        0.32326740026474,
+        0.4749041795730591
+      ],
+      [
+        4.32062292098999,
+        5.140589714050293
+      ]
+    ],
+    "VEIN_L_major_10": [
+      [
+        -3.4474573135375977,
+        -1.4870123863220215
+      ],
+      [
+        0.17501457035541534,
+        0.37887153029441833
+      ],
+      [
+        1.059053897857666,
+        4.757321357727051
+      ]
+    ],
+    "VEIN_L_major_11": [
+      [
+        -4.14499568939209,
+        -2.120346784591675
+      ],
+      [
+        0.2797957956790924,
+        0.3886733651161194
+      ],
+      [
+        2.565277099609375,
+        3.98854660987854
+      ]
+    ],
+    "VEIN_L_major_12": [
+      [
+        -5.47896146774292,
+        -2.5315866470336914
+      ],
+      [
+        0.25236624479293823,
+        0.3863776922225952
+      ],
+      [
+        1.4015147686004639,
+        3.312798023223877
+      ]
+    ],
+    "VEIN_L_major_13": [
+      [
+        -5.772045135498047,
+        -3.063875913619995
+      ],
+      [
+        0.36666548252105713,
+        0.540016770362854
+      ],
+      [
+        3.926039934158325,
+        5.0626420974731445
+      ]
+    ],
+    "VEIN_L_major_14": [
+      [
+        -2.59820556640625,
+        -1.2105127573013306
+      ],
+      [
+        0.11825048923492432,
+        0.32633844017982483
+      ],
+      [
+        0.467490017414093,
+        4.164029121398926
+      ]
+    ],
+    "VEIN_L_major_15": [
+      [
+        -2.867790699005127,
+        -1.5016475915908813
+      ],
+      [
+        0.14241406321525574,
+        0.3182608485221863
+      ],
+      [
+        0.6604868173599243,
+        3.7560219764709473
+      ]
+    ],
+    "WING_L_central_eye": [
+      [
+        -2.1211280822753906,
+        -0.9545702338218689
+      ],
+      [
+        0.11720972508192062,
+        0.22194232046604156
+      ],
+      [
+        4.116003513336182,
+        5.121691703796387
+      ]
+    ],
+    "VEIN_L_central_eye_border": [
+      [
+        -2.17275071144104,
+        -0.899054229259491
+      ],
+      [
+        0.03490162268280983,
+        0.18424992263317108
+      ],
+      [
+        4.063503265380859,
+        5.177633285522461
+      ]
+    ],
+    "WING_R_UPPER_finite_outer_shell": [
+      [
+        0.1698158234357834,
+        14.255956649780273
+      ],
+      [
+        0.3891054689884186,
+        0.9966217875480652
+      ],
+      [
+        5.154937267303467,
+        14.582803726196289
+      ]
+    ],
+    "VEIN_R_UPPER_outer_boundary": [
+      [
+        0.13661664724349976,
+        14.275437355041504
+      ],
+      [
+        0.31584030389785767,
+        0.9199086427688599
+      ],
+      [
+        5.122091293334961,
+        14.60954761505127
+      ]
+    ],
+    "WING_R_UPPER_visible_pale_panel": [
+      [
+        1.818488359451294,
+        9.009499549865723
+      ],
+      [
+        0.3697666525840759,
+        0.7385750412940979
+      ],
+      [
+        6.081060886383057,
+        12.416128158569336
+      ]
+    ],
+    "VEIN_R_UPPER_pale_boundary": [
+      [
+        1.7765419483184814,
+        9.039652824401855
+      ],
+      [
+        0.291726291179657,
+        0.6916173100471497
+      ],
+      [
+        6.042074680328369,
+        12.450196266174316
+      ]
+    ],
+    "WING_R_LOWER_finite_outer_shell": [
+      [
+        1.212724208831787,
+        9.4100341796875
+      ],
+      [
+        0.3385518193244934,
+        0.8525694608688354
+      ],
+      [
+        0.2703707814216614,
+        4.248204231262207
+      ]
+    ],
+    "VEIN_R_LOWER_outer_boundary": [
+      [
+        0.11505426466464996,
+        9.434711456298828
+      ],
+      [
+        0.2652648687362671,
+        0.7789520621299744
+      ],
+      [
+        0.24398574233055115,
+        6.100094795227051
+      ]
+    ],
+    "WING_R_LOWER_visible_pale_panel": [
+      [
+        1.1136438846588135,
+        6.471621036529541
+      ],
+      [
+        0.28358355164527893,
+        0.53516685962677
+      ],
+      [
+        1.610942006111145,
+        5.439629554748535
+      ]
+    ],
+    "VEIN_R_LOWER_pale_boundary": [
+      [
+        1.0724294185638428,
+        6.504519462585449
+      ],
+      [
+        0.20554131269454956,
+        0.4882091283798218
+      ],
+      [
+        1.5772677659988403,
+        5.481343746185303
+      ]
+    ],
+    "WING_R_PENDANT_finite_shell": [
+      [
+        1.0808106660842896,
+        3.0166356563568115
+      ],
+      [
+        0.15150333940982819,
+        0.3796825706958771
+      ],
+      [
+        0.37135592103004456,
+        4.6621551513671875
+      ]
+    ],
+    "VEIN_R_PENDANT_boundary": [
+      [
+        1.0449182987213135,
+        3.0490994453430176
+      ],
+      [
+        0.08824610710144043,
+        0.34296876192092896
+      ],
+      [
+        0.34195056557655334,
+        4.6982645988464355
+      ]
+    ],
+    "WING_R_INNER_UPPER_finite_shell": [
+      [
+        0.6785855293273926,
+        4.328422546386719
+      ],
+      [
+        0.35279762744903564,
+        0.48421087861061096
+      ],
+      [
+        5.50946044921875,
+        11.882153511047363
+      ]
+    ],
+    "VEIN_R_INNER_UPPER_boundary": [
+      [
+        0.644367516040802,
+        4.359747409820557
+      ],
+      [
+        0.28951436281204224,
+        0.4474978744983673
+      ],
+      [
+        5.476010322570801,
+        11.913086891174316
+      ]
+    ],
+    "VEIN_R_major_00": [
+      [
+        0.17279070615768433,
+        2.9839468002319336
+      ],
+      [
+        0.268317848443985,
+        0.47794094681739807
+      ],
+      [
+        5.205095291137695,
+        8.864859580993652
+      ]
+    ],
+    "VEIN_R_major_01": [
+      [
+        1.952682375907898,
+        5.506843090057373
+      ],
+      [
+        0.3562476933002472,
+        0.5664535164833069
+      ],
+      [
+        6.622720718383789,
+        10.403539657592773
+      ]
+    ],
+    "VEIN_R_major_02": [
+      [
+        2.529006004333496,
+        5.049220085144043
+      ],
+      [
+        0.3820056617259979,
+        0.5783770680427551
+      ],
+      [
+        6.996482849121094,
+        8.201364517211914
+      ]
+    ],
+    "VEIN_R_major_03": [
+      [
+        1.3443423509597778,
+        4.9582295417785645
+      ],
+      [
+        0.32193875312805176,
+        0.4767007529735565
+      ],
+      [
+        5.896330833435059,
+        11.274091720581055
+      ]
+    ],
+    "VEIN_R_major_04": [
+      [
+        1.5082927942276,
+        3.745042562484741
+      ],
+      [
+        0.33619365096092224,
+        0.4407002329826355
+      ],
+      [
+        6.371567726135254,
+        11.068517684936523
+      ]
+    ],
+    "VEIN_R_major_05": [
+      [
+        5.920073986053467,
+        11.730975151062012
+      ],
+      [
+        0.42096787691116333,
+        0.6630839109420776
+      ],
+      [
+        11.969335556030273,
+        14.193264961242676
+      ]
+    ],
+    "VEIN_R_major_06": [
+      [
+        8.96435546875,
+        11.87582778930664
+      ],
+      [
+        0.6788051128387451,
+        0.8143602013587952
+      ],
+      [
+        9.953326225280762,
+        11.819592475891113
+      ]
+    ],
+    "VEIN_R_major_07": [
+      [
+        0.16104957461357117,
+        3.353156805038452
+      ],
+      [
+        0.2663137912750244,
+        0.4181668758392334
+      ],
+      [
+        3.815080165863037,
+        5.24085807800293
+      ]
+    ],
+    "VEIN_R_major_08": [
+      [
+        1.0831756591796875,
+        4.502213478088379
+      ],
+      [
+        0.28934726119041443,
+        0.5141621232032776
+      ],
+      [
+        4.852492332458496,
+        5.241737365722656
+      ]
+    ],
+    "VEIN_R_major_09": [
+      [
+        1.977461338043213,
+        4.113550186157227
+      ],
+      [
+        0.32326740026474,
+        0.4749041795730591
+      ],
+      [
+        4.32062292098999,
+        5.140589714050293
+      ]
+    ],
+    "VEIN_R_major_10": [
+      [
+        1.4870123863220215,
+        3.4474573135375977
+      ],
+      [
+        0.17501457035541534,
+        0.37887153029441833
+      ],
+      [
+        1.059053897857666,
+        4.757321357727051
+      ]
+    ],
+    "VEIN_R_major_11": [
+      [
+        2.120346784591675,
+        4.14499568939209
+      ],
+      [
+        0.2797957956790924,
+        0.3886733651161194
+      ],
+      [
+        2.565277099609375,
+        3.98854660987854
+      ]
+    ],
+    "VEIN_R_major_12": [
+      [
+        2.5315866470336914,
+        5.47896146774292
+      ],
+      [
+        0.25236624479293823,
+        0.3863776922225952
+      ],
+      [
+        1.4015147686004639,
+        3.312798023223877
+      ]
+    ],
+    "VEIN_R_major_13": [
+      [
+        3.063875913619995,
+        5.772045135498047
+      ],
+      [
+        0.36666548252105713,
+        0.540016770362854
+      ],
+      [
+        3.926039934158325,
+        5.0626420974731445
+      ]
+    ],
+    "VEIN_R_major_14": [
+      [
+        1.2105127573013306,
+        2.59820556640625
+      ],
+      [
+        0.11825048923492432,
+        0.32633844017982483
+      ],
+      [
+        0.467490017414093,
+        4.164029121398926
+      ]
+    ],
+    "VEIN_R_major_15": [
+      [
+        1.5016475915908813,
+        2.867790699005127
+      ],
+      [
+        0.14241406321525574,
+        0.3182608485221863
+      ],
+      [
+        0.6604868173599243,
+        3.7560219764709473
+      ]
+    ],
+    "WING_R_central_eye": [
+      [
+        0.9545702338218689,
+        2.1211280822753906
+      ],
+      [
+        0.11720972508192062,
+        0.22194232046604156
+      ],
+      [
+        4.116003513336182,
+        5.121691703796387
+      ]
+    ],
+    "VEIN_R_central_eye_border": [
+      [
+        0.899054229259491,
+        2.17275071144104
+      ],
+      [
+        0.03490162268280983,
+        0.18424992263317108
+      ],
+      [
+        4.063503265380859,
+        5.177633285522461
+      ]
+    ],
+    "BODY_spine_-1": [
+      [
+        -0.040574170649051666,
+        3.3382294178009033
+      ],
+      [
+        -0.05513683333992958,
+        0.22201937437057495
+      ],
+      [
+        3.763195276260376,
+        14.409501075744629
+      ]
+    ],
+    "BODY_lower_loop_-1": [
+      [
+        -0.022399315610527992,
+        0.7748656868934631
+      ],
+      [
+        0.13797889649868011,
+        0.23654170334339142
+      ],
+      [
+        3.5864346027374268,
+        5.051202297210693
+      ]
+    ],
+    "BODY_lower_diamond_-1": [
+      [
+        -0.03700007498264313,
+        0.3783055543899536
+      ],
+      [
+        0.16785027086734772,
+        0.3340279757976532
+      ],
+      [
+        2.8885693550109863,
+        4.897932052612305
+      ]
+    ],
+    "CENTRAL_S_visible_-1": [
+      [
+        0.2479962408542633,
+        1.033208966255188
+      ],
+      [
+        -0.9455726146697998,
+        -0.7104169726371765
+      ],
+      [
+        0.9321313500404358,
+        2.7312979698181152
+      ]
+    ],
+    "CENTRAL_outer_arc_-1": [
+      [
+        0.28642311692237854,
+        3.357722520828247
+      ],
+      [
+        -0.7045637965202332,
+        -0.5525714159011841
+      ],
+      [
+        0.9484220743179321,
+        2.609894275665283
+      ]
+    ],
+    "CENTRAL_visible_vertical_-1_0": [
+      [
+        2.4224441051483154,
+        2.5528922080993652
+      ],
+      [
+        -0.6752024292945862,
+        -0.5859133005142212
+      ],
+      [
+        1.1148635149002075,
+        1.5906963348388672
+      ]
+    ],
+    "CENTRAL_visible_vertical_-1_1": [
+      [
+        2.0917980670928955,
+        2.2218997478485107
+      ],
+      [
+        -0.6866665482521057,
+        -0.597541868686676
+      ],
+      [
+        1.1544880867004395,
+        1.6301863193511963
+      ]
+    ],
+    "CENTRAL_visible_vertical_-1_2": [
+      [
+        1.7613931894302368,
+        1.8911513090133667
+      ],
+      [
+        -0.6975989937782288,
+        -0.6086539030075073
+      ],
+      [
+        1.1940028667449951,
+        1.669574499130249
+      ]
+    ],
+    "CENTRAL_visible_vertical_-1_3": [
+      [
+        1.4312174320220947,
+        1.5606356859207153
+      ],
+      [
+        -0.7079271078109741,
+        -0.6191812753677368
+      ],
+      [
+        1.233394980430603,
+        1.7088491916656494
+      ]
+    ],
+    "CENTRAL_visible_vertical_-1_4": [
+      [
+        1.1012569665908813,
+        1.230339765548706
+      ],
+      [
+        -0.7175493240356445,
+        -0.6290298104286194
+      ],
+      [
+        1.2726531028747559,
+        1.748001217842102
+      ]
+    ],
+    "BODY_spine_1": [
+      [
+        -3.3382294178009033,
+        0.040574170649051666
+      ],
+      [
+        -0.05513683333992958,
+        0.22201937437057495
+      ],
+      [
+        3.763195276260376,
+        14.409501075744629
+      ]
+    ],
+    "BODY_lower_loop_1": [
+      [
+        -0.7748656868934631,
+        0.022399315610527992
+      ],
+      [
+        0.13797889649868011,
+        0.23654170334339142
+      ],
+      [
+        3.5864346027374268,
+        5.051202297210693
+      ]
+    ],
+    "BODY_lower_diamond_1": [
+      [
+        -0.3783055543899536,
+        0.03700007498264313
+      ],
+      [
+        0.16785027086734772,
+        0.3340279757976532
+      ],
+      [
+        2.8885693550109863,
+        4.897932052612305
+      ]
+    ],
+    "CENTRAL_S_visible_1": [
+      [
+        -1.033208966255188,
+        -0.2479962408542633
+      ],
+      [
+        -0.9455726146697998,
+        -0.7104169726371765
+      ],
+      [
+        0.9321313500404358,
+        2.7312979698181152
+      ]
+    ],
+    "CENTRAL_outer_arc_1": [
+      [
+        -3.357722282409668,
+        -0.28642311692237854
+      ],
+      [
+        -0.7045637965202332,
+        -0.5525714159011841
+      ],
+      [
+        0.9484220743179321,
+        2.609894275665283
+      ]
+    ],
+    "CENTRAL_visible_vertical_1_0": [
+      [
+        -2.5528922080993652,
+        -2.4224441051483154
+      ],
+      [
+        -0.6752024292945862,
+        -0.5859133005142212
+      ],
+      [
+        1.1148631572723389,
+        1.5906966924667358
+      ]
+    ],
+    "CENTRAL_visible_vertical_1_1": [
+      [
+        -2.2218997478485107,
+        -2.0917983055114746
+      ],
+      [
+        -0.6866665482521057,
+        -0.597541868686676
+      ],
+      [
+        1.1544877290725708,
+        1.6301865577697754
+      ]
+    ],
+    "CENTRAL_visible_vertical_1_2": [
+      [
+        -1.8911513090133667,
+        -1.7613931894302368
+      ],
+      [
+        -0.6975989937782288,
+        -0.6086539030075073
+      ],
+      [
+        1.1940028667449951,
+        1.669574499130249
+      ]
+    ],
+    "CENTRAL_visible_vertical_1_3": [
+      [
+        -1.5606356859207153,
+        -1.4312174320220947
+      ],
+      [
+        -0.7079271078109741,
+        -0.6191812753677368
+      ],
+      [
+        1.233394980430603,
+        1.7088491916656494
+      ]
+    ],
+    "CENTRAL_visible_vertical_1_4": [
+      [
+        -1.230339765548706,
+        -1.1012569665908813
+      ],
+      [
+        -0.7175493240356445,
+        -0.6290298104286194
+      ],
+      [
+        1.2726531028747559,
+        1.748001217842102
+      ]
+    ],
+    "TOWER_visible_arc_fragment_00": [
+      [
+        -2.1445279121398926,
+        3.0137722492218018
+      ],
+      [
+        2.9000000953674316,
+        2.990000009536743
+      ],
+      [
+        8.932167053222656,
+        11.161661148071289
+      ]
+    ],
+    "TOWER_visible_arc_fragment_01": [
+      [
+        -2.7872424125671387,
+        4.092791557312012
+      ],
+      [
+        2.9000000953674316,
+        2.990000009536743
+      ],
+      [
+        10.447653770446777,
+        13.278975486755371
+      ]
+    ],
+    "TOWER_visible_arc_fragment_02": [
+      [
+        -2.5274295806884766,
+        2.3209893703460693
+      ],
+      [
+        2.9000000953674316,
+        2.990000009536743
+      ],
+      [
+        12.59464168548584,
+        13.81733512878418
+      ]
+    ],
+    "TOWER_visible_arc_fragment_03": [
+      [
+        -2.2651419639587402,
+        -0.9807208180427551
+      ],
+      [
+        2.9000000953674316,
+        2.990000009536743
+      ],
+      [
+        13.284087181091309,
+        15.759309768676758
+      ]
+    ],
+    "TOWER_visible_arc_fragment_04": [
+      [
+        -1.6951208114624023,
+        2.180387020111084
+      ],
+      [
+        2.9000000953674316,
+        2.990000009536743
+      ],
+      [
+        13.532458305358887,
+        15.790135383605957
+      ]
+    ],
+    "TOWER_visible_arc_fragment_05": [
+      [
+        -0.8200919032096863,
+        1.8075978755950928
+      ],
+      [
+        2.9000000953674316,
+        2.990000009536743
+      ],
+      [
+        14.544295310974121,
+        15.653388977050781
+      ]
+    ],
+    "TOWER_visible_vertical_0": [
+      [
+        -1.0839201211929321,
+        -0.2763826251029968
+      ],
+      [
+        3.16440486907959,
+        3.33559513092041
+      ],
+      [
+        6.512938499450684,
+        15.787530899047852
+      ]
+    ],
+    "TOWER_visible_vertical_1": [
+      [
+        0.09334469586610794,
+        0.8487614393234253
+      ],
+      [
+        3.16440486907959,
+        3.33559513092041
+      ],
+      [
+        6.248591899871826,
+        15.782513618469238
+      ]
+    ],
+    "TOWER_visible_vertical_2": [
+      [
+        0.3555578589439392,
+        1.5025254487991333
+      ],
+      [
+        3.16440486907959,
+        3.33559513092041
+      ],
+      [
+        5.955019950866699,
+        13.956480026245117
+      ]
+    ],
+    "STAGE_finite_reflective_oval": [
+      [
+        -11.100000381469727,
+        11.100000381469727
+      ],
+      [
+        -2.9000000953674316,
+        3.0999999046325684
+      ],
+      [
+        0.3700000047683716,
+        0.49000000953674316
+      ]
+    ],
+    "STAGE_finite_front_pale_band": [
+      [
+        -10.600000381469727,
+        10.600000381469727
+      ],
+      [
+        -2.5999999046325684,
+        2.799999952316284
+      ],
+      [
+        0.49000000953674316,
+        0.5049999952316284
+      ]
+    ],
+    "FIXTURE_-1_0_base": [
+      [
+        -7.679999828338623,
+        -7.320000171661377
+      ],
+      [
+        -1.659999966621399,
+        -1.340000033378601
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_-1_0_head": [
+      [
+        -7.610000133514404,
+        -7.389999866485596
+      ],
+      [
+        -1.6100000143051147,
+        -1.3899999856948853
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_-1_1_base": [
+      [
+        -8.680000305175781,
+        -8.319999694824219
+      ],
+      [
+        -1.3600000143051147,
+        -1.040000081062317
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_-1_1_head": [
+      [
+        -8.609999656677246,
+        -8.390000343322754
+      ],
+      [
+        -1.3100000619888306,
+        -1.090000033378601
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_-1_2_base": [
+      [
+        -9.780000686645508,
+        -9.420000076293945
+      ],
+      [
+        -1.2599999904632568,
+        -0.940000057220459
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_-1_2_head": [
+      [
+        -9.710000038146973,
+        -9.49000072479248
+      ],
+      [
+        -1.2100000381469727,
+        -0.9900000095367432
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_-1_3_base": [
+      [
+        -4.279999732971191,
+        -3.919999837875366
+      ],
+      [
+        1.2400000095367432,
+        1.559999942779541
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_-1_3_head": [
+      [
+        -4.210000038146973,
+        -3.990000009536743
+      ],
+      [
+        1.2899999618530273,
+        1.5099999904632568
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_-1_4_base": [
+      [
+        -3.7799999713897705,
+        -3.419999837875366
+      ],
+      [
+        1.6399999856948853,
+        1.959999918937683
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_-1_4_head": [
+      [
+        -3.7099997997283936,
+        -3.490000009536743
+      ],
+      [
+        1.6899999380111694,
+        1.909999966621399
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_1_0_base": [
+      [
+        7.320000171661377,
+        7.679999828338623
+      ],
+      [
+        -1.659999966621399,
+        -1.340000033378601
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_1_0_head": [
+      [
+        7.389999866485596,
+        7.610000133514404
+      ],
+      [
+        -1.6100000143051147,
+        -1.3899999856948853
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_1_1_base": [
+      [
+        8.319999694824219,
+        8.680000305175781
+      ],
+      [
+        -1.3600000143051147,
+        -1.040000081062317
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_1_1_head": [
+      [
+        8.390000343322754,
+        8.609999656677246
+      ],
+      [
+        -1.3100000619888306,
+        -1.090000033378601
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_1_2_base": [
+      [
+        9.420000076293945,
+        9.780000686645508
+      ],
+      [
+        -1.2599999904632568,
+        -0.940000057220459
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_1_2_head": [
+      [
+        9.49000072479248,
+        9.710000038146973
+      ],
+      [
+        -1.2100000381469727,
+        -0.9900000095367432
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_1_3_base": [
+      [
+        3.919999837875366,
+        4.279999732971191
+      ],
+      [
+        1.2400000095367432,
+        1.559999942779541
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_1_3_head": [
+      [
+        3.990000009536743,
+        4.210000038146973
+      ],
+      [
+        1.2899999618530273,
+        1.5099999904632568
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "FIXTURE_1_4_base": [
+      [
+        3.419999837875366,
+        3.7799999713897705
+      ],
+      [
+        1.6399999856948853,
+        1.959999918937683
+      ],
+      [
+        0.4899999797344208,
+        0.6699999570846558
+      ]
+    ],
+    "FIXTURE_1_4_head": [
+      [
+        3.490000009536743,
+        3.7099997997283936
+      ],
+      [
+        1.6899999380111694,
+        1.909999966621399
+      ],
+      [
+        0.6599999666213989,
+        0.9800000190734863
+      ]
+    ],
+    "SIDE_L_finite_scallop_front": [
+      [
+        -15.462824821472168,
+        -7.880505561828613
+      ],
+      [
+        1.2609903812408447,
+        1.8735541105270386
+      ],
+      [
+        -0.2815733253955841,
+        1.767564058303833
+      ]
+    ],
+    "SIDE_L_visible_scallop_rim": [
+      [
+        -15.46264934539795,
+        -7.852606296539307
+      ],
+      [
+        1.1872178316116333,
+        1.7273303270339966
+      ],
+      [
+        -0.2968831956386566,
+        1.7992877960205078
+      ]
+    ],
+    "SIDE_L_visible_branch_0": [
+      [
+        -14.987457275390625,
+        -9.012510299682617
+      ],
+      [
+        1.1425801515579224,
+        1.7193795442581177
+      ],
+      [
+        2.1437971591949463,
+        4.2407450675964355
+      ]
+    ],
+    "SIDE_L_visible_branch_1": [
+      [
+        -15.019037246704102,
+        -8.275744438171387
+      ],
+      [
+        1.2535055875778198,
+        1.777105689048767
+      ],
+      [
+        5.097639560699463,
+        6.2685017585754395
+      ]
+    ],
+    "SIDE_L_visible_branch_2": [
+      [
+        -14.938271522521973,
+        -9.9329833984375
+      ],
+      [
+        1.2002732753753662,
+        1.640098214149475
+      ],
+      [
+        2.210592031478882,
+        2.598304033279419
+      ]
+    ],
+    "SIDE_R_finite_scallop_front": [
+      [
+        7.880505561828613,
+        15.462824821472168
+      ],
+      [
+        1.2609903812408447,
+        1.8735541105270386
+      ],
+      [
+        -0.2815733253955841,
+        1.767564058303833
+      ]
+    ],
+    "SIDE_R_visible_scallop_rim": [
+      [
+        7.852606296539307,
+        15.46264934539795
+      ],
+      [
+        1.1872178316116333,
+        1.7273303270339966
+      ],
+      [
+        -0.2968831956386566,
+        1.7992877960205078
+      ]
+    ],
+    "SIDE_R_visible_branch_0": [
+      [
+        9.012510299682617,
+        14.987457275390625
+      ],
+      [
+        1.1425801515579224,
+        1.7193795442581177
+      ],
+      [
+        2.1437971591949463,
+        4.2407450675964355
+      ]
+    ],
+    "SIDE_R_visible_branch_1": [
+      [
+        8.275744438171387,
+        15.019037246704102
+      ],
+      [
+        1.2535055875778198,
+        1.777105689048767
+      ],
+      [
+        5.097639560699463,
+        6.2685017585754395
+      ]
+    ],
+    "SIDE_R_visible_branch_2": [
+      [
+        9.9329833984375,
+        14.938271522521973
+      ],
+      [
+        1.2002732753753662,
+        1.640098214149475
+      ],
+      [
+        2.210592031478882,
+        2.598304033279419
+      ]
+    ]
+  }
+}

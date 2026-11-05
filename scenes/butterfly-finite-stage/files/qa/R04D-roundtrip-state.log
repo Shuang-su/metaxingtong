@@ -1,0 +1,76 @@
+WARN (bpy.rna): ./source/blender/python/intern/bpy_rna.cc:1367 pyrna_enum_to_py: current value '4' matches no enum in 'CyclesRenderSettings', '', 'denoiser'
+WARN (bpy.rna): ./source/blender/python/intern/bpy_rna.cc:1367 pyrna_enum_to_py: current value '4' matches no enum in 'CyclesRenderSettings', '', 'denoiser'
+[
+  {
+    "group": "camera",
+    "property": "lens_unit",
+    "original": "MILLIMETERS",
+    "roundtrip": "FOV"
+  },
+  {
+    "group": "camera",
+    "property": "session_uid",
+    "original": 292,
+    "roundtrip": 841
+  },
+  {
+    "group": "camera_matrix",
+    "original": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.6292068494294654e-07,
+        -1.0,
+        -36.0
+      ],
+      [
+        0.0,
+        1.0,
+        -1.6292068494294654e-07,
+        7.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "roundtrip": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -3.029462618542311e-07,
+        -0.9999999403953552,
+        -36.0
+      ],
+      [
+        0.0,
+        0.9999999403953552,
+        -3.029462618542311e-07,
+        7.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  }
+]
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/models/R04_material.blend"
+Read blend: "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/qa/independent-R04D/restored/R04D_material_restored.blend"
+
+Blender quit

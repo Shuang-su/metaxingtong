@@ -1,0 +1,24 @@
+from pathlib import Path
+import json,shutil,hashlib
+p=Path(__file__).resolve().parent;d=Path('/workspace/shared/depth-butterfly-cool-20261105');d.mkdir(exist_ok=True)
+for n in ['02','05']:shutil.copytree(p/f'report-image-{n}',d/f'report-image-{n}',dirs_exist_ok=True)
+shutil.copytree(p/'provenance',d/'provenance',dirs_exist_ok=True);shutil.copy2(p.parent/'depth-observatory-20261104/provenance/packages-freeze.txt',d/'provenance/packages-freeze.txt');(d/'sources').mkdir(exist_ok=True)
+for f in ['report-02.png','report-05.png','manifest.json','review.zh.md']:shutil.copy2(p.parent/'eligible-butterfly-source-20261105'/f,d/'sources'/f)
+for f in ['run_depth.py','run_batch.py','package_results.py']:shutil.copy2(p/f,d/f)
+shutil.copy2(p.parent/'depth-observatory-20261104/fetch_model.py',d/'fetch_model.py');(d/'model').mkdir(exist_ok=True)
+for f in ['config.json','preprocessor_config.json','README.md']:shutil.copy2(p/'model'/f,d/'model'/f)
+(d/'analysis.zh.md').write_text('''# 蝴蝶舞台冷光02/05真实相对深度研究：非原生、未验收
+只处理冷光02/05，暖06未纳推理、几何或灯光拟合。两张1192×671报道PNG原字节保留，来源https://www.bilibili.com/opus/961640175446786069，报道2024-08-04、演出2024-08-03。官方BV1CW42197tV与BV11E4m1R716仅证明来源身份关联，不是原生视频帧证明。片内时刻、最高画质、实际解码尺寸及精确同态均未知。
+官方Depth Anything V2 Small HF固定revision5426e4f0f36572d16453bbda7a8389317b1bef99，CPU单线程float32。实际模型raw518×924，版本/配置/权重SHA/耗时/数值范围在report.json。raw float32 NPY、模型网格16bit灰图保留；截图网格仅bicubic align_corners=False派生，非独立原生分辨率深度。白/大值通常近、黑/小值通常远，是相对逆深度类预测，非普通亮度或真实距离；独立归一化不得跨图测距/测厚。
+## 原图与输出实看
+02广图：模型保留巨大蝶翼外轮廓，但翼脉/透明亮片/层叠细边全部压成几块平滑灰面。中央塔螺旋部分有投影线条，却将透空背景与结构连续融合；前方小人物几乎消失，地面变成窄亮带。不能将翼灰面当真实实心壳或按灰差雕刻厚度，不能把塔孔隙填成实体壁。
+05近图：人物保留成近侧轮廓，左右翼变成模糊大片，反射地板/拱栏/内通道严重平滑，底部文字带误有整条浅色深度。镜像不是第二套翼/栏杆，底部文字不是台阶，黑暗通道没有可量测的深度或隐藏几何。近图不能单独确定02人物/翼的距离比例。
+两张失败全部原样保留，不因输出连续或nonfinite为0声明可信。未知遮挡、翼材质透明度、塔厚度/孔洞深度、真实相机和后续同场均未验收；需原生多角、逐物体核对与同机位直接50%叠图。
+## 遮罩与置信度
+人工保守ROI：1人物/遮挡，2地面反射，3发光或透光蝶翼与光晕，4中央开放塔/栏/孔隙及发光支撑，5底部文本水印。并非完整实例分割，0未标注不表示有效，透空区域混有真实结构，不作整片删塔指令。暗部mask仅原RGB各≤25的低信号提示，不是深度算法；confidence-unknown全255表示无校准置信度，不是高可信；nonfinite255仅数值无效，0仅数值有限，不是几何正确。
+''')
+sha=lambda f:hashlib.sha256(f.read_bytes()).hexdigest();files=[{'path':str(f.relative_to(d)),'bytes':f.stat().st_size,'sha256':sha(f)} for f in sorted(d.rglob('*')) if f.is_file() and not (f.parent==d and f.name=='manifest.json')];(d/'manifest.json').write_text(json.dumps(files,indent=2))
+for f in files:assert sha(d/f['path'])==f['sha256']
+for n in ['02','05']:
+ r=json.loads((d/f'report-image-{n}/report.json').read_text());assert sha(d/f'sources/report-{n}.png')==r['source']['sha256'];print(n,r['range'],r['method']['raw_shape'])
+print(d,len(files),sum(f['bytes'] for f in files),'hash readback PASS')
