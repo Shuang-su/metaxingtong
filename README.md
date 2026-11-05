@@ -1,3 +1,7 @@
+# Current branch: wing-sign exploratory addition
+
+Read docs/sign-scope.md first. The inherited base-scene final report below is historical, not acceptance of this addition. Current sign r00 has recorded topology failures and only two low-sample previews.
+
 # Seaside three-arch finite foreground reconstruction candidate
 
 **Not accepted; source gates FAILED.** Model units are arbitrary. The scene is a finite foreground study, not a complete seaside venue. No claim of native frame acquisition, highest-quality playback, independent later-video angle, calibrated camera, metric scale or hidden-space recovery.
