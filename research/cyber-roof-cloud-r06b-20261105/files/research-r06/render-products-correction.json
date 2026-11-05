@@ -1,0 +1,681 @@
+{
+  "basis": "07ddd671517ef17f303c68c9d2513caca3fd7c15",
+  "deprecated_field": {
+    "file": "models/roof-r06b-recovery.json",
+    "key": "render_products",
+    "exact_old_value": "R03 pixels reused: mesh/material/light/source cameras unchanged. Inspection cameras materialized from exact render-cameras.json Euler/location/lens.",
+    "status": "DEPRECATED: inherited R04 wording is false for R06b geometry and new pixels; must not be used"
+  },
+  "corrected_sidecar": "models/roof-r06b-recovery-description-corrected.json",
+  "changes_only": [
+    "render_products",
+    "render_products_addendum (new pointer)"
+  ],
+  "all_other_recovery_parameters_deep_equal": true,
+  "recovery_validation_unchanged": "Independent R06b factory-empty dual GLB recovery remains valid; existing restore script never reads render_products. No model, original JSON, image, light, camera or restore parameter changed.",
+  "actual_new_renders": [
+    {
+      "path": "research-r06/r05-SOURCE10.png",
+      "bytes": 1290684,
+      "sha256": "56fb333c8cf054e277deb26d7ead9470a78e8d799daf3b81eea51ef21f323620",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "input_blend": "models/roof-r05.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R05 baseline rerender",
+      "script": "scripts/check_render_r06.py"
+    },
+    {
+      "path": "research-r06/r05-SOURCE11.png",
+      "bytes": 1529072,
+      "sha256": "6c06de867d7fdf8b564ad63ac435cef059c3592ca683c98c7dc6e160af27a277",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "input_blend": "models/roof-r05.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R05 baseline rerender",
+      "script": "scripts/check_render_r06.py"
+    },
+    {
+      "path": "research-r06/r05-front-close.png",
+      "bytes": 536818,
+      "sha256": "e60d6c654b20ed9a8ebd34dec5b0cb3c2f1b50b8f43a3cfedda40e8501c74a95",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r05.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R05 baseline rerender",
+      "script": "scripts/check_render_r06.py"
+    },
+    {
+      "path": "research-r06/r05-oblique-close.png",
+      "bytes": 642060,
+      "sha256": "96dc2e901919e636f011c9e48e1d8bc26b1c2957b9dd8b192b30b04017266e83",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r05.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R05 baseline rerender",
+      "script": "scripts/check_render_r06.py"
+    },
+    {
+      "path": "research-r06/r06-experiment-SOURCE10.png",
+      "bytes": 1295518,
+      "sha256": "d3d7400bbb668ab75bc74f78c2d74610b29fed3dcba5240b990f509d254c87bf",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "input_blend": "models/roof-r06-experiment.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06 failed experiment render",
+      "script": "scripts/check_render_r06.py"
+    },
+    {
+      "path": "research-r06/r06-experiment-SOURCE11.png",
+      "bytes": 1530686,
+      "sha256": "c7c67e771036cbdec134be920edebe6fbbb60e64ada15792054df1e87d7e2be9",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "input_blend": "models/roof-r06-experiment.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06 failed experiment render",
+      "script": "scripts/check_render_r06.py"
+    },
+    {
+      "path": "research-r06/r06-experiment-front-close.png",
+      "bytes": 542489,
+      "sha256": "2aa405c380006ee085193ceb9e3c519fc735b1464e1ae5198b4cb8a7d04a0a33",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r06-experiment.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06 failed experiment render",
+      "script": "scripts/check_render_r06.py"
+    },
+    {
+      "path": "research-r06/r06-experiment-oblique-close.png",
+      "bytes": 668871,
+      "sha256": "8592928cc41ffa4eb65ff24faa6ae6c5e4b66edba2d04063b632d34e99896445",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r06-experiment.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06 failed experiment render",
+      "script": "scripts/check_render_r06.py"
+    },
+    {
+      "path": "research-r06/r06b-experiment-SOURCE10.png",
+      "bytes": 1295564,
+      "sha256": "6d4f096e00f711f01c3ffb08450fe391b0a3665adffcd848b3304b0e0141855e",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "input_blend": "models/roof-r06b-experiment.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06b candidate render",
+      "script": "scripts/check_render_r06b.py"
+    },
+    {
+      "path": "research-r06/r06b-experiment-SOURCE11.png",
+      "bytes": 1530667,
+      "sha256": "087870959f134dae7f2c9e5785d4c12617728fe9d4150c549d7f8839a6a4416e",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "input_blend": "models/roof-r06b-experiment.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06b candidate render",
+      "script": "scripts/check_render_r06b.py"
+    },
+    {
+      "path": "research-r06/r06b-experiment-front-close.png",
+      "bytes": 542309,
+      "sha256": "a272781e6da275ac3f03f7d1106d0928fadf7cb44ffed8fab7b5441aa81549a8",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r06b-experiment.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06b candidate render",
+      "script": "scripts/check_render_r06b.py"
+    },
+    {
+      "path": "research-r06/r06b-experiment-oblique-close.png",
+      "bytes": 668166,
+      "sha256": "cc34a2189edc7ac767a4f0e2acc45446411dc9f1916ab258a2b76f36e51f137c",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r06b-experiment.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06b candidate render",
+      "script": "scripts/check_render_r06b.py"
+    },
+    {
+      "path": "research-r06/r06b-white-SOURCE10.png",
+      "bytes": 1564651,
+      "sha256": "3279bdf2b12e065a23466919e16da4df2c25881202c4a16abd4684050d1c1d07",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "input_blend": "models/roof-r06b-white.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06b candidate render",
+      "script": "scripts/check_render_r06b.py"
+    },
+    {
+      "path": "research-r06/r06b-white-SOURCE11.png",
+      "bytes": 1665697,
+      "sha256": "1f40e0571d179a1247fddbeb265bd44a7ad80cb5993f0d8d748ab717f24af8de",
+      "dimensions": [
+        1192,
+        671
+      ],
+      "input_blend": "models/roof-r06b-white.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06b candidate render",
+      "script": "scripts/check_render_r06b.py"
+    },
+    {
+      "path": "research-r06/r06b-white-front-close.png",
+      "bytes": 663273,
+      "sha256": "5d71598796da805f62eb6878d22bbf3848cf6b1648789c44557d9d537387e83e",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r06b-white.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06b candidate render",
+      "script": "scripts/check_render_r06b.py"
+    },
+    {
+      "path": "research-r06/r06b-white-oblique-close.png",
+      "bytes": 724385,
+      "sha256": "46cfbf97fde2492900f972467f3d09f536be70b3e25a11dd8d88308b2c79ccf5",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r06b-white.blend",
+      "samples": 8,
+      "denoise": false,
+      "lineage": "actual new render during R06 experiment, not reuse of historical PNG",
+      "role": "R06b candidate render",
+      "script": "scripts/check_render_r06b.py"
+    },
+    {
+      "path": "research-r06/roof-r06b-experiment-front-close64.png",
+      "bytes": 512081,
+      "sha256": "f2f4e56a3ccf366ec66bcb3312ac7462ec925d84093ff01d239b5ae56b2bf897",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r06b-experiment.blend",
+      "samples": 64,
+      "denoise": false,
+      "lineage": "actual new render; same camera/world/lights as preceding 8-sample close",
+      "role": "R06b candidate 64-sample close",
+      "script": "scripts/render_cloud_close64.py"
+    },
+    {
+      "path": "research-r06/roof-r06b-white-front-close64.png",
+      "bytes": 588993,
+      "sha256": "2f40658eb7385639149b76a283864bde48bcceb9224e264d13441a62738426bc",
+      "dimensions": [
+        796,
+        448
+      ],
+      "input_blend": "models/roof-r06b-white.blend",
+      "samples": 64,
+      "denoise": false,
+      "lineage": "actual new render; same camera/world/lights as preceding 8-sample close",
+      "role": "R06b candidate 64-sample close",
+      "script": "scripts/render_cloud_close64.py"
+    }
+  ],
+  "historical_inherited_pngs": [
+    {
+      "path": "renders/check-01-front-oblique-white.png",
+      "bytes": 586052,
+      "sha256": "1e9d739dde56694b617400a5ba5038b13fcf9ad5d336d0f5c3340f4ae24270cc",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-01-front-oblique.png",
+      "bytes": 563797,
+      "sha256": "947214ffcbdfce77fe507c86f764b00c80a38360194eb709175d86570668d3f7",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-02-right-oblique-white.png",
+      "bytes": 614175,
+      "sha256": "5d7c32e53a13a41aadd58d5e1bfeea21e7eb07059f56770203f64ea4a24b3df4",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-02-right-oblique.png",
+      "bytes": 568340,
+      "sha256": "9c2e8997731f8b9f030da1d654c04f15c5d2c6807acc0efee2851bbf9d7dde1d",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-03-left-profile-white.png",
+      "bytes": 532119,
+      "sha256": "1f1c1a76c2617f300f07f9a2a33f21d540c993005b514002fc1b98c2572f24b1",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-03-left-profile.png",
+      "bytes": 478216,
+      "sha256": "b9efa1c8f05fd6ffc405956e3d233692f6e8380876fae134bb05744f1dc04c19",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-04-right-profile-white.png",
+      "bytes": 538380,
+      "sha256": "12a09cd936ce8f2b27e66005b58fd2caa9e3d283203b8f0b9dfee841ede92ead",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-04-right-profile.png",
+      "bytes": 468732,
+      "sha256": "c62a5a42733c516b203e7ba52e41ae29d4763a4a0df8d53ad6b88f9898e5b321",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-05-rear-roof-hypothesis-white.png",
+      "bytes": 732969,
+      "sha256": "8f4adc15041f251f00a4d81d43f3da972037b21e180ac73cad3e8c17eec61088",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-05-rear-roof-hypothesis.png",
+      "bytes": 692543,
+      "sha256": "e4466e2c14010d25ded3fc03988dcbc38ae29585adaa5a68b8684fece07396c4",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-06-top-layout-white.png",
+      "bytes": 754716,
+      "sha256": "e796d4b0a60e047873a56e2b86e5862a720e974fc9421bd99c2a6034079c886c",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-06-top-layout.png",
+      "bytes": 760781,
+      "sha256": "fc3c7b9a3248cca7d398a07336b4a75ae728d5b092f41d5dafd3abc4bd8c6581",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-07-low-thickness-white.png",
+      "bytes": 489421,
+      "sha256": "723ec4e6b03708c823a41f2a8796e6fe9a466217d06c4a67812b7821c2841b91",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-07-low-thickness.png",
+      "bytes": 452970,
+      "sha256": "1bb5ddab8e76cff8954454017ffd053b5799698a1bf30913fb9252dc70b39269",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-08-underside-unknown-support-white.png",
+      "bytes": 418150,
+      "sha256": "97b1c3e458981235a53a25081fa8e81cf58e188e542e42ab4bbd079a3dd84bd2",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-08-underside-unknown-support.png",
+      "bytes": 386435,
+      "sha256": "096b5fae44e702bd65b7e088fc158628093c0257280cbfdb2f8394632b52a3ed",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/check-contact-sheet.png",
+      "bytes": 3040988,
+      "sha256": "bfa4b8017327d73d38ae125f42cb7748ccd6fc20ca8d4ad8134efd81e717dde6",
+      "dimensions": [
+        1592,
+        1912
+      ]
+    },
+    {
+      "path": "renders/diagnostic-white-lit-low-thickness.png",
+      "bytes": 402400,
+      "sha256": "6965346830690786f614d850d149b5de18318124cf29e31a84dd47e8d20aab8d",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/diagnostic-white-lit-under-support.png",
+      "bytes": 287006,
+      "sha256": "63066b3e2e1ce49d712baae0406d7c73b3bb03e6f0e4d25a74311b0c2bf4c7b6",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/diagnostic09-single-light-white.png",
+      "bytes": 287005,
+      "sha256": "a6d18094aadfe80888e3ec65071d9f1f87a398393c5c6360155a3bbc7d15ee1f",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/diagnostic09-single-light.png",
+      "bytes": 377100,
+      "sha256": "31acc0f512bfbaf774e75409030c6a44f169af85cc8465c6809f67dbff6ddf55",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/effective-eight-contact-sheet.png",
+      "bytes": 3152546,
+      "sha256": "28969b558ba6dc32e7d471ff5c777cd44b561439f727a9d15b9fef5730f1edfb",
+      "dimensions": [
+        1592,
+        1912
+      ]
+    },
+    {
+      "path": "renders/effective-eight-white-contact-sheet.png",
+      "bytes": 3372975,
+      "sha256": "473dfd7e64b624e641317074f8dbee5d2f8858312462dbabcaf66e2f4506f159",
+      "dimensions": [
+        1592,
+        1912
+      ]
+    },
+    {
+      "path": "renders/main-candidate-r04.png",
+      "bytes": 563797,
+      "sha256": "947214ffcbdfce77fe507c86f764b00c80a38360194eb709175d86570668d3f7",
+      "dimensions": [
+        796,
+        448
+      ]
+    },
+    {
+      "path": "renders/preview11-r02.png",
+      "bytes": 371976,
+      "sha256": "aec960f8ddaa24d4f5392b83bc0e224507ee5f9eb5cd705e44837b9ed59483e1",
+      "dimensions": [
+        596,
+        335
+      ]
+    },
+    {
+      "path": "renders/preview11.png",
+      "bytes": 342370,
+      "sha256": "72d90fd2e69d631e5679e4f23c4ae80f309370584e028f97946b19b5e8810d7f",
+      "dimensions": [
+        596,
+        335
+      ]
+    },
+    {
+      "path": "renders/roi-10-common-inner.png",
+      "bytes": 1199546,
+      "sha256": "c63efb0ee37cbde2a1fbecaa6593505c95bfaa9ce8007cf2e490c8f1af9a22cc",
+      "dimensions": [
+        1192,
+        843
+      ]
+    },
+    {
+      "path": "renders/roi-10-common-roof.png",
+      "bytes": 610241,
+      "sha256": "c7253b92e5b443c48608f3a6f89c4cd538424d52e7c57fe76d2eff773678276c",
+      "dimensions": [
+        1192,
+        390
+      ]
+    },
+    {
+      "path": "renders/roi-11-cloud-right.png",
+      "bytes": 100231,
+      "sha256": "a0434c9a13e98062307bac3f8eacca3b8ba2b9ba5ebc129ed644248412a3132a",
+      "dimensions": [
+        162,
+        465
+      ]
+    },
+    {
+      "path": "renders/roi-11-inner-stage.png",
+      "bytes": 459879,
+      "sha256": "d91638e1e75dabc6fbbb13975c8ba950a76cc37dd17a56676f847927adc68f93",
+      "dimensions": [
+        648,
+        495
+      ]
+    },
+    {
+      "path": "renders/roi-11-main-roof.png",
+      "bytes": 863068,
+      "sha256": "6edf6b19e3444a6cca4964767a916c98364cd325a3d0add3170120f2367e5fd2",
+      "dimensions": [
+        1030,
+        540
+      ]
+    },
+    {
+      "path": "renders/source10-auxiliary-r03-white.png",
+      "bytes": 1567083,
+      "sha256": "015cac1f2e0f1fccea401b5316636fe20d80d3e8039f212fd949129c52c3bff1",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/source10-auxiliary-r03.png",
+      "bytes": 1290680,
+      "sha256": "2fe999736f7a7d7b23f8c8227e097ca760a8e70687bd786609aaa3e2dbc71418",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/source10-direct50-r03.png",
+      "bytes": 1164883,
+      "sha256": "764d647c07be1e9e3f285fd341ecf58718a138fef2fc46343a2c2de4111f7f02",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/source10-white-direct50-r03.png",
+      "bytes": 1422616,
+      "sha256": "80c6d8aaf87a33de91cb4809bcf486175ac1eca16a133deef4869d280afb73e8",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/source11-direct50-r03.png",
+      "bytes": 1356964,
+      "sha256": "f1b2e6b0f8efc3015b118258bd44739878dd1994f5d26d23a19a270aba8e3214",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/source11-manual-points-annotated.png",
+      "bytes": 1186476,
+      "sha256": "c4188fc569811a13cd98c9a4b3e809d6367752d4c6b6e8e80f12e8e35c2d494d",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/source11-r03.png",
+      "bytes": 1529068,
+      "sha256": "7046077f3ea52c37582133d71e47a4642c6ada0b45592ba98aa7fd81df6ab7ed",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/source11-white-direct50-r03.png",
+      "bytes": 1463632,
+      "sha256": "a3ab65bcebeaee0e4323876cb2bd2353fa49b10cd334f923d1a040ab1322691a",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/source11-white-r03.png",
+      "bytes": 1665973,
+      "sha256": "c94196ad03281afc974360d1bb8a788e39cea30aaec85aa7da29c43244ea7da1",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "renders/white-check-contact-sheet.png",
+      "bytes": 3375234,
+      "sha256": "7c2e883eafe6a5453ee3021a1bd9d1aaf5787f4f0d15e620418337f02094bce4",
+      "dimensions": [
+        1592,
+        1912
+      ]
+    }
+  ],
+  "historical_scope": "Every PNG under renders/ belongs to R05 or earlier. Old CHECK01..08 and DIAG09 are historical, not new R06b checks. Their R05 eight-effective-view QA does not automatically transfer to R06b. Main R04 alias and contact sheets also remain historical.",
+  "new_derived_comparisons": [
+    {
+      "path": "research-r06/source10-r06b-direct50.png",
+      "bytes": 1168188,
+      "sha256": "4288dd439b036ff820948b1ee44f1bfb8668b8f1a64bcd2461b8786a9eb91692",
+      "dimensions": [
+        1192,
+        671
+      ]
+    },
+    {
+      "path": "research-r06/source11-r06b-direct50.png",
+      "bytes": 1357771,
+      "sha256": "cd20c8169d95da1c2f644fb3a8fd374f68c29385608c22ce56e89f4962f0b079",
+      "dimensions": [
+        1192,
+        671
+      ]
+    }
+  ],
+  "source_status": "FAILED; family proxy, same-instance relation unknown, not native video"
+}

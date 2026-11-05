@@ -1,0 +1,13 @@
+# R06b 图像沿革纯文本勘误：Library version 2
+
+原始 HEAD：`f49e5a92f5554e0ee2567e1e8a185db8fd7499e0`；精确基线：`07ddd671517ef17f303c68c9d2513caca3fd7c15`；中间真实提交：`881636283958f08ecd1d26267e408a5224bc48ac`。
+
+仅新增六文本文件，旧296文件原样保留；完整302文件映射、12真实提交树和原对象见同目录 provenance.json。18过程新渲仅10属于当前R06b；41历史PNG不代表R06b八角。旧报告、JSON、模型、图及回执均保留。本版新回执位于 ../../publication-verification/v2/remote_verification.json。
+
+- Text-only render-lineage correction for the independent R06b experiment. No new model, geometry edit, rendering, production promotion or completed scene. Source remains FAILED; cloud instance is unproved and non-native timing unknown.
+- Two genuine commits append exactly six text files totaling205369bytes. All296previous source files including models, original sidecar, scripts, images and earlier QA remain byte-identical. The old erroneous render_products sentence is retained as historical evidence and explicitly deprecated in the new report.
+- The separately saved corrected sidecar changes only render_products and adds render_products_addendum. All other recovery parameters are deeply equal. Existing restore_r06b_glb.py does not read these descriptive fields. This text correction does not execute Blender or claim a new recovery run; previous byte-bound recovery evidence remains historical evidence.
+- The supplied corrected inventory binds18process renders:4R05baseline rerenders,4R06failed renders,8currentR06b8sample images and2currentR06b64sample close images. Only10are current R06b.41inherited renders-directory PNG files include old images, aliases and composites; they are not41independent views nor a new R06b eight-view inspection.
+- Two direct50comparisons remain derived images, not new rendered viewpoints. The61listed PNG files are byte/hash/dimension checked here without generating images. Manual traces, original-source crops and other comparisons are outside these three enumerated groups; the list is not every repository image. Hash verification alone does not establish a rendering event or pre-render model loading hash.
+- The independent metadata-correction QA reviewed the first correction commit881636283958f08ecd1d26267e408a5224bc48ac. Its report metadata hash is checked at that reviewed commit; the final commit appends the current-render count clarification and three QA files. No past QA or original JSON is overwritten.
+- Existing experiment archive/history refs advance normally. New files and version2metadata/receipt are appended; all preexisting archive paths remain unchanged. All other remote refs, especially R05production archive/history and CURRENT, remain unchanged. Spaceversion2is retained. No LFS,force push,credential copying,security changes,Issues/PRs or retry of the previously denied unrelated receipt.
