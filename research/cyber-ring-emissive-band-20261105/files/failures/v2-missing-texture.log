@@ -1,0 +1,10 @@
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/cyber-roof-paired-shell-study-20261105/export/roof-paired-a055.blend"
+Error: Cannot read '/workspace/scratch/fa58bfcf0425/cyber-ring-emissive-band-study-20261105/textures-v2/outer-band-basecolor.png': No such file or directory
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/cyber-ring-emissive-band-study-20261105/scripts/build_band_experiment_v2.py", line 11, in <module>
+    im=bpy.data.images.load(str(P/'textures-v2'/file),check_existing=False);im.colorspace_settings.name='sRGB';im.pack();tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=im;tex.interpolation='Linear';tex.extension='REPEAT';mat.node_tree.links.new(tex.outputs['Color'],b.inputs[socket])
+RuntimeError: Error: Cannot read '/workspace/scratch/fa58bfcf0425/cyber-ring-emissive-band-study-20261105/textures-v2/outer-band-basecolor.png': No such file or directory
+
+
+Blender quit
