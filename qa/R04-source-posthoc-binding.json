@@ -1,0 +1,89 @@
+{
+  "measurement_timing": "POST-HOC after four R04 source images finished. The original source render log did NOT record an input-model hash during execution. This file does not retroactively add one.",
+  "sequence_evidence": [
+    "R04 models and render script were frozen in 2317e3d before the source render invocation.",
+    "Original source images and unmodified execution log were committed with R04D freeze 119d928.",
+    "Current bytes are compared against both earlier Git freezes; no assertion of a cryptographically attested running process is made."
+  ],
+  "original_log_sha256": "c9822cd4e9cde4cc7f86a18d78a4cc9eb68c239bee7e3a6d7665c6513c68b184",
+  "input_and_script_bindings": [
+    {
+      "path": "models/R04_material.blend",
+      "freeze_commit": "2317e3dec04a7204e17a0a20eb381a5fe992af7f",
+      "frozen_sha256": "fbeba54bdf3e8c836b223402e341e80547438f49791362db5022f72b514ff28f",
+      "current_sha256": "fbeba54bdf3e8c836b223402e341e80547438f49791362db5022f72b514ff28f",
+      "current_bytes_equal_pre_render_freeze": true
+    },
+    {
+      "path": "models/R04_white.blend",
+      "freeze_commit": "2317e3dec04a7204e17a0a20eb381a5fe992af7f",
+      "frozen_sha256": "9f5db6837b7838dd2daced835303a631aa427eadb9b434ab211aff4c67062c48",
+      "current_sha256": "9f5db6837b7838dd2daced835303a631aa427eadb9b434ab211aff4c67062c48",
+      "current_bytes_equal_pre_render_freeze": true
+    },
+    {
+      "path": "scripts/render_r04.py",
+      "freeze_commit": "2317e3dec04a7204e17a0a20eb381a5fe992af7f",
+      "frozen_sha256": "a73da9fe4c20ec4c6da71869b2825eef98d877f324fea6a7886a107c921f33c8",
+      "current_sha256": "a73da9fe4c20ec4c6da71869b2825eef98d877f324fea6a7886a107c921f33c8",
+      "current_bytes_equal_pre_render_freeze": true
+    }
+  ],
+  "outputs": [
+    {
+      "path": "renders/R04_source/white_SOURCE02_conditional_front.png",
+      "sha256_measured_now_posthoc": "4f6e9374f5df4e0c5339d5c1c945638ff8af564096ba9c7e9cb92ddde5458533",
+      "matches_first_tracked_output_bytes": true,
+      "original_render_record_unchanged": {
+        "file": "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/renders/R04_source/white_SOURCE02_conditional_front.png",
+        "camera": "SOURCE02_conditional_front",
+        "material_mode": "white",
+        "seconds": 35.81178689002991,
+        "samples": 96,
+        "percentage": 100
+      }
+    },
+    {
+      "path": "renders/R04_source/white_SOURCE05_alternate_tilt_diagnostic.png",
+      "sha256_measured_now_posthoc": "965a59e1fda6adb05e138f51ecb6f9fbe12cff161c0df06d4d2492bf6a267580",
+      "matches_first_tracked_output_bytes": true,
+      "original_render_record_unchanged": {
+        "file": "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/renders/R04_source/white_SOURCE05_alternate_tilt_diagnostic.png",
+        "camera": "SOURCE05_alternate_tilt_diagnostic",
+        "material_mode": "white",
+        "seconds": 54.877610206604004,
+        "samples": 96,
+        "percentage": 100
+      }
+    },
+    {
+      "path": "renders/R04_source/material_SOURCE02_conditional_front.png",
+      "sha256_measured_now_posthoc": "ae7e2185dd20badc9d519e34ae7a16400772605cccb89ff2d58c52639919b801",
+      "matches_first_tracked_output_bytes": true,
+      "original_render_record_unchanged": {
+        "file": "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/renders/R04_source/material_SOURCE02_conditional_front.png",
+        "camera": "SOURCE02_conditional_front",
+        "material_mode": "material",
+        "seconds": 46.623024463653564,
+        "samples": 96,
+        "percentage": 100
+      }
+    },
+    {
+      "path": "renders/R04_source/material_SOURCE05_alternate_tilt_diagnostic.png",
+      "sha256_measured_now_posthoc": "f39121511b60ad1980744034dd41bdb74b3a2dc75e12adb93920bdd2e4b2c597",
+      "matches_first_tracked_output_bytes": true,
+      "original_render_record_unchanged": {
+        "file": "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/renders/R04_source/material_SOURCE05_alternate_tilt_diagnostic.png",
+        "camera": "SOURCE05_alternate_tilt_diagnostic",
+        "material_mode": "material",
+        "seconds": 80.5911819934845,
+        "samples": 96,
+        "percentage": 100
+      }
+    }
+  ],
+  "R04D_reuse_evidence": "qa/independent-R04D/review.zh.md and accompanying exact diff prove geometry/UV/used materials/three source cameras/lights/World and rendering state unchanged. D does not relabel these as re-rendered.",
+  "D_formal_log_timing": "D per-image input_sha256 is read after each image render completes, not before loading. Compare each with pre-run 119d928 immutable model manifest and final frozen bytes.",
+  "source_acceptance": "FAILED for both report02 and report05"
+}

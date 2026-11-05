@@ -1,0 +1,8 @@
+from pathlib import Path
+import json,hashlib,numpy as np
+from PIL import Image
+P=Path('/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105');O=Path(__file__).parent
+rows=json.load(open(P/'renders/R04_direct_comparison/direct50-provenance.json'));out=[]
+for r in rows:
+ files={k:P/r[k]for k in ['source','render','output']};arr={k:np.array(Image.open(f).convert('RGB'))for k,f in files.items()};expected=((arr['source'].astype(np.uint16)+arr['render'].astype(np.uint16))//2).astype(np.uint8);raw=np.array(Image.open(files['render']));mode='white'if '_white_'in r['output']else'material';model=P/f'models/R04_{mode}.blend';out.append({'files':{k:{'path':str(f.relative_to(P)),'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'bytes':f.stat().st_size,'shape':list(arr[k].shape)}for k,f in files.items()},'source_record_hash_match':hashlib.sha256(files['source'].read_bytes()).hexdigest()==r['source_sha256'],'render_record_hash_match':hashlib.sha256(files['render'].read_bytes()).hexdigest()==r['render_sha256'],'floor50_max_absolute_error':int(np.abs(expected.astype(int)-arr['output'].astype(int)).max()),'render_alpha_range':[int(raw[:,:,3].min()),int(raw[:,:,3].max())],'R04_model_sha':hashlib.sha256(model.read_bytes()).hexdigest(),'model_binding':'render_r04.py explicitly fresh-loads R04 mode file; render-log does not itself contain immutable model hash. Current model bound against prior independent R04 QA; D state equivalence separately checked.'})
+(O/'source-integrity.json').write_text(json.dumps(out,indent=2));print([(r['source_record_hash_match'],r['render_record_hash_match'],r['floor50_max_absolute_error'],r['render_alpha_range'])for r in out])
