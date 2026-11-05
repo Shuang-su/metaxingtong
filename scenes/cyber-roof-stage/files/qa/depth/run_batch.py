@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,subprocess
+p=Path(__file__).resolve().parent;s=p.parent/'stargravity-roof-review-20261105';man=json.loads((s/'source-manifest.json').read_text())
+regions={'10':[(3,[(0,82),(1192,82),(1192,413),(0,413)]),(2,[(0,414),(1192,414),(1192,671),(0,671)]),(4,[(960,535),(1155,535),(1155,634),(960,634)]),(1,[(477,74),(678,74),(678,409),(620,616),(541,616)])],'11':[(3,[(0,0),(1192,0),(1192,77),(0,77)]),(3,[(382,210),(815,210),(815,347),(382,347)]),(1,[(70,364),(1123,364),(1123,615),(70,615)]),(1,[(563,316),(623,316),(623,347),(563,347)]),(2,[(70,615),(1123,615),(1123,671),(70,671)]),(4,[(960,538),(1159,538),(1159,629),(960,629)])]}
+labels={1:'Performer or dynamic star audience conservative ROI; NOT fixed furniture; audience mask includes obscured platform',2:'Mirror-like platform/LED reflection caution',3:'Light beams/emissive grid/media/background caution, not calibrated solid city',4:'Chapter text/watermark;2018 not event date'}
+for n,rs in regions.items():
+ m=next(x.copy() for x in man['images'] if x['file']==n+'.webp');m.update(path=str(s/m['file']),output_name=f'report-image-{n}',video_time_seconds=None,decode_size=None,login_quality_verified=False,event_date='2023-05-27',state='10 standing performer versus11 DJ and star audience: DIFFERENT STATES, only common eaves/ring morphology auxiliary',source_context=man['source'],exclusions=[{'class':cls,'description':labels[cls],'points':pts} for cls,pts in rs]);meta=p/'provenance'/f'{n}-metadata.json';meta.write_text(json.dumps(m,ensure_ascii=False,indent=2))
+ with (p/'provenance'/f'{n}-inference.log').open('w') as log:subprocess.run([str(p.parent/'depth-observatory-20261104/venv/bin/python'),str(p/'run_depth.py'),'--metadata',str(meta)],stdout=log,stderr=subprocess.STDOUT,check=True)
+ print(n,'complete',flush=True)
