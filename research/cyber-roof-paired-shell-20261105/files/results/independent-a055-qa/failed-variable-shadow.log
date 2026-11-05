@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/independent-roof-a055-qa-20261105/check.py", line 78, in <module>
+    res['shell_eave_paired_displacement']=float(abs((new[shell]-old[shell])[list(range(65))+list(range(N-65,N))+list(range(N,N+65))+list(range(2*N-65,2*N))]).max())
+                                                     ~~~^^^^^^^
+TypeError: unhashable type: 'numpy.ndarray'
+DONE 0.0 {'old': {'triangle_area_weighted': {'angle_max': 28.468788330390588, 'projection_min': 0.10548920091671522}, 'blender_polygon': {'angle_max': 0.00027490185641884836, 'projection_min': 0.11999962529479163}}, 'new': {'triangle_area_weighted': {'angle_max': 28.95845029276746, 'projection_min': 0.10499649763579307}, 'blender_polygon': {'angle_max': 15.702298727852645, 'projection_min': 0.11552145849902028}}}
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/cyber-roof-stage-20261105/models/roof-r05.blend"
+
+Blender quit
