@@ -1,0 +1,15 @@
+# Public-channel source exclusions and unverified HANN cover; no model
+
+Original HEAD: `e7b86549d07901c41fba2bfddcc1594b0af4bf5f`
+Original history: `refs/heads/history/public-channel-exclusions-original-20261105`
+
+files/ preserves all 9 original files unchanged; provenance.json records bytes, SHA256, blobs, original objects and every real commit tree.
+
+- Independent source-exclusion record only: nine current ordinary files,74,423bytes and two real commits. One1120x630JPEG fan HANN cover plus eight text/JSON records. Zero native frames, new models or model stages; no official2026-05-09material bridge or full repository deduplication is established.
+- Failed root409c7c56c85ee13baa24440f53d0c23615557855 is preserved with six files and an empty identity-read-results.json after a truncated Unicode surrogate caused encoding failure. Final e7b86549d07901c41fba2bfddcc1594b0af4bf5f fills that file using JSON escaping and adds provenance, manifest and packaging-note. It preserves one unpaired surrogate as an escaped code unit in the truncated recorded excerpt. All five non-identity root files, including the original JPEG, remain byte-identical. No history or original content is rewritten.
+- The only archived picture is the fan-upload2026-05-09HANN cover from BV1vVR9B1EtY. Blur, performer occlusion and one close view prevent model-readiness. Fan metadata and the nonofficial YouTube replay excerpt do not prove an official identity bridge, decoded frames, a timestamped frame, a second structural angle or reuse of2023HANNgeometry. The archive worker checks the frozen records and bytes without fresh external source authentication or playback.
+- Frozen2022interview exclusion distinguishes the recorded2022-04-14article date,4/8UE4livestream discussion and a49-secondUE5offline research video. It does not establish a new live escalator scene or make unrelated production examples into scene sources. The14-entryimage index records10single-frameJPEGsuccesses and4timeouts; none of those14images is included here or retried by this archive task.
+- technical-interview-exclusion.zh.md cites original work files images.json and image-context.json, which are absent under those names. The delivered read index is technical-image-read-results.json. Context mapping and the ten previously viewed work images are not claimed present. The reference wording remains unchanged.17structured query records,3additional query strings and1initial query string are retained, without claiming21unique searches or validated scene identities for all search results.
+- Only new independent research archive/history refs are published. Existing umbrella, wing, seaside and every other production/research ref, CURRENT and old path stay unchanged. No modeling/rendering, producer-script execution, credentials copying, LFS, ZIP, force push, history deletion, main/security changes, Issues or PRs. Previously denied source-screening-increment receipt remains paused. Spaceversion0is retained until parent consumption confirmation.
+
+Remote verification is appended at publication-verification/remote_verification.json.
