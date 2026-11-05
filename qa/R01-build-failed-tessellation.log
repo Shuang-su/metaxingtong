@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/scripts/build_r01.py", line 116, in <module>
+    o,pts=shell(f'WING_{side}_{label}_finite_outer_shell',outline,outer,0,.07,mir)
+          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/scripts/build_r01.py", line 75, in shell
+    for t in tris:subdiv(*t,1)
+                  ~~~~~~^^^^^^
+  File "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/scripts/build_r01.py", line 73, in subdiv
+    for t in [(a,ab,ca),(ab,b,bc),(ca,bc,c),(ab,bc,ca)]:subdiv(*t,depth-1)
+                                                        ~~~~~~^^^^^^^^^^^^
+  File "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/scripts/build_r01.py", line 74, in subdiv
+    else:faces.append((ix(a),ix(b),ix(c)))
+                       ~~^^^
+  File "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/scripts/build_r01.py", line 67, in ix
+    key=(round(q[0],6),round(q[1],6))
+               ~^^^
+TypeError: 'int' object is not subscriptable
+Blender 4.3.2
+
+Blender quit

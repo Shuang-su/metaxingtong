@@ -72,7 +72,7 @@ def shell(n,outline,m,offset=0,thick=.075,mirror=False):
    ab=(a+b)*.5;bc=(b+c)*.5;ca=(c+a)*.5
    for t in [(a,ab,ca),(ab,b,bc),(ca,bc,c),(ab,bc,ca)]:subdiv(*t,depth-1)
   else:faces.append((ix(a),ix(b),ix(c)))
- for t in tris:subdiv(*t,1)
+ for t in tris:subdiv(*[vectors[q] if isinstance(q,int) else q for q in t],1)
  vs=[uvpoint(q,offset) for q in verts2];N=len(vs);vs+= [(x,y+thick,z) for x,y,z in vs]
  fs=list(faces)+[tuple(i+N for i in reversed(f)) for f in faces]
  edges={}
