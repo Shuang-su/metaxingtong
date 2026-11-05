@@ -1,0 +1,265 @@
+{
+  "schema": "independent roof image semantics v1",
+  "coordinate_system": "original 1192x671 pixels, top-left origin; subjective bounds, not sigma",
+  "source11": {
+    "points": [
+      {
+        "id": "RIDGE_L_OUTER_CAP",
+        "xy": [
+          328,
+          76
+        ],
+        "subjective_halfwidth_xy": [
+          4,
+          5
+        ],
+        "meaning": "left outer end of horizontal gold top bar; cap extremum, not junction/axis",
+        "use": "conditional silhouette diagnostic"
+      },
+      {
+        "id": "RIDGE_R_OUTER_CAP",
+        "xy": [
+          864,
+          76
+        ],
+        "subjective_halfwidth_xy": [
+          4,
+          5
+        ],
+        "meaning": "right outer end of horizontal gold top bar; cap extremum, not junction/axis",
+        "use": "conditional silhouette diagnostic"
+      },
+      {
+        "id": "RIDGE_L_SLOPE_JUNCTION",
+        "xy": [
+          340,
+          94
+        ],
+        "subjective_halfwidth_xy": [
+          5,
+          6
+        ],
+        "meaning": "gold horizontal-bar underside to left swept side boundary junction; overlapping small teeth",
+        "use": "diagnostic, not same point as outer cap"
+      },
+      {
+        "id": "RIDGE_R_SLOPE_JUNCTION",
+        "xy": [
+          849,
+          94
+        ],
+        "subjective_halfwidth_xy": [
+          6,
+          6
+        ],
+        "meaning": "corresponding right visible junction, locally bloomed",
+        "use": "diagnostic"
+      },
+      {
+        "id": "LEFT_SWEPT_GOLD_TIP",
+        "xy": [
+          84,
+          98
+        ],
+        "subjective_halfwidth_xy": [
+          4,
+          5
+        ],
+        "meaning": "visible left high thin gold tip; membership front eave vs side edge not established",
+        "use": "conditional contour only"
+      },
+      {
+        "id": "RIGHT_SWEPT_GOLD_TIP",
+        "xy": null,
+        "reason": "strong cyan-white bloom merges tip, edge and beam; no reliable endpoint"
+      }
+    ],
+    "segments": [
+      {
+        "id": "RIDGE_TOP_CLEAR_LEFT",
+        "polyline_xy": [
+          [
+            350,
+            76
+          ],
+          [
+            410,
+            77
+          ],
+          [
+            458,
+            77
+          ]
+        ],
+        "subjective_band_px": 4,
+        "use": "visible near-horizontal gold upper edge; center x460..710 bloom excluded"
+      },
+      {
+        "id": "RIDGE_TOP_CLEAR_RIGHT",
+        "polyline_xy": [
+          [
+            719,
+            77
+          ],
+          [
+            780,
+            77
+          ],
+          [
+            837,
+            77
+          ]
+        ],
+        "subjective_band_px": 4,
+        "use": "same semantic edge, not roof surface thickness"
+      },
+      {
+        "id": "LEFT_GOLD_SWEPT_UPPER_EDGE",
+        "polyline_xy": [
+          [
+            84,
+            98
+          ],
+          [
+            113,
+            119
+          ],
+          [
+            151,
+            141
+          ],
+          [
+            190,
+            153
+          ],
+          [
+            218,
+            155
+          ],
+          [
+            253,
+            146
+          ],
+          [
+            285,
+            130
+          ],
+          [
+            315,
+            110
+          ],
+          [
+            339,
+            95
+          ]
+        ],
+        "subjective_band_px": 6,
+        "use": "conditional image boundary, not proven front eave"
+      },
+      {
+        "id": "LOWER_ROOF_ENVELOPE_LEFT",
+        "x_interval": [
+          280,
+          365
+        ],
+        "y_interval": [
+          185,
+          215
+        ],
+        "use": "coarse diagnostic region only; scalloped dark roof/rib tips, not one horizontal golden line"
+      },
+      {
+        "id": "LOWER_ROOF_ENVELOPE_MID",
+        "x_interval": [
+          475,
+          720
+        ],
+        "y_interval": [
+          190,
+          215
+        ],
+        "use": "coarse diagnostic band; bright rib ends and dark backing are different edges; crossing beam excluded"
+      },
+      {
+        "id": "LOWER_ROOF_ENVELOPE_RIGHT",
+        "x_interval": [
+          770,
+          940
+        ],
+        "y_interval": [
+          185,
+          213
+        ],
+        "use": "coarse diagnostic region, no stable single lowest point"
+      }
+    ],
+    "nulls": [
+      "far/back roof silhouette and depth",
+      "continuous entire front gold eave line",
+      "one exact lowest eave point",
+      "right swept endpoint and bright outer-right edge",
+      "center ridge under bloom",
+      "exact rib index correspondence"
+    ]
+  },
+  "source10": {
+    "points": [],
+    "segments": [
+      {
+        "id": "LOWER_ROOF_VISIBLE_LEFT_MID",
+        "x_interval": [
+          260,
+          455
+        ],
+        "y_interval": [
+          80,
+          102
+        ],
+        "use": "dark lower roof/rib-end envelope; coarse diagnostic only"
+      },
+      {
+        "id": "LOWER_ROOF_VISIBLE_RIGHT_MID",
+        "x_interval": [
+          690,
+          875
+        ],
+        "y_interval": [
+          79,
+          101
+        ],
+        "use": "same semantic class but individual ribs not linked to source11"
+      },
+      {
+        "id": "LOWER_ROOF_VISIBLE_RIGHT",
+        "x_interval": [
+          945,
+          1120
+        ],
+        "y_interval": [
+          77,
+          102
+        ],
+        "use": "dark rib/backing boundary, not metallic horizontal trim"
+      }
+    ],
+    "nulls": [
+      "ridge outside image",
+      "both swept high endpoints outside image",
+      "roof upper shape outside image",
+      "actor hair obscures lower band around x535..615",
+      "diagonal beam crossing left x140..215 and middle x500..660",
+      "no full-width finite eave ends"
+    ]
+  },
+  "scope": "No model change, no fit, no verified 3D size/instance/state equality; source10/11 central performance states differ.",
+  "sources": {
+    "10": {
+      "path": "/workspace/scratch/fa58bfcf0425/cyber-roof-stage-20261105/sources/10.webp",
+      "sha256": "d18ffd4955ac1d8d674bc330855bb1e45620ec9530a8c22c03520803b65bd9bb"
+    },
+    "11": {
+      "path": "/workspace/scratch/fa58bfcf0425/cyber-roof-stage-20261105/sources/11.webp",
+      "sha256": "f9c2efd3526be2d43c34ec755b21b2f8fd258722b18c710884637dbc215a8c94"
+    }
+  }
+}
