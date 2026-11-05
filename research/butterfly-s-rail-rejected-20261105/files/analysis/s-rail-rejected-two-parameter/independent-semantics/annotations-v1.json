@@ -1,0 +1,155 @@
+{
+  "status": "NEW_INDEPENDENT_2D_SEMANTIC_PROPOSAL_NOT_CALIBRATION",
+  "coordinate_system": "Original decoded report PNG pixel centers, x right/y down;1192x671; subjective absolute pixel uncertainty, NOT statistical sigma. No previous annotation modified.",
+  "source05": {
+    "path": "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/sources/report-05.png",
+    "sha256": "0b79379720bf4fdce63f8d1b100062bcc1564b2adde757360156b17274d8becd",
+    "points": [
+      {
+        "id": "S05_L_cap",
+        "xy": [
+          551,
+          122
+        ],
+        "subjective_error_px": 4,
+        "semantic": "uppermost visible rounded cap boundary, NOT inferred 3D tube-axis endpoint",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S05_R_cap",
+        "xy": [
+          638,
+          122
+        ],
+        "subjective_error_px": 4,
+        "semantic": "uppermost visible rounded cap boundary, NOT inferred 3D tube-axis endpoint",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S05_L_y150",
+        "xy": [
+          555,
+          150
+        ],
+        "subjective_error_px": 4,
+        "semantic": "visible thick white strip center; bright-edge interval about x546..564",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S05_R_y150",
+        "xy": [
+          636,
+          150
+        ],
+        "subjective_error_px": 4,
+        "semantic": "visible thick white strip center; bright-edge interval about x626..645",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S05_L_y225",
+        "xy": [
+          509,
+          225
+        ],
+        "subjective_error_px": 4,
+        "semantic": "visible thick white strip center; interval about x501..517",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S05_R_y225",
+        "xy": [
+          682,
+          225
+        ],
+        "subjective_error_px": 4,
+        "semantic": "visible thick white strip center; interval about x674..690",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S05_L_y275",
+        "xy": [
+          498,
+          275
+        ],
+        "subjective_error_px": 5,
+        "semantic": "visible thick white strip center; interval about x491..505; nearing crossing/occlusion",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S05_R_y275",
+        "xy": [
+          693,
+          275
+        ],
+        "subjective_error_px": 5,
+        "semantic": "visible thick white strip center; interval about x686..699; nearing crossing/occlusion",
+        "use": "conditional diagnostic only"
+      }
+    ]
+  },
+  "source02": {
+    "path": "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/sources/report-02.png",
+    "sha256": "73bca58acf90104c5a3cf09d05b7cf6e4599c49df0a385af606d09db4debc51d",
+    "points": [
+      {
+        "id": "S02_L_y550",
+        "xy": [
+          559.5,
+          550
+        ],
+        "subjective_error_px": 3,
+        "semantic": "small visible thick white S segment; interval about557..562",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S02_R_y550",
+        "xy": [
+          629,
+          550
+        ],
+        "subjective_error_px": 3,
+        "semantic": "small visible thick white S segment; interval about626..632",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S02_L_y560",
+        "xy": [
+          556.5,
+          560
+        ],
+        "subjective_error_px": 3,
+        "semantic": "same correlated curve segment; interval about554..559",
+        "use": "conditional diagnostic only"
+      },
+      {
+        "id": "S02_R_y560",
+        "xy": [
+          632,
+          560
+        ],
+        "subjective_error_px": 3,
+        "semantic": "same correlated curve segment; interval about630..634",
+        "use": "conditional diagnostic only"
+      }
+    ]
+  },
+  "nulls": {
+    "source05": [
+      "S left/right lower terminal: no independently unambiguous end; thick rail/performer occlusion and lower returns overlap",
+      "S-to-transverse-rail joint/depth: no 3D connectivity conclusion from overlap",
+      "transverse rail central summit: actor occludes; do not label from body silhouette",
+      "far side or reflection under stage: excluded"
+    ],
+    "source02": [
+      "both top cap locations behind/adjacent to actor arms/hair at insufficient small resolution",
+      "both lower terminal positions amid rail/lights/performer",
+      "exact same-state identity of source02 and05 not established"
+    ]
+  },
+  "constraints": [
+    "Centers are appearance-strip proxies, not exact physical edge/axis correspondence. Cap points use different boundary semantics and must not be mixed as centerline endpoints.",
+    "Rows on same curve are correlated, not independent observations.",
+    "Bilateral image appearance supports approximate pairing only, not measured exact 3D symmetry.",
+    "No inferred 3D size, depth, fold angle, camera adjustment or model edit."
+  ]
+}
