@@ -1,0 +1,372 @@
+{
+  "source": {
+    "url": "https://i0.hdslb.com/bfs/article/a9860ed4ffa228cbaa5ce5fd1ca4376978f0c067.png@1192w.webp",
+    "file": "04.webp",
+    "page": "https://www.bilibili.com/opus/800724230600654921",
+    "sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613",
+    "size": [
+      1192,
+      671
+    ],
+    "local_original": "stargravity-report-source-20261104/04.webp",
+    "observed": "略偏侧近全身，蓝墙窗列、右椅桌明显；不是强侧宽。",
+    "native": false,
+    "video_time_seconds": null,
+    "verified_sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613",
+    "sha_matches": true,
+    "path": "/workspace/scratch/fa58bfcf0425/stargravity-report-source-20261104/04.webp",
+    "output_name": "report-image-04",
+    "decode_size": null,
+    "login_quality_verified": false,
+    "event_date": "2023-05-27",
+    "state": "03/04 only;06/07 different performance version excluded; no strong side baseline",
+    "exclusions": [
+      {
+        "class": 3,
+        "description": "Sky/emissive background/particles; incomplete caution ROI may overlap real arch",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1192,
+            0
+          ],
+          [
+            1192,
+            126
+          ],
+          [
+            1015,
+            126
+          ],
+          [
+            1015,
+            339
+          ],
+          [
+            750,
+            339
+          ],
+          [
+            750,
+            227
+          ],
+          [
+            128,
+            227
+          ],
+          [
+            128,
+            341
+          ],
+          [
+            0,
+            341
+          ]
+        ]
+      },
+      {
+        "class": 2,
+        "description": "Reflective floor/ring glare, not extra reflected geometry",
+        "points": [
+          [
+            0,
+            525
+          ],
+          [
+            1192,
+            525
+          ],
+          [
+            1192,
+            671
+          ],
+          [
+            0,
+            671
+          ]
+        ]
+      },
+      {
+        "class": 4,
+        "description": "Text/brand/chapter watermark, not inferred structural depth",
+        "points": [
+          [
+            278,
+            148
+          ],
+          [
+            638,
+            148
+          ],
+          [
+            638,
+            253
+          ],
+          [
+            278,
+            253
+          ]
+        ]
+      },
+      {
+        "class": 4,
+        "description": "Text/brand/chapter watermark, not inferred structural depth",
+        "points": [
+          [
+            972,
+            539
+          ],
+          [
+            1153,
+            539
+          ],
+          [
+            1153,
+            628
+          ],
+          [
+            972,
+            628
+          ]
+        ]
+      },
+      {
+        "class": 3,
+        "description": "Sky/emissive background/particles; incomplete caution ROI may overlap real arch",
+        "points": [
+          [
+            455,
+            173
+          ],
+          [
+            556,
+            173
+          ],
+          [
+            556,
+            358
+          ],
+          [
+            655,
+            416
+          ],
+          [
+            653,
+            468
+          ],
+          [
+            492,
+            450
+          ],
+          [
+            454,
+            358
+          ]
+        ]
+      },
+      {
+        "class": 1,
+        "description": "Performer/dancers, occluded geometry unknown; not foot-ground calibration",
+        "points": [
+          [
+            550,
+            235
+          ],
+          [
+            647,
+            235
+          ],
+          [
+            684,
+            605
+          ],
+          [
+            520,
+            605
+          ],
+          [
+            518,
+            452
+          ],
+          [
+            550,
+            353
+          ]
+        ]
+      }
+    ],
+    "dimensions": [
+      1192,
+      671
+    ],
+    "bytes": 63274,
+    "crop": [
+      0,
+      0,
+      1192,
+      671
+    ]
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "artifacts": [
+      {
+        "path": "README.md",
+        "bytes": 4400,
+        "sha256": "319566441daaac0c5ed83e75a8fd19bae0863f3275e23f147c06fe0906edf6fb",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/README.md"
+      },
+      {
+        "path": "config.json",
+        "bytes": 950,
+        "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 99173660,
+        "sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/model.safetensors"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "bytes": 775,
+        "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/preprocessor_config.json"
+      }
+    ],
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0",
+      "safetensors": "0.8.0"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 1,
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "forward_seconds": 3.645775556564331
+  },
+  "range": {
+    "min": 0.0,
+    "max": 6.914886951446533,
+    "nonfinite_count": 0
+  },
+  "definition": "Relative inverse-depth-like prediction; larger/white generally nearer, smaller/black farther; NOT image luminance, metric distance or geometry acceptance. Per-image normalization not cross-view scale.",
+  "resampling": "Bicubic align_corners=False from model grid to screenshot grid, NOT independent full-resolution depth; no source interpolation claimed.",
+  "masks": {
+    "manual": "Conservative incomplete ROIs, later drawn overwrite;0 unlabelled NOT certified valid.",
+    "confidence_unknown": "255 everywhere means NO calibrated confidence, NOT high confidence.",
+    "nonfinite": "255 numerical nonfinite;0 only finite, not valid geometry.",
+    "dark": "All original RGB<=25 heuristic caution, NOT depth algorithm.",
+    "occlusion": "Hidden geometry unknown; do not fill as fact."
+  },
+  "limitations": [
+    "Article screenshot is NOT logged-in highest-quality decoded native video frame",
+    "Video timestamp/decoder/native dimensions unverified",
+    "Stylized CGI, compositing, reflection, transparency, light, shadows and characters may break predictions",
+    "No camera, distance, dimensions, contact, hidden surfaces, subsequent replay or geometry acceptance established"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-screenshot-grid.png",
+      "bytes": 2266,
+      "sha256": "837322956fc87c927a090a3ec95f39c3353747c004785960c8cd8680eccea48d"
+    },
+    {
+      "path": "dark-low-signal-caution-screenshot-grid.png",
+      "bytes": 3587,
+      "sha256": "9fdc1cb3326d1987aa49079209f315c20434d9974c14849d24154dee2200119b"
+    },
+    {
+      "path": "manual-exclusion-classes-screenshot-grid.png",
+      "bytes": 2780,
+      "sha256": "fe1bd6059014280c19f3373c3a0bcd7e71a73775371453afc664af0f6e272856"
+    },
+    {
+      "path": "nonfinite-invalid-model-grid.png",
+      "bytes": 544,
+      "sha256": "caec195e3fd01149b370763e45bfb21517d04ad2f2b52777a7c9286ce3add40c"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 382053,
+      "sha256": "1d39fba9293b81271e4298e49f2062f4f6c18098e45de20a2b0fc7d0e94f6fe4"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-screenshot-grid.png",
+      "bytes": 82348,
+      "sha256": "0fb3c465d2eee0740592f2de695d3424c0571bd0796f27dea95e8eab37c4fc2f"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "3c9cac086b065f90d3a040fd1531bb1e6aff70ce5f571b196ee8a2fd8d3490cd"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-screenshot-grid.npy",
+      "bytes": 3199456,
+      "sha256": "cd34f850a1b8ec768a3f4817792b2d80bf45933a6ab1886b4413fc1debfd8e96"
+    }
+  ]
+}
