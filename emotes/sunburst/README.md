@@ -2,17 +2,16 @@
 
 参考素材和前两轮产物见 [Issue #102](https://github.com/Shuang-su/metaxingtong/issues/102)。本批使用 OpenAI Images Playground 的 `gpt-image-2.6-sunburst`，输出目标为 512×512 原生循环 GIF。
 
-| 顺序 | 角色与动作 | 当前进度 |
-|---|---|---|
-| 1 | 星瞳 · 好欸拍手 | 网页已返回 512×512 GIF，待取回原件、逐帧解码与动作验收 |
-| 2 | 星瞳 · 呆眼点头 | 等待首张验收 |
-| 3 | 明前奶绿 · 探头笑 | 等待首张验收 |
-| 4 | 明前奶绿 · 鼓脸晃头 | 等待首张验收 |
+当前正式方向为「动作参考 B 站，脸按六宫格」，见[逐样本复核](../../docs/changes/20261105-sunburst-emotes/references.md)。
 
-## 好欸拍手
+## 拍手初稿的原件与验收
+
+[查看第一版拍手 GIF](drafts/xingtong-clap-v1.gif)。Pillow 完整解码，FFprobe 交叉核对：512×512，9 帧均不同，逐帧为 200 ms，一轮 1.80 秒，loop=0；598599 字节。SHA-256 为 `b89ab55a0ebcda5c6878b7c6e5d9e5b146d4da33effcccb5027363526fdc296e`。第 5、6 帧双掌相碰，第 7～9 帧分开，第 9 帧和第 1 帧的张手位置相近。角色识别未获用户认可，实际差异与修正方向见复核记录。
+
+### 第一版实际提示词
 
 2026-11-05，在 Playground 的 Default project 单次提交，模型为 `gpt-image-2.6-sunburst`，Frame size 为 512×512，Output format 为 GIF，Number of images 为 1。以下为实际提交的全文。
 
 > 画一枚中国虚拟偶像星瞳（XingTong）的原创二创动态聊天表情。正面半身，脸大手小，银白齐颈短发、弯月形呆毛、清澈蓝眼、脸颊小爱心、紫色上衣有醒目的荧光绿拼色。柔灰色清晰轮廓、少量大块高光、平涂腮红，像手绘的B站动态表情。四周留白，纯白背景，固定机位、固定比例，无字幕、无文字无水印。动作「好欸拍手」：先双手明显分开，身体微蹲一拍；笑弯眼，弹起时双掌在胸前相向拍合，要清楚看见接触；张手落回起始姿势，短发和呆毛随后回弹。双手始终可见，拍合与分开轮廓对比鲜明。短促、开心、首尾自然连续，无限循环的单幅GIF。
 
-结果卡上可见银白短发、脸颊爱心、紫绿服装和双手张开的姿势。[网页结果截图](../../docs/changes/20261105-sunburst-emotes/playground-first-result.jpg)只记录一个时刻。取得原始 GIF 后补记实测帧数、逐帧时长、循环标记、文件哈希，以及双掌接触和循环接缝的检查结果。
+[首张结果卡截图](../../docs/changes/20261105-sunburst-emotes/playground-first-result.jpg)。

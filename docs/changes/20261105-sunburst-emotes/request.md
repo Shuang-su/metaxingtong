@@ -43,3 +43,11 @@ PLEASE IMPLEMENT THIS PLAN:
 - 当前工作目录为空。执行时从私有仓库 `main` 做部分克隆和稀疏检出，在 `codex/sunburst-emotes` 分支工作，避免下载已有的大体积场景归档。[目标仓库](https://github.com/Shuang-su/metaxingtong)
 - 四张成品放入独立的 `emotes/sunburst/` 目录，附中文动作名、实际提示词、模型和验收结果。按项目约定保存请求、计划与完成记录，创建本地 checkpoint commit。
 - 最终交付四张可直接打开的 GIF、逐张核验结果、commit SHA 和工作树状态。本轮 Git 操作止于本地提交。
+
+## 首张原件与造型修订
+
+用户提供首张下载原件「OpenAI Playground 2026-11-05 at 12.13.59.gif」。
+
+> 我觉得有点不像，你再参考一下chat对话里的表情包，除了动态的静态的也看看
+
+> 动作参考 B 站，脸按六宫格
