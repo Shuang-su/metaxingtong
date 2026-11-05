@@ -1,3 +1,4 @@
-# 原屋盖厚度配对只读研究
-入口 docs/assessment.zh.md；实际全2145对结果 results/pairs.json；可复跑 scripts/check_pairs.py。
-只核R05真实原壳与作者默认Solidify，不生成缩脊/新壳/渲染。精确保留原配对向量的方法可定义，实际候选与来源验收未执行。
+# 配对同移屋盖a=.55独立实验
+当前入口 docs/final-status.zh.md。材白可编辑BLEND/GLB及必要恢复文件在export/；只有两候选材图+两基线材图，4个direct50与2三联，不含白图或8角套件。
+
+源验收FAILED：11屋脊跨度条件改善，竖向/檐/台错位、原云穿插等保留；10脊出画不能验证。R05/R06b生产不替换。早期只读报告保留当时状态，最终保存态/导出/恢复已由独立QA核实，见results/independent-saved-qa。
