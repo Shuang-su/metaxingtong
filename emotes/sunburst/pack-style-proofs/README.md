@@ -21,3 +21,5 @@
 第十个申请为额外的「大肥鱼 × 星瞳」试稿，Playground 的安全系统拒绝该请求。该组保留已有参考与提示词，没有本次输出。
 
 [完整提示词](prompts.md) · [文件哈希与来源](manifest.json) · [星瞳七包全部条目](../../../docs/changes/20261105-sunburst-emotes/xingtong-packs/README.md)。
+
+用户交回的九张 Playground 下载原件保存在 [playground-originals](playground-originals/)。经全分辨率对照，下载版与上表 Copy 导出版的 alpha 和预乘 RGBA 像素完全一致，两种导出的文件字节不同。[下载原件哈希](../playground-downloads.json)
