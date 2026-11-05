@@ -1,0 +1,334 @@
+{
+  "source": {
+    "file": "report-02.png",
+    "source_url": "https://i0.hdslb.com/bfs/new_dyn/c902bb217afa2345befb36deeffbd948695870138.png@1192w",
+    "article_url": "https://www.bilibili.com/opus/961640175446786069",
+    "report_date": "2024-08-04",
+    "event_date": "2024-08-03",
+    "kind": "report screenshot, NOT decoded native video",
+    "video_time": null,
+    "size": [
+      1192,
+      671
+    ],
+    "sha256": "73bca58acf90104c5a3cf09d05b7cf6e4599c49df0a385af606d09db4debc51d",
+    "bytes": 1224478,
+    "path": "/workspace/scratch/fa58bfcf0425/eligible-butterfly-source-20261105/report-02.png",
+    "output_name": "report-image-02",
+    "video_time_seconds": null,
+    "decode_size": null,
+    "login_quality_verified": false,
+    "official_identity_only": {
+      "clip": "BV1CW42197tV",
+      "replay": "BV11E4m1R716",
+      "event": "2024-08-03",
+      "not_native_proof": true
+    },
+    "state": "Cool02/05 only; warm06 excluded; exact common geometry state unverified",
+    "exclusions": [
+      {
+        "class": 3,
+        "description": "Emissive/translucent butterfly wings and bloom; bright pixels not metric surfaces",
+        "points": [
+          [
+            8,
+            20
+          ],
+          [
+            412,
+            24
+          ],
+          [
+            533,
+            271
+          ],
+          [
+            547,
+            612
+          ],
+          [
+            179,
+            595
+          ],
+          [
+            100,
+            280
+          ]
+        ]
+      },
+      {
+        "class": 3,
+        "description": "Emissive/translucent butterfly wings and bloom; bright pixels not metric surfaces",
+        "points": [
+          [
+            1185,
+            20
+          ],
+          [
+            779,
+            24
+          ],
+          [
+            653,
+            270
+          ],
+          [
+            646,
+            612
+          ],
+          [
+            1007,
+            595
+          ],
+          [
+            1090,
+            280
+          ]
+        ]
+      },
+      {
+        "class": 2,
+        "description": "Reflective floor, no mirrored shape used as geometry",
+        "points": [
+          [
+            0,
+            615
+          ],
+          [
+            1192,
+            615
+          ],
+          [
+            1192,
+            671
+          ],
+          [
+            0,
+            671
+          ]
+        ]
+      },
+      {
+        "class": 4,
+        "description": "Open tower/rails/gaps and glowing support silhouettes, background-through-gaps unknown",
+        "points": [
+          [
+            455,
+            0
+          ],
+          [
+            736,
+            0
+          ],
+          [
+            736,
+            395
+          ],
+          [
+            646,
+            490
+          ],
+          [
+            546,
+            490
+          ],
+          [
+            455,
+            395
+          ]
+        ]
+      },
+      {
+        "class": 1,
+        "description": "Performer/occlusion, conservative ROI",
+        "points": [
+          [
+            551,
+            481
+          ],
+          [
+            648,
+            481
+          ],
+          [
+            648,
+            625
+          ],
+          [
+            551,
+            625
+          ]
+        ]
+      }
+    ],
+    "dimensions": [
+      1192,
+      671
+    ],
+    "crop": [
+      0,
+      0,
+      1192,
+      671
+    ]
+  },
+  "method": {
+    "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "artifacts": [
+      {
+        "path": "README.md",
+        "bytes": 4400,
+        "sha256": "319566441daaac0c5ed83e75a8fd19bae0863f3275e23f147c06fe0906edf6fb",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/README.md"
+      },
+      {
+        "path": "config.json",
+        "bytes": 950,
+        "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/config.json"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 99173660,
+        "sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/model.safetensors"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "bytes": 775,
+        "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+        "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/preprocessor_config.json"
+      }
+    ],
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.22.1",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0",
+      "safetensors": "0.8.0"
+    },
+    "input_tensor_shape": [
+      1,
+      3,
+      518,
+      924
+    ],
+    "raw_shape": [
+      518,
+      924
+    ],
+    "processor_config": {
+      "_valid_processor_keys": [
+        "images",
+        "do_resize",
+        "size",
+        "keep_aspect_ratio",
+        "ensure_multiple_of",
+        "resample",
+        "do_rescale",
+        "rescale_factor",
+        "do_normalize",
+        "image_mean",
+        "image_std",
+        "do_pad",
+        "size_divisor",
+        "return_tensors",
+        "data_format",
+        "input_data_format"
+      ],
+      "do_normalize": true,
+      "do_pad": false,
+      "do_rescale": true,
+      "do_resize": true,
+      "ensure_multiple_of": 14,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_processor_type": "DPTImageProcessor",
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "keep_aspect_ratio": true,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 518,
+        "width": 518
+      },
+      "size_divisor": null
+    },
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 1,
+    "trust_remote_code": false,
+    "local_files_only": true,
+    "forward_seconds": 3.874213457107544
+  },
+  "range": {
+    "min": 0.0,
+    "max": 6.686691761016846,
+    "nonfinite_count": 0
+  },
+  "definition": "Relative inverse-depth-like prediction; larger/white generally nearer, smaller/black farther; NOT image luminance, metric distance or geometry acceptance. Per-image normalization not cross-view scale.",
+  "resampling": "Bicubic align_corners=False from model grid to screenshot grid, NOT independent full-resolution depth; no source interpolation claimed.",
+  "masks": {
+    "manual": "Conservative incomplete ROIs, later drawn overwrite;0 unlabelled NOT certified valid.",
+    "confidence_unknown": "255 everywhere means NO calibrated confidence, NOT high confidence.",
+    "nonfinite": "255 numerical nonfinite;0 only finite, not valid geometry.",
+    "dark": "All original RGB<=25 heuristic caution, NOT depth algorithm.",
+    "occlusion": "Hidden geometry unknown; do not fill as fact."
+  },
+  "limitations": [
+    "Article screenshot is NOT logged-in highest-quality decoded native video frame",
+    "Video timestamp/decoder/native dimensions unverified",
+    "Stylized CGI, compositing, reflection, transparency, light, shadows and characters may break predictions",
+    "No camera, distance, dimensions, contact, hidden surfaces, subsequent replay or geometry acceptance established"
+  ],
+  "outputs": [
+    {
+      "path": "confidence-unknown-screenshot-grid.png",
+      "bytes": 2266,
+      "sha256": "837322956fc87c927a090a3ec95f39c3353747c004785960c8cd8680eccea48d"
+    },
+    {
+      "path": "dark-low-signal-caution-screenshot-grid.png",
+      "bytes": 3451,
+      "sha256": "133017033427fd8ac9ff1e67635ebc46e55c0d8034068da9182369dd1b7032c1"
+    },
+    {
+      "path": "manual-exclusion-classes-screenshot-grid.png",
+      "bytes": 4525,
+      "sha256": "80a5a1e94e0793a96c5480d0164785cee2f687cf2b6a8915792e323630f95387"
+    },
+    {
+      "path": "nonfinite-invalid-model-grid.png",
+      "bytes": 544,
+      "sha256": "caec195e3fd01149b370763e45bfb21517d04ad2f2b52777a7c9286ce3add40c"
+    },
+    {
+      "path": "relative-inverse-depth-gray16-model-grid.png",
+      "bytes": 474756,
+      "sha256": "8ac1c5953027e6bfc6378734c9c7d6cb10a48923025f43bd224d30dba8fe609c"
+    },
+    {
+      "path": "relative-inverse-depth-gray8-resampled-screenshot-grid.png",
+      "bytes": 101617,
+      "sha256": "7c40dc526b6b2d5010148ec4fef725dea8dab2b4ed2db228b47c15bc039bd934"
+    },
+    {
+      "path": "relative-inverse-depth-model-grid.npy",
+      "bytes": 1914656,
+      "sha256": "c460b2e3a6aeef63cd2908c035690712cfabe2fc7da274f8b9f97c1c64681315"
+    },
+    {
+      "path": "relative-inverse-depth-resampled-screenshot-grid.npy",
+      "bytes": 3199456,
+      "sha256": "7ccc1b57be877881bb1929efc5377d18e829c697612726353934fb8064d2915a"
+    }
+  ]
+}

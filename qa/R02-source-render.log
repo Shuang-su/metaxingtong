@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/scripts/render_r02.py", line 7, in <module>
+    bpy.ops.wm.open_mainfile(filepath=str(P/f'models/R02_{tag}.blend'))
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/share/blender/scripts/modules/bpy/ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+RuntimeError: Error: Cannot read file "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/models/R02_white.blend": No such file or directory
+
+Error: Cannot read file "/workspace/scratch/fa58bfcf0425/butterfly-finite-stage-20261105/models/R02_white.blend": No such file or directory
+Blender 4.3.2
+
+Blender quit
