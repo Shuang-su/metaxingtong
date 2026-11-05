@@ -25,3 +25,7 @@
 ## 按原表情包脸型分组的新系列
 
 前述「脸按六宫格」是已经生成的六宫格系列。另立[原表情包附图校样](pack-style-proofs/README.md)，包含 9 张可直接打开的本地 PNG。每组有自己的上传附件、提示词和来源。[七包 136 项索引](../../docs/changes/20261105-sunburst-emotes/xingtong-packs/README.md)收录逐包缩略图和 20 个动态原址。[绿瞳双人参考](../../docs/changes/20261105-sunburst-emotes/green-duo.md)留待双人线使用。
+
+## 与 1024px 静态原画直接对照
+
+[四张原图驱动的 1024px GIF 与一张 768px 原生直出 GIF](reference-1024-gifs/README.md)用于比较线条、渐变、发丝和动作。每张原图与动作关键帧分别保存；可打开 GIF 原文件查看完整循环。

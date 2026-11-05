@@ -1,0 +1,67 @@
+[
+  {
+    "status": 400,
+    "code": "invalid_value",
+    "message": "No supported sheet fits 9 GIF frames at size '1024x1024'. Invalid size '3072x3072'. Requested resolution exceeds the current pixel budget.",
+    "request_id": "req_32d288d174c549c68880d061af768e7a",
+    "parameters": {
+      "model": "gpt-image-2.6-sunburst",
+      "prompt": "一枚手绘精细Q版的星瞳正在开心拍手。画风与高精度静态贴纸一样，深紫细粗变化的手绘轮廓，银灰短发分成饱满的大侧分刘海，银白大片反射分成两三阶，发丝和深蓝布料保留轻细纸纹，不要简化成纯平涂。画面右鬓有两根灰白小发卡交叉，头顶一条弯呆毛。宽短圆脸，笑眼的深紫睫线上有三颗细小白点，双颊蜜桃色腮红薄铺，张口暖粉。穿白色水手领、深蓝宽袖、蝴蝶结、淡蓝细褶裙。让贴在脸颊旁的两只手在下巴下方拍合，再回弹分开，保持细节稳定。正面固定半身，四边留白，不带文字，短小无缝循环GIF。",
+      "size": "1024x1024",
+      "output_format": "gif",
+      "quality": "high",
+      "n": 1,
+      "frame_count": 9,
+      "frame_duration_ms": 160
+    }
+  },
+  {
+    "status": 400,
+    "code": "invalid_value",
+    "message": "No supported sheet fits 4 GIF frames at size '1024x1024'. Invalid size '4096x2048'. The longest edge must be less than or equal to 3840. Invalid size '2048x4096'. The longest edge must be less than or equal to 3840.",
+    "request_id": "req_11d9b81c057048a184662d67bf9fdac8",
+    "parameters": {
+      "model": "gpt-image-2.6-sunburst",
+      "prompt": "一枚手绘精细Q版的星瞳正在开心拍手。画风与高精度静态贴纸一样，深紫细粗变化的手绘轮廓，银灰短发分成饱满的大侧分刘海，银白大片反射分成两三阶，发丝和深蓝布料保留轻细纸纹，不要简化成纯平涂。画面右鬓有两根灰白小发卡交叉，头顶一条弯呆毛。宽短圆脸，笑眼的深紫睫线上有三颗细小白点，双颊蜜桃色腮红薄铺，张口暖粉。穿白色水手领、深蓝宽袖、蝴蝶结、淡蓝细褶裙。让贴在脸颊旁的两只手在下巴下方拍合，再回弹分开，保持细节稳定。正面固定半身，四边留白，不带文字，短小无缝循环GIF。",
+      "size": "1024x1024",
+      "output_format": "gif",
+      "quality": "high",
+      "n": 1,
+      "frame_count": 4,
+      "frame_duration_ms": 200
+    }
+  },
+  {
+    "status": 200,
+    "request_id": "req_1db17648f0644b71ace5da4bf2f6f9cb",
+    "parameters": {
+      "model": "gpt-image-2.6-sunburst",
+      "prompt": "一枚手绘精细Q版的星瞳正在开心拍手。画风与高精度静态贴纸一样，深紫细粗变化的手绘轮廓，银灰短发分成饱满的大侧分刘海，银白大片反射分成两三阶，发丝和深蓝布料保留轻细纸纹，不要简化成纯平涂。画面右鬓有两根灰白小发卡交叉，头顶一条弯呆毛。宽短圆脸，笑眼的深紫睫线上有三颗细小白点，双颊蜜桃色腮红薄铺，张口暖粉。穿白色水手领、深蓝宽袖、蝴蝶结、淡蓝细褶裙。让贴在脸颊旁的两只手在下巴下方拍合，再回弹分开，保持细节稳定。正面固定半身，四边留白，不带文字，短小无缝循环GIF。",
+      "size": "768x768",
+      "output_format": "gif",
+      "quality": "high",
+      "n": 1,
+      "frame_count": 9,
+      "frame_duration_ms": 160
+    },
+    "returned_size": [
+      768,
+      768
+    ],
+    "frames": 9,
+    "different_frames": 9,
+    "frame_durations_ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "loop": 0,
+    "sha256": "853abefd343a8ee4a99551677b6b47aaf04c575a66ca49ee63823785843eb0ef"
+  }
+]
