@@ -1,0 +1,14 @@
+import bpy,json,hashlib,numpy as np
+from pathlib import Path
+P=Path(__file__).resolve().parent;R=P.parent;src=R/'cyber-roof-stage-20261105/models/roof-r05.blend';sha=hashlib.sha256(src.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(src));o=bpy.data.objects['ROOF_MAIN closed shell'];v=np.array([list(o.matrix_world@x.co)for x in o.data.vertices]);n=2145
+assert len(v)==4290
+fs=[tuple(p.vertices)for p in o.data.polygons];outer=[x for x in fs if max(x)<n];inner=[x for x in fs if min(x)>=n];rim=[x for x in fs if min(x)<n<=max(x)]
+def canon(f):return min(tuple(f[k:])+tuple(f[:k])for k in range(len(f)))
+reverse={canon(tuple(reversed(tuple(i-n for i in f))))for f in inner}
+d=v[n:]-v[:n];l=np.linalg.norm(d,axis=1);formula=[]
+for k in range(n):
+ u=2*(k%65)/64-1;t=2*(k//65)/32-1;formula.append((11.4*u*(.74+.26*abs(t)),5.5+3*t,6+2.5*(1-abs(t))**2+.8*abs(u)**7*t*t))
+m=bpy.data.meshes.new('independent_original_reference_only');m.from_pydata(formula,[],outer);m.update();obj=bpy.data.objects.new('independent_original_reference_only',m);bpy.context.collection.objects.link(obj);mod=obj.modifiers.new('baseline','SOLIDIFY');mod.thickness=.12;bpy.context.view_layer.update();e=obj.evaluated_get(bpy.context.evaluated_depsgraph_get());em=e.to_mesh();ev=np.array([list(x.co)for x in em.vertices]);ef=[tuple(p.vertices)for p in em.polygons]
+rows=json.load(open(R/'cyber-roof-paired-shell-study-20261105/results/pairs.json'))['rows'];reported=np.array([x['paired_vector']for x in rows])
+out={'input_sha256':sha,'object_world_matrix':list(map(list,o.matrix_world)),'counts':[len(outer),len(inner),len(rim)],'paired_reverse_face_count':sum(canon(f)in reverse for f in outer),'rim_two_pair_count':sum(len(f)==4 and len(set(i%n for i in f))==2 for f in rim),'cross_edges':[(int(x.vertices[0]),int(x.vertices[1]))for x in o.data.edges if min(x.vertices)<n<=max(x.vertices)],'paired_vector_report_max_error':float(abs(d-reported).max()),'length_minmax':list(map(float,[l.min(),l.max()])),'max_xy_offset':float(np.linalg.norm(d[:,:2],axis=1).max()),'reference_formula_max_error':float(np.linalg.norm(v[:n]-np.array(formula),axis=1).max()),'regenerated_vertex_max_error':float(np.linalg.norm(ev-v,axis=1).max()),'regenerated_oriented_face_cycles_equal':sorted(map(canon,ef))==sorted(map(canon,fs)),'regenerated_face_order_equal':ef==fs,'solidify_settings':{k:getattr(mod,k)for k in ['thickness','offset','use_even_offset','use_quality_normals','use_rim','solidify_mode']},'input_unchanged':sha==hashlib.sha256(src.read_bytes()).hexdigest(),'scope':'Only a=.74 baseline actual mesh and temporary reference Solidify; no parameter candidate or render/saved model'}
+out['cross_edges_exact_pairs']=all(abs(a-b)==n for a,b in out['cross_edges']);(P/'check.json').write_text(json.dumps(out,indent=2));print({k:v for k,v in out.items()if k!='cross_edges'})
