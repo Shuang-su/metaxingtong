@@ -10,3 +10,10 @@
 
 ## 复算
 模型输入为独立原伞bundle，不重复打包未变四模型。qa/immutable-input.json给精确HEAD/五文件SHA。执行 MODEL_PATH=/绝对路径/models/material.blend /usr/bin/blender -b -t 1 --python scripts/trial_chair_curve.py；只写qa结果，不保存模型。原读查JSON和所有执行失败/迭代日志保留。
+
+## 独立反例复核与收口
+qa/independent/review.zh.md记录独立numpy3225点重算，两外条各背杆130→596、B杆54→90、前杆30→40完全复现。进一步以木杆实际12三角float64 solid-angle winding确认所有OBB内点确在实体内。采样含参数体边界，不是交体积或连续最大穿透估计；局部OBB深度不是全局精确最近距离。仅此单值拒绝，不推论所有弯布不可能。
+
+额外按父任务合并qa/video-playback-failure三个原文本（hash核同）：公开视频页面菜单显示1080p，但实际video0×0/readyState0，未解码场景，非本场几何源。其原manifest提到的失败viewport明确未纳包，避免无关推荐图混入源。
+
+本轮仅诊断，无新四模型/GLB/渲染，旧伞final仍是当前原件。下次若有新的明确来源/构造约束再独立研究，当前不扩搜索自由度。
