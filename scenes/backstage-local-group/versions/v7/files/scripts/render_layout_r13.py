@@ -1,0 +1,9 @@
+import bpy,pathlib,json,hashlib
+from mathutils import Matrix
+P=pathlib.Path(__file__).resolve().parents[1];O=P/'renders/R13';O.mkdir(exist_ok=True);records=[];bpy.ops.wm.open_mainfile(filepath=str(P/'models/R13_material.blend'));q=bpy.data.objects['DIAG_relocated_bottle8_mount'];M=q.matrix_world.copy();lens=q.data.lens;clip=q.data.clip_start
+jobs=[('R13',m,'TABLE_high') for m in ['material','white']]+[(v,m,'DIAG_relocated_bottle8_mount') for v in ['R12','R13'] for m in ['material','white']]
+for version,mode,cam in jobs:
+ model=P/'models'/f'{version}_{mode}.blend';bpy.ops.wm.open_mainfile(filepath=str(model));s=bpy.context.scene;c=bpy.data.objects.get(cam)
+ if c is None:
+  d=bpy.data.cameras.new(cam);d.lens=lens;d.clip_start=clip;c=bpy.data.objects.new(cam,d);bpy.context.collection.objects.link(c);c.matrix_world=M
+ s.camera=c;s.render.engine='CYCLES';s.cycles.samples=64;s.cycles.use_denoising=False;s.render.resolution_x=1192;s.render.resolution_y=671;s.render.resolution_percentage=100;s.render.threads_mode='FIXED';s.render.threads=2;f=O/f'{version}_{mode}_{cam}.png';assert not f.exists();s.render.filepath=str(f);bpy.ops.render.render(write_still=True);records.append({'path':str(f.relative_to(P)),'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'model':str(model.relative_to(P)),'model_sha256':hashlib.sha256(model.read_bytes()).hexdigest(),'camera':cam,'camera_matrix':[list(r) for r in c.matrix_world],'lens':c.data.lens,'clip_start':c.data.clip_start,'resolution':[1192,671],'samples':64,'denoise':False,'threads':2,'scope':'two synthetic current directions: table layout and one bottle8 base macro. R12 macro camera added only in memory, no old file overwrite; no source registration.'});(P/'qa/R13-render-records.json').write_text(json.dumps(records,indent=2))

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/fa58bfcf0425/independent-backstage-tabletop-qa-20261104/check_r10_coplanar.py", line 2, in <module>
+    P=pathlib.Path('/workspace/scratch/fa58bfcf0425');Q=P/'independent-backstage-tabletop-qa-20261104';bpy.ops.wm.open_mainfile(filepath=str(P/'backstage-local-study-20261105/models/R10_material.blend'));names=[n for n in bpy.data.objects if n.startswith('DEVICE_front_')];B={}
+                                                                                                                                                                                                                                                  ^^^^^^^^^^^^
+AttributeError: 'Object' object has no attribute 'startswith'
+Blender 4.3.2
+Read blend: "/workspace/scratch/fa58bfcf0425/backstage-local-study-20261105/models/R10_material.blend"
+
+Blender quit

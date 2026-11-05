@@ -17,3 +17,6 @@ models/R04_material.blend、R04_white.blend及GLB为真实可编辑研究文件�
 ## 最新阶段与保留失败
 
 R01为210mesh初试；R02修八边伞/有限帘/镜框重叠；R03修伞骨接触并留服装交叠和衣架断链反证；R04统一缩窄衣物+衣架代理并新增5推断环连接。R04六图仅三个诊断角×材白。全部四阶段原件及22张历史预检、真实深度、独立技术QA与metadata错误更正均保留，不当完整新场或来源通过。当前范围/限制见docs/R04-status.zh.md。
+
+
+Latest independent stage: R14, limited 32-pearl uniform Z tabletop contact only. Source matching FAILED and 4 old internal pearl intersections retained. See CURRENT.json, docs/R14-status.zh.md and qa/R14-independent-final/review.zh.md plus image-addendum.zh.md. Four comparison images contain two R13 baseline and two R14 images, one local diagnostic angle, not source-matched views.

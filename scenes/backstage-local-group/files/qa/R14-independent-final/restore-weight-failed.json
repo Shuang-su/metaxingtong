@@ -1,0 +1,11 @@
+{
+  "script_sha": "069642888ac7391c4e979ebf5a6d32624a8e690b6ef0e4a690be2f12e9e6dced",
+  "material": {
+    "error": "'bpy_prop_collection[key]: key \"Weight\" not found'",
+    "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/fa58bfcf0425/independent-backstage-pearl-r14-qa-20261105/restore.py\", line 11, in <module>\n    g=runpy.run_path(str(R/'scripts/restore_r14_glb.py'));g['restore'](mode);new=snap();out[mode]={'old':old,'new':new};bpy.ops.wm.save_as_mainfile(filepath=str(O/f'restored-{mode}.blend'))\n                                                          ~~~~~~~~~~~~^^^^^^\n  File \"/workspace/scratch/fa58bfcf0425/backstage-pearl-r14-20261105/scripts/restore_r14_glb.py\", line 20, in restore\n    for key,value in x['inputs'].items():n.inputs[key].default_value=value\n                                         ~~~~~~~~^^^^^\nKeyError: 'bpy_prop_collection[key]: key \"Weight\" not found'\n"
+  },
+  "white": {
+    "error": "'bpy_prop_collection[key]: key \"Weight\" not found'",
+    "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/fa58bfcf0425/independent-backstage-pearl-r14-qa-20261105/restore.py\", line 11, in <module>\n    g=runpy.run_path(str(R/'scripts/restore_r14_glb.py'));g['restore'](mode);new=snap();out[mode]={'old':old,'new':new};bpy.ops.wm.save_as_mainfile(filepath=str(O/f'restored-{mode}.blend'))\n                                                          ~~~~~~~~~~~~^^^^^^\n  File \"/workspace/scratch/fa58bfcf0425/backstage-pearl-r14-20261105/scripts/restore_r14_glb.py\", line 20, in restore\n    for key,value in x['inputs'].items():n.inputs[key].default_value=value\n                                         ~~~~~~~~^^^^^\nKeyError: 'bpy_prop_collection[key]: key \"Weight\" not found'\n"
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "output": "renders/R08-comparisons/material_bottle_mount_same_pixel_before_after.png",
+    "sha256": "303fcfd1207ac7a11cbdeea74c9b76bdc5b2edce2120aa3eef539d3a90d2de8b",
+    "sources": [
+      {
+        "path": "renders/R08/R07_material_DIAG_bottle_mount.png",
+        "sha256": "c3cfa9d9c0cfcf7864f83c0479bebd214772d5520cc0489fd8cd086629d6a335"
+      },
+      {
+        "path": "renders/R08/R08_material_DIAG_bottle_mount.png",
+        "sha256": "18725c676181a17cecd4be34ec2de4197b88dcf72b680765faf674a972d55f6d"
+      }
+    ],
+    "crop_box": [
+      180,
+      390,
+      1030,
+      520
+    ],
+    "order": [
+      "top R07 baseline",
+      "bottom R08 candidate"
+    ],
+    "method": "same original pixels, no rescaling or retouch; not source registration"
+  },
+  {
+    "output": "renders/R08-comparisons/white_bottle_mount_same_pixel_before_after.png",
+    "sha256": "c50e85bbb743be378f297f2590245fb4245bfc99180d137d70c902e677979c3d",
+    "sources": [
+      {
+        "path": "renders/R08/R07_white_DIAG_bottle_mount.png",
+        "sha256": "ec17a7555053df7c74bdd6fc8afc7ef438138039e6b33eaec6b88072ca04c236"
+      },
+      {
+        "path": "renders/R08/R08_white_DIAG_bottle_mount.png",
+        "sha256": "5e09b1ce0e7a602ee83f5c3779d89d3a7fe8352b756a547ebc4072019062fec1"
+      }
+    ],
+    "crop_box": [
+      180,
+      390,
+      1030,
+      520
+    ],
+    "order": [
+      "top R07 baseline",
+      "bottom R08 candidate"
+    ],
+    "method": "same original pixels, no rescaling or retouch; not source registration"
+  }
+]
