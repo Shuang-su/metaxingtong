@@ -5,7 +5,7 @@ mode=args[0] if args else 'preview'
 log=[]
 for tag in ['white','material']:
  bpy.ops.wm.open_mainfile(filepath=str(P/f'models/R01_{tag}.blend'))
- s=bpy.context.scene;s.render.threads_mode='FIXED';s.render.threads=4;s.cycles.samples=12 if mode=='preview' else 48
+ s=bpy.context.scene;s.cycles.use_denoising=False;s.render.threads_mode='FIXED';s.render.threads=4;s.cycles.samples=12 if mode=='preview' else 48
  s.render.resolution_percentage=50 if mode=='preview' else 100
  cams=['SOURCE02_conditional_front','SOURCE05_conditional_close'] if mode in ['preview','source'] else sorted(o.name for o in bpy.data.objects if o.type=='CAMERA' and o.name.startswith('CHECK'))
  out=P/'renders'/('R01_'+mode);out.mkdir(parents=True,exist_ok=True)
