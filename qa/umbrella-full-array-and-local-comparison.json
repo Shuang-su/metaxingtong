@@ -1,0 +1,96 @@
+[
+  {
+    "source": "source/03.webp",
+    "render": "renders/umbrella-material-SOURCE03-32s.png",
+    "overlay": "renders/umbrella-material-SOURCE03-direct50.png",
+    "formula": "floor((sourceRGB+renderRGB)/2), uint16 addition, no crop/warp/resample/mask",
+    "dimensions": [
+      1192,
+      671
+    ],
+    "values_checked": 2399496,
+    "mismatches": 0,
+    "source_sha256": "f10adbe9e519e9868608a93cda9c858360b18d45078e4eac6dc35433ccdda80e",
+    "render_sha256": "5416d0cc3e672daf591e3b0ac43d4799f3019c8612d4109f35a985d577cc2526",
+    "overlay_sha256": "a738712a012fc36b7136f005c0cc0bae410e76f7747b886f76edb2426ef7c4d9"
+  },
+  {
+    "source": "source/04.webp",
+    "render": "renders/umbrella-material-SOURCE04-32s.png",
+    "overlay": "renders/umbrella-material-SOURCE04-direct50.png",
+    "formula": "floor((sourceRGB+renderRGB)/2), uint16 addition, no crop/warp/resample/mask",
+    "dimensions": [
+      1192,
+      671
+    ],
+    "values_checked": 2399496,
+    "mismatches": 0,
+    "source_sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613",
+    "render_sha256": "1e49817f8307b0c66e42fd8aa77db3aec0c40cba5799fdbdb569560948e65ecf",
+    "overlay_sha256": "1a4b5b138384c3b09db1524883e05f15af6e175bc87b0024e7a4b653ab8ed0ed"
+  },
+  {
+    "source": "source/03.webp",
+    "render": "renders/umbrella-white-SOURCE03-32s.png",
+    "overlay": "renders/umbrella-white-SOURCE03-direct50.png",
+    "formula": "floor((sourceRGB+renderRGB)/2), uint16 addition, no crop/warp/resample/mask",
+    "dimensions": [
+      1192,
+      671
+    ],
+    "values_checked": 2399496,
+    "mismatches": 0,
+    "source_sha256": "f10adbe9e519e9868608a93cda9c858360b18d45078e4eac6dc35433ccdda80e",
+    "render_sha256": "97a437df01f5cc964377f5b61f6e991e972baf9d99da82b39b54bd82ba958d09",
+    "overlay_sha256": "4b7a6045b91ddf92d38bca030f6e35ac1958a26d6292d7dba261b07ec9dc108f"
+  },
+  {
+    "source": "source/04.webp",
+    "render": "renders/umbrella-white-SOURCE04-32s.png",
+    "overlay": "renders/umbrella-white-SOURCE04-direct50.png",
+    "formula": "floor((sourceRGB+renderRGB)/2), uint16 addition, no crop/warp/resample/mask",
+    "dimensions": [
+      1192,
+      671
+    ],
+    "values_checked": 2399496,
+    "mismatches": 0,
+    "source_sha256": "d63695fd5b4ba9bbc5ab77e20e2cb4a3bd1d705540171d28b479a6875c305613",
+    "render_sha256": "e2ea6a5053bd899115f00e059926cc7a82342d0d32fff0d7ab82d250d71930b2",
+    "overlay_sha256": "885c9395e41608417dd5124f4962ac9eea785b0f3d92c54dff3c7b270ddafd01"
+  },
+  {
+    "diagnostic": "renders/umbrella-SOURCE03-native-size-before-after.png",
+    "source_crop_xyxy": [
+      960,
+      245,
+      1192,
+      440
+    ],
+    "per_panel_size": [
+      232,
+      195
+    ],
+    "resampling": false,
+    "before": "wing final fd127 original actual32s image with straight umbrella, not a new render",
+    "after": "current umbrella candidate32s actual image",
+    "warning": "Native-size means original screenshot-pixel crop, not native video decoding"
+  },
+  {
+    "diagnostic": "renders/umbrella-SOURCE04-native-size-before-after.png",
+    "source_crop_xyxy": [
+      990,
+      105,
+      1192,
+      330
+    ],
+    "per_panel_size": [
+      202,
+      225
+    ],
+    "resampling": false,
+    "before": "wing final fd127 original actual32s image with straight umbrella, not a new render",
+    "after": "current umbrella candidate32s actual image",
+    "warning": "Native-size means original screenshot-pixel crop, not native video decoding"
+  }
+]
