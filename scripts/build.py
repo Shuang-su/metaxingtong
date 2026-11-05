@@ -46,16 +46,14 @@ def curved(n,width,y,z,h,thick,m,curve=.035,N=48):
 # Finite stage, no invented enclosing building.
 cyl('P01 finite front round podium',(0,-1.8,.02),5.5,.24,dark,128);cyl('P02 podium edge',(0,-1.8,-.09),5.56,.10,rail,128)
 box('P03 finite rear apron',(0,1.3,-.15),(15,7,.3),water)
-for i,r in enumerate([5.5,3.85,2.45]):
+for i,r in enumerate([5.5,3.85,2.85]):
  arc('A%02d vertical arch solid'%i,r,.45,4.1+i*.22,.42,.38,navy)
  for j,dr in enumerate([-.15,.13]):arc('A%02d inset %d'%(i,j),r+dr,.027,3.87+i*.22,.035,.38,gold)
 # Curved facade with actual round apertures through upper shell.
 upper=curved('W01 upper curved shell',7.7,3.55,2.15,1.55,.3,blue)
 for i,x in enumerate([-1.85,0,1.85]):
  yy=3.55+.035*x*x
- cut=cyl('TEMP aperture',(x,yy,2.2),.23,1.4,white);cut.rotation_euler[0]=pi/2
- mod=upper.modifiers.new('true circular opening','BOOLEAN');mod.operation='DIFFERENCE';mod.object=cut;bpy.context.view_layer.objects.active=upper;bpy.ops.object.modifier_apply(modifier=mod.name);bpy.data.objects.remove(cut,do_unlink=True)
- disc=cyl('W02 round diffuser %d'%i,(x,yy+.13,2.2),.225,.07,lamp);disc.rotation_euler[0]=pi/2
+ disc=cyl('W02 round diffuser %d'%i,(x,yy-.19,2.2),.225,.07,lamp);disc.rotation_euler[0]=pi/2
 curved('W03 upper coping',7.95,3.55,2.97,.15,.49,cyan)
 curved('W04 lower facade',13.7,2.95,.68,1.3,.4,blue,curve=.013)
 curved('W05 lower coping',14,2.95,1.38,.17,.62,cyan,curve=.013)
@@ -90,7 +88,7 @@ def chair(idx,x,y,ang):
   d=Vector(b)-Vector(a);o=box('C%s stripe %02d'%(idx,k),(Vector(a)+Vector(b))/2,(.081,.025,d.length),cloth if k%2 else clothwhite);o.rotation_euler=d.to_track_quat('Z','Y').to_euler()
  for o in set(bpy.data.objects)-before:
   q=o.location.copy();o.location=(x+q.x*cos(ang)-q.y*sin(ang),y+q.x*sin(ang)+q.y*cos(ang),q.z+.08);o.rotation_euler.z+=ang
-chair('01',4.3,.1,-.18);chair('02',7.1,-.2,-.35)
+chair('01',4.3,.1,.65);chair('02',7.1,-.2,.65)
 # Folding table
 box('T01 tabletop',(5.8,-.25,.85),(1.3,.85,.10),wood)
 for xx in [5.35,6.25]:
@@ -116,6 +114,14 @@ for n,loc,power,color,size,target in [('front soft',(0,-6,9),2100,(.65,.72,1),8,
 # Fix face orientation on every mesh after construction.
 for o in [o for o in s.objects if o.type=='MESH']:
  bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_all(action='SELECT');bpy.ops.mesh.normals_make_consistent(inside=False);bpy.ops.object.mode_set(mode='OBJECT');o.select_set(False)
+# r01 composition adjustment, fixed geometry across views
+for o in s.objects:
+ if o.name.startswith('K'):
+  if 'post' in o.name:o.dimensions.z+=.8;o.location.z+=.4;bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);o.select_set(False)
+  elif any(q in o.name for q in ['roof','fascia']):o.location.z+=.8
+ if o.name.startswith('U02') or o.name.startswith('U03'):o.location.z+=.6
+ if o.name.startswith('U01'):o.dimensions.z+=.6;o.location.z+=.3;bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);o.select_set(False)
+for o,target in [(cams[0],(0,2,3.15)),(cams[1],(.9,2.5,2.85))]:o.rotation_euler=(Vector(target)-o.location).to_track_quat('-Z','Y').to_euler()
 s.camera=cams[0]
 state={'resolution':[1192,671],'sensor_fit':'HORIZONTAL','world':{'color':[.11,.055,.16,1],'strength':.65},'lights':[],'cameras':[],'unit':'arbitrary model unit, not metres','status':'FAILED source gates; conditional finite candidate'}
 for o in s.objects:
