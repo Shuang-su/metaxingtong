@@ -21,3 +21,7 @@
 依次生成星瞳「好欸拍手」「呆眼点头」和明前奶绿「探头笑」「鼓脸晃头」。各结果卡的模型为 `gpt-image-2.6-sunburst`，类型为 GIF，画幅为 512×512。[四条提示词](prompts.md) · [六宫格与四张修正版静帧对照](../../docs/changes/20261105-sunburst-emotes/reference-comparison.jpg) · [对照稿提示词](drafts/prompts.md)。
 
 上排六宫格用于造型核对，下排每张仅展示一个采样时刻。完整动作与逐帧参数以下载的原件为准。
+
+## 按原表情包脸型分组的新系列
+
+前述「脸按六宫格」是已经生成的六宫格系列。另立[原表情包附图校样](pack-style-proofs/README.md)，包含 9 张可直接打开的本地 PNG。每组有自己的上传附件、提示词和来源。[七包 136 项索引](../../docs/changes/20261105-sunburst-emotes/xingtong-packs/README.md)收录逐包缩略图和 20 个动态原址。[绿瞳双人参考](../../docs/changes/20261105-sunburst-emotes/green-duo.md)留待双人线使用。
