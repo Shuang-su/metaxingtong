@@ -40,3 +40,11 @@
 原包刘海中间色的样点 RGB 为 (200, 197, 204)，新版 GIF 对应样点为 (199, 198, 203)。袖子样点从原包的 (218, 219, 253) 对应到成片的 (219, 221, 254)。各值是同材质小窗口的中位数。角色轮廓和表情为本次重画。
 
 本地素材 checkpoint 为 `599a913bc40bc7788dcd3cf0408a634bc280c5ce`。已在 Issue #102 更新修订情况并从 GitHub API 回读核对正文。[Issue 评论](https://github.com/Shuang-su/metaxingtong/issues/102#issuecomment-6717682439)
+
+## 恢复初版精细造型
+
+从历史提交恢复了初版精细 PNG 和两个尺寸的 GIF，给上次的重画版另存了静态和动态文件。四份历史 GIF 均已逐字节核对。当前默认内容恢复了初版的细发丝、眼形、瞳孔高光及脸颊排线。通过原始像素校验确认，取自初版刘海和面部的两块区域在校色前没有差异。Sunburst 附图编辑用于重建被拳头挡住的下颌、发尾及放低的双手。两次新调用的 CLI 未输出请求 ID 或用量，实际提示词和 PNG 原件已入库。[三个版本与工作原件](../../../emotes/sunburst/agent-emotes/15-xingtong-pout/README.md)
+
+母版、分享版和双人版均为 54 个不同画面，4.56 秒，双手、袖口及下方整带对首帧的变化像素为 0。112 像素实播匹配 1,750 张截图，包含连续三圈。修复前刘海取样为 (205, 193, 209)，修复后的同一处为 (197, 194, 201)，参考《老实》为 (198, 195, 202)。分享包第 15 项已更新，其余 14 项均与上一提交的哈希一致。[色块与手区实测](../../../emotes/sunburst/agent-emotes/15-xingtong-pout/fixed-hands-check.json)
+
+素材本地 checkpoint 为 `e9dcff2d819479d5ace67dbb7679cfe580611607`，Issue 更新已通过 API 回读核对。[Issue #102 修订记录](https://github.com/Shuang-su/metaxingtong/issues/102#issuecomment-6718246995)
