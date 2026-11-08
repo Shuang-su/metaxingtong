@@ -1,0 +1,229 @@
+{
+  "cropped_evidence": [
+    {
+      "path": "qa/r11/crops/N4037_far_lamp_identity_tentative_source.png",
+      "input": "sources/native/BV1CY411k7Co_00-40-37_native.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        1790,
+        635,
+        1920,
+        795
+      ],
+      "crop_pixels": [
+        130,
+        160
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/N4037_far_lamp_identity_tentative_r10.png",
+      "input": "qa/r10/source_N4037.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        1160,
+        395,
+        1380,
+        620
+      ],
+      "crop_pixels": [
+        220,
+        225
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/N4037_far_lamp_identity_tentative_r11.png",
+      "input": "qa/r11/source_N4037.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        1160,
+        395,
+        1380,
+        620
+      ],
+      "crop_pixels": [
+        220,
+        225
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/N6318_cropped_lamp_floor_unavailable_source.png",
+      "input": "sources/native/BV1CY411k7Co_t6318.457925_native.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        630,
+        910,
+        840,
+        1080
+      ],
+      "crop_pixels": [
+        210,
+        170
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/N6318_cropped_lamp_floor_unavailable_r10.png",
+      "input": "qa/r10/source_N6318.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        440,
+        990,
+        690,
+        1080
+      ],
+      "crop_pixels": [
+        250,
+        90
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/N6318_cropped_lamp_floor_unavailable_r11.png",
+      "input": "qa/r11/source_N6318.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        440,
+        990,
+        690,
+        1080
+      ],
+      "crop_pixels": [
+        250,
+        90
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/N6318_S105_cropped_opening_only_source.png",
+      "input": "sources/native/BV1CY411k7Co_t6318.457925_native.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        630,
+        910,
+        840,
+        1080
+      ],
+      "crop_pixels": [
+        210,
+        170
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/N6318_S105_cropped_opening_only_r10.png",
+      "input": "qa/r10/alternate_S105/source_N6318.png",
+      "input_pixels": [
+        960,
+        540
+      ],
+      "xyxy": [
+        220,
+        495,
+        345,
+        540
+      ],
+      "crop_pixels": [
+        125,
+        45
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/N6318_S105_cropped_opening_only_r11.png",
+      "input": "qa/r11/alternate_S105/source_N6318.png",
+      "input_pixels": [
+        960,
+        540
+      ],
+      "xyxy": [
+        220,
+        495,
+        345,
+        540
+      ],
+      "crop_pixels": [
+        125,
+        45
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/main_r10.png",
+      "input": "qa/r10/main.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        550,
+        520,
+        1000,
+        870
+      ],
+      "crop_pixels": [
+        450,
+        350
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    },
+    {
+      "path": "qa/r11/crops/main_r11.png",
+      "input": "qa/r11/main.png",
+      "input_pixels": [
+        1920,
+        1080
+      ],
+      "xyxy": [
+        550,
+        520,
+        1000,
+        870
+      ],
+      "crop_pixels": [
+        450,
+        350
+      ],
+      "transform": "crop only; native pixels; contact display scales separately"
+    }
+  ],
+  "overlay": "RGB direct Image.blend(source, render, 0.5), no registration, warp or masks",
+  "source_limits": [
+    "N4037 identities/positions tentative and source foreground lamp hidden in candidate",
+    "N6318 source full lamp but model image crops body/floor; cannot validate hidden portions",
+    "N2453 source lamps not matched in frozen camera; diagnostic is not an extra source view",
+    "N2518 triangular light and N6766 no clear paper bag are regression views, not paper-lamp targets"
+  ],
+  "preview": {
+    "pixels": [
+      1920,
+      1080
+    ],
+    "resized": false,
+    "bytes": 357724,
+    "sha256": "a9abbbd6e390b78b663461d6e0a763fb01f5dd29dbcaf498d1bd80e3034b0320"
+  }
+}

@@ -1,0 +1,81 @@
+# 本地复现
+
+已实际使用环境：Blender 4.3.2 / Python 3 / Pillow / NumPy / SciPy 1.17.0，均为环境原有安装。没有添加扩展、软件包或凭据。首次Cycles降噪失败已留在R01；当前Eevee可真实渲染。启动时可能输出EGL警告，最终以PNG实际存在和解码为准。
+
+从仓库根执行（新stage避免覆盖保留版本）：
+
+```bash
+mkdir -p scenes/piano-seaside-exterior/qa/r07-rerun
+cp scenes/piano-seaside-exterior/qa/r07/camera-anchor-fit.json scenes/piano-seaside-exterior/qa/r07-rerun/camera-anchor-fit.json
+blender -b -t 8 --python scenes/piano-seaside-exterior/scripts/build_scene.py -- --stage r07-rerun --render all
+blender -b -t 4 --python scenes/piano-seaside-exterior/scripts/validate_scene.py -- r07-rerun
+blender -b -t 6 --python scenes/piano-seaside-exterior/scripts/render_glb_check.py -- r07-rerun
+blender -b -t 4 --python scenes/piano-seaside-exterior/scripts/render_white_review.py -- r07-rerun
+blender -b -t 4 --python scenes/piano-seaside-exterior/scripts/check_piano_joints.py -- r07-rerun
+python scenes/piano-seaside-exterior/scripts/make_review.py r07-rerun
+```
+
+所有机位由脚本同时创建，几何/材质/灯光不按机位切换。当前只做共同近似黄昏状态；晚间来源依然使用这套状态显示残差。原生来源图不经过重采样、擦除或生成补图；叠图直接RGB 0.5 blend，同尺寸1920×1080；联系表缩小仅用于展示。模型单位不是米，不使用角色身高定尺度。
+
+BLEND保存可编辑对象、修饰器、材质和打包的PNG。GLB以同一求值几何导出；木纹使用UV图片。沙地和海面使用可跨格式传递的基础PBR，未声称真实云图、潮位或波浪。QA回导BLEND仅为检查记录，不是新的源模型版本。
+
+R07共同角度/相机参数来自`fit_source_cameras.py`的明确人工点假设；重新求解会写入qa/r07/camera-anchor-fit.json，复现实验应复制到新stage，不覆盖保留版本。脚本、输入参数和模型均随真实commit保留。
+
+## R09 共同环境阶段
+
+使用已安装 Blender 4.3.2、Python/Pillow/NumPy/SciPy。先保留 R08 原文件；不运行早期 `build_scene.py` 覆盖 R08。以下命令在本场目录运行：
+
+```bash
+python scripts/make_environment_textures.py
+blender -b -t 8 --python scripts/build_environment_r09.py
+blender -b -t 8 --python scripts/render_environment_r09.py -- preview
+blender -b -t 8 --python scripts/validate_environment_r09.py
+blender -b -t 8 --python scripts/validate_scene.py -- r09
+blender -b -t 8 --python scripts/render_environment_r09.py -- full
+blender -b -t 8 --python scripts/render_environment_r09.py -- white
+blender -b -t 8 --python scripts/render_glb_check.py -- r09
+python scripts/make_review.py r09
+python scripts/make_environment_review_r09.py
+```
+
+`full` 的主输出固定 S40；S105 全部来源另在 `alternate_S105/`，不按相机切状态。HDR 世界、场景灯光与相机不是此 GLB 导出的内容，跨软件需显式载入 `textures/r09/S40_sunset.hdr` 或 `S105_bluehour.hdr`。GLB 回导图只验证在保留的 Blender 世界/灯光中导入后的表现。真实时间状态值均是候选，不是光照测量。
+
+## R10 天空采样窄修正
+
+保留 R09 模型和贴图。`resample_sky_r10.py` 先逐字节复算 R09 天空，再对同一个连续场作抗锯齿试验；不会覆盖 R09。`textures/r10_trial/` 名称保留试验历史，其中两张无 `_R09_reproduced` 后缀的 HDR 是本次选用版本。
+
+```bash
+blender -b -t 8 --python scripts/diagnose_sky_r10.py
+python scripts/resample_sky_r10.py
+blender -b -t 8 --python scripts/trial_sky_r10.py
+blender -b -t 8 --python scripts/apply_sky_r10.py -- antialias
+blender -b -t 8 --python scripts/render_sky_r10.py
+python scripts/make_sky_review_r10.py
+```
+
+本次选用 `antialias`；脚本支持的 `rollback` 只是明确回退 R08 世界的备用方案，本次未执行。R10 GLB 仍使用 R09 原件，因为只变世界且原 GLB 不导出世界/灯光/相机。
+
+
+## R11：仅共享纸灯材质和实际灯光
+
+从 R10 已保存 BLEND 读取，不重建旧几何。所有命令从仓库根目录运行，使用已有 Blender/Python/Pillow/NumPy；无需安装。
+
+```bash
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/diagnose_lantern_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/diagnose_lantern_sky_r11.py
+python scenes/piano-seaside-exterior/scripts/make_lantern_emission_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/trial_lantern_r11.py -- a
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/trial_lantern_r11.py -- b
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/trial_lantern_c_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/apply_lantern_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/render_lantern_r11.py
+blender -b -t 8 -P scenes/piano-seaside-exterior/scripts/validate_lantern_r11.py
+python scenes/piano-seaside-exterior/scripts/make_lantern_review_r11.py
+python scenes/piano-seaside-exterior/scripts/audit_lantern_r11.py
+```
+
+诊断四图包含刻意关闭点灯阴影的 D 组，仅用于确认遮挡，不进入保存模型。正式 B 组所有点灯/面积光阴影开启。各灯四面面积光是在 EEVEE 中近似纸面出射通量，不是新增物理灯具，不是测得的来源光强。两世界状态使用同一灯参数，无相机绑定。
+
+A 组偏奶白失去琥珀边缘，保留失败图；B 组使用旧自制径向图的线性红通道指数 1.65 与暖色重编码，未使用原始来源像素或 AI。B 的倾斜面积光发光面跨入纸壳并产生斜向明暗界，完整失败图保留于 `qa/r11/trial_b_final/`。正式 `apply_lantern_r11.py` 使用 C：保持 B 材质/灯功率/位置，只使面积发光面平行纸壁。`trial_lantern_c_r11.py` 从本地 Git 固定提交 `d5d348f31bea4afd4597b2655fee5958b7e59ca3` 读取真实 B 模型到临时目录，确保工作树更新为 C 后仍可重做 B→C 试验，不发网络请求。
+
+白模 GLB 是 R09 原字节副本；R11 检查重新导入它。材质 GLB 新导出发光图及 KHR_materials_emissive_strength；世界、相机、所有灯不包含在导出中。回导主图保留 BLEND 世界/灯光，因此不能当作任意外部软件照明一致性验证。

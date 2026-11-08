@@ -1,0 +1,182 @@
+{
+  "scene_id": "piano-seaside-exterior",
+  "created_utc": "2026-10-29T10:02:36.564364+00:00",
+  "status": "conditional candidate / source review pending / not user accepted",
+  "source_bv": "BV1CY411k7Co",
+  "source_url": "https://www.bilibili.com/video/BV1CY411k7Co/",
+  "broadcast_title": "星瞳_Official 2023-02-24 replay (per capture handoff)",
+  "broadcast_date": "2023-02-24 (uploaded 2023-02-25), per capture handoff, not independently replayed here",
+  "legacy_frame": {
+    "file": "sources/legacy/sample_105min_exact_crop.png",
+    "sha256": "4565d90ed12ea88d5e493a10d2fdf98e4226cc5341272ca6979e46de56ca94b6",
+    "bytes": 480951,
+    "actual_pixels": [
+      1180,
+      663
+    ],
+    "method": "unscaled viewport crop, NOT native decoded frame",
+    "time_seconds": 6300.916514,
+    "decoded_video_pixels_recorded": [
+      1920,
+      1080
+    ],
+    "original_repo_path": "scenes/seaside-bar/02-retain-complete-geometry/files/04_Seaside_Bar_PBR_and_QA--9aeb9f449ce0/references/sample_105min_exact_crop.png",
+    "camera_family": "C piano exterior, close side view",
+    "occlusion": "performer, foreground frame crop, player timeline and pause overlay"
+  },
+  "reviewed_replay_ranges": [
+    {
+      "url": "https://www.bilibili.com/video/BV1fp4y1K7s8/",
+      "times_seconds": [
+        13.847784,
+        49.76241
+      ],
+      "reviewer": "parent capture task",
+      "result": "curved coastal road, no piano deck match; not exhaustive"
+    }
+  ],
+  "received_parent_observation": "Parent reports authenticated playback 00:40:31–00:40:37: white grand piano, bench, lantern, small boat on left, sea horizon and sunset. No native bytes received at this stage; report is not additional pixel evidence.",
+  "identity": {
+    "new_local_scene_directory": true,
+    "same_source_as_seaside_bar": true,
+    "bar_connection": "N2453 shows piano and decorated bar-like background in same frame; proximity observed, traversable connecting geometry and identity with archived bar not yet demonstrated",
+    "distinct_from_piano_terrace_nook": "BV1yD9VY9EEC circular-window porch, different source and architecture"
+  },
+  "native_frames_received": [
+    {
+      "id": "N4037",
+      "file": "sources/native/BV1CY411k7Co_00-40-37_native.png",
+      "library_file_id": "libfile_0b008dd07c8481919b39fa6b2ad4866c",
+      "size_bytes": 1777404,
+      "sha256": "221caeb1835b0f6c63c94355e09f8e1d6d8655d0c937a97ad8929536f6fd9115",
+      "actual_pixels": [
+        1920,
+        1080
+      ],
+      "consumer_verified_utc": "2026-10-29T10:06:13.399740+00:00",
+      "acquisition_report": {
+        "method": "native browser frame export, unmodified PNG",
+        "logged_in": true,
+        "requested_and_selected_quality": "1080P 高清",
+        "higher_quality": "1080P 高码率 requires membership; access unconfirmed",
+        "ui_display_time": "00:40:37",
+        "time_precision": "integer-second UI only",
+        "currentTime": null,
+        "readyState": null,
+        "before_after_stability": null,
+        "decoded_size_independent_DOM_proof": null
+      },
+      "consumer_pixel_observation": "Close side view white grand piano and raised lid; bench cushion and legs partly visible; wooden deck foreground; narrow sand strip, one woven chair, low basket, another lantern at right; distant sailboat; performer obscures keyboard and pedal region; source watermark retained.",
+      "role": "native received pixel evidence; source acquisition state incomplete; conditional geometry constraint"
+    },
+    {
+      "id": "N6318",
+      "file": "sources/native/BV1CY411k7Co_t6318.457925_native.png",
+      "library_file_id": "libfile_091c4188b4e48191b4c533cc3b3c3a55",
+      "size_bytes": 1271027,
+      "sha256": "99a511d5bd0fda6d4f8cab46ee9b098d99f9cc9e23c338d74e1612dad81db04e",
+      "actual_pixels": [
+        1920,
+        1080
+      ],
+      "consumer_verified": true,
+      "parent_report": {
+        "method": "native browser frame export",
+        "currentTime_before": 6318.457925,
+        "currentTime_after": 6318.457925,
+        "paused_before": true,
+        "paused_after": true,
+        "readyState_before": null,
+        "readyState_after": null,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "quality": "1080P 高清; higher membership tier unconfirmed"
+      },
+      "role": "conditional geometry constraint",
+      "limitation": "same BV, different time; not later other replay confirmation"
+    },
+    {
+      "id": "N2518",
+      "file": "sources/native/BV1CY411k7Co_t2518.167350_native.png",
+      "library_file_id": "libfile_7fc809a706948191a04abe9d3b71ddb8",
+      "size_bytes": 1531943,
+      "sha256": "58ddc638b212e84d9593b907a18f26573cb0bbd0abd28ca858707fc21a67c574",
+      "actual_pixels": [
+        1920,
+        1080
+      ],
+      "consumer_verified": true,
+      "parent_report": {
+        "method": "native browser frame export",
+        "currentTime_before": 2518.16735,
+        "currentTime_after": 2518.16735,
+        "paused_before": true,
+        "paused_after": true,
+        "readyState_before": 4,
+        "readyState_after": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "quality": "1080P 高清; higher membership tier unconfirmed"
+      },
+      "role": "conditional geometry constraint",
+      "limitation": "same BV, different time; not later other replay confirmation"
+    },
+    {
+      "id": "N2453",
+      "file": "sources/native/BV1CY411k7Co_t2453.795568_native.png",
+      "library_file_id": "libfile_4cc377f4a6748191a2c342912fea8df5",
+      "size_bytes": 2846269,
+      "sha256": "f17a9b774e1abbff637108ffa495595a664cec3ddd25c9a09632a36457f83866",
+      "actual_pixels": [
+        1920,
+        1080
+      ],
+      "consumer_verified": true,
+      "parent_report": {
+        "currentTime_before": 2453.795568,
+        "currentTime_after": 2453.795568,
+        "paused_before": true,
+        "paused_after": true,
+        "readyState_before": 4,
+        "readyState_after": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "quality": "1080P 高清; higher membership tier unconfirmed"
+      },
+      "pixel_observation": "Rear oblique view of matching white grand: copper internal braces, many strings, three pedals, caster and deck contact. Decorated bar-like counter, illuminated shape, hanging stars, stool and balloons share the frame; continuous route not demonstrated.",
+      "role": "conditional interior and support constraint; background beyond current localized model scope"
+    },
+    {
+      "id": "N6766",
+      "file": "sources/native/BV1CY411k7Co_t6766.766366_native.png",
+      "library_file_id": "libfile_dad36ec11db4819184ae4b22e8801388",
+      "size_bytes": 1467192,
+      "sha256": "0a68c6517847658593b04abd4469548e3af06aa1a7daaa40cff28cf402c38835",
+      "actual_pixels": [
+        1920,
+        1080
+      ],
+      "consumer_verified": true,
+      "parent_report": {
+        "currentTime_before": 6766.766366,
+        "currentTime_after": 6766.766366,
+        "paused_before": true,
+        "paused_after": true,
+        "readyState_before": 4,
+        "readyState_after": 4,
+        "videoWidth": 1920,
+        "videoHeight": 1080
+      },
+      "role": "low reverse keyboard-side geometry constraint; background context",
+      "pixel_observation": "Curved cheek and horizontal trim, palms and windowed building; embedded Cam2/timer; miniature performer on cheek",
+      "limitations": [
+        "Embedded 00:29:4 is not video time",
+        "Miniature character is not a scale reference",
+        "Full footprint and background position not determined"
+      ]
+    }
+  ],
+  "independent_source_camera_baselines": "N4037 side, N6318 low side, N2518 keyboard-side close; qualitative camera families, no metric baseline established",
+  "later_other_replay_confirmation": false,
+  "capture_handoff": "sources/SOURCE_HANDOFF.md"
+}
