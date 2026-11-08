@@ -48,3 +48,11 @@
 母版、分享版和双人版均为 54 个不同画面，4.56 秒，双手、袖口及下方整带对首帧的变化像素为 0。112 像素实播匹配 1,750 张截图，包含连续三圈。修复前刘海取样为 (205, 193, 209)，修复后的同一处为 (197, 194, 201)，参考《老实》为 (198, 195, 202)。分享包第 15 项已更新，其余 14 项均与上一提交的哈希一致。[色块与手区实测](../../../emotes/sunburst/agent-emotes/15-xingtong-pout/fixed-hands-check.json)
 
 素材本地 checkpoint 为 `e9dcff2d819479d5ace67dbb7679cfe580611607`，Issue 更新已通过 API 回读核对。[Issue #102 修订记录](https://github.com/Shuang-su/metaxingtong/issues/102#issuecomment-6718246995)
+
+## 初版双拳贴腮定稿
+
+静态直接校正截图指定的初版 PNG。图像尺寸 1024×1024，刘海同一位置由 RGB (205, 193, 209) 调至 (198, 195, 202)。初版 GIF 与奶绿参考按 54 个时值对照，第 11～21 帧的侧飞最明显。修复时固定了原有拳头，并补齐旧拳和袖口后方的下颌、发尾与衣身。前一版平掌修订独立归档。[54 组三者对照](../../../emotes/sunburst/agent-emotes/15-xingtong-pout/pose-comparison.jpg)
+
+母版和分享版首帧与原始首帧直接校色后的结果逐像素一致。两个尺寸的 54 帧双眼中心采样区也完全对应。母版两拳内部共 14,633 个像素全圈维持首帧值。三份 GIF 均有 54 个不同画面，一圈 4.56 秒，112 像素原速复核连续三圈。已替换分享包第 15 项，复核其余 14 项与上个 checkpoint 的哈希一致。[动画数据](../../../emotes/sunburst/agent-emotes/15-xingtong-pout/fixed-hands-check.json)
+
+本地素材 checkpoint 为 `902b7d478f5cf626f9aa75c669c0357fbe5a19f2`。Issue 评论已经 API 回读验证。[Issue #102](https://github.com/Shuang-su/metaxingtong/issues/102#issuecomment-6718499041)
