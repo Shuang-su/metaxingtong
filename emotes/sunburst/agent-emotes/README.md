@@ -50,7 +50,7 @@
 
 | 表情 | 打开 GIF | 帧数 / 一圈时长 | 动作核对 |
 |---|---|---|---|
-| 星瞳·鼓脸晃头 | [320 px](15-xingtong-pout/chat.gif) · [768 px](15-xingtong-pout/master.gif) | 54 / 4.56 秒 | 恢复初版精细面部和发丝，按 B 站原包校成银灰发与浅蓝紫袖。双手平放，星瞳鼓脸偏头、呼气回正。[前后对照](15-xingtong-pout/reference-comparison.png) [逐帧图](15-xingtong-pout/frames.jpg) |
+| 星瞳·鼓脸晃头 | [320 px](15-xingtong-pout/chat.gif) · [768 px](15-xingtong-pout/master.gif) | 54 / 4.56 秒 | 初版精细原画校成银灰发与浅蓝紫袖。初版双拳贴腮，偏头时双手留在领口。[前后对照](15-xingtong-pout/reference-comparison.png) [与奶绿逐帧对照](15-xingtong-pout/pose-comparison.jpg) |
 
 [星瞳造型的 B 站原图、百科与 CDN 哈希](references/README.md) · [搭配用的精细 Q 版静态校样](references/xingtong-detailed.png)
 

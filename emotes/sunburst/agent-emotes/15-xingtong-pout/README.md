@@ -1,23 +1,11 @@
 # 星瞳·鼓脸晃头
 
-星瞳把手平放在身前，鼓脸偏头，停一拍再呼气回正。这一版恢复了初版的半垂眼、瞳孔高光、脸颊线条和细碎发丝。[320 像素分享版](chat.gif) · [768 像素母版](master.gif) · [和奶绿并排播放](paired.gif) · [1024 像素静态图](../references/xingtong-detailed.png)
+使用初版的半垂眼、细发丝、瞳孔高光和双拳贴腮姿势。两只拳头停在领口，星瞳鼓脸偏头、稍作停顿、呼气回正。一圈 4.56 秒，共 54 帧。[320 像素分享版](chat.gif) · [768 像素母版](master.gif) · [与奶绿同步播放](paired.gif)
 
-## 三个版本
+**静态图。** 直接校正用户选定的 1024 像素初版原画，沿用同一画布、构图和双拳位置。原画刘海在 (480, 260) 的 5×5 色块中位数由 (205, 193, 209) 调至 (198, 195, 202)，与 B 站《老实》对应的银灰中间色相符。浅蓝紫衣袖按《揣手手》核对。[校色后的原画 PNG](../references/xingtong-detailed.png) · [校色前后](reference-comparison.png) · [初版原件](sources/previous-portrait.png)
 
-| 版本 | 形象与动作 | 文件 |
-|---|---|---|
-| 最初的精细 Q 版 | 银发偏粉紫，拳头在下巴两侧，随头一起转动。 | [原始 PNG](sources/previous-portrait.png) · [原始 GIF](versions/01-original/master.gif) · [原始分享版](versions/01-original/chat.gif) |
-| 上次的重画版 | 简化了刘海、眼睛和脸型，双手改为平放。 | [静态 PNG](versions/02-redraw/portrait.png) · [768 像素 GIF](versions/02-redraw/master.gif) · [320 像素 GIF](versions/02-redraw/chat.gif) |
-| 本次修复 | 在初版原画上校正偏紫的发色与袖色，重建被拳头遮挡的下颌和发尾，单独固定双手。 | [修复版 GIF](master.gif) · [原包与三版形象对照](reference-comparison.png) |
+**动图。** 将初版星瞳 GIF、修复版和奶绿参考按相同时值逐帧并排查看。原版第 11～21 帧偏头时双拳跟着侧移。修复版沿用初版首帧的双拳和袖口，在原来被手挡住的位置补齐下颌、发尾与衣领。首帧校色后与初版首帧逐像素对应。两种尺寸的全部 54 帧，双眼采样区也与对应的原帧校色结果逐像素一致。[三者逐帧对照](pose-comparison.jpg) · [每帧 PNG](frames/) · [实际提示词和素材索引](manifest.json)
 
-初版 PNG、原始 GIF 和上次的两份 GIF 均与相应历史提交逐字节核对。当前静态图和分享包第 15 项使用本次修复版。[版本哈希与逐帧核验](fixed-hands-check.json)
+**核验。** 两个拳面的内部像素在全圈固定。768 版核对了左拳 6,971 个和右拳 7,662 个像素，320 版与并排版各核对了 1,139 和 1,260 个像素。母版各帧上方至少 477 行均与同坐标的初版校色结果一致。112 像素原速回放包含连续三圈。[手位与颜色实测](fixed-hands-check.json) · [112 像素回放](playback-112.jpg)
 
-## 修复范围
-
-眼睛、刘海和原有面部直接取自初版的 1024 像素画像。除补画区域外，主体按原图取像素，再校正色相。两块覆盖刘海和眼脸的区域在校色前与原作完全相同。嘴形取自初版九格分镜。Sunburst 带图编辑只提供两份修补素材，即被拳头遮住的下颌、发尾，以及独立的衣身和双手。两次实际提示词、交付图来源与哈希可复查。[初版分镜](sources/keys.png) · [下颌修补提示词](sources/restored-detail/fill.txt) · [衣身和双手提示词](sources/restored-detail/arms.txt) · [合成脚本](sources/restored-detail/restore.py) · [素材清单](manifest.json)
-
-校色依据来自 B 站同套《揣手手》《老实》。原画刘海取样为 RGB (205, 193, 209)，最终 GIF 同一处为 (197, 194, 201)，《老实》的同类中间色为 (198, 195, 202)。[原作索引](../references/README.md) · [对照图](reference-comparison.png)
-
-## 播放核验
-
-768 母版、320 分享版及双人版均解码出 54 个不同的星瞳画面，一圈 4.56 秒。逐帧比较两只手、袖口和覆盖两手的底部整带，三种文件的变化像素数均为 0。112 像素浏览器回放匹配到 6 个完整循环，包含连续三圈。[逐帧图](frames.jpg) · [各帧 PNG](frames/) · [三圈回放截屏](playback-112.jpg) · [回放数据](playback.json)
+历史文件可单独打开。[初版贴腮 GIF](versions/01-original/master.gif) · [上次的重画版](versions/02-redraw/chat.gif) · [精细平掌版](versions/03-lowered-hands/chat.gif)
