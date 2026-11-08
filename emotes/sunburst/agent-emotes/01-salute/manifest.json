@@ -1,0 +1,805 @@
+{
+  "title": "慢半拍",
+  "file": "master.gif",
+  "chat_file": "chat.gif",
+  "sha256": "191f528aafe9d767d9430619e323cb25553e7812697668223ad67452d69fede0",
+  "size": [
+    768,
+    768
+  ],
+  "frames": 54,
+  "different_frames": 54,
+  "total_ms": 4650,
+  "loop": 0,
+  "frame_durations_ms": [
+    190,
+    60,
+    70,
+    60,
+    60,
+    70,
+    160,
+    60,
+    70,
+    60,
+    60,
+    70,
+    180,
+    60,
+    70,
+    70,
+    60,
+    70,
+    160,
+    60,
+    70,
+    70,
+    60,
+    70,
+    320,
+    60,
+    70,
+    60,
+    60,
+    70,
+    150,
+    60,
+    70,
+    60,
+    60,
+    70,
+    240,
+    60,
+    70,
+    60,
+    70,
+    60,
+    180,
+    70,
+    60,
+    70,
+    60,
+    70,
+    150,
+    60,
+    70,
+    70,
+    60,
+    70
+  ],
+  "assets": [
+    {
+      "file": "master.gif",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 10377588,
+      "sha256": "191f528aafe9d767d9430619e323cb25553e7812697668223ad67452d69fede0"
+    },
+    {
+      "file": "chat.gif",
+      "size": [
+        320,
+        320
+      ],
+      "bytes": 2397906,
+      "sha256": "d7344f4626c543d0973130c09bfb2ae08bb2bad32bdb28538f44e4a4488e316a"
+    }
+  ],
+  "source_reference": "emotes/sunburst/story-emotes/01-caught/frames/02.png",
+  "storyboard": "storyboard.json",
+  "images_api": {
+    "keys": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x1536",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Make ONE precise production keyframe sheet of NINE sequential animation illustrations. EXACTLY 3 columns and 3 rows of 512x512 SQUARE cells, total 1536x1536; read row major. Invisible equal grid divisions, absolutely no written text, numbers, lettering, panel frames or gutters. Each cell has exactly the same fixed lens, solid opaque pure WHITE background, mild safe margins and fixed ground line. Draw the reference character(s) large, with the same recognizable face design, costume, hair and accessories across the 9 cells. Only characters requested in the story. Draw graphic chibi animation cels with clean shapes, not a close-up collage, no motion blur. Each cell must show a DIFFERENT complete acting pose. This is one story with a readable pay-off and reset, including hands, gaze and props. At small chat scale every pose reads. STORY: Silver bob Xingtong on left, green-streak twin-tail Nailü at right. Start neutral. X salutes crisply with her own right hand. N studies, copies a beat late just as X lowers hers. X notices, glances sideways, raises hers again to match; both laugh, lower, reset. Show arms and fingertips.\nNINE chronological drawings: 1) 0.0 s: Draw silver-bob Xingtong left and green-streak twin-tail Nailü right, facing forward neutrally, both arms relaxed with all fingertips visible. 2) 0.5 s: Xingtong crisply salutes with her own right fingertips at her right brow, elbow outward on viewer-left; Nailü keeps both hands down and watches. 3) 1.0 s: Xingtong holds her straight-backed salute; Nailü tilts her head toward Xingtong's raised hand, studying it with both arms still down. 4) 1.6 s: Nailü copies the salute with her own right fingertips at her right brow as Xingtong lowers her right hand past her chest; their left hands remain down. 5) 2.0 s: Xingtong's right hand reaches her hip as she glances sideways toward Nailü; Nailü holds her salute and looks toward Xingtong. 6) 2.5 s: Xingtong raises her own right hand back to her brow, matching Nailü's held salute; they meet each other's gaze with small smiles. 7) 3.0 s: Both laugh with open smiles and lifted cheeks, keeping their right-hand salutes readable and their left arms relaxed. 8) 3.7 s: Both lower their right forearms through chest height while laughing softly, turning their faces forward; show each complete hand and every fingertip. 9) 4.5 s: Both nearly regain neutral, facing forward with faint closing smiles, right hands hovering just above their resting positions and left hands relaxed.\nContinuity: Use one fixed, generously framed camera for a 4.8-second loop, preserve identities, anatomy and visible arms and fingertips without props, and settle pose nine into the distinct neutral first pose over the final 0.3 seconds.",
+      "reference_sha256": "5daf54e5d502a04c83ae5f625e0c7366700a9de4f933fd7d32c0bf871e816bd1",
+      "reference": "emotes/sunburst/story-emotes/01-caught/frames/02.png",
+      "request_id": "req_62b1bdc0dd7b46cdac4942e684b38bea",
+      "usage": {
+        "input_tokens": 1685,
+        "input_tokens_details": {
+          "image_tokens": 1024,
+          "text_tokens": 661
+        },
+        "output_tokens": 2073,
+        "total_tokens": 3758,
+        "output_tokens_details": {
+          "image_tokens": 2073,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "369c92681a132ca0f411e57d94453014713863d920d5340c21831d0a99694349",
+      "file": "sources/keys.png"
+    },
+    "strip-0": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Silver bob Xingtong on left, green-streak twin-tail Nailü at right. Start neutral. X salutes crisply with her own right hand. N studies, copies a beat late just as X lowers hers. X notices, glances sideways, raises hers again to match; both laugh, lower, reset. Show arms and fingertips.\nA = 0.0 s: Draw silver-bob Xingtong left and green-streak twin-tail Nailü right, facing forward neutrally, both arms relaxed with all fingertips visible.\nB = 0.5 s: Xingtong crisply salutes with her own right fingertips at her right brow, elbow outward on viewer-left; Nailü keeps both hands down and watches.\nC = 1.0 s: Xingtong holds her straight-backed salute; Nailü tilts her head toward Xingtong's raised hand, studying it with both arms still down.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "5b6f9b7648537d66fca84f07403ccff038001b3b0900c7c867eaf233bfe2dba7",
+      "reference": [
+        1,
+        2,
+        3
+      ],
+      "request_id": "req_f46e5462c6984f6f85a6d333655432c4",
+      "usage": {
+        "input_tokens": 1906,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 454
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3741,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "c47813069989f833475275994006313f9ad234a80943e3e9fbf210bc2ac3b858",
+      "file": "sources/strip-0.png"
+    },
+    "strip-1": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Silver bob Xingtong on left, green-streak twin-tail Nailü at right. Start neutral. X salutes crisply with her own right hand. N studies, copies a beat late just as X lowers hers. X notices, glances sideways, raises hers again to match; both laugh, lower, reset. Show arms and fingertips.\nA = 1.0 s: Xingtong holds her straight-backed salute; Nailü tilts her head toward Xingtong's raised hand, studying it with both arms still down.\nB = 1.6 s: Nailü copies the salute with her own right fingertips at her right brow as Xingtong lowers her right hand past her chest; their left hands remain down.\nC = 2.0 s: Xingtong's right hand reaches her hip as she glances sideways toward Nailü; Nailü holds her salute and looks toward Xingtong.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "2b867e8dab7e1e66cf91919be7fe725bb073c46e61d3f3e44c338ce162025bc7",
+      "reference": [
+        3,
+        4,
+        5
+      ],
+      "request_id": "req_c31f127864e1498a81824ca120c93b1f",
+      "usage": {
+        "input_tokens": 1905,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 453
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3740,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "8bf380f4c8798609a111e7475943ca985a9559ef46be0f72edfbdd5ec16d5de3",
+      "file": "sources/strip-1.png"
+    },
+    "strip-2": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Silver bob Xingtong on left, green-streak twin-tail Nailü at right. Start neutral. X salutes crisply with her own right hand. N studies, copies a beat late just as X lowers hers. X notices, glances sideways, raises hers again to match; both laugh, lower, reset. Show arms and fingertips.\nA = 2.0 s: Xingtong's right hand reaches her hip as she glances sideways toward Nailü; Nailü holds her salute and looks toward Xingtong.\nB = 2.5 s: Xingtong raises her own right hand back to her brow, matching Nailü's held salute; they meet each other's gaze with small smiles.\nC = 3.0 s: Both laugh with open smiles and lifted cheeks, keeping their right-hand salutes readable and their left arms relaxed.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "e0b1a943fb5f21991ec0a9b16bb8a3be47d521fa19d2631a54f948fc329d96fb",
+      "reference": [
+        5,
+        6,
+        7
+      ],
+      "request_id": "req_7048992791034b00992867da36e6fd0a",
+      "usage": {
+        "input_tokens": 1893,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 441
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3728,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "f69338bbbe19df361bf14656d8061de493f71f6e47474c283d9d7c2acb152a5e",
+      "file": "sources/strip-2.png"
+    },
+    "strip-3": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Silver bob Xingtong on left, green-streak twin-tail Nailü at right. Start neutral. X salutes crisply with her own right hand. N studies, copies a beat late just as X lowers hers. X notices, glances sideways, raises hers again to match; both laugh, lower, reset. Show arms and fingertips.\nA = 3.0 s: Both laugh with open smiles and lifted cheeks, keeping their right-hand salutes readable and their left arms relaxed.\nB = 3.7 s: Both lower their right forearms through chest height while laughing softly, turning their faces forward; show each complete hand and every fingertip.\nC = 4.5 s: Both nearly regain neutral, facing forward with faint closing smiles, right hands hovering just above their resting positions and left hands relaxed.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "0bcb164c01fa6d6158ae3f8feb8d178839084ad03ae463341559a86e341d2e5c",
+      "reference": [
+        7,
+        8,
+        9
+      ],
+      "request_id": "req_b78eb8d4f77a43a18c9b97f292bb6e9f",
+      "usage": {
+        "input_tokens": 1886,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 434
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3721,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "2959c71f0cb0efd02d56444440ae00cb023454aa298a1718fffcfff8394b7963",
+      "file": "sources/strip-3.png"
+    },
+    "strip-4": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Silver bob Xingtong on left, green-streak twin-tail Nailü at right. Start neutral. X salutes crisply with her own right hand. N studies, copies a beat late just as X lowers hers. X notices, glances sideways, raises hers again to match; both laugh, lower, reset. Show arms and fingertips.\nA = 4.5 s: Both nearly regain neutral, facing forward with faint closing smiles, right hands hovering just above their resting positions and left hands relaxed.\nB = 0.0 s: Draw silver-bob Xingtong left and green-streak twin-tail Nailü right, facing forward neutrally, both arms relaxed with all fingertips visible.\nC = 0.5 s: Xingtong crisply salutes with her own right fingertips at her right brow, elbow outward on viewer-left; Nailü keeps both hands down and watches.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "428669587f0a1c94aa71f8e1bb9b5e9120ce53f7e18c7656d54a77c0f5d320d0",
+      "reference": [
+        9,
+        1,
+        2
+      ],
+      "request_id": "req_2f8a0086d54644689681817ea4d06b85",
+      "usage": {
+        "input_tokens": 1900,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 448
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3735,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "e24f56260a1a775844b79f50efe248370935dd5650ffa729ae77bd1f900e99cd",
+      "file": "sources/strip-4.png"
+    }
+  },
+  "frame_review": [
+    {
+      "frame": 1,
+      "file": "frames/01.png",
+      "source": {
+        "key": 1
+      },
+      "duration_ms": 190,
+      "pixel_sha256": "e4a1f798396ba259ff85bdc6c291d62181263d3942073ff366653ca7f11ce067"
+    },
+    {
+      "frame": 2,
+      "file": "frames/02.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "738472c3a4d0b723114932e5ffd260c52e16c5fca635a43d3140847f731391d3"
+    },
+    {
+      "frame": 3,
+      "file": "frames/03.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "137d17e1e33ded8ffcac21b9728d3dd105a507f9acb2d6c40becbc251e014686"
+    },
+    {
+      "frame": 4,
+      "file": "frames/04.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "1d4b535a518ae3488000e9fc58e643b3045736251c551216ed970b74c8b25c2e"
+    },
+    {
+      "frame": 5,
+      "file": "frames/05.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "83989b8856ec0a8e9b5d805f8b569246caf953be514e174cc60c529a82a6c88c"
+    },
+    {
+      "frame": 6,
+      "file": "frames/06.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "077aa2a5b117a185bc1791a1a560336181b289ee0070daca375193e9fb18cf3d"
+    },
+    {
+      "frame": 7,
+      "file": "frames/07.png",
+      "source": {
+        "key": 2
+      },
+      "duration_ms": 160,
+      "pixel_sha256": "5013f8078ca04c661091904d91aafb1ed275170aee2973a1809a4c9954288d84"
+    },
+    {
+      "frame": 8,
+      "file": "frames/08.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "2578a6b323d751d8d3d8b44ffb1ccfe0a1698ad562fa2715df5aee53fd613f89"
+    },
+    {
+      "frame": 9,
+      "file": "frames/09.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "5d94977e5ceec8d37b0e8ad4d408ad786b3ffb9647599c061c7c636ecaf18bdb"
+    },
+    {
+      "frame": 10,
+      "file": "frames/10.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "805b677bf6aaae458b393838ad42e264d3956f1d89cb26d5cb09efb28bdab493"
+    },
+    {
+      "frame": 11,
+      "file": "frames/11.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "bce6ff790bdc0373b844da4d8077eac3fff829010385c1fccfe333b5f4a8d8dd"
+    },
+    {
+      "frame": 12,
+      "file": "frames/12.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "cb6aaf059c3bf993a2c38bd135b0f9f0aee73d7d809c04f89685b046256db7bf"
+    },
+    {
+      "frame": 13,
+      "file": "frames/13.png",
+      "source": {
+        "key": 3
+      },
+      "duration_ms": 180,
+      "pixel_sha256": "3c28df283fe15625246a1229493be755d170f2c9b2473a51f42aacd9393b86ce"
+    },
+    {
+      "frame": 14,
+      "file": "frames/14.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "df06dabebd85f97e85e614ede4964b1415ff16070eb3892d584931d55dfbd617"
+    },
+    {
+      "frame": 15,
+      "file": "frames/15.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "63c99606e5994ad5ad960d52a2f23693e5c15e23ad2d04e8157ef276b2515af7"
+    },
+    {
+      "frame": 16,
+      "file": "frames/16.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "2c17cbe135cf41998c52964da53e81aa3a6aa060ec5cc9a7a3afc6e9a5fd8c2e"
+    },
+    {
+      "frame": 17,
+      "file": "frames/17.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "8105a94e8d9a04a92f0d45610ff84565b23a5848420c397900dc3393227225bf"
+    },
+    {
+      "frame": 18,
+      "file": "frames/18.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "792bfea011d5d21a9edcda517ecdf38635708458e475d7693e9c06aacf9e0c2c"
+    },
+    {
+      "frame": 19,
+      "file": "frames/19.png",
+      "source": {
+        "key": 4
+      },
+      "duration_ms": 160,
+      "pixel_sha256": "06578992aca19f01047c0b7181704a765239fa3bc6dc7a80e41d8e50441e610d"
+    },
+    {
+      "frame": 20,
+      "file": "frames/20.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "d46a783f369d68f15b25c6b90a218bd03f04cf9c71ed6843373de0464dd7d5a8"
+    },
+    {
+      "frame": 21,
+      "file": "frames/21.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "73699d78a1de286410a07491bafbfc2bd71b22f25b437a487f9b053946156493"
+    },
+    {
+      "frame": 22,
+      "file": "frames/22.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "5bff7b6d473999891533a9ce4ef160e31ab83e9d4b87250084825453aaf2a172"
+    },
+    {
+      "frame": 23,
+      "file": "frames/23.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "92a7b6781c24e7ba7e3fe2f8157580aade17eecd001b6fa667498abf54d6dbc5"
+    },
+    {
+      "frame": 24,
+      "file": "frames/24.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "007b8be41f615092ad8f24a122d6b2237cddb9e66aede781534855e0dd7d59e1"
+    },
+    {
+      "frame": 25,
+      "file": "frames/25.png",
+      "source": {
+        "key": 5
+      },
+      "duration_ms": 320,
+      "pixel_sha256": "f449eb343666159af694f10ca1910d97f45f7b0b645e9b2d6fac1646d215d19a"
+    },
+    {
+      "frame": 26,
+      "file": "frames/26.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "78a730db67d7c20aa0d2c4ad724b8d10d149b20e8bc4129731ce12b62199bb83"
+    },
+    {
+      "frame": 27,
+      "file": "frames/27.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "c68aeb9b254e1874851a74ec1aefd9a63c96d27b3ef3b77dc0a9ad3a0ef083d1"
+    },
+    {
+      "frame": 28,
+      "file": "frames/28.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "8f8093d6359ec298ccdd346bf16a080bdea27f84a7db7d696d3571cad51aed87"
+    },
+    {
+      "frame": 29,
+      "file": "frames/29.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "6c5ff9a8c6addedfd6bd1cd08a6d89f049d9109906736a8e13749b86afa3645b"
+    },
+    {
+      "frame": 30,
+      "file": "frames/30.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "88210741daa2154de3e145f2d4328185647df5f99c01be8c1d6a242e204c3527"
+    },
+    {
+      "frame": 31,
+      "file": "frames/31.png",
+      "source": {
+        "key": 6
+      },
+      "duration_ms": 150,
+      "pixel_sha256": "aa27f577a038e41a47be0723993f57e46ec5417ce1c32bff3cff3bed56845b79"
+    },
+    {
+      "frame": 32,
+      "file": "frames/32.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "25086c3f5e8784e96dbd40e73e469683bbbaca7bcb6bab66b698da8b1df08867"
+    },
+    {
+      "frame": 33,
+      "file": "frames/33.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "3b0c4223afe6673c4020d56974757dfa80f57b1bb917015c7e75a5c0e1949d4c"
+    },
+    {
+      "frame": 34,
+      "file": "frames/34.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "165d7d49d28f55322741ce5e0d2e1ca7de001620534f4cd873ea594d58549680"
+    },
+    {
+      "frame": 35,
+      "file": "frames/35.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "b0009d3cdbf9af9a9ac95ea8870982389cd7c7084b8312f3d8090bf3441f6bac"
+    },
+    {
+      "frame": 36,
+      "file": "frames/36.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "67769756741f6895823caa47e3faa45bf1217ebddc229ce9c3271908537188d2"
+    },
+    {
+      "frame": 37,
+      "file": "frames/37.png",
+      "source": {
+        "key": 7
+      },
+      "duration_ms": 240,
+      "pixel_sha256": "8118e527bd1aa93fbeb77184deeda36e701465979cb3ca5cf1502bb263561425"
+    },
+    {
+      "frame": 38,
+      "file": "frames/38.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "1cb3034c8988e914281ec8a5235f30b416627ff8474c69ed5cc8888603c450a1"
+    },
+    {
+      "frame": 39,
+      "file": "frames/39.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "ce50c5d981dadd5df4d072febabd015aed14db6fb04233fa8eb71e9b628afac5"
+    },
+    {
+      "frame": 40,
+      "file": "frames/40.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "8ef52b2ee08f879654b954503c87e6f2752f7f97e1cdfccd8ee4b4526676a5fb"
+    },
+    {
+      "frame": 41,
+      "file": "frames/41.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "952bebd3a879c4528f55db046975c03382efc72792bba0d6f5b0ec589d416950"
+    },
+    {
+      "frame": 42,
+      "file": "frames/42.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "7397efa33ab0e505614dfcfbf1fd414e58c3945e05b322d0fca456eac55c0129"
+    },
+    {
+      "frame": 43,
+      "file": "frames/43.png",
+      "source": {
+        "key": 8
+      },
+      "duration_ms": 180,
+      "pixel_sha256": "ee9db73e99ba77c540f3f5b1df5e45db30ae6038444bc16dcc56c9443e551b9d"
+    },
+    {
+      "frame": 44,
+      "file": "frames/44.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "a254546ab1d6e228ae46c664f62c3bfe586b37bf4388a5983ea58062ba6f51e2"
+    },
+    {
+      "frame": 45,
+      "file": "frames/45.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "4ae6567b60ebbaf64a7e31153054bb2f76b2b6d1c7a41157f01df106887f3dc7"
+    },
+    {
+      "frame": 46,
+      "file": "frames/46.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "41b17a491536f2200f7ae5dd1f13997a39c81bdb6a795408576dfef2c78bfe67"
+    },
+    {
+      "frame": 47,
+      "file": "frames/47.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "d60e27bbd09e406e849a6a96a63e9877be89e1f4e0bef7b13c271b031ed26fd4"
+    },
+    {
+      "frame": 48,
+      "file": "frames/48.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "0eb4e78dbd7df70a61f126180321bcdf0e42f9567d6068cf93fcdb318cfb6430"
+    },
+    {
+      "frame": 49,
+      "file": "frames/49.png",
+      "source": {
+        "key": 9
+      },
+      "duration_ms": 150,
+      "pixel_sha256": "206f77e3081e3cf136759e99da05d17b144fa6a1c8347e5651bff5ba7b5ae7c7"
+    },
+    {
+      "frame": 50,
+      "file": "frames/50.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "45d3db3177ca2694b6f5ccf4d1d8de4e204b989d1409ae00ec5fa6b5d3a275e4"
+    },
+    {
+      "frame": 51,
+      "file": "frames/51.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "4c912ff4d9b0a4011072b70ab05c9741612e4da0283032f554ea9edc8257d0c0"
+    },
+    {
+      "frame": 52,
+      "file": "frames/52.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "74901f23bde34b6c9f95d00b8ae514d51f3195f3e6a2fcb1ab0923aa8d2a118e"
+    },
+    {
+      "frame": 53,
+      "file": "frames/53.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "44d042fb8a3c0cff90b6f072631b24128d973dce1ff76799ca8d43e1906e390b"
+    },
+    {
+      "frame": 54,
+      "file": "frames/54.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "812b4ce28f7c12ded327a4954d6367c2a6a23a21443746d30bf5918939b97b4b"
+    }
+  ],
+  "native_cell_px": 512,
+  "method": "完整姿势硬切、全片统一调色板。每个原画格四边各裁 5 px，768 和 320 版按同一时值缩放编码。"
+}
