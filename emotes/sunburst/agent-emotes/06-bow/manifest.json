@@ -1,0 +1,810 @@
+{
+  "title": "扶正了",
+  "file": "master.gif",
+  "chat_file": "chat.gif",
+  "sha256": "1d9e1598e924917ec687673b57d5dc20a4589ac0a75ef57647eb2542e37724fe",
+  "size": [
+    768,
+    768
+  ],
+  "frames": 54,
+  "different_frames": 54,
+  "total_ms": 4780,
+  "loop": 0,
+  "frame_durations_ms": [
+    180,
+    60,
+    70,
+    70,
+    60,
+    70,
+    150,
+    60,
+    70,
+    70,
+    60,
+    70,
+    150,
+    60,
+    70,
+    70,
+    60,
+    70,
+    270,
+    60,
+    70,
+    70,
+    60,
+    70,
+    270,
+    60,
+    70,
+    60,
+    60,
+    70,
+    220,
+    60,
+    70,
+    60,
+    70,
+    60,
+    140,
+    60,
+    70,
+    70,
+    60,
+    70,
+    300,
+    60,
+    70,
+    70,
+    60,
+    70,
+    150,
+    60,
+    70,
+    70,
+    60,
+    70
+  ],
+  "assets": [
+    {
+      "file": "master.gif",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 10704298,
+      "sha256": "1d9e1598e924917ec687673b57d5dc20a4589ac0a75ef57647eb2542e37724fe"
+    },
+    {
+      "file": "chat.gif",
+      "size": [
+        320,
+        320
+      ],
+      "bytes": 2471381,
+      "sha256": "aa060e9455a73a59c4682d3a435270ecb13b79d0c3848267af60aa27de27f64d"
+    }
+  ],
+  "local_composites": {},
+  "fixed_camera_crop": null,
+  "editing_notes": [
+    "第一版的结尖在聊天尺寸下位移过小。第二版使用固定近景重画九个姿势，使条纹带从肩侧竖垂被扶到水平，再由重力垂回。"
+  ],
+  "source_reference": "emotes/sunburst/pack-style-proofs/playground-originals/n-laplace.png",
+  "storyboard": "storyboard.json",
+  "images_api": {
+    "keys": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x1536",
+      "quality": "high",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Draw a motion study keyframe sheet, precisely a borderless 3 by 3 grid of nine square bust close-up drawings, on pure white, in the style of the attached chibi. Girl: taupe hair with chartreuse streak, pearl headband, large white lily with a smaller STRIPED PALE YELLOW/GREEN RIBBON BOW immediately BELOW it on the RIGHT side of the picture, white gloves. Her head occupies the left 65 percent of each cell, leave the rightmost 35 percent as whitespace for the ribbon to move. Face, whole white hair flower and two gloved hands visible. Keep her actual hair ornament and its tiny knot attached to her right temple. The gag hinges on this SPECIFIC ribbon visibly flipping DIRECTION by 60 degrees: her fingertips lift the OUTER long striped ribbon streamer, hold it SIDEWAYS, then it slowly falls visibly back DOWN when she lets go. Animated physical acting, not just facial expressions. 1. A long crooked outer striped ribbon hangs vertically in the blank space to the RIGHT of her hair, its free pointed tip down near her shoulder. She looks at the sag. 2. Her white-gloved thumb and forefinger grasp the loose TIP at shoulder height. 3. She lifts the TIP upwards and out toward frame-right. It is physically between her fingertips; the cloth forms a diagonal to the fixed knot at her temple. 4. Her white glove is now held clearly OUT TO THE RIGHT of her FACE, at eye height, holding the pointed tip level with the fixed knot: the streamer lies almost HORIZONTAL across the white space towards the right edge, a sideways pennant. 5. With the streamer still lifted HORIZONTALLY toward frame-right she smiles, hand opens to release the tip, glove retracts. 6. Her EMPTY glove is down, horizontal streamer momentarily stays extended towards frame-right. 7. Gravity wins: tip drops to a 40 degree diagonal in the white space. She glances sideways at it. 8. Tip has FLOPPED all the way down to her shoulder again, her gloved hands both at chest, dry deadpan. 9. She looks back at crooked tip, hands still low, prepare next loop. Fixed precise neckline and facial proportions, exact same square composition in every cell. ONLY the one outer soft streamer moves, hair flower/pearl band and ribbon knot remain in place. A viewer must be able to trace the tip dropping. No letters, numbers, frames, arrows or words.",
+      "reference_sha256": "275b0ab34828832d608c0dd6ec88cfcc0c7bb2677c3800b5d29af32d86a02548",
+      "reference": "emotes/sunburst/pack-style-proofs/playground-originals/n-laplace.png",
+      "request_id": "req_687d32876e1a486baf089828c5935abf",
+      "usage": {
+        "input_tokens": 1557,
+        "input_tokens_details": {
+          "image_tokens": 1024,
+          "text_tokens": 533
+        },
+        "output_tokens": 2511,
+        "total_tokens": 4068,
+        "output_tokens_details": {
+          "image_tokens": 2511,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "f0e25548c0b18a517db3e85b6695c0447dae9b2982993951e66942036f30a426",
+      "file": "sources/keys.png"
+    },
+    "strip-0": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: One green-streak taupe-haired Nailü, WHITE day-battle V3 gloves, pearl headband, large ribbon beside her own hair. She notices one crooked ribbon tail, straightens it with the same gloved hand, smiles proudly, removes hand, it droops again; measured deadpan stare loops to noticing.\nA = 0.00 s: Draw full-body Nailü with green-streak taupe hair, pearl headband, WHITE day-battle V3 gloves, and a large ribbon beside her right temple; both hands rest at her waist as raised eyebrows reveal her noticing one crooked ribbon tail.\nB = 0.45 s: Keep her left hand at her waist; raise her right gloved hand toward the crooked tail, following its tip with her eyes.\nC = 0.95 s: Pinch the crooked tail between her right thumb and index finger; hold her head still and watch the contact.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells. PRIORITY: The moving object is the outer green-yellow striped streamer, fixed at the knot by her temple. Draw every inbetween with its FREE TIP visibly moving through a smooth angular arc between the exact shape in the attached endpoint poses. The glove and the tip stay together until released; after release, gravity lowers the streamer in open white space.",
+      "reference_sha256": "cc3f5c29fdd28e4f268697a09320f45b77b463c9b0d06e5ebaacfb01f137fe14",
+      "reference": [
+        1,
+        2,
+        3
+      ],
+      "request_id": "req_950a216518684f52ac41ef30a4d20913",
+      "usage": {
+        "input_tokens": 1975,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 523
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3810,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "0d6916555898c2eea555d58664a8faef20b500678642e2dd47f24762a8350f26",
+      "file": "sources/strip-0.png"
+    },
+    "strip-1": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: One green-streak taupe-haired Nailü, WHITE day-battle V3 gloves, pearl headband, large ribbon beside her own hair. She notices one crooked ribbon tail, straightens it with the same gloved hand, smiles proudly, removes hand, it droops again; measured deadpan stare loops to noticing.\nA = 0.95 s: Pinch the crooked tail between her right thumb and index finger; hold her head still and watch the contact.\nB = 1.45 s: Lift and rotate the pinched tail into straight alignment beneath the knot; narrow her eyes in concentration.\nC = 1.95 s: Hold the straightened tail with the same fingers; lift her chin slightly and smile proudly.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells. PRIORITY: The moving object is the outer green-yellow striped streamer, fixed at the knot by her temple. Draw every inbetween with its FREE TIP visibly moving through a smooth angular arc between the exact shape in the attached endpoint poses. The glove and the tip stay together until released; after release, gravity lowers the streamer in open white space.",
+      "reference_sha256": "2743c3b97ec20ba34d9950da341d1a804026c22dea228941550f6d53aacd5b1d",
+      "reference": [
+        3,
+        4,
+        5
+      ],
+      "request_id": "req_d37b103266564a9495fde8e1b4d2945d",
+      "usage": {
+        "input_tokens": 1936,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 484
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3771,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "dbdeb022c4d98d8d92f4d7d370e4ea9c53d252630f7ce34a545fcd5d02486f88",
+      "file": "sources/strip-1.png"
+    },
+    "strip-2": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: One green-streak taupe-haired Nailü, WHITE day-battle V3 gloves, pearl headband, large ribbon beside her own hair. She notices one crooked ribbon tail, straightens it with the same gloved hand, smiles proudly, removes hand, it droops again; measured deadpan stare loops to noticing.\nA = 1.95 s: Hold the straightened tail with the same fingers; lift her chin slightly and smile proudly.\nB = 2.45 s: Release the tail and withdraw her right hand toward her chest; keep her proud smile while the tail briefly stays straight.\nC = 2.95 s: Return her right hand to her waist as the same tail bends downward; flatten her smile and track the droop with her eyes.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells. PRIORITY: The moving object is the outer green-yellow striped streamer, fixed at the knot by her temple. Draw every inbetween with its FREE TIP visibly moving through a smooth angular arc between the exact shape in the attached endpoint poses. The glove and the tip stay together until released; after release, gravity lowers the streamer in open white space.",
+      "reference_sha256": "959cdbfe727c675c5063a36f8dc4b036203c8012fab37c3b3fe5232447cebec1",
+      "reference": [
+        5,
+        6,
+        7
+      ],
+      "request_id": "req_a785dd39b09d4b44ab50b5ccabd70943",
+      "usage": {
+        "input_tokens": 1943,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 491
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3778,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "5ff8bb127c406255af91123a91a3b1e1641ed99a301c59e38a89fd349afafefb",
+      "file": "sources/strip-2.png"
+    },
+    "strip-3": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: One green-streak taupe-haired Nailü, WHITE day-battle V3 gloves, pearl headband, large ribbon beside her own hair. She notices one crooked ribbon tail, straightens it with the same gloved hand, smiles proudly, removes hand, it droops again; measured deadpan stare loops to noticing.\nA = 2.95 s: Return her right hand to her waist as the same tail bends downward; flatten her smile and track the droop with her eyes.\nB = 3.45 s: Show the tail settled into its original crooked droop; keep both hands at her waist during a still, half-lidded deadpan stare.\nC = 4.25 s: Keep the crooked tail and waist-level hands fixed; slightly open her eyelids and begin raising her eyebrows toward renewed noticing.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells. PRIORITY: The moving object is the outer green-yellow striped streamer, fixed at the knot by her temple. Draw every inbetween with its FREE TIP visibly moving through a smooth angular arc between the exact shape in the attached endpoint poses. The glove and the tip stay together until released; after release, gravity lowers the streamer in open white space.",
+      "reference_sha256": "58df50b0d9f33d0d2cee72aacb1b51c8e1a2dbcf0d818d5674bad8d3aa2368cc",
+      "reference": [
+        7,
+        8,
+        9
+      ],
+      "request_id": "req_a46ad5e478e249dca5fc95ac499c76d9",
+      "usage": {
+        "input_tokens": 1955,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 503
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3790,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "6bb49859f32a879d87238ad9fee0b50cb1f58894bdcea52fc3ef1fd04ec09c9f",
+      "file": "sources/strip-3.png"
+    },
+    "strip-4": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: One green-streak taupe-haired Nailü, WHITE day-battle V3 gloves, pearl headband, large ribbon beside her own hair. She notices one crooked ribbon tail, straightens it with the same gloved hand, smiles proudly, removes hand, it droops again; measured deadpan stare loops to noticing.\nA = 4.25 s: Keep the crooked tail and waist-level hands fixed; slightly open her eyelids and begin raising her eyebrows toward renewed noticing.\nB = 0.00 s: Draw full-body Nailü with green-streak taupe hair, pearl headband, WHITE day-battle V3 gloves, and a large ribbon beside her right temple; both hands rest at her waist as raised eyebrows reveal her noticing one crooked ribbon tail.\nC = 0.45 s: Keep her left hand at her waist; raise her right gloved hand toward the crooked tail, following its tip with her eyes.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells. PRIORITY: The moving object is the outer green-yellow striped streamer, fixed at the knot by her temple. Draw every inbetween with its FREE TIP visibly moving through a smooth angular arc between the exact shape in the attached endpoint poses. The glove and the tip stay together until released; after release, gravity lowers the streamer in open white space.",
+      "reference_sha256": "25c69199c8540f0f1edd8a866f3df9c226a42e2f5bb5405e711c0ed235e6d392",
+      "reference": [
+        9,
+        1,
+        2
+      ],
+      "request_id": "req_55af73f33d8f4bb98225026aa8241f99",
+      "usage": {
+        "input_tokens": 1977,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 525
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3812,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "e858afecf796e2f5b0bff4adc29a6260c4ab83a5dfab170491d94e3fcd8327ae",
+      "file": "sources/strip-4.png"
+    }
+  },
+  "frame_review": [
+    {
+      "frame": 1,
+      "file": "frames/01.png",
+      "source": {
+        "key": 1
+      },
+      "duration_ms": 180,
+      "pixel_sha256": "7e89248ca54bcc57a3ff351df3875e3463810fd2649380a1e7fd1efb0c0d3229"
+    },
+    {
+      "frame": 2,
+      "file": "frames/02.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "d356a085baf02ae5992cbe8eb9fa5569f897c657049399a48d14c7f681deb345"
+    },
+    {
+      "frame": 3,
+      "file": "frames/03.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "a239820d074a2c1c8ef74928d07e5f533d9b214b75571f01079fc049a9e33c92"
+    },
+    {
+      "frame": 4,
+      "file": "frames/04.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "a2eb8f90bbd4d548f66dac1c91474231b201c6085ff7eec8361bd5fc30cd0fe3"
+    },
+    {
+      "frame": 5,
+      "file": "frames/05.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "a90c1e29351fabae0a7a599ab1393582a02bbb698adb0f1560aa5b1133c167d8"
+    },
+    {
+      "frame": 6,
+      "file": "frames/06.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "698fc9478c763881f1e004a04a273f2507b1297e93e43c17eb7512588383f236"
+    },
+    {
+      "frame": 7,
+      "file": "frames/07.png",
+      "source": {
+        "key": 2
+      },
+      "duration_ms": 150,
+      "pixel_sha256": "32994a64af7b72632c8dd32418cd1283263fbc45622ba7d50472d7164d1e36fe"
+    },
+    {
+      "frame": 8,
+      "file": "frames/08.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "14921d72a5653520cf2f60c5a8b385ef6f11b8ac5e610bda82aaf4db59e9cd76"
+    },
+    {
+      "frame": 9,
+      "file": "frames/09.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "b985fb21bb67e7a6f29552eaa0ed983b2220d0dcacf52eae84e81978754cf7c7"
+    },
+    {
+      "frame": 10,
+      "file": "frames/10.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "c3bc414c8b94a49e607c19b3353db94d720b4b8d7de7483fb4c63a56c8dfb957"
+    },
+    {
+      "frame": 11,
+      "file": "frames/11.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "1da1ceec70a98f6ddf8938e93952f4c06f701cb1015c0be0e5ea40c43c9daf72"
+    },
+    {
+      "frame": 12,
+      "file": "frames/12.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "817b3aad9e6517ce723cf2b977371a400b3f09e8103a629aef23b20222ae7720"
+    },
+    {
+      "frame": 13,
+      "file": "frames/13.png",
+      "source": {
+        "key": 3
+      },
+      "duration_ms": 150,
+      "pixel_sha256": "f79e0c67f565380daf930f86d9e22571d5c07044b479ebfce479f71b8e91a71e"
+    },
+    {
+      "frame": 14,
+      "file": "frames/14.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "70955169ade9931f0c76f018b9c701ed0e40953c49be95cc000ae2a8fb3dfe81"
+    },
+    {
+      "frame": 15,
+      "file": "frames/15.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "8f8aed28a18c6bf7081b7fc6c18d950d4faa2c18219af7e32856f533a73b1374"
+    },
+    {
+      "frame": 16,
+      "file": "frames/16.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "1c4bf0940e795eb28d4aa348874458e84051928d5fd373fc52f6a5e2a2baf96e"
+    },
+    {
+      "frame": 17,
+      "file": "frames/17.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "543abdaa83af6ae2e3b049798ae460cbf868076db225c666d504ce6b0356851b"
+    },
+    {
+      "frame": 18,
+      "file": "frames/18.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "8158a6c44fa6673045a1cdd5d822bddedf8f6a82d5594e30f73bed863d402760"
+    },
+    {
+      "frame": 19,
+      "file": "frames/19.png",
+      "source": {
+        "key": 4
+      },
+      "duration_ms": 270,
+      "pixel_sha256": "05262acd8fc58a2c6a18f6898f14c327ee9dd4e6da52721fb29a659de264cd06"
+    },
+    {
+      "frame": 20,
+      "file": "frames/20.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "e63be1fd2825eeb8070e60a0dfbe1fa5b85746b2d7deafbfd093754bbfd4cea0"
+    },
+    {
+      "frame": 21,
+      "file": "frames/21.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "9b1268a870fdc921a328c13c178aba0ac73c14023f3b04b09cb2718d9864cec6"
+    },
+    {
+      "frame": 22,
+      "file": "frames/22.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "337a030fb2ab6439b3a4acea438cf1e3e2a0e075e1a3b4d2c46c2b4b57dc8ae3"
+    },
+    {
+      "frame": 23,
+      "file": "frames/23.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "031dbed3819969cfdc9f0956241018c93fdde0c6fd6d5b0dbd329a14ab508eda"
+    },
+    {
+      "frame": 24,
+      "file": "frames/24.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "c31426a9291995564bd365206fa76ae4d1d04f859dfa6c78e84e90f012e3c428"
+    },
+    {
+      "frame": 25,
+      "file": "frames/25.png",
+      "source": {
+        "key": 5
+      },
+      "duration_ms": 270,
+      "pixel_sha256": "37aa790110b8dc078759577530caefaeb144f0c364c31d94203ee586273b763d"
+    },
+    {
+      "frame": 26,
+      "file": "frames/26.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "2d6de46a2181e7fa6cf42821fdf9b846808a7a801b960e380758e0d751de7d0b"
+    },
+    {
+      "frame": 27,
+      "file": "frames/27.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "393134a7069c7fa5745b836ad3a3b06cf7a2f051dcd8735ec061ca401b0de98d"
+    },
+    {
+      "frame": 28,
+      "file": "frames/28.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "ebdda0cfc2256e49ac4f68b3c84a7675a78faa2f2ee0580a190996a7bbfeb38d"
+    },
+    {
+      "frame": 29,
+      "file": "frames/29.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "2b3c2b4fc8b9080b51321bd567fa008f6a9574d9aa32560c92aa9b13028cd817"
+    },
+    {
+      "frame": 30,
+      "file": "frames/30.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "c66dc9d17761aa07dbc5c810914965261352e24710e8f30662d02b2ed2de6b49"
+    },
+    {
+      "frame": 31,
+      "file": "frames/31.png",
+      "source": {
+        "key": 6
+      },
+      "duration_ms": 220,
+      "pixel_sha256": "daaa6b05b6a7c849b361a7b3d1119211bea3edba012bd2810c3047b8cfb047d5"
+    },
+    {
+      "frame": 32,
+      "file": "frames/32.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "2ed463e10b1ec1e54e801cd187e973bd6c30e3e88edf64091854b8efacfa9815"
+    },
+    {
+      "frame": 33,
+      "file": "frames/33.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "0e1ca47b99272376433c4af178a0d3b97e59ca307312d6bf04682cf725c3db09"
+    },
+    {
+      "frame": 34,
+      "file": "frames/34.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "a103cb5ccad8f77bf92bd06fbf2adb12221476c63c2aab42cf8b85d797d0dd62"
+    },
+    {
+      "frame": 35,
+      "file": "frames/35.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "0314ad02f5175cf5b70be544a037bb3d39e9b9caf99d1552e354b9cf3a2126c2"
+    },
+    {
+      "frame": 36,
+      "file": "frames/36.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "a7bd5d687bc0f224086c9f6ef614ec301aa5cda33fc72758260aee4ce65d0bb7"
+    },
+    {
+      "frame": 37,
+      "file": "frames/37.png",
+      "source": {
+        "key": 7
+      },
+      "duration_ms": 140,
+      "pixel_sha256": "6494e0a0b8e53d0887c195e501d145ef77d86df9a0dd6d3034f735d4b8f37786"
+    },
+    {
+      "frame": 38,
+      "file": "frames/38.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "bdba1f76ec56a50ee74772809405cbde89ee6851b002ef2999ec26557c6e7bc6"
+    },
+    {
+      "frame": 39,
+      "file": "frames/39.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "19a2a40190a032fd4344606e4531017635781d1b4c4c5622e7a8c8cba655f45e"
+    },
+    {
+      "frame": 40,
+      "file": "frames/40.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "851f829a7ec3e15c7352f0ad1114d7b3448990c0a5457bb4d0bcf75ad0466190"
+    },
+    {
+      "frame": 41,
+      "file": "frames/41.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "37a640c5fe0fe831ced40ace74d3eb9b75861fd8d058f08845cfd5ed757c3ec8"
+    },
+    {
+      "frame": 42,
+      "file": "frames/42.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "c05ce6cc81d8b1a52c65c5cfb35ade72d0db928a3a9eb67ecf5f39c2a5221415"
+    },
+    {
+      "frame": 43,
+      "file": "frames/43.png",
+      "source": {
+        "key": 8
+      },
+      "duration_ms": 300,
+      "pixel_sha256": "ffdc6f12196703ca1b6b46e295ca73a9705dd0c1780ff367f45ae4a5da6f056d"
+    },
+    {
+      "frame": 44,
+      "file": "frames/44.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "4b6c791c83037f85ee8d6d147f3f732532de58ae3647ec5d940fa539b4a4eeb5"
+    },
+    {
+      "frame": 45,
+      "file": "frames/45.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "f43f7423f23a4a99666a5d82c30a7e3ab62fcb5238d351faffc8420402edee80"
+    },
+    {
+      "frame": 46,
+      "file": "frames/46.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "b82450a91082ea9ff0d87eeceabc244e87304e0ffee264cb6e706dcb86a76832"
+    },
+    {
+      "frame": 47,
+      "file": "frames/47.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "34ebcc4eddc2175f3eac129a4e6a8d25b41725ccb43b09945a2797757d0c81d5"
+    },
+    {
+      "frame": 48,
+      "file": "frames/48.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "bd6f531d070d6177248c32d8494859c2d64e19858068dcae0a73ecc84c8a59b8"
+    },
+    {
+      "frame": 49,
+      "file": "frames/49.png",
+      "source": {
+        "key": 9
+      },
+      "duration_ms": 150,
+      "pixel_sha256": "ea56f2624ebb169599e4a1df3a6e64877a28240f789f6a649066a75170b98e84"
+    },
+    {
+      "frame": 50,
+      "file": "frames/50.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "66591308fda9238d6be408b6e6ad84ae7b22a4594ccf79966796b912d1bf01b8"
+    },
+    {
+      "frame": 51,
+      "file": "frames/51.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "2e319c8598abc495b18013d3605f195090369c057c0c19169904a0892c550fa7"
+    },
+    {
+      "frame": 52,
+      "file": "frames/52.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "3a859645c0b8f7d2996aad9af9f9343239386e85ec88204732f4427ed559121e"
+    },
+    {
+      "frame": 53,
+      "file": "frames/53.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "c1fffa5a7d07dd25783c64c65b39e5e1ee1e77a62b3154b3eef1fdfb6be48ee0"
+    },
+    {
+      "frame": 54,
+      "file": "frames/54.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "69b74c21497725dece971d32f3c8f2a01b786bd2f547d614036ac3031521aab5"
+    }
+  ],
+  "native_cell_px": 512,
+  "method": "完整姿势硬切、全片统一调色板。每个原画格四边各裁 5 px，768 和 320 版按同一时值缩放编码。"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "gpt-image-2.6-sunburst",
+  "size": "1536x2048",
+  "quality": "medium",
+  "output_format": "png",
+  "n": 1,
+  "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: One green-streak taupe-haired Nailü, WHITE day-battle V3 gloves, pearl headband, large ribbon beside her own hair. She notices one crooked ribbon tail, straightens it with the same gloved hand, smiles proudly, removes hand, it droops again; measured deadpan stare loops to noticing.\nA = 0.00 s: Draw full-body Nailü with green-streak taupe hair, pearl headband, WHITE day-battle V3 gloves, and a large ribbon beside her right temple; both hands rest at her waist as raised eyebrows reveal her noticing one crooked ribbon tail.\nB = 0.45 s: Keep her left hand at her waist; raise her right gloved hand toward the crooked tail, following its tip with her eyes.\nC = 0.95 s: Pinch the crooked tail between her right thumb and index finger; hold her head still and watch the contact.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+  "reference_sha256": "e5509cc2035d03cae0d8c4f7e13d01e90fed2eeb8698e6a0293fec7d317c9f8e",
+  "reference": [
+    1,
+    2,
+    3
+  ]
+}
