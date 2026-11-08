@@ -44,6 +44,16 @@
 | 花太多了 | [320 px](13-flowers/chat.gif) · [768 px](13-flowers/master.gif) | 54 / 4.85 秒 | 最先只有一枝花，随后花束堆过星瞳的脸。她把花抱低，只露出银发的呆毛，再空手探起身。 [逐帧图](13-flowers/frames.jpg) |
 | 开饭撤场 | [320 px](14-dinner/chat.gif) · [768 px](14-dinner/master.gif) | 54 / 4.88 秒 | 两人各捧一碗饭先后离开，画面留下桌上的节拍器；她们再从两侧空手探回来。 [逐帧图](14-dinner/frames.jpg) |
 
+## 精细 Q 版配套
+
+星瞳取真实 B 站同套《揣手手》《老实》，对齐奶绿鼓脸的构图和每一帧时值。[视觉依据](references/README.md)
+
+| 表情 | 打开 GIF | 帧数 / 一圈时长 | 动作核对 |
+|---|---|---|---|
+| 星瞳·鼓脸晃头 | [320 px](15-xingtong-pout/chat.gif) · [768 px](15-xingtong-pout/master.gif) | 54 / 4.56 秒 | 半垂蓝眼、双拳和鼓脸沿用奶绿的动作；银灰短发、紫发箍和浅紫外套取 B 站同套原图。两条逐帧时长一致，偏头方向与回正时机对应。 [逐帧图](15-xingtong-pout/frames.jpg) |
+
 [星瞳造型的 B 站原图、百科与 CDN 哈希](references/README.md) · [搭配用的精细 Q 版静态校样](references/xingtong-detailed.png)
 
 成片以 768、320 两个尺寸复解，逐帧核对时长和循环标记；112 像素回放使用实际浏览器截屏。分享后的聊天客户端转码待使用反馈。
+
+[打包下载全部 15 条 320 像素 GIF](十五条表情-320px.zip) · [星瞳与奶绿并排同步播放](15-xingtong-pout/paired.gif) · [文件哈希](delivery.json)
