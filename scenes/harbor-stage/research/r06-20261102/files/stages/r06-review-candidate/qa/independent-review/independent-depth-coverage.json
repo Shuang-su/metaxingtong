@@ -1,0 +1,1402 @@
+{
+  "scope": "Independent artifact/raw-array/hash and exact gray-display derivation verification. Original inference is not rerun. Method/version is checked in reports plus current recorded venv; acquisition and inference logs are reused evidence.",
+  "source_frame_count": 7,
+  "depth_artifact_coverage_count": 7,
+  "all_source_ids_covered": true,
+  "in_harbor_repo_count": 6,
+  "external_preliminary_repo_count": 1,
+  "actual_model_weights_bytes": 99173660,
+  "actual_model_weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+  "all_reports_weights_match_actual": true,
+  "current_depth_venv_versions": {
+    "torch": "2.15.0+cpu",
+    "transformers": "5.22.1",
+    "safetensors": "0.8.0",
+    "pillow": "13.0.0",
+    "numpy": "2.5.4"
+  },
+  "frames": [
+    {
+      "source_id": "aug24-front",
+      "depth_directory": "/workspace/scratch/fa58bfcf0425/depth-validation-20261102/harbor-preliminary-analysis",
+      "source_sha_matches_actual": true,
+      "raw_shape": [
+        518,
+        924
+      ],
+      "raw_dtype": "float32",
+      "raw_min": 0.0,
+      "raw_max": 4.815495014190674,
+      "nonfinite_count": 0,
+      "range_matches_report": true,
+      "method": {
+        "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+        "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+        "license": "apache-2.0",
+        "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "versions": {
+          "torch": "2.15.0+cpu",
+          "transformers": "5.22.1",
+          "safetensors": "0.8.0",
+          "pillow": "13.0.0",
+          "numpy": "2.5.4"
+        },
+        "device": "cpu",
+        "threads": 4,
+        "dtype": "float32",
+        "input_tensor_shape": [
+          1,
+          3,
+          518,
+          924
+        ],
+        "processor_config": {
+          "_valid_processor_keys": [
+            "images",
+            "do_resize",
+            "size",
+            "keep_aspect_ratio",
+            "ensure_multiple_of",
+            "resample",
+            "do_rescale",
+            "rescale_factor",
+            "do_normalize",
+            "image_mean",
+            "image_std",
+            "do_pad",
+            "size_divisor",
+            "return_tensors",
+            "data_format",
+            "input_data_format"
+          ],
+          "do_normalize": true,
+          "do_pad": false,
+          "do_rescale": true,
+          "do_resize": true,
+          "ensure_multiple_of": 14,
+          "image_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "image_processor_type": "DPTImageProcessor",
+          "image_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "keep_aspect_ratio": true,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 518,
+            "width": 518
+          },
+          "size_divisor": null
+        },
+        "raw_shape": [
+          518,
+          924
+        ],
+        "inference_and_output_seconds": 2.164642572402954,
+        "trust_remote_code": false,
+        "weights_format": "safetensors",
+        "local_files_only": true
+      },
+      "mask_description": {
+        "manual-exclusion-classes-source-grid.png": {
+          "0": "unlabelled, NOT certified valid",
+          "1": "conservative character bounding rectangle includes nearby background",
+          "2": "subtitle screen overlay rectangle",
+          "3": "approximate central sky opening polygon; boundary uncertain",
+          "4": "conservative lower stage/reflective floor/water or unknown screen region; mixed content, not exact segmentation"
+        },
+        "confidence-unknown-source-grid.png": "255 everywhere means model supplies NO calibrated confidence, not high confidence",
+        "reflection_water_transparency_lights": "Reflective stage and horizon/water/ships, translucent-looking mesh bands and sky uncertain. Mask 4 conservatively excludes entire lower mixed region; not source-confirmed water segmentation. Manual masks not exhaustive.",
+        "occluded_hidden_geometry": "not measurable from this monocular image; no fabricated completion"
+      },
+      "output_checks": [
+        {
+          "file": "confidence-unknown-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "manual-exclusion-classes-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray16-model-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray8-resampled-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-model-grid.npy",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-resampled-source-grid.npy",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        }
+      ],
+      "gray16_exact_normalization": true,
+      "derived_display_dimensions": [
+        3840,
+        2160
+      ],
+      "derived_gray8_exact_bicubic_from_raw": true,
+      "display_mismatch_pixel_count": 0,
+      "derived_npy_exact_bicubic": true,
+      "actual_mask_class_counts": {
+        "0": 4424076,
+        "1": 130073,
+        "2": 1525392,
+        "3": 429671,
+        "4": 1785188
+      },
+      "actual_confidence_values": [
+        255
+      ],
+      "confidence_all_unknown_255": true,
+      "external_archive_commit": "f20277101571cb47fb770da039aba47f3b7a5c46",
+      "external_outputs_match_git_commit": true
+    },
+    {
+      "source_id": "companion-120",
+      "depth_directory": "/workspace/scratch/fa58bfcf0425/metaxingtong-harbor-candidate-20261102/depth/companion-120",
+      "source_sha_matches_actual": true,
+      "raw_shape": [
+        518,
+        924
+      ],
+      "raw_dtype": "float32",
+      "raw_min": 0.33921894431114197,
+      "raw_max": 8.85953426361084,
+      "nonfinite_count": 0,
+      "range_matches_report": true,
+      "method": {
+        "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+        "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+        "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "device": "cpu",
+        "threads": 1,
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.15.0+cpu",
+          "transformers": "5.22.1",
+          "safetensors": "0.8.0",
+          "pillow": "13.0.0",
+          "numpy": "2.5.4"
+        },
+        "input_tensor_shape": [
+          1,
+          3,
+          518,
+          924
+        ],
+        "raw_shape": [
+          518,
+          924
+        ],
+        "processor_config": {
+          "_valid_processor_keys": [
+            "images",
+            "do_resize",
+            "size",
+            "keep_aspect_ratio",
+            "ensure_multiple_of",
+            "resample",
+            "do_rescale",
+            "rescale_factor",
+            "do_normalize",
+            "image_mean",
+            "image_std",
+            "do_pad",
+            "size_divisor",
+            "return_tensors",
+            "data_format",
+            "input_data_format"
+          ],
+          "do_normalize": true,
+          "do_pad": false,
+          "do_rescale": true,
+          "do_resize": true,
+          "ensure_multiple_of": 14,
+          "image_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "image_processor_type": "DPTImageProcessor",
+          "image_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "keep_aspect_ratio": true,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 518,
+            "width": 518
+          },
+          "size_divisor": null
+        },
+        "inference_seconds": 3.7537569739997707,
+        "local_files_only": true,
+        "trust_remote_code": false
+      },
+      "mask_description": {
+        "classes": {
+          "0": "unlabelled; not certified valid",
+          "1": "screen graphic overlays",
+          "2": "reflective platform / mixed lower stage",
+          "3": "water and distant background / mixed foliage",
+          "4": "strong emissive displays and bloom / mixed frame structure",
+          "5": "dynamic performer, conservative ROI not exact silhouette"
+        },
+        "regions": [
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              1920,
+              1080
+            ],
+            "value": 3
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              288,
+              237,
+              1632,
+              1080
+            ],
+            "value": 4
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              777,
+              1920,
+              1080
+            ],
+            "value": 2
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              441,
+              270
+            ],
+            "value": 1
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              748,
+              248,
+              1094,
+              982
+            ],
+            "value": 5
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              1382,
+              0,
+              1920,
+              172
+            ],
+            "value": 1
+          }
+        ],
+        "confidence": "255 everywhere means unknown: model supplies no calibrated confidence",
+        "limits": "Conservative hand-drawn ROIs include neighboring material; not exact segmentation; zero is unlabelled NOT validated"
+      },
+      "output_checks": [
+        {
+          "file": "confidence-unknown-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "manual-exclusion-classes-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray16-model-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray8-derived-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-model-grid.npy",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        }
+      ],
+      "gray16_exact_normalization": true,
+      "derived_display_dimensions": [
+        1920,
+        1080
+      ],
+      "derived_gray8_exact_bicubic_from_raw": true,
+      "display_mismatch_pixel_count": 0,
+      "actual_mask_class_counts": {
+        "1": 212856,
+        "2": 510278,
+        "3": 557920,
+        "4": 537501,
+        "5": 255045
+      },
+      "actual_confidence_values": [
+        255
+      ],
+      "confidence_all_unknown_255": true
+    },
+    {
+      "source_id": "companion-126",
+      "depth_directory": "/workspace/scratch/fa58bfcf0425/metaxingtong-harbor-candidate-20261102/depth/companion-126",
+      "source_sha_matches_actual": true,
+      "raw_shape": [
+        518,
+        924
+      ],
+      "raw_dtype": "float32",
+      "raw_min": 0.36740195751190186,
+      "raw_max": 10.38698673248291,
+      "nonfinite_count": 0,
+      "range_matches_report": true,
+      "method": {
+        "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+        "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+        "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "device": "cpu",
+        "threads": 1,
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.15.0+cpu",
+          "transformers": "5.22.1",
+          "safetensors": "0.8.0",
+          "pillow": "13.0.0",
+          "numpy": "2.5.4"
+        },
+        "input_tensor_shape": [
+          1,
+          3,
+          518,
+          924
+        ],
+        "raw_shape": [
+          518,
+          924
+        ],
+        "processor_config": {
+          "_valid_processor_keys": [
+            "images",
+            "do_resize",
+            "size",
+            "keep_aspect_ratio",
+            "ensure_multiple_of",
+            "resample",
+            "do_rescale",
+            "rescale_factor",
+            "do_normalize",
+            "image_mean",
+            "image_std",
+            "do_pad",
+            "size_divisor",
+            "return_tensors",
+            "data_format",
+            "input_data_format"
+          ],
+          "do_normalize": true,
+          "do_pad": false,
+          "do_rescale": true,
+          "do_resize": true,
+          "ensure_multiple_of": 14,
+          "image_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "image_processor_type": "DPTImageProcessor",
+          "image_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "keep_aspect_ratio": true,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 518,
+            "width": 518
+          },
+          "size_divisor": null
+        },
+        "inference_seconds": 3.6398963190003997,
+        "local_files_only": true,
+        "trust_remote_code": false
+      },
+      "mask_description": {
+        "classes": {
+          "0": "unlabelled; not certified valid",
+          "1": "screen graphic overlays",
+          "2": "reflective platform / mixed lower stage",
+          "3": "water and distant background / mixed foliage",
+          "4": "strong emissive displays and bloom / mixed frame structure",
+          "5": "dynamic performer, conservative ROI not exact silhouette"
+        },
+        "regions": [
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              3840,
+              2160
+            ],
+            "value": 3
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              576,
+              475,
+              3264,
+              2160
+            ],
+            "value": 4
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              1555,
+              3840,
+              2160
+            ],
+            "value": 2
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              883,
+              540
+            ],
+            "value": 1
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              1497,
+              496,
+              2188,
+              1965
+            ],
+            "value": 5
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              2764,
+              0,
+              3840,
+              345
+            ],
+            "value": 1
+          }
+        ],
+        "confidence": "255 everywhere means unknown: model supplies no calibrated confidence",
+        "limits": "Conservative hand-drawn ROIs include neighboring material; not exact segmentation; zero is unlabelled NOT validated"
+      },
+      "output_checks": [
+        {
+          "file": "confidence-unknown-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "manual-exclusion-classes-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray16-model-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray8-derived-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-model-grid.npy",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        }
+      ],
+      "gray16_exact_normalization": true,
+      "derived_display_dimensions": [
+        3840,
+        2160
+      ],
+      "derived_gray8_exact_bicubic_from_raw": true,
+      "display_mismatch_pixel_count": 0,
+      "actual_mask_class_counts": {
+        "1": 850540,
+        "2": 2038788,
+        "3": 2236868,
+        "4": 2150964,
+        "5": 1017240
+      },
+      "actual_confidence_values": [
+        255
+      ],
+      "confidence_all_unknown_255": true
+    },
+    {
+      "source_id": "preview-front",
+      "depth_directory": "/workspace/scratch/fa58bfcf0425/metaxingtong-harbor-candidate-20261102/depth/preview-front",
+      "source_sha_matches_actual": true,
+      "raw_shape": [
+        518,
+        924
+      ],
+      "raw_dtype": "float32",
+      "raw_min": 0.0,
+      "raw_max": 6.590440273284912,
+      "nonfinite_count": 0,
+      "range_matches_report": true,
+      "method": {
+        "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+        "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+        "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "device": "cpu",
+        "threads": 1,
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.15.0+cpu",
+          "transformers": "5.22.1",
+          "safetensors": "0.8.0",
+          "pillow": "13.0.0",
+          "numpy": "2.5.4"
+        },
+        "input_tensor_shape": [
+          1,
+          3,
+          518,
+          924
+        ],
+        "raw_shape": [
+          518,
+          924
+        ],
+        "processor_config": {
+          "_valid_processor_keys": [
+            "images",
+            "do_resize",
+            "size",
+            "keep_aspect_ratio",
+            "ensure_multiple_of",
+            "resample",
+            "do_rescale",
+            "rescale_factor",
+            "do_normalize",
+            "image_mean",
+            "image_std",
+            "do_pad",
+            "size_divisor",
+            "return_tensors",
+            "data_format",
+            "input_data_format"
+          ],
+          "do_normalize": true,
+          "do_pad": false,
+          "do_rescale": true,
+          "do_resize": true,
+          "ensure_multiple_of": 14,
+          "image_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "image_processor_type": "DPTImageProcessor",
+          "image_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "keep_aspect_ratio": true,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 518,
+            "width": 518
+          },
+          "size_divisor": null
+        },
+        "inference_seconds": 3.777861941000083,
+        "local_files_only": true,
+        "trust_remote_code": false
+      },
+      "mask_description": {
+        "classes": {
+          "0": "unlabelled; not certified valid",
+          "1": "screen graphic overlays",
+          "2": "reflective platform / mixed lower stage",
+          "3": "water and distant background / mixed foliage",
+          "4": "strong emissive displays and bloom / mixed frame structure"
+        },
+        "regions": [
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              1920,
+              1080
+            ],
+            "value": 3
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              288,
+              237,
+              1632,
+              1080
+            ],
+            "value": 4
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              777,
+              1920,
+              1080
+            ],
+            "value": 2
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              441,
+              270
+            ],
+            "value": 1
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              345,
+              777,
+              1920,
+              1080
+            ],
+            "value": 1
+          }
+        ],
+        "confidence": "255 everywhere means unknown: model supplies no calibrated confidence",
+        "limits": "Conservative hand-drawn ROIs include neighboring material; not exact segmentation; zero is unlabelled NOT validated"
+      },
+      "output_checks": [
+        {
+          "file": "confidence-unknown-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "manual-exclusion-classes-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray16-model-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray8-derived-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-model-grid.npy",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        }
+      ],
+      "gray16_exact_normalization": true,
+      "derived_display_dimensions": [
+        1920,
+        1080
+      ],
+      "derived_gray8_exact_bicubic_from_raw": true,
+      "display_mismatch_pixel_count": 0,
+      "actual_mask_class_counts": {
+        "1": 597007,
+        "2": 104535,
+        "3": 650994,
+        "4": 721064
+      },
+      "actual_confidence_values": [
+        255
+      ],
+      "confidence_all_unknown_255": true
+    },
+    {
+      "source_id": "preview-low",
+      "depth_directory": "/workspace/scratch/fa58bfcf0425/metaxingtong-harbor-candidate-20261102/depth/preview-low",
+      "source_sha_matches_actual": true,
+      "raw_shape": [
+        518,
+        924
+      ],
+      "raw_dtype": "float32",
+      "raw_min": 0.0,
+      "raw_max": 3.502373695373535,
+      "nonfinite_count": 0,
+      "range_matches_report": true,
+      "method": {
+        "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+        "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+        "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "device": "cpu",
+        "threads": 1,
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.15.0+cpu",
+          "transformers": "5.22.1",
+          "safetensors": "0.8.0",
+          "pillow": "13.0.0",
+          "numpy": "2.5.4"
+        },
+        "input_tensor_shape": [
+          1,
+          3,
+          518,
+          924
+        ],
+        "raw_shape": [
+          518,
+          924
+        ],
+        "processor_config": {
+          "_valid_processor_keys": [
+            "images",
+            "do_resize",
+            "size",
+            "keep_aspect_ratio",
+            "ensure_multiple_of",
+            "resample",
+            "do_rescale",
+            "rescale_factor",
+            "do_normalize",
+            "image_mean",
+            "image_std",
+            "do_pad",
+            "size_divisor",
+            "return_tensors",
+            "data_format",
+            "input_data_format"
+          ],
+          "do_normalize": true,
+          "do_pad": false,
+          "do_rescale": true,
+          "do_resize": true,
+          "ensure_multiple_of": 14,
+          "image_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "image_processor_type": "DPTImageProcessor",
+          "image_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "keep_aspect_ratio": true,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 518,
+            "width": 518
+          },
+          "size_divisor": null
+        },
+        "inference_seconds": 3.792495799999415,
+        "local_files_only": true,
+        "trust_remote_code": false
+      },
+      "mask_description": {
+        "classes": {
+          "0": "unlabelled; not certified valid",
+          "1": "screen graphic overlays",
+          "2": "reflective platform / mixed lower stage",
+          "3": "water and distant background / mixed foliage",
+          "4": "strong emissive displays and bloom / mixed frame structure"
+        },
+        "regions": [
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              1920,
+              1080
+            ],
+            "value": 3
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              288,
+              237,
+              1632,
+              1080
+            ],
+            "value": 4
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              777,
+              1920,
+              1080
+            ],
+            "value": 2
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              441,
+              270
+            ],
+            "value": 1
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              345,
+              777,
+              1920,
+              1080
+            ],
+            "value": 1
+          }
+        ],
+        "confidence": "255 everywhere means unknown: model supplies no calibrated confidence",
+        "limits": "Conservative hand-drawn ROIs include neighboring material; not exact segmentation; zero is unlabelled NOT validated"
+      },
+      "output_checks": [
+        {
+          "file": "confidence-unknown-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "manual-exclusion-classes-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray16-model-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray8-derived-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-model-grid.npy",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        }
+      ],
+      "gray16_exact_normalization": true,
+      "derived_display_dimensions": [
+        1920,
+        1080
+      ],
+      "derived_gray8_exact_bicubic_from_raw": true,
+      "display_mismatch_pixel_count": 0,
+      "actual_mask_class_counts": {
+        "1": 597007,
+        "2": 104535,
+        "3": 650994,
+        "4": 721064
+      },
+      "actual_confidence_values": [
+        255
+      ],
+      "confidence_all_unknown_255": true
+    },
+    {
+      "source_id": "preview-high",
+      "depth_directory": "/workspace/scratch/fa58bfcf0425/metaxingtong-harbor-candidate-20261102/depth/preview-oblique",
+      "source_sha_matches_actual": true,
+      "raw_shape": [
+        518,
+        924
+      ],
+      "raw_dtype": "float32",
+      "raw_min": 0.0,
+      "raw_max": 3.9583241939544678,
+      "nonfinite_count": 0,
+      "range_matches_report": true,
+      "method": {
+        "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+        "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+        "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "device": "cpu",
+        "threads": 3,
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.15.0+cpu",
+          "transformers": "5.22.1",
+          "safetensors": "0.8.0",
+          "pillow": "13.0.0",
+          "numpy": "2.5.4"
+        },
+        "input_tensor_shape": [
+          1,
+          3,
+          518,
+          924
+        ],
+        "raw_shape": [
+          518,
+          924
+        ],
+        "processor_config": {
+          "_valid_processor_keys": [
+            "images",
+            "do_resize",
+            "size",
+            "keep_aspect_ratio",
+            "ensure_multiple_of",
+            "resample",
+            "do_rescale",
+            "rescale_factor",
+            "do_normalize",
+            "image_mean",
+            "image_std",
+            "do_pad",
+            "size_divisor",
+            "return_tensors",
+            "data_format",
+            "input_data_format"
+          ],
+          "do_normalize": true,
+          "do_pad": false,
+          "do_rescale": true,
+          "do_resize": true,
+          "ensure_multiple_of": 14,
+          "image_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "image_processor_type": "DPTImageProcessor",
+          "image_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "keep_aspect_ratio": true,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 518,
+            "width": 518
+          },
+          "size_divisor": null
+        },
+        "inference_seconds": 1.9886711849994754,
+        "local_files_only": true,
+        "trust_remote_code": false
+      },
+      "mask_description": {
+        "classes": {
+          "0": "unlabelled; not certified valid",
+          "1": "screen graphic overlays",
+          "2": "reflective platform / mixed lower stage",
+          "3": "water and distant background / mixed foliage",
+          "4": "strong emissive displays and bloom / mixed frame structure"
+        },
+        "regions": [
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              1920,
+              480
+            ],
+            "value": 3
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              480,
+              1920,
+              1080
+            ],
+            "value": 2
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              350,
+              240,
+              1540,
+              925
+            ],
+            "value": 4
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              45,
+              405,
+              245
+            ],
+            "value": 1
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              1400,
+              910,
+              1919,
+              1079
+            ],
+            "value": 1
+          }
+        ],
+        "confidence": "255 everywhere means unknown: model supplies no calibrated confidence",
+        "limits": "Conservative hand-drawn ROIs include neighboring material; not exact segmentation; zero is unlabelled NOT validated"
+      },
+      "output_checks": [
+        {
+          "file": "confidence-unknown-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "manual-exclusion-classes-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray16-model-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray8-derived-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-model-grid.npy",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        }
+      ],
+      "gray16_exact_normalization": true,
+      "derived_display_dimensions": [
+        1920,
+        1080
+      ],
+      "derived_gray8_exact_bicubic_from_raw": true,
+      "display_mismatch_pixel_count": 0,
+      "actual_mask_class_counts": {
+        "1": 170006,
+        "2": 534670,
+        "3": 554490,
+        "4": 814434
+      },
+      "actual_confidence_values": [
+        255
+      ],
+      "confidence_all_unknown_255": true
+    },
+    {
+      "source_id": "preview-wide",
+      "depth_directory": "/workspace/scratch/fa58bfcf0425/metaxingtong-harbor-candidate-20261102/depth/preview-wide",
+      "source_sha_matches_actual": true,
+      "raw_shape": [
+        518,
+        924
+      ],
+      "raw_dtype": "float32",
+      "raw_min": 0.0,
+      "raw_max": 5.043179035186768,
+      "nonfinite_count": 0,
+      "range_matches_report": true,
+      "method": {
+        "repo": "depth-anything/Depth-Anything-V2-Small-hf",
+        "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+        "weights_sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+        "device": "cpu",
+        "threads": 3,
+        "dtype": "float32",
+        "versions": {
+          "torch": "2.15.0+cpu",
+          "transformers": "5.22.1",
+          "safetensors": "0.8.0",
+          "pillow": "13.0.0",
+          "numpy": "2.5.4"
+        },
+        "input_tensor_shape": [
+          1,
+          3,
+          518,
+          924
+        ],
+        "raw_shape": [
+          518,
+          924
+        ],
+        "processor_config": {
+          "_valid_processor_keys": [
+            "images",
+            "do_resize",
+            "size",
+            "keep_aspect_ratio",
+            "ensure_multiple_of",
+            "resample",
+            "do_rescale",
+            "rescale_factor",
+            "do_normalize",
+            "image_mean",
+            "image_std",
+            "do_pad",
+            "size_divisor",
+            "return_tensors",
+            "data_format",
+            "input_data_format"
+          ],
+          "do_normalize": true,
+          "do_pad": false,
+          "do_rescale": true,
+          "do_resize": true,
+          "ensure_multiple_of": 14,
+          "image_mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "image_processor_type": "DPTImageProcessor",
+          "image_std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "keep_aspect_ratio": true,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "height": 518,
+            "width": 518
+          },
+          "size_divisor": null
+        },
+        "inference_seconds": 1.7508644680001453,
+        "local_files_only": true,
+        "trust_remote_code": false
+      },
+      "mask_description": {
+        "classes": {
+          "0": "unlabelled; not certified valid",
+          "1": "screen graphic overlays",
+          "2": "reflective platform / mixed lower stage",
+          "3": "water and distant background / mixed foliage",
+          "4": "strong emissive displays and bloom / mixed frame structure"
+        },
+        "regions": [
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              0,
+              1920,
+              650
+            ],
+            "value": 3
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              400,
+              500,
+              1850,
+              1080
+            ],
+            "value": 2
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              780,
+              265,
+              1400,
+              700
+            ],
+            "value": 4
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              0,
+              20,
+              405,
+              245
+            ],
+            "value": 1
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              460,
+              795,
+              1460,
+              935
+            ],
+            "value": 1
+          },
+          {
+            "shape": "rectangle",
+            "coords": [
+              1400,
+              910,
+              1919,
+              1079
+            ],
+            "value": 1
+          }
+        ],
+        "confidence": "255 everywhere means unknown: model supplies no calibrated confidence",
+        "limits": "Conservative hand-drawn ROIs include neighboring material; not exact segmentation; zero is unlabelled NOT validated"
+      },
+      "output_checks": [
+        {
+          "file": "confidence-unknown-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "manual-exclusion-classes-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray16-model-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-gray8-derived-source-grid.png",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        },
+        {
+          "file": "relative-inverse-depth-model-grid.npy",
+          "exists": true,
+          "hash_match": true,
+          "bytes_match": true
+        }
+      ],
+      "gray16_exact_normalization": true,
+      "derived_display_dimensions": [
+        1920,
+        1080
+      ],
+      "derived_gray8_exact_bicubic_from_raw": true,
+      "display_mismatch_pixel_count": 0,
+      "actual_mask_class_counts": {
+        "0": 189471,
+        "1": 319711,
+        "2": 500534,
+        "3": 793128,
+        "4": 270756
+      },
+      "actual_confidence_values": [
+        255
+      ],
+      "confidence_all_unknown_255": true
+    }
+  ]
+}

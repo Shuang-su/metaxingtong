@@ -1,0 +1,26 @@
+{
+  "source": {
+    "path": "sources/official-preview/BV1uqYvzDEZK_10.106498_1080p60.png",
+    "BV": "BV1uqYvzDEZK",
+    "url": "https://www.bilibili.com/video/BV1uqYvzDEZK/",
+    "time_seconds": 10.106498,
+    "sha256": "61f7c995ffbabe43ef0bce9ba5c8b4610ca789a75ae9122fd37161bda1893c3f",
+    "role": "Official Aug16 promotional CG: fixed module structural bridge only, NOT later independent live replay",
+    "provenance": "Source owner reports native browser export, highest listed 1080P60, before/after time=10.106498 paused=true readyState=4 actual1920x1080; builder independently decoded pixels/hash only"
+  },
+  "output": "depth/preview-oblique",
+  "mask_classes": {"0":"unlabelled; not certified valid", "1":"screen graphic overlays", "2":"reflective platform / mixed lower stage", "3":"water and distant background / mixed foliage", "4":"strong emissive displays and bloom / mixed frame structure"},
+  "mask_regions": [
+    {"shape":"rectangle","coords":[0,0,1920,480],"value":3},
+    {"shape":"rectangle","coords":[0,480,1920,1080],"value":2},
+    {"shape":"rectangle","coords":[350,240,1540,925],"value":4},
+    {"shape":"rectangle","coords":[0,45,405,245],"value":1},
+    {"shape":"rectangle","coords":[1400,910,1919,1079],"value":1}
+  ],
+  "limitations": [
+    "Highly reflective/emissive stylized CG image; conservative masks cover almost entire frame because no region is certified reliable.",
+    "Cannot recover hidden supports, infer all curved-leg instances, confirm physical contacts, or set measured dimensions from this map.",
+    "Preview lighting/display and surroundings differ from Aug24 performance. Only visually bridged fixed module structure may be compared.",
+    "Crown top and complete stage perimeter remain cropped in this frame."
+  ]
+}

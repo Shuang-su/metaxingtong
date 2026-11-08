@@ -1,0 +1,77 @@
+{
+  "source": {
+    "path": "sources/official-preview/BV1uqYvzDEZK_16.085747_1080p60.png",
+    "BV": "BV1uqYvzDEZK",
+    "url": "https://www.bilibili.com/video/BV1uqYvzDEZK/",
+    "time_seconds": 16.085747,
+    "sha256": "1a9ddf4e74390e5c164cc4bcef7046eff5daec15f91aec92c30f75d254354a06",
+    "role": "official preview structural supplement, not later live replay",
+    "provenance": "Source manifest native browser export, paused ready4 same time and decoded dimensions before/after; builder independently inspected PNG pixels and bytes"
+  },
+  "output": "depth/preview-low",
+  "mask_classes": {
+    "0": "unlabelled; not certified valid",
+    "1": "screen graphic overlays",
+    "2": "reflective platform / mixed lower stage",
+    "3": "water and distant background / mixed foliage",
+    "4": "strong emissive displays and bloom / mixed frame structure"
+  },
+  "mask_regions": [
+    {
+      "shape": "rectangle",
+      "coords": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "value": 3
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        288,
+        237,
+        1632,
+        1080
+      ],
+      "value": 4
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        0,
+        777,
+        1920,
+        1080
+      ],
+      "value": 2
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        0,
+        0,
+        441,
+        270
+      ],
+      "value": 1
+    },
+    {
+      "shape": "rectangle",
+      "coords": [
+        345,
+        777,
+        1920,
+        1080
+      ],
+      "value": 1
+    }
+  ],
+  "limitations": [
+    "All regions remain conservative/excluded; no calibrated confidence or metric scale.",
+    "People, reflective stage, glass, water, emissions and broadcast typography distort monocular depth.",
+    "Cross-frame raw or normalized values are not absolute distances.",
+    "Only fixed-object structural hypotheses are compared; time-specific light state is not shape."
+  ]
+}

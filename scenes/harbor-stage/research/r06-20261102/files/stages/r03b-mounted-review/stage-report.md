@@ -1,0 +1,9 @@
+# r03b minimum accessory mount repair and export QA
+
+Only two parasol poles were extended from3.2 to3.285 to enter the canopy thickness; only three tilted surfboards were lowered by their actual mesh minimum0.02181100845336914 to ground0. These are inferred contact fixes, not proof of source support design or surfboard physical stability.389 other mesh objects and all cameras stayed byte-identical in world-geometry/camera snapshots. Shared white/material geometry matches exactly.
+
+Initial repair assertion failed because location edits had not yet updated Blender's dependency graph; no repaired model was saved from that failed run. Failure log kept. Explicit view-layer update then verified all5 intended changes and only them.
+
+Native geometry:394 closed manifold positive-volume objects, no zero-area native faces.5025 floor-only rays found no holes, with up to0.002084 model-unit numerical edge-hit height discrepancy (not a precision measurement). Both curved feet have12 minimum-height vertices each atz0.75; floor contact differs only~1.2e-7.1813 opening rays and308 true triangle-contact candidates are retained; overlap count is not itself a defect classification.
+
+Actual white+material GLB reimports retain394 identities, no missing/extra, bbox delta0. However export QA did NOT pass:each curved support's four-sided face triangulation produced2 degenerate triangles; two neon arch paths have duplicate consecutive points and become nonmanifold after seam welding. Large sea-disk vertex duplication requires1e-5 rather than1e-6 position tolerance; at1e-5 it is closed and nondegenerate, consistent with float32 positional roundoff at120-unit scale. r04 will preserve outline/cameras while triangulating the2 strips robustly and removing the2 duplicate arch samples. Failure evidence remains here.

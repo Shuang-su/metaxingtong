@@ -1,0 +1,43 @@
+{
+  "inherited_r05_fixes": [
+    {
+      "id": "CROWN_TOP_DISPLAY_DRUM",
+      "led_face_class_mod4": 3,
+      "other_faces": "Titanium brushed",
+      "UV": "continuous angle U; rear rail reverses U for inward display; seam unwrapped per polygon",
+      "geometry_changed": false
+    },
+    {
+      "id": "CROWN_MID_DISPLAY_RING",
+      "led_face_class_mod4": 3,
+      "other_faces": "Titanium brushed",
+      "UV": "continuous angle U; rear rail reverses U for inward display; seam unwrapped per polygon",
+      "geometry_changed": false
+    },
+    {
+      "id": "CROWN_OUTER_DISPLAY_RING",
+      "led_face_class_mod4": 3,
+      "other_faces": "Titanium brushed",
+      "UV": "continuous angle U; rear rail reverses U for inward display; seam unwrapped per polygon",
+      "geometry_changed": false
+    },
+    {
+      "id": "BACK_DISPLAY_RAIL",
+      "led_face_class_mod4": 2,
+      "other_faces": "Titanium brushed",
+      "UV": "continuous angle U; rear rail reverses U for inward display; seam unwrapped per polygon",
+      "geometry_changed": false
+    }
+  ],
+  "r06_band_uv": {
+    "objects": [
+      "FRAME_L",
+      "FRAME_R"
+    ],
+    "U": "left1-t, rightt along source strip path",
+    "V": "outer edge1, inner edge0",
+    "texture": "textures/curved-band-led-grid-r06.png",
+    "purpose": "correct word orientation and scale; generic source-inspired font, exact Chinese artwork still not reproduced"
+  },
+  "white_material_geometry_unchanged": true
+}

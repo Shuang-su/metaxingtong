@@ -1,0 +1,78 @@
+{
+  "audit_utc": "2026-11-02T02:51:25Z",
+  "audit_kind": "retrospective bounded source-owner statement; no new browser observation",
+  "scope": "seven harbor source PNGs: initial1 + official-preview4 + live-companion2",
+  "original_manifests_unchanged": true,
+  "manifest_refs": [
+    {
+      "path": "manifest.json",
+      "sha256": "f8da588c331d4071aff12d560b7109de0a31cda851093b37da16ff744e42b13e"
+    },
+    {
+      "path": "official-preview/manifest.json",
+      "sha256": "7f274313685dd05b2740797c9558ad53a66dc73d537f5da60ea58749a03331cb"
+    },
+    {
+      "path": "live-companion/manifest.json",
+      "sha256": "84249fb94a587001fee33258a92d3eacf24d3d4c4a6f3ec6081fc8f6259989d8"
+    },
+    {
+      "path": "live-companion/4k-supplement-manifest.json",
+      "sha256": "105b7da64cc4b6a65ee242dd56cbb02bcf55430b6da1ee47961d4c8426e4fc75"
+    }
+  ],
+  "positive_evidence": [
+    {
+      "source": "BV1iteRzHEsK",
+      "manifest": "manifest.json",
+      "capture_export_utc": "2026-11-02T00:45:07Z",
+      "video_time": 1.09355,
+      "recorded_login_evidence_verbatim": "Visible account avatar, account-specific favorites/history links and notifications; existing session, no new authentication or credentials accessed. Membership not separately checked.",
+      "bound": "This is the original capture record, not a newly observed historical screenshot. Exact separate UI observation timestamp was not recorded."
+    }
+  ],
+  "operator_continuity": {
+    "statement": "All seven captures were performed by the source owner through the same selected mother cloud Chrome browser workflow. The source owner did not initiate login, logout, account switching, credential/cookie access, or account-permission changes between these captures.",
+    "evidence_level": "operator action history / workflow continuity, not continuous authentication-state instrumentation",
+    "not_claimed": [
+      "A single uninterrupted tab identity across every capture",
+      "Server-side authenticated state continuously verified",
+      "Account identity rechecked at each of the six later exports",
+      "Membership status independently checked"
+    ]
+  },
+  "later_capture_limits": [
+    {
+      "source": "BV1uqYvzDEZK",
+      "manifest": "official-preview/manifest.json",
+      "export_utc": [
+        "2026-11-02T01:13:17Z",
+        "2026-11-02T01:14:56Z",
+        "2026-11-02T01:15:48Z",
+        "2026-11-02T01:16:47Z"
+      ],
+      "recorded": "Native pause/readyState/dimensions and highest exposed quality menu recorded.",
+      "login_per_frame": "NOT independently recorded; cannot retrospectively add six individual UI login observations."
+    },
+    {
+      "source": "BV1gseHzLEuf",
+      "manifests": [
+        "live-companion/manifest.json",
+        "live-companion/4k-supplement-manifest.json"
+      ],
+      "export_utc": [
+        "2026-11-02T01:24:30Z",
+        "2026-11-02T01:27:47Z"
+      ],
+      "recorded": "Native pause/readyState/dimensions, actual1080 versus later actual4K and quality failures recorded.",
+      "login_per_frame": "NOT independently recorded; no exact account-UI observation timestamp attributable to these exports."
+    }
+  ],
+  "quality_is_not_login_proof": {
+    "statement": "Playback success and menus bearing 大会员 do not independently establish login or membership.",
+    "preview_1080p60": "1080P60 is the selected UI menu label; actual measured video dimensions are1920x1080. Source-owner did not measure decoded frame cadence/60fps.",
+    "companion_120": "Actual1920x1080 despite UI4K pending, not an actual4K frame.",
+    "companion_126": "Actual3840x2160 ready4, independent of login proof."
+  },
+  "conclusion": "Existing-session workflow continuity is supported; per-frame login evidence for the later six frames remains unverified. Do not label all seven as individually login-verified. No past state was fabricated or newly reconstructed from current UI."
+}
