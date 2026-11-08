@@ -1,0 +1,762 @@
+{
+  "title": "探头笑",
+  "file": "master.gif",
+  "chat_file": "chat.gif",
+  "sha256": "82dfb3661737b49eb15bbd8a2c26982f49189bdb4c3c2044b830e075cdfe784b",
+  "size": [
+    768,
+    768
+  ],
+  "frames": 52,
+  "different_frames": 52,
+  "total_ms": 4700,
+  "loop": 0,
+  "frame_durations_ms": [
+    210,
+    60,
+    70,
+    60,
+    70,
+    60,
+    220,
+    60,
+    70,
+    60,
+    70,
+    60,
+    270,
+    70,
+    60,
+    70,
+    60,
+    70,
+    150,
+    60,
+    70,
+    60,
+    210,
+    60,
+    70,
+    60,
+    60,
+    70,
+    260,
+    60,
+    70,
+    60,
+    70,
+    60,
+    220,
+    70,
+    60,
+    70,
+    60,
+    70,
+    180,
+    60,
+    70,
+    60,
+    60,
+    70,
+    200,
+    60,
+    70,
+    70,
+    60,
+    70
+  ],
+  "assets": [
+    {
+      "file": "master.gif",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 9772433,
+      "sha256": "82dfb3661737b49eb15bbd8a2c26982f49189bdb4c3c2044b830e075cdfe784b"
+    },
+    {
+      "file": "chat.gif",
+      "size": [
+        320,
+        320
+      ],
+      "bytes": 2259999,
+      "sha256": "1bf572bf2f91a6d2d5c1199a53ced8b8a60660367e42faabbe4803cc9c1ceec1"
+    }
+  ],
+  "local_composites": {},
+  "fixed_camera_crop": null,
+  "editing_notes": [
+    "为保持闭眼笑，重画中段的倾头姿势，并剪去回中时三张睁眼候选帧。"
+  ],
+  "source_reference": "emotes/sunburst/original-pack-gifs/naigreen-peek.gif",
+  "storyboard": "storyboard.json",
+  "images_api": {
+    "strip-0": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Nailü white battle V3, pearl headband, large head bow and white gloves. Both gloved hands below chin. Close eyes, smile and lean left, briefly center, peek right, return to center smiling. Hair bow always same side; hands follow shoulders.\nA = 0.0 s: Draw Nailü nearly centered, beginning a slight screen-left lean, eyes closed and smiling, both white-gloved hands visible below her chin.\nB = 0.5 s: Draw her leaning farther screen-left with closed eyes and a broad smile, both hands following her shoulders below her chin.\nC = 1.0 s: Draw her at the deepest screen-left lean, eyes closed and cheeks lifted, both hands clearly separated below her chin.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "884cf16a99ea46e26b15023a9e3a7965cf9929325979f57f1bafef18ba1d9161",
+      "reference": [
+        1,
+        2,
+        3
+      ],
+      "request_id": "req_c73a83056b7548d8a0ac1f4d13fad1be",
+      "usage": {
+        "input_tokens": 1870,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 418
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3705,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "e14df9eab03f4926ad47bde4ee36dd5d259b9494338c077637d7a87a2490fe65",
+      "file": "sources/strip-0.png"
+    },
+    "strip-1": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Nailü white battle V3, pearl headband, large head bow and white gloves. Both gloved hands below chin. Close eyes, smile and lean left, briefly center, peek right, return to center smiling. Hair bow always same side; hands follow shoulders.\nA = 1.0 s: Draw her at the deepest screen-left lean, eyes closed and cheeks lifted, both hands clearly separated below her chin.\nB = 1.5 s: Draw her easing back toward center, eyes closed and smile relaxed, both hands moving with her shoulders below her chin.\nC = 2.0 s: Draw her briefly upright at center, eyes beginning to open and smiling, both hands visible below her chin.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "e18c3f7694f2811e13783c80eff5c1124d337ab6b06fa6b0a26d0d1d99b5a726",
+      "reference": [
+        3,
+        4,
+        5
+      ],
+      "request_id": "req_8bd6cf716ebd453d954d43d4d55fa1b1",
+      "usage": {
+        "input_tokens": 1863,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 411
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3698,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "f72ba3c0f777423b3e71ee41e4d6c06954c25588ea696b52d797d740330b7e1c",
+      "file": "sources/strip-1.png"
+    },
+    "strip-2": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake.  Only action: side lean with BOTH eyes drawn as two upward-curving closed black arcs in EVERY SINGLE CELL. Trace the joyous CLOSED eyelids directly from the reference, the smile stays throughout. No irises or open eyes in any frame. A: straight-centered happy girl with gloved mitts under chin. B: whole head and hands tilt gently to viewer's right. C: lean another few degrees to the right, with the white bow still on the same temple. Gradually shift the whole head on shoulders, hair and mitts follow, no camera motion or extra facial actions. Test each of the 12 drawings: crescent, crescent, smile.",
+      "reference_sha256": "dc106097e6f91d7353c4be0a33b548b85c644a687e6b37ed86767a832d3da293",
+      "reference": [
+        5,
+        6,
+        7
+      ],
+      "request_id": "req_c68971a55b10414d9ab17813df675835",
+      "usage": {
+        "input_tokens": 1812,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 360
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3647,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "c7e7bb08881af658b26709c38bc7e7086acc7575c2f4498939a924001095aa26",
+      "file": "sources/strip-2.png"
+    },
+    "strip-3": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Nailü white battle V3, pearl headband, large head bow and white gloves. Both gloved hands below chin. Close eyes, smile and lean left, briefly center, peek right, return to center smiling. Hair bow always same side; hands follow shoulders.\nA = 3.0 s: Draw her at the deepest screen-right peek, gaze directed screen-right and smile bright, both hands clearly visible below her chin.\nB = 3.7 s: Draw her returning toward center, gaze returning forward and eyelids lowering, both hands following her shoulders below her chin.\nC = 4.4 s: Draw her upright at center with closed eyes and a soft smile, both hands below her chin, ready to begin the slight left lean.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "465ad68e8e99e96ccd58f19af721418b477e1b6c3c948805a6b972f9131adec6",
+      "reference": [
+        7,
+        8,
+        9
+      ],
+      "request_id": "req_1f0202b4940c418d8f74ceb5e9b5de34",
+      "usage": {
+        "input_tokens": 1871,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 419
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3706,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "73200b8c14ca0c94601fbdc3cb3f35c737bcf113423bee3c30f8c95c3b285798",
+      "file": "sources/strip-3.png"
+    },
+    "strip-4": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: Nailü white battle V3, pearl headband, large head bow and white gloves. Both gloved hands below chin. Close eyes, smile and lean left, briefly center, peek right, return to center smiling. Hair bow always same side; hands follow shoulders.\nA = 4.4 s: Draw her upright at center with closed eyes and a soft smile, both hands below her chin, ready to begin the slight left lean.\nB = 0.0 s: Draw Nailü nearly centered, beginning a slight screen-left lean, eyes closed and smiling, both white-gloved hands visible below her chin.\nC = 0.5 s: Draw her leaning farther screen-left with closed eyes and a broad smile, both hands following her shoulders below her chin.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "097e1f955f7aa69ecd4a785df5d9b428870714db22b4f818bbbfaef659ecea12",
+      "reference": [
+        9,
+        1,
+        2
+      ],
+      "request_id": "req_ccd9e066d23a49f4977ab079f301461b",
+      "usage": {
+        "input_tokens": 1874,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 422
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3709,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "0adbf3471604adcab9ac5370c9aaa5149c62eb7b821b0f8ab496626bd9257ba4",
+      "file": "sources/strip-4.png"
+    }
+  },
+  "frame_review": [
+    {
+      "frame": 1,
+      "file": "frames/01.png",
+      "source": {
+        "key": 1
+      },
+      "duration_ms": 210,
+      "pixel_sha256": "820b8be2ac336bd3a19375d474ea330e98ada86f6807038110702eaaa7073ab9"
+    },
+    {
+      "frame": 2,
+      "file": "frames/02.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "5b7c8318207ad5398e679701938e6db0fd41e27e7e81d6093c01d46ae78a7750"
+    },
+    {
+      "frame": 3,
+      "file": "frames/03.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "81d2ca00eeb69da3075ab1300a77bff6c95d0334ba7db5e387a1d3ba80d56293"
+    },
+    {
+      "frame": 4,
+      "file": "frames/04.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "e3b7cdc9f2246815ffe7ec29629902e67fe4ed7a0da404f83d9dccf5f36a8ec3"
+    },
+    {
+      "frame": 5,
+      "file": "frames/05.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "091dbfd9ef5d6c43d80a0c57eec46513665e92acc468336b3e49c92131df2b3c"
+    },
+    {
+      "frame": 6,
+      "file": "frames/06.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "732b0cd5bc735b28607794bc20fa222c88aa97fb37748e966c67e600fbaa8557"
+    },
+    {
+      "frame": 7,
+      "file": "frames/07.png",
+      "source": {
+        "key": 2
+      },
+      "duration_ms": 220,
+      "pixel_sha256": "0cb3831fd0120b6b87225cddff80b960ff3105e57c6e7631ade3698a5ed4f12f"
+    },
+    {
+      "frame": 8,
+      "file": "frames/08.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "201bf6dbe3ffce9a8903b83dec0b3043d9cb1eec7e5136a9262a4a5f5c058040"
+    },
+    {
+      "frame": 9,
+      "file": "frames/09.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "e597eafb8015a0620cb0d20f2844958e579eddd73d2aa9e2c10f1fa7d8b904bb"
+    },
+    {
+      "frame": 10,
+      "file": "frames/10.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "78683b68e4bb5df11e812d7b3683acbad897c512a0298765eb7ea727ac08c4bf"
+    },
+    {
+      "frame": 11,
+      "file": "frames/11.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "c2eef9c288fb9a9efbf07b3c5302fb21bab3d6720f8e1701315285147ffd7d49"
+    },
+    {
+      "frame": 12,
+      "file": "frames/12.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "e1a8140ebbf74d2b3886740eb1c76435144d9ac13981eb3cf3710ffcfe7ed8c6"
+    },
+    {
+      "frame": 13,
+      "file": "frames/13.png",
+      "source": {
+        "key": 3
+      },
+      "duration_ms": 270,
+      "pixel_sha256": "90bd5f031983d5e07089562ad3d3f37efaeb349861052ace5ec1fb55445b030b"
+    },
+    {
+      "frame": 14,
+      "file": "frames/14.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "f37b681ef345b189d77ee6a2afdbf96a680fdae2d153bba2b2baac4089189fed"
+    },
+    {
+      "frame": 15,
+      "file": "frames/15.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "f0a18eebcd92677d400d5a80a956c6ec57404c2462f539c318b42fc90caf618c"
+    },
+    {
+      "frame": 16,
+      "file": "frames/16.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "ce388a6eda15d1e6810a833f6c09ee7aa6aa2cb517526c5008888956b9a31166"
+    },
+    {
+      "frame": 17,
+      "file": "frames/17.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "fb16b7a185acdee26bb09ac70a19c3de28c416a0e547ffb154e8458cf7472e5d"
+    },
+    {
+      "frame": 18,
+      "file": "frames/18.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "e461664ae721ca06f7f97e114853b096f559e62b691dfaa28f4f0624d780e979"
+    },
+    {
+      "frame": 19,
+      "file": "frames/19.png",
+      "source": {
+        "key": 4
+      },
+      "duration_ms": 150,
+      "pixel_sha256": "80b8f75cc663fa20320f99ec70e90056570e6efb880fc8fcf59b078b2bc75ffe"
+    },
+    {
+      "frame": 20,
+      "file": "frames/20.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "0d734a87a702666acc4e8b94502325a639801f8779226b8f2033966c1815ea4d"
+    },
+    {
+      "frame": 21,
+      "file": "frames/21.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "13353f8dfa06c59d33a5e2226c4315f77b6a44dba5fd28edd32d4c88edc477bb"
+    },
+    {
+      "frame": 22,
+      "file": "frames/22.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "740f305b1d23554616c75d9831cb6a4137f1060acd2f0610db0c7d0711ba8e89"
+    },
+    {
+      "frame": 23,
+      "file": "frames/23.png",
+      "source": {
+        "key": 5
+      },
+      "duration_ms": 210,
+      "pixel_sha256": "61eea593efcb7ad5185ec622cbdcc96acc5e7623375e54e0aaf34127f635738d"
+    },
+    {
+      "frame": 24,
+      "file": "frames/24.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "08047e7a810ba01c10d2416f826789b2bf18f3dc16dd26474cc22c6ee30e6e70"
+    },
+    {
+      "frame": 25,
+      "file": "frames/25.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "5ce774fb94238c3ccdddf894ad7fc7033a6c805905f46bb9fc2393582443d3c5"
+    },
+    {
+      "frame": 26,
+      "file": "frames/26.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "be2356699eca65542712c0b6aeada75228ae038be2581d6c7e3eb9c63db2f7cb"
+    },
+    {
+      "frame": 27,
+      "file": "frames/27.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "5dc8a4e3908af05d9d45caa1de06d0b799f7246681d41d889b4e2805437889ae"
+    },
+    {
+      "frame": 28,
+      "file": "frames/28.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "5bf22c0914ae4c1e8d4316fa892dfb4044cc4291a5cd9ad13888ea03ca765d66"
+    },
+    {
+      "frame": 29,
+      "file": "frames/29.png",
+      "source": {
+        "key": 6
+      },
+      "duration_ms": 260,
+      "pixel_sha256": "a4c30640c54a03aa372d2a4fd78c954b4fb727579bb34a0005c2a1c7da6c514a"
+    },
+    {
+      "frame": 30,
+      "file": "frames/30.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "c1a714acc25fd57ddb1dedef74910cae2bb5e9fc3269d105cb3c1c07d25c5f8a"
+    },
+    {
+      "frame": 31,
+      "file": "frames/31.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "73003b1eb7295b779accc80b1d93e84a09d5688ef1cc05cb10d6158b79db33ea"
+    },
+    {
+      "frame": 32,
+      "file": "frames/32.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "50ce0584831952996b3e2ea580b66cf02afd9e30e7a6963fbbcf4262f1dfbca9"
+    },
+    {
+      "frame": 33,
+      "file": "frames/33.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "3ae962d2ffa9a02a77b14dd51f50e81bcc9871fdfd2a31e0ca06b662b1feb25d"
+    },
+    {
+      "frame": 34,
+      "file": "frames/34.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "72e6852e6fb09b21bb52650df0db8ee157b112475580ebe9a2286cded2c300c2"
+    },
+    {
+      "frame": 35,
+      "file": "frames/35.png",
+      "source": {
+        "key": 7
+      },
+      "duration_ms": 220,
+      "pixel_sha256": "149621f969c38a517dd15b600da3d864e03059dbda452ff353b189d1798caca7"
+    },
+    {
+      "frame": 36,
+      "file": "frames/36.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "3a4049a1628a96167173ff6554e0384114f913ac2b8304994a7a22cc93ae2058"
+    },
+    {
+      "frame": 37,
+      "file": "frames/37.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "d4fd21bc8e9c468e3e7c97f431aa218653f0de4df902b638c7ec7dd455da2515"
+    },
+    {
+      "frame": 38,
+      "file": "frames/38.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "5118741e2fd82d52fdbf137765c1d6257842243ad1b53cd8dacb173e52c97d8b"
+    },
+    {
+      "frame": 39,
+      "file": "frames/39.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "2e32c361778c18aec21aa162d508721936af4b35442eea353155ca0e85c82a91"
+    },
+    {
+      "frame": 40,
+      "file": "frames/40.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "3754d724f2739b2b555613a967f583925b81e1441a45837491c8ea2be198deb6"
+    },
+    {
+      "frame": 41,
+      "file": "frames/41.png",
+      "source": {
+        "key": 8
+      },
+      "duration_ms": 180,
+      "pixel_sha256": "d8fb16e391b4e492a6cb503ba0dd859f28678559660419c570a19d084992ce33"
+    },
+    {
+      "frame": 42,
+      "file": "frames/42.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "bba9ba37f825344267db02995a7c9eb80c7e888c82c6be7791075c2877fb1f01"
+    },
+    {
+      "frame": 43,
+      "file": "frames/43.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "d127f08abc2a5584c85dac10dd9c265b71b6f15db180eb0a4368a5046ced4414"
+    },
+    {
+      "frame": 44,
+      "file": "frames/44.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "fd80515ee8b8648e041c75157d82adb3e3cbf995dcd7fa0d95dbc02ad67868df"
+    },
+    {
+      "frame": 45,
+      "file": "frames/45.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "a5a7c428898f38c435e1b6cd53ca03298aa8900bbab4a3a21937d7c0aea6d061"
+    },
+    {
+      "frame": 46,
+      "file": "frames/46.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "0b8579d518b5443e2e5531acb6b7bb6043fa3a2e64d42b4245fde7f814df2a3f"
+    },
+    {
+      "frame": 47,
+      "file": "frames/47.png",
+      "source": {
+        "key": 9
+      },
+      "duration_ms": 200,
+      "pixel_sha256": "0e1dd1a9f621af57ab9c7515ca0ad71a96ef3e3227d629c2b5b74ecb38488252"
+    },
+    {
+      "frame": 48,
+      "file": "frames/48.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "24331c47ada997a41e6ee2a9105c77451b02180ca460464ce5b6993bad824a51"
+    },
+    {
+      "frame": 49,
+      "file": "frames/49.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "20da7771299389d61865766e64937cdcc6039c89d8275da2288014530f494759"
+    },
+    {
+      "frame": 50,
+      "file": "frames/50.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "8caa670b25a3136b5b473afc2b2ea702dece166580d7983bdb4508b07755739c"
+    },
+    {
+      "frame": 51,
+      "file": "frames/51.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "f2b1d1502225990fec9a65a9bbcae37ad284974d9b200f0a23f5e77da05787ee"
+    },
+    {
+      "frame": 52,
+      "file": "frames/52.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "210605d1e16736f04af5c5ea2616be2e85b95f16430735e71eb017ec7e2e0c7f"
+    }
+  ],
+  "native_cell_px": 512,
+  "method": "完整姿势硬切、全片统一调色板。每个原画格四边各裁 5 px，768 和 320 版按同一时值缩放编码。"
+}
