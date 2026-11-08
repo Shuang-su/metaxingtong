@@ -1,0 +1,188 @@
+{
+  "method": "从三个交付 GIF 复解逐帧 RGB，对比第一帧。区域含双袖口、指尖、掌面及底部整带；双人版在星瞳半幅取样。",
+  "files": {
+    "master.gif": {
+      "width": 768,
+      "height": 768,
+      "unique_xingtong_frames": 54,
+      "loop": 0,
+      "regions": {
+        "left_cuff_and_hand": {
+          "box_exclusive_xyxy": [
+            146,
+            639,
+            362,
+            748
+          ],
+          "colored_pixels_frame1": 18344,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "452f0e6c08990cbac8a7768a2bc8a12c2b7d04f9fe34a44c7d2494e67274e4e3"
+        },
+        "right_cuff_and_hand": {
+          "box_exclusive_xyxy": [
+            390,
+            639,
+            615,
+            748
+          ],
+          "colored_pixels_frame1": 19492,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "997ba706d47ed2a7e422e7b5ebbf75239951c4e8e59d18e8ee1b6f6ce5fe01b7"
+        },
+        "entire_lower_band": {
+          "box_exclusive_xyxy": [
+            0,
+            630,
+            768,
+            768
+          ],
+          "colored_pixels_frame1": 58625,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "b3a3c3d9799cdf146163f236c1c40e469613c8bed5c01e8e58d0612472ec35c7"
+        }
+      }
+    },
+    "chat.gif": {
+      "width": 320,
+      "height": 320,
+      "unique_xingtong_frames": 54,
+      "loop": 0,
+      "regions": {
+        "left_cuff_and_hand": {
+          "box_exclusive_xyxy": [
+            61,
+            266,
+            151,
+            312
+          ],
+          "colored_pixels_frame1": 3269,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "01bfca79a80a80b113f1730b04353c84e9028a90ba31ecf5b3a9095bad444f44"
+        },
+        "right_cuff_and_hand": {
+          "box_exclusive_xyxy": [
+            163,
+            266,
+            256,
+            312
+          ],
+          "colored_pixels_frame1": 3457,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "e320f29e715e07747ae7f7a6f347212fd2ab35e4b1ed37ab52472e685a8575a2"
+        },
+        "entire_lower_band": {
+          "box_exclusive_xyxy": [
+            0,
+            262,
+            320,
+            320
+          ],
+          "colored_pixels_frame1": 10474,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "8568e6d2adaf3e50cc39c699ef302d90bd15ee341f2dbabc8b84ed9326e505f2"
+        }
+      }
+    },
+    "paired.gif": {
+      "width": 640,
+      "height": 320,
+      "unique_xingtong_frames": 54,
+      "loop": 0,
+      "regions": {
+        "left_cuff_and_hand": {
+          "box_exclusive_xyxy": [
+            61,
+            266,
+            151,
+            312
+          ],
+          "colored_pixels_frame1": 3220,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "18fe73bb5fb893a68e5e2a2e30dc9c5e74b68f809381e086752ecf20bbf3f056"
+        },
+        "right_cuff_and_hand": {
+          "box_exclusive_xyxy": [
+            163,
+            266,
+            256,
+            312
+          ],
+          "colored_pixels_frame1": 3416,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "a972ef202ee0769eaff9b474bba0ae5b18747072292584628aa3e0d212ffb1c1"
+        },
+        "entire_lower_band": {
+          "box_exclusive_xyxy": [
+            0,
+            262,
+            320,
+            320
+          ],
+          "colored_pixels_frame1": 10381,
+          "max_pixels_changed": 0,
+          "pixel_sha256": "f7ec8d33d591f342d5567260d96c60b949c70f5f77c3dec75b03a8fa2bfe3388"
+        }
+      }
+    }
+  },
+  "reference_comparison": {
+    "sampling": "各图缩放到 250×250，发色和袖色取指定的同材质色块，在 3×3 窗口逐通道取中位数。",
+    "neutral_bangs": [
+      {
+        "file": "lavender-front.png",
+        "at_xy": [
+          134,
+          80
+        ],
+        "rgb_median_3x3": [
+          200,
+          197,
+          204
+        ]
+      },
+      {
+        "file": "01.png",
+        "at_xy": [
+          135,
+          76
+        ],
+        "rgb_median_3x3": [
+          199,
+          198,
+          203
+        ]
+      }
+    ],
+    "periwinkle_sleeve": [
+      {
+        "file": "lavender-hands.png",
+        "at_xy": [
+          65,
+          210
+        ],
+        "rgb_median_3x3": [
+          218,
+          219,
+          253
+        ]
+      },
+      {
+        "file": "01.png",
+        "at_xy": [
+          41,
+          207
+        ],
+        "rgb_median_3x3": [
+          219,
+          221,
+          254
+        ]
+      }
+    ]
+  },
+  "archive": {
+    "entries": 15,
+    "other_members_identical_to": "ad77e516f5178e222c6cb75a389fdad4dfd99bd9",
+    "sha256": "3b9373bc7c5ac1acbcb1395e66cdbb183a172f2ec6f7113de69cac408bc3e618"
+  }
+}

@@ -1,13 +1,13 @@
 {
   "opening_observed_grant_usd": 16.38,
-  "latest_observed_grant_usd": 11.26,
+  "latest_observed_grant_usd": 5.82,
   "grant_face_usd": 21,
   "grant_date": "2026-11-05",
   "grant_expiry_local": "2026-11-08 17:40 Asia/Shanghai",
   "source": "OpenAI Platform Personal organization Credit grants; project-scoped requests verified.",
   "pricing_note": "用量回执按模型公开单价估算；账单按组织归集且会延迟。图像估算按未缓存的输入单价。代理统计为回合 best-effort，缓存写入及未返回用量的失败请求未单计。",
-  "image_successes": 146,
-  "image_estimate_usd": 10.1645,
+  "image_successes": 149,
+  "image_estimate_usd": 10.3699,
   "agent_estimate_before_cache_write_usd": 0.5757,
   "agent_turn_tokens": 792074,
   "agents": [
@@ -1619,6 +1619,35 @@
       "input_image_tokens": 363,
       "output_tokens": 1756,
       "estimated_usd": 0.057084
+    },
+    {
+      "request_id": "req_d6148d5d777a49278cce1138bd06aab0",
+      "input_text_tokens": 463,
+      "input_image_tokens": 608,
+      "output_tokens": 1756,
+      "estimated_usd": 0.059859,
+      "asset": "15-xingtong-pout/fixed-hands/head"
+    },
+    {
+      "request_id": "req_1ce9d8d4a8ec49e59b3bb62d911ffbd7",
+      "input_text_tokens": 621,
+      "input_image_tokens": 608,
+      "output_tokens": 1756,
+      "estimated_usd": 0.060649,
+      "asset": "15-xingtong-pout/fixed-hands/body"
+    },
+    {
+      "request_id": "req_9a4f030784a84b738c16e7a9bbcb91d7",
+      "input_text_tokens": 653,
+      "input_image_tokens": 792,
+      "output_tokens": 2511,
+      "estimated_usd": 0.084931,
+      "asset": "15-xingtong-pout/fixed-hands/faces"
     }
-  ]
+  ],
+  "grant_observation_before_pout_revision": {
+    "remaining_usd": 5.82,
+    "prior_observed_usd": 11.26,
+    "observed_local": "2026-11-08 13:01 Asia/Shanghai"
+  }
 }

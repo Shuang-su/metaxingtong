@@ -46,11 +46,11 @@
 
 ## 精细 Q 版配套
 
-星瞳取真实 B 站同套《揣手手》《老实》，对齐奶绿鼓脸的构图和每一帧时值。[视觉依据](references/README.md)
+星瞳取真实 B 站同套《揣手手》《老实》，沿用奶绿鼓脸的每一帧时值。[视觉依据](references/README.md)
 
 | 表情 | 打开 GIF | 帧数 / 一圈时长 | 动作核对 |
 |---|---|---|---|
-| 星瞳·鼓脸晃头 | [320 px](15-xingtong-pout/chat.gif) · [768 px](15-xingtong-pout/master.gif) | 54 / 4.56 秒 | 半垂蓝眼、双拳和鼓脸沿用奶绿的动作；银灰短发、紫发箍和浅紫外套取 B 站同套原图。两条逐帧时长一致，偏头方向与回正时机对应。 [逐帧图](15-xingtong-pout/frames.jpg) |
+| 星瞳·鼓脸晃头 | [320 px](15-xingtong-pout/chat.gif) · [768 px](15-xingtong-pout/master.gif) | 54 / 4.56 秒 | 双手平放，袖口静止。星瞳鼓脸偏头、斜眼停顿、呼气回正。银灰刘海和浅蓝紫袖口按原包取色。[前后对照](15-xingtong-pout/reference-comparison.png) [逐帧图](15-xingtong-pout/frames.jpg) |
 
 [星瞳造型的 B 站原图、百科与 CDN 哈希](references/README.md) · [搭配用的精细 Q 版静态校样](references/xingtong-detailed.png)
 
