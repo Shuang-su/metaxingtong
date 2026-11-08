@@ -14,3 +14,5 @@
 真实动态包《好欸好欸》《对对对》各有十帧，同套静态与动态保留原本字幕和夸张手势作为参照。成片的拍合、认真点头与台词去除均属本次改编。[B 站拍手 GIF](https://i0.hdslb.com/bfs/garb/3eb916447a0bbc15653243218096663055117a54.gif) · [B 站「对对对」 GIF](https://i0.hdslb.com/bfs/garb/f9616f4f84a6d9255bcc87b951f65b83234a5eda.gif) · [两个原件的逐帧对照](bili-action-reference.jpg)
 
 星瞳《鼓脸晃头》修订用《揣手手》和《老实》校色，重新绘制了平放的手掌。前后对照的最后一张取自最终 GIF 首帧。[对照图](../15-xingtong-pout/reference-comparison.png) · [头部和手部原画](../15-xingtong-pout/sources/fixed-hands/)
+
+当前精细 Q 版直接使用最初画像的面部和发丝。原画、上次的重画版和本次修复版均可独立打开。[初版原画](../15-xingtong-pout/sources/previous-portrait.png) · [三个版本](../15-xingtong-pout/README.md)

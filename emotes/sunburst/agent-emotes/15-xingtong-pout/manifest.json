@@ -2,7 +2,7 @@
   "title": "星瞳·鼓脸晃头",
   "file": "master.gif",
   "chat_file": "chat.gif",
-  "sha256": "ecbe4f42e4b3c0e30ed385aa0853eaf459ec49bdd6db04ca2c41a56e64d5d414",
+  "sha256": "c426fdab2be45c03d8a739cfdc9829bd74298448e475959a01b09befabf274d5",
   "size": [
     768,
     768
@@ -74,8 +74,8 @@
         768,
         768
       ],
-      "bytes": 6423690,
-      "sha256": "ecbe4f42e4b3c0e30ed385aa0853eaf459ec49bdd6db04ca2c41a56e64d5d414"
+      "bytes": 8751208,
+      "sha256": "c426fdab2be45c03d8a739cfdc9829bd74298448e475959a01b09befabf274d5"
     },
     {
       "file": "chat.gif",
@@ -83,702 +83,728 @@
         320,
         320
       ],
-      "bytes": 1503150,
-      "sha256": "509c91ead707affdf8306559b223a528a7230c15e9062cf11eacb70cdf33aafb"
+      "bytes": 1965210,
+      "sha256": "20c2e1dea3556d0792f2eef97a485e3d29eb1cbf45f3ed4c7c1dc06305dbba41"
     }
   ],
   "sync_source": "10-pout",
   "storyboard": "storyboard.json",
-  "source_reference": "sources/fixed-hands/original-color-guide.png",
   "images_api": {
-    "head": {
+    "portrait": {
       "model": "gpt-image-2.6-sunburst",
-      "prompt": "Attached are two authentic Bilibili character stickers of Xingtong in the SAME outfit: 揣手手 and 老实. The strip of flat paint chips below is sampled from those originals. Treat their shapes and exact original colors as the design model. Clean finished hand-drawn Japanese/Chinese chibi sticker, subtly detailed: thin yet decisive deep charcoal-indigo contour, softly modeled two/three-tone cel shading, crisp selected highlights, a trace of paper tooth. Color as a daylight-painted sticker on white, never a violet or pink color wash, no glow, no type, no diagram or tiles. The silver bob has NEUTRAL cool silver grey local color RGB 197,194,201, broad near-white ribbon-shaped painted reflections, cool grey shadows 160,157,170, very little chroma. Bright clear medium sky-blue irises (74,141,233) and white glints. Distinct softly rounded CORAL dash blush from the original at both cheeks. Skin warm ivory-peach, thin pink mouth. Soft cardigan is pale icy PERIWINKLE RGB 219,220,253, bluer than mauve and distinct from grey hair; pearly ivory fur collar, rose-pink inner top. Headband deep violet, little white round mascot with blue dot and tiny coral cheeks. Preserve the distinctive rounded side hair, large grouped locks and asymmetric crown forelock exactly. Create a cut-out asset: ONE completely isolated HEAD only, front-facing, exactly upright. Full silver bob, curved forelock, purple headband, little white mascot near viewer-right, chubby cheeks and chin. No neck, clothes, fists, shoulders, arms or props anywhere. Include the complete silhouette with at least 7% surrounding clearance. View straight at a lightly pouting chibi Xingtong, cheeks puffed like a mild hmph, half-lidded blue eyes looking at the viewer, tiny pursed mouth gently skewed. Eyes read as crisp BLUES, neutral silver hair sections match the attached, subtle rosy short dash each cheek. Add restrained hair/iris detail but retain the original's recognizable face. Transparent background, perfectly isolated clean head animation cel with smooth alpha edges. One head only.",
+      "prompt": "Create one finished 1024 square detailed Q-style chibi sticker, on a perfectly clean white ground. ONLY ONE character, Xingtong. The two small drawings on the LEFT and MIDDLE of the input are the authentic Bilibili Xingtong character art. They define her individual facial shape, vivid bright sky blue eyes, round silver bob, curved ahoge and purple headband with the tiny white mascot, pink inner top and soft lavender jacket with fluffy ivory collar. Preserve those specific details, hairstyle silhouette and outfit. The third brown-haired figure at RIGHT is just the reference for the expression, polish and large head-and-shoulders framing: tight closeup, face fills image, both fists in puffy cuffs just underneath chin, cheeks puffed, relaxed eyelids slightly lowered with wry annoyed stare, tiny pursed lips, peach blush. Match that reference's soft layered shading, delicate sharp edges, carefully designed eyes with rich iris reflections, grouped hair highlights, fabric folds. Xingtong retains her silver and blue palette and her own costume and proportions throughout; do NOT transfer the florist's green streak, heart ahoge or white hair flowers. Elegant hand-drawn illustration, slight tactile texture, deep plum lines with varied stroke weight. Same small chat sticker readability, everything on a flat pure white background with a little air around hair. Compose ONE front-facing square portrait. No letters or panel layout.",
       "size": "1024x1024",
       "quality": "high",
       "output_format": "png",
-      "background": "transparent",
       "n": 1,
-      "reference": "original-color-guide.png",
-      "reference_sha256": "f5e1c5da4245edb6479b172e25882a058d60a0d50b74c4c20fbff96aca39373f",
-      "request_id": "req_d6148d5d777a49278cce1138bd06aab0",
+      "reference": "portrait-input.png",
+      "reference_sha256": "cedc7d3535c2e8a123b2222b12d20306eb2570e0e078091b5d3c7dca68b30d0a",
+      "user_contact_sheet_sha256": "6fc415e314e65952dd7477b86134539289369f9369018c60983eb163dfcd2d59",
+      "sources": [
+        "lavender-hands.png",
+        "lavender-front.png",
+        "../10-pout/frames/01.png"
+      ],
+      "request_id": "req_321f796e2cec4276b35a74ac23717ceb",
       "usage": {
-        "input_tokens": 1071,
+        "input_tokens": 663,
         "input_tokens_details": {
-          "image_tokens": 608,
-          "text_tokens": 463
+          "image_tokens": 363,
+          "text_tokens": 300
         },
         "output_tokens": 1756,
-        "total_tokens": 2827,
+        "total_tokens": 2419,
         "output_tokens_details": {
           "image_tokens": 1756,
           "text_tokens": 0
         }
       },
-      "sha256": "83e02ad983e5ff5a04ca8c518779721408b19da0d1e13f72de22363c266b936b",
-      "file": "sources/fixed-hands/head.png"
+      "sha256": "4fa1f843d84103cce09680fbdc285b820a4c6f6453d94fb57bf5d83d8cc4e715",
+      "file": "sources/previous-portrait.png"
     },
-    "body": {
+    "keys": {
       "model": "gpt-image-2.6-sunburst",
-      "prompt": "Attached are two authentic Bilibili character stickers of Xingtong in the SAME outfit: 揣手手 and 老实. The strip of flat paint chips below is sampled from those originals. Treat their shapes and exact original colors as the design model. Clean finished hand-drawn Japanese/Chinese chibi sticker, subtly detailed: thin yet decisive deep charcoal-indigo contour, softly modeled two/three-tone cel shading, crisp selected highlights, a trace of paper tooth. Color as a daylight-painted sticker on white, never a violet or pink color wash, no glow, no type, no diagram or tiles. The silver bob has NEUTRAL cool silver grey local color RGB 197,194,201, broad near-white ribbon-shaped painted reflections, cool grey shadows 160,157,170, very little chroma. Bright clear medium sky-blue irises (74,141,233) and white glints. Distinct softly rounded CORAL dash blush from the original at both cheeks. Skin warm ivory-peach, thin pink mouth. Soft cardigan is pale icy PERIWINKLE RGB 219,220,253, bluer than mauve and distinct from grey hair; pearly ivory fur collar, rose-pink inner top. Headband deep violet, little white round mascot with blue dot and tiny coral cheeks. Preserve the distinctive rounded side hair, large grouped locks and asymmetric crown forelock exactly. Create one isolated front-view 2D animation BODY plate from the neckline down, from Xingtong's same outfit, to sit under a separate large chibi head later. Center the OPEN NECK and symmetrical shoulders of this compact chest-up chibi torso; the top of the picture is empty clear alpha. The head, hair and any facial features are entirely omitted. Small neck and upper chest are visible above an ivory fluffy jacket collar with a pink shirt between the sides. Puffy blue-periwinkle sleeves, ribbed sleeve cuffs. Both forearms extend gently toward the viewer and rest HORIZONTALLY on the same invisible surface. Put BOTH little hands with fingers relaxed and resting flat PALM DOWN on exactly the same y-level at the bottom foreground, separated by a small gap, pointing gently inwards. The two little hands do not form fists or touch any cheek. To be legible at chat size, let the hands peek out past each padded cuff; natural clean fingers and thumb, no duplicate fingertips. Keep the body, sleeves and hands completely in frame with modest margins, occupying lower two thirds and using 85% of canvas width. Keep the neckline narrow at center, let collar wrap in a shallow V. NO table line, no surface texture, no human head, no wig, no floating extra accessory. Genuine transparent background and clean isolated outline appropriate for an animation body layer. Model the soft periwinkle folds with a few delicate blue-cool shadows, avoid pink or saturated purple shadows. The pose should feel like waiting at a desk with a pout, her weight quietly on both forearms.",
-      "size": "1024x1024",
-      "quality": "high",
-      "output_format": "png",
-      "background": "transparent",
-      "n": 1,
-      "reference": "original-color-guide.png",
-      "reference_sha256": "f5e1c5da4245edb6479b172e25882a058d60a0d50b74c4c20fbff96aca39373f",
-      "request_id": "req_1ce9d8d4a8ec49e59b3bb62d911ffbd7",
-      "usage": {
-        "input_tokens": 1229,
-        "input_tokens_details": {
-          "image_tokens": 608,
-          "text_tokens": 621
-        },
-        "output_tokens": 1756,
-        "total_tokens": 2985,
-        "output_tokens_details": {
-          "image_tokens": 1756,
-          "text_tokens": 0
-        }
-      },
-      "sha256": "1485a9130654fecb58ea04f6d73a19a185a7aabbf22773719089885d68b5546c",
-      "file": "sources/fixed-hands/body.png"
-    },
-    "faces": {
-      "model": "gpt-image-2.6-sunburst",
-      "prompt": "Attached are two authentic Bilibili character stickers of Xingtong in the SAME outfit: 揣手手 and 老实. The strip of flat paint chips below is sampled from those originals. Treat their shapes and exact original colors as the design model. Clean finished hand-drawn Japanese/Chinese chibi sticker, subtly detailed: thin yet decisive deep charcoal-indigo contour, softly modeled two/three-tone cel shading, crisp selected highlights, a trace of paper tooth. Color as a daylight-painted sticker on white, never a violet or pink color wash, no glow, no type, no diagram or tiles. The silver bob has NEUTRAL cool silver grey local color RGB 197,194,201, broad near-white ribbon-shaped painted reflections, cool grey shadows 160,157,170, very little chroma. Bright clear medium sky-blue irises (74,141,233) and white glints. Distinct softly rounded CORAL dash blush from the original at both cheeks. Skin warm ivory-peach, thin pink mouth. Soft cardigan is pale icy PERIWINKLE RGB 219,220,253, bluer than mauve and distinct from grey hair; pearly ivory fur collar, rose-pink inner top. Headband deep violet, little white round mascot with blue dot and tiny coral cheeks. Preserve the distinctive rounded side hair, large grouped locks and asymmetric crown forelock exactly. The large isolated head is the REVIEWED master design; trace its precise silhouette, headband placement, exact colors, size, hair highlight blocks and iris shape. Produce a registration-locked ANIMATION CONTACT SHEET. Exactly THREE columns and THREE rows of nine equally sized, separated square cells on a single pure white background with invisible divisions. Each cell a single large detached head only, the identical front-facing, upright head and direct level gaze throughout. No hands or body in any cell. The entire bob, chin, headband mascot and forelock completely fit EACH cell with 4% air on all sides. Maintain the same center, proportions, bob length and tiny coral blush dashes in every drawing. No head tilts or spatial offsets in this sheet; the animator will rotate the head later. These are NINE different subtle mouth and cheek animation cels for a moody puffed-cheek head shake: 1) tiny pinched angled mouth, light puff; 2) lips purse a little tighter as cheeks begin to inflate; 3) round cheeks inflate visibly, brows settle; 4) maximum puff, wry narrowed eyes, brief sideways glance; 5) hold swollen cheeks but small mouth shifts toward center, brows relax; 6) smaller counter-puff, slight cheek squish; 7) gently release air through a tiny open O; 8) softer cheeks with tiny O closing, eyes lift a little; 9) settle back to the original tight pout, adjacent to first. Deliberate readable cheek/lip variation. Same authentic neutral silver gray hair, cobalt/sky-blue iris and periwinkle palette. Nine whole finished clean drawings, no cropping, captions, panel lines, gradients or bleed outside each separated square.",
       "size": "1536x1536",
-      "quality": "high",
+      "quality": "medium",
       "output_format": "png",
-      "background": "opaque",
       "n": 1,
-      "reference": "expression-guide.png",
-      "reference_sha256": "68a4ec0a2f3e403014d8ab6d1283e9edccaeb03aa3054207f081bf79bf3e60e3",
-      "request_id": "req_9a4f030784a84b738c16e7a9bbcb91d7",
+      "prompt": "Make ONE precise production keyframe sheet of NINE sequential animation illustrations. EXACTLY 3 columns and 3 rows of 512x512 SQUARE cells, total 1536x1536; read row major. Invisible equal grid divisions, absolutely no written text, numbers, lettering, panel frames or gutters. Each cell has exactly the same fixed lens, solid opaque pure WHITE background, mild safe margins and fixed ground line. Draw the reference character(s) large, with the same recognizable face design, costume, hair and accessories across the 9 cells. Only characters requested in the story. Draw graphic chibi animation cels with clean shapes, not a close-up collage, no motion blur. Each cell must show a DIFFERENT complete acting pose. This is one story with a readable pay-off and reset, including hands, gaze and props. At small chat scale every pose reads. STORY: An exact partner sticker to Nailü’s puffed-cheek side-to-side head shake. One Xingtong in her user-approved design; the reference plate at image stage dictates all hair/clothes/eyes and accessories. Richly detailed chibi portrait with the same close framing as Nailü: tiny fists at the collar, brows gently lowered, cheeks visibly puff, little head turn to one side, hold, swing back, slight opposite settle, tiny o-mouth releases the breath, return. Match the supplied Nailü movement and timing. Preserve her own facial and outfit identity.\nNINE chronological drawings: 1) 0.00 s: Draw one richly detailed chibi Xingtong nearly centered in Nailü’s close portrait framing, tiny fists at her collar, brows gently lowered, cheeks beginning to puff. 2) 0.45 s: Inflate both cheeks fully, seal her lips, and keep her shoulders and collar fists steady. 3) 1.00 s: Turn her puffed face slightly toward screen left, letting her hair and accessories follow naturally. 4) 1.65 s: Hold the small leftward turn with rounded cheeks and a restrained, gently stubborn expression. 5) 2.20 s: Swing her head back through center, keeping her cheeks inflated and her eyes directed toward the viewer. 6) 2.85 s: Settle into a smaller screen-right turn, with a slight delayed sway in her hair and accessories. 7) 3.40 s: Ease back toward center and form a tiny o-mouth as her cheeks begin releasing their air. 8) 3.95 s: Finish the breath with relaxed cheeks and a small o-mouth, keeping both fists visible at her collar. 9) 4.40 s: Close her mouth, begin reinflating her cheeks, and leave her head slightly right of the opening pose for the return.\nContinuity: Use the approved plate for all identity details, preserve the fixed crop, visible fists, accessories, props and viewer-directed gaze, and follow Nailü’s supplied motion and timing within a 4.8-second loop whose distinct ninth pose flows into the first. PARTNER EMOTE. The upper reference is the detailed new Xingtong rendering from real Bilibili 揣手手 and 老实. Match that identity exactly in every cell: silver-white rounded bob, one gray curved cowlick, violet headband with tiny white mascot, BLUE eyes with iris detail, pink top, fluffy lavender jacket with cream collar and long puffy cuffs. Warm blush, closely drawn hair sections, soft garment shading. Do not copy the florist character. The lower three-by-three reference supplies ONLY composition and sequential poses: crop head/shoulders similarly at the same relative scale. Exactly ONE silver-haired girl per cell, close-up, both small fists by cheeks. Match these nine LOWER pictures in order: half-lidded deadpan, little fists up, cheeks puff harder, tip markedly to screen RIGHT, settle through center, small counter-rock, let breath out with tiny O mouth, ease fists, return to first expression. Keep nine poses distinct with visible head swing.",
+      "reference_sha256": "b879a76165337c2bf90127fe45bd093eb121c49fbedab718a7965920c6643fff",
+      "reference": "emotes/sunburst/agent-emotes/references/portrait-guide.png",
+      "request_id": "req_0382445caf504d8d8bd2d25df3f26535",
       "usage": {
-        "input_tokens": 1445,
+        "input_tokens": 1736,
         "input_tokens_details": {
-          "image_tokens": 792,
-          "text_tokens": 653
+          "image_tokens": 896,
+          "text_tokens": 840
         },
-        "output_tokens": 2511,
-        "total_tokens": 3956,
+        "output_tokens": 2073,
+        "total_tokens": 3809,
         "output_tokens_details": {
-          "image_tokens": 2511,
+          "image_tokens": 2073,
           "text_tokens": 0
         }
       },
-      "sha256": "26716f4560ad86345ebd38ea03b98b7e15ecd7a39ad324a472a4362b7fc43a14",
-      "file": "sources/fixed-hands/faces.png"
+      "sha256": "bd85da78f393df66ae0d0cefd6fe83bedd291f6e30dda9d48ac29e9976c3f703",
+      "file": "sources/keys.png"
     }
   },
+  "images_cli": {
+    "arms": {
+      "tool": "imagegen CLI edit",
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1024x1024",
+      "quality": "high",
+      "background": "transparent",
+      "reference_files": [
+        "sources/previous-portrait.png",
+        "sources/fixed-hands/body.png"
+      ],
+      "file": "sources/restored-detail/arms.png",
+      "prompt": "Create a transparent front-facing paper-animation cutout BODY from the pink neckline downward, for the exact chibi in input A. Her detailed high-end anime painting style is essential. Use the SAME delicate tapered ink, nuanced folds, soft glossy cel highlights, pink high-neck shirt, small pearl necklace, puffy icy blue-lavender sleeves with rib-knit oversized cuffs and refined fluffy white trimming as in input A. The neat WHITE fluffy collar is prominent. Preserve the extraordinarily fine and soft illustration detail, the subtle pearly highlights and slender lines. Input B is a LAYOUT reference for a relaxed low elbow and flat hand position ONLY; follow the refined finish, line weight, and wearable design of input A. Both forearms rest comfortably in front of the torso, hands FLAT PALM DOWN on the same invisible surface, both relaxed with slightly curved fine fingers, clearly separated, both complete and the same y position, shoulders still and symmetrical. No head, no hair, no face, no hat, no mascot. The neck opening centered above collar is sufficient for placing a separate head on top. No table, captions, framing or shadows cast onto the background. Single body plate in original chibi proportions. Show all fingertips, cuffs, waist and shoulders, with slight clear margin on four sides. Authentic pale BLUE periwinkle sleeves similar to RGB 218,220,252 (cooler than mauve), restrained lavender-blue folds, warm peach hands, pink shirt, white fur. Transparent background.",
+      "sha256": "470eefe04309239ce306865773c0738506868f514d52dd5e106cb87853c16c5c"
+    },
+    "fill": {
+      "tool": "imagegen CLI edit",
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1024x1024",
+      "quality": "high",
+      "background": "opaque",
+      "reference_files": [
+        "sources/previous-portrait.png"
+      ],
+      "file": "sources/restored-detail/fill.png",
+      "prompt": "Animation cel clean-up, localized masked edit. Locked 1024x1024 white canvas. This image is the exact original finished detailed chibi Xingtong art, already approved. Erase the two fists, sleeves, choker, neck, fur collar, shoulders and torso from the bottom of the image. Where the fists/white fur overlapped the bottom edges of the bob and chin, carefully reconstruct only the few missing millimeters of chin line and hair tips that were previously occluded. Aim for a completely isolated floating original HEAD on PURE WHITE. Keep the tip of the chin near x510 y780 in original coordinates. No neck and nothing below the natural bottom of the hair. Absolutely keep original head in the exact same position, scale, lens and registration; preserve the fine ink, many-layered hair clumps, subtle blush and actual facial expression. Do not recolor, reinterpret or redraw the character or face. Never add new accessories or lengthen the hair. Matte white negative space, no drop shadow. This is an invisible paint repair for separating animation layers.",
+      "sha256": "4bc9d54c880ea45b7199054cf986350f9cf90418c1a510a69294c01c4c541c23",
+      "mask": "sources/restored-detail/mask.png"
+    }
+  },
+  "identity_before_color_grade": [
+    {
+      "area": "eyes_and_cheeks",
+      "box": [
+        269,
+        546,
+        726,
+        662
+      ],
+      "sha256": "7546d18cdfdcaa568823238040413ccc22a1e5ed34739d76f718d841b25443a4"
+    },
+    {
+      "area": "bangs",
+      "box": [
+        332,
+        243,
+        648,
+        464
+      ],
+      "sha256": "b2ba7f13f59f7bcf8a510ca632637a2618dd80ed57815b2bff1d50789c2b3ef8"
+    }
+  ],
   "frame_review": [
     {
       "frame": 1,
       "file": "frames/01.png",
       "source": {
-        "head_cell": 1,
-        "clockwise_deg": -3.37593,
-        "vertical_px": -0.623,
+        "original_mouth_cell": 1,
+        "clockwise_deg": -3.107388,
+        "head_y_offset": -0.58413,
         "key": 1
       },
       "duration_ms": 170,
-      "pixel_sha256": "18dbd85c8184527f2f0e19c98b8972936ca6e5109b2e39ef1cdbbbf721f6256f"
+      "pixel_sha256": "a45f1ba014c229e788e6867b0a095565b78a417f1b4943e570b368e959a8818d"
     },
     {
       "frame": 2,
       "file": "frames/02.png",
       "source": {
-        "head_cell": 1,
-        "clockwise_deg": -3.27043,
-        "vertical_px": -0.264
+        "original_mouth_cell": 1,
+        "clockwise_deg": -3.010284,
+        "head_y_offset": -0.2475
       },
       "duration_ms": 60,
-      "pixel_sha256": "4b63dc96fe40e5dd268f379dd74b3f4f5b7dcb81302dd4a941833a6d40163114"
+      "pixel_sha256": "a4754d32096291c9aa4ce1e69d35e7aadf12e4795482ea56e56344e8e016b74b"
     },
     {
       "frame": 3,
       "file": "frames/03.png",
       "source": {
-        "head_cell": 1,
-        "clockwise_deg": -2.87755,
-        "vertical_px": -0.133
+        "original_mouth_cell": 1,
+        "clockwise_deg": -2.648654,
+        "head_y_offset": -0.12448
       },
       "duration_ms": 70,
-      "pixel_sha256": "bc58bcb0cb63a1334056da51bfe18840f882c15695f454435a89825c620c55a5"
+      "pixel_sha256": "04211ec0c9ff89a30a4a73b2da6e6dc710336b397792a67e06636061dff34746"
     },
     {
       "frame": 4,
       "file": "frames/04.png",
       "source": {
-        "head_cell": 1,
-        "clockwise_deg": -2.18723,
-        "vertical_px": 0.021
+        "original_mouth_cell": 1,
+        "clockwise_deg": -2.013249,
+        "head_y_offset": 0.02005
       },
       "duration_ms": 60,
-      "pixel_sha256": "a476a82b4bab0d91cee96458c9eeec308354fc2419ae3d5ff715378774443dd4"
+      "pixel_sha256": "564e5b2cabae3cc64c3fd97423feb2c675d64ffa6e33d8c2ca4973b7328ca9c0"
     },
     {
       "frame": 5,
       "file": "frames/05.png",
       "source": {
-        "head_cell": 1,
-        "clockwise_deg": -1.20765,
-        "vertical_px": 0.153
+        "original_mouth_cell": 1,
+        "clockwise_deg": -1.111591,
+        "head_y_offset": 0.14384
       },
       "duration_ms": 70,
-      "pixel_sha256": "bb8dc0c7f79751036ffd3944d68609cabb368ab074a1a0d4290e8c9a7bf39259"
+      "pixel_sha256": "ef4dde852f6ac1f99214ca2174a0516ab56006fc3756ca08f05d7b76ba47ef7d"
     },
     {
       "frame": 6,
       "file": "frames/06.png",
       "source": {
-        "head_cell": 2,
-        "clockwise_deg": -0.19441,
-        "vertical_px": 0.306,
+        "original_mouth_cell": 2,
+        "clockwise_deg": -0.178945,
+        "head_y_offset": 0.28696,
         "key": 2
       },
       "duration_ms": 60,
-      "pixel_sha256": "8a86b79ff0d7a993375c74ef98ab3631ceeb41ee08a5d8606023b651820c8361"
+      "pixel_sha256": "4b348b6373f5935fb41040903f3861f396e6ae505e41d2651d119b800b216b62"
     },
     {
       "frame": 7,
       "file": "frames/07.png",
       "source": {
-        "head_cell": 2,
-        "clockwise_deg": 0.96182,
-        "vertical_px": 0.435
+        "original_mouth_cell": 2,
+        "clockwise_deg": 0.885315,
+        "head_y_offset": 0.40756
       },
       "duration_ms": 210,
-      "pixel_sha256": "3efdaa2c52597141662891811bfd306bbefef5209712cefdbd25c2768dfaeb40"
+      "pixel_sha256": "8ec1f38434027350e97c3e0d0c7755dfaa5d6a7d513319d0d53c7aeaee834ce9"
     },
     {
       "frame": 8,
       "file": "frames/08.png",
       "source": {
-        "head_cell": 2,
-        "clockwise_deg": 2.92123,
-        "vertical_px": 0.856
+        "original_mouth_cell": 2,
+        "clockwise_deg": 2.688863,
+        "head_y_offset": 0.80252
       },
       "duration_ms": 60,
-      "pixel_sha256": "09dce440138255f8af21fd6ce253a6c54f124e1b1ee3f8e19c9913167d36789b"
+      "pixel_sha256": "f3eb8c0179585806e1760cb5cdcf1f0c6aaff44a6325e2b543523e11d95956a0"
     },
     {
       "frame": 9,
       "file": "frames/09.png",
       "source": {
-        "head_cell": 2,
-        "clockwise_deg": 5.71033,
-        "vertical_px": 0.965
+        "original_mouth_cell": 2,
+        "clockwise_deg": 5.256099,
+        "head_y_offset": 0.90443
       },
       "duration_ms": 70,
-      "pixel_sha256": "ace11b2f3f7cd82ec45b30a98d03ed07a334d70bde93d110df61b481939a622f"
+      "pixel_sha256": "e9efe7b983b44ef2a7b0d87aad69aec4f367356a06bf31df962eb3cb270cf6f8"
     },
     {
       "frame": 10,
       "file": "frames/10.png",
       "source": {
-        "head_cell": 3,
-        "clockwise_deg": 8.87789,
-        "vertical_px": 1.083,
+        "original_mouth_cell": 3,
+        "clockwise_deg": 8.171695,
+        "head_y_offset": 1.01547,
         "key": 3
       },
       "duration_ms": 60,
-      "pixel_sha256": "c44946095f118cee53cd196e971a4d9121a18e3b85f04712a1826fb33f6bd17e"
+      "pixel_sha256": "f58e9907412c920366da1294578a9a437a14ba11e7e4812a9cead6ecb9dc1298"
     },
     {
       "frame": 11,
       "file": "frames/11.png",
       "source": {
-        "head_cell": 3,
-        "clockwise_deg": 12.2717,
-        "vertical_px": 1.177
+        "original_mouth_cell": 3,
+        "clockwise_deg": 11.295538,
+        "head_y_offset": 1.10317
       },
       "duration_ms": 60,
-      "pixel_sha256": "a4a4c75f432a6f19f64e4fde9b2ce2a2cef691ee83b5aebd3a3d1a109e137efa"
+      "pixel_sha256": "53730dcbb02b9959c2e596faa728676cb4b10bce6fc5b082f4b3cef047634257"
     },
     {
       "frame": 12,
       "file": "frames/12.png",
       "source": {
-        "head_cell": 3,
-        "clockwise_deg": 14.66386,
-        "vertical_px": 1.262
+        "original_mouth_cell": 3,
+        "clockwise_deg": 13.497419,
+        "head_y_offset": 1.18333
       },
       "duration_ms": 70,
-      "pixel_sha256": "dd07a16d5224c9a62b9ef98a79fe64a7ddb275a8134e759baa0ac3bd9004c2f7"
+      "pixel_sha256": "dd023fd4b7d5e4976b5a03829f9489b48739081b22c696427b8e42165034f22a"
     },
     {
       "frame": 13,
       "file": "frames/13.png",
       "source": {
-        "head_cell": 3,
-        "clockwise_deg": 16.06682,
-        "vertical_px": 1.351
+        "original_mouth_cell": 3,
+        "clockwise_deg": 14.788777,
+        "head_y_offset": 1.2666
       },
       "duration_ms": 190,
-      "pixel_sha256": "eadc732019bc383269c30dc47896013693e1ec99e0c6f74bbda4e5900b4b0078"
+      "pixel_sha256": "1adc97d490d5e82dad2117ac21c3a80ec0b96ffa9df7bf4f5a1e98d00505943e"
     },
     {
       "frame": 14,
       "file": "frames/14.png",
       "source": {
-        "head_cell": 3,
-        "clockwise_deg": 17.18471,
-        "vertical_px": 1.527
+        "original_mouth_cell": 3,
+        "clockwise_deg": 15.817749,
+        "head_y_offset": 1.43142
       },
       "duration_ms": 60,
-      "pixel_sha256": "74e1e1ce50ec8c0cc2043ac3a0cd87bc9ed8b780309b6411af4d1e61c0f6aaef"
+      "pixel_sha256": "1dc2c7f7800ec4ff0cb6e518c0ce93cc79fa62ca3ad0fc358c393bb067824c34"
     },
     {
       "frame": 15,
       "file": "frames/15.png",
       "source": {
-        "head_cell": 4,
-        "clockwise_deg": 18.00979,
-        "vertical_px": 1.561,
+        "original_mouth_cell": 4,
+        "clockwise_deg": 16.577193,
+        "head_y_offset": 1.46356,
         "key": 4
       },
       "duration_ms": 70,
-      "pixel_sha256": "df80700f045397207da51579e2c877fb6b16065805d545dc8a441b093438037f"
+      "pixel_sha256": "0da4ef8a147175dddc2de88bdae104625ba1d4cb6d589cf0f79f110d92e6b796"
     },
     {
       "frame": 16,
       "file": "frames/16.png",
       "source": {
-        "head_cell": 4,
-        "clockwise_deg": 18.64739,
-        "vertical_px": 1.588
+        "original_mouth_cell": 4,
+        "clockwise_deg": 17.164071,
+        "head_y_offset": 1.4884
       },
       "duration_ms": 60,
-      "pixel_sha256": "bd4d24b07ca09d01a93045db8dc451b89dbaa0baa2adc06fc591b65773eeaf42"
+      "pixel_sha256": "ddb11d69f07bf2f4bdc24f5d16964a3573451b1a6ffdd697726a5b103afa0458"
     },
     {
       "frame": 17,
       "file": "frames/17.png",
       "source": {
-        "head_cell": 4,
-        "clockwise_deg": 19.17453,
-        "vertical_px": 1.599
+        "original_mouth_cell": 4,
+        "clockwise_deg": 17.649283,
+        "head_y_offset": 1.49869
       },
       "duration_ms": 60,
-      "pixel_sha256": "327692087230a69d38676872a5c2f346056380d35251046cb6a8d633f10f9e50"
+      "pixel_sha256": "556fcc45d37736116949d6fce01e8ee1a98c8eff2b4014cae84f47425d52d336"
     },
     {
       "frame": 18,
       "file": "frames/18.png",
       "source": {
-        "head_cell": 4,
-        "clockwise_deg": 19.12127,
-        "vertical_px": 1.599
+        "original_mouth_cell": 4,
+        "clockwise_deg": 17.600261,
+        "head_y_offset": 1.49874
       },
       "duration_ms": 70,
-      "pixel_sha256": "e4ab6596f05b6dc6784a29370a4244eb179d687a275868c3c92ed3fbf16cee1e"
+      "pixel_sha256": "7dac22063f6436cb07d732a24b9f0d4be17a6bfb157286f2998470786a7e9f8d"
     },
     {
       "frame": 19,
       "file": "frames/19.png",
       "source": {
-        "head_cell": 4,
-        "clockwise_deg": 18.11538,
-        "vertical_px": 1.585
+        "original_mouth_cell": 4,
+        "clockwise_deg": 16.674386,
+        "head_y_offset": 1.48587
       },
       "duration_ms": 170,
-      "pixel_sha256": "2a5437181e77bbf85850baefa0c377f85fbce2fee2d17f93dee7e9abbf3338fc"
+      "pixel_sha256": "ec838c75ef506c935eb73549e80616909c0ce3c455acfeaa7689f04fa411e756"
     },
     {
       "frame": 20,
       "file": "frames/20.png",
       "source": {
-        "head_cell": 4,
-        "clockwise_deg": 16.77111,
-        "vertical_px": 1.491
+        "original_mouth_cell": 4,
+        "clockwise_deg": 15.437047,
+        "head_y_offset": 1.39761
       },
       "duration_ms": 70,
-      "pixel_sha256": "9430f91e38131ccffb8a39e82df8a87b54e275dee51e5ec9b9bd590a3c84c809"
+      "pixel_sha256": "f10d6ecd01c6daf41c90fcd41e668d84eded4b9095b619bde1698c70d3e6aa7d"
     },
     {
       "frame": 21,
       "file": "frames/21.png",
       "source": {
-        "head_cell": 4,
-        "clockwise_deg": 14.78953,
-        "vertical_px": 1.428
+        "original_mouth_cell": 4,
+        "clockwise_deg": 13.613086,
+        "head_y_offset": 1.33866
       },
       "duration_ms": 60,
-      "pixel_sha256": "c40a81fdc184fa11a13603266557f19bbbcdf214364481249396041f93e99179"
+      "pixel_sha256": "ad37b70d0474813db5569f1c1b638525a20ae8750ed15c9a85b5981a4575810a"
     },
     {
       "frame": 22,
       "file": "frames/22.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 12.5236,
-        "vertical_px": 1.363,
+        "original_mouth_cell": 5,
+        "clockwise_deg": 11.527403,
+        "head_y_offset": 1.2782,
         "key": 5
       },
       "duration_ms": 70,
-      "pixel_sha256": "71f9cc17917d8885bf6d35b21fecbd13aec7ee0c99cffef304f828b70a6ec0fa"
+      "pixel_sha256": "f238a8dd7a80f328807f49f228c02033ac997b28b51ccd468ca1cc65ecfe8402"
     },
     {
       "frame": 23,
       "file": "frames/23.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 10.86312,
-        "vertical_px": 1.276
+        "original_mouth_cell": 5,
+        "clockwise_deg": 9.999004,
+        "head_y_offset": 1.19667
       },
       "duration_ms": 60,
-      "pixel_sha256": "30abff2e8aa8d99542cbe7a7656f8853d1bbca3001b630d473e0c0f36d0d27aa"
+      "pixel_sha256": "8641f67c89790494fa36413cf2c013970e72f735b61b71008f8f816a8384eeb7"
     },
     {
       "frame": 24,
       "file": "frames/24.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 9.76056,
-        "vertical_px": 1.192
+        "original_mouth_cell": 5,
+        "clockwise_deg": 8.984147,
+        "head_y_offset": 1.11789
       },
       "duration_ms": 70,
-      "pixel_sha256": "e650dd27b70f081b19e55b04883890d93a3f3b8b392516c83bf2aeebf31dbb1f"
+      "pixel_sha256": "657c879a72ee3fd8a6c0a16af9616100c4d4a408989dfe397adb8ef69a4392d0"
     },
     {
       "frame": 25,
       "file": "frames/25.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 9.47396,
-        "vertical_px": 1.084
+        "original_mouth_cell": 5,
+        "clockwise_deg": 8.720353,
+        "head_y_offset": 1.01638
       },
       "duration_ms": 160,
-      "pixel_sha256": "70b66ea524f2f5cf87e674e5e68ce157a6ab2edf70a4cc0a9482bca9cdf70551"
+      "pixel_sha256": "9474821cb1ca7c9d163369d7b161063a1b901433d1f73171a17f3ffa03eb94ca"
     },
     {
       "frame": 26,
       "file": "frames/26.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 9.62231,
-        "vertical_px": 0.801
+        "original_mouth_cell": 5,
+        "clockwise_deg": 8.856896,
+        "head_y_offset": 0.75053
       },
       "duration_ms": 60,
-      "pixel_sha256": "ca370d90c3a6bd3990e6afdde16a2a8588ea8783284a1d49af48ba1c0e9c500e"
+      "pixel_sha256": "97083d7b762b3c8be81097a195690a38bedd5a794b2e333f367391d6748e014b"
     },
     {
       "frame": 27,
       "file": "frames/27.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 9.69135,
-        "vertical_px": 0.683
+        "original_mouth_cell": 5,
+        "clockwise_deg": 8.920444,
+        "head_y_offset": 0.64072
       },
       "duration_ms": 70,
-      "pixel_sha256": "4956d2adbfd4fc5b82046803d5df755e5ab484c41b276138dd2f05658194f257"
+      "pixel_sha256": "c93555e6c2f510241c9f4fb7d23bdd448973a3c98be0f4fcc32d286f5cc4980e"
     },
     {
       "frame": 28,
       "file": "frames/28.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 9.34771,
-        "vertical_px": 0.541
+        "original_mouth_cell": 5,
+        "clockwise_deg": 8.604146,
+        "head_y_offset": 0.50713
       },
       "duration_ms": 60,
-      "pixel_sha256": "02639790c0869dfc4ef67c2bd627c9007cdfbcb4519d3e6c562ca0e38524e53d"
+      "pixel_sha256": "d3cb5603199a89a7ec72f9acff823fd0dbb18f1d7d79287cf89181ebedfd3793"
     },
     {
       "frame": 29,
       "file": "frames/29.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 8.6676,
-        "vertical_px": 0.415
+        "original_mouth_cell": 5,
+        "clockwise_deg": 7.97813,
+        "head_y_offset": 0.38882
       },
       "duration_ms": 60,
-      "pixel_sha256": "0297e4aa8bd4bf6eabd6b68835fea637020cf732fee0bd2612b736cdb7a27c24"
+      "pixel_sha256": "424254c6767f6f3c58436eeec29332e978bc8e6ed5d2b34823d4dcd23d93c632"
     },
     {
       "frame": 30,
       "file": "frames/30.png",
       "source": {
-        "head_cell": 5,
-        "clockwise_deg": 7.9322,
-        "vertical_px": 0.286
+        "original_mouth_cell": 5,
+        "clockwise_deg": 7.301229,
+        "head_y_offset": 0.26786
       },
       "duration_ms": 70,
-      "pixel_sha256": "22e0667cd115da9ad0b6c3709f8096bd1c25d078eb7ab00943be3e84c15e9502"
+      "pixel_sha256": "0693850058aa8bc347e2174ad4f4d2fb583b50c836c858e3cf352a061d53999f"
     },
     {
       "frame": 31,
       "file": "frames/31.png",
       "source": {
-        "head_cell": 6,
-        "clockwise_deg": 6.96258,
-        "vertical_px": 0.133,
+        "original_mouth_cell": 6,
+        "clockwise_deg": 6.408735,
+        "head_y_offset": 0.12448,
         "key": 6
       },
       "duration_ms": 210,
-      "pixel_sha256": "2779df019ef2d475c68a7bdd2cdc61b2b7e251b0765864b64aba37a1e88dfe07"
+      "pixel_sha256": "aa27601159eee16fbaffa46c044ab012a2f866d04b35e1042425af5f7efdfed5"
     },
     {
       "frame": 32,
       "file": "frames/32.png",
       "source": {
-        "head_cell": 6,
-        "clockwise_deg": 6.17666,
-        "vertical_px": -0.328
+        "original_mouth_cell": 6,
+        "clockwise_deg": 5.685335,
+        "head_y_offset": -0.30722
       },
       "duration_ms": 70,
-      "pixel_sha256": "f4a4c40d12435fdeadcd37953a1bdd81a0a1304f102ebb2cd527e561d00a42b6"
+      "pixel_sha256": "2d4d8328a09b6f18acc3b091b6c752a2fbf9e5f4117aaec951f5ad599551c1ef"
     },
     {
       "frame": 33,
       "file": "frames/33.png",
       "source": {
-        "head_cell": 6,
-        "clockwise_deg": 5.16534,
-        "vertical_px": -0.477
+        "original_mouth_cell": 6,
+        "clockwise_deg": 4.754462,
+        "head_y_offset": -0.44718
       },
       "duration_ms": 60,
-      "pixel_sha256": "51c93b8f912f4ac6c5bfeabdfbeaeb3689f5b60be44dd8a3799de723b9c35966"
+      "pixel_sha256": "db86754b98150f432c770acd88e25f1a82fd7d31b2db4fd9afdaf5015918f0ab"
     },
     {
       "frame": 34,
       "file": "frames/34.png",
       "source": {
-        "head_cell": 6,
-        "clockwise_deg": 3.79321,
-        "vertical_px": -0.601
+        "original_mouth_cell": 6,
+        "clockwise_deg": 3.49148,
+        "head_y_offset": -0.56389
       },
       "duration_ms": 70,
-      "pixel_sha256": "21788b6e6e6e47a2e8786c66f59cb4a37ada4a679f0d105539cf36392685f7b7"
+      "pixel_sha256": "8ade469f212cc5dcec118bcbb3046072d8ed282bacf9dca7f892e67fdd3888a5"
     },
     {
       "frame": 35,
       "file": "frames/35.png",
       "source": {
-        "head_cell": 6,
-        "clockwise_deg": 2.46068,
-        "vertical_px": -0.741
+        "original_mouth_cell": 6,
+        "clockwise_deg": 2.264946,
+        "head_y_offset": -0.69513
       },
       "duration_ms": 60,
-      "pixel_sha256": "4fddb7d225547c5111cf0d11840e439e789b565aae0d0b65f7ec6b778b147656"
+      "pixel_sha256": "0ff57e61c3e8194dbc4a007aaccfab8284ea0a332314cb64c37283c4447084cb"
     },
     {
       "frame": 36,
       "file": "frames/36.png",
       "source": {
-        "head_cell": 6,
-        "clockwise_deg": 1.03389,
-        "vertical_px": -0.856
+        "original_mouth_cell": 6,
+        "clockwise_deg": 0.951649,
+        "head_y_offset": -0.80252
       },
       "duration_ms": 70,
-      "pixel_sha256": "940cf27299babdada08e4d0720134084afe97f4739abd6e544168b704ac10a47"
+      "pixel_sha256": "4d1544301eeea72c889c424c665256a3b8ea1dc412ec805cc36abbfe92a8f221"
     },
     {
       "frame": 37,
       "file": "frames/37.png",
       "source": {
-        "head_cell": 7,
-        "clockwise_deg": -0.11036,
-        "vertical_px": -0.982,
+        "original_mouth_cell": 7,
+        "clockwise_deg": -0.10158,
+        "head_y_offset": -0.92083,
         "key": 7
       },
       "duration_ms": 170,
-      "pixel_sha256": "ca2c13a3e8405b6eb39be59fb1277f515fab8ec79388bf5b2d5918c767db7d68"
+      "pixel_sha256": "5f2b61c9799bf1ab597139a47b2236fa3da27516edd7738e0e8fefd14eafb73d"
     },
     {
       "frame": 38,
       "file": "frames/38.png",
       "source": {
-        "head_cell": 7,
-        "clockwise_deg": -1.10253,
-        "vertical_px": -1.249
+        "original_mouth_cell": 7,
+        "clockwise_deg": -1.014831,
+        "head_y_offset": -1.17052
       },
       "duration_ms": 60,
-      "pixel_sha256": "fd0ae021e7d993561fe29b5873926f8d1b2a66a4818e15415791a8837b6d531a"
+      "pixel_sha256": "79d2d5ba2dbe281ac31e96b39c1831900257c3e8ab4765915a7654fbec0b1064"
     },
     {
       "frame": 39,
       "file": "frames/39.png",
       "source": {
-        "head_cell": 7,
-        "clockwise_deg": -2.13865,
-        "vertical_px": -1.327
+        "original_mouth_cell": 7,
+        "clockwise_deg": -1.96853,
+        "head_y_offset": -1.24398
       },
       "duration_ms": 70,
-      "pixel_sha256": "ba201590efdfef471a544ca0fc0ea6b838ecd13fb335de7807adf50d731af8c6"
+      "pixel_sha256": "d10e1be5de709bde2d664303d213174b6c3fcb3ae8fc3f3873101fee17a061d0"
     },
     {
       "frame": 40,
       "file": "frames/40.png",
       "source": {
-        "head_cell": 7,
-        "clockwise_deg": -3.54068,
-        "vertical_px": -1.407
+        "original_mouth_cell": 7,
+        "clockwise_deg": -3.259039,
+        "head_y_offset": -1.31892
       },
       "duration_ms": 60,
-      "pixel_sha256": "452c6a70c1cd522421e4be6319083c79a9ea8a679471adb052b296b4f4cc8d8b"
+      "pixel_sha256": "bc37ff9fb946998847347e4268fc515b8869843954b5fd5eb1aa4f17d5844b48"
     },
     {
       "frame": 41,
       "file": "frames/41.png",
       "source": {
-        "head_cell": 7,
-        "clockwise_deg": -5.17903,
-        "vertical_px": -1.465
+        "original_mouth_cell": 7,
+        "clockwise_deg": -4.767064,
+        "head_y_offset": -1.37341
       },
       "duration_ms": 70,
-      "pixel_sha256": "e108907da562b2a524df7e15023561b50a447f5b40f50a3aba9bf170e8a49220"
+      "pixel_sha256": "89305a7c9f7bed259a618557cdf2d578f17c607981266f4ee7b090ad041a0311"
     },
     {
       "frame": 42,
       "file": "frames/42.png",
       "source": {
-        "head_cell": 7,
-        "clockwise_deg": -6.54462,
-        "vertical_px": -1.52
+        "original_mouth_cell": 7,
+        "clockwise_deg": -6.024024,
+        "head_y_offset": -1.42511
       },
       "duration_ms": 60,
-      "pixel_sha256": "cb343d3ee372917eddcb01b98451ea66f6aae982cfc4113e463519cab99fcb0c"
+      "pixel_sha256": "c405bc7ce4287c73359cef4ec6513c38c586d5c8b542fab4ec78834f3a9e091a"
     },
     {
       "frame": 43,
       "file": "frames/43.png",
       "source": {
-        "head_cell": 8,
-        "clockwise_deg": -7.54837,
-        "vertical_px": -1.556,
+        "original_mouth_cell": 8,
+        "clockwise_deg": -6.94793,
+        "head_y_offset": -1.45889,
         "key": 8
       },
       "duration_ms": 180,
-      "pixel_sha256": "b18043c34bb2bf0b9097de9ff9282a5274ac5c8cd4ec6ca1ee24b7829cca8d18"
+      "pixel_sha256": "d7a4bb53b70256bd0406fd4aa322ce69132ed657161d9214e0702aabb998c86e"
     },
     {
       "frame": 44,
       "file": "frames/44.png",
       "source": {
-        "head_cell": 8,
-        "clockwise_deg": -7.59175,
-        "vertical_px": -1.6
+        "original_mouth_cell": 8,
+        "clockwise_deg": -6.987864,
+        "head_y_offset": -1.49987
       },
       "duration_ms": 60,
-      "pixel_sha256": "c482e45c76b83798f659d2214392a8988ce14f92fec551176394f09c9fb43f81"
+      "pixel_sha256": "24c4c1331fa10e5893206826c68eb780758e0d6973d26d0e877136ee732e5a41"
     },
     {
       "frame": 45,
       "file": "frames/45.png",
       "source": {
-        "head_cell": 8,
-        "clockwise_deg": -7.11782,
-        "vertical_px": -1.593
+        "original_mouth_cell": 8,
+        "clockwise_deg": -6.55163,
+        "head_y_offset": -1.49309
       },
       "duration_ms": 70,
-      "pixel_sha256": "4dae3f8ebae9cce3f7886206364188c5d9d206b5ded952ec71fa64c606cd5627"
+      "pixel_sha256": "4e1152fb40c0407b56d572bac4ad79554b6b72cdd0ceb35201b92ed603469bdf"
     },
     {
       "frame": 46,
       "file": "frames/46.png",
       "source": {
-        "head_cell": 8,
-        "clockwise_deg": -6.34328,
-        "vertical_px": -1.57
+        "original_mouth_cell": 8,
+        "clockwise_deg": -5.838705,
+        "head_y_offset": -1.4723
       },
       "duration_ms": 60,
-      "pixel_sha256": "6efe58bdf80d11b555a69bd63088a150bd861fa17a873684d8abec8d296a069c"
+      "pixel_sha256": "712e6a3b0ef8302ba51baca7d7fb908bae25f93c29ed94d0bed7eeedb4bf1e2d"
     },
     {
       "frame": 47,
       "file": "frames/47.png",
       "source": {
-        "head_cell": 8,
-        "clockwise_deg": -5.34384,
-        "vertical_px": -1.54
+        "original_mouth_cell": 8,
+        "clockwise_deg": -4.918757,
+        "head_y_offset": -1.44357
       },
       "duration_ms": 70,
-      "pixel_sha256": "a50079cfeb7c60622e9756b6051bf423984d2751233fcc8c3db46961222c9e35"
+      "pixel_sha256": "d4c84eeb993b09f0ac734ad3e6ad58c35294ad2f856e86cf6b0669c8370becaf"
     },
     {
       "frame": 48,
       "file": "frames/48.png",
       "source": {
-        "head_cell": 8,
-        "clockwise_deg": -4.57045,
-        "vertical_px": -1.491
+        "original_mouth_cell": 8,
+        "clockwise_deg": -4.206892,
+        "head_y_offset": -1.39761
       },
       "duration_ms": 60,
-      "pixel_sha256": "f6bf2777b02dd839cc0878fbfa612eeed395e6d5e0d68defb693cdaaa0476e16"
+      "pixel_sha256": "acff0d084ee7613f4e7a9fb073fcb534986859b3ce8259e28401e110d3a28085"
     },
     {
       "frame": 49,
       "file": "frames/49.png",
       "source": {
-        "head_cell": 9,
-        "clockwise_deg": -3.83017,
-        "vertical_px": -1.438,
+        "original_mouth_cell": 9,
+        "clockwise_deg": -3.525502,
+        "head_y_offset": -1.34786,
         "key": 9
       },
       "duration_ms": 200,
-      "pixel_sha256": "cbcccf950a4f4b8331de73eb9efafa5c47443697decac60f12c94c765f9e12df"
+      "pixel_sha256": "b80928c6461ab6da75303c6ffb13a0bb2ea64ae560e27b68053aa5dfe5f6abb2"
     },
     {
       "frame": 50,
       "file": "frames/50.png",
       "source": {
-        "head_cell": 9,
-        "clockwise_deg": -3.32634,
-        "vertical_px": -1.192
+        "original_mouth_cell": 9,
+        "clockwise_deg": -3.061747,
+        "head_y_offset": -1.11789
       },
       "duration_ms": 60,
-      "pixel_sha256": "824df86dd2b4ff1f603916cf2260bcce9b7e77f0fc7fd83e66787c1c3bd2f059"
+      "pixel_sha256": "f966150c185e3aadfd105391868d5fcf0dd3cb55bc6d15e1e4c05a9da3e60a53"
     },
     {
       "frame": 51,
       "file": "frames/51.png",
       "source": {
-        "head_cell": 9,
-        "clockwise_deg": -3.05753,
-        "vertical_px": -1.1
+        "original_mouth_cell": 9,
+        "clockwise_deg": -2.814313,
+        "head_y_offset": -1.03148
       },
       "duration_ms": 70,
-      "pixel_sha256": "b237529e4f1eaa11e2f92d8e9d520367041509c59fc890ed75a226e27b80639f"
+      "pixel_sha256": "533677130957f1fcf105c14dcd0a18f280cad7fa131bbbda5767a6af21fab755"
     },
     {
       "frame": 52,
       "file": "frames/52.png",
       "source": {
-        "head_cell": 9,
-        "clockwise_deg": -2.97287,
-        "vertical_px": -0.983
+        "original_mouth_cell": 9,
+        "clockwise_deg": -2.736391,
+        "head_y_offset": -0.92181
       },
       "duration_ms": 60,
-      "pixel_sha256": "fcdd6ef16c78957951ec8a068b28985bd4d4bfdbc57bb1617eb1003cc593d72a"
+      "pixel_sha256": "15494c1212bfd6dec66a38ba72885cee7bf70ea35d5d400c7aac5b6e9544a2ee"
     },
     {
       "frame": 53,
       "file": "frames/53.png",
       "source": {
-        "head_cell": 9,
-        "clockwise_deg": -3.05485,
-        "vertical_px": -0.876
+        "original_mouth_cell": 9,
+        "clockwise_deg": -2.811852,
+        "head_y_offset": -0.82094
       },
       "duration_ms": 60,
-      "pixel_sha256": "8bde44d15b9b90724682ceb7237ced20d947c0c7fe4815875c1230ad18dc3167"
+      "pixel_sha256": "9227682a710c16a48ed6355417e14d41526c0d932df3b8549912bc5ebbd18d56"
     },
     {
       "frame": 54,
       "file": "frames/54.png",
       "source": {
-        "head_cell": 9,
-        "clockwise_deg": -3.19023,
-        "vertical_px": -0.762
+        "original_mouth_cell": 9,
+        "clockwise_deg": -2.936459,
+        "head_y_offset": -0.71446
       },
       "duration_ms": 70,
-      "pixel_sha256": "33b5d1bc87d0050b483138c903b5afe9bca0394212ef786d8ecfd0052ec8149b"
+      "pixel_sha256": "acc3f6bdea17d04d460d50e6bbaccd4506a0dae0580da4a48350319348859497"
     }
   ],
-  "native_cell_px": 512,
-  "body_native_px": 1024,
-  "method": "九张完整头部表情原画按时值切换，叠在一张固定衣身和双手原画上。以颈点为轴做头部刚性旋转，白底，全片统一调色板。"
+  "method": "从初版 1024 原画保留面部、刘海与外轮廓，嘴形引自初版分镜。仅补齐下颌和发尾遮挡，手与衣身单独固定。"
 }
