@@ -30,3 +30,13 @@
 | 第十五条配套鼓脸、整包和委派回执 | `c8ae074f5657ff47dda1bd5789e128cd8c739233` |
 
 [Issue #102 交付评论](https://github.com/Shuang-su/metaxingtong/issues/102#issuecomment-6716852742)已经发布，API 回读与提交正文一致。素材和分支保存在本地。
+
+## 星瞳平放双手与配色修订
+
+上一版将头、手和衣身共同旋转，手和袖口随头移动。重新读取两张 B 站原作，用三次 Sunburst 附图请求分别画出头部、带平放双手的衣身和九格头部表情。头绕颈部转动，手掌和衣袖固定。前景重新取色，编码时为小面积珊瑚色和蓝瞳分配了调色板位置。[原包与修改前后对照](../../../emotes/sunburst/agent-emotes/15-xingtong-pout/reference-comparison.png)
+
+三份 GIF 的星瞳画面均为 54 个不同帧，每圈 4.56 秒。母版底部 138 行、分享版和双人版星瞳侧底部 58 行均逐帧像素一致，分别复核了每只手和袖口。112 像素浏览器实播截到 1,037 张，此次录屏匹配到 6 个完整循环，含连续三圈。分享包内 15 项校验成功，另外 14 个成员文件与上一 checkpoint 的哈希一致。[逐帧检查](../../../emotes/sunburst/agent-emotes/15-xingtong-pout/fixed-hands-check.json) · [实播记录](../../../emotes/sunburst/agent-emotes/15-xingtong-pout/playback.json)
+
+原包刘海中间色的样点 RGB 为 (200, 197, 204)，新版 GIF 对应样点为 (199, 198, 203)。袖子样点从原包的 (218, 219, 253) 对应到成片的 (219, 221, 254)。各值是同材质小窗口的中位数。角色轮廓和表情为本次重画。
+
+本地素材 checkpoint 为 `599a913bc40bc7788dcd3cf0408a634bc280c5ce`。已在 Issue #102 更新修订情况并从 GitHub API 回读核对正文。[Issue 评论](https://github.com/Shuang-su/metaxingtong/issues/102#issuecomment-6717682439)
