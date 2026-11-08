@@ -34,4 +34,4 @@
 
 [人物档案、六个来源与三条无字幕分镜](story-emotes/README.md)收录双人《接住了》、星瞳《稳住了》和奶绿《给你的》的 GIF、逐帧画面、原始生成和聊天尺寸回放。
 
-[十四条续作：按题材打开 GIF、分镜和逐帧图](agent-emotes/README.md)。
+[十五条续作：绿瞳、分画风表情与星瞳奶绿配套鼓脸](agent-emotes/README.md)。
