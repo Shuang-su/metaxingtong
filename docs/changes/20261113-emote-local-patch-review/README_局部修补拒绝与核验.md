@@ -81,4 +81,10 @@ Chromium 实播脚本已实际运行，但在打开本地预览页时立即失�
 
 本轮未改第 15 条、pout-neck-follow、09 呆毛或 01 蓝灰服饰，未运行 3D、付费 API 或外部依赖安装，未复制凭据、访问此前被拒的服务或 push。未创建新 ZIP；交接为 GIF、PNG、脚本及报告原文件，内部输入 tar.gz 不作为成果包。
 
+## 原文件交接状态
+
+审阅归档提交为 `7ca59f23882afbbad4ee24dae4f65be3849fce9e`；随后另存本节的交接阻塞记录。15 个原文件副本已整理在 `/workspace/emote-local-patch-review/deliverables/`。
+
+通过 Library 技能规定的批量上传流程保存这 15 个文件时，在获取 hosted apps 工具列表阶段失败：`HTTP status 401`。流程退出码 1，没有返回文件保存结果或 Library ID。没有确认任何上传成功，未重试、未切换上传路径，也未读取或复制凭据。确切记录见 `library-handoff-blocker.json`。因此全部新成果仍仅为此环境的本地文件；不能称为已上传 Library、已同步 Mac 或已推送 GitHub。
+
 剩余工作是制作能与原图线条和衣摆形状匹配的局部清洁衣料／肩领图层，再重新逐帧验收；当前像素拼补实验不支持声称修复成功。
