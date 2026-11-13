@@ -12,7 +12,7 @@ def run(n):
  # The only editable regions are duplicate knee arm and stray shoulder fingers.
  boxes=[]
  if 8<=n<=34:boxes.append((477,528,563,635))
- if n<=26:boxes.append((259,454,311,509))
+ if n<=26:boxes.append((253,478,311,518))
  for box in boxes:draw.rounded_rectangle(box,radius=8,fill=(255,255,255,0))
  im.save(target/'input.png');mask.save(target/'mask.png')
  key=next(l.partition('=')[2].strip().strip('"').strip("'") for l in (ROOT/'.env.local').read_text().splitlines() if l.startswith('OPENAI_API_KEY='))
