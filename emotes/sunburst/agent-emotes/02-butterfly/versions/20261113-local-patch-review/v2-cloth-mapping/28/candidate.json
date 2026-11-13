@@ -1,0 +1,67 @@
+{
+  "method": "same-frame affine cloth sampling",
+  "polygon": [
+    [
+      575,
+      475
+    ],
+    [
+      593,
+      475
+    ],
+    [
+      614,
+      482
+    ],
+    [
+      627,
+      491
+    ],
+    [
+      638,
+      504
+    ],
+    [
+      634,
+      516
+    ],
+    [
+      644,
+      527
+    ],
+    [
+      639,
+      537
+    ],
+    [
+      629,
+      548
+    ],
+    [
+      605,
+      552
+    ],
+    [
+      589,
+      541
+    ],
+    [
+      577,
+      521
+    ],
+    [
+      570,
+      500
+    ]
+  ],
+  "donor_mapping": "sx=540+0.24*(x-570); sy=y+0.075*(x-570)",
+  "protected": "All pixels outside mask; both valid hands outside mask",
+  "frame": 28,
+  "status": "rejected_not_for_production",
+  "changed_pixels": 3296,
+  "pixels_changed_outside_mask": 0,
+  "protected_pixels": 585773,
+  "original_rgb_sha256": "0b1cd738436fb1bb5326ec484dcd3b9f54535952e0f9235d3f12a619baf66c02",
+  "candidate_rgb_sha256": "237c614e7ed5be3ee4f6ac0ecbea1a9ecaa939ce7948443abd0145f660f8ad65",
+  "rejection_reason": "Stretched cloth and discontinuous garment edges; 03 shoulder issue still present."
+}
