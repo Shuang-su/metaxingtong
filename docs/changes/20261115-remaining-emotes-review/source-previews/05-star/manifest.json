@@ -1,0 +1,808 @@
+{
+  "title": "星星别跑",
+  "file": "master.gif",
+  "chat_file": "chat.gif",
+  "sha256": "c576c3d6eff32c1d672a92cf5640bf8fae86232cf0a478064d7c9e2b5d180c82",
+  "size": [
+    768,
+    768
+  ],
+  "frames": 54,
+  "different_frames": 54,
+  "total_ms": 4650,
+  "loop": 0,
+  "frame_durations_ms": [
+    190,
+    60,
+    70,
+    60,
+    60,
+    70,
+    160,
+    60,
+    70,
+    70,
+    60,
+    70,
+    180,
+    60,
+    70,
+    70,
+    60,
+    70,
+    160,
+    60,
+    70,
+    60,
+    70,
+    60,
+    320,
+    60,
+    70,
+    60,
+    60,
+    70,
+    150,
+    60,
+    70,
+    70,
+    60,
+    70,
+    240,
+    60,
+    70,
+    60,
+    70,
+    60,
+    180,
+    60,
+    70,
+    60,
+    70,
+    60,
+    150,
+    60,
+    70,
+    70,
+    60,
+    70
+  ],
+  "assets": [
+    {
+      "file": "master.gif",
+      "size": [
+        768,
+        768
+      ],
+      "bytes": 9125367,
+      "sha256": "c576c3d6eff32c1d672a92cf5640bf8fae86232cf0a478064d7c9e2b5d180c82"
+    },
+    {
+      "file": "chat.gif",
+      "size": [
+        320,
+        320
+      ],
+      "bytes": 2095512,
+      "sha256": "168df82a46ccae0efca02eed6e09dc690095ef85d17d42060d47d1db9abbb6c6"
+    }
+  ],
+  "local_composites": {},
+  "fixed_camera_crop": null,
+  "editing_notes": [],
+  "source_reference": "emotes/sunburst/pack-style-proofs/playground-originals/x-fairytale.png",
+  "storyboard": "storyboard.json",
+  "images_api": {
+    "keys": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x1536",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Make ONE precise production keyframe sheet of NINE sequential animation illustrations. EXACTLY 3 columns and 3 rows of 512x512 SQUARE cells, total 1536x1536; read row major. Invisible equal grid divisions, absolutely no written text, numbers, lettering, panel frames or gutters. Each cell has exactly the same fixed lens, solid opaque pure WHITE background, mild safe margins and fixed ground line. Draw the reference character(s) large, with the same recognizable face design, costume, hair and accessories across the 9 cells. Only characters requested in the story. Draw graphic chibi animation cels with clean shapes, not a close-up collage, no motion blur. Each cell must show a DIFFERENT complete acting pose. This is one story with a readable pay-off and reset, including hands, gaze and props. At small chat scale every pose reads. STORY: White winged fairytale Xingtong cradles one luminous palm-sized gold star, star floats off to her LEFT. Eyes follow then one feathered wing gently cups it and steers it back to her palms. Wings fold into starting silhouette.\nNINE chronological drawings: 1) Draw full-body, white-clad fairytale Xingtong with folded feathered wings, cradling one luminous palm-sized gold star in both visible palms and looking down at it. 2) Lift the star just above her open palms toward her left, viewer right; turn her eyes after it while keeping both hands still. 3) Float the star farther left to shoulder height; angle her gaze toward it, with both palms open beneath its former position. 4) Unfold her left wing toward the drifting star, curving the feather tips around its outer side; keep her eyes on it and both hands visible. 5) Cup the star gently inside the curved left wing tip, stopping its drift; keep the right wing folded and both palms waiting below. 6) Sweep the cupped left wing inward and downward, guiding the star toward her palms as her gaze follows. 7) Lower the star into both open palms; withdraw the supporting feather tips sideways without covering her fingers. 8) Curl both hands gently around the star as the left wing folds almost closed; lower her gaze to its glow. 9) Finish folding both wings into the starting silhouette; hold the star slightly higher in her cupped palms, ready to settle into pose one.\nContinuity: Use a fixed camera for one 4.8-second loop, preserving full-body framing, both visible hands, one star, continuous gaze, and a small settling motion from pose nine into pose one.",
+      "reference_sha256": "92957395328acb4ac65998baf6a584b2e25e3adc3196dd1d68913334ad336bd1",
+      "reference": "emotes/sunburst/pack-style-proofs/playground-originals/x-fairytale.png",
+      "request_id": "req_dff605e3e7ae41348c11ff764b1801a9",
+      "usage": {
+        "input_tokens": 1577,
+        "input_tokens_details": {
+          "image_tokens": 1024,
+          "text_tokens": 553
+        },
+        "output_tokens": 2073,
+        "total_tokens": 3650,
+        "output_tokens_details": {
+          "image_tokens": 2073,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "819b4dfc10e21cfe81bcbf5c16d66cf55921f258039964364a7a5c00fdbe39be",
+      "file": "sources/keys.png"
+    },
+    "strip-0": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: White winged fairytale Xingtong cradles one luminous palm-sized gold star, star floats off to her LEFT. Eyes follow then one feathered wing gently cups it and steers it back to her palms. Wings fold into starting silhouette.\nA = Draw full-body, white-clad fairytale Xingtong with folded feathered wings, cradling one luminous palm-sized gold star in both visible palms and looking down at it.\nB = Lift the star just above her open palms toward her left, viewer right; turn her eyes after it while keeping both hands still.\nC = Float the star farther left to shoulder height; angle her gaze toward it, with both palms open beneath its former position.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "719e9ec822cc54f37895b4ae9a744e9a9287a21e7686e10015f8aafb90f3fceb",
+      "reference": [
+        1,
+        2,
+        3
+      ],
+      "request_id": "req_60ad99ca9a944a75b534cca5c5596d02",
+      "usage": {
+        "input_tokens": 1861,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 409
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3696,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "9244c96d74042c0373e6c69099529e67dc9141badffc1beb79f2629fe011f5f4",
+      "file": "sources/strip-0.png"
+    },
+    "strip-1": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: White winged fairytale Xingtong cradles one luminous palm-sized gold star, star floats off to her LEFT. Eyes follow then one feathered wing gently cups it and steers it back to her palms. Wings fold into starting silhouette.\nA = Float the star farther left to shoulder height; angle her gaze toward it, with both palms open beneath its former position.\nB = Unfold her left wing toward the drifting star, curving the feather tips around its outer side; keep her eyes on it and both hands visible.\nC = Cup the star gently inside the curved left wing tip, stopping its drift; keep the right wing folded and both palms waiting below.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "c6837e8c95ca736e05dbb6cfc9d0bc26aa19d25c683812488b9d030888ea813b",
+      "reference": [
+        3,
+        4,
+        5
+      ],
+      "request_id": "req_c5e6d43a84e642e7bbfccda9a3323139",
+      "usage": {
+        "input_tokens": 1854,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 402
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3689,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "1c2b2760e96fc530b98092da446058ad219cacfb2413cccfbfee0fdb4d5948f8",
+      "file": "sources/strip-1.png"
+    },
+    "strip-2": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: White winged fairytale Xingtong cradles one luminous palm-sized gold star, star floats off to her LEFT. Eyes follow then one feathered wing gently cups it and steers it back to her palms. Wings fold into starting silhouette.\nA = Cup the star gently inside the curved left wing tip, stopping its drift; keep the right wing folded and both palms waiting below.\nB = Sweep the cupped left wing inward and downward, guiding the star toward her palms as her gaze follows.\nC = Lower the star into both open palms; withdraw the supporting feather tips sideways without covering her fingers.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "1e8f3c9fbd975ee2822923ffd660a608844b32256cd97f58887aa943a9796265",
+      "reference": [
+        5,
+        6,
+        7
+      ],
+      "request_id": "req_757067a930b3450080aa0938f05f184a",
+      "usage": {
+        "input_tokens": 1840,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 388
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3675,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "4869ba8ff49980fa0aa774c820df27598f4fe11cbda57448bee3caf8b05b92df",
+      "file": "sources/strip-2.png"
+    },
+    "strip-3": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: White winged fairytale Xingtong cradles one luminous palm-sized gold star, star floats off to her LEFT. Eyes follow then one feathered wing gently cups it and steers it back to her palms. Wings fold into starting silhouette.\nA = Lower the star into both open palms; withdraw the supporting feather tips sideways without covering her fingers.\nB = Curl both hands gently around the star as the left wing folds almost closed; lower her gaze to its glow.\nC = Finish folding both wings into the starting silhouette; hold the star slightly higher in her cupped palms, ready to settle into pose one.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "192d3fe986295153cf0b9f028ac511bd260043513096124677cacc7e0b0d461b",
+      "reference": [
+        7,
+        8,
+        9
+      ],
+      "request_id": "req_effb89034177412bb1c7095d1a80f3dd",
+      "usage": {
+        "input_tokens": 1842,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 390
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3677,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "ca4a81bbd3847c6a89a2d71747322ea77bb4b0a1359276a6091e7f0b3cb7e171",
+      "file": "sources/strip-3.png"
+    },
+    "strip-4": {
+      "model": "gpt-image-2.6-sunburst",
+      "size": "1536x2048",
+      "quality": "medium",
+      "output_format": "png",
+      "n": 1,
+      "prompt": "Act as a senior 2D inbetween animator. Return a continuous production sheet in EXACTLY the same layout as this reference: THREE columns, FOUR rows, TWELVE equally sized complete square images, read left-to-right top-to-bottom. Fill every square with one fully drawn camera-locked scene. Its white background, screen coordinates, character scale, clothing and props agree with the reference. No grids, numbering, words, motion trails, crossfades or double hands. The attached four rows give A, B, B, C. Create TWO successive micro-actions: top TWO rows are SIX evenly spaced DIFFERENT complete inbetween poses from the first reference A toward B, bottom TWO rows are SIX from B toward C. The six progress values in EACH block are about 10%,26%,42%,58%,74%,90%. Source extremes are supplied separately in the final GIF, so fill ALL cells with precision motion, never six identical drawings. Follow bright clean line art and maintain exact registration and hand identity; no autonomous camera shake. Full story for context: White winged fairytale Xingtong cradles one luminous palm-sized gold star, star floats off to her LEFT. Eyes follow then one feathered wing gently cups it and steers it back to her palms. Wings fold into starting silhouette.\nA = Finish folding both wings into the starting silhouette; hold the star slightly higher in her cupped palms, ready to settle into pose one.\nB = Draw full-body, white-clad fairytale Xingtong with folded feathered wings, cradling one luminous palm-sized gold star in both visible palms and looking down at it.\nC = Lift the star just above her open palms toward her left, viewer right; turn her eyes after it while keeping both hands still.\nTrust the actual illustrated poses in the attachment for the shape, timing and exact action. Preserve figure count and source costume. Never place hands, limbs or extra flowers into adjacent cells.",
+      "reference_sha256": "9c096aa032f0e2bd1c32f963b49fb7675f2f5bec282e4255acb3e40f9fb1cd7a",
+      "reference": [
+        9,
+        1,
+        2
+      ],
+      "request_id": "req_87044ad46e0443fab5dabeedc213d340",
+      "usage": {
+        "input_tokens": 1864,
+        "input_tokens_details": {
+          "image_tokens": 1452,
+          "text_tokens": 412
+        },
+        "output_tokens": 1835,
+        "total_tokens": 3699,
+        "output_tokens_details": {
+          "image_tokens": 1835,
+          "text_tokens": 0
+        }
+      },
+      "sha256": "747acd4a353cdaba97004ab347c93c225ee38bbaa23b0347e6e1826f9d59654a",
+      "file": "sources/strip-4.png"
+    }
+  },
+  "frame_review": [
+    {
+      "frame": 1,
+      "file": "frames/01.png",
+      "source": {
+        "key": 1
+      },
+      "duration_ms": 190,
+      "pixel_sha256": "d0be4f92b130daac681b3accf294aa3780f084d08f5fb2ed901f6c4cd2cbe2f8"
+    },
+    {
+      "frame": 2,
+      "file": "frames/02.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "90d66fe9b4b863c93b6c71b84a5fd4750e20d5a1baa6121e2871456f44fd554a"
+    },
+    {
+      "frame": 3,
+      "file": "frames/03.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "028d130a2a9c6fe8768f969f669e6514ea0d60e48b9750221a93acab125b924a"
+    },
+    {
+      "frame": 4,
+      "file": "frames/04.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "6c2693e5c95a07df42ddbb1597d1c03d28dfad44a2cb5451a359e6a48e8cfeed"
+    },
+    {
+      "frame": 5,
+      "file": "frames/05.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "93434c41eb8811ec0feab5513eb45f5b5470101869f3c64354c01821078b30d4"
+    },
+    {
+      "frame": 6,
+      "file": "frames/06.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "d8cbf8e79df39d91ecfb12bd32b533b26c8181d2868faf8acb945f8e8becaaec"
+    },
+    {
+      "frame": 7,
+      "file": "frames/07.png",
+      "source": {
+        "key": 2
+      },
+      "duration_ms": 160,
+      "pixel_sha256": "14a1c0f61fdd4b093685ead8ea8e70cb0e35ad2f08237ebc103fe37d5f3e5355"
+    },
+    {
+      "frame": 8,
+      "file": "frames/08.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "a53c44e71763d81f9acc64009495a0c1a96f85dd3f68ec4182ab21f8e11b912d"
+    },
+    {
+      "frame": 9,
+      "file": "frames/09.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "3bdbff91aed15a5a30b91d17d91ab6f5e813c6681a7c131b3f1e8e521d1a9c49"
+    },
+    {
+      "frame": 10,
+      "file": "frames/10.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "95052b5c878276ddee6a1151ecb1e32a49e41aa5f02db24293660b787167ed91"
+    },
+    {
+      "frame": 11,
+      "file": "frames/11.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "5ff2c6c6704e2264cffe37882c95d9a5f2e25e5261f6f60f357a5e8d17dbb3de"
+    },
+    {
+      "frame": 12,
+      "file": "frames/12.png",
+      "source": {
+        "sheet": "strip-0",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "059f5ee867e46b086f43638b7f44169e9375ad7b80aedbe43a4385d8567b74df"
+    },
+    {
+      "frame": 13,
+      "file": "frames/13.png",
+      "source": {
+        "key": 3
+      },
+      "duration_ms": 180,
+      "pixel_sha256": "9adef43fa7b2776c8110dc82d249ecc488d6c564b0958cc8483457ba7efbc5b6"
+    },
+    {
+      "frame": 14,
+      "file": "frames/14.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "0e6299cb79570989bf35957a514d816e61cc71bc73654fe3cf7fce1c5e1b3e3e"
+    },
+    {
+      "frame": 15,
+      "file": "frames/15.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "90217a29f17f68e041b933d5842037178c91c0ff0747e5b18d92f0e5bca738ad"
+    },
+    {
+      "frame": 16,
+      "file": "frames/16.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "ca836af5eed3b23bd869f56f5ce3c0b66245904e07791d91f914d935f8e17f73"
+    },
+    {
+      "frame": 17,
+      "file": "frames/17.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "00dd1ac68c1b0d24e8e352d98a7d68ae8c54e25721d9878838e02e236d243903"
+    },
+    {
+      "frame": 18,
+      "file": "frames/18.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "9efca509bea6aa0df0f2a6c4e7aa7642838aba7414eb4a9f6095a6675bfdcd55"
+    },
+    {
+      "frame": 19,
+      "file": "frames/19.png",
+      "source": {
+        "key": 4
+      },
+      "duration_ms": 160,
+      "pixel_sha256": "9e24e6a96341e6ee7502cdf1a85da1c7dc27a95a59a219d845d8879a0e7bc6a1"
+    },
+    {
+      "frame": 20,
+      "file": "frames/20.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "7936784d8dff116902f0c8f8412d3ead6c3917c2d47dcc8662f428ecb2b0fa2d"
+    },
+    {
+      "frame": 21,
+      "file": "frames/21.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "43b6623191ce40ade24f61bdd922ea81282f20431888b6c1a94af3f1195e442f"
+    },
+    {
+      "frame": 22,
+      "file": "frames/22.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "55dbaeccc8cc5a47a59645ad9de4645c7647d4da4eac281e9b14f014c46c8b66"
+    },
+    {
+      "frame": 23,
+      "file": "frames/23.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "8dc9d09b2d72b491e65f516c2bdf8af1a71e751cb079707105bc0680de56e56a"
+    },
+    {
+      "frame": 24,
+      "file": "frames/24.png",
+      "source": {
+        "sheet": "strip-1",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "2a1652462e1f423f70923d07ba8789778609b77dec2fa49b286c4d410fb4886e"
+    },
+    {
+      "frame": 25,
+      "file": "frames/25.png",
+      "source": {
+        "key": 5
+      },
+      "duration_ms": 320,
+      "pixel_sha256": "a0f18ac89ee5089f327d35408ff435faba08081f6b9edd7c0f1f8770b9cea651"
+    },
+    {
+      "frame": 26,
+      "file": "frames/26.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "c2cb17d18a47ed02fa14b0fe7906472a5a34049a18d597052e1db7074d62d54d"
+    },
+    {
+      "frame": 27,
+      "file": "frames/27.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "8888daea7774008dc57192b5e23910914418a2c1a52dff7a913f81ab6521fe80"
+    },
+    {
+      "frame": 28,
+      "file": "frames/28.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "96182c6da339f951cefc529b2b7fd518221cd3dbd80acd218ef8b945ea606899"
+    },
+    {
+      "frame": 29,
+      "file": "frames/29.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "0ec84bc82ec98cb7a5e9431150fe33a3c8788961a6327ae8410f9407f2311871"
+    },
+    {
+      "frame": 30,
+      "file": "frames/30.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "386bf6f02ac21b2658049d1497872fa0ae93f5e00e9b707fdb5d16bf5fe03191"
+    },
+    {
+      "frame": 31,
+      "file": "frames/31.png",
+      "source": {
+        "key": 6
+      },
+      "duration_ms": 150,
+      "pixel_sha256": "84dffb30a3efe4b1db90b9e97c2bfec688d347c38478f6f415edceee3c15f4b8"
+    },
+    {
+      "frame": 32,
+      "file": "frames/32.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "61182ba58fff471b48809377a61128941dc0c19d7c0dc281f6d672abf0cd7a18"
+    },
+    {
+      "frame": 33,
+      "file": "frames/33.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "e74bcefe4438808150f3c02b3afe9c98613f7295e2b3c565351e6de1ef6a8e4d"
+    },
+    {
+      "frame": 34,
+      "file": "frames/34.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "f3e3092297effb425a301df58ab853326bf921d28af0a89f6d7681b43e0ceec7"
+    },
+    {
+      "frame": 35,
+      "file": "frames/35.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "e1fad91d9f9b38a95842909b1aeac545dbb55ae00ac9d31ce5a0d8428ce0605d"
+    },
+    {
+      "frame": 36,
+      "file": "frames/36.png",
+      "source": {
+        "sheet": "strip-2",
+        "cell": 12
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "d00c0269f17087b239ab062b9ce779708d55f219d604012b54547f97e51fdc2d"
+    },
+    {
+      "frame": 37,
+      "file": "frames/37.png",
+      "source": {
+        "key": 7
+      },
+      "duration_ms": 240,
+      "pixel_sha256": "68fe8840825737cbb9968ad2db3efcb5aee1269fd267d03a127f7d4147f9964f"
+    },
+    {
+      "frame": 38,
+      "file": "frames/38.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "b9951bafb8b1988000087a2827124a2c9454ea032a579edbe14080685027645c"
+    },
+    {
+      "frame": 39,
+      "file": "frames/39.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "6fa39a1ff04cb9fb3505f027d1541d9bacc5f260662047782078dfd704a09b69"
+    },
+    {
+      "frame": 40,
+      "file": "frames/40.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 3
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "8013b3bca380a25488eeadccf90b770e6ab6f0be5eb88ab58d7647196872c920"
+    },
+    {
+      "frame": 41,
+      "file": "frames/41.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "fe2e13187f61a29704260df65407df3db81ab3f01b8160a3e29870c62e4e8eb8"
+    },
+    {
+      "frame": 42,
+      "file": "frames/42.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "20855df8c00d243c8875780853d67f44a3f15dca092ab773103e19027a5c0767"
+    },
+    {
+      "frame": 43,
+      "file": "frames/43.png",
+      "source": {
+        "key": 8
+      },
+      "duration_ms": 180,
+      "pixel_sha256": "20d2b07dbed6188d69a272c21ab1a20d95c301ff23a769871c12911dfb4afe73"
+    },
+    {
+      "frame": 44,
+      "file": "frames/44.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 7
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "01524d2f3111dc19bdeaf48cac103c966d3deb1603c1142ba3ec0d484a892317"
+    },
+    {
+      "frame": 45,
+      "file": "frames/45.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 8
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "79a490685ce15a0e461ff85d2c418da5c3e0c8196c85649a99d31c2cf3e600e0"
+    },
+    {
+      "frame": 46,
+      "file": "frames/46.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 9
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "de8148ebb727a146652390da61cff14fe857fc0e51719eed94e5785759c2e990"
+    },
+    {
+      "frame": 47,
+      "file": "frames/47.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 10
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "296b46bd58848ba7e2a7262d93d84f773bf6cecfe793463c5da62e8e0666f3e5"
+    },
+    {
+      "frame": 48,
+      "file": "frames/48.png",
+      "source": {
+        "sheet": "strip-3",
+        "cell": 11
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "d345dc531db639c6c859804c46d6ef737564a8c856983cab4208f7127381b723"
+    },
+    {
+      "frame": 49,
+      "file": "frames/49.png",
+      "source": {
+        "key": 9
+      },
+      "duration_ms": 150,
+      "pixel_sha256": "345a65efef1b1cfe8cef0f5557d40dd56205aeca9e632901fe1c09417748fcd1"
+    },
+    {
+      "frame": 50,
+      "file": "frames/50.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 1
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "2ff3cbd8bbefc3e51f1463f6ccc59aa90bf2430ac245d90d994f2fce7f00cd5f"
+    },
+    {
+      "frame": 51,
+      "file": "frames/51.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 2
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "bd017761d4c4ce83c3296a1808006fc6814ca5885111631774713c59e34d9db3"
+    },
+    {
+      "frame": 52,
+      "file": "frames/52.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 4
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "d3c4c8bcf022c4532c7ca1b85aa8b9e9b2fd0c79739e9e1644cd86cf49405b9a"
+    },
+    {
+      "frame": 53,
+      "file": "frames/53.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 5
+      },
+      "duration_ms": 60,
+      "pixel_sha256": "a0078e3dc8e11c7babfe7648acc445cbc88fac456343b3b92c0e4cacd6b389c0"
+    },
+    {
+      "frame": 54,
+      "file": "frames/54.png",
+      "source": {
+        "sheet": "strip-4",
+        "cell": 6
+      },
+      "duration_ms": 70,
+      "pixel_sha256": "99ce325bb825aec6bba124ee55e3decd2aa2480bfd8980eeba4052a82ccc11e8"
+    }
+  ],
+  "native_cell_px": 512,
+  "method": "完整姿势硬切、全片统一调色板。每个原画格四边各裁 5 px，768 和 320 版按同一时值缩放编码。"
+}
