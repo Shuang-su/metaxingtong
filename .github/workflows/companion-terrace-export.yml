@@ -1,0 +1,43 @@
+name: Inspect terrace for companion reuse
+on:
+  push:
+    branches: [codex/companion-terrace-reuse-20261115]
+    paths: [.github/workflows/companion-terrace-export.yml]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scenes/terrace/models
+            scenes/terrace/05-retain-glb-material-portability-fix/files
+      - name: Verify and inspect existing GLB without modifying archives
+        run: |
+          python3 - <<'PY'
+          import json,pathlib,hashlib,struct,shutil
+          m=json.loads(pathlib.Path('scenes/terrace/models/CURRENT.json').read_text())['models']['textured_glb']
+          p=pathlib.Path(m['path']);b=p.read_bytes()
+          assert hashlib.sha256(b).hexdigest()==m['sha256']
+          assert b[:4]==b'glTF'
+          n=struct.unpack_from('<I',b,12)[0];g=json.loads(b[20:20+n])
+          out=pathlib.Path('inspection');out.mkdir()
+          shutil.copy2(p,out/'Terrace_CompleteSpace_WithoutCity.glb')
+          (out/'provenance.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
+          (out/'gltf.json').write_text(json.dumps(g,ensure_ascii=False,indent=2))
+          print('SOURCE_VERIFIED',len(b),m['sha256'])
+          for i,node in enumerate(g.get('nodes',[])):
+            if 'mesh' not in node:continue
+            mesh=g['meshes'][node['mesh']]
+            tris=sum(g['accessors'][pr['indices']]['count']//3 for pr in mesh['primitives'] if 'indices' in pr)
+            print('NODE',i,node.get('name'), 'TRIANGLES',tris)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: companion-terrace-source-inspection
+          path: inspection/
+          retention-days: 3
