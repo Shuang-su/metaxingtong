@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "scope": "technical checks only; visual acceptance remains separate",
+  "native_gif_changed_protected_pixels": 0,
+  "native_png_changed_protected_pixels": 0,
+  "eye_roi_changed_pixels": 0,
+  "timelines_match_original_F11_F25": true,
+  "decoders": [
+    "Pillow",
+    "FFmpeg"
+  ],
+  "outputs": {
+    "candidate-768.gif": {
+      "size": [
+        768,
+        768
+      ],
+      "frames": 15,
+      "duration_ms": 1300,
+      "loop": 0,
+      "unique_frames": 15,
+      "decoded_rgb_sha256": "5f55d5188ecbde7429687c38b6989221c4ba3919d258cf22b1c93c6e6cc4d1b1",
+      "ffmpeg_rgb_sha256": "5f55d5188ecbde7429687c38b6989221c4ba3919d258cf22b1c93c6e6cc4d1b1",
+      "file_sha256": "4779fd5d4651c42d6a23a6100d97fc50aac13cbcf8699f970a3361c24c6969ef"
+    },
+    "candidate-320.gif": {
+      "size": [
+        320,
+        320
+      ],
+      "frames": 15,
+      "duration_ms": 1300,
+      "loop": 0,
+      "unique_frames": 15,
+      "decoded_rgb_sha256": "b919cf44be61d5ee991883ea487715bc435f773732c9112e3086cb3b4da8497a",
+      "ffmpeg_rgb_sha256": "b919cf44be61d5ee991883ea487715bc435f773732c9112e3086cb3b4da8497a",
+      "file_sha256": "19fe3820a9642b4c29d3ebc2d71e3573c04cc869a6f66199ac57afe137254c8f"
+    },
+    "candidate-112.gif": {
+      "size": [
+        112,
+        112
+      ],
+      "frames": 15,
+      "duration_ms": 1300,
+      "loop": 0,
+      "unique_frames": 15,
+      "decoded_rgb_sha256": "3535880c576c27aa561396e4700eef3d7aa78a162305f9760d3a9bbef6c0d5ff",
+      "ffmpeg_rgb_sha256": "3535880c576c27aa561396e4700eef3d7aa78a162305f9760d3a9bbef6c0d5ff",
+      "file_sha256": "e4031af945c1e74a1e13c85834f2712f7c550e06cbb43e70a1c21044bd5570a2"
+    },
+    "comparison-320.gif": {
+      "size": [
+        960,
+        320
+      ],
+      "frames": 15,
+      "duration_ms": 1300,
+      "loop": 0,
+      "unique_frames": 15,
+      "decoded_rgb_sha256": "3f6026221969b83f1e6eefd0db8f386de7ed21ce6ebf36719d3d98ee9b55abb0",
+      "ffmpeg_rgb_sha256": "3f6026221969b83f1e6eefd0db8f386de7ed21ce6ebf36719d3d98ee9b55abb0",
+      "file_sha256": "648304dec72420f7ba21f1bbddb1eb9f5038423b2720ed5728f5a7d6dd13911a"
+    }
+  }
+}

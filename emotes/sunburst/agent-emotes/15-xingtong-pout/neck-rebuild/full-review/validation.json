@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "scope": "Technical checks; user visual acceptance remains separate.",
+  "source_timeline_equal": true,
+  "protected_native_png_changes": 0,
+  "protected_native_gif_changes": 0,
+  "eye_roi_changes": 0,
+  "decoders": [
+    "Pillow",
+    "FFmpeg"
+  ],
+  "verified_API_receipts": 6,
+  "outputs": {
+    "master.gif": {
+      "size": [
+        768,
+        768
+      ],
+      "frames": 54,
+      "duration_ms": 4560,
+      "loop": 0,
+      "unique_frames": 54,
+      "decoded_rgb_sha256": "760a0cf10a2f956bcde959d4c2a894a125a59b04b89b26672962682cdf321024",
+      "ffmpeg_rgb_sha256": "760a0cf10a2f956bcde959d4c2a894a125a59b04b89b26672962682cdf321024",
+      "sha256": "70d41d54411fced4f91496e337b8600518ed017d061020d71a82d7718d40ec20"
+    },
+    "chat.gif": {
+      "size": [
+        320,
+        320
+      ],
+      "frames": 54,
+      "duration_ms": 4560,
+      "loop": 0,
+      "unique_frames": 54,
+      "decoded_rgb_sha256": "59b145832f497d97f3e16316dfa9d45594c7ccd30e32f79f43a508fbb36c1318",
+      "ffmpeg_rgb_sha256": "59b145832f497d97f3e16316dfa9d45594c7ccd30e32f79f43a508fbb36c1318",
+      "sha256": "ef9d61123c2e2d2f62ef838426457bb82694615aa07fca5e3038158898aa2732"
+    },
+    "paired.gif": {
+      "size": [
+        640,
+        320
+      ],
+      "frames": 54,
+      "duration_ms": 4560,
+      "loop": 0,
+      "unique_frames": 54,
+      "decoded_rgb_sha256": "905c52e89fea5054fd831a966c2e20f47c3c9a6928fff2b243984a18b962dd6c",
+      "ffmpeg_rgb_sha256": "905c52e89fea5054fd831a966c2e20f47c3c9a6928fff2b243984a18b962dd6c",
+      "sha256": "33ee748efc42e05cf376532ef505d91c5f3d22d4ed62a8a44741950143f885e3"
+    },
+    "review-112.gif": {
+      "size": [
+        112,
+        112
+      ],
+      "frames": 54,
+      "duration_ms": 4560,
+      "loop": 0,
+      "unique_frames": 54,
+      "decoded_rgb_sha256": "43753c85673d012a9d0568e869df80b6690dded6c4180ac2202e4d6313d32019",
+      "ffmpeg_rgb_sha256": "43753c85673d012a9d0568e869df80b6690dded6c4180ac2202e4d6313d32019",
+      "sha256": "7e3a93c1ef997de776d872e8e8db89d638c606b727d52ac21ba5cad267d83a24"
+    },
+    "comparison.gif": {
+      "size": [
+        960,
+        320
+      ],
+      "frames": 54,
+      "duration_ms": 4560,
+      "loop": 0,
+      "unique_frames": 54,
+      "decoded_rgb_sha256": "04fa53b2c735b4e25312c1a5c12c9be2d6e8529d92978f5b2b0fe7259d7b15ea",
+      "ffmpeg_rgb_sha256": "04fa53b2c735b4e25312c1a5c12c9be2d6e8529d92978f5b2b0fe7259d7b15ea",
+      "sha256": "3b3e107a0ffe7ddb2a54016dfd2a65089eb72671eb7b3009520c3004e32e057d"
+    }
+  }
+}

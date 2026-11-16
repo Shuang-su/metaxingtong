@@ -1,40 +1,50 @@
-# 颈肩与双拳重制：第 17 帧官方 Images API 掩膜试修（进行中）
+# 星瞳《鼓脸晃头》Images API 重制候选
 
-本目录与上一版 `neck-follow/` 分开保存，尚未替换任何已交付 GIF。用户认为上一版动作突兀，并要求改用 API 重做；最新要求同时去掉头顶右上角蓝白挂件，保留紫色发箍和头发。
+2026-11-17 接续 da2ce5e。当前环境已实际取得可解码 PNG 与 OpenAI 请求回执，已完成 54 帧候选。未覆盖原版、上一版 neck-follow 或 main，未建 PR，候选尚未获用户视觉验收。
 
-## 当前事实
+## 交付
 
-- 已准备原版星瞳第 17 帧，等比放大至 1024×1024；奶绿真实同帧作为第二输入。
-- `sources/mask-17-1024.png` 为同尺寸 RGBA PNG；透明区域可编辑，覆盖颈肩、完整双拳和袖口；面部最大皮肤连通域及周边一像素明确保护。`mask-review.jpg` 的红色为开放范围。
-- 输入像素映射、SHA、掩膜多边形和开放像素数见 `prepared-input.json`。
-- `edit_frame17.py --check` 已实际执行通过。非 check 模式已实际执行；因为当前运行阶段没有 `OPENAI_API_KEY`，在发请求前以退出码 2 停止。没有伪造官方 PNG、request ID 或成功回执。
-- 已检查当前云机配置：HTTP 网络策略已生效且允许出站，未配置任何 Secret。默认沙箱无法连接继承的代理，经过允许的沙箱外只读探测可到达 `https://api.openai.com/v1/models`，无凭据返回 401。这不是编辑权限或余额验证。
-- 当前工具集中未提供 `cloud_environment.request_changes`。已请用户通过本云任务环境设置绑定既有凭据，不新建密钥，不从原本机配置复制，不经 Git 中转。
+- [320px 完整候选](full-review/chat.gif)、[768px 完整候选](full-review/master.gif)
+- [与奶绿并排](full-review/paired.gif)、[原片／候选／奶绿动态对照](full-review/comparison.gif)
+- [112px 检查](full-review/review-112.gif)、[54 组三栏逐帧对照](full-review/pose-comparison.jpg)
+- [54 帧缩略图](full-review/contact-sheet.jpg)、[四张关键姿势](key-repair-review.jpg)
 
-## 已保存的内置接口参考试片
+short-review 另存 F11–25 的 15 帧短段、每帧 PNG、允许编辑区域和技术检查。完整输出与其共享同一段结果。完整动画为 54 帧、4560 ms、无限循环，逐帧时值保持原片。
 
-`sources/api-keys.png` 为内置 `image_gen.imagegen` 的实际返回 PNG；`sources/api-keys-no-mascot.png` 为其后去掉蓝白挂件的实际编辑结果。二者均通过工具返回的 PNG 字节保存，非官方 Images API 的成功凭据，不能用来声称 `POST /v1/images/edits` 已打通。内置工具未报告可用的模型名、request ID 或 savedPath，因此不填写这些字段。
+## 实际做法与保护范围
 
-`internal_preview.py` 可重建实际试片的局部合成；其头饰和衣领边缘仍有可见接缝，未达到成品标准，不用于替换 GIF。已通过 89 个特征点内点配准，掩膜外像素精确保持原版调色图。官方掩膜试修将解决这种跨图直接拼接的问题。
+使用原项目既有 Images API：POST https://api.openai.com/v1/images/edits，gpt-image-2.6-sunburst，1024×1024、medium、PNG、n=1、180 秒、零自动重试。本次共 6 次成功请求：F17 颈肩拳袖、F17 去挂件、F11、F25、F11 接缝试验、F1。接缝试验未采用，见 rejected-trials.json。所有实际 PNG、输入散列与 request ID 均保留，未新建密钥，未将密钥复制到文件或输出秘密值。
 
-试片是三格关键姿势参考（11、17、25）；还没有把它们的重绘脸部用于成品。`sources/api-reference.png` 顶行为原版星瞳经既有调色的三姿势，底行为真实同帧奶绿。用户最新指定的官方路线改为单张 1024px 掩膜试修，以原帧为底合回。
+F1／11／17／25 是实际 API 重绘关键姿势，并非 54 张独立生图。用改正后关键姿势间的局部形变和配准扩展动作，不再采用旧版首帧硬贴片与肤色检测整体升降。完整双拳和袖口随绘图变形，所有帧均移除头顶右上角蓝白挂件。侧发保留在衣领外侧，颈前的穿出发梢随颈肩重绘处理。
 
-## 官方单帧调用
+原头脸始终作为底图，原眼神、口型、镜头和时间表保留。下颊边界约 20px 接触过渡带及拳头前景遮挡允许局部变化，不能声称整张脸或首帧逐像素不变；首帧拳袖也已重绘。每帧 allowed-XX.png 外的原生 PNG／768px GIF 像素保持原片；独立眼部区域 x=100:560,y=320:540 保持一致。
+
+API PNG 带透明通道，先正确铺在白底上，避免把透明像素的 RGB 当黑色补丁。原生 GIF 使用各帧原片色表并精确写回未改动像素的索引；新增区域受 GIF 256 色限制。320px／112px 为缩放导出，不作逐像素保护承诺。
+
+## 实测验证
+
+- 三份原始输入 GIF 已完整复解，散列、帧数及时值一致，见 resume-input-verification.json。
+- 完整 5 份 GIF 经 Pillow 和 FFmpeg 独立解码，像素散列一致，均有 54 个独特帧、4560 ms、loop=0，见 full-review/validation.json。
+- 54 份原生 PNG 与原生 GIF 的允许区域外变化为 0，眼部检查区变化为 0。拳头遮挡和下颊接触带单独计入允许区域。
+- 有沙箱的 headless Chromium 通过 WebCodecs 实际解码 112px／320px GIF 并原速播放三圈，每圈访问全部 54 帧，文档未隐藏。报告与截图见 full-review/browser-playback.json、browser-playback-complete.png。这是自动定时播放记录，不等于用户视觉验收。共享浏览器工具未能启动，未冒称在共享窗口播放成功。
+- 6 次 API 回执的输出 PNG 和输入散列已逐一验证。F17 风格参考曾有两个版本，实际输入字节保存在 keys/input-archives，映射可按回执 SHA 找回。
+
+技术通过不代表动作自然。原片的姿势／画稿切换仍保留，例如 F21→22；关键姿势间的衣领纹理与发箍修补边缘仍可能有细小变化。请以原速动画判断是否采用，当前为供审阅候选。
+
+## 离线重建，不调用 API
+
+保存了全部真实 API 输出，不需要凭据即可重建。依赖版本见 requirements.txt，实测 Python 3.12、Pillow 13.0.0、NumPy 2.3.5、OpenCV 4.10.0.84；FFmpeg 用于双解码检查。
 
 ```bash
-python prepare.py           # 在本任务 venv 中运行，需 OpenCV
-python edit_frame17.py --check
-python edit_frame17.py      # 仅在现有 OPENAI_API_KEY 已绑定到当前运行阶段后运行
-python compose_frame17.py   # 仅在实际返回并保存 frame17-api.png 后运行
+python compose_keys.py 1 11 17 25
+python build_short.py
+python build_full.py
+python verify_short.py
+python verify_full.py
 ```
 
-请求固定为 `POST https://api.openai.com/v1/images/edits`、`gpt-image-2.6-sunburst`、`1024x1024`、`quality=medium`、`output_format=png`、`n=1`、180s 超时、零自动重试。不使用未经确认的代理占位密钥；HTTP 网络 Secret 绑定若被选用，必须先确认其实际绑定和文档中的客户端用法再适配。
+python reproduce_offline.py 顺序执行这些命令，比较重建前后全部 9 个 GIF 的字节散列，保存 offline-reproduction.json。本次已实际执行：全部 9 个 GIF 重建前后字节一致，额外 API 调用为 0。
 
-合成脚本只导入 mask 的可编辑像素，并在 768px 尺寸再次合回原帧的掩膜外像素，防止缩放导致头脸变化。每次真正成功后生成输入、输出 SHA 与 request ID 回执，失败只记状态码/安全错误类型，不打印密钥、原始响应或认证头。
+在本目录启动 python -m http.server 8767 --bind 127.0.0.1，另一个终端运行 python check_playback.py --full，可复查当前环境的 Chromium 播放。额外使用环境已有 Playwright 1.62.0 和 /usr/bin/chromium，明确保持浏览器沙箱开启。
 
-单帧审看通过后才扩到 11–25 帧短段：使用原版每帧身体为底，颈肩与左右完整拳袖分开处理，不再用首帧整体贴片，也不再用肤色阈值逐帧硬抬整个身体。再覆盖全部 54 帧及原时值表。官方 GIF 输出不用于此路线。
-
-官方接法由原任务提供：
-- https://developers.openai.com/api/docs/models/gpt-image-2.6-sunburst
-- https://developers.openai.com/api/reference/resources/images/methods/edit
-- https://developers.openai.com/api/docs/guides/image-generation
+edit_key.py 为单次在线调用工具，已有输出时拒绝重发；--check 只查输入，日常恢复不要重跑生图命令。edit_frame17.py／compose_frame17.py 是前期单帧脚本，完整候选以本节命令重建。旧 internal-* 文件只是上一聊天的内置工具历史试验，本次未用它们制作候选。

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>星瞳 F11–25 候选播放检查</title>
+<style>body{font:16px system-ui,sans-serif;background:#eeeaf3;color:#252033;margin:30px}h1{font-size:24px}.row{display:flex;gap:32px;align-items:start}.card{background:white;padding:18px;border-radius:12px}canvas{display:block;background:white}pre{font-size:12px;white-space:pre-wrap}button{padding:8px 18px;margin:15px 0}img{max-width:100%;background:white}small{display:block;max-width:900px;line-height:1.6;color:#655b73}</style>
+<h1>星瞳《鼓脸晃头》F11–25 短段候选</h1>
+<small>原速 1.3 秒 × 3 圈。原头脸作为底图，下脸颊接触窄带与拳头遮挡处允许局部覆盖。此页用于视觉复核，未替换完整 54 帧成品。短段末尾跳回开头来自截段循环。</small>
+<button id="restart">重新播放三圈</button>
+<div class="row"><div class="card">112px 原尺寸<canvas id="small" width="112" height="112"></canvas></div><div class="card">320px 原尺寸<canvas id="large" width="320" height="320"></canvas></div><div class="card"><b id="status">正在解码 GIF…</b><pre id="report"></pre></div></div>
+<p>原片 / 候选 / 奶绿，同帧同速：</p><img src="comparison-320.gif" alt="原片、候选和奶绿原速对照">
+<script type="module">
+const construction=await fetch('construction.json').then(r=>r.json());
+const delays=construction.durations_ms,total=delays.reduce((a,b)=>a+b,0);
+async function decode(url){const data=await fetch(url).then(r=>r.arrayBuffer());const decoder=new ImageDecoder({data,type:'image/gif'});await decoder.tracks.ready;const frames=[],durations=[];for(let i=0;i<15;i++){const {image}=await decoder.decode({frameIndex:i});durations.push(image.duration/1000);frames.push(await createImageBitmap(image));image.close()}decoder.close();return{frames,durations}}
+try{
+const [small,large]=await Promise.all([decode('candidate-112.gif'),decode('candidate-320.gif')]);
+if(JSON.stringify(small.durations)!==JSON.stringify(delays)||JSON.stringify(large.durations)!==JSON.stringify(delays))throw Error('GIF timing mismatch');
+let generation=0;
+function play(){const run=++generation,started=performance.now(),visits=[new Set(),new Set(),new Set()];let hidden=false;document.querySelector('#status').textContent='原速播放中';
+function tick(now){if(run!==generation)return;const elapsed=now-started;hidden||=document.hidden;if(elapsed>=total*3){window.__playbackReport={status:'completed',cycles:3,frames:15,expected_cycle_ms:total,actual_elapsed_ms:Math.round(elapsed),visited_frames_per_cycle:visits.map(s=>s.size),browser_gif_durations_ms:small.durations,document_hidden_during_playback:hidden,decoder:'WebCodecs ImageDecoder',sizes:[112,320]};document.querySelector('#status').textContent='三圈原速播放完成';document.querySelector('#report').textContent=JSON.stringify(window.__playbackReport,null,2);return}
+const cycle=Math.floor(elapsed/total),local=elapsed%total;let end=0,index=14;for(let i=0;i<delays.length;i++){end+=delays[i];if(local<end){index=i;break}}visits[cycle].add(index);document.querySelector('#small').getContext('2d').drawImage(small.frames[index],0,0);document.querySelector('#large').getContext('2d').drawImage(large.frames[index],0,0);requestAnimationFrame(tick)}requestAnimationFrame(tick)}
+document.querySelector('#restart').onclick=play;play();
+}catch(error){document.querySelector('#status').textContent='播放检查失败';document.querySelector('#report').textContent=error.message;window.__playbackReport={status:'failed',message:error.message}}
+</script></html>
