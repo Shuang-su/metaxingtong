@@ -1,0 +1,48 @@
+{
+  "job": "native-Xingtong-in-Nailu-style-r1",
+  "timestamp_utc": "2026-11-17T15:11:09.417429+00:00",
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "model": "gpt-image-2.6-sunburst",
+  "parameters": {
+    "size": "1024x1024",
+    "quality": "medium",
+    "output_format": "png",
+    "background": "opaque",
+    "n": 1,
+    "extra_body": {
+      "complexity": "high"
+    }
+  },
+  "automatic_retries": 0,
+  "inputs": {
+    "sources/xingtong-front-white.png": "8c20bf29a66f96e730e185013249120ace38a6945c0310ec83d6ff6228ec1b05",
+    "sources/xingtong-hands-white.png": "3618375c8103e0b0f8bf0835ffa175cd27c9a8b1e8a5fcf7a688ea7655fc1f41",
+    "sources/nailu-actual-style-guide.png": "7b5c22cb25c2dea4bd85be446146785a3c049e34b2762b96118d87461bdb1532",
+    "jobs/style-r1.txt": "e96f8bd51ac0a589cb71c39f28ac166b84427eb248856eca27689d77a41ff0c3"
+  },
+  "status": "completed",
+  "request_id": "req_0ac01865c1144d16b3a408fb49970d85",
+  "output": "sources/style-r1.png",
+  "output_sha256": "8da2f0d61718448e32d25050fb25c7b6cdf50011e237ad27cca7e742fee7f50e",
+  "actual": {
+    "format": "PNG",
+    "size": [
+      1024,
+      1024
+    ],
+    "frames": 1
+  },
+  "usage": {
+    "input_tokens": 3296,
+    "input_tokens_details": {
+      "image_tokens": 2816,
+      "text_tokens": 480
+    },
+    "output_tokens": 1449,
+    "total_tokens": 4745,
+    "output_tokens_details": {
+      "image_tokens": 1449,
+      "text_tokens": 0
+    }
+  }
+}

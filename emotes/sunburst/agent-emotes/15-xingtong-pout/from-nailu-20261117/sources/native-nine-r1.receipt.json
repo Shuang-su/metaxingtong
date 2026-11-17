@@ -1,0 +1,61 @@
+{
+  "job": "new-complete-Xingtong-nine-pose-loop-r1",
+  "timestamp_utc": "2026-11-17T15:12:59.515147+00:00",
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "model": "gpt-image-2.6-sunburst",
+  "parameters": {
+    "size": "512x512",
+    "quality": "medium",
+    "output_format": "gif",
+    "background": "opaque",
+    "n": 1,
+    "extra_body": {
+      "frame_count": 9,
+      "frame_duration_ms": 200,
+      "complexity": "high"
+    }
+  },
+  "automatic_retries": 0,
+  "inputs": {
+    "sources/style-r1.png": "8da2f0d61718448e32d25050fb25c7b6cdf50011e237ad27cca7e742fee7f50e",
+    "sources/nailu-actual-style-guide.png": "7b5c22cb25c2dea4bd85be446146785a3c049e34b2762b96118d87461bdb1532",
+    "jobs/native-nine-r1.txt": "3bb8c4186701765aceaf5da8301dad34bd75763dfcb0c841de1560b12c19da7a"
+  },
+  "status": "completed",
+  "request_id": "req_bddfe1b83ac14ba0a1fff863fd90ca7b",
+  "output": "sources/native-nine-r1.gif",
+  "output_sha256": "104e187ee4b0d644d3cd694ac21f9d0949799f533e5da807ecd9145d4529ce54",
+  "actual": {
+    "format": "GIF",
+    "size": [
+      512,
+      512
+    ],
+    "frames": 9,
+    "durations_ms": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "loop": 0
+  },
+  "usage": {
+    "input_tokens": 2543,
+    "input_tokens_details": {
+      "image_tokens": 1792,
+      "text_tokens": 751
+    },
+    "output_tokens": 2073,
+    "total_tokens": 4616,
+    "output_tokens_details": {
+      "image_tokens": 2073,
+      "text_tokens": 0
+    }
+  }
+}

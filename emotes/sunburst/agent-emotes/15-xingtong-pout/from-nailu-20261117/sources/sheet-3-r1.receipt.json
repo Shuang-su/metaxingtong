@@ -1,0 +1,47 @@
+{
+  "job": "complete-pose-inbetweens-7-8-9-r1",
+  "timestamp_utc": "2026-11-17T15:16:30.665471+00:00",
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "model": "gpt-image-2.6-sunburst",
+  "parameters": {
+    "size": "1536x2048",
+    "quality": "medium",
+    "output_format": "png",
+    "background": "opaque",
+    "n": 1,
+    "extra_body": {
+      "complexity": "high"
+    }
+  },
+  "automatic_retries": 0,
+  "inputs": {
+    "sources/sheet-3-guide.png": "2222eb17e17c100178c3c02668eed1b8dbd37a6fff6e112a1651818e9a80bb37",
+    "sources/style-r1.png": "8da2f0d61718448e32d25050fb25c7b6cdf50011e237ad27cca7e742fee7f50e",
+    "jobs/sheet-3-r1.txt": "3cb3e61ede938d3351c7af1a2ce95f334cc659befa7986da6f9d27b8df29ecd2"
+  },
+  "status": "completed",
+  "request_id": "req_dc8d2bf8822a415893eb6a82550a6ad9",
+  "output": "sources/sheet-3-r1.png",
+  "output_sha256": "b3e0cfb045091137a481b0f9765742ff3bd3fab0e37d1667d5232074947c1dde",
+  "actual": {
+    "format": "PNG",
+    "size": [
+      1536,
+      2048
+    ],
+    "frames": 1
+  },
+  "usage": {
+    "input_tokens": 3101,
+    "input_tokens_details": {
+      "image_tokens": 2476,
+      "text_tokens": 625
+    },
+    "output_tokens": 1835,
+    "total_tokens": 4936,
+    "output_tokens_details": {
+      "image_tokens": 1835,
+      "text_tokens": 0
+    }
+  }
+}
